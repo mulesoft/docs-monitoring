@@ -1,0 +1,18 @@
+= Tools in Anypoint Monitoring
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+To help deliver Anypoint Monitoring notifications to external systems, Anypoint Monitoring provides links to connectors on Anypoint Exchange that you can incorporate into a Mule app.
+
+.Tools Available in Anypoint Monitoring
+image::tools.png[Tools]
+
+Note that you can scroll over a connector link to learn more about it, before navigating to Anypoint Exchange. For example, the connector below indicates that it is for creating tickets in the Salesforce Service Cloud in response to Anypoint Monitoring alert notifications.
+
+|===
+| image:tools-salesforce.png[Salesforce connector link] |
+  image:tools-salesforce-description.png[Salesforce connector description]
+|===
+
+Other connectors on the page help with Service Now, JIRA, and other integrations.

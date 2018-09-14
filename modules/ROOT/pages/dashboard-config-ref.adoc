@@ -1,0 +1,594 @@
+= Dashboard Configuration Reference
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Anypoint Monitoring provides many predefined values and identifiers for your configurations.
+
+[[date_time_fields]]
+== Date and Time Field Values
+Many fields accept time and date interval values like these:
+
+[%header,cols="1,5"]
+|===
+2+| Date and Time Fields
+| `y`	| Year, for example: `1y`.
+| `M` | Month, for example: `1M`.
+| `w` | Week, for example: `1w`.
+| `d` | Day, for example: `1d`.
+| `h` | Hour, for example: `1h`.
+| `m` | Minute, for example: `1m`.
+| `s` | Second, for example: `1s`.
+| `ms` | Millisecond, for example: `1ms`.
+|===
+
+[[metrics]]
+== Metrics Available to Graphs
+
+Many <<metrics_basic, basic>> and <<metrics_advanced, advanced>> metrics are available when configuring custom dashboard graphs.
+
+[[metrics_basic]]
+=== Basic Mode Metrics
+
+These metrics are available when you use the Basic mode:
+
+[%header,cols="3,1"]
+|===
+| Basic Metrics | Unit
+| Inbound - Average Request Count by Endpoint | `short`
+| Inbound - Average Request Count by Flow | `short`
+| Inbound - Average Response Count by Endpoint | `short`
+| Inbound - Average Response Count by Flow | `short`
+| Inbound - Failure Average Request Count by Endpoint  | `short`
+| Inbound - Failure Average Request Count by Flow | `short`
+| Inbound - Failure Average Response Time by Endpoint | `ms`
+| Inbound - Failure Average Response Time by Flow | `ms`
+| Inbound - Success Average Request Count by Endpoint  | `short`
+| Inbound - Success Average Request Count by Flow | `short`
+| Inbound - Success Average Response Time by Endpoint | `ms`
+| Inbound - Success Average Response Time by Flow | `ms`
+| JVM - CPU % Utilization | `percent`
+| JVM - CPU Load Average | `percent`
+| JVM - Classes Loaded | `short`
+| JVM - Classes Loaded Total | `short`
+| JVM - Classes Unloaded | `short`
+| JVM - Code Cache Committed | `bytes`
+| JVM - Code Cache Init | `bytes`
+| JVM - Code Cache Max | `bytes`
+| JVM - Code Cache Used | `bytes`
+| JVM - Compressed Class Space Committed | `bytes`
+| JVM - Compressed Class Space Total | `bytes`
+| JVM - Compressed Class Space Used | `bytes`
+| JVM - Garbage Collection Count | `short`
+| JVM - Garbage Collection Time | `ms`
+| JVM - Heap Committed | `bytes`
+| JVM - Heap Used | `bytes`
+| JVM - JVM Uptime | `ms`
+| JVM - Memory Utilization | `bytes`
+| JVM - Metaspace Committed | `bytes`
+| JVM - Metaspace Init | `bytes`
+| JVM - Metaspace Max | `bytes`
+| JVM - Metaspace Used | `bytes`
+| JVM - Par Eden Committed | `bytes`
+| JVM - Par Eden Init | `bytes`
+| JVM - Par Eden Max | `bytes`
+| JVM - Par Eden Used | `bytes`
+| JVM - Par New Collection Count | `short`
+| JVM - Par New Collection Time | `ms`
+| JVM - Par Survivor Committed | `bytes`
+| JVM - Par Survivor Init | `bytes`
+| JVM - Par Survivor Max | `bytes`
+| JVM - Par Survivor Used | `bytes`
+| JVM - Tenured Gen Committed | `bytes`
+| JVM - Tenured Gen Init | `bytes`
+| JVM - Tenured Gen Max | `bytes`
+| JVM - Tenured Gen Used | `bytes`
+| JVM - Thread count - Server | `short`
+| JVM - Total System Memory | `bytes`
+| JVM - Total System Processors | `short`
+| Outbound - Average Request Count by Endpoint | `short`
+| Outbound - Average Request Count by Flow | `short`
+| Outbound - Average Response Time by Endpoint | `ms`
+| Outbound - Average Response Time by Flow | `ms`
+| Outbound - Failure Average Request Count by Endpoint | `short`
+| Outbound - Failure Average Request Count by Flow | `short`
+| Outbound - Failure Average Response Time by Endpoint | `ms`
+| Outbound - Failure Average Response Time by Flow | `ms`
+| Outbound - Success Average Request Count by Endpoint | `short`
+| Outbound - Success Average Request Count by Flow | `short`
+| Outbound - Success Average Response Time by Endpoint | `ms`
+| Outbound - Success Average Response Time by Flow | `ms`
+|===
+
+[[metrics_advanced]]
+=== Advanced Mode
+
+These metrics are available when you use the Advanced mode:
+
+.Advanced Metrics
+[%header,cols="1,2,2"]
+|===
+| Metric
+| Key (From clause)
+| Available Field Values (Select clause)
+
+| Application Inbound Metrics | `app_inbound_metric` a|
+
+* `avg_request_count`
+* `avg_response_count`
+| Application Outbound Metrics | `app_outbound_metric` a|
+
+* `avg_request_count`
+* `avg_response_count`
+|  JVM ClassLoader | `jvm.classloading` a|
+
+* `classes_loaded`
+* `classes_loaded_total`
+* `classes_unloaded`
+| JVM CPU | `jvm.cpu.operatingsystem` a|
+
+* `available_processors`
+* `cpu`
+* `load_average`
+* `total_physical_memory_size`
+| JVM Garbage Collection | `jvm.garbagecollector.marksweepcompact` a|
+
+* `gc_marksweep_collection_count`
+* `gc_marksweep_collection_time`
+| JVM Garbage Collection | `jvm.garbagecollector.parnew` a|
+
+* `gc_par_new_collection_count`
+* `gc_par_new_collection_time`
+* `gc_parnew_collection_count`
+* `gc_parnew_collection_time`
+|  JVM Memory | `jvm.memory` a|
+
+* `heap_committed`
+* `heap_total`
+* `heap_used`
+|  JVM Memory “Code Cache” | `jvm.memory.code_cache` a|
+
+* `committed_memory`
+* `init_memory`
+* `max_memory`
+* `used_memory`
+|  JVM Memory Compressed | `jvm.memory.compressed_class_space` a|
+
+* `committed_memory`
+* `init_memory`
+* `max_memory`
+* `used_memory`
+| JVM Memory Pool “Tenured Generation” | `jvm.memory.metaspace` a|
+
+* `committed_memory`
+* `init_memory`
+* `max_memory`
+* `used_memory`
+| JVM Memory “Eden Space” | `jvm.memory.par_eden_space` a|
+
+* `par_eden_committed`
+* `par_eden_total`
+* `par_eden_used`
+| JVM Memory “Survivor Space” | `jvm.memory.par_survivor_space` a|
+
+* `par_survivor_committed`
+* `par_survivor_total`
+* `par_survivor_used`
+| JVM Memory “Tenured Generation” | `jvm.memory.tenured_gen` a|
+
+* `committed_memory`
+* `init_memory`
+* `max_memory`
+* `used_memory`
+| JVM Runtime | `jvm.runtime` a|
+
+* `jvm_uptime`
+| JVM Threads | `jvm.threading` a|
+
+* `thread_count`
+|===
+
+////
+Not in UI anymore:
+|  JVM Memory Pool “Code Cache” | `jvm.memory.memorypool.code_cache` a|
+
+* `code_cached_committed`
+* `code_cached_total`
+* `code_cached_used`
+|  JVM Memory Pool “Code Cache” | `jvm.memory.memorypool.compressed_class_space` a|
+
+* `compressed_class_space_committed`
+* `compressed_class_space_total`
+* `compressed_class_space_used`
+|  JVM Memory Pool “Code Cache” | `jvm.memory.memorypool.metaspace` a|
+
+* `metaspace_committed`
+* `metaspace_total`
+* `metaspace_used`
+|  JVM Memory Pool “Eden Space” | `jvm.memory.memorypool.par_eden_space` a|
+
+* `par_eden_committed`
+* `par_eden_total`
+* `par_eden_used`
+|  JVM Memory Pool “Survivor Space” | `jvm.memory.memorypool.par_survivor_space` a|
+
+* `survivor_space_committed`
+* `survivor_space_total`
+* `survivor_space_used`
+| JVM Memory Pool “Tenured Generation” | `jvm.memory.memorypool.tenured_gen` a|
+
+* `tenured_gen_committed`
+* `tenured_gen_total`
+* `tenured_gen_used`
+////
+
+
+[[samples_markdown]]
+== Markdown Syntax Support
+Some Anypoint Monitoring fields, such as Text graph fields in a custom dashboard, accept Markdown. Markdown is a lightweight syntax for styling all forms of writing.
+
+=== Titles in Markdown
+
+.Markdown Title Examples
+[source,text,linenums]
+----
+# TITLE 1
+## Title 2
+### Title 3
+----
+
+=== Emphases in Markdown
+
+.Markdown Emphasis Examples
+[source,text,linenums]
+----
+*This text will be italic*
+_This will also be italic_
+
+**This text will be bold**
+__This will also be bold__
+
+_You **can** combine them_
+----
+
+=== Lists in Markdown
+
+You can write unordered and ordered lists.
+
+.Markdown: Unordered List
+[source,text,linenums]
+----
+Unordered
+* Item 1
+* Item 2 is **bold**
+  * Item 2a
+  * Item 2b
+
+Alternatively:
+- Dashes work just as well
+- For sub points, put two spaces before the dash or asterisk:
+  - Like this
+  - And this
+----
+
+.Markdown: Ordered List
+[source,text,linenums]
+----
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
+----
+
+Note that the `1.` entries will resolved to the correct number in the sequence.
+
+=== Images in Markdown
+
+You can insert images like this:
+
+.Markdown: Image Syntax
+[source,text,linenums]
+----
+![MyCompany's Logo](https://www.mycompany.com/content/logo/logo.png)
+----
+
+=== Links in Markdown
+
+You can add links like this:
+
+.Markdown: Link Syntax
+[source,text,linenums]
+----
+[MyCompany's](https://www.mycompany.com/us/en-us.html)
+----
+
+Also note that any URL is automatically converted into a link.
+
+.Markdown: Example that Gets Converted to a Link
+[source,text,linenums]
+----
+http://www.github.com/
+----
+
+=== Inline Code in Markdown
+
+You surround inline code in backticks.
+
+```
+Here is an `inline_code` example in Markdown.
+```
+
+=== Code in Markdown
+
+.Markdown: Code Syntax
+[source,text,linenums]
+----
+```
+javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
+----
+
+=== Task Lists in Markdown
+
+.Markdown: Task List Syntax
+[source,text,linenums]
+----
+- [x] #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+----
+
+=== Tables in Markdown
+You can create tables by assembling a list of words and dividing them with hyphens (`-`) for the first row, then separating each column with a pipe (`|`):
+
+.Markdown: Table Syntax
+[source,text,linenums]
+----
+| Col 1 | Col 2 | Col 3 | Col 4 |
+|-------|-------|-------|-------|
+|       |       |       |       |
+|       |       |       |       |
+|       |       |       |       |
+|       |       |       |       |
+|       |       |       |       |
+|       |       |       |       |
+|       |       |       |       |
+----
+
+=== Strikethrough in Markdown
+
+Any word wrapped with two tildes (like `&#126;&#126;this&#126;&#126;`) will appear crossed-out.
+
+=== Blockquotes in Markdown
+
+You use the `>` to start a blockquote.
+
+.Markdown: Blockquote Syntax
+[source,text,linenums]
+----
+> And so, my fellow Americans, ask not what
+> your country can do for you -- ask what
+> you can do for your country.
+
+> You can also create a very long line that should be quoted properly in the UI when it wraps
+----
+
+[[samples_html]]
+== HTML Support
+Some Anypoint Monitoring fields, such as Text graph fields in a custom dashboard, accept HTML elements (or tags).
+
+[[html_titles]]
+=== HTML Titles
+
+.Titles
+[source,html,linenums]
+----
+<h1>Title 1</h1>
+<h2>Title 2</h2>
+<h3>Title 3</h3>
+----
+
+[[html_emphasis]]
+=== HTML Emphasis
+
+.HTML Emphasis Example
+[source,html,linenums]
+----
+<i>This text will be italic</i><br>
+<em>This will also be italic</em><br>
+
+<b>This text will be bold</b><br>
+<strong>This will also be bold</strong><br>
+<br>
+<em>You <b>can</b> combine them</em><br>
+----
+
+[[html_lists]]
+=== HTML Lists
+
+.Unordered List Example
+[source,html,linenums]
+----
+<ul>
+<li>Item 1</li>
+<li>Item 2 is <b>bold</b></li>
+  <ul>
+      <li>Item 2a</li>
+      <li>Item 2b</li>
+  </ul>
+</ul>
+----
+
+.Ordered List Example
+[source,html,linenums]
+----
+<ol type="1">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+  <ol>
+    <li>Item 3a</li>
+    <li>Item 3b</li>
+   </ol>
+</ol>
+----
+
+[[html_images]]
+=== Images
+
+.Image Example
+[source,html,linenums]
+----
+<img src="https://www.mycompany.com/content/dam/usa/logo/m_logo.png" alt="MyCompany's Logo" height="50" width="50">
+----
+
+[[html_links]]
+=== Links
+
+.Link Example
+[source,html,linenums]
+----
+<a href="https://www.mycompany.com/us/en-us.html">Visit mycompany.com!</a>
+----
+
+[[html_blockquotes]]
+=== Blockquotes
+
+.Blockquote Example
+[source,html,linenums]
+----
+As John F. Kennedy said:
+
+<blockquote>
+  And so, my fellow Americans, ask not what your
+  country can do for you -- ask what you can do
+  for your country.
+</blockquote>
+----
+
+[[html_code]]
+=== Code and Preformatted Text
+
+* Code: `<code>A piece of computer code</code>`
+* Preformatted text:
++
+.Pre Tag Example
+[source,html,linenums]
+----
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre>
+----
+
+[[html_tables]]
+=== Tables
+
+.Table Example
+[source,html,linenums]
+----
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+----
+
+[[html_strikethough]]
+=== Strikethrough
+
+.Strike Examples
+[source,html,linenums]
+----
+<p> You can use the <strike>strike tag</strike>.</p>
+
+<p>You can also use <del> (<del>del</del>) and <s> (<s>s</s>).</p>
+----
+
+[[html_style_attribute]]
+=== HTML Style Attribute
+
+.Style Attribute Examples
+[source,html,linenums]
+----
+<h1 style="color:blue; text-align:center;">A heading</h1>
+
+<h2 style="font-family:verdana; color:red">A heading</h2>
+
+<p style="font-family:courier; color:green; font-size:300%;">A paragraph.</p>
+----
+
+[[html_style_tag]]
+=== Embedded Styling
+It is possible to render the entire HTML page with embedded styling.
+
+.Style Tag Example
+[source,html,linenums]
+----
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+<hr/>
+<p>&copy; 2004 Foo Corporation</p>
+----
+
+Note that you can use HTML entities like `\&copy;` for copyright.

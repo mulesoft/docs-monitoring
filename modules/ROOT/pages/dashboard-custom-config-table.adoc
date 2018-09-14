@@ -1,0 +1,156 @@
+= Configuring Tables in a Custom Dashboard
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+In Anypoint Monitoring, you can configure tables for custom dashboard. In addition to configuring properties that are common to other charts, such advanced or basic metric queries and time ranges, you can also:
+
+* Lay out for time-series data in a tabular format and display aggregated data.
+* Add color-coded thresholds to indicate whether a value is above, below, or within an given range.
+* Provide links from values in a column to a specified web page.
+* Set pagination properties.
+
+//GENERAL SETTINGS shared by singlestat, graph, table
+//== General
+include::{partialsdir}/include-general-config.adoc[]
+
+// TIME RANGE SETTINGS shared by singlestat and table
+//==Time Range
+include::{partialsdir}/include-time-range-config.adoc[]
+
+== Options (Data and Pagination Settings)
+
+In the Options configuration tab, you can set layout, column, and pagination options for tables in a custom dashboard.
+
+=== Data Settings (Options tab)
+
+[%header,cols="1,4"]
+|===
+2+| Value Settings
+| Time Series to Rows a|
+
+Creates a table with values for a given metric at a given time period. Like Time Series to Columns, the first column, Time, is for timestamps (such as `2018-04-25 06:37:40`). However, subsequent columns are Metric (for listing specific metrics, such as `worker-0`) and Value for listing the values of the metric at that time period. Example:
+
+image::table-series-to-rows.png[Time Series to Columns]
+| Time Series to Columns a|
+
+Creates a table that shows values for a given metric at a given time period. Like Time Series to Rows, the first column, Time, is for timestamps. However, there is a column for each metric, such as `worker-0`, which lists the values of that metric at a given time period. Example:
+
+image::table-series-to-columns.png[Time Series to Columns]
+
+
+| Time Series to Aggregations a|
+
+Transforms time series into a table that calculates totals, averages, and so on for a given metric. The first column, Metric, is for metrics such as `worker-0`, and subsequent columns are for any combination of these values: Avg, Min, Max, Total, Current, or Count for a given metric. Example:
+
+image::table-aggregations.png[Time Series to Aggregations]
+
+Note that this example uses color-coded <<thresholds, thresholds>> (see the cell coloring in the Avg and Max cells and value coloring for the Min value).
+|===
+
+////
+TODO _REMOVED FOR CONNECT, TO RETURN LATER
+| Annotations | Displays annotations in a table if annotations are enabled for the dashboard. In this mode, queries you have in the metrics tab will be ignored. *TODO, VERIFY and how do you enable annotations?*
+| Table | *TODO, what does this do* Columns and their order are determined by the data query.
+| JSON Data | Mode to use for Elasticsearch or Elasticsearch Raw Document queries without a date histogram. *TODO: VERIFY mention Elasticsearch?*
+////
+
+If you select Time Series to Aggregations, you can add pre-defined columns to the table.
+
+[%header,cols="1,4"]
+|===
+2+| Columns for Aggregations
+| Auto | Columns and their order are determined by the data query. Only available setting when Time Series to Rows, Time Series to Columns, Annotations, or Table is selected.
+| Avg | Averages the recorded data for a given metric.
+| Min | Provides the lowest recorded value for a given metric.
+| Max | Provides the highest recorded valued for a given metric.
+| Total | Provides the sum of all values recorded in the table.
+| Current | Shows the current value for a given metric.
+| Count | Provides the total number of data points collected on the metric.
+|===
+
+////
+TODO _REMOVED FOR CONNECT. MIGHT COME BACK LATER.
+| A blank text box | Appears when JSON Data is selected. *TODO: need JSON example?*
+////
+
+=== Paging (Options tab)
+
+In the Options configuration tab, you can set pagination properties for tables so that they do not become to long and are more manageable.
+
+[%header,cols="1,4"]
+|===
+2+| Paging Properties
+| Rows per Page | Number of table rows allowed per page.
+| Scroll | Checkbox for making the table scrollable.
+| Font Size | Percentage of the default font size from 80% to 250%.
+|===
+
+After you complete your configuration, you can open another configuration tab or click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
+
+== Column Styles (Options, Data Types, Thresholds. Links)
+
+In the Column Styles configuration tab, you can create (+Add) and apply one or more rules for table columns. The rules are listed on the left side of the Column Styles pane.
+
+To remove a rule, you need to click it, then find and click the Remove Rule button near the bottom left of the screen.
+
+=== Options (Column Styles tab)
+
+[%header, cols="1,4"]
+|===
+2+| Options
+| Apply To Columns Named  | Identifies the column or columns to which the rule applies. You need to provides the name or a regular expression (regex) that matches the name of one or more columns in the table. For a regex, you  the following syntax: `/my.*regex/`
+| Column Header | Provides a title for the column. For example, if you add the `Avg` column to a table that aggregates data, you might change the column name to `Average`. You can use strings such as `$1` for a regular expression.
+| Render Value As Link | Treats values in the column as a link that you can configure through the <<settings_link, Link>> settings.
+|===
+
+[[settings_link]]
+=== Link  (Column Styles tab)
+
+In the Column Styles configuration tab, you can use configure a link from a value to a specified web page.
+
+Note that Link settings are only available when _Render Value As Link_ is checked.
+
+[%header, cols="1,4"]
+|===
+2+| Link
+| URL a|
+Specifies a URL that you can open when you click a value in the column.
+| Tooltip a|
+
+For providing a description of the link. This text appears when the end user hovers over the cell with the link. Use the same variables as for URL.
+| Open In New Tab | Displays the web content in a new browser tab when you click on the value.
+|===
+
+[%header, cols="1,4"]
+|===
+2+| Type
+| Type | Data type for values in the column. Valid values are Number, String, Date, and Hidden.
+| Unit | Label for the unit of measure to use for the value, such as `bytes` and `megabytes/second`. It is important to know the data type for your value before adding this label to the value. A wide variety of units are available.
+| Decimals | The level of precision allowed for a decimal value, for example, `2` to limit a value of `10.12345` to `10.12`.
+|===
+
+////
+DOES NOT SEEM TO BE TRUE FOR TABLE LINKS:
+(relative or absolute). You can use special variables to specify cell values:
+
+Valid values:
+
+* `$__cell` refers to current cell value.
+* `$__cell_n` refers to Nth column value in current row. Column indexes are started from `0`. For instance, ``$__cell_1` refers to second column's value.
+////
+
+[[thresholds]]
+=== Thresholds (Column Styles tab)
+
+In the Column Styles configuration tab, you can set thresholds your data when when Type is set to Number.
+
+[%header, cols="1,4"]
+|===
+2+| Thresholds
+| Thresholds | Comma-separated values, for example, `50000000,100000000`. Values between the two values might be treated as warning values. Values below the first value might be treated as acceptable, while values above the second value might be treated as errors. Note that your threshold values must match the unit of measure used for your data (for example, `byte`) _even if the specified Unit is converted to MB or GB in the table_.
+| Color Mode | Indicates whether to apply the color code to the Value in a cell, to the Cell, to the entire Row, or whether color coding is Disabled.
+| Color | Color used to code values below (left-most color box), between (middle color box), and above (right-most color box) the specified threshold settings. For example, green values might represent OK, yellow a warning, and red an error. You can also invert the color coding.
+|===
+
+After you complete your configuration, you can open another configuration tab or click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.

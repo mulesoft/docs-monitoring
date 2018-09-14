@@ -1,0 +1,114 @@
+= Getting Started
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Anypoint Monitoring is part of the Management Center in Anypoint Platform. It provides data on Mule apps that are running on <<runtime_versions>>, and you need to have the <<required_permission>> to use it.
+
+Note that Functional Monitoring is covered in xref:api-functional-monitoring::index.adoc[API Functional Monitoring].
+
+[[using_monitoring]]
+== Using Anypoint Monitoring
+
+. Log into Anypoint Platform at https://anypoint.mulesoft.com[https://anypoint.mulesoft.com].
++
+. Find Anypoint Monitoring within the Management Center.
++
+|===
+a| Under Management Center in the left-side navigation menu, select Anypoint
+Monitoring:
+
+image::management-center-menu.png[Management Center Menu]
+|===
++
+If you do not see Anypoint Monitoring or are unable to use it, it might be a permissions issue. See <<required_permission>>.
++
+. From Anypoint Monitoring, you can find and use the monitoring tools:
++
+* xref:dashboards-using.adoc[Using Dashboards]
+* xref:logs-using.adoc[Using Logs]
+//TODO_HIGH: HOW TO USE ALERTS? * xref:alerts.adoc[Alerts]
+
+== Configurations
+
+Custom dashboards and alerts require configuration before you can use them. For guidance, see:
+
+* xref:dashboard-custom-config.adoc[Configuring Custom Dashboards]
+* xref:alerts-config.adoc[Configuring Alerts]
+
+[[required_permission]]
+== Required Permission
+
+To use Anypoint Monitoring, you need this permission:
+
+* Anypoint Monitoring User
+
+Typically, administrators set permissions through Access Management. See xref:access-management::users.adoc#granting-permissions-and-roles-to-users[Granting Permissions and Roles to Users].
+
+[[runtime_versions]]
+== Supported Platform and Mule Versions
+
+For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them to the appropriate version of Mule runtime.
+
+|===
+| Platform | Mule Version | Features
+
+| Anypoint Platform (CloudHub)
+| 3.8.7-AM
+| Logs only
+
+| Anypoint Platform (CloudHub)
+| 3.9.0-AM
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 3.9.1-AM
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 4.1.1-AM
+| Basic metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 4.1.2-AM
+| Basic metrics and logs
+|===
+
+Note that metrics are used by graphs and other charts within xref:dashboards.adoc[Dashboards].
+
+See <<update_app>>.
+
+[[update_app]]
+== Setting the Runtime Version
+
+To set or change runtime version for your Mule app:
+
+* For new and existing Mule apps:
++
+. Go to Settings in Runtime Manager for that app.
+. Choose the new runtime from the Runtime Version selector.
++
+If you do not see a supported runtime version in the drop-down menu, scroll down
+to Show Old Patch Releases, click, and select a runtime for your app.
++
+* For Anypoint CLI deployments:
++
+If you are using the Anypoint CLI to deploy your Mule app (for example,
+through a build pipeline), you need to include the `--runtime` parameter with
+an appropriate value, for example:
++
+[src,command,linenums]
+----
+anypoint-cli --username="..." --password="..."
+ --organization="Mythical, Inc"
+ --environment="Production" runtime-mgr cloudhub-application deploy
+ --runtime="3.9.0-AM" helloworld ~/demoproj2.zip
+----
++
+* For Maven deployments:
++
+If you are using Maven for deployment, you need to modify the `<muleVersion>`
+tag in the `pom.xml` file to append the `-AM`, for example, changing `<muleVersion>3.9.0</muleVersion>` to `<muleVersion>3.9.0-AM</muleVersion>`).
+
+//REMOVED PER PABLO GALIANO & SEBASTIAN:
+//For Mule apps running on older versions of the runtime, Anypoint Monitoring will provide information from Runtime Manager, API Manager, and API Analytics.

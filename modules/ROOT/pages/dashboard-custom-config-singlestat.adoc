@@ -1,0 +1,108 @@
+= Configuring Singlestats in a Custom Dashboard
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Custom dashboards in Anypoint Monitoring provide a way for you to configure singlestat charts for a single measure, such as a response time or heap usage, of your Mule app environment over a given time range.
+
+//GENERAL SETTINGS shared by singlestat and graph
+//== General
+include::{partialsdir}/include-general-config.adoc[]
+
+// TIME RANGE SETTINGS shared by singlestat and table
+//==Time Range
+include::{partialsdir}/include-time-range-config.adoc[]
+
+== Options (Value, Font, Color, Spark Line, Gauge Settings)
+
+The Options tab includes settings for singlestat <<value_singlestat, values>>, <<font_singlestat, fonts>>, <<color_singlestat, coloring>>, <<spark_singlestat, spark lines>>, and <<gauge_singlestat, gauge icon>> settings.
+
+[[value_singlestat]]
+=== Value Settings for Singlestats
+
+In the Options configuration tab, you can configure values for your singlestat. Settings include the type of value you want (such as an average), the unit of measure, and others.
+
+image::singlestat-config-options.png[Example: Singlestat Options]
+
+[%header,cols="1,4"]
+|===
+2+| Values
+| Stat a|
+
+The value displayed by the singlestat. Available Settings:
+
+* Min: Minimum of recorded values for the specified metric.
+* Max: Maximum of recorded values for the specified metric.
+* Average: Average of the recorded values for the specified metric.
+* Current: The current value for the specified metric.
+* Total: Sum of recorded values for the specified metric.
+* Name: Name of the metric (for example, `worker-0`).
+* First: The first recorded value for the specified metric.
+* Delta: The total incremental increase in the series.
+* Difference: The difference between the Current value (last value) and the First value.
+* Range: The difference between Min and Max.
+* Time of Last Point: Timestamp of the last reading.
+| Prefix | Prepends text to the singlestat value.
+| Postfix | Appends text to the singlestat value.
+| Unit | Unit of measurement to display with the singlestat value (for example, `percent (0-100)`).
+| Decimals | Overrides the automatic decimal precision for the legend and tooltips.
+|===
+
+[[color_singlestat]]
+=== Coloring and Thresholds (Options Setting)
+
+In the Options configuration tab, you can add color-coded thresholds to a singlestat so that you can see whether it exceeds or falls within expected limits.
+
+[%header,cols="1,4"]
+|===
+2+| Coloring
+| Background | Adds a background color that matches the color  determined by the Thresholds setting.
+| Value | For applying a color for the current singlestat value that matches the color determined by the Thresholds setting.
+| Thresholds | For setting a threshold using a numeric range such as `10,20` to distinguish values between the two numbers, below left-most number, and above the right-most number.
+| Colors | For setting the colors for the values that are below, within, or above the Thresholds settings. You can invert the colors, as needed.
+|===
+
+[[spark_singlestat]]
+=== Spark Lines (Options Setting)
+
+In the Options configuration tab, you can provide spark line settings for a singlestat.
+
+[%header,cols="1,4"]
+|===
+2+| Spark Lines
+| Show | Checkbox to show or hide the spark line.
+| Full Height | For covering the full height of the singlestat.
+| Line Color | For selecting the color of the spark line.
+| Fill Color | For selecting the color of the area below the spark line.
+|===
+
+[[gauge_singlestat]]
+=== Gauge (Options Setting)
+
+In the Options configuration tab, you can display an arc-like gauge that represents the value of the singlestat.
+
+[%header,cols="1,4"]
+|===
+2+| Gauge
+| Show | Checkbox for showing or hiding the gauge.
+| Min | Sets a minimum value (such as `0` for a gauge that shows a percentage).
+| Max | Sets a maximum value (such as `100` for a gauge that shows a percentage).
+| Threshold Labels | Checkbox for showing or hiding your Threshold settings.
+|===
+
+After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
+
+== Value Mappings (Labels for Values)
+
+From the Value Mappings configuration tab, you can provide a human-readable label for a summary statistic.
+
+image::singlestat-config-value-mapping.png[Example: Value Mapping]
+
+[%header,cols="1,4"]
+|===
+2+| Range to Text Settings
+| Value to Text | Maps a number to a textual description, for example: `0` -> `Error`, `1` -> `Success`
+| Range to Text | Maps a numeric range to a textual description, for example: From `5` To `10` Text `Warning`
+|===
+
+After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.

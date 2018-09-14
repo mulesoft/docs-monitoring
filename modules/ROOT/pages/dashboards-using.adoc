@@ -1,0 +1,111 @@
+= Using Dashboards
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Built-in dashboards contain a standard set of graphs, while custom dashboards can display additional data that is important to your organization.
+
+Both dashboards provide many of the same display options.
+
+[[dashboard_viewing]]
+== Viewing a Dashboard
+
+Built-in and Custom dashboards are available from Anypoint Monitoring.
+
+* For built-in dashboards, you need to select an environment and Mule app.
++
+.Built-in Dashboard Selection
+image::dashboard-select.png[Select a Dashboard]
++
+* For custom dashboards, you can select from a list of available dashboards. You can also search for it by name.
++
+.Custom Dashboard List
+image::dashboard-select-custom.png[Select a Dashboard]
+
+Your data is pre-populated to the built-in dashboards and logs, so no configuration is needed.
+
+== Setting Data Display Options in a Dashboard
+
+//TODO_HIGH LICENSING MIGHT AFFECT OPTIONS AVAILABLE TO CUSTOMERS. NEED TO CHECK.
+You can display the data points collected for the last given period of time (such as the last 5 or 30 minutes) or over a given date and time range. Depending on your subscription, you might also be able to auto-refresh the displayed data.
+
+image::dashboard-time-period-refresh.png[Configure Display]
+
+== Setting the Time Period to Display
+
+You can use the drop-down in the calendar icon shown above to select the time period to display in a graph.
+
+This configuration is for displaying data from the last given period of time in a graph:
+
+image::dashboard-data-intervals.png[Data Point Display at Intervals]
+
+Your setting applies across all graphs in the dashboard. A graph in the dashboard might look something like this:
+
+.Example: Data from the Last 30 Minutes
+image::dashboard-response-time-outbound.png[Example: Data from the Last 30 Minutes]
+
+Custom settings are useful for isolating data over a given date and time range:
+
+image::dashboard-data-range.png[Data Point Display over Date and Time range]
+
+== Changing the Time Period to Display
+
+You can display an earlier or later time period in your chart, and you can zoom in or out to cover a shorter or longer period of time.
+
+[cols="1,4"]
+|===
+| image:zoom-earlier-later.png[Zoom Out,Show Earlier and Later] a|
+To display earlier or later data, you can use the less-than (&lt;) and greater-than (&gt;) icons.
+
+To zoom out and display data over a longer time period, you use the magnifying glass icon located between the less-than and greater-than icons
+|===
+
+When you need to zoom in on activity that takes place at a specific time period, you use your mouse to narrow the time periods.
+
+.Mousing Over a Period of Interest
+image::dashboard-mouseover.png[Graph: Select Time Period]
+
+For example, if you are currently looking at a graph that shows data for the last 30 minutes, you can narrow the range to expose more detailed data points for the time period that concerns you.
+
+.Resulting Graph
+image::dashboard-mouseover-result.png[Graph: Results of Time Period Selection]
+
+== Refreshing Data
+
+If your subscription permits, you can refresh data automatically.
+
+.Auto-Refresh Settings
+image::dashboard-auto-refresh.png[Data Refresh Options]
+
+* Base subscription: The option for Auto Refresh is disabled for this subscription. You can manually refresh data in the graph by clicking the circular (cycle) icon to the right.
+* Titanium (premium) subscription: You can turn on Auto Refresh, then set an interval at which to refresh data in the graphs (such as 1m, 5m, 15m, and so on). The refresh setting applies to all graphs in the dashboard.
+
+== Viewing Selected Series Data in a Graph
+
+You can click aliases for data (such as `Used:worker-0`, `Total:worker-0`,`Average:worker-0`) in your graphs display or hide it. For an example of an alias, see the <<color_picker, worker-0 alias>> above the color picker example.
+
+To select or deselect two or more alias, you can use `Command+Click`.
+
+== Picking a New Color for Data Displays
+
+You can click the color bar in a legend (for example, the yellow bar by `Total worker-0` in image below) to open a color picker for selecting a different color for the lines that connect your data points.
+
+[[color_picker]]
+image::graph-legend-colors.png[Color Picker]
+
+// Right Axis REMOVED in MONITORING-686: You can also move the legend below the right or left y-axis, depending on which side makes sense for your graph.
+
+[[favorite_dashboard]]
+== Setting Favorite Custom Dashboards
+
+You can mark a custom dashboard as a favorite by highlighting the star at the top of the dashboard.
+
+[[favorite_star]]
+image::dashboard-custom-favorite.png[Star Favorite]
+
+You will then see the star in the custom dashboard list, for example:
+
+[[dashboard_starred]]
+image::dashboard-custom-list.png[Favorite Custom Dashboard]
+
+Note that it is also possible to configure tags for custom dashboards. See xref:dashboard-custom-config.adoc[Configuring Custom Dashboards].

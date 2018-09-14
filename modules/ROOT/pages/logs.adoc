@@ -1,0 +1,44 @@
+= Logs in Anypoint Monitoring
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+*https://www.mulesoft.com/anypoint-pricing[Titanium Subscription Required]*
+
+In addition to logging through xref:runtime-manager::logs.adoc[Runtime Manager], you can use Anypoint Monitoring to aggregate your log files so that you can manage, search for, filter, and analyze your logs. These features support:
+
+* Comparative analysis and identification of event and information patterns based on searches across selected Mule apps and environments.
+* Searches within the logs of a specific worker (or set of workers) for a Mule app so that you can narrow scope of issues to check.
+* Sharing a snapshot of important logs with developers who can work on the source of the issue.
+
+See xref:logs-using.adoc[Using Logs]
+
+////
+TODO _FUTURE?
+WHAT ABOUT APIS?
+////
+
+//*TODO _FUTURE? |NEED STEPS & INFO ON APP NETWORK DIAGNOSTIC LOG SEARCH, BEHAVIOR WITH INSIGHTS?*
+////
+App network diagnostic log search |Limited, Singe App (base subscription) vs. Included for Premium Add on
+
+Can we action on an alert from the portal, say retry or skip thetransaction which generated the alert?Yes, transactions can be retried and skipped when Insights is turned on.
+////
+
+////
+TODO _FUTURE? |NEED DESCRIPTIONS
+* Log-based profiler?
+* Thread and heap dump
+////
+
+////
+TODO _FUTURE?
+Log Designs
+Logs supported actions
+Logs filtering and facets
+Logs filtering through content (interactive with hotspots)
+Navigating within selected logs
+
+Explorations
+Logs filtering and facets explorations
+////

@@ -1,0 +1,118 @@
+= General Settings for Basic and Advanced Data Queries
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+[[general_settings]]
+
+General settings include <<mode_basic, basic>> and <<mode_advanced, advanced>> queries (or modes) for configuring time-series data. Both configurations share fields for the title and a short description.
+
+image::config-general-common.png[Example: Basic Configuration]
+
+[%header,cols="1,4"]
+|===
+2+| Basic and Advanced Mode Settings
+| Title | Title to display in the UI. Defaults to Panel Title.
+| Description | Short description to display in the UI when users hover over the information (`i`) icon.
+|===
+
+////
+*TODO: VERIFY:* It can contain Markdown and links. If true, SHOW EXs WITH MARKDOWN AND LINKS
+////
+
+Other settings are specific to the setting mode (basic or advanced).
+
+[[mode_basic]]
+== Basic Mode
+
+In the General configuration tab, a Basic query selects a single metric for a resource (a Mule app) in a given environment.
+
+image::config-general.png[Example: Basic Configuration]
+
+[%header,cols="1,4"]
+|===
+2+| Basic Mode Settings
+| Metric a|
+
+The dropdown menu includes these types of metrics:
+
+* Inbound response metrics and averages
+* JVM metrics
+* Outbound response metrics and averages
+
+For a list of basic metrics, see xref:dashboard-config-ref.adoc#metrics[Basic Mode Metrics]
+
+| Environment | Your Mule app environments.
+| Resource | A Mule app that is deployed in CloudHub (sometimes called a CloudHub app in the UI).
+|===
+
+////
+*TODO: NEED DESCRIPTIONS OF SOME OF THE ABOVE SETTINGS*
+////
+
+After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
+
+[[mode_advanced]]
+== Advanced Mode
+
+In the General configuration tab, Advanced settings support one or more fine-tuned queries for your chart.
+
+It is important to note that an advanced configuration will be partially removed if you switch back to the basic configuration area.
+
+image::config-general-advanced.png[Example: Advanced  Configuration]
+
+[%header,cols="1,4"]
+|===
+2+| Advanced Mode Settings
+| From a|
+
+Lists JVM and Mule app properties (such as `jvm.memory` and `app_inbound_metric`) that you can add to your chart.
+
+Note that the field provides matching suggestions when you type in a character. For example, `jvm.c` will produce a list of all values that contain those characters (such as `jvm.classloading` and `jvm.cpu.operatingsystem`).
+
+For a list of advanced metrics, see xref:dashboard-config-ref.adoc#metrics_advanced[Advanced Mode Metrics]
+| Where a|
+Supports conditional logic for filtering the From data source you selected.
+
+* You can select one or more filters tags (such as `app_id`, `env_id`, `org_id`, `worker_id`). Example: `Where env_id = Sandbox`.
+* Available operators include `=`, `!=`, `<>`, `<`, and `>`.
+* You can also construct a query that contains multiple filtering expressions by using logical `AND` or `OR` operators between the expressions.
+| Select a|
+For creating a function that selects a field (such as  `heap_committed`,`heap_total`, or `heap_used`) from the From data (such as `jvm.memory`) and applies an operation to it (such as the `mean` of the `heap_total`). You can add one or more `field` settings.
+
+image::config-general-advanced-select.png[Select Options]
+
+//*TODO_VERIFY* Note that when you group by time, you need to use an aggregation function. In addition, some functions like derivatives also require an aggregation function.
+
+| Group By a|
+
+//*TODO_VERIFY*
+For grouping the data by a selected time interval (such as `$__interval`, `1s`, `10m`, `1h`), filter tag (such as `tag(env_id)`), and fill options (such as `none`, `null`, `0`, `previous`, `linear`).
+
+Valid values and arguments:
+
+* `time($__interval)` for the automated time interval setting, or you can  specify time intervals of `1s`, `10s`, `1m`, `5m`, `10m`, `15m`, or `1h`.
+* `fill()` where valid values are `none`, `null`, `0`, `previous`, `linear`.
+* `LIMIT`: Numeric value (N) used to limit the result to the first N data  points (combined series and timestamp values) returned by a query.
+* `SLIMIT`: Numeric value (N) used to return the all data points (combined series and timestamp values) from the first N series returned by the query.
+* `ORDER BY time DESC`: Returns results in descending time order.
+| Alias By | You can create a label for your metric using a literal string (such as `my string`) or supported variables (for example, `$tag_worker_id` or `$tag_env_id`).
+|===
+
+After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
+
+////
+TODO /QUESTION: CAN YOU DO Regex matching ON WHERE?
+TODO / SELECT:  row you can specify what fields and functions you want to use. If you have a group by time you need an aggregation function. Some functions like derivative require an aggregation function. The editor tries simplify and unify this part of the query. For example:
+*TODO: DESCRIPTIONS NEEDED*: Group By.
+*TODO: VALID VALUES NEEDED, explain supported variables, too. MK's notes say "Series Name"*
+*TODO: NEED DESCRIPTIONS OF MANY OF THESE SETTINGS*
+
+TODO: SEE IF ANY OF THIS COULD GO ABOVE:
+.Advanced Query Options
+|===
+| From | Identifies the source of the data to measure in your graph. For example, you might select Mule app (`app`) or Java virtual machine (`jvm`) data, such as `app_inbound_metric`, `app_outbound_metric`, `jvm.classloading`, `jvm.cpu.operatingsystem`, `jvm.garbagecollector.parnew`, `jvm.memory`, `jvm.runtime`, `jvm.threading`, or one of the many other sources.
+| Where | For filtering the source based on a given property (such as the organization ID (`org_id`) or environment ID (`env_id`), or both) to which the metric applies. Operators for the properties are `=`, `!=`, `<>` (less than or greater than, but not equal to), `<`, `>` (for example, `env_id = Sandbox`). Available properties also include `app_id`, `endpoint`, `endpoint_type`, `flow_id`, `org_id`, `response_type`, and `worker_id`.
+| Select | For manipulating data in one or more fields, such as `avg_request_count` , `avg_response_time`.
+|===
+////

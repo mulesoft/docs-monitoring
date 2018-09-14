@@ -1,0 +1,35 @@
+= Alerts
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Alerts indicate whether a resource (such as a Mule app) is behaving as expected or exceeding a defined threshold.
+
+There are several types of alerts. From the Alerts page in Anypoint Monitoring, you can link out to alerts for API and Runtime alerts. If your subscription permits, you can also view, enable, and disable alerts that are configured for graphs in custom dashboards.
+
+Once you configure an alert for a graph, an alert status icon will appear at the
+top-left corner of the graph. For example, the green dot in the bell indicates
+that the status is OK:
+
+image::alert-in-graph.png[alt]
+
+Note that if you scroll over the bell icon, you can get a description, in this
+case, *Status OK*. See
+xref:alerts-using.adoc#alert_status[Filtering Alerts by Alert Status] to understand
+each alert status.
+
+//When the data exceed a configured threshold on your resources over a period of time, you can also receive notification to take action.
+
+
+//TODO: VERIFY THAT ALL THESE FEATURES ARE ACTUALLY IMPLEMENTED
+////
+Alerting features in Anypoint Monitoring include:
+
+* Threshold-based alerting: Notification when a specific metric that is related to a resource goes beyond the acceptable threshold for the period of time that you define.
+* Batch Alert Assignments: Assignment of your alert definitions to multiple resources of the same type at once to help you save time of setting up each individually.
+* Channel Integrations: Ability to specify a channel (such as PagerDuty, SMS, or Slack) to which notifications are sent.
+* Alert Rollup: Ability to received a limited number of notifications on the same issue so that crucial notifications do not get overlooked because they are buried within a lot of redundant notifications.
+* Alert History: An Alert History page shows status changes of a single alert. When you are troubleshooting an issue, you can have a view of istoric data and see if the current issue has any  precedent.
+////
+
+See xref:alerts-config.adoc[Configuring Alerts]

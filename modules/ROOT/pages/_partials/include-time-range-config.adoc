@@ -1,0 +1,16 @@
+== Time Range (Overrides, Time Shifts, Info Display)
+//INCLUDED IN SINGLESTAT AND TABLE CONFIG FILES
+
+Time range configurations provide a way to override _relative_ time ranges (such as the last 30 minutes) selected from the dashboard UI by end users.
+
+image::config-time-range.png[Time Range]
+
+[%header,cols="1,4"]
+|===
+2+| Time Range Settings
+|Override Relative Time | The amount of time covered by the statistic, for example, the last hour (`1h`) or last thirty minutes (`30m`). Note that this setting only overrides _relative_ time ranges selected by end users from the dashboard UI. When these users select an _absolute time and date range_ for the dashboard, the configuration for the time range override will be disabled.
+| Add Time Shift | How long ago the covered time period ended, for example, `1s` for one second ago.
+| Hide Time Override Info | Indicates whether the singlestat or table will display information about its settings, such as `30 minutes, ending 1 second ago`.
+|===
+
+After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.

@@ -1,0 +1,112 @@
+= Anypoint Monitoring
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Understanding the state of your infrastructure and systems is important for ensuring the reliability and stability of your services. As part of Anypoint Platform, Anypoint Monitoring provides visibility into integrations across your app network. The monitoring tools provide feedback from Mule flows and components in your app network.
+
+// TODO: REMOVED ALL REFS TO APIS
+//It uses data access capabilities, context, and data in the APIs and Integrations platform to provide best-in-the-industry Monitoring and Diagnostics.
+
+Operations and development teams use the monitoring tools to diagnose issues and prescribe solutions to behavior that negatively impacts digital performance. The monitoring tools are designed to reduce the time to identify and resolve these issues through aggregated metrics, data visualization tools, alerts for issues, and a log aggregation system. Specifically, Anypoint Monitoring provides ways to:
+
+* Aggregate and map metrics across dependent systems in real-time.
+* Configure dashboards and alerts to reduce the mean time to identification
+of issues (MTTI).
+* Store and search log data at scale.
+
+//TODO: PERFORMANCE?
+//What is the performance overhead?3-5% maximum CPU utilization impact.  1% in current testing (internal onlyfor this number).
+
+// TODO: Free and Premium features
+// Integrations with Splunk/ELK and monitoring tools such as Nagio, and MS Ops
+
+== Dashboards
+
+Use built-in dashboards or customize your own to provide instant visibility into your applications' performance and detailed analysis of your network.
+
+image::intro-dashboard-built-in.png[Built-in Dashboard Example]
+
+//image::metrics-infographic.png[Dashboards]
+
+Built-in and custom dashboards expose the metrics on your app network. They provide visual representations of your resources so you can detect anomalies, troubleshoot issues, and see trends that are not obvious in raw form.
+
+//the different topologies of your systems.
+
+A custom dashboard provides a single screen that can bring together specific metrics and data points that are important to your organization. Custom dashboards can display graphs and other charts, such as single statistics.
+
+//The example includes system data separated by failed and successful requests. You can build unified dashboards across ajjjjn unlimited number of components, fully customizing charts and graphs, exporting data into a selected format and tools.
+
+You can track numerous data points/metrics from a custom dashboard that looks across multiple services in the app and in your dashboards across all systems.
+
+See xref:dashboards-using.adoc[Dashboards].
+
+== Event-Driven Alerts
+
+Track trends and add your own alerts to identify abnormal behavior and problems in your application network.
+
+image::intro-alerts.png[Alerts]
+//image::alert-infographic.png[Alerts]
+
+You can trigger alerts based on rules (or thresholds) and policies for your resources. When these thresholds are crossed for a certain period of time, you can receive notification to take action. The method of notification depends on the severity of the alert that you define.
+
+See xref:alerts.adoc[Alerts].
+
+== Logging System
+
+Search across log files, including archived logs to find information and events based on a specific query.
+
+image::intro-logs.png[Logs]
+
+Anypoint Monitoring facilitates distributed log searches of raw log and event data from across the app network so that you can pinpoint the root cause of a problem.
+
+The log aggregator system holds raw operational data and records events that occur in the operating system or Mule app. Log aggregation compiles, organizes, and indexes log files to facilitate management, searching, and analysis. Aggregated logs compliment the monitoring system by helping you identify causes of operational issues and investigate failures.
+
+See xref:logs.adoc[Logs].
+
+[data_storage_retention]
+== Data Storage and Retention
+
+Limits on data storage and retention are determined by your subscription level (Base or Titanium). All customers receive Anypoint Monitoring at the Base subscription level.
+
+The Titanium subscription:
+
+* Significantly increases the storage per vCore over the Base subscription.
+* Provides a way for you to specify your data retention policy.
+* Lets you store log and metric data in a selected geographic region, which can help you to meet data security and compliance requirements, run queries over geo-distributed runtimes without consequence, and limit the distance that your data travels when you run queries. These regions are available:
+** US East (Ohio)
+** US East (N. Virginia)
+** US West (N. California)
+** US West (Oregon)
+** Asia Pacific (Seoul)
+** Asia Pacific (Osaka-Local)
+** Asia Pacific (Mumbai)
+** Asia Pacific (Singapore)
+** Asia Pacific (Sydney)
+** Canada (Central)
+** EU (Frankfurt)
+** EU (Ireland)
+** EU (London)
+** EU (Paris)
+
+For complete details about subscriptions, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
+
+// TODO: GovCloud support is coming as part of FedRAMP in 2019
+
+== Raw Data Downloads
+
+You can download warehoused log data on a Mule app, for example, to help investigate  security, compliance, or other issues that logs can reveal.
+
+See xref:raw-data.adoc[Raw Data].
+
+== Tools for Monitoring Integrations
+
+You can link to connectors that help deliver Anypoint Monitoring notifications to external systems.
+
+See xref:tools.adoc[Tools].
+
+== API Functional Monitoring
+
+Monitor APIs and endpoints at scheduled intervals. Receive reports about whether tests pass or fail, and view statistics about API and endpoint performance.
+
+See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring in Anypoint Monitoring].

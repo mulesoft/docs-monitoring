@@ -1,0 +1,26 @@
+= Raw Data in Anypoint Monitoring
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+*https://www.mulesoft.com/anypoint-pricing[Titanium Subscription Required]*
+
+You can use Anypoint Monitoring to download archived log data (raw data) collected on Mule apps that are running in CloudHub. Having access to this data can be helpful for security, compliance, or other purposes where you need to examine or collect your warehoused data. Note that log data is archived regularly, as shown in the example.
+
+.Raw Log Data in Anypoint Monitoring
+image::raw-data-download.png[Raw Data]
+
+To download raw data:
+
+. Select the *Environment* and *Resource*.
++
+The resource is a Mule app that runs in CloudHub.
++
+. Provide the date for the data you want to download, for example: `08/31/2018`.
+. Locate and download log data that you want to examine.
+
+Note that if data is not available for a particular date, it might be that the app was not running that day, your company did not have a subscription to the logging or archiving service, or the app did not exist at that time.
+
+== See Also
+
+xref:logs.adoc[Logs in Anypoint Monitoring]
