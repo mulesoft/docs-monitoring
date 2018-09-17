@@ -1,5 +1,5 @@
 name: anypoint-monitoring
 title: Anypoint Monitoring
-version: master
+version: 'latest'
 nav:
 - modules/ROOT/nav.adoc
