@@ -1,4 +1,5 @@
 .xref:index.adoc[Anypoint Monitoring]
+* xref:index.adoc[Overview]
 * xref:quick-start.adoc[Getting Started]
 * xref:dashboards.adoc[Dashboards]
  ** xref:dashboards-using.adoc[Using Dashboards]
