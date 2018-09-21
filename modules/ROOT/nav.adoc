@@ -15,3 +15,4 @@
  ** xref:logs-using.adoc[Using Logs]
 * xref:raw-data.adoc[Raw Data]
 * xref:tools.adoc[Tools]
+* xref:am-installing.adoc[Install Anypoint Monitoring On-Premise]
