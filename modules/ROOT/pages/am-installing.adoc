@@ -1,0 +1,39 @@
+= Install Anypoint Monitoring On-Premise
+
+== Before you begin
+
+Open port 443 in your outbound firewall, if you have one. The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using the Lumberjack protocol, an open source protocol for transferring log data over a highly-efficient bidirectional binary channel.
+
+== Supported operating systems
+
+* CentOS 7
+* RedHat Enterprise Linux 7.0
+* Ubuntu 14.04 and 15.04
+
+== Supported versions of Mule Runtime
+
+* 4.1.2
+* 4.1.1
+* 3.9.1
+* 3.9.0
+* 3.8.7
+
+== Hardware prerequisites
+
+* 2GHz CPU or 1 virtual CPU
+* 1GB RAM
+* 4GB disk space
+
+== Installing Anypoint Monitoring
+
+Instructions for downloading and installing Anypoint Monitoring for an on-premises installation are located in the *Settings* section of the Anypoint Monitoring user interface.
+
+== Confirming that Anypoint Monitoring is running
+
+1. Wait 10 minutes for configuration to propagate
+1. Go to anypoint.mulesoft.com <http://anypoint.mulesoft.com> and log in.
+1. Navigate to Anypoint Monitoring.
+1. Navigate to an application in the application picker that is deployed onto the server in question
+1. Check whether the CPU Utilization and Memory Utilization charts are displaying data. If they are, Anypoint Monitoring is installed and running.
+1. If they are not, the reason could be that Anypoint Monitoring is unable to connect to the endpoint. To check whether this is the reason, log into the server on which Anypoint Monitoring is running and open the log file for the data-transfer agent. The log file is in this path: /var/log/filebeat
+	- Look for entries that mention connection failure and connection retries. If you find such entries, ensure that port 5044 in your outbound firewall is open.
