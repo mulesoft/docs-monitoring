@@ -26,6 +26,8 @@ Ensure that one of the versions of Mule Runtime that is listed below is running 
 
 == Hardware prerequisites
 
+Ensure that the server has at least the minimum hardware requirements for Anypoint Monitoring:
+
 * 2GHz CPU or 1 virtual CPU
 * 1GB RAM
 * 4GB disk space
