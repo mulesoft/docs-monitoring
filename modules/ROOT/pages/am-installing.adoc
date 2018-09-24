@@ -1,4 +1,6 @@
-= Install Anypoint Monitoring On-Premise
+= Install Anypoint Monitoring On-Premises
+
+You can install Anypoint Monitoring on an on-premises server if you want to monitor applications that are running on that server.
 
 == Before you begin
 
@@ -6,11 +8,15 @@ Open port 443 in your outbound firewall, if you have one. The Anypoint Monitorin
 
 == Supported operating systems
 
+Ensure that the server that you are planning to install Anypoint Monitoring on is running one of the following operating systems:
+
 * CentOS 7
 * RedHat Enterprise Linux 7.0
 * Ubuntu 14.04 and 15.04
 
 == Supported versions of Mule Runtime
+
+Ensure that one of the versions of Mule Runtime that is listed below is running on the server:
 
 * 4.1.2
 * 4.1.1
@@ -33,7 +39,27 @@ Instructions for downloading and installing Anypoint Monitoring for an on-premis
 1. Wait 10 minutes for configuration to propagate
 1. Go to anypoint.mulesoft.com <http://anypoint.mulesoft.com> and log in.
 1. Navigate to Anypoint Monitoring.
-1. Navigate to an application in the application picker that is deployed onto the server in question
-1. Check whether the CPU Utilization and Memory Utilization charts are displaying data. If they are, Anypoint Monitoring is installed and running.
-1. If they are not, the reason could be that Anypoint Monitoring is unable to connect to the endpoint. To check whether this is the reason, log into the server on which Anypoint Monitoring is running and open the log file for the data-transfer agent. The log file is in this path: /var/log/filebeat
-	- Look for entries that mention connection failure and connection retries. If you find such entries, ensure that port 5044 in your outbound firewall is open.
+1. On the *Built-in Dashboards* page, select an application that is deployed on the server where you installed Anypoint Monitoring.
+1. Check whether the CPU Utilization and Memory Utilization charts are displaying data.
+
+*Result:* If you see data in the charts, Anypoint Monitoring is installed and running.
+
+If you do not see data in the charts, check whether Anypoint Monitoring is unable to connect to the endpoint.
+
+11. Log into the server on which Anypoint Monitoring is running.
+11. Open the log file for the data-transfer agent. The log file is in this path: `/var/log/filebeat`
+11. Look for entries that mention connection failures or connection retries.
+
+*What to do next:*
+
+- If you find any such entries, ensure that port 443 in your outbound firewall is open.
+- If you do not find any such entries, contact technical support.
+
+== See Also
+
+* xref:4.1@mule-runtime::runtime-installation-task.adoc[To Download and Install the Mule Runtime 4 EE Standalone
+]
+* xref:3.9@mule-runtime::installing.adoc[Installing and Deploying Mule Runtime 3.9
+]
+* xref:3.8@mule-runtime::installing.adoc[Installing and Deploying Mule Runtime 3.8
+]

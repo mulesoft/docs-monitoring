@@ -110,3 +110,7 @@ See xref:tools.adoc[Tools].
 Monitor APIs and endpoints at scheduled intervals. Receive reports about whether tests pass or fail, and view statistics about API and endpoint performance.
 
 See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring in Anypoint Monitoring].
+
+== See Also
+
+* xref:api-functional-monitoring::am-installing.adoc[Install Anypoint Monitoring On-Premise]
