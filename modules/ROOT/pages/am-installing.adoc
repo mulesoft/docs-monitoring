@@ -1,10 +1,10 @@
-= Install Anypoint Monitoring On-Premises
+= Install Anypoint Monitoring On-Premise
 
-You can install Anypoint Monitoring on an on-premises server if you want to monitor applications that are running on that server.
+You can install Anypoint Monitoring on an on-premise server if you want to monitor applications that are running on that server.
 
 == Before You Begin
 
-Open port 443 in your outbound firewall, if you have one. The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using the Lumberjack protocol, an open source protocol for transferring log data over a highly-efficient bidirectional binary channel.
+Open port 443 in your outbound firewall, if you have one. The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using the Lumberjack protocol, an open-source protocol for transferring log data over a highly-efficient bidirectional binary channel.
 
 == Supported Operating Systems
 
@@ -39,7 +39,7 @@ Instructions for downloading and installing Anypoint Monitoring for an on-premis
 == Confirming that Anypoint Monitoring is Running
 
 1. Wait 10 minutes for configuration to propagate.
-1. Go to anypoint.mulesoft.com <http://anypoint.mulesoft.com> and log in.
+1. Go to http://anypoint.mulesoft.com and log in.
 1. Navigate to Anypoint Monitoring.
 1. On the *Built-in Dashboards* page, select an app that is deployed on the server where you installed Anypoint Monitoring.
 1. Check whether the CPU Utilization and Memory Utilization charts are displaying data.
