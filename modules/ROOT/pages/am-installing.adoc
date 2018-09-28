@@ -39,7 +39,7 @@ Instructions for downloading and installing Anypoint Monitoring for an on-premis
 == Confirming that Anypoint Monitoring is Running
 
 1. Wait 10 minutes for configuration to propagate.
-1. Go to <http://anypoint.mulesoft.com> and log in.
+1. Go to http://anypoint.mulesoft.com and log in.
 1. Navigate to Anypoint Monitoring.
 1. On the *Built-in Dashboards* page, select an app that is deployed on the server where you installed Anypoint Monitoring.
 1. Check whether the CPU Utilization and Memory Utilization charts are displaying data.
