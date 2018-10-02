@@ -51,9 +51,9 @@ Typically, administrators set permissions through Access Management. See xref:ac
 For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them
 to the appropriate version of Mule runtime.  Note that the Anypoint Monitoring
 images (for example, 3.9.1-AM) receive the latest patch updates once per month,
-while the non-AM (mainline) images receive patch updates as soon as they are
-available. If you require the latest patch releases, you should use the non-AM
-images.
+while the non-AM (standard) images receive patch updates as soon as they are
+available. If your production environment requires a Mule runtime patch, MuleSoft
+recommends that you switch to a standard runtime, without Anypoint Monitoring support.
 
 |===
 | Platform | Mule Version | Features
