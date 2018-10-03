@@ -48,7 +48,12 @@ Typically, administrators set permissions through Access Management. See xref:ac
 [[runtime_versions]]
 == Supported Platform and Mule Versions
 
-For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them to the appropriate version of Mule runtime.
+For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them
+to the appropriate version of Mule runtime.  Note that the Anypoint Monitoring
+images (for example, 3.9.1-AM) receive the latest patch updates once per month,
+while the non-AM (mainline) images receive patch updates as soon as they are
+available. If your production environment requires a Mule runtime patch, MuleSoft
+recommends that you switch to a mainline runtime.
 
 |===
 | Platform | Mule Version | Features
@@ -67,11 +72,11 @@ For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them
 
 | Anypoint Platform (CloudHub)
 | 4.1.1-AM
-| Basic metrics and logs
+| Basic metrics (xref:dashboard-config-ref#metrics_basic[JVM-related only]) and logs
 
 | Anypoint Platform (CloudHub)
 | 4.1.2-AM
-| Basic metrics and logs
+| Basic metrics (xref:dashboard-config-ref#metrics_basic[JVM-related only]) and logs
 |===
 
 Note that metrics are used by graphs and other charts within xref:dashboards.adoc[Dashboards].
