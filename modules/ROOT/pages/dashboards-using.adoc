@@ -15,6 +15,7 @@ Built-in and Custom dashboards are available from Anypoint Monitoring.
 * For built-in dashboards, you need to select an environment and Mule app.
 +
 .Built-in Dashboard Selection
+image::builtin-dashboard-selection-interaction.png[Select an Environment]
 image::dashboard-select.png[Select a Dashboard]
 +
 * For custom dashboards, you can select from a list of available dashboards. You can also search for it by name.
