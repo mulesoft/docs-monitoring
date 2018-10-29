@@ -3,13 +3,43 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-== Reports
-You can view reports to see information for all CloudHub applications running in a particular environment. You can view reports for:
+== About Reports
+Reports allow you to view the list of CloudHub applications running in the selected environment. The reports display information about the overall performance and behavior of each application.
 
-* Requests: View the total number of times the application has been requested, as well as the number of requests that were successfully served.
-* Performance: View the request volume and average response time (how quickly the application serves each request).
-* Failures: View the request volume and number of times requests to the application have failed.
-* CPU Utilization: View the average percent of CPU each application in the environment uses.
-* Memory Utilization: View statistics for average memory utilization, total memory, and memory pressure of each application running in the environment.
+From any of the *Reports* tabs, you can:
 
-You can click on the application name to view the built-in dashboard for that application.
+* Navigate to reports that display information about requests, performance, failures, and CPU and memory utilization.
+* Switch environments
+* Select a time range to view the reports for
+* Click an application in the list to go to its built-in dashboard
+* Click on column headings to sort the lists from highest to lowest, or from lowest to highest numbers
+* Refresh the page
+
+image::reports-main-page.png[Reports Main Page]
+
+== Access Reports
+
+. Sign into Anypoint Platform and, in *Management Center*, click *Anypoint Monitoring*.
+. In the menu on the left, click *Reports*.
+. In the *Environment* drop-down list, select the environment to view the application reports for, and click *View*. +
+The *Requests* report is displayed.
+
+=== Requests
+
+View information about the number of times each application has been requested, as well as the number of requests that were successfully served for each application.
+
+=== Performance
+
+View information about the request volume and average response time. The response time is how quickly the application serves each request, in milliseconds, for each application.
+
+=== Failures
+
+View information for the request volume for each application and the number of times requests to that application have failed.
+
+=== CPU Utilization
+
+View the average percentage of CPU each application in the environment uses.
+
+=== Memory Utilization
+
+View statistics for average memory utilization, total memory, and memory pressure of each application running in the environment.
