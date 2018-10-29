@@ -1,0 +1,15 @@
+= Reports
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+== Reports
+You can view reports to see information for all CloudHub applications running in a particular environment. You can view reports for:
+
+* Requests: View the total number of times the application has been requested, as well as the number of requests that were successfully served.
+* Performance: View the request volume and average response time (how quickly the application serves each request).
+* Failures: View the request volume and number of times requests to the application have failed.
+* CPU Utilization: View the average percent of CPU each application in the environment uses.
+* Memory Utilization: View statistics for average memory utilization, total memory, and memory pressure of each application running in the environment.
+
+You can click on the application name to view the built-in dashboard for that application.
