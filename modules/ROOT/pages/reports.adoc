@@ -33,34 +33,34 @@ To view other reports, click the corresponding tab for the report to view. From 
 
 Click the *Requests* tab to view information about application requests, including:
 
-* Request Volume: The number of times the application was requested in the specified time range.
-* Successful Requests: The number of requests to the application that were served successfully.
+* Request Volume: The total number of inbound requests to the application within the specified time range.
+* Successful Requests: The total number of successful inbound requests to the application within the specified time range.
 
 === Performance
 
 Click the *Performance* tab to view information about application performance metrics, including:
 
-* Request Volume: The number of times the application was requested in the specified time range.
-* Response Time: The response time represents the time it takes (in milliseconds) for each application to serve each request made to it.
+* Request Volume: The total number of inbound requests to the application in the specified time range.
+* Response Time: The average response time (in milliseconds) for inbound requests to the application.
 
 === Failures
 
 Click the *Failures* tab to view information about application request failures, including:
 
-* Request Volume: The number of times the application was requested in the specified time range.
-* Failed Requests: The number of requests the application failed to serve.
-* Successful Requests: The number of requests to the application that were served successfully.
+* Request Volume: The total number of inbound requests to the application within the specified time range.
+* Failed Requests: The total number of failed inbound requests to the application for the specified time range.
+* Successful Requests: The number of successful inbound requests to the application in the specified time range.
 
 === CPU Utilization
 
-Click the *CPU Utilization* tab to view information about the average percentage of CPU each application in the environment uses.
+Click the *CPU Utilization* tab to view information about the average percentage of the CPU utilized by the JVM.
 
 === Memory Utilization
 
 Click the *Memory Utilization* tab to view information about the memory utilization of each application running in the environment, including:
 
-* Memory Utilization: A measure of how efficiently the application is utilizing memory.
-* Total Memory: The total amount of memory used by the application.
-* Memory Pressure: The percentage of available memory resources for the application.
+* Memory Utilization: The amount of the application's total heap memory used by the JVM.
+* Total Memory: The total size of the application's memory.
+* Memory Pressure: The percentage of the memory used (the difference between memory used and memory total).
 +
 image::monitoring-reports-memory-utilization.png[]
