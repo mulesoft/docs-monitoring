@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 
 == About Reports
-Reports allow you to view a list of all the CloudHub applications running in an environment. The reports display information about overall performance and behavior across all the applications in the environment.
+Reports allow you to view a list of all the CloudHub applications running in an environment. The reports display information about overall performance and behavior across all the applications in the environment. These reports can help you identify application performance and availability problems across the environment so you can better maintain the expected level of service for your applications.
 
 From any of the *Reports* tabs, you can:
 
@@ -23,27 +23,42 @@ image::reports-main-page.png[Reports Main Page]
 . In the menu on the left, click *Reports*.
 . In the *Environment* drop-down list, select the environment where the applications you want to view reports for are deployed, and click *View*. +
 The first time you view the reports page, the *Requests* report is displayed.
-. To view other reports, click the corresponding tab.
 . You can select a time range from the drop-down list on the top-right of the page.
 +
 image::monitoring-reports-time-range-selector.png[]
++
+To view other reports, click the corresponding tab for the report to view. From any report tab, you can click the application name to view statistics for that application on its corresponding builtin dashboard.
 
 === Requests
 
-View information about the number of times each application has been requested, as well as the number of requests that were successfully served for each application.
+Click the *Requests* tab to view information about application requests, including:
+
+* Request Volume: The number of times the application was requested in the specified time range.
+* Successful Requests: The number of requests to the application that were served successfully.
 
 === Performance
 
-View information about the request volume and average response time. The response time is how quickly the application serves each request, in milliseconds, for each application.
+Click the *Performance* tab to view information about application performance metrics, including:
+
+* Request Volume: The number of times the application was requested in the specified time range.
+* Response Time: The response time represents the time it takes (in milliseconds) for each application to serve each request made to it.
 
 === Failures
 
-View information for the request volume for each application and the number of times requests to that application have failed.
+Click the *Failures* tab to view information about application request failures, including:
+
+* Request Volume: The number of times the application was requested in the specified time range.
+* Failed Requests: The number of requests the application failed to serve.
+* Successful Requests: The number of requests to the application that were served successfully.
 
 === CPU Utilization
 
-View the average percentage of CPU each application in the environment uses.
+Click the *CPU Utilization* tab to view information about the average percentage of CPU each application in the environment uses.
 
 === Memory Utilization
 
-View statistics for average memory utilization, total memory, and memory pressure of each application running in the environment.
+Click the *Memory Utilization* tab to view information about the memory utilization of each application running in the environment, including:
+
+* Memory Utilization: A measure of how efficiently the application is utilizing memory.
+* Total Memory: The total amount of memory used by the application.
+* Memory Pressure: The availability of memory resources for the application.
