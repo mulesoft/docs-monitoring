@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 
 == About Reports
-Reports allow you to view the list of CloudHub applications running in the selected environment. The reports display information about the overall performance and behavior of each application.
+Reports allow you to view a list of all the CloudHub applications running in an environment. The reports display information about overall performance and behavior across all the applications in the environment.
 
 From any of the *Reports* tabs, you can:
 
@@ -21,8 +21,12 @@ image::reports-main-page.png[Reports Main Page]
 
 . Sign into Anypoint Platform and, in *Management Center*, click *Anypoint Monitoring*.
 . In the menu on the left, click *Reports*.
-. In the *Environment* drop-down list, select the environment to view the application reports for, and click *View*. +
-The *Requests* report is displayed.
+. In the *Environment* drop-down list, select the environment where the applications you want to view reports for are deployed, and click *View*. +
+The first time you view the reports page, the *Requests* report is displayed.
+. To view other reports, click the corresponding tab.
+. You can select a time range from the drop-down list on the top-right of the page.
++
+image::monitoring-reports-time-range-selector.png[]
 
 === Requests
 
