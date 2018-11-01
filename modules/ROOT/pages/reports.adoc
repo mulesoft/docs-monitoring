@@ -61,4 +61,6 @@ Click the *Memory Utilization* tab to view information about the memory utilizat
 
 * Memory Utilization: A measure of how efficiently the application is utilizing memory.
 * Total Memory: The total amount of memory used by the application.
-* Memory Pressure: The availability of memory resources for the application.
+* Memory Pressure: The percentage of available memory resources for the application.
++
+image::monitoring-reports-memory-utilization.png[]
