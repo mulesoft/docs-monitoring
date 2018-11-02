@@ -59,8 +59,8 @@ Click the *CPU Utilization* tab to view information about the average percentage
 
 Click the *Memory Utilization* tab to view information about the memory utilization of each application running in the environment, including:
 
-* Memory Utilization: The amount of the application's total heap memory used by the JVM.
-* Total Memory: The total size of the application's memory.
-* Memory Pressure: The percentage of the memory used (the difference between memory used and memory total).
+* Memory Utilization: The amount of the heap memory used by the JVM.
+* Total Memory: The total size of the application's heap memory.
+* Memory Pressure: The percentage of the heap memory used (the difference between memory used and memory total).
 +
 image::monitoring-reports-memory-utilization.png[]
