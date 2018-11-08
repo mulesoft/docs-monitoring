@@ -117,7 +117,7 @@ tag in the `pom.xml` file to append the `-AM`, for example, changing `<muleVersi
 
 == See Also
 
-* xref:api-functional-monitoring::am-installing.adoc[Install Anypoint Monitoring On-Premise]
+* xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]
 
 //REMOVED PER PABLO GALIANO & SEBASTIAN:
 //For Mule apps running on older versions of the runtime, Anypoint Monitoring will provide information from Runtime Manager, API Manager, and API Analytics.

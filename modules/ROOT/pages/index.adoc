@@ -113,4 +113,4 @@ See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional
 
 == See Also
 
-* xref:api-functional-monitoring::am-installing.adoc[Install Anypoint Monitoring On-Premise]
+* xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]
