@@ -17,6 +17,9 @@ From any of the *Reports* tabs, you can:
 
 image::reports-main-page.png[Reports Main Page]
 
+[NOTE]
+This feature requires a Titanium subscription.
+
 == Access Reports
 
 . Sign into Anypoint Platform and, in *Management Center*, click *Anypoint Monitoring*.
