@@ -1,6 +1,6 @@
 = Install Anypoint Monitoring On-Premise
 
-You can install Anypoint Monitoring on an on-premise server if you want to monitor applications that are running on that server.
+You can install Anypoint Monitoring on an on-premises server to monitor applications running on that server.
 
 == Before You Begin
 
@@ -8,11 +8,12 @@ Open port 443 in your outbound firewall, if you have one. The Anypoint Monitorin
 
 == Supported Operating Systems
 
-Ensure that the server that you are planning to install Anypoint Monitoring on is running one of the following operating systems:
+Ensure that the server you are planning to install Anypoint Monitoring on is running one of the following operating systems:
 
 * CentOS 7
 * RedHat Enterprise Linux 7.0
 * Ubuntu 14.04 and 15.04
+* Windows Server 2008 R2 or later
 
 == Supported Versions of Mule Runtime
 
