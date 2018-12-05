@@ -79,7 +79,7 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 | *Connectors* a|
 
 [NOTE]
-You only see this tab if you have a Titanium subscription and are monitoring an application with connectors.
+You only see this tab if you have a Titanium subscription and are monitoring an application with connectors that is deployed in a hybrid target (server, server-group, or cluster).
 
 * Requests - Average number of connector requests, grouped by automatic intervals
 * Response Time - Average response time of connector requests, grouped by automatic intervals
