@@ -9,6 +9,7 @@
   *** xref:dashboard-custom-config-table.adoc[Configuring Tables]
   *** xref:dashboard-custom-config-text.adoc[Configuring Text]
   *** xref:dashboard-config-ref.adoc[Dashboard Configuration Reference]
+* xref:monitor-connectors.adoc[Monitor Connectors]
 * xref:reports.adoc[Reports]
 * xref:alerts.adoc[Alerts]
  ** xref:alerts-using.adoc[Using Alerts]

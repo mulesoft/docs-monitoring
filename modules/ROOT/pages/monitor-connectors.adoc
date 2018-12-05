@@ -1,0 +1,13 @@
+= Monitor Connectors
+
+You can view performance metrics for connectors in your application such as what operation is being performed, how long the operations are taking, and whether they are succeeding or failing. You can monitor performance for the following connectors:
+
+* Salesforce
+* HTTP
+* Database
+* Other
+
+[NOTE]
+This feature requires a Titanium subscription and the Unified Agent.
+
+==
