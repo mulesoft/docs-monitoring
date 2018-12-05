@@ -5,20 +5,25 @@ endif::[]
 
 Built-in dashboards contain a standard set of graphs, while custom dashboards can display additional data that is important to your organization.
 
-Both dashboards provide many of the same display options.
+Both types of dashboards provide many of the same display options.
 
 [[dashboard_viewing]]
-== Viewing a Dashboard
+== View a Builtin Dashboard
 
-Built-in and Custom dashboards are available from Anypoint Monitoring.
+To view builtin dashboards, you must select an environment and a resource (Mule application or API).
 
-* For built-in dashboards, you need to select an environment and Mule app.
+. Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
+. Select the *Environment* and *Resource name* for the app or API to view the corresponding dashboard.
+. Click *View*. +
+The builtin dashboard for the application or API is displayed.
+. To switch to a dashboard for a different resource, click the built-in dashboard selector at the top of the page.
 +
 .Built-in Dashboard Selection
-image::builtin-dashboard-selection-interaction.png[Select an Environment]
-image::dashboard-select.png[Select a Dashboard]
-+
-* For custom dashboards, you can select from a list of available dashboards. You can also search for it by name.
+image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
+
+== View Custom Dashboards
+
+For custom dashboards, you can select from a list of available dashboards. You can also search for it by name.
 +
 .Custom Dashboard List
 image::dashboard-select-custom.png[Select a Dashboard]
