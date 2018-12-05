@@ -3,7 +3,7 @@
 You can generate logs for specific points from running APIs without writing code or having to re-deploy your application. This helps you troubleshoot without having to restart the application. For example, you can specify a cookie header in an API to see if an injection attack is in progress. The log data for the specified cookie header is automatically displayed in real-time on the Logs page.
 
 [NOTE]
-This feature requires a Titanium subscription to Anypoint Monitoring.
+This feature requires a Titanium subscription to Anypoint Monitoring and Mule runtime 3.8.5 or later.
 
 == Enable API Log Points
 
