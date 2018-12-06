@@ -1,1 +1,18 @@
 = API Analytics Dashboard
+
+The API Analytics dashboard provides charts to monitor API usage, which gives you insight into how your APIs are used and how they are performing.
+
+From Anypoint Monitoring, you can access the API monitoring dashboard to view information about your API, including:
+
+* Requests by instance
+* Requests by HTTP response code
+* Requests by method -
+* Requests by request and response size
+* Requests by HTTP policy violation
+* Requests by failure
+
+image::monitoring-api-analytics-top.png[]
+
+image::monitoring-api-analytics-bottom.png[]
+
+Select the date and time range to view you want to view statistics for.

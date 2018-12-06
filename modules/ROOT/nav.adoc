@@ -4,7 +4,6 @@
 * xref:dashboards.adoc[Dashboards]
  ** xref:app-dashboards.adoc[Builtin Application Dashboards]
  ** xref:api-analytics-dashboard.adoc[Builtin API Analytics Dashboard]
- ** xref:custom-dashboards.adoc[Custom Dashboards]
 * xref:dashboards-using.adoc[Using Dashboards]
  ** xref:dashboard-custom-config.adoc[Configuring Custom Dashboards and Charts]
  ** xref:dashboard-custom-config-graph.adoc[Configuring Graphs]
