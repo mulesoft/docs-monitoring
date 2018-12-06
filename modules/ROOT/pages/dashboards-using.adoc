@@ -10,7 +10,7 @@ Both dashboards provide many of the same display options.
 [[dashboard_viewing]]
 == Viewing a Dashboard
 
-Built-in and Custom dashboards are available from Anypoint Monitoring.
+Built-in and Custom dashboards are available from Anypoint Monitoring. You can view application metrics for applications deployed to CloudHub and to hybrid targets in both built-in and custom dashboards.
 
 * For built-in dashboards, you need to select an environment and Mule app.
 +
