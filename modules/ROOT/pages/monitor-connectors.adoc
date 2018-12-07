@@ -3,7 +3,7 @@
 You can view performance metrics for supported connectors in your application such as what operation is being performed, how long the operations are taking, and whether they are succeeding or failing.
 
 [NOTE]
-This feature requires a Titanium subscription and the Unified Agent.
+This feature requires a https://www.mulesoft.com/anypoint-pricing[Titanium Subscription] and the Unified Agent.
 
 Supported connectors include:
 
