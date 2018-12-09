@@ -38,7 +38,7 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 [%header,cols="1,4"]
 |===
 | Built-In Dashboards | Charts
-| Overview a|
+| *Overview* a|
 
 * Total Inbound Requests
 * Average Response Time Inbound
@@ -54,7 +54,7 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 //* Response Time by Outbound Endpoint: Number of milliseconds (ms) for a response from outbound endpoints of your Mule app.
 //* CPU: Percentage of CPU used over time. The percentages are calculated per worker and as the total for all workers.
 //* Memory: Number of mebibytes (MiB) used over time.
-| Inbound a|
+| *Inbound* a|
 
 * Total Inbound Requests
 * Average Response Time Inbound
@@ -66,7 +66,7 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 //* Total Inbound Calls (success or failure)
 //* Total Inbound by Endpoint Outbound
 //* Average Response Time Inbound
-| Outbound a|
+| *Outbound* a|
 
 * Total Outbound Requests
 * Average Response Time Outbound
@@ -76,7 +76,15 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 
 //* Total Outbound Calls (success or failure)
 //* Total Outbound by Endpoint Outbound
-| Performance a|
+| *Connectors* a|
+
+[NOTE]
+You only see this tab if you have a Titanium subscription and are monitoring an application with connectors that is deployed in a hybrid target (server, server-group, or cluster).
+
+* Requests - Average number of connector requests, grouped by automatic intervals
+* Response Time - Average response time of connector requests, grouped by automatic intervals
+* Failures - Average number of connector request failures, grouped by automatic intervals
+| *Performance* a|
 
 * Average Response Time Inbound
 * Average Response Time Grouped by Endpoint Inbound
@@ -86,7 +94,7 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * Response Time graphs: 99, 90, 75, and 50 Percentile Outbound
 //* Response Time graphs: 99, 90, 75, and 50 Percentile Inbound
 //* Average Response Time: Outbound, Grouped by Endpoint Outbound
-| Failures a|
+| *Failures* a|
 
 * Total Failed Inbound Requests
 * Total Failed Outbound Requests
@@ -94,7 +102,7 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * All Outbound Grouped By Response Type
 * Total Failed Inbound Grouped By Endpoint
 * Total Failed Outbound Grouped By Endpoint
-| JVM a|
+| *JVM* a|
 
 * Garbage Collection Count, Garbage Collection Time
 * Par New Collection Count, Par New Collection Time
@@ -107,7 +115,7 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * Metaspace graphs (Used, Max, Init, Committed):
 * Code Cache graphs (Used, Max, Init, Committed): Usage metrics for the Code Cache pool.
 * Compressed Class Space graphs (Used, Max, Init, Committed):
-| Infrastructure a|
+| *Infrastructure* a|
 
 * CPU Utilization %: Percentage of CPU used by each worker over time.
 * Memory Utilization: Amount of memory used by each worker over time.
