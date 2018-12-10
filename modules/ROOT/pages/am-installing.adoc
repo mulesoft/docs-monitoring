@@ -19,6 +19,8 @@ Ensure that the server you are planning to install Anypoint Monitoring on is run
 
 Ensure that one of the versions of Mule Runtime that is listed below is running on the server:
 
+* 4.1.4
+* 4.1.3
 * 4.1.2
 * 4.1.1
 * 3.9.1
