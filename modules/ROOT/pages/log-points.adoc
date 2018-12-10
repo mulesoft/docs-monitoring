@@ -1,9 +1,9 @@
 = Anypoint Monitoring Log Points
 
-You can generate logs for specific points from running APIs without writing code or having to re-deploy your application. This helps you troubleshoot without having to restart the application. For example, you can specify a cookie header in an API to see if an injection attack is in progress. The log data for the specified cookie header is automatically displayed in real-time on the Logs page.
+The Anypoint Monitoring log points feature enables you to specify properties (for example, the host and method in the request header) in your API for which to generate logs without having to write code or redeploy your application. This helps you troubleshoot without having to restart the application. For example, you can specify a cookie header in an API to see if an injection attack is in progress. The log data for the specified cookie header is automatically displayed in real time on the Logs page.
 
 [NOTE]
-This feature requires a Titanium subscription to Anypoint Monitoring and Mule runtime 3.8.5 or later.
+This feature requires a https://www.mulesoft.com/anypoint-pricing[Titanium subscription] to Anypoint Monitoring and Mule 3.8.5 or later.
 
 == Enable API Log Points
 
@@ -15,7 +15,7 @@ This feature requires a Titanium subscription to Anypoint Monitoring and Mule ru
 * *Version/Instance* - The version and instance of the API.
 +
 image::log-points-select-api.png[]
-. Select the * Request* points to log and monitor. +
+. Select the *Request* points to log and monitor. +
 You can monitor the following request header log points: +
 * *User Agent*
 * *Path*
