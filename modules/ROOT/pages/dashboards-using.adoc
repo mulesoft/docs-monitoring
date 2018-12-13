@@ -24,8 +24,10 @@ image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
 == View Custom Dashboards
 
 For custom dashboards, you can select from a list of available dashboards. You can also search for it by name.
-+
-.Custom Dashboard List
+
+Custom Dashboard List
+
+
 image::dashboard-select-custom.png[Select a Dashboard]
 
 Your data is pre-populated to the built-in dashboards and logs, so no configuration is needed.
