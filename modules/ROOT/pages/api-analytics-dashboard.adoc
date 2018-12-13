@@ -25,6 +25,77 @@ image::monitoring-api-analytics-bottom.png[]
 . Select the date and time range you want to view statistics for and click *Confirm*. +
 The details panel at the top of the page displays information about the API.
 +
-image::api-analytics-detail-panel.png
+image::api-analytics-detail-panel.png[]
 +
-You can click the *View API in API Manager* link to...
+You can click the *View API in API Manager* link to view API analytics in API Manager.
+
+=== Requests by Instance
+
+You can view the metrics for how many times the particular instance of this API was requested over the specified period of time. Hover over the graph to display data in a more granular view.
+
+image::api-request-by-instance.png[]
+
+=== Requests by HTTP Response Code
+
+Displays data about the API instance's total number of requests by HTTP response code for the time period you specified, including:
+
+* Time - Each row corresponds to the time the sum was calculated.
+* Status Code - HTTP response code for the API call.
+* Sum - Total number of requests with the corresponding response code.
+
+Click the column header to sort data for that column.
+
+image::api-requests-by-http-response.png[]
+
+=== Requests by Method
+
+Displays metrics about the API's requests by method, including:
+
+* Method - The method used to call the API.
+* Avg - The average of all the non-null values in the series.
+* Min - The smallest value in the series.
+* Max - The largest value in the series.
+* Total - The sum of all values in the series.
+* Count - The sum of all the non-null values in the series.
+
+Click the column header to sort data for that column.
+
+image::api-request-by-method.png[]
+
+=== Requests by Request and Response Size
+
+Displays metrics according to the API's request and response size.
+
+image::api-request-by-request-and-response-size.png[]
+
+=== Requests by HTTP Policy Violation
+
+Displays metrics for traffic that was rejected or not rejected for the specified policy, including:
+
+* Policy - The name of the policy applied to the API instance.
+* Avg - The average of all the non-null values in the series.
+* Min - The smallest value in the series.
+* Max - The largest value in the series.
+* Total - The sum of all values in the series.
+* Count - The sum of all the non-null values in the series.
+
+Click the column header to sort data for that column.
+
+image::api-request-by-http-policy-violation.png[]
+
+
+=== Requests by Failures
+
+Displays information about failed requests to the API, including:
+
+* Error code - The HTTP error code corresponding the failure type.
+* Avg - The average of all the non-null values in the series.
+* Min - The smallest value in the series.
+* Max - The largest value in the series.
+* Total - The sum of all values in the series.
+* Count - The sum of all the non-null values in the series.
+
+Click the column header to sort data for that column.
+
+
+image::api-request-by-failure.png[]
