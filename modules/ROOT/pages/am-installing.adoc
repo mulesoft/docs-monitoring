@@ -41,12 +41,16 @@ You must set the *Environment* and *Server* properties before you download the `
 
 == Access Settings
 
-. Sign into Anypoint Platform and navigate to Anypoint Monitoring.
+To see the *Settings* tab, you must:
+
+* Have the Anypoint Monitoring User permission. See xref:access-management::users#granting-permissions-and-roles-to-users[Granting Permissions and Roles to Users].
+* Have on premises monitoring for hybrid deployments enabled at your master org level. Check with your account representative to verify this.
+
+
+. Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
 . In the menu on the left, click *Settings*. +
 The instructions for installing Anypoint Monitoring on premises are displayed. You can also download the Anypoint Monitoring installation ZIP file from this page, but make sure you set the *Environment* and *Server* properties before you download the file.
-+
-[NOTE]
-If you do not see the *Settings* tab in the menu on the left, check with your account representative to verify that on premises monitoring for hybrid deployments is enabled at your master org level.
+
 
 == Verify that Anypoint Monitoring is Running
 
@@ -61,7 +65,7 @@ If you do not see the *Settings* tab in the menu on the left, check with your ac
 If you do not see data in the charts, check whether Anypoint Monitoring is unable to connect to the endpoint.
 
 [NOTE]
-You can whitelist the endpoint for outbound firewall rules, if necessary. The endpoint is displayed in the gray box in Step 5 on the page, under the OS.
+You can whitelist the endpoint for outbound firewall rules so your server will allow connections, if necessary. The endpoint is displayed in the gray box in Step 5 on the page, under the OS.
 
 11. Log into the server on which Anypoint Monitoring is running.
 11. Open the log file for the data-transfer agent. The log file is in this path: `./am/log/filebeat`
