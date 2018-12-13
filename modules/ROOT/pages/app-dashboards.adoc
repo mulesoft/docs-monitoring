@@ -1,4 +1,4 @@
-= Builtin Application Dashboard
+= Built-in Application Dashboard
 
 Built-in dashboards display deployment information about your application at the top of the screen and provide access to a number of different graphs, for example:
 
@@ -84,10 +84,10 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * Thread Count - Server
 * JVM Uptime
 * Par Eden graphs (Used, Max, Init, and Committed): Usage metrics for the Par Eden Space pool.
-* Par Survivor graphs (Used, Max, Init, and Committed) Usage metrics for the Par Eden Space pool.
-* Metaspace graphs (Used, Max, Init, Committed):
+* Par Survivor graphs (Used, Max, Init, and Committed): Usage metrics for the Par Eden Space pool.
+* Metaspace graphs (Used, Max, Init, Committed): Usage metrics for Java memory space.
 * Code Cache graphs (Used, Max, Init, Committed): Usage metrics for the Code Cache pool.
-* Compressed Class Space graphs (Used, Max, Init, Committed):
+* Compressed Class Space graphs (Used, Max, Init, Committed): Usage metrics for values of the metadata for compressed class pointers.   
 | Infrastructure a|
 
 * CPU Utilization %: Percentage of CPU used by each worker over time.
