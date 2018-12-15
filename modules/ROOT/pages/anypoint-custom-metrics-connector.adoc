@@ -41,9 +41,17 @@ You can repeat these steps to add multiple key values. +
 This image shows example values for a custom metric that tracks t-shirt sales.
 +
 image:custom-metrics-connector-config.png[]
-. 
-
++
+Select the *Throw runtime exception on validation failure* option if you want the flow to break if invalid values are entered for the metric. If this option is left unchecked, an error will be logged, but the flow will not break.
+. Deploy the application.
+. In Anypoint Monitoring, xref:dashboard-custom-config.adoc[add a new custom dashboard] for the custom metric. +
+This image shows an example of the configuration for a graph to display t-shirt sales.
++
 image:custom-metric-custom-dashboard-config.png[]
++
+[NOTE]
+You will only see the custom metrics in the pre-populated metric selection drop-down lists once you have logged something for the custom metric. 
+. 
 
 image:custom-metric-custom-dashboard-graph.png[]
 
