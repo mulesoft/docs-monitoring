@@ -3,137 +3,16 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Dashboards in Anypoint Monitoring provide visibility into Mule apps that are deployed to your environments (for example, Production, Sandbox, or Design).
+Dashboards in Anypoint Monitoring provide visibility into Mule apps and APIs that are deployed to your environments (for example, Production, Sandbox, or Design).
 
 [[builtin_dashboards]]
 == Built-In Dashboards
 
-Built-in dashboards contain a set of time-series graphs that plot current and historical data collected over a given time and date period. There is a built-in dashboard for each Mule app in each environment.
+Built-in dashboards contain graphs that plot current and historical data collected over a given time and date period. There is a built-in dashboard for each Mule application and API in each environment.
 
-To view the built-in dashboard for a particular resource, click the built-in dashboard selector at the top of the page.
-
-.Built-in Dashboard Selection
-image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
-
-.Example: Built-in Dashboard
+.Example: Built-in Dashboard for a Mule Application
 image::dashboard-built-in.png[Built-in Dashboard Example]
 
-[[builtin-metrics]]
-Built-in dashboards display deployment information about your app at the top of the screen and provide access to a number of different graphs, for example:
-
-image::dashboard-built-in-info.png[Deployment Info on an App in a Built-In Dashboard]
-
-The graphs and tables in built-in dashboards support a number of metrics, including:
-
-* Application metrics, including overall measures through the Overview tab and more granular application metrics through the Inbound, Outbound, and Failure tabs.
-+
-Important use cases are end-to-end tracing of API calls and dependency analyses to help you isolate the source of issues. For example, you can track response times at each endpoint (outbound or inbound).
-+
-.Example: Average Response Time Grouped by Endpoint Outbound
-image::dashboard-outbound-response-table.png[Average Response Time Grouped By Endpoint Outbound]
-+
-* Infrastructure-level and JVM metrics.
-* Performance metrics that break down inbound and outbound response times into averages and percentiles.
-
-[%header,cols="1,4"]
-|===
-| Built-In Dashboards | Charts
-| *Overview* a|
-
-* Total Inbound Requests
-* Average Response Time Inbound
-* Total Outbound Requests
-* Average Response Time Outbound
-* CPU Utilization
-* Memory Utilization
-* Thread Count - Server
-
-//* Response Time by App: Number of milliseconds (ms) required for each response.
-//* Messages Processed: Number of messages at a given time point.
-//* Response Time by Inbound Endpoint: Number of milliseconds (ms) for a response from inbound endpoints to your Mule app.
-//* Response Time by Outbound Endpoint: Number of milliseconds (ms) for a response from outbound endpoints of your Mule app.
-//* CPU: Percentage of CPU used over time. The percentages are calculated per worker and as the total for all workers.
-//* Memory: Number of mebibytes (MiB) used over time.
-| *Inbound* a|
-
-* Total Inbound Requests
-* Average Response Time Inbound
-* Average Response Time by Endpoint
-* Response Time graphs (99, 90, 75, and 50 Percentile Inbound): Measured in milliseconds (ms).
-* Total Inbound Calls - Failed
-* Slow Requests: Total calls where Response Time > 1000ms.
-
-//* Total Inbound Calls (success or failure)
-//* Total Inbound by Endpoint Outbound
-//* Average Response Time Inbound
-| *Outbound* a|
-
-* Total Outbound Requests
-* Average Response Time Outbound
-* Average Response Time Grouped by Endpoint Outbound
-* Response Time graphs (99, 90, 75, and 50 Percentile Outbound): Measured in milliseconds (ms).
-* Total Outbound Calls - Failed
-
-//* Total Outbound Calls (success or failure)
-//* Total Outbound by Endpoint Outbound
-| *Connectors* a|
-
-[NOTE]
-You only see this tab if you have a Titanium subscription and are monitoring an application with connectors that is deployed in a hybrid target (server, server-group, or cluster).
-
-* Requests - Average number of connector requests, grouped by automatic intervals
-* Response Time - Average response time of connector requests, grouped by automatic intervals
-* Failures - Average number of connector request failures, grouped by automatic intervals
-| *Performance* a|
-
-* Average Response Time Inbound
-* Average Response Time Grouped by Endpoint Inbound
-* Response Time graphs: 99, 90, 75, and 50 Percentile Inbound
-* Average Response Time Outbound
-* Average Response Time Grouped by Endpoint Outbound
-* Response Time graphs: 99, 90, 75, and 50 Percentile Outbound
-//* Response Time graphs: 99, 90, 75, and 50 Percentile Inbound
-//* Average Response Time: Outbound, Grouped by Endpoint Outbound
-| *Failures* a|
-
-* Total Failed Inbound Requests
-* Total Failed Outbound Requests
-* All Inbound Grouped By Response Type
-* All Outbound Grouped By Response Type
-* Total Failed Inbound Grouped By Endpoint
-* Total Failed Outbound Grouped By Endpoint
-| *JVM* a|
-
-* Garbage Collection Count, Garbage Collection Time
-* Par New Collection Count, Par New Collection Time
-* Classes: Loaded, Loaded Total, Unloaded
-* Heap: Committed, Used
-* Thread Count - Server
-* JVM Uptime
-* Par Eden graphs (Used, Max, Init, and Committed): Usage metrics for the Par Eden Space pool.
-* Par Survivor graphs (Used, Max, Init, and Committed) Usage metrics for the Par Eden Space pool.
-* Metaspace graphs (Used, Max, Init, Committed):
-* Code Cache graphs (Used, Max, Init, Committed): Usage metrics for the Code Cache pool.
-* Compressed Class Space graphs (Used, Max, Init, Committed):
-| *Infrastructure* a|
-
-* CPU Utilization %: Percentage of CPU used by each worker over time.
-* Memory Utilization: Amount of memory used by each worker over time.
-* Total System Processors: Number of system processors for workers available over time.
-* Total System Memory: Amount of system memory available for workers over time.
-* Thread Count - Server: Number of simultaneous requests for a worker over time.
-
-.Example: Infrastructure Dashboard
-image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
-|===
-////
-TODO_MED: DESCRIBE BUILT-IN CHARTS ONCE THEY ARE MORE CLEAR
-TODO_LOW: DESCRIBE EACH OF THE ITEMS IN dashboard-built-in-info.png WHEN TIME PERMITS
-////
-
-See xref:dashboards-using.adoc[Using Dashboards].
-
-[[custom_dashboards]]
 == Custom Dashboards
 
 Custom dashboards in Anypoint Monitoring can bring together important metrics and data points that you need to see on one screen. You can specify the resources and metrics that you want to monitor, allowing you to:
@@ -145,4 +24,10 @@ Custom dashboards in Anypoint Monitoring can bring together important metrics an
 
 For example, you can compare live data with historic data to detect anomalies and expedite the troubleshooting process.
 
-See xref:dashboards-using.adoc[Using Dashboards] and xref:dashboard-custom-config.adoc[Configuring Custom Dashboards].
+== See Also
+
+* xref:dashboards-using.adoc[Using Dashboards]
+* xref:app-dashboards.adoc[Built-in Application Dashboards]
+* xref:custom-dashboard.adoc[Custom Dashboards]
+* xref:dashboard-custom-config.adoc[Configuring Custom Dashboards]
+* xref:api-analytics-dashboard.png[API Analytics Dashboard]
