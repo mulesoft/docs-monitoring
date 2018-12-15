@@ -1,0 +1,10 @@
+= Anypoint Custom Metrics Connector
+
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+The Anypoint Custom Metrics connector enables you to send operational and business metric values with dimensions to Anypoint Monitoring, where they can be visualized in real time using Custom Dashboards. Once the metrics are in a Custom Dashboard, you can filter and group the metrics along the included dimensions.  You can include multiple custom and built-in metrics in a single dashboard visualization.
+
+image::custom-metrics-connector-config.png[]
+
