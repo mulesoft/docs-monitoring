@@ -51,8 +51,7 @@ image:custom-metric-custom-dashboard-config.png[]
 +
 [NOTE]
 You will only see the custom metrics in the pre-populated metric selection drop-down lists once you have logged something for the custom metric. 
-. 
-
++
 image:custom-metric-custom-dashboard-graph.png[]
 
 
