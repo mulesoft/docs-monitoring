@@ -4,8 +4,44 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The Anypoint Custom Metrics connector enables you to send operational and business metric values with dimensions to Anypoint Monitoring, where they can be visualized in real time using Custom Dashboards. Once the metrics are in a Custom Dashboard, you can filter and group the metrics along the included dimensions.  You can include multiple custom and built-in metrics in a single dashboard visualization.
+The Anypoint Custom Metrics connector enables you to send operational and business metric values from a hybrid application to Anypoint Monitoring, where the metrics can be visualized in real time using Custom Dashboards. 
 
+Once the metrics are in a Custom Dashboard, you can filter and group the metrics along the included dimensions. You can include multiple custom and built-in metrics in a single dashboard visualization.
+
+[NOTE] 
+====
+To use the Anypoint Custom Metrics connector, you must have a Titanium subscription. +
+This feature is currently supported only for hybrid (on-premises) applications.
+====
+
+
+. In Anypoint Studio, search Anypoint Exchange for the Anypoint Custom Metrics connector. +
+The connector has one operation called "Send custom metric."
+. Add the *Send Custom Metric* operation to your application flow. +
+This image shows an example flow for custom metrics. 
++
+image:custom-metric-example-flow.png[]
+. Click the *Send Custom Metric* operation to add values for the operation. 
+. Enter the dimension for the metric:
+.. In *Metric name*, enter a meaningful value, for example "sales." 
+.. In *Enter contextual information* select *Edit inline* to enter the name and value for the dimension. 
+.. Click the green plus on the left to enter the values.
+.. In the *Dimension* dialog box, enter the *Name* and *Value* for the dimension.
+.. Leave the *Collapsible* option with the default of *True*.
+.. Click *Finish*. +
+You can repeat these steps to add multiple key values.
+. Enter the facts for the metric. Values for measurements are numerical.
+.. In *Enter measurements* select *Edit inline* to enter the name and value for the metric.
+.. In the *Fact* dialog box, enter a *Name* and numerical *Value* for the fact. +
+[NOTE]
+For facts, the value must always be numerical. This is not validated at design time, but it will cause a runtime exception once deployed.
+.. Leave the *Collapsible* option with the default of *True*.
+.. Click *Finish*. +
+You can repeat these steps to add multiple key values. +
+This image shows example values for a custom metric that tracks t-shirt sales.
++
+image:custom-metrics-connector-config.png[]
+. 
 
 image:custom-metric-custom-dashboard-config.png[]
 
