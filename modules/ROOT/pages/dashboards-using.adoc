@@ -10,7 +10,7 @@ Both types of dashboards provide many of the same display options.
 [[dashboard_viewing]]
 == View a Builtin Dashboard
 
-To view builtin dashboards, you must select an environment and a resource (Mule application or API).
+Built-in and Custom dashboards are available from Anypoint Monitoring. You can view application metrics for applications deployed to CloudHub and to hybrid targets in both built-in and custom dashboards.
 
 . Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
 . Select the *Environment* and *Resource name* for the app or API to view the corresponding dashboard.

@@ -22,7 +22,7 @@ WHAT ABOUT APIS?
 ////
 App network diagnostic log search |Limited, Singe App (base subscription) vs. Included for Premium Add on
 
-Can we action on an alert from the portal, say retry or skip thetransaction which generated the alert?Yes, transactions can be retried and skipped when Insights is turned on.
+Can we action on an alert from the portal, say retry or skip the transaction which generated the alert?Yes, transactions can be retried and skipped when Insights is turned on.
 ////
 
 ////
