@@ -28,6 +28,5 @@ For example, you can compare live data with historic data to detect anomalies an
 
 * xref:dashboards-using.adoc[Using Dashboards]
 * xref:app-dashboards.adoc[Built-in Application Dashboards]
-* xref:custom-dashboard.adoc[Custom Dashboards]
 * xref:dashboard-custom-config.adoc[Configuring Custom Dashboards]
 * xref:api-analytics-dashboard.png[API Analytics Dashboard]
