@@ -18,6 +18,7 @@ This feature is currently supported only for hybrid (on-premises) applications.
 
 * Mule runtime engine 4
 * xref:am-installing.adoc[Install the Anypoint Monitoring Agent]
+* Anypoint Studio 7.x or later
 
 == Use the Custom Metrics Connector
 
