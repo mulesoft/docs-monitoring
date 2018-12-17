@@ -14,6 +14,12 @@ To use the Anypoint Custom Metrics connector, you must have a Titanium subscript
 This feature is currently supported only for hybrid (on-premises) applications.
 ====
 
+== Prerequistes
+
+* Mule runtime engine 4
+* xref:am-installing.adoc[Install the Anypoint Monitoring Agent]
+
+== Use the Custom Metrics Connector
 
 . In Anypoint Studio, search Anypoint Exchange for the Anypoint Custom Metrics connector. +
 The connector has one operation called "Send custom metric."
