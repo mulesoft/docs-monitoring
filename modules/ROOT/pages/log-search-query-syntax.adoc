@@ -1,0 +1,77 @@
+= Log Search Query Syntax
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+In addition to using the query builder and facet search user interface in Anypoint Monitoring Log Management, you can use the Log Search query language.
+
+== Search Terms
+
+A query is broken up into terms and operators. There are two types of terms--single terms and phrases. A single term is a single word such as "test" or "hello". A phrase is a group of words surrounded by double quotes such as "hello dolly".
+
+You can combine multiple terms with boolean operators to form a more complex query.
+
+== Term Modifiers
+
+The log search query language supports modifying query terms to provide a wide range of searching options.
+
+== Wildcard Searches
+
+Log search query language supports single and multiple character wildcard searches within single terms (not within phrase queries).
+To perform a single character wildcard search use the "?" symbol.
+To perform a multiple character wildcard search use the "*" symbol.
+The single character wildcard search looks for terms that match that with the single character replaced. For example, to search for "text" or "test" you can use the search:
+te?t
+Multiple character wildcard searches looks for 0 or more characters. For example, to search for test, tests or tester, you can use the search:
+test*
+You can also use the wildcard searches in the middle of a term.
+te*t
+Note: You cannot use a * or ? symbol as the first character of a search.
+
+== Fuzzy Searches
+
+Log search query language supports fuzzy searches based on the Levenshtein Distance, or Edit Distance algorithm. To do a fuzzy search use the tilde, "~", symbol at the end of a Single word Term. For example to search for a term similar in spelling to "roam" use the fuzzy search:
+roam~
+This search will find terms like foam and roams.
+
+== Boolean Operators
+
+Boolean operators allow terms to be combined through logic operators. Log search query language supports AND, "+", OR, NOT and "-" as Boolean operators(Note: Boolean operators must be ALL CAPS).
+The OR operator is the default conjunction operator. This means that if there is no Boolean operator between two terms, the OR operator is used. The OR operator links two terms and finds a matching document if either of the terms exist in a document. This is equivalent to a union using sets. The symbol || can be used in place of the word OR.
+To search for documents that contain either "jakarta anypoint" or just "jakarta" use the query:
+"jakarta anypoint" jakarta
+or
+"jakarta anypoint" OR jakarta
+
+[%header%autowidth.spread,cols="a,a,a"]
+|===
+|Operator|Description|Example
+|AND      |JDK 1.8.0 (Recommended JDK 1.8.0_151/52)|
+|OR      |The OR operator is the default conjunction operator. This means that if there is no Boolean operator between two terms, the OR operator is used. The OR operator links two terms and finds a matching document if either of the terms exist in a document. This is equivalent to a union using sets. The symbol || can be used in place of the word OR.|To search for documents that contain either "jakarta anypoint" or just "jakarta" use the query:
+"jakarta anypoint" jakarta
+or
+"jakarta anypoint" OR jakarta
+|NOT| The NOT operator excludes documents that contain the term after NOT. This is equivalent to a difference using sets. The symbol ! can be used in place of the word NOT.|
+|+|The "+" or required operator requires that the term after the "+" symbol exist somewhere in a the field of a single document.|To search for documents that must contain "anypoint" and may contain "lucene" use the query:
++anypoint monitoring
+|-|The "-" or prohibit operator excludes documents that contain the term after the "-" symbol.|To search for documents that contain "anypoint monitoring" but not "results" use the query:
+"anypoint monitoring" -"results"
+
+|===
+
+== Search Fields
+
+The log search query language supports fielded data. When performing a search you can either specify a field, or use the default field. The field names and default field is implementation specific.
+
+You can search any field by typing the field name followed by a colon ":" and then the term you are looking for.
+As an example, let's assume a log search query language index contains two fields--application and message--and message is the default field. If you want to find the result entitled "The Right Way" which contains the text "don't go this way", you can enter:
+
+`message:"The Right Way" AND application:go`
+
+Since `message` is the default field, the field indicator is not required.
+
+
+
+
+
+
