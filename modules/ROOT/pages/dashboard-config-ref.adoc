@@ -107,10 +107,10 @@ These metrics are available when you use the basic mode for APIs:
 [%header,cols="3,1,1"]
 |===
 | Basic Metrics | Unit | Runtime Version Support
-| Requests by HTTP Policy Violation | `short` | 4.x-AM only
-| Requests by HTTP Respond Code | `short` | 4.x-AM only
-| Requests by Method | `short` | 4.x-AM only
-| Requests by Instance | `short` | 4.x-AM only
+| Requests by HTTP Policy Violation | `short` | 3.x-AM, 4.x-AM
+| Requests by HTTP Respond Code | `short` | 3.x-AM, 4.x-AM
+| Requests by Method | `short` | 3.x-AM, 4.x-AM
+| Requests by Instance | `short` | 3.x-AM, 4.x-AM
 |===
 
 [[metrics_advanced]]
