@@ -28,9 +28,9 @@ Many fields accept time and date interval values like these:
 Many <<metrics_basic, basic>> and <<metrics_advanced, advanced>> metrics are available when configuring custom dashboard graphs.
 
 [[metrics_basic]]
-=== Basic Mode Metrics
+=== Basic Mode Metrics for Applications
 
-These metrics are available when you use the Basic mode:
+These metrics are available when you use the Basic mode for applications:
 
 [%header,cols="3,1,1"]
 |===
@@ -100,10 +100,23 @@ These metrics are available when you use the Basic mode:
 | Outbound - Success Average Response Time by Flow | `ms` | 3.x-AM only
 |===
 
+=== Basic Mode Metrics for APIs
+
+These metrics are available when you use the basic mode for APIs:
+
+[%header,cols="3,1,1"]
+|===
+| Basic Metrics | Unit | Runtime Version Support
+| Requests by HTTP Policy Violation | `short` | 4.x-AM only
+| Requests by HTTP Respond Code | `short` | 4.x-AM only
+| Requests by Method | `short` | 4.x-AM only
+| Requests by Instance | `short` | 4.x-AM only
+|===
+
 [[metrics_advanced]]
 === Advanced Mode
 
-These metrics are available when you use the Advanced mode:
+These metrics are available when you use the Advanced mode for applications:
 
 .Advanced Metrics
 [%header,cols="1,2,2"]
@@ -186,6 +199,12 @@ These metrics are available when you use the Advanced mode:
 | JVM Threads | `jvm.threading` a|
 
 * `thread_count`
+| HTTP Summary +
+*NOTE:*
+This metric is available for APIs only. | `http_summary_metric` a|
+
+* `api_id`
+* `api_version_id`
 |===
 
 ////

@@ -22,7 +22,7 @@ Other settings are specific to the setting mode (basic or advanced).
 [[mode_basic]]
 === Basic Mode
 
-In the General configuration tab, a Basic query selects a single metric for a resource (a Mule app) in a given environment.
+In the *General* configuration tab, a basic query selects a single metric for a resource (a deployed application or API) in a given environment.
 
 image::ap-monitoring-basic-settings.png[Example: Basic Configuration]
 
@@ -30,11 +30,11 @@ image::ap-monitoring-basic-settings.png[Example: Basic Configuration]
 |===
 2+| Basic Mode Settings
 | Panel Type a|
-From the drop-down menu, select the type of resource for which to display metrics--*Application Panel* or *API Panel*.
+From the drop-down menu, select the type of panel to display for the resource--*Application Panel* or *API Panel*.
 
 | Metric a|
 
-The dropdown menu includes these types of metrics:
+The drop-down menu includes these types of metrics:
 
 * Inbound response metrics and averages
 * JVM metrics
@@ -42,7 +42,7 @@ The dropdown menu includes these types of metrics:
 
 For a list of basic metrics, see xref:dashboard-config-ref.adoc#metrics[Basic Mode Metrics]
 
-| Environment | Your Mule app environments.
+| Environment | The environment where your application or API is deployed.
 | Resource | A deployed application or API.
 |===
 
@@ -66,7 +66,7 @@ image::config-general-advanced.png[Example: Advanced  Configuration]
 
 [%header,cols="1,4"]
 |===
-2+| Advanced Mode Settings
+2+| Advanced Mode Settings for Applications
 | From a|
 
 Lists JVM and Mule app properties (such as `jvm.memory` and `app_inbound_metric`) that you can add to your chart.
@@ -102,7 +102,31 @@ Valid values and arguments:
 | Alias By | You can create a label for your metric using a literal string (such as `my string`) or supported variables (for example, `$tag_worker_id` or `$tag_env_id`).
 |===
 
+[%header,cols="1,4"]
+|===
+2+| Advanced Mode Settings for APIs
+| From a|
+
+Lists JVM and Mule app properties (such as `jvm.memory` and `app_inbound_metric`) that you can add to your chart.
+
+Note that the field provides matching suggestions when you type in a character. For example, `jvm.c` will produce a list of all values that contain those characters (such as `jvm.classloading` and `jvm.cpu.operatingsystem`).
+
+For a list of advanced metrics, see xref:dashboard-config-ref.adoc#metrics_advanced[Advanced Mode Metrics]
+| Where a|
+Supports conditional logic for filtering the From data source you selected.
+
 After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
+|Select a|
+
+Select the field and mean values.
+|Group by a|
+
+Select the time and fill values.
+|Alias by a|
+
+Enter a naming pattern. 
+|===
+
 
 ////
 TODO /QUESTION: CAN YOU DO Regex matching ON WHERE?
