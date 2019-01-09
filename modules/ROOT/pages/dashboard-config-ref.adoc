@@ -203,8 +203,19 @@ These metrics are available when you use the Advanced mode for applications:
 *NOTE:*
 This metric is available for APIs only. | `http_summary_metric` a|
 
-* `api_id`
-* `api_version_id`
+* `request_count`
+* `request_size_average`
+* `request_size_max`
+* `request_size_min`
+* `request_size_sum`
+* `response_size_average`
+* `response_size_max`
+* `response_size_min`
+* `response_size_sum`
+* `response_time_average`
+* `response_time_max`
+* `response_time_min`
+* `response_time_sum`
 |===
 
 ////
