@@ -24,11 +24,14 @@ Other settings are specific to the setting mode (basic or advanced).
 
 In the General configuration tab, a Basic query selects a single metric for a resource (a Mule app) in a given environment.
 
-image::config-general.png[Example: Basic Configuration]
+image::ap-monitoring-basic-settings.png[Example: Basic Configuration]
 
 [%header,cols="1,4"]
 |===
 2+| Basic Mode Settings
+| Panel Type a|
+From the drop-down menu, select the type of resource for which to display metrics--*Application Panel* or *API Panel*.
+
 | Metric a|
 
 The dropdown menu includes these types of metrics:
@@ -40,21 +43,24 @@ The dropdown menu includes these types of metrics:
 For a list of basic metrics, see xref:dashboard-config-ref.adoc#metrics[Basic Mode Metrics]
 
 | Environment | Your Mule app environments.
-| Resource | A Mule app that is deployed in CloudHub (sometimes called a CloudHub app in the UI).
+| Resource | A deployed application or API.
 |===
 
 ////
 *TODO: NEED DESCRIPTIONS OF SOME OF THE ABOVE SETTINGS*
 ////
 
-After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
+After you complete your configuration, click *Save Changes*. 
+
+To exit the configuration and return to the dashboard, click the *X*.
 
 [[mode_advanced]]
 === Advanced Mode
 
-In the General configuration tab, Advanced settings support one or more fine-tuned queries for your chart.
+In the *General* configuration tab, advanced settings support one or more fine-tuned queries for your chart.
 
-It is important to note that an advanced configuration will be partially removed if you switch back to the basic configuration area.
+[IMPORTANT]
+If you switch back to the basic configuration, some of the advanced configuration queries are removed.
 
 image::config-general-advanced.png[Example: Advanced  Configuration]
 
