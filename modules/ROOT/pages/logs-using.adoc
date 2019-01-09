@@ -5,15 +5,17 @@ endif::[]
 
 *https://www.mulesoft.com/anypoint-pricing[Titanium Subscription Required]*
 
-The Anypoint Monitoring aggregates your log files so you can manage, search for,
+Anypoint Monitoring aggregates log files so you can manage, search for,
 filter, and analyze your logs. You can use aggregated logs in conjunction with
-monitoring to help identify causes and investigate failures quickly.
+monitoring to help identify issues and investigate failures quickly.
 
-== Searching Logs
+== Search Logs
 
-You can search for text in logs in a couple of ways:
+In Anypoint Monitoring, click *Log Search* in the menu on the left. On the log search page, you can search for text in logs in a few different ways. You can type your search query into the search field, you can use the UI to add a filter, and you can create an Elasticsearch query.
 
-* Typing your search query into the search field.
+=== Log Search Query
+
+. Type your search query into the log search field and press Enter.
 +
 You can provide full terms, such as `"code 400"` to find  bad requests. For
 exact matches to multi-worded searches, you need to surround your search terms
@@ -25,21 +27,49 @@ You can also provide wildcards such as `payload=org.glassfish.grizzly*`. Here
 are the results of that search:
 +
 image::log-search-wildcard.png[Log Search Using a Wildcard]
+
+
+=== Add a Filter
+You can create a filter to search logs using predefined fields, operators, and values.  
+
+. Click *+ Add a filter*. 
+. Select the predefined field from the drop-down list. +
+Predefined fields include:
+
+* application
+* class
+* environment
+* environment type
+* log level 
+* logger
+* message
+* message
+* thread
+* timestamp
+* worker
+. Select the operator from the drop-down list. +
+The available operators change according to the field you selected. +
+When you select the operator, if a value is required, a *Value* box appears on the right. 
+. If applicable, enter a value. +
+The following image shows an example of using a search filter to search for all logs that have a timestamp that falls between the given dates.
 +
-* Using Add A Filter to create a query that you can save as a filter.
-** You can create a query from predefined filters and operators, for example:
-+
-.Using Search Filter Values
 image::log-filter-timestamp.png[Using a Filter Query]
 +
 See <<filters_predefined>> and <<operators>>.
 +
-** You can create an Elasticsearch query.
+. (Optional) Enter a value in *Label*.
+. Click *Save*. +
+The filter appears to the right of *+Add a filter*. 
+
+=== Elasticsearch Query
+
+The UI can convert a query into an Elasticsearch Query DSL for you. 
+
+. Click *+Add a filter*.
+. Click *Edit Query DSL*. +
+. Enter your query, and click *Save*. +
+This example shows a query for log-level INFO:
 +
-Note that the UI can convert a query into an Elasticsearch Query DSL
-for you. This example shows a query for log-level INFO:
-+
-.Edit Query DSL (Elasticsearch Query)
 [source,text,linenums]
 ----
 {
@@ -56,7 +86,7 @@ for you. This example shows a query for log-level INFO:
 +
 The Elasticsearch query UI provides a link to the query documentation so that you can perform more complex queries than otherwise available, for example:
 +
-.More Complex Elasticsearch Query
+This example shows a more complex Elasticsearch query.
 [source,text,linenums]
 ----
 {
@@ -70,18 +100,19 @@ The Elasticsearch query UI provides a link to the query documentation so that yo
   }
 }
 ----
-+
-Note that some complex Elasticsearch queries do not have an equivalent in the Search Filter Values UI, so you can only create and view such queries in the Elasticsearch query UI.
 
-== Viewing Log Data
+[NOTE] 
+Some complex Elasticsearch queries do not have an equivalent in the search filter values UI, so you can only create and view such queries in the Elasticsearch query UI.
 
-By default, the logs entries in your log search results are abbreviated. You can expand and view the log message and details as a table or in JSON format.
+== View Log Data
+
+By default, the log entries in your log search results are abbreviated. You can expand and view the log message and details as a table or in JSON format.
 
 image::log-expanded.png[To Expand a Log Message]
 
 === Tabular Logs
 
-This example shows and expanded log entry as a table. The table contains log filter fields that you see in the Quick Filter list.
+This example shows an expanded log entry as a table. The table contains log filter fields that you see in the Quick Filter list.
 
 [source,text,linenums]
 ----
@@ -147,11 +178,11 @@ This example shows an expanded log entry in JSON format.
 ----
 
 [[view_logs]]
-=== Viewing Full Logs on a Dedicated Page
+=== View Full Logs on a Dedicated Page
 
-After finding a log on a particular issue, you can view the complete log on a dedicated page (without the quick filters, search field, and filter tags). You can view this detail in tabular or JSON format.
+After finding a log on a particular issue, you can view the complete log on a dedicated page (without the quick filters, search field, and filter tags). You can view the log detail in tabular or JSON format.
 
-. From the selected log, click the View This Log.
+. From the selected log, click *View This Log*.
 +
 .Example: Selected Log
 image::logs-view-surrounding.png[View This Log]
@@ -161,9 +192,9 @@ image::logs-view-surrounding.png[View This Log]
 .Example: Tabular Format
 image::logs-view-extended.png[Viewing Extended Logs]
 
-== Viewing Surrounding Logs
+== View Surrounding Logs
 
-After finding a log on a particular issue that interests you, you might want to know what other log reports preceded or followed it.
+After finding a log for a particular issue, you might want to know what other log reports preceded or followed it.
 
 . From the selected log, click View Surrounding Logs.
 +
@@ -173,7 +204,7 @@ image::logs-view-surrounding.png[View Surrounding Logs tab]
 +
 image::logs-set-surrounding.png[View Surrounding Logs]
 
-The default settings:
+The default settings are:
 
 * Load 5 More newer logs
 * Load 5 More older logs
@@ -181,31 +212,31 @@ The default settings:
 == Working with Predefined Filters
 
 When the Quick Filter list is open, you can select and use predefined log
-filters it. This example selects the ERROR log level.
+filters. This example selects the ERROR log level.
 
 image::log-filter-select.png[Predefined Log Filter]
 
 After you select a predefined filter from the Quick Filter list, you see it
-near the top of the page, next to `+Add a Filter`.
+near the top of the page, next to *Add a Filter*.
 
 image::log-filter-actions.png[Filter Actions]
 
-When you mouse over a filter, you can click a button for any of these actions:
+When you hover over a filter, you can select from the following actions:
 
 //TODO: ADD DESCRIPTIONS
-* Check (enable) or uncheck (disable) the filter.
-* Pin or unpin the filter.
-* Invert the search filter. For example, if the search is `log level IS ERROR`,
-the inversion is `log level IS NOT ERROR`
-* Delete the filter.
-* Edit the filter configuration.
+* *Enable/Disable* - Enables or disables the filter. When the filter is disabled, it is grayed out. 
+* *Pin/Unpin* -  Pin or unpin the filter.
+* *Invert* -  Change the operation of the search filter. For example, if the search is `log level IS ERROR`,
+the inversion is `log level IS NOT ERROR`.
+* *Remove* - Delete the filter.
+* *Edit* - Change the filter configuration.
 
 
 === Adding Filter Columns to Logs
 
-You can add or remove a filter column (field) to your log results from the Quick Filters list. For example, you might add the Log Level, Timestamp, or Environment field.
+From the Quick Filters list, you can add and remove columns to or from log results. For example, you might add the Log Level, Timestamp, or Environment field.
 
-You simply click the column icon for a filter field, for example:
+Click the column icon for a filter field, for example:
 
 image::log-filter-add-field.png[To Add a Filter Column to the Logs]
 
@@ -213,7 +244,7 @@ The resulting `log-level` column looks like this in the logs:
 
 image::log-filter-column.png[Filter Column in the Logs]
 
-To remove the filter column, simply click column icon for the filter field,
+To remove the filter column, click the column icon for the filter field,
 for example:
 
 image::log-filter-remove-field.png[To Remove a Filter Column from the Logs]
@@ -231,8 +262,7 @@ image::log-filter-column-move.png[To Remove a Filter Column from the Logs]
 === Search Filters
 
 In addition to using predefined filters, you can create, define, and use your
-own filter to use when searching for logs that are important to your
-organization.
+own filters. 
 
 [cols="1,2,2", options="header"]
 |===
@@ -340,27 +370,33 @@ image::logs-sharing.png[Sharing Logs]
 +
 image::logs-sharing-url.png[Sharing Logs Link]
 +
-. Click Copy so you can use it.
+. Click Copy to use it.
 
 [[save_view_log_searches]]
-== Saving and Viewing Saved Log Searches
+== Save and View Saved Log Searches
 
 You can save and view log searches.
 
-image::logs-search-save-menu.png[Save Log Search Menu]
+. Click *Save Search*.
+. Select *View saved searches*.
+. Click *View Saved Searches* again to return to the main Logs page.
 
-After saving a search, you can use View Saved Searches from the same menu to view and delete saved searches, for example:
+image::logs-search-save-menu.png[Save Log Search Menu]
 
 image::logs-search-save-view.png[View Saved Log Search]
 
-To return to the main Logs page, click View Saved Searches again.
 
-== Clearing a Search
+== Clear a Search
 
 You can clear the current search from the same menu shown in <<save_view_log_searches>>:
 
-. Click Save Search.
-. Select Clear Current Search.
+. Click *Save Search*.
+. Select *Clear Current Search*.
+
+
+=== See also
+
+xref:log-search-query-syntax.adoc[Search Query Syntax]
 
 ////
 TODO: CUSTOM: need screenshot and functionality in place
