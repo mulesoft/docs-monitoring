@@ -63,7 +63,11 @@ Boolean operators must be ALL CAPS.
 or
 
 `"monitoring anypoint" OR monitoring`
-|`NOT`| The `NOT` operator excludes documents that contain the term after `NOT`. This is equivalent to a difference using sets. The symbol `!` can be used in place of the word `NOT`.|
+|`NOT`| The `NOT` operator excludes documents that contain the term after `NOT`. This is equivalent to a difference using sets. The symbol `!` can be used in place of the word `NOT`.|To search for documents that contain "anypoint monitoring" but not "results", use the query:
+`"anypoint monitoring" NOT "results"` +
+[NOTE]
+The `NOT` operator can't be used with just one term. For example, the following search returns no results: +
+`NOT "results"`
 |`+`|Requires that the term after the `+` symbol exists somewhere in the field of a single document.|To search for documents that must contain "anypoint" and may contain "monitoring" use the query:
 
 `+anypoint monitoring`
@@ -76,9 +80,7 @@ or
 
 You can escape special characters that are part of the query syntax. The current list of supported special characters includes:
 
-====
-+ - && || ! ( ) { } [ ] ^ " ~ * ? : \
-====
+`+ - && || ! ( ) { } [ ] ^ " ~ * ? : \`
 
 To escape these characters, use the `\` before the character. For example, to search for (1+1):2 use the query:
 
