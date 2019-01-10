@@ -4,7 +4,7 @@ You can install Anypoint Monitoring on an on-premises server to monitor applicat
 
 == Before You Begin
 
-Open ports 443 and 5044 in your outbound firewall, if you have one. The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using the Lumberjack protocol, an open-source protocol for transferring log data over a highly-efficient bidirectional binary channel.
+Open ports 443 and 5044 in your outbound firewall, if you have one. The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using the Lumberjack protocol, an open-source protocol for transferring log data over a highly-efficient bidirectional binary channel. Data is securely transmitted using mutual TLS encryption. 
 
 Outbound connections are made to the following endpoints:
 
