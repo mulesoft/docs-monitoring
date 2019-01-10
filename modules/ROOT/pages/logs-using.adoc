@@ -11,7 +11,7 @@ monitoring to help identify issues and investigate failures quickly.
 
 == Search Logs
 
-In Anypoint Monitoring, click *Log Search* in the menu on the left. On the log search page, you can search for text in logs in a few different ways. You can type your search query into the search field, you can use the UI to add a filter, and you can create an Elasticsearch query.
+In Anypoint Monitoring, click *Log Search* in the menu on the left. On the log search page, you can search for text in logs in a few different ways. You can type your search query into the search field, you can use the UI to add a filter, and you can create a query.
 
 === Log Search Query
 
@@ -61,9 +61,9 @@ See <<filters_predefined>> and <<operators>>.
 . Click *Save*. +
 The filter appears to the right of *+Add a filter*. 
 
-=== Elasticsearch Query
+=== Search Query
 
-The UI can convert a query into an Elasticsearch Query DSL for you. 
+The UI can convert a search query into a Query DSL for you. 
 
 . Click *+Add a filter*.
 . Click *Edit Query DSL*. +
@@ -84,9 +84,9 @@ This example shows a query for log-level INFO:
 }
 ----
 +
-The Elasticsearch query UI provides a link to the query documentation so that you can perform more complex queries than otherwise available, for example:
+The search query UI provides a link to the query documentation so that you can perform more complex queries than otherwise available, for example:
 +
-This example shows a more complex Elasticsearch query.
+This example shows a more complex query.
 [source,text,linenums]
 ----
 {
@@ -102,7 +102,7 @@ This example shows a more complex Elasticsearch query.
 ----
 
 [NOTE] 
-Some complex Elasticsearch queries do not have an equivalent in the search filter values UI, so you can only create and view such queries in the Elasticsearch query UI.
+Some complex search queries do not have an equivalent in the search filter values UI, so you can only create and view such queries in the query UI.
 
 == View Log Data
 
