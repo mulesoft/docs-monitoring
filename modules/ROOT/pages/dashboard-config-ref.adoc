@@ -116,7 +116,7 @@ These metrics are available when you use the basic mode for APIs:
 [[metrics_advanced]]
 === Advanced Mode
 
-These metrics are available when you use the Advanced mode for applications:
+These metrics are available when you use the Advanced mode:
 
 .Advanced Metrics
 [%header,cols="1,2,2"]
