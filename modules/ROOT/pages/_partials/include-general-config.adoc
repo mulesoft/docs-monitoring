@@ -1,4 +1,7 @@
 = General Settings for Basic and Advanced Data Queries
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
 
 [[general_settings]]
 
@@ -22,16 +25,19 @@ Other settings are specific to the setting mode (basic or advanced).
 [[mode_basic]]
 === Basic Mode
 
-In the General configuration tab, a Basic query selects a single metric for a resource (a Mule app) in a given environment.
+In the *General* configuration tab, a basic query selects a single metric for a resource (a deployed application or API) in a given environment.
 
-image::config-general.png[Example: Basic Configuration]
+image::ap-monitoring-basic-settings.png[Example: Basic Configuration]
 
 [%header,cols="1,4"]
 |===
 2+| Basic Mode Settings
+| Panel Type a|
+From the drop-down menu, select the type of panel to display for the resource -- *Application Panel* or *API Panel*.
+
 | Metric a|
 
-The dropdown menu includes these types of metrics:
+The drop-down menu includes these types of metrics:
 
 * Inbound response metrics and averages
 * JVM metrics
@@ -39,37 +45,40 @@ The dropdown menu includes these types of metrics:
 
 For a list of basic metrics, see xref:dashboard-config-ref.adoc#metrics[Basic Mode Metrics]
 
-| Environment | Your Mule app environments.
-| Resource | A Mule app that is deployed in CloudHub (sometimes called a CloudHub app in the UI).
+| Environment | The environment where your application or API is deployed.
+| Resource | A deployed application or API.
 |===
 
 ////
 *TODO: NEED DESCRIPTIONS OF SOME OF THE ABOVE SETTINGS*
 ////
 
-After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
+After you complete your configuration, click *Save Changes*. 
+
+To exit the configuration and return to the dashboard, click the *X*.
 
 [[mode_advanced]]
 === Advanced Mode
 
-In the General configuration tab, Advanced settings support one or more fine-tuned queries for your chart.
+In the *General* configuration tab, advanced settings support one or more fine-tuned queries for your chart.
 
-It is important to note that an advanced configuration will be partially removed if you switch back to the basic configuration area.
+[IMPORTANT]
+If you switch back to the basic configuration, some of the advanced configuration queries are removed.
 
 image::config-general-advanced.png[Example: Advanced  Configuration]
 
 [%header,cols="1,4"]
 |===
-2+| Advanced Mode Settings
+2+| Advanced Mode Settings for Applications
 | From a|
 
 Lists JVM and Mule app properties (such as `jvm.memory` and `app_inbound_metric`) that you can add to your chart.
 
-Note that the field provides matching suggestions when you type in a character. For example, `jvm.c` will produce a list of all values that contain those characters (such as `jvm.classloading` and `jvm.cpu.operatingsystem`).
+This field provides matching suggestions when you type in a character. For example, `jvm.c` will produce a list of all values that contain those characters (such as `jvm.classloading` and `jvm.cpu.operatingsystem`).
 
 For a list of advanced metrics, see xref:dashboard-config-ref.adoc#metrics_advanced[Advanced Mode Metrics]
 | Where a|
-Supports conditional logic for filtering the From data source you selected.
+Supports conditional logic for filtering the *From* data source you selected.
 
 * You can select one or more filters tags (such as `app_id`, `env_id`, `org_id`, `worker_id`). Example: `Where env_id = Sandbox`.
 * Available operators include `=`, `!=`, `<>`, `<`, and `>`.
@@ -96,7 +105,35 @@ Valid values and arguments:
 | Alias By | You can create a label for your metric using a literal string (such as `my string`) or supported variables (for example, `$tag_worker_id` or `$tag_env_id`).
 |===
 
-After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
+[%header,cols="1,4"]
+|===
+2+| Advanced Mode Settings for APIs
+| From a|
+
+`http_summary_metric` 
+
+For a list of advanced metrics, see xref:dashboard-config-ref.adoc#metrics_advanced[Advanced Mode Metrics]
+| Where a|
+Provides conditional logic for filtering the *From* data source you selected.
+
+You can select one or more filter tags (such as `api_id`, `org_id`, `api_version_id`, `method`, `status code`). Example: `Where status_code = 200`.
+
+|Select a|
+
+For creating a function that selects a field (such as `request_size_average`,`response_time_max`, or `response_time_sum`) from the HTTP summary and applies an operation to it (such as the `mean` of the `response_time_average`). You can add one or more `field` settings.
+|Group by a|
+
+For grouping the data by a selected time interval (such as `$__interval`, `1s`, `10m`, `1h`), filter tag (such as `tag(api_id)`), and fill options (such as `none`, `null`, `0`, `previous`, `linear`).
+|Alias by a|
+
+You can create a label for your metric using a literal string (such as `my string`) or supported variables (for example, `$tag_api_id`). The alias must always begin with `$tag`. The syntax is `$tag_yourTagName`.
+
+To use your tag as an alias, the tag must be used to `group by` in the query. 
+|===
+
+After you complete your configuration, click *Save Changes*. 
+
+To exit the configuration and return to the dashboard, click the *X*.
 
 ////
 TODO /QUESTION: CAN YOU DO Regex matching ON WHERE?

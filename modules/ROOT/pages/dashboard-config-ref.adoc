@@ -28,9 +28,9 @@ Many fields accept time and date interval values like these:
 Many <<metrics_basic, basic>> and <<metrics_advanced, advanced>> metrics are available when configuring custom dashboard graphs.
 
 [[metrics_basic]]
-=== Basic Mode Metrics
+=== Basic Mode Metrics for Applications
 
-These metrics are available when you use the Basic mode:
+These metrics are available when you use the Basic mode for applications:
 
 [%header,cols="3,1,1"]
 |===
@@ -98,6 +98,19 @@ These metrics are available when you use the Basic mode:
 | Outbound - Success Average Request Count by Flow | `short` | 3.x-AM only
 | Outbound - Success Average Response Time by Endpoint | `ms` | 3.x-AM only
 | Outbound - Success Average Response Time by Flow | `ms` | 3.x-AM only
+|===
+
+=== Basic Mode Metrics for APIs
+
+These metrics are available when you use the basic mode for APIs:
+
+[%header,cols="3,1,1"]
+|===
+| Basic Metrics | Unit | Runtime Version Support
+| Requests by HTTP Policy Violation | `short` | 3.x-AM, 4.x-AM
+| Requests by HTTP Respond Code | `short` | 3.x-AM, 4.x-AM
+| Requests by Method | `short` | 3.x-AM, 4.x-AM
+| Requests by Instance | `short` | 3.x-AM, 4.x-AM
 |===
 
 [[metrics_advanced]]
@@ -186,6 +199,23 @@ These metrics are available when you use the Advanced mode:
 | JVM Threads | `jvm.threading` a|
 
 * `thread_count`
+| HTTP Summary +
+*NOTE:*
+This metric is available for APIs only. | `http_summary_metric` a|
+
+* `request_count`
+* `request_size_average`
+* `request_size_max`
+* `request_size_min`
+* `request_size_sum`
+* `response_size_average`
+* `response_size_max`
+* `response_size_min`
+* `response_size_sum`
+* `response_time_average`
+* `response_time_max`
+* `response_time_min`
+* `response_time_sum`
 |===
 
 ////
