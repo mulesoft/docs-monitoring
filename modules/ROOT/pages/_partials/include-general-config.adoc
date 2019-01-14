@@ -33,7 +33,7 @@ image::ap-monitoring-basic-settings.png[Example: Basic Configuration]
 |===
 2+| Basic Mode Settings
 | Panel Type a|
-From the drop-down menu, select the type of panel to display for the resource--*Application Panel* or *API Panel*.
+From the drop-down menu, select the type of panel to display for the resource -- *Application Panel* or *API Panel*.
 
 | Metric a|
 
@@ -116,7 +116,7 @@ For a list of advanced metrics, see xref:dashboard-config-ref.adoc#metrics_advan
 | Where a|
 Provides conditional logic for filtering the *From* data source you selected.
 
-You can select one or more filters tags (such as `api_id`, `org_id`, `api_version_id`, `method`, `status code`). Example: `Where status_code = 404`.
+You can select one or more filter tags (such as `api_id`, `org_id`, `api_version_id`, `method`, `status code`). Example: `Where status_code = 200`.
 
 |Select a|
 
@@ -128,7 +128,7 @@ For grouping the data by a selected time interval (such as `$__interval`, `1s`, 
 
 You can create a label for your metric using a literal string (such as `my string`) or supported variables (for example, `$tag_api_id`). The alias must always begin with `$tag`. The syntax is `$tag_yourTagName`.
 
-To use your tag as an alias, the tag must be used to group by in the query. 
+To use your tag as an alias, the tag must be used to `group by` in the query. 
 |===
 
 After you complete your configuration, click *Save Changes*. 
