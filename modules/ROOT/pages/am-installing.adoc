@@ -1,6 +1,6 @@
 = Install Anypoint Monitoring On-Premises
 
-You can install Anypoint Monitoring on an on-premises server to monitor applications running on that server. On premises monitoring for hybrid deployments must be enabled at the master org level.
+You can install Anypoint Monitoring on an on-premises server to monitor applications running on that server. On-premises monitoring for hybrid deployments must be enabled at the master org level.
 
 == Before You Begin
 
@@ -63,11 +63,11 @@ Instructions for downloading and installing Anypoint Monitoring on-premises are 
 To see the *Settings* tab, you must:
 
 * Have the Anypoint Monitoring User permission. See xref:access-management::users#granting-permissions-and-roles-to-users[Granting Permissions and Roles to Users].
-* Have on premises monitoring for hybrid deployments enabled at your master org level. Check with your account representative to verify this.
+* Have on-premises monitoring for hybrid deployments enabled at your master org level. Check with your account representative to verify this.
 
 . Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
 . In the menu on the left, click *Settings*. +
-The instructions for installing Anypoint Monitoring on premises are displayed. You can also download the Anypoint Monitoring installation ZIP (`am.zip`) file from this page. 
+The instructions for installing Anypoint Monitoring on-premises are displayed. You can also download the Anypoint Monitoring installation ZIP (`am.zip`) file from this page. 
 
 == Verify that Anypoint Monitoring is Running
 
