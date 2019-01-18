@@ -36,6 +36,18 @@ Ensure that one of the following Mule runtime engine versions is running on the 
 * 3.9.0
 * 3.8.7
 
+== Supported Versions of Mule Runtime Manager Agent
+
+Ensure that one of the following Mule Runtime Manager agent versions is installed in the Mule runtime engine running on the server:
+
+* Runtime Manager Agent 2.1.7
+* Runtime Manager Agent 2.1.6
+* Runtime Manager Agent 1.11.3
+* Runtime Manager Agent 1.11.2
+* Runtime Manager Agent 1.11.1
+* Runtime Manager Agent 1.11.0
+* Runtime Manager Agent 1.10.0
+
 == Hardware Prerequisites
 
 Ensure that the server has at least the minimum hardware requirements for Anypoint Monitoring:
@@ -91,5 +103,6 @@ If necessary, you can whitelist the endpoint for outbound firewall rules so your
 == See Also
 
 * xref:4.1@mule-runtime::runtime-installation-task.adoc[To Download and Install the Mule Runtime 4 EE Standalone]
+* xref:runtime-manager::installing-and-configuring-runtime-manager-agent.adoc[Installing and Configuring Mule Runtime Manager Agent]
 * xref:3.9@mule-runtime::installing.adoc[Installing and Deploying Mule Runtime 3.9]
 * xref:3.8@mule-runtime::installing.adoc[Installing and Deploying Mule Runtime 3.8]
