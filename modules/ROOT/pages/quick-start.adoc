@@ -71,6 +71,10 @@ recommends that you switch to a mainline runtime.
 | Metrics and logs
 
 | Anypoint Platform (CloudHub)
+| 3.9.2
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
 | 4.1.1-AM
 | Basic metrics (xref:dashboard-config-ref#metrics_basic[JVM-related only]) and logs
 
