@@ -3,9 +3,10 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Monitoring is part of the Management Center in Anypoint Platform. It provides data on Mule apps that are running on <<runtime_versions>>, and you need to have the <<required_permission>> to use it.
+Anypoint Monitoring provides data on Mule apps that are running on <<runtime_versions>>. It is part of the Management Center in Anypoint Platform, and you need to have the <<required_permission>> to use it.
 
-Note that Functional Monitoring is covered in xref:api-functional-monitoring::index.adoc[API Functional Monitoring].
+[NOTE]
+Functional Monitoring is covered in xref:api-functional-monitoring::index.adoc[API Functional Monitoring].
 
 [[using_monitoring]]
 == Using Anypoint Monitoring
@@ -15,8 +16,8 @@ Note that Functional Monitoring is covered in xref:api-functional-monitoring::in
 . Find Anypoint Monitoring within the Management Center.
 +
 |===
-a| Under Management Center in the left-side navigation menu, select Anypoint
-Monitoring:
+a| Under *Management Center* in the left-side navigation menu, select *Anypoint
+Monitoring*:
 
 image::management-center-menu.png[Management Center Menu]
 |===
@@ -46,10 +47,10 @@ To use Anypoint Monitoring, you need this permission:
 Typically, administrators set permissions through Access Management. See xref:access-management::users.adoc#granting-permissions-and-roles-to-users[Granting Permissions and Roles to Users].
 
 [[runtime_versions]]
-== Supported Platform and Mule Versions
+== Supported CloudHub Mule Versions
 
 For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them
-to the appropriate version of Mule runtime.  Note that the Anypoint Monitoring
+to the appropriate version of Mule runtime engine.  Note that the Anypoint Monitoring
 images (for example, 3.9.1-AM) receive the latest patch updates once per month,
 while the non-AM (mainline) images receive patch updates as soon as they are
 available. If your production environment requires a Mule runtime patch, MuleSoft

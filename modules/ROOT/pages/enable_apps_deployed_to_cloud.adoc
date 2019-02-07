@@ -1,0 +1,15 @@
+= Enable Mule Applications Deployed to CloudHub
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+You can enable monitoring for Mule apps running on Mule 3.9.2 in the xref:monitoring_settings_page.adoc[Settings page]. 
+
+. Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
+. In the menu on the left, click *Settings*. 
+. Select *CloudHub*. 
+. In the *Environment* drop-down list, select the environment where the application is running. +
+A list of running applications is displayed for the selected environment. +
+You can search for a specific application using the *List of resources* search box.
+. Next to the application click *Enable* to enable monitoring for the application, or *Disable* to disable monitoring for the application. 
+

@@ -1,6 +1,7 @@
 .xref:index.adoc[Anypoint Monitoring]
 * xref:index.adoc[Overview]
 * xref:quick-start.adoc[Getting Started]
+ ** xref:monitoring_settings_page.adoc[Anypoint Monitoring Settings]
  ** xref:am-installing.adoc[Install Anypoint Monitoring On-Premise]
 * xref:dashboards.adoc[Dashboards]
  ** xref:app-dashboards.adoc[Builtin Application Dashboards]
