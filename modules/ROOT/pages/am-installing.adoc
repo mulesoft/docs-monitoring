@@ -1,10 +1,10 @@
 = Install Anypoint Monitoring On-Premises
 
-You can install Anypoint Monitoring on an on-premises server to monitor applications running on that server. On-premises monitoring for hybrid deployments must be enabled at the master org level.
+You can install Anypoint Monitoring on an on-premises server to monitor applications running on that server. 
 
 == Before You Begin
 
-Open ports 443 and 5044 in your outbound firewall, if you have one. The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using the Lumberjack protocol, an open-source protocol for transferring log data over a highly-efficient bidirectional binary channel. Data is securely transmitted using mutual TLS encryption. 
+Open ports 443 and 5044 in your outbound firewall, if you have one. The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using an open-source protocol for transferring log data over a highly-efficient bidirectional binary channel. Data is securely transmitted using mutual TLS encryption. 
 
 Outbound connections are made to the following endpoints:
 
@@ -33,6 +33,7 @@ Ensure that one of the following Mule runtime engine versions is running on the 
 * 4.1.3
 * 4.1.2
 * 4.1.1
+* 3.9.2
 * 3.9.1
 * 3.9.0
 * 3.8.7
@@ -58,18 +59,11 @@ Ensure that the server has at least the minimum hardware requirements for Anypoi
 * 1GB RAM
 * 4GB disk space
 
-== Install Anypoint Monitoring
+[[install_ap_monitoring_onprem]]
+== Install Anypoint Monitoring 
 
-Instructions for downloading and installing Anypoint Monitoring on-premises are located on the *Settings* page of the Anypoint Monitoring user interface.
+Instructions for downloading and installing Anypoint Monitoring on-premises are located on the xref:monitoring-settings-page.adoc[*Settings* page] of the Anypoint Monitoring user interface. You can also download the Anypoint Monitoring installation ZIP (`am.zip`) file from this page. 
 
-To see the *Settings* tab, you must:
-
-* Have the Anypoint Monitoring User permission. See xref:access-management::users#granting-permissions-and-roles-to-users[Granting Permissions and Roles to Users].
-* Have on-premises monitoring for hybrid deployments enabled at your master org level. Check with your account representative to verify this.
-
-. Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
-. In the menu on the left, click *Settings*. +
-The instructions for installing Anypoint Monitoring on-premises are displayed. You can also download the Anypoint Monitoring installation ZIP (`am.zip`) file from this page. 
 
 == Verify that Anypoint Monitoring is Running
 
@@ -90,6 +84,13 @@ If necessary, you can whitelist the endpoint for outbound firewall rules so your
 11. Open the log file for the data-transfer agent. The log file is in this path: `./am/log/filebeat`
 11. Look for entries that mention connection failures or connection retries.
 
+== Update the Monitoring Agent
+
+. In the `am` folder, run the following command: +
+`./bin/uninstall script`
+. Delete the `am` folder.
+. Follow the instructions for <<install_ap_monitoring_onprem,installing Anypoint Monitoring>> on-premises. 
+
 === What to do Next
 
 - If you find connection failure or retry entries, ensure that ports 443 and 5044 in your outbound firewall are open.
@@ -97,7 +98,7 @@ If necessary, you can whitelist the endpoint for outbound firewall rules so your
 
 == See Also
 
-* xref:4.1@mule-runtime::runtime-installation-task.adoc[To Download and Install the Mule Runtime 4 EE Standalone]
+* xref:monitoring-settings-page.adoc[Anypoint Monitoring Settings]
+* xref:4.1@mule-runtime::runtime-installation-task.adoc[To Download and Install the Mule 4]
 * xref:runtime-manager::installing-and-configuring-runtime-manager-agent.adoc[Installing and Configuring Mule Runtime Manager Agent]
 * xref:3.9@mule-runtime::installing.adoc[Installing and Deploying Mule Runtime 3.9]
-* xref:3.8@mule-runtime::installing.adoc[Installing and Deploying Mule Runtime 3.8]

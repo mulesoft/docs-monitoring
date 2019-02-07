@@ -1,0 +1,86 @@
+= Configure Anypoint Monitoring for Mule Apps (CloudHub)
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+To start monitoring Mule apps that are managed in CloudHub, you must deploy them to a supported version of Mule runtime engine and set the runtime version in your Mule app. 
+
+== Supported Versions of Mule Deployed to CloudHub
+
+Anypoint Monitoring images (for example, 3.9.1-AM) receive the latest patch updates once per month, while the non-AM images receive patch updates as soon as they are available. If your production environment requires a Mule runtime engine patch, you should switch to a non-AM runtime.
+
+|===
+| Platform | Mule Version | Features
+
+| Anypoint Platform (CloudHub)
+| 3.9.2
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 3.9.1-AM
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 3.9.0-AM
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 3.8.7-AM
+| Logs only
+
+| Anypoint Platform (CloudHub)
+| 4.1.1-AM
+| Basic metrics (xref:dashboard-config-ref#metrics_basic[JVM-related only]) and logs
+
+| Anypoint Platform (CloudHub)
+| 4.1.2-AM
+| Basic metrics (xref:dashboard-config-ref#metrics_basic[JVM-related only]) and logs
+
+| Anypoint Platform (CloudHub)
+| 4.1.3-AM
+| Basic metrics (xref:dashboard-config-ref#metrics_basic[JVM-related only]) and logs
+
+| Anypoint Platform (CloudHub)
+| 4.1.4-AM
+| Basic metrics (xref:dashboard-config-ref#metrics_basic[JVM-related only]) and logs
+|===
+
+Metrics are used by graphs and other charts within xref:dashboards.adoc[Dashboards].
+
+[[update_app]]
+== Set the Runtime Version
+
+To set or change the runtime version for your Mule app:
+
+* For new and existing Mule apps:
++
+. Go to *Settings* in Runtime Manager for that app.
+. Choose the new runtime from the *Runtime Version* selector.
++
+If you do not see a supported runtime version in the drop-down menu, scroll down
+to *Show Old Patch Releases*, click, and select a runtime for your app.
++
+* For Anypoint CLI deployments:
++
+If you are using the Anypoint CLI to deploy your Mule app (for example,
+through a build pipeline), you need to include the `--runtime` parameter with
+an appropriate value, for example:
++
+[src,command,linenums]
+----
+anypoint-cli --username="..." --password="..."
+ --organization="Mythical, Inc"
+ --environment="Production" runtime-mgr cloudhub-application deploy
+ --runtime="3.9.0-AM" helloworld ~/demoproj2.zip
+----
++
+* For Maven deployments:
++
+If you are using Maven for deployment, you need to modify the `<muleVersion>`
+tag in the `pom.xml` file to append the `-AM`, for example, changing `<muleVersion>3.9.0</muleVersion>` to `<muleVersion>3.9.0-AM</muleVersion>`).
+
+== See Also
+
+* xref:monitoring-settings-page.adoc[Anypoint Monitoring Settings]
+* xref:am-installing.adoc[Install Anypoint Monitoring On-Premises]
+* xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]
