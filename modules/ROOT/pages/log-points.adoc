@@ -1,9 +1,30 @@
 = Anypoint Monitoring Log Points
 
-The Anypoint Monitoring log points feature enables you to interactively extract data from running managed APIs. You can specify properties (for example, the host and method in the request header) in your managed API for which to generate logs without having to write code or redeploy your application. This helps you troubleshoot without having to restart the application. For example, you can specify a cookie header in an API to see if an injection attack is in progress. The log data for the specified cookie header is automatically displayed in real time on the Logs page.
+The Anypoint Monitoring log points feature enables you to interactively extract data from running managed APIs. You can specify properties (for example, the host and method in the request header) in your managed API for which to generate logs without having to write code or redeploy your application. This helps you troubleshoot without having to restart the application. 
+
+For example, you can specify a cookie header in an API to see if an injection attack is in progress. The log data for the specified cookie header is automatically displayed in real time on the Logs page.
 
 [NOTE]
 This feature requires a https://www.mulesoft.com/anypoint-pricing[Titanium subscription] to Anypoint Monitoring and Mule 3.8.5 or later.
+
+== Supported APIs
+
+Log points is supported on the following types of APIs:
+
+* Basic endpoint APIs (CloudHub and hybrid)
+ ** CloudHub
+ ** Hybrid
+* Endpoint with Proxy APIs
+  ** CloudHub proxy
+  ** Hybrid proxy
+
+[NOTE]
+All basic endpoint APIs are displayed in the selectors regardless of whether or not the registered API has a supported Mule runtime engine version. If a log point is saved for a basic endpoint API with an unsupported version, the application policy fails.
+
+== Supported Mule Runtime Engine Versions
+
+* Mule 3 versions 3.8.5 and later
+* Mule 4 versions 4.1.1 and later
 
 == Enable API Log Points
 
