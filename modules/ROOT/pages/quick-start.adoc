@@ -1,4 +1,4 @@
-= Getting Started
+= Get Started
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -9,18 +9,13 @@ Anypoint Monitoring provides data on Mule apps that are running on <<runtime_ver
 Functional Monitoring is covered in xref:api-functional-monitoring::index.adoc[API Functional Monitoring].
 
 [[using_monitoring]]
-== Using Anypoint Monitoring
+== Use Anypoint Monitoring
 
 . Log into Anypoint Platform at https://anypoint.mulesoft.com[https://anypoint.mulesoft.com].
 +
-. Find Anypoint Monitoring within the Management Center.
+. Under *Management Center* in the left-side navigation menu, select *Anypoint Monitoring*.
 +
-|===
-a| Under *Management Center* in the left-side navigation menu, select *Anypoint
-Monitoring*:
-
 image::management-center-menu.png[Management Center Menu]
-|===
 +
 If you do not see Anypoint Monitoring or are unable to use it, it might be a permissions issue. See <<required_permission>>.
 +
@@ -49,12 +44,7 @@ Typically, administrators set permissions through Access Management. See xref:ac
 [[runtime_versions]]
 == Supported CloudHub Mule Versions
 
-For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them
-to the appropriate version of Mule runtime engine.  Note that the Anypoint Monitoring
-images (for example, 3.9.1-AM) receive the latest patch updates once per month,
-while the non-AM (mainline) images receive patch updates as soon as they are
-available. If your production environment requires a Mule runtime patch, MuleSoft
-recommends that you switch to a mainline runtime.
+For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them to the appropriate version of Mule runtime engine.  Anypoint Monitoring images (for example, 3.9.1-AM) receive the latest patch updates once per month, while the non-AM (mainline) images receive patch updates as soon as they are available. If your production environment requires a Mule runtime engine patch, you should switch to a mainline runtime.
 
 |===
 | Platform | Mule Version | Features
@@ -97,7 +87,7 @@ Note that metrics are used by graphs and other charts within xref:dashboards.ado
 See <<update_app>>.
 
 [[update_app]]
-== Setting the Runtime Version
+== Set the Runtime Version
 
 To set or change the runtime version for your Mule app:
 

@@ -3,11 +3,14 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Use the Settings page to install Anypoint Monitoring on an on-premises server to monitor applications running on that server, and enable (or disable) monitoring for applications running on Mule 3.9.2.
+On the Settings page, you can:
 
-== View the Settings Page
+* Find the instructions to install Anypoint Monitoring on an on-premises server to monitor applications running on that server. 
+* Enable (or disable) monitoring for applications running on Mule 3.9.2.
 
-To see the *Settings* page, you must:
+== Access the Settings Page
+
+To access the *Settings* page, you must:
 
 * Have the Anypoint Monitoring User permission. See xref:access-management::users#granting-permissions-and-roles-to-users[Granting Permissions and Roles to Users].
 * Have on-premises monitoring for hybrid deployments enabled at your master org level. Check with your account representative to verify this.
@@ -20,7 +23,7 @@ The instructions for installing Anypoint Monitoring on-premises are displayed. Y
 
 == Enable Monitoring for Apps Deployed to CloudHub
 
-You can enable monitoring for Mule apps running on Mule 3.9.2 in the xref:monitoring_settings_page.adoc[Settings page]. 
+You can enable monitoring for Mule apps running on Mule 3.9.2 in the *Settings* page. 
 
 . Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
 . In the menu on the left, click *Settings*. 
