@@ -1,6 +1,7 @@
 .xref:index.adoc[Anypoint Monitoring]
 * xref:index.adoc[Overview]
 * xref:quick-start.adoc[Getting Started]
+ ** xref:am-installing.adoc[Install Anypoint Monitoring On-Premise]
 * xref:dashboards.adoc[Dashboards]
  ** xref:app-dashboards.adoc[Builtin Application Dashboards]
  ** xref:api-analytics-dashboard.adoc[Builtin API Analytics Dashboard]
@@ -23,4 +24,4 @@
 * xref:log-points.adoc[Log Points]
 * xref:raw-data.adoc[Raw Data]
 * xref:tools.adoc[Tools]
-* xref:am-installing.adoc[Install Anypoint Monitoring On-Premise]
+

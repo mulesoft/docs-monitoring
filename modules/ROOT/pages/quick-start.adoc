@@ -59,11 +59,7 @@ recommends that you switch to a mainline runtime.
 | Platform | Mule Version | Features
 
 | Anypoint Platform (CloudHub)
-| 3.8.7-AM
-| Logs only
-
-| Anypoint Platform (CloudHub)
-| 3.9.0-AM
+| 3.9.2
 | Metrics and logs
 
 | Anypoint Platform (CloudHub)
@@ -71,8 +67,12 @@ recommends that you switch to a mainline runtime.
 | Metrics and logs
 
 | Anypoint Platform (CloudHub)
-| 3.9.2
+| 3.9.0-AM
 | Metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 3.8.7-AM
+| Logs only
 
 | Anypoint Platform (CloudHub)
 | 4.1.1-AM
