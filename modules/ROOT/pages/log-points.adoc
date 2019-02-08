@@ -59,7 +59,6 @@ You can monitor the following request header log points: +
 * *Date*
 * *Set-Cookie*
 * *Pragma*
-* *Content Length*
 +
 You can click the blue box to the left of *Header* to select all log points.
 Select *Body* to monitor the *Response Body*.
