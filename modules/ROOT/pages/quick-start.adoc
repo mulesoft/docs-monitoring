@@ -42,11 +42,11 @@ To use Anypoint Monitoring, you need this permission:
 Typically, administrators set permissions through Access Management. See xref:access-management::users.adoc#granting-permissions-and-roles-to-users[Granting Permissions and Roles to Users].
 
 [[runtime_versions]]
-== Configure Anypoint Monitoring for Mule Apps (CloudHub)
+== Enable Anypoint Monitoring on CloudHub
 
 For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them to the appropriate version of Mule runtime engine.  See xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps (CloudHub)]. 
 
-== Install Anypoint Monitoring On-Premises
+== Enable Anypoint Monitoring On-Premises
 
 You can xref:am-installing.adoc[install Anypoint Monitoring] on an on-premises server to monitor applications that are running on that server and managed in CloudHub (hybrid apps).
 
