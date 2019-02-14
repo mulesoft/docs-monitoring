@@ -6,11 +6,11 @@ endif::[]
 
 The Anypoint Custom Metrics connector enables you to send operational and business metric values from a hybrid application to Anypoint Monitoring, where the metrics can be visualized in real time using the built-in *Custom metrics* dashboard. 
 
-Once you select the metrics to display in the dashboard, you can filter and group the metrics along the included dimensions. You can include multiple custom and built-in metrics in a single dashboard visualization.
+Once you select the metrics you defined in the Custom Metrics connector to display in the dashboard, you can filter and group the metrics along the included dimensions. You can include multiple custom and built-in metrics in a single dashboard visualization.
 
 [NOTE] 
 ====
-To use the Anypoint Custom Metrics connector, you must have a Titanium subscription. +
+To see metrics that you configured in the Anypoint Custom Metrics connector in Anypoint Monitoring, you must have a Titanium subscription. +
 This feature is currently supported only for hybrid applications.
 ====
 
@@ -35,7 +35,7 @@ image::custom-metrics-dashboard.png[]
 ** *integral* - Returns the area under the curve for subsequent values.
 ** *mean* - Returns the arithmetic average of the specified measurement over a given interval of time.
 ** *median* - Displays the middle value for the collected metrics.
-** *mode* - Displays the most frequent value in the metrics collected for the defined. measurement. 
+** *mode* - Displays the most frequent value in the metrics collected for the defined measurement. 
 ** *sum* - Displays the sum of all the values for the defined measurement. 
 * *Measurement* - The choices in this list are determined by the measurement values you define in the Custom Metrics connector. 
 * *Group by* - The choices in this list are determined by the values you define in the Custom Metrics connector. 
