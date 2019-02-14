@@ -19,7 +19,7 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 [%header,cols="1,4"]
 |===
 | Built-In Dashboards | Charts
-| Overview a|
+| *Overview* a|
 
 * Total Inbound Requests
 * Average Response Time Inbound
@@ -35,7 +35,7 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 //* Response Time by Outbound Endpoint: Number of milliseconds (ms) for a response from outbound endpoints of your Mule app.
 //* CPU: Percentage of CPU used over time. The percentages are calculated per worker and as the total for all workers.
 //* Memory: Number of mebibytes (MiB) used over time.
-| Inbound a|
+| *Inbound* a|
 
 * Total Inbound Requests
 * Average Response Time Inbound
@@ -47,7 +47,7 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 //* Total Inbound Calls (success or failure)
 //* Total Inbound by Endpoint Outbound
 //* Average Response Time Inbound
-| Outbound a|
+| *Outbound* a|
 
 * Total Outbound Requests
 * Average Response Time Outbound
@@ -57,7 +57,12 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 
 //* Total Outbound Calls (success or failure)
 //* Total Outbound by Endpoint Outbound
-| Performance a|
+| *Connectors* a|
+
+The *Connectors* tab does not display for apps deployed to CloudHub. 
+
+If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
+| *Performance* a|
 
 * Average Response Time Inbound
 * Average Response Time Grouped by Endpoint Inbound
@@ -67,7 +72,7 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * Response Time graphs: 99, 90, 75, and 50 Percentile Outbound
 //* Response Time graphs: 99, 90, 75, and 50 Percentile Inbound
 //* Average Response Time: Outbound, Grouped by Endpoint Outbound
-| Failures a|
+| *Failures* a|
 
 * Total Failed Inbound Requests
 * Total Failed Outbound Requests
@@ -75,7 +80,7 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * All Outbound Grouped By Response Type
 * Total Failed Inbound Grouped By Endpoint
 * Total Failed Outbound Grouped By Endpoint
-| JVM a|
+| *JVM* a|
 
 * Garbage Collection Count, Garbage Collection Time
 * Par New Collection Count, Par New Collection Time
@@ -98,8 +103,8 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 
 .Example: Infrastructure Dashboard
 image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
+| *Custom metrics* a|
+
+The Custom metrics tab displays only if you have a Titanium subscription and selected a hybrid app deployed to a server, server group, or cluster. See xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].
 |===
-////
-TODO_MED: DESCRIBE BUILT-IN CHARTS ONCE THEY ARE MORE CLEAR
-TODO_LOW: DESCRIBE EACH OF THE ITEMS IN dashboard-built-in-info.png WHEN TIME PERMITS
-////
+
