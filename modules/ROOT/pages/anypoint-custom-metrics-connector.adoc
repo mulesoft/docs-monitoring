@@ -23,17 +23,20 @@ Custom metrics are not collected for the application until you configure the Cus
 [NOTE]
 You must select a hybrid application (application deployed to an on-premises server and managed in the cloud) to see the *Custom metrics* tab. +
 If the Custom Metrics connector has collected one or more metrics in the last 24 hours, one chart per defined metric is displayed. 
++
+image::custom-metrics-dashboard.png[]
++
 . Click *Select a measurement for this chart* to display the measurement for the chart.
 . Use the drop-down lists at the bottom of the chart to filter the data by: +
 * *Aggregation* - Possible aggregations include:
 ** *None* (default) - No data aggregation.  
 ** *count* - Displays the total number of items collected for the measurement.
-** *distinct* - 
-** *integral* - 
-** *mean* -
+** *distinct* - Returns the unique values for the given measurement.
+** *integral* - Returns the area under the curve for subsequent values.
+** *mean* - Returns the arithmetic average of the specified measurement over a given interval of time.
 ** *median* - Displays the middle value for the collected metrics.
 ** *mode* - Displays the most frequent value in the metrics collected for the defined. measurement. 
-** *sum* - Displays the sum of numbers returned by the defined measurement. 
+** *sum* - Displays the sum of all the values for the defined measurement. 
 * *Measurement* - The choices in this list are determined by the measurement values you define in the Custom Metrics connector. 
 * *Group by* - The choices in this list are determined by the values you define in the Custom Metrics connector. 
 
