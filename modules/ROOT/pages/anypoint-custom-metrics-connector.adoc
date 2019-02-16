@@ -4,7 +4,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The Anypoint Custom Metrics connector enables you to send operational and business metric values from a hybrid application to Anypoint Monitoring, where the metrics can be visualized in real time using a custom dashboard in advanced mode and the built-in *Custom metrics*. 
+The Anypoint Custom Metrics connector enables you to send operational and business metric values from a hybrid application to Anypoint Monitoring, where the metrics can be visualized in real time using a custom dashboard in advanced mode and the built-in *Custom metrics* dashboard. 
 
 Once you define metrics in the Custom Metrics connector, you can select which metrics to display in the dashboard. You can filter and group the metrics along the included dimensions. You can include multiple custom and built-in metrics in a single dashboard visualization.
 
