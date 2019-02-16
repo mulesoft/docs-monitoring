@@ -4,15 +4,42 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The Anypoint Custom Metrics connector enables you to send operational and business metric values from a hybrid application to Anypoint Monitoring, where the metrics can be visualized in real time using Custom Dashboards. 
+The Anypoint Custom Metrics connector enables you to send operational and business metric values from a hybrid application to Anypoint Monitoring, where the metrics can be visualized in real time using a custom dashboard in advanced mode and the built-in *Custom metrics* dashboard. 
 
-Once the metrics are in a Custom Dashboard, you can filter and group the metrics along the included dimensions. You can include multiple custom and built-in metrics in a single dashboard visualization.
+Once you define metrics in the Custom Metrics connector, you can select which metrics to display in the dashboard. You can filter and group the metrics along the included dimensions. You can include multiple custom and built-in metrics in a single dashboard visualization.
 
 [NOTE] 
 ====
-To use the Anypoint Custom Metrics connector, you must have a Titanium subscription. +
+To see metrics that you configured in the Anypoint Custom Metrics connector in Anypoint Monitoring, you must have a Titanium subscription. +
 This feature is currently supported only for hybrid applications.
 ====
+
+== Use the Custom Metrics Dashboard
+
+Custom metrics are not collected for the application until you configure the xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector] in your application flow and deploy the application to a server or server cluster. 
+
+. In Anypoint Monitoring, select the application to view metrics for, and click *View*. 
+. Click the *Custom metrics* tab. +
+[NOTE]
+You must select a hybrid application (application deployed to an on-premises server and managed in the cloud) to see the *Custom metrics* tab. +
+If the Custom Metrics connector has collected one or more metrics in the specified time range, one chart per defined metric is displayed. 
++
+image::custom-metrics-dashboard.png[]
++
+. Click *Select a measurement for this chart* to display the measurement for the chart.
+. Use the drop-down lists at the bottom of the chart to filter the data by: +
+* *Aggregation* - Possible aggregations include:
+** *None* (default) - No data aggregation.  
+** *count* - Displays the total number of items collected for the measurement.
+** *distinct* - Returns the unique values for the given measurement.
+** *integral* - Returns the area under the curve for subsequent values.
+** *mean* - Returns the arithmetic average of the specified measurement over a given interval of time.
+** *median* - Displays the middle value for the collected metrics.
+** *mode* - Displays the most frequent value in the metrics collected for the defined measurement. 
+** *sum* - Displays the sum of all the values for the defined measurement. 
+* *Measurement* - The choices in this list are determined by the measurement values you define in the Custom Metrics connector. 
+* *Group by* - The choices in this list are determined by the values you define in the Custom Metrics connector. 
+
 
 === See Also
 
