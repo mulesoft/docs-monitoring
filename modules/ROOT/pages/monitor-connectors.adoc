@@ -10,6 +10,7 @@ Supported connectors include:
 * Salesforce
 * Database
 * HTTP
+* Web Services
 * Other +
 The connector type "Other" is any connector that is not Salesforce, Database, or HTTP.
 
