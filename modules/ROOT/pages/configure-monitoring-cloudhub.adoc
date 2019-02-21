@@ -17,11 +17,11 @@ Anypoint Monitoring images (for example, 3.9.1-AM) receive the latest patch upda
 | Metrics and logs
 
 | Anypoint Platform (CloudHub)
-| 3.9.1-AM
+| 3.9.1
 | Metrics and logs
 
 | Anypoint Platform (CloudHub)
-| 3.9.0-AM
+| 3.9.0
 | Metrics and logs
 
 | Anypoint Platform (CloudHub)
