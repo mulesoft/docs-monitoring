@@ -27,7 +27,7 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * Average Response Time Outbound
 * CPU Utilization
 * Memory Utilization
-* Thread Count - Server
+* Thread Count 
 
 //* Response Time by App: Number of milliseconds (ms) required for each response.
 //* Messages Processed: Number of messages at a given time point.
@@ -40,9 +40,10 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * Total Inbound Requests
 * Average Response Time Inbound
 * Average Response Time by Endpoint
-* Response Time graphs (99, 90, 75, and 50 Percentile Inbound): Measured in milliseconds (ms).
-* Total Inbound Calls - Failed
-* Slow Requests: Total calls where Response Time > 1000ms.
+* Response Time graphs (99, 90, 75, and 50 Percentile Inbound): Measured in milliseconds (ms)
+* Maximum Response Time
+* Total Inbound Calls 
+* Slow Requests: Total calls where Response Time > 1000ms
 
 //* Total Inbound Calls (success or failure)
 //* Total Inbound by Endpoint Outbound
@@ -52,7 +53,7 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * Total Outbound Requests
 * Average Response Time Outbound
 * Average Response Time Grouped by Endpoint Outbound
-* Response Time graphs (99, 90, 75, and 50 Percentile Outbound): Measured in milliseconds (ms).
+* Response Time graphs (99, 90, 75, and 50 Percentile Outbound): Measured in milliseconds (ms)
 * Total Outbound Calls - Failed
 
 //* Total Outbound Calls (success or failure)
@@ -86,20 +87,26 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Par New Collection Count, Par New Collection Time
 * Classes: Loaded, Loaded Total, Unloaded
 * Heap: Committed, Used
-* Thread Count - Server
-* JVM Uptime
-* Par Eden graphs (Used, Max, Init, and Committed): Usage metrics for the Par Eden Space pool.
-* Par Survivor graphs (Used, Max, Init, and Committed): Usage metrics for the Par Eden Space pool.
-* Metaspace graphs (Used, Max, Init, Committed): Usage metrics for Java memory space.
-* Code Cache graphs (Used, Max, Init, Committed): Usage metrics for the Code Cache pool.
-* Compressed Class Space graphs (Used, Max, Init, Committed): Usage metrics for values of the metadata for compressed class pointers.   
-| Infrastructure a|
+* Thread Count: Number of simultaneous requests 
+* JVM Uptime: Uptime of the JVM
+* Par Eden graphs (Used, Max, Init, and Committed): Usage metrics for the Par Eden Space pool
+* Par Survivor graphs (Used, Max, Init, and Committed): Usage metrics for the Par Eden Space pool
+* Metaspace graphs (Used, Max, Init, Committed): Usage metrics for Java memory space
+* Code Cache graphs (Used, Max, Init, Committed): Usage metrics for the Code Cache pool
+* Compressed Class Space graphs (Used, Max, Init, Committed): Usage metrics for values of the metadata for compressed class pointers
+* Committed Virtual Memory: Amount of virtual memory guaranteed to be available to the running process   
+| *Infrastructure* a|
 
-* CPU Utilization %: Percentage of CPU used by each worker over time.
-* Memory Utilization: Amount of memory used by each worker over time.
-* Total System Processors: Number of system processors for workers available over time.
-* Total System Memory: Amount of system memory available for workers over time.
-* Thread Count - Server: Number of simultaneous requests for a worker over time.
+* Application Process CPU Load: Amount of CPU load used by the JVM
+* Application Process CPU Minutes: CPU time used by the process on which the JVM is running
+* Operating System Swap Space: Amount of memory the system is swapping
+* CPU Utilization %: Percentage of CPU used by each worker over time
+* Memory Utilization: Amount of memory used by each worker over time
+* Total System Processors: Number of system processors for workers available over time
+* Total System Memory: Amount of system memory available for workers over time. +
+If you have a Titanium subscription and the selected application is hybrid, this graph changes to *System Memory*.
+* System Memory: This graph displays only if you have a Titanium subscription and the selected application is hybrid. This graph displays the total free system memory per worker.
+* Thread Count - Server: Number of simultaneous requests for a worker over time
 
 .Example: Infrastructure Dashboard
 image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
