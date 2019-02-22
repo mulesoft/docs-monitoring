@@ -35,69 +35,69 @@ These metrics are available when you use the Basic mode for applications:
 [%header,cols="3,1,1"]
 |===
 | Basic Metrics | Unit | Runtime Version Support
-| Inbound - Average Request Count by Endpoint | `short` | 3.x-AM only
-| Inbound - Average Request Count by Flow | `short` | 3.x-AM only
-| Inbound - Average Response Count by Endpoint | `short` | 3.x-AM only
-| Inbound - Average Response Count by Flow | `short` | 3.x-AM only
-| Inbound - Failure Average Request Count by Endpoint  | `short` | 3.x-AM only
-| Inbound - Failure Average Request Count by Flow | `short` | 3.x-AM only
-| Inbound - Failure Average Response Time by Endpoint | `ms` | 3.x-AM only
-| Inbound - Failure Average Response Time by Flow | `ms` | 3.x-AM only
-| Inbound - Success Average Request Count by Endpoint  | `short` | 3.x-AM only
-| Inbound - Success Average Request Count by Flow | `short` | 3.x-AM only
-| Inbound - Success Average Response Time by Endpoint | `ms` | 3.x-AM only
-| Inbound - Success Average Response Time by Flow | `ms` | 3.x-AM only
-| JVM - CPU % Utilization | `percent` | 3.x-AM, 4.x-AM
-| JVM - CPU Load Average | `percent` | 3.x-AM, 4.x-AM
-| JVM - Classes Loaded | `short` | 3.x-AM, 4.x-AM
-| JVM - Classes Loaded Total | `short` | 3.x-AM, 4.x-AM
-| JVM - Classes Unloaded | `short` | 3.x-AM, 4.x-AM
-| JVM - Code Cache Committed | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Code Cache Init | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Code Cache Max | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Code Cache Used | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Compressed Class Space Committed | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Compressed Class Space Total | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Compressed Class Space Used | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Garbage Collection Count | `short` | 3.x-AM, 4.x-AM
-| JVM - Garbage Collection Time | `ms` | 3.x-AM, 4.x-AM
-| JVM - Heap Committed | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Heap Used | `bytes` | 3.x-AM, 4.x-AM
-| JVM - JVM Uptime | `ms` | 3.x-AM, 4.x-AM
-| JVM - Memory Utilization | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Metaspace Committed | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Metaspace Init | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Metaspace Max | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Metaspace Used | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Par Eden Committed | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Par Eden Init | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Par Eden Max | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Par Eden Used | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Par New Collection Count | `short` | 3.x-AM, 4.x-AM
-| JVM - Par New Collection Time | `ms` | 3.x-AM, 4.x-AM
-| JVM - Par Survivor Committed | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Par Survivor Init | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Par Survivor Max | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Par Survivor Used | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Tenured Gen Committed | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Tenured Gen Init | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Tenured Gen Max | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Tenured Gen Used | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Thread count - Server | `short` | 3.x-AM, 4.x-AM
-| JVM - Total System Memory | `bytes` | 3.x-AM, 4.x-AM
-| JVM - Total System Processors | `short` | 3.x-AM, 4.x-AM
-| Outbound - Average Request Count by Endpoint | `short` | 3.x-AM only
-| Outbound - Average Request Count by Flow | `short` | 3.x-AM only
-| Outbound - Average Response Time by Endpoint | `ms` | 3.x-AM only
-| Outbound - Average Response Time by Flow | `ms` | 3.x-AM only
-| Outbound - Failure Average Request Count by Endpoint | `short` | 3.x-AM only
-| Outbound - Failure Average Request Count by Flow | `short` | 3.x-AM only
-| Outbound - Failure Average Response Time by Endpoint | `ms` | 3.x-AM only
-| Outbound - Failure Average Response Time by Flow | `ms` | 3.x-AM only
-| Outbound - Success Average Request Count by Endpoint | `short` | 3.x-AM only
-| Outbound - Success Average Request Count by Flow | `short` | 3.x-AM only
-| Outbound - Success Average Response Time by Endpoint | `ms` | 3.x-AM only
-| Outbound - Success Average Response Time by Flow | `ms` | 3.x-AM only
+| Inbound - Average Request Count by Endpoint | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Inbound - Average Request Count by Flow | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Inbound - Average Response Count by Endpoint | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Inbound - Average Response Count by Flow | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Inbound - Failure Average Request Count by Endpoint  | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Inbound - Failure Average Request Count by Flow | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Inbound - Failure Average Response Time by Endpoint | `ms` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Inbound - Failure Average Response Time by Flow | `ms` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Inbound - Success Average Request Count by Endpoint  | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Inbound - Success Average Request Count by Flow | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Inbound - Success Average Response Time by Endpoint | `ms` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Inbound - Success Average Response Time by Flow | `ms` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| JVM - CPU % Utilization | `percent` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - CPU Load Average | `percent` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Classes Loaded | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Classes Loaded Total | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Classes Unloaded | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Code Cache Committed | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Code Cache Init | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Code Cache Max | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Code Cache Used | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Compressed Class Space Committed | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Compressed Class Space Total | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Compressed Class Space Used | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Garbage Collection Count | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Garbage Collection Time | `ms` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Heap Committed | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Heap Used | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - JVM Uptime | `ms` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Memory Utilization | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Metaspace Committed | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Metaspace Init | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Metaspace Max | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Metaspace Used | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Par Eden Committed | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Par Eden Init | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Par Eden Max | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Par Eden Used | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Par New Collection Count | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Par New Collection Time | `ms` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Par Survivor Committed | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Par Survivor Init | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Par Survivor Max | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Par Survivor Used | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Tenured Gen Committed | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Tenured Gen Init | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Tenured Gen Max | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Tenured Gen Used | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Thread count - Server | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Total System Memory | `bytes` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| JVM - Total System Processors | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| Outbound - Average Request Count by Endpoint | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Outbound - Average Request Count by Flow | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Outbound - Average Response Time by Endpoint | `ms` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Outbound - Average Response Time by Flow | `ms` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Outbound - Failure Average Request Count by Endpoint | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Outbound - Failure Average Request Count by Flow | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Outbound - Failure Average Response Time by Endpoint | `ms` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Outbound - Failure Average Response Time by Flow | `ms` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Outbound - Success Average Request Count by Endpoint | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Outbound - Success Average Request Count by Flow | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Outbound - Success Average Response Time by Endpoint | `ms` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
+| Outbound - Success Average Response Time by Flow | `ms` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2
 |===
 
 === Basic Mode Metrics for APIs
@@ -107,10 +107,10 @@ These metrics are available when you use the basic mode for APIs:
 [%header,cols="3,1,1"]
 |===
 | Basic Metrics | Unit | Runtime Version Support
-| Requests by HTTP Policy Violation | `short` | 3.x-AM, 4.x-AM
-| Requests by HTTP Respond Code | `short` | 3.x-AM, 4.x-AM
-| Requests by Method | `short` | 3.x-AM, 4.x-AM
-| Requests by Instance | `short` | 3.x-AM, 4.x-AM
+| Requests by HTTP Policy Violation | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| Requests by HTTP Respond Code | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| Requests by Method | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
+| Requests by Instance | `short` | 3.x-AM, 3.9.0, 3.9.1, 3.9.2, 4.x-AM
 |===
 
 [[metrics_advanced]]
