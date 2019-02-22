@@ -13,7 +13,7 @@ From Anypoint Monitoring, you can access the API monitoring dashboard to view in
 The API analytics page is displayed, where you can view information about a running, managed API, including: +
 * Requests by instance
 * Requests by HTTP response code
-* Requests by method -
+* Requests by method 
 * Requests by request and response size
 * Requests by HTTP policy violation
 * Requests by failure
