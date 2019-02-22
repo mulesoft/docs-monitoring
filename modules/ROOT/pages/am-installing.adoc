@@ -2,9 +2,11 @@
 
 You can install Anypoint Monitoring on an on-premises server to monitor applications running on that server. 
 
+The install script prompts for whether Anypoint Monitoring should be installed as a service. If you don't want to have it preset as a service by the installer, select `no`. You can also call the install script with the `-x` argument to skip this prompt. If you skip the prompt Anypoint Monitoring is not installed as a service. 
+
 == Before You Begin
 
-Open ports 443 and 5044 in your outbound firewall, if you have one. The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using an open-source protocol for transferring log data over a highly-efficient bidirectional binary channel. Data is securely transmitted using mutual TLS encryption. 
+If you have an outbound firewall, open ports 443 and 5044. The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using an open-source protocol for transferring log data over a highly-efficient bidirectional binary channel. Data is securely transmitted using mutual TLS encryption. 
 
 Outbound connections are made to the following endpoints:
 

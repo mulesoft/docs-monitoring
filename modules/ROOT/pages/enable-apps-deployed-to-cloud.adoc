@@ -11,6 +11,9 @@ You can use the *Settings* page in Anypoint Monitoring to enable or disable apps
 
 . Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
 . In the menu on the left, click *Settings*. 
++
+image::monitoring-settings-screen.png[]
++
 . Select *CloudHub*. 
 . In the *Environment* drop-down list, select the environment where the application is running. +
 A list of running applications is displayed for the selected environment. +
