@@ -4,8 +4,10 @@ The Anypoint Monitoring log points feature enables you to interactively extract 
 
 For example, you can specify a cookie header in an API to see if an injection attack is in progress. The log data for the specified cookie header is automatically displayed in real time on the Logs page.
 
-[NOTE]
-This feature requires:
+== Prerequisites
+
+To use this feature, you must have the following: 
+
 * A https://www.mulesoft.com/anypoint-pricing[Titanium subscription] to Anypoint Monitoring and Mule 3.8.5 or later
 * The *Organization Administrator* permission
 * Permission to create or manage APIs 
