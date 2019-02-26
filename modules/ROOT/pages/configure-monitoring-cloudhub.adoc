@@ -7,7 +7,7 @@ To start monitoring Mule apps that are managed in CloudHub, you must deploy them
 
 == Supported Versions of Mule Deployed to CloudHub
 
-Anypoint Monitoring images (for example, 3.9.1-AM) receive the latest patch updates once per month, while the non-AM images receive patch updates as soon as they are available. If your production environment requires a Mule runtime engine patch, you should switch to a non-AM runtime.
+Anypoint Monitoring images (for example, 3.8.7-AM) receive the latest patch updates once per month, while the non-AM images receive patch updates as soon as they are available. If your production environment requires a Mule runtime engine patch, you should switch to a non-AM runtime.
 
 |===
 | Platform | Mule Version | Features
