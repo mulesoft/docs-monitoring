@@ -17,6 +17,8 @@ Outbound connections are made to the following endpoints:
 ** arm-auth-proxy.prod-eu.msap:443
 ** dias-ingestor-nginx.prod-eu.msap.io:5044
 
+Verify that you have on-premises monitoring for hybrid deployments enabled at your master org level. Check with your account representative if you aren't sure.
+
 == Supported Operating Systems
 
 Ensure that Anypoint Monitoring is installed on a server running one of the following operating systems:
@@ -73,15 +75,11 @@ Instructions for downloading and installing Anypoint Monitoring on-premises are 
 1. Go to http://anypoint.mulesoft.com and sign in.
 1. Navigate to *Anypoint Monitoring*.
 1. On the *Built-in Dashboards* page, select an app that is deployed on the server where you installed Anypoint Monitoring.
-1. Check whether the CPU Utilization and Memory Utilization charts are displaying data.
-
-If you see data in the charts, Anypoint Monitoring is installed and running.
-
-If you do not see data in the charts, verify that Anypoint Monitoring is able to connect to the endpoint.
-
+1. Check whether the CPU Utilization and Memory Utilization charts are displaying data. +
+If you see data in the charts, Anypoint Monitoring is installed and running. +
+If you do not see data in the charts, verify that Anypoint Monitoring is able to connect to the endpoint. +
 [NOTE]
 If necessary, you can whitelist the endpoint for outbound firewall rules so your server allows connections. The endpoint is displayed in the gray box in Step 5 on the page, under the OS.
-
 11. Log into the server on which Anypoint Monitoring is running.
 11. Open the log file for the data-transfer agent. The log file is in this path: `./am/log/filebeat`
 11. Look for entries that mention connection failures or connection retries.
