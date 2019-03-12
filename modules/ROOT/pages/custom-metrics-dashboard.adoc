@@ -1,7 +1,4 @@
-= Use the Custom Metrics Connector
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+= Use the Custom Metrics Dashboard
 
 Custom metrics are not collected for the application until you configure the xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector] in your application flow and deploy the application to a server or server cluster. 
 
@@ -30,5 +27,5 @@ image::custom-metrics-dashboard.png[]
 
 === See Also
 
-* xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector] 
+* xref:custom-metrics-example.adoc[Use the Custom Metrics Connector] 
 * xref:connectors::metrics/custom-metrics-connector-reference.adoc[Custom Metrics Connector Reference]
