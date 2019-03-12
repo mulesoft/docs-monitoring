@@ -15,7 +15,6 @@ Supported connectors include:
 The connector type "Other" is any connector that is not Salesforce, Database, or HTTP.
 
 
-
 == Access Connector Monitoring
 
 . Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.

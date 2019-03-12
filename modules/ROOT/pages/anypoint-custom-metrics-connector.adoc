@@ -1,18 +1,103 @@
-= Anypoint Custom Metrics Connector
+= Custom Metrics
 
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The Anypoint Custom Metrics connector enables you to send operational and business metric values from a hybrid application to Anypoint Monitoring, where the metrics can be visualized in real time using a custom dashboard in advanced mode and the built-in *Custom metrics* dashboard. 
+The Anypoint Custom Metrics connector enables you to send operational and business metric values from a hybrid application to Anypoint Monitoring to visualize metrics in real time using a custom dashboard in advanced mode and the built-in *Custom metrics* dashboard. 
 
-Once you define metrics in the Custom Metrics connector, you can select which metrics to display in the dashboard. You can filter and group the metrics along the included dimensions. You can include multiple custom and built-in metrics in a single dashboard visualization.
+Define metrics in the Anypoint Custom Metrics connector in order to select which metrics to display in the dashboard. You can filter and group the metrics along the dimensions you define, and you can include multiple custom and built-in metrics in a single dashboard visualization.
 
 [NOTE] 
 ====
-To see metrics that you configured in the Anypoint Custom Metrics connector in Anypoint Monitoring, you must have a Titanium subscription. +
-This feature is currently supported only for hybrid applications.
+To see metrics you configured in the Anypoint Custom Metrics connector in Anypoint Monitoring, you must have a Titanium subscription. +
+This feature is currently supported for hybrid applications only.
 ====
+
+== Prerequistes
+
+* Mule runtime engine 4.1.x, or 3.8.7 or later
+* xref:am-installing.adoc[Install the Anypoint Monitoring Agent]
+
+== Use Design Center to Configure the Custom Metrics Values
+
+The custom metrics connector is available in Anypoint Exchange for both Mule 3 and Mule 4.
+
+. In *Design Center*, create a new mule application project. +
+The project opens in Design Center. 
+. Select the trigger for your flow, and click *Next*.
+. For *Target*, select *Anypoint Custom Metrics Connector*, and click *Done*. 
++
+image::custom-metric-dc-select-target.png[]
++
+The connector has one operation called *Send Custom Metric*. 
+. On the design canvas, open the *Anypoint Custom Metrics Connector* card to add your metrics.
+. In *Metric Name*, enter a meaningful value. 
+. Next to *Dimensions*, click *Add* to enter the name and value for the metric's dimension.  
++
+image::custom-metric-dc-add-dimension.png[]
+.. In the *Add Item* dialog box, enter the *Dimension Name* and *Value* for the dimension.
+.. Leave the *Collapsible* option with the default of *True*.
+.. Click *OK*. 
++
+image::custom-metric-dc-add-item.png[]
++
+You can repeat these steps to add multiple key values.
+.  Next to *Facts*, click *Add* to add facts for the metric. Values for measurements are always numerical.
+.. In the *Add Item* dialog box, enter a *Fact Name* and numerical *Value* for the fact. +
+[NOTE]
+For facts, the value must always be numerical. This is not validated at design time, but a non-numerical value will cause a runtime exception once deployed.
++
+image::custom-metrics-add-fact.png[]
++
+.. Click *OK*. +
+You can repeat these steps to add multiple key values.
+. Select the *Throw Runtime Exception on Validation Failure* option if you want the flow to break if invalid values are entered for the metric. If this option is left unchecked, an error will be logged, but the flow won't break.
+
+
+== Configure Custom Metrics Values Using Anypoint Studio
+
+. Search Anypoint Exchange for the Anypoint Custom Metrics connector. +
+. Drag the *Send Custom Metric* operation to the canvas. 
+. Add the *Send Custom Metric* operation to your application flow. +
+This image shows an example flow for custom metrics in Anypoint Studio. 
++
+image::custom-metric-example-flow.png[]
+. Click the *Send Custom Metric* operation to add values for the operation. 
+. Add the dimension for the metric:
+.. In *Metric name*, enter a meaningful value, for example "sales." 
+.. In *Enter contextual information* select *Edit inline* to enter the name and value for the dimension. 
+.. Click the green plus on the left to enter the values.
+.. In the *Dimension* dialog box, enter the *Name* and *Value* for the dimension.
+.. Leave the *Collapsible* option with the default of *True*.
+.. Click *Finish*. +
+You can repeat these steps to add multiple key values.
+. Enter the facts for the metric. Values for measurements are numerical.
+.. In *Enter measurements* select *Edit inline* to enter the name and value for the metric.
+.. In the *Fact* dialog box, enter a *Name* and numerical *Value* for the fact. +
+[NOTE]
+For facts, the value must always be numerical. This is not validated at design time, but a non-numerical value will cause a runtime exception once deployed.
+.. Leave the *Collapsible* option with the default of *True*.
+.. Click *Finish*. +
+You can repeat these steps to add multiple key values. +
+This image shows example values for a custom metric that tracks t-shirt sales.
++
+image::custom-metrics-connector-config.png[]
++
+. Select the *Throw runtime exception on validation failure* option if you want the flow to break if invalid values are entered for the metric. If this option is left unchecked, an error is will be logged, but the flow won't break.
+
+== Deploy the Application
+
+. Deploy the application to a supported standalone Mule runtime engine.
+. In Anypoint Monitoring, xref:dashboard-custom-config.adoc[add a new custom dashboard] for the custom metric. +
+This image shows an example of the configuration for a graph to display t-shirt sales.
++
+image::custom-metric-custom-dashboard-config.png[]
++
+[NOTE]
+You only see the custom metrics in the pre-populated metric selection drop-down lists once something is logged for the custom metric. 
++
+image::custom-metric-custom-dashboard-graph.png[]
 
 == Use the Custom Metrics Dashboard
 
@@ -38,10 +123,8 @@ image::custom-metrics-dashboard.png[]
 ** *mode* - Displays the most frequent value in the metrics collected for the defined measurement. 
 ** *sum* - Displays the sum of all the values for the defined measurement. 
 * *Measurement* - The choices in this list are determined by the measurement values you define in the Custom Metrics connector. 
-* *Group by* - The choices in this list are determined by the values you define in the Custom Metrics connector. 
+* *Group by* - The choices in this list are determined by the values you define in the Custom Metrics connector.
 
+== See Also 
 
-=== See Also
-
-* xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector] 
-* xref:connectors::metrics/custom-metrics-connector-reference.adoc[Custom Metrics Connector Reference]
+xref:connectors::metrics/custom-metrics-connector-reference.adoc[Anypoint Custom Metrics Connector Reference]
