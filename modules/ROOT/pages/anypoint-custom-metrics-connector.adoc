@@ -16,7 +16,7 @@ This feature is currently supported for hybrid applications only.
 
 == Prerequistes
 
-* Mule runtime engine 4.1.x or 3.8.7 or later
+* Mule runtime engine 4.1.x, or 3.8.7 or later
 * xref:am-installing.adoc[Install the Anypoint Monitoring Agent]
 
 == Use Design Center to Configure the Custom Metrics Values
