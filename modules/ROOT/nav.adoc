@@ -16,7 +16,6 @@
  ** xref:dashboard-custom-config-text.adoc[Configuring Text]
  ** xref:dashboard-config-ref.adoc[Dashboard Configuration Reference]
 * xref:anypoint-custom-metrics-connector.adoc[Custom Metrics]
- ** xref:custom-metrics-dashboard.adoc[Use the Custom Metrics Dashboard]
 * xref:monitor-connectors.adoc[Monitor Connectors]
 * xref:reports.adoc[Reports]
 * xref:alerts.adoc[Alerts]

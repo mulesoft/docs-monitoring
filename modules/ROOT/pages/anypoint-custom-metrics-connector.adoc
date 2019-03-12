@@ -6,7 +6,7 @@ endif::[]
 
 The Anypoint Custom Metrics connector enables you to send operational and business metric values from a hybrid application to Anypoint Monitoring to visualize metrics in real time using a custom dashboard in advanced mode and the built-in *Custom metrics* dashboard. 
 
-Define metrics in the Custom Metrics connector to select which metrics to display in the dashboard. You can filter and group the metrics along the included dimensions, and you can include multiple custom and built-in metrics in a single dashboard visualization.
+Define metrics in the Anypoint Custom Metrics connector in order to select which metrics to display in the dashboard. You can filter and group the metrics along the dimensions you define, and you can include multiple custom and built-in metrics in a single dashboard visualization.
 
 [NOTE] 
 ====
@@ -46,7 +46,7 @@ You can repeat these steps to add multiple key values.
 .  Next to *Facts*, click *Add* to add facts for the metric. Values for measurements are always numerical.
 .. In the *Add Item* dialog box, enter a *Fact Name* and numerical *Value* for the fact. +
 [NOTE]
-For facts, the value must always be numerical. This is not validated at design time, but it will cause a runtime exception once deployed.
+For facts, the value must always be numerical. This is not validated at design time, but a non-numerical value will cause a runtime exception once deployed.
 +
 image::custom-metrics-add-fact.png[]
 +
@@ -76,7 +76,7 @@ You can repeat these steps to add multiple key values.
 .. In *Enter measurements* select *Edit inline* to enter the name and value for the metric.
 .. In the *Fact* dialog box, enter a *Name* and numerical *Value* for the fact. +
 [NOTE]
-For facts, the value must always be numerical. This is not validated at design time, but it will cause a runtime exception once deployed.
+For facts, the value must always be numerical. This is not validated at design time, but a non-numerical value will cause a runtime exception once deployed.
 .. Leave the *Collapsible* option with the default of *True*.
 .. Click *Finish*. +
 You can repeat these steps to add multiple key values. +
@@ -99,7 +99,32 @@ You only see the custom metrics in the pre-populated metric selection drop-down 
 +
 image::custom-metric-custom-dashboard-graph.png[]
 
+== Use the Custom Metrics Dashboard
+
+Custom metrics are not collected for the application until you configure the xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector] in your application flow and deploy the application to a server or server cluster. 
+
+. In Anypoint Monitoring, select the application to view metrics for, and click *View*. 
+. Click the *Custom metrics* tab. +
+[NOTE]
+You must select a hybrid application (application deployed to an on-premises server and managed in the cloud) to see the *Custom metrics* tab. +
+If the Custom Metrics connector has collected one or more metrics in the specified time range, one chart per defined metric is displayed. 
++
+image::custom-metrics-dashboard.png[]
++
+. Click *Select a measurement for this chart* to display the measurement for the chart.
+. Use the drop-down lists at the bottom of the chart to filter the data by: +
+* *Aggregation* - Possible aggregations include:
+** *None* (default) - No data aggregation.  
+** *count* - Displays the total number of items collected for the measurement.
+** *distinct* - Returns the unique values for the given measurement.
+** *integral* - Returns the area under the curve for subsequent values.
+** *mean* - Returns the arithmetic average of the specified measurement over a given interval of time.
+** *median* - Displays the middle value for the collected metrics.
+** *mode* - Displays the most frequent value in the metrics collected for the defined measurement. 
+** *sum* - Displays the sum of all the values for the defined measurement. 
+* *Measurement* - The choices in this list are determined by the measurement values you define in the Custom Metrics connector. 
+* *Group by* - The choices in this list are determined by the values you define in the Custom Metrics connector.
+
 == See Also 
 
-* xref:connectors::metrics/custom-metrics-connector-reference.adoc[Custom Metrics Connector Reference]
-* xref:custom-metrics-dashboard.adoc[Use the Custom Metrics Dashboard]
+xref:connectors::metrics/custom-metrics-connector-reference.adoc[Anypoint Custom Metrics Connector Reference]
