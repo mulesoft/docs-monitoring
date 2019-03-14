@@ -17,14 +17,17 @@ In Anypoint Monitoring, click *Log Search* in the menu on the left. On the log s
 
 . Type your search query into the log search field and press Enter.
 +
-You can provide full terms, such as `"code 400"` to find  bad requests. For
-exact matches to multi-worded searches, you need to surround your search terms
-in quotation marks. Here are results from a `"code 400"` search:
+Provide full terms, such as `"code 400"` to find  bad requests. For
+exact matches to multi-word searches, surround the search term
+with quotation marks. 
+
+Example results from a `"code 400"` search:
 +
 image::log-search-string.png[Log Search]
 +
-You can also provide wildcards such as `payload=org.glassfish.grizzly*`. Here
-are the results of that search:
+Use wildcards such as `payload=org.glassfish.grizzly*` if you don't know the full exact term. 
+
+Example results from a wildcard search:
 +
 image::log-search-wildcard.png[Log Search Using a Wildcard]
 
@@ -34,21 +37,18 @@ You can create a filter to search logs using predefined fields, operators, and v
 
 . Click *+ Add a filter*. 
 . Select the predefined field from the drop-down list. +
-Predefined fields include:
-
-* application
-* class
-* environment
-* environment type
-* log level 
-* logger
-* message
-* message
-* thread
-* timestamp
-* worker
+  * `application`
+  * `class`
+  * `environment`
+  * `environment type`
+  * `log level` 
+  * `logger`
+  * `message`
+  * `thread`
+  * `timestamp`
+  * `worker`
 . Select the operator from the drop-down list. +
-The available operators change according to the field you selected. +
+The available operators change according to the field you select. +
 When you select the operator, if a value is required, a *Value* box appears on the right. 
 . If applicable, enter a value. +
 The following image shows an example of using a search filter to search for all logs that have a timestamp that falls between the given dates.
@@ -63,7 +63,7 @@ The filter appears to the right of *+Add a filter*.
 
 === Search Query
 
-The UI can convert a search query into a Query DSL for you. 
+To convert a search query into a Query DSL: 
 
 . Click *+Add a filter*.
 . Click *Edit Query DSL*. +
@@ -84,9 +84,9 @@ This example shows a query for log-level INFO:
 }
 ----
 +
-The search query UI provides a link to the query documentation so that you can perform more complex queries than otherwise available, for example:
+The search query UI provides a link to the query documentation so that you can perform more complex queries than otherwise available.
 +
-This example shows a more complex query.
+This example shows a complex query.
 [source,text,linenums]
 ----
 {
@@ -184,19 +184,17 @@ After finding a log on a particular issue, you can view the complete log on a de
 
 . From the selected log, click *View This Log*.
 +
-.Example: Selected Log
 image::logs-view-surrounding.png[View This Log]
 +
 . View the extended log in tabular or JSON format.
 +
-.Example: Tabular Format
 image::logs-view-extended.png[Viewing Extended Logs]
 
 == View Surrounding Logs
 
 After finding a log for a particular issue, you might want to know what other log reports preceded or followed it.
 
-. From the selected log, click View Surrounding Logs.
+. From the selected log, click *View Surrounding Logs*.
 +
 image::logs-view-surrounding.png[View Surrounding Logs tab]
 +
@@ -206,8 +204,8 @@ image::logs-set-surrounding.png[View Surrounding Logs]
 
 The default settings are:
 
-* Load 5 More newer logs
-* Load 5 More older logs
+* *Load 5 more* newer logs
+* *Load 5 more* older logs
 
 == Working with Predefined Filters
 
@@ -261,8 +259,7 @@ image::log-filter-column-move.png[To Remove a Filter Column from the Logs]
 [[filters_predefined]]
 === Search Filters
 
-In addition to using predefined filters, you can create, define, and use your
-own filters. 
+Use predefined filters or filters that you create. 
 
 [cols="1,2,2", options="header"]
 |===
@@ -366,16 +363,16 @@ You can share the URL to your logs.
 +
 image::logs-sharing.png[Sharing Logs]
 +
-. Select Share to load the URL of your log page to a Share Logs Search Link field.
+. Select *Share* to load the URL of your log page to a *Share Logs Search Link* field.
 +
 image::logs-sharing-url.png[Sharing Logs Link]
 +
-. Click Copy to use it.
+. Click *Copy*.
 
 [[save_view_log_searches]]
 == Save and View Saved Log Searches
 
-You can save and view log searches.
+Save and view log searches.
 
 . Click *Save Search*.
 . Select *View saved searches*.
