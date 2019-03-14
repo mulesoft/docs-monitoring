@@ -19,16 +19,16 @@ image::alerts-filter.png[Filtering by Alert Status]
 [[alert_status]]
 Alert status filters:
 
-* All states
-* No data: No data is available in the series to evaluate the alert threshold.
-* Disabled: The alert is disabled.
-* Alerting: The value of the metric is above the threshold.
-* OK: The value of the metric is below the threshold.
-* Pending: The alert is enabled and waiting for evaluation.
+* *All states*
+* *No data*: No data is available in the series to evaluate the alert threshold.
+* *Disabled*: The alert is disabled.
+* *Alerting*: The value of the metric is above the threshold.
+* *OK*: The value of the metric is below the threshold.
+* *Pending*: The alert is enabled and waiting for evaluation.
 
 == Enabling and Disabling Alerts
 
 You can activate or deactivate an alert by toggling the <<alerts, switch>> on the right.
 
-* Enabling a disabled alert causes the alert to transition to the Pending state until it is time for evaluation. Depending on the value, the alert will transition to the OK or Alerting state.
-* Disabling an alert causes the alert to transition to the Disabled state.
+* Enabling a disabled alert causes the alert to transition to *Pending* until it is time for evaluation. Depending on the value, the alert transitions to *OK* or *Alerting*.
+* Disabling an alert causes the alert to transition to *Disabled*.
