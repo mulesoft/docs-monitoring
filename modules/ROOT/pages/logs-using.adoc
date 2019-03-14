@@ -15,27 +15,26 @@ In Anypoint Monitoring, click *Log Search* in the menu on the left. On the log s
 
 === Log Search Query
 
-. Type your search query into the log search field and press Enter.
-+
-Provide full terms, such as `"code 400"` to find  bad requests. For
-exact matches to multi-word searches, surround the search term
+To search the logs, type your search query into the log search field and press *Enter*.
+
+Provide the exact term you're looking for, such as `"code 400"` to find  bad requests. For
+exact matches of more than one word, surround the search term
 with quotation marks. 
 
 Example results from a `"code 400"` search:
-+
+
 image::log-search-string.png[Log Search]
-+
-Use wildcards such as `payload=org.glassfish.grizzly*` if you don't know the full exact term. 
 
-Example results from a wildcard search:
-+
+Use the asterisk wildcard in a search if you don't know the exact term.
+
+Example results from the wildcard search `payload=org.glassfish.grizzly*`:
+
 image::log-search-wildcard.png[Log Search Using a Wildcard]
-
 
 === Add a Filter
 You can create a filter to search logs using predefined fields, operators, and values.  
 
-. Click *+ Add a filter*. 
+. Click *+Add a filter*. 
 . Select the predefined field from the drop-down list. +
   * `application`
   * `class`
