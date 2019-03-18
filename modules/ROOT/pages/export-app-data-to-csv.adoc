@@ -1,0 +1,33 @@
+= Export App Data to a CSV File
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+You can download data for a specified app in a built-in dashboard. 
+
+[NOTE]
+This feature requires a Titanium subscription.
+
+. In Anypoint Monitoring, click *Built-in dashboards* in the sidebar on the left. 
+. Select the application to download the data for. 
+. Specify the time range for the data to download. 
+. In the chart that contains the data to download, select *Export CSV*. 
++
+image::export-csv.png[]
++
+. In the Export CSV dialog, specify the way to format the data. +
+* In Mode, select the format for the data:
+ ** *Series as rows* formats the data in rows in the CSV. +
+ For example:
+ +
+ image::csv-export-rows.png[]
+ +
+ ** *Series as columns* formats the data as columns in the CSV. +
+ For example:
+ +
+ image::export-csv-columns.png[]
+ +
+* In Date Time Format, enter the values to specify the date format, for example: +
+`YYYY-MM-DDTHH:mm:ssZ`
++
+The CSV file downloads automatically in the browser.
