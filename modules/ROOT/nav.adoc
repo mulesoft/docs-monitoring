@@ -7,6 +7,7 @@
  ** xref:enable-apps-deployed-to-cloud.adoc[Enable Mule Applications Deployed to CloudHub]
 * xref:dashboards.adoc[Dashboards]
  ** xref:app-dashboards.adoc[Builtin Application Dashboards]
+ ** xref:export-app-data-to-csv.adoc[Export App Data to a CSV File]
  ** xref:api-analytics-dashboard.adoc[Builtin API Analytics Dashboard]
  ** xref:dashboards-using.adoc[Using Dashboards]
  ** xref:dashboard-custom-config.adoc[Configuring Custom Dashboards and Charts]
