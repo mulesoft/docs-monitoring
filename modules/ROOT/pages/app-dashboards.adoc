@@ -19,6 +19,22 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * Infrastructure-level and JVM metrics.
 * Performance metrics that break down inbound and outbound response times into averages and percentiles.
 
+== View a Built-in Dashboard
+
+Built-in and Custom dashboards are available from Anypoint Monitoring. You can view application metrics for applications deployed to CloudHub and to hybrid targets in both built-in and custom dashboards.
+
+. Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
+. Select the *Environment* and *Resource name* for the app or API to view the corresponding dashboard.
+. Click *View*. +
+The builtin dashboard for the application or API is displayed.
+. To switch to a dashboard for a different resource, click the built-in dashboard selector at the top of the page.
++
+image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
+
+Your data is pre-populated to the built-in dashboards and logs, so no configuration is needed.
+
+Built-in dashboards include various pages to view different types of charts. 
+
 [%header,cols="1,4"]
 |===
 | Built-In Dashboards | Charts
