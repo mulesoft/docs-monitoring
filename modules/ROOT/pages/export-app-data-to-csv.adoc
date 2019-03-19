@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-You can download data for a specified app in a built-in dashboard. 
+In built-in dashboards, you can export app data to a CSV file, which you can then use in other applications. The data export works on an individual chart level, so only data in the specified chart is exported. When you apply a filter to a dashboard, the exported data includes only the data included in the filter you set. For example, if you apply a time period filter, only the data for that time period is exported.   
 
 [NOTE]
 This feature requires a Titanium subscription.
