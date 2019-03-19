@@ -38,22 +38,6 @@ image::dashboard-text-header.png[Example: Text]
 
 See <<charts_adding, Adding Charts to a Custom Dashboard>>.
 
-[[dashboard_create]]
-== Creating a Custom Dashboard
-
-To create a custom dashboard:
-
-. Navigate to *Custom dashboards* in Anypoint Monitoring.
-. Click *+ New Dashboard*.
-. Add and configure a chart for your dashboard.
-+
-For guidance, see <<charts_adding, Adding Charts to a Custom Dashboard>>.
-+
-. Save your changes.
-. In the dialog that opens, provide a name for your dashboard.
-
-If you want to modify dashboard properties, see <<config_dashboard, Performing Dashboard-Level Configurations>>.
-
 [[config_dashboard]]
 == Performing Dashboard-Level Configurations
 
@@ -116,7 +100,7 @@ image::dashboard-custom-metadata.png[Dashboard Metadata]
 2+| Metadata Available for Custom Dashboards
 | Last Updated At | Date and time of last update to the dashboard.
 | Last Updated By | Username associated with the Last Updated At value.
-| Created At | Date and time that the dashboard was created.
+| Created At | Date and time the dashboard was created.
 | Created By | Username of person who created the dashboard.
 | Current Version | Version number of the dashboard. The number increments each time you save modifications to the dashboard.
 |===
@@ -129,7 +113,7 @@ image::dashboard-custom-metadata.png[Dashboard Metadata]
 For guidance, see xref:dashboards-using.adoc#dashboard_viewing[Viewing a Dashboard].
 +
 * If you need to create a custom dashboard, click *+New Dashboard*.
-* If you need a row for your text panel, click the Add Row button at the bottom of the screen.
+* If you need a row for your text panel, click the *Add Row* button at the bottom of the screen.
 +
 . Click *Add* to add a chart to the row.
 +
@@ -159,7 +143,7 @@ image::dashboard-custom-config-dup-delete.png[Configure a Chart]
 * xref:dashboard-custom-config-text.adoc[Configuring Text Panels]
 
 [[dup_dashboard]]
-== Duplicating a Custom Dashboard
+== Duplicate a Custom Dashboard
 
 To create a copy of a custom dashboard:
 
@@ -174,8 +158,12 @@ image::dashboard-custom-dup-delete.png[Duplicate Dashboard]
 The UI opens to your copy of the dashboard.
 
 [[delete_dashboard]]
-== Deleting a Custom Dashboard
+== Delete a Custom Dashboard
 
 . From Custom Dashboards, open a custom dashboard.
 . Click three vertical dots on the top-right of the dashboard, and select <<dup_delete_dashboard, Delete>>.
 . Confirm your deletion.
+
+== See Also
+
+xref:create-custom-dashboard.adoc[Create a Custom Dashboard]
