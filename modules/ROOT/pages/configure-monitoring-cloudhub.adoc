@@ -45,6 +45,8 @@ Anypoint Monitoring images (for example, 3.8.7-AM) receive the latest patch upda
 | Basic metrics (xref:dashboard-config-ref#metrics_basic[JVM-related only]) and logs
 |===
 
+I'm told that 4.1.5 supports monitoring as-is; I don't know that for a fact myself. This needs to be verified and the docs updated accordingly
+
 Metrics are used by graphs and other charts within xref:dashboards.adoc[Dashboards].
 
 [[update_app]]
