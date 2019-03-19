@@ -1,4 +1,7 @@
 = Built-in Application Dashboard
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
 
 Built-in dashboards display deployment information about your application at the top of the screen and provide access to a number of different graphs, for example:
 
