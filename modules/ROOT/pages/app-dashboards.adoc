@@ -26,7 +26,7 @@ Built-in and Custom dashboards are available from Anypoint Monitoring. You can v
 . Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
 . Select the *Environment* and *Resource name* for the app or API to view the corresponding dashboard.
 . Click *View*. +
-The builtin dashboard for the application or API is displayed.
+The built-in dashboard for the application or API is displayed.
 . To switch to a dashboard for a different resource, click the built-in dashboard selector at the top of the page.
 +
 image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
