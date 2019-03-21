@@ -39,7 +39,7 @@ image::dashboard-text-header.png[Example: Text]
 See <<charts_adding, Adding Charts to a Custom Dashboard>>.
 
 [[config_dashboard]]
-== Perform Dashboard-Level Configurations
+== Configure a Dashboard
 
 To perform dashboard-level configurations of custom dashboards, you need to navigate to a custom dashboard and click the <<dashboard_config, Pencil icon (beside the dashboard name)>> at the top of the page. Settings are for:
 
@@ -108,7 +108,7 @@ image::dashboard-custom-metadata.png[Dashboard Metadata]
 [[charts_adding]]
 == Add Charts to a Custom Dashboard
 
-. In Anypoint Monitoring, click *Custom dashboards* in the left-side menu.
+. In *Anypoint Monitoring*, click *Custom dashboards* in the left-side menu.
 +
 * If you need to create a custom dashboard, click *+New Dashboard*.
 * If you need a row for your text panel, click the *Add Row* button at the bottom of the screen.
@@ -145,7 +145,7 @@ image::dashboard-custom-config-dup-delete.png[Configure a Chart]
 
 To create a copy of a custom dashboard:
 
-. From Custom Dashboards, open a custom dashboard.
+. From *Custom Dashboards*, open a custom dashboard.
 . Click the three vertical dots on the top-right of the dashboard, and select *Duplicate*.
 +
 [[dup_delete_dashboard]]
@@ -153,12 +153,12 @@ image::dashboard-custom-dup-delete.png[Duplicate Dashboard]
 +
 . Save a *New Name* for the dashboard.
 +
-The UI opens to your copy of the dashboard.
+Your copy of the dashboard opens.
 
 [[delete_dashboard]]
 == Delete a Custom Dashboard
 
-. From Custom Dashboards, open a custom dashboard.
+. From *Custom Dashboards*, open a custom dashboard.
 . Click three vertical dots on the top-right of the dashboard, and select <<dup_delete_dashboard, Delete>>.
 . Confirm your deletion.
 

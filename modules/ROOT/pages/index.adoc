@@ -37,7 +37,7 @@ A custom dashboard provides a single screen that can bring together specific met
 
 //The example includes system data separated by failed and successful requests. You can build unified dashboards across ajjjjn unlimited number of components, fully customizing charts and graphs, exporting data into a selected format and tools.
 
-You can track numerous data points and metrics from a custom dashboard that looks across multiple services in the app and in your dashboards across all systems.
+You can track many data points and metrics from a custom dashboard that looks across multiple services in the app and in your dashboards across all systems.
 
 See xref:dashboards-using.adoc[Dashboards].
 

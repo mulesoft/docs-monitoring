@@ -8,7 +8,8 @@ In built-in and custom dashboards, you can export app data to a CSV file, which 
 [NOTE]
 This feature requires a Titanium subscription.
 
-. In Anypoint Monitoring, click *Built-in dashboards* or *Custom dashboards* in the sidebar on the left. 
+. Sign into Anypoint Platform, and click *Monitoring*.
+. In *Anypoint Monitoring*, click *Built-in dashboards* or *Custom dashboards* in the sidebar on the left. 
 . Select the application for which to download the data. 
 . Specify the time range for the data to download. 
 . In the chart that contains the data to download, click the three vertical dots in the top right of the chart, and select *Export CSV*. 

@@ -7,7 +7,7 @@ Create a custom dashboard to configure the metrics and data points you want to v
 
 To create a custom dashboard:
 
-. Navigate to *Custom dashboards* in Anypoint Monitoring.
+. In *Anypoint Monitoring*, click *Custom dashboards* in the left navigation menu.
 . Click *+ New Dashboard*.
 . Add and configure a chart for your dashboard.
 . Click *Save Changes*.
@@ -17,7 +17,7 @@ To create a custom dashboard:
 
 You can view custom dashboards for apps deployed to CloudHub and to hybrid targets in *Custom dashboards*.
 
-. In Anypoint Monitoring, click *Custom dashboards* in the left navigation menu. +
+. In *Anypoint Monitoring*, click *Custom dashboards* in the left navigation menu. +
 A list of custom dashboards is displayed. 
 . In the custom dashboard list, click the dashboard to view. +
 You can also search for a custom dashboard by entering its name in the search field. 

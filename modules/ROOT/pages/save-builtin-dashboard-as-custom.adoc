@@ -3,11 +3,12 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-To simplify the process of creating a custom dashboard from scratch, you can save any of the built-in dashboards that are included in the Anypoint Monitoring tabs as a base template for a custom dashboard that you can then customize to suit your needs. This allows you to take advantage of the flexibility and features offered in custom dashboards, such as troubleshooting, setting up alerts, or comparing multiple resources within one dashboard. 
+To make creating a custom dashboard easier, you can save any of the built-in dashboards that are included in the Anypoint Monitoring tabs as a base template for a custom dashboard that you can then customize to suit your needs. This allows you to take advantage of the flexibility and features offered in custom dashboards, such as troubleshooting, setting up alerts, or comparing multiple resources within one dashboard. 
 
 Follow these steps to save a built-in dashboard as a custom dashboard. 
 
-. In Anypoint Monitoring, click *Built-in dashboards* in the menu on the left.
+. Sign into Anypoint Platform.
+. In *Anypoint Monitoring*, click *Built-in dashboards* in the menu on the left.
 . Click the tab for the built-in dashboard to save, for example, *Performance*. 
 . Click the *Save as* icon. 
 . In the *Save as* dialog, enter a *Name* for your custom dashboard, and click *Save*. +

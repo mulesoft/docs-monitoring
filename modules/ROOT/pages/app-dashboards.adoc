@@ -16,14 +16,14 @@ Important use cases are end-to-end tracing of API calls and dependency analyses 
 .Example: Average Response Time Grouped by Endpoint Outbound
 image::dashboard-outbound-response-table.png[Average Response Time Grouped By Endpoint Outbound]
 +
-* Infrastructure-level and JVM metrics.
-* Performance metrics that break down inbound and outbound response times into averages and percentiles.
+* Infrastructure-level and JVM metrics
+* Performance metrics that break down inbound and outbound response times into averages and percentiles
 
 == View a Built-in Dashboard
 
-Built-in and Custom dashboards are available from Anypoint Monitoring. You can view application metrics for applications deployed to CloudHub and to hybrid targets in both built-in and custom dashboards.
+Built-in and custom dashboards are available from Anypoint Monitoring. You can view application metrics for applications deployed to CloudHub and to hybrid targets in both built-in and custom dashboards.
 
-. Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
+. Sign into Anypoint Platform and click *Monitoring*.
 . Select the *Environment* and *Resource name* for the app or API to view the corresponding dashboard.
 . Click *View*. +
 The built-in dashboard for the application or API is displayed.
@@ -31,7 +31,7 @@ The built-in dashboard for the application or API is displayed.
 +
 image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
 
-Your data is pre-populated to the built-in dashboards and logs, so no configuration is needed.
+Your data is pre-populated and displayed in the built-in dashboards and logs, so no configuration is needed.
 
 Built-in dashboards include various pages to view different types of charts. 
 
