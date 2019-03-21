@@ -13,6 +13,26 @@ Anypoint Monitoring images (for example, 3.8.7-AM) receive the latest patch upda
 | Platform | Mule Version | Features
 
 | Anypoint Platform (CloudHub)
+| 4.1.5
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 4.1.4
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 4.1.3
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 4.1.2
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 4.1.1
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
 | 3.9.2
 | Metrics and logs
 
