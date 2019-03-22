@@ -1,4 +1,4 @@
-= Enable Mule Applications Deployed to CloudHub
+= Enable Monitoring for Mule Apps Deployed to CloudHub
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -44,6 +44,10 @@ To disable monitoring, change the value to `false`.
 
 Use the Anypoint CLI and set the following property during your CI/CD deployment:
 `anypoint.platform.config.analytics.agent.enabled=true`
+
+== Performance Impact
+
+Enabling Monitoring can impact CPU utilization and memory utilization, which varies depending upon specific application configuration. MuleSoft recommends that you test any performance impact in your pre-production environment prior to enabling monitoring in your production environment to ensure optimal performance and sizing.
 
 == See Also
 
