@@ -1,0 +1,30 @@
+= Create a Custom Dashboard
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Create a custom dashboard to configure the metrics and data points you want to view.  
+
+To create a custom dashboard:
+
+. In *Anypoint Monitoring*, click *Custom dashboards* in the left navigation menu.
+. Click *+ New Dashboard*.
+. Add and configure a chart for your dashboard.
+. Click *Save Changes*.
+. In the *Save as* dialog, enter a *New name*, and click *Save*. 
+
+== View a Custom Dashboard
+
+You can view custom dashboards for apps deployed to CloudHub and to hybrid targets in *Custom dashboards*.
+
+. In *Anypoint Monitoring*, click *Custom dashboards* in the left navigation menu. +
+A list of custom dashboards is displayed. 
+. In the custom dashboard list, click the dashboard to view. +
+You can also search for a custom dashboard by entering its name in the search field. 
+
+image::dashboard-select-custom.png[Select a Dashboard]
+
+== See Also 
+
+* xref:dashboard-custom-config.adoc[Configuring Custom Dashboards and Charts]
+* xref:save-builtin-dashboard-as-custom.adoc[Save a Built-in Dashboard as a Custom Dashboard]

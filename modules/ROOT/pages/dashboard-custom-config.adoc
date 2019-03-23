@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-You can <<dashboard_create, create>> and configure as many custom dashboards as you need. There are two levels of dashboard configuration:
+You can create and configure as many custom dashboards as you need. There are two levels of dashboard configuration:
 
 * After creating a dashboard, you can configure or view its dashboard-level properties, such as the name of the dashboard, any tags, its timezone, and metadata. See <<config_dashboard, Performing Dashboard-Level Configurations>>.
 +
@@ -38,24 +38,8 @@ image::dashboard-text-header.png[Example: Text]
 
 See <<charts_adding, Adding Charts to a Custom Dashboard>>.
 
-[[dashboard_create]]
-== Creating a Custom Dashboard
-
-To create a custom dashboard:
-
-. Simply navigate to Custom Dashboards in Anypoint Monitoring.
-. Click + New Dashboard.
-. Add and configure a chart for your dashboard.
-+
-For guidance, see <<charts_adding, Adding Charts to a Custom Dashboard>>.
-+
-. Save your changes.
-. In the dialog that opens, provide a name for your dashboard.
-
-If you want to modify dashboard properties, see <<config_dashboard, Performing Dashboard-Level Configurations>>.
-
 [[config_dashboard]]
-== Performing Dashboard-Level Configurations
+== Configure a Dashboard
 
 To perform dashboard-level configurations of custom dashboards, you need to navigate to a custom dashboard and click the <<dashboard_config, Pencil icon (beside the dashboard name)>> at the top of the page. Settings are for:
 
@@ -64,7 +48,7 @@ To perform dashboard-level configurations of custom dashboards, you need to navi
 * <<dashboard_metadata, Metadata>> (view only)
 
 [[dashboard_general]]
-=== Configuring General Dashboard Properties
+=== Configure General Dashboard Properties
 
 [[dashboard_config]]
 image::dashboard-custom-config-high-level.png[Dashboard Configuration]
@@ -86,7 +70,7 @@ Most graphs track data over time, so your time options are important. Here are y
 |===
 
 [[dashboard_rows]]
-=== Configuring Rows in a Custom Dashboard
+=== Configure Rows in a Custom Dashboard
 
 You can use the Row tab for high-level custom dashboard configurations to provide titles for rows, move rows up or down in the dashboard, and delete rows.
 
@@ -104,7 +88,7 @@ image::dashboard-custom-config-rows.png[Dashboard Row Configurations]
 |===
 
 [[dashboard_metadata]]
-=== Getting Information (Metadata) on a Custom Dashboard
+=== View Metrics on a Custom Dashboard
 
 You can use the Metadata tab for high-level custom dashboard configurations to view metrics on a custom dashboard.
 
@@ -116,22 +100,20 @@ image::dashboard-custom-metadata.png[Dashboard Metadata]
 2+| Metadata Available for Custom Dashboards
 | Last Updated At | Date and time of last update to the dashboard.
 | Last Updated By | Username associated with the Last Updated At value.
-| Created At | Date and time that the dashboard was created.
+| Created At | Date and time the dashboard was created.
 | Created By | Username of person who created the dashboard.
 | Current Version | Version number of the dashboard. The number increments each time you save modifications to the dashboard.
 |===
 
 [[charts_adding]]
-== Adding Charts to a Custom Dashboard
+== Add Charts to a Custom Dashboard
 
-. In Anypoint Monitoring, click Custom Dashboards in the left-side menu.
+. In *Anypoint Monitoring*, click *Custom dashboards* in the left-side menu.
 +
-For guidance, see xref:dashboards-using.adoc#dashboard_viewing[Viewing a Dashboard].
+* If you need to create a custom dashboard, click *+New Dashboard*.
+* If you need a row for your text panel, click the *Add Row* button at the bottom of the screen.
 +
-* If you need to create a custom dashboard, simply click New Dashboard.
-* If you need a row for your text panel, click the Add Row button at the bottom of the screen.
-+
-. Click Add to add a chart to the row.
+. Click *Add* to add a chart to the row.
 +
 .Example: Adding a Text Panel
 +
@@ -143,11 +125,11 @@ If the chart (widget) icons shown above are not visible:
 +
 image::dashboard-menu-widget.png[Opening the Widget Menu]
 +
-.. Use the Add Widget option in the left-side menu on a new or existing row, for example:
+.. Use the *Add Widget* option in the left-side menu on a new or existing row, for example:
 +
 image::dashboard-custom-widget-add-move-delete.png[Adding a Chart (Widget) to a Custom Dashboard]
 +
-. From the chart (widget), click Configure (from the three vertical dots on the top right side of the widget) to open a configuration window for it:
+. From the chart (widget), click *Configure* (from the three vertical dots on the top right side of the widget) to open a configuration window:
 +
 image::dashboard-custom-config-dup-delete.png[Configure a Chart]
 +
@@ -159,23 +141,28 @@ image::dashboard-custom-config-dup-delete.png[Configure a Chart]
 * xref:dashboard-custom-config-text.adoc[Configuring Text Panels]
 
 [[dup_dashboard]]
-== Duplicating a Custom Dashboard
+== Duplicate a Custom Dashboard
 
 To create a copy of a custom dashboard:
 
-. From Custom Dashboards, open a custom dashboard.
-. Click three vertical dots on the top-right of the dashboard, and select Duplicate.
+. From *Custom Dashboards*, open a custom dashboard.
+. Click the three vertical dots on the top-right of the dashboard, and select *Duplicate*.
 +
 [[dup_delete_dashboard]]
 image::dashboard-custom-dup-delete.png[Duplicate Dashboard]
 +
-. Save a New Name for the dashboard.
+. Save a *New Name* for the dashboard.
 +
-The UI will open to your copy of the dashboard.
+Your copy of the dashboard opens.
 
 [[delete_dashboard]]
-== Deleting a Custom Dashboard
+== Delete a Custom Dashboard
 
-. From Custom Dashboards, open a custom dashboard.
+. From *Custom Dashboards*, open a custom dashboard.
 . Click three vertical dots on the top-right of the dashboard, and select <<dup_delete_dashboard, Delete>>.
 . Confirm your deletion.
+
+== See Also
+
+* xref:create-custom-dashboard.adoc[Create a Custom Dashboard]
+* xref:dashboard-config-ref.adoc[Dashboard Configuration Reference]

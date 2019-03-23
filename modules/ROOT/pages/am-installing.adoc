@@ -91,10 +91,15 @@ If necessary, you can whitelist the endpoint for outbound firewall rules so your
 . Delete the `am` folder.
 . Follow the instructions for <<install_ap_monitoring_onprem,installing Anypoint Monitoring>> on-premises. 
 
-=== What to do Next
+== Performance Impact
+
+Enabling Monitoring can impact CPU utilization and memory utilization, which varies depending upon specific application configuration. MuleSoft recommends that you test any performance impact in your pre-production environment prior to enabling monitoring in your production environment to ensure optimal performance and sizing.
+
+== What to do Next
 
 - If you find connection failure or retry entries, ensure that ports 443 and 5044 in your outbound firewall are open.
 - If you do not find connection failure or retry entries, contact MuleSoft technical support.
+
 
 == See Also
 

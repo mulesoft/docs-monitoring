@@ -7,31 +7,6 @@ Built-in dashboards contain a standard set of graphs, while custom dashboards ca
 
 Both types of dashboards provide many of the same display options.
 
-[[dashboard_viewing]]
-== View a Builtin Dashboard
-
-Built-in and Custom dashboards are available from Anypoint Monitoring. You can view application metrics for applications deployed to CloudHub and to hybrid targets in both built-in and custom dashboards.
-
-. Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
-. Select the *Environment* and *Resource name* for the app or API to view the corresponding dashboard.
-. Click *View*. +
-The builtin dashboard for the application or API is displayed.
-. To switch to a dashboard for a different resource, click the built-in dashboard selector at the top of the page.
-+
-.Built-in Dashboard Selection
-image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
-
-== View Custom Dashboards
-
-For custom dashboards, you can select from a list of available dashboards. You can also search for it by name.
-
-Custom Dashboard List
-
-
-image::dashboard-select-custom.png[Select a Dashboard]
-
-Your data is pre-populated to the built-in dashboards and logs, so no configuration is needed.
-
 == Setting Data Display Options in a Dashboard
 
 //TODO_HIGH LICENSING MIGHT AFFECT OPTIONS AVAILABLE TO CUSTOMERS. NEED TO CHECK.
@@ -62,7 +37,7 @@ You can display an earlier or later time period in your chart, and you can zoom 
 
 [cols="1,4"]
 |===
-| image:zoom-earlier-later.png[Zoom Out,Show Earlier and Later] a|
+| image:zoom-earlier-later.png[Zoom Out, Show Earlier and Later] a|
 To display earlier or later data, you can use the less-than (&lt;) and greater-than (&gt;) icons.
 
 To zoom out and display data over a longer time period, you use the magnifying glass icon located between the less-than and greater-than icons
@@ -96,7 +71,7 @@ To select or deselect two or more alias, you can use `Command+Click`.
 
 == Picking a New Color for Data Displays
 
-You can click the color bar in a legend (for example, the yellow bar by `Total worker-0` in image below) to open a color picker for selecting a different color for the lines that connect your data points.
+Click the color bar in a legend (for example, the yellow bar by `Total worker-0` in image below) to open a color picker to select a different color for the lines that connect your data points.
 
 [[color_picker]]
 image::graph-legend-colors.png[Color Picker]
@@ -104,9 +79,9 @@ image::graph-legend-colors.png[Color Picker]
 // Right Axis REMOVED in MONITORING-686: You can also move the legend below the right or left y-axis, depending on which side makes sense for your graph.
 
 [[favorite_dashboard]]
-== Setting Favorite Custom Dashboards
+== Set Favorite Custom Dashboards
 
-You can mark a custom dashboard as a favorite by highlighting the star at the top of the dashboard.
+Click the star at the top of the custom dashboard to mark it as a favorite.
 
 [[favorite_star]]
 image::dashboard-custom-favorite.png[Star Favorite]
@@ -116,4 +91,4 @@ You will then see the star in the custom dashboard list, for example:
 [[dashboard_starred]]
 image::dashboard-custom-list.png[Favorite Custom Dashboard]
 
-Note that it is also possible to configure tags for custom dashboards. See xref:dashboard-custom-config.adoc[Configuring Custom Dashboards].
+You can also configure tags for custom dashboards. See xref:dashboard-custom-config.adoc[Configuring Custom Dashboards].

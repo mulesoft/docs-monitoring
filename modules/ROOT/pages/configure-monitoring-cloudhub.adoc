@@ -13,6 +13,26 @@ Anypoint Monitoring images (for example, 3.8.7-AM) receive the latest patch upda
 | Platform | Mule Version | Features
 
 | Anypoint Platform (CloudHub)
+| 4.1.5
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 4.1.4
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 4.1.3
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 4.1.2
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
+| 4.1.1
+| Metrics and logs
+
+| Anypoint Platform (CloudHub)
 | 3.9.2
 | Metrics and logs
 
@@ -27,22 +47,6 @@ Anypoint Monitoring images (for example, 3.8.7-AM) receive the latest patch upda
 | Anypoint Platform (CloudHub)
 | 3.8.7-AM
 | Logs only
-
-| Anypoint Platform (CloudHub)
-| 4.1.1-AM
-| Basic metrics (xref:dashboard-config-ref#metrics_basic[JVM-related only]) and logs
-
-| Anypoint Platform (CloudHub)
-| 4.1.2-AM
-| Basic metrics (xref:dashboard-config-ref#metrics_basic[JVM-related only]) and logs
-
-| Anypoint Platform (CloudHub)
-| 4.1.3-AM
-| Basic metrics (xref:dashboard-config-ref#metrics_basic[JVM-related only]) and logs
-
-| Anypoint Platform (CloudHub)
-| 4.1.4-AM
-| Basic metrics (xref:dashboard-config-ref#metrics_basic[JVM-related only]) and logs
 |===
 
 Metrics are used by graphs and other charts within xref:dashboards.adoc[Dashboards].
