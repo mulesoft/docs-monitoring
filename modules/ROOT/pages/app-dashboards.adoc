@@ -7,15 +7,13 @@ Built-in dashboards display deployment information about your application at the
 
 image::dashboard-built-in-info.png[Deployment Info on an App in a Built-In Dashboard]
 
-The graphs and tables in built-in dashboards support a number of metrics, including:
+The graphs and tables in built-in dashboards support a number of metrics, including application metrics. The *Overview* tab provides overall measures. You can view more granular application metrics through the *Inbound*, *Outbound*, and *Failure* tabs.
 
-* Application metrics, including overall measures through the Overview tab and more granular application metrics through the Inbound, Outbound, and Failure tabs.
-+
-Important use cases are end-to-end tracing of API calls and dependency analyses to help you isolate the source of issues. For example, you can track response times at each endpoint (outbound or inbound).
-+
+Example use cases for monitoring are end-to-end tracing of API calls and dependency analyses to help you isolate the source of issues. For example, you can track response times at each endpoint (outbound or inbound).
+
 .Example: Average Response Time Grouped by Endpoint Outbound
 image::dashboard-outbound-response-table.png[Average Response Time Grouped By Endpoint Outbound]
-+
+
 * Infrastructure-level and JVM metrics
 * Performance metrics that break down inbound and outbound response times into averages and percentiles
 
@@ -134,3 +132,8 @@ image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
 The Custom metrics tab displays only if you have a Titanium subscription and selected a hybrid app deployed to a server, server group, or cluster. See xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].
 |===
 
+== See Also
+
+* xref:dashboard-custom-config.adoc[Configuring Custom Dashboards and Charts]
+* xref:reports.adoc[Reports]
+* xref:save-builtin-dashboard-as-custom.adoc[Save a Built-in Dashboard as a Custom Dashboard]
