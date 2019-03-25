@@ -157,7 +157,7 @@ Your copy of the dashboard opens.
 
 == Export App Data to a CSV
 
-You can export app data to a CSV file, which you can then use in other applications. 
+You can export app data to a CSV file, which you can then use in other apps. 
 
 . From *Custom Dashboards*, open a custom dashboard.
 . Click the three vertical dots on the top-right of the dashboard, and select *Export CSV*.

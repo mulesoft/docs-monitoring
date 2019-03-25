@@ -4,14 +4,14 @@ include::_attributes.adoc[]
 endif::[]
 
 == About Reports
-Reports allow you to view a list of all the CloudHub applications running in an environment. The reports display information about overall performance and behavior across all the applications in the environment. These reports can help you identify application performance and availability problems across the environment so you can better maintain the expected level of service for your applications.
+Reports allow you to view a list of all the CloudHub apps running in an environment. The reports display information about overall performance and behavior across all the apps in the environment. These reports can help you identify app performance and availability problems across the environment so you can better maintain the expected level of service for your apps.
 
 From any of the *Reports* tabs, you can:
 
 * Navigate to reports that display information about requests, performance, failures, and CPU and memory utilization.
 * Switch environments
 * Select a time range to view the reports for
-* Click an application in the list to go to its built-in dashboard
+* Click an app in the list to go to its built-in dashboard
 * Click on column headings to sort the lists from highest to lowest, or from lowest to highest numbers
 * Refresh the page
 * Export a report as a CSV file.  
@@ -25,35 +25,35 @@ This feature requires a Titanium subscription.
 
 . Sign into Anypoint Platform and, in *Management Center*, click *Anypoint Monitoring*.
 . In the menu on the left, click *Reports*.
-. In the *Environment* drop-down list, select the environment where the applications you want to view reports for are deployed, and click *View*. +
+. In the *Environment* drop-down list, select the environment where the apps you want to view reports for are deployed, and click *View*. +
 The first time you view the reports page, the *Requests* report is displayed.
 . You can select a time range from the drop-down list on the top-right of the page.
 +
 image::monitoring-reports-time-range-selector.png[]
 +
-To view other reports, click the corresponding tab for the report to view. From any report tab, you can click the application name to view statistics for that application on its corresponding builtin dashboard.
+To view other reports, click the corresponding tab for the report to view. From any report tab, you can click the app name to view statistics for that app on its corresponding builtin dashboard.
 
 === Requests
 
-Click the *Requests* tab to view information about application requests, including:
+Click the *Requests* tab to view information about app requests, including:
 
-* *Request Volume*: The total number of inbound requests to the application within the specified time range.
-* *Successful Requests*: The total number of successful inbound requests to the application within the specified time range.
+* *Request Volume*: The total number of inbound requests to the app within the specified time range.
+* *Successful Requests*: The total number of successful inbound requests to the app within the specified time range.
 
 === Performance
 
-Click the *Performance* tab to view information about application performance metrics, including:
+Click the *Performance* tab to view information about app performance metrics, including:
 
-* *Request Volume*: The total number of inbound requests to the application in the specified time range.
-* *Response Time*: The average response time (in milliseconds) for inbound requests to the application.
+* *Request Volume*: The total number of inbound requests to the app in the specified time range.
+* *Response Time*: The average response time (in milliseconds) for inbound requests to the app.
 
 === Failures
 
-Click the *Failures* tab to view information about application request failures, including:
+Click the *Failures* tab to view information about app request failures, including:
 
-* *Request Volume*: The total number of inbound requests to the application within the specified time range.
-* *Failed Requests*: The total number of failed inbound requests to the application for the specified time range.
-* *Successful Requests*: The number of successful inbound requests to the application in the specified time range.
+* *Request Volume*: The total number of inbound requests to the app within the specified time range.
+* *Failed Requests*: The total number of failed inbound requests to the app for the specified time range.
+* *Successful Requests*: The number of successful inbound requests to the app in the specified time range.
 
 === CPU Utilization
 
@@ -61,10 +61,10 @@ Click the *CPU Utilization* tab to view information about the average percentage
 
 === Memory Utilization
 
-Click the *Memory Utilization* tab to view information about the memory utilization of each application running in the environment, including:
+Click the *Memory Utilization* tab to view information about the memory utilization of each app running in the environment, including:
 
 * *Memory Utilization*: The amount of the heap memory used by the JVM.
-* *Total Memory*: The total size of the application's heap memory.
+* *Total Memory*: The total size of the app's heap memory.
 * *Memory Pressure*: The percentage of the heap memory used (the difference between memory used and memory total).
 +
 image::monitoring-reports-memory-utilization.png[]
