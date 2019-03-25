@@ -155,6 +155,15 @@ image::dashboard-custom-dup-delete.png[Duplicate Dashboard]
 +
 Your copy of the dashboard opens.
 
+== Export App Data to a CSV
+
+You can export app data to a CSV file, which you can then use in other applications. 
+
+. From *Custom Dashboards*, open a custom dashboard.
+. Click the three vertical dots on the top-right of the dashboard, and select *Export CSV*.
+
+For more information about how to export app data, see xref:export-app-data-to-csv.adoc[Export App Data to a CSV].
+
 [[delete_dashboard]]
 == Delete a Custom Dashboard
 
@@ -166,3 +175,4 @@ Your copy of the dashboard opens.
 
 * xref:create-custom-dashboard.adoc[Create a Custom Dashboard]
 * xref:dashboard-config-ref.adoc[Dashboard Configuration Reference]
+* xref:export-app-data-to-csv.adoc[Export App Data to a CSV]

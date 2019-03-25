@@ -14,6 +14,7 @@ From any of the *Reports* tabs, you can:
 * Click an application in the list to go to its built-in dashboard
 * Click on column headings to sort the lists from highest to lowest, or from lowest to highest numbers
 * Refresh the page
+* Export a report as a CSV file.  
 
 image::reports-main-page.png[Reports Main Page]
 
@@ -36,23 +37,23 @@ To view other reports, click the corresponding tab for the report to view. From 
 
 Click the *Requests* tab to view information about application requests, including:
 
-* Request Volume: The total number of inbound requests to the application within the specified time range.
-* Successful Requests: The total number of successful inbound requests to the application within the specified time range.
+* *Request Volume*: The total number of inbound requests to the application within the specified time range.
+* *Successful Requests*: The total number of successful inbound requests to the application within the specified time range.
 
 === Performance
 
 Click the *Performance* tab to view information about application performance metrics, including:
 
-* Request Volume: The total number of inbound requests to the application in the specified time range.
-* Response Time: The average response time (in milliseconds) for inbound requests to the application.
+* *Request Volume*: The total number of inbound requests to the application in the specified time range.
+* *Response Time*: The average response time (in milliseconds) for inbound requests to the application.
 
 === Failures
 
 Click the *Failures* tab to view information about application request failures, including:
 
-* Request Volume: The total number of inbound requests to the application within the specified time range.
-* Failed Requests: The total number of failed inbound requests to the application for the specified time range.
-* Successful Requests: The number of successful inbound requests to the application in the specified time range.
+* *Request Volume*: The total number of inbound requests to the application within the specified time range.
+* *Failed Requests*: The total number of failed inbound requests to the application for the specified time range.
+* *Successful Requests*: The number of successful inbound requests to the application in the specified time range.
 
 === CPU Utilization
 
@@ -62,8 +63,18 @@ Click the *CPU Utilization* tab to view information about the average percentage
 
 Click the *Memory Utilization* tab to view information about the memory utilization of each application running in the environment, including:
 
-* Memory Utilization: The amount of the heap memory used by the JVM.
-* Total Memory: The total size of the application's heap memory.
-* Memory Pressure: The percentage of the heap memory used (the difference between memory used and memory total).
+* *Memory Utilization*: The amount of the heap memory used by the JVM.
+* *Total Memory*: The total size of the application's heap memory.
+* *Memory Pressure*: The percentage of the heap memory used (the difference between memory used and memory total).
 +
 image::monitoring-reports-memory-utilization.png[]
+
+== Export a Report as a CSV
+
+You can export a report as a CSV file and save it locally for any of the tabs in the Reports page. 
+
+. In *Anypoint Monitoring*, click *Reports* in the menu on the left. 
+. Click on the tab for the report to export. 
+. (Optional) Apply a time filter to download reports for the specified time period. 
+. In the upper right corner of the page, click *Export CSV*. +
+The CSV file is automatically downloaded in your browser. 
