@@ -129,7 +129,7 @@ If you have a Titanium subscription and the selected application is hybrid, this
 image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
 | *Custom metrics* a|
 
-The Custom metrics tab displays only if you have a Titanium subscription and selected a hybrid app deployed to a server, server group, or cluster. See xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].
+The *Custom metrics* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule. See xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].
 |===
 
 == See Also

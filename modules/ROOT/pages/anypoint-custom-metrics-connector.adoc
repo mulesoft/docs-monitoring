@@ -4,26 +4,32 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The Anypoint Custom Metrics connector enables you to send operational and business metric values from a hybrid application to Anypoint Monitoring to visualize metrics in real time using a custom dashboard in advanced mode and the built-in *Custom metrics* dashboard. 
+The Anypoint Custom Metrics connector enables you to send operational and business metric values from an app to Anypoint Monitoring to visualize metrics in real time using a custom dashboard in advanced mode and the built-in *Custom metrics* dashboard. 
 
 Define metrics in the Anypoint Custom Metrics connector in order to select which metrics to display in the dashboard. You can filter and group the metrics along the dimensions you define, and you can include multiple custom and built-in metrics in a single dashboard visualization.
 
 [NOTE] 
 ====
 To see metrics you configured in the Anypoint Custom Metrics connector in Anypoint Monitoring, you must have a Titanium subscription. +
-This feature is currently supported for hybrid applications only.
 ====
 
-== Prerequistes
+== Supported Mule Versions
 
-* Mule runtime engine 4.1.x, or 3.8.7 or later
+Custom metrics are supported on:
+
+* Hybrid apps running on Mule 4.1.x, or 3.8.7 or later
+* CloudHub apps running on Mule 4.1.x  
+
+== Prerequisites
+
+* For hybrid apps, Mule runtime engine 4.1.x, or 3.8.7 or later
 * xref:am-installing.adoc[Install the Anypoint Monitoring Agent]
 
 == Use Design Center to Configure the Custom Metrics Values
 
-The custom metrics connector is available in Anypoint Exchange for both Mule 3 and Mule 4.
+The Custom Metrics connector is available in Anypoint Exchange for both Mule 3 and Mule 4.
 
-. In *Design Center*, create a new mule application project. +
+. In *Design Center*, create a new Mule application project. +
 The project opens in Design Center. 
 . Select the trigger for your flow, and click *Next*.
 . For *Target*, select *Anypoint Custom Metrics Connector*, and click *Done*. 
@@ -88,7 +94,7 @@ image::custom-metrics-connector-config.png[]
 
 == Deploy the Application
 
-. Deploy the application to a supported standalone Mule runtime engine.
+. Deploy the app.
 . In Anypoint Monitoring, xref:dashboard-custom-config.adoc[add a new custom dashboard] for the custom metric. +
 This image shows an example of the configuration for a graph to display t-shirt sales.
 +
@@ -101,12 +107,11 @@ image::custom-metric-custom-dashboard-graph.png[]
 
 == Use the Custom Metrics Dashboard
 
-Custom metrics are not collected for the application until you configure the xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector] in your application flow and deploy the application to a server or server cluster. 
+Custom metrics are not collected for the app until you configure the xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector] in your application flow and deploy the application to a server or server cluster. 
 
 . In Anypoint Monitoring, select the application to view metrics for, and click *View*. 
 . Click the *Custom metrics* tab. +
 [NOTE]
-You must select a hybrid application (application deployed to an on-premises server and managed in the cloud) to see the *Custom metrics* tab. +
 If the Custom Metrics connector has collected one or more metrics in the specified time range, one chart per defined metric is displayed. 
 +
 image::custom-metrics-dashboard.png[]

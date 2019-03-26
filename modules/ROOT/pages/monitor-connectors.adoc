@@ -14,6 +14,12 @@ Supported connectors include:
 * Other +
 The connector type "Other" is any connector that is not Salesforce, Database, or HTTP.
 
+== Supported Mule Versions
+
+Custom metrics are supported on:
+
+* Hybrid apps running on Mule 4.1.x, or 3.8.7 or later
+* CloudHub apps running on Mule 4.1.x
 
 == Access Connector Monitoring
 
@@ -21,8 +27,8 @@ The connector type "Other" is any connector that is not Salesforce, Database, or
 . Select the environment and resource name, then click *View*. +
 To view performance information, the resource you select must contain a supported connector with data.
 . In the *Built-in dashboards* page, click *Connectors*. +
-If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. The *Connectors* tab does not display for apps deployed to CloudHub. +
-The Connectors page displays the metrics for connectors in the following table.
+If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform, and that the app you selected is running ona supported version of Mule. +
+The *Connectors* page displays the metrics for connectors in the following table.
 
 [%header,cols="1,4"]
 |===
