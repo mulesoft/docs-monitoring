@@ -27,7 +27,7 @@ Custom metrics are supported on:
 . Select the environment and resource name, then click *View*. +
 To view performance information, the resource you select must contain a supported connector with data.
 . In the *Built-in dashboards* page, click *Connectors*. +
-If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform, and that the app you selected is running ona supported version of Mule. +
+If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform, and that the app you selected is running on a supported version of Mule. +
 The *Connectors* page displays the metrics for connectors in the following table.
 
 [%header,cols="1,4"]
