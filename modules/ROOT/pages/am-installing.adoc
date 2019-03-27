@@ -1,8 +1,8 @@
-= Install Anypoint Monitoring On-Premises
+= Install the Anypoint Monitoring Agent
 
-You can install Anypoint Monitoring on an on-premises server to monitor applications running on that server. 
+You can install the Anypoint Monitoring agent on an on-premises server to monitor applications running on that server. 
 
-The install script prompts for whether Anypoint Monitoring should be installed as a service. If you don't want to have it preset as a service by the installer, select `no`. You can also call the install script with the `-x` argument to skip this prompt. If you skip the prompt Anypoint Monitoring is not installed as a service. 
+The installation script asks if you want Anypoint Monitoring installed as a service. If you don't want to have it preset as a service by the installer, select `no`. You can also call the installation script with the `-x` argument to skip this prompt. If you skip the prompt Anypoint Monitoring is not installed as a service. 
 
 == Before You Begin
 
@@ -17,7 +17,7 @@ Outbound connections are made to the following endpoints:
 ** arm-auth-proxy.prod-eu.msap:443
 ** dias-ingestor-nginx.prod-eu.msap.io:5044
 
-Verify that you have on-premises monitoring for hybrid deployments enabled at your master org level. Check with your account representative if you aren't sure.
+Verify that you have on-premises monitoring for hybrid deployments enabled at your Anypoint master org level. Check with your account representative if you aren't sure.
 
 == Supported Operating Systems
 
@@ -30,7 +30,7 @@ Ensure that Anypoint Monitoring is installed on a server running one of the foll
 
 == Supported Versions of Mule Runtime Engine
 
-Ensure that one of the following Mule runtime engine versions is running on the server:
+A supported version of Mule must be running on the server. Supported versions of Mule include: 
 
 * 4.1.5
 * 4.1.4
@@ -46,50 +46,68 @@ Ensure that one of the following Mule runtime engine versions is running on the 
 
 Ensure that one of the following Mule Runtime Manager agent versions is installed in the Mule runtime engine running on the server:
 
-* Runtime Manager Agent 2.1.9
-* Runtime Manager Agent 2.1.7
-* Runtime Manager Agent 2.1.6
-* Runtime Manager Agent 1.11.3
-* Runtime Manager Agent 1.11.2
-* Runtime Manager Agent 1.11.1
-* Runtime Manager Agent 1.11.0
-* Runtime Manager Agent 1.10.0
+* Runtime Manager agent 2.1.9
+* Runtime Manager agent 2.1.7
+* Runtime Manager agent 2.1.6
+* Runtime Manager agent 1.11.3
+* Runtime Manager agent 1.11.2
+* Runtime Manager agent 1.11.1
+* Runtime Manager agent 1.11.0
+* Runtime Manager agent 1.10.0
 
 == Hardware Prerequisites
 
-Ensure that the server has at least the minimum hardware requirements for Anypoint Monitoring:
+Ensure that the server has the minimum hardware requirements for Anypoint Monitoring, which are:
 
 * 2GHz CPU or 1 virtual CPU
 * 1GB RAM
 * 4GB disk space
 
 [[install_ap_monitoring_onprem]]
-== Install Anypoint Monitoring 
+== Install the Anypoint Monitoring agent
 
-Instructions for downloading and installing Anypoint Monitoring on-premises are located on the xref:monitoring-settings-page.adoc[*Settings* page] of the Anypoint Monitoring user interface. You can also download the Anypoint Monitoring installation ZIP (`am.zip`) file from this page. 
+Instructions for downloading and installing the Anypoint Monitoring agent on-premises are located on the xref:monitoring-settings-page.adoc[*Settings* page] of the Anypoint Monitoring user interface. You can also download the Anypoint Monitoring installation `am.zip` file from the *Settings* page. 
+
+When you extract the `am.zip` file, a folder called `am` is created in the location where you extracted the ZIP. 
+
+== SOCKS5 Proxy Setting
+
+If you need to proxy your monitoring data as it leaves the data center, you can use the command line parameter `p` when you install the Anypoint Monitoring agent. 
+
+To use the SOCKS5 protocol for monitoring, you must:
+
+. Set up Runtime Manager with a proxy. See xref:runtime-manager::servers-create.adoc[Create a Server in Runtime Manager].
+. To perform the SOCKS5 proxy configuration step, you must have a compatible server deployed to your environment.
+. Install the Anypoint Monitoring agent and use the `p` option. For example, on a Windows server, at the command line, enter: +
+====
+<location-of-am-folder\bin>powershell -file install.ps1 -p socks5://user:password@socks5-server:1080
+====
 
 
-== Verify that Anypoint Monitoring is Running
+
+
+
+== Verify the Anypoint Monitoring agent is Running
 
 1. Wait 10 minutes for the configuration to propagate.
 1. Go to http://anypoint.mulesoft.com and sign in.
-1. Navigate to *Anypoint Monitoring*.
-1. On the *Built-in Dashboards* page, select an app that is deployed on the server where you installed Anypoint Monitoring.
+1. Navigate to *Monitoring*.
+1. On the *Built-in Dashboards* page, select an app that is deployed on the server where you installed the Anypoint Monitoring agent.
 1. Check whether the CPU Utilization and Memory Utilization charts are displaying data. +
-If you see data in the charts, Anypoint Monitoring is installed and running. +
+If you see data in the charts, the Anypoint Monitoring agent is installed and running. +
 If you do not see data in the charts, verify that Anypoint Monitoring is able to connect to the endpoint. +
 [NOTE]
 If necessary, you can whitelist the endpoint for outbound firewall rules so your server allows connections. The endpoint is displayed in the gray box in Step 5 on the page, under the OS.
-11. Log into the server on which Anypoint Monitoring is running.
+11. Log into the server on which the Anypoint Monitoring agent is running.
 11. Open the log file for the data-transfer agent. The log file is in this path: `./am/log/filebeat`
 11. Look for entries that mention connection failures or connection retries.
 
-== Update the Monitoring Agent
+== Update the Anypoint Monitoring Agent
 
 . In the `am` folder, run the following command: +
 `./bin/uninstall script`
 . Delete the `am` folder.
-. Follow the instructions for <<install_ap_monitoring_onprem,installing Anypoint Monitoring>> on-premises. 
+. Follow the instructions for <<install_ap_monitoring_onprem,installing the Anypoint Monitoring agent>> on-premises. 
 
 == Performance Impact
 
