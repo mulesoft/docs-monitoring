@@ -32,3 +32,7 @@ You can activate or deactivate an alert by toggling the <<alerts, switch>> on th
 
 * Enabling a disabled alert causes the alert to transition to *Pending* until it is time for evaluation. Depending on the value, the alert transitions to *OK* or *Alerting*.
 * Disabling an alert causes the alert to transition to *Disabled*.
+
+== See Also
+
+xref:alerts-config.adoc[Configure Alerts]

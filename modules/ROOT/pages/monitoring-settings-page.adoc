@@ -20,6 +20,5 @@ The instructions for installing Anypoint Monitoring on-premises are displayed.
 
 == See Also
 
-* xref:enable-apps-deployed-to-cloud.adoc[Enable Mule Applications Deployed to CloudHub]
 * xref:am-installing.adoc[Install Anypoint Monitoring On-Premises]
 * xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps]
