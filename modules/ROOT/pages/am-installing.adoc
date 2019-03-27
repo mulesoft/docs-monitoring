@@ -81,13 +81,13 @@ To use the SOCKS5 protocol for monitoring, you must:
 . Install the Anypoint Monitoring agent and use the `-p` option. For example, on a Windows server, at the command line, enter: 
 
 ----
-<location-of-am-folder\bin>powershell -file install.ps1 -p socks5://user:password@socks5-server:1080
+<location-of-am-folder\bin>powershell -file install.ps1 -s <server-id> -p socks5://user:password@socks5-server:1080
 ----
 
 For a Linux server, enter:
 
 ----
-$ ./install -p socks5://user:password@socks5-server:1080
+$ ./install -s <server-id> -p socks5://user:password@socks5-server:1080
 ---- 
 
 
