@@ -55,7 +55,6 @@ You can xref:am-installing.adoc[install Anypoint Monitoring] on an on-premises s
 * xref:monitoring-settings-page.adoc[Anypoint Monitoring Settings]
 * xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps]
 * xref:am-installing.adoc[Install Anypoint Monitoring On-Premises]
-* xref:enable-apps-deployed-to-cloud.adoc[Enable Mule Applications Deployed to CloudHub]
 * xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]
 
 //REMOVED PER PABLO GALIANO & SEBASTIAN:
