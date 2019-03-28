@@ -19,7 +19,8 @@ Outbound connections are made to the following endpoints:
 
 Verify that you have on-premises monitoring for hybrid deployments enabled at your Anypoint master org level. Check with your account representative if you aren't sure.
 
-In case, the on-premise server will be configured as part of a Server Group or a Cluster make sure to install the server after that. The AM agent use server ID to publish metrics to the system. If the server gets added to a group/cluster after installation, the server id will change, and configuration will be lost.
+[NOTE]
+If you configure the server you are installing the Anypoint Monitoring agent on for a server group or cluster, then you must add the server to the server group or cluster before you install the Anypoint Monitoring agent. This is because the Anypoint Monitoring agent uses the server ID to publish metrics to the system and the server ID changes once you add the server to a server group or cluster.
 
 == Supported Operating Systems
 
