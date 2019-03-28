@@ -108,6 +108,8 @@ If necessary, you can whitelist the endpoint for outbound firewall rules so your
 
 == Update the Anypoint Monitoring Agent
 
+If you need to update the Anypoint Monitoring agent at some point in the future, follow these steps.
+
 . In the `am` folder, run the following command: +
 `./bin/uninstall script`
 . Delete the `am` folder.
