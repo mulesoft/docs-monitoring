@@ -48,44 +48,158 @@ These metrics are available when you use the Basic mode for applications:
 | Inbound - Success Average Response Time by Endpoint | `ms` | 3.x-AM, 3.9.x
 | Inbound - Success Average Response Time by Flow | `ms` | 3.x-AM, 3.9.x
 | JVM - CPU % Utilization | `percent` | 3.x-AM, 3.9.x
-| JVM - CPU Load Average | `percent` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Classes Loaded | `short` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Classes Loaded Total | `short` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Classes Unloaded | `short` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Code Cache Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Code Cache Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Code Cache Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Code Cache Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Compressed Class Space Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Compressed Class Space Total | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Compressed Class Space Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Garbage Collection Count | `short` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Garbage Collection Time | `ms` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Heap Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Heap Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - JVM Uptime | `ms` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Memory Utilization | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Metaspace Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Metaspace Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Metaspace Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Metaspace Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Par Eden Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Par Eden Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Par Eden Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Par Eden Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Par New Collection Count | `short` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Par New Collection Time | `ms` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Par Survivor Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Par Survivor Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Par Survivor Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Par Survivor Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Tenured Gen Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Tenured Gen Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Tenured Gen Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Tenured Gen Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Thread count - Server | `short` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Total System Memory | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
-| JVM - Total System Processors | `short` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - CPU Load Average | `percent` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Classes Loaded | `short` a|
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Classes Loaded Total | `short` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Classes Unloaded | `short` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Code Cache Committed | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Code Cache Init | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Code Cache Max | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Code Cache Used | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Compressed Class Space Committed | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Compressed Class Space Total | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Compressed Class Space Used | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Garbage Collection Count | `short` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Garbage Collection Time | `ms` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Heap Committed | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Heap Used | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - JVM Uptime | `ms` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Memory Utilization | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Metaspace Committed | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Metaspace Init | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Metaspace Max | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Metaspace Used | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Par Eden Committed | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Par Eden Init | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Par Eden Max | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Par Eden Used | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Par New Collection Count | `short` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Par New Collection Time | `ms` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Par Survivor Committed | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Par Survivor Init | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Par Survivor Max | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Par Survivor Used | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Tenured Gen Committed | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Tenured Gen Init | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Tenured Gen Max | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Tenured Gen Used | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Thread count - Server | `short` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Total System Memory | `bytes` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| JVM - Total System Processors | `short` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
 | Outbound - Average Request Count by Endpoint | `short` | 3.x-AM, 3.9.x, 
 | Outbound - Average Request Count by Flow | `short` | 3.x-AM, 3.9.x
 | Outbound - Average Response Time by Endpoint | `ms` | 3.x-AM, 3.9.x
@@ -107,10 +221,22 @@ These metrics are available when you use the basic mode for APIs:
 [%header,cols="3,1,1"]
 |===
 | Basic Metrics | Unit | Runtime Version Support
-| Requests by HTTP Policy Violation | `short` | 3.x-AM, 3.9.x, 4.x-AM
-| Requests by HTTP Respond Code | `short` | 3.x-AM, 3.9.x, 4.x-AM
-| Requests by Method | `short` | 3.x-AM, 3.9.x, 4.x-AM
-| Requests by Instance | `short` | 3.x-AM, 3.9.x, 4.x-AM
+| Requests by HTTP Policy Violation | `short` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| Requests by HTTP Respond Code | `short` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| Requests by Method | `short` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
+| Requests by Instance | `short` a| 
+
+3.x-AM, 3.9.x + 
+4.x-AM, 4.1.x
 |===
 
 [[metrics_advanced]]
@@ -255,7 +381,7 @@ Not in UI anymore:
 
 [[samples_markdown]]
 == Markdown Syntax Support
-Some Anypoint Monitoring fields, such as Text graph fields in a custom dashboard, accept Markdown. Markdown is a lightweight syntax for styling all forms of writing.
+Some Anypoint Monitoring fields, such as text graph fields in a custom dashboard, accept Markdown. Markdown is a lightweight syntax for styling all forms of writing.
 
 === Titles in Markdown
 
