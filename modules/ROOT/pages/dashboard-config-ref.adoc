@@ -48,45 +48,45 @@ These metrics are available when you use the Basic mode for applications:
 | Inbound - Success Average Response Time by Endpoint | `ms` | 3.x-AM, 3.9.x
 | Inbound - Success Average Response Time by Flow | `ms` | 3.x-AM, 3.9.x
 | JVM - CPU % Utilization | `percent` | 3.x-AM, 3.9.x
-| JVM - CPU Load Average | `percent` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Classes Loaded | `short` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Classes Loaded Total | `short` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Classes Unloaded | `short` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Code Cache Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Code Cache Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Code Cache Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Code Cache Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Compressed Class Space Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Compressed Class Space Total | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Compressed Class Space Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Garbage Collection Count | `short` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Garbage Collection Time | `ms` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Heap Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Heap Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - JVM Uptime | `ms` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Memory Utilization | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Metaspace Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Metaspace Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Metaspace Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Metaspace Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Par Eden Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Par Eden Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Par Eden Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Par Eden Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Par New Collection Count | `short` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Par New Collection Time | `ms` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Par Survivor Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Par Survivor Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Par Survivor Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Par Survivor Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Tenured Gen Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Tenured Gen Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Tenured Gen Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Tenured Gen Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Thread count - Server | `short` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Total System Memory | `bytes` | 3.x-AM, 3.9.x, 4.x-AM
-| JVM - Total System Processors | `short` | 3.x-AM, 3.9.x, 4.x-AM
-| Outbound - Average Request Count by Endpoint | `short` | 3.x-AM, 3.9.x
+| JVM - CPU Load Average | `percent` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Classes Loaded | `short` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Classes Loaded Total | `short` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Classes Unloaded | `short` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Code Cache Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Code Cache Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Code Cache Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Code Cache Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Compressed Class Space Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Compressed Class Space Total | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Compressed Class Space Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Garbage Collection Count | `short` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Garbage Collection Time | `ms` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Heap Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Heap Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - JVM Uptime | `ms` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Memory Utilization | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Metaspace Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Metaspace Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Metaspace Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Metaspace Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Par Eden Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Par Eden Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Par Eden Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Par Eden Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Par New Collection Count | `short` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Par New Collection Time | `ms` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Par Survivor Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Par Survivor Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Par Survivor Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Par Survivor Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Tenured Gen Committed | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Tenured Gen Init | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Tenured Gen Max | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Tenured Gen Used | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Thread count - Server | `short` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Total System Memory | `bytes` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| JVM - Total System Processors | `short` | 3.x-AM, 3.9.x, 4.x-AM, 4.1.x
+| Outbound - Average Request Count by Endpoint | `short` | 3.x-AM, 3.9.x, 
 | Outbound - Average Request Count by Flow | `short` | 3.x-AM, 3.9.x
 | Outbound - Average Response Time by Endpoint | `ms` | 3.x-AM, 3.9.x
 | Outbound - Average Response Time by Flow | `ms` | 3.x-AM, 3.9.x
