@@ -1,6 +1,6 @@
 = Install the Anypoint Monitoring Agent
 
-You can install the Anypoint Monitoring agent on an on-premises server to monitor applications running on that server. 
+You can install the Anypoint Monitoring agent on an on-premises server to monitor applications that are running on that server and managed in the cloud. 
 
 The installation script asks if you want Anypoint Monitoring installed as a service. If you don't want to have it preset as a service by the installer, select `no`. You can also call the installation script with the `-x` argument to skip this prompt. If you skip the prompt Anypoint Monitoring is not installed as a service. 
 
