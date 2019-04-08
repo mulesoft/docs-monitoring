@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Monitoring provides data on Mule apps that are running on <<runtime_versions>>. It is part of the Management Center in Anypoint Platform, and you need to have the <<required_permission>> to use it.
+Anypoint Monitoring provides data on Mule apps that are running on either CloudHub or an on-premises server. It is part of the Management Center in Anypoint Platform, and you need to have the <<required_permission>> to use it.
 
 [NOTE]
 Functional Monitoring is covered in xref:api-functional-monitoring::index.adoc[API Functional Monitoring].
@@ -57,5 +57,3 @@ You can xref:am-installing.adoc[install Anypoint Monitoring] on an on-premises s
 * xref:am-installing.adoc[Install Anypoint Monitoring On-Premises]
 * xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]
 
-//REMOVED PER PABLO GALIANO & SEBASTIAN:
-//For Mule apps running on older versions of the runtime, Anypoint Monitoring will provide information from Runtime Manager, API Manager, and API Analytics.
