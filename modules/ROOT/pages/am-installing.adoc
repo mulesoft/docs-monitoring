@@ -17,8 +17,6 @@ Outbound connections are made to the following endpoints:
 ** arm-auth-proxy.prod-eu.msap:443
 ** dias-ingestor-nginx.prod-eu.msap.io:5044
 
-Verify that you have on-premises monitoring for hybrid deployments enabled at your Anypoint master org level. Check with your account representative if you aren't sure.
-
 == Supported Operating Systems
 
 Ensure that Anypoint Monitoring is installed on a server running one of the following operating systems:
