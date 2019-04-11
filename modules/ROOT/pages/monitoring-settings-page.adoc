@@ -6,7 +6,7 @@ endif::[]
 On the *Settings* page, you can:
 
 * Find the instructions to install Anypoint Monitoring on an on-premises server to monitor Mule applications running on that server. 
-* Enable (or disable) monitoring for applications running on Mule 3.9.2.
+* Enable (or disable) monitoring for applications running on Mule.
 
 == Access the Settings Page
 
