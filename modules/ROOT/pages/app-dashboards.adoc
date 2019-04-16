@@ -60,7 +60,10 @@ Built-in dashboards include various pages to view different types of charts.
 * Response Time graphs (99, 90, 75, and 50 Percentile Inbound): Measured in milliseconds (ms)
 * Maximum Response Time
 * Total Inbound Calls 
-* Slow Requests: Total calls where Response Time > 1000ms
+* Slow Requests: Total calls where Response Time > 1000ms 
+
+[NOTE]
+Inbound metrics are retained for 24 hours.
 
 //* Total Inbound Calls (success or failure)
 //* Total Inbound by Endpoint Outbound

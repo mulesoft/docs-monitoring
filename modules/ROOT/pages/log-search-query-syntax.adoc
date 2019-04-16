@@ -26,20 +26,20 @@ To perform a single character wildcard search use the `?` symbol. The single cha
 
 `te?t`
 
-To perform a multiple character wildcard search use the `*` symbol. Multiple character wildcard searches look for 0 or more characters. For example, to search for test, tests, or tester, you can use the search:
+To perform a multiple character wildcard search use the * symbol. Multiple character wildcard searches look for zero or more characters. For example, to search for test, tests, or tester, you can use the search:
 
 `test*`
 
 You can also use the wildcard searches in the middle of a term, for example: `te*t`.
 
 [NOTE]
-You can't use a `*` or `?` symbol as the first character of a search.
+You can't use a * or `?` symbol as the first character of a search.
 
 == Fuzzy Searches
 
-You can perform fuzzy searches by using the tilde (`~`) symbol at the end of a single word term. For example, to search for a term similar in spelling to "roam" you can use the fuzzy search:
+You can perform fuzzy searches by using the tilde&#126; symbol at the end of a single word term. For example, to search for a term similar in spelling to "roam" you can use the fuzzy search:
 
-`roam~`
+`roam&#759;`
 
 This search returns terms like foam and roams.
 
@@ -80,7 +80,7 @@ The `NOT` operator can't be used with just one term. For example, the following 
 
 You can escape special characters that are part of the query syntax. The current list of supported special characters includes:
 
-`+ - && || ! ( ) { } [ ] ^ " ~ * ? : \`
+`+ - && || ! ( ) { } [ ] ^ " &#126; * ? : &#92; < >`
 
 To escape these characters, use the `\` before the character. For example, to search for (1+1):2 use the query:
 
@@ -92,7 +92,7 @@ To escape these characters, use the `\` before the character. For example, to se
 When performing a search you can either specify a field name or use the default field. The field name and default field are specific to the search implementation.
 
 You can search any field by typing the field name followed by a colon ":" and then the term you are looking for.
-As an example, let's assume a log search query language index contains two fields--application and message--and message is the default field. If you want to find the result called "The Right Way" which contains the text "don't go this way", you can enter:
+As an example, assume a log search query language index contains two fields--application and message--and message is the default field. If you want to find the result called "The Right Way" which contains the text "don't go this way", you can enter:
 
 `message:"The Right Way" AND application:go`
 
