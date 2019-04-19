@@ -11,8 +11,8 @@ Log messages are often difficult to parse in order to apply meaningful tokenizat
 
 Log tokenization is supported on:
 
-* Hybrid apps running on Mule 4.1.x, or 3.8.7 or later
-* CloudHub apps running on Mule 4.1.x  
+* Hybrid apps running on Mule 3.x or 4.x
+* CloudHub apps running on Mule 3.x or 4.x  
 
 == Prerequisites
 
@@ -35,7 +35,7 @@ To enable log tokenization, you need to create an app flow using Flow Designer o
 On the log search page, you can search for the tokenized values. 
 . To detokenize a value, go to API Manager. See xref:2.x@api-manager::policy-mule4-detokenization.adoc[Detokenization Policy] +
 [NOTE]
-You must have the *Manage Policies* permission to detokenize values. See 2.x@api-manager::environment-permission-task.adoc[Granting Permission to Access an Environment]
+You must have the *Manage Policies* permission to detokenize values. See xref:2.x@api-manager::environment-permission-task.adoc[Granting Permission to Access an Environment]
 
 == See Also
 
