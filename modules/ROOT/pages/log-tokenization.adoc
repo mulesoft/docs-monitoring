@@ -29,8 +29,9 @@ To enable log tokenization, you need to create an app flow using Flow Designer o
 . In Flow Designer or Studio, create an app flow for the Mule app. 
 . On Exchange, search for the following components, and add them to your Mule app flow. +
 * Logger connector
-* Tokenization Service connector
 * Tokenization Service API
+* Log Tokenization connector +
+You can find the Log Tokenization connector in *Monitoring > Tools*.
 . In Anypoint Monitoring, click *Log Search* in the menu on the left. +
 On the log search page, you can search for the tokenized values. 
 . To detokenize a value, go to API Manager. See xref:2.x@api-manager::policy-mule4-detokenization.adoc[Detokenization Policy] +
