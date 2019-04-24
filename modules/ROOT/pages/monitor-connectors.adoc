@@ -7,12 +7,22 @@ This feature requires a https://www.mulesoft.com/anypoint-pricing[Titanium Subsc
 
 Supported connectors include:
 
-* Salesforce
-* Database
-* HTTP
-* Web Services
-* Other +
-The connector type "Other" is any connector that is not Salesforce, Database, or HTTP.
+[%header,cols="a,a"]
+|===
+|Connector | Description
+|Salesforce 
+|The Anypoint Salesforce connector lets you connect to the Salesforce SOAP API, REST API, Bulk API, and Streaming API, depending on the operation you configure. See xref:connectors/salesforce::salesforce-connector.adoc[Salesforce Connector].
+|Database |
+|HTTP |
+|Web Services |
+|FTP |
+|SFTP |
+|SMTP |
+|Object Store |
+|Anypoint MQ |
+|Other | The connector type "Other" is any connector that is not listed here.
+|===
+
 
 == Supported Mule Versions
 
