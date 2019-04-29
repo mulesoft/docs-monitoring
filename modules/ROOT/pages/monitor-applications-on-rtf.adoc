@@ -1,17 +1,22 @@
 = Monitor Applications on Runtime Fabric
 
-Monitoring of applications deployed to Runtime Fabric is enabled by default.
+Monitoring for applications deployed to Runtime Fabric is enabled by default.
 
 == Supported Mule Versions
 
 Anypoint Monitoring supports the following Mule versions for Runtime Fabric deployments:
 
-* Mule Runtime, version 3.8.7
-* Mule Runtime, version 3.9.1+
+* Mule Runtime 3.8.7
+* Mule Runtime 3.9.1
+* Mule Runtime 3.9.2
 * Mule Runtime, version 4.1.1+
 
 == Runtime Fabric Setup
 
 Follow the instructions for xref:1.2@runtime-fabric::install-create-rtf-arm.adoc[setting up Runtime Fabric]. After you install Runtime Fabric, applications that are running and deployed to Runtime Fabric appear in Monitoring.
+
+=== See Also
+
+xref:runtime-fabric::manage-monitor-applications.adoc[Monitoring Applications Deployed to Runtime Fabric].
 
 
