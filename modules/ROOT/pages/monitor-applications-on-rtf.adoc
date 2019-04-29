@@ -9,7 +9,7 @@ Anypoint Monitoring supports the following Mule versions for Runtime Fabric depl
 * Mule Runtime 3.8.7
 * Mule Runtime 3.9.1
 * Mule Runtime 3.9.2
-* Mule Runtime, version 4.1.1+
+* Mule Runtime, version 4.1.2+
 
 == Runtime Fabric Setup
 
