@@ -13,7 +13,7 @@ Anypoint Monitoring supports the following Mule versions for Runtime Fabric depl
 
 == Runtime Fabric Setup
 
-Follow the instructions for xref:1.2@runtime-fabric::install-create-rtf-arm.adoc[setting up Runtime Fabric]. After you install Runtime Fabric, applications that are running and deployed to Runtime Fabric appear in Monitoring.
+Follow the instructions for xref:runtime-fabric::install-create-rtf-arm.adoc[setting up Runtime Fabric]. After you install Runtime Fabric, applications that are running and deployed to Runtime Fabric appear in Monitoring.
 
 === See Also
 
