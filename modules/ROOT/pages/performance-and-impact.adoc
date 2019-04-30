@@ -1,6 +1,6 @@
-= Anypoint Monitoring Performance and Impact
+= Anypoint Monitoring Performance Testing
 
-These are the findings from Anypoint Monitoring performance testing. 
+Review details about the performance impact and data retention with Anypoint Monitoring. 
 
 == Mule Monitoring Agent Performance Impact
 
