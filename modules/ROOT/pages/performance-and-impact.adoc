@@ -1,0 +1,19 @@
+= Anypoint Monitoring Performance Testing
+
+Review details about the performance impact and data retention with Anypoint Monitoring. 
+
+== Mule Monitoring Agent Performance Impact
+
+Expected CPU utilization impact: 3-5%
+
+== Data Retention and Aggregation
+
+* Minute Resolution for Metrics
+* Free tier (non-Titanium)
+ ** Metrics retention is 30 days for multi-tenant
+
+== Screen Resolution
+
+For the best performance, use a minimum screen resolution of 1024x768.
+
+

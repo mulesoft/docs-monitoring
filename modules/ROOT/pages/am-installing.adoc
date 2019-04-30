@@ -89,7 +89,7 @@ $ ./install -s <server-id> -p socks5://user:password@socks5-server:1080
 ---- 
 
 
-== Verify the Anypoint Monitoring agent is Running
+== Verify the Anypoint Monitoring Agent is Running
 
 1. Wait 10 minutes for the configuration to propagate.
 1. Go to http://anypoint.mulesoft.com and sign in.
