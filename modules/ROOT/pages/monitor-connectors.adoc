@@ -5,21 +5,80 @@ You can view performance metrics for supported connectors in your application su
 [NOTE]
 This feature requires a https://www.mulesoft.com/anypoint-pricing[Titanium Subscription] and the Unified Agent.
 
-Supported connectors include:
-
-* Salesforce
-* Database
-* HTTP
-* Web Services
-* Other +
-The connector type "Other" is any connector that is not Salesforce, Database, or HTTP.
-
 == Supported Mule Versions
 
 Custom metrics are supported on:
 
 * Hybrid apps running on Mule 4.1.x, or 3.8.7 or later
 * CloudHub apps running on Mule 4.1.x
+
+
+== Supported Connectors
+
+The type of connector determines the charts that are displayed. 
+
+[%header,cols="1,4"]
+|===
+| Connector | Charts
+|*Anypoint MQ (Inbound)* a|
+
+* Requests: Average number of Anypoint MQ connector inbound requests, grouped by operation and automatic intervals
+* Response Time: Average response time of Anypoint MQ connector inbound requests, grouped by operation and automatic intervals
+* Failures: Average number of Anypoint MQ connector inbound request failures, grouped by operation and automatic intervals
+|*Anypoint MQ (Outbound)* a|
+
+* Requests: Average number of Anypoint MQ connector outbound requests, grouped by operation and automatic intervals
+* Response Time: Average response time of Anypoint MQ connector outbound requests, grouped by operation and automatic intervals
+* Failures: Average number of Anypoint MQ connector outbound request failures, grouped by operation and automatic intervals
+|*Database* a|
+
+* Requests: Average number of Database connector requests, grouped by automatic intervals
+* Response Time: Average response time of Database connector requests, grouped by automatic intervals
+* Failures: Average number of Database connector request failures, grouped by automatic intervals
+|*FTP* a|
+
+* Requests: Average number of FTP connector requests, grouped by automatic intervals
+* Response Time: Average response time of FTP connector requests, grouped by automatic intervals
+* Failures: Average number of FTP connector request failures, grouped by automatic intervals
+|*HTTP* a|
+
+* Requests: Average number of HTTP connector requests, grouped by automatic intervals
+* Response Time: Average response time of HTTP connector requests, grouped by automatic intervals
+* Failures: Average number of HTTP connector request failures, grouped by automatic intervals
+|*Object Store* a|
+
+* Requests: Average number of Object Store connector requests, grouped by operation and automatic intervals
+* Response Time: Average response time of Object Store connector requests, grouped by operation and automatic intervals
+* Failures: Average number of Object Store connector request failures, grouped by operation and automatic intervals
+|*Salesforce* a|
+
+* Requests: Average number of Salesforce connector requests, grouped by automatic intervals
+* Response Time: Average response time of Salesforce connector requests, grouped by automatic intervals
+* Failures: Average number of Salesforce connector request failures, grouped by automatic intervals
+|*SFTP* a|
+
+* Requests: Average number of SFTP connector requests, grouped by automatic intervals
+* Response Time: Average response time of SFTP connector requests, grouped by automatic intervals
+* Failures: Average number of SFTP connector request failures, grouped by automatic intervals
+|*SMTP* a|
+
+* Requests: Average number of SMTP connector requests, grouped by automatic intervals
+* Response Time: Average response time of SMTP connector requests, grouped by automatic intervals
+* Failures: Average number of SMTP connector request failures, grouped by automatic intervals
+|*Web Services* a|
+
+* Requests: Average number of Web Services connector requests, grouped by automatic intervals
+* Response Time: Average response time of Web Services connector requests, grouped by automatic intervals
+* Failures: Average number of Web Services connector request failures, grouped by automatic intervals
+|*Other* a|
+
+The connector type "Other" is any connector not specified in this table.
+
+* Requests: Average number of requests of connectors of type Other, grouped by automatic intervals
+* Response Time: Average response time of requests of connectors of type Other, grouped by automatic intervals
+* Failures: Average number of request failures of other types of connectors, grouped by automatic intervals
+
+image:monitoring-connector-dashboard.png[]
 
 == Access Connector Monitoring
 
@@ -28,35 +87,5 @@ Custom metrics are supported on:
 To view performance information, the resource you select must contain a supported connector with data.
 . In the *Built-in dashboards* page, click *Connectors*. +
 If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform, and that the app you selected is running on a supported version of Mule. +
-The *Connectors* page displays the metrics for connectors in the following table.
+The *Connectors* page displays the metrics for connectors.
 
-[%header,cols="1,4"]
-|===
-| Connector | Charts
-|*Salesforce* a|
-
-* Requests: Average number of Salesforce connector requests, grouped by automatic intervals
-* Response Time: Average response time of Salesforce connector requests, grouped by automatic intervals
-* Failures: Average number of Salesforce connector requests failures, grouped by automatic intervals
-|*Database* a|
-
-* Requests: Average number of Database connector requests, grouped by automatic intervals
-* Response Time: Average response time of Database connector requests, grouped by automatic intervals
-* Failures: Average number of Database connector requests failures, grouped by automatic intervals
-|*HTTP* a|
-
-* Requests: Average number of HTTP connector requests, grouped by automatic intervals
-* Response Time: Average response time of HTTP connector requests, grouped by automatic intervals
-* Failures: Average number of HTTP connector requests failures, grouped by automatic intervals
-|*Web Services* a|
-
-* Requests: Average number of Web Services connector requests, grouped by automatic intervals
-* Response Time: Average response time of Web Services connector requests, grouped by automatic intervals
-* Failures: Average number of Web Services connector requests failures, grouped by automatic intervals
-|*Other* a|
-
-* Requests: Average number of requests of connectors of type Other, grouped by automatic intervals
-* Response Time: Average response time of requests of connectors of type Other, grouped by automatic intervals
-* Failures: Average number of requests failures of connectors of type Other, grouped by automatic intervals
-
-image:monitoring-connector-dashboard.png[]
