@@ -30,188 +30,74 @@ Many <<metrics_basic, basic>> and <<metrics_advanced, advanced>> metrics are ava
 [[metrics_basic]]
 === Basic Mode Metrics for Applications
 
-These metrics are available when you use the Basic mode for applications:
+These metrics are supported for the following Mule runtime engine versions: 3.8.7, 3.9.x, 4.1.x, and 4.2.x.
 
 [%header,cols="3,1,1"]
 |===
-| Basic Metrics | Unit | Runtime Version Support
-| Inbound - Average Request Count by Endpoint | `short` | 3.x-AM, 3.9.x
-| Inbound - Average Request Count by Flow | `short` | 3.x-AM, 3.9.x
-| Inbound - Average Response Count by Endpoint | `short` | 3.x-AM, 3.9.x
-| Inbound - Average Response Count by Flow | `short` | 3.x-AM, 3.9.x
-| Inbound - Failure Average Request Count by Endpoint  | `short` | 3.x-AM, 3.9.x
-| Inbound - Failure Average Request Count by Flow | `short` | 3.x-AM, 3.9.x
-| Inbound - Failure Average Response Time by Endpoint | `ms` | 3.x-AM, 3.9.x
-| Inbound - Failure Average Response Time by Flow | `ms` | 3.x-AM, 3.9.x
-| Inbound - Success Average Request Count by Endpoint  | `short` | 3.x-AM, 3.9.x
-| Inbound - Success Average Request Count by Flow | `short` | 3.x-AM, 3.9.x
-| Inbound - Success Average Response Time by Endpoint | `ms` | 3.x-AM, 3.9.x
-| Inbound - Success Average Response Time by Flow | `ms` | 3.x-AM, 3.9.x
-| JVM - CPU % Utilization | `percent` | 3.x-AM, 3.9.x
-| JVM - CPU Load Average | `percent` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Classes Loaded | `short` a|
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Classes Loaded Total | `short` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Classes Unloaded | `short` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Code Cache Committed | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Code Cache Init | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Code Cache Max | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Code Cache Used | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Compressed Class Space Committed | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Compressed Class Space Total | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Compressed Class Space Used | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Garbage Collection Count | `short` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Garbage Collection Time | `ms` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Heap Committed | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Heap Used | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - JVM Uptime | `ms` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Memory Utilization | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Metaspace Committed | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Metaspace Init | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Metaspace Max | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Metaspace Used | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Par Eden Committed | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Par Eden Init | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Par Eden Max | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Par Eden Used | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Par New Collection Count | `short` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Par New Collection Time | `ms` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Par Survivor Committed | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Par Survivor Init | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Par Survivor Max | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Par Survivor Used | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Tenured Gen Committed | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Tenured Gen Init | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Tenured Gen Max | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Tenured Gen Used | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Thread count - Server | `short` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Total System Memory | `bytes` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| JVM - Total System Processors | `short` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| Outbound - Average Request Count by Endpoint | `short` | 3.x-AM, 3.9.x, 
-| Outbound - Average Request Count by Flow | `short` | 3.x-AM, 3.9.x
-| Outbound - Average Response Time by Endpoint | `ms` | 3.x-AM, 3.9.x
-| Outbound - Average Response Time by Flow | `ms` | 3.x-AM, 3.9.x
-| Outbound - Failure Average Request Count by Endpoint | `short` | 3.x-AM, 3.9.x
-| Outbound - Failure Average Request Count by Flow | `short` | 3.x-AM, 3.9.x
-| Outbound - Failure Average Response Time by Endpoint | `ms` | 3.x-AM, 3.9.x
-| Outbound - Failure Average Response Time by Flow | `ms` | 3.x-AM, 3.9.x
-| Outbound - Success Average Request Count by Endpoint | `short` | 3.x-AM, 3.9.x
-| Outbound - Success Average Request Count by Flow | `short` | 3.x-AM, 3.9.x
-| Outbound - Success Average Response Time by Endpoint | `ms` | 3.x-AM, 3.9.x
-| Outbound - Success Average Response Time by Flow | `ms` | 3.x-AM, 3.9.x
+| Basic Metrics | Unit 
+| Inbound - Average Request Count by Endpoint | `short` 
+| Inbound - Average Request Count by Flow | `short` 
+| Inbound - Average Response Count by Endpoint | `short` 
+| Inbound - Average Response Count by Flow | `short` 
+| Inbound - Failure Average Request Count by Endpoint  | `short` 
+| Inbound - Failure Average Request Count by Flow | `short` 
+| Inbound - Failure Average Response Time by Endpoint | `ms` 
+| Inbound - Failure Average Response Time by Flow | `ms` 
+| Inbound - Success Average Request Count by Endpoint  | `short` 
+| Inbound - Success Average Request Count by Flow | `short` 
+| Inbound - Success Average Response Time by Endpoint | `ms` 
+| Inbound - Success Average Response Time by Flow | `ms` 
+| JVM - CPU % Utilization | `percent` 
+| JVM - CPU Load Average | `percent` 
+| JVM - Classes Loaded | `short` 
+| JVM - Classes Loaded Total | `short` 
+| JVM - Classes Unloaded | `short` 
+| JVM - Code Cache Committed | `bytes` 
+| JVM - Code Cache Init | `bytes` 
+| JVM - Code Cache Max | `bytes` 
+| JVM - Code Cache Used | `bytes` 
+| JVM - Compressed Class Space Committed | `bytes` 
+| JVM - Compressed Class Space Total | `bytes` 
+| JVM - Compressed Class Space Used | `bytes` 
+| JVM - Garbage Collection Count | `short` 
+| JVM - Garbage Collection Time | `ms` 
+| JVM - Heap Committed | `bytes` 
+| JVM - Heap Used | `bytes` 
+| JVM - JVM Uptime | `ms` 
+| JVM - Memory Utilization | `bytes` 
+| JVM - Metaspace Committed | `bytes` 
+| JVM - Metaspace Init | `bytes` 
+| JVM - Metaspace Max | `bytes` 
+| JVM - Metaspace Used | `bytes` 
+| JVM - Par Eden Committed | `bytes` 
+| JVM - Par Eden Init | `bytes` 
+| JVM - Par Eden Max | `bytes` 
+| JVM - Par Eden Used | `bytes` 
+| JVM - Par New Collection Count | `short` 
+| JVM - Par New Collection Time | `ms` 
+| JVM - Par Survivor Committed | `bytes` 
+| JVM - Par Survivor Init | `bytes` 
+| JVM - Par Survivor Max | `bytes` 
+| JVM - Par Survivor Used | `bytes` 
+| JVM - Tenured Gen Committed | `bytes` 
+| JVM - Tenured Gen Init | `bytes` 
+| JVM - Tenured Gen Max | `bytes` 
+| JVM - Tenured Gen Used | `bytes` 
+| JVM - Thread count - Server | `short` 
+| JVM - Total System Memory | `bytes` 
+| JVM - Total System Processors | `short` 
+| Outbound - Average Request Count by Endpoint | `short`  
+| Outbound - Average Request Count by Flow | `short` 
+| Outbound - Average Response Time by Endpoint | `ms` 
+| Outbound - Average Response Time by Flow | `ms` 
+| Outbound - Failure Average Request Count by Endpoint | `short` 
+| Outbound - Failure Average Request Count by Flow | `short` 
+| Outbound - Failure Average Response Time by Endpoint | `ms` 
+| Outbound - Failure Average Response Time by Flow | `ms` 
+| Outbound - Success Average Request Count by Endpoint | `short` 
+| Outbound - Success Average Request Count by Flow | `short` 
+| Outbound - Success Average Response Time by Endpoint | `ms` 
+| Outbound - Success Average Response Time by Flow | `ms` 
 |===
 
 === Basic Mode Metrics for APIs
@@ -220,29 +106,17 @@ These metrics are available when you use the basic mode for APIs:
 
 [%header,cols="3,1,1"]
 |===
-| Basic Metrics | Unit | Runtime Version Support
-| Requests by HTTP Policy Violation | `short` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| Requests by HTTP Respond Code | `short` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| Requests by Method | `short` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
-| Requests by Instance | `short` a| 
-
-3.x-AM, 3.9.x + 
-4.x-AM, 4.1.x
+| Basic Metrics | Unit 
+| Requests by HTTP Policy Violation | `short` 
+| Requests by HTTP Respond Code | `short` 
+| Requests by Method | `short` 
+| Requests by Instance | `short` 
 |===
 
 [[metrics_advanced]]
 === Advanced Mode
 
-These metrics are available when you use the Advanced mode:
+These metrics are available when you use *Advanced* mode:
 
 .Advanced Metrics
 [%header,cols="1,2,2"]
@@ -344,201 +218,15 @@ This metric is available for APIs only. | `http_summary_metric` a|
 * `response_time_sum`
 |===
 
-////
-Not in UI anymore:
-|  JVM Memory Pool “Code Cache” | `jvm.memory.memorypool.code_cache` a|
-
-* `code_cached_committed`
-* `code_cached_total`
-* `code_cached_used`
-|  JVM Memory Pool “Code Cache” | `jvm.memory.memorypool.compressed_class_space` a|
-
-* `compressed_class_space_committed`
-* `compressed_class_space_total`
-* `compressed_class_space_used`
-|  JVM Memory Pool “Code Cache” | `jvm.memory.memorypool.metaspace` a|
-
-* `metaspace_committed`
-* `metaspace_total`
-* `metaspace_used`
-|  JVM Memory Pool “Eden Space” | `jvm.memory.memorypool.par_eden_space` a|
-
-* `par_eden_committed`
-* `par_eden_total`
-* `par_eden_used`
-|  JVM Memory Pool “Survivor Space” | `jvm.memory.memorypool.par_survivor_space` a|
-
-* `survivor_space_committed`
-* `survivor_space_total`
-* `survivor_space_used`
-| JVM Memory Pool “Tenured Generation” | `jvm.memory.memorypool.tenured_gen` a|
-
-* `tenured_gen_committed`
-* `tenured_gen_total`
-* `tenured_gen_used`
-////
-
 
 [[samples_markdown]]
 == Markdown Syntax Support
-Some Anypoint Monitoring fields, such as text graph fields in a custom dashboard, accept Markdown. Markdown is a lightweight syntax for styling all forms of writing.
+Some Anypoint Monitoring fields, such as text graph fields in a custom dashboard, accept Markdown. Markdown is a lightweight syntax for styling all forms of writing. For information about the Markdown syntax, see https://en.wikipedia.org/wiki/Markdown[Markdown].
 
-=== Titles in Markdown
-
-.Markdown Title Examples
-[source,text,linenums]
-----
-# TITLE 1
-## Title 2
-### Title 3
-----
-
-=== Emphases in Markdown
-
-.Markdown Emphasis Examples
-[source,text,linenums]
-----
-*This text will be italic*
-_This will also be italic_
-
-**This text will be bold**
-__This will also be bold__
-
-_You **can** combine them_
-----
-
-=== Lists in Markdown
-
-You can write unordered and ordered lists.
-
-.Markdown: Unordered List
-[source,text,linenums]
-----
-Unordered
-* Item 1
-* Item 2 is **bold**
-  * Item 2a
-  * Item 2b
-
-Alternatively:
-- Dashes work just as well
-- For sub points, put two spaces before the dash or asterisk:
-  - Like this
-  - And this
-----
-
-.Markdown: Ordered List
-[source,text,linenums]
-----
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
-----
-
-Note that the `1.` entries will resolved to the correct number in the sequence.
-
-=== Images in Markdown
-
-You can insert images like this:
-
-.Markdown: Image Syntax
-[source,text,linenums]
-----
-![MyCompany's Logo](https://www.mycompany.com/content/logo/logo.png)
-----
-
-=== Links in Markdown
-
-You can add links like this:
-
-.Markdown: Link Syntax
-[source,text,linenums]
-----
-[MyCompany's](https://www.mycompany.com/us/en-us.html)
-----
-
-Also note that any URL is automatically converted into a link.
-
-.Markdown: Example that Gets Converted to a Link
-[source,text,linenums]
-----
-http://www.github.com/
-----
-
-=== Inline Code in Markdown
-
-You surround inline code in backticks.
-
-```
-Here is an `inline_code` example in Markdown.
-```
-
-=== Code in Markdown
-
-.Markdown: Code Syntax
-[source,text,linenums]
-----
-```
-javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
-```
-----
-
-=== Task Lists in Markdown
-
-.Markdown: Task List Syntax
-[source,text,linenums]
-----
-- [x] #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
-----
-
-=== Tables in Markdown
-You can create tables by assembling a list of words and dividing them with hyphens (`-`) for the first row, then separating each column with a pipe (`|`):
-
-.Markdown: Table Syntax
-[source,text,linenums]
-----
-| Col 1 | Col 2 | Col 3 | Col 4 |
-|-------|-------|-------|-------|
-|       |       |       |       |
-|       |       |       |       |
-|       |       |       |       |
-|       |       |       |       |
-|       |       |       |       |
-|       |       |       |       |
-|       |       |       |       |
-----
-
-=== Strikethrough in Markdown
-
-Any word wrapped with two tildes (like `&#126;&#126;this&#126;&#126;`) will appear crossed-out.
-
-=== Blockquotes in Markdown
-
-You use the `>` to start a blockquote.
-
-.Markdown: Blockquote Syntax
-[source,text,linenums]
-----
-> And so, my fellow Americans, ask not what
-> your country can do for you -- ask what
-> you can do for your country.
-
-> You can also create a very long line that should be quoted properly in the UI when it wraps
-----
 
 [[samples_html]]
 == HTML Support
-Some Anypoint Monitoring fields, such as Text graph fields in a custom dashboard, accept HTML elements (or tags).
+Some Anypoint Monitoring fields, such as Text graph fields in a custom dashboard, accept HTML elements (or tags). 
 
 [[html_titles]]
 === HTML Titles
