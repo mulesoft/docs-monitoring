@@ -5,9 +5,6 @@ endif::[]
 
 Understanding the state of your infrastructure and systems is important for ensuring the reliability and stability of your services. As part of Anypoint Platform, Anypoint Monitoring provides visibility into integrations across your app network. The monitoring tools provide feedback from Mule flows and components in your app network.
 
-// TODO: REMOVED ALL REFS TO APIS
-//It uses data access capabilities, context, and data in the APIs and Integrations platform to provide best-in-the-industry Monitoring and Diagnostics.
-
 Operations and development teams use the monitoring tools to diagnose issues and prescribe solutions to behavior that negatively impacts digital performance. The monitoring tools are designed to reduce the time to identify and resolve these issues through aggregated metrics, data visualization tools, alerts for issues, and a log aggregation system. Specifically, Anypoint Monitoring provides ways to:
 
 * Aggregate and map metrics across dependent systems in real-time.
@@ -15,27 +12,15 @@ Operations and development teams use the monitoring tools to diagnose issues and
 of issues (MTTI).
 * Store and search log data at scale.
 
-//TODO: PERFORMANCE?
-//What is the performance overhead?3-5% maximum CPU utilization impact.  1% in current testing (internal onlyfor this number).
-
-// TODO: Free and Premium features
-// Integrations with Splunk/ELK and monitoring tools such as Nagio, and MS Ops
-
 == Dashboards
 
 Use built-in dashboards or customize your own to provide instant visibility into your applications' performance and detailed analysis of your network.
 
 image::intro-dashboard-built-in.png[Built-in Dashboard Example]
 
-//image::metrics-infographic.png[Dashboards]
-
 Built-in and custom dashboards expose the metrics on your app network. They provide visual representations of your resources so you can detect anomalies, troubleshoot issues, and see trends that are not obvious in raw form.
 
-//the different topologies of your systems.
-
 A custom dashboard provides a single screen that can bring together specific metrics and data points that are important to your organization. Custom dashboards can display graphs and other charts, such as single statistics.
-
-//The example includes system data separated by failed and successful requests. You can build unified dashboards across ajjjjn unlimited number of components, fully customizing charts and graphs, exporting data into a selected format and tools.
 
 You can track many data points and metrics from a custom dashboard that looks across multiple services in the app and in your dashboards across all systems.
 
@@ -46,7 +31,6 @@ See xref:dashboards-using.adoc[Dashboards].
 Track trends and add your own alerts to identify abnormal behavior and problems in your application network.
 
 image::intro-alerts.png[Alerts]
-//image::alert-infographic.png[Alerts]
 
 You can trigger alerts based on rules (or thresholds) and policies for your resources. When these thresholds are crossed for a certain period of time, you can receive notification to take action. The method of notification depends on the severity of the alert that you define.
 
@@ -91,8 +75,6 @@ The Titanium subscription:
 
 For complete details about subscriptions, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
 
-// TODO: GovCloud support is coming as part of FedRAMP in 2019
-
 == Raw Data Downloads
 
 You can download warehoused log data on a Mule app, for example, to help investigate  security, compliance, or other issues that logs can reveal.
@@ -101,7 +83,7 @@ See xref:raw-data.adoc[Raw Data].
 
 == Tools for Monitoring Integrations
 
-You can link to connectors that help deliver Anypoint Monitoring notifications to external systems.
+You can link to connectors that help deliver Anypoint Monitoring notifications to external systems, including custom metrics connectors. 
 
 See xref:tools.adoc[Tools].
 
