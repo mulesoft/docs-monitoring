@@ -13,7 +13,7 @@ Anypoint Monitoring non-AM images receive patch updates as soon as they are avai
 | Platform | Mule Version | Features
 
 | Anypoint Platform (CloudHub)
-| 4.2
+| 4.2.0
 | Metrics and logs
 
 | Anypoint Platform (CloudHub)
