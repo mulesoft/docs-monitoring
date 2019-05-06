@@ -4,30 +4,32 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The Anypoint Custom Metrics connector enables you to send operational and business metric values from an app to Anypoint Monitoring to visualize metrics in real time using a custom dashboard in advanced mode and the built-in *Custom metrics* dashboard. 
+The Anypoint Custom Metrics connector enables you to send operational and business metric values that you define from an app to Anypoint Monitoring. You can then use the built-in *Custom metrics* dashboard and a custom dashboard in *Advanced* mode to visualize the custom metrics in real time. 
 
-Define metrics in the Anypoint Custom Metrics connector in order to select which metrics to display in the dashboard. You can filter and group the metrics along the dimensions you define, and you can include multiple custom and built-in metrics in a single dashboard visualization.
+Define metrics in the Anypoint Custom Metrics connector to select which metrics to display in the dashboard. You can filter and group the metrics along the dimensions you define to include multiple custom and built-in metrics in a single dashboard visualization.
+
+The Custom Metrics connector is available for both Mule 3 and Mule 4 in the *Monitoring > Custom Metrics* page.
 
 [NOTE] 
 ====
-To see metrics you configured in the Anypoint Custom Metrics connector in Anypoint Monitoring, you must have a Titanium subscription. +
+To see the metrics you configure in the Anypoint Custom Metrics connector in Anypoint Monitoring, you must have a Titanium subscription. 
 ====
 
 == Supported Mule Versions
 
 Custom metrics are supported on:
 
-* Hybrid apps running on Mule 4.1.x, or 3.8.7 or later
+* Hybrid apps running on Mule 4.2.x, 4.1.x, 3.9.x, or 3.8.7
 * CloudHub apps running on Mule 4.1.x  
 
 == Prerequisites
 
-* For hybrid apps, Mule runtime engine 4.1.x, or 3.8.7 or later
+* For hybrid apps, Mule runtime engine 4.2.x, 4.1.x, 3.9.x, or 3.8.7
 * xref:am-installing.adoc[Install the Anypoint Monitoring Agent]
 
 == Use Design Center to Configure the Custom Metrics Values
 
-The Custom Metrics connector is available in Anypoint Exchange for both Mule 3 and Mule 4.
+Create a Mule application project in Design Center and configure the Custom Metrics connector.
 
 . In *Design Center*, create a new Mule application project. +
 The project opens in Design Center. 
@@ -63,7 +65,7 @@ You can repeat these steps to add multiple key values.
 
 == Configure Custom Metrics Values Using Anypoint Studio
 
-. Search Anypoint Exchange for the Anypoint Custom Metrics connector. +
+. Search Anypoint Exchange for the Anypoint Custom Metrics connector. 
 . Drag the *Send Custom Metric* operation to the canvas. 
 . Add the *Send Custom Metric* operation to your application flow. +
 This image shows an example flow for custom metrics in Anypoint Studio. 

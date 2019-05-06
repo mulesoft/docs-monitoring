@@ -18,8 +18,8 @@ Log tokenization is supported on:
 
 . xref:runtime-fabric::install-create-rtf-arm.adoc[Install Runtime Fabric].
 . xref:runtime-fabric::enable-inbound-traffic.adoc[Enable inbound traffic] on Runtime Fabric. 
-. In Anypoint Security, xref:anypoint-security::tokenization-example.adoc#_create_the_tokenization_format[create a tokenization format].
-. In Runtime Manager, xref:anypoint-security::tokenization-example.adoc#_create_the_tokenization_service[create the tokenization service]. 
+. In Anypoint Security, xref:anypoint-security::create-tokenization-format.adoc[create a tokenization format].
+. In Runtime Manager, xref:anypoint-security::tokenization-example.adoc[create the tokenization service]. 
 . In API Manager, xref:2.x@api-manager::getting-started-proxy.adoc[set up the API gateway] for the Mule app to serve as the proxy.
 
 == Add the Required Components to Your App Flow
@@ -32,7 +32,7 @@ To enable log tokenization, you need to create an app flow using Flow Designer o
 [%header,cols="a,a"]
 |===
 |Component |Description
-|Logger component | This core component logs important information. You can add the Logger component anywhere in a flow. See xref:4.1@mule-runtime::logger-component-reference.adoc[Logger Component].
+|Logger component | This core component logs important information. You can add the Logger component anywhere in a flow. See xref:mule-runtime::logger-component-reference.adoc[Logger Component].
 |Tokenization API a|The Tokenization API allows calls to a configured tokenization service which enables you to substitute a sensitive data element with a non-sensitive equivalent. +
 The Tokenization API is available on the MuleSoft public portal. Go to https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/[Anypoint Exchange] and search for "Tokenization API". 
 
