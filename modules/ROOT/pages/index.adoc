@@ -44,7 +44,7 @@ image::intro-logs.png[Logs]
 
 Anypoint Monitoring facilitates distributed log searches of raw log and event data from across the app network so that you can pinpoint the root cause of a problem.
 
-The log aggregator system holds raw operational data and records events that occur in the operating system or Mule app. Log aggregation compiles, organizes, and indexes log files to facilitate management, searching, and analysis. Aggregated logs compliment the monitoring system by helping you identify causes of operational issues and investigate failures.
+The log aggregator system holds raw operational data and records events that occur in the operating system or Mule app. Log aggregation compiles, organizes, and indexes log files to facilitate management, searching, and analysis. Aggregated logs complement the monitoring system by helping you identify causes of operational issues and investigate failures.
 
 See xref:logs.adoc[Logs].
 
