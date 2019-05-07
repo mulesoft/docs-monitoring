@@ -32,7 +32,7 @@ Many <<metrics_basic, basic>> and <<metrics_advanced, advanced>> metrics are ava
 
 These metrics are supported for the following Mule runtime engine versions: 3.8.7, 3.9.x, 4.1.x, and 4.2.x.
 
-[%header,cols="3,1,1"]
+[%header,cols="3,1"]
 |===
 | Basic Metrics | Unit 
 | Inbound - Average Request Count by Endpoint | `short` 
@@ -104,7 +104,7 @@ These metrics are supported for the following Mule runtime engine versions: 3.8.
 
 These metrics are available when you use the basic mode for APIs:
 
-[%header,cols="3,1,1"]
+[%header,cols="3,1"]
 |===
 | Basic Metrics | Unit 
 | Requests by HTTP Policy Violation | `short` 
