@@ -19,8 +19,8 @@ To see the metrics you configure in the Anypoint Custom Metrics connector in Any
 
 Custom metrics are supported on:
 
-* Hybrid apps running on Mule 4.2.x, 4.1.x, 3.9.x, or 3.8.7
-* CloudHub apps running on Mule 4.1.x  
+* Hybrid apps running on Mule 4.2.0, 4.1.x, 3.9.x, or 3.8.7
+* CloudHub apps running on Mule 4.2.0, 4.1.x  
 
 == Prerequisites
 
