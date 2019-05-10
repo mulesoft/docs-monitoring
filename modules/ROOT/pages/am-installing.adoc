@@ -1,4 +1,4 @@
-= Install the Anypoint Monitoring Agent
+= Monitor Hybrid Runtimes
 
 You can install the Anypoint Monitoring agent on an on-premises server to monitor applications that are running on that server and managed in the cloud. 
 
@@ -23,8 +23,8 @@ Ensure that Anypoint Monitoring is installed on a server running one of the foll
 
 * CentOS 7
 * RedHat Enterprise Linux 7.0 and 7.6
-* Ubuntu 14.04 and 15.04
-* Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019
+* Ubuntu 16.04
+* Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019
 
 == Supported Versions of Mule Runtime Engine
 
