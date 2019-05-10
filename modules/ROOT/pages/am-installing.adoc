@@ -1,4 +1,7 @@
 = Monitor Hybrid Runtimes
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
 
 You can install the Anypoint Monitoring agent on an on-premises server to monitor applications that are running on that server and managed in the cloud. 
 
@@ -102,7 +105,7 @@ If you do not see data in the charts, verify that Anypoint Monitoring is able to
 [NOTE]
 If necessary, you can whitelist the endpoint for outbound firewall rules so your server allows connections. The endpoint is displayed in the gray box in Step 5 on the page, under the OS.
 11. Log into the server on which the Anypoint Monitoring agent is running.
-11. Open the log file for the data-transfer agent. The log file is in this path: `./am/log/filebeat`
+11. Open the log file for the data-transfer agent. The log file is in this path: `./am/filebeat/logs`
 11. Look for entries that mention connection failures or connection retries.
 
 == Update the Anypoint Monitoring Agent
