@@ -64,6 +64,7 @@ Ensure that the server has the minimum hardware requirements for Anypoint Monito
 * 2GHz CPU or 1 virtual CPU
 * 1GB RAM
 * 4GB disk space
+* Intel x86 or x64 compatible CPU architecture
 
 [[install_ap_monitoring_onprem]]
 == Install the Anypoint Monitoring agent
