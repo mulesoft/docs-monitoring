@@ -1,11 +1,11 @@
-= Configuring Custom Dashboards and Charts
+= Configure Custom Dashboards and Charts
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-You can create and configure as many custom dashboards as you need. There are two levels of dashboard configuration:
+You can create and configure as many custom dashboards as you need. 
 
-* After creating a dashboard, you can configure or view its dashboard-level properties, such as the name of the dashboard, any tags, its timezone, and metadata. See <<config_dashboard, Performing Dashboard-Level Configurations>>.
+* After you create a custom dashboard, you can configure dashboard-level properties, such as the name of the dashboard, any tags, its timezone, and metadata. See <<config_dashboard, Performing Dashboard-Level Configurations>>.
 +
 * You can configure one or more charts (also called widgets) for displaying your data in each row of a dashboard.
 +
@@ -41,7 +41,7 @@ See <<charts_adding, Adding Charts to a Custom Dashboard>>.
 [[config_dashboard]]
 == Configure a Dashboard
 
-To perform dashboard-level configurations of custom dashboards, you need to navigate to a custom dashboard and click the <<dashboard_config, Pencil icon (beside the dashboard name)>> at the top of the page. Settings are for:
+To perform dashboard-level configurations of custom dashboards, navigate to a custom dashboard and click the <<dashboard_config, Pencil icon (beside the dashboard name)>> at the top of the page. Settings are for:
 
 * <<dashboard_general, General>> dashboard properties
 * <<dashboard_rows, Rows>> for charts in your dashboard
@@ -61,18 +61,20 @@ image::dashboard-custom-config-high-level.png[Dashboard Configuration]
 | Tags | A short identifier that can help you locate a dashboard in the custom dashboard list. See xref:dashboards-using.adoc#favorite_dashboard[Setting Favorite Custom Dashboards] for an example.
 | Timezone a|
 
-Most graphs track data over time, so your time options are important. Here are your options:
+Most graphs track data over time, so your time options are important. Your options are:
 
-* Default: The default is the Local Time.
-* Local Browser Time: Time taken from the system time of the computer that the browser is running on.
-* UTC: Coordinated Universal Time standard, which uses the 24 hour cycle (for example, `19:20`) and corresponds to GMT.
-| Graph Tooltip | Options: Default, Shared Crosshair, Shared Tooltip. With Default, the crosshair cursor only appears in the chart that you mouse over. With Shared Crosshair, the crosshair appears on all charts, and with Shared Tooltip, the crosshair and the tooltip appears.
+* *Local browser time*: (Default) Time taken from the system time of the computer the browser is running on.
+* *UTC*: Coordinated Universal Time standard, which uses the 24 hour cycle (for example, `19:20`) and corresponds to GMT.
+| Graph Tooltip a| Options include: 
+* *Default*: The crosshair cursor appears only in the chart that you mouse over.
+* *Shared Crosshair*: The crosshair appears on all charts.
+* *Shared Tooltip*: The crosshair and the tooltip appears on all charts.
 |===
 
 [[dashboard_rows]]
 === Configure Rows in a Custom Dashboard
 
-You can use the Row tab for high-level custom dashboard configurations to provide titles for rows, move rows up or down in the dashboard, and delete rows.
+Use the *Rows* tab for high-level custom dashboard configurations to provide titles for rows, move rows up or down in the dashboard, and delete rows.
 
 [[dashboard_config_rows]]
 image::dashboard-custom-config-rows.png[Dashboard Row Configurations]
@@ -81,16 +83,16 @@ image::dashboard-custom-config-rows.png[Dashboard Row Configurations]
 |===
 2+| Row Configuration Options for Custom Dashboards
 | Title | Title for your row.
-| Show Title | For making the title visible to end users.
-| Up Arrow icon | For moving a row up in the dashboard when there is more than one row in the dashboard.
-| Down Arrow icon | For moving a row down when there is more than one row in the dashboard.
-| Trashcan icon | For deleting the row _and any charts_ it contains from the dashboard.
+| Show Title | Make the title visible to end users.
+| Up Arrow icon | Move a row up in the dashboard when there is more than one row in the dashboard.
+| Down Arrow icon | Move a row down when there is more than one row in the dashboard.
+| Trashcan icon | Delete the row and any charts it contains from the dashboard.
 |===
 
 [[dashboard_metadata]]
 === View Metrics on a Custom Dashboard
 
-You can use the Metadata tab for high-level custom dashboard configurations to view metrics on a custom dashboard.
+Use the *Metadata* tab for high-level custom dashboard configurations to view metrics on a custom dashboard.
 
 [[dashboard_config]]
 image::dashboard-custom-metadata.png[Dashboard Metadata]
@@ -98,10 +100,10 @@ image::dashboard-custom-metadata.png[Dashboard Metadata]
 [%header,cols="1,4"]
 |===
 2+| Metadata Available for Custom Dashboards
-| Last Updated At | Date and time of last update to the dashboard.
-| Last Updated By | Username associated with the Last Updated At value.
-| Created At | Date and time the dashboard was created.
-| Created By | Username of person who created the dashboard.
+| Last Updated at | Date and time of last update to the dashboard.
+| Last Updated by | Username associated with the Last Updated At value.
+| Created at | Date and time the dashboard was created.
+| Created by | Username of person who created the dashboard.
 | Current Version | Version number of the dashboard. The number increments each time you save modifications to the dashboard.
 |===
 
@@ -110,8 +112,8 @@ image::dashboard-custom-metadata.png[Dashboard Metadata]
 
 . In *Anypoint Monitoring*, click *Custom dashboards* in the left-side menu.
 +
-* If you need to create a custom dashboard, click *+New Dashboard*.
-* If you need a row for your text panel, click the *Add Row* button at the bottom of the screen.
+* To create a custom dashboard, click *+New Dashboard*.
+* To add a row for your text panel, click the *Add Row* button at the bottom of the screen.
 +
 . Click *Add* to add a chart to the row.
 +

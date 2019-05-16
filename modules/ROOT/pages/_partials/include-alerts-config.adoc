@@ -23,7 +23,7 @@ Note that you can also view <<state_history, state history>> and <<delete_alert,
 [[alert_config]]
 === Alert Config
 
-You can configure the condition under which an alert is triggered.
+Configure the condition under which an alert is triggered.
 
 [%header,cols="1,4"]
 |===
@@ -53,7 +53,7 @@ TODO _FUTURE?
 [[notifications]]
 === Notifications
 
-You configure a notification to email when an alert is triggered.
+Configure a notification to email when an alert is triggered.
 
 [%header,cols="1,4"]
 |===
@@ -67,11 +67,11 @@ After you complete your configuration, you can click Save Changes. To exit the c
 [[state_history]]
 === State History
 
-You view the last fifty state changes in this section of the UI.
+View the last fifty state changes in this section of the UI.
 
 You can also clear the history.
 
 [[delete_alert]]
 === Delete
 
-To delete an alert, simply click Delete on the left-side menu and then confirm your deletion.
+To delete an alert, click *Delete* on the left-side menu, then confirm your deletion.
