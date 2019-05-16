@@ -24,7 +24,7 @@ Custom metrics are supported on:
 
 == Prerequisites
 
-* For hybrid apps, Mule runtime engine 4.2.x, 4.1.x, 3.9.x, or 3.8.7
+* For hybrid apps, Mule runtime engine 4.2.x, 4.1.x, 3.9.x, or 3.8.7-AM
 * xref:am-installing.adoc[Install the Anypoint Monitoring Agent]
 
 == Use Design Center to Configure the Custom Metrics Values

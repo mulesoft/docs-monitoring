@@ -42,7 +42,7 @@ A supported version of Mule must be running on the server. Supported versions of
 * 3.9.2
 * 3.9.1
 * 3.9.0
-* 3.8.7
+* 3.8.7-AM
 
 == Supported Versions of Mule Runtime Manager Agent
 
@@ -131,6 +131,6 @@ Enabling Monitoring can impact CPU utilization and memory utilization, which var
 == See Also
 
 * xref:monitoring-settings-page.adoc[Anypoint Monitoring Settings]
-* xref:4.1@mule-runtime::runtime-installation-task.adoc[To Download and Install the Mule 4]
+* xref:mule-runtime::runtime-installation-task.adoc[Download and Install Mule 4]
 * xref:runtime-manager::installing-and-configuring-runtime-manager-agent.adoc[Installing and Configuring Mule Runtime Manager Agent]
 * xref:3.9@mule-runtime::installing.adoc[Installing and Deploying Mule Runtime 3.9]

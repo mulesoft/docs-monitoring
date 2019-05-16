@@ -9,7 +9,7 @@ This feature requires a https://www.mulesoft.com/anypoint-pricing[Titanium Subsc
 
 Custom metrics are supported on:
 
-* Hybrid apps running on Mule 4.2.0, 4.1.x, or 3.8.7 or later
+* Hybrid apps running on Mule 4.2.0, 4.1.x, 3.9.x, or 3.8.7-AM
 * CloudHub apps running on Mule 4.2.0, 4.1.x
 
 

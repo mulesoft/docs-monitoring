@@ -12,14 +12,14 @@ Many fields accept time and date interval values like these:
 [%header,cols="1,5"]
 |===
 2+| Date and Time Fields
-| `y`	| Year, for example: `1y`.
-| `M` | Month, for example: `1M`.
-| `w` | Week, for example: `1w`.
-| `d` | Day, for example: `1d`.
-| `h` | Hour, for example: `1h`.
-| `m` | Minute, for example: `1m`.
-| `s` | Second, for example: `1s`.
-| `ms` | Millisecond, for example: `1ms`.
+| `y`	| Year, for example: `1y`
+| `M` | Month, for example: `1M`
+| `w` | Week, for example: `1w`
+| `d` | Day, for example: `1d`
+| `h` | Hour, for example: `1h`
+| `m` | Minute, for example: `1m`
+| `s` | Second, for example: `1s`
+| `ms` | Millisecond, for example: `1ms`
 |===
 
 [[metrics]]
@@ -30,7 +30,7 @@ Many <<metrics_basic, basic>> and <<metrics_advanced, advanced>> metrics are ava
 [[metrics_basic]]
 === Basic Mode Metrics for Applications
 
-These metrics are supported for the following Mule runtime engine versions: 3.8.7, 3.9.x, 4.1.x, and 4.2.0.
+These metrics are supported for the following Mule runtime engine versions: 3.8.7-AM, 3.9.x, 4.1.x, and 4.2.0.
 
 [%header,cols="3,1"]
 |===

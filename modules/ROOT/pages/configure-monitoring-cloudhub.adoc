@@ -49,8 +49,8 @@ Anypoint Monitoring non-AM images receive patch updates as soon as they are avai
 | Metrics and logs
 
 | Anypoint Platform (CloudHub)
-| 3.8.7
-| Metrics and logs
+| 3.8.7-AM
+| Logs
 |===
 
 Metrics are used by graphs and other charts within xref:dashboards.adoc[Dashboards].
