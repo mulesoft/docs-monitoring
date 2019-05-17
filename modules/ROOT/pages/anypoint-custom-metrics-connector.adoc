@@ -11,20 +11,11 @@ Define metrics in the Anypoint Custom Metrics connector to select which metrics 
 The Custom Metrics connector is available for both Mule 3 and Mule 4 in the *Monitoring > Custom Metrics* page.
 
 [NOTE] 
-====
 To see the metrics you configure in the Anypoint Custom Metrics connector in Anypoint Monitoring, you must have a Titanium subscription. 
-====
-
-== Supported Mule Versions
-
-Custom metrics are supported on:
-
-* Hybrid apps running on Mule 4.2.0, 4.1.x, 3.9.x, or 3.8.7
-* CloudHub apps running on Mule 4.2.0, 4.1.x  
 
 == Prerequisites
 
-* For hybrid apps, Mule runtime engine 4.2.x, 4.1.x, 3.9.x, or 3.8.7-AM
+* Mule runtime engine 4.2.x, 4.1.x, 3.9.x, or 3.8.7-AM
 * xref:am-installing.adoc[Install the Anypoint Monitoring Agent]
 
 == Use Design Center to Configure the Custom Metrics Values

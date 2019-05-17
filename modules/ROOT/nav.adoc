@@ -5,7 +5,7 @@
  ** xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps (CloudHub)]
  ** xref:monitor-applications-on-rtf.adoc[Monitor Applications on Runtime Fabric]
  ** xref:am-installing.adoc[Monitor Hybrid Runtimes]
- ** xref:performance-and-impact.adoc[Anypoint Monitoring Performance and Impact]
+ ** xref:performance-and-impact.adoc[Anypoint Monitoring Performance, Impact, and Limits]
 * xref:dashboards.adoc[Dashboards]
 * xref:dashboards-using.adoc[Using Dashboards]
  ** xref:app-dashboards.adoc[Built-in Application Dashboards]
