@@ -1,4 +1,4 @@
-= Anypoint Monitoring Performance and Impact
+= Anypoint Monitoring Performance, Impact, and Limits
 
 Review details about the performance impact and data retention with Anypoint Monitoring. 
 
@@ -9,11 +9,15 @@ Expected CPU utilization impact: 3-5%
 == Data Retention and Aggregation
 
 * Minute Resolution for Metrics
-* Free tier (non-Titanium)
+* Gold and Platinum subscriptions (non-Titanium)
  ** Metrics retention is 30 days for multi-tenant
 
 == Screen Resolution
 
 For the best performance, use a minimum screen resolution of 1024x768.
+
+== Logging
+
+Maximum length of one log line: 8KB (approximately 100 lines).  Lines longer than 8KB are truncated.
 
 

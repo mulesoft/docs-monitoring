@@ -1,13 +1,13 @@
-= Configuring Graphs in a Custom Dashboard
+= Configure Graphs in a Custom Dashboard
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-In Anypoint Monitoring, you can configure one or more sets of time-series data in a graph. The graph measures the changes to time-series data over time. A graph in a custom dashboard can display a metric for a resource in a given environment.
+In Anypoint Monitoring, you can configure one or more sets of time-series data in a graph. The graph measures the changes to time-series data over time. A graph in a custom dashboard can display a metric for a resource in a given environment. For example, to configure a graph, you might select a response time or heap usage as the metric to graph for a Mule app in your Design or Sandbox environment. 
 
-To configure a graph, you might select a response time or heap usage as the metric to graph for a Mule app in your Design or Sandbox environment. Advanced configuration options allow for more fine-tuned data sets. You can also customize the X and Y axes, the look of the graph, legends, the behavior when you hover over a data point, and more. These options are described in more detail below.
+Advanced configuration options allow for more fine-tuned data sets. You can also customize the X and Y axes, the look of the graph, legends, the behavior when you hover over a data point, and more. 
 
-To open a configuration page for a graph, see xref:dashboard-custom-config.adoc[Configuring Custom Dashboards].
+To open a configuration page for a graph, see xref:dashboard-custom-config.adoc[Configure Custom Dashboards].
 
 //GENERAL SETTINGS shared by singlestat and graph
 //== General
@@ -16,10 +16,11 @@ include::{partialsdir}/include-general-config.adoc[]
 
 == Axes (X-Axis and Y-Axis Settings)
 
-In the Axes tab, you can configure the x-axis and y-axis of your graph.
+Configure the x-axis and y-axis of your graph in the *Axes* tab.
 
 === Y-Axis Settings
-You can set a vertical y-axis for the left (Left Y) or right (Right Y) side of your graph.
+
+Set a vertical y-axis for the left (Left Y) or right (Right Y) side of your graph.
 
 [%header,cols="1,4"]
 |===
@@ -96,23 +97,24 @@ After you complete your configuration, you can click Save Changes. To exit the c
 [[alerts_config]]
 == Alerts (Configuration, Notifications, History)
 
-//*https://www.mulesoft.com/anypoint-pricing[Titanium Subscription Required]*
-*Titanium Subscription Required*
+[NOTE]
+A Titanium subscription is required to use this feature. 
 
-In the Alerts tab, you can set up alerts that trigger when JVM memory utilization is too high.
+In the *Alerts* tab, set up alerts that trigger when JVM memory utilization is too high.
 
 include::{partialsdir}/include-alerts-config.adoc[]
 
 //END ALERTS
 
 == Advanced (Legends, Thresholds, Stacking, Hovering, Time Shift Settings)
-You can add and configure legends, thresholds, and other features for your graph.
+
+Add and configure legends, thresholds, and other features for your graph.
 
 ////
 TODO_REMOVED FOR NOW PER PABLO:
 
 === Links (Advanced Setting)
-In the Advanced configuration tab, you can configure links that appear in the dropdown menu in a for a graph in a custom dashboard, for example:
+In the Advanced configuration tab, you can configure links that appear in the dropdown menu for a graph in a custom dashboard, for example:
 
 image::dashboard-custom-link.png[Link in a Custom Dashboard]
 
@@ -138,7 +140,8 @@ TODO_ABOVE:
 ////
 
 === Legends (Advanced Setting)
-In the Advanced configuration tab, you can configure legends for your graphs.
+
+In the *Advanced configuration* tab, configure legends for your graphs.
 
 image::graph-advanced-legend.png[Advanced Graph Settings: Legend]
 
@@ -146,9 +149,9 @@ image::graph-advanced-legend.png[Advanced Graph Settings: Legend]
 |===
 2+| Legend Options
 | Show  | Unchecking hides the legend. Checked by default.
-| As Table | Checking displays the selected legend Values (such as, Min and Max) in a table. Unchecked by default.
-| To the Right | Checking display the legend to the right side. Unchecked by default.
-| Width | Available when To the Right is checked. Sets the minimum width (in pixels) for the legend. You can leave it blank to allow for the automatic width selection.
+| As Table | Check to display the selected legend Values (such as `min` and `max`) in a table. Unchecked by default.
+| To the Right | Check to display the legend on the right side. Unchecked by default.
+| Width | Available when *To the Right* is checked. Sets the minimum width (in pixels) for the legend. Leave it blank to allow for automatic width selection.
 |===
 
 You can also display the following values in a legend:
@@ -156,53 +159,54 @@ You can also display the following values in a legend:
 [%header,cols="1,4"]
 |===
 2+| Legend Values
-| Min | Minimum of all values returned from the query.
-| Max | Maximum of all values returned from the query.
-| Avg | Average of all values returned from the query.
+| Min | Minimum of all values returned from the query
+| Max | Maximum of all values returned from the query
+| Avg | Average of all values returned from the query
 | Current | Last value returned from the query
 | Total | Sum of all values returned from metric query
-| Decimals | Overrides automatic decimal precision used in legends and tooltips.
+| Decimals | Overrides automatic decimal precision used in legends and tooltips
 |===
 
-After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
+After you complete your configuration, click *Save Changes*. 
+
+To exit the configuration and return to the dashboard, click the *X*.
 
 === Stacking and Hover (Advanced Setting)
-In the Advanced configuration tab, you can configure a hover tooltip to display information about a data point in a graph when you hover over the value.
+
+In the *Advanced configuration* tab, you can configure a hover tooltip to display information about a data point in a graph when you hover over the value.
 
 image::graph-advanced-stacking-hover.png[Advanced Graph Settings: Stack and Hover]
 
 [%header,cols="1,4"]
 |===
 2+| Hover Tooltip Settings
-| Mode | For displaying one or all series in the tooltip.
-| Sort Order | Displays data in no order (None), Decreasing or Increasing order. Defaults to None.
+| Mode | To display one or all series in the tooltip.
+| Sort Order | Displays data in no order (None), Decreasing, or Increasing order. Defaults to None.
 | Stacked Value  a|
-Available when Stack is checked. Controls the display of values in the tooltip:
+Available when *Stack* is checked. Controls the display of values in the tooltip.
 
-Valid values:
+Valid values are:
 
 * Individual: The value of the series that you hover over.
 * Cumulative: Sum of series below the stacked value plus the series you hover over.
 |===
 
-//TODO: VERIFY INDIVIDUAL AND CUMULATIVE. I GOT THE SAME RESULTS FOR BOTH.
-
-Stacking and Null functionality can display multiple series as a group within a stack. You can also specify how to deal with null values.
+Stacking and Null functionality displays multiple series as a group within a stack. You can also specify how to deal with null values.
 
 [%header,cols="1,4"]
 |===
 2+| Stacking and Null Settings
-| Stack | When checked, stacks each series, one on top of another instead of overlaying them.
-| Percent | Available when Stack is checked. Displays each series of stacked values as a percentage.
+| Stack | When checked, stacks each series, one on top of another, instead of overlaying them.
+| Percent | Available when *Stack* is checked. Displays each series of stacked values as a percentage.
 | Null Value | Determines how to display null values: Connected, Null, Null As Zero.
 |===
 
-//TODO: MORE EXPLAINATION MIGHT BE NECESSARY FOR STACKING AND NUL
-
 === Threshold (Advanced Setting)
-In the Advanced configuration tab, you can set one or more thresholds, such as a line or section to a graph, to indicate whether the data crosses a limit that you specify.
 
-Note that thresholds are not available when an alert is in place on the graph. To re-enable thresholds for a chart, you must delete the alert.
+In the *Advanced* configuration tab, you can set one or more thresholds, such as a line or section to a graph, to indicate whether the data crosses a limit that you specify.
+
+[NOTE]
+Thresholds are not available when an alert is in place on the graph. To re-enable thresholds for a chart, you must delete the alert.
 
 image::graph-advanced-threshold.png[Threshold Settings for a Graph]
 
@@ -211,15 +215,15 @@ image::graph-advanced-threshold.png[Threshold Settings for a Graph]
 2+| Threshold Settings
 | `gt` or `lt` | Indicates whether the limit applies to data that is greater than (`gt`) or less than (`lt`) the specified threshold value.
 | Threshold value | A numeric value for the threshold.
-| Threshold type | Identifier for the threshold. One of Custom, Critical, Warning, or OK.
+| Threshold type | Identifier for the threshold (Custom, Critical, Warning, or OK).
 | Fill | Adds a filler color to the graph that corresponds to the specified threshold setting.
 | Line |  Adds a line to the graph that corresponds to the specified threshold setting.
-| Fill Color  | Similar to Fill settings, but for custom thresholds only.
-| Line Color | Similar to Line settings, but for custom thresholds only.
+| Fill Color  | Similar to *Fill* settings, but for custom thresholds only.
+| Line Color | Similar to *Line* settings, but for custom thresholds only.
 |===
 
 === Time Range Shift (Advanced Setting)
-In the Advanced configuration tab, you can set overrides any time intervals or ranges that end users select for the custom dashboard. Such selections are global and apply to all charts in the dashboard. Overrides are useful when the selection does not make sense for a particular graph.
+In the *Advanced* configuration tab, you can set overrides any time intervals or ranges that end users select for the custom dashboard. Such selections are global and apply to all charts in the dashboard. Overrides are useful when the selection does not make sense for a particular graph.
 
 Time ranges are calculated backwards from the present time. For example, you might set the time range so you can view the last 2 hours of data in a graph. You can also shift the time range to calculate backwards from an earlier point in time, for example, from 1 hour ago instead of from the present time.
 

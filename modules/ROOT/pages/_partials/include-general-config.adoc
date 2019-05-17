@@ -93,11 +93,11 @@ image::config-general-advanced-select.png[Select Options]
 | Group By a|
 
 //*TODO_VERIFY*
-For grouping the data by a selected time interval (such as `$__interval`, `1s`, `10m`, `1h`), filter tag (such as `tag(env_id)`), and fill options (such as `none`, `null`, `0`, `previous`, `linear`).
+For grouping the data by a selected time interval (such as `$&#95;interval`, `1s`, `10m`, `1h`), filter tag (such as `tag(env_id)`), and fill options (such as `none`, `null`, `0`, `previous`, `linear`).
 
 Valid values and arguments:
 
-* `time($__interval)` for the automated time interval setting, or you can  specify time intervals of `1s`, `10s`, `1m`, `5m`, `10m`, `15m`, or `1h`.
+* `time($&#95;interval)` for the automated time interval setting, or you can  specify time intervals of `1m`, `5m`, `10m`, `15m`, or `1h`.
 * `fill()` where valid values are `none`, `null`, `0`, `previous`, `linear`.
 * `LIMIT`: Numeric value (N) used to limit the result to the first N data  points (combined series and timestamp values) returned by a query.
 * `SLIMIT`: Numeric value (N) used to return the all data points (combined series and timestamp values) from the first N series returned by the query.
@@ -123,7 +123,7 @@ You can select one or more filter tags (such as `api_id`, `org_id`, `api_version
 For creating a function that selects a field (such as `request_size_average`,`response_time_max`, or `response_time_sum`) from the HTTP summary and applies an operation to it (such as the `mean` of the `response_time_average`). You can add one or more `field` settings.
 |Group by a|
 
-For grouping the data by a selected time interval (such as `$__interval`, `1s`, `10m`, `1h`), filter tag (such as `tag(api_id)`), and fill options (such as `none`, `null`, `0`, `previous`, `linear`).
+For grouping the data by a selected time interval (such as `$&#95;interval`, `1s`, `10m`, `1h`), filter tag (such as `tag(api_id)`), and fill options (such as `none`, `null`, `0`, `previous`, `linear`).
 |Alias by a|
 
 You can create a label for your metric using a literal string (such as `my string`) or supported variables (for example, `$tag_api_id`). The alias must always begin with `$tag`. The syntax is `$tag_yourTagName`.
