@@ -149,9 +149,9 @@ image::graph-advanced-legend.png[Advanced Graph Settings: Legend]
 |===
 2+| Legend Options
 | Show  | Unchecking hides the legend. Checked by default.
-| As Table | Check to display the selected legend Values (such as, Min and Max) in a table. Unchecked by default.
-| To the Right | Check to display the legend to the right side. Unchecked by default.
-| Width | Available when *To the Right* is checked. Sets the minimum width (in pixels) for the legend. Leave it blank to allow for the automatic width selection.
+| As Table | Check to display the selected legend Values (such as `min` and `max`) in a table. Unchecked by default.
+| To the Right | Check to display the legend on the right side. Unchecked by default.
+| Width | Available when *To the Right* is checked. Sets the minimum width (in pixels) for the legend. Leave it blank to allow for automatic width selection.
 |===
 
 You can also display the following values in a legend:

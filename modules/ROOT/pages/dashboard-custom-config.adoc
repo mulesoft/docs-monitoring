@@ -63,8 +63,8 @@ image::dashboard-custom-config-high-level.png[Dashboard Configuration]
 
 Most graphs track data over time, so your time options are important. Your options are:
 
-* *Local browser time*: (Default) Time taken from the system time of the computer the browser is running on.
-* *UTC*: Coordinated Universal Time standard, which uses the 24 hour cycle (for example, `19:20`) and corresponds to GMT.
+* *Local browser time*: (Default) Time taken from the system time of the computer that the browser is running on.
+* *UTC*: Coordinated Universal Time standard, which uses a 24 hour cycle (for example, `19:20`) and corresponds to GMT.
 | Graph Tooltip a| Options include: 
 * *Default*: The crosshair cursor appears only in the chart that you mouse over.
 * *Shared Crosshair*: The crosshair appears on all charts.
@@ -101,10 +101,10 @@ image::dashboard-custom-metadata.png[Dashboard Metadata]
 |===
 2+| Metadata Available for Custom Dashboards
 | Last Updated at | Date and time of last update to the dashboard.
-| Last Updated by | Username associated with the Last Updated At value.
+| Last Updated by | User who made the last update. 
 | Created at | Date and time the dashboard was created.
 | Created by | Username of person who created the dashboard.
-| Current Version | Version number of the dashboard. The number increments each time you save modifications to the dashboard.
+| Current Version | Version number of the dashboard. The version increments each time you save modifications to the dashboard.
 |===
 
 [[charts_adding]]
@@ -170,7 +170,7 @@ For more information about how to export app data, see xref:export-app-data-to-c
 == Delete a Custom Dashboard
 
 . From *Custom Dashboards*, open a custom dashboard.
-. Click three vertical dots on the top-right of the dashboard, and select <<dup_delete_dashboard, Delete>>.
+. Click the three vertical dots on the top-right of the dashboard, and select <<dup_delete_dashboard, Delete>>.
 . Confirm your deletion.
 
 == See Also
