@@ -9,8 +9,7 @@ For example, you can specify a cookie header in an API to see if an injection at
 To use this feature, you must have the following: 
 
 * A https://www.mulesoft.com/anypoint-pricing[Titanium subscription] to Anypoint Monitoring and Mule 3.8.5 or later
-* The *Organization Administrator* permission
-* Permission to create or manage APIs 
+* The *API Manager > Manage Policies* permission
 
 == Supported APIs
 
