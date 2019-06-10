@@ -7,7 +7,7 @@ In addition to using the query builder and facet search user interface in Anypoi
 
 == Search Terms
 
-A search query consists of terms and operators. There are two types of search terms--single terms and phrases. A single term is one word, for example "test" or "hello". A phrase is a group of words surrounded by double quotes, for example "hello dolly".
+A search query consists of terms and operators. There are two types of search terms&#8212;single terms and phrases. A single term is one word, for example "test" or "hello". A phrase is a group of words surrounded by double quotes, for example "hello dolly".
 
 You can combine multiple terms with boolean operators to form complex queries. 
 
@@ -26,7 +26,7 @@ To perform a single character wildcard search use the `?` symbol. The single cha
 
 `te?t`
 
-To perform a multiple character wildcard search use the * symbol. Multiple character wildcard searches look for zero or more characters. For example, to search for test, tests, or tester, you can use the search:
+To perform a multiple character wildcard search, use the * symbol. Multiple character wildcard searches look for zero or more characters. For example, to search for test, tests, or tester, use the search:
 
 `test*`
 
@@ -53,7 +53,7 @@ Boolean operators must be ALL CAPS.
 
 [%header%autowidth.spread,cols="a,a,a"]
 |===
-|Operator|Description|Example
+|Boolean Operator|Description|Example
 |`AND`     |The `AND` operator matches documents where both terms exist anywhere in the text of a single document. This is equivalent to an intersection using sets. You can replace the word `AND` with the symbol `&&`.|To search for documents that contain "anypoint monitoring" use the query:
 `"anypoint monitoring" AND "results"`
 |`OR`      |The `OR` operator is used by default if there is no Boolean operator inserted between two terms. The `OR` operator links two terms and returns a matching document if either of the terms exist in a document. This is equivalent to a union using sets. The symbol `&#124; &#124;` can be used in place of the word `OR`.|To search for documents that contain either "monitoring anypoint" or just "monitoring" use the query:
@@ -76,6 +76,7 @@ The `NOT` operator can't be used with just one term. For example, the following 
 `"anypoint monitoring" -"results"`
 |===
 
+
 == Special Characters
 
 You can escape special characters that are part of the query syntax. The current list of supported special characters includes:
@@ -89,10 +90,10 @@ To escape these characters, use the `\` before the character. For example, to se
 
 == Search Fields
 
-When performing a search you can either specify a field name or use the default field. The field name and default field are specific to the search implementation.
+When performing a search, either specify a field name or use the default field. The field name and default field are specific to the search implementation.
 
-You can search any field by typing the field name followed by a colon ":" and then the term you are looking for.
-As an example, assume a log search query language index contains two fields--application and message--and message is the default field. If you want to find the result called "The Right Way" which contains the text "don't go this way", you can enter:
+Search any field by typing the field name, followed by a colon, then the term you are looking for.
+As an example, assume a log search query language index contains two fields&#8212;application and message&#8212;and message is the default field. If you want to find the result called "The Right Way", which contains the text "don't go this way", enter:
 
 `message:"The Right Way" AND application:go`
 
