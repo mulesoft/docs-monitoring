@@ -80,18 +80,19 @@ For a list of advanced metrics, see xref:dashboard-config-ref.adoc#metrics_advan
 | Where a|
 Supports conditional logic for filtering the *From* data source you selected.
 
-* Select one or more filters tags (such as `app_id`, `env_id`, `org_id`, `worker_id`). Example: `Where env_id = Sandbox`.
+* Select one or more filters tags (such as `app_id`, `env_id`, `org_id`, `worker_id`).
 * Available operators include: +
- ** `=` Value on the left matches the value on the right.
- ** `!=` Not equal to.
- ** `<>` Not equal to.
+ ** `=` The value on the left matches the value on the right.
+ ** `!=` The value is not equal to.
+ ** `<>` The value is not equal to.
  ** `<` The value on the left is less than the value on the right. 
  ** `>` The value on the left is greater than the value on the right.
- ** `=&#8764;` Matches against.
- ** `!&#8764;` Does not match against.
-* You can also construct a query that contains multiple filtering expressions by using logical `AND` or `OR` operators between the expressions.
+ ** `=&#8764;` Matches against the value in a regular expression, using `WHERE`.
+ ** `!&#8764;` Does not match against the value in a regular expression.
+* You can also construct a query that contains multiple filtering expressions by using logical `AND` or `OR` operators between the expressions. +
+Example: `Where env_id = Sandbox`
 | Select a|
-Add one or more `field` settings to create a function that selects a field (such as `heap_committed`,`heap_total`, or `heap_used`) from the *From* data (such as `jvm.memory`) and applies an operation to it (such as the `mean` of the `heap_total`). 
+Add one or more `field` settings to create a function that selects a field from the *From* data and applies an operation to it (such as the `mean` of the `heap_total`). 
 
 image::config-general-advanced-select.png[Select Options]
 

@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Monitoring custom dashboards provide a way for you to configure singlestat charts for a single measure, such as a response time or heap usage, of your Mule app environment over a given time range.
+Anypoint Monitoring custom dashboards provide a way for you to configure singlestat charts for a single measure (such as a response time or heap usage) of your Mule app environment over a given time range.
 
 //GENERAL SETTINGS shared by singlestat and graph
 //== General
@@ -57,16 +57,16 @@ Add color-coded thresholds to a singlestat so that you can see whether it exceed
 [%header,cols="1,4"]
 |===
 2+| Coloring
-| Background | Adds a background color that matches the color  determined by the *Thresholds* setting.
-| Value | For applying a color for the current singlestat value that matches the color determined by the *Thresholds* setting.
-| Thresholds | For setting a threshold using a numeric range such as `10,20` to distinguish values between the two numbers, below left-most number, and above the right-most number.
-| Colors | For setting the colors for the values that are below, within, or above the *Thresholds* settings. You can invert the colors, as needed.
+| Background | Adds a background color determined by the *Thresholds* setting.
+| Value | Applies a color for the current singlestat value that matches the color determined by the *Thresholds* setting.
+| Thresholds | Sets a threshold using a numeric range such as `10,20` to distinguish values between the two numbers, below left-most number, and above the right-most number.
+| Colors | Sets the colors for the values that are below, within, or above the *Thresholds* settings. You can invert the colors, as needed.
 |===
 
 [[spark_singlestat]]
 === Spark Lines
 
-Provide spark line settings for a singlestat.
+Provide spark line settings for a singlestat to provide visual representation of the data.
 
 [%header,cols="1,4"]
 |===
@@ -91,7 +91,7 @@ Display an arc-like gauge that represents the value of the singlestat.
 | Threshold Labels | Checkbox for showing or hiding your Threshold settings.
 |===
 
-After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
+After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click *X*.
 
 == Value Mappings
 
@@ -108,4 +108,4 @@ image::singlestat-config-value-mapping.png[Example: Value Mapping]
 
 After you complete your configuration, click *Save changes*. 
 
-To exit the configuration and return to the dashboard, click the *X*.
+To exit the configuration and return to the dashboard, click *X*.

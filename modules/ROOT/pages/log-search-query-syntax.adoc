@@ -7,7 +7,7 @@ In addition to using the query builder and facet search user interface in Anypoi
 
 == Search Terms
 
-A search query consists of terms and operators. There are two types of search terms&#8212;single terms and phrases. A single term is one word, for example "test" or "hello". A phrase is a group of words surrounded by double quotes, for example "hello dolly".
+Search terms consist of terms and operators. Search terms can be either single terms, such as "hello" or phrases, such as "hello dolly". 
 
 You can combine multiple terms with boolean operators to form complex queries. 
 
@@ -26,7 +26,7 @@ To perform a single character wildcard search use the `?` symbol. The single cha
 
 `te?t`
 
-To perform a multiple character wildcard search, use the * symbol. Multiple character wildcard searches look for zero or more characters. For example, to search for test, tests, or tester, use the search:
+To perform a multiple-character wildcard search, use the * symbol. Multiple-character wildcard searches look for zero or more characters. For example, to search for test, tests, or tester, use the search:
 
 `test*`
 
@@ -90,10 +90,10 @@ To escape these characters, use the `\` before the character. For example, to se
 
 == Search Fields
 
-When performing a search, either specify a field name or use the default field. The field name and default field are specific to the search implementation.
+Specify a field name or use the default when performing a search. The field name and default field are specific to the search implementation.
 
-Search any field by typing the field name, followed by a colon, then the term you are looking for.
-As an example, assume a log search query language index contains two fields&#8212;application and message&#8212;and message is the default field. If you want to find the result called "The Right Way", which contains the text "don't go this way", enter:
+Search any field by typing the field name, followed by a colon, and then the term you are looking for.
+For example, assume that a log search query language index contains two fields&#8212;application and message&#8212;and that the message is the default field. If you want to find the result called "The Right Way", which contains the text "don't go this way", enter:
 
 `message:"The Right Way" AND application:go`
 
