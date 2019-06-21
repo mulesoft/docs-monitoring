@@ -2,8 +2,8 @@
 
 The API Analytics dashboard provides charts to monitor API usage, which gives you insight into how your APIs are used and how they are performing.
 
-From Anypoint Monitoring, you can access the API monitoring dashboard to view information about your API, including:
-
+[NOTE]
+For Gold and Platinum subscriptions to Anypoint Monitoring, API analytics data are retained for 90 days.
 
 == View the API Analytics Dashboard
 
