@@ -3,13 +3,13 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-You can install the Anypoint Monitoring agent on an on-premises server to monitor applications that are running on that server and managed in the cloud. 
+Install the Anypoint Monitoring agent on an on-premises server to monitor applications that are running on that server and managed in the cloud. 
 
-The installation script asks if you want Anypoint Monitoring installed as a service. If you don't want to have it preset as a service by the installer, select `no`. You can also call the installation script with the `-x` argument to skip this prompt. If you skip the prompt Anypoint Monitoring is not installed as a service. 
+The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using an open-source protocol for transferring log data over a highly-efficient bidirectional binary channel. Data is securely transmitted using mutual TLS encryption. 
 
 == Before You Begin
 
-If you have an outbound firewall, open ports 443 and 5044. The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using an open-source protocol for transferring log data over a highly-efficient bidirectional binary channel. Data is securely transmitted using mutual TLS encryption. 
+If you have an outbound firewall, open ports 443 and 5044. 
 
 Outbound connections are made to the following endpoints:
 
@@ -17,7 +17,7 @@ Outbound connections are made to the following endpoints:
 ** arm-auth-proxy.prod.cloudhub.io:443
 ** dias-ingestor-nginx.prod.cloudhub.io:5044
 * EU Control Plane
-** arm-auth-proxy.prod-eu.msap:443
+** arm-auth-proxy.prod-eu.msap.io:443
 ** dias-ingestor-nginx.prod-eu.msap.io:5044
 
 == Supported Operating Systems
@@ -33,15 +33,8 @@ Ensure that Anypoint Monitoring is installed on a server running one of the foll
 
 A supported version of Mule must be running on the server. Supported versions of Mule include: 
 
-* 4.2.0
-* 4.1.5
-* 4.1.4
-* 4.1.3
-* 4.1.2
-* 4.1.1
-* 3.9.2
-* 3.9.1
-* 3.9.0
+* 4.x.x
+* 3.9.x
 * 3.8.7-AM
 
 == Supported Versions of Mule Runtime Manager Agent
@@ -75,6 +68,11 @@ Ensure that the server has the minimum hardware requirements for Anypoint Monito
 Instructions for downloading and installing the Anypoint Monitoring agent on-premises are located on the xref:monitoring-settings-page.adoc[*Settings* page] of the Anypoint Monitoring user interface. You can also download the Anypoint Monitoring installation `am.zip` file from the *Settings* page. 
 
 When you extract the `am.zip` file, a folder called `am` is created in the location where you extracted the ZIP. 
+
+The installation script asks if you want Anypoint Monitoring installed as a service. If you don't want to have it preset as a service by the installer, select `no`. 
+
+You can also call the installation script with the `-x` argument to skip this prompt. If you skip the prompt, Anypoint Monitoring is not installed as a service. 
+
 
 == SOCKS5 Proxy Setting
 
