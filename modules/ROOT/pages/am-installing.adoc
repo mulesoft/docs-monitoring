@@ -35,7 +35,7 @@ A supported version of Mule must be running on the server. Supported versions of
 
 * 4.x.x
 * 3.9.x
-* 3.8.7-AM
+* 3.8.7
 
 == Supported Versions of Mule Runtime Manager Agent
 
