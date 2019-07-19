@@ -114,6 +114,7 @@ If necessary, you can whitelist the endpoint for outbound firewall rules so your
 
 If you need to update the Anypoint Monitoring agent at some point in the future, follow these steps.
 
+. Make sure to stop Mule Runtime
 . In the `am` folder, run the following command: +
 `./bin/uninstall script`
 . Delete the `am` folder.
