@@ -3,23 +3,23 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+*https://www.mulesoft.com/anypoint-pricing[This feature requires a Titanium subscription.]*
+
 == About Reports
 Reports allow you to view a list of all the CloudHub apps running in an environment. The reports display information about overall performance and behavior across all the apps in the environment. These reports can help you identify app performance and availability problems across the environment so you can better maintain the expected level of service for your apps.
 
 From any of the *Reports* tabs, you can:
 
 * Navigate to reports that display information about requests, performance, failures, and CPU and memory utilization.
-* Switch environments
-* Select a time range to view the reports for
-* Click an app in the list to go to its built-in dashboard
-* Click on column headings to sort the lists from highest to lowest, or from lowest to highest numbers
-* Refresh the page
-* Export a report as a CSV file.  
+* Switch environments.
+* Select a time range for which to view the reports.
+* Click an app in the list to go to its built-in dashboard.
+* Click on column headings to sort the lists from highest to lowest, or from lowest to highest numbers.
+* Refresh the page.
+* Export a report as a CSV file.
 
 image::reports-main-page.png[Reports Main Page]
 
-[NOTE]
-This feature requires a Titanium subscription.
 
 == Access Reports
 
@@ -71,10 +71,10 @@ image::monitoring-reports-memory-utilization.png[]
 
 == Export a Report as a CSV
 
-You can export a report as a CSV file and save it locally for any of the tabs in the Reports page. 
+You can export a report as a CSV file and save it locally for any of the tabs in the Reports page.
 
-. In *Anypoint Monitoring*, click *Reports* in the menu on the left. 
-. Click on the tab for the report to export. 
-. (Optional) Apply a time filter to download reports for the specified time period. 
+. In *Anypoint Monitoring*, click *Reports* in the menu on the left.
+. Click on the tab for the report to export.
+. (Optional) Apply a time filter to download reports for the specified time period.
 . In the upper right corner of the page, click *Export CSV*. +
-The CSV file is automatically downloaded in your browser. 
+The CSV file is automatically downloaded in your browser.
