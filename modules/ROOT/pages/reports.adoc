@@ -11,11 +11,11 @@ Reports allow you to view a list of all the CloudHub apps running in an environm
 From any of the *Reports* tabs, you can:
 
 * Navigate to reports that display information about requests, performance, failures, and CPU and memory utilization.
-* Switch environments
-* Select a time range to view the reports for
-* Click an app in the list to go to its built-in dashboard
-* Click on column headings to sort the lists from highest to lowest, or from lowest to highest numbers
-* Refresh the page
+* Switch environments.
+* Select a time range for which to view the reports.
+* Click an app in the list to go to its built-in dashboard.
+* Click on column headings to sort the lists from highest to lowest, or from lowest to highest numbers.
+* Refresh the page.
 * Export a report as a CSV file.
 
 image::reports-main-page.png[Reports Main Page]
