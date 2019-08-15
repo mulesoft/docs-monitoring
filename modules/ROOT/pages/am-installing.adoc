@@ -105,7 +105,7 @@ $ ./install -p socks5://user:password@socks5-server:1080
 If you see data in the charts, the Anypoint Monitoring agent is installed and running. +
 If you do not see data in the charts, verify that Anypoint Monitoring is able to connect to the endpoint. +
 [NOTE]
-If necessary, you can whitelist the endpoint for outbound firewall rules so your server allows connections. The endpoint is displayed in the gray box in Step 5 on the page, under the OS.
+If necessary, you can whitelist the endpoint for outbound firewall rules so your server allows connections. The endpoints to whitelist are https://docs.mulesoft.com/monitoring/am-installing#before-you-begin
 11. Log into the server on which the Anypoint Monitoring agent is running.
 11. Open the log file for the data-transfer agent. The log file is in this path: `./am/filebeat/logs`
 11. Look for entries that mention connection failures or connection retries.
