@@ -7,7 +7,7 @@ This feature requires a https://www.mulesoft.com/anypoint-pricing[Titanium Subsc
 
 == Supported Mule Versions
 
-Custom metrics are supported on:
+To monitor connectors, you must use a supported version of Mule:
 
 * Hybrid apps running on Mule 4.2.0, 4.1.x, 3.9.x, or 3.8.7-AM
 * CloudHub apps running on Mule 4.2.0, 4.1.x
@@ -15,7 +15,7 @@ Custom metrics are supported on:
 
 == Supported Connectors
 
-The type of connector determines the charts that are displayed. 
+The type of connector determines the charts that are displayed.
 
 [%header,cols="1,4"]
 |===
