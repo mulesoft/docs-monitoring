@@ -102,6 +102,8 @@ For a Linux server, enter:
 $ ./install -p socks5://user:password@socks5-server:1080
 ---- 
 
+If the user or password of the SOCKS5 proxy configuration contains URI reserved characters, it must be percent-encoded following the encoding rules of RFC 3986.
+
 
 == Verify the Anypoint Monitoring Agent is Running
 
