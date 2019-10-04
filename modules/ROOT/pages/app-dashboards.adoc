@@ -66,6 +66,11 @@ Built-in dashboards include various pages to view different types of charts.
 * Total inbound calls
 * Slow requests: Total calls where response time > 1000ms
 
+The following charts are only available if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+
+* Inbound Protocol
+* Inbound Endpoint
+
 [NOTE]
 Inbound metrics are retained for 24 hours.
 
@@ -79,6 +84,13 @@ Inbound metrics are retained for 24 hours.
 * Average response time grouped by endpoint outbound
 * Response time graphs (99, 90, 75, and 50 percentile outbound): Measured in milliseconds (ms)
 * Total outbound calls - Failed
+
+The following charts are only available if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+
+* Outbound Ports
+* Outbound Operations
+* Outbound Protocol
+* Outbound Endpoints
 | *Flows* a|
 
 * Inbound Response Time by Flow: Average inbound response time
@@ -95,6 +107,8 @@ Inbound metrics are retained for 24 hours.
 * Failures by Flow: Average number of inbound failed requests
 * Slow Inbound Requests by Flow: Average number of inbound requests whose response time is greater than 1000 ms
 * Slow Outbound Requests by Flow: Average number of outbound requests whose response time is greater than 1000 ms
+
+If you don't see the *Flows* tab, verify that you are using Unified Agent and have a Titanium subscription to Anypoint Platform.
 | *Connectors* a|
 
 * Connector Message Volume: Number of outbound messages and number of outbound requests
