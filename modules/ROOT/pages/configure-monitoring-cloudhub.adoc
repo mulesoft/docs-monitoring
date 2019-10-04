@@ -7,53 +7,17 @@ To start monitoring Mule apps that are managed in CloudHub, you must deploy them
 
 == Supported Versions of Mule Deployed to CloudHub
 
-Anypoint Monitoring non-AM images receive patch updates as soon as they are available, while -AM images receive the latest patch updates only once per month. It is recommended that you switch to a non-AM image if your production environment requires a Mule runtime engine patch.
+Anypoint Monitoring non-AM images receive patch updates as soon as they are available. Anypoint Monitoring -AM images are no longer receiving patch updates. It is recommended that you switch to a non-AM image if your production environment requires a Mule runtime engine patch.
 
-|===
-| Platform | Mule Version | Features
+Metrics and Logs are supported in the following Mule versions:
 
-| Anypoint Platform (CloudHub)
-| 4.2.0
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 4.1.5
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 4.1.4
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 4.1.3
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 4.1.2
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 4.1.1
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 3.9.2
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 3.9.1
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 3.9.0
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 3.8.7
-| Metrics and Logs
-|===
+* 4.x.x
+* 3.9.x
+* 3.8.7
 
 Metrics are used by graphs and other charts within xref:dashboards.adoc[Dashboards].
+
+Logs are only available if you have Titanium subscription to Anypoint Platform.
 
 [[update_app]]
 == Set the Runtime Version
