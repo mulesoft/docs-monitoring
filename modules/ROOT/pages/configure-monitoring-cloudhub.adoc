@@ -17,7 +17,7 @@ Metrics and Logs are supported in the following Mule versions:
 
 Metrics are used by graphs and other charts within xref:dashboards.adoc[Dashboards].
 
-Logs are only available if you have Titanium subscription to Anypoint Platform.
+Logs are only available if you have a Titanium subscription to Anypoint Platform.
 
 [[update_app]]
 == Set the Runtime Version
