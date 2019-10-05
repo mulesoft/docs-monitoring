@@ -29,9 +29,9 @@ The built-in dashboard for the application or API is displayed.
 +
 image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
 
-Your data is pre-populated and displayed in the built-in dashboards and logs, so no configuration is needed.
+Your data is prepopulated and displayed in the built-in dashboards and logs; no configuration is needed.
 
-Built-in dashboards include various pages to view different types of charts. 
+Built-in dashboards include various pages to view different types of charts:
 
 [%header,cols="1,4"]
 |===
@@ -45,10 +45,10 @@ Built-in dashboards include various pages to view different types of charts.
 * Average response time outbound
 * CPU utilization
 * Memory utilization
-* Thread count 
+* Thread count
 
 //* Response Time by App: Number of milliseconds (ms) required for each response.
-//* Messages Processed: Number of messages at a given time point.
+//* Messages Processed: Number of messages at a given time.
 //* Response Time by Inbound Endpoint: Number of milliseconds (ms) for a response from inbound endpoints to your Mule app.
 //* Response Time by Outbound Endpoint: Number of milliseconds (ms) for a response from outbound endpoints of your Mule app.
 //* CPU: Percentage of CPU used over time. The percentages are calculated per worker and as the total for all workers.
@@ -58,10 +58,18 @@ Built-in dashboards include various pages to view different types of charts.
 * Total inbound requests
 * Average response time inbound
 * Average response time by endpoint
+** Average: Green if response time is less than 300ms; yellow if response time is greater than 300ms and less than 600ms; red if is greater than 600ms
+** Max: Green if response time is less than 300ms; yellow if response time is greater than 300ms and less than 500ms; red if is greater than 500ms
+** Min: Green if response time is less than 300ms; yellow if response time is greater than 300ms and less than 600ms; red if is greater than 600ms
 * Response time graphs (99, 90, 75, and 50 percentile inbound): Measured in milliseconds (ms)
 * Maximum response time
-* Total inbound calls 
-* Slow requests: Total calls where response time > 1000ms 
+* Total inbound calls
+* Slow requests: Total calls in which response time is greater than 1000 ms
+
+The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+
+* Inbound Protocol
+* Inbound Endpoint
 
 [NOTE]
 Inbound metrics are retained for 24 hours.
@@ -77,11 +85,36 @@ Inbound metrics are retained for 24 hours.
 * Response time graphs (99, 90, 75, and 50 percentile outbound): Measured in milliseconds (ms)
 * Total outbound calls - Failed
 
-//* Total Outbound Calls (success or failure)
-//* Total Outbound by Endpoint Outbound
+The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+
+* Outbound Ports
+* Outbound Operations
+* Outbound Protocol
+* Outbound Endpoints
+| *Flows* a|
+
+* Inbound Response Time by Flow: Average inbound response time
+* Outbound Response Time by Flow: Average outbound response time
+* Inbound Request Volume by Flow: Average number of inbound requests
+* Outbound Request Volume by Flow: Average number of outbound requests
+* Failures by Flow: Average number of failed inbound requests
+* Slow Inbound Requests by Flow: Average number of inbound requests whose response time is greater than 1000 ms
+* Slow Outbound Requests by Flow: Average number of outbound requests whose response time is greater than 1000 ms
+* Inbound Response Time by Flow: Average, minimum, and maximum inbound response time
+* Outbound Response Time by Flow: Average, minimum, and maximum outbound response time
+* Inbound Request Volume by Flow: Average number of inbound requests
+* Outbound Request Volume by Flow: Average number of outbound requests
+* Failures by Flow: Average number of inbound failed requests
+* Slow Inbound Requests by Flow: Average number of inbound requests whose response time is greater than 1000 ms
+* Slow Outbound Requests by Flow: Average number of outbound requests whose response time is greater than 1000 ms
+
+If you don't see the *Flows* tab, verify that you are using Unified Agent and have a Titanium subscription to Anypoint Platform.
 | *Connectors* a|
 
-The *Connectors* tab does not display for apps deployed to CloudHub. 
+* Connector Message Volume: Number of outbound messages and number of outbound requests
+* Response Time by Connector: Average outbound response time
+
+The *Connectors* tab does not display for apps deployed to CloudHub.
 
 If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
 | *Performance* a|
@@ -109,14 +142,14 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Par new collection count, Par new collection time
 * Classes: Loaded, Loaded total, Unloaded
 * Heap: Committed, Used
-* Thread Count: Number of simultaneous requests 
+* Thread Count: Number of simultaneous requests
 * JVM Uptime: Uptime of the JVM
 * Par Eden graphs (Used, Max, Init, and Committed): Usage metrics for the Par Eden Space pool
 * Par Survivor graphs (Used, Max, Init, and Committed): Usage metrics for the Par Eden Space pool
 * Metaspace graphs (Used, Max, Init, Committed): Usage metrics for Java memory space
 * Code Cache graphs (Used, Max, Init, Committed): Usage metrics for the Code Cache pool
 * Compressed Class Space graphs (Used, Max, Init, Committed): Usage metrics for values of the metadata for compressed class pointers
-* Committed Virtual Memory: Amount of virtual memory guaranteed to be available to the running process   
+* Committed Virtual Memory: Amount of virtual memory guaranteed to be available to the running process
 | *Infrastructure* a|
 
 * Application Process CPU Load: Amount of CPU load used by the JVM
