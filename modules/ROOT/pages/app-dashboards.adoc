@@ -29,9 +29,9 @@ The built-in dashboard for the application or API is displayed.
 +
 image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
 
-Your data is pre-populated and displayed in the built-in dashboards and logs, so no configuration is needed.
+Your data is prepopulated and displayed in the built-in dashboards and logs; no configuration is needed.
 
-Built-in dashboards include various pages to view different types of charts.
+Built-in dashboards include various pages to view different types of charts:
 
 [%header,cols="1,4"]
 |===
@@ -48,7 +48,7 @@ Built-in dashboards include various pages to view different types of charts.
 * Thread count
 
 //* Response Time by App: Number of milliseconds (ms) required for each response.
-//* Messages Processed: Number of messages at a given time point.
+//* Messages Processed: Number of messages at a given time.
 //* Response Time by Inbound Endpoint: Number of milliseconds (ms) for a response from inbound endpoints to your Mule app.
 //* Response Time by Outbound Endpoint: Number of milliseconds (ms) for a response from outbound endpoints of your Mule app.
 //* CPU: Percentage of CPU used over time. The percentages are calculated per worker and as the total for all workers.
@@ -58,15 +58,15 @@ Built-in dashboards include various pages to view different types of charts.
 * Total inbound requests
 * Average response time inbound
 * Average response time by endpoint
-** Avg: green if response time is under 300ms; yellow if response time is greater than 300ms and lower than 600ms; red if is greater than 600ms
-** Max: green if response time is under 300ms; yellow if response time is greater than 300ms and lower than 500ms; red if is greater than 500ms
-** Min: green if response time is under 300ms; yellow if response time is greater than 300ms and lower than 600ms; red if is greater than 600ms
+** Average: Green if response time is less than 300ms; yellow if response time is greater than 300ms and less than 600ms; red if is greater than 600ms
+** Max: Green if response time is less than 300ms; yellow if response time is greater than 300ms and less than 500ms; red if is greater than 500ms
+** Min: Green if response time is less than 300ms; yellow if response time is greater than 300ms and less than 600ms; red if is greater than 600ms
 * Response time graphs (99, 90, 75, and 50 percentile inbound): Measured in milliseconds (ms)
 * Maximum response time
 * Total inbound calls
-* Slow requests: Total calls where response time > 1000ms
+* Slow requests: Total calls in which response time is greater than 1000 ms
 
-The following charts are only available if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
 
 * Inbound Protocol
 * Inbound Endpoint
@@ -85,7 +85,7 @@ Inbound metrics are retained for 24 hours.
 * Response time graphs (99, 90, 75, and 50 percentile outbound): Measured in milliseconds (ms)
 * Total outbound calls - Failed
 
-The following charts are only available if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
 
 * Outbound Ports
 * Outbound Operations
@@ -100,8 +100,8 @@ The following charts are only available if you are using Unified Agent and have 
 * Failures by Flow: Average number of failed inbound requests
 * Slow Inbound Requests by Flow: Average number of inbound requests whose response time is greater than 1000 ms
 * Slow Outbound Requests by Flow: Average number of outbound requests whose response time is greater than 1000 ms
-* Inbound Response Time by Flow: Average, min, and max inbound response time
-* Outbound Response Time by Flow: Average, min, and max outbound response time
+* Inbound Response Time by Flow: Average, minimum, and maximum inbound response time
+* Outbound Response Time by Flow: Average, minimum, and maximum outbound response time
 * Inbound Request Volume by Flow: Average number of inbound requests
 * Outbound Request Volume by Flow: Average number of outbound requests
 * Failures by Flow: Average number of inbound failed requests
