@@ -3,57 +3,21 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-To start monitoring Mule apps that are managed in CloudHub, you must deploy them to a supported version of Mule runtime engine and set the runtime version in your Mule app. 
+To start monitoring Mule apps that are managed in CloudHub, you must deploy them to a supported version of Mule runtime engine and set the runtime version in your Mule app.
 
 == Supported Versions of Mule Deployed to CloudHub
 
-Anypoint Monitoring non-AM images receive patch updates as soon as they are available, while -AM images receive the latest patch updates only once per month. It is recommended that you switch to a non-AM image if your production environment requires a Mule runtime engine patch.
+Anypoint Monitoring with Mule runtime engine images receive patch updates as soon as they are available. Because Anypoint Monitoring -AM images are no longer receiving patch updates, switch to a Mule runtime engine (non-AM) image if your production environment requires a Mule runtime engine patch.
 
-|===
-| Platform | Mule Version | Features
+Metrics and logs are supported in the following Mule versions:
 
-| Anypoint Platform (CloudHub)
-| 4.2.0
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 4.1.5
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 4.1.4
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 4.1.3
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 4.1.2
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 4.1.1
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 3.9.2
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 3.9.1
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 3.9.0
-| Metrics and logs
-
-| Anypoint Platform (CloudHub)
-| 3.8.7-AM
-| Logs
-|===
+* 4.x.x
+* 3.9.x
+* 3.8.7
 
 Metrics are used by graphs and other charts within xref:dashboards.adoc[Dashboards].
+
+Logs are available only if you have a Titanium subscription to Anypoint Platform.
 
 [[update_app]]
 == Set the Runtime Version
@@ -95,20 +59,20 @@ For supported versions of Mule, see xref:configure-monitoring-cloudhub.adoc[Conf
 
 == Enable Monitoring Using the UI
 
-You can use the *Settings* page in Anypoint Monitoring to enable or disable apps deployed to CloudHub and running on Mule. 
+You can use the *Settings* page in Anypoint Monitoring to enable or disable apps deployed to CloudHub and running on Mule.
 
 . Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
-. In the menu on the left, click *Settings*. 
+. In the menu on the left, click *Settings*.
 +
 image::monitoring-settings-screen.png[]
 +
-. Select *CloudHub*. 
+. Select *CloudHub*.
 . In the *Environment* drop-down list, select the environment where the application is running. +
 A list of running applications is displayed for the selected environment. +
-You can search for a specific application using the *List of resources* search box. 
+You can search for a specific application using the *List of resources* search box.
 . Next to the application, click *Enable* to enable monitoring for the application, or *Disable* to disable monitoring for the application. +
 [NOTE]
-Applications running on `x.x.x.-AM` versions are displayed in the list and are already enabled, however, you can't disable these applications from this page. 
+Applications running on `x.x.x.-AM` versions are displayed in the list and are already enabled; however, you can't disable these applications from this page.
 
 == Enable Monitoring in CloudHub Settings
 
@@ -117,14 +81,14 @@ You can enable monitoring for Mule apps running on supported versions of Mule by
 . Sign into Anypoint Platform and navigate to *Runtime Manager*.
 . In the list of applications, select the application for which to enable monitoring. +
 The application must be deployed to CloudHub and running on a supported version of Mule.
-. In the menu on the left, click *Settings*. 
+. In the menu on the left, click *Settings*.
 . Click *Properties*, and add the following property: +
 `anypoint.platform.config.analytics.agent.enabled=true`
 +
 image::enable-monitoring-cloudhub.png[]
 +
 To disable monitoring, change the value to `false`.
-. Click *Apply Changes*. 
+. Click *Apply Changes*.
 
 == Enable Monitoring for CI/CD Deployments
 
