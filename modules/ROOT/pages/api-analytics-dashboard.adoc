@@ -14,7 +14,7 @@ The API analytics page is displayed, where you can view information about a runn
 * Requests
 * Requests by HTTP response code
 * Requests by method
-* Requests (Avg), Average Size of Requests and Average Size of Responses
+* Requests (Avg), Average Size of Requests, and Average Size of Responses
 * Requests by HTTP policy violation
 * Requests by failure
 +
@@ -60,7 +60,7 @@ Click the column header to sort data for that column.
 
 image::api-request-by-method.png[]
 
-== Average Size of Requests and Responses
+== Requests, Average Size of Requests, and Average Size of Responses
 
 Displays metrics according to the API's request and response sizes:
 
