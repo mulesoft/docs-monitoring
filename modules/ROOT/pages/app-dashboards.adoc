@@ -121,11 +121,11 @@ The *Connectors* tab does not display for apps deployed to CloudHub.
 If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
 | *Performance* a|
 
-* Average response time inbound
+* Average response time - Inbound
 * Average response time grouped by endpoint - Inbound
 * Mule messages
 * Response time graphs: 99, 90, 75, and 50 percentile inbound
-* Average response time outbound
+* Average response time  - Outbound
 * Average response time grouped by endpoint - Outbound
 * Response time graphs: 99, 90, 75, and 50 percentile - Outbound
 //* Response Time graphs: 99, 90, 75, and 50 Percentile Inbound
