@@ -26,7 +26,7 @@ Ensure that Anypoint Monitoring is installed on a server running one of the foll
 
 * CentOS 7
 * RedHat Enterprise Linux 7.0 and 7.6
-* Ubuntu 16.04
+* Ubuntu 16.04 and 18.04
 * Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019
 
 == Supported Versions of Mule Runtime Engine
