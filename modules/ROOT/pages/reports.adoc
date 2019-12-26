@@ -6,12 +6,14 @@ endif::[]
 *https://www.mulesoft.com/anypoint-pricing[This feature requires a Titanium subscription.]*
 
 == About Reports
+
 Reports allow you to view a list of all the CloudHub apps running in an environment. The reports display information about overall performance and behavior across all the apps in the environment. These reports can help you identify app performance and availability problems across the environment so you can better maintain the expected level of service for your apps.
 
 From any of the *Reports* tabs, you can:
 
 * Navigate to reports that display information about requests, performance, failures, and CPU and memory utilization.
 * Switch environments.
+* Select the business group scope.
 * Select a time range for which to view the reports.
 * Click an app in the list to go to its built-in dashboard.
 * Click on column headings to sort the lists from highest to lowest, or from lowest to highest numbers.
@@ -20,6 +22,7 @@ From any of the *Reports* tabs, you can:
 
 image::reports-main-page.png[Reports Main Page]
 
+// this screenshot will be updated.
 
 == Access Reports
 
@@ -31,7 +34,9 @@ The first time you view the reports page, the *Requests* report is displayed.
 +
 image::monitoring-reports-time-range-selector.png[]
 +
-To view other reports, click the corresponding tab for the report to view. From any report tab, you can click the app name to view statistics for that app on its corresponding builtin dashboard.
+To view other reports, click the corresponding tab for the report to view. From any report tab, you can click the app name to view statistics for that app on its corresponding built-in dashboard.
+
+You can also choose whether to display reports from your current business group or all business groups in your organization. By default, you can see reports only from your current business group. If you choose to see reports from all business groups, you can view reports only if you have access to their corresponding business groups. 
 
 === Requests
 
