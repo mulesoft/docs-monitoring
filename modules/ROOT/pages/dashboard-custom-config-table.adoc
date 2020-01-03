@@ -12,11 +12,11 @@ In Anypoint Monitoring, you can configure tables for custom dashboard. In additi
 
 //GENERAL SETTINGS shared by singlestat, graph, table
 //== General
-include::{partialsdir}/include-general-config.adoc[]
+include::partial$include-general-config.adoc[leveloffset=+1]
 
 // TIME RANGE SETTINGS shared by singlestat and table
 //==Time Range
-include::{partialsdir}/include-time-range-config.adoc[]
+include::partial$include-time-range-config.adoc[]
 
 == Options (Data and Pagination Settings)
 
