@@ -37,7 +37,7 @@ You can set up alerts to trigger email notifications when a data point you are m
 in the Alerts page in Anypoint Monitoring.
 
 //ANYPOINT MONITORING ALERTS
-include::{partialsdir}/include-alerts-config.adoc[]
+include::partial$include-alerts-config.adoc[leveloffset=+1]
 
 == Adding Alerts
 

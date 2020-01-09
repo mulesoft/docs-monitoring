@@ -7,11 +7,11 @@ Anypoint Monitoring custom dashboards provide a way for you to configure singles
 
 //GENERAL SETTINGS shared by singlestat and graph
 //== General
-include::{partialsdir}/include-general-config.adoc[]
+include::partial$include-general-config.adoc[leveloffset=+1]
 
 // TIME RANGE SETTINGS shared by singlestat and table
 //==Time Range
-include::{partialsdir}/include-time-range-config.adoc[]
+include::partial$include-time-range-config.adoc[]
 
 == Options Tab
 
