@@ -37,14 +37,14 @@ API analytics dashboards include various pages to view different types of charts
 |===
 | API Analytics Dashboards | Charts
 
-| *Overview* a|
+| xref:api-analytics.adoc#overview-charts[*Overview*] a|
 
 * Request Volume
 * Failed Requests
 * Policy Violations
 * Average Response Time
 
-| *Requests* a|
+| xref:api-analytics.adoc#requests-charts[*Requests*] a|
 
 * Requests
 * Requests by Method
@@ -52,13 +52,13 @@ API analytics dashboards include various pages to view different types of charts
 * Requests by Request Size
 * Requests by Response Size
 
-| *Policies* a|
+| xref:api-analytics.adoc#policies-charts[*Policies*] a|
 
 * Requests
 * Policy Violations by Outcome
 * Policy Violations by Violation ID
 
-| *Failures* a|
+| xref:api-analytics.adoc#failures-charts[*Failures*] a|
 
 * Failures
 * Failures by Method
@@ -66,19 +66,20 @@ API analytics dashboards include various pages to view different types of charts
 * Requests by Request Size
 * Requests by Response Size
 
-| *Performance* a|
+| xref:api-analytics.adoc#performance-charts[*Performance*] a|
 
 * Requests by Performance (line chart)
 * Requests by Performance (table)
 * Slow Requests (requires Titanium)
 
-| *Client Applications* a|
+| xref:api-analytics.adoc#client-applications-charts[*Client Applications*] a|
 
 * Requests by Client ID
 * Requests by Client IP
 
 |===
 
+[[overview-charts]]
 === Overview Charts
 
 The charts on the *Overview* dashboard are defined as follows:
@@ -91,6 +92,7 @@ Policy Violations:: The sum of requests for policy violations in the chosen time
 
 Average Response Time:: The average response time of requests in the chosen time period for the given API.
 
+[[requests-charts]]
 === Requests Charts
 
 The charts in the *Requests* dashboard are defined as follows:
@@ -105,17 +107,18 @@ Requests by Request Size:: The sum of requests in the chosen time period, groupe
 
 Requests by Response Size:: The sum of requests in the chosen time period, grouped by response size.+
 
+[[policies-charts]]
 === Policies Charts
 
 The charts in the *Policies* dashboard are defined as follows:
 
 Requests:: The sum of requests of policy violations in the chosen time period, grouped by top 100 paths.
 
-
 Policy Violations by Outcome:: The sum of requests of policy violations in the chosen time period, grouped by outcome.
 
 Policy Violations by Violation ID:: The sum of requests of policy violations in the chosen time period, grouped by policy violation ID.
 
+[[failures-charts]]
 === Failures Charts
 
 The charts in the *Failures* dashboard are defined as follows:
@@ -130,6 +133,7 @@ Requests by Request Size:: The sum of failed requests in the chosen time period,
 
 Requests by Response Size:: The sum of failed requests in the chosen time period, grouped by response size
 
+[[performance-charts]]
 === Performance Charts
 
 The charts in the *Performance* dashboard are defined as follows:
@@ -140,6 +144,7 @@ Requests by Performance (table):: The average response times to requests, groupe
 
 Slow Requests:: The average response times that are greater than 1 second, grouped by path. This chart is available only for Titanium users.
 
+[[client-applications-charts]]
 === Client Applications Charts
 
 The charts in the *Client Applications* dashboard are defined as follows:
@@ -147,10 +152,6 @@ The charts in the *Client Applications* dashboard are defined as follows:
 Requests by Client ID:: The sum of requests in the period, grouped by client ID.
 
 Requests by Client IP:: The sum of requests in the period, grouped by client IP.
-
-Requests by Country:: The sum of requests in the chosen time period, grouped by country.
-
-Requests by State/Province:: The sum of requests in the chosen time period, grouped by state/province.
 
 == Classic Metrics View (Deprecated)
 
