@@ -174,8 +174,9 @@ image::api-request-by-instance.png[]
 
 Displays data about the API instance's total number of requests by HTTP response code for the time period you specified, including:
 
-* Status Code - HTTP response code for the API call.
-* Sum - Total number of requests with the corresponding response code.
+Status Code:: HTTP response code for the API call.
+
+Sum:: Total number of requests with the corresponding response code.
 
 Click the column header to sort data for that column.
 
@@ -185,11 +186,15 @@ image::api-requests-by-http-response.png[]
 
 Displays metrics about the API's requests by method, including:
 
-* Method - The method used to call the API.
-* Avg - The average of all the non-null values in the series.
-* Min - The smallest value in the series.
-* Max - The largest value in the series.
-* Total - The sum of all values in the series.
+Method:: The method used to call the API.
+
+Avg:: The average of all the non-null values in the series.
+
+Min:: The smallest value in the series.
+
+Max:: The largest value in the series.
+
+Total:: The sum of all values in the series.
 
 Click the column header to sort data for that column.
 
@@ -199,9 +204,11 @@ image::api-request-by-method.png[]
 
 Displays metrics according to the API's request and response sizes:
 
-* Requests (Avg) - Average number of requests
-* Average Size of Requests - Average size of requests (bytes)
-* Average Size of Responses - Average size of responses (bytes)
+Requests (Avg):: Average number of requests
+
+Average Size of Requests:: Average size of requests (bytes)
+
+Average Size of Responses:: Average size of responses (bytes)
 
 image::api-request-by-request-and-response-size.png[]
 
@@ -209,11 +216,15 @@ image::api-request-by-request-and-response-size.png[]
 
 Displays metrics for traffic that was rejected or not rejected for the specified policy, including:
 
-* Policy - The name of the policy applied to the API instance.
-* Avg - The average of all the non-null values in the series.
-* Min - The smallest value in the series.
-* Max - The largest value in the series.
-* Total - The sum of all values in the series.
+Policy:: The name of the policy applied to the API instance.
+
+Avg:: The average of all the non-null values in the series.
+
+Min:: The smallest value in the series.
+
+Max:: The largest value in the series.
+
+Total:: The sum of all values in the series.
 
 Click the column header to sort data for that column.
 
@@ -224,11 +235,15 @@ image::api-request-by-http-policy-violation.png[]
 
 Displays information about failed requests to the API, including:
 
-* Error code - The HTTP error code corresponding the failure type.
-* Avg - The average of all the non-null values in the series.
-* Min - The smallest value in the series.
-* Max - The largest value in the series.
-* Total - The sum of all values in the series.
+Error code:: The HTTP error code corresponding the failure type.
+
+Avg:: The average of all the non-null values in the series.
+
+Min:: The smallest value in the series.
+
+Max:: The largest value in the series.
+
+Total:: The sum of all values in the series.
 
 Click the column header to sort data for that column.
 
