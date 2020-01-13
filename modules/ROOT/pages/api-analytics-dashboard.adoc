@@ -105,27 +105,7 @@ Requests by Response Code:: The sum of requests in the chosen time period, group
 
 Requests by Request Size:: The sum of requests in the chosen time period, grouped by request size.+
 
-The following request sizes are grouped together:
-
-* 0-100 bytes
-* 100 bytes - 1 KB
-* 1 KB - 1 MB
-* 1 MB - 10 MB
-* 10 MB - 100 MB
-* 100 MB - 1 GB
-* > 1 GB
-
 Requests by Response Size:: The sum of requests in the chosen time period, grouped by response size.+
-
-The following response sizes are grouped together:
-
-* 0-100 bytes
-* 100 bytes - 1 KB
-* 1 KB - 1 MB
-* 1 MB - 10 MB
-* 10 MB - 100 MB
-* 100 MB - 1 GB
-* > 1 GB
 
 === Policies Charts
 
@@ -151,27 +131,7 @@ Requests by Response Code:: The sum of failed requests in the chosen time period
 
 Requests by Request Size:: The sum of failed requests in the chosen time period, grouped by request size.
 
-The following request sizes are grouped together:
-
-* 0-100 bytes
-* 100 bytes - 1 KB
-* 1 KB - 1 MB
-* 1 MB - 10 MB
-* 10 MB - 100 MB
-* 100 MB - 1 GB
-* > 1 GB
-
 Requests by Response Size:: The sum of failed requests in the chosen time period, grouped by response size
-
-The following response sizes are grouped together:
-
-* 0-100 bytes
-* 100 bytes - 1 KB
-* 1 KB - 1 MB
-* 1 MB - 10 MB
-* 10 MB - 100 MB
-* 100 MB - 1 GB
-* > 1 GB
 
 === Performance Charts
 
