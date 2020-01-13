@@ -76,8 +76,6 @@ API analytics dashboards include various pages to view different types of charts
 
 * Requests by Client ID
 * Requests by Client IP
-* Requests by Country
-* Requests by State/Province
 
 |===
 
