@@ -37,14 +37,14 @@ API analytics dashboards include various pages to view different types of charts
 |===
 | API Analytics Dashboards | Charts
 
-| xref:api-analytics-dashboard.adoc#overview-charts[Overview] a|
+| <<overview-charts>> a|
 
 * Request Volume
 * Failed Requests
 * Policy Violations
 * Average Response Time
 
-| xref:api-analytics-dashboard.adoc#requests-charts[Requests] a|
+| <<requests-charts>> a|
 
 * Requests
 * Requests by Method
@@ -52,13 +52,13 @@ API analytics dashboards include various pages to view different types of charts
 * Requests by Request Size
 * Requests by Response Size
 
-| xref:api-analytics-dashboard.adoc#policies-charts[Policies] a|
+| <<policies-charts>> a|
 
 * Requests
 * Policy Violations by Outcome
 * Policy Violations by Violation ID
 
-| xref:api-analytics-dashboard.adoc#failures-charts[Failures] a|
+| <<failures-charts>> a|
 
 * Failures
 * Failures by Method
@@ -66,13 +66,13 @@ API analytics dashboards include various pages to view different types of charts
 * Requests by Request Size
 * Requests by Response Size
 
-| xref:api-analytics-dashboard.adoc#performance-charts[Performance] a|
+| <<performance-charts>> a|
 
 * Requests by Performance (line chart)
 * Requests by Performance (table)
 * Slow Requests (requires Titanium)
 
-| xref:api-analytics-dashboard.adoc#client-applications-charts[*Client Applications*] a|
+| <<client-applications-charts>> a|
 
 * Requests by Client ID
 * Requests by Client IP
