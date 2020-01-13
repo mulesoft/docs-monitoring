@@ -109,9 +109,8 @@ Requests by Response Size:: The sum of requests in the chosen time period, group
 
 The charts in the *Policies* dashboard are defined as follows:
 
-Requests:: The sum of requests of policy violations in the chosen time period, grouped by top N paths.
+Requests:: The sum of requests of policy violations in the chosen time period, grouped by top 100 paths.
 
-// should N be 100? or is this undecided?
 
 Policy Violations by Outcome:: The sum of requests of policy violations in the chosen time period, grouped by outcome.
 
