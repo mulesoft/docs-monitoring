@@ -101,9 +101,9 @@ Requests by Method:: The sum of requests in the selected time period, grouped by
 
 Requests by Response Code:: The sum of requests in the selected time period, grouped by response code.
 
-Requests by Request Size:: The sum of requests in the selected time period, grouped by request size.+
+Requests by Request Size:: The sum of requests in the selected time period, grouped by request size.
 
-Requests by Response Size:: The sum of requests in the selected time period, grouped by response size.+
+Requests by Response Size:: The sum of requests in the selected time period, grouped by response size.
 
 [[policies-charts]]
 === Policies Charts
@@ -129,7 +129,7 @@ Requests by Response Code:: The sum of failed requests in the selected time peri
 
 Requests by Request Size:: The sum of failed requests in the selected time period, grouped by request size.
 
-Requests by Response Size:: The sum of failed requests in the selected time period, grouped by response size
+Requests by Response Size:: The sum of failed requests in the selected time period, grouped by response size.
 
 [[performance-charts]]
 === Performance Charts
