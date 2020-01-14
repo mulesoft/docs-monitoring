@@ -81,54 +81,66 @@ API analytics dashboards include various pages to view different types of charts
 
 The following charts appear on the *Overview* dashboard:
 
-Request Volume:: The sum of requests in the selected time period for the given API.
+Request Volume:: The sum of requests in the selected time period for the given API. Data is aggregated in one minute increments.
 
-Failed Requests:: The sum of failed requests in the selected time period for the given API.
+Failed Requests:: The sum of failed requests in the selected time period for the given API. Data is aggregated in one minute increments.
 
-Policy Violations:: The sum of requests for policy violations in the selected time period, grouped by policy violation ID.
+Policy Violations:: The sum of requests for policy violations in the selected time period, grouped by policy violation ID. Data is aggregated in one minute increments.
 
-Average Response Time:: The average response time of requests in the selected time period for the given API.
+Average Response Time:: The average response time of requests in the selected time period for the given API. Data is aggregated in one minute increments.
 
 [[requests-charts]]
 === Requests Charts
 
 The following charts appear on the *Requests* dashboard:
 
-Requests:: The sum of requests in the selected time period, grouped by the top 100 paths.
+Requests:: The sum of requests in the selected time period, grouped by the top N paths. By default, N is 100.
++
+* If you select a time range within the last hour, data is aggregated in one minute increments.
+* If you select a time range within the last day, data is aggregated in ten minute increments.
+* If you select a time range that is larger than one day, data is aggregated in one hour increments.
 
-Requests by Method:: The sum of requests in the selected time period, grouped by method.
+Requests by Method:: The sum of requests in the selected time period, grouped by method. Data is aggregated in one minute increments.
 
-Requests by Response Code:: The sum of requests in the selected time period, grouped by response code.
+Requests by Response Code:: The sum of requests in the selected time period, grouped by response code. Data is aggregated in one minute increments.
 
-Requests by Request Size:: The sum of requests in the selected time period, grouped by request size.
+Requests by Request Size:: The sum of requests in the selected time period, grouped by request size. Data is aggregated in one minute increments.
 
-Requests by Response Size:: The sum of requests in the selected time period, grouped by response size.
+Requests by Response Size:: The sum of requests in the selected time period, grouped by response size. Data is aggregated in one minute increments.
 
 [[policies-charts]]
 === Policies Charts
 
 The following charts appear on the *Policies* dashboard:
 
-Requests:: The sum of requests of policy violations in the selected time period, grouped by top 100 paths.
+Requests:: The sum of requests of policy violations in the selected time period, grouped by the top N paths. By default, N is 100.
++
+* If you select a time range within the last hour, data is aggregated in one minute increments.
+* If you select a time range within the last day, data is aggregated in ten minute increments.
+* If you select a time range that is larger than one day, data is aggregated in one hour increments.
 
-Policy Violations by Outcome:: The sum of requests of policy violations in the selected time period, grouped by outcome.
+Policy Violations by Outcome:: The sum of requests of policy violations in the selected time period, grouped by outcome. Data is aggregated in one minute increments.
 
-Policy Violations by Violation ID:: The sum of requests of policy violations in the selected time period, grouped by policy violation ID.
+Policy Violations by Violation ID:: The sum of requests of policy violations in the selected time period, grouped by policy violation ID. Data is aggregated in one minute increments.
 
 [[failures-charts]]
 === Failures Charts
 
 The following charts appear on the *Failures* dashboard:
 
-Failures:: The sum of failed requests in the selected time period, grouped by the top 100 paths.
+Failures:: The sum of failed requests in the selected time period, grouped by the top N paths. By default, N is 100.
++
+* If you select a time range within the last hour, data is aggregated in one minute increments.
+* If you select a time range within the last day, data is aggregated in ten minute increments.
+* If you select a time range that is larger than one day, data is aggregated in one hour increments.
 
-Failures by Method:: The sum of failed requests in the selected time period, grouped by method.
+Failures by Method:: The sum of failed requests in the selected time period, grouped by method. Data is aggregated in one minute increments.
 
-Requests by Response Code:: The sum of failed requests in the selected time period, grouped by response code.
+Requests by Response Code:: The sum of failed requests in the selected time period, grouped by response code. Data is aggregated in one minute increments.
 
-Requests by Request Size:: The sum of failed requests in the selected time period, grouped by request size.
+Requests by Request Size:: The sum of failed requests in the selected time period, grouped by request size. Data is aggregated in one minute increments.
 
-Requests by Response Size:: The sum of failed requests in the selected time period, grouped by response size.
+Requests by Response Size:: The sum of failed requests in the selected time period, grouped by response size. Data is aggregated in one minute increments.
 
 [[performance-charts]]
 === Performance Charts
@@ -136,19 +148,35 @@ Requests by Response Size:: The sum of failed requests in the selected time peri
 The following charts appear on the *Performance* dashboard:
 
 Requests by Performance (line chart):: The average request response times, grouped by path.
++
+* If you select a time range within the last hour, data is aggregated in one minute increments.
+* If you select a time range within the last day, data is aggregated in ten minute increments.
+* If you select a time range that is larger than one day, data is aggregated in one hour increments.
 
 Requests by Performance (table):: The average request response times, grouped by path.
++
+* If you select a time range within the last hour, data is aggregated in one minute increments.
+* If you select a time range within the last day, data is aggregated in ten minute increments.
+* If you select a time range that is larger than one day, data is aggregated in one hour increments.
 
 Slow Requests:: The average response times that are greater than one second, grouped by path. This chart is available only for Titanium users.
++
+* If you select a time range within the last hour, data is aggregated in one minute increments.
+* If you select a time range within the last day, data is aggregated in ten minute increments.
+* If you select a time range that is larger than one day, data is aggregated in one hour increments.
 
 [[client-applications-charts]]
 === Client Applications Charts
 
 The following charts appear on the *Client Applications* dashboards:
 
-Requests by Client ID:: The sum of requests in the period, grouped by client ID.
+Requests by Client ID:: The sum of requests in the period, grouped by client ID. Data is aggregated in one minute increments.
 
 Requests by Client IP:: The sum of requests in the period, grouped by client IP address.
++
+* If you select a time range within the last hour, data is aggregated in one minute increments.
+* If you select a time range within the last day, data is aggregated in ten minute increments.
+* If you select a time range that is larger than one day, data is aggregated in one hour increments.
 
 == Classic Metrics View (Deprecated)
 
