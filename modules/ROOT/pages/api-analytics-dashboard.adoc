@@ -3,8 +3,7 @@
 The API analytics dashboards provide charts to monitor API usage, which gives you insight into how your APIs are used and how they are performing.
 
 The API analytics dashboard includes two views: new metrics and classic metrics.
-The new metrics view includes detailed information about your APIs, and charts are sorted into dashboards based on the type of data displayed.
-The classic metrics view is deprecated as of January 15, 2020, and it displays information related only to response times and requests for APIs.
+The new metrics view includes detailed information about your APIs, and charts are sorted into dashboards based on the type of data displayed. Currently, new metrics are available if you are using Mule Runtime version 3.9.3, 3.94, or 4.2.2.
 To get the most out of Anypoint Monitoring, use the new metrics view to see information related to your APIs.
 
 By default, the new metrics view is selected. To switch views, select *Switch to classic metrics*. From the classic metrics view, select *Show new metrics view*.
@@ -134,7 +133,7 @@ Requests by Response Size:: The sum of failed requests in the selected time peri
 [[performance-charts]]
 === Performance Charts
 
-The following charts appear on the *Performance*:
+The following charts appear on the *Performance* dashboard:
 
 Requests by Performance (line chart):: The average request response times, grouped by path.
 
@@ -153,7 +152,6 @@ Requests by Client IP:: The sum of requests in the period, grouped by client IP 
 
 == Classic Metrics View (Deprecated)
 
-The classic metrics view is deprecated as of January 15, 2020.
 
 The following charts are available in the *Overview* section of built-in dashboards for APIs:
 
