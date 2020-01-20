@@ -26,7 +26,7 @@ image::api-analytics-detail-panel.png[]
 +
 . If you want to view API analytics in API Manager, click the *View API in API Manager* link.
 
-== New Metrics View for API Analytics Dashboards
+== Enhanced Metrics View for API Analytics Dashboards
 
 API analytics dashboards include various pages to view different types of charts:
 
