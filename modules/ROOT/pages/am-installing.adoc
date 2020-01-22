@@ -41,23 +41,16 @@ A supported version of Mule must be running on the server. Supported versions of
 
 Ensure that one of the following Mule Runtime Manager agent versions is installed in the Mule runtime engine running on the server:
 
-* 2.4.1
-* 2.4.0
+* 2.4.x
 * 2.3.0
-* 2.2.1
-* 2.2.0
+* 2.2.x
 * 2.1.9
 * 2.1.7
 * 2.1.6
-* 1.14.0
+* 1.14.x
 * 1.13.0
-* 1.12.2
-* 1.12.1
-* 1.12.0
-* 1.11.3
-* 1.11.2
-* 1.11.1
-* 1.11.0
+* 1.12.x
+* 1.11.x
 * 1.10.0
 
 
