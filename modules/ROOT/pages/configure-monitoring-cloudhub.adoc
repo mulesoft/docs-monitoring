@@ -9,6 +9,8 @@ To start monitoring Mule apps that are managed in CloudHub, you must deploy them
 
 Anypoint Monitoring with Mule runtime engine images receive patch updates as soon as they are available. Because Anypoint Monitoring -AM images are no longer receiving patch updates, switch to a Mule runtime engine (non-AM) image if your production environment requires a Mule runtime engine patch.
 
+// -AM  note removal here?
+
 Metrics and logs are supported in the following Mule versions:
 
 * 4.x.x
