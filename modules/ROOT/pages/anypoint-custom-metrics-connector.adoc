@@ -15,7 +15,7 @@ To see the metrics you configure in the Anypoint Custom Metrics connector in Any
 
 == Prerequisites
 
-* Mule runtime engine 4.2.x, 4.1.x, 3.9.x, or 3.8.7-AM
+* Mule runtime engine 4.2.x, 4.1.x, 3.9.x, or 3.8.7
 * xref:am-installing.adoc[Install the Anypoint Monitoring Agent]
 
 == Use Design Center to Configure the Custom Metrics Values
