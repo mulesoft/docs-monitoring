@@ -29,6 +29,8 @@ Ensure that Anypoint Monitoring is installed on a server running one of the foll
 * Ubuntu 16.04 and 18.04
 * Windows Server 2016, Windows Server 2019
 
+To install the agent, you must have root or administrative privileges.
+
 == Supported Versions of Mule Runtime Engine
 
 A supported version of Mule must be running on the server. Supported versions of Mule include: 
