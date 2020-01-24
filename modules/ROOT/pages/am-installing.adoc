@@ -112,7 +112,9 @@ If you do not see data in the charts, verify that Anypoint Monitoring is able to
 [NOTE]
 If necessary, you can whitelist the endpoint for outbound firewall rules so your server allows connections. The endpoints to whitelist are https://docs.mulesoft.com/monitoring/am-installing#before-you-begin
 11. Log into the server on which the Anypoint Monitoring agent is running.
-11. Open the log file for the data-transfer agent. The log file is in this path: `./am/filebeat/logs`
+11. Open the log file for the data-transfer agent. The log file is in this path: `./am/filebeat/logs`+
+[NOTE]
+If you are using Linux and the Anypoint Monitoring agent is running as a service, the log file is in the `/var/log/filebeat` directory.
 11. Look for entries that mention connection failures or connection retries.
 
 == Update the Anypoint Monitoring Agent
