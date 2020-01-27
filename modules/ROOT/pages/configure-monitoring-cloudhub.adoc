@@ -51,7 +51,7 @@ anypoint-cli --username="..." --password="..."
 * For Maven deployments:
 +
 If you are using Maven for deployment, you must modify the `<muleVersion>`
-tag in the `pom.xml` file. For example, changing `<muleVersion>3.9.3</muleVersion>` to `<muleVersion>3.9.4</muleVersion>`).
+tag in the `pom.xml` file. For example, you can change `<muleVersion>3.9.3</muleVersion>` to `<muleVersion>3.9.4</muleVersion>`).
 
 == Enable Monitoring for apps deployed to CloudHub
 
