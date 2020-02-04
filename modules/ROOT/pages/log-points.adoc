@@ -1,17 +1,94 @@
 = Anypoint Monitoring Log Points
 
-The Anypoint Monitoring log points feature enables you to interactively extract data from running managed APIs. You can specify properties (for example, the host and method in the request header) in your managed API for which to generate logs without having to write code or redeploy your application. This helps you troubleshoot without having to restart the application. 
+== Log Points for Apps
+
+The Log Points feature for apps enables you to log information from connectors in any Mule app in real time. If you are using one of the supported connectors, you can select a log level (debug, info, warn, or error) and generate logs. 
+
+=== Prerequisites
+
+* A https://www.mulesoft.com/anypoint-pricing[Titanium subscription] to Anypoint Monitoring and Mule 3.8.5 or later
+* The `???` permission
+
+=== Supported Connectors
+
+If you are using Mule 3.x, the following connectors are supported:
+
+* Amazon S3
+* Amazon SQS
+* Anypoint MQ
+* DB
+* Email
+* File
+* FTP
+* JMS
+* Microsoft Service Bus
+* Mongo
+* Salesforce
+* SFTP
+* Object store
+* TCP
+* UDP
+* VM Transport
+* WMQ
+
+If you are using Mule 4.x, the following connectors are supported:
+
+* Amazon S3
+* Amazon SQS
+* Anypoint MQ
+* DB
+* Email
+* File
+* FTP
+* JMS
+* Microsoft Service Bus
+* Mongo
+* Salesforce
+* SFTP
+* Object store
+* TCP
+* UDP
+* VM Transport
+* WMQ
+
+=== Supported Mule Versions
+
+* Mule 3 versions 3.8.5 and later
+* Mule 4 versions 4.1.1 and later
+
+// verify!!
+
+=== Enable App Log Points
+
+. Sign into Anypoint Platform and navigate to Anypoint Monitoring.
+. In the menu on the left, click *Log Points*.
+. Select the following, then click *Select*: +
+* *Environment* - The environment in which the app is running.
+* *Resource name* - The name of the app.
+. Select the connectors for which you want to generate logs.
+. Select a log level for each connector.
+. Click *Save & Apply*. +
+A message that your configuration has been applied appears at the top of the page with a *View API Logs* link.
+. Click the *View Logs* link to view the logs for the selected log point. +
+The logs may take a moment to appear.
+
+[NOTE]
+If you selected trace or debug log levels, you should disable the log point monitoring when you are finished, as it can impact your application's performance.
+
+== Log Points for APIs
+
+The Log Points feature for APIs enables you to interactively extract data from running managed APIs. You can specify properties (for example, the host and method in the request header) in your managed API for which to generate logs without having to write code or redeploy your application. This helps you troubleshoot without having to restart the application.
 
 For example, you can specify a cookie header in an API to see if an injection attack is in progress. The log data for the specified cookie header is automatically displayed in real time on the Logs page.
 
-== Prerequisites
+=== Prerequisites
 
-To use this feature, you must have the following: 
+To use this feature, you must have the following:
 
 * A https://www.mulesoft.com/anypoint-pricing[Titanium subscription] to Anypoint Monitoring and Mule 3.8.5 or later
 * The *API Manager > Manage Policies* permission
 
-== Supported APIs
+=== Supported APIs
 
 Log points is supported on the following types of APIs:
 
@@ -25,12 +102,12 @@ Log points is supported on the following types of APIs:
 [NOTE]
 All basic endpoint APIs are displayed in the selectors regardless of whether or not the registered API has a supported Mule runtime engine version. If a log point is saved for a basic endpoint API with an unsupported version, the application policy fails.
 
-== Supported Mule Runtime Engine Versions
+=== Supported Mule Versions
 
 * Mule 3 versions 3.8.5 and later
 * Mule 4 versions 4.1.1 and later
 
-== Enable API Log Points
+=== Enable API Log Points
 
 . Sign into Anypoint Platform and navigate to Anypoint Monitoring.
 . In the menu on the left, click *Log Points*.
@@ -38,8 +115,6 @@ All basic endpoint APIs are displayed in the selectors regardless of whether or 
 * *Environment* - The environment the API is running in.
 * *Resource name* - The name of the API.
 * *Version/Instance* - The version and instance of the API.
-+
-image::log-points-select-api.png[]
 . Select the *Request* points to log and monitor. +
 You can monitor the following request header log points: +
 * *User Agent*
@@ -54,8 +129,6 @@ You can monitor the following request header log points: +
 * *Referrer* +
 You can click the blue box to the left of *Header*, to select all log points. +
 Select *Body* to monitor the *Request Body*.
-+
-image::enable-log-points-select-points.png[]
 . Select the *Response* points to log and monitor. +
 You can monitor the following request header log points: +
 * *Status Code*
@@ -70,8 +143,6 @@ Select *Body* to monitor the *Response Body*.
 A message that your configuration has been applied appears at the top of the page with a *View API Logs* link.
 . Click the *View API Logs* link to view the logs for the selected log point. +
 The logs may take a moment to appear.
-+
-image::view-api-logs-link.png[]
-+
+
 [NOTE]
 When you are finished monitoring API log points, you should disable the log point monitoring, as it can impact your application's performance.
