@@ -2,7 +2,7 @@
 
 == Log Points for Apps
 
-The Log Points feature for apps enables you to log information from connectors in any Mule app in real time. If you are using one of the supported connectors, you can select a log level (debug, info, warn, or error) and generate logs. 
+The Log Points feature for apps enables you to log information from connectors in any Mule app in real time. If you are using one of the supported connectors, you can select a log level (debug, info, warn, or error) and generate logs.
 
 === Prerequisites
 
@@ -11,44 +11,89 @@ The Log Points feature for apps enables you to log information from connectors i
 
 === Supported Connectors
 
-If you are using Mule 3.x, the following connectors are supported:
+The following Anypoint Connectors are available for use with the Log Points feature.
 
-* Amazon S3
-* Amazon SQS
-* Anypoint MQ
-* DB
-* Email
-* File
-* FTP
-* JMS
-* Microsoft Service Bus
-* Mongo
-* Salesforce
-* SFTP
-* Object store
-* TCP
-* UDP
-* VM Transport
-* WMQ
+.Supported Connectors
+|===
+|Connector |Supported for Mule 3.x |Supported for Mule 4.x
 
-If you are using Mule 4.x, the following connectors are supported:
+|Anypoint Connector for Amazon S3 (Amazon S3)
+|x
+|x
 
-* Amazon S3
-* Amazon SQS
-* Anypoint MQ
-* DB
-* Email
-* File
-* FTP
-* JMS
-* Microsoft Service Bus
-* Mongo
-* Salesforce
-* SFTP
-* Object store
-* Sockets
-* VM Transport
-* IBM MQ
+|Anypoint Connector for Amazon SQS (Amazon SQS)
+|x
+|x
+
+|Anypoint MQ Connector
+|x
+|x
+
+|Anypoint Connector for Database (Database Connector)
+|x
+|x
+
+|Anypoint Connector for Email (Email Connector)
+|x
+|x
+
+|Anypoint Connector for File (File Connector)
+|x
+|x
+
+|Anypoint Connector for FTP (FTP Connector)
+|x
+|x
+
+|Anypoint Connector for JMS (JMS Connector)
+|x
+|x
+
+|Anypoint Connector for Microsoft Service Bus (Microsoft Service Bus Connector)
+|x
+|x
+
+|Anypoint Connector for MongoDB (MongoDB Connector)
+|x
+|x
+
+|Anypoint Connector for Salesforce (Salesforce Connector)
+|x
+|x
+
+|Anypoint Connector for SFTP (SFTP Connector)
+|x
+|x
+
+|Object Store Connector
+|x
+|x
+
+|Anypoint Connector for Sockets (Sockets Connector)
+|
+|x
+
+|TCP Connector
+|x
+|
+
+|UDP Connector
+|x
+|
+
+|VM Transport Connector
+|x
+|x
+
+|WMQ Connector
+|x
+|
+
+|Anypoint Connector for IBM MQ (IBM MQ Connector)
+|
+|x
+
+|===
 
 === Supported Mule Versions
 
@@ -138,9 +183,8 @@ You can monitor the following request header log points: +
 You can click the blue box to the left of *Header* to select all log points.
 Select *Body* to monitor the *Response Body*.
 . Click *Save & Apply*. +
-A message that your configuration has been applied appears at the top of the page with a *View API Logs* link.
+A message that your configuration has been applied appears at the top of the page with a *View API Logs* link. The logs may take a moment to appear.
 . Click the *View API Logs* link to view the logs for the selected log point. +
-The logs may take a moment to appear.
 
 [NOTE]
 When you are finished monitoring API log points, you should disable the log point monitoring, as it can impact your application's performance.
