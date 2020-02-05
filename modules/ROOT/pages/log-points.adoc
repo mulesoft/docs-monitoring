@@ -25,7 +25,7 @@ The following Anypoint Connectors are available for use with the Log Points feat
 |x
 |x
 
-|Anypoint MQ Connector
+|Anypoint MQ Connector (MQ Connector)
 |x
 |x
 
