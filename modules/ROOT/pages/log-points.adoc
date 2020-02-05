@@ -7,7 +7,7 @@ The Log Points feature for apps enables you to log information from connectors i
 === Prerequisites
 
 * A https://www.mulesoft.com/anypoint-pricing[Titanium subscription] to Anypoint Monitoring and Mule 3.8.5 or later
-* The `???` permission
+* The *Runtime Manager > Manage Settings* permission
 
 === Supported Connectors
 
@@ -46,17 +46,15 @@ If you are using Mule 4.x, the following connectors are supported:
 * Salesforce
 * SFTP
 * Object store
-* TCP
-* UDP
+* Sockets
 * VM Transport
-* WMQ
+* IBM MQ
 
 === Supported Mule Versions
 
 * Mule 3 versions 3.8.5 and later
 * Mule 4 versions 4.1.1 and later
 
-// verify!!
 
 === Enable App Log Points
 
