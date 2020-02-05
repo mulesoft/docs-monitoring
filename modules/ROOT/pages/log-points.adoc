@@ -15,83 +15,83 @@ The following Anypoint Connectors are available for use with the Log Points feat
 
 .Supported Connectors
 |===
-|Connector |Supported for Mule 3.x |Supported for Mule 4.x
+|Supported Anypoint Connectors |Supported for Mule 3.x |Supported for Mule 4.x
 
-|Anypoint Connector for Amazon S3 (Amazon S3)
-|x
-|x
-
-|Anypoint Connector for Amazon SQS (Amazon SQS)
+|Amazon S3
 |x
 |x
 
-|Anypoint MQ Connector (MQ Connector)
+|Amazon SQS
 |x
 |x
 
-|Anypoint Connector for Database (Database Connector)
+|Database
 |x
 |x
 
-|Anypoint Connector for Email (Email Connector)
+|Email
 |x
 |x
 
-|Anypoint Connector for File (File Connector)
+|File
 |x
 |x
 
-|Anypoint Connector for FTP (FTP Connector)
+|FTP
 |x
 |x
 
-|Anypoint Connector for JMS (JMS Connector)
-|x
-|x
-
-|Anypoint Connector for Microsoft Service Bus (Microsoft Service Bus Connector)
-|x
-|x
-
-|Anypoint Connector for MongoDB (MongoDB Connector)
-|x
-|x
-
-|Anypoint Connector for Salesforce (Salesforce Connector)
-|x
-|x
-
-|Anypoint Connector for SFTP (SFTP Connector)
-|x
-|x
-
-|Object Store Connector
-|x
-|x
-
-|Anypoint Connector for Sockets (Sockets Connector)
+|IBM MQ
 |
 |x
 
-|TCP Connector
-|x
-|
-
-|UDP Connector
-|x
-|
-
-|VM Transport Connector
+|JMS
 |x
 |x
 
-|WMQ Connector
+|Microsoft Service Bus
+|x
+|x
+
+|MongoDB
+|x
+|x
+
+|MQ
+|x
+|x
+
+|Object Store
+|x
+|x
+
+|Salesforce
+|x
+|x
+
+|SFTP
+|x
+|x
+
+|Sockets
+|
+|x
+
+|TCP
 |x
 |
 
-|Anypoint Connector for IBM MQ (IBM MQ Connector)
-|
+|UDP
 |x
+|
+
+|VM Transport
+|x
+|x
+
+|WMQ
+|x
+|
 
 |===
 
