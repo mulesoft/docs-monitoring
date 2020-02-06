@@ -1,10 +1,14 @@
 = Anypoint Monitoring Log Points
 
+The Log Points feature in Anypoint Monitoring allows you to generate logs for apps and APIs in real-time and without writing code. For apps, you can specify the level of logs you want to generate, and for APIs, you can specify properties for the logs. You can generate these logs without restarting your application. 
+
 == Log Points for Apps
 
 The Log Points feature for apps enables you to log information from connectors in any Mule app in real time. If you are using one of the supported connectors, you can select a log level (debug, info, warn, or error) and generate logs.
 
 === Prerequisites
+
+To use this feature, you must have the following:
 
 * A https://www.mulesoft.com/anypoint-pricing[Titanium subscription] to Anypoint Monitoring and Mule 3.8.5 or later
 * The *Runtime Manager > Manage Settings* permission
@@ -103,24 +107,23 @@ The following Anypoint Connectors are available for use with the Log Points feat
 
 === Enable App Log Points
 
-. Sign into Anypoint Platform and navigate to Anypoint Monitoring.
-. In the menu on the left, click *Log Points*.
+. Log in to Anypoint Platform and navigate to Anypoint Monitoring. 
+. In the Anypoint Monitoring navigation menu, click *Log Points*.
 . Select the following, then click *Select*: +
 * *Environment* - The environment in which the app is running.
 * *Resource name* - The name of the app.
 . Select the connectors for which you want to generate logs.
 . Select a log level for each connector.
 . Click *Save & Apply*. +
-A message that your configuration has been applied appears at the top of the page with a *View API Logs* link.
+A message that your configuration has been applied appears at the top of the page with a *View API Logs* link. The logs may take a moment to appear.
 . Click the *View Logs* link to view the logs for the selected log point. +
-The logs may take a moment to appear.
 
 [NOTE]
-If you selected trace or debug log levels, you should disable the log point monitoring when you are finished, as it can impact your application's performance.
+If you select either the trace or debug log level, disable log point monitoring when you are finished, to avoid slowing your application's performance.
 
 == Log Points for APIs
 
-The Log Points feature for APIs enables you to interactively extract data from running managed APIs. You can specify properties (for example, the host and method in the request header) in your managed API for which to generate logs without having to write code or redeploy your application. This helps you troubleshoot without having to restart the application.
+The Log Points feature for APIs enables you to interactively extract data from running managed APIs. You can specify properties of your managed API (for example, the host and method in the request header) for which to generate logs without having to write code or redeploy your application. This helps you troubleshoot without having to restart the application.
 
 For example, you can specify a cookie header in an API to see if an injection attack is in progress. The log data for the specified cookie header is automatically displayed in real time on the Logs page.
 
@@ -133,7 +136,7 @@ To use this feature, you must have the following:
 
 === Supported APIs
 
-Log points is supported on the following types of APIs:
+The following types of API are available for use with the Log Points feature:
 
 * Basic endpoint APIs (CloudHub and hybrid)
  ** CloudHub
@@ -143,7 +146,7 @@ Log points is supported on the following types of APIs:
   ** Hybrid proxy
 
 [NOTE]
-All basic endpoint APIs are displayed in the selectors regardless of whether or not the registered API has a supported Mule runtime engine version. If a log point is saved for a basic endpoint API with an unsupported version, the application policy fails.
+All basic endpoint APIs are displayed in the selectors regardless of whether the registered API has a supported Mule runtime engine version. If you save a log point for a basic endpoint API with an unsupported version, the application policy fails.
 
 === Supported Mule Versions
 
@@ -153,7 +156,7 @@ All basic endpoint APIs are displayed in the selectors regardless of whether or 
 === Enable API Log Points
 
 . Sign into Anypoint Platform and navigate to Anypoint Monitoring.
-. In the menu on the left, click *Log Points*.
+. In the Anypoint Monitoring navigation menu, click *Log Points*.
 . Select the following, then click *Select*: +
 * *Environment* - The environment the API is running in.
 * *Resource name* - The name of the API.
