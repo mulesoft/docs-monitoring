@@ -1,6 +1,6 @@
 = Anypoint Monitoring Log Points
 
-The Log Points feature in Anypoint Monitoring allows you to generate logs for apps and APIs in real-time and without writing code. For apps, you can specify the level of logs you want to generate, and for APIs, you can specify properties for the logs. You can generate these logs without restarting your application. 
+The Log Points feature in Anypoint Monitoring allows you to generate logs for apps and APIs in real-time and without writing code. For apps, you can specify the level of logs you want to generate, and for APIs, you can specify properties for the logs. This allows you to extract logs on-demand from applications in real-time, without causing re-deployment or application downtime. Permissions control allows you to manage access. All logs seamlessly flow into log management
 
 == Log Points for Apps
 
