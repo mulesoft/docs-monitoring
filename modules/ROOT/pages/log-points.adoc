@@ -4,7 +4,7 @@ The Log Points feature in Anypoint Monitoring allows you to generate logs for ap
 
 == Log Points for Apps
 
-The Log Points feature for apps enables you to log information from connectors in any Mule app in real time. If you are using one of the supported connectors, you can select a log level (debug, info, warn, or error) and generate logs.
+The Log Points feature for apps enables you to log information from connectors in any Mule app in real-time. If you are using one of the supported connectors, you can select a log level (debug, info, warn, or error) and generate logs.
 
 === Prerequisites
 
