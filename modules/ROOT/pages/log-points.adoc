@@ -109,9 +109,10 @@ The following Anypoint Connectors are available for use with the Log Points feat
 
 . Log in to Anypoint Platform and navigate to Anypoint Monitoring. 
 . In the Anypoint Monitoring navigation menu, click *Log Points*.
-. Select the following, then click *Select*: +
+. Select the following: +
 * *Environment*: The environment in which the app is running.
 * *Resource name*: The name of the app.
+. Click *Select*.
 . Select the connectors for which you want to generate logs.
 . Select a log level for each connector.
 . Click *Save & Apply*. +
@@ -157,10 +158,11 @@ All basic endpoint APIs are displayed in the selectors regardless of whether the
 
 . Sign into Anypoint Platform and navigate to Anypoint Monitoring.
 . In the Anypoint Monitoring navigation menu, click *Log Points*.
-. Select the following, then click *Select*: +
+. Select the following: +
 * *Environment*: The environment the API is running in.
 * *Resource name*: The name of the API.
 * *Version/Instance*: The version and instance of the API.
+. Click *Select*.
 . Select the *Request* points to log and monitor. +
 You can monitor the following request header log points: +
 * *User Agent*
