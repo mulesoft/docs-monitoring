@@ -160,7 +160,7 @@ All basic endpoint APIs are displayed in the selectors regardless of whether the
 . Select the following, then click *Select*: +
 * *Environment*: The environment the API is running in.
 * *Resource name*: The name of the API.
-* *Version/Instance* - The version and instance of the API.
+* *Version/Instance*: The version and instance of the API.
 . Select the *Request* points to log and monitor. +
 You can monitor the following request header log points: +
 * *User Agent*
