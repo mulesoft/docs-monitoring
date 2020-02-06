@@ -110,13 +110,13 @@ The following Anypoint Connectors are available for use with the Log Points feat
 . Log in to Anypoint Platform and navigate to Anypoint Monitoring. 
 . In the Anypoint Monitoring navigation menu, click *Log Points*.
 . Select the following, then click *Select*: +
-* *Environment* - The environment in which the app is running.
-* *Resource name* - The name of the app.
+* *Environment*: The environment in which the app is running.
+* *Resource name*: The name of the app.
 . Select the connectors for which you want to generate logs.
 . Select a log level for each connector.
 . Click *Save & Apply*. +
-A message that your configuration has been applied appears at the top of the page with a *View API Logs* link. The logs may take a moment to appear.
-. Click the *View Logs* link to view the logs for the selected log point. +
+A message that your configuration has been applied appears at the top of the page with a *View API Logs* link. The logs might take a moment to appear.
+. Click the *View Logs* link to view the logs for the selected log point.
 
 [NOTE]
 If you select either the trace or debug log level, disable log point monitoring when you are finished, to avoid slowing your application's performance.
@@ -158,8 +158,8 @@ All basic endpoint APIs are displayed in the selectors regardless of whether the
 . Sign into Anypoint Platform and navigate to Anypoint Monitoring.
 . In the Anypoint Monitoring navigation menu, click *Log Points*.
 . Select the following, then click *Select*: +
-* *Environment* - The environment the API is running in.
-* *Resource name* - The name of the API.
+* *Environment*: The environment the API is running in.
+* *Resource name*: The name of the API.
 * *Version/Instance* - The version and instance of the API.
 . Select the *Request* points to log and monitor. +
 You can monitor the following request header log points: +
@@ -186,8 +186,9 @@ You can monitor the following request header log points: +
 You can click the blue box to the left of *Header* to select all log points.
 Select *Body* to monitor the *Response Body*.
 . Click *Save & Apply*. +
-A message that your configuration has been applied appears at the top of the page with a *View API Logs* link. The logs may take a moment to appear.
+A message that your configuration has been applied appears at the top of the page with a *View API Logs* link.
+The logs might take a moment to appear.
 . Click the *View API Logs* link to view the logs for the selected log point. +
 
 [NOTE]
-When you are finished monitoring API log points, you should disable the log point monitoring, as it can impact your application's performance.
+When you are finished monitoring API log points, disable log point monitoring to avoid slowing your application's performance.
