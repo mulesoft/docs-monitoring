@@ -116,8 +116,6 @@ If you don't see the *Flows* tab, verify that you are using Unified Agent and ha
 * Connector Message Volume: Number of outbound messages and number of outbound requests
 * Response Time by Connector: Average outbound response time
 
-The *Connectors* tab does not display for apps deployed to CloudHub.
-
 If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
 | *Performance* a|
 
