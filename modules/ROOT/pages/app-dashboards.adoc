@@ -65,7 +65,7 @@ Built-in dashboards include various pages to view different types of charts:
 * Response Time graphs (99, 90, 75, and 50 percentile inbound): Measured in milliseconds (ms)
 * Maximum Response Time
 * Total Failed Inbound Requests
-* Slow Request Count by Endpoint: Total calls in which response time is greater than 1000 ms
+* Slow Request Count by Endpoint: Total calls in which the response time is greater than 1000 ms
 
 // I don't see Maximum Response Time or Total Failed Inbound Requests in the UI - do those exist?
 
@@ -137,7 +137,7 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * All Inbound Requests grouped by response type
 * All Outbound Requests grouped by response type
 * Failed Inbound Requests: Response time by endpoint
-* Total Failed Inbound Requests Grouped by Endpoint
+* Total Failed Inbound Requests grouped by endpoint
 * Failed Outbound Requests: Response time by HTTP endpoint (only HTTP endpoints are shown)
 * Total Failed Outbound Requests grouped by HTTP endpoint (only HTTP endpoints are shown)
 | *JVM* a|
