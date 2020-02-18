@@ -64,9 +64,9 @@ image::api-request-by-method.png[]
 
 Displays metrics according to the API's request and response sizes:
 
-* Requests (Avg) - Average number of requests
-* Average Size of Requests - Average size of requests (bytes)
-* Average Size of Responses - Average size of responses (bytes)
+* Requests (Avg) - Average number of requests per minute
+* Average Size of Requests - Average size of requests per minute (bytes)
+* Average Size of Responses - Average size of responses per minute (bytes)
 
 image::api-request-by-request-and-response-size.png[]
 
