@@ -33,6 +33,10 @@ image::monitoring-reports-time-range-selector.png[]
 +
 To view other reports, click the corresponding tab for the report to view. From any report tab, you can click the app name to view statistics for that app on its corresponding builtin dashboard.
 
+
+[NOTE]
+For applications running on stand-alone runtime i.e., Hybrid environment, Datas are shown only for Requests, Performance and Failures tabs. CPU and Memory Utilization data are not shown for Hybrid applications.
+
 === Requests
 
 Click the *Requests* tab to view information about app requests, including:
