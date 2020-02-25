@@ -58,20 +58,8 @@ The Titanium subscription:
 * Significantly increases the storage per vCore over the Base subscription.
 * Provides a way for you to specify your data retention policy.
 * Lets you store log and metric data in a selected geographic region, which can help you to meet data security and compliance requirements, run queries over geo-distributed runtimes without consequence, and limit the distance that your data travels when you run queries. These regions are available:
-** US East (Ohio)
 ** US East (N. Virginia)
-** US West (N. California)
-** US West (Oregon)
-** Asia Pacific (Seoul)
-** Asia Pacific (Osaka-Local)
-** Asia Pacific (Mumbai)
-** Asia Pacific (Singapore)
-** Asia Pacific (Sydney)
-** Canada (Central)
 ** EU (Frankfurt)
-** EU (Ireland)
-** EU (London)
-** EU (Paris)
 
 For complete details about subscriptions, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
 
@@ -83,7 +71,7 @@ See xref:raw-data.adoc[Raw Data].
 
 == Tools for Monitoring Integrations
 
-You can link to connectors that help deliver Anypoint Monitoring notifications to external systems, including custom metrics connectors. 
+You can link to connectors that help deliver Anypoint Monitoring notifications to external systems, including custom metrics connectors.
 
 See xref:tools.adoc[Tools].
 
