@@ -267,7 +267,7 @@ Outbound - Protocols::
 
 
 Outbound - Endpoints::
-
+Insert text here
 
 [[flows-charts]]
 == Flows
@@ -347,7 +347,7 @@ Average Response Time  - Outbound::
 Average Response Time Grouped by Endpoint - Outbound::
 
 Response Time graphs: 99, 90, 75, and 50 percentile - Outbound::
-
+Insert text here
 
 [[failures-charts]]
 == Failures
@@ -466,7 +466,7 @@ Number of simultaneous requests for a worker over time
 image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
 
 [[custom-metrics-charts]]
-== Custom Metrics Charts
+== Custom Metrics
 
 The *Custom metrics* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule. See xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].
 
