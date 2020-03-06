@@ -36,7 +36,7 @@ Built-in dashboards include various pages to view different types of charts:
 [%header,cols="1,4"]
 |===
 | Built-In Dashboards | Charts
-| *Overview* a|
+| <<overview-charts>> a|
 
 * Inbound - Total Requests by Response Type
 * Inbound - Average Response Time
@@ -47,32 +47,18 @@ Built-in dashboards include various pages to view different types of charts:
 * JVM - Heap memory utilization
 * JVM - Thread count
 
-//* Response Time by App: Number of milliseconds (ms) required for each response.
-//* Messages Processed: Number of messages at a given time.
-//* Response Time by Inbound Endpoint: Number of milliseconds (ms) for a response from inbound endpoints to your Mule app.
-//* Response Time by Outbound Endpoint: Number of milliseconds (ms) for a response from outbound endpoints of your Mule app.
-//* CPU: Percentage of CPU used over time. The percentages are calculated per worker and as the total for all workers.
-//* Memory: Number of mebibytes (MiB) used over time.
-| *Inbound* a|
+| <<inbound-charts>> a|
 
 * Total Inbound Requests by Response Type
 * Average Response Time
 * Average Response Time by Endpoint
-** Average: Green if response time is less than 300ms; yellow if response time is greater than 300ms and less than 600ms; red if is greater than 600ms
-** Max: Green if response time is less than 300ms; yellow if response time is greater than 300ms and less than 500ms; red if is greater than 500ms
-** Min: Green if response time is less than 300ms; yellow if response time is greater than 300ms and less than 600ms; red if is greater than 600ms
 * Total Requests by Endpoint
-* Response Time graphs (99, 90, 75, and 50 percentile inbound): Measured in milliseconds (ms)
+* Response Time graphs (99, 90, 75, and 50 percentile inbound)
 * Maximum Response Time
 * Total Failed Inbound Requests
-* Slow Request Count by Endpoint: Total calls in which the response time is greater than 1000 ms
-
-// I don't see Maximum Response Time or Total Failed Inbound Requests in the UI - do those exist?
-
-The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
-
-* Inbound Protocol
-* Inbound Endpoint
+* Slow Request Count by Endpoint
+* Inbound Protocol (Titanium only)
+* Inbound Endpoint (Titanium only)
 
 [NOTE]
 Inbound metrics are retained for 24 hours.
@@ -80,13 +66,13 @@ Inbound metrics are retained for 24 hours.
 //* Total Inbound Calls (success or failure)
 //* Total Inbound by Endpoint Outbound
 //* Average Response Time inbound
-| *Outbound* a|
+| <<outbound-charts>> a|
 
 * Total Outbound Requests by Response Type
 * Average Response Time
 * Average Response Time grouped by HTTP endpoint outbound (only HTTP endpoints are shown)
 * Total Requests grouped by HTTP endpoint (only HTTP endpoints are shown)
-* Response Time graphs (99, 90, 75, and 50 percentile outbound): Measured in milliseconds (ms)
+* Response Time graphs (99, 90, 75, and 50 percentile outbound)
 * Total Failed Outbound Requests
 
 The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
@@ -95,31 +81,31 @@ The following charts are available only if you are using Unified Agent and have 
 * Outbound Operations
 * Outbound Protocol
 * Outbound Endpoints
-| *Flows* a|
+| <<flows-charts>> a|
 
-* Inbound Response Time by Flow: Average inbound response time
-* Outbound Response Time by Flow: Average outbound response time
-* Inbound Request Volume by Flow: Average number of inbound requests
-* Outbound Request Volume by Flow: Average number of outbound requests
-* Failures by Flow: Average number of failed inbound requests
-* Slow Inbound Requests by Flow: Average number of inbound requests whose response time is greater than 1000 ms
-* Slow Outbound Requests by Flow: Average number of outbound requests whose response time is greater than 1000 ms
-* Inbound Response Time by Flow: Average, minimum, and maximum inbound response time
-* Outbound Response Time by Flow: Average, minimum, and maximum outbound response time
-* Inbound Request Volume by Flow: Average number of inbound requests
-* Outbound Request Volume by Flow: Average number of outbound requests
-* Failures by Flow: Average number of inbound failed requests
-* Slow Inbound Requests by Flow: Average number of inbound requests whose response time is greater than 1000 ms
-* Slow Outbound Requests by Flow: Average number of outbound requests whose response time is greater than 1000 ms
+* Inbound Response Time by Flow
+* Outbound Response Time by Flow
+* Inbound Request Volume by Flow
+* Outbound Request Volume by Flow
+* Failures by Flow
+* Slow Inbound Requests by Flow
+* Slow Outbound Requests by Flow
+* Inbound Response Time by Flow
+* Outbound Response Time by Flow
+* Inbound Request Volume by Flow
+* Outbound Request Volume by Flow
+* Failures by Flow
+* Slow Inbound Requests by Flow
+* Slow Outbound Requests by Flow
 
 If you don't see the *Flows* tab, verify that you are using Unified Agent and have a Titanium subscription to Anypoint Platform.
-| *Connectors* a|
+| <<connectors-charts>> a|
 
-* Connector Message Volume: Number of outbound messages and number of outbound requests
-* Response Time by Connector: Average outbound response time
+* Connector Message Volume
+* Response Time by Connector
 
 If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
-| *Performance* a|
+| <<performance-charts>>* a|
 
 * Average Response Time - Inbound
 * Average Response Time Grouped by Endpoint - Inbound
@@ -128,9 +114,7 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Average Response Time  - Outbound
 * Average Response Time Grouped by Endpoint - Outbound
 * Response Time graphs: 99, 90, 75, and 50 percentile - Outbound
-//* Response Time graphs: 99, 90, 75, and 50 Percentile Inbound
-//* Average Response Time: Outbound, Grouped by Endpoint Outbound
-| *Failures* a|
+| <<failures-charts>> a|
 
 * Total Failed Inbound Requests
 * Total Failed Outbound Requests
@@ -140,42 +124,355 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Total Failed Inbound Requests grouped by endpoint
 * Failed Outbound Requests: Response time by HTTP endpoint (only HTTP endpoints are shown)
 * Total Failed Outbound Requests grouped by HTTP endpoint (only HTTP endpoints are shown)
-| *JVM* a|
+| <<jvm-charts>> a|
 
 * Garbage collection count, Garbage collection time
 * Par new collection count, Par new collection time
 * Classes: Loaded, Loaded total, Unloaded
 * Heap: Committed, Used
-* Thread Count: Number of simultaneous requests
-* JVM Uptime: Uptime of the JVM
-* Par Eden graphs (Used, Max, Init, and Committed): Usage metrics for the Par Eden Space pool
-* Par Survivor graphs (Used, Max, Init, and Committed): Usage metrics for the Par Eden Space pool
-* Metaspace graphs (Used, Max, Init, Committed): Usage metrics for Java memory space
-* Code Cache graphs (Used, Max, Init, Committed): Usage metrics for the Code Cache pool
-* Compressed Class Space graphs (Used, Max, Init, Committed): Usage metrics for values of the metadata for compressed class pointers
-* Committed Virtual Memory: Amount of virtual memory guaranteed to be available to the running process
-| *Infrastructure* a|
+* Thread Count
+* JVM Uptime
+* Par Eden graphs (Used, Max, Init, and Committed)
+* Par Survivor graphs (Used, Max, Init, and Committed)
+* Metaspace graphs (Used, Max, Init, Committed)
+* Code Cache graphs (Used, Max, Init, Committed)
+* Compressed Class Space graphs (Used, Max, Init, Committed)
+* Committed Virtual Memory
+| <<infrastructure-charts>> a|
 
-* Application Process CPU Load: Amount of CPU load used by the JVM
-* Application Process CPU Minutes: CPU time used by the process on which the JVM is running
-* Operating System Swap Space: Amount of memory the system is swapping
-* CPU Utilization %: Percentage of CPU used by each worker over time
-* Memory Utilization: Amount of memory used by each worker over time
-* Total System Processors: Number of system processors for workers available over time
-* Total System Memory: Amount of system memory available for workers over time. +
-If you have a Titanium subscription and the selected application is hybrid, this graph changes to *System Memory*.
-* System Memory: This graph displays only if you have a Titanium subscription and the selected application is hybrid. This graph displays the total free system memory per worker.
-* Thread Count - Server: Number of simultaneous requests for a worker over time
+* Application Process CPU Load
+* Application Process CPU Minutes
+* Operating System Swap Space
+* CPU Utilization %
+* Memory Utilization
+* Total System Processors:
+* Total System Memory
+* System Memory
+* Thread Count - Server
 
-.Example: Infrastructure Dashboard
-image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
-| *Custom metrics* a|
+| <<custom-metrics-charts>> a|
 
 The *Custom metrics* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule. See xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].
 |===
+
+[[overview-charts]]
+== Overview
+
+The following charts appear on the *Overview* dashboard:
+
+Inbound - Total Requests by Response Type::
+The sum of inbound requests, grouped by type of response in automatic intervals. Responses are OK or Failed. If a Mule app has more than one connector type, all types are included in this metric.
+
+Inbound - Average Response Time::
+The average response time of inbound requests, grouped by application in automatic intervals. If a Mule app has more than one connector type, all types are included in this metric.
+
+Mule Messages::
+The sum of Mule messages that are processed successfully, grouped by application.
+
+Outbound - Total Requests by Response Type::
+The sum of outbound requests, grouped by type of response in automatic intervals. Responses are OK or Failed. If a Mule app has more than one connector type, all types are included in this metric.
+
+Outbound - Average Response Time::
+The average response time of outbound requests, grouped by application in automatic intervals. If a Mule app has more than one connector type, all types are included in this metric.
+
+JVM - CPU utilization::
+The average percentage of CPU utilized by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule runtime JVM process. The calculation for CPU utilization is relative to the physical server on which the Mule runtime is deployed. For example, in RTF, the resource usage here indicates the the JVM's utilization with respect to the entire server, and not with respect to the Pod maximum CPU allocation.
+
+JVM - Heap memory utilization::
+The average amount of heap memory utilized by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule runtime JVM process.
+
+JVM - Thread count::
+The average number of threads of the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule runtime JVM process.
+
+[[inbound-charts]]
+== Inbound
+
+Inbound metrics are retained for 24 hours.
+The following charts appear on the *Inbound* dashboard:
+
+Inbound - Total Requests by Response Type::
+The sum of inbound requests, grouped by type of response in automatic intervals. Responses are OK or Failed. If a Mule app has more than one connector type, all types are included in this metric.
+
+Inbound - Average Response Time::
+The average response time of inbound requests, grouped by application in automatic intervals. If a Mule app has more than one connector type, all types are included in this metric.
+
+Inbound - Response Time by Endpoint::
+Average, maximum, and minimum and total response time, grouped by endpoint.
+* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms
+* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than 500ms
+* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms
+
+Inbound - Total Requests by Endpoint::
+The sum of inbound requests in the period, grouped by endpoint
+
+Response Time graphs (99, 90, 75, and 50 percentile inbound)::
+Average response time of the 99, 90, 75, and 50 percentiles of inbound requests, grouped by application in automatic intervals. The unit for these metrics is milliseconds (ms).
+
+Inbound - Maximum Response Time::
+The maximum response time, grouped by endpoint in automatic intervals.
+
+Inbound - Failure Total Request Count::
+The sum of failed inbound requests, grouped by type of response in automatic intervals.
+
+Slow Request Count by Endpoint::
+The average of response times that are largest than 1 second, grouped by endpoint in automatic intervals. The sum of total calls in which the response time is greater than 1000 ms.
+
+The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+
+Inbound Protocol::
+The sum of inbound requests, grouped by protocol in automatic intervals.
+
+Inbound Endpoint::
+The sum of inbound requests, grouped by remote hosts (endpoints) in automatic intervals.
+
+[[outbound-charts]]
+== Outbound
+
+The following charts appear on the *Outbound* dashboard:
+
+Outbound - Total Requests by Response Type::
+
+
+Outbound - Average Response Time::
+
+
+Outbound - Response Time by HTTP Endpoint::
+
+
+Outbound - Total Requests by HTTP Endpoint::
+
+
+Outbound - Response Time - 99 Percentile::
+
+
+Outbound - Response Time - 90 Percentile::
+
+
+Outbound - Response Time - 75 Percentile::
+
+
+Outbound - Response Time - 50 Percentile::
+
+
+Outbound - Failure Total Request Count::
+
+
+Outbound - Ports::
+
+
+Outbound - Operations::
+
+
+Outbound - Protocols::
+
+
+Outbound - Endpoints::
+
+
+[[flows-charts]]
+== Flows
+
+The following charts appear on the *Flows* dashboard:
+
+Inbound Response Time by Flow::
+Average inbound response time
+
+Outbound Response Time by Flow::
+Average outbound response time
+
+Inbound Request Volume by Flow::
+Average number of inbound requests
+
+Outbound Request Volume by Flow::
+Average number of outbound requests
+
+Failures by Flow::
+Average number of failed inbound requests
+
+Slow Inbound Requests by Flow::
+Average number of inbound requests whose response time is greater than 1000 ms
+
+Slow Outbound Requests by Flow::
+Average number of outbound requests whose response time is greater than 1000 ms
+
+Inbound Response Time by Flow::
+Average, minimum, and maximum inbound response time
+
+Outbound Response Time by Flow::
+Average, minimum, and maximum outbound response time
+
+Inbound Request Volume by Flow::
+Average number of inbound requests
+
+Outbound Request Volume by Flow::
+Average number of outbound requests
+
+Failures by Flow::
+Average number of inbound failed requests
+
+Slow Inbound Requests by Flow::
+Average number of inbound requests whose response time is greater than 1000 ms
+
+Slow Outbound Requests by Flow::
+Average number of outbound requests whose response time is greater than 1000 ms
+
+[[connectors-charts]]
+== Connectors
+
+The following charts appear on the *Connectors* dashboard:
+
+Connector Message Volume::
+The number of outbound messages and number of outbound requests.
+
+Response Time by Connector::
+The average outbound response time.
+
+If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
+
+[[performance-charts]]
+== Performance
+
+The following charts appear on the *Performance* dashboard:
+
+Average Response Time - Inbound::
+
+Average Response Time Grouped by Endpoint - Inbound::
+
+Mule Messages::
+
+Response Time graphs: 99, 90, 75, and 50 percentile - Inbound::
+
+Average Response Time  - Outbound::
+
+Average Response Time Grouped by Endpoint - Outbound::
+
+Response Time graphs: 99, 90, 75, and 50 percentile - Outbound::
+
+
+[[failures-charts]]
+== Failures
+
+The following charts appear on the *Failures* dashboard:
+
+Total Failed Inbound Requests::
+
+Total Failed Outbound Requests::
+
+All Inbound Requests grouped by response type::
+
+All Outbound Requests grouped by response type::
+
+Failed Inbound Requests: Response time by endpoint::
+
+Total Failed Inbound Requests grouped by endpoint::
+
+Failed Outbound Requests: Response time by HTTP endpoint::
+(only HTTP endpoints are shown)
+
+Total Failed Outbound Requests grouped by HTTP endpoint::
+(only HTTP endpoints are shown)
+
+[[jvm-charts]]
+== JVM
+
+The following charts appear on the *JVM* dashboard:
+
+Garbage collection count::
+
+Garbage collection time::
+
+Par new collection count::
+
+Par new collection time::
+
+Classes Loaded::
+
+Classes Loaded Total::
+
+Classes Unloaded::
+
+Heap Committed::
+The amount of heap memory committed by the JVM, grouped by type of response in automatic intervals.
+
+Heap Used::
+The amount of heap memory utilized by the JVM, grouped by type of response in automatic intervals.
+
+Thread Count::
+The number of simultaneous requests.
+
+JVM Uptime::
+The time since JVM started, grouped by type of response in automatic intervals.
+
+Par Eden Used::
+The used “Eden Space” JVM Memory, grouped by type of response in automatic intervals.
+
+Par Eden Maximum::
+The maximum “Eden Space” JVM Memory, grouped by type of response in automatic intervals.
+
+Par Eden Init::
+The init “Eden Space” JVM Memory, grouped by type of response in automatic intervals.
+
+Par Eden Committed::
+Used “Eden Space” JVM Memory, grouped by type of response in automatic intervals.
+
+Par Survivor graphs (Used, Max, Init, and Committed)::
+Usage metrics for the Par Eden Space pool.
+
+Metaspace graphs (Used, Max, Init, Committed)::
+Usage metrics for Java memory space
+
+Code Cache graphs (Used, Max, Init, Committed)::
+Usage metrics for the Code Cache pool
+
+Compressed Class Space graphs (Used, Max, Init, Committed)::
+Usage metrics for values of the metadata for compressed class pointers
+
+Committed Virtual Memory::
+Amount of virtual memory guaranteed to be available to the running process
+
+[[infrastructure-charts]]
+== Infrastructure
+
+The following charts appear on the *Infrastructure* dashboard:
+
+Application Process CPU Load::
+Amount of CPU load used by the JVM
+
+Application Process CPU Minutes::
+CPU time used by the process on which the JVM is running
+
+Operating System Swap Space::
+Amount of memory the system is swapping
+
+CPU Utilization %::
+Percentage of CPU used by each worker over time
+
+Memory Utilization::
+Amount of memory used by each worker over time
+
+Total System Processors::
+Number of system processors for workers available over time
+
+Total System Memory::
+Amount of system memory available for workers over time. If you have a Titanium subscription and the selected application is hybrid, this graph changes to *System Memory*.
+
+System Memory::
+This graph displays only if you have a Titanium subscription and the selected application is hybrid. This graph displays the total free system memory per worker.
+
+Thread Count - Server::
+Number of simultaneous requests for a worker over time
+
+.Example: Infrastructure Dashboard
+image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
+
+[[custom-metrics-charts]]
+== Custom Metrics Charts
+
+The *Custom metrics* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule. See xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].
 
 == See Also
 
 * xref:dashboard-custom-config.adoc[Configuring Custom Dashboards and Charts]
 * xref:reports.adoc[Reports]
 * xref:save-builtin-dashboard-as-custom.adoc[Save a Built-in Dashboard as a Custom Dashboard]
+* xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector]
