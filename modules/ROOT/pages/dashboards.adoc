@@ -24,6 +24,23 @@ Custom dashboards in Anypoint Monitoring can bring together important metrics an
 
 For example, you can compare live data with historic data to detect anomalies and expedite the troubleshooting process.
 
+[[no-data-scenarios]]
+== No Data Scenarios for Dashboards
+
+A dashboard in Anypoint Monitoring might return "No Data" instead of metrics. The following scenarios commonly cause the "No Data" message to appear:
+
+* You selected an incorrect time range.
++
+For example, the app started yesterday, and you selected a day from the past week as your time range.
+* You removed the Monitoring property was removed from runtime.
+* The application for which you are trying to view metrics has stopped.
+* You selected a time range that is outside of the retention policy of a metric.
++
+For example, API path or client IP metrics show only the last hour, and you selected yesterday as the time range.
+* You used an incorrect query.
++
+For example, when using custom dashboards, you selected 2 app IDs at the same time using the query `WHERE app_id = app_1 AND app_id = app_2`.
+
 == See Also
 
 * xref:dashboards-using.adoc[Using Dashboards]
