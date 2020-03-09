@@ -32,7 +32,7 @@ A dashboard in Anypoint Monitoring might return "No Data" instead of metrics. Th
 * You selected an incorrect time range.
 +
 For example, the app started yesterday, and you selected a day from the past week as your time range.
-* You removed the Monitoring property was removed from runtime.
+* You removed the Monitoring property from the runtime.
 * The application for which you are trying to view metrics has stopped.
 * You selected a time range that is outside of the retention policy of a metric.
 +
