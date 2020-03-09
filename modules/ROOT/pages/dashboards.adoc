@@ -27,7 +27,7 @@ For example, you can compare live data with historic data to detect anomalies an
 [[no-data-scenarios]]
 == No Data Scenarios for Dashboards
 
-A dashboard in Anypoint Monitoring might return "No Data" instead of metrics. The following scenarios commonly cause the "No Data" message to appear:
+A dashboard in Anypoint Monitoring might return *No Data* instead of metrics. The following scenarios commonly cause the *No Data* message to appear:
 
 * You selected an incorrect time range.
 +
