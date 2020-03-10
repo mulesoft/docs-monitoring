@@ -39,7 +39,7 @@ For example, the app started yesterday, and you selected a day from the past wee
 For example, API path or client IP metrics show only the last hour, and you selected yesterday as the time range.
 * You used an incorrect query.
 +
-For example, when using custom dashboards, you selected 2 app IDs at the same time using the query `WHERE app_id = app_1 AND app_id = app_2`.
+For example, when using custom dashboards, you selected two app IDs at the same time using the query `WHERE app_id = app_1 AND app_id = app_2`.
 
 == See Also
 
