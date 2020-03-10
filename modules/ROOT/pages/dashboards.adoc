@@ -25,7 +25,7 @@ Custom dashboards in Anypoint Monitoring can bring together important metrics an
 For example, you can compare live data with historic data to detect anomalies and expedite the troubleshooting process.
 
 [[no-data-scenarios]]
-== No Data Scenarios for Dashboards
+== Causes of No Data Messages for Dashboards
 
 A dashboard in Anypoint Monitoring might return *No Data* instead of metrics. The following scenarios commonly cause the *No Data* message to appear:
 
