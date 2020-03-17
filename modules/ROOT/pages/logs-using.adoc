@@ -19,7 +19,7 @@ To search the logs, type your search query into the log search field and press *
 
 Provide the exact term you're looking for, such as `"code 400"` to find  bad requests. For
 exact matches of more than one word, surround the search term
-with quotation marks. 
+with quotation marks.
 
 Example results from a `"code 400"` search:
 
@@ -208,8 +208,12 @@ The default settings are:
 
 == Working with Predefined Filters
 
-When the Quick Filter list is open, you can select and use predefined log
-filters. This example selects the ERROR log level.
+When the *Quick Filters* list is open, you can select and use predefined log filters.
+
+[NOTE]
+For every result group, the *Quick Filters* list displays the first five results of the most recent 500 log entries. When there are more than 500 entries or the top five values do not represent 100% of total values, a *See More* link for each result group appears. You can click *See More* to open the *Add a Filter* box and set parameters to further filter your results.
+
+This example of a predefined filter selects the ERROR log level.
 
 image::log-filter-select.png[Predefined Log Filter]
 

@@ -9,6 +9,8 @@ To start monitoring Mule apps that are managed in CloudHub, you must deploy them
 
 Anypoint Monitoring with Mule runtime engine images receive patch updates as soon as they are available. Because Anypoint Monitoring -AM images are no longer receiving patch updates, switch to a Mule runtime engine (non-AM) image if your production environment requires a Mule runtime engine patch.
 
+// -AM  note removal here?
+
 Metrics and logs are supported in the following Mule versions:
 
 * 4.x.x
@@ -43,13 +45,13 @@ an appropriate value, for example:
 anypoint-cli --username="..." --password="..."
  --organization="Mythical, Inc"
  --environment="Production" runtime-mgr cloudhub-application deploy
- --runtime="3.9.0-AM" helloworld ~/demoproj2.zip
+ --runtime="3.9.4" helloworld ~/demoproj2.zip
 ----
 +
 * For Maven deployments:
 +
-If you are using Maven for deployment, you need to modify the `<muleVersion>`
-tag in the `pom.xml` file to append the `-AM`, for example, changing `<muleVersion>3.9.0</muleVersion>` to `<muleVersion>3.9.0-AM</muleVersion>`).
+If you are using Maven for deployment, you must modify the `<muleVersion>`
+tag in the `pom.xml` file. For example, you can change `<muleVersion>3.9.3</muleVersion>` to `<muleVersion>3.9.4</muleVersion>`).
 
 == Enable Monitoring for apps deployed to CloudHub
 
@@ -71,8 +73,6 @@ image::monitoring-settings-screen.png[]
 A list of running applications is displayed for the selected environment. +
 You can search for a specific application using the *List of resources* search box.
 . Next to the application, click *Enable* to enable monitoring for the application, or *Disable* to disable monitoring for the application. +
-[NOTE]
-Applications running on `x.x.x.-AM` versions are displayed in the list and are already enabled; however, you can't disable these applications from this page.
 
 == Enable Monitoring in CloudHub Settings
 

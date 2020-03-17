@@ -11,7 +11,7 @@ To open a configuration page for a graph, see xref:dashboard-custom-config.adoc[
 
 //GENERAL SETTINGS shared by singlestat and graph
 //== General
-include::{partialsdir}/include-general-config.adoc[]
+include::partial$include-general-config.adoc[leveloffset=+1]
 // END GENERAL
 
 == Axes (X-Axis and Y-Axis Settings)
@@ -102,7 +102,7 @@ A Titanium subscription is required to use this feature.
 
 In the *Alerts* tab, set up alerts that trigger when JVM memory utilization is too high.
 
-include::{partialsdir}/include-alerts-config.adoc[]
+include::partial$include-alerts-config.adoc[leveloffset=+1]
 
 //END ALERTS
 

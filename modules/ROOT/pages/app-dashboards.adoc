@@ -38,11 +38,11 @@ Built-in dashboards include various pages to view different types of charts:
 | Built-In Dashboards | Charts
 | *Overview* a|
 
-* Inbound - Total requests by type
-* Inbound - Average response time
+* Inbound - Total Requests by Response Type
+* Inbound - Average Response Time
 * Inbound - Mule messages
-* Outbound - Total requests by type
-* Outbound - Average response time
+* Outbound - Total Requests by Response Type
+* Outbound - Average Response Time
 * JVM - CPU utilization
 * JVM - Heap memory utilization
 * JVM - Thread count
@@ -55,17 +55,19 @@ Built-in dashboards include various pages to view different types of charts:
 //* Memory: Number of mebibytes (MiB) used over time.
 | *Inbound* a|
 
-* Total inbound requests by type
-* Average response time
-* Average response time by endpoint
+* Total Inbound Requests by Response Type
+* Average Response Time
+* Average Response Time by Endpoint
 ** Average: Green if response time is less than 300ms; yellow if response time is greater than 300ms and less than 600ms; red if is greater than 600ms
 ** Max: Green if response time is less than 300ms; yellow if response time is greater than 300ms and less than 500ms; red if is greater than 500ms
 ** Min: Green if response time is less than 300ms; yellow if response time is greater than 300ms and less than 600ms; red if is greater than 600ms
-* Total requests by endpoint
-* Response time graphs (99, 90, 75, and 50 percentile inbound): Measured in milliseconds (ms)
-* Maximum response time
-* Total failed inbound requests
-* Slow request count by endpoint: Total calls in which response time is greater than 1000 ms
+* Total Requests by Endpoint
+* Response Time graphs (99, 90, 75, and 50 percentile inbound): Measured in milliseconds (ms)
+* Maximum Response Time
+* Total Failed Inbound Requests
+* Slow Request Count by Endpoint: Total calls in which the response time is greater than 1000 ms
+
+// I don't see Maximum Response Time or Total Failed Inbound Requests in the UI - do those exist?
 
 The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
 
@@ -77,15 +79,15 @@ Inbound metrics are retained for 24 hours.
 
 //* Total Inbound Calls (success or failure)
 //* Total Inbound by Endpoint Outbound
-//* Average response time inbound
+//* Average Response Time inbound
 | *Outbound* a|
 
-* Total outbound requests by type
-* Average response time
-* Average response time grouped by HTTP endpoint outbound (only HTTP endpoints are shown)
-* Total requests grouped by HTTP endpoint (only HTTP endpoints are shown)
-* Response time graphs (99, 90, 75, and 50 percentile outbound): Measured in milliseconds (ms)
-* Total failed outbound requests
+* Total Outbound Requests by Response Type
+* Average Response Time
+* Average Response Time grouped by HTTP endpoint outbound (only HTTP endpoints are shown)
+* Total Requests grouped by HTTP endpoint (only HTTP endpoints are shown)
+* Response Time graphs (99, 90, 75, and 50 percentile outbound): Measured in milliseconds (ms)
+* Total Failed Outbound Requests
 
 The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
 
@@ -116,30 +118,28 @@ If you don't see the *Flows* tab, verify that you are using Unified Agent and ha
 * Connector Message Volume: Number of outbound messages and number of outbound requests
 * Response Time by Connector: Average outbound response time
 
-The *Connectors* tab does not display for apps deployed to CloudHub.
-
 If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
 | *Performance* a|
 
-* Average response time - Inbound
-* Average response time grouped by endpoint - Inbound
-* Mule messages
-* Response time graphs: 99, 90, 75, and 50 percentile inbound
-* Average response time  - Outbound
-* Average response time grouped by endpoint - Outbound
-* Response time graphs: 99, 90, 75, and 50 percentile - Outbound
+* Average Response Time - Inbound
+* Average Response Time Grouped by Endpoint - Inbound
+* Mule Messages
+* Response Time graphs: 99, 90, 75, and 50 percentile inbound
+* Average Response Time  - Outbound
+* Average Response Time Grouped by Endpoint - Outbound
+* Response Time graphs: 99, 90, 75, and 50 percentile - Outbound
 //* Response Time graphs: 99, 90, 75, and 50 Percentile Inbound
 //* Average Response Time: Outbound, Grouped by Endpoint Outbound
 | *Failures* a|
 
-* Total failed inbound requests
-* Total failed outbound requests
-* All inbound requests grouped by response type
-* All outbound requests grouped by response type
-* Failed inbound requests: Response time by endpoint
-* Total failed inbound requests grouped by endpoint
-* Failed outbound requests: Response time by HTTP endpoint (only HTTP endpoints are shown)
-* Total failed outbound requests grouped by HTTP endpoint (only HTTP endpoints are shown)
+* Total Failed Inbound Requests
+* Total Failed Outbound Requests
+* All Inbound Requests grouped by response type
+* All Outbound Requests grouped by response type
+* Failed Inbound Requests: Response time by endpoint
+* Total Failed Inbound Requests grouped by endpoint
+* Failed Outbound Requests: Response time by HTTP endpoint (only HTTP endpoints are shown)
+* Total Failed Outbound Requests grouped by HTTP endpoint (only HTTP endpoints are shown)
 | *JVM* a|
 
 * Garbage collection count, Garbage collection time
