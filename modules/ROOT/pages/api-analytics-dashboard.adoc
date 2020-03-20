@@ -108,21 +108,6 @@ Requests by Request Size:: The sum of requests in the selected time period, grou
 
 Requests by Response Size:: The sum of requests in the selected time period, grouped by response size. Data is aggregated in one minute increments.
 
-[[policies-charts]]
-=== Policies Charts
-
-The following charts appear on the *Policies* dashboard:
-
-Requests:: The sum of requests of policy violations in the selected time period, grouped by the top N paths. By default, N is 100.
-+
-* If you select a time range within the last hour, data is aggregated in one minute increments.
-* If you select a time range within the last day, data is aggregated in ten minute increments.
-* If you select a time range that is larger than one day, data is aggregated in one hour increments.
-
-Policy Violations by Outcome:: The sum of requests of policy violations in the selected time period, grouped by outcome. Data is aggregated in one minute increments.
-
-Policy Violations by Violation ID:: The sum of requests of policy violations in the selected time period, grouped by policy violation ID. Data is aggregated in one minute increments.
-
 [[failures-charts]]
 === Failures Charts
 
