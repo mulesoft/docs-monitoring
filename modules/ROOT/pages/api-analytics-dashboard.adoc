@@ -49,12 +49,6 @@ API analytics dashboards include various pages to view different types of charts
 * Requests by Request Size
 * Requests by Response Size
 
-| <<policies-charts>> a|
-
-* Requests
-* Policy Violations by Outcome
-* Policy Violations by Violation ID
-
 | <<failures-charts>> a|
 
 * Failures
