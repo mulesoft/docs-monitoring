@@ -1,99 +1,254 @@
-= API Analytics Dashboard
+= API Analytics Dashboards
 
-The API Analytics dashboard provides charts to monitor API usage, which gives you insight into how your APIs are used and how they are performing.
+The API analytics dashboards provide charts to monitor API usage, which gives you insight into how your APIs are used and how they are performing.
+
+The API analytics dashboard includes two views: enhanced metrics and basic metrics.
+The enhanced metrics view includes detailed information about your APIs, and charts are sorted into dashboards based on the type of data displayed. Currently, enhanced metrics are available if you are using Mule runtime engine version 3.9.3, 3.9.4, 4.2.1, or 4.2.2.
+To get the most out of Anypoint Monitoring, use the enhanced metrics view to see information related to your APIs.
+
+By default, the enhanced metrics view is selected. To switch views, select *Switch to classic metrics*. From the classic metrics view, select *Show new metrics view*.
 
 [NOTE]
-For Gold and Platinum subscriptions to Anypoint Monitoring, API analytics data are retained for 90 days.
+For Gold and Platinum subscriptions, Anypoint Monitoring retains API analytics data for 90 days.
 
 == View the API Analytics Dashboard
 
 . Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
-. Select the Environment, Resource name, and Version/Instance for the API to view.
+. Select the *Environment*, *Resource name*, and *Version/Instance* for the API to view.
 . Click *View*. +
-The API analytics page is displayed, where you can view information about a running, managed API, including: +
-* Requests
-* Requests by HTTP response code
-* Requests by method
-* Requests (Avg), Average Size of Requests, and Average Size of Responses
-* Requests by HTTP policy violation
-* Requests by failure
+On the API analytics page, you can view information about a running, managed API. +
 +
-image::monitoring-api-analytics-top.png[]
-+
-image::monitoring-api-analytics-bottom.png[]
 +
 . Select the date and time range you want to view statistics for and click *Confirm*. +
 The details panel at the top of the page displays information about the API.
 +
 image::api-analytics-detail-panel.png[]
 +
-You can click the *View API in API Manager* link to view API analytics in API Manager.
+. If you want to view API analytics in API Manager, click the *View API in API Manager* link.
 
-== Requests
+== Enhanced Metrics View for API Analytics Dashboards
+
+API analytics dashboards include various pages to view different types of charts:
+
+[%header,cols="1,4"]
+|===
+| API Analytics Dashboards | Charts
+
+| <<overview-charts>> a|
+
+* Request Volume
+* Failed Requests
+* Policy Violations
+* Average Response Time
+
+| <<requests-charts>> a|
+
+* Requests
+* Requests by Method
+* Requests by Response Code
+* Requests by Request Size
+* Requests by Response Size
+
+| <<failures-charts>> a|
+
+* Failures
+* Failures by Method
+* Requests by Response Code
+* Requests by Request Size
+* Requests by Response Size
+
+| <<performance-charts>> a|
+
+* Requests by Performance (line chart)
+* Requests by Performance (table)
+* Slow Requests (requires Titanium)
+
+| <<client-applications-charts>> a|
+
+* Requests by Client ID
+* Requests by Client IP
+
+|===
+
+[[overview-charts]]
+=== Overview Charts
+
+The following charts appear on the *Overview* dashboard:
+
+Request Volume:: The sum of requests in the selected time period for the given API. Data is aggregated in one minute increments.
+
+Failed Requests:: The sum of failed requests in the selected time period for the given API. Data is aggregated in one minute increments.
+
+Policy Violations:: The sum of requests for policy violations in the selected time period, grouped by policy violation ID. Data is aggregated in one minute increments.
+
+Average Response Time:: The average response time of requests in the selected time period for the given API. Data is aggregated in one minute increments.
+
+[[requests-charts]]
+=== Requests Charts
+
+The following charts appear on the *Requests* dashboard:
+
+Requests:: The sum of requests in the selected time period, grouped by the top N paths. By default, N is 100.
++
+* If you select a time range within the last hour, data is aggregated in one minute increments.
+* If you select a time range within the last day, data is aggregated in ten minute increments.
+* If you select a time range that is larger than one day, data is aggregated in one hour increments.
+
+Requests by Method:: The sum of requests in the selected time period, grouped by method. Data is aggregated in one minute increments.
+
+Requests by Response Code:: The sum of requests in the selected time period, grouped by response code. Data is aggregated in one minute increments.
+
+Requests by Request Size:: The sum of requests in the selected time period, grouped by request size. Data is aggregated in one minute increments.
+
+Requests by Response Size:: The sum of requests in the selected time period, grouped by response size. Data is aggregated in one minute increments.
+
+[[failures-charts]]
+=== Failures Charts
+
+The following charts appear on the *Failures* dashboard:
+
+Failures:: The sum of failed requests in the selected time period, grouped by the top N paths. By default, N is 100.
++
+* If you select a time range within the last hour, data is aggregated in one minute increments.
+* If you select a time range within the last day, data is aggregated in ten minute increments.
+* If you select a time range that is larger than one day, data is aggregated in one hour increments.
+
+Failures by Method:: The sum of failed requests in the selected time period, grouped by method. Data is aggregated in one minute increments.
+
+Requests by Response Code:: The sum of failed requests in the selected time period, grouped by response code. Data is aggregated in one minute increments.
+
+Requests by Request Size:: The sum of failed requests in the selected time period, grouped by request size. Data is aggregated in one minute increments.
+
+Requests by Response Size:: The sum of failed requests in the selected time period, grouped by response size. Data is aggregated in one minute increments.
+
+[[performance-charts]]
+=== Performance Charts
+
+The following charts appear on the *Performance* dashboard:
+
+Requests by Performance (line chart):: The average request response times, grouped by path.
++
+* If you select a time range within the last hour, data is aggregated in one minute increments.
+* If you select a time range within the last day, data is aggregated in ten minute increments.
+* If you select a time range that is larger than one day, data is aggregated in one hour increments.
+
+Requests by Performance (table):: The average request response times, grouped by path.
++
+* If you select a time range within the last hour, data is aggregated in one minute increments.
+* If you select a time range within the last day, data is aggregated in ten minute increments.
+* If you select a time range that is larger than one day, data is aggregated in one hour increments.
+
+Slow Requests:: The average response times that are greater than one second, grouped by path. This chart is available only for Titanium users.
++
+* If you select a time range within the last hour, data is aggregated in one minute increments.
+* If you select a time range within the last day, data is aggregated in ten minute increments.
+* If you select a time range that is larger than one day, data is aggregated in one hour increments.
+
+[[client-applications-charts]]
+=== Client Applications Charts
+
+The following charts appear on the *Client Applications* dashboards:
+
+Requests by Client ID:: The sum of requests in the period, grouped by client ID. Data is aggregated in one minute increments.
+
+Requests by Client IP:: The sum of requests in the period, grouped by client IP address.
++
+* If you select a time range within the last hour, data is aggregated in one minute increments.
+* If you select a time range within the last day, data is aggregated in ten minute increments.
+* If you select a time range that is larger than one day, data is aggregated in one hour increments.
+
+== Basic Metrics View
+
+
+The following charts are available in the *Overview* section of built-in dashboards for APIs:
+
+* Requests
+* Requests by HTTP response code
+* Requests by method
+* Requests (Avg), Average Size of Requests, and Average Size of Responses
+* Requests by HTTP policy violation
+* Requests by failure
+
+=== Requests
 
 You can view the metrics for how many times the particular instance of this API was requested over the specified period of time. Hover over the graph to display data in a more granular view.
 
 image::api-request-by-instance.png[]
 
-== Requests by HTTP Response Code
+=== Requests by HTTP Response Code
 
 Displays data about the API instance's total number of requests by HTTP response code for the time period you specified, including:
 
-* Status Code - HTTP response code for the API call.
-* Sum - Total number of requests with the corresponding response code.
+Status Code:: HTTP response code for the API call.
+
+Sum:: Total number of requests with the corresponding response code.
 
 Click the column header to sort data for that column.
 
 image::api-requests-by-http-response.png[]
 
-== Requests by Method
+=== Requests by Method
 
 Displays metrics about the API's requests by method, including:
 
-* Method - The method used to call the API.
-* Avg - The average of all the non-null values in the series.
-* Min - The smallest value in the series.
-* Max - The largest value in the series.
-* Total - The sum of all values in the series.
+Method:: The method used to call the API.
+
+Avg:: The average of all the non-null values in the series.
+
+Min:: The smallest value in the series.
+
+Max:: The largest value in the series.
+
+Total:: The sum of all values in the series.
 
 Click the column header to sort data for that column.
 
 image::api-request-by-method.png[]
 
-== Requests, Average Size of Requests, and Average Size of Responses
+=== Requests, Average Size of Requests, and Average Size of Responses
 
-Displays metrics according to the API's request and response sizes:
+Displays metrics according to the API's request and response sizes, including:
 
-* Requests (Avg) - Average number of requests per minute
-* Average Size of Requests - Average size of requests per minute (bytes)
-* Average Size of Responses - Average size of responses per minute (bytes)
+Requests (Avg):: Average number of requests per minute.
+
+Average Size of Requests:: Average size of requests per minute (bytes).
+
+Average Size of Responses:: Average size of responses per minute (bytes).
 
 image::api-request-by-request-and-response-size.png[]
 
-== Requests by HTTP Policy Violation
+=== Requests by HTTP Policy Violation
 
 Displays metrics for traffic that was rejected or not rejected for the specified policy, including:
 
-* Policy - The name of the policy applied to the API instance.
-* Avg - The average of all the non-null values in the series.
-* Min - The smallest value in the series.
-* Max - The largest value in the series.
-* Total - The sum of all values in the series.
+Policy:: The name of the policy applied to the API instance.
+
+Avg:: The average of all the non-null values in the series.
+
+Min:: The smallest value in the series.
+
+Max:: The largest value in the series.
+
+Total:: The sum of all values in the series.
 
 Click the column header to sort data for that column.
 
 image::api-request-by-http-policy-violation.png[]
 
 
-== Requests by Failures
+=== Requests by Failures
 
 Displays information about failed requests to the API, including:
 
-* Error code - The HTTP error code corresponding the failure type.
-* Avg - The average of all the non-null values in the series.
-* Min - The smallest value in the series.
-* Max - The largest value in the series.
-* Total - The sum of all values in the series.
+Error code:: The HTTP error code corresponding the failure type.
+
+Avg:: The average of all the non-null values in the series.
+
+Min:: The smallest value in the series.
+
+Max:: The largest value in the series.
+
+Total:: The sum of all values in the series.
 
 Click the column header to sort data for that column.
 
