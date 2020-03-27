@@ -280,46 +280,50 @@ The sum of outbound requests, grouped by remote hosts (endpoints) in automatic i
 The following charts appear on the *Flows* dashboard:
 
 Inbound Response Time by Flow::
-The average inbound response time.
+The average inbound response time, grouped by flow.
 
 Outbound Response Time by Flow::
-The average outbound response time.
+The average outbound response time, grouped by flow.
 
 Inbound Request Volume by Flow::
-The average number of inbound requests.
+The average number of inbound requests, grouped by flow.
 
 Outbound Request Volume by Flow::
-The average number of outbound requests.
+The average number of outbound requests, grouped by flow.
 
-Failures by Flow::
-The average number of failed inbound requests.
+Inbound Failures by Flow::
+The average number of failed inbound requests, grouped by flow.
+
+// tbd
 
 Slow Inbound Requests by Flow::
-The average number of inbound requests whose response time is greater than 1000 ms.
+The average number of inbound requests whose response time is greater than 1000 ms, grouped by flow.
 
 Slow Outbound Requests by Flow::
-The average number of outbound requests whose response time is greater than 1000 ms.
+The average number of outbound requests whose response time is greater than 1000 ms, grouped by flow.
 
 Inbound Response Time by Flow::
-The average, minimum, and maximum inbound response time.
+The average, minimum, and maximum inbound response time, grouped by flow.
 
 Outbound Response Time by Flow::
-The average, minimum, and maximum outbound response time.
+The average, minimum, and maximum outbound response time, grouped by flow.
 
-Inbound Request Volume by Flow::
-The average number of inbound requests.
+Inbound Requests by Flow::
+The average number of inbound requests, grouped by flow.
 
-Outbound Request Volume by Flow::
-The average number of outbound requests.
+Outbound Requests by Flow::
+The average number of outbound requests, grouped by flow.
 
-Failures by Flow::
-The average number of inbound failed requests
+Outbound Failures by Flow::
+The average number of inbound failed requests, grouped by flow.
+
+// tbd
 
 Slow Inbound Requests by Flow::
-The average number of inbound requests whose response time is greater than 1000 ms
+The average number of inbound requests whose response time is greater than 1000 ms, grouped by flow.
 
 Slow Outbound Requests by Flow::
-The average number of outbound requests whose response time is greater than 1000 ms
+The average number of outbound requests whose response time is greater than 1000 ms, grouped by flow.
 
 [[connectors-charts]]
 == Connectors
