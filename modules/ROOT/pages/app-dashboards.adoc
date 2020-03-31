@@ -291,10 +291,9 @@ The average number of inbound requests, grouped by flow.
 Outbound Request Volume by Flow::
 The average number of outbound requests, grouped by flow.
 
-Inbound Failures by Flow::
+Failures by Flow::
 The average number of failed inbound requests, grouped by flow.
-
-// tbd
+//tbd?
 
 Slow Inbound Requests by Flow::
 The average number of inbound requests whose response time is greater than 1000 ms, grouped by flow.
@@ -314,10 +313,9 @@ The average number of inbound requests, grouped by flow.
 Outbound Requests by Flow::
 The average number of outbound requests, grouped by flow.
 
-Outbound Failures by Flow::
+Failures by Flow::
 The average number of inbound failed requests, grouped by flow.
-
-// tbd
+//tbd?
 
 Slow Inbound Requests by Flow::
 The average number of inbound requests whose response time is greater than 1000 ms, grouped by flow.
