@@ -12,7 +12,7 @@ From any of the *Reports* tabs, you can:
 
 * View these reports:
 ** All deployment types provide *Requests* reports, *Performance* reports, and *Failures* reports.
-** CPU Utilization reports and Memory Utilization reports are available only for CloudHub deployments.
+** CloudHub deployments provide *CPU Utilization* reports and *Memory Utilization* reports.
 * Switch environments.
 * Select a time range for which to view the reports.
 * Click an app in the list to go to its built-in dashboard.
