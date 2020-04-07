@@ -11,7 +11,7 @@ Reports allow you to view a list of apps running in an environment. The reports 
 From any of the *Reports* tabs, you can:
 
 * View these reports:
-** Requests reports, Performance reports, and Failures reports are available for all deployment types.
+** All deployment types provide *Requests* reports, *Performance* reports, and *Failures* reports.
 ** CPU Utilization reports and Memory Utilization reports are available only for CloudHub deployments.
 * Switch environments.
 * Select a time range for which to view the reports.
