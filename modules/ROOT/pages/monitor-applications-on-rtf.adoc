@@ -16,4 +16,4 @@ Follow the instructions for xref:1.3@runtime-fabric::install-create-rtf-arm.adoc
 
 === See Also
 
-xref:1.3@runtime-fabric::manage-monitor-applications.adoc[Monitoring Applications Deployed to Runtime Fabric].
+xref:latest@runtime-fabric::manage-monitor-applications.adoc[Monitoring Applications Deployed to Runtime Fabric].
