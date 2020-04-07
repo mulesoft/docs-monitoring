@@ -19,7 +19,7 @@ Follow these steps to save a built-in dashboard as a custom dashboard.
 The name for your new custom dashboard must be unique.
 
 A green confirmation banner appears in the top of the screen. 
-. Click the *View in custom dashboards* link in the green confirmation banner to see the new custom dashboard, with the name you entered, in the list of custom dashboards. +
+Click the *View in custom dashboards* link in the green confirmation banner to see the new custom dashboard, with the name you entered, in the list of custom dashboards. +
 The banner disappears after a moment. If you didn't click the link in the banner, you can click *Custom dashboards* in the menu on the left to go to the list of custom dashboards. +
 You can now configure your custom dashboard. 
 
