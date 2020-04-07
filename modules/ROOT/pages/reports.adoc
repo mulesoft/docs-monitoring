@@ -6,11 +6,13 @@ endif::[]
 *https://www.mulesoft.com/anypoint-pricing[This feature requires a Titanium subscription.]*
 
 == About Reports
-Reports allow you to view a list of all the CloudHub apps running in an environment. The reports display information about overall performance and behavior across all the apps in the environment. These reports can help you identify app performance and availability problems across the environment so you can better maintain the expected level of service for your apps.
+Reports allow you to view a list apps of running in an environment. The reports display information about overall performance and behavior across all the apps in the environment. These reports can help you identify app performance and availability problems across the environment so you can better maintain the expected level of service for your apps.
 
 From any of the *Reports* tabs, you can:
 
-* Navigate to reports that display information about requests, performance, failures, and CPU and memory utilization.
+* Navigate to reports that display information:
+** Requests reports, Performance reports, and Failures reports are available for all deployment types.
+** CPU Utilization reports and Memory Utilization reports are available only for CloudHub deployments.
 * Switch environments.
 * Select a time range for which to view the reports.
 * Click an app in the list to go to its built-in dashboard.
