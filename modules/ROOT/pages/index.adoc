@@ -56,7 +56,6 @@ Limits on data storage and retention are determined by your subscription level (
 The Titanium subscription:
 
 * Significantly increases the storage per vCore over the Base subscription.
-* Provides a way for you to specify your data retention policy.
 * Lets you store log and metric data in a selected geographic region, which can help you to meet data security and compliance requirements, run queries over geo-distributed runtimes without consequence, and limit the distance that your data travels when you run queries. These regions are available:
 ** US East (N. Virginia)
 ** EU (Frankfurt)
