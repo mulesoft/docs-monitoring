@@ -40,7 +40,7 @@ Built-in dashboards include various pages to view different types of charts:
 
 * Inbound - Total Requests by Response Type
 * Inbound - Average Response Time
-* Inbound - Mule messages
+* Mule messages
 * Outbound - Total Requests by Response Type
 * Outbound - Average Response Time
 * JVM - CPU utilization
