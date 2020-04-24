@@ -1,10 +1,10 @@
 = Anypoint Monitoring Log Points
 
-The Log Points feature in Anypoint Monitoring allows you to generate logs for apps and APIs in real-time and without writing code. For apps, you can specify the level of logs you want to generate, and for APIs, you can specify properties for the logs. This allows you to extract logs on-demand from applications in real-time, without causing re-deployment or application downtime. Permissions control allows you to manage access. All logs seamlessly flow into log management
+The Log Points feature in Anypoint Monitoring allows you to generate logs for apps and APIs in real-time and without writing code. For apps, you can specify the level of logs you want to generate, and for APIs, you can specify properties for the logs. This allows you to extract logs on-demand from applications in real-time, without causing re-deployment or application downtime. Permissions control allows you to manage access. All logs seamlessly flow into log management.
 
 == Log Points for Apps
 
-The Log Points feature for apps enables you to log information from connectors in any Mule app in real-time. If you are using one of the supported connectors, you can select a log level (debug, info, warn, or error) and generate logs.
+The Application Log Points feature enables you to log information from connectors in any Mule app in real-time. If you are using one of the supported connectors, you can select a log level (debug, info, warn, or error) and generate logs.
 
 === Prerequisites
 
@@ -105,9 +105,9 @@ The following Anypoint Connectors are available for use with the Log Points feat
 * Mule 4 versions 4.1.1 and later
 
 
-=== Enable App Log Points
+=== Enable Application Log Points
 
-. Log in to Anypoint Platform and navigate to Anypoint Monitoring. 
+. Log in to Anypoint Platform and navigate to Anypoint Monitoring.
 . In the Anypoint Monitoring navigation menu, click *Log Points*.
 . Select the following: +
 * *Environment*: The environment in which the app is running.
