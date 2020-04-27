@@ -101,8 +101,42 @@ The following charts are available only if you are using Unified Agent and have 
 If you don't see the *Flows* tab, verify that you are using Unified Agent and have a Titanium subscription to Anypoint Platform.
 | <<connectors-charts>> a|
 
-* Connector Message Volume
+Connector Message Volume
+
 * Response Time by Connector
+* Salesforce Requests
+* Salesforce Response Time
+* Salesforce Failures
+* Database Requests
+* Database Response Time
+* Database Failures
+* HTTP Requests
+* HTTP Response Time
+* HTTP Failures
+* Web Services Requests
+* Web Services Response Time
+* Web Services Failures
+* FTP Requests
+* FTP Response Time
+* FTP Failures
+* SFTP Requests
+* SFTP Response Time
+* SFTP Failures
+* SMTP Requests
+* SMTP Response Time
+* SMTP Failures
+* Object Store Requests
+* Object Store Response Time
+* Object Store Failures
+* Anypoint MQ Operations - Inbound
+* Anypoint MQ Response Time - Inbound
+* Anypoint MQ Failures - Inbound
+* Anypoint MQ Operations - Outbound
+* Anypoint MQ Response Time - Outbound
+* Anypoint MQ Failures - Outbound
+* Other Connector Requests
+* Other Connector Response Time
+* Other Connector Failures
 
 If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
 | <<performance-charts>>* a|
@@ -334,6 +368,63 @@ The number of outbound messages and number of outbound requests.
 Response Time by Connector::
 The average outbound response time.
 
+// all
+
+Connector Message Volume::
+
+Response Time by Connector::
+
+Salesforce Requests::
+
+Salesforce Response Time::
+
+Salesforce Failures::
+
+Database Requests::
+
+Database Response Time::
+
+Database Failures::
+
+HTTP Requests::
+
+HTTP Response Time::
+
+HTTP Failures::
+
+Web Services Requests::
+
+Web Services Response Time::
+
+Web Services Failures::
+
+FTP Requests::
+
+FTP Response Time::
+
+FTP Failures::
+
+SFTP Requests::
+
+SFTP Response Time::
+
+SFTP Failures
+SMTP Requests
+SMTP Response Time
+SMTP Failures
+Object Store Requests
+Object Store Response Time
+Object Store Failures
+Anypoint MQ Operations - Inbound
+Anypoint MQ Response Time - Inbound
+Anypoint MQ Failures - Inbound
+Anypoint MQ Operations - Outbound
+Anypoint MQ Response Time - Outbound
+Anypoint MQ Failures - Outbound
+Other Connector Requests
+Other Connector Response Time
+Other Connector Failures
+
 If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
 
 [[performance-charts]]
@@ -365,18 +456,18 @@ Total Failed Inbound Requests::
 
 Total Failed Outbound Requests::
 
-All Inbound Requests grouped by response type::
+Total Inbound Requests by Response Type::
 
-All Outbound Requests grouped by response type::
+Total Outbound Requests by Response Type::
 
-Failed Inbound Requests: Response time by endpoint::
+Failed Inbound Requests: Response Time by Endpoint::
 
-Total Failed Inbound Requests grouped by endpoint::
+Total Failed Inbound Requests by Endpoint::
 
-Failed Outbound Requests: Response time by HTTP endpoint::
+Failed Outbound Requests: Response Time by HTTP endpoint::
 (only HTTP endpoints are shown)
 
-Total Failed Outbound Requests grouped by HTTP endpoint::
+Total Failed Outbound Requests by HTTP Endpoint::
 (only HTTP endpoints are shown)
 
 [[jvm-charts]]
@@ -445,11 +536,11 @@ The following charts appear on the *Infrastructure* dashboard:
 Application Process CPU Load::
 The amount of CPU load the JVM uses.
 
-Application Process CPU Minutes::
-CPU time used by the process on which the JVM is running.
+JVM CPU Time::
+The cumulative CPU time consumed by the JVM.
 
 Operating System Swap Space::
-The amount of memory the system is swapping.
+The amount of memory the system is swapping, grouped by worker in automatic intervals.
 
 CPU Utilization %::
 The percentage of CPU used by each worker over time.
