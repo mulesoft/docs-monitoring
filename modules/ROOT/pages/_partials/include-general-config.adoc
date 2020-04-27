@@ -87,8 +87,6 @@ Supports conditional logic for filtering the *From* data source you selected.
  ** `<>` The value is not equal to.
  ** `<` The value on the left is less than the value on the right. 
  ** `>` The value on the left is greater than the value on the right.
- ** `=&#8764;` Matches against the value in a regular expression, using `WHERE`.
- ** `!&#8764;` Does not match against the value in a regular expression.
 * You can also construct a query that contains multiple filtering expressions by using logical `AND` or `OR` operators between the expressions. +
 Example: `Where env_id = Sandbox`
 | Select a|
