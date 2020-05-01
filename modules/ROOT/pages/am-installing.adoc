@@ -14,10 +14,10 @@ If you have an outbound firewall, open ports 443 and 5044.
 Outbound connections are made to the following endpoints:
 
 * US Control Plane
-** arm-auth-proxy.prod.cloudhub.io:443
+** data-authenticator.anypoint.mulesoft.com:443
 ** dias-ingestor-nginx.prod.cloudhub.io:5044
 * EU Control Plane
-** arm-auth-proxy.prod-eu.msap.io:443
+** data-authenticator.eu1.anypoint.mulesoft.com:443
 ** dias-ingestor-nginx.prod-eu.msap.io:5044
 
 == Supported Operating Systems
