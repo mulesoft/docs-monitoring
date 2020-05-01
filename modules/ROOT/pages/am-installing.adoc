@@ -119,8 +119,9 @@ If you are using Linux and the Anypoint Monitoring agent is running as a service
 
 == Update the Anypoint Monitoring Agent
 
-If you need to update the Anypoint Monitoring agent at some point in the future, follow these steps.
+When you upgrade the Runtime Manager agent, you must reinstall the Anypoint Monitoring agent.
 
+If you need to update the Anypoint Monitoring agent at some point in the future, follow these steps.
 . Stop Mule.
 . In the `am` folder, run the following command: +
 `./bin/uninstall`
