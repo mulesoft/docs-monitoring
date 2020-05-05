@@ -360,87 +360,114 @@ The average number of outbound requests whose response time is greater than 1000
 [[connectors-charts]]
 == Connectors
 
+If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
+
 The following charts appear on the *Connectors* dashboard:
 
 Connector Message Volume::
-The number of outbound messages and number of outbound requests.
+The sum of outbound messages and outbound requests grouped by connector type in automatic intervals.
 
 Response Time by Connector::
-The average outbound response time.
-
-// all
-
-Connector Message Volume::
-
-Response Time by Connector::
+The average outbound response time grouped by connector type in automatic intervals.
 
 Salesforce Requests::
+The average number of Salesforce connector requests, grouped by operation in automatic intervals.
 
 Salesforce Response Time::
+The average response time of Saleforce connector requests, grouped by connector type in automatic intervals.
 
 Salesforce Failures::
+The average number of Salesforce connector requests failures, grouped by operation in automatic intervals.
 
 Database Requests::
+The average number of Database connector requests, grouped by operation in automatic intervals.
 
 Database Response Time::
+The average response time of Database connector requests, grouped by connector type in automatic intervals.
 
 Database Failures::
+The average number of Database connector requests failures, grouped by operation in automatic intervals.
 
 HTTP Requests::
+The average number of HTTP connector requests, grouped by operation in automatic intervals.
 
 HTTP Response Time::
+The average response time of HTTP connector requests, grouped by connector type in automatic intervals.
 
 HTTP Failures::
+The average number of HTTP connector requests failures, grouped by operation in automatic intervals.
 
 Web Services Requests::
+The average number of Web Services connector requests, grouped by operation in automatic intervals.
 
 Web Services Response Time::
+The average number of Web Services connector request failures, grouped by operation in automatic intervals.
 
 Web Services Failures::
+The average response time of Web Services connector requests, grouped by connector type in automatic intervals.
 
 FTP Requests::
+The average number of FTP connector requests, grouped by operation in automatic intervals.
 
 FTP Response Time::
+The average response time of FTP connector requests, grouped by connector type in automatic intervals.
 
 FTP Failures::
+The average number of FTP connector request failures, grouped by operation in automatic intervals.
 
 SFTP Requests::
+The average number of SFTP connector requests, grouped by operation in automatic intervals.
 
 SFTP Response Time::
+The average response time of SFTP connector requests, grouped by connector type in automatic intervals.
 
 SFTP Failures::
+The average number of SFTP connector request failures, grouped by operation in automatic intervals.
 
 SMTP Requests::
+The average number of SMTP connector requests, grouped by operation in automatic intervals.
 
 SMTP Response Time::
+The average response time of SMTP connector requests, grouped by connector type in automatic intervals.
 
 SMTP Failures::
+The average number of SMTP connector request failures, grouped by operation in automatic intervals.
 
 Object Store Requests::
+The average response time of Object Store connector requests, grouped by operation and automatic intervals.
 
 Object Store Response Time::
+The average number of Object Store connector request failures, grouped by operation and automatic intervals.
 
 Object Store Failures::
+The average number of Anypoint MQ connector inbound requests, grouped by operation and automatic intervals.
 
 Anypoint MQ Operations - Inbound::
+The average response time of Anypoint MQ connector inbound requests, grouped by operation and automatic intervals.
 
 Anypoint MQ Response Time - Inbound::
+The average number of Anypoint MQ connector inbound request failures, grouped by operation and automatic intervals.
 
 Anypoint MQ Failures - Inbound::
+The average number of Anypoint MQ connector outbound requests, grouped by operation and automatic intervals.
 
 Anypoint MQ Operations - Outbound::
+The average response time of Anypoint MQ connector outbound requests, grouped by operation and automatic intervals.
 
 Anypoint MQ Response Time - Outbound::
+The average number of Anypoint MQ connector outbound request failures, grouped by operation and automatic intervals.
 
 Anypoint MQ Failures - Outbound::
+The average number of requests of connectors of type other, grouped by connector type in automatic intervals.
 
 Other Connector Requests::
+The average number of requests of connectors of type other, grouped by connector type in automatic intervals.
 
 Other Connector Response Time::
+The average response time of requests for connectors of type other, grouped by connector type in automatic intervals.
 
 Other Connector Failures::
-
-If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
+The average number of requests failures of connectors of type other, grouped by connector type in automatic intervals.
 
 [[performance-charts]]
 == Performance
