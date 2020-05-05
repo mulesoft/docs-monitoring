@@ -152,12 +152,12 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 
 * Total Failed Inbound Requests
 * Total Failed Outbound Requests
-* All Inbound Requests grouped by response type
-* All Outbound Requests grouped by response type
-* Failed Inbound Requests: Response time by endpoint
-* Total Failed Inbound Requests grouped by endpoint
-* Failed Outbound Requests: Response time by HTTP endpoint (only HTTP endpoints are shown)
-* Total Failed Outbound Requests grouped by HTTP endpoint (only HTTP endpoints are shown)
+* All Inbound Requests Grouped by Response Type
+* All Outbound Requests Grouped by Response Type
+* Failed Inbound Requests: Response Time by Endpoint
+* Total Failed Inbound Requests Grouped by Endpoint
+* Failed Outbound Requests: Response Time by HTTP Endpoint
+* Total Failed Outbound Requests Grouped by HTTP Endpoint
 | <<jvm-charts>> a|
 
 * Garbage collection count, Garbage collection time
@@ -408,22 +408,37 @@ SFTP Requests::
 
 SFTP Response Time::
 
-SFTP Failures
-SMTP Requests
-SMTP Response Time
-SMTP Failures
-Object Store Requests
-Object Store Response Time
-Object Store Failures
-Anypoint MQ Operations - Inbound
-Anypoint MQ Response Time - Inbound
-Anypoint MQ Failures - Inbound
-Anypoint MQ Operations - Outbound
-Anypoint MQ Response Time - Outbound
-Anypoint MQ Failures - Outbound
-Other Connector Requests
-Other Connector Response Time
-Other Connector Failures
+SFTP Failures::
+
+SMTP Requests::
+
+SMTP Response Time::
+
+SMTP Failures::
+
+Object Store Requests::
+
+Object Store Response Time::
+
+Object Store Failures::
+
+Anypoint MQ Operations - Inbound::
+
+Anypoint MQ Response Time - Inbound::
+
+Anypoint MQ Failures - Inbound::
+
+Anypoint MQ Operations - Outbound::
+
+Anypoint MQ Response Time - Outbound::
+
+Anypoint MQ Failures - Outbound::
+
+Other Connector Requests::
+
+Other Connector Response Time::
+
+Other Connector Failures::
 
 If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
 
@@ -433,19 +448,31 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 The following charts appear on the *Performance* dashboard:
 
 Average Response Time - Inbound::
+The average response time of inbound requests, grouped by application in automatic intervals.
 
 Average Response Time Grouped by Endpoint - Inbound::
+The average, maximum, and minimum response times, grouped by endpoint. Cells will vary in color according to the following thresholds:
+* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
+* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than 500ms.
+* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
 
 Mule Messages::
+The number of Mule Messages processed in the runtime, grouped by application in automatic intervals.
 
 Response Time graphs: 99, 90, 75, and 50 percentile - Inbound::
+The response time of the 99th, 90th, 75th, and 50th percentile of inbound requests, grouped by application in automatic intervals.
 
 Average Response Time  - Outbound::
+The average response time of outbound requests, grouped by application in automatic intervals.
 
-Average Response Time Grouped by Endpoint - Outbound::
+Average Response Time Grouped by HTTP Endpoint - Outbound::
+The average, maximum, and minimum response times, grouped by endpoint. Cells will vary in color according to the following thresholds:
+* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
+* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than 500ms.
+* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
 
 Response Time graphs: 99, 90, 75, and 50 percentile - Outbound::
-Insert text here
+The response time of the 99th, 90th, 75th, and 50th percentile of outbound requests, grouped by application in automatic intervals.
 
 [[failures-charts]]
 == Failures
@@ -453,41 +480,60 @@ Insert text here
 The following charts appear on the *Failures* dashboard:
 
 Total Failed Inbound Requests::
+The sum of failed inbound requests in the period, grouped by application in automatic intervals.
 
 Total Failed Outbound Requests::
+The sum of failed outbound requests in the period, grouped by application in automatic intervals.
 
 Total Inbound Requests by Response Type::
+The sum of inbound requests, grouped by type of response and automatic interval.
 
 Total Outbound Requests by Response Type::
+The sum of inbound requests, grouped by type of response and automatic interval.
 
 Failed Inbound Requests: Response Time by Endpoint::
+The average, maximum, and minimum response times of failed inbound requests, grouped by endpoint. Cells will vary in color according to the following thresholds:
+* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
+* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than 500ms.
+* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
 
 Total Failed Inbound Requests by Endpoint::
+The sum of failed inbound requests, grouped by endpoint.
 
 Failed Outbound Requests: Response Time by HTTP endpoint::
-(only HTTP endpoints are shown)
+The average, maximum, and minimum response times of failed outbound requests, grouped by endpoint. Cells will vary in color according to the following thresholds:
+* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
+* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than 500ms.
+* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
 
 Total Failed Outbound Requests by HTTP Endpoint::
-(only HTTP endpoints are shown)
+The sum of failed outbound requests, grouped by endpoint.
 
 [[jvm-charts]]
 == JVM
 
 The following charts appear on the *JVM* dashboard:
 
-Garbage collection count::
+Garbage Collection Count::
+The number of collections that have occurred, grouped by worker in automatic intervals.
 
-Garbage collection time::
+Garbage Collection Time::
+The approximate accumulated collection elapsed time in milliseconds, grouped by type of response in automatic intervals.
 
-Par new collection count::
+Par New Collection Count::
+The number of collections for Parnew GC, grouped by type of response in automatic intervals.
 
-Par new collection time::
+Par New Collection Time::
+The approximate accumulated Parnew collection elapsed time in milliseconds, grouped by type of response in automatic intervals.
 
 Classes Loaded::
+The number of currently loaded classes, grouped by type of response in automatic intervals.
 
 Classes Loaded Total::
+The number of classes loaded since JVM start, grouped by type of response in automatic intervals.
 
 Classes Unloaded::
+The number of classes unloaded since JVM start, grouped by type of response in automatic intervals.
 
 Heap Committed::
 The amount of heap memory committed by the JVM, grouped by type of response in automatic intervals.
@@ -501,17 +547,8 @@ The number of simultaneous requests.
 JVM Uptime::
 The time since JVM started, grouped by type of response in automatic intervals.
 
-Par Eden Used::
-The used “Eden Space” JVM Memory, grouped by type of response in automatic intervals.
-
-Par Eden Maximum::
-The maximum “Eden Space” JVM Memory, grouped by type of response in automatic intervals.
-
-Par Eden Init::
-The init “Eden Space” JVM Memory, grouped by type of response in automatic intervals.
-
-Par Eden Committed::
-The used “Eden Space” JVM Memory, grouped by type of response in automatic intervals.
+Par Eden graphs (Used, Max, Init, and Committed)::
+The usage metrics for “Eden Space” JVM Memory, grouped by type of response in automatic intervals.
 
 Par Survivor graphs (Used, Max, Init, and Committed)::
 The usage metrics for the Par Eden Space pool.
