@@ -40,7 +40,7 @@ Built-in dashboards include various pages to view different types of charts:
 
 * Inbound - Total Requests by Response Type
 * Inbound - Average Response Time
-* Mule messages
+* Mule Messages
 * Outbound - Total Requests by Response Type
 * Outbound - Average Response Time
 * JVM - CPU utilization
@@ -51,12 +51,13 @@ Built-in dashboards include various pages to view different types of charts:
 
 * Total Inbound Requests by Response Type
 * Average Response Time
-* Average Response Time by Endpoint
+* Response Time by Endpoint
 * Total Requests by Endpoint
-* Response Time graphs (99, 90, 75, and 50 percentile inbound)
+* Response Time graphs (99, 90, 75, and 50 percentile)
 * Maximum Response Time
 * Total Failed Inbound Requests
 * Slow Request Count by Endpoint
+* Inbound - Maximum Response Time
 * Inbound Protocol (Titanium only)
 * Inbound Endpoint (Titanium only)
 
@@ -70,8 +71,8 @@ Inbound metrics are retained for 24 hours.
 
 * Total Outbound Requests by Response Type
 * Average Response Time
-* Average Response Time grouped by HTTP endpoint outbound (only HTTP endpoints are shown)
-* Total Requests grouped by HTTP endpoint (only HTTP endpoints are shown)
+* Average Response Time by HTTP Endpoint
+* Total Requests by HTTP Endpoint
 * Response Time graphs (99, 90, 75, and 50 percentile outbound)
 * Total Failed Outbound Requests
 
@@ -85,8 +86,8 @@ The following charts are available only if you are using Unified Agent and have 
 
 * Inbound Response Time by Flow
 * Outbound Response Time by Flow
-* Inbound Request Volume by Flow
-* Outbound Request Volume by Flow
+* Inbound Request by Flow
+* Outbound Request by Flow
 * Failures by Flow
 * Slow Inbound Requests by Flow
 * Slow Outbound Requests by Flow
