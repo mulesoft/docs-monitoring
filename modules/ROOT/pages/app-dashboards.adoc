@@ -145,10 +145,10 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Average Response Time - Inbound
 * Average Response Time Grouped by Endpoint - Inbound
 * Mule Messages
-* Response Time graphs: 99, 90, 75, and 50 percentile inbound
+* Response Time graphs (99, 90, 75, and 50 percentile) - Inbound
 * Average Response Time  - Outbound
 * Average Response Time Grouped by Endpoint - Outbound
-* Response Time graphs: 99, 90, 75, and 50 percentile - Outbound
+* Response Time graphs (99, 90, 75, and 50 percentile) - Outbound
 | <<failures-charts>> a|
 
 * Total Failed Inbound Requests
@@ -161,10 +161,12 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Total Failed Outbound Requests Grouped by HTTP Endpoint
 | <<jvm-charts>> a|
 
-* Garbage collection count, Garbage collection time
-* Par new collection count, Par new collection time
-* Classes: Loaded, Loaded total, Unloaded
-* Heap: Committed, Used
+* Garbage Collection Count 
+* Garbage collection Time
+* Par new Collection Count
+* Par new collection Time
+* Classes (Loaded, Loaded Total, Unloaded)
+* Heap (Committed, Used)
 * Thread Count
 * JVM Uptime
 * Par Eden graphs (Used, Max, Init, and Committed)
@@ -233,9 +235,9 @@ The average response time of inbound requests, grouped by application in automat
 
 Inbound - Response Time by Endpoint::
 The average, maximum, and minimum and total response time, grouped by endpoint.
-* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
-* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than 500ms.
-* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
+* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
+* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than or equal to 500ms.
+* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
 
 Inbound - Total Requests by Endpoint::
 The sum of inbound requests in the period, grouped by endpoint.
@@ -273,24 +275,15 @@ The average response time of outbound requests, grouped by application in automa
 
 Outbound - Response Time by HTTP Endpoint::
 The average, maximum, and minimum and total response time, grouped by endpoint.
-* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
-* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than 500ms.
-* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
+* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
+* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than or equal to 500ms.
+* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
 
 Outbound - Total Requests by HTTP Endpoint::
 The sum of outbound requests in the period, grouped by endpoint.
 
-Outbound - Response Time - 99 Percentile::
-The average response time of the 99 percentile of outbound requests, grouped by application in automatic intervals. The unit for these metrics is milliseconds (ms).
-
-Outbound - Response Time - 90 Percentile::
-The average response time of the 90 percentile of outbound requests, grouped by application in automatic intervals. The unit for these metrics is milliseconds (ms).
-
-Outbound - Response Time - 75 Percentile::
-The average response time of the 75 percentile of outbound requests, grouped by application in automatic intervals. The unit for these metrics is milliseconds (ms).
-
-Outbound - Response Time - 50 Percentile::
-The average response time of the 50 percentile of outbound requests, grouped by application in automatic intervals. The unit for these metrics is milliseconds (ms).
+Outbound - Response Time (99, 90, 75, and 50 percentile)::
+The average response time of the 99, 90, 75, and 50 percentiles of outbound requests, grouped by application in automatic intervals. The unit for these metrics is milliseconds (ms).
 
 Outbound - Failure Total Request Count::
 The sum of failed outbound requests, grouped by type of response in automatic intervals.
@@ -480,9 +473,9 @@ The average response time of inbound requests, grouped by application in automat
 
 Average Response Time Grouped by Endpoint - Inbound::
 The average, maximum, and minimum response times, grouped by endpoint. Cells will vary in color according to the following thresholds:
-* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
-* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than 500ms.
-* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
+* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
+* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than or equal to 500ms.
+* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
 
 Mule Messages::
 The number of Mule Messages processed in the runtime, grouped by application in automatic intervals.
@@ -495,9 +488,9 @@ The average response time of outbound requests, grouped by application in automa
 
 Average Response Time Grouped by HTTP Endpoint - Outbound::
 The average, maximum, and minimum response times, grouped by endpoint. Cells will vary in color according to the following thresholds:
-* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
-* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than 500ms.
-* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
+* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
+* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than or equal to 500ms.
+* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
 
 Response Time graphs: 99, 90, 75, and 50 percentile - Outbound::
 The response time of the 99th, 90th, 75th, and 50th percentile of outbound requests, grouped by application in automatic intervals.
@@ -521,18 +514,18 @@ The sum of inbound requests, grouped by type of response and automatic interval.
 
 Failed Inbound Requests: Response Time by Endpoint::
 The average, maximum, and minimum response times of failed inbound requests, grouped by endpoint. Cells will vary in color according to the following thresholds:
-* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
-* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than 500ms.
-* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
+* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
+* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than or equal to 500ms.
+* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
 
 Total Failed Inbound Requests by Endpoint::
 The sum of failed inbound requests, grouped by endpoint.
 
 Failed Outbound Requests: Response Time by HTTP endpoint::
 The average, maximum, and minimum response times of failed outbound requests, grouped by endpoint. Cells will vary in color according to the following thresholds:
-* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
-* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than 500ms.
-* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than 600ms.
+* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
+* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than or equal to 500ms.
+* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
 
 Total Failed Outbound Requests by HTTP Endpoint::
 The sum of failed outbound requests, grouped by endpoint.
