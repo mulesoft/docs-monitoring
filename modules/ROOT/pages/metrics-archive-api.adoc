@@ -30,4 +30,4 @@ For example, you can write your integration application such that it downloads i
 == See Also
 
 * https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/home/[Anypoint Monitoring Archive API]
-* xref:monitoring::api-analytics-dashboard.adoc#enhanced-api-metrics[enhanced API metrics dashboards]
+* xref:monitoring::api-analytics-dashboard.adoc#enhanced-api-metrics[Enhanced API Metrics Dashboards]
