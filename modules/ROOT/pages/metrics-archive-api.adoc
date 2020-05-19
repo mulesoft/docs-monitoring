@@ -1,0 +1,33 @@
+= Archive API
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+The Anypoint Monitoring Archive API enables you to download metric data for APIs. The data that this API archives appears in your xref:monitoring::api-analytics-dashboard.adoc#enhanced-api-metrics[enhanced API metrics dashboards]. However, the data contained in the archive is asynchronous.
+
+You must have a Titanium subscription to use this API.
+
+== File Structure and Downloads
+
+The Anypoint Monitoring Archive API uses a directory hierarchy. At the lowest level, you can access and download files containing archived data from your enhanced API metrics dashboards.
+
+A file in the archive is a text file that contains 1 or more lines; each line is a https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[JSON object] that represents one or more metric events.
+
+File names have a date and time that indicate when the file was archived. On average, new files are generated and archived every 10 minutes; as such, each file contains data received in a 10 minute window. If no data is available to archive, a file is not created for that time window.
+
+Once a file appears in the archive, its contents remain unchanged.
+
+== How to Use Data
+
+Downloading metrics data using this API enables you to analyze the data or integrate it into your own system. You can write an integration application and use the API to navigate the data and discover files therein. The integration application can use the API's navigation structure to retrieve the data you need.
+
+The data archive has API metric JSON files that are organized in the following hierarchy:
+
+`/organizations/<organization>/environments/<environment>/<entityType>/<entityID>/<fileType>/<year>/<month>/<dayOfMonth>/<fileName>`
+
+For example, you can write your integration application such that it downloads information for a specific API using a path such as `/organizations/<org-id>/environments/<env-id>/apis/<api-id>`.
+
+== See Also
+
+* https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/home/[Anypoint Monitoring Archive API]
+* xref:monitoring::api-analytics-dashboard.adoc#enhanced-api-metrics[enhanced API metrics dashboards]
