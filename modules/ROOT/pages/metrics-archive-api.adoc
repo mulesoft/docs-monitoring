@@ -1,4 +1,4 @@
-= Archive API
+= Anypoint Monitoring Archive API
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
