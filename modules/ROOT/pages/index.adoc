@@ -53,7 +53,7 @@ See xref:logs.adoc[Logs].
 
 Limits on data storage and retention are determined by your subscription level (Base or Titanium). All customers receive Anypoint Monitoring at the Base subscription level.
 
-For Base, Gold, and Platinum subscriptions, data is stored in US East (N. Virginia).
+For Gold and Platinum subscriptions, data is stored in US East (N. Virginia).
 
 The Titanium subscription:
 
