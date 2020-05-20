@@ -177,7 +177,7 @@ The *Custom metrics* tab displays only if you have a Titanium subscription and s
 
 The *Application Network* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule. 
 
-The chart on this tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app. Additionally, it shows only direct callers and callees for the selected app over the most recent seven days. The apps must be deployed, and the connections are based on the selected time range.
+The chart on this tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app, which must be started. The chart shows only direct callers and callees for the selected app. The connections are based on the selected time range, with a max of the most recent seven days.
 
 You can click *Metrics* to see statistics, such as average response time and failures, related to the app you selected. For more information about metrics in Anypoint Visualizer, see xref:visualizer::troubleshooting-visualization.adoc#choosing-your-metric[Choosing Your Metric].
 // this information will be moved with the built-in dashboards docs page revamp.
