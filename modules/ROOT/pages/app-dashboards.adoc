@@ -537,16 +537,16 @@ The sum of failed outbound requests, grouped by endpoint.
 The following charts appear on the *JVM* dashboard:
 
 Garbage Collection Count::
-The number of collections that have occurred, grouped by worker in automatic intervals.
+The average number of collections that have occurred, grouped by worker in automatic intervals.
 
 Garbage Collection Time::
-The approximate accumulated collection elapsed time in milliseconds, grouped by type of response in automatic intervals.
+The average amount of JVM garbage collection time, grouped by worker in automatic intervals.
 
-Par New Collection Count::
-The number of collections for Parnew GC, grouped by type of response in automatic intervals.
+ParNew Collection Count::
+The average number of ParNew garbage collections, grouped by worker in automatic intervals.
 
-Par New Collection Time::
-The approximate accumulated Parnew collection elapsed time in milliseconds, grouped by type of response in automatic intervals.
+ParNew Collection Time::
+The average amount of ParNew garbage collection time, grouped by worker in automatic intervals.
 
 Classes Loaded::
 The average number of loaded classes, grouped by worker in automatic intervals.
