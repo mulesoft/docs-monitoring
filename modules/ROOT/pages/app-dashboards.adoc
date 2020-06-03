@@ -82,6 +82,7 @@ The following charts are available only if you are using Unified Agent and have 
 * Outbound Operations
 * Outbound Protocol
 * Outbound Endpoints
+* Outbound Ports
 | <<flows-charts>> a|
 
 * Inbound Response Time by Flow
