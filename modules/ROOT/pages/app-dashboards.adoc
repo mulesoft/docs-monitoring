@@ -549,43 +549,43 @@ Par New Collection Time::
 The approximate accumulated Parnew collection elapsed time in milliseconds, grouped by type of response in automatic intervals.
 
 Classes Loaded::
-The number of currently loaded classes, grouped by type of response in automatic intervals.
+The average number of loaded classes, grouped by worker in automatic intervals.
 
 Classes Loaded Total::
-The number of classes loaded since JVM start, grouped by type of response in automatic intervals.
+The number of classes loaded since JVM start, grouped by worker in automatic intervals.
 
 Classes Unloaded::
-The number of classes unloaded since JVM start, grouped by type of response in automatic intervals.
+The average number of classes unloaded since JVM start, grouped by worker in automatic intervals.
 
 Heap Committed::
-The amount of heap memory committed by the JVM, grouped by type of response in automatic intervals.
+The amount of heap memory committed by the JVM, grouped by worker in automatic intervals.
 
 Heap Used::
-The amount of heap memory utilized by the JVM, grouped by type of response in automatic intervals.
+The amount of heap memory utilized by the JVM, grouped by worker in automatic intervals.
 
 Thread Count::
-The number of simultaneous requests.
+The average number of threads of the JVM, grouped by worker in automatic intervals.
 
 JVM Uptime::
-The time since JVM started, grouped by type of response in automatic intervals.
+The time since JVM started, grouped by worker in automatic intervals.
 
 Par Eden graphs (Used, Max, Init, and Committed)::
-The usage metrics for “Eden Space” JVM Memory, grouped by type of response in automatic intervals.
+The memory metrics for JVM Par Eden space, grouped by worker in automatic intervals.
 
 Par Survivor graphs (Used, Max, Init, and Committed)::
-The usage metrics for the Par Eden Space pool.
+The memory metrics for JVM Par Survivor space, grouped by worker in automatic intervals.
 
 Metaspace graphs (Used, Max, Init, Committed)::
-The usage metrics for Java memory space.
+The memory metrics for JVM metaspace, grouped by worker in automatic intervals.
 
 Code Cache graphs (Used, Max, Init, Committed)::
-The usage metrics for the Code Cache pool.
+The memory metrics for JVM code cache, grouped by worker in automatic intervals.
 
 Compressed Class Space graphs (Used, Max, Init, Committed)::
-The usage metrics for values of the metadata for compressed class pointers.
+The memory metrics for JVM compressed class, grouped by worker in automatic intervals.
 
 Committed Virtual Memory::
-The amount of virtual memory guaranteed to be available to the running process.
+The amount of virtual memory guaranteed to be available to the running process, grouped by worker in automatic intervals.
 
 [[infrastructure-charts]]
 == Infrastructure
@@ -601,23 +601,21 @@ The cumulative CPU time consumed by the JVM.
 Operating System Swap Space::
 The amount of memory the system is swapping, grouped by worker in automatic intervals.
 
-CPU Utilization %::
-The percentage of CPU used by each worker over time.
+JVM - CPU % Utilization::
+The average percentage of CPU utilized by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule runtime JVM process. The calculation for CPU utilization is relative to the physical server on which the Mule runtime is deployed. For example, in RTF, the resource usage here indicates the JVM's utilization with respect to the entire server and not with respect to the Pod maximum CPU allocation.
 
-Memory Utilization::
-The amount of memory used by each worker over time.
+JVM - Heap Used::
+The average amount of heap memory utilized by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule runtime JVM process.
 
 Total System Processors::
-The number of system processors for workers available over time.
+The number of CPU processors available to the Java virtual machine for each worker.
 
 Total System Memory::
-The amount of system memory available for workers over time. If you have a Titanium subscription and the selected application is hybrid, this graph changes to *System Memory*.
+The amount of system memory available for workers over time. 
 
-System Memory::
-The total free system memory per worker. This graph appears only if you have a Titanium subscription and the selected application is hybrid.
 
-Thread Count - Server::
-The number of simultaneous requests for a worker over time.
+JVM Thread Count - Server::
+The average number of threads of the JVM, grouped by worker in automatic intervals.
 
 .Example: Infrastructure Dashboard
 image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
