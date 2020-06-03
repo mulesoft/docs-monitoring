@@ -44,7 +44,7 @@ Built-in dashboards include various pages to view different types of charts:
 * Outbound - Total Requests by Response Type
 * Outbound - Average Response Time
 * JVM - CPU % Utilization
-* JVM - Heap memory utilization
+* JVM - Heap Used
 * JVM - Thread count
 
 | <<inbound-charts>> a|
