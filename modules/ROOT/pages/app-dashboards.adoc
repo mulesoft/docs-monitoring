@@ -56,7 +56,7 @@ Built-in dashboards include various pages to view different types of charts:
 * Response Time graphs (99, 90, 75, and 50 percentile)
 * Maximum Response Time
 * Total Failed Inbound Requests
-* Slow Request Count by Endpoint
+* Total Slow Requests by Endpoint
 * Inbound - Maximum Response Time
 * Inbound Protocol (Titanium only)
 * Inbound Endpoint (Titanium only)
@@ -87,15 +87,15 @@ The following charts are available only if you are using Unified Agent and have 
 
 * Inbound Response Time by Flow
 * Outbound Response Time by Flow
-* Inbound Request by Flow
-* Outbound Request by Flow
+* Inbound Requests by Flow
+* Outbound Requests by Flow
 * Failures by Flow
 * Slow Inbound Requests by Flow
 * Slow Outbound Requests by Flow
 * Inbound Response Time by Flow
 * Outbound Response Time by Flow
-* Inbound Request Volume by Flow
-* Outbound Request Volume by Flow
+* Inbound Requests by Flow
+* Outbound Requests by Flow
 * Failures by Flow
 * Slow Inbound Requests by Flow
 * Slow Outbound Requests by Flow
