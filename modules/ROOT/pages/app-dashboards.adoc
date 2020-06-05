@@ -191,6 +191,7 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 | <<custom-metrics-charts>> a|
 
 The *Custom metrics* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule. See xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].
+
 | <<application-network>>
 
 The chart on *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app. The *Application Network* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule.
