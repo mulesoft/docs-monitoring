@@ -160,9 +160,9 @@ Requests by Client IP:: The sum of requests in the period, grouped by client IP 
 * If you select a time range within the last day, data is aggregated in ten minute increments.
 * If you select a time range that is larger than one day, data is aggregated in one hour increments.
 
-== Anypoint Monitoring Archive API for Enhanced API Analytics
+== Anypoint Monitoring Archive API
 
-If you are a Titanium user who uses the enhanced API analytics dashboards, you can also access the data directly via the Anypoint Monitoring Archive API. Using this API, you can navigate and discover your API metrics data using a directory hierarchy.
+Titanium users can also access API analytics data directly via the Anypoint Monitoring Archive API. Using this API, you can navigate and discover your API metrics data using a directory hierarchy.
 
 The Anypoint Monitoring Archive API enables you to download files that contain https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[JSON objects] that represent one or more metric events. You can also write an application to navigate the data collected by the API and integrate it into your own system. 
 
