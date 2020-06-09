@@ -45,7 +45,7 @@ Built-in dashboards include various pages to view different types of charts:
 * Outbound - Average Response Time
 * JVM - CPU % Utilization
 * JVM - Heap Used
-* JVM - Thread count
+* JVM - Thread Count
 
 | <<inbound-charts>> a|
 
@@ -165,7 +165,7 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 | <<jvm-charts>> a|
 
 * Garbage Collection Count
-* Garbage collection Time
+* Garbage Collection Time
 * ParNew Collection Count
 * ParNew collection Time
 * Classes (Loaded, Loaded Total, Unloaded)
@@ -174,9 +174,9 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * JVM Uptime
 * Par Eden graphs (Used, Max, Init, and Committed)
 * Par Survivor graphs (Used, Max, Init, and Committed)
-* Metaspace graphs (Used, Max, Init, Committed)
-* Code Cache graphs (Used, Max, Init, Committed)
-* Compressed Class Space graphs (Used, Max, Init, Committed)
+* Metaspace graphs (Used, Max, Init, and Committed)
+* Code Cache graphs (Used, Max, Init, and Committed)
+* Compressed Class Space graphs (Used, Max, Init, and Committed)
 * Committed Virtual Memory
 | <<infrastructure-charts>> a|
 
@@ -193,7 +193,7 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 The *Custom metrics* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule. See xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].
 | <<application-network>> a|
 
-The chart on *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app. The *Application Network* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule.
+The chart on the *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app. The *Application Network* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule.
 |===
 
 [[overview-charts]]
@@ -202,7 +202,7 @@ The chart on *Application Network* tab shows the xref:visualizer::troubleshootin
 The following charts appear on the *Overview* dashboard:
 
 Inbound - Total Requests by Response Type::
-The sum of inbound requests, grouped by type of response in automatic intervals. Responses are OK or Failed. If a Mule app has more than one connector type, all types are included in this metric.
+The sum of inbound requests, grouped by type of response in automatic intervals. Responses are `OK` or `Failed`. If a Mule app has more than one connector type, all types are included in this metric.
 
 Inbound - Average Response Time::
 The average response time of inbound requests, grouped in automatic intervals. If a Mule app has more than one connector type, all types are included in this metric.
@@ -211,19 +211,19 @@ Mule Messages::
 The total number of Mule messages that are processed successfully, grouped in automatic intervals.
 
 Outbound - Total Requests by Response Type::
-The sum of outbound requests, grouped by type of response in automatic intervals. Responses are OK or Failed. If a Mule app has more than one connector type, all types are included in this metric.
+The sum of outbound requests, grouped by type of response in automatic intervals. Responses are `OK` or `Failed`. If a Mule app has more than one connector type, all types are included in this metric.
 
 Outbound - Average Response Time::
 The average response time of outbound requests, grouped in automatic intervals. If a Mule app has more than one connector type, all types are included in this metric.
 
 JVM - CPU % Utilization::
-The average percentage of CPU utilized by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule runtime JVM process. The calculation for CPU utilization is relative to the physical server on which the Mule runtime is deployed. For example, in RTF, the resource usage here indicates the the JVM's utilization with respect to the entire server, and not with respect to the Pod maximum CPU allocation.
+The average percentage of CPU used by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule JVM process. The calculation for CPU utilization is relative to the physical server on which Mule is deployed. For example, in RTF, the resource usage indicates the JVM use with respect to the entire server, and not with respect to the pod maximum CPU allocation.
 
 JVM - Heap Used::
-The average amount of heap memory utilized by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule runtime JVM process.
+The average amount of heap memory utilized by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule JVM process.
 
 JVM - Thread Count::
-The average number of threads of the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule runtime JVM process.
+The average number of threads of the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule JVM process.
 
 [[inbound-charts]]
 == Inbound
@@ -232,21 +232,21 @@ Inbound metrics are retained for 24 hours.
 The following charts appear on the *Inbound* dashboard:
 
 Inbound - Total Requests by Response Type::
-The sum of inbound requests, grouped by type of response in automatic intervals. Responses are OK or Failed. If a Mule app has more than one connector type, all types are included in this metric.
+The sum of inbound requests, grouped by type of response in automatic intervals. Responses are `OK` or `Failed`. If a Mule app has more than one connector type, all types are included in this metric.
 
 Inbound - Average Response Time::
 The average response time of inbound requests, grouped in automatic intervals. If a Mule app has more than one connector type, all types are included in this metric.
 
 Inbound - Response Time by Endpoint::
-The average, maximum, and minimum and total response time, grouped by endpoint.
-* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
-* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than or equal to 500ms.
-* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
+The average, maximum, minimum, and total response times, grouped by endpoint.
+* Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600ms; red if the response time is greater than or equal to 600 ms.
+* Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500ms; red if the response time is greater than or equal to 500 ms.
+* Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 
 Inbound - Total Requests by Endpoint::
 The sum of inbound requests in the period, grouped by endpoint.
 
-Inbound - Response Time graphs (99, 90, 75, and 50 Percentile)::
+Inbound - Response Time graphs (99, 90, 75, and 50 percentile)::
 The average response time of the 99, 90, 75, and 50 percentiles of inbound requests, grouped in automatic intervals. The unit for these metrics is milliseconds (ms).
 
 Inbound - Maximum Response Time::
@@ -272,21 +272,21 @@ The sum of inbound requests, grouped by remote hosts (endpoints) in automatic in
 The following charts appear on the *Outbound* dashboard:
 
 Outbound - Total Requests by Response Type::
-The sum of outbound requests, grouped by type of response in automatic intervals. Responses are OK or Failed. If a Mule app has more than one connector type, all types are included in this metric.
+The sum of outbound requests, grouped by type of response in automatic intervals. Responses are `OK` or `Failed`. If a Mule app has more than one connector type, all types are included in this metric.
 
 Outbound - Average Response Time::
 The average response time of outbound requests, grouped by application in automatic intervals. If a Mule app has more than one connector type, all types are included in this metric.
 
 Outbound - Response Time by HTTP Endpoint::
-The average, maximum, and minimum and total response time, grouped by endpoint.
-* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
-* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than or equal to 500ms.
-* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
+The average, maximum, minimum, and total response times, grouped by endpoint.
+* Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600ms; red if the response time is greater than or equal to 600 ms.
+* Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500ms; red if the response time is greater than or equal to 500 ms.
+* Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600ms; red if the response time is greater than or equal to 600 ms.
 
 Outbound - Total Requests by HTTP Endpoint::
 The sum of outbound requests in the period, grouped by endpoint.
 
-Outbound - Response Time (99, 90, 75, and 50 percentile)::
+Outbound - Response Time (99, 90, 75, and 50 percentiles)::
 The average response time of the 99, 90, 75, and 50 percentiles of outbound requests, grouped by application in automatic intervals. The unit for these metrics is milliseconds (ms).
 
 Outbound - Failure Total Request Count::
@@ -325,7 +325,6 @@ The sum of outbound requests, grouped by flow.
 
 Failures by Flow::
 The sum of failed inbound requests, grouped by flow.
-//tbd?
 
 Slow Inbound Requests by Flow::
 The sum of inbound requests whose response time is greater than 1000 ms, grouped by flow.
@@ -334,7 +333,7 @@ Slow Outbound Requests by Flow::
 The sum of outbound requests whose response time is greater than 1000 ms, grouped by flow.
 
 Inbound Response Time by Flow::
-The average, minimum, and maximum inbound response time, grouped by flow.
+The average, minimum, and maximum inbound response times, grouped by flow.
 
 Outbound Response Time by Flow::
 The average, minimum, and maximum outbound response time, grouped by flow.
@@ -456,16 +455,16 @@ Anypoint MQ Response Time - Outbound::
 The average number of Anypoint MQ connector outbound request failures, grouped by operation and automatic intervals.
 
 Anypoint MQ Failures - Outbound::
-The average number of requests of connectors of type other, grouped by operation in automatic intervals.
+The average number of requests of connectors of type `other`, grouped by operation in automatic intervals.
 
 Other Connector Requests::
-The average number of requests of connectors of type other, grouped in automatic intervals.
+The average number of requests of connectors of type `other`, grouped in automatic intervals.
 
 Other Connector Response Time::
-The average response time of requests for connectors of type other, grouped in automatic intervals.
+The average response time of requests for connectors of type `other`, grouped in automatic intervals.
 
 Other Connector Failures::
-The average number of requests failures of connectors of type other, grouped in automatic intervals.
+The average number of requests failures of connectors of type `other`, grouped in automatic intervals.
 
 [[performance-charts]]
 == Performance
@@ -476,13 +475,13 @@ Inbound - Average Response Time::
 The average response time of inbound requests, grouped in automatic intervals.
 
 Inbound - Average Response Time Grouped by Endpoint::
-The average, maximum, and minimum response times, grouped by endpoint. Cells will vary in color according to the following thresholds:
-* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
-* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than or equal to 500ms.
-* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
+The average, maximum, and minimum response times, grouped by endpoint. Cell color varies according to the following thresholds:
+* Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
+* Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
+* Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 
 Mule Messages::
-The number of Mule Messages processed in the runtime, grouped in automatic intervals.
+The number of Mule messages processed in the runtime, grouped in automatic intervals.
 
 Inbound Response Time graphs (99, 90, 75, and 50 Percentile)::
 The response time of the 99th, 90th, 75th, and 50th percentile of inbound requests, grouped by application in automatic intervals.
@@ -491,10 +490,10 @@ Outbound - Average Response Time::
 The average response time of outbound requests, grouped in automatic intervals.
 
 Outbound - Average Response Time Grouped by HTTP Endpoint::
-The average, maximum, and minimum response times, grouped by endpoint. Cells will vary in color according to the following thresholds:
-* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
-* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than or equal to 500ms.
-* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
+The average, maximum, and minimum response times, grouped by endpoint. Cells color varies according to the following thresholds:
+* Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
+* Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
+* Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 
 Outbound Response Time graphs (99, 90, 75, and 50 Percentile)::
 The response time of the 99th, 90th, 75th, and 50th percentile of outbound requests, grouped in automatic intervals.
@@ -517,19 +516,19 @@ Outbound - Total Requests by Response Type::
 The sum of inbound requests, grouped by type of response and automatic interval.
 
 Inbound - Failure Response Time by Endpoint::
-The average, maximum, and minimum response times of failed inbound requests, grouped by endpoint. Cells will vary in color according to the following thresholds:
-* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
-* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than or equal to 500ms.
-* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
+The average, maximum, and minimum response times of failed inbound requests, grouped by endpoint. Cell color varies according to the following thresholds:
+* Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
+* Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
+* Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 
 Inbound - Total Failed Requests by Endpoint::
 The sum of failed inbound requests, grouped by endpoint.
 
 Outbound - Failure Response Time by HTTP endpoint::
-The average, maximum, and minimum response times of failed outbound requests, grouped by endpoint. Cells will vary in color according to the following thresholds:
-* Average: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
-* Maximum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 500ms; red if the response time is greater than or equal to 500ms.
-* Minimum: Green if the response time is less than 300ms; yellow if the response time is greater than 300ms and less than 600ms; red if the response time is greater than or equal to 600ms.
+The average, maximum, and minimum response times of failed outbound requests, grouped by endpoint. Cell color varies according to the following thresholds:
+* Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
+* Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
+* Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 
 Outbound - Total Failed Requests by HTTP Endpoint::
 The sum of failed outbound requests, grouped by endpoint.
