@@ -89,13 +89,6 @@ The following charts are available only if you are using Unified Agent and have 
 * Failures by Flow
 * Slow Inbound Requests by Flow
 * Slow Outbound Requests by Flow
-* Inbound Response Time by Flow
-* Outbound Response Time by Flow
-* Inbound Requests by Flow
-* Outbound Requests by Flow
-* Failures by Flow
-* Slow Inbound Requests by Flow
-* Slow Outbound Requests by Flow
 
 If you don't see the *Flows* tab, verify that you are using Unified Agent and have a Titanium subscription to Anypoint Platform.
 | <<connectors-charts>> a|
@@ -321,27 +314,6 @@ The sum of outbound requests, grouped by flow.
 
 Failures by Flow::
 The sum of failed inbound requests, grouped by flow.
-
-Slow Inbound Requests by Flow::
-The sum of inbound requests whose response time is greater than 1000 ms, grouped by flow.
-
-Slow Outbound Requests by Flow::
-The sum of outbound requests whose response time is greater than 1000 ms, grouped by flow.
-
-Inbound Response Time by Flow::
-The average, minimum, and maximum inbound response times, grouped by flow.
-
-Outbound Response Time by Flow::
-The average, minimum, and maximum outbound response time, grouped by flow.
-
-Inbound Requests by Flow::
-The sum of inbound requests, grouped by flow.
-
-Outbound Requests by Flow::
-The sum of outbound requests, grouped by flow.
-
-Failures by Flow::
-The sum of inbound failed requests, grouped by flow.
 
 Slow Inbound Requests by Flow::
 The sum of inbound requests whose response time is greater than 1000 ms, grouped by flow.
