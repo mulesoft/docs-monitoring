@@ -53,7 +53,7 @@ Built-in dashboards include various pages to view different types of charts:
 * Average Response Time
 * Response Time by Endpoint
 * Total Requests by Endpoint
-* Response Time graphs (99, 90, 75, and 50 percentile)
+* Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Maximum Response Time
 * Total Failed Inbound Requests
 * Total Slow Requests by Endpoint
@@ -64,16 +64,13 @@ Built-in dashboards include various pages to view different types of charts:
 [NOTE]
 Inbound metrics are retained for 24 hours.
 
-//* Total Inbound Calls (success or failure)
-//* Total Inbound by Endpoint Outbound
-//* Average Response Time inbound
 | <<outbound-charts>> a|
 
 * Total Outbound Requests by Response Type
 * Average Response Time
 * Average Response Time by HTTP Endpoint
 * Total Requests by HTTP Endpoint
-* Response Time graphs (99, 90, 75, and 50 percentile outbound)
+* Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Total Failed Outbound Requests
 
 The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
@@ -146,12 +143,12 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Inbound - Average Response Time
 * Inbound - Average Response Time Grouped by Endpoint
 * Mule Messages
-* Inbound - Response Time graphs (99, 90, 75, and 50 Percentile) - Inbound
+* Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Inbound - Response Time by Endpoint
 * Outbound - Average Response Time
 * Outbound - Average Response Time Grouped by Endpoint
 * Outbound - Response Time by HTTP Endpoint
-* Outbound - Response Time graphs (99, 90, 75, and 50 Percentile)
+* Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 | <<failures-charts>> a|
 
 * Total Failed Inbound Requests
@@ -246,7 +243,7 @@ The average, maximum, minimum, and total response times, grouped by endpoint.
 Inbound - Total Requests by Endpoint::
 The sum of inbound requests in the period, grouped by endpoint.
 
-Inbound - Response Time graphs (99, 90, 75, and 50 percentile)::
+Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)::
 The average response time of the 99, 90, 75, and 50 percentiles of inbound requests, grouped in automatic intervals. The unit for these metrics is milliseconds (ms).
 
 Inbound - Maximum Response Time::
@@ -295,7 +292,6 @@ The sum of failed outbound requests, grouped by type of response in automatic in
 Outbound - Ports::
 The sum of outbound requests, grouped by remote port in automatic intervals.
 
-// ports?
 
 Outbound - Operations::
 The sum of outbound requests, grouped by operation in automatic intervals.
@@ -346,7 +342,6 @@ The sum of outbound requests, grouped by flow.
 
 Failures by Flow::
 The sum of inbound failed requests, grouped by flow.
-//tbd?
 
 Slow Inbound Requests by Flow::
 The sum of inbound requests whose response time is greater than 1000 ms, grouped by flow.
@@ -483,7 +478,7 @@ The average, maximum, and minimum response times, grouped by endpoint. Cell colo
 Mule Messages::
 The number of Mule messages processed in the runtime, grouped in automatic intervals.
 
-Inbound Response Time graphs (99, 90, 75, and 50 Percentile)::
+Inbound Response Time graphs (99, 90, 75, and 50 percentiles)::
 The response time of the 99th, 90th, 75th, and 50th percentile of inbound requests, grouped by application in automatic intervals.
 
 Outbound - Average Response Time::
@@ -495,7 +490,7 @@ The average, maximum, and minimum response times, grouped by endpoint. Cells col
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 
-Outbound Response Time graphs (99, 90, 75, and 50 Percentile)::
+Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)::
 The response time of the 99th, 90th, 75th, and 50th percentile of outbound requests, grouped in automatic intervals.
 
 [[failures-charts]]
@@ -604,7 +599,7 @@ Operating System Swap Space::
 The amount of memory the system is swapping, grouped by worker in automatic intervals.
 
 JVM - CPU % Utilization::
-The average percentage of CPU utilized by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule runtime JVM process. The calculation for CPU utilization is relative to the physical server on which the Mule runtime is deployed. For example, in RTF, the resource usage here indicates the JVM's utilization with respect to the entire server and not with respect to the Pod maximum CPU allocation.
+The average percentage of CPU utilized by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule JVM process. The calculation for CPU utilization is relative to the physical server on which the Mule runtime is deployed. For example, in RTF, the resource usage here indicates the JVM's utilization with respect to the entire server and not with respect to the pod maximum CPU allocation.
 
 JVM - Heap Used::
 The average amount of heap memory utilized by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule runtime JVM process.
