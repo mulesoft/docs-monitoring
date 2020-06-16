@@ -226,13 +226,13 @@ Inbound - Average Response Time::
 The average response time of inbound requests, grouped in automatic intervals. If a Mule app has more than one connector type, all types are included in this metric.
 
 Inbound - Response Time by Endpoint::
-The average, maximum, minimum, and total response times, grouped by endpoint.
+The average, maximum, minimum, and total response times, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600ms; red if the response time is greater than or equal to 600 ms.
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500ms; red if the response time is greater than or equal to 500 ms.
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 
 Inbound - Total Requests by Endpoint::
-The sum of inbound requests in the period, grouped by endpoint.
+The sum of inbound requests in the selected time period, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)::
 The average response time of the 99, 90, 75, and 50 percentiles of inbound requests, grouped in automatic intervals. The unit for these metrics is milliseconds (ms).
@@ -249,10 +249,10 @@ The sum of inbound requests whose response time is greater than 1 second, groupe
 The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
 
 Inbound - Protocols::
-The sum of inbound requests, grouped by protocol in automatic intervals.
+The sum of inbound requests, grouped by protocol.
 
 Inbound - Endpoints::
-The sum of inbound requests, grouped by remote hosts (endpoints) in automatic intervals.
+The sum of inbound requests, grouped by remote hosts (endpoints).
 
 [[outbound-charts]]
 == Outbound
@@ -266,7 +266,7 @@ Outbound - Average Response Time::
 The average response time of outbound requests, grouped by application in automatic intervals. If a Mule app has more than one connector type, all types are included in this metric.
 
 Outbound - Response Time by HTTP Endpoint::
-The average, maximum, minimum, and total response times, grouped by endpoint.
+The average, maximum, minimum, and total response times, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600ms; red if the response time is greater than or equal to 600 ms.
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500ms; red if the response time is greater than or equal to 500 ms.
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600ms; red if the response time is greater than or equal to 600 ms.
@@ -281,7 +281,7 @@ Outbound - Failure Total Request Count::
 The sum of failed outbound requests, grouped by type of response in automatic intervals.
 
 Outbound - Ports::
-The sum of outbound requests, grouped by remote port in automatic intervals.
+The sum of outbound requests, grouped by remote port.
 
 
 Outbound - Operations::
@@ -333,22 +333,22 @@ Response Time by Connector::
 The average outbound response time grouped by connector type in automatic intervals.
 
 Salesforce Requests::
-The average number of Salesforce connector requests, grouped by operation in automatic intervals.
+The average number of Anypoint Connector for Salesforce (Salesforce Connector) requests, grouped by operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Salesforce Response Time::
-The average response time of Saleforce connector requests, grouped in automatic intervals.
+The average response time of Anypoint Connector for Salesforce (Salesforce Connector) requests, grouped in automatic intervals.
 
 Salesforce Failures::
-The average number of Salesforce connector requests failures, grouped by operation in automatic intervals.
+The average number of Anypoint Connector for Salesforce (Salesforce Connector) requests failures, grouped by operation in automatic intervals.
 
 Database Requests::
-The average number of Database connector requests, grouped by operation in automatic intervals.
+The average number of Anypoint Connector for Database (Database Connector) requests, grouped by operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]
 
 Database Response Time::
-The average response time of Database connector requests, grouped in automatic intervals.
+The average response time of Anypoint Connector for Database (Database Connector) requests, grouped in automatic intervals.
 
 Database Failures::
-The average number of Database connector requests failures, grouped by operation in automatic intervals.
+The average number of Anypoint Connector for Database (Database Connector) requests failures, grouped by operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]
 
 HTTP Requests::
 The average number of HTTP connector requests, grouped by operation in automatic intervals.
@@ -440,7 +440,7 @@ Inbound - Average Response Time::
 The average response time of inbound requests, grouped in automatic intervals.
 
 Inbound - Average Response Time Grouped by Endpoint::
-The average, maximum, and minimum response times, grouped by endpoint. Cell color varies according to the following thresholds:
+The average, maximum, and minimum response times, grouped by top occurring endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
@@ -490,7 +490,7 @@ Inbound - Total Failed Requests by Endpoint::
 The sum of failed inbound requests, grouped by endpoint.
 
 Outbound - Failure Response Time by HTTP endpoint::
-The average, maximum, and minimum response times of failed outbound requests, grouped by endpoint. Cell color varies according to the following thresholds:
+The average, maximum, and minimum response times of failed outbound requests, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
@@ -599,7 +599,8 @@ The chart on the *Application Network* tab shows the xref:visualizer::troublesho
 
 You can click *Metrics* to see statistics, such as average response time and failures, related to the app you selected. For more information about metrics in Anypoint Visualizer, see xref:visualizer::troubleshooting-visualization.adoc#choosing-your-metric[Choosing Your Metric].
 
-== How Endpoint Use Metrics Are Gathered
+[[endpoint-operation-metrics]]
+== How Endpoint and Operation Use Metrics Are Gathered
 
 The built-in dashboards for apps contain tables that show endpoint metrics. The tables sort the available endpoints in a menu. When you designate a time period for the data that appears in the tables, the results shown in the endpoint tables can include multiple grouping intervals because the data is processed in intervals of time. As a result, the menu in a given table usually shows top occurring endpoints and, depending on the number of endpoints, a group called *Other* that shows an aggregation of endpoints that do not occur as often for that time period. The tables show approximate counts for the most commonly occurring endpoints when the *Other* grouping appears.
 
