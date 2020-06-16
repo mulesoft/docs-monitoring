@@ -61,8 +61,6 @@ Built-in dashboards include various pages to view different types of charts:
 * Inbound Protocol (Titanium only)
 * Inbound Endpoint (Titanium only)
 
-[NOTE]
-Inbound metrics are retained for 24 hours.
 
 | <<outbound-charts>> a|
 
@@ -274,7 +272,7 @@ The average, maximum, minimum, and total response times, grouped by endpoint.
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600ms; red if the response time is greater than or equal to 600 ms.
 
 Outbound - Total Requests by HTTP Endpoint::
-The sum of outbound requests in the period, grouped by endpoint.
+The sum of outbound requests in the selected time period, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Outbound - Response Time (99, 90, 75, and 50 percentiles)::
 The average response time of the 99, 90, 75, and 50 percentiles of outbound requests, grouped by application in automatic intervals. The unit for these metrics is milliseconds (ms).
@@ -287,13 +285,13 @@ The sum of outbound requests, grouped by remote port in automatic intervals.
 
 
 Outbound - Operations::
-The sum of outbound requests, grouped by operation in automatic intervals.
+The estimated count of outbound requests, grouped by operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Outbound - Protocols::
-The sum of outbound requests, grouped by protocol in automatic intervals.
+The sum of outbound requests for the selected time period, grouped by protocol.
 
 Outbound - Endpoints::
-The sum of outbound requests, grouped by remote hosts (endpoints) in automatic intervals.
+The sum of outbound requests for the selected time period, grouped by remote hosts (endpoints). For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 [[flows-charts]]
 == Flows
@@ -301,19 +299,19 @@ The sum of outbound requests, grouped by remote hosts (endpoints) in automatic i
 The following charts appear on the *Flows* dashboard:
 
 Inbound Response Time by Flow::
-The average inbound response time, grouped by flow.
+The average inbound response time, grouped by flow in automatic intervals.
 
 Outbound Response Time by Flow::
-The average outbound response time, grouped by flow.
+The average outbound response time, grouped by flow in automatic intervals.
 
 Inbound Requests by Flow::
-The sum of inbound requests, grouped by flow.
+The sum of inbound requests, grouped by flow in automatic intervals.
 
 Outbound Requests by Flow::
-The sum of outbound requests, grouped by flow.
+The sum of outbound requests, grouped by flow in automatic intervals.
 
 Failures by Flow::
-The sum of failed inbound requests, grouped by flow.
+The sum of failed inbound requests, grouped by flow in automatic intervals.
 
 Slow Inbound Requests by Flow::
 The sum of inbound requests whose response time is greater than 1000 ms, grouped by flow.
@@ -457,7 +455,7 @@ Outbound - Average Response Time::
 The average response time of outbound requests, grouped in automatic intervals.
 
 Outbound - Average Response Time Grouped by HTTP Endpoint::
-The average, maximum, and minimum response times, grouped by endpoint. Cells color varies according to the following thresholds:
+The average, maximum, and minimum response times, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cells color varies according to the following thresholds:
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
@@ -470,10 +468,10 @@ The response time of the 99th, 90th, 75th, and 50th percentile of outbound reque
 
 The following charts appear on the *Failures* dashboard:
 
-Total Failed Inbound Requests::
+Inbound - Total Failed Requests::
 The sum of failed inbound requests in the period, grouped in automatic intervals.
 
-Total Failed Outbound Requests::
+Outbound - Total Failed Requests::
 The sum of failed outbound requests in the period, grouped in automatic intervals.
 
 Inbound - Total Requests by Response Type::
@@ -483,7 +481,7 @@ Outbound - Total Requests by Response Type::
 The sum of inbound requests, grouped by type of response and automatic interval.
 
 Inbound - Failure Response Time by Endpoint::
-The average, maximum, and minimum response times of failed inbound requests, grouped by endpoint. Cell color varies according to the following thresholds:
+The average, maximum, and minimum response times of failed inbound requests, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
@@ -538,10 +536,10 @@ The average number of threads of the JVM, grouped by worker in automatic interva
 JVM Uptime::
 The time since JVM started, grouped by worker in automatic intervals.
 
-Par Eden graphs (Used, Max, Init, and Committed)::
+Eden Space graphs (Used, Max, Init, and Committed)::
 The memory metrics for JVM Par Eden space, grouped by worker in automatic intervals.
 
-Par Survivor graphs (Used, Max, Init, and Committed)::
+Survivor Space graphs (Used, Max, Init, and Committed)::
 The memory metrics for JVM Par Survivor space, grouped by worker in automatic intervals.
 
 Metaspace graphs (Used, Max, Init, Committed)::
@@ -583,7 +581,7 @@ Total System Memory::
 The amount of system memory available for workers over time.
 
 
-JVM Thread Count - Server::
+JVM Thread Count::
 The average number of threads of the JVM, grouped by worker in automatic intervals.
 
 .Example: Infrastructure Dashboard
