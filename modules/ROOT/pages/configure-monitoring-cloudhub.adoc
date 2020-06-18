@@ -63,6 +63,7 @@ This feature is available only if you have a Titanium subscription to Anypoint P
 * 3.9.x
 * 4.x
 // Check proper articulation for these versions. This list appears in the built-in dashboards UI.
+If you deployed Mule apps to CloudHub before you enabled this feature, you must enable monitoring for those apps manually. This feature does not retroactively enable monitoring for previously deployed apps.
 
 == Enable Monitoring for Apps Previously Deployed to CloudHub
 
