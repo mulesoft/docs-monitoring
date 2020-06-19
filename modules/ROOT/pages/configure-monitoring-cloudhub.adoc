@@ -57,7 +57,7 @@ tag in the `pom.xml` file. For example, you can change `<muleVersion>3.9.3</mule
 
 You can configure Anypoint Monitoring to enable monitoring by default for any newly deployed apps to CloudHub. When you enable the *(checkbox name)*, any Mule app you deploy to CloudHub has monitoring enabled by default.
 
-This feature is available only if you have a Titanium subscription to Anypoint Platform, and you must use one of the following Mule runtime versions:
+To use this feature, you must use one of the following Mule runtime versions:
 
 * 3.88 or later
 * 3.9.x
