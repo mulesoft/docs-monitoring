@@ -136,7 +136,7 @@ Enabling Monitoring can impact CPU utilization and memory utilization, which var
 
 == What to do Next
 
-- If you find connection failure or retry entries, ensure that port 443 in your outbound firewall is open.
+- If you find connection failure or retry entries, ensure that port 443 in your outbound firewall is open. Older runtimes might still use port 5044 and that needs to be open as well, if that's the case.
 - If you do not find connection failure or retry entries, contact MuleSoft technical support.
 
 
