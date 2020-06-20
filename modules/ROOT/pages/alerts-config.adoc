@@ -63,7 +63,7 @@ From the Alerts feature in Anypoint Monitoring, you can link out to configuratio
 
 Depending on your subscription level:
 
-* If no alerts are set up, you might see links for API and runtime alert setup, for example:
+* If no alerts are set up, you might see links for API and Runtime alert setup, for example:
 +
 image::alerts-setup.png[API and Runtime Alert Setup]
 +
