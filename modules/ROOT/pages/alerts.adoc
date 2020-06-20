@@ -30,4 +30,4 @@ Alerting features in Anypoint Monitoring include:
 * Alert History: An Alert History page shows status changes of a single alert. When you are troubleshooting an issue, you can have a view of istoric data and see if the current issue has any  precedent.
 ////
 
-See xref:alerts-config.adoc[Configuring Alerts]
+See xref:alerts-config.adoc[Configure Alerts]
