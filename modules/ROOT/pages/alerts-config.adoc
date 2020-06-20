@@ -5,21 +5,65 @@ endif::[]
 
 Depending on your subscription level, you can configure different types of alerts:
 
-* Operational alerts for APIs through API Manager
-* Operational alerts for the runtime through Runtime Manager
-* Alerts for graphs in custom dashboards in Anypoint Monitoring.
+* Basic alerts for servers and Mule apps
++
+Limit: Up to 50 for users who do not have a Titanium subscription to Anypoint Platform. If you have a Titanium subscription, the limit is 100 basic alerts, but the limit increases for each vCore. For complete details about subscriptions, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
+* Advanced alerts for graphs in custom dashboards in Anypoint Monitoring
 +
 Limit: Up to 20 alerts per organization.
 +
 Note that thresholds are checked every 5 minutes. The evaluated query is the average value of the metric in the last 5 minutes. The evaluated metric is the one referenced in the General tab for the graph. If the value is above the threshold, the alert is triggered. The alert is triggered only if the alert state changes (from OK state to Alerting state or vice versa).
+* Operational alerts for APIs through API Manager
+* Operational alerts for the runtime through Runtime Manager
 
-== Setting Up API and Runtime Alerts
+[[basic-alerts]]
+== Set up Basic Alerts for Servers and Mule Apps
 
-From Alerts in Anypoint Monitoring, you can link out to configuration pages for API and Runtime alerts.
+You can set up basic alerts to trigger email notifications when a metric you are measuring reaches a specified threshold.
+
+You can create basic alerts for the following metrics for servers or Mule apps:
+
+* For servers:
+** CPU utilization
+** Memory utilization
+** Thread count
+* For Mule apps:
+** Message count
+** Message error count
+** Message response time
+
+=== Configure a Basic Alert
+
+When you create a basic alert, you can select a source for the basic alert, configure the condition under which the basic alert is triggered, and specify which email addresses receive notifications for basic alert triggers.
+
+To create a basic alert:
+
+. Navigate to Anypoint Monitoring.
+. Click the *Alerts* tab.
+. Click the *+ New Alerts* button.
+. Click *Basic alert*.
+. In the *Add basic alert* window, enter the alert name, alert source, alert condition, and alert recipients for your basic alert.
+. Click *Save*.
+
+image::basic-alerts-config.png[Configure a Basic Alert]
+
+[[advanced-alerts]]
+== Set up Advanced Alerts for Graphs in Custom Dashboards
+
+*https://www.mulesoft.com/anypoint-pricing[Titanium Subscription Required]*
+
+You can set up advanced alerts to trigger email notifications when a data point you are measuring (`JVM - CPU % Utilization`) exceeds a specified threshold. These advanced alerts are listed in the *Alerts* page in Anypoint Monitoring.
+
+//ANYPOINT MONITORING ALERTS
+include::partial$include-alerts-config.adoc[leveloffset=+1]
+
+== Set Up API and Runtime Alerts
+
+From the Alerts feature in Anypoint Monitoring, you can link out to configuration pages for API and runtime alerts.
 
 Depending on your subscription level:
 
-* If no alerts are set up, you might see links for API and Runtime alert setup, for example:
+* If no alerts are set up, you might see links for API and runtime alert setup, for example:
 +
 image::alerts-setup.png[API and Runtime Alert Setup]
 +
@@ -29,19 +73,9 @@ image::alerts-setup.png[API and Runtime Alert Setup]
 +
 image::alerts-setup-premium.png[Alert Setup Guidance]
 
-== Setting up Alerts for Graphs in Custom Dashboards
+== Add Alerts
 
-*https://www.mulesoft.com/anypoint-pricing[Titanium Subscription Required]*
-
-You can set up alerts to trigger email notifications when a data point you are measuring (`JVM - CPU % Utilization`) exceeds a specified threshold. These alerts are listed
-in the Alerts page in Anypoint Monitoring.
-
-//ANYPOINT MONITORING ALERTS
-include::partial$include-alerts-config.adoc[leveloffset=+1]
-
-== Adding Alerts
-
-Once alerts are listed on your Alerts page, you can use Add Alerts to link out to API and Runtime Alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
+Once alerts are listed on your *Alerts* page, you can use *Add Alerts* to link out to API and Runtime Alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
 
 image::alerts-menu.png[Alerts Menu]
 
