@@ -59,7 +59,7 @@ include::partial$include-alerts-config.adoc[leveloffset=+1]
 
 == Set Up API and Runtime Alerts
 
-From the Alerts feature in Anypoint Monitoring, you can link out to configuration pages for API and runtime alerts.
+From the Alerts feature in Anypoint Monitoring, you can link out to configuration pages for API and Runtime alerts.
 
 Depending on your subscription level:
 
