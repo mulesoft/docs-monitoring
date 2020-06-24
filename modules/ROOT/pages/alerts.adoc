@@ -10,7 +10,7 @@ If you have a Titanium subscription, you can also view, enable, and disable xref
 
 // should the below information remain here? Or should we redo this when we address Trust?
 
-When you configure an advanced alert for a graph, an alert status icon appears at the top-left corner of the graph. For example, the green dot in the bell indicates that the status is OK:
+When you configure an advanced alert for a graph, an alert status icon appears at the top-left corner of the graph. For example, the green dot in the bell indicates that the status is `OK`:
 
 image::alert-in-graph.png[alt]
 
