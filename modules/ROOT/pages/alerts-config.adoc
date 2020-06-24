@@ -19,7 +19,7 @@ Note that thresholds are checked every 5 minutes. The evaluated query is the ave
 [[basic-alerts]]
 == Set up Basic Alerts for Servers and Mule Apps
 
-You can set up basic alerts to trigger email notifications when a metric you are measuring reaches a specified threshold.
+You can set up basic alerts to trigger email notifications when a metric you are measuring passes a specified threshold.
 
 You can create basic alerts for the following metrics for servers or Mule apps:
 
