@@ -14,7 +14,7 @@ When you configure an advanced alert for a graph, an alert status icon appears a
 
 image::alert-in-graph.png[alt]
 
-Note that if you scroll over the bell icon, you can get a description, in this case, *Status OK*. See xref:alerts-using.adoc#alert_status[Filtering Alerts by Alert Status] to understand each alert status.
+Note that if you scroll over the bell icon, you can get a description. In this case, the description indicates `Status OK`. See xref:alerts-using.adoc#alert_status[Filtering Alerts by Alert Status] to understand each alert status.
 
 //When the data exceed a configured threshold on your resources over a period of time, you can also receive notification to take action.
 
