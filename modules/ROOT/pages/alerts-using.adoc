@@ -5,7 +5,7 @@ endif::[]
 
 When you set up alerts, you can enable or disable any of them, filter alerts based on the <<alert_status, alert status>>, and link out to the graph in a custom dashboard that is associated with the alert.
 
-The *Alerts* page shows basic alerts for servers and apps or advanced alerts (https://www.mulesoft.com/anypoint-pricing[Titanium Subscription Required]) for graphs in custom dashboards.
+The *Alerts* page shows basic alerts for servers and apps or advanced alerts (https://www.mulesoft.com/anypoint-pricing[Titanium subscription required]) for graphs in custom dashboards.
 
 [[alerts]]
 image::alerts.png[Examples Alerts]
