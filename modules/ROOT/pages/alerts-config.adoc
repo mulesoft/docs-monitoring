@@ -75,7 +75,7 @@ image::alerts-setup-premium.png[Alert Setup Guidance]
 
 == Add Alerts
 
-Once alerts are listed on your *Alerts* page, you can use *Add Alerts* to link out to API Manager and Runtime Manager alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
+You can use the *+ New alert* button to link out to API Manager and Runtime Manager alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
 
 image::alerts-menu.png[Alerts Menu]
 
