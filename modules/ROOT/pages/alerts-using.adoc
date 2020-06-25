@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-When you set up alerts, you can enable or disable any of them, filter alerts based on the <<alert_status, alert status>>, and link out to the graph in a custom dashboard that is associated with the alert.
+When you set up alerts, you can enable or disable any of them, filter alerts based on the <<alert_status, alert status>>, and link to the graph in a custom dashboard that is associated with the alert.
 
 The *Alerts* page shows basic alerts for servers and apps or advanced alerts (https://www.mulesoft.com/anypoint-pricing[Titanium subscription required]) for graphs in custom dashboards.
 
@@ -41,7 +41,8 @@ The alert is enabled and waiting for evaluation.
 
 You can activate or deactivate an alert by toggling the <<alerts, switch>> on the right.
 
-* Enabling a disabled alert causes the alert to transition to *Pending* until it is time for evaluation. Depending on the value, the alert transitions to `OK` or `Alerting`.
+* Enabling a disabled alert causes the alert to transition to `Pending` until it is time for evaluation. +
+Depending on the value, the alert transitions to `OK` or `Alerting`.
 * Disabling an alert causes the alert to transition to `Disabled`.
 
 == See Also

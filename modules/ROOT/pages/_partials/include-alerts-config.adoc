@@ -12,11 +12,12 @@ image::graph-alert-config.png[Advanced Alert Configuration]
 
 
 . Navigate to the configuration screen for a graph in a custom dashboard. For guidance, see xref:dashboard-custom-config.adoc[Configuring Custom Dashboards].
-. Provide a general configuration for the graph that (at minimum) defines the metric, environment, and resource for which you want to set the advanced alert. For guidance, see xref:dashboard-custom-config-graph.adoc#general_settings[General Settings].
+. Provide a general configuration for the graph that (at minimum) defines the metric, environment, and resource for which you want to set the advanced alert. +
+For guidance, see xref:dashboard-custom-config-graph.adoc#general_settings[General Settings].
 . Navigate to the *Alert* configuration tab for the graph.
 . Click *Create Alert*.
 . Use *Alert Config* to configure the alert. See <<alert_config, Alert Config>>.
-. Configure any notifications to email when an advanced alert is triggered. See <<notifications, Notifications>>.
+. Configure email notifications when an advanced alert is triggered. See <<notifications, Notifications>>.
 
 Note that you can also view <<state_history, state history>> and <<delete_alert, delete>> alerts.
 
@@ -28,8 +29,8 @@ Configure the condition under which an advanced alert is triggered.
 [%header,cols="1,4"]
 |===
 2+| Settings for Advanced Alerts
-| Name | A title for your advanced alert.
-| `Condition` | WHEN: For triggering an advanced alert when the `JVM - CPU % Utilization` is above a specified level.
+| Name | A title for your advanced alert
+| `Condition` | WHEN: For triggering an advanced alert when the `JVM - CPU % Utilization` is above a specified level
 |===
 
 ////
@@ -53,12 +54,12 @@ TODO _FUTURE?
 [[notifications]]
 === Notifications
 
-Configure a notification to email when an advanced alert is triggered.
+Configure an email notification when an advanced alert is triggered.
 
 [%header,cols="1,4"]
 |===
 2+| Notification Settings for Advanced Alerts
-| `Send To` | Email address for a recipient of the advanced alert notification. You can add more than one email recipient to the list.
+| `Send To` | Email address for each recipient of the advanced alert notification
 | `Message` | Message to send to the recipient.
 |===
 

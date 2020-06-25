@@ -7,7 +7,8 @@ Depending on your subscription level, you can configure different types of alert
 
 * Basic alerts for servers and Mule apps
 +
-Limit per organization: Up to 50 basic alerts for users who do not have a Titanium subscription to Anypoint Platform. If you have a Titanium subscription, the limit is 100 basic alerts, and the limits increase as you purchase more vCores. For complete details about subscriptions, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
+Limit per organization: Up to 50 basic alerts for users who do not have a Titanium subscription to Anypoint Platform. +
+If you have a Titanium subscription, the limit is 100 basic alerts, and the limits increase as you purchase more vCores. For complete details about subscriptions, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
 * Advanced alerts for graphs in custom dashboards in Anypoint Monitoring
 +
 Limit per organization: Up to 20 advanced alerts.
@@ -42,7 +43,8 @@ To create a basic alert:
 . Click the *Alerts* tab.
 . Click the *+ New Alerts* button.
 . Click *Basic alert*.
-. In the *Add basic alert* window, enter the information required to create your basic alert. Note that requirements change depending on the source type you select.
+. In the *Add basic alert* window, enter the information required to create your basic alert. +
+Note that requirements change depending on the source type you select.
 . Click *Save*.
 
 image::basic-alerts-config.png[Configure a Basic Alert]
@@ -57,9 +59,9 @@ You can set up advanced alerts to trigger email notifications when a data point 
 //ANYPOINT MONITORING ALERTS
 include::partial$include-alerts-config.adoc[leveloffset=+1]
 
-== Set Up API and Runtime Alerts
+== Configure API Manager and Runtime Manager Alerts
 
-From the Alerts feature in Anypoint Monitoring, you can link out to configuration pages for API and Runtime alerts.
+From the *Alerts* page in Anypoint Monitoring, you can link to configuration pages for API Manager and Runtime Manager alerts.
 
 Depending on your subscription level:
 
@@ -75,7 +77,7 @@ image::alerts-setup-premium.png[Alert Setup Guidance]
 
 == Add Alerts
 
-You can use the *+ New alert* button to link out to API Manager and Runtime Manager alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
+Use the *+ New alert* button to link to API Manager and Runtime Manager alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
 
 image::alerts-menu.png[Alerts Menu]
 
