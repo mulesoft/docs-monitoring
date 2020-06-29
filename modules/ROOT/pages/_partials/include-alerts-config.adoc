@@ -1,4 +1,4 @@
-= Configure an Advanced Alert
+= Create an Advanced Alert
 
 //INCLUDED IN GRAPH CONFIG FILE
 [[alerts]]
