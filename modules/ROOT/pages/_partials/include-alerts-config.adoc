@@ -18,13 +18,15 @@ For guidance, see xref:dashboard-custom-config-graph.adoc#general_settings[Gener
 . Click *Create Alert*.
 . Use *Alert Config* to configure the alert. See <<alert_config, Alert Config>>.
 . Configure email notifications when an advanced alert is triggered. See <<notifications, Notifications>>.
+. Click *Save Changes*. 
+. Click `X` to exit the configuration and return to the dashboard.
 
 Note that you can also view <<state_history, state history>> and <<delete_alert, delete>> alerts.
 
 [[alert_config]]
 === Configure an Advanced Alert
 
-Configure the condition under which an advanced alert is triggered.
+In the *Alert Config* section, configure the condition under which an advanced alert is triggered.
 
 [%header,cols="1,4"]
 |===
@@ -62,8 +64,6 @@ Configure an email notification when an advanced alert is triggered.
 | `Send To` | Email address for each recipient of the advanced alert notification
 | `Message` | Message to send to the recipient.
 |===
-
-After you complete your configuration, click *Save Changes*. To exit the configuration and return to the dashboard, click the `X`.
 
 [[state_history]]
 === State History
