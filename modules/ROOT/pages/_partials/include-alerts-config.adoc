@@ -22,7 +22,7 @@ For guidance, see xref:dashboard-custom-config-graph.adoc#general_settings[Gener
 Note that you can also view <<state_history, state history>> and <<delete_alert, delete>> alerts.
 
 [[alert_config]]
-=== Advanced Alert Config
+=== Configure an Advanced Alert
 
 Configure the condition under which an advanced alert is triggered.
 
