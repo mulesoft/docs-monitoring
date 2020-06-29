@@ -33,7 +33,7 @@ You can create basic alerts for the following metrics for servers or Mule apps:
 ** Message error count
 ** Message response time
 
-=== Configure a Basic Alert
+=== Create a Basic Alert
 
 When you create a basic alert, you can select a source for the basic alert, configure the condition under which the basic alert is triggered, and specify which email addresses receive notifications for basic alert triggers.
 
