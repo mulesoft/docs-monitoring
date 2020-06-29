@@ -39,7 +39,7 @@ TODO _FUTURE?
 [%header,cols="1,4"]
 |===
 
-| Name | A title for your advanced alert.
+| Name | A title for your advanced alert
 | `Evaluate Every` | Interval at which to poll for an alert, for example, every sixty seconds (`60s`).
 | Conditions a|
 * WHEN: `min()`, `max()`, `sum()`, `count()`, `last()`, `median()`, `diff()`, `percent_diff()`, `count_non_null()`
