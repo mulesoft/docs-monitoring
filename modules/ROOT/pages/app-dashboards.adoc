@@ -313,10 +313,17 @@ Failures by Flow::
 The sum of failed inbound requests, grouped by flow in automatic intervals.
 
 Inbound - Slow Requests by Flow::
-The sum of inbound requests whose response time is greater than 1000 ms, grouped by flow.
+The sum of inbound requests whose response time is greater than 1000 ms, grouped by flow. Cell color varies according to the following thresholds:
+* Green if the response time is less than 300 ms
+* Yellow if the response time is greater than 300 ms and less than 600 ms
+* Red if the response time is greater than or equal to 600 ms
 
 Outbound - Slow Requests by Flow::
-The sum of outbound requests whose response time is greater than 1000 ms, grouped by flow.
+The sum of outbound requests whose response time is greater than 1000 ms, grouped by flow. Cell color varies according to the following thresholds:
+
+* Green if the response time is less than 300 ms
+* Yellow if the response time is greater than 300 ms and less than 600 ms
+* Red if the response time is greater than or equal to 600 ms
 
 [[connectors-charts]]
 == Connectors
@@ -341,22 +348,22 @@ Salesforce Failures::
 The average number of Anypoint Connector for Salesforce (Salesforce Connector) requests failures, grouped by operation in automatic intervals.
 
 Database Requests::
-The average number of Anypoint Connector for Database (Database Connector) requests, grouped by operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]
+The average number of Anypoint Connector for Database (Database Connector) requests, grouped by operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Database Response Time::
 The average response time of Anypoint Connector for Database (Database Connector) requests, grouped in automatic intervals.
 
 Database Failures::
-The average number of Anypoint Connector for Database (Database Connector) requests failures, grouped by operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]
+The average number of Anypoint Connector for Database (Database Connector) requests failures, grouped by operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 HTTP Requests::
-The average number of HTTP connector requests, grouped by operation in automatic intervals.
+The average number of HTTP connector requests, grouped by operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 HTTP Response Time::
 The average response time of HTTP connector requests, grouped in automatic intervals.
 
 HTTP Failures::
-The average number of HTTP connector requests failures, grouped by operation in automatic intervals.
+The average number of HTTP connector requests failures, grouped by operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Web Services Requests::
 The average number of Web Services connector requests, grouped by operation in automatic intervals.
