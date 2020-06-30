@@ -49,44 +49,44 @@ Built-in dashboards include various pages to view different types of charts:
 
 | <<inbound-charts>> a|
 
-* Total Inbound Requests by Response Type
+* Inbound - Total Requests by Response Type
 * Average Response Time
 * Response Time by Endpoint
 * Total Requests by Endpoint
 * Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Maximum Response Time
-* Total Failed Inbound Requests
+* Inbound - Total Failed Requests
 * Total Slow Requests by Endpoint
 * Inbound - Maximum Response Time
-* Inbound Protocol (Titanium only)
-* Inbound Endpoint (Titanium only)
+* Inbound - Protocols (Titanium only)
+* Inbound - Endpoints (Titanium only)
 
 
 | <<outbound-charts>> a|
 
-* Total Outbound Requests by Response Type
+* Outbound - Total Requests by Response Type
 * Average Response Time
 * Average Response Time by HTTP Endpoint
 * Total Requests by HTTP Endpoint
 * Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)
-* Total Failed Outbound Requests
+* Outbound - Total Failed Requests
 
 The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
 
-* Outbound Ports
-* Outbound Operations
-* Outbound Protocol
-* Outbound Endpoints
-* Outbound Ports
+* Outbound - Ports
+* Outbound - Operations
+* Outbound - Protocol
+* Outbound - Endpoints
+* Outbound - Ports
 | <<flows-charts>> a|
 
-* Inbound Response Time by Flow
-* Outbound Response Time by Flow
-* Inbound Requests by Flow
-* Outbound Requests by Flow
+* Inbound - Response Time by Flow
+* Outbound - Response Time by Flow
+* Inbound - Requests by Flow
+* Outbound - Requests by Flow
 * Failures by Flow
-* Slow Inbound Requests by Flow
-* Slow Outbound Requests by Flow
+* Inbound - Slow Requests by Flow
+* Outbound - Slow Requests by Flow
 
 If you don't see the *Flows* tab, verify that you are using Unified Agent and have a Titanium subscription to Anypoint Platform.
 | <<connectors-charts>> a|
@@ -142,8 +142,8 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 | <<failures-charts>> a|
 
-* Total Failed Inbound Requests
-* Total Failed Outbound Requests
+* Inbound - Total Failed Requests
+* Outbound Total Failed Requests
 * Inbound - Total Requests by Response Type
 * Outbound - Total Requests by Response Type
 * Inbound - Failure Response Time by Endpoint
@@ -283,7 +283,6 @@ The sum of failed outbound requests, grouped by type of response in automatic in
 Outbound - Ports::
 The sum of outbound requests, grouped by remote port.
 
-
 Outbound - Operations::
 The estimated count of outbound requests, grouped by operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
@@ -298,25 +297,25 @@ The sum of outbound requests for the selected time period, grouped by remote hos
 
 The following charts appear on the *Flows* dashboard:
 
-Inbound Response Time by Flow::
+Inbound - Response Time by Flow::
 The average inbound response time, grouped by flow in automatic intervals.
 
-Outbound Response Time by Flow::
+Outbound - Response Time by Flow::
 The average outbound response time, grouped by flow in automatic intervals.
 
-Inbound Requests by Flow::
+Inbound - Requests by Flow::
 The sum of inbound requests, grouped by flow in automatic intervals.
 
-Outbound Requests by Flow::
+Outbound - Requests by Flow::
 The sum of outbound requests, grouped by flow in automatic intervals.
 
 Failures by Flow::
 The sum of failed inbound requests, grouped by flow in automatic intervals.
 
-Slow Inbound Requests by Flow::
+Inbound - Slow Requests by Flow::
 The sum of inbound requests whose response time is greater than 1000 ms, grouped by flow.
 
-Slow Outbound Requests by Flow::
+Outbound - Slow Requests by Flow::
 The sum of outbound requests whose response time is greater than 1000 ms, grouped by flow.
 
 [[connectors-charts]]
@@ -448,7 +447,7 @@ The average, maximum, and minimum response times, grouped by top occurring endpo
 Mule Messages::
 The number of Mule messages processed in the runtime, grouped in automatic intervals.
 
-Inbound Response Time graphs (99, 90, 75, and 50 percentiles)::
+Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)::
 The response time of the 99th, 90th, 75th, and 50th percentile of inbound requests, grouped by application in automatic intervals.
 
 Outbound - Average Response Time::
@@ -579,7 +578,6 @@ The number of CPU processors available to the Java virtual machine for each work
 
 Total System Memory::
 The amount of system memory available for workers over time.
-
 
 JVM Thread Count::
 The average number of threads of the JVM, grouped by worker in automatic intervals.
