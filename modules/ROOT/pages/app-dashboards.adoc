@@ -339,97 +339,97 @@ Response Time by Connector::
 The average outbound response time grouped by connector type in automatic intervals.
 
 Salesforce Requests::
-The average number of Anypoint Connector for Salesforce (Salesforce Connector) requests, grouped by operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for Salesforce (Salesforce Connector) requests, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Salesforce Response Time::
 The average response time of Anypoint Connector for Salesforce (Salesforce Connector) requests, grouped in automatic intervals.
 
 Salesforce Failures::
-The average number of Anypoint Connector for Salesforce (Salesforce Connector) requests failures, grouped by operation in automatic intervals.
+The average number of Anypoint Connector for Salesforce (Salesforce Connector) requests failures, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Database Requests::
-The average number of Anypoint Connector for Database (Database Connector) requests, grouped by operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for Database (Database Connector) requests, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Database Response Time::
 The average response time of Anypoint Connector for Database (Database Connector) requests, grouped in automatic intervals.
 
 Database Failures::
-The average number of Anypoint Connector for Database (Database Connector) requests failures, grouped by operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for Database (Database Connector) requests failures, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 HTTP Requests::
-The average number of HTTP connector requests, grouped by operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for HTTP (HTTP Connector) requests, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 HTTP Response Time::
-The average response time of HTTP connector requests, grouped in automatic intervals.
+The average response time of Anypoint Connector for HTTP (HTTP Connector) requests, grouped in automatic intervals.
 
 HTTP Failures::
-The average number of HTTP connector requests failures, grouped by operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for HTTP (HTTP Connector) requests failures, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Web Services Requests::
-The average number of Web Services connector requests, grouped by operation in automatic intervals.
+The average number of Anypoint Connector for Web Service Consumer (Web Service Consumer Connector) requests, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Web Services Response Time::
-The average number of Web Services connector request failures, grouped in automatic intervals.
+The average number of Anypoint Connector for Web Service Consumer (Web Service Consumer Connector) request failures, grouped in automatic intervals.
 
 Web Services Failures::
-The average response time of Web Services connector requests, grouped by connector type in automatic intervals.
+The average response time of Anypoint Connector for Web Service Consumer (Web Service Consumer Connector) requests, grouped by connector type in automatic intervals.
 
 FTP Requests::
-The average number of FTP connector requests, grouped by operation in automatic intervals.
+The average number of Anypoint Connector for FTP (FTP Connector) requests, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 FTP Response Time::
-The average response time of FTP connector requests, grouped in automatic intervals.
+The average response time of Anypoint Connector for FTP (FTP Connector) requests, grouped in automatic intervals.
 
 FTP Failures::
-The average number of FTP connector request failures, grouped by operation in automatic intervals.
+The average number of Anypoint Connector for FTP (FTP Connector) request failures, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 SFTP Requests::
-The average number of SFTP connector requests, grouped by operation in automatic intervals.
+The average number of Anypoint Connector for SFTP (SFTP Connector) requests, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 SFTP Response Time::
-The average response time of SFTP connector requests, grouped in automatic intervals.
+The average response time of Anypoint Connector for SFTP (SFTP Connector) requests, grouped in automatic intervals.
 
 SFTP Failures::
-The average number of SFTP connector request failures, grouped by operation in automatic intervals.
+The average number of Anypoint Connector for SFTP (SFTP Connector) request failures, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 SMTP Requests::
-The average number of SMTP connector requests, grouped by operation in automatic intervals.
+The average number of Anypoint Connector for Email (Email Connector) requests, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 SMTP Response Time::
-The average response time of SMTP connector requests, grouped in automatic intervals.
+The average response time of Anypoint Connector for Email (Email Connector) requests, grouped in automatic intervals.
 
 SMTP Failures::
-The average number of SMTP connector request failures, grouped by operation in automatic intervals.
+The average number of Anypoint Connector for Email (Email Connector) request failures, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Object Store Requests::
-The average response time of Object Store connector requests, grouped by operation and automatic intervals.
+The average response time of Object Store Connector requests, grouped by operation and automatic intervals.
 
 Object Store Response Time::
-The average number of Object Store connector request failures, grouped by operation and automatic intervals.
+The average number of Object Store Connector request failures, grouped by operation and automatic intervals.
 
 Object Store Failures::
-The average number of Anypoint MQ connector inbound requests, grouped by operation and automatic intervals.
+The average number of Anypoint MQ Connector inbound requests, grouped by operation and automatic intervals.
 
 Anypoint MQ Operations - Inbound::
-The average response time of Anypoint MQ connector inbound requests, grouped by operation and automatic intervals.
+The average response time of Anypoint MQ Connector inbound requests, grouped by operation and automatic intervals.
 
 Anypoint MQ Response Time - Inbound::
-The average number of Anypoint MQ connector inbound request failures, grouped by operation and automatic intervals.
+The average number of Anypoint MQ Connector inbound request failures, grouped by operation and automatic intervals.
 
 Anypoint MQ Failures - Inbound::
-The average number of Anypoint MQ connector outbound requests, grouped by operation and automatic intervals.
+The average number of Anypoint MQ Connector outbound requests, grouped by operation and automatic intervals.
 
 Anypoint MQ Operations - Outbound::
-The average response time of Anypoint MQ connector outbound requests, grouped by operation and automatic intervals.
+The average response time of Anypoint MQ Connector outbound requests, grouped by operation and automatic intervals.
 
 Anypoint MQ Response Time - Outbound::
-The average number of Anypoint MQ connector outbound request failures, grouped by operation and automatic intervals.
+The average number of Anypoint MQ Connector outbound request failures, grouped by operation and automatic intervals.
 
 Anypoint MQ Failures - Outbound::
-The average number of requests of connectors of type `other`, grouped by operation in automatic intervals.
+The average number of requests of Connectors of type `other`, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Other Connector Requests::
-The average number of requests of connectors of type `other`, grouped in automatic intervals.
+The average number of requests of Connectors of type `other`, grouped in automatic intervals.
 
 Other Connector Response Time::
 The average response time of requests for connectors of type `other`, grouped in automatic intervals.
@@ -607,7 +607,11 @@ You can click *Metrics* to see statistics, such as average response time and fai
 [[endpoint-operation-metrics]]
 == How Endpoint and Operation Use Metrics Are Gathered
 
-The built-in dashboards for apps contain tables that show endpoint metrics. The tables sort the available endpoints in a menu. When you designate a time period for the data that appears in the tables, the results shown in the endpoint tables can include multiple grouping intervals because the data is processed in intervals of time. As a result, the menu in a given table usually shows top occurring endpoints and, depending on the number of endpoints, a group called *Other* that shows an aggregation of endpoints that do not occur as often for that time period. The tables show approximate counts for the most commonly occurring endpoints when the *Other* grouping appears.
+Anypoint Monitoring collects top occurring endpoints or operations for each data collection interval. Endpoints or operations that are not top occurring are sorted into a group called *Other*.
+
+In each data collection interval, top occurring endpoints or operations vary. An endpoint or operation that is top occurring in one interval may not be top occurring in the next.
+
+In Anypoint Monitoring charts and tables, the data comes from multiple data collection intervals. As a result, aggregated data shown in the dashboard is an estimation since the intervals may not have the same top occurring endpoints or operations. The tables show approximate counts for the most commonly occurring endpoints or operations when the *Other* grouping appears.
 
 For example, when an endpoint occurs more often than other endpoints in one interval but occurs less often in another interval (thus sorting it into the *Other* group for that interval), the resulting table displays lower than actual values for that endpoint, since the metrics that do not appear are grouped into the *Other* group.
 
