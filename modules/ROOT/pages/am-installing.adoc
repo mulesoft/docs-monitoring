@@ -33,7 +33,7 @@ To install the agent, you must have root or administrative privileges.
 
 == Supported Versions of Mule Runtime Engine
 
-A supported version of Mule must be running on the server. Supported versions of Mule include:
+A supported version of Mule must be running on the server. Supported versions of Mule include: 
 
 * 4.x.x
 * 3.9.x
