@@ -8,6 +8,8 @@ Expected CPU utilization impact: 3-5%
 
 == Data Retention and Aggregation
 
+Anypoint Monitoring asynchronously collects data, which does not block Mule runtime data processing.
+
 * Minute Resolution for Metrics.
 * Gold and Platinum subscriptions:
  ** API analytics are retained for 90 days.
