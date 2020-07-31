@@ -95,8 +95,7 @@ For a Linux server, enter:
 
 ----
 $ ./install -p socks5://user:password@socks5-server:1080
----- 
-
+----
 If the user or password of the SOCKS5 proxy configuration contains URI reserved characters, it must be percent-encoded following the encoding rules of RFC 3986.
 
 
@@ -136,7 +135,8 @@ Enabling Monitoring can impact CPU utilization and memory utilization, which var
 
 == What to do Next
 
-- If you find connection failure or retry entries, ensure that port 443 in your outbound firewall is open. If an older runtime uses port 5044, the port must remain open.
+- If you find connection failure or retry entries, ensure that port 443 in your outbound firewall is open.
+- If you are using Runtime Fabric, ensure that port 5044 in your outbound firewall is open. 
 - If you do not find connection failure or retry entries, contact MuleSoft technical support.
 
 
