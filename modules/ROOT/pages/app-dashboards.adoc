@@ -190,28 +190,28 @@ The chart on the *Application Network* tab shows the xref:visualizer::troublesho
 The following charts appear on the *Overview* dashboard:
 
 Inbound - Total Requests by Response Type::
-The sum of inbound requests, grouped by type of response in automatic intervals. Responses are `OK` or `Failed`. If a Mule app has more than one connector type, all types are included in this metric.
+The sum of inbound requests, grouped by type of response by automatic interval. Responses are `OK` or `Failed`. If a Mule app has more than one connector type, all types are included in this metric.
 
 Inbound - Average Response Time::
-The average response time of inbound requests, grouped in automatic intervals. If a Mule app has more than one connector type, all types are included in this metric.
+The average response time of inbound requests, grouped by automatic interval. If a Mule app has more than one connector type, all types are included in this metric.
 
 Mule Messages::
-The total number of Mule messages that are processed successfully, grouped in automatic intervals.
+The total number of Mule messages that are processed successfully, grouped by automatic interval.
 
 Outbound - Total Requests by Response Type::
-The sum of outbound requests, grouped by type of response in automatic intervals. Responses are `OK` or `Failed`. If a Mule app has more than one connector type, all types are included in this metric.
+The sum of outbound requests, grouped by type of response by automatic interval. Responses are `OK` or `Failed`. If a Mule app has more than one connector type, all types are included in this metric.
 
 Outbound - Average Response Time::
-The average response time of outbound requests, grouped in automatic intervals. If a Mule app has more than one connector type, all types are included in this metric.
+The average response time of outbound requests, grouped by automatic interval. If a Mule app has more than one connector type, all types are included in this metric.
 
 JVM - CPU % Utilization::
-The average percentage of CPU used by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule JVM process. The calculation for CPU utilization is relative to the physical server on which Mule is deployed. For example, in RTF, the resource usage indicates the JVM use with respect to the entire server, and not with respect to the pod maximum CPU allocation.
+The average percentage of CPU used by the JVM, grouped by worker by automatic interval. The JVM used in this chart is the Mule JVM process. The calculation for CPU utilization is relative to the physical server on which Mule is deployed. For example, in RTF, the resource usage indicates the JVM use with respect to the entire server, and not with respect to the pod maximum CPU allocation.
 
 JVM - Heap Used::
-The average amount of heap memory utilized by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule JVM process.
+The average amount of heap memory utilized by the JVM, grouped by worker by automatic interval. The JVM used in this chart is the Mule JVM process.
 
 JVM - Thread Count::
-The average number of threads of the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule JVM process.
+The average number of threads of the JVM, grouped by worker by automatic interval. The JVM used in this chart is the Mule JVM process.
 
 [[inbound-charts]]
 == Inbound
@@ -220,10 +220,10 @@ Inbound metrics are retained for 24 hours.
 The following charts appear on the *Inbound* dashboard:
 
 Inbound - Total Requests by Response Type::
-The sum of inbound requests, grouped by type of response in automatic intervals. Responses are `OK` or `Failed`. If a Mule app has more than one connector type, all types are included in this metric.
+The sum of inbound requests, grouped by type of response by automatic interval. Responses are `OK` or `Failed`. If a Mule app has more than one connector type, all types are included in this metric.
 
 Inbound - Average Response Time::
-The average response time of inbound requests, grouped in automatic intervals. If a Mule app has more than one connector type, all types are included in this metric.
+The average response time of inbound requests, grouped by automatic interval. If a Mule app has more than one connector type, all types are included in this metric.
 
 Inbound - Response Time by Endpoint::
 The average, maximum, minimum, and total response times, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
@@ -235,16 +235,16 @@ Inbound - Total Requests by Endpoint::
 The sum of inbound requests in the selected time period, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)::
-The average response time of the 99, 90, 75, and 50 percentiles of inbound requests, grouped in automatic intervals. The unit for these metrics is milliseconds (ms).
+The average response time of the 99, 90, 75, and 50 percentiles of inbound requests, grouped by automatic interval. The unit for these metrics is milliseconds (ms).
 
 Inbound - Maximum Response Time::
-The maximum response time, grouped by endpoint in automatic intervals.
+The maximum response time, grouped by endpoint by automatic interval.
 
 Inbound - Total Failed Requests::
-The sum of failed inbound requests, grouped by type of response in automatic intervals.
+The sum of failed inbound requests, grouped by type of response by automatic interval.
 
 Inbound - Total Slow Requests by Endpoint::
-The sum of inbound requests whose response time is greater than 1 second, grouped by endpoint in automatic intervals. The sum of total calls in which the response time is greater than 1000 ms.
+The sum of inbound requests whose response time is greater than 1 second, grouped by endpoint by automatic interval. The sum of total calls in which the response time is greater than 1000 ms.
 
 The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
 
@@ -260,10 +260,10 @@ The sum of inbound requests, grouped by remote hosts (endpoints).
 The following charts appear on the *Outbound* dashboard:
 
 Outbound - Total Requests by Response Type::
-The sum of outbound requests, grouped by type of response in automatic intervals. Responses are `OK` or `Failed`. If a Mule app has more than one connector type, all types are included in this metric.
+The sum of outbound requests, grouped by type of response by automatic interval. Responses are `OK` or `Failed`. If a Mule app has more than one connector type, all types are included in this metric.
 
 Outbound - Average Response Time::
-The average response time of outbound requests, grouped by application in automatic intervals. If a Mule app has more than one connector type, all types are included in this metric.
+The average response time of outbound requests, grouped by application by automatic interval. If a Mule app has more than one connector type, all types are included in this metric.
 
 Outbound - Response Time by HTTP Endpoint::
 The average, maximum, minimum, and total response times, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
@@ -275,10 +275,10 @@ Outbound - Total Requests by HTTP Endpoint::
 The sum of outbound requests in the selected time period, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Outbound - Response Time (99, 90, 75, and 50 percentiles)::
-The average response time of the 99, 90, 75, and 50 percentiles of outbound requests, grouped by application in automatic intervals. The unit for these metrics is milliseconds (ms).
+The average response time of the 99, 90, 75, and 50 percentiles of outbound requests, grouped by application by automatic interval. The unit for these metrics is milliseconds (ms).
 
 Outbound - Failure Total Request Count::
-The sum of failed outbound requests, grouped by type of response in automatic intervals.
+The sum of failed outbound requests, grouped by type of response by automatic interval.
 
 Outbound - Ports::
 The sum of outbound requests, grouped by remote port.
@@ -298,19 +298,19 @@ The sum of outbound requests for the selected time period, grouped by remote hos
 The following charts appear on the *Flows* dashboard:
 
 Inbound - Response Time by Flow::
-The average inbound response time, grouped by flow in automatic intervals.
+The average inbound response time, grouped by flow by automatic interval.
 
 Outbound - Response Time by Flow::
-The average outbound response time, grouped by flow in automatic intervals.
+The average outbound response time, grouped by flow by automatic interval.
 
 Inbound - Requests by Flow::
-The sum of inbound requests, grouped by flow in automatic intervals.
+The sum of inbound requests, grouped by flow by automatic interval.
 
 Outbound - Requests by Flow::
-The sum of outbound requests, grouped by flow in automatic intervals.
+The sum of outbound requests, grouped by flow by automatic interval.
 
 Failures by Flow::
-The sum of failed inbound requests, grouped by flow in automatic intervals.
+The sum of failed inbound requests, grouped by flow by automatic interval.
 
 Inbound - Slow Requests by Flow::
 The sum of inbound requests whose response time is greater than 1000 ms, grouped by flow. Cell color varies according to the following thresholds:
@@ -333,73 +333,73 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 The following charts appear on the *Connectors* dashboard:
 
 Total Connector Requests::
-The sum of outbound requests grouped by connector type in automatic intervals.
+The sum of outbound requests grouped by connector type by automatic interval.
 
 Response Time by Connector::
-The average outbound response time grouped by connector type in automatic intervals.
+The average outbound response time grouped by connector type by automatic interval.
 
 Salesforce Requests::
-The average number of Anypoint Connector for Salesforce (Salesforce Connector) requests, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for Salesforce (Salesforce Connector) requests, grouped by top occurring operation by automatic interval. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Salesforce Response Time::
-The average response time of Anypoint Connector for Salesforce (Salesforce Connector) requests, grouped in automatic intervals.
+The average response time of Anypoint Connector for Salesforce (Salesforce Connector) requests, grouped by automatic interval.
 
 Salesforce Failures::
-The average number of Anypoint Connector for Salesforce (Salesforce Connector) requests failures, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for Salesforce (Salesforce Connector) requests failures, grouped by top occurring operation by automatic interval. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Database Requests::
-The average number of Anypoint Connector for Database (Database Connector) requests, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for Database (Database Connector) requests, grouped by top occurring operation by automatic interval. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Database Response Time::
-The average response time of Anypoint Connector for Database (Database Connector) requests, grouped in automatic intervals.
+The average response time of Anypoint Connector for Database (Database Connector) requests, grouped by automatic interval.
 
 Database Failures::
-The average number of Anypoint Connector for Database (Database Connector) requests failures, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for Database (Database Connector) requests failures, grouped by top occurring operation by automatic interval. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 HTTP Requests::
-The average number of Anypoint Connector for HTTP (HTTP Connector) requests, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for HTTP (HTTP Connector) requests, grouped by top occurring operation by automatic interval. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 HTTP Response Time::
-The average response time of Anypoint Connector for HTTP (HTTP Connector) requests, grouped in automatic intervals.
+The average response time of Anypoint Connector for HTTP (HTTP Connector) requests, grouped by automatic interval.
 
 HTTP Failures::
-The average number of Anypoint Connector for HTTP (HTTP Connector) requests failures, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for HTTP (HTTP Connector) requests failures, grouped by top occurring operation by automatic interval. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Web Services Requests::
-The average number of Anypoint Connector for Web Service Consumer (Web Service Consumer Connector) requests, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for Web Service Consumer (Web Service Consumer Connector) requests, grouped by top occurring operation by automatic interval. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Web Services Response Time::
-The average number of Anypoint Connector for Web Service Consumer (Web Service Consumer Connector) request failures, grouped in automatic intervals.
+The average number of Anypoint Connector for Web Service Consumer (Web Service Consumer Connector) request failures, grouped by automatic interval.
 
 Web Services Failures::
-The average response time of Anypoint Connector for Web Service Consumer (Web Service Consumer Connector) requests, grouped by connector type in automatic intervals.
+The average response time of Anypoint Connector for Web Service Consumer (Web Service Consumer Connector) requests, grouped by connector type by automatic interval.
 
 FTP Requests::
-The average number of Anypoint Connector for FTP (FTP Connector) requests, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for FTP (FTP Connector) requests, grouped by top occurring operation by automatic interval. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 FTP Response Time::
-The average response time of Anypoint Connector for FTP (FTP Connector) requests, grouped in automatic intervals.
+The average response time of Anypoint Connector for FTP (FTP Connector) requests, grouped by automatic interval.
 
 FTP Failures::
-The average number of Anypoint Connector for FTP (FTP Connector) request failures, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for FTP (FTP Connector) request failures, grouped by top occurring operation by automatic interval. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 SFTP Requests::
-The average number of Anypoint Connector for SFTP (SFTP Connector) requests, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for SFTP (SFTP Connector) requests, grouped by top occurring operation by automatic interval. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 SFTP Response Time::
-The average response time of Anypoint Connector for SFTP (SFTP Connector) requests, grouped in automatic intervals.
+The average response time of Anypoint Connector for SFTP (SFTP Connector) requests, grouped by automatic interval.
 
 SFTP Failures::
-The average number of Anypoint Connector for SFTP (SFTP Connector) request failures, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for SFTP (SFTP Connector) request failures, grouped by top occurring operation by automatic interval. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 SMTP Requests::
-The average number of Anypoint Connector for Email (Email Connector) requests, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for Email (Email Connector) requests, grouped by top occurring operation by automatic interval. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 SMTP Response Time::
-The average response time of Anypoint Connector for Email (Email Connector) requests, grouped in automatic intervals.
+The average response time of Anypoint Connector for Email (Email Connector) requests, grouped by automatic interval.
 
 SMTP Failures::
-The average number of Anypoint Connector for Email (Email Connector) request failures, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of Anypoint Connector for Email (Email Connector) request failures, grouped by top occurring operation by automatic interval. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Object Store Requests::
 The average response time of Object Store Connector requests, grouped by operation and automatic intervals.
@@ -426,16 +426,16 @@ Anypoint MQ Response Time - Outbound::
 The average number of Anypoint MQ Connector outbound request failures, grouped by operation and automatic intervals.
 
 Anypoint MQ Failures - Outbound::
-The average number of requests of Connectors of type `other`, grouped by top occurring operation in automatic intervals. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of requests of Connectors of type `other`, grouped by top occurring operation by automatic interval. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Other Connector Requests::
-The average number of requests of Connectors of type `other`, grouped in automatic intervals.
+The average number of requests of Connectors of type `other`, grouped by automatic interval.
 
 Other Connector Response Time::
-The average response time of requests for connectors of type `other`, grouped in automatic intervals.
+The average response time of requests for connectors of type `other`, grouped by automatic interval.
 
 Other Connector Failures::
-The average number of requests failures of connectors of type `other`, grouped in automatic intervals.
+The average number of requests failures of connectors of type `other`, grouped by automatic interval.
 
 [[performance-charts]]
 == Performance
@@ -443,7 +443,7 @@ The average number of requests failures of connectors of type `other`, grouped i
 The following charts appear on the *Performance* dashboard:
 
 Inbound - Average Response Time::
-The average response time of inbound requests, grouped in automatic intervals.
+The average response time of inbound requests, grouped by automatic interval.
 
 Inbound - Average Response Time Grouped by Endpoint::
 The average, maximum, and minimum response times, grouped by top occurring endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
@@ -452,13 +452,13 @@ The average, maximum, and minimum response times, grouped by top occurring endpo
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 
 Mule Messages::
-The number of Mule messages processed in the runtime, grouped in automatic intervals.
+The number of Mule messages processed in the runtime, grouped by automatic interval.
 
 Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)::
-The response time of the 99th, 90th, 75th, and 50th percentile of inbound requests, grouped by application in automatic intervals.
+The response time of the 99th, 90th, 75th, and 50th percentile of inbound requests, grouped by application by automatic interval.
 
 Outbound - Average Response Time::
-The average response time of outbound requests, grouped in automatic intervals.
+The average response time of outbound requests, grouped by automatic interval.
 
 Outbound - Average Response Time Grouped by HTTP Endpoint::
 The average, maximum, and minimum response times, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cells color varies according to the following thresholds:
@@ -467,7 +467,7 @@ The average, maximum, and minimum response times, grouped by endpoint. For more 
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 
 Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)::
-The response time of the 99th, 90th, 75th, and 50th percentile of outbound requests, grouped in automatic intervals.
+The response time of the 99th, 90th, 75th, and 50th percentile of outbound requests, grouped by automatic interval.
 
 [[failures-charts]]
 == Failures
@@ -475,10 +475,10 @@ The response time of the 99th, 90th, 75th, and 50th percentile of outbound reque
 The following charts appear on the *Failures* dashboard:
 
 Inbound - Total Failed Requests::
-The sum of failed inbound requests in the period, grouped in automatic intervals.
+The sum of failed inbound requests in the period, grouped by automatic interval.
 
 Outbound - Total Failed Requests::
-The sum of failed outbound requests in the period, grouped in automatic intervals.
+The sum of failed outbound requests in the period, grouped by automatic interval.
 
 Inbound - Total Requests by Response Type::
 The sum of inbound requests, grouped by type of response and automatic interval.
@@ -510,55 +510,55 @@ The sum of failed outbound requests, grouped by endpoint.
 The following charts appear on the *JVM* dashboard:
 
 Garbage Collection Count::
-The average number of collections that have occurred, grouped by worker in automatic intervals.
+The average number of collections that have occurred, grouped by worker by automatic interval.
 
 Garbage Collection Time::
-The average amount of JVM garbage collection time, grouped by worker in automatic intervals.
+The average amount of JVM garbage collection time, grouped by worker by automatic interval.
 
 ParNew Collection Count::
-The average number of ParNew garbage collections, grouped by worker in automatic intervals.
+The average number of ParNew garbage collections, grouped by worker by automatic interval.
 
 ParNew Collection Time::
-The average amount of ParNew garbage collection time, grouped by worker in automatic intervals.
+The average amount of ParNew garbage collection time, grouped by worker by automatic interval.
 
 Classes Loaded::
-The average number of loaded classes, grouped by worker in automatic intervals.
+The average number of loaded classes, grouped by worker by automatic interval.
 
 Classes Loaded Total::
-The number of classes loaded since JVM start, grouped by worker in automatic intervals.
+The number of classes loaded since JVM start, grouped by worker by automatic interval.
 
 Classes Unloaded::
-The average number of classes unloaded since JVM start, grouped by worker in automatic intervals.
+The average number of classes unloaded since JVM start, grouped by worker by automatic interval.
 
 Heap Committed::
-The amount of heap memory committed by the JVM, grouped by worker in automatic intervals.
+The amount of heap memory committed by the JVM, grouped by worker by automatic interval.
 
 Heap Used::
-The amount of heap memory utilized by the JVM, grouped by worker in automatic intervals.
+The amount of heap memory utilized by the JVM, grouped by worker by automatic interval.
 
 Thread Count::
-The average number of threads of the JVM, grouped by worker in automatic intervals.
+The average number of threads of the JVM, grouped by worker by automatic interval.
 
 JVM Uptime::
-The time since JVM started, grouped by worker in automatic intervals.
+The time since JVM started, grouped by worker by automatic interval.
 
 Eden Space graphs (Used, Max, Init, and Committed)::
-The memory metrics for JVM Par Eden space, grouped by worker in automatic intervals.
+The memory metrics for JVM Par Eden space, grouped by worker by automatic interval.
 
 Survivor Space graphs (Used, Max, Init, and Committed)::
-The memory metrics for JVM Par Survivor space, grouped by worker in automatic intervals.
+The memory metrics for JVM Par Survivor space, grouped by worker by automatic interval.
 
 Metaspace graphs (Used, Max, Init, Committed)::
-The memory metrics for JVM metaspace, grouped by worker in automatic intervals.
+The memory metrics for JVM metaspace, grouped by worker by automatic interval.
 
 Code Cache graphs (Used, Max, Init, Committed)::
-The memory metrics for JVM code cache, grouped by worker in automatic intervals.
+The memory metrics for JVM code cache, grouped by worker by automatic interval.
 
 Compressed Class Space graphs (Used, Max, Init, Committed)::
-The memory metrics for JVM compressed class, grouped by worker in automatic intervals.
+The memory metrics for JVM compressed class, grouped by worker by automatic interval.
 
 Committed Virtual Memory::
-The amount of virtual memory guaranteed to be available to the running process, grouped by worker in automatic intervals.
+The amount of virtual memory guaranteed to be available to the running process, grouped by worker by automatic interval.
 
 [[infrastructure-charts]]
 == Infrastructure
@@ -572,13 +572,13 @@ JVM CPU Time::
 The cumulative CPU time consumed by the JVM.
 
 Operating System Swap Space::
-The amount of memory the system is swapping, grouped by worker in automatic intervals.
+The amount of memory the system is swapping, grouped by worker by automatic interval.
 
 JVM - CPU % Utilization::
-The average percentage of CPU utilized by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule JVM process. The calculation for CPU utilization is relative to the physical server on which the Mule runtime is deployed. For example, in RTF, the resource usage here indicates the JVM's utilization with respect to the entire server and not with respect to the pod maximum CPU allocation.
+The average percentage of CPU utilized by the JVM, grouped by worker by automatic interval. The JVM used in this chart is the Mule JVM process. The calculation for CPU utilization is relative to the physical server on which the Mule runtime is deployed. For example, in RTF, the resource usage here indicates the JVM's utilization with respect to the entire server and not with respect to the pod maximum CPU allocation.
 
 JVM - Heap Used::
-The average amount of heap memory utilized by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule runtime JVM process.
+The average amount of heap memory utilized by the JVM, grouped by worker by automatic interval. The JVM used in this chart is the Mule runtime JVM process.
 
 Total System Processors::
 The number of CPU processors available to the Java virtual machine for each worker.
@@ -587,7 +587,7 @@ Total System Memory::
 The amount of system memory available for workers over time.
 
 JVM Thread Count::
-The average number of threads of the JVM, grouped by worker in automatic intervals.
+The average number of threads of the JVM, grouped by worker by automatic interval.
 
 .Example: Infrastructure Dashboard
 image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
