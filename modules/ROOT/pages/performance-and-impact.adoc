@@ -12,8 +12,8 @@ Anypoint Monitoring asynchronously collects data, which does not block Mule runt
 
 * Minute Resolution for Metrics.
 * Gold and Platinum subscriptions:
- ** API analytics metrics are retained for 90 days.
- ** Application metrics are retained for 30 days.
+ ** API analytics metrics data are retained for 90 days.
+ ** Application metrics data are retained for 30 days.
 
 
 == Screen Resolution
