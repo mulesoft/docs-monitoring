@@ -1,6 +1,6 @@
 = Anypoint Monitoring Performance, Impact, and Limits
 
-Review details about the performance impact and data retention with Anypoint Monitoring. 
+Review details about the performance impact and data retention with Anypoint Monitoring.
 
 == Mule Monitoring Agent Performance Impact
 
@@ -12,8 +12,8 @@ Anypoint Monitoring asynchronously collects data, which does not block Mule runt
 
 * Minute Resolution for Metrics.
 * Gold and Platinum subscriptions:
- ** API analytics are retained for 90 days.
- ** Application metrics are retained for 30 days. 
+ ** API analytics metrics data are retained for 90 days.
+ ** Application metrics data are retained for 30 days.
 
 
 == Screen Resolution
@@ -22,8 +22,6 @@ For the best performance, use a minimum screen resolution of 1024x768.
 
 == Logging
 
-In Log Management, the maximum length of one line of log data is 8 KB (including date and thread metadata). Single lines that are longer than 8 KB will be truncated at the 8 KB mark. 
+In Log Management, the maximum length of one line of log data is 8 KB (including date and thread metadata). Single lines that are longer than 8 KB will be truncated at the 8 KB mark.
 
 To log longer segments of information, you must split them up into chunks that are individually smaller than 8 KB.
-
-
