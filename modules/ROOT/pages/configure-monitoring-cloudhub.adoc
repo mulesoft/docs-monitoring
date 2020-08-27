@@ -53,18 +53,20 @@ anypoint-cli --username="..." --password="..."
 If you are using Maven for deployment, you must modify the `<muleVersion>`
 tag in the `pom.xml` file. For example, you can change `<muleVersion>3.9.3</muleVersion>` to `<muleVersion>3.9.4</muleVersion>`).
 
-== Enable Monitoring for Apps Deployed to CloudHub by Default
+== Enable Automatic Monitoring for Apps That You Plan to Deploy to Cloudhub
 
-You can configure Anypoint Monitoring to enable monitoring by default for any newly deployed apps to CloudHub. When you enable the *Enable Anypoint Monitoring for newly deployed CloudHub applications* check box, any Mule app that you deploy to CloudHub has monitoring enabled by default. 
+If you want your Mule apps to be monitored by default when you deploy them to CloudHub, configure this feature in Anypoint Monitoring before you deploy your apps. If you have a Titanium subscription to Anypoint Platform, this feature is enabled by default.
 If you have a Titanium subscription to Anypoint Platform, this feature is enabled by default.
 
+To configure automatic monitoring for each Mule app as it is deployed to CloudHub:
+
 . Sign in to Anypoint Platform and navigate to *Anypoint Monitoring*.
-. In the navigation menu, click *Settings*.
+. In the navigation menu, click *Settings*:
 +
 image::monitoring-settings-screen.png[]
 +
 . Select *CloudHub*.
-. Click *(checkbox name)*.
+. Click *Enable Anypoint Monitoring for newly deployed CloudHub applications*.
 
 If you deployed Mule apps to CloudHub before you enabled this feature, you must enable monitoring for those apps manually. This feature does not retroactively enable monitoring for previously deployed apps.
 
@@ -79,7 +81,7 @@ For supported versions of Mule, see xref:configure-monitoring-cloudhub.adoc[Conf
 You can use the *Settings* page in Anypoint Monitoring to enable or disable apps deployed to CloudHub and running on Mule.
 
 . Sign in to Anypoint Platform and navigate to *Anypoint Monitoring*.
-. In the navigation menu, click *Settings*.
+. In the navigation menu, click *Settings*:
 +
 image::monitoring-settings-screen.png[]
 +
@@ -87,7 +89,7 @@ image::monitoring-settings-screen.png[]
 . In the *Environment* list, select the environment where the application is running. +
 A list of running applications is shown for the selected environment. +
 You can search for a specific application using the *List of resources* search box.
-. Next to the application, click *Enable* to enable monitoring for the application, or *Disable* to disable monitoring for the application. +
+. Next to the application, click *Enable* to enable monitoring for the application.
 
 == Enable Monitoring in CloudHub Settings
 
