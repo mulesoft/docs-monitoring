@@ -4,7 +4,7 @@ Review details about the performance impact and data retention with Anypoint Mon
 
 == Mule Monitoring Agent Performance Impact
 
-Expected CPU utilization impact: 3-5%
+Based on typical usage, the expected CPU utilization is less than 5%. For more information, refer to xref:monitoring::configure-monitoring-cloudhub#performance-impact[Configure and Enable Anypoint Monitoring for Mule Apps (CloudHub)].
 
 == Data Retention and Aggregation
 

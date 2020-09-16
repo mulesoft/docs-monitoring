@@ -114,8 +114,9 @@ Use the Anypoint CLI and set the following property during your CI/CD deployment
 
 == Performance Impact
 
-Enabling monitoring can impact CPU utilization and memory utilization, which varies depending upon specific application configuration. You should test any performance impact in your pre-production environment prior to enabling monitoring in your production environment to ensure optimal performance and sizing.
-
+Enabling Anypoint Monitoring can impact CPU utilization and memory utilization, which varies depending upon specific application behavior, such as inbound and outbound call rates.
+For a typical application, expected CPU utilization impact is less than 5%.
+For an accurate impact analysis specific to your application, MuleSoft recommends that you test and estimate any performance impact in your pre-production environment prior to enabling monitoring in your production environment.
 
 == See Also
 
