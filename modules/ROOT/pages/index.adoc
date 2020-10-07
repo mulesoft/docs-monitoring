@@ -176,7 +176,21 @@ Anypoint Monitoring provides many features to Gold and Platinum subscribers. How
 | No
 | Yes
 
-3+| *Additional Anypoint Monitoring features
+3+| *Logs*
+
+| Log search
+| No
+| Yes
+
+| Log points
+| No
+| Yes
+
+| Raw data
+| No
+| Yes
+
+3+| *Additional Anypoint Monitoring features*
 
 | Anypoint Monitoring Archive API
 | No
@@ -193,21 +207,6 @@ Anypoint Monitoring provides many features to Gold and Platinum subscribers. How
 | Reports
 | No
 | Yes
-
-3+| *Logs*
-
-| Log search
-| No
-| Yes
-
-| Log points
-| No
-| Yes
-
-| Raw data
-| No
-| Yes
-
 
 |===
 
