@@ -82,6 +82,135 @@ Monitor APIs and endpoints at scheduled intervals. Receive reports about whether
 
 See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring in Anypoint Monitoring].
 
+== Anypoint Monitoring Features
+
+Anypoint Monitoring provides many features to Gold and Platinum subscribers. However, for more comprehensive monitoring services, Titanium subscribers receive additional charts and functionality.
+
+|===
+| Feature | Gold/Platinum Support | Titanium Support
+
+3+| *Built-in Application Dashboards*
+| Overview charts
+| Yes
+| Yes
+
+| Inbound charts
+| Yes
+| Yes, with 3 additional charts
+
+| Outbound charts
+| Yes
+| Yes, with 4 additional charts
+
+| Flows charts
+| No
+| Yes
+
+| Connectors charts
+| No
+| Yes
+
+| Performance charts
+| Yes
+| Yes
+
+| Failures charts
+| Yes
+| Yes
+
+| JVM charts
+| Yes
+| Yes, with 1 additional chart
+
+| Infrastructure charts
+| Yes
+| Yes, with 3 additional charts
+
+| Application Network integration
+| No
+| Yes
+
+| Custom metrics
+| No
+| Yes
+
+| Data retention for more than 30 days
+| No
+| Yes
+
+3+| *Built-in API Dashboards*
+
+| Overview charts
+| Yes
+| Yes
+
+| Raw events
+| No
+| Yes
+
+| Data retention for more than 30 days
+| No
+| Yes
+
+3+| *Custom Dashboards*
+
+| Basic mode
+| Yes
+| Yes
+
+| Advanced mode
+| Yes
+| Yes
+
+| Advanced mode Alert tab
+| No
+| Yes
+
+3+| *Alerts*
+
+| Basic alerts
+| Yes
+| Yes, with higher limits
+
+| Advanced alerts
+| No
+| Yes
+
+3+| *Additional Anypoint Monitoring features
+
+| Anypoint Monitoring Archive API
+| No
+| Yes
+
+| Custom metrics
+| No
+| Yes
+
+| Functional Monitoring
+| Yes
+| Yes
+
+| Reports
+| No
+| Yes
+
+3+| *Logs*
+
+| Log search
+| No
+| Yes
+
+| Log points
+| No
+| Yes
+
+| Raw data
+| No
+| Yes
+
+
+|===
+
 == See Also
 
 * xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]
