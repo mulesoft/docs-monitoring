@@ -50,13 +50,13 @@ Built-in dashboards include various pages to view different types of charts:
 | <<inbound-charts>> a|
 
 * Inbound - Total Requests by Response Type
-* Average Response Time
-* Response Time by Endpoint
-* Total Requests by Endpoint
+* Inbound - Average Response Time
+* Inbound - Response Time by Endpoint
+* Inbound - Total Requests by Endpoint
 * Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
-* Maximum Response Time
+* Inbound - Maximum Response Time
 * Inbound - Total Failed Requests
-* Total Slow Requests by Endpoint
+* Inbound - Total Slow Requests by Endpoint
 * Inbound - Maximum Response Time
 * Inbound - Protocols (Titanium only)
 * Inbound - Endpoints (Titanium only)
@@ -65,9 +65,9 @@ Built-in dashboards include various pages to view different types of charts:
 | <<outbound-charts>> a|
 
 * Outbound - Total Requests by Response Type
-* Average Response Time
-* Average Response Time by HTTP Endpoint
-* Total Requests by HTTP Endpoint
+* Outbound - Average Response Time
+* Outbound - Average Response Time by HTTP Endpoint
+* Outbound - Total Requests by HTTP Endpoint
 * Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Outbound - Total Failed Requests
 
@@ -131,9 +131,9 @@ If you don't see the *Flows* tab, verify that you are using Unified Agent and ha
 If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
 | <<performance-charts>> a|
 
+* Mule Messages
 * Inbound - Average Response Time
 * Inbound - Average Response Time Grouped by Endpoint
-* Mule Messages
 * Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Inbound - Response Time by Endpoint
 * Outbound - Average Response Time
@@ -442,6 +442,9 @@ The average number of requests failures of connectors of type `other`, grouped i
 
 The following charts appear on the *Performance* dashboard:
 
+Mule Messages::
+The number of Mule messages processed in the runtime, grouped in automatic intervals.
+
 Inbound - Average Response Time::
 The average response time of inbound requests, grouped in automatic intervals.
 
@@ -450,9 +453,6 @@ The average, maximum, and minimum response times, grouped by top occurring endpo
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
-
-Mule Messages::
-The number of Mule messages processed in the runtime, grouped in automatic intervals.
 
 Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)::
 The response time of the 99th, 90th, 75th, and 50th percentile of inbound requests, grouped by application in automatic intervals.
