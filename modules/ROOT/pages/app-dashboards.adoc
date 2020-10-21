@@ -87,13 +87,13 @@ The following charts are available only if you are using Unified Agent and have 
 * Failures by Flow
 * Inbound - Slow Requests by Flow
 * Outbound - Slow Requests by Flow
-* Inbound Response Time by Flow
-* Outbound Response Time by Flow
-* Inbound Requests by Flow
-* Outbound Requests by Flow
+* Inbound - Response Time by Flow
+* Outbound - Response Time by Flow
+* Inbound - Requests by Flow
+* Outbound - Requests by Flow
 * Failures by Flow
-* Slow Inbound Requests by Flow
-* Slow Outbound Requests by Flow
+* Inbound - Slow Requests by Flow
+* Outbound- Slow Requests by Flow
 
 If you don't see the *Flows* tab, verify that you are using Unified Agent and have a Titanium subscription to Anypoint Platform.
 | <<connectors-charts>> a|
