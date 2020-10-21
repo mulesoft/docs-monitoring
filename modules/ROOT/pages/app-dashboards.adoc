@@ -87,6 +87,13 @@ The following charts are available only if you are using Unified Agent and have 
 * Failures by Flow
 * Inbound - Slow Requests by Flow
 * Outbound - Slow Requests by Flow
+* Inbound Response Time by Flow
+* Outbound Response Time by Flow
+* Inbound Requests by Flow
+* Outbound Requests by Flow
+* Failures by Flow
+* Slow Inbound Requests by Flow
+* Slow Outbound Requests by Flow
 
 If you don't see the *Flows* tab, verify that you are using Unified Agent and have a Titanium subscription to Anypoint Platform.
 | <<connectors-charts>> a|
@@ -324,6 +331,34 @@ The sum of outbound requests whose response time is greater than 1000 ms, groupe
 * Green if the response time is less than 300 ms
 * Yellow if the response time is greater than 300 ms and less than 600 ms
 * Red if the response time is greater than or equal to 600 ms
+
+Inbound Response Time by Flow::
+The average, minimum, and maximum inbound response time, grouped by flow.
+* Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
+* Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
+* Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
+
+Outbound Response Time by Flow::
+The average, minimum, and maximum outbound response time, grouped by flow.
+* Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
+* Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
+* Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
+
+Inbound Requests by Flow::
+The sum of inbound requests, grouped by flow.
+
+Outbound Requests by Flow::
+The sum of outbound requests, grouped by flow.
+
+Failures by Flow::
+The sum of inbound failed requests, grouped by flow.
+
+Slow Inbound Requests by Flow::
+The sum of inbound requests whose response time is greater than 1000 ms, grouped by flow.
+
+Slow Outbound Requests by Flow::
+The sum of outbound requests whose response time is greater than 1000 ms, grouped by flow.
+// we need name changes for the last 7 charts.
 
 [[connectors-charts]]
 == Connectors
