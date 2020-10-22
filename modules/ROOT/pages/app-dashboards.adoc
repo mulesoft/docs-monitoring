@@ -140,12 +140,10 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 
 * Mule Messages
 * Inbound - Average Response Time
-* Inbound - Average Response Time Grouped by Endpoint
-* Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Inbound - Response Time by Endpoint
+* Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Outbound - Average Response Time
-* Outbound - Average Response Time Grouped by Endpoint
-* Outbound - Response Time by HTTP Endpoint
+* Outbound - Response Time Grouped by HTTP Endpoint
 * Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 | <<failures-charts>> a|
 
@@ -175,14 +173,14 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Committed Virtual Memory
 | <<infrastructure-charts>> a|
 
-* Application Process CPU Load
-* Application Process CPU Minutes
-* Operating System Swap Space
 * JVM - CPU % Utilization
 * JVM - Heap Used
 * Total System Processors
 * Total System Memory
 * JVM Thread Count
+* System CPU % Utilization
+* JVM CPU Time
+* Operating System Swap Space
 | <<custom-metrics-charts>> a|
 
 The *Custom metrics* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule. See xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].
@@ -482,7 +480,7 @@ The number of Mule messages processed in the runtime, grouped in automatic inter
 Inbound - Average Response Time::
 The average response time of inbound requests, grouped in automatic intervals.
 
-Inbound - Average Response Time Grouped by Endpoint::
+Inbound - Average Response Time by Endpoint::
 The average, maximum, and minimum response times, grouped by top occurring endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
@@ -599,15 +597,6 @@ The amount of virtual memory guaranteed to be available to the running process, 
 
 The following charts appear on the *Infrastructure* dashboard:
 
-Application Process CPU Load::
-The amount of CPU load the JVM uses.
-
-JVM CPU Time::
-The cumulative CPU time consumed by the JVM.
-
-Operating System Swap Space::
-The amount of memory the system is swapping, grouped by worker in automatic intervals.
-
 JVM - CPU % Utilization::
 The average percentage of CPU utilized by the JVM, grouped by worker in automatic intervals. The JVM used in this chart is the Mule JVM process. The calculation for CPU utilization is relative to the physical server on which the Mule runtime is deployed. For example, in RTF, the resource usage here indicates the JVM's utilization with respect to the entire server and not with respect to the pod maximum CPU allocation.
 
@@ -622,6 +611,15 @@ The amount of system memory available for workers over time.
 
 JVM Thread Count::
 The average number of threads of the JVM, grouped by worker in automatic intervals.
+
+System CPU % Utilization::
+The percentage of CPU used by all processes.
+
+JVM CPU Time::
+The cumulative CPU time consumed by the JVM.
+
+Operating System Swap Space::
+The amount of memory the system is swapping, grouped by worker in automatic intervals.
 
 .Example: Infrastructure Dashboard
 image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
