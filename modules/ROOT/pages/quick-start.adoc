@@ -15,9 +15,9 @@ For complete functionality, you can use the following runtime versions with Anyp
 * Mule 3: versions 3.8.7 or newer
 * Mule 4: versions 4.1.6 or newer
 
-If you are using a Mule 4 version that is older than version 4.1.5, you cannot use built-in API metrics.
+If you are using a Mule 4 version that is older than version 4.1.5, you cannot use enhanced metrics for API Analytics.
 
-Versions 3.8.6 or older are not supported. Additionally, all -AM runtime versions are deprecated.
+Versions 3.8.6 or older are not supported. Additionally, all runtime versions that have the `-AM` suffix are deprecated.
 
 [[using_monitoring]]
 == Use Anypoint Monitoring
@@ -67,4 +67,3 @@ You can xref:am-installing.adoc[install Anypoint Monitoring] on an on-premises s
 * xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps]
 * xref:am-installing.adoc[Install Anypoint Monitoring On-Premises]
 * xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]
-
