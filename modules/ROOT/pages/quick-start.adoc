@@ -17,8 +17,6 @@ Versions 3.8.6 and earlier are not supported. Additionally, all runtime versions
 * Mule 4: versions 4.1.6 and later +
 Enhanced metrics for API Analytics is supported only for Mule runtime engine versions 4.1.6 and later.
 
-
-
 [[using_monitoring]]
 == Use Anypoint Monitoring
 
