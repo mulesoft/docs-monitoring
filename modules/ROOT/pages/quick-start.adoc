@@ -15,7 +15,7 @@ For complete functionality, use the following Mule runtime engine versions with 
 * Mule 3: versions 3.8.7 or newer
 * Mule 4: versions 4.1.6 or newer
 
-If you are using a Mule 4 version that is older than version 4.1.5, you cannot use enhanced metrics for API Analytics.
+If you are using a Mule 4 version that is older than version 4.1.6, you cannot use enhanced metrics for API Analytics.
 
 Versions 3.8.6 and earlier are not supported. Additionally, all runtime versions that have the `-AM` suffix are deprecated.
 
