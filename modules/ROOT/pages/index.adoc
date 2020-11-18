@@ -90,109 +90,97 @@ Anypoint Monitoring is the standard method of monitoring Mule application perfor
 | Feature | Gold/Platinum subscription features | Titanium subscription features
 
 3+| *Built-in Application Dashboards*
-| More than 80 out-of-the-box charts covering metrics in the following categories:
-* Overview
-* Inbound
-* Outbound
-* Performance
-* Failures
-* JVM
-* Infrastructure
+|More than 80 out-of-the-box charts covering metrics in the following categories: Overview, Inbound, Outbound, Performance, Failures, JVM, Infrastructure
 
-| Yes
-| Yes
+|Yes
+|Yes
 
-| Advanced metrics for Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure charts
-| No
-| Yes
+|Advanced metrics for Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure charts
+|No
+|Yes
 
-| Flows charts
-| No
-| Yes
+|Flows charts
+|No
+|Yes
 
-| Connectors charts
-| No
-| Yes
+|Connectors charts
+|No
+|Yes
 
-| Application Network integration
-| No
-| Yes
+|Application Network integration
+|No
+|Yes
 
-| xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
-| No
-| Yes
+|xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
+|No
+|Yes
 
 3+| *Built-in API Dashboards*
 
-| 16 out-of-the-box charts for metrics covering the following categories:
-* Overview 
-* Requests
-* Failures
-* Performance
-* Client Application 
-| Yes
-| Yes
+|16 out-of-the-box charts for metrics covering the following categories: Overview, Requests, Failures, Performance, Client Application 
+|Yes
+|Yes
 
 
-| xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
-| No
-| Yes
+|xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
+|No
+|Yes
 
 3+| *Custom Dashboards*
 
-| Basic mode
-| Yes
-| Yes
+|Basic mode
+|Yes
+|Yes
 
-| Advanced mode
-| Yes, with limited functionality
-| Yes
+|Advanced mode
+|Yes, with limited functionality
+|Yes
 
-| Advanced mode with additional features
-| No
-| Yes
+|Advanced mode with additional features
+|No
+|Yes
 
 3+| *Alerts*
 
-| Basic alerts
-| Yes
-| Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
+|Basic alerts
+|Yes
+|Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
 
-| Advanced alerts
-| No
-| Yes
+|Advanced alerts
+|No
+|Yes
 
 3+| *Log Management*
 
-| Log search
-| No
-| Yes
+|Log search
+|No
+|Yes
 
-| Log points
-| No
-| Yes
+|Log points
+|No
+|Yes
 
-| Raw data
-| No
-| Yes
+|Raw data
+|No
+|Yes
 
 3+| *Additional Anypoint Monitoring features*
 
-| Anypoint Monitoring Archive API
-| No
-| Yes
+|Anypoint Monitoring Archive API
+|No
+|Yes
 
-| Functional Monitoring
-| Yes
-| Yes
+|Functional Monitoring
+|Yes
+|Yes
 
-| Reports
-| No
-| Yes
+|Reports
+|No
+|Yes
 
-| Dedicated infrastructure for data processing and storage
-| No
-| Yes
+|Dedicated infrastructure for data processing and storage
+|No
+|Yes
 
 |===
 
