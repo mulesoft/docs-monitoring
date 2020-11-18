@@ -14,7 +14,7 @@ Anypoint Monitoring asynchronously collects data, which does not block Mule runt
 
 Gold and Platinum subscribers to Anypoint Platform receive modest data retention and feature limits:
 
-Logs:
+Logs::
 Log limits are documented in xref:runtime-manager::viewing-log-data.adoc#log-persistence[Runtime Manager].
 
 Application Metrics::
