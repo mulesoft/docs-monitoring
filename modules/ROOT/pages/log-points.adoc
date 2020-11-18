@@ -149,10 +149,9 @@ The following types of API are available for use with the Log Points feature:
 [NOTE]
 All basic endpoint APIs are displayed in the selectors regardless of whether the registered API has a supported Mule runtime engine version. If you save a log point for a basic endpoint API with an unsupported version, the application policy fails.
 
-=== Supported Mule Versions
+== Supported Versions of Mule Runtime Engine
 
-* Mule 3 versions 3.8.5 and later
-* Mule 4 versions 4.1.1 and later
+include::partial$include-supported-mule-runtime-version.adoc[]
 
 === Enable API Log Points
 
