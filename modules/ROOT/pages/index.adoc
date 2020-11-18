@@ -84,7 +84,7 @@ See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional
 
 == Anypoint Monitoring Features
 
-Anypoint Monitoring provides many features to Gold and Platinum subscribers. However, for more comprehensive monitoring services, Titanium subscribers receive additional charts and functionality.
+Anypoint Monitoring is the standard method of monitoring Mule application performance, logging, and troubleshooting to reduce the mean time to identify issues and resolve them. While all customers receive fundamental monitoring capabilities with their subscription, the Titanium tier offers greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
 |===
 | Feature | Gold/Platinum Support | Titanium Support
