@@ -10,11 +10,61 @@ Based on typical usage, the expected CPU utilization is less than 5%. For more i
 
 Anypoint Monitoring asynchronously collects data, which does not block Mule runtime data processing.
 
+=== Gold and Platinum Subscriptions
+
+Gold and Platinum subscribers to Anypoint Platform receive modest data retention and feature limits:
+
+Logs:
+Log limits are documented in xref:runtime-manager::viewing-log-data.adoc#log-persistence[Runtime Manager].
+
+Application Metrics::
+30 days
+
+Enhanced API Metrics::
+30 days. The limit for data in the *Client Applications* tab is 1 hour.
+
+Basic Alerts::
+50 basic alerts
+
+////
+Gold and Platinum subscribers to Anypoint Platform receive
 * Minute Resolution for Metrics.
 * Gold and Platinum subscriptions:
  ** API analytics metrics data are retained for 90 days.
  ** Application metrics data are retained for 30 days.
+////
 
+=== Titanium Subscriptions
+
+Titanium subscribers to Anypoint Platform receive more robust data retention and feature limits:
+
+Logs::
+In raw format, your log limit is equal to the storage space that you receive with your Titanium subscription.
+// do we have a link for this...?
+
+Searchable logs::
+10% of purchased storage is searchable by size, but not by day. For example, you can use up 10% for 5 days of logs or 25 days. You can also download logs.
+
+Application Metrics::
+365 days
+
+Enhanced API Metrics::
+30 days. The following limits also apply:
+* Data in the *Client Applications* tab is limited to 1 hour.
+* API path and API source IP is 1 hour.
+* Geo hash is 1 hour.
+
+Custom Metrics::
+365 days for production metrics.
+// future: 30 days storage only for Sandbox - this is currently not implemented. We can either skip this part, or we can document 30 days which is future looking
+
+Advanced Alerts::
+20 per parent organization
+
+Basic Alerts::
+50 x the number of production vCores in your organization. Note that you can also use your alert allowance for sandbox deployments, but this limit subject to the overall xref:access-management::business-groups.adoc#redistribute-resources[production vCore limit].
+
+// per org? or per environment re: prod vCores?
 
 == Screen Resolution
 
