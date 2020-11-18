@@ -84,10 +84,10 @@ See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional
 
 == Anypoint Monitoring Features
 
-Anypoint Monitoring is the standard method of monitoring Mule application performance, logging, and troubleshooting to reduce the mean time to identify issues and resolve them. While all customers receive fundamental monitoring capabilities with their subscription, the Titanium tier offers greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
+Anypoint Monitoring is the standard method of monitoring Mule application performance, logging, and troubleshooting to reduce the mean time to identify and resolve issues. While all customers receive fundamental monitoring capabilities with their subscription, the Titanium tier offers greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
 |===
-| Feature | Gold/Platinum Support | Titanium Support
+| Feature | Gold/Platinum subscription features | Titanium subscription features
 
 3+| *Built-in Application Dashboards*
 | More than 80 out-of-the-box metrics for Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure charts
@@ -106,10 +106,6 @@ Anypoint Monitoring is the standard method of monitoring Mule application perfor
 | No
 | Yes
 
-| Infrastructure charts
-| Yes
-| Yes, with 3 additional charts
-
 | Application Network integration
 | No
 | Yes
@@ -118,7 +114,7 @@ Anypoint Monitoring is the standard method of monitoring Mule application perfor
 | No
 | Yes
 
-| Data retention for more than 30 days
+| xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
 | No
 | Yes
 
