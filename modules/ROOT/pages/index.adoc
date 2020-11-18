@@ -90,17 +90,13 @@ Anypoint Monitoring is the standard method of monitoring Mule application perfor
 | Feature | Gold/Platinum Support | Titanium Support
 
 3+| *Built-in Application Dashboards*
-| Overview charts
+| More than 80 out-of-the-box metrics for Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure charts
 | Yes
 | Yes
 
-| Inbound charts
+| Advanced metrics for Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure charts
+| No
 | Yes
-| Yes, with 3 additional charts
-
-| Outbound charts
-| Yes
-| Yes, with 4 additional charts
 
 | Flows charts
 | No
@@ -109,18 +105,6 @@ Anypoint Monitoring is the standard method of monitoring Mule application perfor
 | Connectors charts
 | No
 | Yes
-
-| Performance charts
-| Yes
-| Yes
-
-| Failures charts
-| Yes
-| Yes
-
-| JVM charts
-| Yes
-| Yes, with 1 additional chart
 
 | Infrastructure charts
 | Yes
@@ -170,7 +154,7 @@ Anypoint Monitoring is the standard method of monitoring Mule application perfor
 
 | Basic alerts
 | Yes
-| Yes, with higher limits
+| Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
 
 | Advanced alerts
 | No
