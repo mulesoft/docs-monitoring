@@ -90,7 +90,15 @@ Anypoint Monitoring is the standard method of monitoring Mule application perfor
 | Feature | Gold/Platinum subscription features | Titanium subscription features
 
 3+| *Built-in Application Dashboards*
-| More than 80 out-of-the-box metrics for Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure charts
+| More than 80 out-of-the-box charts covering metrics in the following categories:
+* Overview
+* Inbound
+* Outbound
+* Performance
+* Failures
+* JVM
+* Infrastructure
+
 | Yes
 | Yes
 
@@ -110,23 +118,21 @@ Anypoint Monitoring is the standard method of monitoring Mule application perfor
 | No
 | Yes
 
-| Custom metrics
-| No
-| Yes
-
 | xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
 | No
 | Yes
 
 3+| *Built-in API Dashboards*
 
-| Overview charts
+| 16 out-of-the-box charts for metrics covering the following categories:
+* Overview 
+* Requests
+* Failures
+* Performance
+* Client Application 
 | Yes
 | Yes
 
-| Raw events
-| No
-| Yes
 
 | xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
 | No
@@ -139,10 +145,10 @@ Anypoint Monitoring is the standard method of monitoring Mule application perfor
 | Yes
 
 | Advanced mode
-| Yes
+| Yes, with limited functionality
 | Yes
 
-| Advanced mode Alert tab
+| Advanced mode with additional features
 | No
 | Yes
 
@@ -156,7 +162,7 @@ Anypoint Monitoring is the standard method of monitoring Mule application perfor
 | No
 | Yes
 
-3+| *Logs*
+3+| *Log Management*
 
 | Log search
 | No
@@ -181,6 +187,10 @@ Anypoint Monitoring is the standard method of monitoring Mule application perfor
 | Yes
 
 | Reports
+| No
+| Yes
+
+| Dedicated infrastructure for data processing and storage
 | No
 | Yes
 
