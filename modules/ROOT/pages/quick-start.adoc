@@ -8,14 +8,14 @@ Anypoint Monitoring provides data on Mule apps that are running on either CloudH
 [NOTE]
 Functional Monitoring is covered in xref:api-functional-monitoring::index.adoc[API Functional Monitoring].
 
-== Runtime Version Requirements
+== Mule Runtime Engine Version Requirements
 
 For complete functionality, use the following Mule runtime engine versions with Anypoint Monitoring:
 
 * Mule 3 versions 3.8.7 and later +
 Versions 3.8.6 and earlier are not supported. Additionally, all runtime versions that have the `-AM` suffix are deprecated.
 * Mule 4 +
-Enhanced metrics for API Analytics is supported only for Mule runtime engine versions 4.1.6 and later.
+To use enhanced metrics for API Analytics, you must use Mule runtime engine version 4.1.6 or later.
 
 [[using_monitoring]]
 == Use Anypoint Monitoring
