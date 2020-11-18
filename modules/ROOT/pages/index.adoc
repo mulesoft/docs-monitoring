@@ -128,7 +128,7 @@ Anypoint Monitoring is the standard method of monitoring Mule application perfor
 | No
 | Yes
 
-| Data retention for more than 30 days
+| xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
 | No
 | Yes
 
@@ -173,10 +173,6 @@ Anypoint Monitoring is the standard method of monitoring Mule application perfor
 3+| *Additional Anypoint Monitoring features*
 
 | Anypoint Monitoring Archive API
-| No
-| Yes
-
-| Custom metrics
 | No
 | Yes
 
