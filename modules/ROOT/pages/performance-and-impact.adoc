@@ -32,7 +32,6 @@ Titanium subscribers to Anypoint Platform receive more robust data retention and
 
 Logs::
 In raw format, your log limit is equal to the storage space that you receive with your Titanium subscription.
-// do we have a link for this...?
 
 Searchable logs::
 10% of purchased storage is searchable by size, but not by day. For example, you can use up 10% for 5 days of logs or 25 days. You can also download logs.
