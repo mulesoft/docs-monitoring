@@ -89,13 +89,21 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 |===
 | Feature | Gold/Platinum subscription features | Titanium subscription features
 
+|Dedicated infrastructure for data processing and storage
+|No
+|Yes
+
+|*Custom Metrics*
+|No
+|Yes
+
 3+| *Built-in Application Dashboards*
 |More than 80 out-of-the-box charts covering metrics in the following categories: Overview, Inbound, Outbound, Performance, Failures, JVM, Infrastructure
 
 |Yes
 |Yes
 
-|Advanced metrics for Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure charts
+|Advanced metrics for Inbound and Outbound charts
 |No
 |Yes
 
@@ -169,7 +177,8 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 |No
 |Yes
 
-|Functional Monitoring
+|xref:api-functional-monitoring[*API Functional Monitoring*] +
+Note that API Functional Monitoring is not part of Anypoint Monitoring.
 |Yes
 |Yes
 
