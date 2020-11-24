@@ -1,16 +1,16 @@
 = Anypoint Monitoring Performance, Impact, and Limits
 
-Review details about the performance impact and data retention with Anypoint Monitoring.
+Anypoint Monitoring processes and retains massive amounts of data with a low performance impact. Titanium subscribers receive an enhanced data retention package and more storage than Gold and Platinum subscribers. Anypoint Monitoring users can also improve their user experience with adjustments to screen resolution and efficiently parsed lines of log data.
 
 == Mule Monitoring Agent Performance Impact
 
 Based on typical usage, the expected CPU utilization is less than 5%. For more information, refer to xref:monitoring::configure-monitoring-cloudhub#performance-impact[Configure and Enable Anypoint Monitoring for Mule Apps (CloudHub)].
 
-== Data Retention and Aggregation
+Anypoint Monitoring asynchronously collects data at a minute resolution, which does not block Mule runtime data processing.
 
-Anypoint Monitoring asynchronously collects data, which does not block Mule runtime data processing.
+== Data Retention and Limits
 
-=== Gold and Platinum Subscriptions
+=== Gold and Platinum Subscription Limits
 
 Gold and Platinum subscribers to Anypoint Platform receive modest data retention and feature limits:
 
@@ -26,15 +26,7 @@ Enhanced API Metrics::
 Basic Alerts::
 50 basic alerts
 
-////
-Gold and Platinum subscribers to Anypoint Platform receive
-* Minute Resolution for Metrics.
-* Gold and Platinum subscriptions:
- ** API analytics metrics data are retained for 90 days.
- ** Application metrics data are retained for 30 days.
-////
-
-=== Titanium Subscriptions
+=== Titanium Subscription Limits
 
 Titanium subscribers to Anypoint Platform receive more robust data retention and feature limits:
 
@@ -62,9 +54,7 @@ Advanced Alerts::
 20 per parent organization
 
 Basic Alerts::
-50 x the number of production vCores in your organization. Note that you can also use your alert allowance for sandbox deployments, but this limit subject to the overall xref:access-management::business-groups.adoc#redistribute-resources[production vCore limit].
-
-// per org? or per environment re: prod vCores?
+50 times the number of production vCores in your organization. Note that you can also use your alert allowance for sandbox deployments, but this limit subject to the overall xref:access-management::business-groups.adoc#redistribute-resources[production vCore limit].
 
 == Screen Resolution
 
