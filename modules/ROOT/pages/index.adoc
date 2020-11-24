@@ -93,7 +93,7 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 |No
 |Yes
 
-|*Custom Metrics*
+|Custom Metrics
 |No
 |Yes
 
@@ -177,12 +177,12 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 |No
 |Yes
 
-|xref:api-functional-monitoring[*API Functional Monitoring*] +
+|xref:api-functional-monitoring[API Functional Monitoring] +
 Note that API Functional Monitoring is not part of Anypoint Monitoring.
 |Yes
 |Yes
 
-|*Reports*
+|Reports
 |No
 |Yes
 
