@@ -177,10 +177,6 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 |No
 |Yes
 
-|Dedicated infrastructure for data processing and storage
-|No
-|Yes
-
 |===
 
 == See Also
