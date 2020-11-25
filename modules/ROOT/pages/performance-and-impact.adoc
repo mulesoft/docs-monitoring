@@ -51,7 +51,7 @@ Custom Metrics::
 // future: 30 days storage only for Sandbox - this is currently not implemented. We can either skip this part, or we can document 30 days which is future looking
 
 Advanced Alerts::
-20 per parent organization
+20 per parent organization.
 
 Basic Alerts::
 50 times the number of production vCores in your organization. Note that you can also use your alert allowance for sandbox deployments, but this limit subject to the overall xref:access-management::business-groups.adoc#redistribute-resources[production vCore limit].
