@@ -18,13 +18,13 @@ Logs::
 Log limits are documented in xref:runtime-manager::viewing-log-data.adoc#log-persistence[Runtime Manager].
 
 Application Metrics::
-30 days
+30 days.
 
 Enhanced API Metrics::
 30 days. The limit for data in the *Client Applications* tab is 1 hour.
 
 Basic Alerts::
-50 basic alerts
+50 basic alerts.
 
 === Titanium Subscription Limits
 
