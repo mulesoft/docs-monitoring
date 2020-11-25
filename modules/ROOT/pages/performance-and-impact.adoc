@@ -38,7 +38,7 @@ Searchable logs::
 Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can download logs to access older logs.
 
 Application Metrics::
-365 days
+365 days.
 
 Enhanced API Metrics::
 30 days. The following limits also apply:
