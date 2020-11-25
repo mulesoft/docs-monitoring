@@ -58,10 +58,10 @@ Basic Alerts::
 
 == Screen Resolution
 
-For the best performance, use a minimum screen resolution of 1024x768.
+Use a minimum screen resolution of 1024 by 768 pixels.
 
 == Logging
 
-In Log Management, the maximum length of one line of log data is 8 KB (including date and thread metadata). Single lines that are longer than 8 KB will be truncated at the 8 KB mark.
+In Log Management, the maximum length of one line of log data is 8 KB (including date and thread metadata). Single lines that are longer than 8 KB are truncated at the 8 KB mark.
 
 To log longer segments of information, you must split them up into chunks that are individually smaller than 8 KB.
