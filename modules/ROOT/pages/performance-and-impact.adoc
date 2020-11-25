@@ -31,10 +31,11 @@ Basic Alerts::
 Titanium subscribers to Anypoint Platform receive more robust data retention and feature limits:
 
 Logs::
-In raw format, your log limit is equal to the storage space that you receive with your Titanium subscription.
+In raw format, your logs can occupy as much space as you receive with your Titanium subscription. Note that the storage space you receive with your Titanium subscription is used to store logs, metrics data, and search indexes. As indexes and metrics do not take up much storage capacity, the majority of the allocated storage can be used to store the raw log data.
 
 Searchable logs::
-10% of purchased storage is searchable by size, but not by day. For example, you can use up 10% for 5 days of logs or 25 days. You can also download logs.
+10% of purchased storage can be allocated for searchable logs. +
+Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can download logs to access older logs.
 
 Application Metrics::
 365 days
@@ -42,11 +43,11 @@ Application Metrics::
 Enhanced API Metrics::
 30 days. The following limits also apply:
 * Data in the *Client Applications* tab is limited to 1 hour.
-* API path and API source IP is 1 hour.
+* Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
 * Geo hash is 1 hour.
 
 Custom Metrics::
-365 days for production metrics.
+365 days in production environments.
 // future: 30 days storage only for Sandbox - this is currently not implemented. We can either skip this part, or we can document 30 days which is future looking
 
 Advanced Alerts::
