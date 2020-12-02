@@ -30,7 +30,7 @@ Many <<metrics_basic, basic>> and <<metrics_advanced, advanced>> metrics are ava
 [[metrics_basic]]
 === Basic Mode Metrics for Applications
 
-These metrics are supported for the following versions of Mule Runtime: 3.8.7, 3.9.x, 4.1.x, and 4.2.x.
+include::partial$include-supported-mule-runtime-version.adoc[]
 
 [%header,cols="3,1"]
 |===

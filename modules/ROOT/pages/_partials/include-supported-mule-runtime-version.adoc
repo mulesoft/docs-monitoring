@@ -1,0 +1,7 @@
+// Included anywhere runtime version mentions are noted; quick start, install, configure monitoring in CH, etc.
+Use the following Mule runtime engine versions with Anypoint Monitoring:
+
+* Mule 3 versions 3.8.7 and later +
+Versions 3.8.6 and earlier are not supported. Additionally, all runtime versions that have the `-AM` suffix are deprecated.
+* Mule 4 +
+To use enhanced metrics for API Analytics, use Mule runtime engine version 4.1.6 or later.

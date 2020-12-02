@@ -17,6 +17,10 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * Infrastructure-level and JVM metrics
 * Performance metrics that break down inbound and outbound response times into averages and percentiles
 
+== Supported Versions of Mule Runtime Engine
+
+include::partial$include-supported-mule-runtime-version.adoc[]
+
 == View a Built-in Dashboard
 
 Built-in and custom dashboards are available from Anypoint Monitoring. You can view application metrics for applications deployed to CloudHub and to hybrid targets in both built-in and custom dashboards.
