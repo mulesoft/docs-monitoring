@@ -82,6 +82,111 @@ Monitor APIs and endpoints at scheduled intervals. Receive reports about whether
 
 See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring in Anypoint Monitoring].
 
+== Anypoint Monitoring Features
+
+Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. While all customers receive fundamental monitoring capabilities with their subscriptions, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
+
+|===
+| Feature | Gold and Platinum Subscription Features | Titanium Subscription Features
+
+|Dedicated infrastructure for data processing and storage
+|No
+|Yes
+
+|Custom metrics
+|No
+|Yes
+
+3+| *Built-in Application Dashboards*
+|More than 80 out-of-the-box charts covering metrics in the following categories: Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure
+
+|Yes
+|Yes
+
+|Advanced metrics for Inbound and Outbound charts
+|No
+|Yes
+
+|Flows charts
+|No
+|Yes
+
+|Connectors charts
+|No
+|Yes
+
+|Anypoint Visualizer application network integration
+|No
+|Yes
+
+|xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
+|No
+|Yes
+
+3+| *Built-in API Dashboards*
+
+|16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application 
+|Yes
+|Yes
+
+|xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
+|No
+|Yes
+
+3+| *Custom Dashboards*
+
+|Basic mode
+|Yes
+|Yes
+
+|Advanced mode
+|Yes, with limited functionality
+|Yes
+
+|Advanced mode with additional features
+|No
+|Yes
+
+3+| *Alerts*
+
+|Basic alerts
+|Yes
+|Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
+
+|Advanced alerts
+|No
+|Yes
+
+3+| *Log Management*
+
+|Log search
+|No
+|Yes
+
+|Log points
+|No
+|Yes
+
+|Raw data
+|No
+|Yes
+
+3+| *Additional Anypoint Monitoring features*
+
+|Anypoint Monitoring Archive API
+|No
+|Yes
+
+|xref:api-functional-monitoring[API Functional Monitoring] +
+|Yes
+|Yes
+
+|Reports
+|No
+|Yes
+
+|===
+
 == See Also
 
 * xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]
