@@ -84,21 +84,21 @@ See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional
 
 == Anypoint Monitoring Features
 
-Anypoint Monitoring is the standard method of monitoring Mule application and API performance, logging, and troubleshooting to reduce the mean time to identify and resolve issues. While all customers receive fundamental monitoring capabilities with their subscription, the Titanium tier offers greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
+Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. While all customers receive fundamental monitoring capabilities with their subscriptions, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
 |===
-| Feature | Gold/Platinum subscription features | Titanium subscription features
+| Feature | Gold and Platinum Subscription Features | Titanium Subscription Features
 
 |Dedicated infrastructure for data processing and storage
 |No
 |Yes
 
-|Custom Metrics
+|Custom metrics
 |No
 |Yes
 
 3+| *Built-in Application Dashboards*
-|More than 80 out-of-the-box charts covering metrics in the following categories: Overview, Inbound, Outbound, Performance, Failures, JVM, Infrastructure
+|More than 80 out-of-the-box charts covering metrics in the following categories: Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure
 
 |Yes
 |Yes
@@ -115,7 +115,7 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 |No
 |Yes
 
-|Anypoint Visualizer Application Network integration
+|Anypoint Visualizer application network integration
 |No
 |Yes
 
@@ -125,7 +125,7 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 
 3+| *Built-in API Dashboards*
 
-|16 out-of-the-box charts for metrics covering the following categories: Overview, Requests, Failures, Performance, Client Application 
+|16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application 
 |Yes
 |Yes
 
@@ -178,7 +178,6 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 |Yes
 
 |xref:api-functional-monitoring[API Functional Monitoring] +
-Note that API Functional Monitoring is not part of Anypoint Monitoring.
 |Yes
 |Yes
 
