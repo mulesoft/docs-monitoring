@@ -136,7 +136,6 @@ Enabling Monitoring can impact CPU utilization and memory utilization, which var
 == What to do Next
 
 - If you find connection failure or retry entries, ensure that port 443 in your outbound firewall is open.
-- If you are using Runtime Fabric, ensure that port 5044 in your outbound firewall is open. 
 - If you do not find connection failure or retry entries, contact MuleSoft technical support.
 
 
