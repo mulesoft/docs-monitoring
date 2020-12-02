@@ -34,10 +34,10 @@ Basic alerts::
 Titanium subscribers to Anypoint Platform receive more robust data retention and feature limits:
 
 Logs::
-In raw format, your logs can occupy as much space as you receive with your Titanium subscription. Note that the storage space you receive with your Titanium subscription is used to store logs, metrics data, and search indexes. Because indexes and metrics do not take up much storage capacity, you can use the majority of your storage for raw log data.
+In raw format, your logs can occupy as much space as you receive with your Titanium subscription. Note that the storage space you receive with your Titanium subscription is used to store logs and metrics data. Because metrics do not take up much storage capacity, you can use the majority of your storage for raw log data.
 
 Searchable logs::
-10% of purchased storage can be allocated for searchable logs. +
+You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs. +
 Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can download logs to access older logs.
 
 Application metrics::
