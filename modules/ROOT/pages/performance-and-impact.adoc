@@ -59,12 +59,12 @@ Advanced alerts::
 Basic alerts::
 50 times the number of production vCores in your organization. Note that you can also use your alert allowance for sandbox deployments, but this limit subject to the overall xref:access-management::business-groups.adoc#redistribute-resources[production vCore limit].
 
-== Screen Resolution
-
-Use a minimum screen resolution of 1024 by 768 pixels.
-
-== Logging
+== Logging Data Management
 
 When you manage logs, the maximum length of one line of log data is 8 KB (including date and thread metadata). Single lines that are longer than 8 KB are truncated at the 8 KB mark.
 
 To log longer segments of information, you must split them up into chunks that are individually smaller than 8 KB.
+
+== Screen Resolution
+
+Use a minimum screen resolution of 1024 by 768 pixels.
