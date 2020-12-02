@@ -2,13 +2,9 @@
 
 Monitoring for applications deployed to Runtime Fabric is enabled by default.
 
-== Supported Mule Versions
+== Supported Versions of Mule Runtime Engine
 
-Anypoint Monitoring supports the following Mule versions for Runtime Fabric deployments:
-
-* Mule Runtime 3.8.7
-* Mule runtime engine 3.9.x
-* Mule runtime engine 4.1.2 or later
+include::partial$include-supported-mule-runtime-version.adoc[]
 
 == Runtime Fabric Setup
 
