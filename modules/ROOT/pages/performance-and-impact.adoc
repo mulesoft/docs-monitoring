@@ -7,9 +7,9 @@ Anypoint Monitoring processes and retains massive amounts of data with a low per
 
 == Mule Monitoring Agent Performance Impact
 
-Based on typical usage, the expected CPU utilization is less than 5%. For more information, refer to xref:monitoring::configure-monitoring-cloudhub#performance-impact[Configure and Enable Anypoint Monitoring for Mule Apps (CloudHub)].
+Based on typical use, the expected CPU utilization from the Mule monitoring agent is less than 5%. For more information, refer to xref:monitoring::configure-monitoring-cloudhub#performance-impact[Configure and Enable Anypoint Monitoring for Mule Apps (CloudHub)].
 
-Anypoint Monitoring asynchronously collects data at a minute resolution, which does not block Mule runtime data processing.
+Anypoint Monitoring asynchronously collects data at a resolution of one minute, which does not block Mule runtime data processing.
 
 == Data Retention and Limits
 
