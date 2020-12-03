@@ -1,27 +1,70 @@
-= Anypoint Monitoring Performance, Impact, and Limits
+= Anypoint Monitoring Performance Impact, Limits, and Data Retention
 
-Review details about the performance impact and data retention with Anypoint Monitoring.
+Anypoint Monitoring processes and retains massive amounts of data with a low performance impact. Titanium subscribers receive an enhanced data retention package and more storage than Gold and Platinum subscribers. For better performance and readability, your log data is truncated into short lines.
+
+ You can also improve your Anypoint Monitoring experience by adjusting your screen resolution. 
+
 
 == Mule Monitoring Agent Performance Impact
 
-Based on typical usage, the expected CPU utilization is less than 5%. For more information, refer to xref:monitoring::configure-monitoring-cloudhub#performance-impact[Configure and Enable Anypoint Monitoring for Mule Apps (CloudHub)].
+Based on typical use, the expected CPU utilization from the Mule monitoring agent is less than 5%. For more information, refer to xref:monitoring::configure-monitoring-cloudhub#performance-impact[Configure and Enable Anypoint Monitoring for Mule Apps (CloudHub)].
 
-== Data Retention and Aggregation
+Anypoint Monitoring asynchronously collects data at a resolution of one minute, which does not block Mule runtime data processing.
 
-Anypoint Monitoring asynchronously collects data, which does not block Mule runtime data processing.
+== Data Retention and Limits
 
-* Minute Resolution for Metrics.
-* Gold and Platinum subscriptions:
- ** API analytics metrics data are retained for 90 days.
- ** Application metrics data are retained for 30 days.
+=== Gold and Platinum Subscription Limits
 
+Gold and Platinum subscribers to Anypoint Platform receive modest data retention and feature limits:
+
+Logs::
+Log limits are documented in xref:runtime-manager::viewing-log-data.adoc#log-persistence[Runtime Manager].
+
+Application metrics::
+30 days.
+
+Enhanced API metrics::
+30 days. The limit for data in the *Client Applications* tab is 1 hour.
+
+Basic alerts::
+50 basic alerts.
+
+=== Titanium Subscription Limits
+
+Titanium subscribers to Anypoint Platform receive more robust data retention and feature limits:
+
+Logs::
+In raw format, your logs can occupy as much space as you receive with your Titanium subscription. Note that the storage space you receive with your Titanium subscription is used to store logs and metrics data. Because metrics do not take up much storage capacity, you can use the majority of your storage for raw log data.
+
+Searchable logs::
+You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs. +
+Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can download logs to access older logs.
+
+Application metrics::
+365 days.
+
+Enhanced API metrics::
+30 days. The following limits also apply:
+* Data in the *Client Applications* tab is limited to 1 hour.
+* Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
+* Geo hash is 1 hour.
+
+Custom metrics::
+365 days in production environments.
+// future: 30 days storage only for Sandbox - this is currently not implemented. We can either skip this part, or we can document 30 days which is future looking
+
+Advanced alerts::
+20 per parent organization.
+
+Basic alerts::
+50 times the number of production vCores in your organization. Note that you can also use your alert allowance for sandbox deployments, but this limit subject to the overall xref:access-management::business-groups.adoc#redistribute-resources[production vCore limit].
+
+== Logging Data Management
+
+When you manage logs, the maximum length of one line of log data is 8 KB (including date and thread metadata). Single lines that are longer than 8 KB are truncated at the 8 KB mark.
+
+To log longer segments of information, you must split them up into chunks that are individually smaller than 8 KB.
 
 == Screen Resolution
 
-For the best performance, use a minimum screen resolution of 1024x768.
-
-== Logging
-
-In Log Management, the maximum length of one line of log data is 8 KB (including date and thread metadata). Single lines that are longer than 8 KB will be truncated at the 8 KB mark.
-
-To log longer segments of information, you must split them up into chunks that are individually smaller than 8 KB.
+Use a minimum screen resolution of 1024 by 768 pixels.

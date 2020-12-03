@@ -3,13 +3,17 @@
 The API analytics dashboards provide charts to monitor API usage, which gives you insight into how your APIs are used and how they are performing.
 
 The API analytics dashboard includes two views: enhanced metrics and basic metrics.
-The enhanced metrics view includes detailed information about your APIs, and charts are sorted into dashboards based on the type of data displayed. Currently, enhanced metrics are available if you are using Mule runtime engine version 3.9.3, 3.9.4, 4.2.1, or 4.2.2.
+The enhanced metrics view includes detailed information about your APIs, and charts are sorted into dashboards based on the type of data displayed.
 To get the most out of Anypoint Monitoring, use the enhanced metrics view to see information related to your APIs.
 
 By default, the enhanced metrics view is selected. To switch views, select *Switch to classic metrics*. From the classic metrics view, select *Show new metrics view*.
 
 [NOTE]
 For Gold and Platinum subscriptions, Anypoint Monitoring retains API analytics metrics data for 90 days. API Manager retains API analytics metrics data for 70 days.
+
+== Supported Versions of Mule Runtime Engine
+
+include::partial$include-supported-mule-runtime-version.adoc[]
 
 == View the API Analytics Dashboard
 
