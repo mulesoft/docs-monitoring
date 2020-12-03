@@ -337,15 +337,15 @@ The sum of outbound requests whose response time is greater than 1000 ms, groupe
 
 Inbound - Response Time by Flow::
 The average, minimum, and maximum inbound response time, grouped by flow.
-* Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
-* Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
-* Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
+* Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
+* Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
+* Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 
 Outbound - Response Time by Flow::
 The average, minimum, and maximum outbound response time, grouped by flow.
-* Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
-* Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
-* Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
+* Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
+* Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
+* Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 
 Inbound - Requests by Flow::
 The sum of inbound requests, grouped by flow.
@@ -488,9 +488,9 @@ The average response time of inbound requests.
 
 Inbound - Average Response Time by Endpoint::
 The average, maximum, and minimum response times, grouped by top occurring endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
-* Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
-* Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms.
-* Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms.
+* Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
+* Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
+* Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 
 Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)::
 The response time of the 99th, 90th, 75th, and 50th percentile of inbound requests, grouped by application.
