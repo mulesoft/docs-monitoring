@@ -19,6 +19,8 @@ Outbound connections are made to the following endpoints:
 * EU Control Plane
 ** data-authenticator.eu1.anypoint.mulesoft.com:443
 ** dias-ingestor-router.eu-central-1.prod-eu.msap.io:443
+* GeoDB Download
+** s3.amazonaws.com:443 
 
 == Supported Operating Systems
 
