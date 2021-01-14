@@ -510,6 +510,10 @@ The response time of the 99th, 90th, 75th, and 50th percentile of outbound reque
 [[failures-charts]]
 == Failures
 
+_Inbound failed requests_ occur when there are exceptions in Mule flows. In Mule 3 versions, these requests prompt 400- and 500-errors.
+
+_Outbound failed requests_ occur when outbound connectors are invoked and exceptions occur. These exceptions prompt 400- and 500-status codes. Outbound failed requests may also appear for other types of exceptions.
+
 The following charts appear on the *Failures* dashboard:
 
 Inbound - Total Failed Requests::
