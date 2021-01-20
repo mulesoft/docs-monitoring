@@ -58,7 +58,7 @@ For Gold and Platinum subscriptions, data is stored in US East (N. Virginia).
 The Titanium subscription:
 
 * Significantly increases the storage per vCore over the Base subscription.
-* Lets you store log and metric data in a selected geographic region, which can help you to meet data security and compliance requirements, run queries over geo-distributed runtimes without consequence, and limit the distance that your data travels when you run queries. These regions are available:
+* Stores log and metric data in the same region as your control plane, which can help you to meet data security and compliance requirements, run queries over geo-distributed runtimes without consequence, and limit the distance that your data travels when you run queries. These regions are available:
 ** US East (N. Virginia)
 ** EU (Frankfurt)
 
