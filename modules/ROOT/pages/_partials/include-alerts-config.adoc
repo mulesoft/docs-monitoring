@@ -1,15 +1,8 @@
 = Create an Advanced Alert
-
-//INCLUDED IN GRAPH CONFIG FILE
+//INCLUDED IN GRAPH CONFIG FILE (dashboard-custom-config-graph.adoc#create-an-advanced-alert), advanced-alert.adoc
 [[alerts]]
 
-////
-TODO_FUTURE?
-You can create, configure, delete, test, and send alerts to people who need to see them. The rules you configure trigger alerts when conditions reach a specified threshold value, for example: *TODO_FUTURE?*  You can also get the history of an alert.
-////
-
 image::graph-alert-config.png[Advanced Alert Configuration]
-
 
 . Navigate to the configuration screen for a graph in a custom dashboard. For guidance, see xref:dashboard-custom-config.adoc[Configuring Custom Dashboards].
 . Provide a general configuration for the graph that (at minimum) defines the metric, environment, and resource for which you want to set the advanced alert. +
@@ -18,7 +11,7 @@ For guidance, see xref:dashboard-custom-config-graph.adoc#general_settings[Gener
 . Click *Create Alert*.
 . Use *Alert Config* to configure the alert. See <<alert_config, Alert Config>>.
 . Configure email notifications when an advanced alert is triggered. See <<notifications, Notifications>>.
-. Click *Save Changes*. 
+. Click *Save Changes*.
 . Click `X` to exit the configuration and return to the dashboard.
 
 Note that you can also view <<state_history, state history>> and <<delete_alert, delete>> alerts.
@@ -32,26 +25,13 @@ In the *Alert Config* section, configure the condition under which an advanced a
 |===
 2+| Settings for Advanced Alerts
 | Name | A title for your advanced alert
-| `Condition` | WHEN: For triggering an advanced alert when the `JVM - CPU % Utilization` is above a specified level
+| Severity level | The severity level of your alert.
+| `Condition` | WHEN: For triggering an advanced alert when the metric being measured is above a specified level
 |===
 
-////
-TODO _FUTURE?
-.Advanced Alert Config
-[%header,cols="1,4"]
-|===
+Available severity levels:
 
-| Name | A title for your advanced alert
-| `Evaluate Every` | Interval at which to poll for an alert, for example, every sixty seconds (`60s`).
-| Conditions a|
-* WHEN: `min()`, `max()`, `sum()`, `count()`, `last()`, `median()`, `diff()`, `percent_diff()`, `count_non_null()`
-* OF: Example: `query(A, 5m, now)`
-* IS ABOVE or *TODO for other relationships*
-* If No Data or All Values Are Null SET STATE TO `Alerting`, `No Data`, `Keep Last State`, or `Ok`.
-* If Execution Error or Timeout SET STATE TO `Alerting` or `Keep Last State`
-| Test Rule |
-|===
-////
+include::partial$include-alerts-severity.adoc
 
 [[notifications]]
 === Notifications
