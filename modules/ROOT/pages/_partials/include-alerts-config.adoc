@@ -31,7 +31,7 @@ In the *Alert Config* section, configure the condition under which an advanced a
 
 Available severity levels:
 
-include::partial$include-alerts-severity.adoc
+include::partial$include-alerts-severity.adoc[leveloffset=+1]
 
 [[notifications]]
 === Notifications
