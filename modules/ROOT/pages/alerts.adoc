@@ -81,7 +81,7 @@ image::alerts-setup-premium.png[Alert Setup Guidance, 75%, 75%]
 
 Use the *+ New alert* button to link to API Manager and Runtime Manager alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
 
-image::alerts-menu.png[Alerts Menu, 75%, 75%]
+image::alerts-menu.png[Alerts Menu, 40%, 40%]
 
 Note that you can also select to add or edit an alert from a chart in a custom dashboard, for example:
 
