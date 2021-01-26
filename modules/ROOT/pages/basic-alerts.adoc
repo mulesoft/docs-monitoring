@@ -37,6 +37,6 @@ image::basic-alerts-config.png[Configure a Basic Alert]
 
 The following levels of severity are available for basic alerts:
 
-include::partial$include-alert-severity.adoc
+include::partial$include-alert-severity.adoc[leveloffset=+1]
 
 // add basic alert email templates

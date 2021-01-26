@@ -100,8 +100,6 @@ A Titanium subscription is required to use this feature.
 
 In the *Alerts* tab, set up alerts that trigger when JVM memory utilization is too high.
 
-== Create an Advanced Alert
-
 include::partial$include-alerts-config.adoc[leveloffset=+1]
 
 //END ALERTS
