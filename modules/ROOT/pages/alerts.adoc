@@ -34,8 +34,6 @@ image::alerts.png[Examples Alerts]
 
 === Filtering Alerts by Alert State
 
-All alerts have a state depending on
-
 [[alert_status]]
 Filter alerts based on state using the following filters:
 
