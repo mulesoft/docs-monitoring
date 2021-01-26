@@ -69,19 +69,19 @@ Depending on your subscription level:
 
 * If no alerts are set up, you might see links for API and Runtime alert setup, for example:
 +
-image::alerts-setup.png[API and Runtime Alert Setup]
+image::alerts-setup.png[API and Runtime Alert Setup, 75%, 75%]
 +
 ** API Operational Alerts: For guidance with alerts in API Manager, see xref:2.x@api-manager::using-api-alerts.adoc[About API Alerts]. Note that these alerts are not listed in the Alerts page for Anypoint Monitoring.
 ** Runtime Operational Alerts: For guidance with alerts in Runtime Manager, see xref:runtime-manager::alerts-on-runtime-manager.adoc[About Configuring Alerts using Runtime Manager]. Note that these alerts are not listed in the *Alerts* page for Anypoint Monitoring.
 * *https://www.mulesoft.com/anypoint-pricing[Titanium Subscription Required]* - Instead of seeing links to API and Runtime alerts, you receive visual guidance showing how to open the configuration area for alerts in graphs for custom dashboards:
 +
-image::alerts-setup-premium.png[Alert Setup Guidance]
+image::alerts-setup-premium.png[Alert Setup Guidance, 75%, 75%]
 
 == Add Alerts
 
 Use the *+ New alert* button to link to API Manager and Runtime Manager alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
 
-image::alerts-menu.png[Alerts Menu]
+image::alerts-menu.png[Alerts Menu, 75%, 75%]
 
 Note that you can also select to add or edit an alert from a chart in a custom dashboard, for example:
 
