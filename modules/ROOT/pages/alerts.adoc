@@ -42,7 +42,7 @@ Filter alerts based on state using the following filters:
 All states::
 Lists all alerts.
 
-include::partial$include-alert-state.adoc
+include::partial$include-alert-state.adoc[leveloffset=+1]
 
 === Filtering Alerts by Alert Severity
 
@@ -51,7 +51,7 @@ When you create basic and advanced alerts, you can select the severity for those
 [[alert_severity]]
 Filter alerts based on severity using the following filters:
 
-include::partial$include-alert-severity.adoc
+include::partial$include-alert-severity.adoc[leveloffset=+1]
 
 === Enabling and Disabling Alerts
 
