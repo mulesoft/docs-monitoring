@@ -32,7 +32,7 @@ To create a basic alert:
 Note that requirements change depending on the source type you select.
 . Click *Save*.
 
-image::basic-alerts-config.png[Configure a Basic Alert]
+image::basic-alerts-config.png[Configure a Basic Alert, 50%, 50%]
 
 === Basic Alert Severity
 

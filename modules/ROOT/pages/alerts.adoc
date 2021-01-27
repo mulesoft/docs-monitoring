@@ -61,7 +61,8 @@ include::partial$include-alert-severity.adoc[leveloffset=+1]
 
 You can enable or disable an alert by toggling the <<alerts, switch>> on the right:
 
-* Enabling a disabled alert causes the alert to transition to `Pending` until it is time for evaluation. +
+* Enabling a disabled alert causes the alert to transition to `Pending` until it is time for evaluation. 
++
 Depending on the value, the alert transitions to `OK` or `Alerting`.
 * Disabling an alert causes the alert to transition to `Disabled`.
 
