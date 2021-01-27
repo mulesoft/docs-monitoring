@@ -9,6 +9,8 @@ You can set up advanced alerts to trigger email notifications when a data point 
 
 When you configure an advanced alert for a graph, an alert state icon appears at the top-left corner of the graph.
 
+image::alert-in-graph.png[alt]
+
 Alert states are defined as follows:
 
 include::partial$include-alert-state.adoc[leveloffset=+1]
