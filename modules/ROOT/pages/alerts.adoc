@@ -49,6 +49,12 @@ When you create basic and advanced alerts, you can select the severity for those
 [[alert_severity]]
 Filter alerts based on severity using the following filters:
 
+All severities::
+Lists all severities
+
+Not defined:: 
+Lists alerts that do not have severities assigned
+
 include::partial$include-alert-severity.adoc[leveloffset=+1]
 
 === Enabling and Disabling Alerts
