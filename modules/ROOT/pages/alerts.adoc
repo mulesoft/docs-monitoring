@@ -81,10 +81,10 @@ For guidance about alerts in API Manager, see xref:2.x@api-manager::using-api-al
 ** Runtime Manager operational alerts
 + 
 For guidance about alerts in Runtime Manager, see xref:runtime-manager::alerts-on-runtime-manager.adoc[About Configuring Alerts Using Runtime Manager]. Note that these alerts are not listed in the *Alerts* page for Anypoint Monitoring.
-* *https://www.mulesoft.com/anypoint-pricing[Titanium subscription required]*
+* If you do not have a Titanium subscription, you might see *https://www.mulesoft.com/anypoint-pricing[Titanium subscription required]*.
 
 Instead of seeing links to API and runtime alerts, you receive visual guidance showing how to open the configuration area for alerts in graphs for custom dashboards:
-+
+
 image::alerts-setup-premium.png[Alert Setup Guidance, 75%, 75%]
 
 == Add Alerts
