@@ -6,7 +6,7 @@ endif::[]
 
 Alerts indicate whether a resource (such as a Mule app) is behaving as expected or exceeding a defined threshold.
 
-You can implement any of several types of alerts. From the *Alerts* page in Anypoint Monitoring, you can create xref:basic-alerts.adoc[basic alerts], or you can link to alerts for API Manager and Runtime Manager alerts.
+You can implement any of several types of alerts. From the *Alerts* page in Anypoint Monitoring, you can create xref:basic-alerts.adoc[basic alerts], or you can link to existing alerts for API Manager and Anypoint Runtime Manager.
 If you have a Titanium subscription, you can also view, enable, and disable xref:advanced-alerts.adoc[advanced alerts] that are configured for graphs in custom dashboards.
 
 Using Anypoint Monitoring, you can configure two different types of alerts:
