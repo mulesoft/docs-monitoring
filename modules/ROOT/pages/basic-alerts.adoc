@@ -27,7 +27,8 @@ To create a basic alert:
 . Click the *Alerts* tab.
 . Click the *+ New Alerts* button.
 . Click *Basic alert*.
-. In the *Add basic alert* window, enter the information required to create your basic alert. +
+. In the *Add basic alert* window, enter the information required to create your basic alert. 
++
 Note that requirements change depending on the source type you select.
 . Click *Save*.
 

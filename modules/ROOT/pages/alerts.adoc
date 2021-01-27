@@ -76,10 +76,10 @@ Depending on your subscription level:
 image::alerts-setup.png[API and Runtime Alert Setup, 75%, 75%]
 +
 ** API operational alerts
-
++
 For guidance about alerts in API Manager, see xref:2.x@api-manager::using-api-alerts.adoc[About API Alerts]. Note that these alerts are not listed in the *Alerts* page for Anypoint Monitoring.
 ** Runtime Manager operational alerts
-
++ 
 For guidance about alerts in Runtime Manager, see xref:runtime-manager::alerts-on-runtime-manager.adoc[About Configuring Alerts Using Runtime Manager]. Note that these alerts are not listed in the *Alerts* page for Anypoint Monitoring.
 * *https://www.mulesoft.com/anypoint-pricing[Titanium subscription required]*
 
