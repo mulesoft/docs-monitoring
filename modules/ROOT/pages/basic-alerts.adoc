@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-= Set up Basic Alerts for Servers and Mule Apps
+= Set Up Basic Alerts for Servers and Mule Apps
 
 You can set up basic alerts to trigger email notifications when a metric you are measuring passes a specified threshold.
 
@@ -12,7 +12,7 @@ You can create basic alerts for the following metrics for servers or Mule apps:
 ** CPU utilization
 ** Memory utilization
 ** Thread count
-* For on-premises, Runtime Fabric, and CloudHub apps:
+* For on-premises, Anypoint Runtime Fabric, and CloudHub apps:
 ** Message count
 ** Message error count
 ** Message response time

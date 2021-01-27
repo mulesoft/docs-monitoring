@@ -9,23 +9,23 @@ Alerts indicate whether a resource (such as a Mule app) is behaving as expected 
 You can implement any of several types of alerts. From the *Alerts* page in Anypoint Monitoring, you can create xref:basic-alerts.adoc[basic alerts], or you can link to alerts for API Manager and Runtime Manager alerts.
 If you have a Titanium subscription, you can also view, enable, and disable xref:advanced-alerts.adoc[advanced alerts] that are configured for graphs in custom dashboards.
 
-Using Anypoing Monitoring, you can configure two different types of alerts:
+Using Anypoint Monitoring, you can configure two different types of alerts:
 
 * xref:basic-alerts.adoc[Basic alerts] for servers and Mule apps
 +
-Limit per organization: Up to 50 basic alerts for users who do not have a Titanium subscription to Anypoint Platform. +
+Limit per organization: Up to 50 basic alerts for users who do not have a Titanium subscription to Anypoint Platform +
 If you have a Titanium subscription, the limit is 100 basic alerts, and the limits increase as you purchase more vCores. For complete details about subscriptions, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
 * xref:advanced-alerts.adoc[Advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
 +
-Limit per organization: Up to 20 advanced alerts.
+Limit per organization: Up to 20 advanced alerts
 +
-Note that thresholds are checked every 5 minutes. The evaluated query is the average value of the metric in the last 5 minutes. The evaluated metric is the one referenced in the *General* tab for the graph. If the value passes the threshold, the advanced alert is triggered. The advanced alert is triggered only if the alert state changes (from `OK` state to `Alerting` state or vice versa).
+Note that thresholds are checked every five minutes. The evaluated query is the average value of the metric in the last five minutes. The evaluated metric is the one referenced in the *General* tab for the graph. If the value passes the threshold, the advanced alert is triggered. The advanced alert is triggered only if the alert state changes (from `OK` state to `Alerting` state or vice versa).
 * Operational alerts for APIs through API Manager
-* Operational alerts for the runtime through Runtime Manager
+* Operational alerts for server and app events through Runtime Manager
 
 == Use the Alerts Page
 
-When you set up alerts, you can enable or disable any of them, filter alerts based on the <<alert_status, alert status>>, filter alerts based on the <<alert_severity, alert severity>>, and link to the graph in a custom dashboard that is associated with the alert.
+After you set up alerts, you can enable or disable any of them, filter alerts based on the <<alert_status, alert status>>, filter alerts based on the <<alert_severity, alert severity>>, and link to the graph in a custom dashboard that is associated with the alert.
 
 The *Alerts* page shows basic alerts for servers and apps or advanced alerts (https://www.mulesoft.com/anypoint-pricing[Titanium subscription required]) for graphs in custom dashboards.
 
@@ -38,7 +38,7 @@ image::alerts.png[Examples Alerts]
 Filter alerts based on state using the following filters:
 
 All states::
-Lists all alerts.
+Lists all alerts
 
 include::partial$include-alert-state.adoc[leveloffset=+1]
 
@@ -53,7 +53,7 @@ include::partial$include-alert-severity.adoc[leveloffset=+1]
 
 === Enabling and Disabling Alerts
 
-You can activate or deactivate an alert by toggling the <<alerts, switch>> on the right.
+You can enable or disable an alert by toggling the <<alerts, switch>> on the right:
 
 * Enabling a disabled alert causes the alert to transition to `Pending` until it is time for evaluation. +
 Depending on the value, the alert transitions to `OK` or `Alerting`.
@@ -65,23 +65,29 @@ From the *Alerts* page in Anypoint Monitoring, you can link to configuration pag
 
 Depending on your subscription level:
 
-* If no alerts are set up, you might see links for API and Runtime alert setup, for example:
+* If no alerts are set up, you might see links for API and runtime alert setup:
 +
 image::alerts-setup.png[API and Runtime Alert Setup, 75%, 75%]
 +
-** API Operational Alerts: For guidance with alerts in API Manager, see xref:2.x@api-manager::using-api-alerts.adoc[About API Alerts]. Note that these alerts are not listed in the Alerts page for Anypoint Monitoring.
-** Runtime Operational Alerts: For guidance with alerts in Runtime Manager, see xref:runtime-manager::alerts-on-runtime-manager.adoc[About Configuring Alerts using Runtime Manager]. Note that these alerts are not listed in the *Alerts* page for Anypoint Monitoring.
-* *https://www.mulesoft.com/anypoint-pricing[Titanium Subscription Required]* - Instead of seeing links to API and Runtime alerts, you receive visual guidance showing how to open the configuration area for alerts in graphs for custom dashboards:
+** API operational alerts
+
+For guidance about alerts in API Manager, see xref:2.x@api-manager::using-api-alerts.adoc[About API Alerts]. Note that these alerts are not listed in the *Alerts* page for Anypoint Monitoring.
+** Runtime Manager operational alerts
+
+For guidance about alerts in Runtime Manager, see xref:runtime-manager::alerts-on-runtime-manager.adoc[About Configuring Alerts Using Runtime Manager]. Note that these alerts are not listed in the *Alerts* page for Anypoint Monitoring.
+* *https://www.mulesoft.com/anypoint-pricing[Titanium subscription required]*
+
+Instead of seeing links to API and runtime alerts, you receive visual guidance showing how to open the configuration area for alerts in graphs for custom dashboards:
 +
 image::alerts-setup-premium.png[Alert Setup Guidance, 75%, 75%]
 
 == Add Alerts
 
-Use the *+ New alert* button to link to API Manager and Runtime Manager alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
+Click *+ New alert* to link to API Manager and Runtime Manager alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
 
 image::alerts-menu.png[Alerts Menu, 40%, 40%]
 
-Note that you can also select to add or edit an alert from a chart in a custom dashboard, for example:
+Note that you can also select to add or edit an alert from a chart in a custom dashboard:
 
 image::dashboard-custom-config-dup-delete.png[Add or Edit Alert]
 

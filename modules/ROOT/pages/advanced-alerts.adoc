@@ -1,7 +1,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-= Set up Advanced Alerts for Graphs in Custom Dashboards
+= Set Up Advanced Alerts for Graphs in Custom Dashboards
 
 You must have a Titanium subscription to use this feature.
 
