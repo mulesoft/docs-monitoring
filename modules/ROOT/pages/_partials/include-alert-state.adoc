@@ -1,0 +1,14 @@
+No data::
+No data is available in the series to evaluate the alert threshold.
+
+Disabled::
+The alert is disabled.
+
+Alerting::
+The value of the metric passes the specified threshold.
+
+OK::
+The value of the metric has not passed the threshold.
+
+Pending::
+The alert is enabled and waiting for evaluation.

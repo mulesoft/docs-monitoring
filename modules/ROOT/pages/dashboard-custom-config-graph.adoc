@@ -3,9 +3,9 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-In Anypoint Monitoring, you can configure one or more sets of time-series data in a graph. The graph measures the changes to time-series data over time. A graph in a custom dashboard can display a metric for a resource in a given environment. For example, to configure a graph, you might select a response time or heap usage as the metric to graph for a Mule app in your Design or Sandbox environment. 
+In Anypoint Monitoring, you can configure one or more sets of time-series data in a graph. The graph measures the changes to time-series data over time. A graph in a custom dashboard can display a metric for a resource in a given environment. For example, to configure a graph, you might select a response time or heap usage as the metric to graph for a Mule app in your Design or Sandbox environment.
 
-Advanced configuration options allow for more fine-tuned data sets. You can also customize the X and Y axes, the look of the graph, legends, the behavior when you hover over a data point, and more. 
+Advanced configuration options allow for more fine-tuned data sets. You can also customize the X and Y axes, the look of the graph, legends, the behavior when you hover over a data point, and more.
 
 To open a configuration page for a graph, see xref:dashboard-custom-config.adoc[Configure Custom Dashboards].
 
@@ -92,13 +92,11 @@ Only available when the selected Draw Modes are Lines or Points.
 
 After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
 
-//ALERTS CONFIG HERE, included via include-alerts.adoc
-//== Alerts
 [[alerts_config]]
 == Alerts (Configuration, Notifications, History)
 
 [NOTE]
-A Titanium subscription is required to use this feature. 
+A Titanium subscription is required to use this feature.
 
 In the *Alerts* tab, set up alerts that trigger when JVM memory utilization is too high.
 
@@ -167,7 +165,7 @@ You can also display the following values in a legend:
 | Decimals | Overrides automatic decimal precision used in legends and tooltips
 |===
 
-After you complete your configuration, click *Save Changes*. 
+After you complete your configuration, click *Save Changes*.
 
 To exit the configuration and return to the dashboard, click the *X*.
 
