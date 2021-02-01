@@ -64,7 +64,7 @@ For the description of each variable, see <<var-defs>>.
 | *Number of errors*
 | *Response time*
 
-.7+|Server Alerts | All Server Alerts | `${name}`
+.5+|Server Alerts | All Server Alerts | `${name}`
 | *Server CPU usage* .4+|  `${currentValue}` `${comparison}` `${threshold}`
 | *Server Load average*
 | *Server Memory average*
