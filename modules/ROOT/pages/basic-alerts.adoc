@@ -40,6 +40,7 @@ The following levels of severity are available for basic alerts:
 
 include::partial$include-alert-severity.adoc[leveloffset=+1]
 
+[[alert-variables]]
 == Basic Alert Email Template
 
 You can use the following variables in a basic alert email's *Subject* and *Message* fields.
@@ -56,37 +57,37 @@ For the description of each variable, see <<var-defs>>.
 | *Deployment failed* |  `${user}` `${message}`
 | *Deployment success* .2+| `${user}`
 | *Worker not responding*
-| *Exceeds event traffic threshold* | `${period}` `${periodTimeUnit}`
+| *Exceeds event traffic threshold* | `${period}`
 
 
 .4+|Hybrid App Alerts | All Hybrid App Alerts| `${name}`
-| *Number of Mule messages* .3+| `${currentValue}` `${threshold}`
+| *Number of Mule messages* .3+| `${value}` `${threshold}`
 | *Number of errors*
 | *Response time*
 
 .5+|Server Alerts | All Server Alerts | `${name}`
-| *Server CPU usage* .4+|  `${currentValue}` `${comparison}` `${threshold}`
+| *Server CPU usage* .4+|  `${value}` `${comparison}` `${threshold}`
 | *Server Load average*
 | *Server Memory average*
 | *Server Thread count*
 
 .9+| Server Group Alerts| All Server Group Alerts | `${name}`
-| *Server Group's node CPU usage* .4+|  `${memberName}` `${groupName}` `${currentValue}` `${comparison}` `${threshold}`
+| *Server Group's node CPU usage* .4+|  `${targetName}` `${value}` `${comparison}` `${threshold}`
 | *Server Group's node Load average*
 | *Server Group's node Memory usage*
 | *Server Group's node Thread count*
-| *Server Group's node connected* .4+| `${memberName}` `${groupName}`
+| *Server Group's node connected* .4+| `${targetName}`
 | *Server Group's node disconnected*
 | *Server added to Server Group*
 | *Server removed from Server Group*
 
 .9+| Cluster Alerts |All Cluster Alerts| `${name}`
-| *Cluster's node CPU usage* .4+| `${memberName}` `${clusterName}` `${currentValue}` `${comparison}` `${threshold}`
+| *Cluster's node CPU usage* .4+| `${targetName}` `${value}` `${comparison}` `${threshold}`
 | *Cluster's node Load average*
 | *Cluster's node Memory usage*
 | *Cluster's node Thread count*
-| *Cluster's node disconnected* | `${resource}` `${memberName}` `${clusterName}`
-| *Cluster's node connected* .3+| `${memberName}` `${clusterName}`
+| *Cluster's node disconnected* | `${resource}` `${targetName}` 
+| *Cluster's node connected* .3+| `${targetName}` 
 | *Server added to Cluster*
 | *Server removed from Cluster*
 |===
@@ -99,27 +100,22 @@ For the description of each variable, see <<var-defs>>.
 |Variable |Definition
 |`${alertLink}`|URL of the triggered basic alert
 |`${alertState}`|The state of the alert when it was triggered. Available values are `OK` or `Alerting`.
-|`${clusterName}`|Name of the cluster
 |`${comparison}`|Above or Below
 |`${condition}`|The metric for which the alert is triggered
-|`${currentValue}`|Current value of metric that triggers the alert
 |`${environment}`|The name of the environment in which the resource is deployed
-|`${groupName}`|Name of the server group
-|`${memberName}`|Name of the node in a server group or cluster
-|`${name}` a|Name of the item that triggers the alert:
 
 * Hybrid Apps: Name of the app that triggers the alert
 * Servers: Name of the target (server, server group, or cluster) that triggers the alert
 |`${operator}` |An operator, such as `< > =`
 |`${organization}` |The name of the organization that owns the alert
 |`${period}` |Period of time over which to measure
-|`${periodTimeUnit}` |Period of time unit
 |`${resource}` a| Name of the item that triggers the alert:
 
 * CloudHub Apps: Name of the app that triggers the alert
 * Hybrid Apps: Name of the resource in the app that triggers the alert
 |`${severity}` | Severity of the alert
+|`${targetName}`|Name of the node in a server group or cluster
 |`${targetState}` |Server state when the alert was triggered
 |`${threshold}` |Count over the period of time that triggers the alert
-|`${value}` | A value associated with an element
+|`${value}` | Value of the metric that triggers the alert
 |===
