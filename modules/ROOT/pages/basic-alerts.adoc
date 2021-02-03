@@ -98,16 +98,16 @@ For the description of each variable, see <<var-defs>>.
 .Variable Definitions
 |===
 |Variable |Definition
-|`${alertLink}`|URL of the triggered basic alert
-|`${alertState}`|The state of the alert when it was triggered. Available values are `OK` or `Alerting`.
+|`${alertLink}`|URL of the triggered alert
+|`${alertState}`|State of the alert when it was triggered. Available values are `OK` or `Alerting`.
 |`${comparison}`|Above or Below
-|`${condition}`|The metric for which the alert is triggered
-|`${environment}`|The name of the environment in which the resource is deployed
+|`${condition}`|Metric for which the alert is triggered
+|`${environment}`|Name of the environment in which the resource is deployed
 
 * Hybrid Apps: Name of the app that triggers the alert
 * Servers: Name of the target (server, server group, or cluster) that triggers the alert
 |`${operator}` |An operator, such as `< > =`
-|`${organization}` |The name of the organization that owns the alert
+|`${organization}` |Name of the organization that owns the alert
 |`${period}` |Period of time over which to measure
 |`${resource}` a| Name of the item that triggers the alert:
 
