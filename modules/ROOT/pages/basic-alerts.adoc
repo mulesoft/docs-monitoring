@@ -103,9 +103,6 @@ For the description of each variable, see <<var-defs>>.
 |`${comparison}`|Above or Below
 |`${condition}`|Metric for which the alert is triggered
 |`${environment}`|Name of the environment in which the resource is deployed
-
-* Hybrid Apps: Name of the app that triggers the alert
-* Servers: Name of the target (server, server group, or cluster) that triggers the alert
 |`${operator}` |An operator, such as `< > =`
 |`${organization}` |Name of the organization that owns the alert
 |`${period}` |Period of time over which to measure
