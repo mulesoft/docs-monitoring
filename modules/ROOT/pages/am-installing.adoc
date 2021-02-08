@@ -131,7 +131,7 @@ If you need to update the Anypoint Monitoring agent at some point in the future,
 
 Enabling Monitoring can impact CPU utilization and memory utilization, which varies depending upon specific application configuration. MuleSoft recommends that you test any performance impact in your pre-production environment prior to enabling monitoring in your production environment to ensure optimal performance and sizing.
 
-== What to do Next
+== Troubleshooting
 
 - If you find connection failure or retry entries, ensure that port 443 in your outbound firewall is open.
 - If you do not find connection failure or retry entries, contact MuleSoft technical support.
