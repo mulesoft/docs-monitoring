@@ -117,6 +117,7 @@ Memory utilization::
 
 Thread count::
 
+
 ==== Operator
 
 The _operator_ portion of the alert condition is the logic that is used against the metric you are measuring. The following operators are available:
