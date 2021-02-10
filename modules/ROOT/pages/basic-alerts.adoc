@@ -27,17 +27,114 @@ To create a basic alert:
 . Click the *Alerts* tab.
 . Click the *+ New Alerts* button.
 . Click *Basic alert*.
-. In the *Add basic alert* window, enter the information required to create your basic alert. 
+. In the *Add basic alert* window, enter the information required to create your basic alert:
+
+* *Name*
 +
-Note that requirements change depending on the source type you select.
-. Click *Save*.
+Unique and meaningful name for the alert
++
+The *Name* is limited to 256 characters.
+* *Severity level*
++
+Severity of the alert: *Critical*, *Warning*, or *Info*
+See <<severity>>.
++
+* *Source type*
++
+The source of the alert: applications or servers
++
+* *Environment name*
++
+The name of the environment where the resource is deployed
++
+* *Resource name* or *Server name*
++
+The application or server to apply the alert to
+* *Condition*
++
+The condition that triggers the alert
++
+See <<alert-conditions>>.
+* *Subject*
++
+The subject of the alert email to send when the alert is triggered
++
+// The subject can include variables.
+// See <<alert-variables>>.
+* *Message*
++
+The body text for the email to send when the alert is triggered
+// The message body can include variables.
+// See <<alert-variables>>.
+* *Recipients*
++
+The recipients of the alert email
++
+You can select up to 20 platform user IDs and enter up to 20 email addresses.
+. Click *Create*.
 
 image::basic-alerts-config.png[Configure a Basic Alert, 50%, 50%]
 
-=== Basic Alert Severity
+[[severity]]
+=== Severity
 
 The following levels of severity are available for basic alerts:
 
 include::partial$include-alert-severity.adoc[leveloffset=+1]
+
+[[alert-conditions]]
+=== Alert Conditions
+
+For basic alerts, alert conditions consist of a metric, an operator, and a period of time that the condition is met.
+
+==== Metrics
+
+The following metrics are available if your alert is created for an application:
+
+Message count::
+The total number of Mule messages that are processed successfully
+
+Message error count::
+The total number of error messages. This includes 400- and 500- errors.
+
+Message response time::
+The response time of a message in milliseconds
+
+CPU utilization::
+The percent of CPU used
+
+Memory utilization::
+The percent of memory used
+
+Thread count::
+The total number of threads used
+
+The following metrics are available if your alert is created for a server:
+
+CPU utilization::
+
+Memory utilization::
+
+Thread count::
+
+==== Operator
+
+The _operator_ portion of the alert condition is the logic that is used against the metric you are measuring. The following operators are available:
+
+* Above
+* Above or equal
+* Equal
+* Below or equal
+* Below
+
+==== Time Period
+
+The _time period_ defines how long the metric meets the criteria defined using the operator and chosen value. The following time periods are available:
+
+* 5 minutes
+* 10 minutes
+* 15 minutes
+* 20 minutes
+
 
 // add basic alert email templates
