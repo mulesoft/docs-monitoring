@@ -8,6 +8,10 @@ Anypoint Monitoring provides data on Mule apps that are running on either CloudH
 [NOTE]
 Functional Monitoring is covered in xref:api-functional-monitoring::index.adoc[API Functional Monitoring].
 
+== Supported Versions of Mule Runtime Engine
+
+include::partial$include-supported-mule-runtime-version.adoc[]
+
 [[using_monitoring]]
 == Use Anypoint Monitoring
 
@@ -30,7 +34,7 @@ If you do not see Anypoint Monitoring or are unable to use it, it might be a per
 Custom dashboards and alerts require configuration before you can use them. For guidance, see:
 
 * xref:dashboard-custom-config.adoc[Configuring Custom Dashboards]
-* xref:alerts-config.adoc[Configuring Alerts]
+* xref:alerts.adoc[Configuring Alerts]
 
 [[required_permission]]
 == Required Permission
@@ -44,7 +48,7 @@ Typically, administrators set permissions through Access Management. See xref:ac
 [[runtime_versions]]
 == Enable Anypoint Monitoring on CloudHub
 
-For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them to the appropriate version of Mule runtime engine.  See xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps (CloudHub)]. 
+For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them to the appropriate version of Mule runtime engine.  See xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps (CloudHub)].
 
 == Enable Anypoint Monitoring On-Premises
 
@@ -56,4 +60,3 @@ You can xref:am-installing.adoc[install Anypoint Monitoring] on an on-premises s
 * xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps]
 * xref:am-installing.adoc[Install Anypoint Monitoring On-Premises]
 * xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]
-

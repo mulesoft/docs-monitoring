@@ -1,68 +1,49 @@
-= To Configure an Alert
-
-//INCLUDED IN GRAPH CONFIG FILE
+= Create an Advanced Alert
+//INCLUDED IN GRAPH CONFIG FILE (dashboard-custom-config-graph.adoc#create-an-advanced-alert), advanced-alert.adoc
 [[alerts]]
 
-////
-TODO_FUTURE?
-You can create, configure, delete, test, and send alerts to people who need to see them. The rules you configure trigger alerts when conditions reach a specified threshold value, for example: *TODO_FUTURE?*  You can also get the history of an alert.
-////
-
-image::graph-alert-config.png[Alert Configuration]
-
+image::graph-alert-config.png[Advanced Alert Configuration]
 
 . Navigate to the configuration screen for a graph in a custom dashboard. For guidance, see xref:dashboard-custom-config.adoc[Configuring Custom Dashboards].
-. Provide a General configuration for the graph that (at minimum) defines the metric, environment, and resource for which you want to set the alert. For guidance, see xref:dashboard-custom-config-graph.adoc#general_settings[General Settings].
-. Navigate to the Alert configuration tab for the graph.
+. Provide a general configuration for the graph that (at minimum) defines the metric, environment, and resource for which you want to set the advanced alert. +
+For guidance, see xref:dashboard-custom-config-graph.adoc#general_settings[General Settings].
+. Navigate to the *Alert* configuration tab for the graph.
 . Click *Create Alert*.
 . Use *Alert Config* to configure the alert. See <<alert_config, Alert Config>>.
-. Configure any notifications to email when an alert is triggered. See <<notifications, Notifications>>.
+. Configure email notifications when an advanced alert is triggered. See <<notifications, Notifications>>.
+. Click *Save Changes*.
+. Click `X` to exit the configuration and return to the dashboard.
 
 Note that you can also view <<state_history, state history>> and <<delete_alert, delete>> alerts.
 
 [[alert_config]]
-=== Alert Config
+=== Configure an Advanced Alert
 
-Configure the condition under which an alert is triggered.
+In the *Alert Config* section, configure the condition under which an advanced alert is triggered.
 
 [%header,cols="1,4"]
 |===
-2+| Settings for Alerts
-| Name | A title for your alert.
-| `Condition` | WHEN: For triggering an alert when the `JVM - CPU % Utilization` is above a specified level.
+2+| Settings for Advanced Alerts
+| Name | A title for your advanced alert
+| Severity level | The severity level of your alert.
+| `Condition` | WHEN: For triggering an advanced alert when the metric being measured is above a specified level
 |===
 
-////
-TODO _FUTURE?
-.Alert Config
-[%header,cols="1,4"]
-|===
+Available severity levels:
 
-| Name | A title for your alert.
-| `Evaluate Every` | Interval at which to poll for an alert, for example, every sixty seconds (`60s`).
-| Conditions a|
-* WHEN: `min()`, `max()`, `sum()`, `count()`, `last()`, `median()`, `diff()`, `percent_diff()`, `count_non_null()`
-* OF: Example: `query(A, 5m, now)`
-* IS ABOVE or *TODO for other relationships*
-* If No Data or All Values Are Null SET STATE TO `Alerting`, `No Data`, `Keep Last State`, or `Ok`.
-* If Execution Error or Timeout SET STATE TO `Alerting` or `Keep Last State`
-| Test Rule |
-|===
-////
+include::partial$include-alerts-severity.adoc[leveloffset=+1]
 
 [[notifications]]
 === Notifications
 
-Configure a notification to email when an alert is triggered.
+Configure an email notification when an advanced alert is triggered.
 
 [%header,cols="1,4"]
 |===
-2+| Notification Settings for Alerts
-| `Send To` | Email address for a recipient of the alert notification. You can add more than one email recipient to the list.
+2+| Notification Settings for Advanced Alerts
+| `Send To` | Email address for each recipient of the advanced alert notification
 | `Message` | Message to send to the recipient.
 |===
-
-After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
 
 [[state_history]]
 === State History
@@ -74,4 +55,4 @@ You can also clear the history.
 [[delete_alert]]
 === Delete
 
-To delete an alert, click *Delete* on the left-side menu, then confirm your deletion.
+To delete an advanced alert, click *Delete* on the menu in the *Alerts* tab, and then confirm your deletion.

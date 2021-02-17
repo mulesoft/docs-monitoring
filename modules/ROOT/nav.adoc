@@ -23,8 +23,8 @@
 * xref:monitor-connectors.adoc[Monitor Connectors]
 * xref:reports.adoc[Reports]
 * xref:alerts.adoc[Alerts]
- ** xref:alerts-using.adoc[Using Alerts]
- ** xref:alerts-config.adoc[Configuring Alerts]
+ ** xref:basic-alerts.adoc[Basic Alerts]
+ ** xref:advanced-alerts.adoc[Advanced Alerts]
 * xref:logs.adoc[Logs]
  ** xref:logs-using.adoc[Using Logs]
  ** xref:log-search-query-syntax.adoc[Log Search Query Syntax]
@@ -32,4 +32,3 @@
 * xref:log-points.adoc[Log Points]
 * xref:raw-data.adoc[Raw Data]
 * xref:tools.adoc[Tools]
-

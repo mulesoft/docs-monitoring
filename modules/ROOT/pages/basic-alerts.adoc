@@ -1,0 +1,43 @@
+[[basic-alerts]]
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+= Set Up Basic Alerts for Servers and Mule Apps
+
+You can set up basic alerts to trigger email notifications when a metric you are measuring passes a specified threshold.
+
+You can create basic alerts for the following metrics for servers or Mule apps:
+
+* For on-premises servers and CloudHub apps:
+** CPU utilization
+** Memory utilization
+** Thread count
+* For on-premises, Anypoint Runtime Fabric, and CloudHub apps:
+** Message count
+** Message error count
+** Message response time
+
+== Create a Basic Alert
+
+When you create a basic alert, you can select a source for the basic alert, configure the condition under which the basic alert is triggered, and specify which email addresses receive notifications for basic alert triggers.
+
+To create a basic alert:
+
+. Navigate to Anypoint Monitoring.
+. Click the *Alerts* tab.
+. Click the *+ New Alerts* button.
+. Click *Basic alert*.
+. In the *Add basic alert* window, enter the information required to create your basic alert. 
++
+Note that requirements change depending on the source type you select.
+. Click *Save*.
+
+image::basic-alerts-config.png[Configure a Basic Alert, 50%, 50%]
+
+=== Basic Alert Severity
+
+The following levels of severity are available for basic alerts:
+
+include::partial$include-alert-severity.adoc[leveloffset=+1]
+
+// add basic alert email templates

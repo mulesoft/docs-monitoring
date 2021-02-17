@@ -1,0 +1,8 @@
+Info::
+May be assigned to alerts that do not require immediate attention when triggered. This severity indicates the metric should be passively monitored.
+
+Warning::
+May be assigned to alerts that require prompt attention when triggered. This severity indicates an alert should be closely monitored.
+
+Critical::
+May be assigned to alerts that require immediate attention when triggered. This severity indicates an alert should receive an immediate response.
