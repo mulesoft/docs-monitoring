@@ -9,6 +9,13 @@ Anypoint Monitoring aggregates log files so you can manage, search for,
 filter, and analyze your logs. You can use aggregated logs in conjunction with
 monitoring to help identify issues and investigate failures quickly.
 
+==== Note For On-Premise Servers With Customized Logging
+
+Logs produced by apps with customized logging (by changing the pattern layout in the `log4j2.xml` file) might not get indexed correctly into Anypoint Monitoring. To ensure correct indexing, it is recommended to use Mule default pattern layout, which is one of the following: 
+
+* `<PatternLayout pattern="%-5p %d [%t] [event: %X{correlationId}] %c: %m%n" />`, or
+* `<PatternLayout pattern="%d [%t] %-5p %c - %m%n" />`
+
 == Search Logs
 
 In Anypoint Monitoring, click *Log Search* in the menu on the left. On the log search page, you can search for text in logs in a few different ways. You can type your search query into the search field, you can use the UI to add a filter, and you can create a query.

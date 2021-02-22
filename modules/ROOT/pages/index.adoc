@@ -53,14 +53,12 @@ See xref:logs.adoc[Logs].
 
 Limits on data storage and retention are determined by your subscription level (Base or Titanium). All customers receive Anypoint Monitoring at the Base subscription level.
 
-For Gold and Platinum subscriptions, data is stored in US East (N. Virginia).
+* For Gold/Platinium subscriptions
+** Stores metric data in the same region as your control plane: US East (N. Virginia) or EU (Frankfurt)
 
-The Titanium subscription:
-
-* Significantly increases the storage per vCore over the Base subscription.
-* Stores log and metric data in the same region as your control plane. These regions are available:
-** US East (N. Virginia)
-** EU (Frankfurt)
+* For Titanium subscription
+** Significantly increases the storage per vCore over the Base subscription.
+** Stores log and metric data in the same region as your control plane: US East (N. Virginia) or EU (Frankfurt)
 
 For complete details about subscriptions, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
 
