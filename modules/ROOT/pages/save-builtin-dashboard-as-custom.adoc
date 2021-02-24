@@ -10,7 +10,7 @@ This feature requires a https://www.mulesoft.com/anypoint-pricing[Titanium Subsc
 
 Follow these steps to save a built-in dashboard as a custom dashboard.
 
-include$partial::include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-no-permissions.adoc[]
 
 . In the Anypoint Monitoring navigation menu, click *Built-in dashboards*.
 . Click the tab for the built-in dashboard to save, for example, *Performance*.

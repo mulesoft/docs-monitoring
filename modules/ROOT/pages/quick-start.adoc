@@ -15,7 +15,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 [[using_monitoring]]
 == Use Anypoint Monitoring
 
-include$partial::include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-no-permissions.adoc[]
 +
 image::management-center-menu.png[Management Center Menu]
 +

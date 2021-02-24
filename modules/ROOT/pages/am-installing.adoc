@@ -101,7 +101,7 @@ If the user or password of the SOCKS5 proxy configuration contains URI reserved 
 
 . Wait 10 minutes for the configuration to propagate.
 
-include$partial::include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-no-permissions.adoc[]
 
 . On the *Built-in Dashboards* page, select an app that is deployed on the server where you installed the Anypoint Monitoring agent.
 . Check whether the CPU Utilization and Memory Utilization charts are displaying data. +

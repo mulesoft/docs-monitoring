@@ -107,7 +107,7 @@ The following Anypoint Connectors are available for use with the Log Points feat
 
 === Enable Application Log Points
 
-include$partial::include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-no-permissions.adoc[]
 
 . In the Anypoint Monitoring navigation menu, click *Log Points*.
 . Select the following: +
@@ -156,7 +156,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 === Enable API Log Points
 
-include$partial::include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-no-permissions.adoc[]
 
 . In the Anypoint Monitoring navigation menu, click *Log Points*.
 . Select the following: +

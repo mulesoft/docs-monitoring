@@ -25,7 +25,7 @@ Note that thresholds are checked every five minutes. The evaluated query is the 
 
 == Access the Alerts Page
 
-include$partial::include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-no-permissions.adoc[]
 
 . In the Anypoint Monitoring navigation menu, click *Alerts*.
 

@@ -25,7 +25,7 @@ image::reports-main-page.png[Reports Main Page]
 
 == Access Reports
 
-include$partial::include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-no-permissions.adoc[]
 
 . In the Anypoint Monitoring navigation menu, click *Reports*.
 . In the *Environment* drop-down list, select the environment where the apps you want to view reports for are deployed, and click *View*. +
