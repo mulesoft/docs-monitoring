@@ -25,8 +25,9 @@ image::reports-main-page.png[Reports Main Page]
 
 == Access Reports
 
-. Sign into Anypoint Platform and, in *Management Center*, click *Anypoint Monitoring*.
-. In the menu on the left, click *Reports*.
+include$partial::include-nav-steps-no-permissions.adoc[]
+
+. In the Anypoint Monitoring navigation menu, click *Reports*.
 . In the *Environment* drop-down list, select the environment where the apps you want to view reports for are deployed, and click *View*. +
 The first time you view the reports page, the *Requests* report is displayed.
 . You can select a time range from the drop-down list on the top-right of the page.

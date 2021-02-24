@@ -25,7 +25,8 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 Built-in and custom dashboards are available from Anypoint Monitoring. You can view application metrics for applications deployed to CloudHub and to hybrid targets in both built-in and custom dashboards.
 
-. Sign in to Anypoint Platform and click *Monitoring*.
+include$partial::include-nav-steps-no-permissions.adoc[]
+
 . Select the *Environment* and *Resource name* for the app or API to view the corresponding dashboard.
 . Click *View*. +
 The built-in dashboard for the application or API is displayed.

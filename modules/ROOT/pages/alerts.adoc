@@ -23,11 +23,22 @@ Note that thresholds are checked every five minutes. The evaluated query is the 
 * Operational alerts for APIs through API Manager
 * Operational alerts for server and app events through Runtime Manager
 
-== Use the Alerts Page
+== Access the Alerts Page
 
-After you set up alerts, you can enable or disable any of them, filter alerts based on the <<alert_status, alert status>>, filter alerts based on the <<alert_severity, alert severity>>, and link to the graph in a custom dashboard that is associated with the alert.
+include$partial::include-nav-steps-no-permissions.adoc[]
 
-The *Alerts* page shows basic alerts for servers and apps or advanced alerts (https://www.mulesoft.com/anypoint-pricing[Titanium subscription required]) for graphs in custom dashboards.
+. In the Anypoint Monitoring navigation menu, click *Alerts*.
+
+In the *Alerts* page, you can:
+
+* Create basic alerts
+* View:
+** Basic alerts for servers and apps
+** Advanced alerts for graphs in custom dashboards (Titanium subscription required)
+* Enable or disable alerts
+* Filter by <<alert_status, alert status>>
+* Filter by <<alert_severity, alert severity>>
+* Navigate to alert configuration in Runtime Manager and API Manager
 
 [[alerts]]
 image::alerts.png[Examples Alerts]
@@ -88,7 +99,7 @@ Instead of seeing links to API and runtime alerts, you receive visual guidance s
 
 image::alerts-setup-premium.png[Alert Setup Guidance, 75%, 75%]
 
-== Add Alerts
+== Add API Manager and Runtime Manager Alerts
 
 Click *+ New alert* to link to API Manager and Runtime Manager alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
 

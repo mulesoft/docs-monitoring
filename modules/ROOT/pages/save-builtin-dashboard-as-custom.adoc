@@ -3,27 +3,27 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-To make creating a custom dashboard easier, you can save any of the built-in dashboards that are included in the Anypoint Monitoring tabs as a custom dashboard that you can then customize to suit your needs. This allows you to take advantage of the flexibility and features offered in custom dashboards, such as troubleshooting, setting up alerts, or comparing multiple resources within one dashboard. 
+To make creating a custom dashboard easier, you can save any of the built-in dashboards that are included in the Anypoint Monitoring tabs as a custom dashboard that you can then customize to suit your needs. This allows you to take advantage of the flexibility and features offered in custom dashboards, such as troubleshooting, setting up alerts, or comparing multiple resources within one dashboard.
 
 [NOTE]
 This feature requires a https://www.mulesoft.com/anypoint-pricing[Titanium Subscription].
 
-Follow these steps to save a built-in dashboard as a custom dashboard. 
+Follow these steps to save a built-in dashboard as a custom dashboard.
 
-. Sign into Anypoint Platform.
-. In *Anypoint Monitoring*, click *Built-in dashboards* in the menu on the left.
-. Click the tab for the built-in dashboard to save, for example, *Performance*. 
-. Click the *Save as* icon. 
+include$partial::include-nav-steps-no-permissions.adoc[]
+
+. In the Anypoint Monitoring navigation menu, click *Built-in dashboards*.
+. Click the tab for the built-in dashboard to save, for example, *Performance*.
+. Click the *Save as* icon.
 . In the *Save as* dialog, enter a *Name* for your custom dashboard, and click *Save*. +
 [NOTE]
 The name for your new custom dashboard must be unique.
 
-A green confirmation banner appears in the top of the screen. 
+A green confirmation banner appears in the top of the screen.
 Click the *View in custom dashboards* link in the green confirmation banner to see the new custom dashboard, with the name you entered, in the list of custom dashboards. +
 The banner disappears after a moment. If you didn't click the link in the banner, you can click *Custom dashboards* in the menu on the left to go to the list of custom dashboards. +
-You can now configure your custom dashboard. 
+You can now configure your custom dashboard.
 
 == See Also
 
 xref:dashboard-custom-config.adoc[Configuring Custom Dashboards and Charts]
-
