@@ -32,7 +32,7 @@ The *Alerts* page shows basic alerts for servers and apps or advanced alerts (ht
 [[alerts]]
 image::alerts.png[Examples Alerts]
 
-=== Filtering Alerts by Alert State
+=== Filter Alerts by Alert State
 
 [[alert_status]]
 Filter alerts based on state using the following filters:
@@ -42,7 +42,7 @@ Lists all alerts
 
 include::partial$include-alert-state.adoc[leveloffset=+1]
 
-=== Filtering Alerts by Alert Severity
+=== Filter Alerts by Alert Severity
 
 When you create basic and advanced alerts, you can select the severity for those alerts. The severity indicates how important the alert is for the recipients of the alerts.
 
@@ -52,16 +52,16 @@ Filter alerts based on severity using the following filters:
 All severities::
 Lists all severities
 
-Not defined:: 
+Not defined::
 Lists alerts that do not have severities assigned
 
 include::partial$include-alert-severity.adoc[leveloffset=+1]
 
-=== Enabling and Disabling Alerts
+=== Enable and Disable Alerts
 
 You can enable or disable an alert by toggling the <<alerts, switch>> on the right:
 
-* Enabling a disabled alert causes the alert to transition to `Pending` until it is time for evaluation. 
+* Enabling a disabled alert causes the alert to transition to `Pending` until it is time for evaluation.
 +
 Depending on the value, the alert transitions to `OK` or `Alerting`.
 * Disabling an alert causes the alert to transition to `Disabled`.
@@ -80,7 +80,7 @@ image::alerts-setup.png[API and Runtime Alert Setup, 75%, 75%]
 +
 For guidance about alerts in API Manager, see xref:2.x@api-manager::using-api-alerts.adoc[About API Alerts]. Note that these alerts are not listed in the *Alerts* page for Anypoint Monitoring.
 ** Runtime Manager operational alerts
-+ 
++
 For guidance about alerts in Runtime Manager, see xref:runtime-manager::alerts-on-runtime-manager.adoc[About Configuring Alerts Using Runtime Manager]. Note that these alerts are not listed in the *Alerts* page for Anypoint Monitoring.
 * If you do not have a Titanium subscription, you might see *https://www.mulesoft.com/anypoint-pricing[Titanium subscription required]*.
 
