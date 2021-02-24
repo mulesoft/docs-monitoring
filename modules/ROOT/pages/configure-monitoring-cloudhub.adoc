@@ -61,7 +61,7 @@ If you want your Mule apps to be monitored by default when you deploy them to Cl
 
 To configure automatic monitoring for each Mule app as it is deployed to CloudHub:
 
-include$partial::include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-no-permissions.adoc[]
 
 . In the Anypoint Monitoring navigation menu, click *Settings*:
 +
@@ -82,7 +82,7 @@ For supported versions of Mule, see xref:configure-monitoring-cloudhub.adoc[Conf
 
 You can use the *Settings* page in Anypoint Monitoring to enable or disable apps deployed to CloudHub and running on Mule.
 
-include$partial::include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-no-permissions.adoc[]
 
 . In the Anypoint Monitoring navigation menu, click *Settings*:
 +
