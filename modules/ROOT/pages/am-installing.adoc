@@ -5,7 +5,7 @@ endif::[]
 
 Install the Anypoint Monitoring agent on an on-premises server to monitor applications that are running on that server and managed in the cloud.
 
-The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using an open-source protocol for transferring log data over a highly-efficient bidirectional binary channel. Data is securely transmitted using mutual TLS encryption.
+The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using an open-source protocol for transferring log data over a highly efficient bidirectional binary channel. Data is securely transmitted using mutual TLS encryption.
 
 == Before You Begin
 
