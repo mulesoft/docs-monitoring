@@ -107,7 +107,8 @@ The following Anypoint Connectors are available for use with the Log Points feat
 
 === Enable Application Log Points
 
-. Log in to Anypoint Platform and navigate to Anypoint Monitoring.
+include::partial$include-nav-steps-no-permissions.adoc[]
+
 . In the Anypoint Monitoring navigation menu, click *Log Points*.
 . Select the following: +
 * *Environment*: The environment in which the app is running.
@@ -155,7 +156,8 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 === Enable API Log Points
 
-. Sign into Anypoint Platform and navigate to Anypoint Monitoring.
+include::partial$include-nav-steps-no-permissions.adoc[]
+
 . In the Anypoint Monitoring navigation menu, click *Log Points*.
 . Select the following: +
 * *Environment*: The environment the API is running in.

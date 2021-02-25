@@ -1,0 +1,2 @@
+. Log in to Anypoint Platform.
+. In the navigation bar or the main Anypoint Platform screen, click *Monitoring*.
