@@ -5,17 +5,18 @@ endif::[]
 
 On the *Settings* page, you can:
 
-* Find the instructions to install Anypoint Monitoring on an on-premises server to monitor Mule applications running on that server. 
+* Find the instructions to install Anypoint Monitoring on an on-premises server to monitor Mule applications running on that server.
 * Enable (or disable) monitoring for applications running on Mule.
 
 == Access the Settings Page
 
 To access the *Settings* page, you must have the *Anypoint Monitoring User* permission. See xref:access-management::users#granting-permissions-and-roles-to-users[Granting Permissions and Roles to Users].
 
-. Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
-. In the menu on the left, click *Settings*. +
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+. In the Anypoint Monitoring navigation menu, click *Settings*. +
 . To install Anypoint Monitoring to monitor applications deployed to a local server, select *Hybrid*. +
-The instructions for installing Anypoint Monitoring on-premises are displayed. 
+The instructions for installing Anypoint Monitoring on-premises are displayed.
 . To enable (or disable) monitoring for apps deployed to CloudHub, select *CloudHub*.
 
 == See Also
