@@ -16,6 +16,7 @@ Logs produced by apps with customized logging (by changing the pattern layout in
 * `<PatternLayout pattern="%-5p %d [%t] [event: %X{correlationId}] %c: %m%n" />`, or
 * `<PatternLayout pattern="%d [%t] %-5p %c - %m%n" />`
 
+==== Note For Applications Deployed to Cloudhub and Runtime Fabric With Customized Time Zone
 Do not override the default JVM timezone(it should always be UTC). Changing the timezone to a local timezone will break Anypoint Monitoring.
 
 == Search Logs
