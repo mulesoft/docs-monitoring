@@ -10,7 +10,7 @@ On the *Settings* page, you can:
 
 == Access the Settings Page
 
-To access the *Settings* page, you must have the *Anypoint Monitoring User* permission. See xref:access-management::users#granting-permissions-and-roles-to-users[Granting Permissions and Roles to Users].
+To access the *Settings* page, you must have the Anypoint Monitoring User and the Runtime Manager - Read Applications permissions. See xref:access-management::users#granting-permissions-and-roles-to-users[Granting Permissions and Roles to Users].
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
