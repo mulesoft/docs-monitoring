@@ -16,6 +16,8 @@ Logs produced by apps with customized logging (by changing the pattern layout in
 * `<PatternLayout pattern="%-5p %d [%t] [event: %X{correlationId}] %c: %m%n" />`, or
 * `<PatternLayout pattern="%d [%t] %-5p %c - %m%n" />`
 
+Do not override the default JVM timezone(it should always be UTC). Changing the timezone to a local timezone will break Anypoint Monitoring.
+
 == Search Logs
 
 In Anypoint Monitoring, click *Log Search* in the menu on the left. On the log search page, you can search for text in logs in a few different ways. You can type your search query into the search field, you can use the UI to add a filter, and you can create a query.
