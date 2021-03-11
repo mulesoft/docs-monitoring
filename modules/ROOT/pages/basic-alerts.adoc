@@ -95,26 +95,26 @@ For basic alerts, alert conditions consist of a metric, an operator, and a perio
 The following metrics are available if your alert is created for an application:
 
 Message count::
-The total number of Mule messages that are processed successfully
+Total number of Mule messages that are processed successfully
 
 Message error count::
-The number of Mule messages that return an exception in a flow
+Number of Mule messages that return an exception in a flow
 
 Message response time::
-The response time (in milliseconds) of a message
+Response time (in milliseconds) of a message
 
 CPU utilization::
-The percent of CPU used
+Percent of CPU used
 +
 This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
 
 Memory utilization::
-The percent of memory used
+Percent of memory used
 +
 This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
 
 Thread count::
-The total number of threads used
+Total number of threads used
 +
 This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
 
@@ -124,13 +124,13 @@ This metric is available only for apps deployed to CloudHub or Anypoint Runtime 
 The following metrics are available if your alert is created for a server, server group, or server cluster:
 
 CPU utilization::
-The percent of CPU used
+Percent of CPU used
 
 Memory utilization::
-The percent of memory used
+Percent of memory used
 
 Thread count::
-The total number of threads used
+Total number of threads used
 
 
 ==== Operator
