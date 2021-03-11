@@ -61,13 +61,13 @@ See <<alert-conditions>>.
 +
 The subject of the alert email to send when the alert is triggered
 +
-// The subject can include variables.
-// See <<alert-variables>>.
+The subject can include variables.
+See <<alert-variables>>.
 * *Message*
 +
 The body text for the email to send when the alert is triggered
-// The message body can include variables.
-// See <<alert-variables>>.
+The message body can include variables.
+See <<alert-variables>>.
 * *Recipients*
 +
 The recipients of the alert email
@@ -114,10 +114,13 @@ The total number of threads used. This metric is available only for apps deploye
 The following metrics are available if your alert is created for a server, server group, or server cluster:
 
 CPU utilization::
+The percent of CPU used
 
 Memory utilization::
+The percent of memory used
 
 Thread count::
+The total number of threads used
 
 
 ==== Operator
