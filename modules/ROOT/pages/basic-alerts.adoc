@@ -89,7 +89,7 @@ include::partial$include-alert-severity.adoc[leveloffset=+1]
 
 For basic alerts, alert conditions consist of a metric, an operator, and a period of time that the condition is met.
 
-==== Metrics
+==== Application Metrics
 
 The following metrics are available if your alert is created for an application:
 
@@ -110,6 +110,9 @@ The percent of memory used. This metric is available only for apps deployed to C
 
 Thread count::
 The total number of threads used. This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
+
+
+==== Server Metrics
 
 The following metrics are available if your alert is created for a server, server group, or server cluster:
 
