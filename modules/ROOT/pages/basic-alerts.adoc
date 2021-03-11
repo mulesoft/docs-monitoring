@@ -17,6 +17,8 @@ You can create basic alerts for the following metrics for servers or Mule apps:
 ** Message error count
 ** Message response time
 
+A basic alert typically triggers an e-mail within 5 to 15 minutes of an incident. However, the basic alert's timestamp reflects the actual time of the incident.
+
 == Create a Basic Alert
 
 When you create a basic alert, you can select a source for the basic alert, configure the condition under which the basic alert is triggered, and specify which email addresses receive notifications for basic alert triggers.

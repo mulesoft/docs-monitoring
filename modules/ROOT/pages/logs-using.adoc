@@ -9,12 +9,21 @@ Anypoint Monitoring aggregates log files so you can manage, search for,
 filter, and analyze your logs. You can use aggregated logs in conjunction with
 monitoring to help identify issues and investigate failures quickly.
 
-==== Note For On-Premise Servers With Customized Logging
+[CAUTION]
+==== 
 
-Logs produced by apps with customized logging (by changing the pattern layout in the `log4j2.xml` file) might not get indexed correctly into Anypoint Monitoring. To ensure correct indexing, it is recommended to use Mule default pattern layout, which is one of the following: 
+*For on-premises servers with customized logging:*
+
+Logs produced by apps with customized logging (by changing the pattern layout in the `log4j2.xml` file) might not get indexed correctly into Anypoint Monitoring. To ensure correct indexing, use the Mule default pattern layout, which is one of the following: 
 
 * `<PatternLayout pattern="%-5p %d [%t] [event: %X{correlationId}] %c: %m%n" />`, or
 * `<PatternLayout pattern="%d [%t] %-5p %c - %m%n" />`
+
+*For applications deployed to Cloudhub and Anypoint Runtime Fabric with customized time zones:*
+
+Do not override the default JVM timezone for applications deployed to Cloudhub and Anypoint Runtime Fabric with customized time zones. The timezone must be UTC. Changing the timezone to a local timezone causes logs to be indexed in Anypoint Monitoring with incorrect timestamps.
+
+====
 
 == Search Logs
 
