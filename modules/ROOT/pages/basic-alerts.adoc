@@ -97,7 +97,7 @@ Message count::
 The total number of Mule messages that are processed successfully
 
 Message error count::
-The total number of error messages. This includes 400- and 500- errors.
+The number of Mule messages that return an exception in a flow.
 
 Message response time::
 The response time of a message in milliseconds
@@ -111,7 +111,7 @@ The percent of memory used
 Thread count::
 The total number of threads used
 
-The following metrics are available if your alert is created for a server:
+The following metrics are available if your alert is created for a server, server group, or server cluster:
 
 CPU utilization::
 
