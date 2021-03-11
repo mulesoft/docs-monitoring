@@ -43,34 +43,35 @@ See <<severity>>.
 +
 * *Source type*
 +
-The source of the alert: applications or servers
+Source of the alert: applications or servers
 +
 * *Environment name*
 +
-The name of the environment where the resource is deployed
+Name of the environment where the resource is deployed
 +
 * *Resource name* or *Server name*
 +
-The application or server to apply the alert to
+Application or server to apply the alert to
 * *Condition*
 +
-The condition that triggers the alert
+Condition that triggers the alert
 +
 See <<alert-conditions>>.
 * *Subject*
 +
-The subject of the alert email to send when the alert is triggered
+Subject of the alert email to send when the alert is triggered
 +
 The subject can include variables.
 See <<alert-variables>>.
 * *Message*
 +
-The body text for the email to send when the alert is triggered
+Body text for the email to send when the alert is triggered
++
 The message body can include variables.
 See <<alert-variables>>.
 * *Recipients*
 +
-The recipients of the alert email
+Recipients of the alert email
 +
 You can select up to 20 platform user IDs and enter up to 20 email addresses.
 . Click *Create*.
@@ -97,19 +98,25 @@ Message count::
 The total number of Mule messages that are processed successfully
 
 Message error count::
-The number of Mule messages that return an exception in a flow.
+The number of Mule messages that return an exception in a flow
 
 Message response time::
-The response time of a message in milliseconds
+The response time (in milliseconds) of a message
 
 CPU utilization::
-The percent of CPU used. This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
+The percent of CPU used
++
+This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
 
 Memory utilization::
-The percent of memory used. This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
+The percent of memory used
++
+This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
 
 Thread count::
-The total number of threads used. This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
+The total number of threads used
++
+This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
 
 
 ==== Server Metrics
