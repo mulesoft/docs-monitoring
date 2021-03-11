@@ -43,7 +43,7 @@ include::partial$include-alert-severity.adoc[leveloffset=+1]
 [[alert-variables]]
 == Basic Alert Email Template
 
-You can use the following variables in a basic alert email's *Subject* and *Message* fields.
+You can use the following variables in a basic alert email *Subject* and *Message* fields.
 For the description of each variable, see <<var-defs>>.
 
 [%header,cols="25a,50a,20a"]
@@ -158,7 +158,9 @@ For the description of each variable, see <<var-defs>>.
 |===
 |Variable |Definition
 |`${alertLink}`|URL of the triggered alert
-|`${alertState}`|State of the alert when it was triggered. Available values are `OK` or `Alerting`.
+|`${alertState}`|State of the alert when it was triggered.
+
+Available values are `OK` or `Alerting`.
 |`${comparison}`|* Above, above or equal, equal, below or equal, below
 |`${condition}`|Metric for which the alert is triggered
 |`${environment}`|Name of the environment in which the resource is deployed
