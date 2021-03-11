@@ -50,46 +50,73 @@ For the description of each variable, see <<var-defs>>.
 .Variables for Alerts
 |===
 | Alert Type | Alert | Applicable Variables
-2+| All Alerts | `${resource}` `${severity}` `${state}`
-.7+| CloudHub App Alerts |*CPU usage - CloudHub* .2+|`${operator}` `${value}`
-| *Memory usage - CloudHub*
-| *Custom application notification* | `${priority}` `${message}`
-| *Deployment failed* |  `${user}` `${message}`
-| *Deployment success* .2+| `${user}`
-| *Worker not responding*
-| *Exceeds event traffic threshold* | `${period}`
+.6+| CloudHub App Alerts 
+|*CPU Utilization* .6+|* `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${resource}`
+| *Memory Utilization*
+| *Thread Count* 
+| *Message Count*
+| *Message Error Count*
+| *Message Response Time*
 
+.6+| Anypoint Runtime Fabric App Alerts 
+|*CPU Utilization* .6+|* `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${resource}`
+| *Memory Utilization*
+| *Thread Count* 
+| *Message Count*
+| *Message Error Count*
+| *Message Response Time*
 
-.4+|Hybrid App Alerts | All Hybrid App Alerts| `${name}`
-| *Number of Mule messages* .3+| `${value}` `${threshold}`
-| *Number of errors*
-| *Response time*
+.3+|Hybrid App Alerts 
+| *Message Count* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${targetName}`
+* `${resource}`
+| *Message Error Count*
+| *Message Response Time*
 
-.5+|Server Alerts | All Server Alerts | `${name}`
-| *Server CPU usage* .4+|  `${value}` `${comparison}` `${threshold}`
-| *Server Load average*
-| *Server Memory average*
-| *Server Thread count*
-
-.9+| Server Group Alerts| All Server Group Alerts | `${name}`
-| *Server Group's node CPU usage* .4+|  `${targetName}` `${value}` `${comparison}` `${threshold}`
-| *Server Group's node Load average*
-| *Server Group's node Memory usage*
-| *Server Group's node Thread count*
-| *Server Group's node connected* .4+| `${targetName}`
-| *Server Group's node disconnected*
-| *Server added to Server Group*
-| *Server removed from Server Group*
-
-.9+| Cluster Alerts |All Cluster Alerts| `${name}`
-| *Cluster's node CPU usage* .4+| `${targetName}` `${value}` `${comparison}` `${threshold}`
-| *Cluster's node Load average*
-| *Cluster's node Memory usage*
-| *Cluster's node Thread count*
-| *Cluster's node disconnected* | `${resource}` `${targetName}` 
-| *Cluster's node connected* .3+| `${targetName}` 
-| *Server added to Cluster*
-| *Server removed from Cluster*
+.3+|Hybrid Servers, Server Groups, and Cluster Alerts 
+| *CPU Utilization* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${memberName}`
+* `${targetName}`
+| *Memory Utilization*
+| *Thread Count*
 |===
 
 
