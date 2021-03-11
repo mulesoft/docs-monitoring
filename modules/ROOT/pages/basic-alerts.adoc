@@ -29,20 +29,127 @@ To create a basic alert:
 . Click the *Alerts* tab.
 . Click the *+ New Alerts* button.
 . Click *Basic alert*.
-. In the *Add basic alert* window, enter the information required to create your basic alert. 
+. In the *Add basic alert* window, enter the information required to create your basic alert:
+
+* *Name*
 +
-Note that requirements change depending on the source type you select.
-. Click *Save*.
+Unique and meaningful name for the alert
++
+The *Name* is limited to 256 characters.
+* *Severity level*
++
+Severity of the alert: *Critical*, *Warning*, or *Info*
+See <<severity>>.
++
+* *Source type*
++
+Source of the alert: applications or servers
++
+* *Environment name*
++
+Name of the environment where the resource is deployed
++
+* *Resource name* or *Server name*
++
+Application or server to apply the alert to
+* *Condition*
++
+Condition that triggers the alert
++
+See <<alert-conditions>>.
+* *Subject*
++
+Subject of the alert email to send when the alert is triggered
++
+The subject can include variables.
+See <<alert-variables>>.
+* *Message*
++
+Body text for the email to send when the alert is triggered
++
+The message body can include variables.
+See <<alert-variables>>.
+* *Recipients*
++
+Recipients of the alert email
++
+You can select up to 20 platform user IDs and enter up to 20 email addresses.
+. Click *Create*.
 
 image::basic-alerts-config.png[Configure a Basic Alert, 50%, 50%]
 
-=== Basic Alert Severity
+[[severity]]
+=== Severity
 
 The following levels of severity are available for basic alerts:
 
 include::partial$include-alert-severity.adoc[leveloffset=+1]
 
-[[alert-variables]]
+[[alert-conditions]]
+=== Alert Conditions
+
+For basic alerts, alert conditions consist of a metric, an operator, and a period of time that the condition is met.
+
+==== Application Metrics
+
+The following metrics are available if your alert is created for an application:
+
+Message count::
+Total number of Mule messages that are processed successfully
+
+Message error count::
+Number of Mule messages that return an exception in a flow
+
+Message response time::
+Response time (in milliseconds) of a message
+
+CPU utilization::
+Percent of CPU used
++
+This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
+
+Memory utilization::
+Percent of memory used
++
+This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
+
+Thread count::
+Total number of threads used
++
+This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
+
+==== Server Metrics
+
+The following metrics are available if your alert is created for a server, server group, or server cluster:
+
+CPU utilization::
+Percent of CPU used
+
+Memory utilization::
+Percent of memory used
+
+Thread count::
+Total number of threads used
+
+==== Operator
+
+The _operator_ portion of the alert condition is the logic that is used against the metric you are measuring. The following operators are available:
+
+* Above
+* Above or equal
+* Equal
+* Below or equal
+* Below
+
+==== Time Period
+
+The _time period_ defines how long the metric meets the criteria defined using the operator and chosen value. The following time periods are available:
+
+* 5 minutes
+* 10 minutes
+* 15 minutes
+* 20 minutes
+
 == Basic Alert Email Template
 
 You can use the following variables in a basic alert email *Subject* and *Message* fields.
@@ -153,6 +260,7 @@ For the description of each variable, see <<var-defs>>.
 
 |===
 
+[[alert-variables]]
 
 [%header%autowidth.spread]
 [[var-defs]]
