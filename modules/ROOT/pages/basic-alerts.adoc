@@ -102,7 +102,22 @@ For the description of each variable, see <<var-defs>>.
 | *Message Error Count*
 | *Message Response Time*
 
-.3+|Hybrid Servers, Server Groups, and Cluster Alerts 
+.3+|Hybrid Server Alerts 
+| *CPU Utilization* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${targetName}`
+| *Memory Utilization*
+| *Thread Count*
+
+.3+|Server Group Alerts
 | *CPU Utilization* .3+| * `${severity}`
 * `${operator}`
 * `${threshold}`
@@ -117,6 +132,23 @@ For the description of each variable, see <<var-defs>>.
 * `${targetName}`
 | *Memory Utilization*
 | *Thread Count*
+
+.3+|Server Cluster Alerts
+| *CPU Utilization* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${memberName}`
+* `${targetName}`
+| *Memory Utilization*
+| *Thread Count*
+
 |===
 
 
