@@ -100,9 +100,10 @@ For the description of each variable, see <<var-defs>>.
 |Variable |Definition
 |`${alertLink}`|URL of the triggered alert
 |`${alertState}`|State of the alert when it was triggered. Available values are `OK` or `Alerting`.
-|`${comparison}`|Above or Below
+|`${comparison}`|* Above, above or equal, equal, below or equal, below
 |`${condition}`|Metric for which the alert is triggered
 |`${environment}`|Name of the environment in which the resource is deployed
+|`${memberName}`|Name of the server within the server group or cluster
 |`${operator}` |An operator, such as `< > =`
 |`${organization}` |Name of the organization that owns the alert
 |`${period}` |Period of time over which to measure
@@ -111,7 +112,7 @@ For the description of each variable, see <<var-defs>>.
 * CloudHub Apps: Name of the app that triggers the alert
 * Hybrid Apps: Name of the resource in the app that triggers the alert
 |`${severity}` | Severity of the alert
-|`${targetName}`|Name of the node in a server group or cluster
+|`${targetName}`|Name of the server, server group, or cluster
 |`${targetState}` |Server state when the alert was triggered
 |`${threshold}` |Count over the period of time that triggers the alert
 |`${value}` | Value of the metric that triggers the alert
