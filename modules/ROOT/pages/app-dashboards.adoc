@@ -17,6 +17,8 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * Infrastructure-level and JVM metrics
 * Performance metrics that break down inbound and outbound response times into averages and percentiles
 
+When converting quantities of memory, Anypoint Monitoring uses the power of 10 (_MB_) to reflect metrics values rather than the power of 2 (_MiB_). 
+
 == Supported Versions of Mule Runtime Engine
 
 include::partial$include-supported-mule-runtime-version.adoc[]
@@ -25,7 +27,8 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 Built-in and custom dashboards are available from Anypoint Monitoring. You can view application metrics for applications deployed to CloudHub and to hybrid targets in both built-in and custom dashboards.
 
-. Sign in to Anypoint Platform and click *Monitoring*.
+include::partial$include-nav-steps-no-permissions.adoc[]
+
 . Select the *Environment* and *Resource name* for the app or API to view the corresponding dashboard.
 . Click *View*. +
 The built-in dashboard for the application or API is displayed.

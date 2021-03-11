@@ -15,9 +15,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 [[using_monitoring]]
 == Use Anypoint Monitoring
 
-. Log into Anypoint Platform at https://anypoint.mulesoft.com[https://anypoint.mulesoft.com].
-+
-. Under *Management Center* in the left-side navigation menu, select *Anypoint Monitoring*.
+include::partial$include-nav-steps-no-permissions.adoc[]
 +
 image::management-center-menu.png[Management Center Menu]
 +
