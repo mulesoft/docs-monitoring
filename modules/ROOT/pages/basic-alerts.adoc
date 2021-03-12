@@ -35,7 +35,7 @@ To create a basic alert:
 +
 Unique and meaningful name for the alert
 +
-The *Name* is limited to 256 characters.
+*Name* is limited to 256 characters.
 * *Severity level*
 +
 Severity of the alert: *Critical*, *Warning*, or *Info*
@@ -61,18 +61,16 @@ See <<alert-conditions>>.
 +
 Subject of the alert email to send when the alert is triggered
 +
-////
 The subject can include variables.
 See <<alert-variables>>.
-////
+
 * *Message*
 +
 Body text for the email to send when the alert is triggered
 +
-////
 The message body can include variables.
 See <<alert-variables>>.
-////
+
 * *Recipients*
 +
 Recipients of the alert email
@@ -153,3 +151,142 @@ The _time period_ defines how long the metric meets the criteria defined using t
 * 10 minutes
 * 15 minutes
 * 20 minutes
+
+== Basic Alert Email Template
+
+You can use the following variables in a basic alert email *Subject* and *Message* fields.
+For the description of each variable, see <<var-defs>>.
+
+[%header,cols="25a,50a,20a"]
+.Variables for Alerts
+|===
+| Alert Type | Alert | Applicable Variables
+.6+| CloudHub App Alerts
+|*CPU Utilization* .6+|* `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${resource}`
+| *Memory Utilization*
+| *Thread Count*
+| *Message Count*
+| *Message Error Count*
+| *Message Response Time*
+
+.6+| Anypoint Runtime Fabric App Alerts
+|*CPU Utilization* .6+|* `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${resource}`
+| *Memory Utilization*
+| *Thread Count*
+| *Message Count*
+| *Message Error Count*
+| *Message Response Time*
+
+.3+|Hybrid App Alerts
+| *Message Count* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${targetName}`
+* `${resource}`
+| *Message Error Count*
+| *Message Response Time*
+
+.3+|Hybrid Server Alerts
+| *CPU Utilization* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${targetName}`
+| *Memory Utilization*
+| *Thread Count*
+
+.3+|Server Group Alerts
+| *CPU Utilization* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${memberName}`
+* `${targetName}`
+| *Memory Utilization*
+| *Thread Count*
+
+.3+|Server Cluster Alerts
+| *CPU Utilization* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${memberName}`
+* `${targetName}`
+| *Memory Utilization*
+| *Thread Count*
+
+|===
+
+[[alert-variables]]
+
+[%header%autowidth.spread]
+[[var-defs]]
+.Variable Definitions
+|===
+|Variable |Definition
+|`${alertLink}`|URL of the triggered alert
+|`${alertState}`|State of the alert when it was triggered.
+
+Available values are `OK` or `Alerting`.
+|`${comparison}`|* Above, above or equal, equal, below or equal, below
+|`${condition}`|Metric for which the alert is triggered
+|`${environment}`|Name of the environment in which the resource is deployed
+|`${memberName}`|Name of the server within the server group or cluster
+|`${operator}` |An operator, such as `< > =`
+|`${organization}` |Name of the organization that owns the alert
+|`${period}` |Period of time over which to measure
+|`${resource}` a| Name of the item that triggers the alert:
+
+* CloudHub Apps: Name of the app that triggers the alert
+* Hybrid Apps: Name of the resource in the app that triggers the alert
+|`${severity}` | Severity of the alert
+|`${targetName}`|Name of the server, server group, or cluster
+|`${targetState}` |Server state when the alert was triggered
+|`${threshold}` |Count over the period of time that triggers the alert
+|`${value}` | Value of the metric that triggers the alert
+|===
