@@ -155,7 +155,7 @@ The _time period_ defines how long the metric meets the criteria defined using t
 == Basic Alert Email Template
 
 You can use the following variables in a basic alert email *Subject* and *Message* fields.
-For the description of each variable, see <<var-defs>>.
+For the description of each variable, see <<alert-variables>>.
 
 [%header,cols="25a,50a,20a"]
 .Variables for Alerts
@@ -265,7 +265,7 @@ For the description of each variable, see <<var-defs>>.
 [[alert-variables]]
 
 [%header%autowidth.spread]
-[[var-defs]]
+[[alert-variables]]
 .Variable Definitions
 |===
 |Variable |Definition
