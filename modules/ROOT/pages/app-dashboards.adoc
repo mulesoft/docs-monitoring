@@ -84,7 +84,7 @@ The following charts are available only if you are using Unified Agent and have 
 
 * Outbound - HTTP Ports
 * Outbound - Operations
-* Outbound - Protocol
+* Outbound - HTTP Protocols
 * Outbound - Endpoints
 | <<flows-charts>> a|
 
