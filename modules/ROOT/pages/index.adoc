@@ -189,14 +189,14 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 
 The following use cases provide examples of how you can use Anypoint Monitoring.
 
-* Understand performance-related KPIs+
-DevOps engineer Gary maintains a series of APIs related to a transaction processing system. Because the TPS requires swift response time, *Gary uses API response time dashboards and alerts to send an email when there is a bottleneck*. After gathering some data, Gary can then size his applications.
+* Understand performance-related KPIs +
+DevOps engineer Gary maintains a series of APIs related to a transaction processing system. Because the TPS requires swift response time, Gary uses API response time dashboards and alerts to send an email when there is a bottleneck. After gathering some data, Gary can then size his applications.
 
 * Plan resource allocation across the application network +
 C4E specialist Peyton uses Anypoint Visualizer to view their application network. For CloudHub and Anypoint Runtime Fabric applications, Peyton sees CPU and memory utilization and idle capacity using integrated Anypoint Monitoring.
 
 * Pinpoint root causes of issues +
-Support team member Darius receives a call that the system is running slowly. He examines dashboards and checks response times, failed requests, and so on. He identifies that the backend is not scaling for the number of requests; for Mule apps, he can add capacity, or for other backend issues, he can throttle requests.
+Support team member Darius receives a call that the system is running slowly. He examines dashboards and checks response times, failed requests, and so on. He identifies that the backend is not scaling for the number of requests; he can add capacity for Mule apps, or he can throttle requests for other backend issues.
 
 * Measure API trends + 
 Architect Kara monitors several APIs using dashboards, and she reports API call trends to leadership. She creates a dashboard that shows her top 10 API’s trends per month so she can easily identify APIs that have high volumes of calls or issues.
