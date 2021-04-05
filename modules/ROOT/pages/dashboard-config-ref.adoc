@@ -34,83 +34,107 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 [%header,cols="3,1"]
 |===
-| Basic Metrics | Unit 
-| Inbound - Average Request Count by Endpoint | `short` 
-| Inbound - Average Request Count by Flow | `short` 
-| Inbound - Average Response Count by Endpoint | `short` 
-| Inbound - Average Response Count by Flow | `short` 
-| Inbound - Failure Average Request Count by Endpoint  | `short` 
-| Inbound - Failure Average Request Count by Flow | `short` 
-| Inbound - Failure Average Response Time by Endpoint | `ms` 
-| Inbound - Failure Average Response Time by Flow | `ms` 
-| Inbound - Success Average Request Count by Endpoint  | `short` 
-| Inbound - Success Average Request Count by Flow | `short` 
-| Inbound - Success Average Response Time by Endpoint | `ms` 
-| Inbound - Success Average Response Time by Flow | `ms` 
-| JVM - CPU % Utilization | `percent` 
-| JVM - CPU Load Average | `percent` 
-| JVM - Classes Loaded | `short` 
-| JVM - Classes Loaded Total | `short` 
-| JVM - Classes Unloaded | `short` 
-| JVM - Code Cache Committed | `bytes` 
-| JVM - Code Cache Init | `bytes` 
-| JVM - Code Cache Max | `bytes` 
-| JVM - Code Cache Used | `bytes` 
-| JVM - Compressed Class Space Committed | `bytes` 
-| JVM - Compressed Class Space Total | `bytes` 
-| JVM - Compressed Class Space Used | `bytes` 
-| JVM - Garbage Collection Count | `short` 
-| JVM - Garbage Collection Time | `ms` 
-| JVM - Heap Committed | `bytes` 
-| JVM - Heap Used | `bytes` 
-| JVM - JVM Uptime | `ms` 
-| JVM - Memory Utilization | `bytes` 
-| JVM - Metaspace Committed | `bytes` 
-| JVM - Metaspace Init | `bytes` 
-| JVM - Metaspace Max | `bytes` 
-| JVM - Metaspace Used | `bytes` 
-| JVM - Par Eden Committed | `bytes` 
-| JVM - Par Eden Init | `bytes` 
-| JVM - Par Eden Max | `bytes` 
-| JVM - Par Eden Used | `bytes` 
-| JVM - Par New Collection Count | `short` 
-| JVM - Par New Collection Time | `ms` 
-| JVM - Par Survivor Committed | `bytes` 
-| JVM - Par Survivor Init | `bytes` 
-| JVM - Par Survivor Max | `bytes` 
-| JVM - Par Survivor Used | `bytes` 
-| JVM - Tenured Gen Committed | `bytes` 
-| JVM - Tenured Gen Init | `bytes` 
-| JVM - Tenured Gen Max | `bytes` 
-| JVM - Tenured Gen Used | `bytes` 
-| JVM - Thread count - Server | `short` 
-| JVM - Total System Memory | `bytes` 
-| JVM - Total System Processors | `short` 
-| Outbound - Average Request Count by Endpoint | `short`  
-| Outbound - Average Request Count by Flow | `short` 
-| Outbound - Average Response Time by Endpoint | `ms` 
-| Outbound - Average Response Time by Flow | `ms` 
-| Outbound - Failure Average Request Count by Endpoint | `short` 
-| Outbound - Failure Average Request Count by Flow | `short` 
-| Outbound - Failure Average Response Time by Endpoint | `ms` 
-| Outbound - Failure Average Response Time by Flow | `ms` 
-| Outbound - Success Average Request Count by Endpoint | `short` 
-| Outbound - Success Average Request Count by Flow | `short` 
-| Outbound - Success Average Response Time by Endpoint | `ms` 
-| Outbound - Success Average Response Time by Flow | `ms` 
+| Basic Metrics | Unit
+| Inbound - Average Request Count by Endpoint | `short`
+| Inbound - Average Request Count by Flow | `short`
+| Inbound - Average Response Count by Endpoint | `short`
+| Inbound - Average Response Count by Flow | `short`
+| Inbound - Failure Average Request Count by Endpoint  | `short`
+| Inbound - Failure Average Request Count by Flow | `short`
+| Inbound - Failure Average Response Time by Endpoint | `ms`
+| Inbound - Failure Average Response Time by Flow | `ms`
+| Inbound - Success Average Request Count by Endpoint  | `short`
+| Inbound - Success Average Request Count by Flow | `short`
+| Inbound - Success Average Response Time by Endpoint | `ms`
+| Inbound - Success Average Response Time by Flow | `ms`
+| JVM - CPU % Utilization | `percent`
+| JVM - CPU Load Average | `percent`
+| JVM - Classes Loaded | `short`
+| JVM - Classes Loaded Total | `short`
+| JVM - Classes Unloaded | `short`
+| JVM - Code Cache Committed | `bytes`
+| JVM - Code Cache Init | `bytes`
+| JVM - Code Cache Max | `bytes`
+| JVM - Code Cache Used | `bytes`
+| JVM - Compressed Class Space Committed | `bytes`
+| JVM - Compressed Class Space Total | `bytes`
+| JVM - Compressed Class Space Used | `bytes`
+| JVM - Garbage Collection Count | `short`
+| JVM - Garbage Collection Time | `ms`
+| JVM - Heap Committed | `bytes`
+| JVM - Heap Used | `bytes`
+| JVM - JVM Uptime | `ms`
+| JVM - Memory Utilization | `bytes`
+| JVM - Metaspace Committed | `bytes`
+| JVM - Metaspace Init | `bytes`
+| JVM - Metaspace Max | `bytes`
+| JVM - Metaspace Used | `bytes`
+| JVM - Par Eden Committed | `bytes`
+| JVM - Par Eden Init | `bytes`
+| JVM - Par Eden Max | `bytes`
+| JVM - Par Eden Used | `bytes`
+| JVM - Par New Collection Count | `short`
+| JVM - Par New Collection Time | `ms`
+| JVM - Par Survivor Committed | `bytes`
+| JVM - Par Survivor Init | `bytes`
+| JVM - Par Survivor Max | `bytes`
+| JVM - Par Survivor Used | `bytes`
+| JVM - Tenured Gen Committed | `bytes`
+| JVM - Tenured Gen Init | `bytes`
+| JVM - Tenured Gen Max | `bytes`
+| JVM - Tenured Gen Used | `bytes`
+| JVM - Thread count - Server | `short`
+| JVM - Total System Memory | `bytes`
+| JVM - Total System Processors | `short`
+| Outbound - Average Request Count by Endpoint | `short`
+| Outbound - Average Request Count by Flow | `short`
+| Outbound - Average Response Time by Endpoint | `ms`
+| Outbound - Average Response Time by Flow | `ms`
+| Outbound - Failure Average Request Count by Endpoint | `short`
+| Outbound - Failure Average Request Count by Flow | `short`
+| Outbound - Failure Average Response Time by Endpoint | `ms`
+| Outbound - Failure Average Response Time by Flow | `ms`
+| Outbound - Success Average Request Count by Endpoint | `short`
+| Outbound - Success Average Request Count by Flow | `short`
+| Outbound - Success Average Response Time by Endpoint | `ms`
+| Outbound - Success Average Response Time by Flow | `ms`
 |===
 
 === Basic Mode Metrics for APIs
 
-These metrics are available when you use the basic mode for APIs:
+These metrics are available when you use basic mode for APIs using the *API Panel* setting:
 
 [%header,cols="3,1"]
 |===
-| Basic Metrics | Unit 
-| Requests by HTTP Policy Violation | `short` 
-| Requests by HTTP Respond Code | `short` 
-| Requests by Method | `short` 
-| Requests by Instance | `short` 
+| Basic Metrics | Unit
+| Average Response Time by Instance | `ms`
+| Failed Requests by Instance | `short`
+| Failures by Method | `short`
+| Failures by Path | `short`
+| Failures by Response Code | `short`
+| Policy Violations by Instance | `short`
+| Policy Violations by Outcome | `short`
+| Policy Violations by Path | `short`
+| Policy Violations by Violation ID | `short`
+| Requests Volume by Instance | `short`
+| Requests by Client ID | `short`
+| Requests by Client IP | `short`
+| Requests by Method | `short`
+| Requests by Path | `short`
+| Requests by Performance | `ms`
+| Requests by Response Code | `short`
+| Slow Requests | `ms`
+|===
+
+These metrics are available if you use basic mode for APIs using the *API Analytics Panel* setting (deprecated):
+
+[%header,cols="3,1"]
+|===
+| Basic Metrics | Unit
+| Requests by HTTP Policy Violation | `short`
+| Requests by HTTP Respond Code | `short`
+| Requests by Method | `short`
+| Requests by Instance | `short`
 |===
 
 [[metrics_advanced]]
@@ -226,7 +250,7 @@ Some Anypoint Monitoring fields, such as text graph fields in a custom dashboard
 
 [[samples_html]]
 == HTML Support
-Some Anypoint Monitoring fields, such as Text graph fields in a custom dashboard, accept HTML elements (or tags). 
+Some Anypoint Monitoring fields, such as Text graph fields in a custom dashboard, accept HTML elements (or tags).
 
 [[html_titles]]
 === HTML Titles

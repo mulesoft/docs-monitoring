@@ -33,7 +33,7 @@ image::ap-monitoring-basic-settings.png[Example: Basic Configuration]
 |===
 2+| Basic Mode Settings
 | Panel Type a|
-From the drop-down menu, select the type of panel to display for the resource -- *Application Panel* or *API Panel*.
+From the drop-down menu, select the type of panel to display for the resource -- `Application Panel`, `API Panel`, or `API Analytics Panel` (deprecated).
 
 | Metric a|
 
@@ -46,14 +46,18 @@ The drop-down menu includes these types of metrics:
 For a list of basic metrics, see xref:dashboard-config-ref.adoc#metrics[Basic Mode Metrics]
 
 | Environment | The environment where your application or API is deployed.
-| Resource | A deployed application or API.
+| Resource | A deployed application.
+
+This option is available only if you selected `Application Panel` as your panel type.
+| API | A deployed API.
+
+This option is available only if you selected `API Panel` or `API Analytics Panel` (deprecated) as your panel type.
+| Version / Instance | The Mule version or instance on which your API is deployed.
+
+This option is available only if you selected `API Panel` or `API Analytics Panel` (deprecated) as your panel type.
 |===
 
-////
-*TODO: NEED DESCRIPTIONS OF SOME OF THE ABOVE SETTINGS*
-////
-
-After you complete your configuration, click *Save Changes*. 
+After you complete your configuration, click *Save Changes*.
 
 To exit the configuration and return to the dashboard, click the *X*.
 
