@@ -46,9 +46,15 @@ The drop-down menu includes these types of metrics:
 For a list of basic metrics, see xref:dashboard-config-ref.adoc#metrics[Basic Mode Metrics]
 
 | Environment | The environment where your application or API is deployed.
-| Resource | A deployed application. This option is available only if you selected `Application Panel` as your panel type.
-| API | A deployed API. This option is available only if you selected `API Panel` or `API Analytics Panel` (deprecated) as your panel type.
-| Version / Instance | The Mule version or instance on which your API is deployed. This option is available only if you selected `API Panel` or `API Analytics Panel` (deprecated) as your panel type.
+| Resource | A deployed application.
+
+This option is available only if you selected `Application Panel` as your panel type.
+| API | A deployed API.
+
+This option is available only if you selected `API Panel` or `API Analytics Panel` (deprecated) as your panel type.
+| Version / Instance | The Mule version or instance on which your API is deployed.
+
+This option is available only if you selected `API Panel` or `API Analytics Panel` (deprecated) as your panel type.
 |===
 
 After you complete your configuration, click *Save Changes*.
