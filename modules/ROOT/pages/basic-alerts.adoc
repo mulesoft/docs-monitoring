@@ -8,11 +8,11 @@ You can set up basic alerts to trigger email notifications when a metric you are
 
 You can create basic alerts for the following metrics for servers or Mule apps:
 
-* For on-premises servers and CloudHub apps:
+* For on-premises servers, server groups, server clusters, and apps deployed to Anypoint Runtime Fabric or CloudHub:
 ** CPU utilization
 ** Memory utilization
 ** Thread count
-* For on-premises, Anypoint Runtime Fabric, and CloudHub apps:
+* For hybrid, Anypoint Runtime Fabric, and CloudHub apps:
 ** Message count
 ** Message error count
 ** Message response time
@@ -213,7 +213,7 @@ For the description of each variable, see <<alert-variables>>.
 | *Message Error Count*
 | *Message Response Time*
 
-.3+|Hybrid Server Alerts
+.3+|On-premises Server Alerts
 | *CPU Utilization* .3+| * `${severity}`
 * `${operator}`
 * `${threshold}`
