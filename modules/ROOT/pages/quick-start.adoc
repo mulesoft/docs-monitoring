@@ -24,8 +24,8 @@ If you do not see Anypoint Monitoring or are unable to use it, it might be a per
 . From Anypoint Monitoring, you can find and use the monitoring tools:
 +
 * xref:dashboards-using.adoc[Using Dashboards]
-* xref:logs-using.adoc[Using Logs]
-//TODO_HIGH: HOW TO USE ALERTS? * xref:alerts.adoc[Alerts]
+* xref:logs.adoc[Using Logs]
+* xref:alerts.adoc[Alerts]
 
 == Configurations
 
