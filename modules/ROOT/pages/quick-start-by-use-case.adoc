@@ -1,0 +1,58 @@
+= Quick-start Guides by Use Case
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+The following guides use practical examples of Anypoint Monitoring use cases to help you monitor your assets. Note that the numbers and metrics reflected in these use cases might not be representative of your own asset and organizational needs.
+
+== Understand Performance-related KPIs
+
+As one of the most common use-cases of Anypoint Monitoring, application and API network performance is crucial to keeping systems healthy. If you have APIs available in Anypoint Monitoring, you can set up custom dashboards for active performance visibility, and you can configure advanced alerts that email you when a specified threshold is met.
+
+In the following example, a devOps engineer has multiple APIs in a system that is sensitive to performance fluctuations:
+
+DevOps engineer Gary maintains a series of APIs related to a transaction processing system. Because the TPS requires swift response time, Gary uses API response time dashboards and alerts to send an email when there is a bottleneck. After gathering some data, Gary can then size his applications.
+
+Using this example, the following guide enables you to configure a robust monitoring solution when you have multiple APIs.
+
+=== Prerequisites
+
+* A Titanium subscription
+* An account with the [permission] permission
+* One or more APIs available in Anypoint Monitoring
+
+
+=== Create a Performance-related Custom Dashboard with An Alert
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+. Click *Custom Dashboards*.
+. Select the API that you want to monitor.
+. Click *Add Row*.
+. Click *Add Graph*.
+. In the newly created widget, click the vertical dot menu.
+. Click *Configure*.
+. In the *Title* field, enter `Response Time - Instance`.
+. In the *Description* field, enter a description of the metric you want to measure.
+. In the *Panel Type* list, select *API Panel*.
+. In the *Metric* list, select *Average Response Time By Instance*.
+. In the *Environment* list, select the environment in which your API is deployed.
+. In the *API* list, select the API that you want to monitor.
+. In the *Version / Instance* list, select the version or instance of the API that you want to monitor.
+. Click *Apply Changes*. +
+The API graph is saved, and you can now view the performance of your API response times in real time. To use Anypoint Monitoring to its full potential, you can now configure alerts against the `Response Time - Instance` metric.
++
+. Click the *Alert* tab.
+. Click *Add Alert*.
+. In the *Name* field, enter `Response time - info`
+. In the *Severity Level* field, select *Warning*. +
+In this example, the `Warning` severity sends an email when performance is actively suffering. At this level, the severity indicates that devOps should begin troubleshooting to ensure there is no further performance degradation.
++
+. In the *Condition* field, select *is above* and enter a value that is above average performance for the API. +
+If you are unsure of what value to enter, evaluate the data returned by the graph for the API.
+The number chosen for this field should reflect suboptimal performance. For the `Warning` severity, the threshold should be high enough to signal a performance problem but low enough not to warrant critical measures for the devOps engineer.
++
+. Click *Apply changes*. +
+The alert is created.
+
+The API now has a graph that can be evaluated in real-time in addition to an alert that is set to email the devOps engineer when performance degrades enough to warrant action. From this point, the devOps engineer can configure more severe alerts that would require critical action, or they can continue to monitor the dashboard visually.

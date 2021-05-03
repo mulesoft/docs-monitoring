@@ -25,7 +25,8 @@ When you create a basic alert, you can select a source for the basic alert, conf
 
 To create a basic alert:
 
-. Navigate to Anypoint Monitoring.
+. include::partial$include-nav-steps-no-permissions.adoc[]
+
 . Click the *Alerts* tab.
 . Click the *+ New Alerts* button.
 . Click *Basic alert*.
