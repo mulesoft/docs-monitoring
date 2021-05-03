@@ -17,6 +17,8 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * Infrastructure-level and JVM metrics
 * Performance metrics that break down inbound and outbound response times into averages and percentiles
 
+When converting quantities of memory, Anypoint Monitoring uses the power of 10 (_MB_) to reflect metrics values rather than the power of 2 (_MiB_). 
+
 == Supported Versions of Mule Runtime Engine
 
 include::partial$include-supported-mule-runtime-version.adoc[]
@@ -25,7 +27,8 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 Built-in and custom dashboards are available from Anypoint Monitoring. You can view application metrics for applications deployed to CloudHub and to hybrid targets in both built-in and custom dashboards.
 
-. Sign in to Anypoint Platform and click *Monitoring*.
+include::partial$include-nav-steps-no-permissions.adoc[]
+
 . Select the *Environment* and *Resource name* for the app or API to view the corresponding dashboard.
 . Click *View*. +
 The built-in dashboard for the application or API is displayed.
@@ -55,7 +58,7 @@ Built-in dashboards include various pages to view different types of charts:
 
 * Inbound - Total Requests by Response Type
 * Inbound - Average Response Time
-* Inbound - Response Time by Endpoint
+* Inbound - Response Time by HTTP Endpoint
 * Inbound - Total Requests by Endpoint
 * Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Inbound - Total Failed Requests
@@ -65,7 +68,7 @@ Built-in dashboards include various pages to view different types of charts:
 The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
 
 * Inbound - Protocols
-* Inbound - Endpoints
+* Inbound - HTTP Endpoints
 
 
 | <<outbound-charts>> a|
@@ -79,11 +82,10 @@ The following charts are available only if you are using Unified Agent and have 
 
 The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
 
-* Outbound - Ports
+* Outbound - HTTP Ports
 * Outbound - Operations
-* Outbound - Protocol
+* Outbound - HTTP Protocols
 * Outbound - Endpoints
-* Outbound - Ports
 | <<flows-charts>> a|
 
 * Inbound - Response Time by Flow
@@ -146,10 +148,10 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 
 * Mule Messages
 * Inbound - Average Response Time
-* Inbound - Response Time by Endpoint
+* Inbound - Response Time by HTTP Endpoint
 * Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Outbound - Average Response Time
-* Outbound - Response Time Grouped by HTTP Endpoint
+* Outbound - Response Time by Endpoint
 * Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 | <<failures-charts>> a|
 
@@ -236,7 +238,7 @@ The sum of inbound requests, grouped by type of response. Responses are `OK` or 
 Inbound - Average Response Time::
 The average response time of inbound requests. If a Mule app has more than one connector type, all types are included in this metric.
 
-Inbound - Response Time by Endpoint::
+Inbound - Response Time by HTTP Endpoint::
 The average, maximum, minimum, and total response times, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500ms; red if the response time is greater than or equal to 500 ms
@@ -262,7 +264,7 @@ The following charts are available only if you are using Unified Agent and have 
 Inbound - Protocols::
 The sum of inbound requests, grouped by protocol.
 
-Inbound - Endpoints::
+Inbound - HTTP Endpoints::
 The sum of inbound requests, grouped by remote hosts (endpoints).
 
 [[outbound-charts]]
@@ -291,13 +293,13 @@ The average response time of the 99, 90, 75, and 50 percentiles of outbound requ
 Outbound - Total Failed Requests::
 The sum of failed outbound requests, grouped by type of response.
 
-Outbound - Ports::
+Outbound - HTTP Ports::
 The sum of outbound requests, grouped by remote port.
 
 Outbound - Operations::
 The estimated count of outbound requests, grouped by operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
-Outbound - Protocols::
+Outbound - HTTP Protocols::
 The sum of outbound requests for the selected time period, grouped by protocol.
 
 Outbound - Endpoints::
@@ -371,7 +373,7 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 The following charts appear on the *Connectors* dashboard:
 
 Connector Message Volume::
-The sum of outbound messages and outbound requests, grouped by connector type.
+The number of outbound requests, grouped by connector type.
 
 Response Time by Connector::
 The average outbound response time grouped by connector type.
@@ -498,7 +500,7 @@ The response time of the 99th, 90th, 75th, and 50th percentile of inbound reques
 Outbound - Average Response Time::
 The average response time of outbound requests.
 
-Outbound - Average Response Time Grouped by HTTP Endpoint::
+Outbound - Response Time by Endpoint::
 The average, maximum, and minimum response times, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cells color varies according to the following thresholds:
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms

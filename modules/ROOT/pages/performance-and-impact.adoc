@@ -2,7 +2,7 @@
 
 Anypoint Monitoring processes and retains massive amounts of data with a low performance impact. Titanium subscribers receive an enhanced data retention package and more storage than Gold and Platinum subscribers. For better performance and readability, your log data is truncated into short lines.
 
- You can also improve your Anypoint Monitoring experience by adjusting your screen resolution. 
+You can also improve your Anypoint Monitoring experience by adjusting your screen resolution. 
 
 
 == Mule Monitoring Agent Performance Impact

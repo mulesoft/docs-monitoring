@@ -17,7 +17,8 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 == View the API Analytics Dashboard
 
-. Sign into Anypoint Platform and navigate to *Anypoint Monitoring*.
+include::partial$include-nav-steps-no-permissions.adoc[]
+
 . Select the *Environment*, *Resource name*, and *Version/Instance* for the API to view.
 . Click *View*. +
 On the API analytics page, you can view information about a running, managed API. +
@@ -266,7 +267,7 @@ image::api-request-by-failure.png[]
 
 Titanium users can also access API analytics metrics data directly via the Anypoint Monitoring Archive API. Using this API, you can navigate and discover your API metrics data using a directory hierarchy.
 
-The Anypoint Monitoring Archive API enables you to download files that contain https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[JSON objects] that represent one or more metric events. You can also write an application to navigate the data collected by the API and integrate it into your own system. 
+The Anypoint Monitoring Archive API enables you to download files that contain https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[JSON objects] that represent one or more metric events. You can also write an application to navigate the data collected by the API and integrate it into your own system.
 
 For more information about this API, see the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/home/[Anypoint Monitoring Archive API] page in Anypoint Exchange.
 

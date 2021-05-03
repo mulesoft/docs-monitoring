@@ -123,7 +123,7 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 
 3+| *Built-in API Dashboards*
 
-|16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application 
+|16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application
 |Yes
 |Yes
 
@@ -184,6 +184,32 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 |Yes
 
 |===
+
+== Use Cases
+
+The following use cases provide examples of how you can use Anypoint Monitoring.
+
+* Understand performance-related KPIs +
+DevOps engineer Gary maintains a series of APIs related to a transaction processing system. Because the TPS requires swift response time, Gary uses API response time dashboards and alerts to send an email when there is a bottleneck. After gathering some data, Gary can then size his applications.
+
+* Plan resource allocation across the application network +
+C4E specialist Peyton uses Anypoint Visualizer to view their application network. For CloudHub and Anypoint Runtime Fabric applications, Peyton sees CPU and memory utilization and idle capacity using integrated Anypoint Monitoring.
+
+* Pinpoint root causes of issues +
+Support team member Darius receives a call that the system is running slowly. He examines dashboards and checks response times, failed requests, and so on. He identifies that the backend is not scaling for the number of requests; he can add capacity for Mule apps, or he can throttle requests for other backend issues.
+
+* Measure API trends + 
+Architect Kara monitors several APIs using dashboards, and she reports API call trends to leadership. She creates a dashboard that shows her top 10 API’s trends per month so she can easily identify APIs that have high volumes of calls or issues.
+
+* Assess the stability of APIs +
+Operations administrator Vic can periodically assess the error rate and success rate of key APIs using aggregated views and computations in Anypoint Monitoring. Based on their observations, Vic can stabilize or redesign apps that perform poorly.
+
+* Analyze logs +
+Support engineer Carole searches through Anypoint Monitoring logs and notices some apps frequently have errors. She uses this data to create dashboards for areas that have frequent issues, and she creates a plan to improve end processes based on the types of errors identified in the logs.
+
+* Visualize regional or project-based consumption +
+Business owner Devon has apps across different runtime planes. He has aggregated dashboards of the regional or project-specific apps, and he can easily determine what is consuming the most resources and evangelize accordingly.
+
 
 == See Also
 
