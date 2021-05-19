@@ -239,7 +239,7 @@ Inbound - Average Response Time::
 The average response time of inbound requests. If a Mule app has more than one connector type, all types are included in this metric.
 
 Inbound - Response Time by HTTP Endpoint::
-The average, maximum, minimum, and total response times, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average, maximum, minimum, and total response times, grouped by endpoint. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
@@ -279,7 +279,7 @@ Outbound - Average Response Time::
 The average response time of outbound requests, grouped by application. If a Mule app has more than one connector type, all types are included in this metric.
 
 Outbound - Response Time by HTTP Endpoint::
-The average, maximum, minimum, and total response times, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average, maximum, minimum, and total response times, grouped by endpoint. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600ms; red if the response time is greater than or equal to 600 ms
@@ -338,13 +338,13 @@ The sum of outbound requests whose response time is greater than 1000 ms, groupe
 * Red if the response time is greater than or equal to 600 ms
 
 Inbound - Response Time by Flow::
-The average, minimum, and maximum inbound response time, grouped by flow.
+The average, minimum, and maximum inbound response time, grouped by flow. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times.
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 
 Outbound - Response Time by Flow::
-The average, minimum, and maximum outbound response time, grouped by flow.
+The average, minimum, and maximum outbound response time, grouped by flow. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times.
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
@@ -488,8 +488,8 @@ The number of Mule messages processed in the runtime, grouped in automatic inter
 Inbound - Average Response Time::
 The average response time of inbound requests.
 
-Inbound - Average Response Time by Endpoint::
-The average, maximum, and minimum response times, grouped by top occurring endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
+Inbound - Response Time by Endpoint::
+The average, maximum, and minimum response times, grouped by top occurring endpoint. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
@@ -501,7 +501,7 @@ Outbound - Average Response Time::
 The average response time of outbound requests.
 
 Outbound - Response Time by Endpoint::
-The average, maximum, and minimum response times, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cells color varies according to the following thresholds:
+The average, maximum, and minimum response times, grouped by endpoint. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cells color varies according to the following thresholds:
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
@@ -531,7 +531,7 @@ Outbound - Total Requests by Response Type::
 The sum of inbound requests, grouped by type of response and automatic interval.
 
 Inbound - Failure Response Time by Endpoint::
-The average, maximum, and minimum response times of failed inbound requests, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
+The average, maximum, and minimum response times of failed inbound requests, grouped by endpoint. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
