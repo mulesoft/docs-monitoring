@@ -540,7 +540,7 @@ Inbound - Total Failed Requests by Endpoint::
 The sum of failed inbound requests, grouped by endpoint.
 
 Outbound - Failure Response Time by HTTP endpoint::
-The average, maximum, and minimum response times of failed outbound requests, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
+The average, maximum, and minimum response times of failed outbound requests, grouped by endpoint. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
