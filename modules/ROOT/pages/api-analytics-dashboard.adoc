@@ -8,7 +8,7 @@ To get the most out of Anypoint Monitoring, use the enhanced metrics view to see
 
 By default, the enhanced metrics view is selected. To switch views, select *Switch to classic metrics*. From the classic metrics view, select *Show new metrics view*.
 
-Charts that contain the `Last 1 hour` label show data that has been collected between now and the past 60 minutes.
+Charts displaying the `Last 1 hour` label show data that has been collected during the past 60 minutes, starting with the current time.
 
 [NOTE]
 For Gold and Platinum subscriptions, Anypoint Monitoring retains API analytics metrics data for 90 days. API Manager retains API analytics metrics data for 70 days.
