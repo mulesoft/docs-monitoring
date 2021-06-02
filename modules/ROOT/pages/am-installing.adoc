@@ -7,6 +7,8 @@ Install the Anypoint Monitoring agent on an on-premises server to monitor applic
 
 The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using an open-source protocol for transferring log data over a highly efficient bidirectional binary channel. Data is securely transmitted using mutual TLS encryption.
 
+To use Anypoint Monitoring across a server group or cluster, you must install Anypoint Monitoring on each individual server.
+
 == Before You Begin
 
 If you have an outbound firewall, open port 443.
