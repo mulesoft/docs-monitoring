@@ -110,7 +110,7 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 If you see data in the charts, the Anypoint Monitoring agent is installed and running. +
 If you do not see data in the charts, verify that Anypoint Monitoring is able to connect to the endpoint. +
 [NOTE]
-If necessary, you can whitelist the endpoint for outbound firewall rules so your server allows connections. The endpoints to whitelist are https://docs.mulesoft.com/monitoring/am-installing#before-you-begin
+If necessary, you can allowlist the endpoint for outbound firewall rules so your server allows connections. The endpoints to allowlist are listed in xref:am-installing#before-you-begin[Before You Begin].
 
 . Log into the server on which the Anypoint Monitoring agent is running.
 . Open the log file for the data-transfer agent. The log file is in this path: `./am/filebeat/logs`
