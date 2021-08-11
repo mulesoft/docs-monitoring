@@ -76,6 +76,7 @@ The installation script asks if you want Anypoint Monitoring installed as a serv
 
 You can also call the installation script with the `-x` argument to skip this prompt. If you skip the prompt, Anypoint Monitoring is not installed as a service.
 
+Note that you cannot install the Anypoint Monitoring agent on a server that has an existing filebeat instance running.
 
 == SOCKS5 Proxy Setting
 
