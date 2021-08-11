@@ -145,7 +145,7 @@ The _operator_ portion of the alert condition is the logic that is used against 
 
 ==== Time Period
 
-The _time period_ defines how long the metric meets the criteria defined using the operator and chosen value. The following time periods are available:
+The _time period_ specifies the duration for which the metric remains valid, based on the criteria defined using the operator and chosen value. A basic alert is triggered only if the metric continuously (not cumulatively) meets the condition for the selected time period. The following time periods are available:
 
 * 5 minutes
 * 10 minutes

@@ -50,7 +50,7 @@ For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them
 
 == Enable Anypoint Monitoring On-Premises
 
-You can xref:am-installing.adoc[install Anypoint Monitoring] on an on-premises server to monitor applications that are running on that server and managed in CloudHub (hybrid apps).
+You can xref:am-installing.adoc[install Anypoint Monitoring] on an on-premises server to monitor applications that are running on that server and managed via Runtime Manager (hybrid apps).
 
 == See Also
 
