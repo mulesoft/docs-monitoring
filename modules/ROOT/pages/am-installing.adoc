@@ -7,6 +7,8 @@ Install the Anypoint Monitoring agent on an on-premises server to monitor applic
 
 The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using an open-source protocol for transferring log data over a highly efficient bidirectional binary channel. Data is securely transmitted using mutual TLS encryption.
 
+To use Anypoint Monitoring across a server group or cluster, you must install Anypoint Monitoring on each individual server.
+
 == Before You Begin
 
 If you have an outbound firewall, open port 443.
@@ -74,6 +76,7 @@ The installation script asks if you want Anypoint Monitoring installed as a serv
 
 You can also call the installation script with the `-x` argument to skip this prompt. If you skip the prompt, Anypoint Monitoring is not installed as a service.
 
+Note that you cannot install the Anypoint Monitoring agent on a server that has an existing filebeat instance running.
 
 == SOCKS5 Proxy Setting
 
@@ -108,7 +111,7 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 If you see data in the charts, the Anypoint Monitoring agent is installed and running. +
 If you do not see data in the charts, verify that Anypoint Monitoring is able to connect to the endpoint. +
 [NOTE]
-If necessary, you can whitelist the endpoint for outbound firewall rules so your server allows connections. The endpoints to whitelist are https://docs.mulesoft.com/monitoring/am-installing#before-you-begin
+If necessary, you can add the endpoint to an allowlist for outbound firewall rules so your server allows connections. The endpoints to add to the allowlist are listed in xref:am-installing#before-you-begin[Before You Begin].
 
 . Log into the server on which the Anypoint Monitoring agent is running.
 . Open the log file for the data-transfer agent. The log file is in this path: `./am/filebeat/logs`
