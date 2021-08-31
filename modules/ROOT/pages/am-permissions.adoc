@@ -3,8 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Platform provides predefined permissions and roles that administrators can assign in the *Access Management* section of Anypoint Platform to provide users with different access levels.
-Anypoint Monitoring has two product-specific permissions to allow granular scopes for different types of users.
+Anypoint Platform provides predefined permissions and roles that administrators can assign in the *Access Management* section of Anypoint Platform.
+Anypoint Monitoring has two product-specific permissions to control access for different types of users.
 
 == Anypoint Monitoring Permissions
 
