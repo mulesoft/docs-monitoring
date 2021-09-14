@@ -1,6 +1,6 @@
 .xref:index.adoc[Anypoint Monitoring]
 * xref:index.adoc[Overview]
-* xref:am-permissions.adoc[Manage Permissions in Anypoint Monitoring]
+* xref:am-permissions.adoc[Manage Permissions for Anypoint Monitoring]
 * xref:quick-start.adoc[Get Started]
  ** xref:monitoring-settings-page.adoc[Anypoint Monitoring Settings]
  ** xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps (CloudHub)]
