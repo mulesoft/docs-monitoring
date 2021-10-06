@@ -17,11 +17,15 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * Infrastructure-level and JVM metrics
 * Performance metrics that break down inbound and outbound response times into averages and percentiles
 
-When converting quantities of memory, Anypoint Monitoring uses the power of 10 (_MB_) to reflect metrics values rather than the power of 2 (_MiB_). 
+When converting quantities of memory, Anypoint Monitoring uses the power of 10 (_MB_) to reflect metrics values rather than the power of 2 (_MiB_).
 
 == Supported Versions of Mule Runtime Engine
 
 include::partial$include-supported-mule-runtime-version.adoc[]
+
+== Anypoint Monitoring Metrics and Cloudwatch
+
+Anypoint Monitoring collects some metrics that are also collected using Cloudwatch in Anypoint Runtime Manager. Anypoint Monitoring shows data that is aggregated in one minute intervals, and it is possible that data shown in Cloudwatch does not match based on when the data is collected.
 
 == View a Built-in Dashboard
 
@@ -563,6 +567,8 @@ The sum of failed outbound requests, grouped by endpoint.
 [[jvm-charts]]
 == JVM
 
+Anypoint Monitoring collects JVM metrics based on the JVM CPU and not the system CPU. As such, CPU metrics found in Cloudwatch reports are higher than JVM metrics in Anypoint Monitoring.
+
 The following charts appear on the *JVM* dashboard:
 
 Garbage Collection Count::
@@ -637,7 +643,7 @@ JVM Thread Count::
 The average number of threads of the JVM, grouped by worker.
 
 System CPU % Utilization::
-The percentage of CPU used by all processes.
+The percentage of CPU used by all processes. This metric often aligns with the Cloudwatch System CPU % metric, but there may be different values given the timing of data aggregation for Anypoint Monitoring metrics.
 
 JVM CPU Time::
 The cumulative CPU time consumed by the JVM.
