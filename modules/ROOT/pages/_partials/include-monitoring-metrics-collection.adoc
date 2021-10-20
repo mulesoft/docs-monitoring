@@ -1,0 +1,6 @@
+= How Anypoint Monitoring Collects Metrics
+
+The Anypoint Monitoring agent collects metrics and aggregates them on a per-minute basis, so a minute is the lowest possible time increment you can use in dashboards. Metrics collection begins at a random second and not necessarily the top of the minute, and collection repeats at the same second in subsequent minutes. For example, if the agent collects metrics at 12:00:15, it collects them again at 12:01:15, 12:02:15, and so on.
+
+Within a Mule application, metrics associated with a connector (such as an HTTP Listener on a particular port, or an HTTP Outbound call to a particular endpoint) have their own individual starting seconds. For example, the inbound metrics for calls coming on port 8080 can be collected at 12:00:45, 12:01:45, 12:02:45, and so on. Meanwhile, metrics for outbound calls made to an endpoint can be collected at 12:00:23, 12:01:23, 12:02:23, and so on.
+As such, if you want to align invocations between two Mule applications (such as when app A calls app B), the per-minute counts do not match precisely. That is, if app A reports 10 outbound calls made at 12:05, app B might report that the total number of corresponding inbound calls is split between 12:04 and 12:05, or 12:05 and 12:06 time windows (e.g. 12:04 - 4 calls, 12:05 - 6 calls, 4+6=10) 
