@@ -81,6 +81,7 @@ The following charts are available in the enhanced metrics view for API analytic
 
 * Requests by Client ID
 * Requests by Client IP
+* Requests by Location
 
 |===
 
@@ -174,6 +175,8 @@ Requests by Client IP:: The sum of requests in the period, grouped by client IP 
 * If you select a time range within the last hour, data is aggregated in one minute increments.
 * If you select a time range within the last day, data is aggregated in ten minute increments.
 * If you select a time range that is larger than one day, data is aggregated in one hour increments.
+
+Requests by Location:: The sum of requests in the period, grouped by country. Data retention for the Requests by Location chart is one hour. 
 
 
 == Basic Metrics View
