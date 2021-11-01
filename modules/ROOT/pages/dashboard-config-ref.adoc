@@ -157,6 +157,10 @@ These metrics are available when you use *Advanced* mode:
 
 * `avg_request_count`
 * `avg_response_count`
+|  Disk statistics | `disk_stats` a|
+
+* `disk_used`
+* `disk_free`
 |  JVM ClassLoader | `jvm.classloading` a|
 
 * `classes_loaded`
@@ -223,6 +227,10 @@ These metrics are available when you use *Advanced* mode:
 | JVM Threads | `jvm.threading` a|
 
 * `thread_count`
+| Operating System | `operatingsystem` a|
+
+* `cpu_steal_time`
+* `cpu_io_wait`
 | HTTP Summary +
 *NOTE:*
 This metric is available for APIs only. | `http_summary_metric` a|
