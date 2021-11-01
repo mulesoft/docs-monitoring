@@ -157,7 +157,7 @@ These metrics are available when you use *Advanced* mode:
 
 * `avg_request_count`
 * `avg_response_count`
-|  Disk statistics | `disk_stats` a|
+|  Disk Statistics | `disk_stats` a|
 
 * `disk_used`
 * `disk_free`
