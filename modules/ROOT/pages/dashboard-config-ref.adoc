@@ -245,7 +245,7 @@ This metric is available for APIs only. | `http_summary_metric` a|
 * `messageCount`
 |===
 
-== Advanced Metrics for APIs
+== Advanced Mode Metrics for APIs
 
 These metrics are available if you use advanced mode for APIs using the *API Panel* setting:
 
@@ -256,14 +256,14 @@ These metrics are available if you use advanced mode for APIs using the *API Pan
 | Key (From clause)
 | Available Field Values (Select clause)
 
-| API Client IP | `api_client_ip_metric`
+| API Client IP | `api_client_ip_metric` a|
 
 * `request_size.count`
-| API Path | `api_path_metric`
+| API Path | `api_path_metric` a|
 
 * `request_size.count`
 * `response_time.sum`
-| API Summary |  `api_summary_metric`
+| API Summary |  `api_summary_metric` a|
 
 * `request_size.count`
 * `response_time.sum`
