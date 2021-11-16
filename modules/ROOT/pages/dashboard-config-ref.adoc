@@ -7,13 +7,11 @@ Anypoint Monitoring provides many predefined values and identifiers for your con
 
 [[date_time_fields]]
 == Date and Time Field Values
-Many fields accept time and date interval values like these:
+Many fields accept time and date interval values in the following format:
 
 [%header,cols="1,5"]
 |===
 2+| Date and Time Fields
-| `y`	| Year, for example: `1y`
-| `M` | Month, for example: `1M`
 | `w` | Week, for example: `1w`
 | `d` | Day, for example: `1d`
 | `h` | Hour, for example: `1h`
