@@ -55,4 +55,4 @@ Enabling Monitoring can impact CPU utilization and memory utilization, which var
 
 * xref:monitoring-settings-page.adoc[Anypoint Monitoring Settings]
 * xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps]
-xref:runtime-manager::anypoint-platform-cli2.adoc[Anypoint CLI]
+* xref:anypoint-cli::index.adoc[Anypoint CLI]
