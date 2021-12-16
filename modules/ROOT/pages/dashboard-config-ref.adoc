@@ -26,7 +26,7 @@ Many fields accept time and date interval values in the following format:
 Many <<metrics_basic, basic>> and <<metrics_advanced, advanced>> metrics are available when configuring custom dashboard graphs.
 
 [[metrics_basic]]
-=== Basic Mode Metrics for Applications
+== Basic Mode Metrics for Applications
 
 include::partial$include-supported-mule-runtime-version.adoc[]
 
@@ -98,7 +98,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 | Outbound - Success Average Response Time by Flow | `ms`
 |===
 
-=== Basic Mode Metrics for APIs
+== Basic Mode Metrics for APIs
 
 These metrics are available when you use basic mode for APIs using the *API Panel* setting:
 
@@ -136,11 +136,11 @@ These metrics are available if you use basic mode for APIs using the *API Analyt
 |===
 
 [[metrics_advanced]]
-=== Advanced Mode
+== Advanced Mode Metrics for Applications
 
-These metrics are available when you use *Advanced* mode:
+These metrics are available when you use *Advanced* mode for apps:
 
-.Advanced Metrics
+.Advanced Metrics for Apps
 [%header,cols="1,2,2"]
 |===
 | Metric
@@ -155,6 +155,10 @@ These metrics are available when you use *Advanced* mode:
 
 * `avg_request_count`
 * `avg_response_count`
+|  Disk Statistics | `disk_stats` a|
+
+* `disk_used`
+* `disk_free`
 |  JVM ClassLoader | `jvm.classloading` a|
 
 * `classes_loaded`
@@ -176,7 +180,7 @@ These metrics are available when you use *Advanced* mode:
 * `gc_par_new_collection_time`
 * `gc_parnew_collection_count`
 * `gc_parnew_collection_time`
-|  JVM Memory | `jvm.memory` a|
+|  JVM Heap Total Memory | `jvm.memory` a|
 
 * `heap_committed`
 * `heap_total`
@@ -218,9 +222,13 @@ These metrics are available when you use *Advanced* mode:
 | JVM Runtime | `jvm.runtime` a|
 
 * `jvm_uptime`
-| JVM Threads | `jvm.threading` a|
+| JVM Thread Count | `jvm.threading` a|
 
 * `thread_count`
+| Operating System | `operatingsystem` a|
+
+* `cpu_steal_time`
+* `cpu_io_wait`
 | HTTP Summary +
 *NOTE:*
 This metric is available for APIs only. | `http_summary_metric` a|
@@ -238,8 +246,35 @@ This metric is available for APIs only. | `http_summary_metric` a|
 * `response_time_max`
 * `response_time_min`
 * `response_time_sum`
+| Mule Message Count | `app_stats` a|
+
+* `messageCount`
 |===
 
+== Advanced Mode Metrics for APIs
+
+These metrics are available if you use advanced mode for APIs using the *API Panel* setting:
+
+.Advanced Metrics for APIs
+[%header,cols="1,2,2"]
+|===
+| Metric
+| Key (From clause)
+| Available Field Values (Select clause)
+
+| API Client IP | `api_client_ip_metric` a|
+
+* `request_size.count`
+| API Path | `api_path_metric` a|
+
+* `request_size.count`
+* `response_time.sum`
+| API Summary |  `api_summary_metric` a|
+
+* `request_size.count`
+* `response_time.sum`
+
+|===
 
 [[samples_markdown]]
 == Markdown Syntax Support
