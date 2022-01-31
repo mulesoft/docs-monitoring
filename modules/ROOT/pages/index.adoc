@@ -129,7 +129,7 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 |Yes
 |No
 
-3+| *Built-in API Dashboards*
+4+| *Built-in API Dashboards*
 
 |16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application
 |Yes
