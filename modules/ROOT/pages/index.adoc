@@ -136,11 +136,6 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 |Yes
 |Yes
 
-|Legacy API Analytics
-|Yes
-|Yes
-|No
-
 |xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
 |No
 |Yes
@@ -160,6 +155,11 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 
 |Advanced mode with additional features
 |No
+|Yes
+|No
+
+|Legacy API Analytics panel in custom dashboards
+|Yes
 |Yes
 |No
 
