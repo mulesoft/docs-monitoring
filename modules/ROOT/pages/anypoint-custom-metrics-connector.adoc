@@ -89,6 +89,12 @@ image::custom-metrics-connector-config.png[]
 == Deploy the Application
 
 . Deploy the app.
+. In the Anypoint Monitoring, create a new Monitoring Dashboard
+. Before switching the "Add Series" section to "Advanced Mode", pay special attention if Environment and Resoure properties are properly set. If you do not set these properties, you will not be able to use them to build the advanced mode query. See image below:
+
+image::custom-metric-custom-dashboard-config-0.png[]
+
+. Switch to Advanced Mode to start building your query.
 . In Anypoint Monitoring, xref:dashboard-custom-config.adoc[add a new custom dashboard] for the custom metric. +
 This image shows an example of the configuration for a graph to display t-shirt sales.
 +
