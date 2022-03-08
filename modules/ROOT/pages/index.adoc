@@ -147,7 +147,7 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 
 3+| *Alerts*
 
-|Basic alerts
+|Basic alerts for apps, servers, and APIs
 |Yes
 |Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
 
@@ -198,7 +198,7 @@ C4E specialist Peyton uses Anypoint Visualizer to view their application network
 * Pinpoint root causes of issues +
 Support team member Darius receives a call that the system is running slowly. He examines dashboards and checks response times, failed requests, and so on. He identifies that the backend is not scaling for the number of requests; he can add capacity for Mule apps, or he can throttle requests for other backend issues.
 
-* Measure API trends + 
+* Measure API trends +
 Architect Kara monitors several APIs using dashboards, and she reports API call trends to leadership. She creates a dashboard that shows her top 10 API’s trends per month so she can easily identify APIs that have high volumes of calls or issues.
 
 * Assess the stability of APIs +
