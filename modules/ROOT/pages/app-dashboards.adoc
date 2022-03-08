@@ -454,13 +454,13 @@ SMTP Failures::
 The average number of Anypoint Connector for Email (Email Connector) request failures, grouped by top occurring operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Object Store Requests::
-The average response time of Object Store Connector requests, grouped by operation.
-
-Object Store Response Time::
 The average number of Object Store Connector request failures, grouped by operation.
 
+Object Store Response Time::
+The average response time of Object Store Connector requests, grouped by operation.
+
 Object Store Failures::
-The average number of Anypoint MQ Connector inbound requests, grouped by operation.
+The average number of Object Store Connector request failures, grouped by top occurring operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Anypoint MQ Operations - Inbound::
 The average number of Anypoint MQ Connector inbound requests, grouped by operation.
