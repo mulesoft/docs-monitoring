@@ -300,7 +300,8 @@ For the description of each variable, see <<alert-variables>>.
 * `${environment}`
 * `${alertLink}`
 * `${dashboardLink}`
-* `${????? Equivalent to resource}`
+* `${api}`
+* `${policy}`
 | *Average Response Time*
 | *Response Codes*
 | *Policy Violations*
