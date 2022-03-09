@@ -327,6 +327,7 @@ Available values are `OK` or `Alerting`.
 |`${operator}` |An operator, such as `< > =`
 |`${organization}` |Name of the organization that owns the alert
 |`${period}` |Period of time over which to measure
+|`${policy}` |Name of the policy whose violation triggers the alert
 |`${resource}` a| Name of the item that triggers the alert:
 
 * CloudHub Apps: Name of the app that triggers the alert
