@@ -36,7 +36,9 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 In the *Alerts* page, you can:
 
 * Create basic alerts
-* View basic alerts for servers, apps, and APIs
+* View basic alerts for servers, apps, and APIs +
+Note: If you create an alert for an API using the interface in API Manager, the alert does not appear in the *Alerts* page in Anypoint Monitoring.
++
 * View advanced alerts for graphs in custom dashboards (Titanium subscription required)
 * Enable or disable alerts
 * Filter by <<alert_status, alert status>>
