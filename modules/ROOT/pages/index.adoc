@@ -85,105 +85,134 @@ See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional
 Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. While all customers receive fundamental monitoring capabilities with their subscriptions, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
 |===
-| Feature | Gold and Platinum Subscription Features | Titanium Subscription Features
+| Feature | Gold and Platinum Subscription Features | Titanium Subscription Features | Platinum Subscription for Mulesoft Government Cloud Features
 
 |Dedicated infrastructure for data processing and storage
 |No
 |Yes
+|No
 
 |Custom metrics
 |No
 |Yes
+|No
 
-3+| *Built-in Application Dashboards*
+4+| *Built-in Application Dashboards*
 |More than 80 out-of-the-box charts covering metrics in the following categories: Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure
 
+|Yes
 |Yes
 |Yes
 
 |Advanced metrics for Inbound and Outbound charts
 |No
 |Yes
+|No
 
 |Flows charts
 |No
 |Yes
+|No
 
 |Connectors charts
 |No
 |Yes
+|No
 
 |Anypoint Visualizer application network integration
 |No
 |Yes
+|No
 
 |xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
 |No
 |Yes
+|No
 
-3+| *Built-in API Dashboards*
+4+| *Built-in API Dashboards*
 
 |16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application
 |Yes
 |Yes
+|Yes
 
 |xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
 |No
 |Yes
+|No
 
-3+| *Custom Dashboards*
+4+| *Custom Dashboards*
 
 |Basic mode
+|Yes
 |Yes
 |Yes
 
 |Advanced mode
 |Yes, with limited functionality
 |Yes
+|Yes, with limited functionality
 
 |Advanced mode with additional features
 |No
 |Yes
+|No
 
-3+| *Alerts*
+|Legacy API Analytics panel in custom dashboards
+|Yes
+|Yes
+|No
+
+4+| *Alerts*
 
 |Basic alerts
 |Yes
 |Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
+|Yes
 
 |Advanced alerts
 |No
 |Yes
+|No
 
-3+| *Log Management*
+4+| *Log Management*
 
 |Log search
 |No
 |Yes
+|No
 
 |Log points
 |No
 |Yes
+|No
 
 |Raw data
 |No
 |Yes
+|No
 
-3+| *Additional Anypoint Monitoring features*
+4+| *Additional Anypoint Monitoring features*
 
 |Anypoint Monitoring Archive API
 |No
 |Yes
+|No
 
 |xref:api-functional-monitoring[API Functional Monitoring] +
 |Yes
 |Yes
+|No
 
 |Reports
 |No
 |Yes
+|No
 
 |===
+
+NOTE: Anypoint Visualizer application network integration refers to an Anypoint Visualizer widget within Anypoint Monitoring. This feature is available only to users who have a Titanium subscription. Anypoint Visualizer outside of Anypoint Monitoring is available to customers of all subscription levels.
+
 
 == Use Cases
 
@@ -198,7 +227,7 @@ C4E specialist Peyton uses Anypoint Visualizer to view their application network
 * Pinpoint root causes of issues +
 Support team member Darius receives a call that the system is running slowly. He examines dashboards and checks response times, failed requests, and so on. He identifies that the backend is not scaling for the number of requests; he can add capacity for Mule apps, or he can throttle requests for other backend issues.
 
-* Measure API trends + 
+* Measure API trends +
 Architect Kara monitors several APIs using dashboards, and she reports API call trends to leadership. She creates a dashboard that shows her top 10 API’s trends per month so she can easily identify APIs that have high volumes of calls or issues.
 
 * Assess the stability of APIs +
