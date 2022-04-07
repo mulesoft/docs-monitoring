@@ -5,7 +5,7 @@ endif::[]
 
 *https://www.mulesoft.com/anypoint-pricing[Titanium Subscription Required]*
 
-You can use Anypoint Monitoring to download archived log data (raw data) collected on Mule apps that are running in CloudHub. This data is helpful for security, compliance, or other purposes where you need to examine or collect your warehoused data.
+You can use Anypoint Monitoring to download archived log data (raw data) collected on Mule apps that are running in hybrid CloudHub, or Runtime Fabric deployments. This data is helpful for security, compliance, or other purposes where you need to examine or collect your warehoused data.
 
 [NOTE]
 Log data is archived regularly.
@@ -14,7 +14,7 @@ To download raw data:
 
 . Select the *Environment* and *Resource*.
 +
-The resource is a Mule app that runs in CloudHub.
+The resource is a Mule app that runs in CloudHub, hybrid, Runtime Fabric deployments.
 +
 . Provide the date for the data you want to download, for example: `08/31/2018`.
 . Locate and download log data that you want to examine.
