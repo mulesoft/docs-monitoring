@@ -186,6 +186,7 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Metaspace graphs (Used, Max, Init, and Committed)
 * Code Cache graphs (Used, Max, Init, and Committed)
 * Compressed Class Space graphs (Used, Max, Init, and Committed)
+* Tenured graphs (Used, Max, Init, and Committed)
 * Committed Virtual Memory
 | <<infrastructure-charts>> a|
 
@@ -618,6 +619,9 @@ The memory metrics for JVM code cache, grouped by worker.
 
 Compressed Class Space graphs (Used, Max, Init, Committed)::
 The memory metrics for JVM compressed class, grouped by worker.
+
+Tenured graphs (Used, Max, Init, Committed)::
+The memory metrics for JVM tenured space, grouped by worker.
 
 Committed Virtual Memory::
 The amount of virtual memory guaranteed to be available to the running process, grouped by worker.
