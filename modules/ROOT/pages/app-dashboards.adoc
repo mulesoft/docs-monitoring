@@ -186,6 +186,7 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Metaspace graphs (Used, Max, Init, and Committed)
 * Code Cache graphs (Used, Max, Init, and Committed)
 * Compressed Class Space graphs (Used, Max, Init, and Committed)
+* Tenured graphs (Used, Max, Init, and Committed)
 * Committed Virtual Memory
 | <<infrastructure-charts>> a|
 
@@ -454,31 +455,31 @@ SMTP Failures::
 The average number of Anypoint Connector for Email (Email Connector) request failures, grouped by top occurring operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Object Store Requests::
-The average response time of Object Store Connector requests, grouped by operation.
-
-Object Store Response Time::
 The average number of Object Store Connector request failures, grouped by operation.
 
+Object Store Response Time::
+The average response time of Object Store Connector requests, grouped by operation.
+
 Object Store Failures::
-The average number of Anypoint MQ Connector inbound requests, grouped by operation.
+The average number of Object Store Connector request failures, grouped by top occurring operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Anypoint MQ Operations - Inbound::
-The average response time of Anypoint MQ Connector inbound requests, grouped by operation.
+The average number of Anypoint MQ Connector inbound requests, grouped by operation.
 
 Anypoint MQ Response Time - Inbound::
-The average number of Anypoint MQ Connector inbound request failures, grouped by operation.
+The average response time of Anypoint MQ Connector inbound requests, grouped by operation.
 
 Anypoint MQ Failures - Inbound::
-The average number of Anypoint MQ Connector outbound requests, grouped by operation.
+The average number of inbound requests of Connectors of type Anypoint MQ Connector, grouped by top occurring operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Anypoint MQ Operations - Outbound::
-The average response time of Anypoint MQ Connector outbound requests, grouped by operation.
+The average number of Anypoint MQ Connector outbound requests, grouped by operation
 
 Anypoint MQ Response Time - Outbound::
-The average number of Anypoint MQ Connector outbound request failures, grouped by operation.
+The average response time of Anypoint MQ Connector outbound request failures, grouped by operation.
 
 Anypoint MQ Failures - Outbound::
-The average number of requests of Connectors of type `other`, grouped by top occurring operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of outbound requests of Connectors of type Anypoint MQ Connector, grouped by top occurring operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Other Connector Requests::
 The average number of requests of Connectors of type `other`.
@@ -619,6 +620,9 @@ The memory metrics for JVM code cache, grouped by worker.
 Compressed Class Space graphs (Used, Max, Init, Committed)::
 The memory metrics for JVM compressed class, grouped by worker.
 
+Tenured graphs (Used, Max, Init, Committed)::
+The memory metrics for JVM tenured space, grouped by worker.
+
 Committed Virtual Memory::
 The amount of virtual memory guaranteed to be available to the running process, grouped by worker.
 
@@ -661,6 +665,8 @@ The *Custom metrics* tab displays only if you have a Titanium subscription and s
 
 [[application-network]]
 == Application Network
+
+The *Application Network* tab displays only if you have a Titanium subscription.
 
 The chart on the *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app, which must be started. The chart shows only direct callers and callees for the selected app. The connections are based on the selected time range, with a max of the most recent seven days.
 
