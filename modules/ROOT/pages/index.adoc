@@ -85,17 +85,17 @@ See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional
 Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. While all customers receive fundamental monitoring capabilities with their subscriptions, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
 |===
-| Feature | Gold and Platinum Subscription Features | Titanium Subscription Features | Platinum Subscription for Mulesoft Government Cloud Features
+| Feature | Gold and Platinum Subscription Features | Platinum Subscription for Mulesoft Government Cloud Features | Titanium Subscription Features 
 
 |Dedicated infrastructure for data processing and storage
 |No
-|Yes
 |No
+|Yes
 
 |Custom metrics
 |No
-|Yes
 |No
+|Yes
 
 4+| *Built-in Application Dashboards*
 |More than 80 out-of-the-box charts covering metrics in the following categories: Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure
@@ -106,28 +106,28 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 
 |Advanced metrics for Inbound and Outbound charts
 |No
-|Yes
 |No
+|Yes
 
 |Flows charts
 |No
-|Yes
 |No
+|Yes
 
 |Connectors charts
 |No
-|Yes
 |No
+|Yes
 
 |Anypoint Visualizer application network integration
 |No
-|Yes
 |No
+|Yes
 
 |xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
 |No
-|Yes
 |No
+|Yes
 
 4+| *Built-in API Dashboards*
 
@@ -138,8 +138,8 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 
 |xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
 |No
-|Yes
 |No
+|Yes
 
 4+| *Custom Dashboards*
 
@@ -150,64 +150,59 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 
 |Advanced mode
 |Yes, with limited functionality
-|Yes
 |Yes, with limited functionality
+|Yes
 
 |Advanced mode with additional features
 |No
-|Yes
 |No
-
-|Legacy API Analytics panel in custom dashboards
 |Yes
-|Yes
-|No
 
 4+| *Alerts*
 
 |Basic alerts
 |Yes
-|Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
 |Yes
+|Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
 
 |Advanced alerts
 |No
-|Yes
 |No
+|Yes
 
 4+| *Log Management*
 
 |Log search
 |No
-|Yes
 |No
+|Yes
 
 |Log points
 |No
-|Yes
 |No
+|Yes
 
 |Raw data
 |No
-|Yes
 |No
+|Yes
 
 4+| *Additional Anypoint Monitoring features*
 
 |Anypoint Monitoring Archive API
 |No
-|Yes
 |No
+|Yes
 
 |xref:api-functional-monitoring[API Functional Monitoring] +
 |Yes
-|Yes
 |No
+|Yes
 
 |Reports
 |No
-|Yes
 |No
+|Yes
 
 |===
 
