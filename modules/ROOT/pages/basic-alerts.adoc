@@ -116,7 +116,7 @@ Percent of CPU used
 This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
 
 Memory utilization::
-Percent of memory used
+Percent of heap used
 +
 This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
 
