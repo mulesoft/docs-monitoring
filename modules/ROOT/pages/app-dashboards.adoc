@@ -666,7 +666,13 @@ The *Custom metrics* tab displays only if you have a Titanium subscription and s
 [[application-network]]
 == Application Network
 
-The *Application Network* tab displays only if you have a Titanium subscription.
+The *Application Network* tab displays only if you have a Titanium subscription and have set up Anypoint Visualizer.
+
+Setup requirements change based on your app deployment. Some deployment types require you to enable header injection or modify how data is collected. For more information, see the documentation for each deployment type:
+
+* xref:visualizer::cloudhub-setup.adoc[CloudHub Setup]
+* xref:visualizer::runtime-fabric-setup.adoc[Runtime Fabric Setup]
+* xref:visualizer::standalone-mule-setup.adoc[Standalone Mule Setup]
 
 The chart on the *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app, which must be started. The chart shows only direct callers and callees for the selected app. The connections are based on the selected time range, with a max of the most recent seven days.
 
