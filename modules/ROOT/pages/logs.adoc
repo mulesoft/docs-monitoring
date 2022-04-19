@@ -34,7 +34,7 @@ Do not override the default JVM timezone for applications deployed to Cloudhub a
 
 In Anypoint Monitoring, click *Log Search* in the menu on the left. On the log search page, you can search for text in logs in a few different ways. You can type your search query into the search field, you can use the UI to add a filter, and you can create a query.
 
-When you search for logs for APIs deployed using the Flex Gateway, use the *Application* filter. Use the *App ID* field identify the instance.
+When you search for logs for APIs deployed through Flex Gateway, use the *Application* filter. Use the *App ID* field to identify the instance.
 
 === Log Search Query
 
@@ -85,7 +85,7 @@ The filter appears to the right of *+Add a filter*.
 
 
 NOTE:
-When you use the *Application* filter, the results include APIs deployed using the Flex Gateway.
+When you use the *Application* filter, the results include APIs deployed through Flex Gateway.
 
 === Search Query
 
