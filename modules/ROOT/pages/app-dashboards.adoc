@@ -668,7 +668,7 @@ The *Custom metrics* tab displays only if you have a Titanium subscription and s
 
 The *Application Network* tab displays only if you have a Titanium subscription and have set up Anypoint Visualizer.
 
-Setup requirements change based on your app deployment. Some deployment types require you to enable header injection or modify how data is collected. For more information, see the documentation for each deployment type:
+Setup requirements change based on your app deployment. Some deployment types require you to enable header injection or modify how Anypoint Visualizer collects data. For more information, see the documentation for each deployment type:
 
 * xref:visualizer::cloudhub-setup.adoc[CloudHub Setup]
 * xref:visualizer::runtime-fabric-setup.adoc[Runtime Fabric Setup]
