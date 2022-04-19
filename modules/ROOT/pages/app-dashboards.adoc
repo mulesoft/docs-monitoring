@@ -271,6 +271,8 @@ The sum of inbound requests whose response time is greater than 1 second, groupe
 
 Inbound - Maximum Response Time::
 The maximum response time, grouped by endpoint.
++
+This metric is available only for organizations that have a Titanium subscription.
 
 The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
 
@@ -625,6 +627,8 @@ The memory metrics for JVM tenured space, grouped by worker.
 
 Committed Virtual Memory::
 The amount of virtual memory guaranteed to be available to the running process, grouped by worker.
++
+This metric is available only for organizations that have a Titanium subscription.
 
 [[infrastructure-charts]]
 == Infrastructure
@@ -648,12 +652,18 @@ The average number of threads of the JVM, grouped by worker.
 
 System CPU % Utilization::
 The percentage of CPU used by all processes. This metric often aligns with the Cloudwatch System CPU % metric, but there may be different values given the timing of data aggregation for Anypoint Monitoring metrics.
++
+This metric is available only for organizations that have a Titanium subscription.
 
 JVM CPU Time::
 The cumulative CPU time consumed by the JVM.
++
+This metric is available only for organizations that have a Titanium subscription.
 
 Operating System Swap Space::
 The amount of memory the system is swapping, grouped by worker in automatic intervals.
++
+This metric is available only for organizations that have a Titanium subscription.
 
 .Example: Infrastructure Dashboard
 image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
