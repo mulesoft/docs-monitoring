@@ -69,12 +69,12 @@ Built-in dashboards include various pages to view different types of charts:
 * Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Inbound - Total Failed Requests
 * Inbound - Total Slow Requests by Endpoint
-* Inbound - Maximum Response Time
 
 The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
 
 * Inbound - Protocols
 * Inbound - HTTP Endpoints
+* Inbound - Maximum Response Time
 
 
 | <<outbound-charts>> a|
@@ -187,6 +187,9 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Code Cache graphs (Used, Max, Init, and Committed)
 * Compressed Class Space graphs (Used, Max, Init, and Committed)
 * Tenured graphs (Used, Max, Init, and Committed)
+
+The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+
 * Committed Virtual Memory
 | <<infrastructure-charts>> a|
 
@@ -195,6 +198,9 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Total System Processors
 * System Memory
 * JVM Thread Count
+
+The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+
 * System CPU % Utilization
 * JVM CPU Time
 * Operating System Swap Space
@@ -232,6 +238,8 @@ The average response time of outbound requests. If a Mule app has more than one 
 
 JVM - CPU % Utilization::
 The average percentage of CPU used by the JVM, grouped by worker. The JVM used in this chart is the Mule JVM process. The calculation for CPU utilization is relative to the physical server on which Mule is deployed. For example, in RTF, the resource usage indicates the JVM use with respect to the entire server, and not with respect to the pod maximum CPU allocation.
++
+This metric is available only for organizations that have a Titanium subscription.
 
 JVM - Heap Used::
 The average amount of heap memory utilized by the JVM, grouped by worker. The JVM used in this chart is the Mule JVM process.
