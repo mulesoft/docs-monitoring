@@ -85,105 +85,129 @@ See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional
 Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. While all customers receive fundamental monitoring capabilities with their subscriptions, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
 |===
-| Feature | Gold and Platinum Subscription Features | Titanium Subscription Features
+| Feature | Gold and Platinum Subscription Features | Platinum Subscription for Mulesoft Government Cloud Features | Titanium Subscription Features 
 
 |Dedicated infrastructure for data processing and storage
+|No
 |No
 |Yes
 
 |Custom metrics
 |No
+|No
 |Yes
 
-3+| *Built-in Application Dashboards*
+4+| *Built-in Application Dashboards*
 |More than 80 out-of-the-box charts covering metrics in the following categories: Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure
 
+|Yes
 |Yes
 |Yes
 
 |Advanced metrics for Inbound and Outbound charts
 |No
+|No
 |Yes
 
 |Flows charts
+|No
 |No
 |Yes
 
 |Connectors charts
 |No
+|No
 |Yes
 
 |Anypoint Visualizer application network integration
 |No
+|No
 |Yes
 
 |xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
 |No
+|No
 |Yes
 
-3+| *Built-in API Dashboards*
+4+| *Built-in API Dashboards*
 
 |16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application
 |Yes
 |Yes
+|Yes
 
 |xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
 |No
+|No
 |Yes
 
-3+| *Custom Dashboards*
+4+| *Custom Dashboards*
 
 |Basic mode
+|Yes
 |Yes
 |Yes
 
 |Advanced mode
 |Yes, with limited functionality
+|Yes, with limited functionality
 |Yes
 
 |Advanced mode with additional features
 |No
+|No
 |Yes
 
-3+| *Alerts*
+4+| *Alerts*
 
 |Basic alerts for apps, servers, and APIs
+|Yes
 |Yes
 |Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
 
 |Advanced alerts
 |No
+|No
 |Yes
 
-3+| *Log Management*
+4+| *Log Management*
 
 |Log search
+|No
 |No
 |Yes
 
 |Log points
 |No
+|No
 |Yes
 
 |Raw data
 |No
+|No
 |Yes
 
-3+| *Additional Anypoint Monitoring features*
+4+| *Additional Anypoint Monitoring features*
 
 |Anypoint Monitoring Archive API
+|No
 |No
 |Yes
 
 |xref:api-functional-monitoring[API Functional Monitoring] +
 |Yes
+|No
 |Yes
 
 |Reports
 |No
+|No
 |Yes
 
 |===
+
+NOTE: Anypoint Visualizer application network integration refers to an Anypoint Visualizer widget within Anypoint Monitoring. This feature is available only to users who have a Titanium subscription. Anypoint Visualizer outside of Anypoint Monitoring is available to customers of all subscription levels.
+
 
 == Use Cases
 

@@ -53,7 +53,8 @@ image::custom-metrics-add-fact.png[]
 .. Click *OK*. +
 You can repeat these steps to add multiple key values.
 . Select the *Throw Runtime Exception on Validation Failure* option if you want the flow to break if invalid values are entered for the metric. If this option is left unchecked, an error will be logged, but the flow won't break.
-
+[NOTE]
+Custom Metrics Connector requires all *Facts* to be sent from every operation, even if they contain empty or 0 value in them.
 
 == Configure Custom Metrics Values Using Anypoint Studio
 
