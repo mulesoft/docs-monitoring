@@ -114,7 +114,7 @@ Requests:: The sum of requests in the selected time period, grouped by the top N
 * If you select a time range that is larger than one day, data is aggregated in one hour increments.
 
 +
-This metric is not supported for APIs deployed using the Flex Gateway.
+This metric is not supported for APIs deployed through Flex Gateway.
 
 Requests by Method:: The sum of requests in the selected time period, grouped by method. Data is aggregated in one minute increments.
 
@@ -136,7 +136,7 @@ Failures:: The sum of failed requests in the selected time period, grouped by th
 * If you select a time range that is larger than one day, data is aggregated in one hour increments.
 
 +
-This metric is not supported for APIs deployed using the Flex Gateway.
+This metric is not supported for APIs deployed through Flex Gateway.
 
 Failures by Method:: The sum of failed requests in the selected time period, grouped by method. Data is aggregated in one minute increments.
 
@@ -158,7 +158,7 @@ Requests by Performance (line chart):: The average request response times, group
 * If you select a time range that is larger than one day, data is aggregated in one hour increments.
 
 +
-This metric is not supported for APIs deployed using the Flex Gateway.
+This metric is not supported for APIs deployed through Flex Gateway.
 
 Requests by Performance (table):: The average request response times, grouped by path.
 +
@@ -167,7 +167,7 @@ Requests by Performance (table):: The average request response times, grouped by
 * If you select a time range that is larger than one day, data is aggregated in one hour increments.
 
 +
-This metric is not supported for APIs deployed using the Flex Gateway.
+This metric is not supported for APIs deployed through Flex Gateway.
 
 Slow Requests:: The average response times that are greater than one second, grouped by path. This chart is available only for Titanium users.
 +
@@ -176,7 +176,7 @@ Slow Requests:: The average response times that are greater than one second, gro
 * If you select a time range that is larger than one day, data is aggregated in one hour increments.
 
 +
-This metric is not supported for APIs deployed using the Flex Gateway.
+This metric is not supported for APIs deployed through Flex Gateway.
 
 [[client-applications-charts]]
 === Client Applications Charts
@@ -192,11 +192,11 @@ Requests by Client IP:: The sum of requests in the period, grouped by client IP 
 * If you select a time range that is larger than one day, data is aggregated in one hour increments.
 
 +
-This metric is not supported for APIs deployed using the Flex Gateway.
+This metric is not supported for APIs deployed through Flex Gateway.
 
-Requests by Location:: The sum of requests during the time period specified, grouped by country. Data retention for the Requests by Location chart is one hour. 
+Requests by Location:: The sum of requests during the time period specified, grouped by country. Data retention for the Requests by Location chart is one hour.
 +
-This metric is not supported for APIs deployed using the Flex Gateway.
+This metric is not supported for APIs deployed through Flex Gateway.
 
 
 == Basic Metrics View
@@ -211,7 +211,7 @@ The following charts are available in the *Overview* section of built-in dashboa
 * Requests by HTTP policy violation
 * Requests by failure
 
-The Basic Metrics view is not available for APIs deployed using the Flex Gateway.
+The Basic Metrics view is not available for APIs deployed through Flex Gateway.
 
 === Requests
 
