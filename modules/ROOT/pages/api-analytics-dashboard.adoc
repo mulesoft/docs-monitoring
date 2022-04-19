@@ -112,6 +112,7 @@ Requests:: The sum of requests in the selected time period, grouped by the top N
 * If you select a time range within the last hour, data is aggregated in one minute increments.
 * If you select a time range within the last day, data is aggregated in ten minute increments.
 * If you select a time range that is larger than one day, data is aggregated in one hour increments.
+
 +
 This metric is not supported for APIs deployed using the Flex Gateway.
 
@@ -133,6 +134,7 @@ Failures:: The sum of failed requests in the selected time period, grouped by th
 * If you select a time range within the last hour, data is aggregated in one minute increments.
 * If you select a time range within the last day, data is aggregated in ten minute increments.
 * If you select a time range that is larger than one day, data is aggregated in one hour increments.
+
 +
 This metric is not supported for APIs deployed using the Flex Gateway.
 
@@ -154,6 +156,7 @@ Requests by Performance (line chart):: The average request response times, group
 * If you select a time range within the last hour, data is aggregated in one minute increments.
 * If you select a time range within the last day, data is aggregated in ten minute increments.
 * If you select a time range that is larger than one day, data is aggregated in one hour increments.
+
 +
 This metric is not supported for APIs deployed using the Flex Gateway.
 
@@ -162,6 +165,7 @@ Requests by Performance (table):: The average request response times, grouped by
 * If you select a time range within the last hour, data is aggregated in one minute increments.
 * If you select a time range within the last day, data is aggregated in ten minute increments.
 * If you select a time range that is larger than one day, data is aggregated in one hour increments.
+
 +
 This metric is not supported for APIs deployed using the Flex Gateway.
 
@@ -170,6 +174,7 @@ Slow Requests:: The average response times that are greater than one second, gro
 * If you select a time range within the last hour, data is aggregated in one minute increments.
 * If you select a time range within the last day, data is aggregated in ten minute increments.
 * If you select a time range that is larger than one day, data is aggregated in one hour increments.
+
 +
 This metric is not supported for APIs deployed using the Flex Gateway.
 
@@ -185,10 +190,12 @@ Requests by Client IP:: The sum of requests in the period, grouped by client IP 
 * If you select a time range within the last hour, data is aggregated in one minute increments.
 * If you select a time range within the last day, data is aggregated in ten minute increments.
 * If you select a time range that is larger than one day, data is aggregated in one hour increments.
+
 +
 This metric is not supported for APIs deployed using the Flex Gateway.
 
-Requests by Location:: The sum of requests during the time period specified, grouped by country. Data retention for the Requests by Location chart is one hour. +
+Requests by Location:: The sum of requests during the time period specified, grouped by country. Data retention for the Requests by Location chart is one hour. 
++
 This metric is not supported for APIs deployed using the Flex Gateway.
 
 
