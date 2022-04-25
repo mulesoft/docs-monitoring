@@ -160,7 +160,8 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 
 4+| *Alerts*
 
-|Basic alerts
+|Basic alerts for apps, servers, and APIs
+|Yes
 |Yes
 |Yes
 |Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]

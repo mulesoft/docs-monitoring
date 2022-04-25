@@ -11,13 +11,15 @@ If you have a Titanium subscription, you can also view, enable, and disable xref
 
 Using Anypoint Monitoring, you can configure two different types of alerts:
 
-* xref:basic-alerts.adoc[Basic alerts] for servers and Mule apps
-+
-Limit per organization: Up to 50 basic alerts for users who do not have a Titanium subscription to Anypoint Platform +
+* xref:basic-alerts.adoc[Basic alerts] for servers, Mule apps, and APIs
+** Limits per organization:
+*** Basic alerts for servers and Mule apps: Up to 50 basic alerts for organizations who do not have a Titanium subscription to Anypoint Platform. +
 If you have a Titanium subscription, the limit is 100 basic alerts, and the limits increase as you purchase more vCores. For complete details about subscriptions, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
-* xref:advanced-alerts.adoc[Advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
+*** Basic alerts for APIs: Up to six basic alerts per API instance for organizations that do not have a Titanium subscription to Anypoint Platform. +
+If you have a Titanium subscription, the limit is ten alerts per API instance.
 +
-Limit per organization: Up to 20 advanced alerts
+* xref:advanced-alerts.adoc[Advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
+** Limit per organization: Up to 20 advanced alerts
 +
 Note that thresholds are checked every five minutes. The evaluated query is the average value of the metric in the last five minutes. The evaluated metric is the one referenced in the *General* tab for the graph. If the value passes the threshold, the advanced alert is triggered. The advanced alert is triggered only if the alert state changes (from `OK` state to `Alerting` state or vice versa).
 * Operational alerts for APIs through API Manager
@@ -32,7 +34,9 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 In the *Alerts* page, you can:
 
 * Create basic alerts
-* View basic alerts for servers and apps
+* View basic alerts for servers, apps, and APIs +
+Note: If you create an alert for an API using the interface in API Manager, the alert does not appear in the *Alerts* page in Anypoint Monitoring.
++
 * View advanced alerts for graphs in custom dashboards (Titanium subscription required)
 * Enable or disable alerts
 * Filter by <<alert_status, alert status>>
