@@ -55,7 +55,7 @@ anypoint-cli --username="..." --password="..."
 If you are using Maven for deployment, you must modify the `<muleVersion>`
 tag in the `pom.xml` file. For example, you can change `<muleVersion>3.9.3</muleVersion>` to `<muleVersion>3.9.4</muleVersion>`).
 
-== Enable Automatic Monitoring for Apps That You Plan to Deploy to Cloudhub
+== Enable Automatic Monitoring for Apps That You Plan to Deploy to CloudHub
 
 If you want your Mule apps to be monitored by default when you deploy them to CloudHub, configure this feature in Anypoint Monitoring before you deploy your apps. If you have a Titanium subscription to Anypoint Platform, this feature is enabled by default.
 
