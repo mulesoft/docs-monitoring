@@ -85,7 +85,7 @@ See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional
 Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. While all customers receive fundamental monitoring capabilities with their subscriptions, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
 |===
-| Feature | Gold and Platinum Subscription Features | Platinum Subscription for Mulesoft Government Cloud Features | Titanium Subscription Features 
+| Feature | Gold and Platinum Subscription Features | Platinum Subscription for Mulesoft Government Cloud Features | Titanium Subscription Features
 
 |Dedicated infrastructure for data processing and storage
 |No
@@ -160,7 +160,7 @@ Anypoint Monitoring is the standard method of monitoring Mule application and AP
 
 4+| *Alerts*
 
-|Basic alerts
+|Basic alerts for apps, servers, and APIs
 |Yes
 |Yes
 |Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
