@@ -1,0 +1,340 @@
+[[basic-alerts]]
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+= Set Up Basic Alerts for Servers, Mule Apps, and APIs
+
+You can set up basic alerts to trigger email notifications when a metric you are measuring passes a specified threshold.
+
+You can create basic alerts for the following metrics:
+
+* For on-premises servers, server groups, server clusters, and apps deployed to Anypoint Runtime Fabric or CloudHub:
+** CPU utilization
+** Memory utilization
+** Thread count
+* For hybrid, Anypoint Runtime Fabric, and CloudHub apps:
+** Message count
+** Message error count
+** Message response time
+* For APIs:
+** Total request count
+** Average response time
+** Response codes
+** Policy violations
+
+A basic alert typically triggers an e-mail within 5 to 15 minutes of an incident. However, the basic alert's timestamp reflects the actual time of the incident.
+
+== Create a Basic Alert
+
+When you create a basic alert, you can select a source for the basic alert, configure the condition under which the basic alert is triggered, and specify which email addresses receive notifications for basic alert triggers.
+
+To create a basic alert:
+
+. Navigate to Anypoint Monitoring.
+. Click the *Alerts* tab.
+. Click the *+ New Alerts* button.
+. Click *Basic alert*.
+. In the *Add basic alert* window, enter the information required to create your basic alert:
+
+* *Alert name*
++
+Unique and meaningful name for the alert
++
+*Name* is limited to 256 characters.
+* *Severity level*
++
+Severity of the alert: *Critical*, *Warning*, or *Info*
+See <<alert-severity>>.
++
+* *Source type*
++
+Source of the alert: an application, server, or API
++
+* *Environment name*
++
+Name of the environment where the resource is deployed
++
+* *Resource name* (apps), *Server name* (servers), *API* (APIs)
++
+Application, server, or API to apply the alert to
+* *Metric*
++
+Condition that triggers the alert
++
+See <<alert-conditions>>.
+* *Subject*
++
+Subject of the alert email to send when the alert is triggered
++
+The subject can include variables.
+See <<alert-variables>>.
+
+* *Message*
++
+Body text for the email to send when the alert is triggered
++
+The message body can include variables.
+See <<alert-variables>>.
+
+* *Recipients*
++
+Recipients of the alert email
++
+You can select up to 20 platform user IDs and enter up to 20 email addresses.
+. Click *Create*.
+
+image::basic-alerts-config.png[Configure a Basic Alert, 50%, 50%]
+
+[[alert-severity]]
+=== Alert Severity
+
+The following levels of severity are available for basic alerts:
+
+include::partial$include-alert-severity.adoc[leveloffset=+1]
+
+[[alert-conditions]]
+=== Alert Conditions
+
+For basic alerts, alert conditions consist of a metric, an operator, and a period of time that the condition is met.
+
+==== Application Metrics
+
+The following metrics are available if your alert is created for an application:
+
+Message count::
+Total number of Mule messages that are processed successfully
+
+Message error count::
+Number of Mule messages that return an exception in a flow
+
+Message response time::
+Response time (in milliseconds) of a message
+
+CPU utilization::
+Percent of CPU used
++
+This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
+
+Memory utilization::
+Percent of heap used
++
+This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
+
+Thread count::
+Total number of threads used
++
+This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
+
+==== Server Metrics
+
+The following metrics are available if your alert is created for a server, server group, or server cluster:
+
+CPU utilization::
+Percent of CPU used
+
+Memory utilization::
+Percent of memory used
+
+Thread count::
+Total number of threads used
+
+==== API Metrics
+
+The following metrics are available if your alert is created for an API:
+
+Total request count::
+Sum of requests in the selected time period for the given API.
++
+Data is aggregated in one minute increments.
+
+Average response time::
+Average response time of requests in the selected time period for the given API.
++
+Data is aggregated in one minute increments.
+
+Response codes::
+Sum of HTTP response codes that occur in the selected time period.
++
+Select up to ten of the following codes: 301, 400, 401, 402, 403, 404, 405, 408, 409, 410, 411, 412, 413, 415, 416, 417, 420, 422, 429, 500, 502, 503, 504, 504, 510, 511
+
+Policy violation::
+Sum of requests that return policy violations that you select in the alert condition.
++
+Select a policy associated with the selected API. If the selected API does not have policies, the list is empty.
+
+==== Operator
+
+The _operator_ portion of the alert condition is the logic that is used against the metric you are measuring. The following operators are available:
+
+* Above
+* Above or equal
+* Equal
+* Below or equal
+* Below
+
+==== Time Period
+
+The _time period_ specifies the duration for which the metric remains valid, based on the criteria defined using the operator and chosen value. A basic alert is triggered only if the metric continuously (not cumulatively) meets the condition for the selected time period. The following time periods are available:
+
+* 5 minutes
+* 10 minutes
+* 15 minutes
+* 20 minutes
+
+== Basic Alert Email Template
+
+You can use the following variables in a basic alert email *Subject* and *Message* fields.
+For the description of each variable, see <<alert-variables>>.
+
+[%header,cols="25a,50a,20a"]
+.Variables for Alerts
+|===
+| Alert Type | Alert | Applicable Variables
+.6+| CloudHub App Alerts
+|*CPU Utilization* .6+|* `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${resource}`
+| *Memory Utilization*
+| *Thread Count*
+| *Message Count*
+| *Message Error Count*
+| *Message Response Time*
+
+.6+| Anypoint Runtime Fabric App Alerts
+|*CPU Utilization* .6+|* `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${resource}`
+| *Memory Utilization*
+| *Thread Count*
+| *Message Count*
+| *Message Error Count*
+| *Message Response Time*
+
+.3+|Hybrid App Alerts
+| *Message Count* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${targetName}`
+* `${resource}`
+| *Message Error Count*
+| *Message Response Time*
+
+.3+|On-premises Server Alerts
+| *CPU Utilization* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${targetName}`
+| *Memory Utilization*
+| *Thread Count*
+
+.3+|Server Group Alerts
+| *CPU Utilization* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${memberName}`
+* `${targetName}`
+| *Memory Utilization*
+| *Thread Count*
+
+.3+|Server Cluster Alerts
+| *CPU Utilization* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${memberName}`
+* `${targetName}`
+| *Memory Utilization*
+| *Thread Count*
+
+.6+| API Alerts
+|*Total Request Count* .4+|* `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${api}`
+* `${policy}`
+| *Average Response Time*
+| *Response Codes*
+| *Policy Violations*
+
+|===
+
+[[alert-variables]]
+
+[%header%autowidth.spread]
+[[alert-variables]]
+.Variable Definitions
+|===
+|Variable |Definition
+|`${alertLink}`|URL of the triggered alert
+|`${alertState}`|State of the alert when it was triggered.
+
+Available values are `OK` or `Alerting`.
+|`${api}`| Name of the API that triggers the alert
+|`${comparison}`| Above, above or equal, equal, below or equal, below
+|`${condition}`|Metric for which the alert is triggered
+|`${environment}`|Name of the environment in which the resource is deployed
+|`${memberName}`|Name of the server within the server group or cluster
+|`${operator}` |An operator, such as `< > =`
+|`${organization}` |Name of the organization that owns the alert
+|`${period}` |Period of time over which to measure
+|`${policy}` |Name of the policy whose violation triggers the alert
+|`${resource}` a| Name of the item that triggers the alert:
+
+* CloudHub Apps: Name of the app that triggers the alert
+* Hybrid Apps: Name of the resource in the app that triggers the alert
+|`${severity}` | Severity of the alert
+|`${targetName}`|Name of the server, server group, or cluster
+|`${targetState}` |Server state when the alert was triggered
+|`${threshold}` |Count over the period of time that triggers the alert
+|`${value}` | Value of the metric that triggers the alert
+|===

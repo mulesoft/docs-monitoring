@@ -3,13 +3,15 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Install the Anypoint Monitoring agent on an on-premises server to monitor applications that are running on that server and managed in the cloud. 
+Install the Anypoint Monitoring agent on an on-premises server to monitor applications that are running on that server and managed in the cloud.
 
-The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using an open-source protocol for transferring log data over a highly-efficient bidirectional binary channel. Data is securely transmitted using mutual TLS encryption. 
+The Anypoint Monitoring agent sends monitoring data to the Anypoint Monitoring cloud endpoint. Anypoint Monitoring data is transferred using an open-source protocol for transferring log data over a highly efficient bidirectional binary channel. Data is securely transmitted using mutual TLS encryption.
+
+To use Anypoint Monitoring across a server group or cluster, you must install Anypoint Monitoring on each individual server.
 
 == Before You Begin
 
-If you have an outbound firewall, open port 443. 
+If you have an outbound firewall, open port 443.
 
 Outbound connections are made to the following endpoints:
 
@@ -66,24 +68,26 @@ Ensure that the server has the minimum hardware requirements for Anypoint Monito
 [[install_ap_monitoring_onprem]]
 == Install the Anypoint Monitoring agent
 
-Instructions for downloading and installing the Anypoint Monitoring agent on-premises are located on the xref:monitoring-settings-page.adoc[*Settings* page] of the Anypoint Monitoring user interface. You can also download the Anypoint Monitoring installation `am.zip` file from the *Settings* page. 
+Instructions for downloading and installing the Anypoint Monitoring agent on-premises are located on the xref:monitoring-settings-page.adoc[*Settings* page] of the Anypoint Monitoring user interface. You can also download the Anypoint Monitoring installation `am.zip` file from the *Settings* page.
 
-When you extract the `am.zip` file, a folder called `am` is created in the location where you extracted the ZIP. 
+When installing the Anypoint Monitoring agent, note the following:
 
-The installation script asks if you want Anypoint Monitoring installed as a service. If you don't want to have it preset as a service by the installer, select `no`. 
-
-You can also call the installation script with the `-x` argument to skip this prompt. If you skip the prompt, Anypoint Monitoring is not installed as a service. 
-
+* When you extract the `am.zip` file, a folder called `am` is created in the location where you extracted the ZIP.
+* The installation script asks if you want Anypoint Monitoring installed as a service. 
+** If you don't want to have it preset as a service by the installer, select *No*.
+** You can call the installation script with the `-x` argument to skip this prompt. If you skip the prompt, Anypoint Monitoring is not installed as a service.
+* You cannot install the Anypoint Monitoring agent on a server that has an existing filebeat instance running.
+* When you install the Anypoint Monitoring agent on a hybrid server in a server group, restart the server to enable Anypoint Monitoring to begin collecting metrics.
 
 == SOCKS5 Proxy Setting
 
-If you need to proxy your monitoring data as it leaves the data center, you can use the command line parameter `-p` when you install the Anypoint Monitoring agent. 
+If you need to proxy your monitoring data as it leaves the data center, you can use the command line parameter `-p` when you install the Anypoint Monitoring agent.
 
 To use the SOCKS5 protocol for monitoring, you must:
 
 . Set up Runtime Manager with a proxy. See xref:runtime-manager::servers-create.adoc[Create a Server in Runtime Manager].
 . To perform the SOCKS5 proxy configuration step, you must have a compatible server deployed to your environment.
-. Install the Anypoint Monitoring agent and use the `-p` option. For example, on a Windows server, at the command line, enter: 
+. Install the Anypoint Monitoring agent and use the `-p` option. For example, on a Windows server, at the command line, enter:
 
 ----
 <location-of-am-folder\bin>powershell -file install.ps1 -p socks5://user:password@socks5-server:1080
@@ -99,20 +103,23 @@ If the user or password of the SOCKS5 proxy configuration contains URI reserved 
 
 == Verify the Anypoint Monitoring Agent is Running
 
-1. Wait 10 minutes for the configuration to propagate.
-1. Go to http://anypoint.mulesoft.com and sign in.
-1. Navigate to *Monitoring*.
-1. On the *Built-in Dashboards* page, select an app that is deployed on the server where you installed the Anypoint Monitoring agent.
-1. Check whether the CPU Utilization and Memory Utilization charts are displaying data. +
+. Wait 10 minutes for the configuration to propagate.
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+. On the *Built-in Dashboards* page, select an app that is deployed on the server where you installed the Anypoint Monitoring agent.
+. Check whether the CPU Utilization and Memory Utilization charts are displaying data. +
 If you see data in the charts, the Anypoint Monitoring agent is installed and running. +
 If you do not see data in the charts, verify that Anypoint Monitoring is able to connect to the endpoint. +
 [NOTE]
-If necessary, you can whitelist the endpoint for outbound firewall rules so your server allows connections. The endpoints to whitelist are https://docs.mulesoft.com/monitoring/am-installing#before-you-begin
-11. Log into the server on which the Anypoint Monitoring agent is running.
-11. Open the log file for the data-transfer agent. The log file is in this path: `./am/filebeat/logs` 
+If necessary, you can add the endpoint to an allowlist for outbound firewall rules so your server allows connections. The endpoints to add to the allowlist are listed in xref:am-installing#before-you-begin[Before You Begin].
+
+. Log into the server on which the Anypoint Monitoring agent is running.
+. Open the log file for the data-transfer agent. The log file is in this path: `./am/filebeat/logs`
 [NOTE]
 If you are using Linux and the Anypoint Monitoring agent is running as a service, the log file is in the `/var/log/filebeat` directory.
-11. Look for entries that mention connection failures or connection retries.
+
+. Look for entries that mention connection failures or connection retries.
 
 == Update the Anypoint Monitoring Agent
 
@@ -131,7 +138,7 @@ If you need to update the Anypoint Monitoring agent at some point in the future,
 
 Enabling Monitoring can impact CPU utilization and memory utilization, which varies depending upon specific application configuration. MuleSoft recommends that you test any performance impact in your pre-production environment prior to enabling monitoring in your production environment to ensure optimal performance and sizing.
 
-== What to do Next
+== Troubleshooting
 
 - If you find connection failure or retry entries, ensure that port 443 in your outbound firewall is open.
 - If you do not find connection failure or retry entries, contact MuleSoft technical support.

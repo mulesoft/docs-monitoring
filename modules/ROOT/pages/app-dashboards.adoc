@@ -17,15 +17,22 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * Infrastructure-level and JVM metrics
 * Performance metrics that break down inbound and outbound response times into averages and percentiles
 
+When converting quantities of memory, Anypoint Monitoring uses the power of 10 (_MB_) to reflect metrics values rather than the power of 2 (_MiB_).
+
 == Supported Versions of Mule Runtime Engine
 
 include::partial$include-supported-mule-runtime-version.adoc[]
+
+== Anypoint Monitoring Metrics and Cloudwatch
+
+Anypoint Monitoring collects some metrics that are also collected using Cloudwatch in Anypoint Runtime Manager. Anypoint Monitoring shows data that is aggregated in one minute intervals, and it is possible that data shown in Cloudwatch does not match based on when the data is collected.
 
 == View a Built-in Dashboard
 
 Built-in and custom dashboards are available from Anypoint Monitoring. You can view application metrics for applications deployed to CloudHub and to hybrid targets in both built-in and custom dashboards.
 
-. Sign in to Anypoint Platform and click *Monitoring*.
+include::partial$include-nav-steps-no-permissions.adoc[]
+
 . Select the *Environment* and *Resource name* for the app or API to view the corresponding dashboard.
 . Click *View*. +
 The built-in dashboard for the application or API is displayed.
@@ -42,9 +49,11 @@ Built-in dashboards include various pages to view different types of charts:
 | Built-In Dashboards | Charts
 | <<overview-charts>> a|
 
+* Mule Messages
+* Average Response Time
+* Errors
 * Inbound - Total Requests by Response Type
 * Inbound - Average Response Time
-* Mule Messages
 * Outbound - Total Requests by Response Type
 * Outbound - Average Response Time
 * JVM - CPU % Utilization
@@ -55,17 +64,17 @@ Built-in dashboards include various pages to view different types of charts:
 
 * Inbound - Total Requests by Response Type
 * Inbound - Average Response Time
-* Inbound - Response Time by Endpoint
+* Inbound - Response Time by HTTP Endpoint
 * Inbound - Total Requests by Endpoint
 * Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Inbound - Total Failed Requests
 * Inbound - Total Slow Requests by Endpoint
-* Inbound - Maximum Response Time
 
 The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
 
 * Inbound - Protocols
-* Inbound - Endpoints
+* Inbound - HTTP Endpoints
+* Inbound - Maximum Response Time
 
 
 | <<outbound-charts>> a|
@@ -79,11 +88,10 @@ The following charts are available only if you are using Unified Agent and have 
 
 The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
 
-* Outbound - Ports
+* Outbound - HTTP Ports
 * Outbound - Operations
-* Outbound - Protocol
+* Outbound - HTTP Protocols
 * Outbound - Endpoints
-* Outbound - Ports
 | <<flows-charts>> a|
 
 * Inbound - Response Time by Flow
@@ -145,14 +153,16 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 | <<performance-charts>> a|
 
 * Mule Messages
+* Average Response Time
 * Inbound - Average Response Time
-* Inbound - Response Time by Endpoint
+* Inbound - Response Time by HTTP Endpoint
 * Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Outbound - Average Response Time
-* Outbound - Response Time Grouped by HTTP Endpoint
+* Outbound - Response Time by Endpoint
 * Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 | <<failures-charts>> a|
 
+* Errors
 * Inbound - Total Failed Requests
 * Outbound Total Failed Requests
 * Inbound - Total Requests by Response Type
@@ -176,6 +186,10 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Metaspace graphs (Used, Max, Init, and Committed)
 * Code Cache graphs (Used, Max, Init, and Committed)
 * Compressed Class Space graphs (Used, Max, Init, and Committed)
+* Tenured graphs (Used, Max, Init, and Committed)
+
+The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+
 * Committed Virtual Memory
 | <<infrastructure-charts>> a|
 
@@ -184,6 +198,9 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Total System Processors
 * System Memory
 * JVM Thread Count
+
+The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+
 * System CPU % Utilization
 * JVM CPU Time
 * Operating System Swap Space
@@ -200,14 +217,18 @@ The chart on the *Application Network* tab shows the xref:visualizer::troublesho
 
 The following charts appear on the *Overview* dashboard:
 
+Mule Messages::
+The total number of Mule messages that are processed successfully.
+
+Average Response Time:: The average time to process Mule messages in the Mule application.
+
+Errors:: The number of errors from processing Mule messages in the Mule application.
+
 Inbound - Total Requests by Response Type::
 The sum of inbound requests, grouped by type of response. Responses are `OK` or `Failed`. If a Mule app has more than one connector type, all types are included in this metric.
 
 Inbound - Average Response Time::
 The average response time of inbound requests. If a Mule app has more than one connector type, all types are included in this metric.
-
-Mule Messages::
-The total number of Mule messages that are processed successfully.
 
 Outbound - Total Requests by Response Type::
 The sum of outbound requests, grouped by type of response. Responses are `OK` or `Failed`. If a Mule app has more than one connector type, all types are included in this metric.
@@ -217,6 +238,8 @@ The average response time of outbound requests. If a Mule app has more than one 
 
 JVM - CPU % Utilization::
 The average percentage of CPU used by the JVM, grouped by worker. The JVM used in this chart is the Mule JVM process. The calculation for CPU utilization is relative to the physical server on which Mule is deployed. For example, in RTF, the resource usage indicates the JVM use with respect to the entire server, and not with respect to the pod maximum CPU allocation.
++
+This metric is available only for organizations that have a Titanium subscription.
 
 JVM - Heap Used::
 The average amount of heap memory utilized by the JVM, grouped by worker. The JVM used in this chart is the Mule JVM process.
@@ -236,8 +259,8 @@ The sum of inbound requests, grouped by type of response. Responses are `OK` or 
 Inbound - Average Response Time::
 The average response time of inbound requests. If a Mule app has more than one connector type, all types are included in this metric.
 
-Inbound - Response Time by Endpoint::
-The average, maximum, minimum, and total response times, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+Inbound - Response Time by HTTP Endpoint::
+The average, maximum, minimum, and total response times, grouped by endpoint. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
@@ -256,14 +279,18 @@ The sum of inbound requests whose response time is greater than 1 second, groupe
 
 Inbound - Maximum Response Time::
 The maximum response time, grouped by endpoint.
-
-The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
++
+This metric is available only for organizations that have a Titanium subscription.
 
 Inbound - Protocols::
 The sum of inbound requests, grouped by protocol.
++
+This metric is available only for organizations that have a Titanium subscription.
 
-Inbound - Endpoints::
+Inbound - HTTP Endpoints::
 The sum of inbound requests, grouped by remote hosts (endpoints).
++
+This metric is available only for organizations that have a Titanium subscription.
 
 [[outbound-charts]]
 == Outbound
@@ -277,7 +304,7 @@ Outbound - Average Response Time::
 The average response time of outbound requests, grouped by application. If a Mule app has more than one connector type, all types are included in this metric.
 
 Outbound - Response Time by HTTP Endpoint::
-The average, maximum, minimum, and total response times, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average, maximum, minimum, and total response times, grouped by endpoint. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600ms; red if the response time is greater than or equal to 600 ms
@@ -291,13 +318,13 @@ The average response time of the 99, 90, 75, and 50 percentiles of outbound requ
 Outbound - Total Failed Requests::
 The sum of failed outbound requests, grouped by type of response.
 
-Outbound - Ports::
+Outbound - HTTP Ports::
 The sum of outbound requests, grouped by remote port.
 
 Outbound - Operations::
 The estimated count of outbound requests, grouped by operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
-Outbound - Protocols::
+Outbound - HTTP Protocols::
 The sum of outbound requests for the selected time period, grouped by protocol.
 
 Outbound - Endpoints::
@@ -336,13 +363,13 @@ The sum of outbound requests whose response time is greater than 1000 ms, groupe
 * Red if the response time is greater than or equal to 600 ms
 
 Inbound - Response Time by Flow::
-The average, minimum, and maximum inbound response time, grouped by flow.
+The average, minimum, and maximum inbound response time, grouped by flow. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times.
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 
 Outbound - Response Time by Flow::
-The average, minimum, and maximum outbound response time, grouped by flow.
+The average, minimum, and maximum outbound response time, grouped by flow. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times.
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
@@ -371,7 +398,7 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 The following charts appear on the *Connectors* dashboard:
 
 Connector Message Volume::
-The sum of outbound messages and outbound requests, grouped by connector type.
+The number of outbound requests, grouped by connector type.
 
 Response Time by Connector::
 The average outbound response time grouped by connector type.
@@ -440,31 +467,31 @@ SMTP Failures::
 The average number of Anypoint Connector for Email (Email Connector) request failures, grouped by top occurring operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Object Store Requests::
-The average response time of Object Store Connector requests, grouped by operation.
-
-Object Store Response Time::
 The average number of Object Store Connector request failures, grouped by operation.
 
+Object Store Response Time::
+The average response time of Object Store Connector requests, grouped by operation.
+
 Object Store Failures::
-The average number of Anypoint MQ Connector inbound requests, grouped by operation.
+The average number of Object Store Connector request failures, grouped by top occurring operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Anypoint MQ Operations - Inbound::
-The average response time of Anypoint MQ Connector inbound requests, grouped by operation.
+The average number of Anypoint MQ Connector inbound requests, grouped by operation.
 
 Anypoint MQ Response Time - Inbound::
-The average number of Anypoint MQ Connector inbound request failures, grouped by operation.
+The average response time of Anypoint MQ Connector inbound requests, grouped by operation.
 
 Anypoint MQ Failures - Inbound::
-The average number of Anypoint MQ Connector outbound requests, grouped by operation.
+The average number of inbound requests of Connectors of type Anypoint MQ Connector, grouped by top occurring operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Anypoint MQ Operations - Outbound::
-The average response time of Anypoint MQ Connector outbound requests, grouped by operation.
+The average number of Anypoint MQ Connector outbound requests, grouped by operation
 
 Anypoint MQ Response Time - Outbound::
-The average number of Anypoint MQ Connector outbound request failures, grouped by operation.
+The average response time of Anypoint MQ Connector outbound request failures, grouped by operation.
 
 Anypoint MQ Failures - Outbound::
-The average number of requests of Connectors of type `other`, grouped by top occurring operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+The average number of outbound requests of Connectors of type Anypoint MQ Connector, grouped by top occurring operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 Other Connector Requests::
 The average number of requests of Connectors of type `other`.
@@ -483,11 +510,13 @@ The following charts appear on the *Performance* dashboard:
 Mule Messages::
 The number of Mule messages processed in the runtime, grouped in automatic intervals.
 
+Average Response Time:: The average time to process Mule messages in the Mule application.
+
 Inbound - Average Response Time::
 The average response time of inbound requests.
 
-Inbound - Average Response Time by Endpoint::
-The average, maximum, and minimum response times, grouped by top occurring endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
+Inbound - Response Time by Endpoint::
+The average, maximum, and minimum response times, grouped by top occurring endpoint. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
@@ -498,8 +527,8 @@ The response time of the 99th, 90th, 75th, and 50th percentile of inbound reques
 Outbound - Average Response Time::
 The average response time of outbound requests.
 
-Outbound - Average Response Time Grouped by HTTP Endpoint::
-The average, maximum, and minimum response times, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cells color varies according to the following thresholds:
+Outbound - Response Time by Endpoint::
+The average, maximum, and minimum response times, grouped by endpoint. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cells color varies according to the following thresholds:
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
@@ -516,6 +545,8 @@ _Outbound failed requests_ occur when outbound connectors are invoked and except
 
 The following charts appear on the *Failures* dashboard:
 
+Errors:: The number of errors from processing Mule messages in the Mule application.
+
 Inbound - Total Failed Requests::
 The sum of failed inbound requests in the period.
 
@@ -529,7 +560,7 @@ Outbound - Total Requests by Response Type::
 The sum of inbound requests, grouped by type of response and automatic interval.
 
 Inbound - Failure Response Time by Endpoint::
-The average, maximum, and minimum response times of failed inbound requests, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
+The average, maximum, and minimum response times of failed inbound requests, grouped by endpoint. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
@@ -538,7 +569,7 @@ Inbound - Total Failed Requests by Endpoint::
 The sum of failed inbound requests, grouped by endpoint.
 
 Outbound - Failure Response Time by HTTP endpoint::
-The average, maximum, and minimum response times of failed outbound requests, grouped by endpoint. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
+The average, maximum, and minimum response times of failed outbound requests, grouped by endpoint. Anypoint Monitoring uses the average of data collected over one minute to calculate minimum and maximum response times. For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection]. Cell color varies according to the following thresholds:
 * Average: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
 * Maximum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 500 ms; red if the response time is greater than or equal to 500 ms
 * Minimum: Green if the response time is less than 300 ms; yellow if the response time is greater than 300 ms and less than 600 ms; red if the response time is greater than or equal to 600 ms
@@ -548,6 +579,8 @@ The sum of failed outbound requests, grouped by endpoint.
 
 [[jvm-charts]]
 == JVM
+
+Anypoint Monitoring collects JVM metrics based on the JVM CPU and not the system CPU. As such, CPU metrics found in Cloudwatch reports are higher than JVM metrics in Anypoint Monitoring.
 
 The following charts appear on the *JVM* dashboard:
 
@@ -599,8 +632,13 @@ The memory metrics for JVM code cache, grouped by worker.
 Compressed Class Space graphs (Used, Max, Init, Committed)::
 The memory metrics for JVM compressed class, grouped by worker.
 
+Tenured graphs (Used, Max, Init, Committed)::
+The memory metrics for JVM tenured space, grouped by worker.
+
 Committed Virtual Memory::
 The amount of virtual memory guaranteed to be available to the running process, grouped by worker.
++
+This metric is available only for organizations that have a Titanium subscription.
 
 [[infrastructure-charts]]
 == Infrastructure
@@ -623,13 +661,19 @@ JVM Thread Count::
 The average number of threads of the JVM, grouped by worker.
 
 System CPU % Utilization::
-The percentage of CPU used by all processes.
+The percentage of CPU used by all processes. This metric often aligns with the Cloudwatch System CPU % metric, but there may be different values given the timing of data aggregation for Anypoint Monitoring metrics.
++
+This metric is available only for organizations that have a Titanium subscription.
 
 JVM CPU Time::
 The cumulative CPU time consumed by the JVM.
++
+This metric is available only for organizations that have a Titanium subscription.
 
 Operating System Swap Space::
 The amount of memory the system is swapping, grouped by worker in automatic intervals.
++
+This metric is available only for organizations that have a Titanium subscription.
 
 .Example: Infrastructure Dashboard
 image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
@@ -641,6 +685,14 @@ The *Custom metrics* tab displays only if you have a Titanium subscription and s
 
 [[application-network]]
 == Application Network
+
+The *Application Network* tab displays only if you have a Titanium subscription and have set up Anypoint Visualizer.
+
+Setup requirements change based on your app deployment. Some deployment types require you to enable header injection or modify how Anypoint Visualizer collects data. For more information, see the documentation for each deployment type:
+
+* xref:visualizer::cloudhub-setup.adoc[CloudHub Setup]
+* xref:visualizer::runtime-fabric-setup.adoc[Runtime Fabric Setup]
+* xref:visualizer::standalone-mule-setup.adoc[Standalone Mule Setup]
 
 The chart on the *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app, which must be started. The chart shows only direct callers and callees for the selected app. The connections are based on the selected time range, with a max of the most recent seven days.
 

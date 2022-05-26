@@ -15,9 +15,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 [[using_monitoring]]
 == Use Anypoint Monitoring
 
-. Log into Anypoint Platform at https://anypoint.mulesoft.com[https://anypoint.mulesoft.com].
-+
-. Under *Management Center* in the left-side navigation menu, select *Anypoint Monitoring*.
+include::partial$include-nav-steps-no-permissions.adoc[]
 +
 image::management-center-menu.png[Management Center Menu]
 +
@@ -26,15 +24,15 @@ If you do not see Anypoint Monitoring or are unable to use it, it might be a per
 . From Anypoint Monitoring, you can find and use the monitoring tools:
 +
 * xref:dashboards-using.adoc[Using Dashboards]
-* xref:logs-using.adoc[Using Logs]
-//TODO_HIGH: HOW TO USE ALERTS? * xref:alerts.adoc[Alerts]
+* xref:logs.adoc[Using Logs]
+* xref:alerts.adoc[Alerts]
 
 == Configurations
 
 Custom dashboards and alerts require configuration before you can use them. For guidance, see:
 
 * xref:dashboard-custom-config.adoc[Configuring Custom Dashboards]
-* xref:alerts-config.adoc[Configuring Alerts]
+* xref:alerts.adoc[Configuring Alerts]
 
 [[required_permission]]
 == Required Permission
@@ -48,11 +46,11 @@ Typically, administrators set permissions through Access Management. See xref:ac
 [[runtime_versions]]
 == Enable Anypoint Monitoring on CloudHub
 
-For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them to the appropriate version of Mule runtime engine.  See xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps (CloudHub)]. 
+For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them to the appropriate version of Mule runtime engine.  See xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps (CloudHub)].
 
 == Enable Anypoint Monitoring On-Premises
 
-You can xref:am-installing.adoc[install Anypoint Monitoring] on an on-premises server to monitor applications that are running on that server and managed in CloudHub (hybrid apps).
+You can xref:am-installing.adoc[install Anypoint Monitoring] on an on-premises server to monitor applications that are running on that server and managed via Runtime Manager (hybrid apps).
 
 == See Also
 

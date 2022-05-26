@@ -53,14 +53,12 @@ See xref:logs.adoc[Logs].
 
 Limits on data storage and retention are determined by your subscription level (Base or Titanium). All customers receive Anypoint Monitoring at the Base subscription level.
 
-For Gold and Platinum subscriptions, data is stored in US East (N. Virginia).
+* For Gold/Platinium subscriptions
+** Stores metric data in the same region as your control plane: US East (N. Virginia) or EU (Frankfurt)
 
-The Titanium subscription:
-
-* Significantly increases the storage per vCore over the Base subscription.
-* Stores log and metric data in the same region as your control plane. These regions are available:
-** US East (N. Virginia)
-** EU (Frankfurt)
+* For Titanium subscription
+** Significantly increases the storage per vCore over the Base subscription.
+** Stores log and metric data in the same region as your control plane: US East (N. Virginia) or EU (Frankfurt)
 
 For complete details about subscriptions, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
 
@@ -87,105 +85,155 @@ See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional
 Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. While all customers receive fundamental monitoring capabilities with their subscriptions, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
 |===
-| Feature | Gold and Platinum Subscription Features | Titanium Subscription Features
+| Feature | Gold and Platinum Subscription Features | Platinum Subscription for Mulesoft Government Cloud Features | Titanium Subscription Features
 
 |Dedicated infrastructure for data processing and storage
+|No
 |No
 |Yes
 
 |Custom metrics
 |No
+|No
 |Yes
 
-3+| *Built-in Application Dashboards*
+4+| *Built-in Application Dashboards*
 |More than 80 out-of-the-box charts covering metrics in the following categories: Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure
 
+|Yes
 |Yes
 |Yes
 
 |Advanced metrics for Inbound and Outbound charts
 |No
+|No
 |Yes
 
 |Flows charts
+|No
 |No
 |Yes
 
 |Connectors charts
 |No
+|No
 |Yes
 
 |Anypoint Visualizer application network integration
 |No
+|No
 |Yes
 
 |xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
 |No
+|No
 |Yes
 
-3+| *Built-in API Dashboards*
+4+| *Built-in API Dashboards*
 
-|16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application 
+|16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application
+|Yes
 |Yes
 |Yes
 
 |xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
 |No
+|No
 |Yes
 
-3+| *Custom Dashboards*
+4+| *Custom Dashboards*
 
 |Basic mode
+|Yes
 |Yes
 |Yes
 
 |Advanced mode
 |Yes, with limited functionality
+|Yes, with limited functionality
 |Yes
 
 |Advanced mode with additional features
 |No
+|No
 |Yes
 
-3+| *Alerts*
+4+| *Alerts*
 
-|Basic alerts
+|Basic alerts for apps, servers, and APIs
+|Yes
 |Yes
 |Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
 
 |Advanced alerts
 |No
+|No
 |Yes
 
-3+| *Log Management*
+4+| *Log Management*
 
 |Log search
+|No
 |No
 |Yes
 
 |Log points
 |No
+|No
 |Yes
 
 |Raw data
 |No
+|No
 |Yes
 
-3+| *Additional Anypoint Monitoring features*
+4+| *Additional Anypoint Monitoring features*
 
 |Anypoint Monitoring Archive API
+|No
 |No
 |Yes
 
 |xref:api-functional-monitoring[API Functional Monitoring] +
 |Yes
+|No
 |Yes
 
 |Reports
 |No
+|No
 |Yes
 
 |===
+
+NOTE: Anypoint Visualizer application network integration refers to an Anypoint Visualizer widget within Anypoint Monitoring. This feature is available only to users who have a Titanium subscription. Anypoint Visualizer outside of Anypoint Monitoring is available to customers of all subscription levels.
+
+
+== Use Cases
+
+The following use cases provide examples of how you can use Anypoint Monitoring.
+
+* Understand performance-related KPIs +
+DevOps engineer Gary maintains a series of APIs related to a transaction processing system. Because the TPS requires swift response time, Gary uses API response time dashboards and alerts to send an email when there is a bottleneck. After gathering some data, Gary can then size his applications.
+
+* Plan resource allocation across the application network +
+C4E specialist Peyton uses Anypoint Visualizer to view their application network. For CloudHub and Anypoint Runtime Fabric applications, Peyton sees CPU and memory utilization and idle capacity using integrated Anypoint Monitoring.
+
+* Pinpoint root causes of issues +
+Support team member Darius receives a call that the system is running slowly. He examines dashboards and checks response times, failed requests, and so on. He identifies that the backend is not scaling for the number of requests; he can add capacity for Mule apps, or he can throttle requests for other backend issues.
+
+* Measure API trends +
+Architect Kara monitors several APIs using dashboards, and she reports API call trends to leadership. She creates a dashboard that shows her top 10 API’s trends per month so she can easily identify APIs that have high volumes of calls or issues.
+
+* Assess the stability of APIs +
+Operations administrator Vic can periodically assess the error rate and success rate of key APIs using aggregated views and computations in Anypoint Monitoring. Based on their observations, Vic can stabilize or redesign apps that perform poorly.
+
+* Analyze logs +
+Support engineer Carole searches through Anypoint Monitoring logs and notices some apps frequently have errors. She uses this data to create dashboards for areas that have frequent issues, and she creates a plan to improve end processes based on the types of errors identified in the logs.
+
+* Visualize regional or project-based consumption +
+Business owner Devon has apps across different runtime planes. He has aggregated dashboards of the regional or project-specific apps, and he can easily determine what is consuming the most resources and evangelize accordingly.
+
 
 == See Also
 

@@ -1,0 +1,1 @@
+. In the Anypoint Monitoring navigation menu, click *Alerts*.
