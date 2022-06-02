@@ -94,7 +94,7 @@ image::dashboard-custom-config-rows.png[Dashboard Row Configurations]
 
 Use the *Metadata* tab for high-level custom dashboard configurations to view metrics on a custom dashboard.
 
-[[dashboard_config]]
+[[dashboard_config_metadata]]
 image::dashboard-custom-metadata.png[Dashboard Metadata]
 
 [%header,cols="1,4"]
