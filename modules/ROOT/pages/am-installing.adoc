@@ -24,7 +24,7 @@ Outbound connections are made to the following endpoints:
 ** dias-ingestor-router.eu-central-1.prod-eu.msap.io:443
 ** s3.eu-central-1.amazonaws.com:443
 
-=== Ports
+=== Ports 
 
 [%header,cols="10a,50a,10a"]
 |===
