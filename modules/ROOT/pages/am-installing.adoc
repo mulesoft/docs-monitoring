@@ -19,36 +19,13 @@ Outbound connections are made to the following endpoints:
 ** data-authenticator.anypoint.mulesoft.com:443
 ** dias-ingestor-router.us-east-1.prod.cloudhub.io:443
 ** s3.amazonaws.com:443
+* US-GOV Control Plane
+** data-authenticator.gov.anypoint.mulesoft.com:443
+** dias-ingestor-router.us-gov-west-1.gprod.msap.io:443
 * EU Control Plane
 ** data-authenticator.eu1.anypoint.mulesoft.com:443
 ** dias-ingestor-router.eu-central-1.prod-eu.msap.io:443
 ** s3.eu-central-1.amazonaws.com:443
-
-=== Ports
-
-[%header,cols="10a,50a,10a"]
-|===
-|Region |Name |Port
-|*US*|anypoint.mulesoft.com | 443
-|*US*|mule-manager.anypoint.mulesoft.com | 443
-|*US*|runtime-manager.anypoint.mulesoft.com | 443
-|*US*|analytics-ingest.anypoint.mulesoft.com |  443
-|*US*|arm-auth-proxy.prod.cloudhub.io |  443
-|*US*|data-authenticator.anypoint.mulesoft.com |  443
-|*US*|exchange-files.anypoint.mulesoft.com | 443
-|*US*|exchange2-asset-manager-kprod.s3.amazonaws.com |  443
-|*US-GOV*|runtime-manager.gov.anypoint.mulesoft.com | 443
-|*US-GOV*|gov.anypoint.mulesoft.com | 443
-|*US-GOV*|exchange-files.gov.anypoint.mulesoft.com | 443
-|*US-GOV*|exchange2-asset-manager-kgprod.s3.us-gov-west-1.amazonaws.com | 443
-|*EU*|eu1.anypoint.mulesoft.com | 443
-|*EU*|mule-manager.eu1.anypoint.mulesoft.com | 443
-|*EU*|runtime-manager.eu1.anypoint.mulesoft.com | 443
-|*EU*|analytics-ingest.eu1.anypoint.mulesoft.com |  443
-|*EU*|arm-auth-proxy.prod-eu.msap.io |  443
-|*EU*|data-authenticator.eu1.anypoint.mulesoft.com |  443
-|*EU*|exchange2-asset-manager-kprod-eu.s3.eu-central-1.amazonaws.com |  443
-|===
 
 == Supported Operating Systems
 
