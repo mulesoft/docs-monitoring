@@ -19,6 +19,9 @@ Outbound connections are made to the following endpoints:
 ** data-authenticator.anypoint.mulesoft.com:443
 ** dias-ingestor-router.us-east-1.prod.cloudhub.io:443
 ** s3.amazonaws.com:443
+* US-GOV Control Plane
+** data-authenticator.gov.anypoint.mulesoft.com:443
+** dias-ingestor-router.us-gov-west-1.gprod.msap.io:443
 * EU Control Plane
 ** data-authenticator.eu1.anypoint.mulesoft.com:443
 ** dias-ingestor-router.eu-central-1.prod-eu.msap.io:443
@@ -73,7 +76,7 @@ Instructions for downloading and installing the Anypoint Monitoring agent on-pre
 When installing the Anypoint Monitoring agent, note the following:
 
 * When you extract the `am.zip` file, a folder called `am` is created in the location where you extracted the ZIP.
-* The installation script asks if you want Anypoint Monitoring installed as a service. 
+* The installation script asks if you want Anypoint Monitoring installed as a service.
 ** If you don't want to have it preset as a service by the installer, select *No*.
 ** You can call the installation script with the `-x` argument to skip this prompt. If you skip the prompt, Anypoint Monitoring is not installed as a service.
 * You cannot install the Anypoint Monitoring agent on a server that has an existing filebeat instance running.
