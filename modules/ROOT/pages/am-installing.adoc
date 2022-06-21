@@ -135,17 +135,29 @@ If you need to update the Anypoint Monitoring agent at some point in the future,
 `./bin/uninstall`
 . Delete the `am` folder.
 . Follow the instructions for <<install_ap_monitoring_onprem,installing the Anypoint Monitoring agent>> on-premises.
-. Start Mule.
+. Restart Mule.
 
 == Performance Impact
 
-Enabling Monitoring can impact CPU utilization and memory utilization, which varies depending upon specific application configuration. MuleSoft recommends that you test any performance impact in your pre-production environment prior to enabling monitoring in your production environment to ensure optimal performance and sizing.
+Enabling monitoring can impact CPU utilization and memory utilization depending on your specific application configuration. Before enabling monitoring in your production environment, test any performance impact in your pre-production environment to ensure optimal performance and sizing.
 
 == Troubleshooting
 
 - If you find connection failure or retry entries, ensure that port 443 in your outbound firewall is open.
 - If you do not find connection failure or retry entries, contact MuleSoft technical support.
 
+== Disable Log Forwarding for Hybrid Runtime Servers
+
+If you have a Titanium subscription and a hybrid runtime server, you can disable log forwarding to Anypoint Monitoring if you have AM installer v.2.5.10 or later. To disable this feature, you must configure a JVM property on each hybrid server for which you want to disable log forwarding. You cannot disable log forwarding per application.
+
+To disable log forwarding:
+
+. Upgrade the Anypoint Monitoring agent to a version that supports disabling log forwarding (am-2.5.10.0.zip or later).
+. Stop Mule.
+. Add the following line in the `MULE_HOME/conf/wrapper.conf` file (where `<N>` is the next available property index): +
+`wrapper.java.additional.<N>=-Danypoint.platform.monitoring.logs_forwarding.enabled=false`
++
+. Restart Mule.
 
 == See Also
 
