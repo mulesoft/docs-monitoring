@@ -27,15 +27,15 @@ Each chart in the Custom Metrics dashboard represents the output of a query. Two
 
 Time range:: determines how much data is fetched or processed to generate the chart. For example, more data is fetched and processed when displaying a monthly chart compared to displaying a daily chart.
 
-Refresh frequency:: determines how often a chart refreshes. High refresh frequencies put more stress on a system and can affect performance. For example, a refresh rate of one hour sends a query every hour, and a refresh rate of one minute will send the same query every minute. 
+Refresh frequency:: determines how often a chart refreshes. High refresh frequencies put more stress on a system and can affect performance. For example, a refresh rate of one hour sends a query every hour, and a refresh rate of one minute sends the same query every minute. 
 
 Increasing time range (such as daily to monthly) or increasing refresh frequency (from one hour to one minute) may start affecting the system response time. Reduce time range or reduce the refresh frequency to improve the chart response time.
 
 === Use Low Cardinality Dimensions
 
-Most custom metric dimensions should have less than 100 possible unique values, but some may have a thousand unique values, such as `country_code`, `state_code`, `city_code`, `zip`, and so on. You should not add _high cardinality_ data, or data with many unique values, to custom metrics. Some examples of high cardinality dimensions include `customer_id`, `user_id`, `session_id`, `order_id`, `transaction_id`, `email_address`, `token_id`, `product_id`, `location_id` (latitude/longitude), `ip_address`, `phone_number`, and so on. Charts configured for custom metrics with high cardinality dimensions can adversely affect the response time of dashboards. For best results, restrict dimensions to have a handful of unique values.
+Most custom metric dimensions should have less than 100 possible unique values, but some may have a thousand unique values, such as `country_code`, `state_code`, `city_code`, `zip`, and so on. You should not add _high cardinality_ data, or data with many unique values, to custom metrics. Some examples of high cardinality dimensions include `customer_id`, `user_id`, `session_id`, `order_id`, `transaction_id`, `email_address`, `token_id`, `product_id`, `location_id` (latitude/longitude), `ip_address`, `phone_number`, and so on. Charts configured for custom metrics with high cardinality dimensions can adversely affect the response time of dashboards. For best results, restrict dimensions to have a only a few unique values.
 
-If a particular custom metric chart starts slowing down and affecting other charts in the system, you can:
+If a particular custom metrics chart starts slowing down and affecting other charts in the system, you can:
 
 * Create a new custom metric without the offending high cardinality dimension
 * Replace a high cardinality dimension with a low cardinality dimension, such as:
