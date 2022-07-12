@@ -27,9 +27,9 @@ Best practices include using time period and frequency effectively as well as us
 
 Each chart in the Custom Metrics dashboard represents the output of a query. Two parameters in the dashboard, _time range_ and _refresh frequency_, affect the response time for the query that generates a chart.
 
-Time range:: determines how much data is fetched or processed to generate the chart. For example, more data is fetched and processed when displaying a monthly chart compared to displaying a daily chart.
+Time range:: Determines how much data is fetched or processed to generate the chart. For example, more data is fetched and processed when displaying a monthly chart compared to displaying a daily chart.
 
-Refresh frequency:: determines how often a chart refreshes. High refresh frequencies put more stress on a system and can affect performance. For example, a refresh rate of one hour sends a query every hour, and a refresh rate of one minute sends the same query every minute. 
+Refresh frequency:: Determines how often a chart refreshes. High refresh frequencies put more stress on a system and can affect performance. For example, a refresh rate of one hour sends a query every hour, and a refresh rate of one minute sends the same query every minute. 
 
 Increasing time range (such as daily to monthly) or increasing refresh frequency (from one hour to one minute) affects the system response time. Reduce time range or reduce the refresh frequency to improve the chart response time.
 
