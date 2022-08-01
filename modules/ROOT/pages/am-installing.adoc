@@ -80,7 +80,7 @@ When installing the Anypoint Monitoring agent, note the following:
 ** If you don't want to have it preset as a service by the installer, select *No*.
 ** You can call the installation script with the `-x` argument to skip this prompt. If you skip the prompt, Anypoint Monitoring is not installed as a service.
 * You cannot install the Anypoint Monitoring agent on a server that has an existing filebeat instance running.
-* When you install the Anypoint Monitoring agent on a hybrid server in a server group, restart the server to enable Anypoint Monitoring to begin collecting metrics.
+* When you install the Anypoint Monitoring agent on a hybrid server in a server group, use Runtime Manager to restart the server to enable Anypoint Monitoring to begin collecting metrics.
 
 == SOCKS5 Proxy Setting
 
