@@ -333,7 +333,7 @@ The sum of outbound requests for the selected time period, grouped by remote hos
 [[flows-charts]]
 == Flows
 
-The following charts appear on the *Flows* dashboard:
+The following charts appear on the *Flows* dashboard if you have a Titanium subscription to Anypoint Platform:
 
 Inbound - Response Time by Flow::
 The average inbound response time, grouped by flow.
