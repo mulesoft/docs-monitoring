@@ -82,7 +82,7 @@ Depending on the value, the alert transitions to `OK` or `Alerting`.
 
 == Configure API Manager and Runtime Manager Alerts
 
-From the *Alerts* page in Anypoint Monitoring, you can link to configuration pages for API Manager and Runtime Manager alerts.
+From the *Alerts* page in Anypoint Monitoring, you can access configuration pages for API Manager and Runtime Manager alerts.
 
 Depending on your subscription level:
 
@@ -104,7 +104,7 @@ image::alerts-setup-premium.png[Alert Setup Guidance, 75%, 75%]
 
 == Add API Manager and Runtime Manager Alerts
 
-Click *+ New alert* to link to API Manager and Runtime Manager alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
+Click *+ New alert* to access API Manager and Runtime Manager alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
 
 image::alerts-menu.png[Alerts Menu, 40%, 40%]
 
