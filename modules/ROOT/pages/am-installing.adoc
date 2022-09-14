@@ -58,6 +58,7 @@ Ensure that one of the following Mule Runtime Manager agent versions is installe
 * 1.11.x
 * 1.10.0
 
+Mule deployments must be visible and managed using the Runtime Manager user interface. To ensure these appear in Runtime Manager, use the Runtime Manager user interface or the ARM REST API for new deployments.
 
 == Hardware Prerequisites
 
