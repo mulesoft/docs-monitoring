@@ -6,7 +6,7 @@ endif::[]
 
 Alerts indicate whether a resource (such as a Mule app) is behaving as expected or exceeding a defined threshold.
 
-You can implement any of several types of alerts. From the *Alerts* page in Anypoint Monitoring, you can create xref:basic-alerts.adoc[basic alerts], or you can link to existing alerts for API Manager and Anypoint Runtime Manager.
+You can implement any of several types of alerts. From the *Alerts* page in Anypoint Monitoring, you can create xref:basic-alerts.adoc[basic alerts], or you can access existing alerts for API Manager and Anypoint Runtime Manager.
 If you have a Titanium subscription, you can also view, enable, and disable xref:advanced-alerts.adoc[advanced alerts] that are configured for graphs in custom dashboards.
 
 Using Anypoint Monitoring, you can configure two different types of alerts:
@@ -14,7 +14,7 @@ Using Anypoint Monitoring, you can configure two different types of alerts:
 * xref:basic-alerts.adoc[Basic alerts] for servers, Mule apps, and APIs
 ** Limits per organization:
 *** Basic alerts for servers and Mule apps: Up to 50 basic alerts for organizations who do not have a Titanium subscription to Anypoint Platform. +
-If you have a Titanium subscription, the limit is 100 basic alerts, and the limits increase as you purchase more vCores. For complete details about subscriptions, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
+If you have a Titanium subscription, the limit is 100 basic alerts plus 50 alerts per vCore. For complete details about subscriptions, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
 *** Basic alerts for APIs: Up to six basic alerts per API instance for organizations that do not have a Titanium subscription to Anypoint Platform. +
 If you have a Titanium subscription, the limit is ten alerts per API instance.
 +
