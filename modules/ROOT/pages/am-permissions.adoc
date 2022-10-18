@@ -3,11 +3,14 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-The *Access Management* section of Anypoint Platform enables you (as an Organization Administrator) to control user access to dashboards, reports, and metrics by providing two predefined product-specific permissions:
+Anypoint Monitoring has two product-specific permissions that control access to assets within Anypoint Monitoring:
 
-* Anypoint Monitoring Administrator. Allows users to view, create, modify, and delete all content in Anypoint Monitoring.
-+
-* Anypoint Monitoring Viewer. Allows users to view but not modify content in Anypoint Monitoring.
+Anypoint Monitoring Administrator:: Allows users to view, create, modify, and delete all content in Anypoint Monitoring.
+Anypoint Monitoring Viewer:: Allows users to view but not modify content in Anypoint Monitoring.
+
+The content you can access when you have the Anypoint Monitoring Administrator and Anypoint Monitoring Viewer permissions depends on other asset-specific permissions.
+To view or modify content related to specific apps and APIs, you also need the appropriate access permissions for those assets.
+For example, a user who has the Anypoint Monitoring Administrator permission who wants to modify Anypoint Monitoring data for an on-premises app also needs the Read Applications permission in the same environment as the app for which they want to view Anypoint Monitoring data.
 
 == See Also
 
@@ -15,3 +18,5 @@ The *Access Management* section of Anypoint Platform enables you (as an Organiza
 * xref:access-management::roles.adoc[Access Management Roles]
 * xref:access-management::managing-permissions.adoc[Access Management Managing Permissions]
 * xref:access-management::external-organization-access.adoc[Access Management External Organization Access]
+* xref:api-manager::environment-permission-task.adoc[Permissions in API Manager]
+* xref:cloudhub-2::ps-assign-permissions.adoc[Permissions in CloudHub 2.0]
