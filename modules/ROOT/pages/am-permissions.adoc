@@ -10,7 +10,7 @@ Anypoint Monitoring Viewer:: Allows users to view but not modify content in Anyp
 
 The content you can access when you have the Anypoint Monitoring Administrator and Anypoint Monitoring Viewer permissions depends on other asset-specific permissions.
 To view or modify content related to specific apps and APIs, you also need the appropriate access permissions for those assets.
-For example, a user who has the Anypoint Monitoring Viewer permission who wants to view Anypoint Monitoring data for an on-premises app also needs the Read Applications permission in the same environment as the app.
+For example, a user who has the Anypoint Monitoring Viewer permission and wants to view Anypoint Monitoring data for an on-premises app also needs the Read Applications permission (from Runtime Manager) in the same environment that the app is deployed to.
 
 == See Also
 
