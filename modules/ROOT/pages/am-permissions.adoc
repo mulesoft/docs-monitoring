@@ -12,6 +12,12 @@ The content you can access when you have the Anypoint Monitoring Administrator a
 To view or modify content related to specific apps and APIs, you also need the appropriate access permissions for those assets.
 For example, a user who has the Anypoint Monitoring Viewer permission and wants to view Anypoint Monitoring data for an on-premises app also needs the Read Applications permission (from Runtime Manager) in the same environment that the app is deployed to.
 
+At minimum, you need the following permissions to read data in Anypoint Monitoring:
+
+* View API Alerts (API Manager) for Flex API content
+* Read Applications (Runtime Manager) for on-premises app content
+* Read Servers (Runtime Manager) for Flex Gateway content
+
 == See Also
 
 * xref:access-management::teams.adoc[Access Management Teams]
