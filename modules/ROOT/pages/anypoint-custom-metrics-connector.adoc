@@ -48,6 +48,86 @@ If a particular custom metrics chart slows down and affects other charts in the 
 * Reduce the time range of the custom metric chart, for example, create a daily or weekly chart instead of a monthly or yearly chart 
 * Reduce the refresh frequency, for example, refresh hourly instead of every minute.
 
+=== Refrain from Using Restricted Keywords
+
+The database we use to store the metrics has the following keywords restricted. They cannot be use as "dimensionName" or "factName" while using custom metric connector.
+
+* ALL
+* ALTER
+* ANALYZE
+* ANY
+* AS
+* ASC
+* BEGIN
+* BY
+* CREATE
+* CONTINUOUS
+* DATABASE
+* DATABASES
+* DEFAULT
+* DELETE
+* DESC
+* DESTINATIONS
+* DIAGNOSTICS
+* DISTINCT
+* DROP
+* DURATION
+* END
+* EVERY
+* EXPLAIN
+* FIELD
+* FOR
+* FROM
+* GRANT
+* GRANTS
+* GROUP
+* GROUPS
+* IN
+* INF
+* INSERT
+* INTO
+* KEY
+* KEYS
+* KILL
+* LIMIT
+* SHOW
+* MEASUREMENT
+* MEASUREMENTS
+* NAME
+* OFFSET
+* ON
+* ORDER
+* PASSWORD
+* POLICY
+* POLICIES
+* PRIVILEGES
+* QUERIES
+* QUERY
+* READ
+* REPLICATION
+* RESAMPLE
+* RETENTION
+* REVOKE
+* SELECT
+* SERIES
+* SET
+* SHARD
+* SHARDS
+* SLIMIT
+* SOFFSET
+* STATS
+* SUBSCRIPTION
+* SUBSCRIPTIONS
+* TAG
+* TO
+* USER
+* USERS
+* VALUES
+* WHERE
+* WITH
+* WRITE
+* TIME
+
 == Use Design Center to Configure the Custom Metrics Values
 
 Create a Mule application project in Design Center and configure the Custom Metrics connector.
