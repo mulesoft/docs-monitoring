@@ -48,9 +48,9 @@ If a particular custom metrics chart slows down and affects other charts in the 
 * Reduce the time range of the custom metric chart, for example, create a daily or weekly chart instead of a monthly or yearly chart 
 * Reduce the refresh frequency, for example, refresh hourly instead of every minute.
 
-=== Refrain from Using Restricted Keywords
+=== Restricted Keywords
 
-The database we use to store the metrics has the following keywords restricted. They cannot be use as "dimensionName" or "factName" while using custom metric connector.
+Due to internal database restrictions, you cannot use the following keywords to define `dimensionName` or `factName` while using the Anypoint Custom Metrics connector:
 
 * ALL
 * ALTER
