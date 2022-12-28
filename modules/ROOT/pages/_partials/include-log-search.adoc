@@ -37,6 +37,23 @@ You can't use a * or `?` symbol as the first character of a search.
 
 // end::wildcard-searches[]
 
+// tag::wildcard-searches-cloudhub[]
+== Wildcard Searches
+
+You can use single and multiple character wildcard searches within single terms.
+
+To perform a single character wildcard search use the `?` symbol. The single character wildcard search looks for terms that match the single character replaced by `?`. For example, to search for "text" or "test" you can use the search:
+
+`te?t`
+
+To perform a multiple-character wildcard search, use the * symbol. Multiple-character wildcard searches look for zero or more characters. For example, to search for test, tests, or tester, use the search:
+
+`test*`
+
+You can also use the wildcard searches in the middle of a term, for example: `te*t`.
+
+// end::wildcard-searches-cloudhub[]
+
 // tag::fuzzy-searches[]
 
 // this feature is unavailable in CH1 and 2.
