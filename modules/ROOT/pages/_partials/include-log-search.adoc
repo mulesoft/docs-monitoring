@@ -1,4 +1,5 @@
 // tag::search-terms[]
+[[search-terms]]
 == Search Terms
 
 Search terms consist of terms and operators. Search terms can be either single terms, such as "hello" or phrases, such as "hello dolly".
@@ -8,6 +9,7 @@ You can combine multiple terms with boolean operators to form complex queries.
 // end::search-terms[]
 
 // tag::term-modifiers[]
+[[term-modifiers]]
 == Term Modifiers
 
 You can modify query terms using the log search query language to provide a wide range of searching options.
@@ -15,6 +17,7 @@ You can modify query terms using the log search query language to provide a wide
 // end::term-modifiers[]
 
 // tag::wildcard-searches[]
+[[wildcard-searches]]
 == Wildcard Searches
 
 You can use single and multiple character wildcard searches within single terms.
@@ -38,6 +41,7 @@ You can't use a * or `?` symbol as the first character of a search.
 // end::wildcard-searches[]
 
 // tag::wildcard-searches-cloudhub[]
+[[wildcard-searches-cloudhub]]
 == Wildcard Searches
 
 You can use single and multiple character wildcard searches within single terms.
@@ -57,7 +61,7 @@ You can also use the wildcard searches in the middle of a term, for example: `te
 // tag::fuzzy-searches[]
 
 // this feature is unavailable in CH1 and 2.
-
+[[fuzzy-searches]]
 == Fuzzy Searches
 
 You can perform fuzzy searches by using the tilde&#126; symbol at the end of a single word term. For example, to search for a term similar in spelling to "roam" you can use the fuzzy search:
@@ -69,6 +73,7 @@ This search returns terms like foam and roams.
 // end::fuzzy-searches[]
 
 // tag::boolean-operators[]
+[[boolean-operators]]
 == Boolean Operators
 
 Boolean operators allow terms to be combined through logic operators. Log search query language supports `AND`, `+`, `OR`, `NOT` and `-` as Boolean operators.
@@ -105,6 +110,7 @@ The `NOT` operator can't be used with just one term. For example, the following 
 // end::boolean-operators[]
 
 // tag::special-characters[]
+[[special-characters]]
 == Special Characters
 
 You can escape special characters that are part of the query syntax. The current list of supported special characters includes:
@@ -118,6 +124,7 @@ To escape these characters, use the `\` before the character. For example, to se
 // end::special-characters[]
 
 // tag::search-fields[]
+[[search-fields]]
 == Search Fields
 
 Specify a field name or use the default when performing a search. The field name and default field are specific to the search implementation.
