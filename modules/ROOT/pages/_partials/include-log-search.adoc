@@ -1,4 +1,4 @@
-// tag::search-terms[]
+// tag::searchTerms[]
 [[search-terms]]
 == Search Terms
 
@@ -6,7 +6,7 @@ Search terms consist of terms and operators. Search terms can be either single t
 
 You can combine multiple terms with boolean operators to form complex queries.
 
-// end::search-terms[]
+// end::searchTerms[]
 
 // tag::term-modifiers[]
 [[term-modifiers]]
