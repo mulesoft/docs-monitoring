@@ -1,0 +1,139 @@
+// tag::search-terms[]
+[[search-terms]]
+== Search Terms
+
+Search terms consist of terms and operators. Search terms can be either single terms, such as "hello" or phrases, such as "hello dolly".
+
+You can combine multiple terms with boolean operators to form complex queries.
+
+// end::search-terms[]
+
+// tag::term-modifiers[]
+[[term-modifiers]]
+== Term Modifiers
+
+You can modify query terms using the log search query language to provide a wide range of searching options.
+
+// end::term-modifiers[]
+
+// tag::wildcard-searches[]
+[[wildcard-searches]]
+== Wildcard Searches
+
+You can use single and multiple character wildcard searches within single terms.
+
+[NOTE]
+You can't use wildcard searches within phrase queries.
+
+To perform a single character wildcard search use the `?` symbol. The single character wildcard search looks for terms that match the single character replaced by `?`. For example, to search for "text" or "test" you can use the search:
+
+`te?t`
+
+To perform a multiple-character wildcard search, use the * symbol. Multiple-character wildcard searches look for zero or more characters. For example, to search for test, tests, or tester, use the search:
+
+`test*`
+
+You can also use the wildcard searches in the middle of a term, for example: `te*t`.
+
+[NOTE]
+You can't use a * or `?` symbol as the first character of a search.
+
+// end::wildcard-searches[]
+
+// tag::wildcard-searches-cloudhub[]
+[[wildcard-searches-cloudhub]]
+== Wildcard Searches
+
+You can use single and multiple character wildcard searches within single terms.
+
+To perform a single character wildcard search use the `?` symbol. The single character wildcard search looks for terms that match the single character replaced by `?`. For example, to search for "text" or "test" you can use the search:
+
+`te?t`
+
+To perform a multiple-character wildcard search, use the * symbol. Multiple-character wildcard searches look for zero or more characters. For example, to search for test, tests, or tester, use the search:
+
+`test*`
+
+You can also use the wildcard searches in the middle of a term, for example: `te*t`.
+
+// end::wildcard-searches-cloudhub[]
+
+// tag::fuzzy-searches[]
+
+// this feature is unavailable in CH1 and 2.
+[[fuzzy-searches]]
+== Fuzzy Searches
+
+You can perform fuzzy searches by using the tilde&#126; symbol at the end of a single word term. For example, to search for a term similar in spelling to "roam" you can use the fuzzy search:
+
+`roam&#759;`
+
+This search returns terms like foam and roams.
+
+// end::fuzzy-searches[]
+
+// tag::boolean-operators[]
+[[boolean-operators]]
+== Boolean Operators
+
+Boolean operators allow terms to be combined through logic operators. Log search query language supports `AND`, `+`, `OR`, `NOT` and `-` as Boolean operators.
+
+[NOTE]
+Boolean operators must be ALL CAPS.
+
+
+[%header%autowidth.spread,cols="a,a,a"]
+|===
+|Boolean Operator|Description|Example
+|`AND`     |The `AND` operator matches documents where both terms exist anywhere in the text of a single document. This is equivalent to an intersection using sets. You can replace the word `AND` with the symbol `&&`.|To search for documents that contain "anypoint monitoring" use the query:
+`"anypoint monitoring" AND "results"`
+|`OR`      |The `OR` operator is used by default if there is no Boolean operator inserted between two terms. The `OR` operator links two terms and returns a matching document if either of the terms exists in a document. This is equivalent to a union using sets. The symbol `&#124; &#124;` can be used in place of the word `OR`.|To search for documents that contain either "monitoring anypoint" or just "monitoring" use the query:
+
+`"monitoring anypoint" monitoring`
+
+or
+
+`"monitoring anypoint" OR monitoring`
+|`NOT`| The `NOT` operator excludes documents that contain the term after `NOT`. This is equivalent to a difference using sets. The symbol `!` can be used in place of the word `NOT`.|To search for documents that contain "anypoint monitoring" but not "functional", use the query:
+`"anypoint monitoring" NOT "functional"` +
+[NOTE]
+The `NOT` operator can't be used with just one term. For example, the following search returns no results: +
+`NOT "functional"`
+|`+`|Requires that the term after the `+` symbol exists somewhere in the field of a single document.|To search for documents that must contain "anypoint" and may contain "monitoring" use the query:
+
+`+anypoint monitoring`
+|`-`|Excludes documents that contain the term after the `-` symbol.|To search for documents that contain "anypoint monitoring" but not "results" use the query: +
+
+`"anypoint monitoring" -"results"`
+|===
+
+// end::boolean-operators[]
+
+// tag::special-characters[]
+[[special-characters]]
+== Special Characters
+
+You can escape special characters that are part of the query syntax. The current list of supported special characters includes:
+
+`+ - && || ! ( ) { } [ ] ^ " &#126; * ? : &#92; < >`
+
+To escape these characters, use the `\` before the character. For example, to search for (1+1):2 use the query:
+
+`\(1\+1\)\:2`
+
+// end::special-characters[]
+
+// tag::search-fields[]
+[[search-fields]]
+== Search Fields
+
+Specify a field name or use the default when performing a search. The field name and default field are specific to the search implementation.
+
+Search any field by typing the field name, followed by a colon, and then the term you are looking for.
+For example, assume that a log search query language index contains two fields&#8212;application and message&#8212;and that the message is the default field. If you want to find the result called "The Right Way", which contains the text "don't go this way", enter:
+
+`message:"The Right Way" AND application:go`
+
+Since `message` is the default field, the field indicator is not required.
+
+// end::search-fields[]
