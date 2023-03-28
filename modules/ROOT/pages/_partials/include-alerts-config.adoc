@@ -17,7 +17,7 @@ For guidance, see xref:dashboard-custom-config-graph.adoc#general_settings[Gener
 Note that you can also view <<state_history, state history>> and <<delete_alert, delete>> alerts.
 
 [[alert_config]]
-=== Configure an Advanced Alert
+== Configure an Advanced Alert
 
 In the *Alert Config* section, configure the condition under which an advanced alert is triggered.
 
@@ -34,7 +34,7 @@ Available severity levels:
 include::partial$include-alert-severity.adoc[leveloffset=+1]
 
 [[notifications]]
-=== Notifications
+== Notifications
 
 Configure an email notification when an advanced alert is triggered.
 
@@ -46,13 +46,13 @@ Configure an email notification when an advanced alert is triggered.
 |===
 
 [[state_history]]
-=== State History
+== State History
 
 View the last fifty state changes in this section of the UI.
 
 You can also clear the history.
 
 [[delete_alert]]
-=== Delete
+== Delete
 
 To delete an advanced alert, click *Delete* on the menu in the *Alerts* tab, and then confirm your deletion.

@@ -13,7 +13,7 @@ By default, the enhanced metrics view is selected. To switch views, select *Swit
 Charts displaying the `Last 1 hour` label show data that has been collected during the past 60 minutes, starting with the current time.
 
 [NOTE]
-For Gold and Platinum subscriptions, Anypoint Monitoring retains API analytics metrics data for 90 days. API Manager retains API analytics metrics data for 30 days.
+For Gold and Platinum subscriptions, Anypoint Monitoring retains API analytics metrics data for 30 days. API Manager retains API analytics metrics data for 30 days.
 
 == Supported Versions of Mule Runtime Engine
 

@@ -53,7 +53,7 @@ See xref:logs.adoc[Logs].
 
 Limits on data storage and retention are determined by your subscription level (Base or Titanium). All customers receive Anypoint Monitoring at the Base subscription level.
 
-* For Gold/Platinium subscriptions
+* For Gold/Platinum subscriptions
 ** Stores metric data in the same region as your control plane: US East (N. Virginia) or EU (Frankfurt)
 
 * For Titanium subscription
