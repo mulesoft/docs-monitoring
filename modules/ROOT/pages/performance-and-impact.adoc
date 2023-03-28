@@ -59,7 +59,7 @@ Advanced alerts::
 20 per parent organization.
 
 Basic alerts for servers and Mule apps::
-50 times the number of production vCores in your organization. Note that you can also use your alert allowance for sandbox deployments, but this limit subject to the overall xref:access-management::business-groups.adoc#redistribute-resources[production vCore limit].
+50 times the number of production vCores in your organization plus 100. For example, an organization that has 2 production vCores and a Titanium subscription has a limit of 200 basic alerts. Note that you can also use your alert allowance for sandbox deployments, but this limit subject to the overall xref:access-management::business-groups.adoc#redistribute-resources[production vCore limit].
 
 Basic alerts for APIs::
 Ten basic alerts per API instance.
