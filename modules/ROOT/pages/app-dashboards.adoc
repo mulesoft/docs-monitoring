@@ -705,6 +705,11 @@ You can click *Metrics* to see statistics, such as average response time and fai
 
 Anypoint Monitoring aggregates data in charts based on the selected time interval. As such, the number of data points shown in a chart varies based on your selected time interval.
 
+[[average-response-times-app]]
+== Charting Inactivity for Average Response Time
+
+include::partial$average-response-time.adoc[]
+
 [[endpoint-operation-metrics]]
 == How Endpoint and Operation Use Metrics Are Gathered
 

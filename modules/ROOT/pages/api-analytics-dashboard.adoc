@@ -310,6 +310,11 @@ These events contain more detailed information about each API invocation and can
 
 For more information about this API, see the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/home/[Anypoint Monitoring Archive API] page in Anypoint Exchange.
 
+[[average-response-times-api]]
+== Charting Inactivity for Average Response Time
+
+include::partial$average-response-time.adoc[]
+
 == See Also
 
 https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/home/[Anypoint Monitoring Archive API]
