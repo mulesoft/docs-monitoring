@@ -19,6 +19,115 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 You must also xref:am-installing.adoc[install the Anypoint Monitoring Agent].
 
+== Custom Metrics Best Practices
+
+Best practices include using time period and frequency effectively as well as using data with low cardinality dimensions.
+
+=== Use Time Period and Frequency Effectively
+
+Each chart in the Custom Metrics dashboard represents the output of a query. Two parameters in the dashboard, _time range_ and _refresh frequency_, affect the response time for the query that generates a chart.
+
+Time range:: Determines how much data is fetched or processed to generate the chart. For example, more data is fetched and processed when displaying a monthly chart compared to displaying a daily chart.
+
+Refresh frequency:: Determines how often a chart refreshes. High refresh frequencies put more stress on a system and can affect performance. For example, a refresh rate of one hour sends a query every hour, and a refresh rate of one minute sends the same query every minute. 
+
+Increasing time range (such as daily to monthly) or increasing refresh frequency (from one hour to one minute) affects the system response time. Reduce time range or reduce the refresh frequency to improve the chart response time.
+
+=== Use Low Cardinality Dimensions
+
+Most custom metric dimensions have less than 100 possible unique values, but some may have a thousand unique values, such as `country_code`, `state_code`, `city_code`, and `zip`. Do not add _high cardinality_ data, or data with many unique values, to custom metrics. Some examples of high cardinality dimensions include `customer_id`, `user_id`, `session_id`, `order_id`, `transaction_id`, `email_address`, `token_id`, `product_id`, `location_id` (latitude/longitude), `ip_address`, and `phone_number`. Charts configured for custom metrics with high cardinality dimensions can adversely affect the response time of dashboards. For best results, restrict dimensions to have only a few unique values.
+
+If a particular custom metrics chart slows down and affects other charts in the system, you can:
+
+* Create a new custom metric without the offending high cardinality dimension
+* Replace a high cardinality dimension with a low cardinality dimension, such as:
+** `category_id` instead of `product_id` 
+** `country_code` instead of `location_id`
+** `order_count` instead of `order_id`
+* Avoid using UUIDs and timestamps when creating new custom metrics
+* Reduce the time range of the custom metric chart, for example, create a daily or weekly chart instead of a monthly or yearly chart 
+* Reduce the refresh frequency, for example, refresh hourly instead of every minute.
+
+=== Restricted Keywords
+
+Due to internal database restrictions, you cannot use the following keywords to define `dimensionName` or `factName` while using the Anypoint Custom Metrics connector:
+
+* `ALL`
+* `ALTER`
+* `ANALYZE`
+* `ANY`
+* `AS`
+* `ASC`
+* `BEGIN`
+* `BY`
+* `CREATE`
+* `CONTINUOUS`
+* `DATABASE`
+* `DATABASES`
+* `DEFAULT`
+* `DELETE`
+* `DESC`
+* `DESTINATIONS`
+* `DIAGNOSTICS`
+* `DISTINCT`
+* `DROP`
+* `DURATION`
+* `END`
+* `EVERY`
+* `EXPLAIN`
+* `FIELD`
+* `FOR`
+* `FROM`
+* `GRANT`
+* `GRANTS`
+* `GROUP`
+* `GROUPS`
+* `IN`
+* `INF`
+* `INSERT`
+* `INTO`
+* `KEY`
+* `KEYS`
+* `KILL`
+* `LIMIT`
+* `SHOW`
+* `MEASUREMENT`
+* `MEASUREMENTS`
+* `NAME`
+* `OFFSET`
+* `ON`
+* `ORDER`
+* `PASSWORD`
+* `POLICY`
+* `POLICIES`
+* `PRIVILEGES`
+* `QUERIES`
+* `QUERY`
+* `READ`
+* `REPLICATION`
+* `RESAMPLE`
+* `RETENTION`
+* `REVOKE`
+* `SELECT`
+* `SERIES`
+* `SET`
+* `SHARD`
+* `SHARDS`
+* `SLIMIT`
+* `SOFFSET`
+* `STATS`
+* `SUBSCRIPTION`
+* `SUBSCRIPTIONS`
+* `TAG`
+* `TO`
+* `USER`
+* `USERS`
+* `VALUES`
+* `WHERE`
+* `WITH`
+* `WRITE`
+* `TIME`
+
 == Use Design Center to Configure the Custom Metrics Values
 
 Create a Mule application project in Design Center and configure the Custom Metrics connector.

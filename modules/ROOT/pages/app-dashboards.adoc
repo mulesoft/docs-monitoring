@@ -19,6 +19,8 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 
 When converting quantities of memory, Anypoint Monitoring uses the power of 10 (_MB_) to reflect metrics values rather than the power of 2 (_MiB_).
 
+include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+1]
+
 == Supported Versions of Mule Runtime Engine
 
 include::partial$include-supported-mule-runtime-version.adoc[]
@@ -333,7 +335,7 @@ The sum of outbound requests for the selected time period, grouped by remote hos
 [[flows-charts]]
 == Flows
 
-The following charts appear on the *Flows* dashboard:
+The following charts appear on the *Flows* dashboard if you have a Titanium subscription to Anypoint Platform:
 
 Inbound - Response Time by Flow::
 The average inbound response time, grouped by flow.
@@ -702,6 +704,11 @@ You can click *Metrics* to see statistics, such as average response time and fai
 == How Data is Aggregated in Intervals
 
 Anypoint Monitoring aggregates data in charts based on the selected time interval. As such, the number of data points shown in a chart varies based on your selected time interval.
+
+[[average-response-times-app]]
+== Charting Inactivity for Average Response Time
+
+include::partial$average-response-time.adoc[]
 
 [[endpoint-operation-metrics]]
 == How Endpoint and Operation Use Metrics Are Gathered
