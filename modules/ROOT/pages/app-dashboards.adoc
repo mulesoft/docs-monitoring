@@ -42,7 +42,7 @@ The built-in dashboard for the application or API is displayed.
 +
 image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
 
-Your data is prepopulated and displayed in the built-in dashboards and logs; no configuration is needed.
+Your data is prepopulated and displayed in the built-in dashboards and logs; no configuration is needed. Some charts appear only if you have a Titanium subscription to Anypoint Platform. 
 
 Built-in dashboards include various pages to view different types of charts:
 
