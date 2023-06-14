@@ -1,5 +1,6 @@
 .xref:index.adoc[Anypoint Monitoring]
 * xref:index.adoc[Overview]
+* xref:monitoring-release-notes.adoc[Release Notes]
 * xref:am-permissions.adoc[Manage Permissions for Anypoint Monitoring]
 * xref:quick-start.adoc[Get Started]
  ** xref:monitoring-settings-page.adoc[Anypoint Monitoring Settings]
