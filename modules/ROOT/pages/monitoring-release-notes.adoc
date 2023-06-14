@@ -1,0 +1,1 @@
+include::release-notes::partial$monitoring/monitoring-rn-landing-page.adoc[]
