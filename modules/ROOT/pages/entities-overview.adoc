@@ -1,0 +1,45 @@
+= Exploring Entity Metrics
+
+Anypoint Monitoring collects metrics on each _entity_, such as an app or API, in Anypoint Platform. 
+
+== 
+
+== Filtering Data in the Entity Overview Page
+
+Use queries to filter content that appears in the *Entity Overview* page. 
+
+
+
+By default, the *Entity Overview* page shows data for entities in your current business group and environment. You can change or remove these filters to see data for entities that are in different environments or business groups by clicking the *X* next to each option.
+
+=== Filtering Data using Queries
+
+// steal query syntax from the Log Search Query Syntax page - need instructions on using the operators and other things
+
+You can filter using the following elements:
+
+* Business group (defaults to the one you are currently using)
+* Environment (defaults to the one you are currently using)
+* App or API ID
+* ... continue adding things; not a comprehensive list
+
+
+
+=== Filtering Data using the Time Period Selector
+
+// steal Setting Data Display Options in a Dashboard and Setting the Time Period Display from dashboards-using.adoc but change the titles.
+
+// see if Changing the Time Period to Display still applies.
+
+// steal Refreshing Data
+
+
+== Collecting Metrics for Entities
+
+// use the pieces on how data is collected from Built-in Dashboards.
+
+== Defining Metrics for Entities
+
+//define metrics by stealing definitions from built-in dashboards metrics
+
+// yes, the whole list.
