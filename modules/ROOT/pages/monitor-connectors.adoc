@@ -14,7 +14,7 @@ To monitor connectors, you must use a supported version of Mule:
 
 == Supported Connectors
 
-The type of connector determines the charts that are displayed.
+The type of connector determines the charts that are displayed. Unless otherwise specified, the below metrics are for outbound requests only.
 
 [%header,cols="1,4"]
 |===
