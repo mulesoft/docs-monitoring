@@ -38,7 +38,7 @@ To view other reports, click the corresponding tab for the report to view. From 
 
 
 [NOTE]
-For applications that run using a stand-alone runtime or hybrid environments, data is shown only for Requests, Performance, and Failures tabs. CPU and memory utilization data are not shown for hybrid and Runtime Fabric applications.
+For applications that run using a stand-alone runtime or hybrid environments, data is shown only for Requests, Performance, and Failures tabs. CPU and memory utilization data are not shown for hybrid applications.
 
 === Requests
 
