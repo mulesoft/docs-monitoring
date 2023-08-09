@@ -29,7 +29,7 @@ Note that thresholds are checked every five minutes. The evaluated query is the 
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. In the Anypoint Monitoring navigation menu, click *Alerts*.
+include::partial$include-nav-alerts.adoc[]
 
 In the *Alerts* page, you can:
 

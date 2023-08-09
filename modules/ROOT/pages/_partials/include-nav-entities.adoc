@@ -1,0 +1,3 @@
+. In the Anypoint Monitoring navigation menu, click *Entities*.
++
+Note: If you do not see the *Entities* option, ensure you are using the modern UI for Anypoint Monitoring.
