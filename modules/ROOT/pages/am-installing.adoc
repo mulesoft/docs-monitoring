@@ -46,6 +46,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 Ensure that one of the following Mule Runtime Manager agent versions is installed in the Mule runtime engine running on the server:
 
+* 2.5.x
 * 2.4.x
 * 2.3.0
 * 2.2.x
