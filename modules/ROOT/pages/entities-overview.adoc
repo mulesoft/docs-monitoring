@@ -2,6 +2,12 @@
 
 Anypoint Monitoring collects metrics on each _entity_, such as an app or API, in Anypoint Platform. The *Entities Overview* page enables you to see 
 
+include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+1]
+
+== Supported Versions of Mule Runtime Engine
+
+include::partial$include-supported-mule-runtime-version.adoc[]
+
 == Before You Begin
 
 
@@ -38,7 +44,11 @@ You can filter entities with the following metrics:
 
 === Applying Filters to the Entities Overview
 
-. {include for nav steps}
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+include::partial$include-nav-entities.adoc[]
+
+. 
 
 == Filtering Data using the Time Period Selector
 
@@ -58,3 +68,18 @@ You can filter entities with the following metrics:
 //define metrics by stealing definitions from built-in dashboards metrics
 
 // yes, the whole list.
+
+[[automatic-interval]]
+== How Data is Aggregated in Intervals
+
+include::partial$data-aggregation.adoc[]
+
+[[average-response-times-app]]
+== Charting Inactivity for Average Response Time
+
+include::partial$average-response-time.adoc[]
+
+[[endpoint-operation-metrics]]
+== How Endpoint and Operation Use Metrics Are Gathered
+
+include::partial$endpoint-operation-metrics.adoc[]
