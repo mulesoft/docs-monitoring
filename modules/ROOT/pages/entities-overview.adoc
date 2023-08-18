@@ -1,6 +1,6 @@
 = Exploring Entity Metrics
 
-Anypoint Monitoring collects metrics on each _entity_, such as an app or API, in Anypoint Platform. The *Entities Overview* page enables you to see 
+Anypoint Monitoring collects metrics on each _entity_, such as an app or API, in Anypoint Platform. The *Entities Overview* page enables you to see data for your apps and APIs at a glance. You can filter the entities that appear in the *Entities Overview* page using attributes and elements. You can view up to 30 days of data at once, or you can specify dates and times to see only data from a shorter time period.  
 
 include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+1]
 
@@ -48,7 +48,7 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 
 include::partial$include-nav-entities.adoc[]
 
-. 
+. In the filter bar, enter an attribute, element, business group, or environment you want to use to filter your data.
 
 == Filtering Data using the Time Period Selector
 
