@@ -714,7 +714,6 @@ include::partial$average-response-time.adoc[]
 == How Endpoint and Operation Use Metrics Are Gathered
 
 include::partial$endpoint-operation-metrics.adoc[]
-
 == See Also
 
 * xref:dashboard-custom-config.adoc[Configuring Custom Dashboards and Charts]

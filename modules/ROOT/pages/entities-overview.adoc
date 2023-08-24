@@ -4,13 +4,16 @@ Anypoint Monitoring collects metrics on each _entity_, such as an app or API, in
 
 include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+1]
 
+== Before You Begin
+
+Before getting started, ensure that you have:
+
+* An Anypoint Platform account that has the Monitoring Viewer permission and permissions required to view apps and APIs.
+* A supported version of Mule Runtime engine.
+
 == Supported Versions of Mule Runtime Engine
 
 include::partial$include-supported-mule-runtime-version.adoc[]
-
-== Before You Begin
-
-
 
 == Access the Entities Overview Page
 
@@ -18,7 +21,7 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 
 include::partial$include-nav-entities.adoc[]
 
-The *Entities Overview* page appears, showing a summary of data 
+The *Entities Overview* page appears, showing a summary of data for entities in the current business group and environment.
 
 == Filtering Data in the Entity Overview Page
 
@@ -29,18 +32,19 @@ Quick filters, such as `Top 10 entities with highest error volume`, offer you co
 You can filter entities using the following attributes: 
 
 * Environment 
-* Entity Name 
-* Entity Type 
+* Entity name 
+* Entity type 
 * Status
 * Response time 
 * Requests
 * Errors 
-* Client App (for API)
-* Locations (for API)
+* Client App (for APIs)
+* Locations (for APIs)
 * Org ID 
-* Tag 
 
 You can filter entities with the following metrics:
+
+
 
 === Applying Filters to the Entities Overview
 
@@ -52,6 +56,30 @@ include::partial$include-nav-entities.adoc[]
 
 == Filtering Data using the Time Period Selector
 
+You can display the data points collected for the last given period of time (such as the last 5 or 30 minutes) or over a given date and time range. 
+
+Organizations with a Gold, Platinum, or Starter subscription can view up to 30 days of data.
+
+Organizations with a Titanium or Advanced subscription can view up to one year of data.
+
+=== Setting the Time Period to Display
+
+Use the drop-down in the calendar icon to select the time period to display in a graph.
+
+Your setting applies across all charts in the entity summary. 
+
+=== Changing the Time Period to Display
+
+You can display an earlier or later time period in your chart, and you can zoom in or out to cover a shorter or longer period of time.
+
+[cols="1,4"]
+|===
+| image:zoom-earlier-later.png[Zoom Out, Show Earlier and Later] a|
+To display earlier or later data, you can use the less-than (&lt;) and greater-than (&gt;) icons.
+
+To zoom out and display data over a longer time period, you use the magnifying glass icon located between the less-than and greater-than icons
+|===
+
 // steal Setting Data Display Options in a Dashboard and Setting the Time Period Display from dashboards-using.adoc but change the titles.
 
 // see if Changing the Time Period to Display still applies.
@@ -59,20 +87,42 @@ include::partial$include-nav-entities.adoc[]
 // steal Refreshing Data
 
 
-== Collecting Metrics for Entities
+== Understanding Summary and Performance Trends for Entities
 
-// use the pieces on how data is collected from Built-in Dashboards.
+The *Entities Overview* page shows charts that detail entity performance. By default, the charts show data for entities in your current business group and environment. 
 
-== Defining Metrics for Entities
+=== Summary Charts
 
-//define metrics by stealing definitions from built-in dashboards metrics
+Total Entities::
+The total number of entities according to your current filter conditions.
 
-// yes, the whole list.
+Total Requests::
+The sum of inbound and outbound requests according to your current filter conditions.
+
+Average Latency::
+[I don't know] , calculated in milliseconds. 
+
+Average Error Rate::
+The percentage of requests that result in errors according to your current filter conditions.
+
+Active Alerts::
+The total number of alerts configured for entities according to your current filter conditions.
+
+=== Performance Trends Charts
+
+Request Latency::
+[I don't know], calculated in milliseconds. 
+
+Error Volume::
+The total number of failed inbound and outbound requests to entities according to your current filter conditions.
+
+Request Volume:: 
+The total number of inbound and outbound requests to entities according to your current filter conditions.
 
 [[automatic-interval]]
 == How Data is Aggregated in Intervals
 
-include::partial$data-aggregation.adoc[]
+Anypoint Monitoring aggregates data in charts based on the selected time interval. As such, the number of data points shown in a chart varies based on your selected time interval.
 
 [[average-response-times-app]]
 == Charting Inactivity for Average Response Time
@@ -82,4 +132,31 @@ include::partial$average-response-time.adoc[]
 [[endpoint-operation-metrics]]
 == How Endpoint and Operation Use Metrics Are Gathered
 
+Anypoint Monitoring collects top occurring endpoints or operations for each data collection interval. Endpoints or operations that are not top occurring are sorted into a group called *Other*.
+
+In each data collection interval, top occurring endpoints or operations vary. An endpoint or operation that is top occurring in one interval may not be top occurring in the next.
+
+In Anypoint Monitoring charts and tables, the data comes from multiple data collection intervals. As a result, aggregated data shown in the dashboard is an estimation since the intervals may not have the same top occurring endpoints or operations. The tables show approximate counts for the most commonly occurring endpoints or operations when the *Other* grouping appears.
+
+For example, when an endpoint occurs more often than other endpoints in one interval but occurs less often in another interval (thus sorting it into the *Other* group for that interval), the resulting table displays lower than actual values for that endpoint, since the metrics that do not appear are grouped into the *Other* group.
+
+
+////
+== Collecting Metrics for Entities
+
+[[automatic-interval]]
+=== How Data is Aggregated in Intervals
+
+include::partial$data-aggregation.adoc[]
+
+[[average-response-times-app]]
+=== Charting Inactivity for Average Response Time
+
+include::partial$average-response-time.adoc[]
+
+[[endpoint-operation-metrics]]
+=== Gathering Endpoint and Operation Use Metrics
+
 include::partial$endpoint-operation-metrics.adoc[]
+
+////
