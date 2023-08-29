@@ -23,13 +23,15 @@ include::partial$include-nav-entities.adoc[]
 
 The *Entities Overview* page appears, showing a summary of data for entities in the current business group and environment.
 
-== Filtering Data in the Entity Overview Page
+== Search for Entities
 
-By default, the *Entity Overview* page shows data for entities in your current business group and environment. You can change or remove these filters to see data for entities that are in different environments or business groups by clicking the *X* next to each option.
+The search bar in the *Entities Overview* page enables you to create search parameters to curate different assortments of entity data on the page. You can add and remove attributes such as status, errors, business groups, and environments to further refine your results. Adding different search parameters changes data in the summary, which is refreshed each time you conduct a new search. 
 
-Quick filters, such as `Top 10 entities with highest error volume`, offer you common scenarios at a glance, but you can also use attributes and metrics to filter content that appears in the *Entity Overview* page. You can combine diffrent filters to capture specific combinations of data. 
+By default, the *Entity Overview* page shows data for entities in your current business group and environment. You can change or remove these parameters to see data for entities in different environments or business groups by clicking the *X* next to each option.
 
-You can filter entities using the following attributes: 
+The search bar also offers quick filters, such as `Top 10 entities with highest error volume`, to show you common scenarios at a glance. You can also combine these with attributes and metrics to further specify the content that appears. 
+
+You can curate your search results for entity data using the following attributes: 
 
 * Environment 
 * Entity name 
@@ -42,25 +44,27 @@ You can filter entities using the following attributes:
 * Locations (for APIs)
 * Org ID 
 
-You can filter entities with the following metrics:
+You can curate your search results for entity data using the following metrics:
 
+tbd
 
-
-=== Applying Filters to the Entities Overview
+=== Applying Search Parameters
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
 include::partial$include-nav-entities.adoc[]
 
-. In the filter bar, enter an attribute, element, business group, or environment you want to use to filter your data.
+. In the search bar, enter an attribute, element, business group, or environment you want to use to filter your data.
+
+=== Example of Applied Search Parameters
+
+tbd
 
 == Filtering Data using the Time Period Selector
 
 You can display the data points collected for the last given period of time (such as the last 5 or 30 minutes) or over a given date and time range. 
 
-Organizations with a Gold, Platinum, or Starter subscription can view up to 30 days of data.
-
-Organizations with a Titanium or Advanced subscription can view up to one year of data.
+Organizations with a Gold, Platinum, or Starter subscription can view up to 30 days of data. Organizations with a Titanium or Advanced subscription can view up to one year of data.
 
 === Setting the Time Period to Display
 
