@@ -1,0 +1,20 @@
+== Export Anypoint Platform Data to Third-Party Apps
+
+The Data Exporter feature enables you to export _audit logs_ and _trace data_ to third-party observability and analytics apps, such as Datadog and Splunk.
+
+== Before You Begin
+
+Before you configure data exporter, ensure you have:
+
+* An Anypoint Platform account with the (permission) and (permission) permissions
+* The ability to create an access token for your third party app
+
+== Configure Destinations
+
+To begin exporting your data to a third party app, you must establish a connection and authorize data transfers between Anypoint Platform and your third party app. 
+
+== Create a Connection
+
+After you configure a third-party app as a destination, you can create a connection that specifies what type of data the Data Exporter feature sends. You can also configure frequency.
+
+. 
