@@ -108,6 +108,8 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 
 include::partial$include-nav-data-exporter.adoc[]
 
+. Next to the configuration you want to edit, click the overflow menu and select *Edit Configuration*.
++
 The *Edit Configuration* interface appears, showing the *General Information* page. 
 
 . In the *General Information* page, edit each field you want to change, and then click *Next.* 
