@@ -1,6 +1,8 @@
 == Export Anypoint Platform Data to Third-Party Apps
 
-The Data Exporter feature enables you to export _audit logs_ and _trace data_ to third-party observability and analytics apps, such as Datadog and Splunk.
+The Data Exporter feature enables you to export xref:access-management::audit-logging.adoc[_audit logs_] and _trace data_ to third party observability and analytics apps, such as Datadog and Splunk.
+
+To use data exporter, you must create a _connection_ with a third party app to authorize Anypoint Platform to share data. You must then create a _configuration_ to specify the types of data Anypoint Platform exports as well as the frequency of data transfers. You can also edit and delete connections and configurations.
 
 == Before You Begin
 
@@ -9,12 +11,116 @@ Before you configure data exporter, ensure you have:
 * An Anypoint Platform account with the (permission) and (permission) permissions
 * The ability to create an access token for your third party app
 
-== Configure Destinations
+== Access Data Exporter
 
-To begin exporting your data to a third party app, you must establish a connection and authorize data transfers between Anypoint Platform and your third party app. 
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+
+include::partial$include-nav-data-exporter.adoc[]
+
+You can switch between the *Configurations* and *Connections* tabs to create, edit, or view data configurations and connections to third-party apps.
+
+== Manage Connections
+
+Anypoint Platform needs permission to send data to third party apps. Create a _connection_ with a third party app, such as New Relic or Splunk, to authorize data transfers. 
 
 == Create a Connection
 
-After you configure a third-party app as a destination, you can create a connection that specifies what type of data the Data Exporter feature sends. You can also configure frequency.
+include::partial$include-nav-steps-no-permissions.adoc[]
 
-. 
+include::partial$include-nav-data-exporter.adoc[]
+
+. Click the *Connections* tab.
+. Click *New Connection*.
++
+The *Create New Connection* interface appears, showing the *Set Up Connection* page.
+. In the *Set Up Connection* page, enter the following information: 
+* *Connection Name*: A name for your connection using only alphanumeric chracters
+* *Desintation Type*: The third party app to which you want to transfer data. 
+* *Endpoint URL*: The endpoint that enables external connections to your third party app. The location of this endpoint depends on your app.
+. Click *Next*.
+. In the *Authentication* page, enter the information needed to authenticate your app. Some apps need only access tokens, while others also require a header key.
+. Click *Test Connection* to ensure Anypoint Platform can connect to your third party app.
+. Click *Save Connection*. 
++
+The new connection appears in the *Connections* tab in the *Data Exporter* page.
+
+=== Edit a Connection
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+include::partial$include-nav-data-exporter.adoc[]
+
+. Click the *Connections* tab.
+. Next to the connection you want to edit, click the overflow menu and select *Edit Connection*.
++
+The *Edit Connection* interface appears, showing the *Set Up Connection* page. 
+
+. In the *Set Up Connection* page, edit each field you want to change, and then click *Next.*
+. In the *Authentication* page, edit each field you want to change, then click *Test Connection*. When the connection is successful, click *Save Connection*.
+
+=== Delete a Connection
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+include::partial$include-nav-data-exporter.adoc[]
+
+. Next to the connection you want to delete, click the overflow menu and select *Delete Connection*.
+. A warning appears:
+* If the connection is not in use, the warning confirms you want to delete the connection. Click *Delete Connection*.
+* If the connection is in use, the warning states you must delete or redirect connections for any configurations that use the connection. Click *Dismiss*, and then xref:data-exporter.adoc#edit-configuration[edit your configurations] to use other existing connections before deleting the current connection.
+
+== Manage Configurations
+
+After you create a connection to a third party app, you must create a _configuration_ to specify what kind of data to send to your third party app, as well as the frequency of data transfers. When you create a new configuration, you specify a business group, environment type, desired data type, and a destination.
+
+=== Create a Configuration
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+include::partial$include-nav-data-exporter.adoc[]
+
+. Click *New Configuration*.
++
+The *Create New Configuration* interface appears, showing the *General Information* page.
+. In the *General Information* page, enter the following information:
+* *Configuration Name*: A name for your configuration using only alphanumeric chracters
+* *Connection*: An existing connection that you configured.
+* *Data Type*: Audit logs or trace data
+. Click *Next*.
++
+The *Business Group & Environment Type* page appears.
+. In the *Select Business Group* section, select one of the following:
+* *All business groups*: Data of the type you specified is sourced from all business groups in the organization.
+* *Select a business group*: Data of the type you specified is sourced only from the business group you select.
+. If you selected trace data as the data type, in the *Select Environment Type* section, select one of the following:
+* Production
+* Sandbox
+* Design
+. Click *Next*.
+. Click *Save Configuration*. 
+
+=== Edit Configurations
+
+When you edit configurations, you can change names, connection types, and data scopes. You cannot change the data type. You must create a new configuration to change the data type.
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+include::partial$include-nav-data-exporter.adoc[]
+
+The *Edit Configuration* interface appears, showing the *General Information* page. 
+
+. In the *General Information* page, edit each field you want to change, and then click *Next.* 
+. In the *Business Group & Environment Type* page, edit each field you want to change, then click *Next*. 
+. Click *Save Configuration*. 
+
+=== Delete Configurations
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+include::partial$include-nav-data-exporter.adoc[]
+
+. Next to the configuration you want to delete, click the overflow menu and select *Delete Connection*.
++
+A warning appears, confirming you want to delete the configuration. 
+. Click *Delete Configuration*. 

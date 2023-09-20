@@ -1,0 +1,4 @@
+. In the Anypoint Monitoring navigation menu, select *Data Exporter*. 
++
+The *Data Exporter* page appears, showing the *Configurations* tab. 
++
