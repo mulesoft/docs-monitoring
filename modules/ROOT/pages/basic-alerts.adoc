@@ -201,6 +201,7 @@ For the description of each variable, see <<alert-variables>>.
 * `${environment}`
 * `${alertLink}`
 * `${dashboardLink}`
+* `${timestamp}`
 * `${resource}`
 | *Memory Utilization*
 | *Thread Count*
@@ -219,6 +220,7 @@ For the description of each variable, see <<alert-variables>>.
 * `${environment}`
 * `${alertLink}`
 * `${dashboardLink}`
+* `${timestamp}`
 * `${resource}`
 | *Memory Utilization*
 | *Thread Count*
@@ -237,6 +239,7 @@ For the description of each variable, see <<alert-variables>>.
 * `${environment}`
 * `${alertLink}`
 * `${dashboardLink}`
+* `${timestamp}`
 * `${targetName}`
 * `${resource}`
 | *Message Error Count*
@@ -253,6 +256,7 @@ For the description of each variable, see <<alert-variables>>.
 * `${environment}`
 * `${alertLink}`
 * `${dashboardLink}`
+* `${timestamp}`
 * `${targetName}`
 | *Memory Utilization*
 | *Thread Count*
@@ -268,6 +272,7 @@ For the description of each variable, see <<alert-variables>>.
 * `${environment}`
 * `${alertLink}`
 * `${dashboardLink}`
+* `${timestamp}`
 * `${memberName}`
 * `${targetName}`
 | *Memory Utilization*
@@ -284,6 +289,7 @@ For the description of each variable, see <<alert-variables>>.
 * `${environment}`
 * `${alertLink}`
 * `${dashboardLink}`
+* `${timestamp}`
 * `${memberName}`
 * `${targetName}`
 | *Memory Utilization*
@@ -300,6 +306,7 @@ For the description of each variable, see <<alert-variables>>.
 * `${environment}`
 * `${alertLink}`
 * `${dashboardLink}`
+* `${timestamp}`
 * `${api}`
 * `${policy}`
 | *Average Response Time*
@@ -336,5 +343,6 @@ Available values are `OK` or `Alerting`.
 |`${targetName}`|Name of the server, server group, or cluster
 |`${targetState}` |Server state when the alert was triggered
 |`${threshold}` |Count over the period of time that triggers the alert
+|`${timestamp}` |Time when the alert was triggered
 |`${value}` | Value of the metric that triggers the alert
 |===
