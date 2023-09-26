@@ -76,13 +76,6 @@ Your setting applies across all charts in the entity summary.
 
 You can display an earlier or later time period in your chart to cover a shorter or longer period of time.
 
-[cols="1,4"]
-|===
-| image:zoom-earlier-later.png[Zoom Out, Show Earlier and Later] a|
-To display earlier or later data, you can use the less-than (&lt;) and greater-than (&gt;) icons.
-
-To zoom out and display data over a longer time period, you use the magnifying glass icon located between the less-than and greater-than icons
-|===
 
 // steal Setting Data Display Options in a Dashboard and Setting the Time Period Display from dashboards-using.adoc but change the titles.
 
@@ -93,24 +86,24 @@ To zoom out and display data over a longer time period, you use the magnifying g
 
 == Understanding Summary and Performance Trends for Entities
 
-The *Entities Overview* page shows charts that detail entity performance. By default, the charts show data for entities in your current business group and environment. 
+The *Entities Overview* page shows charts that detail entity performance. By default, the charts show data for entities in your current business group and environment. When you modify your search settings, the data in the charts changes accordingly.
 
 === Summary Charts
 
 Total Entities::
-The total number of entities according to your current filter conditions.
+The total number of entities according to your current search conditions.
 
 Total Requests::
-The sum of inbound and outbound requests according to your current filter conditions.
+The sum of inbound and outbound requests according to your current search conditions.
 
 Average Latency::
 [I don't know] , calculated in milliseconds. 
 
 Average Error Rate::
-The percentage of requests that result in errors according to your current filter conditions.
+The percentage of requests that result in errors according to your current search conditions.
 
-Active Alerts::
-The total number of alerts configured for entities according to your current filter conditions.
+Active Entities::
+The total number of active entities according to your current search conditions.
 
 === Performance Trends Charts
 
@@ -118,10 +111,10 @@ Request Latency::
 [I don't know], calculated in milliseconds. 
 
 Error Volume::
-The total number of failed inbound and outbound requests to entities according to your current filter conditions.
+The total number of failed inbound and outbound requests to entities according to your current search conditions.
 
 Request Volume:: 
-The total number of inbound and outbound requests to entities according to your current filter conditions.
+The total number of inbound and outbound requests to entities according to your current search conditions.
 
 [[automatic-interval]]
 == How Data is Aggregated in Intervals
