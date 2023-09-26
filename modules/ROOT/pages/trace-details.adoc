@@ -1,0 +1,12 @@
+= Trace Details
+
+Each trace available in the *Traces* overview page has metrics associated with it. Clicking a trace enables you to see additional information such as the origin of the initial request, associated entities, and events associated with the request. 
+
+== Access Trace Details
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+include::partial$include-nav-distributed-tracing.adoc[]
+
+. If needed, use queries to filter the list of traces that appears in the *Traces* overview page.
+. Click the trace ID of the trace you want to examine.
