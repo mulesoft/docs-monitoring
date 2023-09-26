@@ -1,6 +1,6 @@
 = Trace Details
 
-Each trace available in the *Traces* overview page has metrics associated with it. Clicking a trace enables you to see additional information such as the origin of the initial request, associated entities, and events associated with the request. 
+Each trace available in the *Traces* overview page has metrics associated with it. Clicking a trace opens a *Trace Details* page and shows the origin of the initial request, associated entities, events associated with the request, and more. You can also see flows, logs, and events associated with the trace. 
 
 == Access Trace Details
 
@@ -10,3 +10,9 @@ include::partial$include-nav-distributed-tracing.adoc[]
 
 . If needed, use queries to filter the list of traces that appears in the *Traces* overview page.
 . Click the trace ID of the trace you want to examine.
+
+Trace details contain the following contextual data:
+
+Flows:: Mule Flows for the selected task of the specific service.
+Logs:: Contextual logs for the selected task.
+Events:: Mule runtime events or user actions for the selected service.
