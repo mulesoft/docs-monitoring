@@ -74,7 +74,7 @@ Your setting applies across all charts in the entity summary.
 
 === Changing the Time Period to Display
 
-You can display an earlier or later time period in your chart, and you can zoom in or out to cover a shorter or longer period of time.
+You can display an earlier or later time period in your chart to cover a shorter or longer period of time.
 
 [cols="1,4"]
 |===
