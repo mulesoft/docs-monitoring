@@ -29,7 +29,7 @@ The search bar in the *Entities Overview* page enables you to create search para
 
 By default, the *Entity Overview* page shows data for entities in your current business group and environment. You can change or remove these parameters to see data for entities in different environments or business groups by clicking the *X* next to each option.
 
-The search bar also offers quick filters, such as `Top 10 entities with highest error volume`, to show you common scenarios at a glance. You can also combine these with attributes and metrics to further specify the content that appears. 
+//The search bar also offers quick filters, such as `Top 10 entities with highest error volume`, to show you common scenarios at a glance. You can also combine these with attributes and metrics to further specify the content that appears. 
 
 You can curate your search results for entity data using the following attributes: 
 
@@ -40,9 +40,10 @@ You can curate your search results for entity data using the following attribute
 * Response time 
 * Requests
 * Errors 
-* Client App (for APIs)
-* Locations (for APIs)
 * Org ID 
+//* Client App (for APIs)
+//* Locations (for APIs)
+
 
 You can curate your search results for entity data using the following metrics:
 
@@ -96,7 +97,7 @@ The total number of entities according to your current search conditions.
 Total Requests::
 The sum of inbound and outbound requests according to your current search conditions.
 
-Average Latency::
+Average P95 Latency::
 [I don't know] , calculated in milliseconds. 
 
 Average Error Rate::
