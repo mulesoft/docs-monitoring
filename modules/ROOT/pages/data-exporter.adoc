@@ -1,15 +1,15 @@
 == Export Anypoint Platform Data to Third-Party Apps
 
-The Data Exporter feature enables you to export xref:access-management::audit-logging.adoc[_audit logs_] and _trace data_ to third party observability and analytics apps, such as Datadog and Splunk.
+The Data Exporter feature enables you to export xref:access-management::audit-logging.adoc[_audit logs_] and _trace data_ to third-party observability and analytics apps, such as Datadog and Splunk.
 
-To use data exporter, you must create a _connection_ with a third party app to authorize Anypoint Platform to share data. You must then create a _configuration_ to specify the types of data Anypoint Platform exports as well as the frequency of data transfers. You can also edit and delete connections and configurations.
+To use data exporter, you must create a _connection_ with a third-party app to authorize Anypoint Platform to share data. You must then create a _configuration_ to specify the types of data Anypoint Platform exports as well as the frequency of data transfers. You can also edit and delete connections and configurations.
 
 == Before You Begin
 
 Before you configure data exporter, ensure you have:
 
 * An Anypoint Platform account with the (permission) and (permission) permissions
-* The ability to create an access token for your third party app
+* The ability to create an access token for your third-party app
 
 == Access Data Exporter
 
@@ -22,7 +22,7 @@ You can switch between the *Configurations* and *Connections* tabs to create, ed
 
 == Manage Connections
 
-Anypoint Platform needs permission to send data to third party apps. Create a _connection_ with a third party app, such as New Relic or Splunk, to authorize data transfers. 
+Anypoint Platform needs permission to send data to third-party apps. Create a _connection_ with a third-party app, such as New Relic or Splunk, to authorize data transfers. 
 
 == Create a Connection
 
@@ -36,11 +36,11 @@ include::partial$include-nav-data-exporter.adoc[]
 The *Create New Connection* interface appears, showing the *Set Up Connection* page.
 . In the *Set Up Connection* page, enter the following information: 
 * *Connection Name*: A name for your connection using only alphanumeric chracters
-* *Desintation Type*: The third party app to which you want to transfer data. 
-* *Endpoint URL*: The endpoint that enables external connections to your third party app. The location of this endpoint depends on your app.
+* *Desintation Type*: The third-party app to which you want to transfer data. 
+* *Endpoint URL*: The endpoint that enables external connections to your third-party app. The location of this endpoint depends on your app.
 . Click *Next*.
 . In the *Authentication* page, enter the information needed to authenticate your app. Some apps need only access tokens, while others also require a header key.
-. Click *Test Connection* to ensure Anypoint Platform can connect to your third party app.
+. Click *Test Connection* to ensure Anypoint Platform can connect to your third-party app.
 . Click *Save Connection*. 
 +
 The new connection appears in the *Connections* tab in the *Data Exporter* page.
@@ -72,7 +72,7 @@ include::partial$include-nav-data-exporter.adoc[]
 
 == Manage Configurations
 
-After you create a connection to a third party app, you must create a _configuration_ to specify what kind of data to send to your third party app, as well as the frequency of data transfers. When you create a new configuration, you specify a business group, environment type, desired data type, and a destination.
+After you create a connection to a third-party app, you must create a _configuration_ to specify what kind of data to send to your third-party app, as well as the frequency of data transfers. When you create a new configuration, you specify a business group, environment type, desired data type, and a destination.
 
 === Create a Configuration
 
