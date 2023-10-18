@@ -19,6 +19,9 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 The instructions for installing Anypoint Monitoring on-premises are displayed.
 . To enable (or disable) monitoring for apps deployed to CloudHub, select *CloudHub*.
 
+[NOTE]
+Anypoint Monitoring is enabled by default for all CloudHub 2.0 applications.
+
 == See Also
 
 * xref:am-installing.adoc[Install Anypoint Monitoring On-Premises]
