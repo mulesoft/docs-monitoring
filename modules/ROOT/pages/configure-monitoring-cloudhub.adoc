@@ -5,6 +5,9 @@ endif::[]
 
 To start monitoring Mule apps that are managed in CloudHub, you must deploy them to a supported version of Mule runtime engine and set the runtime version in your Mule app.
 
+[NOTE]
+Anypoint Monitoring is enabled by default for all CloudHub 2.0 applications.
+
 == Supported Versions of Mule Deployed to CloudHub
 
 include::partial$include-supported-mule-runtime-version.adoc[]
