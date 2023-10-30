@@ -1,20 +1,21 @@
-= Distributed Tracing
+= Traces 
 
-The Distributed Tracing feature in Anypoint Monitoring enables you to observe requests for apps and APIs as they travel across services. _Traces_ describe the journey that the requests make throughout their pipelines of services. Each trace originates from an _entity_, such as an app or API, that is available in Anypoint Platform. The *Traces* overview page enables you to see a list of traces that are currently available in Anypoint Platform. You can use this data to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track your entity requests end-to-end. For example, an Ops administrator could use distributed tracing to search for a specific transaction and have a visualization for that transaction that includes only the services through which it progresses. The visibility traces provide enables transparent asset performance observation and management. To simplify these efforts, you can also export trace data to Open Telemetry or Splunk using the *Data Exporter* feature. 
+The Traces feature in Anypoint Monitoring enables you to observe requests for apps and APIs as they travel across services. _Traces_ describe the journey that the requests make throughout their pipelines of services. Each trace originates from an _entity_, such as an app or API, that is available in Anypoint Platform. The *Traces* overview page enables you to see a list of traces that are currently available in Anypoint Platform. You can use this data to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track your entity requests end-to-end. For example, an Ops administrator could use traces to search for a specific transaction and have a visualization for that transaction that includes only the services through which it progresses. The visibility enables transparent asset performance observation and management. To simplify these efforts, you can also export trace data to Open Telemetry or Splunk using the *Telemetry Exporter* feature. 
 
 //insert link to data exporter eventually
 
-The Distributed Tracing feature is available only for organizations that have a Titanium subscription or the Advanced pricing package for Anypoint Platform.
+The Traces feature is available only for organizations that have a Titanium subscription or the Advanced pricing package for Anypoint Platform.
 
 == Before You Begin
 
-Before you can use distributed tracing, ensure that you have:
+Before you can use traces, ensure that you have:
 
 * A Titanium subscription or the Advanced pricing package for Anypoint Platform
 * Mule Runtime version 4.5 or later
 * Permission to view apps and APIs in Anypoint Monitoring
 
-== Access Distributed Tracing
+//Sara - I would consider making this access topic a link in all the subsequent topics. I don't want to mess up anything you have going on here, so I won't change it but I think it would be nice!
+== Access Traces
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
@@ -32,7 +33,7 @@ Anypoint Monitoring retains up 30 days of trace data.
 
 === Filter Traces Using Queries
 
-You can query using the following criteria:
+Use the search bar to select fields to filter by query. You can query using the following criteria:
 
 Transaction ID:: Transaction ID or correlation ID for a request 
 Transaction status:: Lists all spans/transactions with a specific status (e.g error)  
@@ -43,7 +44,7 @@ Service name:: Filter all the transactions and spans for a specific service
 API Name:: Filter all the transactions/spans for a specific API
 Tags:: If a tag has been defined for an entity, it can be used to quickly search for transactions specific to the tag. 
 Flow name:: Search span details for a specific flow
-Custom Attribute:: Search transactions for a specific customer defined attribute (e.g. order id)
+Custom Attribute:: Search transactions for a specific customer-defined attribute (for example, *Order ID*)
 Span Name:: Search for a specific span
 
 // needs editing
@@ -52,4 +53,4 @@ If no traces appear after applying a query, limit your conditions.
 
 == Trace Overview Metrics
 
-The *Traces* overview page shows the *Total Traces* chart by default, which displays both the total number of traces in Anypoint Platform and the total number of traces that have errors associated with them. You can use the time period selector to span of time covered by the *Total Traces* chart.
+The *Traces* overview page shows the *Traces List* chart by default, which displays both the total number of traces in Anypoint Platform and the total number of traces that have errors associated with them. You can use the time period selector to select the span of time covered by the *Traces List* chart. From the *Traces List* chart, you can click the *Trace ID* of a specific trace to view more information the *Trace Details* page. 
