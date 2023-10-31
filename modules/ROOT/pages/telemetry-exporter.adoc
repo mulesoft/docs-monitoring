@@ -1,6 +1,7 @@
 == Export Anypoint Platform Data to Third-Party Apps
 
 The Telemetry Exporter feature enables you to export xref:access-management::audit-logging.adoc[_audit logs_] and _trace data_ to third-party observability and analytics apps, such as Datadog and Splunk.
+//trace data should be a link once the topic exists
 
 To use Telemetry Exporter, you must create a _connection_ with a third-party app to authorize Anypoint Platform to share data. You must then create a _configuration_ to specify the types of data Anypoint Platform exports as well as the frequency of data transfers. You can also edit and delete connections and configurations.
 
@@ -35,15 +36,15 @@ include::partial$include-nav-data-exporter.adoc[]
 +
 The *Create New Connection* interface appears, showing the *Connection Details* page.
 . In the *Connection Details* page, enter the following information: 
-* *Connection Name*: A name for your connection using only alphanumeric chracters
+* *Connection Name*: A name for your connection using only alphanumeric characters.
 * *Destination Type*: The third-party app to which you want to transfer data. 
 * *Endpoint URL*: The endpoint that enables external connections to your third-party app. The location of this endpoint depends on your app.
 . Click *Next*.
-. In the *Authentication* page, enter the information needed to authenticate your app. Some apps need only access tokens, while others also require a header key.
+. On the *Authentication* page, enter the information needed to authenticate your app. Some apps need only access tokens, while others also require a header key.
 . Click *Test Connection* to ensure Anypoint Platform can connect to your third-party app.
 . Click *Save Connection*. 
 +
-The new connection appears in the *Connections* tab in the *Telemetry Exporter* page.
+The new connection appears in the *Connections* tab on the *Telemetry Exporter* page.
 
 === Edit a Connection
 
@@ -84,7 +85,7 @@ include::partial$include-nav-data-exporter.adoc[]
 +
 The *Create New Configuration* interface appears, showing the *General Information* page.
 . In the *General Information* page, enter the following information:
-* *Configuration Name*: A name for your configuration using only alphanumeric chracters
+* *Configuration Name*: A name for your configuration using only alphanumeric characters.
 * *Connection*: An existing connection that you configured.
 * *Data Type*: Audit logs or trace data
 . Click *Next*.
@@ -113,7 +114,7 @@ include::partial$include-nav-data-exporter.adoc[]
 +
 The *Edit Configuration* interface appears, showing the *General Information* page. 
 
-. In the *General Information* page, edit each field you want to change, and then click *Next.* 
+. On the *General Information* page, edit each field you want to change, and then click *Next.* 
 . In the *Business Group & Environment Type* page, edit each field you want to change, then click *Next*. 
 . Click *Save Configuration*. 
 
