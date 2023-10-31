@@ -1,6 +1,6 @@
 = Exploring Entity Metrics
 
-Anypoint Monitoring collects metrics on each _entity_, such as an app or API, in Anypoint Platform. The *Entities Overview* page enables you to see data for your apps and APIs at a glance. You can filter the entities that appear in the *Entities Overview* page using attributes and elements. You can view up to 30 days of data at once, or you can specify dates and times to see only data from a shorter time period.  
+Anypoint Monitoring collects metrics on each _entity_, such as an app or API instance, in Anypoint Platform. The *Entities Overview* page enables you to see data for your apps and APIs at a glance. The *Entities Overview* page enables you to review key metrics about the health of your entities as well as identify and troubleshoot issues You can filter the entities that appear in the *Entities Overview* page using attributes and elements. You can view up to 30 days of data at once, or you can specify dates and times to see only data from a shorter time period.  
 
 include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+1]
 
@@ -21,33 +21,35 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 
 include::partial$include-nav-entities.adoc[]
 
-The *Entities Overview* page appears, showing a summary of data for entities in the current business group and environment.
+The *Entities Overview* page appears, showing a summary of data for entities in the active business group and selected environment configured in your profile.
 
 == Search for Entities
 
-The search bar in the *Entities Overview* page enables you to create search parameters to curate different assortments of entity data on the page. You can add and remove attributes such as status, errors, business groups, and environments to further refine your results. Adding different search parameters changes data in the summary, which is refreshed each time you conduct a new search. 
+The search bar in the *Entities Overview* page provides a enables you to create search parameters to curate different assortments of entity data on the page as well as to visualize and monitor the health status of multiple entities in their business groups and environments. You can add and remove attributes such as status, errors, business groups, and environments to further refine your results. Adding different search parameters changes data in the summary, metric cards, and charts which is refreshed each time you conduct a new search. 
+
+//Each search filter requires three pieces of information: an attribute name (for example, `entity_type`), an operator (for example, `=` or `IN`) and a value. The auto-suggest feature is triggered by clicking inside the search box or by entering a space. When the attribute name, an operator, and a value are provided, the search component creates a filter that is visually represented as a data pill. You can edit a search filter by double-clicking on the appropriate data pill. After all modifications are completed, you can use the enter key to convert the text to a search pill again. You can click on the *X* icon on the pill to remove it.
+
+//this is from tech review but I really don't think it is needed. 
 
 By default, the *Entity Overview* page shows data for entities in your current business group and environment. You can change or remove these parameters to see data for entities in different environments or business groups by clicking the *X* next to each option.
 
 //The search bar also offers quick filters, such as `Top 10 entities with highest error volume`, to show you common scenarios at a glance. You can also combine these with attributes and metrics to further specify the content that appears. 
 
-You can curate your search results for entity data using the following attributes: 
+You can curate your search results for entity data using the following attributes:
 
-* Environment 
-* Entity name 
-* Entity type 
-* Status
-* Response time 
-* Requests
-* Errors 
-* Org ID 
-//* Client App (for APIs)
-//* Locations (for APIs)
+* Environment Name
+* Environment ID
+* Business Group Name
+* Business Group ID
+* Entity Name
+* Entity Type
+* Entity ID
+* Deployment Type
+* Entity Transaction Status
+* Request Counts
+* Response Time
 
-
-You can curate your search results for entity data using the following metrics:
-
-tbd
+When multiple filters are provided, the resulting data matches all of the filters. For example, the query to fetch the entities data would include an `AND` operator to combine all of the search filters.
 
 === Applying Search Parameters
 
@@ -56,16 +58,23 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 include::partial$include-nav-entities.adoc[]
 
 . In the search bar, enter an attribute, element, business group, or environment you want to use to filter your data.
++
+Note that`requests_counts` and `response_time` are measurements of their respective metrics. To create a search filter using these two attributes, you must choose an aggregating function. `COUNT` is the only supported aggregating function that can be used with the `request_counts` and `PERCENTILE` is the only aggregating function that can be used with `response_time`.
 
-=== Example of Applied Search Parameters
+//=== Example of Applied Search Parameters
 
-tbd
+//tbd
 
 == Filtering Data using the Time Period Selector
 
-You can display the data points collected for the last given period of time (such as the last 5 or 30 minutes) or over a given date and time range. 
+You can display the data points collected for the last given period of time (such as the last 5 or 30 minutes) or over a given date and time range. The *Entities Overview* page includes a date picker with auto-refresh and manual refresh options. 
 
 Organizations with a Gold, Platinum, or Starter subscription can view up to 30 days of data. Organizations with a Titanium or Advanced subscription can view up to one year of data.
+
+[NOTE]: If you do not see data in any of the cards, charts, or tables, ensure that you have chosen the appropriate date-time range in the date picker.
+
+//Organizations with a Titanium or Advanced Tier also have the ability to automatically refresh the *Entities Overview* page. The minimum duration for which auto-refresh can be enabled is 5 minutes. Manual refreshing of data is available to users of all tiers.
+//From tech review, but seems redundant. 
 
 === Setting the Time Period to Display
 
@@ -87,35 +96,58 @@ You can display an earlier or later time period in your chart to cover a shorter
 
 == Understanding Summary and Performance Trends for Entities
 
-The *Entities Overview* page shows charts that detail entity performance. By default, the charts show data for entities in your current business group and environment. When you modify your search settings, the data in the charts changes accordingly.
+The *Entities Overview* page provides key metrics and health indicators as performance metrics cards and charts. By default, the charts show data for entities in your current business group and environment. When you modify your search settings, the data in the charts changes accordingly. 
 
-=== Summary Charts
+The following are the performance metrics cards that appear:
+ 
+=== Summary Charts 
 
 Total Entities::
-The total number of entities according to your current search conditions.
+
+The total number of entities that match your current search conditions in the selected date and time range.
+
+Entities with Errors::
+
+The count of entities that have an error that match your current search conditions in the selected date and time range. 
+
+Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
 
 Total Requests::
-The sum of inbound and outbound requests according to your current search conditions.
 
-Average P95 Latency::
-[I don't know] , calculated in milliseconds. 
+The total request volume for entities that match your current search conditions in the selected date and time range. 
 
-Average Error Rate::
-The percentage of requests that result in errors according to your current search conditions.
+Error Rate:: 
 
-Active Entities::
-The total number of active entities according to your current search conditions.
+The error rate for entities that match your current search conditions in the selected date and time range. The error rate is calculated using the total number of entity errors divided by the total number of requests for those entities.
+
 
 === Performance Trends Charts
 
-Request Latency::
-[I don't know], calculated in milliseconds. 
+Top Entities by Response Time:: 
 
-Error Volume::
-The total number of failed inbound and outbound requests to entities according to your current search conditions.
+The response time of the top entities that match your current search conditions in the selected date and time range. The top entities are calculated based on the percentile values of their response times (highest response time to lowest response time). The chart uses `P99` as the percentile index by default; however, you can select `P95`, `P90`, or `P75` to use as the percentile index.
+
+Error Volume:: 
+
+The total number of entities that match your current search conditions in the selected date and time range. 
+
+Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
 
 Request Volume:: 
-The total number of inbound and outbound requests to entities according to your current search conditions.
+
+The total number of request to entities that match your current search conditions in the selected date and time range. 
+
+Entities List:: 
+
+The list of entities that match your current search conditions in the selected date and time range. This list is rendered as a table with columnar key metrics. By default, the table is sorted by the value in the `Request Volume` (descending) field. The following columns appear in the table:
+
+* *Entity Name*: Name of the entity.
+* *Entity Type*: Type of the entity. The value in this column is either `API` or `Application`.
+* *Request Volume*: Total number of requests to the entity.
+* *P95 Latency*: P95 response time latency, calculated in milliseconds. 
+* *P75 Latency*: P75 response time latency, calculated in milliseconds.
+* *Error Rate*: Percentage of requests to the entity that result in errors. 
+* *Deployment Type*: Environment in which the entity is deployed. 
 
 [[automatic-interval]]
 == How Data is Aggregated in Intervals
