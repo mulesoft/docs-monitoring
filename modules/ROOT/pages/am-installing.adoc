@@ -139,6 +139,8 @@ If you need to update the Anypoint Monitoring agent at some point in the future,
 . Follow the instructions for <<install_ap_monitoring_onprem,installing the Anypoint Monitoring agent>> on-premises.
 . Restart Mule.
 
+*Note:* If a runtime is added/removed from the cluster or a server group, the AM agent needs to be reinstalled.
+
 == Performance Impact
 
 Enabling monitoring can impact CPU utilization and memory utilization depending on your specific application configuration. Before enabling monitoring in your production environment, test any performance impact in your pre-production environment to ensure optimal performance and sizing.
