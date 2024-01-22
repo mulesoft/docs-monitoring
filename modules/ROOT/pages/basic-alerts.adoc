@@ -111,7 +111,7 @@ Message response time::
 Response time (in milliseconds) of a message
 
 CPU utilization::
-Percent of CPU used
+Percent of CPU used on the virtual machine. This metric includes all processes.
 +
 This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
 
