@@ -113,7 +113,7 @@ When you edit configurations, you can change names, connection types, and data s
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-include::partial$include-nav-data-exporter.adoc[]
+include::partial$include-nav-telemetry-exporter.adoc[]
 
 . Next to the configuration you want to edit, click the *...* menu and select *Edit Configuration*.
 +
