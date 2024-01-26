@@ -127,7 +127,7 @@ The *Edit Configuration* interface appears, showing the *General Information* pa
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-include::partial$include-nav-data-exporter.adoc[]
+include::partial$include-nav-telemetry-exporter.adoc[]
 
 . Next to the configuration you want to delete, click the *...* menu and select *Delete Connection*.
 +
