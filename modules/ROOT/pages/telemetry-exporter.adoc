@@ -12,8 +12,9 @@ To use the Telemetry Exporter feature, you must create a _connection_ with a thi
 
 Before you configure the Telemetry Exporter feature, ensure that you have:
 
-* An Anypoint Platform account with the (permission) and (permission) permissions
-* The ability to create an access token for your third-party app
+* An Anypoint Platform account with the Telemetry Exporter Administrator and Telemetry Exporter Configuration Manager permissions
+* Access information for your third-party app, including the OpenTelemetry-supported endpoint. For example, the endpoint URL for Azure Monitor is `https://dc.services.visualstudio.com/v2/track`.
+* The ability to create an instrumentation key or access token for your third-party app
 
 == Access Telemetry Exporter
 
@@ -75,6 +76,8 @@ include::partial$include-nav-telemetry-exporter.adoc[]
 == Manage Configurations
 
 After you create a connection to a third-party app, you must create a _configuration_ to specify what kind of data to send to your third-party app, as well as the frequency of data transfers. When you create a new configuration, you specify a business group, environment type, and a destination.
+
+The Telemetry Exporter feature runs a service every hour to apply the changes for the configurations and connections, so once the configuration is created, it can take up to an hour for the configuration to be applied and start exporting data. 
 
 // add data type when traces return
 
