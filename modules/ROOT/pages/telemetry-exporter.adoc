@@ -70,7 +70,7 @@ include::partial$include-nav-telemetry-exporter.adoc[]
 . Next to the connection you want to delete, click the *...* menu and select *Delete Connection*.
 . A warning appears:
 * If the connection is not in use, the warning confirms you want to delete the connection. Click *Delete Connection*.
-* If the connection is in use, the warning states you must delete or redirect connections for any configurations that use the connection. Click *Dismiss*, and then <<edit-configuration,edit your configurations>>. to use other existing connections before deleting the current connection.
+* If the connection is in use, the warning states you must delete or redirect connections for any configurations that use the connection. Click *Dismiss*, and then <<edit-configuration,edit your configurations>> to use other existing connections before deleting the current connection.
 
 == Manage Configurations
 
