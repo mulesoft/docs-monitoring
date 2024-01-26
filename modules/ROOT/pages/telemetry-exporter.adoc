@@ -1,4 +1,4 @@
-== Export Anypoint Platform Data to Third-Party Apps
+= Export Anypoint Platform Data to Third-Party Apps
 
 The Telemetry Exporter feature enables you to export xref:access-management::audit-logging.adoc[_audit logs_] to third-party observability and analytics apps, such as Azure Monitor, Datadog, and Splunk.
 //trace data should be a link once the topic exists
@@ -30,7 +30,7 @@ Anypoint Platform needs permission to send data to third-party apps. Create a _c
 
 === Create a Connection
 
-include::partial$include-nav-steps-telemetry-permissions.adoc.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc[]
 
 include::partial$include-nav-telemetry-exporter.adoc[]
 
@@ -86,7 +86,7 @@ The Telemetry Exporter feature runs a service every hour to apply the changes fo
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[]
 
-include::partial$include-nav-data-exporter.adoc[]
+include::partial$include-nav-telemetry-exporter.adoc[]
 
 . Click *New Configuration*.
 +
