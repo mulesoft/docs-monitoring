@@ -26,7 +26,7 @@ You can switch between the *Configurations* and *Connections* tabs to create, ed
 
 Anypoint Platform needs permission to send data to third-party apps. Create a _connection_ with a third-party app, such as New Relic or Splunk, to authorize data transfers. 
 
-== Create a Connection
+=== Create a Connection
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
