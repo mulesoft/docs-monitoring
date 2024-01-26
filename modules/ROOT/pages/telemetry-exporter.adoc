@@ -18,7 +18,8 @@ Before you configure the Telemetry Exporter feature, ensure that you have:
 
 == Access Telemetry Exporter
 
-include::partial$include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc[]
+
 include::partial$include-nav-telemetry-exporter.adoc[]
 
 You can switch between the *Configurations* and *Connections* tabs to create, edit, or view data configurations and connections to third-party apps.
@@ -29,7 +30,7 @@ Anypoint Platform needs permission to send data to third-party apps. Create a _c
 
 === Create a Connection
 
-include::partial$include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc.adoc[]
 
 include::partial$include-nav-telemetry-exporter.adoc[]
 
@@ -50,7 +51,7 @@ The new connection appears in the *Connections* tab on the *Telemetry Exporter* 
 
 === Edit a Connection
 
-include::partial$include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc[]
 
 include::partial$include-nav-telemetry-exporter.adoc[]
 
@@ -64,7 +65,7 @@ The *Edit Connection* interface appears, showing the *Connection Details* page.
 
 === Delete a Connection
 
-include::partial$include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc[]
 
 include::partial$include-nav-telemetry-exporter.adoc[]
 
@@ -83,7 +84,7 @@ The Telemetry Exporter feature runs a service every hour to apply the changes fo
 
 === Create a Configuration
 
-include::partial$include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc[]
 
 include::partial$include-nav-data-exporter.adoc[]
 
@@ -119,7 +120,7 @@ When you edit configurations, you can change names, connection types, and data s
 
 // You cannot change the data type. You must create a new configuration to change the data type. add back in when traces return
 
-include::partial$include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc[]
 
 include::partial$include-nav-telemetry-exporter.adoc[]
 
@@ -133,7 +134,7 @@ The *Edit Configuration* interface appears, showing the *General Information* pa
 
 === Delete Configurations
 
-include::partial$include-nav-steps-no-permissions.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc[]
 
 include::partial$include-nav-telemetry-exporter.adoc[]
 
