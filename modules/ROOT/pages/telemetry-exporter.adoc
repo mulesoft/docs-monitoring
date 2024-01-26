@@ -95,14 +95,19 @@ The *Create New Configuration* interface appears, showing the *General Informati
 +
 The *Business Group & Environment Type* page appears.
 . In the *Select Business Group* section, select one of the following:
-* *All business groups*: Data of the type you specified is sourced from all business groups in the organization.
-* *Select a business group*: Data of the type you specified is sourced only from the business group you select.
+* *All business groups*: Audit logs are sourced from all business groups in the organization.
+* *Select a business group*: Audit logs are sourced only from the business group you select.
+// audit logs are sourced -> data of the type you specified is sourced
+. Click *Next*.
+. Click *Save Configuration*. 
+
+////
+before the final *next*, add:
 . If you selected trace data as the data type, in the *Select Environment Type* section, select one of the following:
 * Production
 * Sandbox
 * Design
-. Click *Next*.
-. Click *Save Configuration*. 
+////
 
 [[edit-configuration]]
 === Edit Configurations
