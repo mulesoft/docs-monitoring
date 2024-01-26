@@ -18,7 +18,6 @@ Before you configure the Telemetry Exporter feature, ensure that you have:
 == Access Telemetry Exporter
 
 include::partial$include-nav-steps-no-permissions.adoc[]
-
 include::partial$include-nav-telemetry-exporter.adoc[]
 
 You can switch between the *Configurations* and *Connections* tabs to create, edit, or view data configurations and connections to third-party apps.
