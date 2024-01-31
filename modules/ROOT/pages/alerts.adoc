@@ -20,10 +20,10 @@ If you have a Titanium subscription, the limit is ten alerts per API instance.
 +
 * xref:advanced-alerts.adoc[Advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
 ** Limit per organization: Up to 20 advanced alerts
-+
-Note that thresholds are checked every five minutes. The evaluated query is the average value of the metric in the last five minutes. The evaluated metric is the one referenced in the *General* tab for the graph. If the value passes the threshold, the advanced alert is triggered. The advanced alert is triggered only if the alert state changes (from `OK` state to `Alerting` state or vice versa).
 * Operational alerts for APIs through API Manager
 * Operational alerts for server and app events through Runtime Manager
+
+For basic and advanced alerts, thresholds are checked every five minutes. The evaluated query is the average value of the metric in the last five minutes. For advanced alerts, the evaluated metric is the one referenced in the *General* tab for the graph. If the value of the metric passes the threshold, the alert is triggered. The alert is triggered only if the alert state changes (from `OK` state to `Alerting` state or vice versa), and if you change the email address of the alert recipient, they do not receive an email until the alert is triggered.
 
 == Access the Alerts Page
 
