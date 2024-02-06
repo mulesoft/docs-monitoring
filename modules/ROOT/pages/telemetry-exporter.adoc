@@ -29,6 +29,8 @@ You can switch between the *Configurations* and *Connections* tabs to create, ed
 
 Anypoint Platform needs permission to send data to third-party apps. Create a _connection_ with a third-party app, such as New Relic or Splunk, to authorize data transfers. 
 
+You need the Telemetry Exporter Administrator permission to manage connections.
+
 === Create a Connection
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[connectionPermission]
@@ -80,7 +82,7 @@ include::partial$include-nav-telemetry-exporter.adoc[]
 After you create a connection to a third-party app, you must create a _configuration_ to specify what kind of data to send to your third-party app, as well as the frequency of data transfers. When you create a new configuration, you specify a business group, environment type, and a destination.
 
 The Telemetry Exporter feature runs a service every hour to apply the changes for the configurations and connections, so once the configuration is created, it can take up to an hour for the configuration to be applied and start exporting data. 
-
+You need the Telemetry Exporter Configuration Manager permission to manage configurations.
 // add data type when traces return
 
 === Create a Configuration
