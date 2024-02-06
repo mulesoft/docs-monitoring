@@ -592,13 +592,19 @@ The total number of collections that have occurred, grouped by worker.
 include::partial$java-17-restriction.adoc[tag=java17CH]
 
 Garbage Collection Time::
-The approximate accumulated JVM garbage collection time elapsed, grouped by worker. include::partial$java-17-restriction.adoc[tag=java17CH]
+The approximate accumulated JVM garbage collection time elapsed, grouped by worker. 
++
+include::partial$java-17-restriction.adoc[tag=java17CH]
 
 ParNew Collection Count::
-The total number of ParNew garbage collections, grouped by worker. include::partial$java-17-restriction.adoc[tag=java17]
+The total number of ParNew garbage collections, grouped by worker. 
++
+include::partial$java-17-restriction.adoc[tag=java17]
 
 ParNew Collection Time::
-The approximate accumulated ParNew garbage collection time elapsed, grouped by worker. include::partial$java-17-restriction.adoc[tag=java17]
+The approximate accumulated ParNew garbage collection time elapsed, grouped by worker. 
++
+include::partial$java-17-restriction.adoc[tag=java17]
 
 Classes Loaded::
 The total number of loaded classes, grouped by worker.
@@ -622,16 +628,22 @@ JVM Uptime::
 The time elapsed since the JVM started, grouped by worker.
 
 Par Eden Space graphs (Used, Max, Init, and Committed)::
-The memory metrics for JVM Par Eden space, grouped by worker. include::partial$java-17-restriction.adoc[tag=java17]
+The memory metrics for JVM Par Eden space, grouped by worker. 
++
+include::partial$java-17-restriction.adoc[tag=java17]
 
 Par Survivor Space graphs (Used, Max, Init, and Committed)::
-The memory metrics for JVM Par Survivor space, grouped by worker. include::partial$java-17-restriction.adoc[tag=java17]
+The memory metrics for JVM Par Survivor space, grouped by worker. 
++
+include::partial$java-17-restriction.adoc[tag=java17]
 
 Metaspace graphs (Used, Max, Init, Committed)::
 The memory metrics for JVM metaspace, grouped by worker.
 
 Code Cache graphs (Used, Max, Init, Committed)::
-The memory metrics for JVM code cache, grouped by worker. include::partial$java-17-restriction.adoc[tag=java17]
+The memory metrics for JVM code cache, grouped by worker. 
++
+include::partial$java-17-restriction.adoc[tag=java17]
 
 Compressed Class Space graphs (Used, Max, Init, Committed)::
 The memory metrics for JVM compressed class, grouped by worker.
