@@ -587,7 +587,9 @@ Anypoint Monitoring collects JVM metrics based on the JVM CPU and not the system
 The following charts appear on the *JVM* dashboard:
 
 Garbage Collection Count::
-The total number of collections that have occurred, grouped by worker. include::partial$java-17-restriction.adoc[tag=java17CH]
+The total number of collections that have occurred, grouped by worker. 
++
+include::partial$java-17-restriction.adoc[tag=java17CH]
 
 Garbage Collection Time::
 The approximate accumulated JVM garbage collection time elapsed, grouped by worker. include::partial$java-17-restriction.adoc[tag=java17CH]
