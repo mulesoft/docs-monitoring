@@ -3,7 +3,7 @@
 The Telemetry Exporter feature enables you to export xref:access-management::audit-logging.adoc[_audit logs_] to third-party observability and analytics apps, such as Azure Monitor, Datadog, and Splunk.
 //trace data should be a link once the topic exists
 
-To use the Telemetry Exporter feature, you must create a _connection_ with a third-party app to authorize Anypoint Platform to share data. You must then create a _configuration_ to specify the frequency of data transfers. You can also edit and delete connections and configurations.
+To use the Telemetry Exporter feature, you must create a _connection_ with a third-party app to authorize Anypoint Platform to share data. You must then create a _configuration_ to specify which business groups allow content to be exported to connections. You can also edit and delete connections and configurations.
 
 // add back to configs: "configuration to specify the types of data Anypoint Platform exports as well as..."
 
@@ -12,13 +12,14 @@ To use the Telemetry Exporter feature, you must create a _connection_ with a thi
 
 Before you configure the Telemetry Exporter feature, ensure that you have:
 
-* An Anypoint Platform account with the Telemetry Exporter Administrator and Telemetry Exporter Configuration Manager permissions
+* To create or modify connections, an Anypoint Platform account with the Telemetry Exporter Administrator permission
+* To create or modify configurations, an Anypoint Platform account with the Telemetry Exporter Configuration Manager permission
 * Access information for your third-party app, including the OpenTelemetry-supported endpoint. For example, the endpoint URL for Azure Monitor is `https://dc.services.visualstudio.com/v2/track`.
 * The ability to create an instrumentation key or access token for your third-party app
 
 == Access Telemetry Exporter
 
-include::partial$include-nav-steps-telemetry-permissions.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc[tag=eitherPermission]
 
 include::partial$include-nav-telemetry-exporter.adoc[]
 
@@ -30,7 +31,7 @@ Anypoint Platform needs permission to send data to third-party apps. Create a _c
 
 === Create a Connection
 
-include::partial$include-nav-steps-telemetry-permissions.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc[connectionPermission]
 
 include::partial$include-nav-telemetry-exporter.adoc[]
 
@@ -51,7 +52,7 @@ The new connection appears in the *Connections* tab on the *Telemetry Exporter* 
 
 === Edit a Connection
 
-include::partial$include-nav-steps-telemetry-permissions.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPermission]
 
 include::partial$include-nav-telemetry-exporter.adoc[]
 
@@ -65,7 +66,7 @@ The *Edit Connection* interface appears, showing the *Connection Details* page.
 
 === Delete a Connection
 
-include::partial$include-nav-steps-telemetry-permissions.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPermission]
 
 include::partial$include-nav-telemetry-exporter.adoc[]
 
@@ -84,7 +85,7 @@ The Telemetry Exporter feature runs a service every hour to apply the changes fo
 
 === Create a Configuration
 
-include::partial$include-nav-steps-telemetry-permissions.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationPermission]
 
 include::partial$include-nav-telemetry-exporter.adoc[]
 
@@ -120,7 +121,7 @@ When you edit configurations, you can change names, connection types, and data s
 
 // You cannot change the data type. You must create a new configuration to change the data type. add back in when traces return
 
-include::partial$include-nav-steps-telemetry-permissions.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationPermission]
 
 include::partial$include-nav-telemetry-exporter.adoc[]
 
@@ -134,7 +135,7 @@ The *Edit Configuration* interface appears, showing the *General Information* pa
 
 === Delete Configurations
 
-include::partial$include-nav-steps-telemetry-permissions.adoc[]
+include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationPermission]
 
 include::partial$include-nav-telemetry-exporter.adoc[]
 
