@@ -9,6 +9,6 @@
 // end::configurationPermission[]
 
 // tag::eitherPermission[]
-. Log in to Anypoint Platform using an account that has the Telemetry Exporter Configuration Manager permission.
+. Log in to Anypoint Platform using an account that has the Telemetry Exporter Administrator or Telemetry Exporter Configuration Manager permission.
 . In the navigation bar or the main Anypoint Platform screen, click *Monitoring*.
 // end::eitherPermission[]
