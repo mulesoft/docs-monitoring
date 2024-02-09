@@ -1,12 +1,17 @@
 = Export Anypoint Platform Data to Third-Party Apps
 
-The Telemetry Exporter feature enables you to export xref:access-management::audit-logging.adoc[_audit logs_] to third-party observability and analytics apps, such as Azure Monitor, Datadog, and Splunk.
+The Telemetry Exporter feature enables you to export xref:access-management::audit-logging.adoc[_audit logs_] to third-party observability and analytics apps, such as Azure Monitor, Datadog, and Splunk HEC.
 //trace data should be a link once the topic exists
 
-To use the Telemetry Exporter feature, you must create a _connection_ with a third-party app to authorize Anypoint Platform to share data. You must then create a _configuration_ to specify which business groups allow content to be exported to connections. You can also edit and delete connections and configurations.
+To use the Telemetry Exporter feature, you must create a _connection_ with a third-party app to authorize Anypoint Platform to share data. You must then create a _configuration_ to specify which business groups allow content to be exported to connections. You can also edit and delete connections and configurations. 
+
+include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
 // add back to configs: "configuration to specify the types of data Anypoint Platform exports as well as..."
 
+== Supported Third-Party Apps
+
+The Telemetry Exporter feature enables you to create connections with most third-party observability and analytics apps that have OpenTelemetry-supported endpoints and allow you to create an instrumentation key or access token. Azure Monitor and Splunk HEC are also compatible. 
 
 == Before You Begin
 
@@ -27,9 +32,11 @@ You can switch between the *Configurations* and *Connections* tabs to create, ed
 
 == Manage a Connection 
 
-Anypoint Platform needs permission to send data to third-party apps. Create a _connection_ with a third-party app, such as New Relic or Splunk, to authorize data transfers. 
+Anypoint Platform needs permission to send data to third-party apps. Create a _connection_ with a third-party app, such as New Relic or Splunk, to authorize data transfers. You can configure up to 10 connections.
 
 You need the Telemetry Exporter Administrator permission to manage connections.
+
+include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
 === Create a Connection
 
@@ -42,7 +49,7 @@ include::partial$include-nav-telemetry-exporter.adoc[]
 +
 The *Create New Connection* interface appears, showing the *Connection Details* page.
 . In the *Connection Details* page, enter the following information: 
-* *Connection Name*: A name for your connection using only alphanumeric characters.
+* *Connection Name*: A name for your connection using only alphanumeric characters and hyphens.
 * *Destination Type*: The third-party app to which you want to transfer data. 
 * *Endpoint URL*: The endpoint that enables external connections to your third-party app. The location of this endpoint depends on your app.
 . Click *Next*.
@@ -79,11 +86,12 @@ include::partial$include-nav-telemetry-exporter.adoc[]
 
 == Manage Configurations
 
-After you create a connection to a third-party app, you must create a _configuration_ to specify what kind of data to send to your third-party app, as well as the frequency of data transfers. When you create a new configuration, you specify a business group, environment type, and a destination.
-
-The Telemetry Exporter feature runs a service every hour to apply the changes for the configurations and connections, so once the configuration is created, it can take up to an hour for the configuration to be applied and start exporting data. 
+After you create a connection to a third-party app, you must create a _configuration_ to specify the scope of the audit logs to send to your third-party app. When you create a new configuration, you specify a business group and a destination. You can export audit logs from all of your business groups or a specific business group.
+// when traces return, add data type specification and environment
 You need the Telemetry Exporter Configuration Manager permission to manage configurations.
 // add data type when traces return
+
+include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
 === Create a Configuration
 
@@ -145,3 +153,5 @@ include::partial$include-nav-telemetry-exporter.adoc[]
 +
 A warning appears, confirming you want to delete the configuration. 
 . Click *Delete Configuration*. 
+
+== Known Issues

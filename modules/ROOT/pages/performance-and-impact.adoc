@@ -64,6 +64,9 @@ Basic alerts for servers and Mule apps::
 Basic alerts for APIs::
 Ten basic alerts per API instance.
 
+Telemetry Exporter Connections::
+10 per organization.
+
 == Logging Data Management
 
 When you manage logs, the maximum length of one line of log data is 8 KB (including date and thread metadata). Single lines that are longer than 8 KB are truncated at the 8 KB mark.
