@@ -1,4 +1,0 @@
-. In the Anypoint Monitoring navigation menu, select *Telemetry Exporter*. 
-+
-The *Telemetry Exporter* page appears, showing the *Configurations* tab. 
-+
