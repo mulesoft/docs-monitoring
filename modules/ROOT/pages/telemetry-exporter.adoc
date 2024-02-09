@@ -21,7 +21,6 @@ Before you configure the Telemetry Exporter feature, ensure that you have:
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=eitherPermission]
 
-include::partial$include-nav-telemetry-exporter.adoc[]
 
 You can switch between the *Configurations* and *Connections* tabs to create, edit, or view data configurations and connections to third-party apps.
 
@@ -34,8 +33,6 @@ You need the Telemetry Exporter Administrator permission to manage connections.
 === Create a Connection
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[connectionPermission]
-
-include::partial$include-nav-telemetry-exporter.adoc[]
 
 . Click the *Connections* tab.
 . Click *New Connection*.
@@ -55,8 +52,6 @@ The new connection appears in the *Connections* tab on the *Telemetry Exporter* 
 === Edit a Connection
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPermission]
-
-include::partial$include-nav-telemetry-exporter.adoc[]
 
 . Click the *Connections* tab.
 . Next to the connection you want to edit, click the *...* menu and select *Edit Connection*.
