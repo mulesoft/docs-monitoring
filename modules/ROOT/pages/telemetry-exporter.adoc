@@ -70,8 +70,6 @@ The *Edit Connection* interface appears, showing the *Connection Details* page.
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPermission]
 
-include::partial$include-nav-telemetry-exporter.adoc[]
-
 . Next to the connection you want to delete, click the *...* menu and select *Delete Connection*.
 . A warning appears:
 * If the connection is not in use, the warning confirms you want to delete the connection. Click *Delete Connection*.
@@ -88,8 +86,6 @@ You need the Telemetry Exporter Configuration Manager permission to manage confi
 === Create a Configuration
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationPermission]
-
-include::partial$include-nav-telemetry-exporter.adoc[]
 
 . Click *New Configuration*.
 +
@@ -125,8 +121,6 @@ When you edit configurations, you can change names, connection types, and data s
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationPermission]
 
-include::partial$include-nav-telemetry-exporter.adoc[]
-
 . Next to the configuration you want to edit, click the *...* menu and select *Edit Configuration*.
 +
 The *Edit Configuration* interface appears, showing the *General Information* page. 
@@ -138,8 +132,6 @@ The *Edit Configuration* interface appears, showing the *General Information* pa
 === Delete Configurations
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationPermission]
-
-include::partial$include-nav-telemetry-exporter.adoc[]
 
 . Next to the configuration you want to delete, click the *...* menu and select *Delete Connection*.
 +
