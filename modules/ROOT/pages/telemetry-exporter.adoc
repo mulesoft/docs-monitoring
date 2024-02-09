@@ -39,7 +39,7 @@ include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
 === Create a Connection
 
-include::partial$include-nav-steps-telemetry-permissions.adoc[connectionPermission]
+include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPermission]
 
 . Click the *Connections* tab.
 . Click *New Connection*.
