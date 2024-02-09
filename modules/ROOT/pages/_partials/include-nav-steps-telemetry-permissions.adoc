@@ -2,7 +2,7 @@
 . Log in to Anypoint Platform using an account that has the Telemetry Exporter Administrator permissions.
 . In the navigation bar or the main Anypoint Platform screen, click *Monitoring*.
 . Click *Telemetry Exporter*.
-// end::connectionPermission[[
+// end::connectionPermission[]
 
 // tag::configurationPermission[]
 . Log in to Anypoint Platform using an account that has the Telemetry Exporter Configuration Manager permission.
