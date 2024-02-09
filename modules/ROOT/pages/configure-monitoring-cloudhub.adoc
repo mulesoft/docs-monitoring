@@ -24,7 +24,7 @@ Metrics and logs are supported in the following Mule versions:
 
 Metrics are used by graphs and other charts within xref:dashboards.adoc[Dashboards].
 
-Logs are available only if you have a Titanium subscription to Anypoint Platform.
+include::reuse::partial$billing/pricing.adoc[tag=amLogging]
 
 [[update_app]]
 == Set the Runtime Version
@@ -60,7 +60,8 @@ tag in the `pom.xml` file. For example, you can change `<muleVersion>3.9.3</mule
 
 == Enable Automatic Monitoring for Apps That You Plan to Deploy to CloudHub
 
-If you want your Mule apps to be monitored by default when you deploy them to CloudHub, configure this feature in Anypoint Monitoring before you deploy your apps. If you have a Titanium subscription to Anypoint Platform, this feature is enabled by default.
+If you want your Mule apps to be monitored by default when you deploy them to CloudHub, configure this feature in Anypoint Monitoring before you deploy your apps. 
+include::reuse::partial$billing/pricing.adoc[tag=enabledFeature]
 
 To configure automatic monitoring for each Mule app as it is deployed to CloudHub:
 

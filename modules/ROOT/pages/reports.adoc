@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*https://www.mulesoft.com/anypoint-pricing[This feature requires a Titanium subscription.]*
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
 == About Reports
 Reports allow you to view a list of apps running in an environment. The reports display information about overall performance and behavior across all the apps in the environment. These reports can help you identify app performance and availability problems across the environment so you can better maintain the expected level of service for your apps.
