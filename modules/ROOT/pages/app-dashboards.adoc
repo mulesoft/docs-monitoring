@@ -208,10 +208,11 @@ The following charts are available only if you are using Unified Agent and have 
 * Operating System Swap Space
 | <<custom-metrics-charts>> a|
 
-The *Custom metrics* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule. See xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].
+include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
 | <<application-network>> a|
 
-The chart on the *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app. The *Application Network* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule.
+The chart on the *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app. 
+include::reuse::partial$billing/pricing.adoc[tag=appNetworkTabAvailability]
 |===
 
 [[overview-charts]]
@@ -241,7 +242,7 @@ The average response time of outbound requests. If a Mule app has more than one 
 JVM - CPU % Utilization::
 The average percentage of CPU used by the JVM, grouped by worker. The JVM used in this chart is the Mule JVM process. The calculation for CPU utilization is relative to the physical server on which Mule is deployed. For example, in RTF, the resource usage indicates the JVM use with respect to the entire server, and not with respect to the pod maximum CPU allocation.
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 JVM - Heap Used::
 The average amount of heap memory utilized by the JVM, grouped by worker. The JVM used in this chart is the Mule JVM process.
@@ -282,17 +283,17 @@ The sum of inbound requests whose response time is greater than 1 second, groupe
 Inbound - Maximum Response Time::
 The maximum response time, grouped by endpoint.
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 Inbound - Protocols::
 The sum of inbound requests, grouped by protocol.
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 Inbound - HTTP Endpoints::
 The sum of inbound requests, grouped by remote hosts (endpoints).
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 [[outbound-charts]]
 == Outbound
@@ -654,7 +655,7 @@ The memory metrics for JVM tenured space, grouped by worker.
 Committed Virtual Memory::
 The amount of virtual memory guaranteed to be available to the running process, grouped by worker.
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 [[infrastructure-charts]]
 == Infrastructure
@@ -679,17 +680,17 @@ The average number of threads of the JVM, grouped by worker.
 System CPU % Utilization::
 The percentage of CPU used by all processes. This metric often aligns with the Cloudwatch System CPU % metric, but there may be different values given the timing of data aggregation for Anypoint Monitoring metrics.
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 JVM CPU Time::
 The cumulative CPU time consumed by the JVM.
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 Operating System Swap Space::
 The amount of memory the system is swapping, grouped by worker in automatic intervals.
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 .Example: Infrastructure Dashboard
 image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
@@ -697,12 +698,12 @@ image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
 [[custom-metrics-charts]]
 == Custom Metrics
 
-The *Custom metrics* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule. See xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].
+include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
 
 [[application-network]]
 == Application Network
 
-The *Application Network* tab displays only if you have a Titanium subscription and have set up Anypoint Visualizer.
+include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
 
 Setup requirements change based on your app deployment. Some deployment types require you to enable header injection or modify how Anypoint Visualizer collects data. For more information, see the documentation for each deployment type:
 
