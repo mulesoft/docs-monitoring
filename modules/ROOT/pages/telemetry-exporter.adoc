@@ -87,7 +87,7 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPerm
 
 == Manage Configurations
 
-After you create a connection to a third-party app, you must create a _configuration_ to specify the scope of the audit logs to send to your third-party app. When you create a new configuration, specify a business group and destination. You can export audit logs from all of your business groups or a specific business group.
+After you create a connection to a third-party app, you must create a configuration to specify the scope of the audit logs to send to your third-party app. When you create a new configuration, specify a business group and destination. You can export audit logs from all of your business groups or a specific business group.
 // when traces return, add data type specification and environment
 // add data type when traces return
 
