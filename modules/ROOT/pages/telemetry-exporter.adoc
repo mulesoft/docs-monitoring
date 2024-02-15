@@ -17,6 +17,7 @@ include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 == Supported Third-Party Apps
 
 The Telemetry Exporter feature enables you to create connections with most third-party observability and analytics apps that:
+
 * Have OpenTelemetry-supported endpoints.  For example, the endpoint URL for Azure Monitor is `https://dc.services.visualstudio.com/v2/track`
 * Allow you to create an instrumentation key or access token 
 
