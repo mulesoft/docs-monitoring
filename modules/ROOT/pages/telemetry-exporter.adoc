@@ -30,6 +30,7 @@ Before you configure the Telemetry Exporter feature, ensure that you have:
 * Telemetry Exporter Configuration Manager permission, so you can create or modify configurations
 * Access information for your third-party app, including the OpenTelemetry-supported endpoint
 * The ability to create an instrumentation key or access token for your third-party app
+* Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform
 
 == Access Telemetry Exporter
 
