@@ -3,7 +3,12 @@
 The Telemetry Exporter feature enables you to export xref:access-management::audit-logging.adoc[_audit logs_] to third-party observability and analytics apps, such as Azure Monitor, Datadog, and Splunk HEC.
 //trace data should be a link once the topic exists
 
-To use the Telemetry Exporter feature, you must create a _connection_ with a third-party app to authorize Anypoint Platform to share data. You must then create a _configuration_ to specify which business groups allow content to be exported to connections. You can also edit and delete connections and configurations. 
+To use the Telemetry Exporter feature, you must: 
+
+* Create a connection with a third-party app to authorize Anypoint Platform to share data
+* Create a configuration to specify which business groups allow content to be exported to connections 
+
+You can also edit and delete connections and configurations. 
 
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
@@ -11,15 +16,19 @@ include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
 == Supported Third-Party Apps
 
-The Telemetry Exporter feature enables you to create connections with most third-party observability and analytics apps that have OpenTelemetry-supported endpoints and allow you to create an instrumentation key or access token. Azure Monitor and Splunk HEC are also compatible. 
+The Telemetry Exporter feature enables you to create connections with most third-party observability and analytics apps that:
+* Have OpenTelemetry-supported endpoints.  For example, the endpoint URL for Azure Monitor is `https://dc.services.visualstudio.com/v2/track`
+* Allow you to create an instrumentation key or access token 
+
+Azure Monitor and Splunk HEC are also compatible. 
 
 == Before You Begin
 
 Before you configure the Telemetry Exporter feature, ensure that you have:
 
-* To create or modify connections, an Anypoint Platform account with the Telemetry Exporter Administrator permission
-* To create or modify configurations, an Anypoint Platform account with the Telemetry Exporter Configuration Manager permission
-* Access information for your third-party app, including the OpenTelemetry-supported endpoint. For example, the endpoint URL for Azure Monitor is `https://dc.services.visualstudio.com/v2/track`.
+* Telemetry Exporter Administrator permission, so you can create or modify connections
+* Telemetry Exporter Configuration Manager permission, so you can create or modify configurations
+* Access information for your third-party app, including the OpenTelemetry-supported endpoint
 * The ability to create an instrumentation key or access token for your third-party app
 
 == Access Telemetry Exporter
@@ -33,7 +42,6 @@ You can switch between the *Configurations* and *Connections* tabs to create, ed
 
 Anypoint Platform needs permission to send data to third-party apps. Create a _connection_ with a third-party app, such as New Relic or Splunk, to authorize data transfers. You can configure up to 10 connections.
 
-You need the Telemetry Exporter Administrator permission to manage connections.
 
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
@@ -43,15 +51,13 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPerm
 
 . Click the *Connections* tab.
 . Click *New Connection*.
-+
-The *Create New Connection* interface appears, showing the *Connection Details* page.
 . In the *Connection Details* page, enter the following information: 
-* *Connection Name*: A name for your connection using only alphanumeric characters and hyphens.
-* *Destination Type*: The third-party app to which you want to transfer data. 
-* *Endpoint URL*: The endpoint that enables external connections to your third-party app. The location of this endpoint depends on your app.
+* *Connection Name*: Name for your connection, using only alphanumeric characters and hyphens.
+* *Destination Type*: Third-party app to which you want to transfer data. 
+* *Endpoint URL*: Endpoint that enables external connections to your third-party app. The location of this endpoint depends on your app.
 . Click *Next*.
-. On the *Authentication* page, enter the information needed to authenticate your app. Some apps need only access tokens, while others also require a header key.
-. Click *Test Connection* to ensure Anypoint Platform can connect to your third-party app.
+. On the *Authentication* page, enter the information needed to authenticate your app. Some apps require only access tokens, while others also require a header key.
+. Click *Test Connection* to ensure that Anypoint Platform can connect to your third-party app.
 . Click *Save Connection*. 
 +
 The new connection appears in the *Connections* tab on the *Telemetry Exporter* page.
@@ -61,27 +67,27 @@ The new connection appears in the *Connections* tab on the *Telemetry Exporter* 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPermission]
 
 . Click the *Connections* tab.
-. Next to the connection you want to edit, click the *...* menu and select *Edit Connection*.
+. Next to the connection you want to edit, click *...* and select *Edit Connection*.
 +
 The *Edit Connection* interface appears, showing the *Connection Details* page. 
 
-. In the *Connection Details* page, edit each field you want to change, and then click *Next.*
-. In the *Authentication* page, edit each field you want to change, then click *Test Connection*. When the connection is successful, click *Save Connection*.
+. In the *Connection Details* page, edit each field you want to change and click *Next*.
+. In the *Authentication* page, edit each field you want to change and click *Test Connection*. 
+. If the connection is successful, click *Save Connection*.
 
 === Delete a Connection
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPermission]
 
-. Next to the connection you want to delete, click the *...* menu and select *Delete Connection*.
+. Next to the connection you want to delete, click *...* and select *Delete Connection*.
 . A warning appears:
-* If the connection is not in use, the warning confirms you want to delete the connection. Click *Delete Connection*.
-* If the connection is in use, the warning states you must delete or redirect connections for any configurations that use the connection. Click *Dismiss*, and then <<edit-configuration,edit your configurations>> to use other existing connections before deleting the current connection.
+* If the connection is not in use, the warning asks whether to delete the connection. Click *Delete Connection*.
+* If the connection is in use, the warning states that you must delete or redirect connections for any configurations that use the connection. Click *Dismiss*, and then <<edit-configuration,edit your configurations>> to use other existing connections before deleting the current connection.
 
 == Manage Configurations
 
-After you create a connection to a third-party app, you must create a _configuration_ to specify the scope of the audit logs to send to your third-party app. When you create a new configuration, you specify a business group and a destination. You can export audit logs from all of your business groups or a specific business group.
+After you create a connection to a third-party app, you must create a _configuration_ to specify the scope of the audit logs to send to your third-party app. When you create a new configuration, specify a business group and destination. You can export audit logs from all of your business groups or a specific business group.
 // when traces return, add data type specification and environment
-You need the Telemetry Exporter Configuration Manager permission to manage configurations.
 // add data type when traces return
 
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
@@ -94,22 +100,22 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationP
 +
 The *Create New Configuration* interface appears, showing the *General Information* page.
 . In the *General Information* page, enter the following information:
-* *Configuration Name*: A name for your configuration using only alphanumeric characters.
-* *Connection*: An existing connection that you configured.
+* *Configuration Name*: Name for your configuration that uses only alphanumeric characters.
+* *Connection*: Existing connection that you configured.
 // * *Data Type*: Audit logs or trace data
 . Click *Next*.
 +
 The *Business Group & Environment Type* page appears.
 . In the *Select Business Group* section, select one of the following:
 * *All business groups*: Audit logs are sourced from all business groups in the organization.
-* *Select a business group*: Audit logs are sourced only from the business group you select.
+* *Select a business group*: Audit logs are sourced only from the selected business group.
 // audit logs are sourced -> data of the type you specified is sourced
 . Click *Next*.
 . Click *Save Configuration*. 
 
 ////
 before the final *next*, add:
-. If you selected trace data as the data type, in the *Select Environment Type* section, select one of the following:
+. If you selected trace data as the data type, select the environment type:
 * Production
 * Sandbox
 * Design
@@ -124,21 +130,21 @@ When you edit configurations, you can change names, connection types, and data s
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationPermission]
 
-. Next to the configuration you want to edit, click the *...* menu and select *Edit Configuration*.
+. Next to the configuration you want to edit, click *...* and select *Edit Configuration*.
 +
 The *Edit Configuration* interface appears, showing the *General Information* page. 
 
-. On the *General Information* page, edit each field you want to change, and then click *Next.* 
-. In the *Business Group & Environment Type* page, edit each field you want to change, then click *Next*. 
+. On the *General Information* page, edit each field you want to change and click *Next.* 
+. In the *Business Group & Environment Type* page, edit each field you want to change and click *Next*. 
 . Click *Save Configuration*. 
 
 === Delete Configurations
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationPermission]
 
-. Next to the configuration you want to delete, click the *...* menu and select *Delete Connection*.
+. Next to the configuration you want to delete, click *...* and select *Delete Connection*.
 +
-A warning appears, confirming you want to delete the configuration. 
+A warning appears that confirms whether you want to delete the configuration. 
 . Click *Delete Configuration*. 
 
 == Known Issues
