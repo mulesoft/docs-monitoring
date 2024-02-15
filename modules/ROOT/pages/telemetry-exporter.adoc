@@ -72,8 +72,8 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPerm
 +
 The *Edit Connection* interface appears, showing the *Connection Details* page. 
 
-. In the *Connection Details* page, edit each field you want to change and click *Next*.
-. In the *Authentication* page, edit each field you want to change and click *Test Connection*. 
+. On the *Connection Details* page, edit each field you want to change and click *Next*.
+. On the *Authentication* page, edit each field you want to change and click *Test Connection*. 
 . If the connection is successful, click *Save Connection*.
 
 === Delete a Connection
