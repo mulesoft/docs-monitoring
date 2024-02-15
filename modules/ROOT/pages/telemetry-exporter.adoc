@@ -70,9 +70,6 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPerm
 
 . Click the *Connections* tab.
 . Next to the connection you want to edit, click *...* and select *Edit Connection*.
-+
-The *Edit Connection* interface appears, showing the *Connection Details* page. 
-
 . On the *Connection Details* page, edit each field you want to change and click *Next*.
 . On the *Authentication* page, edit each field you want to change and click *Test Connection*. 
 . If the connection is successful, click *Save Connection*.
@@ -99,15 +96,11 @@ include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationPermission]
 
 . Click *New Configuration*.
-+
-The *Create New Configuration* interface appears, showing the *General Information* page.
 . In the *General Information* page, enter the following information:
 * *Configuration Name*: Name for your configuration that uses only alphanumeric characters.
 * *Connection*: Existing connection that you configured.
 // * *Data Type*: Audit logs or trace data
 . Click *Next*.
-+
-The *Business Group & Environment Type* page appears.
 . In the *Select Business Group* section, select one of the following:
 * *All business groups*: Audit logs are sourced from all business groups in the organization.
 * *Select a business group*: Audit logs are sourced only from the selected business group.
@@ -133,9 +126,6 @@ When you edit configurations, you can change names, connection types, and data s
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationPermission]
 
 . Next to the configuration you want to edit, click *...* and select *Edit Configuration*.
-+
-The *Edit Configuration* interface appears, showing the *General Information* page. 
-
 . On the *General Information* page, edit each field you want to change and click *Next.* 
 . In the *Business Group & Environment Type* page, edit each field you want to change and click *Next*. 
 . Click *Save Configuration*. 
