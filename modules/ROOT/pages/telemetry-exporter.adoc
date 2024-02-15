@@ -41,7 +41,7 @@ You can switch between the *Configurations* and *Connections* tabs to create, ed
 
 == Manage a Connection 
 
-Anypoint Platform needs permission to send data to third-party apps. Create a _connection_ with a third-party app, such as New Relic or Splunk, to authorize data transfers. You can configure up to 10 connections.
+Anypoint Platform needs permission to send data to third-party apps. Create a connection with a third-party app, such as New Relic or Splunk, to authorize data transfers. You can configure up to 10 connections.
 
 
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
