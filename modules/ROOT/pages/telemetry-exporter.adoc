@@ -52,7 +52,7 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPerm
 
 . Click the *Connections* tab.
 . Click *New Connection*.
-. In the *Connection Details* page, enter the following information: 
+. On the *Connection Details* page, enter the following information: 
 * *Connection Name*: Name for your connection, using only alphanumeric characters and hyphens.
 * *Destination Type*: Third-party app to which you want to transfer data. 
 * *Endpoint URL*: Endpoint that enables external connections to your third-party app. The location of this endpoint depends on your app.
