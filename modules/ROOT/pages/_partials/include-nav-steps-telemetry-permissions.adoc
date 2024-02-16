@@ -1,5 +1,5 @@
 // tag::connectionPermission[]
-. Log in to Anypoint Platform using an account that has the Telemetry Exporter Administrator permissions.
+. Log in to Anypoint Platform using an account that has the Telemetry Exporter Administrator permission.
 . In the navigation bar or the main Anypoint Platform screen, click *Monitoring*.
 . Click *Telemetry Exporter*.
 // end::connectionPermission[]
