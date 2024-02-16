@@ -8,13 +8,10 @@ Anypoint Monitoring has product-specific permissions that control access to its 
 
 include::partial$monitoring-permissions.adoc[tag=monitoringAdmin]
 
-Monitoring Viewer:: 
 include::partial$monitoring-permissions.adoc[tag=monitoringViewer]
 
-Telemetry Exporter Administrator::
 include::partial$monitoring-permissions.adoc[tag=telExpAdmin]
 
-Telemetry Exporter Configuration Manager::
 include::partial$monitoring-permissions.adoc[tag=telExpManager]
 
 
