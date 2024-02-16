@@ -10,7 +10,7 @@ To use the Telemetry Exporter, you must:
 
 You can also edit and delete connections and configurations. 
 
-
+include::partial$telemetry-exporter-notes.adoc[tag=auditLogDuplicates]
 
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
