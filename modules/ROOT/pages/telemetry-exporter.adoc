@@ -1,9 +1,9 @@
 = Export Telemetry Data to Third-Party Monitoring Systems
 
-The Telemetry Exporter feature enables you to export xref:access-management::audit-logging.adoc[_audit logs_] to third-party observability and analytics apps, such as Azure Monitor, Datadog, and Splunk HEC.
+The Telemetry Exporter enables you to export xref:access-management::audit-logging.adoc[_audit logs_] to third-party observability and analytics apps, such as Azure Monitor, Datadog, and Splunk HEC.
 //trace data should be a link once the topic exists
 
-To use the Telemetry Exporter feature, you must: 
+To use the Telemetry Exporter, you must: 
 
 * Create a connection with a third-party app to authorize Anypoint Platform to share data
 * Create a configuration to specify which business groups allow content to be exported to connections 
@@ -16,7 +16,7 @@ include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
 == Supported Third-Party Monitoring Products
 
-The Telemetry Exporter feature enables you to create connections with most third-party observability and analytics apps that:
+The Telemetry Exporter enables you to create connections with most third-party observability and analytics apps that:
 
 * Have OpenTelemetry-supported endpoints.  For example, the endpoint URL for Azure Monitor is `https://dc.services.visualstudio.com/v2/track`
 * Allow you to create an instrumentation key or access token 
