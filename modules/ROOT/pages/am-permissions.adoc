@@ -12,10 +12,10 @@ Monitoring Viewer::
 include::partial$monitoring-permissions.adoc[tag=monitoringViewer]
 
 Telemetry Exporter Administrator::
-include::partial$monitoring-permissions.adoc[tag=TelExpAdmin]
+include::partial$monitoring-permissions.adoc[tag=telExpAdmin]
 
 Telemetry Exporter Configuration Manager::
-include::partial$monitoring-permissions.adoc[tag=TelExpManager]
+include::partial$monitoring-permissions.adoc[tag=telExpManager]
 
 
 The content you can access when you have the Anypoint Monitoring Administrator and Anypoint Monitoring Viewer permissions depends on other asset-specific permissions.
