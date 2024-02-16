@@ -25,4 +25,6 @@ Enables a user to:
 +
 * View connections and configurations in Telemetry Exporter
 * Create, modify, and delete configurations in Telemetry Exporter
+
+this is a test without the plus
 // end::telExpManager[]
