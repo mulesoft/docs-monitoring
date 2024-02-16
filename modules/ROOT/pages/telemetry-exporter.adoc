@@ -10,7 +10,7 @@ To use the Telemetry Exporter, you must:
 
 You can also edit and delete connections and configurations. 
 
-When exported, audit logs have a unique ID in the `mulesoft.audit.id` attribute. In usual operations, each log will be delivered only once, but under certain circumstances, some logs are delivered more than once. Duplicate log entries always share the unique `mulesoft.audit.id` attribute, so this attribute can be used to safely block or remove duplicate logs from the target system.
+
 
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
@@ -20,7 +20,7 @@ include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
 The Telemetry Exporter enables you to create connections with most third-party observability and analytics apps that:
 
-* Have OpenTelemetry-supported endpoints.  For example, the endpoint URL for Azure Monitor is `https://dc.services.visualstudio.com/v2/track`
+* Have OpenTelemetry-supported endpoints. For example, the endpoint URL for Azure Monitor is `https://dc.services.visualstudio.com/v2/track`
 * Allow you to create an instrumentation key or access token 
 
 Azure Monitor and Splunk HEC are also compatible. 
@@ -30,7 +30,7 @@ Azure Monitor and Splunk HEC are also compatible.
 Before you configure the Telemetry Exporter, ensure that you have:
 
 * Telemetry Exporter Administrator permission, so you can create or modify connections
-* Telemetry Exporter Configuration Manager permission, so you can create or modify configurations
+* Telemetry Exporter Configurations Manager permission, so you can create or modify configurations
 * Access information for your third-party app, including the OpenTelemetry-supported endpoint
 * The ability to create an instrumentation key or access token for your third-party app
 * Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform
@@ -143,4 +143,4 @@ A warning appears that confirms whether you want to delete the configuration.
 
 == Known Issues
 
-WIP
+include::monirtoring::partial$telemetry-exporter-notes.adoc[tag=knownIssues]
