@@ -143,5 +143,6 @@ A warning appears that confirms whether you want to delete the configuration.
 
 == Known Issues
 
-include::monirtoring::partial$telemetry-exporter-notes.adoc[tag=knownIssuesGen]
-include::monirtoring::partial$telemetry-exporter-notes.adoc[tag=knownIssuesAL]
+include::partial$telemetry-exporter-notes.adoc[tag=knownIssuesGen]
+
+include::partial$telemetry-exporter-notes.adoc[tag=knownIssuesAL]

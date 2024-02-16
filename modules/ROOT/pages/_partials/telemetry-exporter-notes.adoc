@@ -6,7 +6,6 @@ Telemetry Exporter checks for changes to connections and configurations on an ho
 * The audit logs that the Telemetry Exporter sends to third-party apps often have different field names from the audit logs that appear in Access Management or the Audit Query Log API. +
 For example, audit logs shown in the UI or retrieved by the Audit Log Query API describe a user action (such as `update` or `delete`) as `action`, whereas the OpenTelemetry attribute refers to it as `mulesoft.audit.action`.
 * If the audit log entry metadata and payload field exceed 30KB when compressed, the payload will be truncated prior to compression. 
-
 // end::knownIssuesAL[]
 
 // tag::knownIssuesGen[]
@@ -19,7 +18,6 @@ Telemetry Exporter currently has the following data differences, limitations, an
 For example, `Connection A` to Splunk has `Configuration A` and `Configuration B` that map to `Business Group A` and `Business Group B`. In this scenario, you are unable to use `Connection A` to create a configuration that exports data from all business groups.
 * You cannot create an identical configuration pointing to the same or different connection. A configuration is defined as identical when the data type and business group. For example, we cannot create more than one Traces export configuration for Business Group A and Environment Type Sandbox.
 * Because Azure Monitor Exporter does not support persistent sending queues, connections that use it might experience data loss. Data might be deleted from the sending queue when the Telemetry Exporter restarts hourly to apply updates.
-
 // end::knownIssuesGen[]
 
 // tag::auditLogDuplicates[]
