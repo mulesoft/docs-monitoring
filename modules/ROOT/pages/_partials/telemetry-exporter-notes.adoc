@@ -1,5 +1,5 @@
 // tag::hourDelay[]
-Anypoint Monitoring checks for changes to connections and configurations on an hourly basis. When you create or modify a connection or configuration, there might be a delay in applying your new settings.
+Telemetry Exporter checks for changes to connections and configurations on an hourly basis. When you create or modify a connection or configuration, there might be a delay in applying your new settings.
 // end::hourDelay[]
 
 // tags::knownIssues[]

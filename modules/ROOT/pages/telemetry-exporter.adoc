@@ -1,4 +1,4 @@
-= Export Anypoint Platform Data to Third-Party Apps
+= Export Telemetry Data to Third-Party Monitoring Systems
 
 The Telemetry Exporter feature enables you to export xref:access-management::audit-logging.adoc[_audit logs_] to third-party observability and analytics apps, such as Azure Monitor, Datadog, and Splunk HEC.
 //trace data should be a link once the topic exists
@@ -14,7 +14,7 @@ include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
 // add back to configs: "configuration to specify the types of data Anypoint Platform exports as well as..."
 
-== Supported Third-Party Apps
+== Supported Third-Party Monitoring Products
 
 The Telemetry Exporter feature enables you to create connections with most third-party observability and analytics apps that:
 
@@ -96,7 +96,7 @@ include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationPermission]
 
 . Click *New Configuration*.
-. In the *General Information* page, enter the following information:
+. On the *General Information* page, enter the following information:
 * *Configuration Name*: Name for your configuration that uses only alphanumeric characters.
 * *Connection*: Existing connection that you configured.
 // * *Data Type*: Audit logs or trace data
@@ -119,7 +119,7 @@ before the final *next*, add:
 [[edit-configuration]]
 === Edit Configurations
 
-When you edit configurations, you can change names, connection types, and data scopes. 
+When you edit configurations, you can change the configuration name and connection. If you want to modify the business group, you must create a new configuration.
 
 // You cannot change the data type. You must create a new configuration to change the data type. add back in when traces return
 
@@ -127,7 +127,7 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationP
 
 . Next to the configuration you want to edit, click *...* and select *Edit Configuration*.
 . On the *General Information* page, edit each field you want to change and click *Next.* 
-. In the *Business Group & Environment Type* page, edit each field you want to change and click *Next*. 
+. On the *Business Group & Environment Type* page, *Next*. 
 . Click *Save Configuration*. 
 
 === Delete Configurations
