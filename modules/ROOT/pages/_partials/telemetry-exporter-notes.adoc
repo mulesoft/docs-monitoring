@@ -2,12 +2,12 @@
 Telemetry Exporter checks for changes to connections and configurations on an hourly basis. When you create or modify a connection or configuration, there might be a delay in applying your new settings.
 // end::hourDelay[]
 
-// tags::knownALIssues[]
+// tags::knownIssuesAL[]
 * The audit logs that the Telemetry Exporter sends to third-party apps often have different field names from the audit logs that appear in Access Management or the Audit Query Log API. +
 For example, audit logs shown in the UI or retrieved by the Audit Log Query API describe a user action (such as `update` or `delete`) as `action`, whereas the OpenTelemetry attribute refers to it as `mulesoft.audit.action`.
 * If the audit log entry metadata and payload field exceed 30KB when compressed, the payload will be truncated prior to compression. 
 
-// end::knownALIssues[]
+// end::knownIssuesAL[]
 
 // tag::knownIssuesGen[]
 Telemetry Exporter currently has the following data differences, limitations, and known issues:
