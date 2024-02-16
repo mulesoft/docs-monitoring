@@ -10,6 +10,8 @@ To use the Telemetry Exporter, you must:
 
 You can also edit and delete connections and configurations. 
 
+When exported, audit logs have a unique ID in the `mulesoft.audit.id` attribute. In usual operations, each log will be delivered only once, but under certain circumstances, some logs are delivered more than once. Duplicate log entries always share the unique `mulesoft.audit.id` attribute, so this attribute can be used to safely block or remove duplicate logs from the target system.
+
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
 // add back to configs: "configuration to specify the types of data Anypoint Platform exports as well as..."
@@ -25,7 +27,7 @@ Azure Monitor and Splunk HEC are also compatible.
 
 == Before You Begin
 
-Before you configure the Telemetry Exporter feature, ensure that you have:
+Before you configure the Telemetry Exporter, ensure that you have:
 
 * Telemetry Exporter Administrator permission, so you can create or modify connections
 * Telemetry Exporter Configuration Manager permission, so you can create or modify configurations

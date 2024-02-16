@@ -12,7 +12,7 @@ Enables a user to:
 * View connections and configurations in Telemetry Exporter
 * Create, modify, and delete connections in Telemetry Exporter
 * Create, modify, and delete configurations in Telemetry Exporter
-+
+
 Assign this permission at the root organization level.
 // end::telExpAdmin[]
 
