@@ -5,8 +5,8 @@ The Telemetry Exporter enables you to export xref:access-management::audit-loggi
 
 To use the Telemetry Exporter, you must: 
 
-* Create a connection with a third-party app to authorize Anypoint Platform to share data
-* Create a configuration to specify which business groups allow content to be exported to connections 
+* Create a connection with a third-party app to authorize Anypoint Platform to share data.
+* Create a configuration to specify which business groups allow content to be exported to connections.
 
 You can also edit and delete connections and configurations. 
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
@@ -20,8 +20,8 @@ include::partial$telemetry-exporter-notes.adoc[tag=auditLogDuplicates]
 
 The Telemetry Exporter enables you to create connections with most third-party observability and analytics apps that:
 
-* Have OpenTelemetry-supported endpoints. For example, the endpoint URL for Azure Monitor is `https://dc.services.visualstudio.com/v2/track`
-* Allow you to create an instrumentation key or access token 
+* Have OpenTelemetry-supported endpoints. For example, the endpoint URL for Azure Monitor is `https://dc.services.visualstudio.com/v2/track`.
+* Allow you to create an instrumentation key or access token.
 
 Azure Monitor and Splunk HEC are also compatible. 
 
@@ -128,7 +128,7 @@ When you edit configurations, you can change the configuration name and connecti
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationPermission]
 
 . Next to the configuration you want to edit, click *...* and select *Edit Configuration*.
-. On the *General Information* page, edit each field you want to change and click *Next.* 
+. On the *General Information* page, edit each field you want to change and click *Next*. 
 . On the *Business Group & Environment Type* page, *Next*. 
 . Click *Save Configuration*. 
 
