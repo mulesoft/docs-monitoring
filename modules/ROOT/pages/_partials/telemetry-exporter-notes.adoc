@@ -16,7 +16,6 @@ Telemetry Exporter currently has the following data differences, limitations, an
 ** 5xx errors that can retry wait for a specific interval. Retries continue for 300 seconds before timing out.
 * When you create configurations for the same connection, you cannot create a configuration that uses all business groups while you have configurations that use individual business groups. Conversely, you cannot create configurations for that connection if you have a configuration that uses all business groups. +
 For example, `Connection A` to Splunk has `Configuration A` and `Configuration B` that map to `Business Group A` and `Business Group B`. In this scenario, you are unable to use `Connection A` to create a configuration that exports data from all business groups.
-* You cannot create an identical configuration pointing to the same or different connection. A configuration is defined as identical when the data type and business group. For example, we cannot create more than one Traces export configuration for Business Group A and Environment Type Sandbox.
 * Because Azure Monitor Exporter does not support persistent sending queues, connections that use it might experience data loss. Data might be deleted from the sending queue when the Telemetry Exporter restarts hourly to apply updates.
 // end::knownIssuesGen[]
 
