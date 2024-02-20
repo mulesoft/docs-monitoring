@@ -206,6 +206,11 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
+|Telemetry Exporter
+|No
+|No
+|Yes
+
 |===
 
 NOTE: Anypoint Visualizer application network integration refers to an Anypoint Visualizer widget within Anypoint Monitoring. This feature is available only to users who have a Titanium subscription. Anypoint Visualizer outside of Anypoint Monitoring is available to customers of all subscription levels.
