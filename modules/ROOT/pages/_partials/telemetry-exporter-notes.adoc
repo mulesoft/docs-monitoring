@@ -5,18 +5,18 @@ Telemetry Exporter checks for changes to connections and configurations on an ho
 // tag::knownIssuesAL[]
 * The audit logs that the Telemetry Exporter sends to third-party apps often have different field names from the audit logs that appear in Access Management or the Audit Query Log API. +
 For example, audit logs shown in the UI or retrieved by the Audit Log Query API describe a user action (such as `update` or `delete`) as `action`, whereas the OpenTelemetry attribute refers to it as `mulesoft.audit.action`.
-* If the audit log entry metadata and payload field exceed 30KB when compressed, the payload will be truncated prior to compression. 
+* If the audit log entry metadata and payload field exceed 30KB when compressed, the payload is truncated before compression. 
 // end::knownIssuesAL[]
 
 // tag::knownIssuesGen[]
 Telemetry Exporter currently has the following data differences, limitations, and known issues:
 
 * For failed requests, Telemetry Exporter retries are handled using the OpenTelemetry specifications for handling failures:
-** Permanant failures, such as bad requests, do not retry.
+** Permanent failures, such as bad requests, do not retry.
 ** 5xx errors that can retry wait for a specific interval. Retries continue for 300 seconds before timing out.
-* When you create configurations for the same connection, you cannot create a configuration that uses all business groups while you have configurations that use individual business groups. Conversely, you cannot create configurations for that connection if you have a configuration that uses all business groups. +
+* When you create configurations for the same connection, you cannot create a configuration that uses all business groups if there are configurations that use individual business groups. Conversely, you cannot create configurations for that connection if there is a configuration that uses all business groups. +
 For example, `Connection A` to Splunk has `Configuration A` and `Configuration B` that map to `Business Group A` and `Business Group B`. In this scenario, you are unable to use `Connection A` to create a configuration that exports data from all business groups.
-* Because Azure Monitor Exporter does not support persistent sending queues, connections that use it might experience data loss. Data might be deleted from the sending queue when the Telemetry Exporter restarts hourly to apply updates.
+* Because Azure Monitor Exporter does not support sending persistent queues, connections that use it might experience data loss. Data might be deleted from the sending queue when the Telemetry Exporter restarts hourly to apply updates.
 // end::knownIssuesGen[]
 
 // tag::auditLogDuplicates[]
