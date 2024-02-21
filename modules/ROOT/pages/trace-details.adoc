@@ -1,6 +1,6 @@
 = Trace Details
 
-Each trace available in the *Traces* overview page has metrics associated with it. Clicking a trace opens a *Trace Details* page and shows the origin of the initial request, associated entities, events associated with the request, and more. You can also see flows, logs, and events associated with the trace. 
+Each trace available in the *Traces* overview page has metrics associated with it. Clicking a trace opens a *Trace Details* page and shows the origin of the initial request, associated entities, events associated with the request, and more. You can also see flows, logs, and events associated with the trace in the form of _spans_. Each span contains details that explain the operations in the specific *Trace Detail* page.
 
 == Access Trace Details
 

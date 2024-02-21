@@ -4,14 +4,14 @@ The Traces feature in Anypoint Monitoring enables you to observe requests for ap
 
 //insert link to data exporter eventually
 
-The Traces feature is available only for organizations that have a Titanium subscription or the Advanced pricing package for Anypoint Platform.
+The Traces feature is available only for organizations that have the Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform.
 
 == Before You Begin
 
 Before you can use traces, ensure that you have:
 
 * A Titanium subscription or the Advanced pricing package for Anypoint Platform
-* Mule Runtime version 4.5 or later
+* Mule Runtime version 4.6 or later
 * Permission to view apps and APIs in Anypoint Monitoring
 
 //Sara - I would consider making this access topic a link in all the subsequent topics. I don't want to mess up anything you have going on here, so I won't change it but I think it would be nice!
