@@ -10,7 +10,7 @@ The Traces feature is available only for organizations that have the Anypoint In
 
 Before you can use traces, ensure that you have:
 
-* The Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform // replace with partial
+* The Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform
 * Mule Runtime version 4.6 or later
 * Permission to view apps and APIs in Anypoint Monitoring
 
