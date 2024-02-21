@@ -10,7 +10,7 @@ The Traces feature is available only for organizations that have the Anypoint In
 
 Before you can use traces, ensure that you have:
 
-* A Titanium subscription or the Advanced pricing package for Anypoint Platform
+* The Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform // replace with partial
 * Mule Runtime version 4.6 or later
 * Permission to view apps and APIs in Anypoint Monitoring
 
@@ -21,36 +21,36 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 
 include::partial$include-nav-distributed-tracing.adoc[]
 
-== Filter Traces
+== Search for Traces
 
-You can filter traces shown in the *Traces* overview page using a time period selector and queries. 
+You can search for traces shown in the *Traces* overview page using a time period selector and queries. 
 
-=== Filter Traces Using the Time Period Selector
+=== Search for Traces Using the Time Period Selector
 
-Use the time period selector to display traces for the last given period of time (such as the last 5 or 30 minutes) or over a given date and time range. Use the drop-down in the calendar icon to select the time period to display in a graph. Your setting applies across all traces in the *Traces* overview page, including the *Total Traces* chart. 
+Use the time period selector to display traces for the last given period of time (such as the last 5 or 30 minutes) or over a given date and time range. Use the drop-down in the calendar icon to select the time period to display in a graph. Your setting applies across all traces in the *Traces* overview page, including the *Trace Volume* chart. 
 
 Anypoint Monitoring retains up 30 days of trace data.
 
-=== Filter Traces Using Queries
+=== Search for Traces Using Queries
 
-Use the search bar to select fields to filter by query. You can query using the following criteria:
+Use the search bar to select fields to query entities and their traces. You can query using the following criteria:
 
-Transaction ID:: Transaction ID or correlation ID for a request 
-Transaction status:: Lists all spans/transactions with a specific status (e.g error)  
-Span Status:: Lists all spans with a specific status (e.g. error)
-Span response time range:: filter and list all spans with response time range E.g. response time  > 30 ms or between 10 ms and 30 ms  
-Transaction start time:: Search all transactions for a specific time range
-Service name:: Filter all the transactions and spans for a specific service
-API Name:: Filter all the transactions/spans for a specific API
-Tags:: If a tag has been defined for an entity, it can be used to quickly search for transactions specific to the tag. 
-Flow name:: Search span details for a specific flow
-Custom Attribute:: Search transactions for a specific customer-defined attribute (for example, *Order ID*)
-Span Name:: Search for a specific span
+* `business_group_id`: The ID of the business group that contains entities for which you want to see traces. This query appears in the search bar by default.
+* `environment_id`: The ID of the environment that contains entities for which you want to see traces. This query appears in the search bar by default.
+* `business_group_name`: The name of the business group that contains entities for which you want to see traces. 
+* `entry_api_version`: The version number of the API for which you want to see traces.
+* `entry_entity_id`: The ID of the entity for which you want to see traces.
+* `entry_entity_name`: The name of the entity for which you want to see traces.
+* `entry_entity_type`: The type of entity for which you want to see traces. You can query apps or APIs.
+* `entry_span_id`: The ID of a span contained in traces.
+* `entry_span_name`: The name of a span contained in traces.
+* `environment_name`: The name of the environment that contains entities for which you want to see traces.
+* `http_status_code`: The HTTP status code associated with a trace. You can query 0, 200, or 500 codes.
+* `trace_id`: The ID associated with a trace.
 
-// needs editing
 
 If no traces appear after applying a query, limit your conditions. 
 
 == Trace Overview Metrics
 
-The *Traces* overview page shows the *Traces List* chart by default, which displays both the total number of traces in Anypoint Platform and the total number of traces that have errors associated with them. You can use the time period selector to select the span of time covered by the *Traces List* chart. From the *Traces List* chart, you can click the *Trace ID* of a specific trace to view more information the *Trace Details* page. 
+The *Traces* overview page shows the *Trace Volume* chart by default, which displays both the total number of traces in Anypoint Platform and the total number of traces that have errors associated with them. You can use the time period selector to select the span of time covered by the *Trace Volume* chart. From the *Trace Volume* chart, you can click the *Trace ID* of a specific trace to view more information on the xref:trace-details.adoc[*Trace Details*] page. 
