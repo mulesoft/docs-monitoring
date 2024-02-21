@@ -21,6 +21,8 @@
  ** xref:dashboard-custom-config-table.adoc[Configure Tables]
  ** xref:dashboard-custom-config-text.adoc[Configure Text]
  ** xref:dashboard-config-ref.adoc[Dashboard Configuration Reference]
+* xref:traces-overview.adoc[Explore Trace Data for Apps and APIs]
+ ** xref:trace-details.adoc[Trace and Span Details]
 * xref:anypoint-custom-metrics-connector.adoc[Configure Custom Metrics]
 * xref:monitor-connectors.adoc[Monitor Connectors]
 * xref:reports.adoc[View Reports]
