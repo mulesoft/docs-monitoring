@@ -42,7 +42,8 @@ The built-in dashboard for the application or API is displayed.
 +
 image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
 
-Your data is prepopulated and displayed in the built-in dashboards and logs; no configuration is needed. Some charts appear only if you have a Titanium subscription to Anypoint Platform. 
+Your data is prepopulated and displayed in the built-in dashboards and logs; no configuration is needed. 
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvFunctionality] 
 
 Built-in dashboards include various pages to view different types of charts:
 
@@ -72,7 +73,7 @@ Built-in dashboards include various pages to view different types of charts:
 * Inbound - Total Failed Requests
 * Inbound - Total Slow Requests by Endpoint
 
-The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
 
 * Inbound - Protocols
 * Inbound - HTTP Endpoints
@@ -88,7 +89,7 @@ The following charts are available only if you are using Unified Agent and have 
 * Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Outbound - Total Failed Requests
 
-The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
 
 * Outbound - HTTP Ports
 * Outbound - Operations
@@ -111,7 +112,7 @@ The following charts are available only if you are using Unified Agent and have 
 * Inbound - Slow Requests by Flow
 * Outbound- Slow Requests by Flow
 
-If you don't see the *Flows* tab, verify that you are using Unified Agent and have a Titanium subscription to Anypoint Platform.
+include::reuse::partial$billing/pricing.adoc[tag=flowsTabAvailability]
 | <<connectors-charts>> a|
 
 * Connector Message Volume
@@ -151,7 +152,7 @@ If you don't see the *Flows* tab, verify that you are using Unified Agent and ha
 * Other Connector Response Time
 * Other Connector Failures
 
-If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
+include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
 | <<performance-charts>> a|
 
 * Mule Messages
@@ -190,7 +191,7 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Compressed Class Space graphs (Used, Max, Init, and Committed)
 * Tenured graphs (Used, Max, Init, and Committed)
 
-The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
 
 * Committed Virtual Memory
 | <<infrastructure-charts>> a|
@@ -201,7 +202,7 @@ The following charts are available only if you are using Unified Agent and have 
 * System Memory
 * JVM Thread Count
 
-The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
 
 * System CPU % Utilization
 * JVM CPU Time
@@ -336,7 +337,7 @@ The sum of outbound requests for the selected time period, grouped by remote hos
 [[flows-charts]]
 == Flows
 
-The following charts appear on the *Flows* dashboard if you have a Titanium subscription to Anypoint Platform:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
 Inbound - Response Time by Flow::
 The average inbound response time, grouped by flow.
@@ -396,7 +397,7 @@ The sum of outbound requests whose response time is greater than 1000 ms, groupe
 [[connectors-charts]]
 == Connectors
 
-If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
+include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
 
 The following charts appear on the *Connectors* dashboard:
 
@@ -589,23 +590,15 @@ The following charts appear on the *JVM* dashboard:
 
 Garbage Collection Count::
 The total number of collections that have occurred, grouped by worker. 
-+
-include::partial$java-17-restriction.adoc[tag=java17CH]
 
 Garbage Collection Time::
 The approximate accumulated JVM garbage collection time elapsed, grouped by worker. 
-+
-include::partial$java-17-restriction.adoc[tag=java17CH]
 
 ParNew Collection Count::
 The total number of ParNew garbage collections, grouped by worker. 
-+
-include::partial$java-17-restriction.adoc[tag=java17]
 
 ParNew Collection Time::
 The approximate accumulated ParNew garbage collection time elapsed, grouped by worker. 
-+
-include::partial$java-17-restriction.adoc[tag=java17]
 
 Classes Loaded::
 The total number of loaded classes, grouped by worker.
@@ -630,21 +623,15 @@ The time elapsed since the JVM started, grouped by worker.
 
 Par Eden Space graphs (Used, Max, Init, and Committed)::
 The memory metrics for JVM Par Eden space, grouped by worker. 
-+
-include::partial$java-17-restriction.adoc[tag=java17]
 
 Par Survivor Space graphs (Used, Max, Init, and Committed)::
 The memory metrics for JVM Par Survivor space, grouped by worker. 
-+
-include::partial$java-17-restriction.adoc[tag=java17]
 
 Metaspace graphs (Used, Max, Init, Committed)::
 The memory metrics for JVM metaspace, grouped by worker.
 
 Code Cache graphs (Used, Max, Init, Committed)::
 The memory metrics for JVM code cache, grouped by worker. 
-+
-include::partial$java-17-restriction.adoc[tag=java17]
 
 Compressed Class Space graphs (Used, Max, Init, Committed)::
 The memory metrics for JVM compressed class, grouped by worker.
