@@ -97,6 +97,8 @@ include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
 * Outbound - Endpoints
 | <<flows-charts>> a|
 
+include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
+
 * Inbound - Response Time by Flow
 * Outbound - Response Time by Flow
 * Inbound - Requests by Flow
