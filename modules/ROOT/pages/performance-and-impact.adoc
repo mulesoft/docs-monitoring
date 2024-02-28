@@ -55,7 +55,7 @@ Custom metrics::
 365 days in production environments.
 
 Advanced alerts::
-20 per app or API instance.
+10 per app or API instance.
 
 Basic alerts for servers and Mule apps::
 10 per server or app.
