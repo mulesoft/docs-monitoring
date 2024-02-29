@@ -1,0 +1,28 @@
+// tag::monitoringAdmin[]
+Monitoring Administrator::
+Enables a user to view, create, modify, and delete content in Anypoint Monitoring.
+// end::monitoringAdmin[]
+
+// tag::monitoringViewer[]
+Monitoring Viewer::
+Enables a user to view but not modify content in Anypoint Monitoring.
+// end::monitoringViewer[]
+
+// tag::telExpAdmin[]
+Telemetry Exporter Administrator::
+Enables a user to:
++
+* View connections and configurations in Telemetry Exporter
+* Create, modify, and delete connections in Telemetry Exporter
+* Create, modify, and delete configurations in Telemetry Exporter
++
+Assign this permission at the root organization level.
+// end::telExpAdmin[]
+
+// tag::telExpManager[]
+Telemetry Exporter Configurations Manager::
+Enables a user to:
++
+* View connections and configurations in Telemetry Exporter
+* Create, modify, and delete configurations in Telemetry Exporter
+// end::telExpManager[]
