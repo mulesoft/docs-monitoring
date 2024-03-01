@@ -10,9 +10,11 @@ The Traces feature is available only for organizations that have the Anypoint In
 
 Before you can use traces, ensure that you have:
 
-* The Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform
+include::reuse::partial$billing/pricing.adoc[tag=prereqBullet]
+
 * Mule Runtime version 4.6 or later
 * Permission to view apps and APIs in Anypoint Monitoring
+* HTTP Connector version 1.8 or later
 
 //Sara - I would consider making this access topic a link in all the subsequent topics. I don't want to mess up anything you have going on here, so I won't change it but I think it would be nice!
 == Access Traces
