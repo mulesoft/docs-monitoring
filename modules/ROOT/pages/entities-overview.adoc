@@ -76,22 +76,6 @@ Organizations with a Gold, Platinum, or Starter subscription can view up to 30 d
 //Organizations with a Titanium or Advanced Tier also have the ability to automatically refresh the *Entities Overview* page. The minimum duration for which auto-refresh can be enabled is 5 minutes. Manual refreshing of data is available to users of all tiers.
 //From tech review, but seems redundant. 
 
-=== Setting the Time Period to Display
-
-Use the drop-down in the calendar icon to select the time period to display in a graph.
-
-Your setting applies across all charts in the entity summary. 
-
-=== Changing the Time Period to Display
-
-You can display an earlier or later time period in your chart to cover a shorter or longer period of time.
-
-
-// steal Setting Data Display Options in a Dashboard and Setting the Time Period Display from dashboards-using.adoc but change the titles.
-
-// see if Changing the Time Period to Display still applies.
-
-// steal Refreshing Data
 
 
 == Understanding Summary and Performance Trends for Entities
