@@ -1,2 +1,2 @@
-. Log in to Anypoint Platform.
+. Log in to Anypoint Platform with a user account that has xref:am-permissions.adoc[permission to access content] in Anypoint Monitoring.
 . In the navigation bar or the main Anypoint Platform screen, click *Monitoring*.
