@@ -3,7 +3,7 @@ include::_attributes.adoc[]
 endif::[]
 = Set Up Advanced Alerts for Graphs in Custom Dashboards
 
-You must have a Titanium subscription to use this feature.
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
 You can set up advanced alerts to trigger email notifications when a data point you are measuring passes a specified threshold. Advanced alerts are listed in the *Alerts* page in Anypoint Monitoring.
 

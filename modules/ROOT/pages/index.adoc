@@ -51,16 +51,12 @@ See xref:logs.adoc[Logs].
 [data_storage_retention]
 == Data Storage and Retention
 
-Limits on data storage and retention are determined by your subscription level (Base or Titanium). All customers receive Anypoint Monitoring at the Base subscription level.
+Limits on data storage and retention are determined by your pricing plan. All organizations receive Anypoint Monitoring regardless of pricing plan. 
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvLimits]
 
-* For Gold/Platinum subscriptions
-** Stores metric data in the same region as your control plane: US East (N. Virginia) or EU (Frankfurt)
+include::reuse::partial$billing/pricing.adoc[tag=dataRetentionMonitoring]
 
-* For Titanium subscription
-** Significantly increases the storage per vCore over the Base subscription.
-** Stores log and metric data in the same region as your control plane: US East (N. Virginia) or EU (Frankfurt)
-
-For complete details about subscriptions, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
+For complete details about pricing, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
 
 == Raw Data Downloads
 
@@ -80,9 +76,17 @@ Monitor APIs and endpoints at scheduled intervals. Receive reports about whether
 
 See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring in Anypoint Monitoring].
 
-== Anypoint Monitoring Features
+== Anypoint Monitoring Features for Usage-Based Packages
 
-Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. While all customers receive fundamental monitoring capabilities with their subscriptions, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
+Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. All organizations receive fundamental monitoring regardless of pricing model. However, organizations that have the Anypoint Integration Advanced package receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
+
+If your organization changes its subscription model from the Anypoint Advanced Integration package to the Anypoint Integration Starter package, ensure you have preserved your logs outside of Anypoint Platform. Within an hour of changing pricing models, MuleSoft clears the storage that formerly kept log data.
+
+include::reuse::partial$billing/pricing.adoc[tag=monitoringTable]
+
+== Anypoint Monitoring Features for Legacy Subscription-Based Plans
+
+Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. All organizations receive fundamental monitoring capabilities with their subscriptions. However, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
 If your organization changes its subscription model from a Titanium to a Gold or Platinum subscription, ensure you have preserved your logs outside of Anypoint Platform. Within an hour of changing subscription models, MuleSoft clears the storage that formerly kept log data.
 
@@ -213,7 +217,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 |===
 
-NOTE: Anypoint Visualizer application network integration refers to an Anypoint Visualizer widget within Anypoint Monitoring. This feature is available only to users who have a Titanium subscription. Anypoint Visualizer outside of Anypoint Monitoring is available to customers of all subscription levels.
+NOTE: Anypoint Visualizer application network integration refers to an Anypoint Visualizer widget within Anypoint Monitoring. Anypoint Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
 
 
 == Use Cases
