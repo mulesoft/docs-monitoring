@@ -29,27 +29,26 @@ The *Anypoint Insights*  page appears, showing a summary of data for entities in
 
 == Search for Entities
 
-The search bar in the *Anypoint Insights*  page enables you to create search parameters to curate different assortments of entity data on the page as well as to visualize and monitor the health status of multiple entities in their business groups and environments. You can add and remove attributes such as status, errors, business groups, and environments to further refine your results. Adding different search parameters changes data in the summary, metric cards, and charts which is refreshed each time you conduct a new search. 
+The search bar in the *Anypoint Insights*  page enables you to create search parameters to curate different assortments of entity data on the page as well as to visualize and monitor the health status of multiple entities in their business groups and environments. You can add and remove attributes such as status, errors, and environments to further refine your results. Adding different search parameters changes data in the summary, metric cards, and charts which is refreshed each time you conduct a new search. 
 
 //Each search filter requires three pieces of information: an attribute name (for example, `entity_type`), an operator (for example, `=` or `IN`) and a value. The auto-suggest feature is triggered by clicking inside the search box or by entering a space. When the attribute name, an operator, and a value are provided, the search component creates a filter that is visually represented as a data pill. You can edit a search filter by double-clicking on the appropriate data pill. After all modifications are completed, you can use the enter key to convert the text to a search pill again. You can click on the *X* icon on the pill to remove it.
 
 //this is from tech review but I really don't think it is needed. 
 
-By default, the *Anypoint Insights* page shows data for entities in your current business group and environment. You can change or remove these parameters to see data for entities in different environments or business groups by clicking the *X* next to each option.
+By default, the *Anypoint Insights* page shows data for entities from the default environment configured in your user profile. You can adjust your profile to see data for entities in one or more of your environments for the active business group to which you are logged in. 
+
+//You can choose a different business group using the org switcher in the Anypoint Navigation bar. EM- FIX THIS
 
 //The search bar also offers quick filters, such as `Top 10 entities with highest error volume`, to show you common scenarios at a glance. You can also combine these with attributes and metrics to further specify the content that appears. 
 
 You can curate your search results for entity data using the following attributes:
 
-* Environment Name
-* Environment ID
-* Business Group Name
-* Business Group ID
+* Environment
 * Entity Name
 * Entity Type
 * Entity ID
 * Deployment Type
-* Entity Transaction Status
+* Entity Response Status
 * Request Counts
 * Response Time
 
@@ -63,7 +62,7 @@ include::partial$include-nav-entities.adoc[]
 
 . In the search bar, enter an attribute, element, business group, or environment you want to use to filter your data.
 +
-Note that`requests_counts` and `response_time` are measurements of their respective metrics. To create a search filter using these two attributes, you must choose an aggregating function. `COUNT` is the only supported aggregating function that can be used with the `request_counts` and `PERCENTILE` is the only aggregating function that can be used with `response_time`.
+Note that `requests_counts` and `response_time` are measurements of their respective metrics. To create a search filter using these two attributes, you must choose an aggregating function. `COUNT` is the only supported aggregating function that can be used with the `request_counts` and `PERCENTILE` is the only aggregating function that can be used with `response_time`.
 
 //=== Example of Applied Search Parameters
 
@@ -71,7 +70,7 @@ Note that`requests_counts` and `response_time` are measurements of their respect
 
 == Filtering Data using the Time Period Selector
 
-Use the time period selector to display data points collected for the last given period of time (such as the last 5 or 30 minutes) or over a given date and time range. Use the drop-down in the calendar icon to select the time period to display in a graph. Your setting applies across all traces in the *Anypoint Insights* page, including the Entities List.
+Use the time period selector to display data points collected for the last given period of time (such as the last 15 or 30 minutes) or over a given date and time range. Use the drop-down in the calendar icon to select the time period to display in a graph. Your setting applies across all traces in the *Anypoint Insights* page, including the Entities List.
 
 While in Beta, this feature is only accessible to Titanium or Advanced subscription customers and displays only seven days worth of data. 
 
@@ -85,7 +84,7 @@ The *Anypoint Insights* page provides key metrics and health indicators as perfo
 
 The following are the performance metrics cards that appear:
  
-=== Summary Charts 
+=== Performance Metrics
 
 Total Entities::
 
@@ -108,7 +107,7 @@ The error rate for entities that match your current search conditions in the sel
 
 === Performance Trends Charts
 
-Top Entities by Response Time:: 
+Entities with Slow Response Times:: 
 
 The response time of the top entities that match your current search conditions in the selected date and time range. The top entities are calculated based on the percentile values of their response times (highest response time to lowest response time). The chart uses `P99` as the percentile index by default; however, you can select `P95`, `P90`, or `P75` to use as the percentile index.
 
@@ -122,7 +121,7 @@ Request Volume::
 
 The total number of request to entities that match your current search conditions in the selected date and time range. 
 
-Entities List:: 
+=== Entities List
 
 The list of entities that match your current search conditions in the selected date and time range. This list is rendered as a table with columnar key metrics. By default, the table is sorted by the value in the `Request Volume` (descending) field. The following columns appear in the table:
 
@@ -130,7 +129,6 @@ The list of entities that match your current search conditions in the selected d
 * *Entity Type*: Type of the entity. The value in this column is either `API` or `Application`.
 * *Request Volume*: Total number of requests to the entity.
 * *P95 Latency*: P95 response time latency, calculated in milliseconds. 
-* *P75 Latency*: P75 response time latency, calculated in milliseconds.
 * *Error Rate*: Percentage of requests to the entity that result in errors. 
 * *Deployment Type*: Runtime environment in which the entity is deployed. 
 
@@ -139,21 +137,22 @@ The list of entities that match your current search conditions in the selected d
 
 Anypoint Monitoring aggregates data in charts based on the selected time interval. As such, the number of data points shown in a chart varies based on your selected time interval.
 
-[[average-response-times-app]]
-== Charting Inactivity for Average Response Time
+//Em told by Sathish to remove the following stuff 
+//[[average-response-times-app]]
+//== Charting Inactivity for Average Response Time
 
-include::partial$average-response-time.adoc[]
+//include::partial$average-response-time.adoc[]
 
-[[endpoint-operation-metrics]]
-== How Endpoint and Operation Use Metrics Are Gathered
+//[[endpoint-operation-metrics]]
+//== How Endpoint and Operation Use Metrics Are Gathered
 
-Anypoint Monitoring collects top occurring endpoints or operations for each data collection interval. Endpoints or operations that are not top occurring are sorted into a group called *Other*.
+//Anypoint Monitoring collects top occurring endpoints or operations for each data collection interval. Endpoints or operations that are not top occurring are sorted into a group called *Other*.
 
-In each data collection interval, top occurring endpoints or operations vary. An endpoint or operation that is top occurring in one interval may not be top occurring in the next.
+//In each data collection interval, top occurring endpoints or operations vary. An endpoint or operation that is top occurring in one interval may not be top occurring in the next.
 
-In Anypoint Monitoring charts and tables, the data comes from multiple data collection intervals. As a result, aggregated data shown in the dashboard is an estimation since the intervals may not have the same top occurring endpoints or operations. The tables show approximate counts for the most commonly occurring endpoints or operations when the *Other* grouping appears.
+//In Anypoint Monitoring charts and tables, the data comes from multiple data collection intervals. As a result, aggregated data shown in the dashboard is an estimation since the intervals may not have the same top occurring endpoints or operations. The tables show approximate counts for the most commonly occurring endpoints or operations when the *Other* grouping appears.
 
-For example, when an endpoint occurs more often than other endpoints in one interval but occurs less often in another interval (thus sorting it into the *Other* group for that interval), the resulting table displays lower than actual values for that endpoint, since the metrics that do not appear are grouped into the *Other* group.
+//For example, when an endpoint occurs more often than other endpoints in one interval but occurs less often in another interval (thus sorting it into the *Other* group for that interval), the resulting table displays lower than actual values for that endpoint, since the metrics that do not appear are grouped into the *Other* group.
 
 
 ////

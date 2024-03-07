@@ -1,6 +1,7 @@
 = Export Telemetry Data to Third-Party Monitoring Systems
 
-The Telemetry Exporter enables you to export xref:access-management::audit-logging.adoc[_audit logs_] to third-party observability and analytics apps, such as Azure Monitor and Splunk HEC.
+The Telemetry Exporter enables you to export xref:access-management::audit-logging.adoc[_audit logs_] and xref:trace-details.adoc[_trace data_] only from apps running CloudHub 2.0 to third-party observability and analytics apps, such as Azure Monitor, Splunk HEC, and OpenTelemetry compliant tools. 
+
 //trace data should be a link once the topic exists
 
 To use the Telemetry Exporter, you must: 
@@ -34,6 +35,8 @@ Before you configure the Telemetry Exporter, ensure that you have:
 * Access information for your third-party app, including the endpoint
 * The ability to create an instrumentation key or access token for your third-party app
 * Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform
+* Enabled trace data collection for CloudHub 2.0 apps deployed to xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[shared] or xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[private spaces]. This requirement applies only if you want to export trace data.
+
 
 == Access Telemetry Exporter
 
