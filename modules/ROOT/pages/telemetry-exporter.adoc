@@ -27,8 +27,8 @@ Azure Monitor and Splunk HEC are also compatible.
 
 Before you configure the Telemetry Exporter, ensure that you have:
 
-include::reuse::partial$billing/pricing.adoc[tag=prereqBullet]
-
+//include::reuse::partial$billing/pricing.adoc[tag=prereqBullet] - Removing for now. Including as plain text. 
+* The Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform. 
 * Telemetry Exporter Administrator permission, so you can create or modify connections.
 * Telemetry Exporter Configurations Manager permission, so you can create or modify configurations.
 * Access information for your third-party app, including the endpoint.
