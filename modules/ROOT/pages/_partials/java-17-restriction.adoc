@@ -1,7 +1,0 @@
-// tag::java17[]
-This chart is currently unavailable for apps using Java 17.
-// end::java17[]
-
-// tag::java17CH[]
-This chart is currently unavailable for CloudHub apps using Java 17.
-// end::java17CH[]

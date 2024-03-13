@@ -76,7 +76,8 @@ Monitor APIs and endpoints at scheduled intervals. Receive reports about whether
 
 See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring in Anypoint Monitoring].
 
-== Anypoint Monitoring Features for Package Plans
+
+== Anypoint Monitoring Features for Usage-Based Packages
 
 Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. All organizations receive fundamental monitoring regardless of pricing model. However, organizations that have the Anypoint Integration Advanced package receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
@@ -84,7 +85,7 @@ If your organization changes its subscription model from the Anypoint Advanced I
 
 include::reuse::partial$billing/pricing.adoc[tag=monitoringTable]
 
-== Anypoint Monitoring Features for Subscription-Based Plans
+== Anypoint Monitoring Features for Legacy Subscription-Based Plans
 
 Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. All organizations receive fundamental monitoring capabilities with their subscriptions. However, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
@@ -206,6 +207,11 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |Yes
 
 |Reports
+|No
+|No
+|Yes
+
+|Telemetry Exporter
 |No
 |No
 |Yes

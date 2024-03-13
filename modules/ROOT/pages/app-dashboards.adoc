@@ -178,20 +178,20 @@ include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
 * Outbound - Total Failed Requests by HTTP Endpoint
 | <<jvm-charts>> a|
 
-* Garbage Collection Count
-* Garbage Collection Time
-* ParNew Collection Count
-* ParNew collection Time
+* Old Gen GC Count
+* Old Gen GC Time
+* Young Gen GC Count
+* Young Gen GC Time
 * Classes (Loaded, Loaded Total, Unloaded)
 * Heap (Committed, Used)
 * Thread Count
 * JVM Uptime
-* Par Eden graphs (Used, Max, Init, and Committed)
-* Par Survivor graphs (Used, Max, Init, and Committed)
+* Eden Space graphs (Used, Max, Init, and Committed)
+* Survivor Space graphs (Used, Max, Init, and Committed)
 * Metaspace graphs (Used, Max, Init, and Committed)
 * Code Cache graphs (Used, Max, Init, and Committed)
 * Compressed Class Space graphs (Used, Max, Init, and Committed)
-* Tenured graphs (Used, Max, Init, and Committed)
+* Old Gen Mem graphs (Used, Max, Init, and Committed)
 
 include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
 
@@ -590,17 +590,17 @@ Anypoint Monitoring collects JVM metrics based on the JVM CPU and not the system
 
 The following charts appear on the *JVM* dashboard:
 
-Garbage Collection Count::
-The total number of collections that have occurred, grouped by worker. 
+Old Gen GC Count::
+The total number of JVM Old Gen garbage collections (GC) that have occurred, grouped by worker. 
 
-Garbage Collection Time::
-The approximate accumulated JVM garbage collection time elapsed, grouped by worker. 
+Old Gen GC Time::
+The approximate accumulated JVM Old Gen garbage collection (GC) time elapsed, grouped by worker. 
 
-ParNew Collection Count::
-The total number of ParNew garbage collections, grouped by worker. 
+Young Gen GC Count::
+The total number of JVM Young Gen garbage collections (GC), grouped by worker. 
 
-ParNew Collection Time::
-The approximate accumulated ParNew garbage collection time elapsed, grouped by worker. 
+Young Gen GC Time::
+The approximate accumulated JVM Young Gen garbage collection (GC) time elapsed, grouped by worker. 
 
 Classes Loaded::
 The total number of loaded classes, grouped by worker.
@@ -623,11 +623,11 @@ The total number of threads of the JVM, grouped by worker.
 JVM Uptime::
 The time elapsed since the JVM started, grouped by worker.
 
-Par Eden Space graphs (Used, Max, Init, and Committed)::
-The memory metrics for JVM Par Eden space, grouped by worker. 
+Eden Space graphs (Used, Max, Init, and Committed)::
+The memory metrics for JVM Eden space, grouped by worker. 
 
-Par Survivor Space graphs (Used, Max, Init, and Committed)::
-The memory metrics for JVM Par Survivor space, grouped by worker. 
+Survivor Space graphs (Used, Max, Init, and Committed)::
+The memory metrics for JVM Survivor space, grouped by worker. 
 
 Metaspace graphs (Used, Max, Init, Committed)::
 The memory metrics for JVM metaspace, grouped by worker.
@@ -638,8 +638,8 @@ The memory metrics for JVM code cache, grouped by worker.
 Compressed Class Space graphs (Used, Max, Init, Committed)::
 The memory metrics for JVM compressed class, grouped by worker.
 
-Tenured graphs (Used, Max, Init, Committed)::
-The memory metrics for JVM tenured space, grouped by worker.
+Old Gen Mem graphs (Used, Max, Init, Committed)::
+The memory metrics for JVM Old Gen space, grouped by worker.
 
 Committed Virtual Memory::
 The amount of virtual memory guaranteed to be available to the running process, grouped by worker.
