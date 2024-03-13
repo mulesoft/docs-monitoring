@@ -1,0 +1,150 @@
+// tag::amqlIntro[]
+Anypoint Monitoring Query Language (AMQL) is a domain-specific language that enables you to search your organization’s metering and observability data for specific information. AMQL uses similar syntax to SQL `SELECT` statements.
+// end::amqlIntro[]
+
+// tag::queryGrammarUR[]
+
+The following clauses show AMQL grammar:
+
+[source,sql]
+----
+    SELECT fieldList,[aggregationExpressionList][...]
+    FROM DataSource
+    WHERE timestamp between {start} AND {end}[ AND filterExpression]
+    [ORDER BY fieldOrAggregationList {ASC|DESC}]
+    [LIMIT limit]
+    [OFFSET offset]
+----
+
+If you 
+// end::queryGrammarUR[]
+
+// tag::queryGrammarAll[]
+
+The following clauses show AMQL grammar:
+
+[source,sql]
+----
+    SELECT fieldList,[aggregationExpressionList][...]
+    FROM DataSource
+    WHERE timestamp between {start} AND {end}[ AND filterExpression]
+    [GROUP BY fieldGroupByList]
+    [HAVING havingConditionExpression]
+    [ORDER BY fieldOrAggregationList {ASC|DESC}]
+    [TimeSeries timeWindowSize]
+    [LIMIT limit]
+    [OFFSET offset]
+----
+// end::queryGrammarAll[]
+
+// tag::filtering[]
+The following clause shows AMQL filtering:
+
+[source,sql]
+----
+    filterExpression -> conditionExpresion [AND conditionExpression] 
+    conditionExpression -> field comparisonOperator [literal|literList|field| NULL]
+
+----
+
+// end::filtering[]
+
+// tag::grouping[]
+
+[source,sql]
+----
+    aggregationExpression -> aggregationFunction(field[,parameters])
+                    AggregationFunction = avg|sum|percentile|histogram|max|min|count
+    aggregatedConditionExpression -> aggregationFunction(field[,parameters]) comparisionOperator [literal|literalList]                  
+    havingConditionExpression -> aggregatedConditionExpression [ AND aggregatedConditionExpression]
+
+----
+// end::grouping[]
+
+// tag::reservedKeywords[]
+
+AMQL has several reserved keywords, which are not case sensitive. 
+
+* `AS`
+* `ASC`
+* `BETWEEN`
+* `BY`
+* `DESC` 
+* `FROM`
+* `GROUP`
+* `HAVING`
+* `IN`
+* `LIKE`
+* `LIMIT`
+* `OFFSET`
+* `ORDER`
+* `SELECT` 
+* `WHERE`
+* `TIMESTAMP`
+* `TIMESERIES`
+
+// end::reservedKeywords[]
+
+// tag::selectClause[]
+The `SELECT` clause enables you to get a list of fields in a data source using describe endpoints. `select *` returns all public endpoints for a data source, but note that not all data sources support it.
+
+Field names in `SELECT` clauses are case-sensitive. 
+// end::selectClause[]
+
+// tag::whereClause[]
+The `WHERE` clause enables you to define your  `timestamp` range filter (in epoch milliseconds) and operators. 
+
+`WHERE` supports the following data types:
+
+* String literal
+* Integer
+* Decimal
+
+`WHERE` uses the following operators:
+
+|====
+|Filter Function |Filter Operator |Notes
+
+|`Equals`
+|`=`
+|
+
+|`NotEquals`
+|`!=`
+|
+
+|`greater`
+|`>`
+|
+
+|`greaterOrEquals`
+|`>=`
+|
+
+|`less`
+|`<`
+|
+
+|`lessOrEquals`
+|`<=`
+|
+
+|`in`
+|`IN`
+| in (...)
+
+|`between`
+|`BETWEEN`
+a|The timestamp field supports only `between`. For example: 
+
+[source,sql]
+----
+WHERE timestamp between 1710198204000 AND 1710371004000 
+----
+
+|`match pattern`
+|`LIKE`
+|This operator is a simplified version of the `match` operator, although it lacks regexp support. It supports only `wildcard`, noted as `*`.
+
+|====
+// end::whereClause[]
