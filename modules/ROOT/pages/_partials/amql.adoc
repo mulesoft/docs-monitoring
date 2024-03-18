@@ -4,7 +4,7 @@ Anypoint Monitoring Query Language (AMQL) is a domain-specific language that ena
 
 // tag::queryGrammarUR[]
 
-The following clauses show AMQL grammar:
+To adhere to AMQL grammar, arrange your clauses in the following order: 
 
 [source,sql]
 ----
@@ -16,12 +16,20 @@ The following clauses show AMQL grammar:
     [OFFSET offset]
 ----
 
-If you 
+The following example returns usage data between March 11 and March 13, 2023. The data source is Flex Gateway API calls, and the fields returned are organization ID, environment ID, and how many API calls were made:
+
+[source,sql]
+----
+SELECT org_id, env_id, api_call_count 
+FROM flex_gateway_api_calls 
+WHERE timestamp between 1710198204000 AND 1710371004000  
+----
+
 // end::queryGrammarUR[]
 
 // tag::queryGrammarAll[]
 
-The following clauses show AMQL grammar:
+To adhere to AMQL grammar, arrange your clauses in the following order: 
 
 [source,sql]
 ----
@@ -44,7 +52,6 @@ The following clause shows AMQL filtering:
 ----
     filterExpression -> conditionExpresion [AND conditionExpression] 
     conditionExpression -> field comparisonOperator [literal|literList|field| NULL]
-
 ----
 
 // end::filtering[]
@@ -86,7 +93,7 @@ AMQL has several reserved keywords, which are not case sensitive.
 // end::reservedKeywords[]
 
 // tag::selectClause[]
-The `SELECT` clause enables you to get a list of fields in a data source using describe endpoints. `select *` returns all public endpoints for a data source, but note that not all data sources support it.
+The `SELECT` clause enables you to get a list of fields in a data source using describe endpoints. Using `SELECT` with a wildcard (`select *`) returns all public endpoints for a data source, but note that not all data sources support it.
 
 Field names in `SELECT` clauses are case-sensitive. 
 // end::selectClause[]
