@@ -1,5 +1,7 @@
 // tag::amqlIntro[]
-Anypoint Monitoring Query Language (AMQL) is a domain-specific language that enables you to search your organization’s metering and observability data for specific information. AMQL uses similar syntax to SQL `SELECT` statements.
+Anypoint Monitoring Query Language (AMQL) is a domain-specific language that enables you to search your organization’s metering and observability data for specific information that the MuleSoft Observability Platform Service collects. 
+
+AMQL uses similar syntax to SQL `SELECT` statements.
 // end::amqlIntro[]
 
 // tag::queryGrammarUR[]
