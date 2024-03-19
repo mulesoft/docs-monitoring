@@ -144,7 +144,7 @@ The `WHERE` clause enables you to define your  `timestamp` range filter (in epoc
 |
 
 |`lessOrEquals`
-|`<=`
+|`+<=+`
 |
 
 |`in`
