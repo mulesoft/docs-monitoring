@@ -190,10 +190,10 @@ The `GROUPING` clause enables you to aggregate numeric values using the followin
 |`<fieldName>`
 
 |`count`
-|`<fieldName>`  or <dimensionName>
+|`<fieldName>`  or `<dimensionName>`
 
 |`distinct_count`
-|`<fieldName>` or <dimensionName>
+|`<fieldName>` or `<dimensionName>`
 
 |`histogram`
 |`<fieldName, splitPointsArray>`
