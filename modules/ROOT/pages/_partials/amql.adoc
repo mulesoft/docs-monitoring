@@ -200,7 +200,7 @@ The `GROUPING` clause enables you to aggregate numeric values using the followin
 
 |====
 
-Note that not all fields in the data might support all aggregations.
+Note that some fields in the data might not support certain aggregations.
 
 // end::groupingClauseUR[]
 
