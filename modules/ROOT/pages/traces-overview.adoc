@@ -10,7 +10,7 @@ The Traces feature is available only for organizations that have the Anypoint In
 
 Before you can use traces, ensure that you have:
 
-include::reuse::partial$billing/pricing.adoc[tag=prereqBullet]
+include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
 * Mule Runtime version 4.6 or later
 * Permission to view apps and APIs in Anypoint Monitoring
