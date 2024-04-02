@@ -8,7 +8,7 @@
  ** xref:monitor-applications-on-rtf.adoc[Monitor Applications on Runtime Fabric]
  ** xref:am-installing.adoc[Monitor Hybrid Runtimes]
  ** xref:performance-and-impact.adoc[Anypoint Monitoring Performance, Impact, and Limits]
-* xref:entities-overview.adoc[Anypoint Insights]
+* xref:anypoint-insights.adoc[Anypoint Insights]
 * xref:dashboards.adoc[About Dashboards]
 * xref:dashboards-using.adoc[Use Dashboards]
  ** xref:app-dashboards.adoc[Built-in Application Dashboards]
