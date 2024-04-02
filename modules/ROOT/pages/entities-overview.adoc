@@ -1,4 +1,4 @@
-= Exploring Anypoint Insights
+= Explore Entities with Anypoint Insights
 
 Anypoint Monitoring collects metrics on each _entity_, such as an app or API instance, in Anypoint Platform. The *Anypoint Insights*  page enables you to see data for your apps and APIs at a glance. The *Anypoint Insights*  page enables you to review key metrics about the health of your entities as well as identify and troubleshoot issues You can filter the entities that appear in the *Anypoint Insights*  page using attributes and elements. While in Beta, you can view up to seven days of worth of data. to view less than seven days of data, you can specify a date and time range.
 
