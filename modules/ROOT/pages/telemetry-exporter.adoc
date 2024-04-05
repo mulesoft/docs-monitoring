@@ -1,21 +1,16 @@
 = Export Telemetry Data to Third-Party Monitoring Systems
 
-The Telemetry Exporter enables you to export xref:access-management::audit-logging.adoc[_audit logs_] and xref:trace-details.adoc[_trace data_] only from apps running CloudHub 2.0 to third-party observability and analytics apps, such as Azure Monitor, Splunk HEC, and OpenTelemetry compliant tools. 
-
-//trace data should be a link once the topic exists
+The Telemetry Exporter enables you to export xref:access-management::audit-logging.adoc[_audit logs_] and xref:trace-details.adoc[_traces_] only from apps running CloudHub 2.0 to third-party observability and analytics apps, such as Azure Monitor, Splunk HEC, and OpenTelemetry compliant tools. 
 
 To use the Telemetry Exporter, you must: 
 
 * Create a connection with a third-party app to authorize Anypoint Platform to share data.
-* Create a configuration to specify which business groups allow content to be exported to connections.
+* Create a configuration to specify the types of data Anypoint Platform exports and which business groups and environments allow content to be exported to connections.
 
 You can also edit and delete connections and configurations. 
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
 include::partial$telemetry-exporter-notes.adoc[tag=auditLogDuplicates]
-
-
-// add back to configs: "configuration to specify the types of data Anypoint Platform exports as well as..."
 
 == Supported Third-Party Monitoring Products
 
@@ -30,13 +25,12 @@ Azure Monitor and Splunk HEC are also compatible.
 
 Before you configure the Telemetry Exporter, ensure that you have:
 
-* Telemetry Exporter Administrator permission, so you can create or modify connections
-* Telemetry Exporter Configurations Manager permission, so you can create or modify configurations
-* Access information for your third-party app, including the endpoint
-* The ability to create an instrumentation key or access token for your third-party app
-* Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform
+* The Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform. 
+* Telemetry Exporter Administrator permission, so you can create or modify connections.
+* Telemetry Exporter Configurations Manager permission, so you can create or modify configurations.
+* Access information for your third-party app, including the endpoint.
+* The ability to create an instrumentation key or access token for your third-party app.
 * Enabled trace data collection for CloudHub 2.0 apps deployed to xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[shared] or xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[private spaces]. This requirement applies only if you want to export trace data.
-
 
 == Access Telemetry Exporter
 
@@ -90,9 +84,7 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPerm
 
 == Manage Configurations
 
-After you create a connection to a third-party app, you must create a configuration to specify the scope of the audit logs to send to your third-party app. When you create a new configuration, specify a business group and destination. You can export audit logs from all of your business groups or a specific business group.
-// when traces return, add data type specification and environment
-// add data type when traces return
+After you create a connection to a third-party app, you must create a configuration to specify the scope of the data to send to your third-party app. When you create a new configuration, specify a data type, business group, environment type (traces only), and destination. You can export traces and audit logs from all of your business groups or a specific business group.
 
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
@@ -104,29 +96,22 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationP
 . On the *General Information* page, enter the following information:
 * *Configuration Name*: Name for your configuration that uses only alphanumeric characters.
 * *Connection*: Existing connection that you configured.
-// * *Data Type*: Audit logs or trace data
+* *Data Type*: Audit logs or trace data
 . Click *Next*.
 . In the *Select Business Group* section, select one of the following:
 * *All business groups*: Audit logs are sourced from all business groups in the organization.
-* *Select a business group*: Audit logs are sourced only from the selected business group.
-// audit logs are sourced -> data of the type you specified is sourced
+* *Select a business group*: Data of the type you specified is sourced only from the selected business group.
 . Click *Next*.
-. Click *Save Configuration*. 
-
-////
-before the final *next*, add:
 . If you selected trace data as the data type, select the environment type:
 * Production
 * Sandbox
 * Design
-////
+. Click *Save Configuration*. 
 
 [[edit-configuration]]
 === Edit Configurations
 
-When you edit configurations, you can change the configuration name and connection. If you want to modify the business group, you must create a new configuration.
-
-// You cannot change the data type. You must create a new configuration to change the data type. add back in when traces return
+When you edit configurations, you can change the configuration name and connection. If you want to modify the data type business group or environment type, you must create a new configuration.
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationPermission]
 
