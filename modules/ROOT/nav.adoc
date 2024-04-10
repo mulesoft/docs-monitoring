@@ -37,3 +37,4 @@
 * xref:log-points.adoc[Enable Log Points]
 * xref:raw-data.adoc[Download Raw Data]
 * xref:tools.adoc[Use Connectors with Anypoint Monitoring]
+* xref:am-apis.adoc[APIs for Anypoint Monitoring]
