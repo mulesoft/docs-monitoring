@@ -7,7 +7,7 @@ Anypoint Monitoring has a variety of APIs that enable you to view, sort, and que
 * Traces API: enables you to query traces data using the Anypoint Monitoring Query Language.
 
 [[archive-api]]
-== Anypoont Monitoring Archive API
+== Anypoint Monitoring Archive API
 
 include::partial$archive-api.adoc[]
 
