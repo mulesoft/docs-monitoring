@@ -1,6 +1,6 @@
 = APIs for Anypoint Monitoring
 
-Anypoint Monitoring has a variety of APIs that enable you to view, sort, and query your data:
+Anypoint Monitoring has APIs that enable you to view, sort, and query your data:
 
 * Anypoint Monitoring Archive API: enables you to navigate and discover your API metrics data using a directory hierarchy.
 * Metrics API: enables you to query and transform data from a specific time range using the Anypoint Monitoring Query Language.

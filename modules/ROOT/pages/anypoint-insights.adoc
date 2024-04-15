@@ -1,6 +1,12 @@
 = Explore Entities with Anypoint Insights
 
-Anypoint Monitoring collects metrics on each _entity_, such as an app or API instance, in Anypoint Platform. The *Anypoint Insights*  page enables you to see data for your apps and APIs at a glance. The *Anypoint Insights*  page enables you to review key metrics about the health of your entities as well as identify and troubleshoot issues You can filter the entities that appear in the *Anypoint Insights*  page using attributes and elements. While in Beta, you can view up to seven days of worth of data. to view less than seven days of data, you can specify a date and time range.
+Anypoint Monitoring collects metrics on each _entity_ in Anypoint Platform, such as an app or API instance. The *Anypoint Insights*  page enables you to:
+
+ * View data for your apps and APIs at a glance.
+ * Review key metrics about the health of your entities.
+ * Identify and troubleshoot issues.
+ 
+ You can filter the entities that appear on the *Anypoint Insights*  page by using attributes and elements. While in Beta, you can view up to seven days of worth of data. To view less than seven days of data, specify a date and time range.
 
 //REMOVED THIS: You can view up to 30 days of data at once, or you can specify dates and times to see only data from a shorter time period. 
 
@@ -12,7 +18,7 @@ include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+1]
 
 Before getting started, ensure that you have:
 
-* An Anypoint Platform account that has the Monitoring Viewer permission and permissions required to view apps and APIs.
+* An Anypoint Platform account that has the Monitoring Viewer permission and the permissions required for viewing apps and APIs.
 * A supported version of Mule Runtime engine.
 
 == Supported Versions of Mule Runtime Engine
@@ -25,11 +31,11 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 
 include::partial$include-nav-entities.adoc[]
 
-The *Anypoint Insights*  page appears, showing a summary of data for entities in the active business group and selected environment configured in your profile.
+The *Anypoint Insights*  page appears, showing a summary of data for entities in the active business group and in the selected environment configured in your profile.
 
 == Search for Entities
 
-The search bar in the *Anypoint Insights*  page enables you to create search parameters to curate different assortments of entity data on the page as well as to visualize and monitor the health status of multiple entities in their business groups and environments. You can add and remove attributes such as status, errors, and environments to further refine your results. Adding different search parameters changes data in the summary, metric cards, and charts which is refreshed each time you conduct a new search. 
+The search bar on the *Anypoint Insights*  page enables you to create search parameters to curate different assortments of entity data on the page and to visualize and monitor the health status of multiple entities in their business groups and environments. You can add and remove attributes such as status, errors, and environments to further refine your results. Adding different search parameters changes data in the summary, metric cards, and charts, which is refreshed each time you conduct a new search. 
 
 //Each search filter requires three pieces of information: an attribute name (for example, `entity_type`), an operator (for example, `=` or `IN`) and a value. The auto-suggest feature is triggered by clicking inside the search box or by entering a space. When the attribute name, an operator, and a value are provided, the search component creates a filter that is visually represented as a data pill. You can edit a search filter by double-clicking on the appropriate data pill. After all modifications are completed, you can use the enter key to convert the text to a search pill again. You can click on the *X* icon on the pill to remove it.
 
@@ -41,7 +47,7 @@ By default, the *Anypoint Insights* page shows data for entities from the defaul
 
 //The search bar also offers quick filters, such as `Top 10 entities with highest error volume`, to show you common scenarios at a glance. You can also combine these with attributes and metrics to further specify the content that appears. 
 
-You can curate your search results for entity data using the following attributes:
+Curate your search results for entity data by using the following attributes:
 
 * Environment
 * Entity Name
@@ -52,23 +58,26 @@ You can curate your search results for entity data using the following attribute
 * Request Counts
 * Response Time
 
-When multiple filters are provided, the resulting data matches all of the filters. For example, the query to fetch the entities data would include an `AND` operator to combine all of the search filters.
+When you provide multiple filters, the resulting data matches all of them. For example, the query to fetch the entities data would include an `AND` operator to combine all of the search filters.
 
-=== Applying Search Parameters
+=== Apply Search Parameters
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
 include::partial$include-nav-entities.adoc[]
 
-. In the search bar, enter an attribute, element, business group, or environment you want to use to filter your data.
+. In the search bar, enter an attribute, element, business group, or environment to use for filtering your data.
 +
-Note that `requests_counts` and `response_time` are measurements of their respective metrics. To create a search filter using these two attributes, you must choose an aggregating function. `COUNT` is the only supported aggregating function that can be used with the `request_counts` and `PERCENTILE` is the only aggregating function that can be used with `response_time`.
+Note that `requests_counts` and `response_time` are measurements of their respective metrics. To create a search filter that uses these two attributes,  choose an aggregating function:
+
+ *  `COUNT` is the only supported aggregating function that you can use with `request_counts.
+ * `PERCENTILE` is the only aggregating function that you can use with `response_time`.
 
 //=== Example of Applied Search Parameters
 
 //tbd
 
-== Filtering Data using the Time Period Selector
+== Filter Data by Using the Time Period Selector
 
 Use the time period selector to display data points collected for the last given period of time (such as the last 15 or 30 minutes) or over a given date and time range. Use the drop-down in the calendar icon to select the time period to display in a graph. Your setting applies across all traces in the *Anypoint Insights* page, including the Entities List.
 
@@ -76,44 +85,44 @@ While in Beta, this feature is only accessible to Titanium or Advanced subscript
 
 // REMOVED THIS: Organizations with a Gold, Platinum, or Starter subscription can view up to 30 days of data. Organizations with a Titanium or Advanced subscription can view up to one year of data.
 
-If you do not see data in any of the cards, charts, or tables, ensure that you have chosen the appropriate date-time range in the date picker.
+If you don't see data in any of the cards, charts, or tables, ensure that you have chosen the appropriate date-time range in the date picker.
 
-== Understanding Summary and Performance Trends for Entities
+== Understand Summary and Performance Trends for Entities
 
 The *Anypoint Insights* page provides key metrics and health indicators as performance metrics cards and charts. By default, the charts show data for entities in your current business group and environment. When you modify your search settings, the data in the charts changes accordingly. 
 
-The following are the performance metrics cards that appear:
+The following performance metrics cards appear.
  
 === Performance Metrics
 
 Total Entities::
 
-The total number of entities that match your current search conditions in the selected date and time range.
+Total number of entities that match your current search conditions in the selected date and time range.
 
 Entities with Errors::
 
-The count of entities that have an error that match your current search conditions in the selected date and time range. 
+Count of entities that have an error that matches your current search conditions in the selected date and time range. 
 
 Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
 
 Total Requests::
 
-The total request volume for entities that match your current search conditions in the selected date and time range. 
+Total request volume for entities that match your current search conditions in the selected date and time range. 
 
 Error Rate:: 
 
-The error rate for entities that match your current search conditions in the selected date and time range. The error rate is calculated using the total number of entity errors divided by the total number of requests for those entities.
+Error rate for entities that match your current search conditions in the selected date and time range. The error rate is calculated using the total number of entity errors divided by the total number of requests for those entities.
 
 
 === Performance Trends Charts
 
 Entities with Slow Response Times:: 
 
-The response time of the top entities that match your current search conditions in the selected date and time range. The top entities are calculated based on the percentile values of their response times (highest response time to lowest response time). The chart uses `P99` as the percentile index by default; however, you can select `P95`, `P90`, or `P75` to use as the percentile index.
+Response time of the top entities that match your current search conditions in the selected date and time range. The top entities are calculated based on the percentile values of their response times (highest response time to lowest response time). The chart uses `P99` as the percentile index by default; however, you can select `P95`, `P90`, or `P75` to use as the percentile index.
 
 Error Volume:: 
 
-The total number of entities that match your current search conditions in the selected date and time range. 
+Total number of entities that match your current search conditions in the selected date and time range. 
 
 Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
 
@@ -123,7 +132,9 @@ The total number of request to entities that match your current search condition
 
 === Entities List
 
-The list of entities that match your current search conditions in the selected date and time range. This list is rendered as a table with columnar key metrics. By default, the table is sorted by the value in the `Request Volume` (descending) field. The following columns appear in the table:
+The list of entities that match your current search conditions in the selected date and time range. This list is rendered as a table with columnar key metrics. By default, the table is sorted by the value in the `Request Volume` (descending) field. 
+
+The following columns appear in the table:
 
 * *Entity Name*: Name of the entity.
 * *Entity Type*: Type of the entity. The value in this column is either `API` or `Application`.
@@ -135,7 +146,7 @@ The list of entities that match your current search conditions in the selected d
 [[automatic-interval]]
 == How Data is Aggregated in Intervals
 
-Anypoint Monitoring aggregates data in charts based on the selected time interval. As such, the number of data points shown in a chart varies based on your selected time interval.
+Anypoint Monitoring aggregates data in charts based on the selected time interval. The number of data points shown in a chart varies based on your selected time interval.
 
 //Em told by Sathish to remove the following stuff 
 //[[average-response-times-app]]

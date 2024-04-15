@@ -4,4 +4,4 @@ In each data collection interval, top occurring endpoints or operations vary. An
 
 In Anypoint Monitoring charts and tables, the data comes from multiple data collection intervals. As a result, aggregated data shown in the dashboard is an estimation since the intervals might not have the same top occurring endpoints or operations. The tables show approximate counts for the most commonly occurring endpoints or operations when the *Other* grouping appears.
 
-For example, when an endpoint occurs more often than other endpoints in one interval but occurs less often in another interval (thus sorting it into the *Other* group for that interval), the resulting table displays lower than actual values for that endpoint, since the metrics that do not appear are grouped into the *Other* group.
+For example, when an endpoint occurs more often than other endpoints in one interval but less often in another interval, Anypoint Monitoring sorts it into the Other group for the first interval. In this case, the resulting table displays lower than actual values for that endpoint, since the metrics that do not appear are grouped into the *Other* group.

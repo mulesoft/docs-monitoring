@@ -1,6 +1,6 @@
 = Traces 
 
-The Traces feature in Anypoint Monitoring enables you to observe requests for apps and APIs as they travel across services. _Traces_ describe the journey that the requests make throughout their pipelines of services. Each trace originates from an _entity_, such as an app or API, that is available in Anypoint Platform. The *Traces* overview page enables you to see a list of traces that are currently available in Anypoint Platform. You can use this data to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track your entity requests end-to-end. For example, an Ops administrator could use traces to search for a specific transaction and have a visualization for that transaction that includes only the services through which it progresses. The visibility enables transparent asset performance observation and management. To simplify these efforts, you can also export trace data to Open Telemetry or Splunk using the *Telemetry Exporter* feature. 
+The Traces feature in Anypoint Monitoring enables you to observe requests for apps and APIs as they travel across services. _Traces_ describe the journey that the requests make throughout their pipelines of services. Each trace originates from an _entity_, such as an app or API, that is available in Anypoint Platform. The *Traces* overview page enables you to see a list of traces that are currently available in Anypoint Platform. You can use this data to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track your entity requests end-to-end. For example, an Ops administrator can use traces to search for a specific transaction and have a visualization for that transaction that includes only the services through which it progresses. The visibility enables transparent asset performance observation and management. To simplify these efforts, you can also export trace data to Open Telemetry or Splunk by using the *Telemetry Exporter*. 
 
 //insert link to data exporter eventually
 
@@ -25,9 +25,9 @@ include::partial$include-nav-distributed-tracing.adoc[]
 
 == Search for Traces
 
-You can search for traces shown in the *Traces* overview page using a time period selector and queries. 
+You can search for traces shown in the *Traces* overview page by using a time period selector and queries. 
 
-=== Search for Traces Using the Time Period Selector
+=== Search for Traces by Using the Time Period Selector
 
 Use the time period selector to display traces for the last given period of time (such as the last 5 or 30 minutes) or over a given date and time range. Use the drop-down in the calendar icon to select the time period to display in a graph. Your setting applies across all traces in the *Traces* overview page, including the *Trace Volume* chart. 
 
@@ -39,16 +39,16 @@ Use the search bar to select fields to query entities and their traces. If you a
 
 You can query using the following criteria:
 
-* `environment`: The ID of the environment that contains entities for which you want to see traces. This query appears in the search bar by default.
-* `entry_api_version`: The version number of the API for which you want to see traces.
-* `entry_entity_id`: The ID of the entity for which you want to see traces.
-* `entry_entity_name`: The name of the entity for which you want to see traces.
-* `entry_entity_type`: The type of entity for which you want to see traces. You can query apps or APIs.
-* `entry_span_id`: The ID of a span contained in traces.
-* `entry_span_name`: The name of a span contained in traces.
-* `environment_name`: The name of the environment that contains entities for which you want to see traces.
-* `http_status_code`: The HTTP status code associated with a trace. You can query 0, 200, or 500 codes.
-* `trace_id`: The ID associated with a trace.
+* `environment`: ID of the environment that contains entities for which you want to see traces.
+* `entry_api_version`: TVersion number of the API for which you want to see traces.
+* `entry_entity_id`: ID of the entity for which you want to see traces.
+* `entry_entity_name`: Name of the entity for which you want to see traces.
+* `entry_entity_type`: Type of entity for which you want to see traces. You can query apps or APIs.
+* `entry_span_id`: ID of a span contained in traces.
+* `entry_span_name`: Name of a span contained in traces.
+* `environment_name`: Name of the environment that contains entities for which you want to see traces.
+* `http_status_code`: HTTP status code associated with a trace. You can query 0, 200, or 500 codes.
+* `trace_id`: ID associated with a trace.
 
 
 If no traces appear after applying a query, limit your conditions. 

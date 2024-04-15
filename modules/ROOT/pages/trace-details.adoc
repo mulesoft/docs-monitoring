@@ -1,6 +1,6 @@
 = Trace Details
 
-Each trace available in the *Traces* overview page contains associated metrics for you to examine. Clicking a trace opens a *Trace Details* page and shows the origin of the initial request, associated entities, events associated with the request, and more. Additionally, you can see flows, logs, and events associated with the trace in the form of _spans_. Each span contains details that explain the operations in the specific *Trace Detail* page.
+Each trace available in the *Traces* overview page contains associated metrics for you to examine. Clicking a trace opens a *Trace Details* page, which shows the origin of the initial request, associated entities, events associated with the request, and more. Additionally, you can see flows, logs, and events associated with the trace in the form of _spans_. Each span contains details that explain the operations in the specific *Trace Detail* page.
 
 == Access Trace Details
 
@@ -35,23 +35,23 @@ On the *Trace Details* page, click a flow, log, or event name to expand the span
 
 The *Span Details* box contains the following information:
 
-* *Span Name*: The name of the span.
-* *Span Status*: The status of the span. 
+* *Span Name*: Name of the span.
+* *Span Status*: Status of the span. 
 ** `OK`
 ** `ERROR`
-* *Span ID*: The ID of the span.
-* *Span Kind*: The source of the span operation or request.
+* *Span ID*: ID of the span.
+* *Span Kind*: Source of the span operation or request.
 ** `Server`
 ** `Internal`
 ** `Client`
-* *Span Duration*: The time the span took to execute.
-* *Span Start Time*: The time the span initiated in UTC.
-* *Entity Type*: The type of the entity associated with the trace. 
+* *Span Duration*: Time the span took to execute.
+* *Span Start Time*: Time when the span started, in UTC.
+* *Entity Type*: Type of entity associated with the trace. 
 ** `App`
 ** `API`
 * *Entity Name*: The name of the entity associated with the trace.
 * *Trace ID*: The ID of the trace in which the span occurred.
-* *Parent Span ID*: The ID of a span containing the selected span. Parent spans do not have a value in this field and should be tracked using the trace ID.
+* *Parent Span ID*: ID of a span that contains the selected span. Parent spans don't have a value in this field and should be tracked by using the trace ID.
 * *HTTP Status Code*: The HTTP status code of a span that is a request. Statuses include:
 ** `0 No Response`
 ** `200 OK`
