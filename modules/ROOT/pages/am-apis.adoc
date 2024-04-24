@@ -2,9 +2,12 @@
 
 Anypoint Monitoring has APIs that enable you to view, sort, and query your data:
 
-* Anypoint Monitoring Archive API: enables you to navigate and discover your API metrics data using a directory hierarchy.
-* Metrics API: enables you to query and transform data from a specific time range using the Anypoint Monitoring Query Language.
-* Traces API: enables you to query traces data using the Anypoint Monitoring Query Language.
+* Anypoint Monitoring Archive API +
+Enables you to navigate and discover your API metrics data using a directory hierarchy.
+* Metrics API +
+Enables you to query and transform data from a specific time range using the Anypoint Monitoring Query Language.
+* Traces API +
+Enables you to query traces data using the Anypoint Monitoring Query Language.
 
 [[archive-api]]
 == Anypoint Monitoring Archive API
