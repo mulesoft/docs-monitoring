@@ -98,6 +98,11 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
+|Telemetry Exporter for audit logs and traces
+|No
+|No
+|Yes
+
 |Custom metrics
 |No
 |No
