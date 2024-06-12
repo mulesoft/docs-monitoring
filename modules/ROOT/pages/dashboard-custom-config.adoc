@@ -38,7 +38,7 @@ image::dashboard-text-header.png[Example: Text]
 
 See <<charts_adding, Adding Charts to a Custom Dashboard>>.
 
-.NOTE: There is hard limit of 25 queries per custom dashbaord panel
+NOTE: There is hard limit of 25 queries per custom dashbaord panel.
 
 [[config_dashboard]]
 == Configure a Dashboard
