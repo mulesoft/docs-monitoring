@@ -10,8 +10,7 @@ Define metrics in the Anypoint Custom Metrics connector to select which metrics 
 
 The Custom Metrics connector is available for both Mule 3 and Mule 4 in the *Monitoring > Custom Metrics* page.
 
-[NOTE] 
-To see the metrics you configure in the Anypoint Custom Metrics connector in Anypoint Monitoring, you must have a Titanium subscription. 
+include::reuse::partial$billing/pricing.adoc[tag=connectorAvailability]
 
 == Prerequisites
 

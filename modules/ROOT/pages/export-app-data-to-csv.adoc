@@ -5,8 +5,7 @@ endif::[]
 
 In built-in and custom dashboards, you can export app data to a CSV file, which you can then use in other applications. The data export works on an individual chart level, so only data in the specified chart is exported. When you apply a filter to a dashboard, the exported data includes only the data included in the filter you set. For example, if you apply a time period filter, only the data for that time period is exported.
 
-[NOTE]
-This feature requires a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 

@@ -95,8 +95,7 @@ After you complete your configuration, you can click Save Changes. To exit the c
 [[alerts_config]]
 == Alerts (Configuration, Notifications, History)
 
-[NOTE]
-A Titanium subscription is required to use this feature.
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
 In the *Alerts* tab, set up alerts that trigger when JVM memory utilization is too high.
 

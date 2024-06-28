@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-*https://www.mulesoft.com/anypoint-pricing[Titanium Subscription Required]*
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
 You can use Anypoint Monitoring to download archived log data (raw data) collected on Mule apps that are running in hybrid, CloudHub, or Runtime Fabric deployments. This data is helpful for security, compliance, or other purposes where you need to examine or collect your warehoused data.
 

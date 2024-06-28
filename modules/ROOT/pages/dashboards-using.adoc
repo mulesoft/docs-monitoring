@@ -9,14 +9,13 @@ Both types of dashboards provide many of the same display options.
 
 == Setting Data Display Options in a Dashboard
 
-//TODO_HIGH LICENSING MIGHT AFFECT OPTIONS AVAILABLE TO CUSTOMERS. NEED TO CHECK.
 You can display the data points collected for the last given period of time (such as the last 5 or 30 minutes) or over a given date and time range. Depending on your subscription, you might also be able to auto-refresh the displayed data.
 
 image::dashboard-time-period-refresh.png[Configure Display]
 
 == Setting the Time Period to Display
 
-You can use the drop-down in the calendar icon shown above to select the time period to display in a graph.
+You can use the drop-down in the calendar icon to select the time period to display in a graph.
 
 This configuration is for displaying data from the last given period of time in a graph:
 
@@ -55,23 +54,25 @@ image::dashboard-mouseover-result.png[Graph: Results of Time Period Selection]
 
 == Refreshing Data
 
-If your subscription permits, you can refresh data automatically.
+If your pricing plan permits, you can refresh data automatically.
 
 .Auto-Refresh Settings
 image::dashboard-auto-refresh.png[Data Refresh Options]
 
-* Base subscription: The option for Auto Refresh is disabled for this subscription. You can manually refresh data in the graph by clicking the circular (cycle) icon to the right.
-* Titanium (premium) subscription: You can turn on Auto Refresh, then set an interval at which to refresh data in the graphs (such as 1m, 5m, 15m, and so on). The refresh setting applies to all graphs in the dashboard.
+You can enable Auto Refresh, then set an interval at which to refresh data in the graphs (such as 1m, 5m, 15m, and so on). The refresh setting applies to all graphs in the dashboard
+include::reuse::partial$billing/pricing.adoc[tag=availabilityParenthetical].
+
+You can also manually refresh data in the graph by clicking the circular (cycle) icon.
 
 == Viewing Selected Series Data in a Graph
 
-You can click aliases for data (such as `Used:worker-0`, `Total:worker-0`,`Average:worker-0`) in your graphs display or hide it. For an example of an alias, see the <<color_picker, worker-0 alias>> above the color picker example.
+You can click aliases for data (such as `Used:worker-0`, `Total:worker-0`,`Average:worker-0`) in your graphs display or hide it. For an example of an alias, see the <<color_picker, worker-0 alias>> in the color picker example.
 
 To select or deselect two or more alias, you can use `Command+Click`.
 
 == Picking a New Color for Data Displays
 
-Click the color bar in a legend (for example, the yellow bar by `Total worker-0` in image below) to open a color picker to select a different color for the lines that connect your data points.
+Click the color bar in a legend (for example, the yellow bar by `Total worker-0`) to open a color picker to select a different color for the lines that connect your data points.
 
 [[color_picker]]
 image::graph-legend-colors.png[Color Picker]
@@ -81,12 +82,12 @@ image::graph-legend-colors.png[Color Picker]
 [[favorite_dashboard]]
 == Set Favorite Custom Dashboards
 
-Click the star at the top of the custom dashboard to mark it as a favorite.
+Click the star in the custom dashboard to mark it as a favorite.
 
 [[favorite_star]]
 image::dashboard-custom-favorite.png[Star Favorite]
 
-You will then see the star in the custom dashboard list, for example:
+The star appears in the custom dashboard list, for example:
 
 [[dashboard_starred]]
 image::dashboard-custom-list.png[Favorite Custom Dashboard]

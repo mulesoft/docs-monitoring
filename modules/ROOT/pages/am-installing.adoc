@@ -46,6 +46,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 Ensure that one of the following Mule Runtime Manager agent versions is installed in the Mule runtime engine running on the server:
 
+* 2.6.x
 * 2.5.x
 * 2.4.x
 * 2.3.0
@@ -152,7 +153,9 @@ Enabling monitoring can impact CPU utilization and memory utilization depending 
 
 == Disable Log Forwarding for Hybrid Runtime Servers
 
-If you have a Titanium subscription and a hybrid runtime server, you can disable log forwarding to Anypoint Monitoring if you have AM installer v.2.5.10 or later. To disable this feature, you must configure a JVM property on each hybrid server for which you want to disable log forwarding. You cannot disable log forwarding per application.
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
+
+You can disable log forwarding to Anypoint Monitoring if you have AM installer v.2.5.10 or later. To disable this feature, you must configure a JVM property on each hybrid server for which you want to disable log forwarding. You cannot disable log forwarding per application.
 
 To disable log forwarding:
 
