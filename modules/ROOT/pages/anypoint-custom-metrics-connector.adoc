@@ -168,7 +168,7 @@ Custom Metrics Connector requires all *Facts* to be sent from every operation, e
 . Add the *Send Custom Metric* operation to your application flow. +
 This image shows an example flow for custom metrics in Anypoint Studio. 
 +
-image::custom-metric-example-flow.png["Example app flow in Studio with custom metrics connector Send Custom Metrics trigger, a logger component, and Salesforce and AmazonS3 connector operations"]
+image::custom-metric-example-flow.png["Example app flow in Studio with Custom Metrics Connector Send Custom Metrics source, a Logger component, and Salesforce and Amazon S3 connector operations"]
 . Click the *Send Custom Metric* operation to add values for the operation. 
 . Add the dimension for the metric:
 .. In *Metric name*, enter a meaningful value, for example "sales." 
