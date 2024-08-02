@@ -189,7 +189,7 @@ You can repeat these steps to add multiple key values.
 +
 This image shows example values for a custom metric that tracks t-shirt sales.
 +
-image::custom-metrics-connector-config.png["Send Custom Metrics trigger general configuration properties form with example values for contextual information and measurements"]
+image::custom-metrics-connector-config.png["Send Custom Metrics source general configuration properties form with example values for contextual information and measurements"]
 +
 . Select the *Throw runtime exception on validation failure* option if you want the flow to break if invalid values are entered for the metric. If this option is left unchecked, an error is will be logged, but the flow won't break.
 
