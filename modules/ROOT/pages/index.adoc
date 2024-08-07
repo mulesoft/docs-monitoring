@@ -98,6 +98,11 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
+|Telemetry Exporter for audit logs and traces
+|No
+|No
+|Yes
+
 |Custom metrics
 |No
 |No
@@ -228,7 +233,7 @@ The following use cases provide examples of how you can use Anypoint Monitoring.
 DevOps engineer Gary maintains a series of APIs related to a transaction processing system. Because the TPS requires swift response time, Gary uses API response time dashboards and alerts to send an email when there is a bottleneck. After gathering some data, Gary can then size his applications.
 
 * Plan resource allocation across the application network +
-C4E specialist Peyton uses Anypoint Visualizer to view their application network. For CloudHub and Anypoint Runtime Fabric applications, Peyton sees CPU and memory utilization and idle capacity using integrated Anypoint Monitoring.
+IT specialist Peyton uses Anypoint Visualizer to view their application network. For CloudHub and Anypoint Runtime Fabric applications, Peyton sees CPU and memory utilization and idle capacity using integrated Anypoint Monitoring.
 
 * Pinpoint root causes of issues +
 Support team member Darius receives a call that the system is running slowly. He examines dashboards and checks response times, failed requests, and so on. He identifies that the backend is not scaling for the number of requests; he can add capacity for Mule apps, or he can throttle requests for other backend issues.

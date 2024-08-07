@@ -44,7 +44,7 @@ Note: If you create an alert for an API using the interface in API Manager, the 
 * Navigate to alert configuration in Runtime Manager and API Manager
 
 [[alerts]]
-image::alerts.png[Examples Alerts]
+image::alerts.png["List of alerts in different states"]
 
 === Filter Alerts by Alert State
 
@@ -88,7 +88,7 @@ Depending on your subscription level:
 
 * If no alerts are set up, you might see links for API and runtime alert setup:
 +
-image::alerts-setup.png[API and Runtime Alert Setup, 75%, 75%]
+image::alerts-setup.png["Setting up alerts window with API and Runtime Alert Setup links", 75%, 75%]
 +
 ** API operational alerts
 +
@@ -98,19 +98,17 @@ For guidance about alerts in API Manager, see xref:2.x@api-manager::using-api-al
 For guidance about alerts in Runtime Manager, see xref:runtime-manager::alerts-on-runtime-manager.adoc[About Configuring Alerts Using Runtime Manager]. Note that these alerts are not listed in the *Alerts* page for Anypoint Monitoring.
 * If you do not have a Titanium subscription, you might see *https://www.mulesoft.com/anypoint-pricing[Titanium subscription required]*.
 
-Instead of seeing links to API and runtime alerts, you receive visual guidance showing how to open the configuration area for alerts in graphs for custom dashboards:
-
-image::alerts-setup-premium.png[Alert Setup Guidance, 75%, 75%]
+Instead of seeing links to API and runtime alerts, you receive visual guidance showing how to open the configuration area for alerts in graphs for custom dashboards.
 
 == Add API Manager and Runtime Manager Alerts
 
 Click *+ New alert* to access API Manager and Runtime Manager alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
 
-image::alerts-menu.png[Alerts Menu, 40%, 40%]
+image::alerts-menu.png["Alerts menu options to set up, basic, advanced, or other types of alerts", 40%, 40%]
 
-Note that you can also select to add or edit an alert from a chart in a custom dashboard:
+You can also duplicate or delete an alert from a chart in a custom dashboard:
 
-image::dashboard-custom-config-dup-delete.png[Add or Edit Alert]
+image::dashboard-custom-config-dup-delete.png["Menu with options to duplicate or delete an alert"]
 
 == See Also
 
