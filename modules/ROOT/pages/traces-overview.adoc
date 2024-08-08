@@ -1,6 +1,8 @@
 = Traces 
 
-The Traces feature in Anypoint Monitoring enables you to observe requests for apps and APIs as they travel across services. _Traces_ describe the journey that the requests make throughout their pipelines of services. Each trace originates from an _entity_, such as an app or API, that is available in Anypoint Platform. The *Traces* overview page enables you to see a list of traces that are currently available in Anypoint Platform. You can use this data to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track your entity requests end-to-end. For example, an Ops administrator can use traces to search for a specific transaction and have a visualization for that transaction that includes only the services through which it progresses. The visibility enables transparent asset performance observation and management. To simplify these efforts, you can also export trace data to Open Telemetry or Splunk by using the *Telemetry Exporter*. 
+The Traces feature in Anypoint Monitoring enables you to observe requests for apps and APIs as they travel across services. _Traces_ describe the journey that the requests make throughout their pipelines of services. Each trace originates from an _entity_, such as an app or API, that is available in Anypoint Platform. 
+
+The *Traces* overview page enables you to see a list of traces that are currently available in Anypoint Platform. You can use this data to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track your entity requests end-to-end. For example, an Ops administrator can use traces to search for a specific transaction and have a visualization for that transaction that includes only the services through which it progresses. The visibility enables transparent asset performance observation and management. To simplify these efforts, you can also export trace data to Open Telemetry or Splunk by using the *Telemetry Exporter*. 
 
 //insert link to data exporter eventually
 
@@ -8,7 +10,7 @@ The Traces feature is available only for organizations that have the Anypoint In
 
 == Before You Begin
 
-Before you can use traces, ensure that you have:
+Before you use traces, ensure that you have:
 
 include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
