@@ -25,6 +25,16 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 
 include::partial$include-nav-distributed-tracing.adoc[]
 
+== Trace Overview Metrics
+
+The *Traces* overview page shows the *Trace Volume* chart by default, which displays both the total number of traces in Anypoint Platform and the total number of traces that have errors associated with them. 
+
+=== Selecting a time period for traces
+
+Use the time period selector to select the span of time covered by the *Trace Volume* chart:
+
+. From the *Trace Volume* chart, click the *Trace ID* of a specific trace to view more information on the xref:trace-details.adoc[*Trace Details*] page. 
+
 == Search for Traces
 
 You can search for traces shown in the *Traces* overview page by using a time period selector and queries. 
@@ -41,20 +51,16 @@ Use the search bar to select fields to query entities and their traces. If you a
 
 You can query using the following criteria:
 
-* `environment`: ID of the environment that contains entities for which you want to see traces.
-* `entry_api_version`: TVersion number of the API for which you want to see traces.
-* `entry_entity_id`: ID of the entity for which you want to see traces.
-* `entry_entity_name`: Name of the entity for which you want to see traces.
-* `entry_entity_type`: Type of entity for which you want to see traces. You can query apps or APIs.
-* `entry_span_id`: ID of a span contained in traces.
-* `entry_span_name`: Name of a span contained in traces.
-* `environment_name`: Name of the environment that contains entities for which you want to see traces.
-* `http_status_code`: HTTP status code associated with a trace. You can query 0, 200, or 500 codes.
-* `trace_id`: ID associated with a trace.
-
+|===
+|Criterion |Description
+| `api_version` | Version number of the API you want to see traces for. 
+| `entity` | ID of the entity you want to see traces for.
+| `entity_type` | Type of entity to see traces for. You can query apps or APIs.
+| `entry_span_id` | ID of a span contained in traces.
+|`entry_span_name` | Name of a span contained in traces.
+| `http_status_code`| HTTP status code associated with a trace. You can query 0, 200, or 500 codes.
+|`trace_id` | ID associated with a trace.
+|===
 
 If no traces appear after applying a query, limit your conditions. 
 
-== Trace Overview Metrics
-
-The *Traces* overview page shows the *Trace Volume* chart by default, which displays both the total number of traces in Anypoint Platform and the total number of traces that have errors associated with them. You can use the time period selector to select the span of time covered by the *Trace Volume* chart. From the *Trace Volume* chart, you can click the *Trace ID* of a specific trace to view more information on the xref:trace-details.adoc[*Trace Details*] page. 
