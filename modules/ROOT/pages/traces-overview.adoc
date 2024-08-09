@@ -1,10 +1,10 @@
 = Traces 
 
-The Traces feature in Anypoint Monitoring enables you to observe requests for apps and APIs as they travel across services. _Traces_ describe the journey that the requests make throughout their pipelines of services. Each trace originates from an _entity_, such as an app or API, that is available in Anypoint Platform. 
+The Traces feature in Anypoint Monitoring enables you to observe requests for apps and APIs as they travel across services. _Traces_ describe the journey that the requests make throughout their pipelines of services. Each trace originates from an _entity_, such as an app or API, that is available in Anypoint Platform. The Traces feature uses the OTel format.
 
-The *Traces* overview page enables you to see a list of traces that are currently available in Anypoint Platform. You can use this data to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track your entity requests end-to-end. For example, an Ops administrator can use traces to search for a specific transaction and have a visualization for that transaction that includes only the services through which it progresses. The visibility enables transparent asset performance observation and management. To simplify these efforts, you can also export trace data to Open Telemetry or Splunk by using the *Telemetry Exporter*. 
+The *Traces* overview page enables you to see a list of traces that are currently available in Anypoint Platform. You can use this data to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track your entity requests end-to-end. For example, an Ops administrator can use traces to search for a specific transaction and have a visualization for that transaction that includes only the services through which it progresses. The visibility enables transparent asset performance observation and management. 
 
-//insert link to data exporter eventually
+To simplify these efforts, you can use xref:telemetry-exporter.adoc[Telemetry Exporter] as an alternative to integrate with your chosen observability ecosystem. 
 
 The Traces feature is available only for organizations that have the Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform.
 
@@ -17,6 +17,13 @@ include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 * Mule Runtime version 4.6 or later
 * Permission to view apps and APIs in Anypoint Monitoring
 * HTTP Connector version 1.8 or later
+* Enabled tracing on apps that are deployed to CloudHub 2.0:
+** xref:hosting::cloudhub-2/ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
+** hosting::cloudhub-2/ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
+* Enabled trace data collection on apps that are deployed to xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric]
+
+[NOTE]
+Trace data collection is not supported on apps that are deployed to CloudHub 1.0.
 
 //Sara - I would consider making this access topic a link in all the subsequent topics. I don't want to mess up anything you have going on here, so I won't change it but I think it would be nice!
 == Access Traces
@@ -63,4 +70,9 @@ You can query using the following criteria:
 |===
 
 If no traces appear after applying a query, limit your conditions. 
+
+== See Also
+* xref:telemetry-exporter.adoc[]
+* xref:hosting::cloudhub-2/ch2-deploy-shared-space.adoc#enable-trace-data-collection[]
+* xref:hosting::cloudhub-2/ch2-deploy-private-space.adoc#enable-trace-data-collection[]
 
