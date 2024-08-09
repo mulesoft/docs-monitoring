@@ -50,7 +50,8 @@ You can search for traces shown in the *Traces* overview page by using a time pe
 
 Use the time period selector to display traces for the last given period of time (such as the last 5 or 30 minutes) or over a given date and time range. Use the drop-down in the calendar icon to select the time period to display in a graph. Your setting applies across all traces in the *Traces* overview page, including the *Trace Volume* chart. 
 
-Anypoint Monitoring retains up 30 days of trace data.
+[NOTE]
+Anypoint Monitoring retains up to 7 days of trace data.
 
 === Search for Traces Using Queries
 
