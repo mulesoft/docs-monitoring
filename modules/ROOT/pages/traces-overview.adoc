@@ -4,7 +4,7 @@ The Traces feature in Anypoint Monitoring enables you to observe requests for ap
 
 The *Traces* overview page enables you to see a list of traces that are currently available in Anypoint Platform. You can use this data to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track your entity requests end-to-end. For example, an Ops administrator can use traces to search for a specific transaction and have a visualization for that transaction that includes only the services through which it progresses. The visibility enables transparent asset performance observation and management. 
 
-To simplify these efforts, you can use xref:telemetry-exporter.adoc[Telemetry Exporter] as an alternative to integrate with your chosen observability ecosystem. 
+You can use xref:telemetry-exporter.adoc[Telemetry Exporter] as an alternative to integrate with your chosen observability ecosystem. 
 
 The Traces feature is available only for organizations that have the Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform.
 
