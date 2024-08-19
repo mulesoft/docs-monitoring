@@ -1,6 +1,5 @@
 = Built-in Application Dashboard
 
-
 Built-in dashboards display deployment information about your application at the top of the screen and provide access to a number of different graphs, for example:
 
 image::dashboard-built-in-info.png[Deployment Info on an App in a Built-In Dashboard]
