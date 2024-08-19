@@ -1,7 +1,5 @@
 = Built-in Application Dashboard
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+
 
 Built-in dashboards display deployment information about your application at the top of the screen and provide access to a number of different graphs, for example:
 
@@ -71,7 +69,6 @@ Built-in dashboards include various pages to view different types of charts:
 * Inbound - Total Requests by Endpoint
 * Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Inbound - Total Failed Requests
-* Inbound - Total Slow Requests by Endpoint
 
 include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
 
