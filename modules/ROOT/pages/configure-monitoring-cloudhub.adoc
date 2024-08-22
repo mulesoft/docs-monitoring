@@ -76,7 +76,7 @@ You can enable monitoring for Mule apps running on non-AM versions of Mule in th
 
 For supported versions of Mule, see xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps].
 
-== Enable Monitoring Using the UI
+== Enable Monitoring in Anypoint Monitoring Settings
 
 Use the *Settings* page in Anypoint Monitoring to enable or disable apps deployed to CloudHub and running on Mule:
 
