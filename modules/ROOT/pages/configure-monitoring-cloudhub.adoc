@@ -55,7 +55,7 @@ anypoint-cli --username="..." --password="..."
 If you are using Maven for deployment, you must modify the `<muleVersion>`
 tag in the `pom.xml` file. For example, you can change `<muleVersion>3.9.3</muleVersion>` to `<muleVersion>3.9.4</muleVersion>`).
 
-== Enable Monitoring by Default for Newly Deployed Apps
+== Enable Monitoring by Default for New Apps
 
 If you want your Mule apps to be monitored by default when you deploy them to CloudHub, configure this feature in Anypoint Monitoring before you deploy your apps. 
 include::reuse::partial$billing/pricing.adoc[tag=enabledFeature]
@@ -80,7 +80,7 @@ You can enable monitoring for Mule apps running on non-AM versions of Mule by us
 
 For supported versions of Mule, see xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps].
 
-=== Enable Monitoring for a running Application in Monitoring Settings
+=== Enable Monitoring for an App in Monitoring Settings
 
 Use the *Settings* page in Anypoint Monitoring to enable or disable monitoring for apps deployed to CloudHub and running on Mule:
 
@@ -95,7 +95,7 @@ A list of running applications is shown for the selected environment.
 You can search for a specific application using the *List of resources* search box.
 . Next to the application, click *Enable* to enable monitoring for the application.
 
-=== Enable Monitoring for a running Application in Runtime Manager Settings
+=== Enable Monitoring for an App in Runtime Manager Settings
 
 Enable monitoring for Mule apps running on supported versions of Mule by adding a property to an application deployed to CloudHub:
 
@@ -111,7 +111,7 @@ image::enable-monitoring-cloudhub.png["Runtime Manager application settings wind
 +
 . Click *Apply Changes*.
 
-=== Enable Monitoring for CI/CD Deployments using the Anypoint CLI
+=== Enable Monitoring for an App using the Anypoint CLI
 
 Use the Anypoint CLI and set the following property during your CI/CD deployment:
 `anypoint.platform.config.analytics.agent.enabled=true`
