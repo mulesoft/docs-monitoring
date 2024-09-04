@@ -1,0 +1,1 @@
+Anypoint Monitoring aggregates data in charts based on the selected time interval. The number of data points shown in a chart varies based on your selected time interval.
