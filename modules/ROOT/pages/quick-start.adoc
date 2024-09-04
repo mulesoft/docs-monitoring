@@ -3,50 +3,54 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Monitoring provides data on Mule apps that are running on either CloudHub or an on-premises server. It is part of the Management Center in Anypoint Platform, and you need to have the <<required_permission>> to use it.
+Anypoint Monitoring is the part of Management Center in Anypoint Platform that provides data on Mule apps that are running on CloudHub or an on-premises server. 
 
-//TODO_TODO_TODO: WHY ARE THE FUNCTIONAL MONITORING DOCS IN ANOTHER REPO?
-[NOTE]
-Functional Monitoring is covered in xref:api-functional-monitoring::index.adoc[API Functional Monitoring].
+[[prereqs]]
+== Before You Begin
+
+To use Anypoint Monitoring, you must have an Anypoint Platform account with the required permission:
+
+* Anypoint Monitoring User
+
+Typically, administrators set permissions through Access Management. See xref:access-management::users.adoc#granting-permissions-and-roles-to-users[Granting Permissions and Roles to Users]. 
 
 == Supported Versions of Mule Runtime Engine
 
 include::partial$include-supported-mule-runtime-version.adoc[]
 
 [[using_monitoring]]
-== Use Anypoint Monitoring
+== Set Up Anypoint Monitoring Tools
 
+. Meet the prerequisites in <<prereqs>>.
 include::partial$include-nav-steps-no-permissions.adoc[]
 +
 If you are unable to access or use Anypoint Monitoring, see <<required_permission>>.
-. Find and use the monitoring tools, such as Dashboards, Logs, .
+. Find Anypoint Monitoring tools in Anypoint Platform:
 +
-For more guidance 
-
-== Configurations
-
-Custom dashboards and alerts require configuration before you can use them. For guidance, see:
+include::monitoring::partial$include-features.adoc[tags="feature-list"]
+. To set up custom dashboards or alerts, see:
 
 * xref:dashboard-custom-config.adoc[Configuring Custom Dashboards]
 * xref:alerts.adoc[Configuring Alerts]
 
-[[required_permission]]
-== Required Permission
+. Enable Anypoint Monitoring for your host environment:
 
-To use Anypoint Monitoring, you need this permission:
+* <<enable-cloudhub>>
 
-* Anypoint Monitoring User
 
-Typically, administrators set permissions through Access Management. See xref:access-management::users.adoc#granting-permissions-and-roles-to-users[Granting Permissions and Roles to Users].
+[[enable-cloudhub]]
+=== Enable Anypoint Monitoring on CloudHub
 
-[[runtime_versions]]
-== Enable Anypoint Monitoring on CloudHub
+To monitor a Mule app that is deployed to CloudHub, the app must run on a supported version of Mule runtime engine. See xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps (CloudHub)].
 
-For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them to the appropriate version of Mule runtime engine.  See xref:configure-monitoring-cloudhub.adoc[Configure Anypoint Monitoring for Mule Apps (CloudHub)].
+[[]]
+=== Enable Anypoint Monitoring On-Premises
 
-== Enable Anypoint Monitoring On-Premises
+You can xref:am-installing.adoc[install Anypoint Monitoring] on an on-premises server to monitor Mule apps that are running on that server and managed via Runtime Manager (hybrid apps).
 
-You can xref:am-installing.adoc[install Anypoint Monitoring] on an on-premises server to monitor applications that are running on that server and managed via Runtime Manager (hybrid apps).
+
+
+
 
 == See Also
 
