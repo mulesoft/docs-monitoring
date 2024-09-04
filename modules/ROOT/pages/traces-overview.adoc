@@ -18,8 +18,8 @@ include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 * Permission to view apps and APIs in Anypoint Monitoring
 * HTTP Connector version 1.8 or later
 * Enabled tracing on apps that are deployed to CloudHub 2.0:
-** xref:hosting::cloudhub-2/ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
-** hosting::cloudhub-2/ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
+** xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
+** xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
 * Enabled trace data collection on apps that are deployed to xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric]
 
 [NOTE]
@@ -74,6 +74,5 @@ If no traces appear after applying a query, limit your conditions.
 
 == See Also
 * xref:telemetry-exporter.adoc[]
-* xref:hosting::cloudhub-2/ch2-deploy-shared-space.adoc#enable-trace-data-collection[]
-* xref:hosting::cloudhub-2/ch2-deploy-private-space.adoc#enable-trace-data-collection[]
-
+* xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
+* xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
