@@ -103,7 +103,7 @@ The following packages and plans are available for Anypoint Monitoring:
 * <<subscription-plans>>
 
 [[usage-based-packages]]
-== Anypoint Monitoring Features for Usage-Based Packages
+=== Anypoint Monitoring Features for Usage-Based Packages
 
 Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can quickly identify and resolve issues. All organizations receive monitoring capabilities regardless of pricing model. However, organizations that have the Anypoint Integration Advanced package receive more storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
@@ -113,7 +113,7 @@ IMPORTANT: If your organization plans to change its subscription model from the 
 include::reuse::partial$billing/pricing.adoc[tag=monitoringTable]
 
 [[subscription-plans]]
-== Anypoint Monitoring Features for Legacy Subscription-Based Plans
+=== Anypoint Monitoring Features for Legacy Subscription-Based Plans
 
 Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. All organizations receive monitoring capabilities with their subscriptions. However, customers subscribing at the Titanium tier receive more storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
@@ -159,6 +159,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
+//TODO_TODO_TODO: IS VISUALIZER STILL SUPPORTED?
 |Anypoint Visualizer application network integration
 |No
 |No
@@ -251,6 +252,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 |===
 
+//TODO_TODO_TODO: VISUALIZER WIDGET STILL SUPPORTED? ANYPOINT VISUALIZER?
 NOTE: Anypoint Visualizer application network integration refers to an Anypoint Visualizer widget within Anypoint Monitoring. Anypoint Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
 
 

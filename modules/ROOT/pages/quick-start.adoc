@@ -5,6 +5,7 @@ endif::[]
 
 Anypoint Monitoring provides data on Mule apps that are running on either CloudHub or an on-premises server. It is part of the Management Center in Anypoint Platform, and you need to have the <<required_permission>> to use it.
 
+//TODO_TODO_TODO: WHY ARE THE FUNCTIONAL MONITORING DOCS IN ANOTHER REPO?
 [NOTE]
 Functional Monitoring is covered in xref:api-functional-monitoring::index.adoc[API Functional Monitoring].
 
@@ -17,15 +18,10 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 +
-image::management-center-menu.png[Management Center Menu]
+If you are unable to access or use Anypoint Monitoring, see <<required_permission>>.
+. Find and use the monitoring tools, such as Dashboards, Logs, .
 +
-If you do not see Anypoint Monitoring or are unable to use it, it might be a permissions issue. See <<required_permission>>.
-+
-. From Anypoint Monitoring, you can find and use the monitoring tools:
-+
-* xref:dashboards-using.adoc[Using Dashboards]
-* xref:logs.adoc[Using Logs]
-* xref:alerts.adoc[Alerts]
+For more guidance 
 
 == Configurations
 
