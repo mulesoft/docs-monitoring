@@ -100,12 +100,12 @@ The `SELECT` clause enables you to get a list of fields in a data source using d
 When you use `SELECT`, consider the following:
 
 * Use describe endpoints for each service to get a list of fields present in your data source.
-* Using `SELECT` with a wildcard (`select *`) returns all public endpoints for a data source, but note that not all data sources support it.
+* Using `SELECT` with a wildcard (`select *`) returns all public endpoints for a data source. Not all data sources support this option.
 * Wrap string literals in single quotes.
 * Field names in `SELECT` clauses are case-sensitive. 
-* Field alias is supported. The syntax is `field AS aliasName`.
-* Wrap field names with double quotes to handle field names with special characters. The syntax is `select "field1", "field2.a" as 'fieldA' from dataSource`.
-* Aggregated fields support alias. The syntax is `aggregationFunction(field, ..) AS alias`. If an alias is not provided, the results return `aggregationFunction(field, ..)`.
+* Using a field alias is supported. The syntax is `field AS aliasName`.
+* Wrap field names within double quotes to handle field names with special characters. The syntax is `select "field1", "field2.a" as 'fieldA' from dataSource`.
+* Aggregated fields support aliases. The syntax is `aggregationFunction(field, ..) AS alias`. If you don't provide an alias, the results return `aggregationFunction(field, ..)`.
 
 // end::selectClause[]
 
@@ -200,13 +200,14 @@ The `GROUPING` clause enables you to aggregate numeric values using the followin
 
 |====
 
-Note that some fields in the data might not support certain aggregations.
+Some fields in the data might not support certain aggregations.
 
 // end::groupingClauseUR[]
 
 // tag::timeseriesClause[]
 
-The TIMESERIES clause takes time window size returns events aggregated in provided time-buckets.
+//was "The TIMESERIES clause takes time window size returns events aggregated in provided time-buckets."
+The `TIMESERIES` clause takes the time window size and returns events that are aggregated in time buckets you specified.
 
 Use the following format:
 

@@ -703,7 +703,7 @@ You can click *Metrics* to see statistics, such as average response time and fai
 [[automatic-interval]]
 == How Data is Aggregated in Intervals
 
-Anypoint Monitoring aggregates data in charts based on the selected time interval. As such, the number of data points shown in a chart varies based on your selected time interval.
+include::partial$data-aggregation.adoc[]
 
 [[average-response-times-app]]
 == Charting Inactivity for Average Response Time
@@ -713,14 +713,7 @@ include::partial$average-response-time.adoc[]
 [[endpoint-operation-metrics]]
 == How Endpoint and Operation Use Metrics Are Gathered
 
-Anypoint Monitoring collects top occurring endpoints or operations for each data collection interval. Endpoints or operations that are not top occurring are sorted into a group called *Other*.
-
-In each data collection interval, top occurring endpoints or operations vary. An endpoint or operation that is top occurring in one interval may not be top occurring in the next.
-
-In Anypoint Monitoring charts and tables, the data comes from multiple data collection intervals. As a result, aggregated data shown in the dashboard is an estimation since the intervals may not have the same top occurring endpoints or operations. The tables show approximate counts for the most commonly occurring endpoints or operations when the *Other* grouping appears.
-
-For example, when an endpoint occurs more often than other endpoints in one interval but occurs less often in another interval (thus sorting it into the *Other* group for that interval), the resulting table displays lower than actual values for that endpoint, since the metrics that do not appear are grouped into the *Other* group.
-
+include::partial$endpoint-operation-metrics.adoc[]
 == See Also
 
 * xref:dashboard-custom-config.adoc[Configuring Custom Dashboards and Charts]
