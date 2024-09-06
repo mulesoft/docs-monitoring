@@ -12,24 +12,17 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 . In the Anypoint Monitoring navigation menu, click *Built-in dashboards* or *Custom dashboards*.
 . Select the application for which to download the data.
 . Specify the time range for the data to download.
-. In the chart that contains the data to download, click the three vertical dots in the top right of the chart, and select *Export CSV*.
+. In the chart that contains the data to download, click the more options menu, and select *Export CSV*.
 +
-image::export-csv.png[]
+image::export-csv.png["Export CSV menu option selected"]
 +
 . In the *Export CSV* dialog, specify the way to format the data. +
 * In *Mode*, select the format for the data:
- ** *Series as rows* formats the data in rows in the CSV file. +
-For example:
-+
-image::csv-export-rows.png[]
-+
- ** *Series as columns* formats the data as columns in the CSV file. +
-For example:
-+
-image::export-csv-columns.png[]
-+
+ ** *Series as rows* formats the data in rows in the CSV file. 
+ ** *Series as columns* formats the data as columns in the CSV file.
 * In *Date Time Format*, enter the values to specify the date format, for example: +
 `YYYY-MM-DDTHH:mm:ssZ`
 +
-. Click *Export*. +
+. Click *Export*. 
++
 The CSV file downloads automatically in the browser.

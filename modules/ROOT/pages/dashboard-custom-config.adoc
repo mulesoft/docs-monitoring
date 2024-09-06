@@ -14,7 +14,7 @@ image::dashboard-custom-widgets.png[Custom Dashboard Widgets]
 // TODO_HIGH: VERIFY DESCRIPTION of Table
 +
 [[chart_examples]]
-* *Graph*: Can display a wide variety metrics as time-series data. Graphs support a query language capable of pinpointing the data you need to see.
+* *Graph*: Can display a wide variety of metrics as time-series data. Graphs support a query language capable of pinpointing the data you need to see.
 +
 .Example: Graph
 image::dashboard-graph.png[Example: Graph]
@@ -37,6 +37,8 @@ image::dashboard-text-header.png[Example: Text]
 //TODO_REMOVED FOR NOW: , annotation, and raw JSON for Table description
 
 See <<charts_adding, Adding Charts to a Custom Dashboard>>.
+
+NOTE: There is a hard limit of 25 queries per custom dashboard panel.
 
 [[config_dashboard]]
 == Configure a Dashboard

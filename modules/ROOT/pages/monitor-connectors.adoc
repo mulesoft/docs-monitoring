@@ -99,5 +99,3 @@ To view performance information, the resource you select must contain a supporte
 include::reuse::partial$billing/pricing.adoc[tag=connectorTabReq]
  +
 The *Connectors* page displays the metrics for connectors.
-
-image:monitoring-connector-dashboard.png[]

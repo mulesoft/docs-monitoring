@@ -1,6 +1,6 @@
 = Export Telemetry Data to Third-Party Monitoring Systems
 
-The Telemetry Exporter enables you to export xref:access-management::audit-logging.adoc[_audit logs_] and trace data only from apps running CloudHub 2.0 to third-party observability and analytics apps, such as Azure Monitor, Splunk HEC, and OpenTelemetry compliant tools. 
+The Telemetry Exporter enables you to export xref:access-management::audit-logging.adoc[_audit logs_] and trace data from apps to third-party observability and analytics apps, such as Azure Monitor, Splunk HEC, and OpenTelemetry compliant tools. Exporting trace data is supported only for apps deployed using compatible versions of CloudHub 2.0 and Runtime Fabric. 
 
 // add a link when trace overview become available
 
@@ -33,7 +33,8 @@ Before you configure the Telemetry Exporter, ensure that you have:
 * Telemetry Exporter Configurations Manager permission, so you can create or modify configurations.
 * Access information for your third-party app, including the endpoint.
 * The ability to create an instrumentation key or access token for your third-party app.
-* Enabled trace data collection for CloudHub 2.0 apps deployed to xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[shared] or xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[private spaces]. This requirement applies only if you want to export trace data.
+* Enabled trace data collection for CloudHub 2.0 apps deployed to xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[shared] or xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[private spaces]. This requirement applies only if you want to export trace data for CloudHub 2.0.
+* Enabled trace data collection for xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric] apps. This requirement applies only if you want to export trace data for Runtime Fabric.
 
 == Access Telemetry Exporter
 

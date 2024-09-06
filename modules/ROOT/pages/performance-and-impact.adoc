@@ -63,6 +63,9 @@ Basic alerts for servers and Mule apps::
 Basic alerts for APIs::
 10 per server or app.
 
+Telemetry Exporter Connections::
+10 per organization.
+
 === Gold and Platinum Subscription Limits
 
 Gold and Platinum subscribers to Anypoint Platform receive modest data retention and feature limits:
