@@ -1,5 +1,7 @@
+//TODO_TODO_TODO title! Generate/Enable Real-time Logs for Apps and APIs
 = Anypoint Monitoring Log Points
 
+//TODO_TODO_TODO "Permissions control allows"?
 The Log Points feature in Anypoint Monitoring allows you to generate logs for apps and APIs in real-time and without writing code. For apps, you can specify the level of logs you want to generate, and for APIs, you can specify properties for the logs. This allows you to extract logs on-demand from applications in real-time, without causing re-deployment or application downtime. Permissions control allows you to manage access. All logs seamlessly flow into log management.
 
 == Log Points for Apps
@@ -10,6 +12,7 @@ The Application Log Points feature enables you to log information from connector
 
 To use this feature, you must have the following:
 
+//TODO_TODO_TODO versions!
 * Mule 3.8.5 or later
 
 include::reuse::partial$billing/pricing.adoc[tag=prereqBullet]
@@ -20,6 +23,7 @@ include::reuse::partial$billing/pricing.adoc[tag=prereqBullet]
 
 The following Anypoint Connectors are available for use with the Log Points feature.
 
+//TODO_TODO_TODO 3.x versions!
 .Supported Connectors
 |===
 |Supported Anypoint Connectors |Supported for Mule 3.x |Supported for Mule 4.x
@@ -136,6 +140,7 @@ For example, you can specify a cookie header in an API to see if an injection at
 
 To use this feature, you must have the following:
 
+//TODO_TODO_TODO versions!
 * Mule 3.8.5 or later
 
 include::reuse::partial$billing/pricing.adoc[tag=prereqBullet]

@@ -3,6 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+//TODO_TODO_TODO turn this into a banner so that it's more visible
 include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
 You can use Anypoint Monitoring to download archived log data (raw data) collected on Mule apps that are running in hybrid, CloudHub, or Runtime Fabric deployments. This data is helpful for security, compliance, or other purposes where you need to examine or collect your warehoused data.
@@ -10,6 +11,7 @@ You can use Anypoint Monitoring to download archived log data (raw data) collect
 [NOTE]
 Log data is archived regularly.
 
+//TODO_TODO_TODO where is *Environment* and *Resource* located exactly?
 To download raw data:
 
 . Select the *Environment* and *Resource*.

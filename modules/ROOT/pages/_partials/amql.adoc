@@ -95,10 +95,12 @@ AMQL has several reserved keywords, which are not case sensitive.
 // end::reservedKeywords[]
 
 // tag::selectClause[]
+//TODO_TODO_TODO clarify/fix "using describe endpoints" 
 The `SELECT` clause enables you to get a list of fields in a data source using describe endpoints. 
 
 When you use `SELECT`, consider the following:
 
+//TODO_TODO_TODO clarify/fix "using describe endpoints" 
 * Use describe endpoints for each service to get a list of fields present in your data source.
 * Using `SELECT` with a wildcard (`select *`) returns all public endpoints for a data source. Not all data sources support this option.
 * Wrap string literals in single quotes.
@@ -153,6 +155,7 @@ The `WHERE` clause enables you to define your  `timestamp` range filter (in epoc
 
 |`between`
 |`BETWEEN`
+//TODO_TODO_TODO does capitalization/case matter for BETWEEEN/between?
 a|The timestamp field supports only `between`. For example: 
 
 [source,sql]

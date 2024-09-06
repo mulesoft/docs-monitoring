@@ -16,7 +16,7 @@ of issues (MTTI).
 
 Anypoint Monitoring provides the following features:
 
-include::monitoring::partial$include-features.adoc[tags="feature-list"]
+include:monitoring::partial$include-features.adoc[tags="feature-list"]
 
 [[dashboards]]
 === Dashboards
