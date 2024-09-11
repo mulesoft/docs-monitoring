@@ -90,8 +90,6 @@ Supports conditional logic for filtering the *From* data source you selected.
 * Select one or more filters tags (such as `app_id`, `env_id`, `org_id`, `worker_id`).
 * Available operators include: +
  ** `=` The value on the left matches the value on the right.
- //** `!=` Unsupported. See old WI W-11854160 Support dates unclear.
- //** `<>` Unsupported. See old WI W-11854160 Support dates unclear.
  ** `<` The value on the left is less than the value on the right. 
  ** `>` The value on the left is greater than the value on the right.
 * You can also construct a query that contains multiple filtering expressions by using logical `AND` or `OR` operators between the expressions. +
