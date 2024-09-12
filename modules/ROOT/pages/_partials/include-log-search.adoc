@@ -124,6 +124,7 @@ To escape these characters, use the `\` before the character. For example, to se
 // end::special-characters[]
 
 // tag::search-fields[]
+[[search-fields]]
 == Search Fields
 
 Specify a field name or use the default when performing a search. The field name and default field are specific to the search implementation.
