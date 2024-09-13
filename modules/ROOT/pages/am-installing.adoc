@@ -46,6 +46,8 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 Ensure that one of the following Mule Runtime Manager agent versions is installed in the Mule runtime engine running on the server:
 
+* 2.6.x
+* 2.5.x
 * 2.4.x
 * 2.3.0
 * 2.2.x
@@ -58,6 +60,7 @@ Ensure that one of the following Mule Runtime Manager agent versions is installe
 * 1.11.x
 * 1.10.0
 
+Mule deployments must be visible and managed in the Runtime Manager user interface. To ensure they appear, use the Runtime Manager user interface or the ARM REST API for new deployments.
 
 == Hardware Prerequisites
 
@@ -80,7 +83,7 @@ When installing the Anypoint Monitoring agent, note the following:
 ** If you don't want to have it preset as a service by the installer, select *No*.
 ** You can call the installation script with the `-x` argument to skip this prompt. If you skip the prompt, Anypoint Monitoring is not installed as a service.
 * You cannot install the Anypoint Monitoring agent on a server that has an existing filebeat instance running.
-* When you install the Anypoint Monitoring agent on a hybrid server in a server group, restart the server to enable Anypoint Monitoring to begin collecting metrics.
+* When you install the Anypoint Monitoring agent on a hybrid server in a server group, use Runtime Manager to restart the server to enable Anypoint Monitoring to begin collecting metrics.
 
 == SOCKS5 Proxy Setting
 
@@ -137,6 +140,8 @@ If you need to update the Anypoint Monitoring agent at some point in the future,
 . Follow the instructions for <<install_ap_monitoring_onprem,installing the Anypoint Monitoring agent>> on-premises.
 . Restart Mule.
 
+NOTE: If you add or remove a Mule runtime from the cluster or a server group, you must reinstall the Anypoint Monitoring agent.
+
 == Performance Impact
 
 Enabling monitoring can impact CPU utilization and memory utilization depending on your specific application configuration. Before enabling monitoring in your production environment, test any performance impact in your pre-production environment to ensure optimal performance and sizing.
@@ -148,7 +153,9 @@ Enabling monitoring can impact CPU utilization and memory utilization depending 
 
 == Disable Log Forwarding for Hybrid Runtime Servers
 
-If you have a Titanium subscription and a hybrid runtime server, you can disable log forwarding to Anypoint Monitoring if you have AM installer v.2.5.10 or later. To disable this feature, you must configure a JVM property on each hybrid server for which you want to disable log forwarding. You cannot disable log forwarding per application.
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
+
+You can disable log forwarding to Anypoint Monitoring if you have AM installer v.2.5.10 or later. To disable this feature, you must configure a JVM property on each hybrid server for which you want to disable log forwarding. You cannot disable log forwarding per application.
 
 To disable log forwarding:
 

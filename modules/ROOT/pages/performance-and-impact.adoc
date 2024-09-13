@@ -13,6 +13,59 @@ Anypoint Monitoring asynchronously collects data at a resolution of one minute, 
 
 == Data Retention and Limits
 
+=== Anypoint Integration Starter Package Limits
+
+Organizations that have the Anypoint Integration Starter package receive modest data retention and feature limits:
+
+Logs::
+Log limits are documented in xref:runtime-manager::viewing-log-data.adoc#log-persistence[Runtime Manager].
+
+Application metrics::
+30 days.
+
+Enhanced API metrics::
+30 days. The limit for data in the *Client Applications* tab is 1 hour.
+
+Basic alerts for servers and Mule apps::
+Six per server or app. 
+
+Basic alerts for APIs::
+Six per API instance.
+
+=== Anypoint Integration Advanced Package Limits
+
+Organizations that have the Anypoint Integration Advanced package receive more robust data retention and feature limits:
+
+Logs::
+In raw format, your logs can occupy as much space as you receive with your pricing package. Note that the storage space you receive with your pricing package is used to store logs and metrics data. Because metrics do not take up much storage capacity, you can use the majority of your storage for raw log data.
+
+Searchable logs::
+You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs. +
+Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can download logs to access older logs.
+
+Application metrics::
+365 days.
+
+Enhanced API metrics::
+30 days. The following limits also apply:
+* Data in the *Client Applications* tab is limited to 1 hour.
+* Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
+
+Custom metrics::
+365 days in production environments.
+
+Advanced alerts::
+10 per app or API instance.
+
+Basic alerts for servers and Mule apps::
+10 per server or app.
+
+Basic alerts for APIs::
+10 per server or app.
+
+Telemetry Exporter Connections::
+10 per organization.
+
 === Gold and Platinum Subscription Limits
 
 Gold and Platinum subscribers to Anypoint Platform receive modest data retention and feature limits:
@@ -59,10 +112,13 @@ Advanced alerts::
 20 per parent organization.
 
 Basic alerts for servers and Mule apps::
-50 times the number of production vCores in your organization. Note that you can also use your alert allowance for sandbox deployments, but this limit subject to the overall xref:access-management::business-groups.adoc#redistribute-resources[production vCore limit].
+50 times the number of production vCores in your organization plus 100. For example, an organization that has 2 production vCores and a Titanium subscription has a limit of 200 basic alerts. Note that you can also use your alert allowance for sandbox deployments, but this limit subject to the overall xref:access-management::business-groups.adoc#redistribute-resources[production vCore limit].
 
 Basic alerts for APIs::
 Ten basic alerts per API instance.
+
+Telemetry Exporter Connections::
+10 per organization.
 
 == Logging Data Management
 

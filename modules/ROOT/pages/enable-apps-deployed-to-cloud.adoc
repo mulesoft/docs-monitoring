@@ -14,14 +14,14 @@ You can use the *Settings* page in Anypoint Monitoring to enable or disable apps
 include::partial$include-nav-steps-no-permissions.adoc[]
 
 . In the Anypoint Monitoring navigation menu, click *Settings*.
-+
-image::monitoring-settings-screen.png[]
-+
 . Select *CloudHub*.
-. In the *Environment* drop-down list, select the environment where the application is running. +
-A list of running applications is displayed for the selected environment. +
+. In the *Environment* drop-down list, select the environment where the application is running. 
++
+A list of running applications is displayed for the selected environment. 
++
 You can search for a specific application using the *List of resources* search box.
-. Next to the application, click *Enable* to enable monitoring for the application, or *Disable* to disable monitoring for the application. +
+. Next to the application, click *Enable* to enable monitoring for the application, or *Disable* to disable monitoring for the application. 
++
 [NOTE]
 Applications running on `x.x.x.-AM` versions are displayed in the list and are already enabled, however, you can't disable these applications from this page.
 
@@ -37,7 +37,7 @@ The application must be deployed to CloudHub and running on a supported version 
 . Click *Properties*, and add the following property: +
 `anypoint.platform.config.analytics.agent.enabled=true`
 +
-image::enable-monitoring-cloudhub.png[]
+image::enable-monitoring-cloudhub.png["Runtime Manager application settings window with Properties tab selected"]
 +
 To disable monitoring, change the value to `false`.
 . Click *Apply Changes*.

@@ -124,6 +124,8 @@ These metrics are available when you use basic mode for APIs using the *API Pane
 | Slow Requests | `ms`
 |===
 
+The retention period for basic mode metrics for APIs is two hours.
+
 These metrics are available if you use basic mode for APIs using the *API Analytics Panel* setting (deprecated):
 
 [%header,cols="3,1"]

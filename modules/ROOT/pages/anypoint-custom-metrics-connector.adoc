@@ -1,8 +1,5 @@
 = Custom Metrics
 
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 
 The Anypoint Custom Metrics connector enables you to send operational and business metric values that you define from an app to Anypoint Monitoring. You can then use the built-in *Custom metrics* dashboard and a custom dashboard in *Advanced* mode to visualize the custom metrics in real time. 
 
@@ -10,14 +7,122 @@ Define metrics in the Anypoint Custom Metrics connector to select which metrics 
 
 The Custom Metrics connector is available for both Mule 3 and Mule 4 in the *Monitoring > Custom Metrics* page.
 
-[NOTE] 
-To see the metrics you configure in the Anypoint Custom Metrics connector in Anypoint Monitoring, you must have a Titanium subscription. 
+include::reuse::partial$billing/pricing.adoc[tag=connectorAvailability]
 
 == Prerequisites
 
 include::partial$include-supported-mule-runtime-version.adoc[]
 
 You must also xref:am-installing.adoc[install the Anypoint Monitoring Agent].
+
+== Custom Metrics Best Practices
+
+Best practices include using time period and frequency effectively as well as using data with low cardinality dimensions.
+
+=== Use Time Period and Frequency Effectively
+
+Each chart in the Custom Metrics dashboard represents the output of a query. Two parameters in the dashboard, _time range_ and _refresh frequency_, affect the response time for the query that generates a chart.
+
+Time range:: Determines how much data is fetched or processed to generate the chart. For example, more data is fetched and processed when displaying a monthly chart compared to displaying a daily chart.
+
+Refresh frequency:: Determines how often a chart refreshes. High refresh frequencies put more stress on a system and can affect performance. For example, a refresh rate of one hour sends a query every hour, and a refresh rate of one minute sends the same query every minute. 
+
+Increasing time range (such as daily to monthly) or increasing refresh frequency (from one hour to one minute) affects the system response time. Reduce time range or reduce the refresh frequency to improve the chart response time.
+
+=== Use Low Cardinality Dimensions
+
+Most custom metric dimensions have less than 100 possible unique values, but some may have a thousand unique values, such as `country_code`, `state_code`, `city_code`, and `zip`. Do not add _high cardinality_ data, or data with many unique values, to custom metrics. Some examples of high cardinality dimensions include `customer_id`, `user_id`, `session_id`, `order_id`, `transaction_id`, `email_address`, `token_id`, `product_id`, `location_id` (latitude/longitude), `ip_address`, and `phone_number`. Charts configured for custom metrics with high cardinality dimensions can adversely affect the response time of dashboards. For best results, restrict dimensions to have only a few unique values.
+
+If a particular custom metrics chart slows down and affects other charts in the system, you can:
+
+* Create a new custom metric without the offending high cardinality dimension
+* Replace a high cardinality dimension with a low cardinality dimension, such as:
+** `category_id` instead of `product_id` 
+** `country_code` instead of `location_id`
+** `order_count` instead of `order_id`
+* Avoid using UUIDs and timestamps when creating new custom metrics
+* Reduce the time range of the custom metric chart, for example, create a daily or weekly chart instead of a monthly or yearly chart 
+* Reduce the refresh frequency, for example, refresh hourly instead of every minute.
+
+=== Restricted Keywords
+
+Due to internal database restrictions, you cannot use the following keywords to define `dimensionName` or `factName` while using the Anypoint Custom Metrics connector:
+
+* `ALL`
+* `ALTER`
+* `ANALYZE`
+* `ANY`
+* `AS`
+* `ASC`
+* `BEGIN`
+* `BY`
+* `CREATE`
+* `CONTINUOUS`
+* `DATABASE`
+* `DATABASES`
+* `DEFAULT`
+* `DELETE`
+* `DESC`
+* `DESTINATIONS`
+* `DIAGNOSTICS`
+* `DISTINCT`
+* `DROP`
+* `DURATION`
+* `END`
+* `EVERY`
+* `EXPLAIN`
+* `FIELD`
+* `FOR`
+* `FROM`
+* `GRANT`
+* `GRANTS`
+* `GROUP`
+* `GROUPS`
+* `IN`
+* `INF`
+* `INSERT`
+* `INTO`
+* `KEY`
+* `KEYS`
+* `KILL`
+* `LIMIT`
+* `SHOW`
+* `MEASUREMENT`
+* `MEASUREMENTS`
+* `NAME`
+* `OFFSET`
+* `ON`
+* `ORDER`
+* `PASSWORD`
+* `POLICY`
+* `POLICIES`
+* `PRIVILEGES`
+* `QUERIES`
+* `QUERY`
+* `READ`
+* `REPLICATION`
+* `RESAMPLE`
+* `RETENTION`
+* `REVOKE`
+* `SELECT`
+* `SERIES`
+* `SET`
+* `SHARD`
+* `SHARDS`
+* `SLIMIT`
+* `SOFFSET`
+* `STATS`
+* `SUBSCRIPTION`
+* `SUBSCRIPTIONS`
+* `TAG`
+* `TO`
+* `USER`
+* `USERS`
+* `VALUES`
+* `WHERE`
+* `WITH`
+* `WRITE`
+* `TIME`
 
 == Use Design Center to Configure the Custom Metrics Values
 
@@ -28,19 +133,19 @@ The project opens in Design Center.
 . Select the trigger for your flow, and click *Next*.
 . For *Target*, select *Anypoint Custom Metrics Connector*, and click *Done*. 
 +
-image::custom-metric-dc-select-target.png[]
+image::custom-metric-dc-select-target.png["A list of targets for a workflow"]
 +
 The connector has one operation called *Send Custom Metric*. 
 . On the design canvas, open the *Anypoint Custom Metrics Connector* card to add your metrics.
 . In *Metric Name*, enter a meaningful value. 
 . Next to *Dimensions*, click *Add* to enter the name and value for the metric's dimension.  
 +
-image::custom-metric-dc-add-dimension.png[]
+image::custom-metric-dc-add-dimension.png["A form with fields for metric name, dimensions, facts, and a checkbox for runtime exception on validation failure"]
 .. In the *Add Item* dialog box, enter the *Dimension Name* and *Value* for the dimension.
 .. Leave the *Collapsible* option with the default of *True*.
 .. Click *OK*. 
 +
-image::custom-metric-dc-add-item.png[]
+image::custom-metric-dc-add-item.png["A form with fields for dimension name, value, collapsible option and OK button"]
 +
 You can repeat these steps to add multiple key values.
 .  Next to *Facts*, click *Add* to add facts for the metric. Values for measurements are always numerical.
@@ -48,7 +153,7 @@ You can repeat these steps to add multiple key values.
 [NOTE]
 For facts, the value must always be numerical. This is not validated at design time, but a non-numerical value will cause a runtime exception once deployed.
 +
-image::custom-metrics-add-fact.png[]
+image::custom-metrics-add-fact.png["A form with fields for a fact name, a value, and an OK button"]
 +
 .. Click *OK*. +
 You can repeat these steps to add multiple key values.
@@ -63,7 +168,7 @@ Custom Metrics Connector requires all *Facts* to be sent from every operation, e
 . Add the *Send Custom Metric* operation to your application flow. +
 This image shows an example flow for custom metrics in Anypoint Studio. 
 +
-image::custom-metric-example-flow.png[]
+image::custom-metric-example-flow.png["Example app flow in Studio with Custom Metrics Connector Send Custom Metrics source, a Logger component, and Salesforce and Amazon S3 connector operations"]
 . Click the *Send Custom Metric* operation to add values for the operation. 
 . Add the dimension for the metric:
 .. In *Metric name*, enter a meaningful value, for example "sales." 
@@ -80,10 +185,11 @@ You can repeat these steps to add multiple key values.
 For facts, the value must always be numerical. This is not validated at design time, but a non-numerical value will cause a runtime exception once deployed.
 .. Leave the *Collapsible* option with the default of *True*.
 .. Click *Finish*. +
-You can repeat these steps to add multiple key values. +
+You can repeat these steps to add multiple key values. 
++
 This image shows example values for a custom metric that tracks t-shirt sales.
 +
-image::custom-metrics-connector-config.png[]
+image::custom-metrics-connector-config.png["Send Custom Metrics source general configuration properties form with example values for contextual information and measurements"]
 +
 . Select the *Throw runtime exception on validation failure* option if you want the flow to break if invalid values are entered for the metric. If this option is left unchecked, an error is will be logged, but the flow won't break.
 
@@ -93,12 +199,12 @@ image::custom-metrics-connector-config.png[]
 . In Anypoint Monitoring, xref:dashboard-custom-config.adoc[add a new custom dashboard] for the custom metric. +
 This image shows an example of the configuration for a graph to display t-shirt sales.
 +
-image::custom-metric-custom-dashboard-config.png[]
+image::custom-metric-custom-dashboard-config.png["Custom dashboard for t-shirt sales displaying example values in the query builder"]
 +
 [NOTE]
 You only see the custom metrics in the pre-populated metric selection drop-down lists once something is logged for the custom metric. 
 +
-image::custom-metric-custom-dashboard-graph.png[]
+image::custom-metric-custom-dashboard-graph.png["Two line charts showing revenue and sales for two stores"]
 
 == Use the Custom Metrics Dashboard
 
@@ -109,7 +215,7 @@ Custom metrics are not collected for the app until you configure the xref:connec
 [NOTE]
 If the Custom Metrics connector has collected one or more metrics in the specified time range, one chart per defined metric is displayed. 
 +
-image::custom-metrics-dashboard.png[]
+image::custom-metrics-dashboard.png["A line chart showing orders placed over time"]
 +
 . Click *Select a measurement for this chart* to display the measurement for the chart.
 . Use the drop-down lists at the bottom of the chart to filter the data by: +

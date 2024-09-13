@@ -1,7 +1,4 @@
 = Built-in Application Dashboard
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 
 Built-in dashboards display deployment information about your application at the top of the screen and provide access to a number of different graphs, for example:
 
@@ -18,6 +15,8 @@ image::dashboard-outbound-response-table.png[Average Response Time Grouped By En
 * Performance metrics that break down inbound and outbound response times into averages and percentiles
 
 When converting quantities of memory, Anypoint Monitoring uses the power of 10 (_MB_) to reflect metrics values rather than the power of 2 (_MiB_).
+
+include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+1]
 
 == Supported Versions of Mule Runtime Engine
 
@@ -40,7 +39,8 @@ The built-in dashboard for the application or API is displayed.
 +
 image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
 
-Your data is prepopulated and displayed in the built-in dashboards and logs; no configuration is needed.
+Your data is prepopulated and displayed in the built-in dashboards and logs; no configuration is needed. 
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvFunctionality] 
 
 Built-in dashboards include various pages to view different types of charts:
 
@@ -68,9 +68,8 @@ Built-in dashboards include various pages to view different types of charts:
 * Inbound - Total Requests by Endpoint
 * Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Inbound - Total Failed Requests
-* Inbound - Total Slow Requests by Endpoint
 
-The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
 
 * Inbound - Protocols
 * Inbound - HTTP Endpoints
@@ -86,13 +85,15 @@ The following charts are available only if you are using Unified Agent and have 
 * Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)
 * Outbound - Total Failed Requests
 
-The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
 
 * Outbound - HTTP Ports
 * Outbound - Operations
 * Outbound - HTTP Protocols
 * Outbound - Endpoints
 | <<flows-charts>> a|
+
+include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
 
 * Inbound - Response Time by Flow
 * Outbound - Response Time by Flow
@@ -109,7 +110,7 @@ The following charts are available only if you are using Unified Agent and have 
 * Inbound - Slow Requests by Flow
 * Outbound- Slow Requests by Flow
 
-If you don't see the *Flows* tab, verify that you are using Unified Agent and have a Titanium subscription to Anypoint Platform.
+include::reuse::partial$billing/pricing.adoc[tag=flowsTabAvailability]
 | <<connectors-charts>> a|
 
 * Connector Message Volume
@@ -149,7 +150,7 @@ If you don't see the *Flows* tab, verify that you are using Unified Agent and ha
 * Other Connector Response Time
 * Other Connector Failures
 
-If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
+include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
 | <<performance-charts>> a|
 
 * Mule Messages
@@ -173,22 +174,22 @@ If you don't see the *Connectors* tab, verify that you have a Titanium subscript
 * Outbound - Total Failed Requests by HTTP Endpoint
 | <<jvm-charts>> a|
 
-* Garbage Collection Count
-* Garbage Collection Time
-* ParNew Collection Count
-* ParNew collection Time
+* Old Gen GC Count
+* Old Gen GC Time
+* Young Gen GC Count
+* Young Gen GC Time
 * Classes (Loaded, Loaded Total, Unloaded)
 * Heap (Committed, Used)
 * Thread Count
 * JVM Uptime
-* Par Eden graphs (Used, Max, Init, and Committed)
-* Par Survivor graphs (Used, Max, Init, and Committed)
+* Eden Space graphs (Used, Max, Init, and Committed)
+* Survivor Space graphs (Used, Max, Init, and Committed)
 * Metaspace graphs (Used, Max, Init, and Committed)
 * Code Cache graphs (Used, Max, Init, and Committed)
 * Compressed Class Space graphs (Used, Max, Init, and Committed)
-* Tenured graphs (Used, Max, Init, and Committed)
+* Old Gen Mem graphs (Used, Max, Init, and Committed)
 
-The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
 
 * Committed Virtual Memory
 | <<infrastructure-charts>> a|
@@ -199,17 +200,18 @@ The following charts are available only if you are using Unified Agent and have 
 * System Memory
 * JVM Thread Count
 
-The following charts are available only if you are using Unified Agent and have a Titanium subscription to Anypoint Platform:
+include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
 
 * System CPU % Utilization
 * JVM CPU Time
 * Operating System Swap Space
 | <<custom-metrics-charts>> a|
 
-The *Custom metrics* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule. See xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].
+include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
 | <<application-network>> a|
 
-The chart on the *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app. The *Application Network* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule.
+The chart on the *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app. 
+include::reuse::partial$billing/pricing.adoc[tag=appNetworkTabAvailability]
 |===
 
 [[overview-charts]]
@@ -239,7 +241,7 @@ The average response time of outbound requests. If a Mule app has more than one 
 JVM - CPU % Utilization::
 The average percentage of CPU used by the JVM, grouped by worker. The JVM used in this chart is the Mule JVM process. The calculation for CPU utilization is relative to the physical server on which Mule is deployed. For example, in RTF, the resource usage indicates the JVM use with respect to the entire server, and not with respect to the pod maximum CPU allocation.
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 JVM - Heap Used::
 The average amount of heap memory utilized by the JVM, grouped by worker. The JVM used in this chart is the Mule JVM process.
@@ -280,17 +282,17 @@ The sum of inbound requests whose response time is greater than 1 second, groupe
 Inbound - Maximum Response Time::
 The maximum response time, grouped by endpoint.
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 Inbound - Protocols::
 The sum of inbound requests, grouped by protocol.
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 Inbound - HTTP Endpoints::
 The sum of inbound requests, grouped by remote hosts (endpoints).
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 [[outbound-charts]]
 == Outbound
@@ -333,7 +335,7 @@ The sum of outbound requests for the selected time period, grouped by remote hos
 [[flows-charts]]
 == Flows
 
-The following charts appear on the *Flows* dashboard:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
 Inbound - Response Time by Flow::
 The average inbound response time, grouped by flow.
@@ -393,7 +395,7 @@ The sum of outbound requests whose response time is greater than 1000 ms, groupe
 [[connectors-charts]]
 == Connectors
 
-If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform and that the app you selected is a hybrid app deployed to a server, server group, or cluster. See xref:monitor-connectors.adoc[Monitor Connectors].
+include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
 
 The following charts appear on the *Connectors* dashboard:
 
@@ -584,17 +586,17 @@ Anypoint Monitoring collects JVM metrics based on the JVM CPU and not the system
 
 The following charts appear on the *JVM* dashboard:
 
-Garbage Collection Count::
-The total number of collections that have occurred, grouped by worker.
+Old Gen GC Count::
+The total number of JVM Old Gen garbage collections (GC) that have occurred, grouped by worker. 
 
-Garbage Collection Time::
-The approximate accumulated JVM garbage collection time elapsed, grouped by worker.
+Old Gen GC Time::
+The approximate accumulated JVM Old Gen garbage collection (GC) time elapsed, grouped by worker. 
 
-ParNew Collection Count::
-The total number of ParNew garbage collections, grouped by worker.
+Young Gen GC Count::
+The total number of JVM Young Gen garbage collections (GC), grouped by worker. 
 
-ParNew Collection Time::
-The approximate accumulated ParNew garbage collection time elapsed, grouped by worker.
+Young Gen GC Time::
+The approximate accumulated JVM Young Gen garbage collection (GC) time elapsed, grouped by worker. 
 
 Classes Loaded::
 The total number of loaded classes, grouped by worker.
@@ -617,28 +619,28 @@ The total number of threads of the JVM, grouped by worker.
 JVM Uptime::
 The time elapsed since the JVM started, grouped by worker.
 
-Par Eden Space graphs (Used, Max, Init, and Committed)::
-The memory metrics for JVM Par Eden space, grouped by worker.
+Eden Space graphs (Used, Max, Init, and Committed)::
+The memory metrics for JVM Eden space, grouped by worker. 
 
-Par Survivor Space graphs (Used, Max, Init, and Committed)::
-The memory metrics for JVM Par Survivor space, grouped by worker.
+Survivor Space graphs (Used, Max, Init, and Committed)::
+The memory metrics for JVM Survivor space, grouped by worker. 
 
 Metaspace graphs (Used, Max, Init, Committed)::
 The memory metrics for JVM metaspace, grouped by worker.
 
 Code Cache graphs (Used, Max, Init, Committed)::
-The memory metrics for JVM code cache, grouped by worker.
+The memory metrics for JVM code cache, grouped by worker. 
 
 Compressed Class Space graphs (Used, Max, Init, Committed)::
 The memory metrics for JVM compressed class, grouped by worker.
 
-Tenured graphs (Used, Max, Init, Committed)::
-The memory metrics for JVM tenured space, grouped by worker.
+Old Gen Mem graphs (Used, Max, Init, Committed)::
+The memory metrics for JVM Old Gen space, grouped by worker.
 
 Committed Virtual Memory::
 The amount of virtual memory guaranteed to be available to the running process, grouped by worker.
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 [[infrastructure-charts]]
 == Infrastructure
@@ -663,17 +665,17 @@ The average number of threads of the JVM, grouped by worker.
 System CPU % Utilization::
 The percentage of CPU used by all processes. This metric often aligns with the Cloudwatch System CPU % metric, but there may be different values given the timing of data aggregation for Anypoint Monitoring metrics.
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 JVM CPU Time::
 The cumulative CPU time consumed by the JVM.
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 Operating System Swap Space::
 The amount of memory the system is swapping, grouped by worker in automatic intervals.
 +
-This metric is available only for organizations that have a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 .Example: Infrastructure Dashboard
 image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
@@ -681,12 +683,12 @@ image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
 [[custom-metrics-charts]]
 == Custom Metrics
 
-The *Custom metrics* tab displays only if you have a Titanium subscription and select an app running on a supported version of Mule. See xref:anypoint-custom-metrics-connector.adoc[Anypoint Custom Metrics Connector].
+include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
 
 [[application-network]]
 == Application Network
 
-The *Application Network* tab displays only if you have a Titanium subscription and have set up Anypoint Visualizer.
+include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
 
 Setup requirements change based on your app deployment. Some deployment types require you to enable header injection or modify how Anypoint Visualizer collects data. For more information, see the documentation for each deployment type:
 
@@ -702,6 +704,11 @@ You can click *Metrics* to see statistics, such as average response time and fai
 == How Data is Aggregated in Intervals
 
 Anypoint Monitoring aggregates data in charts based on the selected time interval. As such, the number of data points shown in a chart varies based on your selected time interval.
+
+[[average-response-times-app]]
+== Charting Inactivity for Average Response Time
+
+include::partial$average-response-time.adoc[]
 
 [[endpoint-operation-metrics]]
 == How Endpoint and Operation Use Metrics Are Gathered
