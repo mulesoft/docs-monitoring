@@ -104,7 +104,7 @@ When you use `SELECT`, consider the following:
 * Wrap string literals in single quotes.
 * Field names in `SELECT` clauses are case-sensitive. 
 * Using a field alias is supported. The syntax is `field AS aliasName`.
-* Wrap field names with double quotes to handle field names with special characters. The syntax is `select "field1", "field2.a" as 'fieldA' from dataSource`.
+* Wrap field names within double quotes to handle field names with special characters. The syntax is `select "field1", "field2.a" as 'fieldA' from dataSource`.
 * Aggregated fields support aliases. The syntax is `aggregationFunction(field, ..) AS alias`. If you don't provide an alias, the results return `aggregationFunction(field, ..)`.
 
 // end::selectClause[]
@@ -206,6 +206,7 @@ Some fields in the data might not support certain aggregations.
 
 // tag::timeseriesClause[]
 
+//was "The TIMESERIES clause takes time window size returns events aggregated in provided time-buckets."
 The `TIMESERIES` clause takes the time window size and returns events that are aggregated in time buckets you specified.
 
 Use the following format:
