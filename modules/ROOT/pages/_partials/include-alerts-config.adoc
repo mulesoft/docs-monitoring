@@ -41,7 +41,7 @@ Configure an email notification when an advanced alert is triggered.
 [%header,cols="1,4"]
 |===
 2+| Notification Settings for Advanced Alerts
-| `Send To` | Email address for each recipient of the advanced alert notification
+| `Send To` | Email address for each recipient of the advanced alert notification. If you add or change the email address of an alert recipient, they do not receive an email until the alert is triggered.
 | `Message` | Message to send to the recipient.
 |===
 

@@ -5,8 +5,7 @@ endif::[]
 
 To make creating a custom dashboard easier, you can save any of the built-in dashboards that are included in the Anypoint Monitoring tabs as a custom dashboard that you can then customize to suit your needs. This allows you to take advantage of the flexibility and features offered in custom dashboards, such as troubleshooting, setting up alerts, or comparing multiple resources within one dashboard.
 
-[NOTE]
-This feature requires a https://www.mulesoft.com/anypoint-pricing[Titanium Subscription].
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
 Follow these steps to save a built-in dashboard as a custom dashboard.
 

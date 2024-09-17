@@ -10,7 +10,10 @@ The Application Log Points feature enables you to log information from connector
 
 To use this feature, you must have the following:
 
-* A https://www.mulesoft.com/anypoint-pricing[Titanium subscription] to Anypoint Monitoring and Mule 3.8.5 or later
+* Mule 3.8.5 or later
+
+include::reuse::partial$billing/pricing.adoc[tag=prereqBullet]
+
 * The *Runtime Manager > Manage Settings* permission
 
 === Supported Connectors
@@ -133,7 +136,10 @@ For example, you can specify a cookie header in an API to see if an injection at
 
 To use this feature, you must have the following:
 
-* A https://www.mulesoft.com/anypoint-pricing[Titanium subscription] to Anypoint Monitoring and Mule 3.8.5 or later
+* Mule 3.8.5 or later
+
+include::reuse::partial$billing/pricing.adoc[tag=prereqBullet]
+
 * The *API Manager > Manage Policies* permission
 
 === Supported APIs

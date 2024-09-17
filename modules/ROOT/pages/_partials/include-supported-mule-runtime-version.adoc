@@ -2,6 +2,7 @@
 Use the following Mule runtime engine versions with Anypoint Monitoring:
 
 * Mule 3 versions 3.8.7 and later +
-Versions 3.8.6 and earlier are not supported. Additionally, all runtime versions that have the `-AM` suffix are deprecated.
+Versions 3.8.6 and earlier are not supported. Additionally, all runtime versions that have the `-AM` suffix are deprecated. +
+Inbound and outbound metrics are unavailable for hybrid proxy apps that use Mule runtime engine version 3.9.5 or earlier.
 * Mule 4 +
 To use enhanced metrics for API Analytics, use Mule runtime engine version 4.1.6 or later.

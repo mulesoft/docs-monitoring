@@ -2,19 +2,23 @@
 
 You can view performance metrics for supported connectors in your application such as what operation is being performed, how long the operations are taking, and whether they are succeeding or failing.
 
-[NOTE]
-This feature requires a https://www.mulesoft.com/anypoint-pricing[Titanium Subscription] and the Unified Agent.
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
+
+You also need the Unified Agent.
 
 == Supported Mule Versions
 
 To monitor connectors, you must use a supported version of Mule:
 
 * Hybrid apps running on Mule 4.2.0, 4.1.x, 3.9.x, or 3.8.7
-* CloudHub apps running on Mule 4.2.0, 4.1.x
+* CloudHub apps running on Mule 4.1.x or later
+* CloudHub 2.0 apps running on Mule 4.3 or later
+
+If your app is using Java 17, you must specify the version during deployment. For a list of compatible connectors, see https://help.salesforce.com/s/articleView?language=en_US&id=000782248&type=1[Java 17 Compatible Anypoint Connectors].
 
 == Supported Connectors
 
-The type of connector determines the charts that are displayed.
+The type of connector determines the charts that are displayed. Unless otherwise specified, the following metrics are for outbound requests only.
 
 [%header,cols="1,4"]
 |===
@@ -92,7 +96,6 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 . Select the environment and resource name, then click *View*. +
 To view performance information, the resource you select must contain a supported connector with data.
 . In the *Built-in dashboards* page, click *Connectors*. +
-If you don't see the *Connectors* tab, verify that you have a Titanium subscription to Anypoint Platform, and that the app you selected is running on a supported version of Mule. +
+include::reuse::partial$billing/pricing.adoc[tag=connectorTabReq]
+ +
 The *Connectors* page displays the metrics for connectors.
-
-image:monitoring-connector-dashboard.png[]

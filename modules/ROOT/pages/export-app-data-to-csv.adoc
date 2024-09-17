@@ -5,32 +5,24 @@ endif::[]
 
 In built-in and custom dashboards, you can export app data to a CSV file, which you can then use in other applications. The data export works on an individual chart level, so only data in the specified chart is exported. When you apply a filter to a dashboard, the exported data includes only the data included in the filter you set. For example, if you apply a time period filter, only the data for that time period is exported.
 
-[NOTE]
-This feature requires a Titanium subscription.
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
 . In the Anypoint Monitoring navigation menu, click *Built-in dashboards* or *Custom dashboards*.
 . Select the application for which to download the data.
 . Specify the time range for the data to download.
-. In the chart that contains the data to download, click the three vertical dots in the top right of the chart, and select *Export CSV*.
+. In the chart that contains the data to download, click the more options menu, and select *Export CSV*.
 +
-image::export-csv.png[]
+image::export-csv.png["Export CSV menu option selected"]
 +
 . In the *Export CSV* dialog, specify the way to format the data. +
 * In *Mode*, select the format for the data:
- ** *Series as rows* formats the data in rows in the CSV file. +
-For example:
-+
-image::csv-export-rows.png[]
-+
- ** *Series as columns* formats the data as columns in the CSV file. +
-For example:
-+
-image::export-csv-columns.png[]
-+
+ ** *Series as rows* formats the data in rows in the CSV file. 
+ ** *Series as columns* formats the data as columns in the CSV file.
 * In *Date Time Format*, enter the values to specify the date format, for example: +
 `YYYY-MM-DDTHH:mm:ssZ`
 +
-. Click *Export*. +
+. Click *Export*. 
++
 The CSV file downloads automatically in the browser.

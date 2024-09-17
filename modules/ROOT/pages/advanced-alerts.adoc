@@ -1,24 +1,18 @@
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 = Set Up Advanced Alerts for Graphs in Custom Dashboards
 
-You must have a Titanium subscription to use this feature.
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
 You can set up advanced alerts to trigger email notifications when a data point you are measuring passes a specified threshold. Advanced alerts are listed in the *Alerts* page in Anypoint Monitoring.
 
-When you configure an advanced alert for a graph, an alert state icon appears at the top-left corner of the graph.
+When you configure an advanced alert for a graph, an alert state icon appears at the top of the graph.
 
-image::alert-in-graph.png[alt]
+image::alert-in-graph.png["Line chart showing CPU usage over time with an alert state of OK"]
+
+Hover over the bell icon to trigger a description popup. In this case, the description indicates `Status OK`.
 
 Alert states are defined as follows:
 
 include::partial$include-alert-state.adoc[leveloffset=+1]
 
-For example, the green dot in the bell indicates that the state is `OK`:
-
-image::alert-in-graph.png[alt]
-
-Note that hovering over the bell icon triggers a description popup. In this case, the description indicates `Status OK`.
 
 include::partial$include-alerts-config.adoc[leveloffset=+1]
