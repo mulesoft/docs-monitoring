@@ -1,12 +1,12 @@
-= Explore Entities with Anypoint Insights
+= Get Performance Data with Insights
 
-Anypoint Monitoring collects metrics on each _entity_ in Anypoint Platform, such as an app or API instance. The *Anypoint Insights*  page enables you to:
+Use *Insights* in Anypoint Monitoring to get data on the performance of apps and APIs (_entities_) within an environment of a business group:
 
- * View data for your apps and APIs at a glance.
- * Review key metrics about the health of your entities.
+ * View performance metrics and trends across a business group.
+ * Review key metrics about the health of specific entities in a business group.
  * Identify and troubleshoot issues.
  
- You can filter the entities that appear on the *Anypoint Insights*  page by using attributes and elements. While in Beta, you can view up to seven days of worth of data. To view less than seven days of data, specify a date and time range.
+You can filter the entities that appear on the *Anypoint Insights* page by using attributes and elements. While in Beta, you can view up to seven days of worth of data. To view less than seven days of data, specify a date and time range.
 
 //REMOVED THIS: You can view up to 30 days of data at once, or you can specify dates and times to see only data from a shorter time period. 
 
@@ -16,26 +16,30 @@ include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+1]
 
 == Before You Begin
 
-Before getting started, ensure that you have:
+Before starting, ensure that you have:
 
-* An Anypoint Platform account that has the Monitoring Viewer permission and the permissions required for viewing apps and APIs.
-* A supported version of Mule Runtime engine.
+//TODO: WHICH view PERMISSIONS EXACTLY? Unclear from list here:
+// https://docs.mulesoft.com/access-management/permissions-by-product#runtime-manager
+* An Anypoint Platform account that has the *Monitoring Viewer* permission and the permissions required for viewing apps and APIs.
+* A supported version of Mule runtime engine.
 
 == Supported Versions of Mule Runtime Engine
 
+//TODO: VERIFY SUPPORTED VERSIONS
 include::partial$include-supported-mule-runtime-version.adoc[]
 
-== Access the Anypoint Insights  Page
+== Open Anypoint Insights
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
 include::partial$include-nav-entities.adoc[]
-
-The *Anypoint Insights*  page appears, showing a summary of data for entities in the active business group and in the selected environment configured in your profile.
++
+//TODO: What does "in the selected environment configured in your profile" mean?
+*Anypoints Insights* provides a summary of data for entities in an active business group and in the selected environment configured in your profile.
 
 == Search for Entities
 
-The search bar on the *Anypoint Insights*  page enables you to create search parameters to curate different assortments of entity data on the page and to visualize and monitor the health status of multiple entities in their business groups and environments. You can add and remove attributes such as status, errors, and environments to further refine your results. Adding different search parameters changes data in the summary, metric cards, and charts, which is refreshed each time you conduct a new search. 
+The search bar on the *Anypoint Insights* page enables you to create search parameters to curate different assortments of entity data on the page and to visualize and monitor the health status of multiple entities in their business groups and environments. You can add and remove attributes such as status, errors, and environments to further refine your results. Adding different search parameters changes data in the summary, metric cards, and charts, which is refreshed each time you conduct a new search. 
 
 //Each search filter requires three pieces of information: an attribute name (for example, `entity_type`), an operator (for example, `=` or `IN`) and a value. The auto-suggest feature is triggered by clicking inside the search box or by entering a space. When the attribute name, an operator, and a value are provided, the search component creates a filter that is visually represented as a data pill. You can edit a search filter by double-clicking on the appropriate data pill. After all modifications are completed, you can use the enter key to convert the text to a search pill again. You can click on the *X* icon on the pill to remove it.
 

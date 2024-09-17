@@ -1,1 +1,1 @@
-. In the Anypoint Monitoring navigation menu, click *Insights*.
+. In the Anypoint Monitoring navigation menu, click *Insights* to open *Anypoints Insights*.
