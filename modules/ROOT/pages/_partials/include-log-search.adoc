@@ -130,7 +130,7 @@ To escape these characters, use the `\` before the character. For example, to se
 Specify a field name or use the default when performing a search. The field name and default field are specific to the search implementation.
 
 Search any field by typing the field name, followed by a colon, and then the term you are looking for.
-For example, assume that a log search query language index contains two fields (`application` and `message`). To find a message that contains "called the function Value Selector" in the app "my-app", enter either of the following:
+For example, find logs with a message that contains "called the function Value Selector" in the app "my-app", enter either of the following:
 
 * `application: "my-app" AND message: "called the function Value Selector"`
 * `application: "my-app" AND "called the function Value Selector"`
