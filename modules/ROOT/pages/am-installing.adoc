@@ -116,7 +116,7 @@ When installing the Anypoint Monitoring agent, note the following:
 
 If you proxy your monitoring data as it leaves the data center, the proxy must support the SOCKS5 protocol, and you must configure the Anypoint Monitoring agent to communicate through the proxy.
 
-To use a SOCKS5 proxy for monitoring:
+To configure the agent for the SOCKS5 proxy:  
 
 . Set up Runtime Manager with a proxy. See xref:runtime-manager::servers-create.adoc[Create a Server in Runtime Manager].
 . Install the Anypoint Monitoring agent and use the `-p` option. For example, on a Windows server, at the command line, enter:
