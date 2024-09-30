@@ -114,12 +114,7 @@ When installing the Anypoint Monitoring agent, note the following:
 
 == SOCKS5 Proxy Setting
 
-Anypoint Monitoring agent uses a protocol that requires a SOCKS5 proxy. 
-
-[[prereq]]
-Before you begin: 
-
-You must deploy a SOCKS5-compatible server to your environment.
+If you proxy your monitoring data as it leaves the data center, you must configure an Anypoint Monitoring agent for the proxy (using `-p`), and your proxy must be deployed to SOCKS5-compatible server. The agent uses a protocol that requires SOCKS5. 
 
 To use a SOCKS5 proxy for monitoring:
 
