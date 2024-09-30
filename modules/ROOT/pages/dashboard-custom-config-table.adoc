@@ -143,7 +143,7 @@ Valid values:
 [[thresholds]]
 === Thresholds (Column Styles tab)
 
-In the Column Styles configuration tab, you can set thresholds your data when when Type is set to Number.
+In the Column Styles configuration tab, you can set thresholds your data when Type is set to Number.
 
 [%header, cols="1,4"]
 |===
