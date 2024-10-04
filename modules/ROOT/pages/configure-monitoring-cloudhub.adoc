@@ -2,31 +2,17 @@
 
 To start monitoring Mule apps that are managed in CloudHub, you must deploy them to a supported version of Mule runtime engine and set the runtime version in your Mule app.
 
-[NOTE]
-Anypoint Monitoring is enabled by default for all CloudHub 2.0 applications.
+CloudHub 2.0: Anypoint Monitoring is enabled by default for Mule apps deployed to CloudHub 2.0.
 
 == Supported Versions of Mule Deployed to CloudHub
 
 include::partial$include-supported-mule-runtime-version.adoc[]
 
-Anypoint Monitoring with Mule runtime engine images receive patch updates as soon as they are available. Because Anypoint Monitoring -AM images are no longer receiving patch updates, switch to a Mule runtime engine (non-AM) image if your production environment requires a Mule runtime engine patch.
+If you are not running a supported Mule runtime version, update the version in Runtime Manager.
 
-// -AM  note removal here?
-
-Metrics and logs are supported in the following Mule versions:
-
-* 4.x.x
-* 3.9.x
-* 3.8.7
-
-Metrics are used by graphs and other charts within xref:dashboards.adoc[Dashboards].
-
-include::reuse::partial$billing/pricing.adoc[tag=amLogging]
-
-[[update_app]]
-== Set the Runtime Version
-
-To set or change the runtime version for your Mule app:
+.Show me how
+[%collapsible]
+====
 
 * For new and existing Mule apps:
 +
@@ -54,6 +40,15 @@ anypoint-cli --username="..." --password="..."
 +
 If you are using Maven for deployment, you must modify the `<muleVersion>`
 tag in the `pom.xml` file. For example, you can change `<muleVersion>3.9.3</muleVersion>` to `<muleVersion>3.9.4</muleVersion>`).
+====
+
+include::reuse::partial$billing/pricing.adoc[tag=amLogging]
+
+
+[[update_app]]
+=== Set the Runtime Version
+
+
 
 == Enable Monitoring by Default for New Apps
 
