@@ -1,0 +1,35 @@
+//
+//tag::monitoring-agent-intro[]
+
+Starting October 31, 2024, access to xref:api-manager::analytics-chart.adoc[Key Metrics in API Manager] relies on the Anypoint Monitoring agent. The agent is available by default for some Mule app deployment models. Other models require enablement of Anypoint Monitoring or installation of the agent. 
+
+//end::monitoring-agent-intro[]
+//
+//
+//
+//tag::monitoring-agent-requirements[]
+
+[%header%autowidth.spread]
+|===
+| Mule App Deployment Model | Action
+
+| CloudHub 1.0 
+| Enable Anypoint Monitoring for your Mule Apps. See xref:monitoring::configure-monitoring-cloudhub.adoc[].
+
+| CloudHub 2.0
+| No action is required. Key Metrics and Anypoint Monitoring are available by default. 
+
+| Runtime Fabric
+| No action is required. Key Metrics and Anypoint Monitoring are available by default. See also, xref:monitoring::monitor-applications-on-rtf.adoc[] and xref:monitoring::monitor-applications-on-rtf.adoc#supported-versions-of-mule-runtime-engine[Supported Versions of Mule Runtime Engine].
+
+[[hybrid]]
+| Hybrid Deployments
+| Install the Anypoint Monitoring agent. See xref:monitoring::am-installing.adoc[]. If you proxy your monitoring data as it leaves the data center, the proxy must support the SOCKS5 protocol, and you must configure the Anypoint Monitoring agent to communicate through the proxy. See xref:monitoring::am-installing.adoc##socks5-proxy-setting[SOCKS5 Proxy Setting].
+
+| Standalone Deployments On-Prem
+| Key Metrics are not supported because standalone deployments are not managed in Anypoint Platform. If you require Key Metrics, convert your standalone deployment to a hybrid deployment (see xref:runtime-manager::servers-create.adoc[]), and install the Anypoint Monitoring agent (see <<hybrid, Hybrid Deployments>>).
+
+|===
+
+// end::monitoring-agent-requirements[]
+//
