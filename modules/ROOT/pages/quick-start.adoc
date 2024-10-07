@@ -52,6 +52,16 @@ For Anypoint Monitoring to start monitoring your Mule apps, you must deploy them
 
 You can xref:am-installing.adoc[install Anypoint Monitoring] on an on-premises server to monitor applications that are running on that server and managed via Runtime Manager (hybrid apps).
 
+[[access-key-metrics]]
+== Access Key Metrics through the Anypoint Monitoring Agent
+
+//intro
+include::monitoring::partial$include-key-metrics-apim.adoc[tags=monitoring-agent-intro]
+
+//
+include::monitoring::partial$include-key-metrics-apim.adoc[tags=monitoring-agent-requirements]
+
+
 == See Also
 
 * xref:monitoring-settings-page.adoc[Anypoint Monitoring Settings]
