@@ -45,11 +45,6 @@ tag in the `pom.xml` file. For example, you can change `<muleVersion>3.9.3</mule
 include::reuse::partial$billing/pricing.adoc[tag=amLogging]
 
 
-[[update_app]]
-=== Set the Runtime Version
-
-
-
 == Enable Monitoring by Default for New Apps
 
 If you want your Mule apps to be monitored by default when you deploy them to CloudHub, configure this feature in Anypoint Monitoring before you deploy your apps. 
