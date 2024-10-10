@@ -24,13 +24,13 @@ The Anypoint Monitoring agent that supports traffic inspection is available for 
 //
 //tag::traffic-inspection-prereqs[]
 
-* A Mule server that is registered in Runtime Manager is required. 
+** A Mule server that is registered in Runtime Manager is required. 
 +
 To set up a Mule server, see xref:runtime-manager::servers-create.adoc[].
 
-* Provide user access to Anypoint Monitoring from Access Manager, in Anypoint Platform. 
+** You require access to Anypoint Monitoring. 
 +
-For more information, see xref:monitoring::am-permissions.adoc[].
+An Anypoint Platform administrator can provide access from Access Manager, in Anypoint Platform. For more information, see xref:monitoring::am-permissions.adoc[].
 
 //** The Runtime Manager Agent must be installed. See xref:runtime-manager::runtime-manager-agent.adoc[].
 // Perhaps if server is set up, it would be installed? Without it, I got this error: 
