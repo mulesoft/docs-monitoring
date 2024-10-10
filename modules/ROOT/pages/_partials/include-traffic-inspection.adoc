@@ -44,21 +44,21 @@ To set up a Mule server, see xref:runtime-manager::servers-create.adoc[].
 
 To enable traffic inspection: 
 
-. If an Anypoint Monitoring agent is installed on your server, uninstall the agent and delete its `am` folder:
+. If an Anypoint Monitoring agent is installed on your server, uninstall the agent and delete its `/am` subfolder:
 
 .. From your Mule home directory (`MULE_HOME`), run the following command to uninstall the agent:
 +
 ----
 ./bin/uninstall 
 ----
-.. Delete the `/am` folder from your `MULE_HOME`.
+.. Delete the `/am` subfolder from your `MULE_HOME`.
 //TODO_TODO_TODO: need URL for agent download.
 . Download the Anypoint Monitoring agent zip file (`am._version_.zip`) to your Mule home directory.
 +
 The agent is available from TODO_TODO_TODO.
-. Extract the zip file to add the `/am` folder to your Mule home directory. 
+. Extract the zip file to add the `/am` subfolder to your Mule home directory. 
 . From the command line:
-.. Navigate to the `/am` folder, for example:
+.. Navigate to the `/am` subfolder, for example:
 +
 ----
 cd am
@@ -75,7 +75,7 @@ Replace `+http:/proxy-server:port+` with the URI of your proxy server and port.
 TODO_TODO_TODO: where does this go?
 +
 If your agent is installed on a hybrid server in a server group, use Runtime Manager to restart the server so that Anypoint Monitoring can start collecting metrics.
-. Return to your `am/` folder and run the setup script:
+. Return to your `/am` subfolder and run the setup script:
 +
 ----
 ./bin/setup
