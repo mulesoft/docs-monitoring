@@ -196,15 +196,18 @@ To disable log forwarding:
 [[traffic-inspection-am]]
 == Enable Traffic Inspection for Anypoint Monitoring 
 
-include::monitoring::partial$include-traffic-inspection.adoc.adoc[tag=traffic-inspection-overview]
+include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspection-overview]
 
-Before you begin:
+* Before you begin:
++
+include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspection-prereqs]
 
-include::monitoring::partial$include-traffic-inspection.adoc.adoc[tag=traffic-inspection-prereqs]
+* Limitations:
++
+include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspection-limitations]
 
-To enable traffic inspection:
-
-include::monitoring::partial$include-traffic-inspection.adoc.adoc[tag=traffic-inspection-prereqs]
+//procedure
+include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspection-procedure]
 
 
 == See Also

@@ -1,39 +1,37 @@
 //TODO_TODO_TODO: OTHER Questions
+////
 * if/how this differs from support for RTM? 
     * forward proxy? similar to "adds support to the Runtime Manager agent for a forward proxy that is deployed in your environment"
     * background info needed to understand how this fits into a bigger picture: "intercepting and inspecting all HTTPS traffic" (what does this mean exactly?) 
 * prereqs similar (see RTM doc) -- do any of the tasks and prereqs in https://beta.docs.mulesoft.com/beta-traffic-inspection/runtime-manager/rtm-traffic-inspection apply also to Monitoring 
     * Build an HTTP proxy with support for TLS connections?
     * Provision this inspection proxy to send a customer-private certificate to ... agent? 
-
+////
 
 
 //
 //tag::traffic-inspection-overview[]
-Enable traffic inspection for Anypoint Monitoring to get deeper insights into the performance and business metrics on your hybrid deployments. Intercept and inspect HTTPS traffic from on-prem Mule instances so you can discover and resolve operations and business issues proactively. 
-
-The traffic inspection feature for standalone Mule instances adds support to the Runtime Manager agent for a forward proxy that is deployed in your environment. This proxy acts as a man-in-the-middle between Mule and the control plane, intercepting and inspecting all HTTPS traffic.
-
-To enable traffic inspection, you must install the Mule instance and the Runtime Manager agent from scratch using the following instructions.
-
-
-
-To enable traffic inspection, you must configure Anypoint Monitoring for on-premise environments. 
+Intercept and inspect all HTTPS traffic through a proxy server that resides between your on-premises Mule apps and Anypoint Monitoring. To enable traffic inspection for your xref:runtime-manager::deployment-strategies.adoc#hybrid-deployments[hybrid deployments], you must install the latest Anypoint Monitoring agent.
 //end::traffic-inspection-overview[]
 //
 //
 //tag::traffic-inspection-limitations[]
 //TODO_TODO_TODO: QUESTION: is there a URL for the AM ZIP
-* Linux only: Anypoint Monitoring agent (AM) zip provided above is limited to Linux
-* Otel is not supported: Do not install the Anypoint Monitoring agent on a server that is running an Otel Collector instance.
+
+** Linux only: The Anypoint Monitoring agent is designed for Linux.
+** Otel unsupported: Do not install the Anypoint Monitoring agent on a server that is running an Otel Collector instance.
 //end::traffic-inspection-limitations[]
 //
 //
 //
 //tag::traffic-inspection-prereqs[]
+
 //TODO_TODO_TODO: VERIFY REQS! Any others? 
-* You must have a server, server group, or cluster on Runtime Manager.
-* The Runtime Manager Agent must be installed. See xref:runtime-manager::runtime-manager-agent.adoc[]. 
+You must have a Mule server that is registered in Runtime Manager. 
++
+To set up a Mule server, see xref:runtime-manager::servers-create.adoc[].
+
+//** The Runtime Manager Agent must be installed. See xref:runtime-manager::runtime-manager-agent.adoc[].
 // Perhaps if server is set up, it would be installed? Without it, I got this error: 
 // NoSuchFileException: /Users/sduke/Downloads/mule-enterprise-standalone-4.8.0/conf/mule-agent.yml
 //end::traffic-inspection-prereqs[]
@@ -44,10 +42,21 @@ To enable traffic inspection, you must configure Anypoint Monitoring for on-prem
 //
 //tag::traffic-inspection-procedure[]
 
+To enable traffic inspection: 
+
 //TODO_TODO_TODO: steps for uninstall? Who can help with that?
-. If an Anypoint Monitoring agent is installed on your server, uninstall the agent.
+. If an Anypoint Monitoring agent is installed on your server, uninstall the agent and delete its `am` folder:
+
+.. From your Mule home directory (`MULE_HOME`), run the following command to uninstall the agent:
++
+----
+./bin/uninstall 
+----
+.. Delete the `am` folder.
 //TODO_TODO_TODO: need URL for agent download.
 . Download the Anypoint Monitoring agent zip file (`am._version_.zip`) to your Mule home directory.
++
+The agent is available from TODO_TODO_TODO.
 . Extract the zip file to add the `am/` folder in your Mule home directory. 
 . Using the command line:
 .. Navigate to the `am/` folder, for example:
