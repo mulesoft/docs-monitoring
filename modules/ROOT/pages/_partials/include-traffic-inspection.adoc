@@ -68,16 +68,19 @@ cd am
 ----
 ./bin/install -p http:/proxy-server:port
 ----
-. Restart your server, server group, or cluster in Runtime Manager.
 +
-
+Replace `+http:/proxy-server:port+` with the URI of your proxy server and port.
+. Restart your server.
++
+TODO_TODO_TODO: where does this go?
++
+If your agent is installed on a hybrid server in a server group, use Runtime Manager to restart the server so that Anypoint Monitoring can start collecting metrics.
 . Return to your `am/` folder and run the setup script:
 +
 ----
 ./bin/setup
 ----
 . After approximately five minutes, check Anypoint Monitoring for your metrics. 
-. If your agent is installed on a hybrid server in a server group, use Runtime Manager to restart the server so that Anypoint Monitoring can start collecting metrics.
 //end::traffic-inspection-procedure[]
 //
 
