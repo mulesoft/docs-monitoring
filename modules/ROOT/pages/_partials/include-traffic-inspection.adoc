@@ -44,7 +44,6 @@ To set up a Mule server, see xref:runtime-manager::servers-create.adoc[].
 
 To enable traffic inspection: 
 
-//TODO_TODO_TODO: steps for uninstall? Who can help with that?
 . If an Anypoint Monitoring agent is installed on your server, uninstall the agent and delete its `am` folder:
 
 .. From your Mule home directory (`MULE_HOME`), run the following command to uninstall the agent:
@@ -52,17 +51,17 @@ To enable traffic inspection:
 ----
 ./bin/uninstall 
 ----
-.. Delete the `am` folder.
+.. Delete the `/am` folder from your `MULE_HOME`.
 //TODO_TODO_TODO: need URL for agent download.
 . Download the Anypoint Monitoring agent zip file (`am._version_.zip`) to your Mule home directory.
 +
 The agent is available from TODO_TODO_TODO.
-. Extract the zip file to add the `am/` folder in your Mule home directory. 
-. Using the command line:
-.. Navigate to the `am/` folder, for example:
+. Extract the zip file to add the `/am` folder to your Mule home directory. 
+. From the command line:
+.. Navigate to the `/am` folder, for example:
 +
 ----
-cd am/
+cd am
 ----
 .. Install the agent to your Linux server:
 +
@@ -78,6 +77,7 @@ cd am/
 ./bin/setup
 ----
 . After approximately five minutes, check Anypoint Monitoring for your metrics. 
+. If your agent is installed on a hybrid server in a server group, use Runtime Manager to restart the server so that Anypoint Monitoring can start collecting metrics.
 //end::traffic-inspection-procedure[]
 //
 
