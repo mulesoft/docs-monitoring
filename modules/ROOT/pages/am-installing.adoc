@@ -202,7 +202,7 @@ include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspect
 +
 include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspection-prereqs]
 
-* Limitations:
+* Limitation (Linux only):
 +
 include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspection-limitations]
 

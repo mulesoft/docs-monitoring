@@ -16,10 +16,8 @@ Intercept and inspect all HTTPS traffic through a proxy server that resides betw
 //
 //
 //tag::traffic-inspection-limitations[]
-//TODO_TODO_TODO: QUESTION: is there a URL for the AM ZIP
 
-** Linux only: The Anypoint Monitoring agent is designed for Linux.
-** Otel unsupported: Do not install the Anypoint Monitoring agent on a server that is running an Otel Collector instance.
+The Anypoint Monitoring agent that supports traffic inspection is available for Mule instances running on _Linux_ at this time. 
 //end::traffic-inspection-limitations[]
 //
 //
@@ -70,11 +68,9 @@ cd am
 ----
 +
 Replace `+http:/proxy-server:port+` with the URI of your proxy server and port.
-. Restart your server.
+. Restart your server in Runtime Manager.
 +
-TODO_TODO_TODO: where does this go?
-+
-If your agent is installed on a hybrid server in a server group, use Runtime Manager to restart the server so that Anypoint Monitoring can start collecting metrics.
+For guidance, see xref:runtime-manager::servers-actions.adoc[]
 . Return to your `/am` subfolder and run the setup script:
 +
 ----
