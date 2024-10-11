@@ -28,7 +28,7 @@ The Anypoint Monitoring agent that supports traffic inspection is available for 
 +
 To set up a Mule server, see xref:runtime-manager::servers-create.adoc[].
 
-** You require access to Anypoint Monitoring. 
+** You must have access to Anypoint Monitoring. 
 +
 An Anypoint Platform administrator can provide access from Access Manager, in Anypoint Platform. For more information, see xref:monitoring::am-permissions.adoc[].
 
@@ -52,7 +52,7 @@ To enable traffic inspection:
 ----
 ./bin/uninstall 
 ----
-.. Delete the `/am` subfolder from your `MULE_HOME`.
+.. Delete the `/am` subfolder from your Mule home directory.
 //TODO_TODO_TODO: need URL for agent download.
 . Download the Anypoint Monitoring agent zip file (`am._version_.zip`) to your Mule home directory.
 +
@@ -79,7 +79,7 @@ For guidance, see xref:runtime-manager::servers-actions.adoc[]
 ----
 ./bin/setup
 ----
-. After approximately five minutes, check Anypoint Monitoring for your new metrics in your server. 
+. After approximately five minutes, check for your server's metrics in Anypoint Monitoring. 
 //end::traffic-inspection-procedure[]
 //
 
