@@ -17,7 +17,7 @@ Intercept and inspect all HTTPS traffic through a proxy server that resides betw
 //
 //tag::traffic-inspection-limitations[]
 
-The Anypoint Monitoring agent that supports traffic inspection is available for Mule instances running on _Linux_ at this time. 
+At this time, the Anypoint Monitoring agent that supports traffic inspection is available for Mule instances running on _Linux_. 
 //end::traffic-inspection-limitations[]
 //
 //
