@@ -1,0 +1,58 @@
+= Trace Details
+
+Each trace available in the *Traces* overview page contains associated metrics for you to examine. Clicking a trace opens a *Trace Details* page, which shows the origin of the initial request, associated entities, events associated with the request, and more. Additionally, you can see flows, logs, and events associated with the trace in the form of _spans_. Each span contains details that explain the operations in the specific *Trace Detail* page.
+
+== Access Trace Details
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+include::partial$include-nav-distributed-tracing.adoc[]
+
+. If needed, use the search function to query the list of traces that appears in the *Traces* overview page.
+. Click the trace ID of the trace you want to examine.
+
+== Understand Trace Details
+
+Each trace detail page contains response times for spans at a glance. They also show the following contextual data:
+
+* *Status Code*: The HTTP response status of the trace: 
+** `0 No Response`
+** `200 OK`
+** `500 Internal Server Error`
+* *Trace Start Time*: The time the trace initiated in UTC.
+* *Total Response Time*: The time taken for the trace to execute. 
+* *Root Span*: The request or operation that initiated the trace.
+
+Within each trace detail page, the following span types are captured and displayed alongside response time (where applicable):
+
+Flows:: Mule Flows for the selected task of the specific service.
+Logs:: Contextual logs for the selected task.
+Events:: Mule runtime events or user actions for the selected service.
+
+== View Span Details
+
+On the *Trace Details* page, click a flow, log, or event name to expand the span and see the *Span Details* box.
+
+The *Span Details* box contains the following information:
+
+* *Span Name*: Name of the span.
+* *Span Status*: Status of the span. 
+** `OK`
+** `ERROR`
+* *Span ID*: ID of the span.
+* *Span Kind*: Source of the span operation or request.
+** `Server`
+** `Internal`
+** `Client`
+* *Span Duration*: Time the span took to execute.
+* *Span Start Time*: Time when the span started, in UTC.
+* *Entity Type*: Type of entity associated with the trace. 
+** `App`
+** `API`
+* *Entity Name*: The name of the entity associated with the trace.
+* *Trace ID*: The ID of the trace in which the span occurred.
+* *Parent Span ID*: ID of a span that contains the selected span. Parent spans don't have a value in this field and should be tracked by using the trace ID.
+* *HTTP Status Code*: The HTTP status code of a span that is a request. Statuses include:
+** `0 No Response`
+** `200 OK`
+** `500 Internal Server Error`

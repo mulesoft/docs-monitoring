@@ -1,0 +1,233 @@
+// tag::amqlIntro[]
+Anypoint Monitoring Query Language (AMQL) is a domain-specific language that enables you to search your organization’s metering and observability data for specific information that the MuleSoft Observability Platform Service collects. 
+
+AMQL uses similar syntax to SQL `SELECT` statements.
+// end::amqlIntro[]
+
+// tag::queryGrammarUR[]
+
+To adhere to AMQL grammar, arrange your clauses in the following order: 
+
+[source,sql]
+----
+    SELECT fieldList,[aggregationExpressionList][...]
+    FROM DataSource
+    WHERE timestamp between {start} AND {end}[ AND filterExpression]
+    [ORDER BY fieldOrAggregationList {ASC|DESC}]
+    [LIMIT limit]
+    [OFFSET offset]
+----
+
+The following example returns usage data between March 11 and March 13, 2023. The data source is Flex Gateway API calls, and the fields returned are organization ID, environment ID, and how many API calls were made:
+
+[source,sql]
+----
+SELECT org_id, env_id, api_call_count 
+FROM flex_gateway_api_calls 
+WHERE timestamp between 1710198204000 AND 1710371004000  
+----
+
+// end::queryGrammarUR[]
+
+// tag::queryGrammarAll[]
+
+To adhere to AMQL grammar, arrange your clauses in the following order: 
+
+[source,sql]
+----
+    SELECT fieldList,[aggregationExpressionList][...]
+    FROM DataSource
+    WHERE timestamp between {start} AND {end}[ AND filterExpression]
+    [GROUP BY fieldGroupByList]
+    [HAVING havingConditionExpression]
+    [ORDER BY fieldOrAggregationList {ASC|DESC}]
+    [TimeSeries timeWindowSize]
+    [LIMIT limit]
+    [OFFSET offset]
+----
+// end::queryGrammarAll[]
+
+// tag::filtering[]
+The following clause shows AMQL filtering:
+
+[source,sql]
+----
+    filterExpression -> conditionExpresion [AND conditionExpression] 
+    conditionExpression -> field comparisonOperator [literal|literList|field| NULL]
+----
+
+// end::filtering[]
+
+// tag::grouping[]
+
+[source,sql]
+----
+    aggregationExpression -> aggregationFunction(field[,parameters])
+                    AggregationFunction = avg|sum|percentile|histogram|max|min|count
+    aggregatedConditionExpression -> aggregationFunction(field[,parameters]) comparisionOperator [literal|literalList]                  
+    havingConditionExpression -> aggregatedConditionExpression [ AND aggregatedConditionExpression]
+
+----
+// end::grouping[]
+
+// tag::reservedKeywords[]
+
+AMQL has several reserved keywords, which are not case sensitive. 
+
+* `AS`
+* `ASC`
+* `BETWEEN`
+* `BY`
+* `DESC` 
+* `FROM`
+* `GROUP`
+* `HAVING`
+* `IN`
+* `LIKE`
+* `LIMIT`
+* `OFFSET`
+* `ORDER`
+* `SELECT` 
+* `WHERE`
+* `TIMESTAMP`
+* `TIMESERIES`
+
+// end::reservedKeywords[]
+
+// tag::selectClause[]
+The `SELECT` clause enables you to get a list of fields in a data source using describe endpoints. 
+
+When you use `SELECT`, consider the following:
+
+* Use describe endpoints for each service to get a list of fields present in your data source.
+* Using `SELECT` with a wildcard (`select *`) returns all public endpoints for a data source. Not all data sources support this option.
+* Wrap string literals in single quotes.
+* Field names in `SELECT` clauses are case-sensitive. 
+* Using a field alias is supported. The syntax is `field AS aliasName`.
+* Wrap field names within double quotes to handle field names with special characters. The syntax is `select "field1", "field2.a" as 'fieldA' from dataSource`.
+* Aggregated fields support aliases. The syntax is `aggregationFunction(field, ..) AS alias`. If you don't provide an alias, the results return `aggregationFunction(field, ..)`.
+
+// end::selectClause[]
+
+// tag::whereClause[]
+The `WHERE` clause enables you to define your  `timestamp` range filter (in epoch milliseconds) and operators. 
+
+`WHERE` supports the following data types:
+
+* String literal
+* Integer
+* Decimal
+
+`WHERE` uses the following operators:
+
+|====
+|Filter Function |Filter Operator |Notes
+
+|`Equals`
+|`=`
+|
+
+|`NotEquals`
+|`!=`
+|
+
+|`greater`
+|`>`
+|
+
+|`greaterOrEquals`
+|`>=`
+|
+
+|`less`
+|`<`
+|
+
+|`lessOrEquals`
+|`+<=+`
+|
+
+|`in`
+|`IN`
+| in (...)
+
+|`between`
+|`BETWEEN`
+a|The timestamp field supports only `between`. For example: 
+
+[source,sql]
+----
+WHERE timestamp between 1710198204000 AND 1710371004000 
+----
+
+|`match pattern`
+|`LIKE`
+|This operator is a simplified version of the `match` operator, although it lacks regexp support. It supports only `wildcard`, noted as `*`.
+
+|====
+// end::whereClause[]
+
+// tag::groupingClauseUR[]
+
+The `GROUPING` clause enables you to aggregate numeric values using the following functions:
+
+|====
+|Aggregation |Arguments
+
+|`avg`
+|`<fieldName>`
+
+|`sum`
+|`<fieldName>`
+
+|`percentile`
+|`<fieldName, percentage value in range (0;100)>`
+
+|`max`
+|`<fieldName>`
+
+|`min`
+|`<fieldName>`
+
+|`count`
+|`<fieldName>`  or `<dimensionName>`
+
+|`distinct_count`
+|`<fieldName>` or `<dimensionName>`
+
+|`histogram`
+|`<fieldName, splitPointsArray>`
+
+|====
+
+Some fields in the data might not support certain aggregations.
+
+// end::groupingClauseUR[]
+
+// tag::timeseriesClause[]
+
+//was "The TIMESERIES clause takes time window size returns events aggregated in provided time-buckets."
+The `TIMESERIES` clause takes the time window size and returns events that are aggregated in time buckets you specified.
+
+Use the following format:
+
+[source,sql]
+----
+TimeWindowSize
+// n is an integer
+P{n}M // n months
+P{n}D // n days
+PT{n}H // n hours
+PT{n}M // n minutes
+PT{n}S // n seconds
+----
+
+The following examples show `TIMESERIES` windows:
+
+* 1 month: `TIMESERIES P1M`
+* 1 day: `TIMESERIES P1D`
+* 1 hour: `TIMESERIES PT1H`
+* 1 minute: `TIMESERIES PT1M`
+* 30 seconds: `TIMESERIES PT30S`
+
+// end::timeseriesClause[]
