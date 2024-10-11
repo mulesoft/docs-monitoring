@@ -1,12 +1,3 @@
-//TODO_TODO_TODO: OTHER Questions
-////
-* if/how this differs from support for RTM? 
-    * forward proxy? similar to "adds support to the Runtime Manager agent for a forward proxy that is deployed in your environment"
-    * background info needed to understand how this fits into a bigger picture: "intercepting and inspecting all HTTPS traffic" (what does this mean exactly?) 
-* prereqs similar (see RTM doc) -- do any of the tasks and prereqs in https://beta.docs.mulesoft.com/beta-traffic-inspection/runtime-manager/rtm-traffic-inspection apply also to Monitoring 
-    * Build an HTTP proxy with support for TLS connections?
-    * Provision this inspection proxy to send a customer-private certificate to ... agent? 
-////
 
 
 //
