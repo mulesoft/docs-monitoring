@@ -1,13 +1,10 @@
-= Explore Entities with Anypoint Insights
+//= Explore Entities with Anypoint Insights
+= Get Aggregated Metrics and Trends with Anypoint Insights
 
-Anypoint Monitoring collects metrics on Mule apps and API instances (_entities_) deployed to CloudHub or CloudHub 2.0. 
-
-Use *Anypoint Insights* to:
+Get metrics, trends, and other data across your CloudHub and CloudHub 2.0 deployments with Anypoint Insights, in Anypoint Monitoring. 
 
 * View aggregated performance and error data at a glance.
-+
-You can filter this data to focus insights on the performance specific groups of apps and APIs.
-* Review key metrics about the health of individual entities.
+* Review key metrics about the health of individual apps and APIs.
 +
 Metrics include request, latency, error, and JVM data.
 * Identify and troubleshoot issues.
