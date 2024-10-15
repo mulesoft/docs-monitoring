@@ -51,7 +51,7 @@ To enable traffic inspection:
 . Place the Anypoint Monitoring agent zip file (`am-3.x.zip`) to your Mule home directory.
 +
 The zip is available as part of the closed beta program. 
-. Extract the zip file to add the `/am` subfolder to your Mule home directory. 
+. Extract the zip file to add the `/am` subfolder into your Mule home directory (`MULE_HOME`). 
 . From the command line:
 .. Navigate to the `/am` subfolder, for example:
 +
