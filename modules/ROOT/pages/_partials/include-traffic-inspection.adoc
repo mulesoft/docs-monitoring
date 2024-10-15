@@ -15,11 +15,12 @@ At this time, the Anypoint Monitoring agent that supports traffic inspection is 
 //
 //tag::traffic-inspection-prereqs[]
 
-** A Mule server that is registered in Runtime Manager is required. 
+** A Mule server that is registered in Runtime Manager 
 +
-To set up a Mule server, see xref:runtime-manager::servers-create.adoc[].
-
-** You must have access to Anypoint Monitoring. 
+To set up a Mule server, see xref:runtime-manager::rtm-traffic-inspection.adoc[].
+//TODO_TODO_TODO: NEED MORE CONTEXT FOR THIS
+** A SAN (Subject Alternative Name) of the private certificate in the proxy that includes `us1.ingest.mulesoft.com`
+** Access to Anypoint Monitoring 
 +
 An Anypoint Platform administrator can provide access from Access Manager, in Anypoint Platform. For more information, see xref:monitoring::am-permissions.adoc[].
 
@@ -44,8 +45,8 @@ To enable traffic inspection:
 ./bin/uninstall 
 ----
 .. Delete the `/am` subfolder from your Mule home directory.
-//TODO_TODO_TODO: need URL for agent download.
-. Download the Anypoint Monitoring agent zip file (`am._version_.zip`) to your Mule home directory.
+//TODO_TODO_TODO: need URL for agent download and actual file name.
+. Download the Anypoint Monitoring agent zip file (`am-3.0._xxx_.zip`) to your Mule home directory.
 +
 The agent is available from TODO_TODO_TODO.
 . Extract the zip file to add the `/am` subfolder to your Mule home directory. 

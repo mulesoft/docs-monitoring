@@ -198,7 +198,7 @@ To disable log forwarding:
 
 include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspection-overview]
 
-* Before you begin:
+* Before you begin, these prerequisites are required:
 +
 include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspection-prereqs]
 
