@@ -23,6 +23,9 @@ To set up a Mule server, see xref:runtime-manager::rtm-traffic-inspection.adoc[]
 ** Access to Anypoint Monitoring 
 +
 An Anypoint Platform administrator can provide access from Access Manager, in Anypoint Platform. For more information, see xref:monitoring::am-permissions.adoc[].
+**  A closed beta version of the Anypoint Monitoring agent from a Salesforce representative
++
+The agent is available to a limited customer base. 
 
 //** The Runtime Manager Agent must be installed. See xref:runtime-manager::runtime-manager-agent.adoc[].
 // Perhaps if server is set up, it would be installed? Without it, I got this error: 
@@ -45,10 +48,9 @@ To enable traffic inspection:
 ./bin/uninstall 
 ----
 .. Delete the `/am` subfolder from your Mule home directory.
-//TODO_TODO_TODO: need URL for agent download and actual file name.
-. Download the Anypoint Monitoring agent zip file (`am-3.0._xxx_.zip`) to your Mule home directory.
+. Place the Anypoint Monitoring agent zip file (`am-3.x.zip`) to your Mule home directory.
 +
-The agent is available from TODO_TODO_TODO.
+The zip is available as part of the closed beta program. 
 . Extract the zip file to add the `/am` subfolder to your Mule home directory. 
 . From the command line:
 .. Navigate to the `/am` subfolder, for example:
