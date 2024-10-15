@@ -1,35 +1,52 @@
 //= Explore Entities with Anypoint Insights
-= Get Aggregated Metrics and Trends with Anypoint Insights
+= Monitor Your Deployments
 
-Get metrics, trends, and other data across your CloudHub and CloudHub 2.0 deployments with Anypoint Insights, in Anypoint Monitoring. 
+*(For https://jp1.platform.mulesoft.com/[Japan (JA)] and https://ca1.platform.mulesoft.com/monitoring[Canada (CA)] Regions Only)*
 
-* View aggregated performance and error data at a glance.
-* Review key metrics about the health of individual apps and APIs.
+Monitor performance data and issues across your CloudHub 2.0 and Runtime Fabric deployments with Anypoint Insights, in Anypoint Monitoring. 
+
+Identify and troubleshoot up to seven days of data on your deployments with:
+
+* Aggregated metrics across your deployments.
 +
-Metrics include request, latency, error, and JVM data.
-* Identify and troubleshoot issues.
-* Get up to seven days of data, or narrow the date and time range.
+Monitor response times, error volume, and request volume. Use filters to narrow your results. 
+* Metrics on individual apps and APIs.
++
+Review requests, latency, errors, and JVM data.
 
-include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+1]
+For data collection details, see <<data-collection>>.
 
+[[prereqs]]
 == Before You Begin
 
 Before getting started, ensure that you have:
 
-* An Anypoint Platform account that has the Monitoring Viewer permission and the permissions required for viewing apps and APIs.
+* An Anypoint Platform account in a region that supports Anypoint Insights:
++
+include::partial$include-nav-entities.adoc[tags="supported-regions"] 
++
+include::partial$include-nav-entities.adoc[tags="region-data-not shared"]
+//TODO_TODO_TODO: WHICH PERMISSIONS FOR VIEWING APPS AND APIS
+* The *Monitoring Viewer* permission to Anypoint Monitoring and the permissions required for viewing apps and APIs.
++
+See xref:monitoring::am-permissions.adoc[] and xref:access-management::permissions-by-product.adoc[].
 * A supported version of Mule Runtime engine.
++
+See xref:release-notes::mule-runtime/mule-esb.adoc[].
 
-== Supported Versions of Mule Runtime Engine
 
-include::partial$include-supported-mule-runtime-version.adoc[]
+== Open Anypoint Insights
 
-== Access the Anypoint Insights  Page
+//include::partial$include-nav-steps-no-permissions.adoc[]
 
-include::partial$include-nav-steps-no-permissions.adoc[]
-
-include::partial$include-nav-entities.adoc[]
-
-The *Anypoint Insights*  page appears, showing a summary of data for entities in the active business group and in the selected environment configured in your profile.
+. Meet the prerequisites in <<prereqs>>. 
+. Log in to your Anypoint Platform region that supports Anypoint Insights (
+include::partial$include-nav-entities.adoc[tags="supported-regions"] 
+only).
+//Nav step
+include::partial$include-nav-entities.adoc[tags="open-insights"]
++
+*Anypoint Insights* provides separate sets of charts for your deployment environments, such as Design, Production, and Sandbox. You can view and filter chart data across your deployments within the selected environment, and you can open more detailed data on any deployment listed in the *Entities List*. 
 
 == Search for Entities
 
@@ -135,51 +152,30 @@ The list of entities that match your current search conditions in the selected d
 The following columns appear in the table:
 
 * *Entity Name*: Name of the entity.
+//TODO_TODO_TODO: Mule Gateway APIs only or other API instance?
 * *Entity Type*: Type of the entity. The value in this column is either `API` or `Application`.
 * *Request Volume*: Total number of requests to the entity.
 * *P95 Latency*: P95 response time latency, calculated in milliseconds. 
 * *Error Rate*: Percentage of requests to the entity that result in errors. 
 * *Deployment Type*: Runtime environment in which the entity is deployed. 
 
-[[automatic-interval]]
-== How Data is Aggregated in Intervals
 
-Anypoint Monitoring aggregates data in charts based on the selected time interval. The number of data points shown in a chart varies based on your selected time interval.
+[[data-collection]]
+== Data Collection Intervals in Anypoint Monitoring Charts
 
-//Em told by Sathish to remove the following stuff 
-//[[average-response-times-app]]
-//== Charting Inactivity for Average Response Time
+Anypoint Monitoring charts display data in configurable date-time ranges, which include the last 15 minutes, hour, week, a custom date-time range, and other periods.
 
-//include::partial$average-response-time.adoc[]
-
-//[[endpoint-operation-metrics]]
-//== How Endpoint and Operation Use Metrics Are Gathered
-
-//Anypoint Monitoring collects top occurring endpoints or operations for each data collection interval. Endpoints or operations that are not top occurring are sorted into a group called *Other*.
-
-//In each data collection interval, top occurring endpoints or operations vary. An endpoint or operation that is top occurring in one interval may not be top occurring in the next.
-
-//In Anypoint Monitoring charts and tables, the data comes from multiple data collection intervals. As a result, aggregated data shown in the dashboard is an estimation since the intervals may not have the same top occurring endpoints or operations. The tables show approximate counts for the most commonly occurring endpoints or operations when the *Other* grouping appears.
-
-//For example, when an endpoint occurs more often than other endpoints in one interval but occurs less often in another interval (thus sorting it into the *Other* group for that interval), the resulting table displays lower than actual values for that endpoint, since the metrics that do not appear are grouped into the *Other* group.
-
-
-////
-== Collecting Metrics for Entities
+* <<automatic-interval>>
+* <<data-collection-intervals>>
 
 [[automatic-interval]]
-=== How Data is Aggregated in Intervals
+=== Data Points in Anypoint Monitoring Charts
 
-include::partial$data-aggregation.adoc[]
+Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. Depending on the date-time range you select for a chart, each data point represents a minimum period of one minute to a maximum period of four hours.
 
-[[average-response-times-app]]
-=== Charting Inactivity for Average Response Time
+For example, if a chart displays data collected in the last 15 minutes, the chart contains 15 data points, one for each minute of data collection. Each data point aggregates data collected during that minute. If a chart displays the past seven days of data, each data point aggregates data collected within each four-hour period of the last seven days. 
 
-include::partial$average-response-time.adoc[]
+//include for How Anypoint Monitoring Collects Metrics
+[[data-collection-intervals]]
+include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+2]
 
-[[endpoint-operation-metrics]]
-=== Gathering Endpoint and Operation Use Metrics
-
-include::partial$endpoint-operation-metrics.adoc[]
-
-////
