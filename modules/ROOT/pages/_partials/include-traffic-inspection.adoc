@@ -21,8 +21,9 @@ The agent's zip file is available to a limited customer base.
 ** A Mule server that is registered in Runtime Manager 
 +
 To set up a Mule server, see xref:runtime-manager::rtm-traffic-inspection.adoc[].
-//TODO_TODO_TODO: NEED MORE CONTEXT FOR THIS
-** A SAN (Subject Alternative Name) of the private certificate in the proxy that includes `us1.ingest.mulesoft.com`
+** The private certificate in the proxy that communicates with the Anypont Monitoring agent in the Mule runtime instance includes `us1.ingest.mulesoft.com` in its Subject Alternative Name (SAN).
++
+In addition, you must add this private certificate or its CA certificate to the operating system's system-wide truststore. For guidance, see https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/securing_networks/using-shared-system-certificates_securing-networks#adding-new-certificates_using-shared-system-certificates[Adding new certificates] in the Redhat Linux documentation.
 ** Access to Anypoint Monitoring 
 +
 An Anypoint Platform administrator can provide access from Access Manager, in Anypoint Platform. For more information, see xref:monitoring::am-permissions.adoc[].
