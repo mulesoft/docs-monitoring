@@ -43,7 +43,7 @@ To enable traffic inspection:
 
 . If an earlier version of Anypoint Monitoring agent is installed on your server, uninstall the agent and delete its `am` subfolder:
 
-.. From your Mule home directory (`MULE_HOME`), run the following command to uninstall the agent:
+.. From your agent's home directory (`${AM_HOME}`, typically `${MULE_HOME}/am`), run this command to uninstall the agent:
 +
 ----
 ./bin/uninstall 
