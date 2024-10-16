@@ -209,6 +209,10 @@ include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspect
 //procedure
 include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspection-procedure]
 
+== Troubleshooting 
+
+Check the log files under `am/logs` in your Mule home directory for any issues.
+
 
 == See Also
 
