@@ -76,7 +76,7 @@ For guidance, see xref:runtime-manager::servers-actions.adoc[]
 ----
 . After approximately five minutes, check for your server's metrics in Anypoint Monitoring, within the *Investigations* tab of the *Built-in Dashboard* page for your deployment. 
 +
-For any issues, check the log files under `am/logs` in your Mule home directory.
+To troubleshoot issues, check the log files under `am/logs` in your Mule home directory.
 
 //end::traffic-inspection-procedure[]
 //
