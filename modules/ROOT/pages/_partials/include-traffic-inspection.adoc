@@ -73,7 +73,7 @@ For guidance, see xref:runtime-manager::servers-actions.adoc[]
 ----
 ./bin/setup
 ----
-. After approximately five minutes, check for your server's metrics in Runtime Manager, within the *Investigations* tab. 
+. After approximately five minutes, check for your server's metrics in Runtime Manager, within the *Investigations* tab for your deployment. 
 //end::traffic-inspection-procedure[]
 //
 
