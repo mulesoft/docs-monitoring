@@ -48,7 +48,7 @@ To enable traffic inspection:
 ./bin/uninstall 
 ----
 .. Delete the `/am` subfolder from your Mule home directory.
-. Place the Anypoint Monitoring agent zip file (`am-3.x.zip`) to your Mule home directory.
+. Place the Anypoint Monitoring agent zip file (`am-3.x.zip`) into your Mule home directory (`MULE_HOME`).
 +
 The zip is available as part of the closed beta program. 
 . Extract the zip file to add the `/am` subfolder into your Mule home directory (`MULE_HOME`). 
