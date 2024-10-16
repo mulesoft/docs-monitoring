@@ -18,7 +18,7 @@ At this time, the Anypoint Monitoring agent that supports traffic inspection is 
 **  A closed beta version of the Anypoint Monitoring agent from a Salesforce representative
 +
 The agent's zip file is available to a limited customer base.
-** Traffic inspection is enabled for your on-premise Mule instances in Runtime Manager 
+** Traffic inspection is enabled for your on-premise Mule instances
 +
 For guidance, see xref:runtime-manager::rtm-traffic-inspection.adoc[].
 ** The private certificate in the proxy that communicates with the Anypont Monitoring agent in the Mule runtime instance includes `us1.ingest.mulesoft.com` in its Subject Alternative Name (SAN).
