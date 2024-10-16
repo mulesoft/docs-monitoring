@@ -2,7 +2,7 @@
 
 //
 //tag::traffic-inspection-overview[]
-Intercept and inspect all HTTPS traffic through a proxy server that resides between your on-premises Mule apps and Anypoint Monitoring. To enable traffic inspection for your xref:runtime-manager::deployment-strategies.adoc#hybrid-deployments[hybrid deployments], you must install the latest Anypoint Monitoring agent.
+Intercept and inspect all HTTPS traffic through a proxy server that resides between your on-premises Mule apps and Anypoint Monitoring. To enable traffic inspection for your xref:runtime-manager::deployment-strategies.adoc#hybrid-deployments[hybrid deployments], you must install the 3.x version of Anypoint Monitoring agent.
 //end::traffic-inspection-overview[]
 //
 //
