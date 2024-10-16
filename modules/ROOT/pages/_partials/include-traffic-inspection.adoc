@@ -8,7 +8,7 @@ Intercept and inspect all HTTPS traffic through a proxy server that resides betw
 //
 //tag::traffic-inspection-limitations[]
 
-At this time, the Anypoint Monitoring agent that supports traffic inspection is available for Mule instances running on _Linux_. 
+At this time, the Anypoint Monitoring agent that supports traffic inspection is available for Mule instances running on _Red Hat Enterprise Linux (RHEL) 7 and later_. 
 //end::traffic-inspection-limitations[]
 //
 //
@@ -18,9 +18,9 @@ At this time, the Anypoint Monitoring agent that supports traffic inspection is 
 **  A closed beta version of the Anypoint Monitoring agent from a Salesforce representative
 +
 The agent's zip file is available to a limited customer base.
-** A Mule server that is registered in Runtime Manager 
+** Traffic inspection is enabled for your on-premise Mule instances in Runtime Manager 
 +
-To set up a Mule server, see xref:runtime-manager::rtm-traffic-inspection.adoc[].
+For guidance, see xref:runtime-manager::rtm-traffic-inspection.adoc[].
 ** The private certificate in the proxy that communicates with the Anypont Monitoring agent in the Mule runtime instance includes `us1.ingest.mulesoft.com` in its Subject Alternative Name (SAN).
 +
 In addition, you must add this private certificate or its CA certificate to the operating system's system-wide truststore. For guidance, see https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/securing_networks/using-shared-system-certificates_securing-networks#adding-new-certificates_using-shared-system-certificates[Adding new certificates] in the Redhat Linux documentation.
@@ -41,20 +41,20 @@ An Anypoint Platform administrator can provide access from Access Manager, in An
 
 To enable traffic inspection: 
 
-. If an Anypoint Monitoring agent is installed on your server, uninstall the agent and delete its `/am` subfolder:
+. If an earlier version of Anypoint Monitoring agent is installed on your server, uninstall the agent and delete its `am` subfolder:
 
 .. From your Mule home directory (`MULE_HOME`), run the following command to uninstall the agent:
 +
 ----
 ./bin/uninstall 
 ----
-.. Delete the `/am` subfolder from your Mule home directory.
-. Place the Anypoint Monitoring agent zip file (`am-3.x.zip`) into your Mule home directory (`MULE_HOME`).
+.. Delete the `am` subfolder from your Mule home directory (`${MULE_HOME}`).
+. Place the Anypoint Monitoring agent zip file (`am-3.x.zip`) into `${MULE_HOME}`.
 +
 The zip is available as part of the closed beta program. 
-. Extract the zip file to add the `/am` subfolder into your Mule home directory (`MULE_HOME`). 
+. Extract the zip file to add the `am` subfolder into your Mule home directory (`${MULE_HOME}`). 
 . From the command line:
-.. Navigate to the `/am` subfolder, for example:
+.. Navigate to the `am` subfolder, for example:
 +
 ----
 cd am
@@ -69,7 +69,7 @@ Replace `+http:/proxy-server:port+` with the URI of your proxy server and port.
 . Restart your server in Runtime Manager.
 +
 For guidance, see xref:runtime-manager::servers-actions.adoc[]
-. Return to your `/am` subfolder and run the setup script:
+. From your `am` subfolder, run the setup script:
 +
 ----
 ./bin/setup
