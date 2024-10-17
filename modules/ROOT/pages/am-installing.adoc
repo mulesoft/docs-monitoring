@@ -193,6 +193,23 @@ To disable log forwarding:
 +
 . Restart Mule.
 
+[[traffic-inspection-am]]
+== Enable Traffic Inspection for Anypoint Monitoring 
+
+include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspection-overview]
+
+* Before you begin, these prerequisites are required:
++
+include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspection-prereqs]
+
+* Limitation (Linux only):
++
+include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspection-limitations]
+
+//procedure
+include::monitoring::partial$include-traffic-inspection.adoc[tag=traffic-inspection-procedure]
+
+
 == See Also
 
 * xref:monitoring-settings-page.adoc[Anypoint Monitoring Settings]
