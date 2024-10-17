@@ -74,14 +74,15 @@ For guidance, see xref:runtime-manager::servers-actions.adoc[]
 ----
 ./bin/setup
 ----
-. After approximately five minutes, check for your server's metrics in Anypoint Monitoring, within the the *Built-in Dashboard* page for your deployment. 
+. After approximately five minutes, check for your Mule app's metrics in Anypoint Monitoring:
 +
-For guidance, see xref:....
+From https://anypoint.mulesoft.com/monitoring/#/builtin[Anypoint Monitoring] (requires login), select your *Environment* (such as Sandbox or Production) and the *Resource name* of your hybrid Mule app to display the app's monitoring data.
 +
 To troubleshoot issues, check the log files under `am/logs` in your Mule home directory.
 
 //end::traffic-inspection-procedure[]
 //
+
 
 //
 //tag::NOT-USED-YET[]
