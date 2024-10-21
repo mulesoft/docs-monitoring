@@ -27,6 +27,33 @@ Outbound connections are made to the following endpoints:
 ** dias-ingestor-router.eu-central-1.prod-eu.msap.io:443
 ** s3.eu-central-1.amazonaws.com:443
 
+
+=== Ports 
+
+[%header,cols="10a,50a,10a"]
+|===
+|Region |Name |Port
+|*US*|anypoint.mulesoft.com | 443
+|*US*|mule-manager.anypoint.mulesoft.com | 443
+|*US*|runtime-manager.anypoint.mulesoft.com | 443
+|*US*|analytics-ingest.anypoint.mulesoft.com |  443
+|*US*|arm-auth-proxy.prod.cloudhub.io |  443
+|*US*|data-authenticator.anypoint.mulesoft.com |  443
+|*US*|exchange-files.anypoint.mulesoft.com | 443
+|*US*|exchange2-asset-manager-kprod.s3.amazonaws.com |  443
+|*US-GOV*|runtime-manager.gov.anypoint.mulesoft.com | 443
+|*US-GOV*|gov.anypoint.mulesoft.com | 443
+|*US-GOV*|exchange-files.gov.anypoint.mulesoft.com | 443
+|*US-GOV*|exchange2-asset-manager-kgprod.s3.us-gov-west-1.amazonaws.com | 443
+|*EU*|eu1.anypoint.mulesoft.com | 443
+|*EU*|mule-manager.eu1.anypoint.mulesoft.com | 443
+|*EU*|runtime-manager.eu1.anypoint.mulesoft.com | 443
+|*EU*|analytics-ingest.eu1.anypoint.mulesoft.com |  443
+|*EU*|arm-auth-proxy.prod-eu.msap.io |  443
+|*EU*|data-authenticator.eu1.anypoint.mulesoft.com |  443
+|*EU*|exchange2-asset-manager-kprod-eu.s3.eu-central-1.amazonaws.com |  443
+|===
+
 == Supported Operating Systems
 
 Ensure that Anypoint Monitoring is installed on a server running one of the following operating systems:
@@ -87,23 +114,23 @@ When installing the Anypoint Monitoring agent, note the following:
 
 == SOCKS5 Proxy Setting
 
-If you need to proxy your monitoring data as it leaves the data center, you can use the command line parameter `-p` when you install the Anypoint Monitoring agent.
+If you proxy your monitoring data as it leaves the data center, the proxy must support the SOCKS5 protocol, and you must configure the Anypoint Monitoring agent to communicate through the proxy.
 
-To use the SOCKS5 protocol for monitoring, you must:
+To configure the agent for the SOCKS5 proxy:  
 
 . Set up Runtime Manager with a proxy. See xref:runtime-manager::servers-create.adoc[Create a Server in Runtime Manager].
-. To perform the SOCKS5 proxy configuration step, you must have a compatible server deployed to your environment.
 . Install the Anypoint Monitoring agent and use the `-p` option. For example, on a Windows server, at the command line, enter:
-
++
 ----
 <location-of-am-folder\bin>powershell -file install.ps1 -p socks5://user:password@socks5-server:1080
 ----
-
++
 For a Linux server, enter:
-
++
 ----
 $ ./install -p socks5://user:password@socks5-server:1080
 ----
++
 If the user or password of the SOCKS5 proxy configuration contains URI reserved characters, it must be percent-encoded following the encoding rules of RFC 3986.
 
 
