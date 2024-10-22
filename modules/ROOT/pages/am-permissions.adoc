@@ -5,15 +5,8 @@ endif::[]
 
 Anypoint Monitoring has product-specific permissions that control access to its assets:
 
-
-include::partial$monitoring-permissions.adoc[tag=monitoringAdmin]
-
-include::partial$monitoring-permissions.adoc[tag=monitoringViewer]
-
-include::partial$monitoring-permissions.adoc[tag=telExpAdmin]
-
-include::partial$monitoring-permissions.adoc[tag=telExpManager]
-
+//all monitoring permissions
+include::access-management::partial$include-permissions-monitoring.adoc[tag=permsMonitoringAll]
 
 The content you can access when you have the Anypoint Monitoring Administrator and Anypoint Monitoring Viewer permissions depends on other asset-specific permissions.
 To view or modify content related to specific apps and APIs, you also need the appropriate access permissions for those assets.
