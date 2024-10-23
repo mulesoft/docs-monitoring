@@ -12,9 +12,10 @@ Operations and development teams use the monitoring tools to diagnose issues and
 of issues (MTTI).
 * Store and search log data at scale.
 
+[[features]]
 == Monitoring Features by Region
 
-Anypoint Monitoring features vary by Anypoint Platform region at this time.
+Anypoint Monitoring features vary by Anypoint Platform region at this time. 
 
 * https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions:
 ** <<dashboards>>: Built-in and custom dashboards with metrics on individual deployments
@@ -24,7 +25,7 @@ Anypoint Monitoring features vary by Anypoint Platform region at this time.
 ** <<data_storage_retention>>
 ** <<functional-monitoring>> 
 
-* https://ca1.mulesoft.com/monitoring[CA] and https://ja1.mulesoft.com/monitoring[JA] regions:
+* https://ca1.mulesoft.com/monitoring[Canada Hyperforce] and https://ja1.mulesoft.com/monitoring[Japan Hyperforce] regions:
 ** <<insights>>: Built-in dashboards with metrics across and within Mule app and API deployments
 //TODO_TODO_TODO: VERIFY FUNCTIONAL MONITORING FOR CA/JA:
 ** <<functional-monitoring>>
