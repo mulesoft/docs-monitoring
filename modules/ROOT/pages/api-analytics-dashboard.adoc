@@ -198,15 +198,7 @@ This metric is not supported for APIs deployed through Flex Gateway.
 
 == Anypoint Monitoring Archive API
 
-You can access API analytics metrics data directly via the Anypoint Monitoring Archive API. Using this API, you can navigate and discover your API metrics data using a directory hierarchy.
-
-The Anypoint Monitoring Archive API enables you to download files that contain https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[JSON objects] that represent one or more metric events. You can also write an application to navigate the data collected by the API and integrate it into your own system.
-
-You can also enable non-aggregated API events by setting this property: `anypoint.platform.config.analytics.agent.api_raw_metrics.enabled=true`.
-These events contain more detailed information about each API invocation and can be accessed using the Anypoint Monitoring Archive API under the `raw` file type.
-
-For more information about this API, see the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/home/[Anypoint Monitoring Archive API] page in Anypoint Exchange. 
-include::reuse::partial$billing/pricing.adoc[tag=apiAvailability]
+include::partial$archive-api.adoc[]
 
 [[average-response-times-api]]
 == Charting Inactivity for Average Response Time

@@ -1,0 +1,7 @@
+Anypoint Monitoring collects top occurring endpoints or operations for each data collection interval. Endpoints or operations that are not top occurring are sorted into a group called *Other*.
+
+In each data collection interval, top occurring endpoints or operations vary. An endpoint or operation that is top occurring in one interval might not be top occurring in the next.
+
+In Anypoint Monitoring charts and tables, the data comes from multiple data collection intervals. As a result, aggregated data shown in the dashboard is an estimation since the intervals might not have the same top occurring endpoints or operations. The tables show approximate counts for the most commonly occurring endpoints or operations when the *Other* grouping appears.
+
+For example, when an endpoint occurs more often than other endpoints in one interval but less often in another interval, Anypoint Monitoring sorts it into the Other group for the first interval. In this case, the resulting table displays lower than actual values for that endpoint, since the metrics that do not appear are grouped into the *Other* group.
