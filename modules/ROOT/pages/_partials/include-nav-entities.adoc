@@ -1,1 +1,17 @@
-. In the Anypoint Monitoring navigation menu, click *Insights*.
+//
+// tag::open-insights[]
+. In the Anypoint Monitoring navigation menu, click *Insights* to open *Anypoints Insights*.
+// end::open-insights[]
+//
+
+//
+// tag::supported-regions[]
+https://jp1.platform.mulesoft.com/monitoring[Japan (CA)] or https://ca1.platform.mulesoft.com/monitoring[Canada (CA)]
+// end::supported-regions[]
+//
+
+//
+// tag::region-data-not shared[]
+Data is not shared across the separate regional instances of Anypoint Platform. 
+// end::region-data-not shared[]
+//
