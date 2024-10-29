@@ -5,13 +5,19 @@
 //
 
 //
-// tag::supported-regions[]
+// tag::anypoint-regions-hyperforce[]
 https://jp1.platform.mulesoft.com/monitoring[Japan (CA)] or https://ca1.platform.mulesoft.com/monitoring[Canada (CA)]
-// end::supported-regions[]
+// end::anypoint-regions-hyperforce[]
 //
 
 //
-// tag::region-data-not shared[]
+// tag::anypoint-regions-useu[]
+https://jp1.platform.mulesoft.com/monitoring[US] and https://ca1.platform.mulesoft.com/monitoring[EU]
+// end::anypoint-regions-useu[]
+//
+
+//
+// tag::region-data-not-shared[]
 Data is not shared across the separate regional instances of Anypoint Platform. 
-// end::region-data-not shared[]
+// end::region-data-not-shared[]
 //

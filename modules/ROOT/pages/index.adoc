@@ -16,33 +16,33 @@ of issues (MTTI).
 == Monitoring Features by Region
 
 Anypoint Monitoring features vary by Anypoint Platform region at this time. 
+include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 
 * https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions:
 ** <<dashboards>>: Built-in and custom dashboards with metrics on individual deployments
 ** <<alerts>>
-//TODO_TODO_TODO: VERIFY LOGGING ONLY FOR US/EU:
 ** <<logging>>
 ** <<data_storage_retention>>
 ** <<functional-monitoring>> 
 
-* https://ca1.mulesoft.com/monitoring[Canada Hyperforce] and https://ja1.mulesoft.com/monitoring[Japan Hyperforce] regions:
+* https://ca1.mulesoft.com/monitoring[Canada (CA)] and https://ja1.mulesoft.com/monitoring[Japan (JP)] regions:
 ** <<insights>>: Built-in dashboards with metrics across and within Mule app and API deployments
-//TODO_TODO_TODO: VERIFY FUNCTIONAL MONITORING FOR CA/JA:
 ** <<functional-monitoring>>
 
+//TODO_TODO_TODO: VERIFY LINK
 For more information, see xref:hosting-home::index.adoc[].
 
 [[insights]]
-=== Anypoint Insights Dashboards (CA and JA Regions)
+=== Anypoint Insights Dashboards (CA and JP Regions)
 
-In https://ca1.mulesoft.com/monitoring[CA] and https://ja1.mulesoft.com/monitoring[JA] regions, monitor performance data and issues across your CloudHub 2.0 and Runtime Fabric deployments (_entities_), and get more detailed insights on specific deployments with built-in dashboards. 
+Monitor performance data and issues across your CloudHub 2.0 and Runtime Fabric deployments (_entities_), and get more detailed insights on specific deployments with built-in dashboards. 
 
 See xref:anypoint-insights.adoc[].
 
 [[dashboards]]
 === Built-in and Custom Dashboards (US and EU Regions)
 
-In https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions, use built-in dashboards or customize your own to provide instant visibility into your apps' performance and detailed analysis of your network.
+Use built-in dashboards or customize your own to provide instant visibility into your apps' performance and detailed analysis of your network.
 
 image::intro-dashboard-built-in.png[Built-in Dashboard Example]
 
@@ -57,7 +57,7 @@ See xref:dashboards-using.adoc[Dashboards].
 [[alerts]]
 === Event-Driven Alerts (US and EU Regions)
 
-In https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions, track trends and add your own alerts to identify abnormal behavior and problems in your app network.
+Track trends and add your own alerts to identify abnormal behavior and problems in your app network.
 
 image::intro-alerts.png[Alerts]
 
@@ -69,7 +69,7 @@ See xref:alerts.adoc[Alerts].
 [[logging]]
 === Logging System (US and EU Regions)
 
-In https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions, search across log files, including archived logs to find information and events based on a specific query.
+Search across log files, including archived logs to find information and events based on a specific query.
 
 image::intro-logs.png[Logs]
 
@@ -83,7 +83,7 @@ See xref:logs.adoc[Logs].
 [[data_storage_retention]]
 === Data Storage and Retention (US and EU Regions)
 
-In https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions, data storage and retention limits are determined by your pricing plan. All organizations receive Anypoint Monitoring regardless of pricing plan. 
+Data storage and retention limits are determined by your pricing plan.
 include::reuse::partial$billing/pricing.adoc[tag=featureAdvLimits]
 
 include::reuse::partial$billing/pricing.adoc[tag=dataRetentionMonitoring]
@@ -93,7 +93,7 @@ For complete details about pricing, contact your customer support representative
 //TODO_TODO_TODO: IS THIS CORRECT?
 === Raw Data Downloads (US and EU Regions)
 
-In https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] region, download warehoused log data on a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
+Download warehoused log data on a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
 
 See xref:raw-data.adoc[Raw Data].
 

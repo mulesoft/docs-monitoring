@@ -1,12 +1,13 @@
 //= Explore Entities with Anypoint Insights
-= Monitor Deployments with Anypoint Insights
+= Monitor Apps and APIs Across Deployments with Anypoint Insights
 :page-notice-banner-message: Only Japan (JA) and Canada (CA) regions provide Anypoint Insights. No other Anypoint Monitoring features are offered in these regions at this time.
 
 Monitor performance data and issues across your CloudHub 2.0 and Runtime Fabric deployments (_entities_) with Anypoint Insights, in Anypoint Monitoring. 
 
 image::insights.png["Anypoint Insights UI"]
 
-Identify and troubleshoot up to seven days of data on your deployments with:
+//TODO_TODO_TODO: 24 hours for now
+Identify and troubleshoot up to 24 hours of data on your deployments with:
 
 * Aggregated metrics across your deployments.
 +
@@ -22,12 +23,15 @@ For data collection details, see <<data-collection>>.
 
 Required prerequisites:
 
-* An Anypoint Platform account in a region that supports Anypoint Insights:
-+
-include::partial$include-nav-entities.adoc[tags="supported-regions"] 
-+
-include::partial$include-nav-entities.adoc[tags="region-data-not shared"]
-//TODO_TODO_TODO: WHICH PERMISSIONS FOR VIEWING APPS AND APIS
+* An Anypoint Platform account in a region that supports Anypoint Insights
+
+** {empty}
+include::partial$include-nav-entities.adoc[tags="anypoint-regions-hyperforce"] 
+
+** {empty}
+include::partial$include-nav-entities.adoc[tags="anypoint-regions-useu"] 
+(Beta release for Advanced and Titanium tier plans only at this time)
+
 * The *Monitoring Viewer* permission to Anypoint Monitoring and the permissions required for viewing apps and APIs.
 +
 See xref:monitoring::am-permissions.adoc[] and xref:access-management::permissions-by-product.adoc[].
