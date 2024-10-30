@@ -2,6 +2,9 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:useu-regions: (US and EU Regions)
+:hyperforce-regions: (CA and JP Regions)
+:all-regions: (All Regions)
 
 Understanding the state of your infrastructure and systems is important for ensuring the reliability and stability of your services. As part of Anypoint Platform, Anypoint Monitoring provides visibility into integrations across your app network. The monitoring tools provide feedback from Mule flows and components in your app network.
 
@@ -13,17 +16,18 @@ of issues (MTTI).
 * Store and search log data at scale.
 
 [[features]]
-== Monitoring Features by Region
+== Monitoring Features by Anypoint Platform Region
 
-Anypoint Monitoring features vary by Anypoint Platform region at this time. 
+Anypoint Monitoring is available all Anypoint Platform regions. 
 include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 
 * https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions:
 ** <<dashboards>>: Built-in and custom dashboards with metrics on individual deployments
 ** <<alerts>>
 ** <<logging>>
-** <<data_storage_retention>>
+** <<data-storage-retention>>
 ** <<functional-monitoring>> 
+** <<insights>>: Built-in dashboards with metrics across and within Mule app and API deployments
 
 * https://ca1.mulesoft.com/monitoring[Canada (CA)] and https://ja1.mulesoft.com/monitoring[Japan (JP)] regions:
 ** <<insights>>: Built-in dashboards with metrics across and within Mule app and API deployments
@@ -33,14 +37,14 @@ include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 For more information, see xref:hosting-home::index.adoc[].
 
 [[insights]]
-=== Anypoint Insights Dashboards (CA and JP Regions)
+=== Anypoint Insights Dashboards
 
 Monitor performance data and issues across your CloudHub 2.0 and Runtime Fabric deployments (_entities_), and get more detailed insights on specific deployments with built-in dashboards. 
 
 See xref:anypoint-insights.adoc[].
 
 [[dashboards]]
-=== Built-in and Custom Dashboards (US and EU Regions)
+=== Built-in and Custom Dashboards
 
 Use built-in dashboards or customize your own to provide instant visibility into your apps' performance and detailed analysis of your network.
 
@@ -55,7 +59,7 @@ You can track many data points and metrics from a custom dashboard that looks ac
 See xref:dashboards-using.adoc[Dashboards].
 
 [[alerts]]
-=== Event-Driven Alerts (US and EU Regions)
+=== Event-Driven Alerts
 
 Track trends and add your own alerts to identify abnormal behavior and problems in your app network.
 
@@ -65,9 +69,19 @@ You can trigger alerts based on rules (or thresholds) and policies for your reso
 
 See xref:alerts.adoc[Alerts].
 
-//TODO_TODO_TODO: CHECK LOGGING IN HYPERFORCE REGIONS
 [[logging]]
-=== Logging System (US and EU Regions)
+=== Log Management
+
+Manage logs and log data for your deployments with these logging features:
+
+* <<log-search>>
+* <<data-storage-retention>>
+* <<raw-data-downloads>>
+
+include::
+
+[[log-search]]
+==== Log Search
 
 Search across log files, including archived logs to find information and events based on a specific query.
 
@@ -80,8 +94,8 @@ The log aggregator system holds raw operational data and records events that occ
 See xref:logs.adoc[Logs].
 
 //TODO_TODO_TODO: IS THIS CORRECT?
-[[data_storage_retention]]
-=== Data Storage and Retention (US and EU Regions)
+[[data-storage-retention]]
+==== Data Storage and Retention
 
 Data storage and retention limits are determined by your pricing plan.
 include::reuse::partial$billing/pricing.adoc[tag=featureAdvLimits]
@@ -91,13 +105,14 @@ include::reuse::partial$billing/pricing.adoc[tag=dataRetentionMonitoring]
 For complete details about pricing, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
 
 //TODO_TODO_TODO: IS THIS CORRECT?
-=== Raw Data Downloads (US and EU Regions)
+[[raw-data-downloads]]
+==== Raw Data Downloads
 
 Download warehoused log data on a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
 
 See xref:raw-data.adoc[Raw Data].
 
-=== Tools for Monitoring Integrations (US and EU Regions)
+=== Tools for Monitoring Integrations
 
 In https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions, link to connectors that help deliver Anypoint Monitoring notifications to external systems, including custom metrics connectors.
 
@@ -105,7 +120,7 @@ See xref:tools.adoc[Tools].
 
 //TODO_TODO_TODO: VERIFY ALL REGIONS
 [[functional-monitoring]]
-=== API Functional Monitoring (All Regions)
+=== API Functional Monitoring
 
 Monitor APIs and endpoints at scheduled intervals. Receive reports about whether tests pass or fail, and view statistics about API and endpoint performance.
 
@@ -120,12 +135,12 @@ Anypoint Monitoring packages and plans are available:
 * <<plans-legacy>>
 
 [[plans-usage-based]]
-=== Anypoint Monitoring Features for Usage-Based Packages (All Regions)
+=== Anypoint Monitoring Features for Usage-Based Packages
 
 Anypoint Monitoring is the standard method of monitoring Mule app and API performance so that you can more quickly identify and resolve issues. 
 
 * *Anypoint Integration Starter* package is available to all Anypoint Platform regions.
-* *Anypoint Integration Advanced* package is available in the https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU].
+* *Anypoint Integration Advanced* package is available in the https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions only at this time.
 
 All organizations receive fundamental monitoring regardless of pricing model. However, organizations that have the Anypoint Integration Advanced package receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
@@ -134,7 +149,7 @@ If your organization changes its subscription model from the Anypoint Advanced I
 include::reuse::partial$billing/pricing.adoc[tag=monitoringTable]
 
 [[plans-legacy]]
-=== Anypoint Monitoring Features for Legacy Subscription-Based Plans (US and EU Regions)
+=== Anypoint Monitoring Features for Legacy Subscription-Based Plans
 
 Anypoint Monitoring is the standard method of monitoring Mule app and API performance so that you can more quickly identify and resolve issues. All organizations receive fundamental monitoring capabilities with their subscriptions. However, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
