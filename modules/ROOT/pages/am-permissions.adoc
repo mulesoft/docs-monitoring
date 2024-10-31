@@ -8,15 +8,33 @@ Anypoint Monitoring has product-specific permissions that control access to its 
 //all monitoring permissions
 include::access-management::partial$include-permissions-monitoring.adoc[tag=permsMonitoringAll]
 
-The content you can access when you have the Anypoint Monitoring Administrator and Anypoint Monitoring Viewer permissions depends on other asset-specific permissions.
-To view or modify content related to specific apps and APIs, you also need the appropriate access permissions for those assets.
-For example, a user who has the Anypoint Monitoring Viewer permission and wants to view Anypoint Monitoring data for an on-premises app also needs the Read Applications permission (from Runtime Manager) in the same environment that the app is deployed to.
+Access to data for users to with Anypoint Monitoring Administrator and Anypoint Monitoring Viewer permissions depends on other asset-specific permissions. To view or modify data related to specific apps and APIs, you also need the appropriate access permissions for those assets. For example, a user who has the Anypoint Monitoring Viewer permission and wants to view Anypoint Monitoring data for an on-premises app also needs the Read Applications permission (from Runtime Manager) in the same environment that the app is deployed to. 
 
-At minimum, you need the following permissions to read data in Anypoint Monitoring:
+//TODO_TODO_TODO: VERIFY DESCRIPTIONS
+[%header,cols="20a,20a,20a,40a"]
+|===
+|Deployment Type | Permission | Grants the Ability to | Permission Type 
 
-* View API Alerts (API Manager) for Flex API content
-* Read Applications (Runtime Manager) for on-premises app content
-* Read Servers (Runtime Manager) for Flex Gateway content
+|Hybrid Deployment Data
+|Read Applications
+|View app data for hybrid deployments. See also, xref:am-installing.adoc[].
+|xref:access-management::permissions-by-product.adoc#runtime-manager[Runtime Manager]
+
+// TBD for Insights CA/JP, any other?
+//| API Deployment Data
+//|View APIs Configuration
+//|View API data
+//|xref:access-management::permissions-by-product.adoc#api-manager[API Manager]
+
+.2+| Flex Gateway Deployment Data
+|View API Alerts
+|View the API alerts for Flex API data.
+|xref:access-management::permissions-by-product.adoc#api-manager[API Manager]
+
+|Read Servers
+|View server and Flex Gateway resources.
+|xref:access-management::permissions-by-product.adoc#runtime-manager[Runtime Manager]
+|===
 
 == See Also
 
