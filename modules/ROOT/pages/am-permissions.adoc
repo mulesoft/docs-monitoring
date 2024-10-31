@@ -8,9 +8,8 @@ Anypoint Monitoring has product-specific permissions that control access to its 
 //all monitoring permissions
 include::access-management::partial$include-permissions-monitoring.adoc[tag=permsMonitoringAll]
 
-Access to data for users to with Anypoint Monitoring Administrator and Anypoint Monitoring Viewer permissions depends on other asset-specific permissions. To view or modify data related to specific apps and APIs, you also need the appropriate access permissions for those assets. For example, a user who has the Anypoint Monitoring Viewer permission and wants to view Anypoint Monitoring data for an on-premises app also needs the Read Applications permission (from Runtime Manager) in the same environment that the app is deployed to. 
+In addition to Monitoring Administrator and Anypoint Monitoring Viewer permissions,  asset-specific permissions are required to view and read API and app data for some deployments. For example, if you have the Anypoint Monitoring Viewer permission and want to view Anypoint Monitoring data on a hybrid Mule app deployment, you must also have the Read Applications permission (from Runtime Manager) in the same environment that the app is deployed to.
 
-//TODO_TODO_TODO: VERIFY DESCRIPTIONS
 [%header,cols="20a,20a,20a,40a"]
 |===
 |Deployment Type | Permission | Grants the Ability to | Permission Type 
@@ -20,7 +19,7 @@ Access to data for users to with Anypoint Monitoring Administrator and Anypoint 
 |View app data for hybrid deployments. See also, xref:am-installing.adoc[].
 |xref:access-management::permissions-by-product.adoc#runtime-manager[Runtime Manager]
 
-// TBD for Insights CA/JP, any other?
+// TODO: TBD for Insights CA/JP, any other?
 //| API Deployment Data
 //|View APIs Configuration
 //|View API data
