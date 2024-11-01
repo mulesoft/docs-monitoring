@@ -6,13 +6,13 @@
 
 //
 // tag::anypoint-regions-hyperforce[]
-https://jp1.platform.mulesoft.com/monitoring[Japan (CA)] or https://ca1.platform.mulesoft.com/monitoring[Canada (CA)]
+https://jp1.platform.mulesoft.com/monitoring[Japan (JP)] and https://ca1.platform.mulesoft.com/monitoring[Canada (CA)]
 // end::anypoint-regions-hyperforce[]
 //
 
 //
 // tag::anypoint-regions-useu[]
-https://jp1.platform.mulesoft.com/monitoring[US] and https://ca1.platform.mulesoft.com/monitoring[EU]
+https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU]
 // end::anypoint-regions-useu[]
 //
 
