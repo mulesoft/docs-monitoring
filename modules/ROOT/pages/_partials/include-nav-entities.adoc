@@ -6,7 +6,7 @@
 
 //
 // tag::anypoint-regions-hyperforce[]
-https://jp1.platform.mulesoft.com/monitoring[Japan (CA)] or https://ca1.platform.mulesoft.com/monitoring[Canada (CA)]
+https://jp1.platform.mulesoft.com/monitoring[Japan (JP)] or https://ca1.platform.mulesoft.com/monitoring[Canada (CA)]
 // end::anypoint-regions-hyperforce[]
 //
 
