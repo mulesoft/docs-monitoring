@@ -10,7 +10,7 @@ include::access-management::partial$include-permissions-monitoring.adoc[tag=perm
 
 In addition to Monitoring Administrator and Anypoint Monitoring Viewer permissions,  asset-specific permissions are required to view and read API and app data for some deployments. For example, if you have the Anypoint Monitoring Viewer permission and want to view Anypoint Monitoring data on a hybrid Mule app deployment, you must also have the Read Applications permission (from Runtime Manager) in the same environment that the app is deployed to.
 
-[%header,cols="20a,20a,20a,40a"]
+[%header,cols="10a,10a,40a,40a"]
 |===
 |Deployment Type | Permission | Grants the Ability to | Permission Type 
 
