@@ -9,7 +9,7 @@ image::insights.png["Anypoint Insights UI"]
 //TODO_TODO_TODO: 24 hours for now
 Identify and troubleshoot up to 24 hours of data on your deployments with:
 
-* Aggregated metrics across your deployments.
+* Metrics across multiple deployments
 +
 Monitor response times, error volume, and request volume. Use filters to narrow your results. 
 * Metrics on individual apps and APIs.
