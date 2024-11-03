@@ -1,22 +1,29 @@
 //= Explore Entities with Anypoint Insights
-= Monitor Apps and APIs Across Deployments with Anypoint Insights
+= Monitor Apps and APIs with Anypoint Insights
 :page-notice-banner-message: Only Japan (JA) and Canada (CA) regions provide Anypoint Insights. No other Anypoint Monitoring features are offered in these regions at this time.
 
-Monitor performance data and issues across your CloudHub 2.0 and Runtime Fabric deployments (_entities_) with Anypoint Insights, in Anypoint Monitoring. 
-
-image::insights.png["Anypoint Insights UI"]
+Monitor performance data and issues across your deployed Mule app and APIs (_entities_) with Anypoint Insights, in Anypoint Monitoring. 
 
 //TODO_TODO_TODO: 24 hours for now
-Identify and troubleshoot up to 24 hours of data on your deployments with:
+Identify and troubleshoot data on your deployments with:
 
 * Metrics across multiple deployments
 +
 Monitor response times, error volume, and request volume. Use filters to narrow your results. 
-* Metrics on individual apps and APIs.
+* Metrics on individual apps and APIs
 +
-Review requests, latency, errors, and JVM data.
+Review requests, latency, errors, and JVM data
 
-For data collection details, see <<data-collection>>.
+image::insights.png["Anypoint Insights UI"]
+
+[calloutlist]
+. Overview page for Mule apps and APIs deployed within the selected environment and business group
+. Environment selector for your deployment (such as Sandbox or Production)
+. <<filter, Filters>> to narrow the data in charts
+. Performance metrics and trends across Mule apps and APIs
+. List of your deployed Mule apps and APIs, which you can click to display charts on specific deployments
+. Selector for the time period displayed in the charts 
+. Selector for auto-refresh interval, displayed when auto-refresh is enabled
 
 [[prereqs]]
 == Before You Begin
@@ -32,16 +39,23 @@ include::partial$include-nav-entities.adoc[tags="anypoint-regions-hyperforce"]
 include::partial$include-nav-entities.adoc[tags="anypoint-regions-useu"] 
 (Beta release for Advanced and Titanium tier plans only at this time)
 
+* A running Mule app or Mule Gateway API that is deployed to a supported target:
+
+** Runtime Fabric
+** CloudHub 2.0
+
+//TODO_TODO_TODO: hybrid not supported? CH 1 not supported? 
+
 * The *Monitoring Viewer* permission to Anypoint Monitoring and the permissions required for viewing apps and APIs.
 +
 See xref:monitoring::am-permissions.adoc[] and xref:access-management::permissions-by-product.adoc[].
-* A supported version of Mule Runtime engine.
+* A supported version of Mule Runtime engine
 +
 See xref:release-notes::mule-runtime/mule-esb.adoc[].
 
+== View Data Across Deployments
 
-== Open Anypoint Insights
-
+//TODO: DELETE include-nav-steps-no-permissions.adoc? 
 //include::partial$include-nav-steps-no-permissions.adoc[]
 
 . Meet the prerequisites in <<prereqs>>. 
@@ -51,39 +65,57 @@ include::partial$include-nav-entities.adoc[tags="supported-regions"]
 //Nav step
 include::partial$include-nav-entities.adoc[tags="open-insights"]
 +
-*Anypoint Insights* provides separate sets of charts for your deployment environments, such as Design, Production, and Sandbox. You can view and filter chart data across your deployments within the selected environment, and you can open more detailed data on any deployment listed in the *Entities List*. 
-
-== Filter Data in Aggregated Charts
-
-Use one or more filters to narrow the parameters of aggregated charts by any of these criteria. The filters support operators such as `>` and `<=` for comparisons and `IN` for any matches to a list of items.  
-
-Example for Mule applications deployed to CloudHub 2.0: `entity_type = 'APP' deployment_type = 'CLOUDHUB2'`
-
-* Deployment Type (`deployment_type`): For data on deployments to one or more hosts. Examples: `deployment_type IN ['CLOUDHUB2', 'RTF']`, `deployment_type = 'CLOUDHUB2'`
-* Entity Type (`entity_type`): For data on one or more deployment types (such as, APP). Example: `entity_type = 'APP'  `
-* Entity (`entity`): Identifies one or more Mule apps or APIs by their IDs. Example: `entity IN ['99aea888-77de-6e06-5c55-d1234de56789', '09f99999-888d-7b77-6da5-bebd43210fc1']`
-* Entity Response Status (*entity_response_status*): 
+*Anypoint Insights* provides separate sets of charts for your deployment environments You can view and filter chart data across your deployments within the selected environment, and you can open more detailed data on any deployment listed in the *Entities List*.
+. Set your environment, such as Design, Production, and Sandbox, using the dropdown menu below *Anypoint Insights*. 
+//+
+//ADD GRAPHIC?
+. Filter data, as needed.
 +
-Example: `entity_response_status = 'OK'`
-* Request Counts (`request_counts`): Number of requests.
-+ 
-Example: `COUNT(request_counts) < '40'`
-* Response Time (`response_time`): Percentage of requests relative to a given response time.
-+
-Example: `PERCENTILE(response_time, '0.95') < '2.00ms'`
+For guidance, see <<filter>>.
 
-By default, the *Anypoint Insights* page shows data for entities from the default environment configured in your user profile. You can adjust your profile to see data for entities in one or more of your environments for the active business group to which you are logged in. 
+[[filter]]
+== Filter Data Across Deployments
 
-//You can choose a different business group using the org switcher in the Anypoint Navigation bar. EM- FIX THIS
+Use one or more filters to narrow the data in your charts. The filters support operators `=` and `IN` (for any matches to a list of items). Multiple filters are allowed. For example, `entity_type = 'APP' deployment_type = 'CLOUDHUB2'` returns all Mule apps deployed to CloudHub 2.0.
 
-//The search bar also offers quick filters, such as `Top 10 entities with highest error volume`, to show you common scenarios at a glance. You can also combine these with attributes and metrics to further specify the content that appears. 
+[%header,cols="10a,40a,10a,40a"]
+|===
+| Filter | Description | Operators | Example
 
-:
+|`deployment_type`
+|Filter by deployment target, CloudHub 2.0 (*CLOUDHUB2*) or Runtime Fabric (*RTF*).
+|`=`, `IN`
+|`deployment_type IN ['CLOUDHUB2', 'RTF']`
 
+|`entity_type`
+|Filter by deployment type (*APP* or *API*).
+|`=`, `IN`
+|`entity_type = 'APP'`
 
+|`entity`
+|Filter by specific app or API deployments. 
+|`=`, `IN`
+|`entity IN ['99aea888-77de-6e06-5c55-d1234de56789', '09f99999-888d-7b77-6da5-bebd43210fc1']`
 
-When you provide multiple filters, the resulting data matches all of them. For example, the query to fetch the entities data would include an `AND` operator to combine all of the search filters.
+|`entity_response_status`
+|Filter by the response code (*OK* or *FAILED*).
+|`=`
+|`entity_response_status = 'OK'`
+|===
 
+//TODO_TODO_TODO: VERIFY THAT THESE WILL BE REMOVED:
+//* Request Counts (`request_counts`): Number of requests.
+//+ 
+//Example: `COUNT(request_counts) < '40'`
+//* Response Time (`response_time`): Percentage of requests relative to a given response time.
+//+
+//Example: `PERCENTILE(response_time, '0.95') < '2.00ms'`
+
+//== Change the Business Group 
+//== Change the Default Environment
+//== Auto-Refresh 
+
+////
 === Apply Search Parameters
 
 include::partial$include-nav-steps-no-permissions.adoc[]
@@ -96,7 +128,7 @@ Note that `requests_counts` and `response_time` are measurements of their respec
 
  *  `COUNT` is the only supported aggregating function that you can use with `request_counts.
  * `PERCENTILE` is the only aggregating function that you can use with `response_time`.
-
+////
 //=== Example of Applied Search Parameters
 
 //tbd
