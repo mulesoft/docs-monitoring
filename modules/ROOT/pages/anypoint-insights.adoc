@@ -1,15 +1,14 @@
-//= Explore Entities with Anypoint Insights
-= Monitor Apps and APIs with Anypoint Insights
-:page-notice-banner-message: Only Japan (JA) and Canada (CA) regions provide Anypoint Insights. No other Anypoint Monitoring features are offered in these regions at this time.
+= Monitor Mule Apps and APIs with Anypoint Insights
+:page-notice-banner-message: In Japan (JA) and Canada (CA) instances of Anypoint Platform, Anypoint Monitoring includes only Anypoint Insights at this time.
 
-Monitor performance data and issues across your deployed Mule app and APIs (_entities_) with Anypoint Insights, in Anypoint Monitoring. 
+Monitor performance data and issues across your deployed Mule apps and APIs (_entities_) with Anypoint Insights, in Anypoint Monitoring. 
 
 Identify and troubleshoot data on your deployments with:
 
-* Metrics across multiple deployments
+* Metrics across multiple Mule apps and APIs
 +
 Monitor response times, error volume, and request volume. Use filters to narrow your results. 
-* Metrics on individual apps and APIs
+* Metrics on individual Mule apps and APIs
 +
 Review requests, latency, errors, and JVM data.
 
@@ -31,58 +30,57 @@ include::partial$include-nav-entities.adoc[tags="anypoint-regions-useu"]
 
 ** Runtime Fabric
 ** CloudHub 2.0
-
 //TODO_TODO_TODO: hybrid not supported? CH 1 not supported? 
 
-* The *Monitoring Viewer* permission to Anypoint Monitoring and the permissions required for viewing apps and APIs.
-+
-See xref:monitoring::am-permissions.adoc[] and xref:access-management::permissions-by-product.adoc[].
-* A supported version of Mule Runtime engine
-+
-See xref:release-notes::mule-runtime/mule-esb.adoc[].
+* The *Monitoring Viewer* permission to Anypoint Monitoring and the permissions required for viewing apps and APIs (see xref:monitoring::am-permissions.adoc[])
+* A supported version of Mule Runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[])
 
-== Monitor Deployments
+== Monitor Your Deployments
 
-Get an overview of your deployments within a selected business group and environment.
+Monitor Mule apps and APIs within a selected business group and environment.
 
+//don't change order of numbers in graphic or calloutlist
 image::insights.png["Anypoint Insights UI"]
 
 [calloutlist]
-. Overview page for Mule apps and APIs deployed within the selected environment and business group
-. Environment selector for your deployment (such as Sandbox or Production)
+. Overview of your deployed Mule apps and APIs
+. Environment selector for your deployments (such as Sandbox or Production)
 . <<filter, Filters>> to narrow the data in charts
-. Performance <<performance-metrics-overview, metrics>> and <<performance-trends-overview, trends>> across Mule apps and APIs
-. List of your deployed Mule apps and APIs, which you can click to display charts on specific deployments
-. Selector for the time period displayed in the charts 
+. Performance <<charts-performance, metrics and trends>> across your Mule apps and APIs
+. <<entities-list, List of your Mule apps and APIs>>, which you can click to display charts on specific deployments
+. Selector for the time range covered by the charts 
 . Selector for auto-refresh interval, displayed when auto-refresh is enabled
 
 To review metrics:
 
 . Meet the prerequisites in <<prereqs>>. 
-. Log in to your Anypoint Platform region that supports Anypoint Insights:
-+
-include::partial$include-nav-entities.adoc[tags="supported-regions"] 
+. Log in to Anypoint Platform, and navigate to Anypoint Monitoring. 
 //Nav step
 include::partial$include-nav-entities.adoc[tags="open-insights"]
-. Set your environment, such as Design, Production, and Sandbox, using the dropdown menu below *Anypoint Insights*. 
-//+
-//ADD GRAPHIC?
-. Filter data, as needed.
+. In Anypoint Insights, set your environment, such as Design, Production, and Sandbox. 
 +
-For guidance, see <<filter>>.
-. To get data on a specific deployment:
-.. Find and click the deployment's name in *Entities List*.
-.. Click *View Entity Metrics* in the overview of the selected deployment, for example:
+For guidance, see <<change-environment>>.
+. Set the time period to capture in your charts.
++
+For guidance, see <<filter-by-time>>
+. Filter the deployment data in the charts, as needed, to focus on areas of interest.
++
+For guidance, see <<filter-by-data>>.
+. To get additional metrics on a specific app or API:
+.. Find and click its name in *Entities List*.
+.. Click *View Entity Metrics*, for example:
 +
 image::insights-entity-clicked.png["Overview of a deployment's metrics"]
-.. Review metrics in the deployment's dashboards, for example: 
+.. Review metrics, for example: 
 +
-image::insights-deployment-charts.png["Deployment dashboard"]
+image::insights-deployment-charts.png["Entity dashboard for a deployed app or API"]
++
+Charts are available in the tabs *Overview*, *Requests*, *Errors*, *JVM*. For descriptions, see <<TODO_TODO_TODO>>.
 
 [[filter]]
 == Filter Monitoring Data Across Deployments
 
-You can narrow the data in Anypoint Insights charts by deployment details (such as the deployment type) and by time range.
+You can narrow the data in Anypoint Insights charts by deployment details, such as the deployment type, and by time range.
 
 * <<filter-by-data>>
 * <<filter-by-time>>
@@ -131,135 +129,45 @@ entity_response_status = 'OK'
 ----
 |===
 
-//TODO_TODO_TODO: VERIFY THAT THESE WILL BE REMOVED:
-//* Request Counts (`request_counts`): Number of requests.
-//+ 
-//Example: `COUNT(request_counts) < '40'`
-//* Response Time (`response_time`): Percentage of requests relative to a given response time.
-//+
-//Example: `PERCENTILE(response_time, '0.95') < '2.00ms'`
-
-
-//== Change the Default Environment
-//== Auto-Refresh 
-
-////
-+
-*Anypoint Insights* provides separate sets of charts for your deployment environments. You can view and filter chart data across your deployments within the selected environment, and you can open more detailed data on any deployment listed in the *Entities List*.
-//TODO: DELETE include-nav-steps-no-permissions.adoc? 
-//include::partial$include-nav-steps-no-permissions.adoc[]
-
-=== Apply Search Parameters
-
-include::partial$include-nav-steps-no-permissions.adoc[]
-
-include::partial$include-nav-entities.adoc[]
-
-. In the search bar, enter an attribute, element, business group, or environment to use for filtering your data.
-+
-Note that `requests_counts` and `response_time` are measurements of their respective metrics. To create a search filter that uses these two attributes,  choose an aggregating function:
-
- *  `COUNT` is the only supported aggregating function that you can use with `request_counts.
- * `PERCENTILE` is the only aggregating function that you can use with `response_time`.
-////
-//=== Example of Applied Search Parameters
-
-//tbd
 
 [[filter-by-time]]
 === Filter Data by Time Period
 
-Use the time period selector to display data points collected for the last given period of time (such as the last 15 or 30 minutes) or over a given date and time range. Your setting applies across all data in *Anypoint Insights* overview page, including *Entities List*.
+Use the time period selector (<<monitor-deployments, see item 6>>) to display data points collected for the last given period of time (such as the last 15 or 30 minutes) or over a given date and time range. Your setting applies across all data in *Anypoint Insights* overview page, including *Entities List*.
 
-To locate the selector, <<monitor-deployments, see 6>> in the Anypoint Monitoring image. If you don't see data on the page, check that the selected time range is correct.
+If you don't see data on the page, check that the selected time range is correct.
 
-== Understand Summary and Performance Trends for Entities
-
-The *Anypoint Insights* page provides key metrics and health indicators as performance metrics cards and charts. By default, the charts show data for entities in your current business group and environment. When you modify your search settings, the data in the charts changes accordingly. 
-
-The following performance metrics cards appear.
- 
-[[performance-metrics-overview]]
-=== Performance Metrics
-
-Total Entities::
-
-Total number of entities that match your current search conditions in the selected date and time range.
-
-Entities with Errors::
-
-Count of entities that have an error that matches your current search conditions in the selected date and time range. 
-
-Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
-
-Total Requests::
-
-Total request volume for entities that match your current search conditions in the selected date and time range. 
-
-Error Rate:: 
-
-Error rate for entities that match your current search conditions in the selected date and time range. The error rate is calculated using the total number of entity errors divided by the total number of requests for those entities.
-
-[[performance-trends-overview]]
-=== Performance Trends Charts
-
-Entities with Slow Response Times:: 
-
-Response time of the top entities that match your current search conditions in the selected date and time range. The top entities are calculated based on the percentile values of their response times (highest response time to lowest response time). The chart uses `P99` as the percentile index by default; however, you can select `P95`, `P90`, or `P75` to use as the percentile index.
-
-Error Volume:: 
-
-Total number of entities that match your current search conditions in the selected date and time range. 
-
-Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
-
-Request Volume:: 
-
-The total number of request to entities that match your current search conditions in the selected date and time range. 
-
-=== Entities List
-
-The list of entities that match your current search conditions in the selected date and time range. This list is rendered as a table with columnar key metrics. By default, the table is sorted by the value in the `Request Volume` (descending) field. 
-
-The following columns appear in the table:
-
-* *Entity Name*: Name of the entity.
-//TODO_TODO_TODO: Mule Gateway APIs only or other API instance?
-* *Entity Type*: Type of the entity. The value in this column is either `API` or `Application`.
-* *Request Volume*: Total number of requests to the entity.
-* *P95 Latency*: P95 response time latency, calculated in milliseconds. 
-* *Error Rate*: Percentage of requests to the entity that result in errors. 
-* *Deployment Type*: Runtime environment in which the entity is deployed. 
-
-
-[[default-environment]]
+[[change-environment]]
 == Change the Environment
 
-You can change the environment (such as Production or Sandbox) for charts and set an environment that Anypoint Monitoring displays by default.
+Anypoint Monitoring charts provide metrics on a specific environment (such as Production or Sandbox). 
+
+To change current or default environment:
 
 . Open Anypoint Monitoring. 
-. Set a new business group:
+. Set a new environment:
 
 * To select an environment without changing the default, use the environment dropdown menu in Anypoint Monitoring, for example:
 +
 image::insights-environment-selector.png["Environment selector in Anypoint Monitoring"]
-* To select the default environment displayed in Anypoint Monitoring:
+* To select the default environment to display in Anypoint Monitoring:
 
 .. Click your profile icon, and select the name of your profile.
 +
 For an example, <<profile, see 2>> in the image.
-.. In Access Management *Settings*, select an environment as the default deployment environment to view for the selected business group in Anypoint Monitoring, for example: 
+.. In Access Management *Settings*, select an environment as the default environment to view for the selected business group in Anypoint Monitoring, for example: 
 +
 image::insights-default-selector.png["Default selector in Access Management"]
 .. Return to Anypoint Monitoring to check for the new business group setting.
 +
 Refresh the page, if necessary. 
 
-[[default-bg]]
+[[change-bg]]
 == Change the Business Group
 
-If you belong to more than one business group, you can change the current business group selection and the default business group to view in Anypoint Monitoring.
+Anypoint Monitoring displays metrics for deployments in a specific business group. If you belong to more than one business group, you can change the current business group selection and the business group that Anypoint Monitoring selects by default.
 
+//do not change the order of numbers in the graphic or calloutlist
 [[profile]]
 image::insights-business-group-change.png["Business group selection options"]
 
@@ -283,6 +191,215 @@ image::insights-default-selector.png["Default selector in Access Management"]
 +
 Refresh the page, if necessary. 
 
+//H2: REFERENCES
+== Chart Data Reference
+
+Understand the data in Anypoint Monitoring:
+
+* <<charts-performance>>
+* <<entities-list>>
+* <<entity-metrics>>
+
+//H3: PERFORMANCE
+[[charts-performance]]
+=== Performance Metrics and Trends
+
+*Performance Metrics* and *Performance Trends* provide data across your deployments:
+
+* <<performance-metrics-overview>>
+* <<performance-trends-overview>>
+
+[[performance-metrics-overview]]
+==== Performance Metrics
+
+Total Entities::
+Total number of entities that match your current search conditions in the selected date and time range.
+
+Entities with Errors::
+Count of entities that have an error that matches your current search conditions in the selected date and time range. 
++
+Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
+
+Total Requests::
+Total request volume for entities that match your current search conditions in the selected date and time range. 
+
+Error Rate:: 
+Error rate for entities that match your current search conditions in the selected date and time range. The error rate is calculated using the total number of entity errors divided by the total number of requests for those entities.
+
+[[performance-trends-overview]]
+==== Performance Trends
+
+Entities with Slow Response Times:: 
+
+Response time of the top entities that match your current search conditions in the selected date and time range. The top entities are calculated based on the percentile values of their response times (highest response time to lowest response time). The chart uses `P99` as the percentile index by default; however, you can select `P95`, `P90`, or `P75` to use as the percentile index.
+
+Error Volume:: 
+Total number of entities that match your current search conditions in the selected date and time range. 
++
+Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
+
+Request Volume:: 
+The total number of request to entities that match your current search conditions in the selected date and time range. 
+
+//H3: ENTITIES LIST
+[[entities-list]]
+=== Entities List
+
+Anypoint Insights provides a list of deployed Mule apps and APIs (_entities_) that match the selected time period and filters:
+
+Entity Name:: 
+Name of the entity.
+
+//TODO_TODO_TODO: Mule Gateway APIs only or other API instance?
+Entity Type:: 
+Type of the entity. The value in this column is either `API` or `Application`.
+
+Request Volume::
+Total number of requests to the entity.
+
+P99 Latency:: 
+99% response time latency, calculated in milliseconds. 
+
+Error Rate:: 
+Percentage of requests to the entity that result in errors. 
+
+Deployment Type:: 
+Runtime environment in which the entity is deployed. 
+
+//H3: ENTITY METRICS
+[[entity-metrics]]
+=== Detailed Entity Metrics
+
+Anypoint Insights provides metrics on a specific Mule app and API deployment selected from the *Entities List* in Anypoint Monitoring. 
+
+Type:: 
+Identifies the entity type (Mule app or API)
+
+Status::
+Indicates whether the entity is running. 
+
+URL::
+Provides the URL of the entity
+
+Runtime::
+Provides the Mule Runtime engine version that the entity runs on
+
+Replicas::
+TODO_TODO_TODO
+
+Last Updated::
+TODO_TODO_TODO
+
+Last Updated::
+TODO_TODO_TODO
+
+To get detailed data on an entity, click any of these tabs:
+
+* <<entity-metrics-overview, Overview>> (default)
+* <<entity-metrics-requests, Requests>>
+* <<entity-metrics-errors, Errors>>
+* <<entity-metrics-jvm, JVM>>
+
+[[entity-metrics-overview]]
+==== Overview Metrics
+
+Charts in the *Overview* tab provide metrics on individual entities in Anypoint Monitoring:
+
+Average Latency::
+TODO_TODO_TODOs
+
+//TODO: CHECK P95
+P95 Latency::
+TODO_TODO_TODO
+
+P95 Latency::
+TODO_TODO_TODO
+
+Total Requests Volume::
+TODO_TODO_TODO
+
+Mule Messages Volume::
+TODO_TODO_TODO
+
+Request Latency::
+TODO_TODO_TODO
+
+Request Volume::
+TODO_TODO_TODO
+
+Failed Requests::
+TODO_TODO_TODO
+
+Mule Messages::
+TODO_TODO_TODO
+
+[[entity-metrics-request]]
+==== Request Metrics
+
+Charts in the *Requests* tab provide metrics on requests to an entity in Anypoint Monitoring:
+
+Request Volume:: 
+TODO_TODO_TODO
+you can view by protocol, response time, or "top 20 host" (TODO: WHAT DOEST THAT MEAN?)
+
+Outbound Request Volume:: 
+TODO_TODO_TODO
+
+Top Slowest requests by Path::
+TODO_TODO_TODO
+
+Request Latency by Endpoint::
+TODO_TODO_TODO
+you can view by Inbound and Outbound requests
+
+
+[[entity-metrics-errors]]
+==== Error Metrics
+
+Charts in the *Errors* tab provide metrics on any errors in an entity in Anypoint Monitoring:
+
+Failed Outbound Requests Volume::
+TODO_TODO_TODO
+
+Top 20 Failed Requests by Total Count::
+TODO_TODO_TODO
+
+Top 20 Failed Outbound Requests by Total Count::
+TODO_TODO_TODO
+
+
+[[entity-metrics-jvm]]
+=== JVM Metrics
+
+Charts in the *JVM* tab provide metrics on the JVM for an entity in Anypoint Monitoring:
+
+Old Gen GC Count::
+TODO_TODO_TODO
+
+Old Gen GC Duration::
+TODO_TODO_TODO
+
+Young Gen GC Count::
+TODO_TODO_TODO
+
+Young Gen GC Duration::
+TODO_TODO_TODO
+
+Heap Committed::
+TODO_TODO_TODO
+
+Heap Usage::
+TODO_TODO_TODO
+
+Thread Count::
+TODO_TODO_TODO
+
+Committed Virtual Memory::
+TODO_TODO_TODO
+
+CPU Utilization::
+TODO_TODO_TODO
+
 [[data-collection]]
 == Data Collection Intervals in Anypoint Monitoring Charts
 
@@ -302,3 +419,33 @@ For example, if a chart displays data collected in the last 15 minutes, the char
 [[data-collection-intervals]]
 include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+2]
 
+
+////
+HIDDEN AND MOVED 
+TODO_TODO_TODO: VERIFY THAT THESE WILL BE REMOVED:
+* Request Counts (`request_counts`): Number of requests.
+Example: `COUNT(request_counts) < '40'`
+* Response Time (`response_time`): Percentage of requests relative to a given response time.
+Example: `PERCENTILE(response_time, '0.95') < '2.00ms'`
+
+*Anypoint Insights* provides separate sets of charts for your deployment environments. You can view and filter chart data across your deployments within the selected environment, and you can open more detailed data on any deployment listed in the *Entities List*.
+
+.....
+TODO: DELETE include-nav-steps-no-permissions.adoc? 
+include::partial$include-nav-steps-no-permissions.adoc[]
+.....
+
+=== Apply Search Parameters
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+include::partial$include-nav-entities.adoc[]
+
+. In the search bar, enter an attribute, element, business group, or environment to use for filtering your data.
++
+Note that `requests_counts` and `response_time` are measurements of their respective metrics. To create a search filter that uses these two attributes,  choose an aggregating function:
+
+ *  `COUNT` is the only supported aggregating function that you can use with `request_counts.
+ * `PERCENTILE` is the only aggregating function that you can use with `response_time`.
+
+////
