@@ -4,7 +4,6 @@
 
 Monitor performance data and issues across your deployed Mule app and APIs (_entities_) with Anypoint Insights, in Anypoint Monitoring. 
 
-//TODO_TODO_TODO: 24 hours for now
 Identify and troubleshoot data on your deployments with:
 
 * Metrics across multiple deployments
@@ -42,7 +41,7 @@ See xref:monitoring::am-permissions.adoc[] and xref:access-management::permissio
 +
 See xref:release-notes::mule-runtime/mule-esb.adoc[].
 
-== Monitor Data Across Deployments
+== Monitor Deployments
 
 Get an overview of your deployments within a selected business group and environment.
 
@@ -53,12 +52,11 @@ image::insights.png["Anypoint Insights UI"]
 . Environment selector for your deployment (such as Sandbox or Production)
 . <<filter, Filters>> to narrow the data in charts
 . Performance <<performance-metrics-overview, metrics>> and <<performance-trends-overview, trends>> across Mule apps and APIs
-. List of your deployed Mule apps and APIs, which you can click to display charts on specific deployments (see <<>>)
+. List of your deployed Mule apps and APIs, which you can click to display charts on specific deployments
 . Selector for the time period displayed in the charts 
 . Selector for auto-refresh interval, displayed when auto-refresh is enabled
 
-//TODO: DELETE include-nav-steps-no-permissions.adoc? 
-//include::partial$include-nav-steps-no-permissions.adoc[]
+To review metrics:
 
 . Meet the prerequisites in <<prereqs>>. 
 . Log in to your Anypoint Platform region that supports Anypoint Insights:
@@ -66,14 +64,20 @@ image::insights.png["Anypoint Insights UI"]
 include::partial$include-nav-entities.adoc[tags="supported-regions"] 
 //Nav step
 include::partial$include-nav-entities.adoc[tags="open-insights"]
-+
-*Anypoint Insights* provides separate sets of charts for your deployment environments You can view and filter chart data across your deployments within the selected environment, and you can open more detailed data on any deployment listed in the *Entities List*.
 . Set your environment, such as Design, Production, and Sandbox, using the dropdown menu below *Anypoint Insights*. 
 //+
 //ADD GRAPHIC?
 . Filter data, as needed.
 +
 For guidance, see <<filter>>.
+. To get data on a specific deployment:
+.. Click the its name in *Entities List*.
+.. Click *View Entity Metrics* in the overview of the selected deployment, for example:
++
+image::insights-entity-clicked.png["Overview of a deployment's metrics"]
+.. Review metrics in the deployment's dashboards, for example: 
++
+image::insights-deployment-charts.png["Deployment dashboard"]
 
 [[filter]]
 == Filter Monitoring Data Across Deployments
@@ -126,6 +130,11 @@ Use one or more filters to narrow the data in your charts. The filters support o
 //== Auto-Refresh 
 
 ////
++
+*Anypoint Insights* provides separate sets of charts for your deployment environments. You can view and filter chart data across your deployments within the selected environment, and you can open more detailed data on any deployment listed in the *Entities List*.
+//TODO: DELETE include-nav-steps-no-permissions.adoc? 
+//include::partial$include-nav-steps-no-permissions.adoc[]
+
 === Apply Search Parameters
 
 include::partial$include-nav-steps-no-permissions.adoc[]
@@ -143,14 +152,12 @@ Note that `requests_counts` and `response_time` are measurements of their respec
 
 //tbd
 
-//TODO_TODO_TODO: IS THIS REALLY NEEDED? IT'S SHOWN IN OVERVIEW.
 [[filter-by-time]]
-=== Filter Monitoring Data by Time Period
+=== Filter Data by Time Period
 
 Use the time period selector to display data points collected for the last given period of time (such as the last 15 or 30 minutes) or over a given date and time range. Use the drop-down in the calendar icon to select the time period to display in a graph. Your setting applies across all traces in the *Anypoint Insights* page, including the Entities List.
 
-If you don't see data in any of the cards, charts, or tables, ensure that you have chosen the appropriate date-time range in the date picker.
-
+If you don't see data in any of the cards, charts, or tables, ensure that you have chosen the appropriate time range in the date picker.
 
 == Understand Summary and Performance Trends for Entities
 
@@ -212,20 +219,25 @@ The following columns appear in the table:
 
 
 [[default-environment]]
-== Change the Default Environment
+== Change the Environment
 
-To change the default environment (such as Production or Sandbox) for Anypoint Monitoring charts:
+You can change the environment (such as Production or Sandbox) for charts and set an environment that Anypoint Monitoring displays by default.
 
-. In Anypoint Monitoring, click your profile icon, and select the name of your profile, for example:
-//+
-//graphic here
+. Open Anypoint Monitoring. 
+. Set a new business group:
+
+* To select an environment without changing the default, use the environment dropdown menu in Anypoint Monitoring, for example:
 +
-This action opens Access Management *Settings*.
-. In Access Management *Settings*, select an environment to use as the default environment for the selected business group. 
-. Return to Anypoint Monitoring to view the new environment default.
+image::insights-environment-selector.png["Environment selector in Anypoint Monitoring"]
+* To select the default environment displayed in Anypoint Monitoring:
+
+.. Click your profile icon, and select the name of your profile.
+.. In Access Management *Settings*, select an environment as the default deployment environment to view for the selected business group in Anypoint Monitoring.
++
+image::insights-environment-selector.png["Environment selector in Access Management"]
+.. Return to Anypoint Monitoring to view the new business group.
 +
 Refresh the page, if necessary. 
-
 
 [[default-bg]]
 == Change the Business Group
@@ -233,7 +245,7 @@ Refresh the page, if necessary.
 If you belong to more than one business group, you can change the current business group selection and the default business group to view in Anypoint Monitoring.
 
 [[profile]]
-image::business-group-change.png["Business group selection options"]
+image::insights-business-group-change.png["Business group selection options"]
 
 [calloutlist]
 . Business group selection 
