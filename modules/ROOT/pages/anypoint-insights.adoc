@@ -35,6 +35,7 @@ include::partial$include-nav-entities.adoc[tags="anypoint-regions-useu"]
 * The *Monitoring Viewer* permission to Anypoint Monitoring and the permissions required for viewing apps and APIs (see xref:monitoring::am-permissions.adoc[])
 * A supported version of Mule Runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[])
 
+[[monitor-deployments]]
 == Monitor Your Deployments
 
 Monitor Mule apps and APIs within a selected business group and environment.
@@ -75,7 +76,7 @@ image::insights-entity-clicked.png["Overview of a deployment's metrics"]
 +
 image::insights-deployment-charts.png["Entity dashboard for a deployed app or API"]
 +
-Charts are available in the tabs *Overview*, *Requests*, *Errors*, *JVM*. For descriptions, see <<TODO_TODO_TODO>>.
+Charts are available in the tabs *Overview*, *Requests*, *Errors*, *JVM*. For more information, see <<entity-metrics>>.
 
 [[filter]]
 == Filter Monitoring Data Across Deployments
