@@ -89,7 +89,7 @@ You can narrow the data in Anypoint Insights charts by deployment details, such 
 [[filter-by-data]]
 === Filter Deployment Data
 
-Use one or more filters to narrow the data in your charts. The filters support operators `=` and `IN` (for any matches to a list of items). Multiple filter settings are allowed. For example, this filter returns all Mule apps deployed to CloudHub 2.0: 
+Use one or more filters to narrow the data in your charts. The filters support operators `=` and `IN` (for any matches to a list of items). Multiple filter settings are allowed. For example, this filter returns Mule apps deployed to CloudHub 2.0: 
 
 ----
 entity_type = 'APP' deployment_type = 'CLOUDHUB2'
