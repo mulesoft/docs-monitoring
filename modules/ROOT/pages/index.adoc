@@ -26,16 +26,17 @@ include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 ** <<alerts>>
 ** <<logging>>
 ** <<data-storage-retention>>
-** <<functional-monitoring>> 
 ** <<insights>>: Built-in dashboards with metrics across and within Mule app and API deployments
+** <<functional-monitoring>>: Anypoint Monitoring provides a link to this feature in Anypoint Platform.
 
 * https://ca1.mulesoft.com/monitoring[Canada (CA)] and https://ja1.mulesoft.com/monitoring[Japan (JP)] regions:
 ** <<insights>>: Get metrics across and within Mule app and API deployments from charts in built-in dashboards.
-** <<functional-monitoring>>
+** <<functional-monitoring>>: Anypoint Monitoring provides a link to this feature in Anypoint Platform.
+
+Anypoint Monitoring also provides a link to from all regions. 
 
 //TODO_TODO_TODO: WHAT ABOUT GOV CLOUD AND PCE?
-
-Feature availability also depends on your <<billing, subscription package or plan>>.
+Feature availability also depends on your <<billing, subscription package or plan>>. 
 
 //TODO_TODO_TODO: VERIFY LINK
 For more information, see xref:hosting-home::index.adoc##control-plane-hosting-options[Control Plane Hosting Options].
