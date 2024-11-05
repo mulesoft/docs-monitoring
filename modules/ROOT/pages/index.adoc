@@ -29,7 +29,7 @@ include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 ** <<insights>>: Built-in dashboards with metrics across and within Mule app and API deployments
 ** <<functional-monitoring>>: Anypoint Monitoring provides a link to this feature.
 
-* https://ca1.mulesoft.com/monitoring[Canada (CA) Cloud] and https://ja1.mulesoft.com/monitoring[Japan (JP) Cloud] regions:
+* https://ca1.mulesoft.com/monitoring[Canada Cloud] and https://ja1.mulesoft.com/monitoring[Japan Cloud] regions:
 ** <<insights>>: Get metrics across and within Mule app and API deployments from charts in built-in dashboards.
 ** <<functional-monitoring>>: Anypoint Monitoring provides a link to this feature.
 
