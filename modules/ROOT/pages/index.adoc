@@ -33,8 +33,6 @@ include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 ** <<insights>>: Get metrics across and within Mule app and API deployments from charts in built-in dashboards.
 ** <<functional-monitoring>>: Anypoint Monitoring provides a link to this feature in Anypoint Platform.
 
-Anypoint Monitoring also provides a link to from all regions. 
-
 //TODO_TODO_TODO: WHAT ABOUT GOV CLOUD AND PCE?
 Feature availability also depends on your <<billing, subscription package or plan>>. 
 
