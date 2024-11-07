@@ -18,7 +18,8 @@ of issues (MTTI).
 [[features]]
 == Monitoring Features by Anypoint Platform Region
 
-Anypoint Monitoring is available multiple Anypoint Platform control plane regions. 
+//TODO_TODO_TODO: "multiple" or "all"
+Anypoint Monitoring is available in multiple control plane regions that host Anypoint Platform. 
 include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 
 * https://anypoint.mulesoft.com/monitoring[US Cloud] and https://eu1.anypoint.mulesoft.com/monitoring[EU Cloud] regions:
