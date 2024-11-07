@@ -16,11 +16,13 @@ of issues (MTTI).
 * Store and search log data at scale.
 
 [[features]]
-== Monitoring Features by Anypoint Platform Region
+== Monitoring Features by Control Plane Region
 
 //TODO_TODO_TODO: "multiple" or "all"
-Anypoint Monitoring is available in multiple control plane regions that host Anypoint Platform. 
-include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
+Anypoint Monitoring is available in multiple control plane regions that host Anypoint Platform.
+
+//TODO_TODO_TODO: WHAT ABOUT GOV CLOUD AND PCE?
+Feature availability depends on your region and <<billing, billing package or plan>>. include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 
 * https://anypoint.mulesoft.com/monitoring[US Cloud] and https://eu1.anypoint.mulesoft.com/monitoring[EU Cloud]:
 ** <<dashboards>>: Get metrics on individual deployments from charts in built-in and custom dashboards. 
@@ -35,11 +37,9 @@ include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 ** <<insights>>
 ** <<functional-monitoring>>
 
-//TODO_TODO_TODO: WHAT ABOUT GOV CLOUD AND PCE?
-Feature availability also depends on your <<billing, subscription package or plan>>. 
 
 //TODO_TODO_TODO: VERIFY LINK
-For more information, see xref:hosting-home::index.adoc##control-plane-hosting-options[Control Plane Hosting Options].
+For more information Anypoint Platform control plane regions, see xref:hosting-home::index.adoc##control-plane-hosting-options[Control Plane Hosting Options].
 
 [[insights]]
 === Anypoint Insights Dashboards
