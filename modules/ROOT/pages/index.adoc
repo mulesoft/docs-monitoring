@@ -26,7 +26,7 @@ Feature availability depends on your region and <<billing, billing package or pl
 include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 
 * https://anypoint.mulesoft.com/monitoring[US Cloud] and https://eu1.anypoint.mulesoft.com/monitoring[EU Cloud]:
-** <<dashboards>>: Get metrics on individual deployments from charts in built-in and custom dashboards. 
+** <<dashboards>> 
 ** <<alerts>>
 ** <<logging>>
 ** <<data-storage-retention>>
