@@ -22,7 +22,7 @@ of issues (MTTI).
 Anypoint Monitoring is available in multiple control plane regions that host Anypoint Platform. 
 include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 
-* https://anypoint.mulesoft.com/monitoring[US Cloud] and https://eu1.anypoint.mulesoft.com/monitoring[EU Cloud] regions:
+* https://anypoint.mulesoft.com/monitoring[US Cloud] and https://eu1.anypoint.mulesoft.com/monitoring[EU Cloud]:
 ** <<dashboards>>: Get metrics on individual deployments from charts in built-in and custom dashboards. 
 ** <<alerts>>
 ** <<logging>>
@@ -31,7 +31,7 @@ include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 ** <<functional-monitoring>> 
 
 
-* https://ca1.mulesoft.com/monitoring[Canada Cloud] and https://ja1.mulesoft.com/monitoring[Japan Cloud] regions:
+* https://ca1.mulesoft.com/monitoring[Canada Cloud] and https://ja1.mulesoft.com/monitoring[Japan Cloud]:
 ** <<insights>>
 ** <<functional-monitoring>>
 
