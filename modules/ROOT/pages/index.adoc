@@ -26,12 +26,13 @@ include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 ** <<alerts>>
 ** <<logging>>
 ** <<data-storage-retention>>
-** <<insights>>: Built-in dashboards with metrics across and within Mule app and API deployments
-** <<functional-monitoring>>: Anypoint Monitoring provides a link to this feature.
+** <<insights>>
+** <<functional-monitoring>> 
+
 
 * https://ca1.mulesoft.com/monitoring[Canada Cloud] and https://ja1.mulesoft.com/monitoring[Japan Cloud] regions:
-** <<insights>>: Get metrics across and within Mule app and API deployments from charts in built-in dashboards.
-** <<functional-monitoring>>: Anypoint Monitoring provides a link to this feature.
+** <<insights>>
+** <<functional-monitoring>>
 
 //TODO_TODO_TODO: WHAT ABOUT GOV CLOUD AND PCE?
 Feature availability also depends on your <<billing, subscription package or plan>>. 
@@ -127,7 +128,8 @@ See xref:tools.adoc[Tools].
 
 Monitor APIs and endpoints at scheduled intervals. Receive reports about whether tests pass or fail, and view statistics about API and endpoint performance.
 
-See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring in Anypoint Monitoring].
+See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring in Anypoint Monitoring]. 
+
 
 [[billing]]
 == Anypoint Monitoring Packages and Plans
