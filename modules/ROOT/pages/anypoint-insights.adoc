@@ -71,15 +71,20 @@ For guidance, see <<filter-by-data>>.
 .. Find and click its name in *Entities List*.
 .. Click *View Entity Metrics*, for example:
 +
-image::insights-entity-clicked.png["Overview of a deployment's metrics"]
-.. Optionally, change the time period to capture in your charts for the selected entity.
-+
-By default, the time period matches the time period selected in charts in the *Anypoint Insights* overview (see <<filter-by-time>>).
+image::insights-entity-clicked.png["Overview of a deployment metrics"]
 .. Review metrics in the charts for the entity, for example: 
 +
 image::insights-deployment-charts.png["Entity dashboard for a deployed app or API"]
+
+[calloutlist]
+. Details page for an application or API
+. Charts are available in the tabs *Overview*, *Requests*, *Errors*, *JVM*. For more information, see <<entity-metrics>>.
+. Selector for the time range covered by the charts 
 +
-Charts are available in the tabs *Overview*, *Requests*, *Errors*, *JVM*. For more information, see <<entity-metrics>>.
+You can change the time period for your detail charts. By default, the period matches the time period selected for cross-entity charts in the *Anypoint Insights* overview page.
+. Selector for auto-refresh interval, displayed when auto-refresh is enabled
++
+You can change the auto-refresh interval for your detail charts. By default, the interval matches the interval selected for cross-entity charts in the *Anypoint Insights* overview page.
 
 [[filter]]
 == Filter Monitoring Data Across Deployments
