@@ -81,10 +81,10 @@ image::insights-deployment-charts.png["Entity dashboard for a deployed app or AP
 . Charts are available in the tabs *Overview*, *Requests*, *Errors*, *JVM*. For more information, see <<entity-metrics>>.
 . Selector for the time range covered by the charts 
 +
-You can change the time period for your detail page. By default, the period matches the time period selected for cross-entity charts in the *Anypoint Insights* overview page.
+You can change the time period for your detail page. By default, the period matches the time period selected for cross-entity charts in the *Anypoint Insights* overview.
 . Selector for auto-refresh interval, displayed when auto-refresh is enabled
 +
-You can change the auto-refresh interval for your detail page. By default, the interval matches the interval selected for cross-entity charts in the *Anypoint Insights* overview page.
+You can change the auto-refresh interval for your detail page. By default, the interval matches the interval selected for cross-entity charts in the *Anypoint Insights* overview.
 
 [[filter]]
 == Filter Monitoring Data Across Deployments
@@ -142,7 +142,7 @@ entity_response_status = 'OK'
 [[filter-by-time]]
 === Filter Data by Time Period
 
-Use the time period selector (<<monitor-deployments, see item 6>>) to display data points collected for the last given period of time (such as the last 15 or 30 minutes) or over a given date and time range. Your setting applies across all data in *Anypoint Insights* overview page, including *Entities List*.
+Use the time period selector (<<monitor-deployments, see item 6>>) to display data points collected for the last given period of time (such as the last 15 or 30 minutes) or over a given date and time range. Your setting applies across all data in *Anypoint Insights* overview, including *Entities List*.
 
 If you don't see data on the page, check that the selected time range is correct.
 
