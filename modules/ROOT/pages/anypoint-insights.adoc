@@ -81,10 +81,10 @@ image::insights-deployment-charts.png["Entity dashboard for a deployed app or AP
 . Charts are available in the tabs *Overview*, *Requests*, *Errors*, *JVM*. For more information, see <<entity-metrics>>.
 . Selector for the time range covered by the charts 
 +
-You can change the time period for your detail charts. By default, the period matches the time period selected for cross-entity charts in the *Anypoint Insights* overview page.
+You can change the time period for your detail page. By default, the period matches the time period selected for cross-entity charts in the *Anypoint Insights* overview page.
 . Selector for auto-refresh interval, displayed when auto-refresh is enabled
 +
-You can change the auto-refresh interval for your detail charts. By default, the interval matches the interval selected for cross-entity charts in the *Anypoint Insights* overview page.
+You can change the auto-refresh interval for your detail page. By default, the interval matches the interval selected for cross-entity charts in the *Anypoint Insights* overview page.
 
 [[filter]]
 == Filter Monitoring Data Across Deployments
