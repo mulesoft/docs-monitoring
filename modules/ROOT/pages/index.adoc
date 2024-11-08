@@ -19,25 +19,23 @@ of issues (MTTI).
 == Monitoring Features by Control Plane Region
 
 //TODO_TODO_TODO: "multiple" or "all"
-Anypoint Monitoring is available in multiple control plane regions that host Anypoint Platform.
+Anypoint Monitoring is available in multiple control plane regions that host Anypoint Platform. 
 
-//TODO_TODO_TODO: WHAT ABOUT GOV CLOUD AND PCE?
-Feature availability depends on your region and <<billing, billing package or plan>>. 
+//TODO_TODO_TODO: WHAT ABOUT GOV CLOUD AND PCE? 
 include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 
-* https://anypoint.mulesoft.com/monitoring[US Cloud] and https://eu1.anypoint.mulesoft.com/monitoring[EU Cloud]:
-** <<dashboards>> 
+* https://anypoint.mulesoft.com/monitoring[US Cloud] and https://eu1.anypoint.mulesoft.com/monitoring[EU Cloud] (Feature availability depends on your <<billing, billing package or plan>>):
+
+** <<dashboards>>
 ** <<alerts>>
-** <<logging>>
-** <<data-storage-retention>>
-** <<insights>>
-** <<functional-monitoring>> 
-
-
-* https://ca1.mulesoft.com/monitoring[Canada Cloud] and https://ja1.mulesoft.com/monitoring[Japan Cloud]:
-** <<insights>>
+** <<logging>> 
+** <<insights>> (Beta)
 ** <<functional-monitoring>>
 
+* https://ca1.platform.mulesoft.com/monitoring[Canada Cloud] and https://jp1.platform.mulesoft.com/monitoring[Japan Cloud] (Only Starter package features are available at this time):
+
+** <<insights>> 
+** <<functional-monitoring>> 
 
 //TODO_TODO_TODO: VERIFY LINK
 For more information Anypoint Platform control plane regions, see xref:hosting-home::index.adoc##control-plane-hosting-options[Control Plane Hosting Options].
@@ -81,10 +79,7 @@ See xref:alerts.adoc[Alerts].
 Manage logs and log data for your deployments with these logging features:
 
 * <<log-search>>
-* <<data-storage-retention>>
 * <<raw-data-downloads>>
-
-include::
 
 [[log-search]]
 ==== Log Search
@@ -99,16 +94,6 @@ The log aggregator system holds raw operational data and records events that occ
 
 See xref:logs.adoc[Logs].
 
-//TODO_TODO_TODO: IS THIS CORRECT?
-[[data-storage-retention]]
-==== Data Storage and Retention
-
-Data storage and retention limits are determined by your pricing plan.
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvLimits]
-
-include::reuse::partial$billing/pricing.adoc[tag=dataRetentionMonitoring]
-
-For complete details about pricing, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
 
 //TODO_TODO_TODO: IS THIS CORRECT?
 [[raw-data-downloads]]
@@ -131,6 +116,17 @@ See xref:tools.adoc[Tools].
 Monitor APIs and endpoints at scheduled intervals. Receive reports about whether tests pass or fail, and view statistics about API and endpoint performance.
 
 See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring in Anypoint Monitoring]. 
+
+//Rajesh says to retain data-storage-retention
+[[data-storage-retention]]
+=== Data Storage and Retention
+
+Data storage and retention limits are determined by your pricing plan.
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvLimits]
+
+include::reuse::partial$billing/pricing.adoc[tag=dataRetentionMonitoring]
+
+For complete details about pricing, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
 
 
 [[billing]]

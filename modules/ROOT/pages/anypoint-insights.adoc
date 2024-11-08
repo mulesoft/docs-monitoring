@@ -49,8 +49,8 @@ image::insights.png["Anypoint Insights UI"]
 . <<filter, Filters>> to narrow the data in charts
 . Performance <<charts-performance, metrics and trends>> across your Mule apps and APIs
 . <<entities-list, List of your Mule apps and APIs>>, which you can click to display charts on specific deployments
-. Selector for the time range covered by the charts 
-. Selector for auto-refresh interval, displayed when auto-refresh is enabled
+. Selector for the time range covered by the charts (This selector is available for cross-entity charts in the *Anypoint Insights* overview and the charts for entities selected from the *Entities List*.)
+. Selector for auto-refresh interval, displayed when auto-refresh is enabled (This selector is available for cross-entity charts in the *Anypoint Insights* overview and the charts for entities selected from the *Entities List*.) 
 
 To review metrics:
 
@@ -63,7 +63,7 @@ include::partial$include-nav-entities.adoc[tags="open-insights"]
 For guidance, see <<change-environment>>.
 . Set the time period to capture in your charts.
 +
-For guidance, see <<filter-by-time>>
+For guidance, see <<filter-by-time>>.
 . Filter the deployment data in the charts, as needed, to focus on areas of interest.
 +
 For guidance, see <<filter-by-data>>.
@@ -72,7 +72,10 @@ For guidance, see <<filter-by-data>>.
 .. Click *View Entity Metrics*, for example:
 +
 image::insights-entity-clicked.png["Overview of a deployment's metrics"]
-.. Review metrics, for example: 
+.. Optionally, change the time period to capture in your charts for the selected entity.
++
+By default, the time period matches the time period selected in charts in the *Anypoint Insights* overview (see <<filter-by-time>>).
+.. Review metrics in the charts for the entity, for example: 
 +
 image::insights-deployment-charts.png["Entity dashboard for a deployed app or API"]
 +
@@ -193,7 +196,7 @@ image::insights-default-selector.png["Default selector in Access Management"]
 Refresh the page, if necessary. 
 
 //H2: REFERENCES
-== Chart Data Reference
+== Chart Reference
 
 Understand the data in Anypoint Monitoring:
 
