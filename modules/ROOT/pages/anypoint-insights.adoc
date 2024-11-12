@@ -69,7 +69,7 @@ For guidance, see <<change-environment>>.
 . Set the time period to capture in your charts.
 +
 For guidance, see <<filter-by-time>>.
-. Filter the deployment data in the charts, as needed, to focus on areas of interest.
+. Filter the deployment data to display in the charts, as needed, to focus on areas of interest.
 +
 For guidance, see <<filter-by-data>>.
 . To get additional metrics on a specific app or API:
@@ -149,6 +149,7 @@ entity_response_status = 'OK'
 ----
 |===
 
+`IN` captures exact matches to any comma-separated element in the array.
 
 //  H3: FILTER TIME PERIOD
 [[filter-by-time]]
