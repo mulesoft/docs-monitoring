@@ -180,9 +180,7 @@ To change current or default environment:
 image::insights-environment-selector.png["Environment selector in Anypoint Monitoring"]
 * To select a default environment:
 
-.. Click your profile icon, and select the name of your profile.
-+
-For an example, see <<profile, item 2>> in the example.
+.. Click your profile icon, and select the name of your profile (see <<profile, item 2>> in the example).
 .. In Access Management *Settings*, select an environment as the default environment to view for the selected business group in Anypoint Monitoring, for example: 
 +
 image::insights-default-selector.png["Default selector in Access Management"]
