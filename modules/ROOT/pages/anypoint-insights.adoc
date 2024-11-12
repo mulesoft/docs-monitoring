@@ -10,7 +10,7 @@ Identify and troubleshoot data on your deployments with:
 Monitor response times, error volume, and request volume. Use filters to narrow your results. 
 * Metrics on individual Mule app and API deployments
 +
-Monitor metrics on requests, latency, errors, the JVM, performance, and client apps.
+Monitor metrics on requests, latency, errors, JVM data, performance, and client apps.
 
 [[prereqs]]
 == Before You Begin
@@ -77,8 +77,10 @@ image::insights-entity-clicked.png["Overview of a deployment metrics"]
 image::insights-deployment-charts.png["Entity dashboard for a deployed app or API"]
 
 [calloutlist]
-. Details page for an application or API
-. Charts with detailed metrics are available in the tabs specific to <<entity-metrics-apps, Mule apps>> and <<entity-metrics-apis, API implementations>>.
+. Details page for a Mule app or API implementation
+. Charts with detailed metrics
++
+Detailed metrics are available in tabs specific to <<entity-metrics-apps, Mule apps>> and <<entity-metrics-apis, API implementations>>.
 . Selector for the time range covered by the charts 
 +
 You can change the time period for your detail page. By default, the period matches the time period selected for cross-entity charts in the *Anypoint Insights* overview.
