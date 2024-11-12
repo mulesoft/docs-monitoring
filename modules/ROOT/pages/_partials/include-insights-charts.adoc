@@ -212,8 +212,6 @@ URL of deployed API integration
 Runtime version::
 Mule Gateway or Flex Gateway runtime version used by the API implementation 
 
-//  shared header metric
-include::partial$include-insights-charts.adoc[tag=entity-replicas]
 
 //TODO_TODO_TODO: What if empty but seems to be running?
 API Instance ID::
