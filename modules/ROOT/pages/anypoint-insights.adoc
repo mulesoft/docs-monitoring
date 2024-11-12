@@ -224,6 +224,8 @@ Refresh the page, if necessary.
 [[download-chart-data]]
 == Download Chart Data
 
+After opening a set of charts in Anypoint Insights, you can download metrics from charts that provide a download menu from a vertical ellipsis on the top-right corner.
+
 . Click the vertical ellipsis on a chart. 
 . Select the file format for your metrics:
 
