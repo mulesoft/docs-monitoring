@@ -159,7 +159,7 @@ entity_response_status = 'OK'
 [[filter-by-time]]
 === Filter Data by Time Period
 
-Use the time period selector (<<dashboard-overview, item 6 in this dashboard>>) to display data points collected for a given time period (such as the last 15 minutes or the last 24 hours). Your setting applies across all data in *Anypoint Insights* overview, including *Entities List*.
+Use the time period selector (<<dashboard-overview, item 6>> in the example) to display data points collected for a given time period (such as the last 15 minutes or the last 24 hours). Your setting applies across all data in *Anypoint Insights* overview, including the *Entities List*.
 
 If you don't see data on the page, check that the selected time range is correct.
 
@@ -175,14 +175,14 @@ To change current or default environment:
 . Open Anypoint Monitoring. 
 . Set a new environment:
 
-* To select an environment without changing the default, use the environment dropdown menu in Anypoint Monitoring, for example:
+* To select an environment without changing the default, use the environment selector in Anypoint Monitoring, for example:
 +
 image::insights-environment-selector.png["Environment selector in Anypoint Monitoring"]
-* To select the default environment to display in Anypoint Monitoring:
+* To select a default environment:
 
 .. Click your profile icon, and select the name of your profile.
 +
-For an example, <<profile, see 2>> in the image.
+For an example, see <<profile, item 2>> in the example.
 .. In Access Management *Settings*, select an environment as the default environment to view for the selected business group in Anypoint Monitoring, for example: 
 +
 image::insights-default-selector.png["Default selector in Access Management"]
@@ -213,7 +213,7 @@ To change the business group setting:
 * To select a business group without changing the default, use the business group selector in Anypoint Insights. 
 * To select a default business group:
 
-.. Click your profile icon, and select the name of your profile (<<profile, see item 2>> in the example).
+.. Click your profile icon, and select the name of your profile (see <<profile, item 2>> in the example).
 .. In Access Management *Settings*, select a business group to use as the default, for example:
 +
 image::insights-default-selector.png["Default selector in Access Management"]
