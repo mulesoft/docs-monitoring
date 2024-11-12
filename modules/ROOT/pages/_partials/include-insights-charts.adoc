@@ -18,8 +18,6 @@ URL of this Mule app
 Runtime::
 Mule runtime engine version of this Mule app
 
-//  shared header metric
-include::partial$include-insights-charts.adoc[tag=entity-replicas]
 
 Replicas::
 Virtual core fraction and count of this Mule app, for example, *0.1 vCores x 1* (= 10% of 1 vCore)
