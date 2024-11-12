@@ -249,16 +249,21 @@ Number of API policy violations
 
 Request Volume::
 Request count over time
-//can download as CSV, XLS
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Failed Requests::
 Unsuccessful request count over time
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //TODO_TODO: WHICH POLICIES, which APIs (incorporated into a Mule API Gateway?), and WHAT TRIGGERS the violation (SATHISH)
 //TODO: For information about Mule gateway policies, see TODO
-//TODO: TBD: can download as CSV, XLS
+//TODO: TBD: can you download as CSV, XLS??
 Policy Violations::
-API policy violation count over time for this API implementation
+API policy violation count over time
+//+
+//include::partial$include-insights-charts.adoc[tag="download-as"]
 //end::api-detail-overview[]
 //-------------------------------------------------------------//
 //
@@ -266,21 +271,19 @@ API policy violation count over time for this API implementation
 // API DETAILS: Requests tab
 //-------------------------
 //tag::api-detail-requests[]
-//  can download as CSV, XLS
 Request Volume by HTTP Method::
-TODO: 
+Number of requests over time, grouped by the HTTP method used
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
-//  can download as CSV, XLS
 Request Volume by Response Code::
-TODO: 
+Number of requests over time, grouped by the response code (such as *2xx*)
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
-//  can download as CSV, XLS
+// TODO: capitalize "paths" -> "Paths" and "N" to "20" if that's the limit (SATHISH)
 Request Volume by Top N paths::
-TODO: 
+Number of requests over time from endpoints with the most requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //end::api-detail-requests[]
@@ -290,14 +293,25 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 // API DETAILS: Errors tab
 //-------------------------
 //tag::api-detail-errors[]
+// TODO: downloads available?
 Failed Requests Volume by HTTP Method::
-TODO: 
+Number of unsuccessful requests over time, grouped by the HTTP method used
+//+
+//include::partial$include-insights-charts.adoc[tag="download-as"]
 
+// TODO: downloads available?
 Failed Requests Volume by Response Code::
-TODO: 
+Number of unsuccessful requests over time, grouped by the response code (such as *2xx*)
+//+
+//include::partial$include-insights-charts.adoc[tag="download-as"]
 
+// TODO: capitalize "paths" -> "Paths" and "N" to "20" if that's the limit (SATHISH)
+// TODO: downloads available?
 Failed Requests by Top N paths::
-TODO: 
+Number of unsuccessful requests over time from endpoints with the most requests
+//+
+//include::partial$include-insights-charts.adoc[tag="download-as"]
+
 //end::api-detail-errors[]
 //
 //
