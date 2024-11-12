@@ -5,12 +5,12 @@ Monitor performance data and issues across your deployed Mule apps and APIs (_en
 
 Identify and troubleshoot data on your deployments with:
 
-* Metrics across multiple Mule apps and APIs
+* Metrics across multiple Mule app and API deployments
 +
 Monitor response times, error volume, and request volume. Use filters to narrow your results. 
-* Metrics on individual Mule apps and APIs
+* Metrics on individual Mule app and API deployments
 +
-Review requests, latency, errors, and JVM data.
+Monitor metrics on requests, latency, errors, the JVM, performance, and client apps.
 
 [[prereqs]]
 == Before You Begin
