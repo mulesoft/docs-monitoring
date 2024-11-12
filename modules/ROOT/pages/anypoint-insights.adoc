@@ -1,5 +1,5 @@
 = Monitor Deployments with Anypoint Insights
-:page-notice-banner-message: For Japan (JP) and Canada (CA) instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU instances, Anypoint Insights remains a Beta release available only in the Advanced package at this time.
+:page-notice-banner-message: For Japan (JP) and Canada (CA) instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU instances, Anypoint Insights remains a Beta release available in the Advanced package only at this time.
 :selector-all-dashboards: This selector is available to all Insights dashboards.
 
 Monitor performance data and issues across your deployed Mule apps and API implementations (_entities_) with Anypoint Insights, in Anypoint Monitoring. 
