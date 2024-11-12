@@ -40,7 +40,7 @@ To create a basic alert:
 +
 Unique and meaningful name for the alert
 +
-*Name* is limited to 256 characters.
+*Name* is limited to 40 characters.
 * *Severity level*
 +
 Severity of the alert: *Critical*, *Warning*, or *Info*
