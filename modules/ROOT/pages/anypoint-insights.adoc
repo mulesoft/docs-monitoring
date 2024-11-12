@@ -86,8 +86,130 @@ You can change the time period for your detail page. By default, the period matc
 +
 You can change the auto-refresh interval for your detail page. By default, the interval matches the interval selected for cross-entity charts in the *Anypoint Insights* overview.
 
+//
+//H2: FILTER DATA
+[[filters]]
+== Filter Monitoring Data Across Deployments
+
+You can narrow the data in Anypoint Insights charts by deployment details, such as the deployment type, and by time range.
+
+* <<filter-by-data>>
+* <<filter-by-time>>
+
+//  H3: FILTER DEPLOYMENT DATA
+[[filter-by-data]]
+=== Filter Deployment Data
+
+Use one or more filters to narrow the data in your charts. The filters support operators `=` and `IN` (for any matches to a list of items). Multiple filter settings are allowed. For example, this filter returns Mule apps deployed to CloudHub 2.0: 
+
+----
+entity_type = 'APP' deployment_type = 'CLOUDHUB2'
+---- 
+
+This table lists supported filters:
+
+[%header,cols="10a,80a,10a"]
+|===
+| Filter | Operators | Description
+
+|`deployment_type`
+|`=`, `IN`
+|Filter by deployment target, CloudHub 2.0 (*CLOUDHUB2*) or Runtime Fabric (*RTF*), for example:
+----
+deployment_type IN ['CLOUDHUB2', 'RTF']
+----
+
+|`entity_type`
+|`=`, `IN`
+|Filter by deployment type (*APP* or *API*), for example:
+----
+entity_type = 'APP'`
+----
+
+|`entity`
+|`=`, `IN`
+|Filter by specific app or API deployments, for example:
+----
+entity IN ['99aea888-77de-6e06-5c55-d1234de56789', '09f99999-888d-7b77-6da5-bebd43210fc1']
+----
+
+|`entity_response_status`
+|`=`
+|Filter by the response code (*OK* or *FAILED*), for example:
+----
+entity_response_status = 'OK'
+----
+|===
+
+
+//  H3: FILTER TIME PERIOD
+[[filter-by-time]]
+=== Filter Data by Time Period
+
+Use the time period selector (<<monitor-deployments, see item 6>>) to display data points collected for the last given period of time (such as the last 15 or 30 minutes) or over a given date and time range. Your setting applies across all data in *Anypoint Insights* overview, including *Entities List*.
+
+If you don't see data on the page, check that the selected time range is correct.
+
+//
+//H2: CHANGE ENVIRONMENT
+[[change-environment]]
+== Change the Environment
+
+Anypoint Monitoring charts provide metrics on a specific environment (such as Production or Sandbox). 
+
+To change current or default environment:
+
+. Open Anypoint Monitoring. 
+. Set a new environment:
+
+* To select an environment without changing the default, use the environment dropdown menu in Anypoint Monitoring, for example:
++
+image::insights-environment-selector.png["Environment selector in Anypoint Monitoring"]
+* To select the default environment to display in Anypoint Monitoring:
+
+.. Click your profile icon, and select the name of your profile.
++
+For an example, <<profile, see 2>> in the image.
+.. In Access Management *Settings*, select an environment as the default environment to view for the selected business group in Anypoint Monitoring, for example: 
++
+image::insights-default-selector.png["Default selector in Access Management"]
+.. Return to Anypoint Monitoring to check for the new business group setting.
++
+Refresh the page, if necessary. 
+
+//
+//H2: CHANGE BUSINESS GROUP
+[[change-bg]]
+== Change the Business Group
+
+Anypoint Monitoring displays metrics for deployments in a specific business group. If you belong to more than one business group, you can change the current business group selection and the business group that Anypoint Monitoring selects by default.
+
+//do not change the order of numbers in the graphic or calloutlist
+[[profile]]
+image::insights-business-group-change.png["Business group selection options"]
+
+[calloutlist]
+. Business group selection 
+. User profile, for selecting defaults
+
+To change the business group setting: 
+
+. Open Anypoint Monitoring. 
+. Set a new business group:
+
+* To select a business group without changing the default, use the business group dropdown menu in Anypoint Monitoring. 
+* To select the default business group displayed in Anypoint Monitoring:
+
+.. Click your profile icon, and select the name of your profile (<<profile, see 2>> in the image).
+.. In Access Management *Settings*, select a business group to use as the default, for example:
++
+image::insights-default-selector.png["Default selector in Access Management"]
+.. Return to Anypoint Monitoring to check for the new default setting.
++
+Refresh the page, if necessary. 
+
 //H2: REFERENCES
-== Reference for Insights Charts
+== Insights Chart Reference
 
 Understand the monitoring data in Anypoint Insights charts:
 
@@ -117,7 +239,10 @@ Entities with Errors::
 Count of entities that have an error that matches your current search conditions in the selected date and time range.
 include::partial$include-insights-charts.adoc[tags="data-scope"] 
 +
-Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
+Errors are dependent on the type of deployment. 
+
+* For API implementations, an error is based on the HTTP status code (for example, `404` or `502`). 
+* For Mule apps, an error is based on the response status (for example, `FAILED`).
 
 Total Requests::
 Total request volume for entities that match your current search conditions in the selected date and time range.
@@ -292,129 +417,6 @@ Charts with client Application metrics are available in the *Client Applications
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tags="api-detail-client-apps"]
-
-//
-//H2: FILTER DATA
-[[filters]]
-== Filter Monitoring Data Across Deployments
-
-You can narrow the data in Anypoint Insights charts by deployment details, such as the deployment type, and by time range.
-
-* <<filter-by-data>>
-* <<filter-by-time>>
-
-//  H3: FILTER DEPLOYMENT DATA
-[[filter-by-data]]
-=== Filter Deployment Data
-
-Use one or more filters to narrow the data in your charts. The filters support operators `=` and `IN` (for any matches to a list of items). Multiple filter settings are allowed. For example, this filter returns Mule apps deployed to CloudHub 2.0: 
-
-----
-entity_type = 'APP' deployment_type = 'CLOUDHUB2'
----- 
-
-This table lists supported filters:
-
-[%header,cols="10a,80a,10a"]
-|===
-| Filter | Operators | Description
-
-|`deployment_type`
-|`=`, `IN`
-|Filter by deployment target, CloudHub 2.0 (*CLOUDHUB2*) or Runtime Fabric (*RTF*), for example:
-----
-deployment_type IN ['CLOUDHUB2', 'RTF']
-----
-
-|`entity_type`
-|`=`, `IN`
-|Filter by deployment type (*APP* or *API*), for example:
-----
-entity_type = 'APP'`
-----
-
-|`entity`
-|`=`, `IN`
-|Filter by specific app or API deployments, for example:
-----
-entity IN ['99aea888-77de-6e06-5c55-d1234de56789', '09f99999-888d-7b77-6da5-bebd43210fc1']
-----
-
-|`entity_response_status`
-|`=`
-|Filter by the response code (*OK* or *FAILED*), for example:
-----
-entity_response_status = 'OK'
-----
-|===
-
-
-//  H3: FILTER TIME PERIOD
-[[filter-by-time]]
-=== Filter Data by Time Period
-
-Use the time period selector (<<monitor-deployments, see item 6>>) to display data points collected for the last given period of time (such as the last 15 or 30 minutes) or over a given date and time range. Your setting applies across all data in *Anypoint Insights* overview, including *Entities List*.
-
-If you don't see data on the page, check that the selected time range is correct.
-
-//
-//H2: CHANGE ENVIRONMENT
-[[change-environment]]
-== Change the Environment
-
-Anypoint Monitoring charts provide metrics on a specific environment (such as Production or Sandbox). 
-
-To change current or default environment:
-
-. Open Anypoint Monitoring. 
-. Set a new environment:
-
-* To select an environment without changing the default, use the environment dropdown menu in Anypoint Monitoring, for example:
-+
-image::insights-environment-selector.png["Environment selector in Anypoint Monitoring"]
-* To select the default environment to display in Anypoint Monitoring:
-
-.. Click your profile icon, and select the name of your profile.
-+
-For an example, <<profile, see 2>> in the image.
-.. In Access Management *Settings*, select an environment as the default environment to view for the selected business group in Anypoint Monitoring, for example: 
-+
-image::insights-default-selector.png["Default selector in Access Management"]
-.. Return to Anypoint Monitoring to check for the new business group setting.
-+
-Refresh the page, if necessary. 
-
-//
-//H2: CHANGE BUSINESS GROUP
-[[change-bg]]
-== Change the Business Group
-
-Anypoint Monitoring displays metrics for deployments in a specific business group. If you belong to more than one business group, you can change the current business group selection and the business group that Anypoint Monitoring selects by default.
-
-//do not change the order of numbers in the graphic or calloutlist
-[[profile]]
-image::insights-business-group-change.png["Business group selection options"]
-
-[calloutlist]
-. Business group selection 
-. User profile, for selecting defaults
-
-To change the business group setting: 
-
-. Open Anypoint Monitoring. 
-. Set a new business group:
-
-* To select a business group without changing the default, use the business group dropdown menu in Anypoint Monitoring. 
-* To select the default business group displayed in Anypoint Monitoring:
-
-.. Click your profile icon, and select the name of your profile (<<profile, see 2>> in the image).
-.. In Access Management *Settings*, select a business group to use as the default, for example:
-+
-image::insights-default-selector.png["Default selector in Access Management"]
-.. Return to Anypoint Monitoring to check for the new default setting.
-+
-Refresh the page, if necessary. 
-
 
 //
 //H2: DATA COLLECTION
