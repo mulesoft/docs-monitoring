@@ -202,7 +202,7 @@ Anypoint Monitoring displays metrics for deployments in a specific business grou
 image::insights-business-group-change.png["Business group selection options"]
 
 [calloutlist]
-. Business group selection 
+. Business group selector 
 . User profile, for selecting defaults
 
 To change the business group setting: 
@@ -210,10 +210,10 @@ To change the business group setting:
 . Open Anypoint Monitoring. 
 . Set a new business group:
 
-* To select a business group without changing the default, use the business group dropdown menu in Anypoint Monitoring. 
-* To select the default business group displayed in Anypoint Monitoring:
+* To select a business group without changing the default, use the business group selector in Anypoint Insights. 
+* To select a default business group:
 
-.. Click your profile icon, and select the name of your profile (<<profile, see 2>> in the image).
+.. Click your profile icon, and select the name of your profile (<<profile, see item 2>> in the example).
 .. In Access Management *Settings*, select a business group to use as the default, for example:
 +
 image::insights-default-selector.png["Default selector in Access Management"]
