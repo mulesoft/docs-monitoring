@@ -1,4 +1,4 @@
-= Monitor Mule Apps and APIs with Anypoint Insights
+= Monitor Deployments with Anypoint Insights
 :page-notice-banner-message: In Japan (JA) and Canada (CA) instances of Anypoint Platform, Anypoint Monitoring includes only Anypoint Insights at this time.
 
 Monitor performance data and issues across your deployed Mule apps and APIs (_entities_) with Anypoint Insights, in Anypoint Monitoring. 
@@ -78,7 +78,7 @@ image::insights-deployment-charts.png["Entity dashboard for a deployed app or AP
 
 [calloutlist]
 . Details page for an application or API
-. Charts are available in the tabs *Overview*, *Requests*, *Errors*, *JVM*. For more information, see <<entity-metrics>>.
+. Charts with detailed metrics are available in the tabs specific to <<entity-metrics-apps, Mule apps>> and <<entity-metrics-apis, API implementations>>.
 . Selector for the time range covered by the charts 
 +
 You can change the time period for your detail page. By default, the period matches the time period selected for cross-entity charts in the *Anypoint Insights* overview.
@@ -86,7 +86,216 @@ You can change the time period for your detail page. By default, the period matc
 +
 You can change the auto-refresh interval for your detail page. By default, the interval matches the interval selected for cross-entity charts in the *Anypoint Insights* overview.
 
-[[filter]]
+//H2: REFERENCES
+== Reference for Insights Charts
+
+Understand the monitoring data in Anypoint Insights charts:
+
+* <<charts-performance>>
+* <<entities-list>>
+* <<entity-metrics-apps>>
+* <<entity-metrics-apis>>
+
+//H3: PERFORMANCE
+[[charts-performance]]
+=== Performance Metrics and Trends
+
+*Performance Metrics* and *Performance Trends* provide insights across your deployments:
+
+* <<performance-metrics-overview>>
+* <<performance-trends-overview>>
+
+//  H4: Performance Metrics
+[[performance-metrics-overview]]
+==== Performance Metrics
+
+Total Entities::
+Total number of entities that match your currently selected time range and any query <<filters, filters>>.
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+Entities with Errors::
+Count of entities that have an error that matches your current search conditions in the selected date and time range.
+include::partial$include-insights-charts.adoc[tags="data-scope"] 
++
+Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
+
+Total Requests::
+Total request volume for entities that match your current search conditions in the selected date and time range.
+include::partial$include-insights-charts.adoc[tags="data-scope"] 
+
+Error Rate:: 
+Error rate for entities that match your current search conditions in the selected date and time range. The error rate is calculated using the total number of entity errors divided by the total number of requests for those entities.
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+
+//
+// H4: Performance Trends
+[[performance-trends-overview]]
+==== Performance Trends
+
+Entities with Slow Response Times:: 
+Response time of the top entities that match your current search conditions in the selected date and time range. The top entities are calculated based on the percentile values of their response times (highest response time to lowest response time). The chart uses `P99` as the percentile index by default; however, you can select `P95`, `P90`, or `P75` to use as the percentile index.
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+Error Volume:: 
+Total number of entities that match your current search conditions in the selected date and time range.
+include::partial$include-insights-charts.adoc[tags="data-scope"]
++
+Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
+Request Volume:: 
+The total number of request to entities that match your current search conditions in the selected date and time range. 
+
+//
+//H3: ENTITIES LIST
+[[entities-list]]
+=== Entities List
+
+Anypoint Insights provides a list of deployed Mule apps and APIs (_entities_) that match the selected time period and any query <<filters, filters>>:
+
+Entity Name:: 
+Name of the deployed entity
+
+//TODO_TODO_TODO: Mule Gateway APIs only or other API instance?
+//TODO: SHOULD BE "API" not "Api"
+Entity Type:: 
+Type of entity deployed, such as *API* or *Application*
+
+Request Volume::
+Total number of requests to this entity
+
+Response Time (p99):: 
+Average response time, in milliseconds, for 99% of the requests
++
+Calculation of this metric starts from the lowest response time value, so the time for the remaining, uncounted 1% of responses is likely to be higher than the p99 response time.
+
+Error Rate:: 
+Percentage of requests that resulted in errors 
+
+Deployment Type:: 
+Host for this deployed entity, such as *CloudHub 2.0* or *Runtime Fabric* 
+
+//
+//H3: ENTITY METRICS for APPS (ONLY)
+[[entity-metrics-apps]]
+=== Detailed Metrics for Mule Applications
+
+Anypoint Monitoring provides details on individual Mule apps that are deployed to a supported target.
+
+* <<entity-metrics-app-header>>
+* <<entity-metrics-app-overview>>
+* <<entity-metrics-app-requests>>
+* <<entity-metrics-app-errors>>
+* <<entity-metrics-app-jvm>>
+
+[[entity-metrics-app-header]]
+==== Mule Application Metrics
+
+High-level metrics are available above Anypoint Insights tabs that contain detailed Mule app metrics. 
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tag=app-detail-header]
+
+[[entity-metrics-app-overview]]
+==== Overview Metrics for a Mule Application
+
+Charts with these metrics are available in the *Overview* tab for a Mule app in Anypoint Insights.
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+
+include::partial$include-insights-charts.adoc[tag="app-detail-overview"]
+
+[[entity-metrics-app-requests]]
+==== Request Metrics for a Mule Application
+
+Charts with request metrics are available in the *Requests* tab for a Mule app in Anypoint Insights.
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+
+include::partial$include-insights-charts.adoc[tag="app-detail-requests"]
+
+[[entity-metrics-app-errors]]
+==== Error Metrics for a Mule Application
+
+Charts with error metrics are available in the *Errors* tab for a Mule app in Anypoint Insights.
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+
+include::partial$include-insights-charts.adoc[tag="app-detail-errors"]
+
+[[entity-metrics-app-jvm]]
+==== JVM Metrics for a Mule Application
+
+Charts with JVM metrics are available in the *JVM* tab for a Mule app in Anypoint Insights.
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tag="app-detail-jvm"]
+
+//
+//H3: ENTITY METRICS for APIs (ONLY)
+[[entity-metrics-apis]]
+=== Detailed Metrics for API Implementations
+
+Anypoint Monitoring provides details on individual API implementations that are deployed to a supported target.
+
+* <<entity-metrics-api-header>>
+* <<entity-metrics-api-overview>>
+* <<entity-metrics-api-requests>>
+* <<entity-metrics-api-errors>>
+* <<entity-metrics-api-performance>>
+* <<entity-metrics-api-client-apps>>
+
+[[entity-metrics-api-header]]
+==== API Implementations Metrics
+
+Charts with these metrics are available above Anypoint Insights tabs that contain detailed API implementation metrics.
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tags="api-detail-header"]
+
+[[entity-metrics-api-overview]]
+==== Overview Metrics for an API Implementations 
+
+Charts with overview metrics are available in the *Overview* tab for each API implementation that you can monitor in Anypoint Insights.
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tags="api-detail-requests"]
+
+
+[[entity-metrics-api-requests]]
+==== Request Metrics for API Implementations 
+
+Charts with request metrics are available in the *Requests* tab for each API implementation that you can monitor in Anypoint Insights.
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tags="api-detail-requests"]
+
+[[entity-metrics-api-errors]]
+==== Error Metrics for API Implementations 
+
+Charts with error metrics are available in the *Errors* tab for each API implementation that you can monitor in Anypoint Insights.
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tags="api-detail-errors"]
+
+[[entity-metrics-api-performance]]
+==== Performance Metrics for API Implementations 
+
+Charts with performance metrics are available in the *Performance* tab for each API implementation that you can monitor in Anypoint Insights.
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tags="api-detail-performance"]
+
+[[entity-metrics-api-client-apps]]
+==== Client Application Metrics for API Implementations 
+
+Charts with client Application metrics are available in the *Client Applications* tab for each API implementation that you can monitor in Anypoint Insights. 
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tags="api-detail-client-apps"]
+
+//
+//H2: FILTER DATA
+[[filters]]
 == Filter Monitoring Data Across Deployments
 
 You can narrow the data in Anypoint Insights charts by deployment details, such as the deployment type, and by time range.
@@ -94,6 +303,7 @@ You can narrow the data in Anypoint Insights charts by deployment details, such 
 * <<filter-by-data>>
 * <<filter-by-time>>
 
+//  H3: FILTER DEPLOYMENT DATA
 [[filter-by-data]]
 === Filter Deployment Data
 
@@ -139,6 +349,7 @@ entity_response_status = 'OK'
 |===
 
 
+//  H3: FILTER TIME PERIOD
 [[filter-by-time]]
 === Filter Data by Time Period
 
@@ -146,6 +357,8 @@ Use the time period selector (<<monitor-deployments, see item 6>>) to display da
 
 If you don't see data on the page, check that the selected time range is correct.
 
+//
+//H2: CHANGE ENVIRONMENT
 [[change-environment]]
 == Change the Environment
 
@@ -171,6 +384,8 @@ image::insights-default-selector.png["Default selector in Access Management"]
 +
 Refresh the page, if necessary. 
 
+//
+//H2: CHANGE BUSINESS GROUP
 [[change-bg]]
 == Change the Business Group
 
@@ -200,215 +415,9 @@ image::insights-default-selector.png["Default selector in Access Management"]
 +
 Refresh the page, if necessary. 
 
-//H2: REFERENCES
-== Chart Reference
 
-Understand the data in Anypoint Monitoring:
-
-* <<charts-performance>>
-* <<entities-list>>
-* <<entity-metrics>>
-
-//H3: PERFORMANCE
-[[charts-performance]]
-=== Performance Metrics and Trends
-
-*Performance Metrics* and *Performance Trends* provide data across your deployments:
-
-* <<performance-metrics-overview>>
-* <<performance-trends-overview>>
-
-[[performance-metrics-overview]]
-==== Performance Metrics
-
-Total Entities::
-Total number of entities that match your current search conditions in the selected date and time range.
-
-Entities with Errors::
-Count of entities that have an error that matches your current search conditions in the selected date and time range. 
-+
-Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
-
-Total Requests::
-Total request volume for entities that match your current search conditions in the selected date and time range. 
-
-Error Rate:: 
-Error rate for entities that match your current search conditions in the selected date and time range. The error rate is calculated using the total number of entity errors divided by the total number of requests for those entities.
-
-[[performance-trends-overview]]
-==== Performance Trends
-
-Entities with Slow Response Times:: 
-
-Response time of the top entities that match your current search conditions in the selected date and time range. The top entities are calculated based on the percentile values of their response times (highest response time to lowest response time). The chart uses `P99` as the percentile index by default; however, you can select `P95`, `P90`, or `P75` to use as the percentile index.
-
-Error Volume:: 
-Total number of entities that match your current search conditions in the selected date and time range. 
-+
-Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
-
-Request Volume:: 
-The total number of request to entities that match your current search conditions in the selected date and time range. 
-
-//H3: ENTITIES LIST
-[[entities-list]]
-=== Entities List
-
-Anypoint Insights provides a list of deployed Mule apps and APIs (_entities_) that match the selected time period and filters:
-
-Entity Name:: 
-Name of the entity.
-
-//TODO_TODO_TODO: Mule Gateway APIs only or other API instance?
-Entity Type:: 
-Type of the entity. The value in this column is either `API` or `Application`.
-
-Request Volume::
-Total number of requests to the entity.
-
-P99 Latency:: 
-99% response time latency, calculated in milliseconds. 
-
-Error Rate:: 
-Percentage of requests to the entity that result in errors. 
-
-Deployment Type:: 
-Runtime environment in which the entity is deployed. 
-
-//H3: ENTITY METRICS
-[[entity-metrics]]
-=== Detailed Entity Metrics
-
-Anypoint Insights provides metrics on a specific Mule app and API deployment selected from the *Entities List* in Anypoint Monitoring. 
-
-Type:: 
-Identifies the entity type (Mule app or API)
-
-Status::
-Indicates whether the entity is running. 
-
-URL::
-Provides the URL of the entity
-
-Runtime::
-Provides the Mule Runtime engine version that the entity runs on
-
-Replicas::
-TODO_TODO_TODO
-
-Last Updated::
-TODO_TODO_TODO
-
-Last Updated::
-TODO_TODO_TODO
-
-To get detailed data on an entity, click any of these tabs:
-
-* <<entity-metrics-overview, Overview>> (default)
-* <<entity-metrics-requests, Requests>>
-* <<entity-metrics-errors, Errors>>
-* <<entity-metrics-jvm, JVM>>
-
-[[entity-metrics-overview]]
-==== Overview Metrics
-
-Charts in the *Overview* tab provide metrics on individual entities in Anypoint Monitoring:
-
-Average Latency::
-TODO_TODO_TODOs
-
-//TODO: CHECK P95
-P95 Latency::
-TODO_TODO_TODO
-
-P95 Latency::
-TODO_TODO_TODO
-
-Total Requests Volume::
-TODO_TODO_TODO
-
-Mule Messages Volume::
-TODO_TODO_TODO
-
-Request Latency::
-TODO_TODO_TODO
-
-Request Volume::
-TODO_TODO_TODO
-
-Failed Requests::
-TODO_TODO_TODO
-
-Mule Messages::
-TODO_TODO_TODO
-
-[[entity-metrics-request]]
-==== Request Metrics
-
-Charts in the *Requests* tab provide metrics on requests to an entity in Anypoint Monitoring:
-
-Request Volume:: 
-TODO_TODO_TODO
-you can view by protocol, response time, or "top 20 host" (TODO: WHAT DOEST THAT MEAN?)
-
-Outbound Request Volume:: 
-TODO_TODO_TODO
-
-Top Slowest requests by Path::
-TODO_TODO_TODO
-
-Request Latency by Endpoint::
-TODO_TODO_TODO
-you can view by Inbound and Outbound requests
-
-
-[[entity-metrics-errors]]
-==== Error Metrics
-
-Charts in the *Errors* tab provide metrics on any errors in an entity in Anypoint Monitoring:
-
-Failed Outbound Requests Volume::
-TODO_TODO_TODO
-
-Top 20 Failed Requests by Total Count::
-TODO_TODO_TODO
-
-Top 20 Failed Outbound Requests by Total Count::
-TODO_TODO_TODO
-
-
-[[entity-metrics-jvm]]
-=== JVM Metrics
-
-Charts in the *JVM* tab provide metrics on the JVM for an entity in Anypoint Monitoring:
-
-Old Gen GC Count::
-TODO_TODO_TODO
-
-Old Gen GC Duration::
-TODO_TODO_TODO
-
-Young Gen GC Count::
-TODO_TODO_TODO
-
-Young Gen GC Duration::
-TODO_TODO_TODO
-
-Heap Committed::
-TODO_TODO_TODO
-
-Heap Usage::
-TODO_TODO_TODO
-
-Thread Count::
-TODO_TODO_TODO
-
-Committed Virtual Memory::
-TODO_TODO_TODO
-
-CPU Utilization::
-TODO_TODO_TODO
-
+//
+//H2: DATA COLLECTION
 [[data-collection]]
 == Data Collection Intervals in Anypoint Monitoring Charts
 
@@ -428,33 +437,3 @@ For example, if a chart displays data collected in the last 15 minutes, the char
 [[data-collection-intervals]]
 include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+2]
 
-
-////
-HIDDEN AND MOVED 
-TODO_TODO_TODO: VERIFY THAT THESE WILL BE REMOVED:
-* Request Counts (`request_counts`): Number of requests.
-Example: `COUNT(request_counts) < '40'`
-* Response Time (`response_time`): Percentage of requests relative to a given response time.
-Example: `PERCENTILE(response_time, '0.95') < '2.00ms'`
-
-*Anypoint Insights* provides separate sets of charts for your deployment environments. You can view and filter chart data across your deployments within the selected environment, and you can open more detailed data on any deployment listed in the *Entities List*.
-
-.....
-TODO: DELETE include-nav-steps-no-permissions.adoc? 
-include::partial$include-nav-steps-no-permissions.adoc[]
-.....
-
-=== Apply Search Parameters
-
-include::partial$include-nav-steps-no-permissions.adoc[]
-
-include::partial$include-nav-entities.adoc[]
-
-. In the search bar, enter an attribute, element, business group, or environment to use for filtering your data.
-+
-Note that `requests_counts` and `response_time` are measurements of their respective metrics. To create a search filter that uses these two attributes,  choose an aggregating function:
-
- *  `COUNT` is the only supported aggregating function that you can use with `request_counts.
- * `PERCENTILE` is the only aggregating function that you can use with `response_time`.
-
-////

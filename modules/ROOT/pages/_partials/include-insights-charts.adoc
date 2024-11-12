@@ -1,0 +1,378 @@
+//provides includes for reference sections in anypoint-insights.adoc 
+
+//-----------------------//
+// APP DETAIL HEADER INFO:
+//tag::app-detail-header[]
+Type::
+Mule application type (*Application*)
+
+Status::
+Status code that indicates whether a Mule app is running or in some other xref:runtime-manager::managing-deployed-applications.adoc#status_states[state]
++
+This code comes from Runtime Manager.
+
+URL:: 
+URL of this Mule app
+//TODO: suggest Runtime Version conform on Runtime (App) vs. Runtime Version (API)
+
+Runtime::
+Mule runtime engine version of this Mule app
+
+//  shared header metric
+include::partial$include-insights-charts.adoc[tag=entity-replicas]
+
+Replicas::
+Virtual core fraction and count of this Mule app, for example, *0.1 vCores x 1* (= 10% of 1 vCore)
+
+Last Updated::
+Date-time stamp for the last redeployment of this Mule app
++
+This stamp comes from Runtime Manager data.
+//end::app-detail-header[]
+//
+//
+// APP DETAIL: Overview tab
+//tag::app-detail-overview[]
+
+//  shared metric in Overview tab
+include::partial$include-insights-charts.adoc[tag="average-latency"]
+include::partial$include-insights-charts.adoc[tag="p95-latency"]
+include::partial$include-insights-charts.adoc[tag="total-requests"]
+
+//TODO: change to Mule Message Volume (SATHISH)
+Mule Messages Volume::
+Total Mule message count for this app
++
+For information about Mule messages, see xref:mule-runtime::about-mule-event.adoc[].
+
+//  shared metric in Overview tab
+//      can download as CSV, XLS
+include::partial$include-insights-charts.adoc[tag="request-latency"]
+
+//  shared metric in Overview tab
+//      can download as CSV, XLS
+Inbound Request Volume::
+Inbound request count over time, including successful and unsuccessful (failing) inbound requests
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+//  shared metric in Overview tab
+//      can download as CSV, XLS
+Failed Inbound Request Volume::
+Unsuccessful inbound request count over time
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+//  shared metric in Overview tab
+//      can download as CSV, XLS
+Mule Messages::
+Mule message count over time
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
++
+For information about Mule messages, see xref:mule-runtime::about-mule-event.adoc[].
+//end::app-detail-overview[]
+//---------------------------------------------------------------------------------//
+//
+//---------------------------------------------------------------------------------//
+// APP DETAIL REQUESTS: Requests tab
+//tag::app-detail-requests[]
+//  can group by protocol, response time or not group at all
+//  can download as CSV, XLS
+Inbound Request Volume::
+Inbound request count total 
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+//  can group by protocol, response time or not group at all
+//  can download as CSV, XLS
+Outbound Request Volume::
+Outbound request count total 
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+//TODO_TODO: WHICH SLOWEST? (SATHISH)
+//TODO_TODO: FIX "requests" -> "Requests"
+Top Slowest requests by Path::
+The top 20 endpoints that take more than 25ms
+//TODO_TODO: TBD if can download as CSV, XLS an other details
+//+
+//include::partial$include-insights-charts.adoc[tag="download-as"]
+
+//  NOTE: looks like you _can't_ download as CSV, XLS
+Request Latency by Endpoint::
+TODO: 
+can group by inbound/outbound, see latency average and percentiles (seems to be the capture the percentage of requests with the highest latency)
+//end::app-detail-requests[]
+//-----------------------//
+//
+//-----------------------//
+//  APP DETAIL ERRORS: Errors tab
+//tag::app-detail-errors[]
+Failed Outbound Request Volume::
+TODO:
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+Top 20 Failed Requests by Total Count::
+TODO:
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+Top 20 Failed Outbound Requests by Total Count::
+TODO:
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+//end::app-detail-errors[]
+//-----------------------//
+//
+//-----------------------//
+// APP DETAIL JVM: JVM tab
+//tag::app-detail-jvm[]
+//TODO: clarify name (SATHISH)
+Old Gen GC Count::
+Number of times old generation Java garbage collection occurred
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+//TODO: clarify name (SATHISH)
+Old Gen GC Duration::
+Amount of time taken for old generation Java garbage collection
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+//TODO: clarify name (SATHISH)
+Young Gen GC Count::
+Number of times young generation Java garbage collection occurred
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+//TODO: clarify name (SATHISH)
+Young Gen GC Duration::
+Amount of time taken for young generation Java garbage collection
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+Heap Committed::
+Amount of physical memory committed to the JVM
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+Heap Usage::
+Amount of physical memory used
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+Thread Count::
+//TODO: threads that are available or used??? (SATHISH)
+Number of threads for simultaneous requests
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+Committed Virtual Memory::
+Amount of memory (in MB) committed to the JVM?
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+CPU Utilization::
+CPU work as a percentage of total CPU time
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+//end::app-detail-jvm[]
+//------------------------------------------------------//
+
+//========================//
+//API DETAILS: ALL METRICS//
+//========================//
+//
+// API DETAILS: Header-level metrics
+//-------------------------
+//tag::api-detail-header[]
+
+//TODO: change to API (SATHISH)
+Type::
+API implementation type (*Api*)
+
+Status::
+Status code that indicates whether the governance policies and SLA tiers are functional (*Active*) or not
++
+For all codes, see information on xref:api-manager::latest-overview-concept.adoc#what-api-manager-looks-like[tracking registration status] in the API Manager UI documentation.
+
+Implementation URL:: 
+URL of deployed API integration
+
+//TODO: suggest Runtime Version conform on Runtime (App) vs. Runtime Version (API)
+//TODO:what If the runtime version is empty... (SEE BOOKS API IN STGX)
+//TODO: capitalize "version"?
+//(SATHISH)
+Runtime version::
+Mule Gateway or Flex Gateway runtime version used by the API implementation 
+
+//  shared header metric
+include::partial$include-insights-charts.adoc[tag=entity-replicas]
+
+//TODO_TODO_TODO: What if empty but seems to be running?
+API Instance ID::
+Instance identifier for an API implementation incorporated into a Flex Gateway or API Gateway runtime
+
+//TODO: capitalize "version"?
+API version::
+Version of the API implementation
++
+For more information, see xref:api-manager::api-instance-landing-page.adoc[].
+//end::api-detail-header[]
+//-----------------------//
+//
+//-------------------------
+// API DETAILS: Overview tab
+//-------------------------
+//tag::api-detail-overview[]
+
+//shared Overview metric
+include::partial$include-insights-charts.adoc[tag="average-latency"]
+
+//shared Overview metric
+include::partial$include-insights-charts.adoc[tag="p95-latency"]
+
+//shared Overview metric
+include::partial$include-insights-charts.adoc[tag="total-requests"]
+
+//shared Overview metric
+include::partial$include-insights-charts.adoc[tag="request-latency"]
+
+Request Volume::
+Request count over time
+//can download as CSV, XLS
+
+Failed Requests::
+Unsuccessful request count over time
+
+//TODO_TODO: WHICH POLICIES, which APIs (incorporated into a Mule API Gateway?), and WHAT TRIGGERS the violation (SATHISH)
+//TODO: For information about Mule gateway policies, see TODO
+//TODO: TBD: can download as CSV, XLS
+Policy Violations::
+API policy violation count over time for this API implementation
+// tag::end-detail-overview[]
+//-------------------------------------------------------------//
+//
+//-------------------------------------------------------------//
+// API DETAILS: Requests tab
+//-------------------------
+//tag::api-detail-requests[]
+//  can download as CSV, XLS
+Request Volume by HTTP Method::
+TODO: 
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+//  can download as CSV, XLS
+Request Volume by Response Code::
+TODO: 
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+//  can download as CSV, XLS
+Request Volume by Top N paths::
+TODO: 
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+//end::api-detail-requests[]
+//-------------------------------------------------------------//
+//
+//-------------------------------------------------------------//
+// API DETAILS: Errors tab
+//-------------------------
+//tag::api-detail-errors[]
+Failed Requests Volume by HTTP Method::
+TODO: 
+
+Failed Requests Volume by Response Code::
+TODO: 
+
+Failed Requests by Top N paths::
+TODO: 
+//end::api-detail-errors[]
+//
+//
+//-------------------------------------------------------------//
+// API DETAILS: Performance tab
+//----------------------------
+//tag::api-detail-performance[]
+
+//TODO: RESPONSE TIME UNIT MISSING from chart
+//can download as CSV, XLS
+Top 20 Paths by Average Response Time::
+Average response time of the 20 most requested endpoints. 
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
+//TODO: 95p or capitalize "percentile" -> "Percentile"
+//TODO:  Can we say "Bottom 95p Response Time" or similar?
+//You can download as CSV, XLS
+Top 20 Paths by 95th percentile Response Time::
+For the 20 most requested endpoints, the average response time of 95% of requests; the response time of the remaining 5% is likely to be greater than this number
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+//end::api-detail-performance[]
+//-------------------------------------------------------------//
+//
+//-------------------------------------------------------------//
+// API DETAILS: Client Applications tab
+//-------------------------
+//tag::api-detail-client-apps[]
+Request Volume by Location::
+Maps the number of requests to geographic areas across the globe
++
+You can click the request volume number on the map to get more detailed information.
+//end::api-detail-client-apps[]
+//-------------------------------------------------------------//
+
+
+//========================//
+//SHARED in multiple lists (Apps and APIs):
+//========================//
+//
+// shared chart: Overview tab
+//tag::average-latency[]
+Average Latency::
+Average request latency, in milliseconds (ms)
+//end::average-latency[]
+//
+// shared chart: Overview tab
+//tag::p95-latency[]
+P95 Latency::
+Average latency, in milliseconds (ms), of 95% (p95) of the requests
++
+Calculation of this metric starts from the lowest latency value, so the latency of the remaining, uncounted 5% of requests is likely to be greater than the p95 value.
+//end::p95-latency[]
+//
+//  shared chart: Overview tab
+//tag::total-requests[]
+//TODO: "Requests" -> "Request", and can we remove "Volume"? or change to "Request Total"
+Total Requests Volume::
+Total number of requests
+//end::total-requests[]
+//
+//  shared chart: Overview tab
+//tag::request-latency[]
+Request Latency::
+Latency over time, in milliseconds (ms), for 90% (p90), 95% (p95), 99% (p99) of the requests, and the average latency of all requests
++
+Calculation of this metric starts from the lowest latency value, so the latency of the remaining, uncounted 10%, 5%, or 1% of requests is likely to be greater than the corresponding p90, p95, or p99 value at a given point of time.
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+//can download as CSV, XLS
+//end::request-latency[]
+//
+//  shared content: you can download most chart data
+//tag::download-as[]
+You can download data in this chart as a CSV or XSL file.
+//end::download-as[]
+//
+//  shared content: data is for selected time & query filters
+// tag:data-scope[]
+The scope of captured data depends on the selected time period and query filters.
+// end:data-scope[]
+//--------------------------------------------//
+//
+
