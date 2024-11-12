@@ -245,7 +245,7 @@ include::partial$include-insights-charts.adoc[tag="total-requests"]
 
 //TODO_TODO: to avoid duplication (see chart with same name this one) CHANGE NAME to something like Policy Violation Volume (or similar)
 Policy Violations::
-Number of policy violations
+Number of API policy violations
 
 Request Volume::
 Request count over time
