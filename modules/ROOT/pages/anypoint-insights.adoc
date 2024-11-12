@@ -8,11 +8,14 @@ Identify and troubleshoot data on your deployments with:
 
 * Metrics across multiple Mule app and API deployments
 +
-Monitor response times, error volume, and request volume. Use filters to narrow your results. 
+//TODO: VERIFY 7 DAYS (SATHISH)
+Get up to the last 7 days of metrics on response times, error volume, and request volume. Use filters to narrow your results. You can download the chart data to CSV or XSL.
 * Metrics on individual Mule app and API deployments
 +
-Monitor metrics on requests, latency, errors, JVM data, performance, and client apps.
+//TODO: VERIFY 30 DAYS (SATHISH)
+Get up to the last 30 days of metrics on requests, latency, errors, JVM data, performance, and client apps. You can download most chart data to CSV or XSL.
 
+[[dashboard-overview]]
 //don't change order of numbers in graphic or calloutlist
 image::insights.png["Anypoint Insights UI"]
 
@@ -155,7 +158,7 @@ entity_response_status = 'OK'
 [[filter-by-time]]
 === Filter Data by Time Period
 
-Use the time period selector (<<monitor-deployments, see item 6>>) to display data points collected for the last given period of time (such as the last 15 or 30 minutes) or over a given date and time range. Your setting applies across all data in *Anypoint Insights* overview, including *Entities List*.
+Use the time period selector (<<dashboard-overview, item 6 in this dashboard>>) to display data points collected for the last given period of time (such as the last 15 or 30 minutes) or over a given date and time range. Your setting applies across all data in *Anypoint Insights* overview, including *Entities List*.
 
 If you don't see data on the page, check that the selected time range is correct.
 
