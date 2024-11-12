@@ -343,7 +343,7 @@ Average request latency, in milliseconds (ms)
 P95 Latency::
 Average latency, in milliseconds (ms), of 95% (p95) of the requests
 +
-Calculation of this metric starts from the lowest latency value, so the latency of the remaining, uncounted 5% of requests is likely to be greater than the p95 value.
+The latency of the remaining, uncounted 5% of requests is likely to be greater than the p95 value because calculation of this metric starts with the lowest latency value and progresses in ascending order before averaging the collected values.
 //end::p95-latency[]
 //
 //  shared chart: Overview tab
@@ -358,7 +358,7 @@ Total number of requests
 Request Latency::
 Latency over time, in milliseconds (ms), for 90% (p90), 95% (p95), 99% (p99) of the requests, and the average latency of all requests
 +
-Calculation of this metric starts from the lowest latency value, so the latency of the remaining, uncounted 10%, 5%, or 1% of requests is likely to be greater than the corresponding p90, p95, or p99 value at a given point of time.
+The latency of the remaining, uncounted 10%, 5%, or 1% of requests is likely to be greater than the corresponding p90, p95, or p99 value at a given point of time because this metric starts with the lowest latency value and progresses in ascending order before averaging the collected values.
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //can download as CSV, XLS

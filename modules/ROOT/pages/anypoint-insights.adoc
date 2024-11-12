@@ -198,7 +198,7 @@ include::partial$include-insights-charts.adoc[tag=app-detail-header]
 [[entity-metrics-app-overview]]
 ==== Overview Metrics for a Mule Application
 
-Charts with these metrics are available in the *Overview* tab for a Mule app in Anypoint Insights.
+Charts with overview metrics are available in the *Overview* tab for a Mule app in Anypoint Insights.
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 
