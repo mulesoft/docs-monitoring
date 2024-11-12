@@ -243,8 +243,9 @@ include::partial$include-insights-charts.adoc[tag="p95-latency"]
 //shared Overview metric
 include::partial$include-insights-charts.adoc[tag="total-requests"]
 
-//shared Overview metric
-include::partial$include-insights-charts.adoc[tag="request-latency"]
+//TODO_TODO: to avoid duplication (see chart with same name this one) CHANGE NAME to something like Policy Violation Volume (or similar)
+Policy Violations::
+Number of policy violations
 
 Request Volume::
 Request count over time
@@ -258,7 +259,7 @@ Unsuccessful request count over time
 //TODO: TBD: can download as CSV, XLS
 Policy Violations::
 API policy violation count over time for this API implementation
-// tag::end-detail-overview[]
+//end::api-detail-overview[]
 //-------------------------------------------------------------//
 //
 //-------------------------------------------------------------//

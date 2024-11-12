@@ -392,7 +392,7 @@ Anypoint Monitoring provides details on individual API implementations that are 
 * <<entity-metrics-api-client-apps>>
 
 [[entity-metrics-api-header]]
-==== API Implementations Metrics
+==== API Implementation Metrics
 
 Charts with these metrics are available above Anypoint Insights tabs that contain detailed API implementation metrics.
 include::partial$include-insights-charts.adoc[tags="data-scope"]
@@ -400,16 +400,15 @@ include::partial$include-insights-charts.adoc[tags="data-scope"]
 include::partial$include-insights-charts.adoc[tags="api-detail-header"]
 
 [[entity-metrics-api-overview]]
-==== Overview Metrics for an API Implementations 
+==== Overview Metrics for an API Implementation 
 
 Charts with overview metrics are available in the *Overview* tab for each API implementation that you can monitor in Anypoint Insights.
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
-include::partial$include-insights-charts.adoc[tags="api-detail-requests"]
-
+include::partial$include-insights-charts.adoc[tags="api-detail-overview"]
 
 [[entity-metrics-api-requests]]
-==== Request Metrics for API Implementations 
+==== Request Metrics for an API Implementation 
 
 Charts with request metrics are available in the *Requests* tab for each API implementation that you can monitor in Anypoint Insights.
 include::partial$include-insights-charts.adoc[tags="data-scope"]
@@ -417,7 +416,7 @@ include::partial$include-insights-charts.adoc[tags="data-scope"]
 include::partial$include-insights-charts.adoc[tags="api-detail-requests"]
 
 [[entity-metrics-api-errors]]
-==== Error Metrics for API Implementations 
+==== Error Metrics for an API Implementation 
 
 Charts with error metrics are available in the *Errors* tab for each API implementation that you can monitor in Anypoint Insights.
 include::partial$include-insights-charts.adoc[tags="data-scope"]
@@ -425,7 +424,7 @@ include::partial$include-insights-charts.adoc[tags="data-scope"]
 include::partial$include-insights-charts.adoc[tags="api-detail-errors"]
 
 [[entity-metrics-api-performance]]
-==== Performance Metrics for API Implementations 
+==== Performance Metrics for an API Implementation
 
 Charts with performance metrics are available in the *Performance* tab for each API implementation that you can monitor in Anypoint Insights.
 include::partial$include-insights-charts.adoc[tags="data-scope"]
@@ -433,7 +432,7 @@ include::partial$include-insights-charts.adoc[tags="data-scope"]
 include::partial$include-insights-charts.adoc[tags="api-detail-performance"]
 
 [[entity-metrics-api-client-apps]]
-==== Client Application Metrics for API Implementations 
+==== Client Application Metrics for an API Implementation 
 
 Charts with client Application metrics are available in the *Client Applications* tab for each API implementation that you can monitor in Anypoint Insights. 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
