@@ -1,7 +1,8 @@
 = Monitor Deployments with Anypoint Insights
-:page-notice-banner-message: In Japan (JA) and Canada (CA) instances of Anypoint Platform, Anypoint Monitoring includes only Anypoint Insights at this time.
+:page-notice-banner-message: For Japan (JP) and Canada (CA) instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU instances, Anypoint Insights remains a Beta release available only in the Advanced package at this time.
+:selector-all-dashboards: This selector is available to all Insights dashboards.
 
-Monitor performance data and issues across your deployed Mule apps and APIs (_entities_) with Anypoint Insights, in Anypoint Monitoring. 
+Monitor performance data and issues across your deployed Mule apps and API implementations (_entities_) with Anypoint Insights, in Anypoint Monitoring. 
 
 Identify and troubleshoot data on your deployments with:
 
@@ -11,6 +12,22 @@ Monitor response times, error volume, and request volume. Use filters to narrow 
 * Metrics on individual Mule app and API deployments
 +
 Monitor metrics on requests, latency, errors, JVM data, performance, and client apps.
+
+//don't change order of numbers in graphic or calloutlist
+image::insights.png["Anypoint Insights UI"]
+
+[calloutlist]
+. Dashboard that provides an overview of metrics across of your deployed Mule apps and APIs
+. Environment selector for your deployments (such as Sandbox or Production)
+. <<filter, Filters>> to narrow the data in charts
+. Performance <<charts-performance, metrics and trends>> across your deployed Mule apps and APIs
+. <<entities-list, List of each Mule app and API>> that you can click to display <<charts-detailed, detailed metrics>> on a specific deployment
+. Selector for the time range covered by the charts 
++
+{selector-all-dashboards}
+. Selector for auto-refresh interval, displayed when auto-refresh is enabled 
++
+{selector-all-dashboards}
 
 [[prereqs]]
 == Before You Begin
@@ -40,19 +57,7 @@ include::partial$include-nav-entities.adoc[tags="anypoint-regions-useu"]
 
 Monitor Mule apps and APIs within a selected business group and environment.
 
-//don't change order of numbers in graphic or calloutlist
-image::insights.png["Anypoint Insights UI"]
-
-[calloutlist]
-. Overview of your deployed Mule apps and APIs
-. Environment selector for your deployments (such as Sandbox or Production)
-. <<filter, Filters>> to narrow the data in charts
-. Performance <<charts-performance, metrics and trends>> across your Mule apps and APIs
-. <<entities-list, List of your Mule apps and APIs>>, which you can click to display charts on specific deployments
-. Selector for the time range covered by the charts (This selector is available for cross-entity charts in the *Anypoint Insights* overview and the charts for entities selected from the *Entities List*.)
-. Selector for auto-refresh interval, displayed when auto-refresh is enabled (This selector is available for cross-entity charts in the *Anypoint Insights* overview and the charts for entities selected from the *Entities List*.) 
-
-To review metrics:
+//To review metrics:
 
 . Meet the prerequisites in <<prereqs>>. 
 . Log in to Anypoint Platform, and navigate to Anypoint Monitoring. 
@@ -74,6 +79,7 @@ For guidance, see <<filter-by-data>>.
 image::insights-entity-clicked.png["Overview of a deployment metrics"]
 .. Review metrics in the charts for the entity, for example: 
 +
+[[charts-detailed]]
 image::insights-deployment-charts.png["Entity dashboard for a deployed app or API"]
 
 [calloutlist]

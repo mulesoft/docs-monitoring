@@ -170,7 +170,7 @@ Number of threads for simultaneous requests
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Committed Virtual Memory::
-Amount of memory (in MB) committed to the JVM?
+Amount of memory (in MB) committed to the JVM
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
