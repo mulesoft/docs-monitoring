@@ -80,29 +80,35 @@ For information about Mule messages, see xref:mule-runtime::about-mule-event.ado
 //  can group by protocol, response time or not group at all
 //  can download as CSV, XLS
 Inbound Request Volume::
-Inbound request count total 
+Inbound request count total, which you can group by response time or protocol 
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //  can group by protocol, response time or not group at all
 //  can download as CSV, XLS
 Outbound Request Volume::
-Outbound request count total 
+Outbound request count total, which you can group by response time, protocol, or by up to 20 hosts (such as an Object Store or a `cloudhub.io` address) with the most outbound requests 
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //TODO_TODO: WHICH SLOWEST? (SATHISH)
 //TODO_TODO: FIX "requests" -> "Requests"
 Top Slowest requests by Path::
-The top 20 endpoints that take more than 25ms
+Up to 20 endpoints with requests that last more than 25ms
++
+If no data is available, then no requests take more than 25ms to process.
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 //TODO_TODO: TBD if can download as CSV, XLS an other details
 //+
 //include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //  NOTE: looks like you _can't_ download as CSV, XLS
 Request Latency by Endpoint::
-TODO: 
-can group by inbound/outbound, see latency average and percentiles (seems to be the capture the percentage of requests with the highest latency)
+Inbound or outbound latency, in milliseconds, by endpoint
++
+The chart captures the average latency of all requests and specific percentages (p50, p75, p90, p95, and p99) of requests. The latency of the remaining, uncounted 50%, 25%, 10%, 5%, and 1% of requests is typically greater than the corresponding p50, p75, p90, p95, and p99 value at a given point of time because this metric starts with the lowest latency value and progresses in ascending order before averaging the collected values.
+ 
 //end::app-detail-requests[]
 //-----------------------//
 //
@@ -110,17 +116,17 @@ can group by inbound/outbound, see latency average and percentiles (seems to be 
 //  APP DETAIL ERRORS: Errors tab
 //tag::app-detail-errors[]
 Failed Outbound Request Volume::
-TODO:
+Number of failed outbound requests over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Top 20 Failed Requests by Total Count::
-TODO:
+Number of inbound or outbound requests to the 20 endpoints with the most failed requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Top 20 Failed Outbound Requests by Total Count::
-TODO:
+Number of failed outbound requests to the 20 endpoints with the most failed requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //end::app-detail-errors[]
@@ -310,7 +316,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //TODO:  Can we say "Bottom 95p Response Time" or similar?
 //You can download as CSV, XLS
 Top 20 Paths by 95th percentile Response Time::
-For the 20 most requested endpoints, the average response time of 95% of requests; the response time of the remaining 5% is likely to be greater than this number
+For the 20 most requested endpoints, the average response time of 95% of requests; the response time of the remaining 5% is typically greater than this number
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //end::api-detail-performance[]
@@ -343,7 +349,7 @@ Average request latency, in milliseconds (ms)
 P95 Latency::
 Average latency, in milliseconds (ms), of 95% (p95) of the requests
 +
-The latency of the remaining, uncounted 5% of requests is likely to be greater than the p95 value because calculation of this metric starts with the lowest latency value and progresses in ascending order before averaging the collected values.
+The latency of the remaining, uncounted 5% of requests is typically greater than the p95 value because calculation of this metric starts with the lowest latency value and progresses in ascending order before averaging the collected values.
 //end::p95-latency[]
 //
 //  shared chart: Overview tab
@@ -358,7 +364,7 @@ Total number of requests
 Request Latency::
 Latency over time, in milliseconds (ms), for 90% (p90), 95% (p95), 99% (p99) of the requests, and the average latency of all requests
 +
-The latency of the remaining, uncounted 10%, 5%, or 1% of requests is likely to be greater than the corresponding p90, p95, or p99 value at a given point of time because this metric starts with the lowest latency value and progresses in ascending order before averaging the collected values.
+The latency of the remaining, uncounted 10%, 5%, or 1% of requests is typically greater than the corresponding p90, p95, or p99 value at a given point of time because this metric starts with the lowest latency value and progresses in ascending order before averaging the collected values.
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //can download as CSV, XLS
