@@ -18,10 +18,8 @@ of issues (MTTI).
 [[features]]
 == Monitoring Features by Control Plane Region
 
-//TODO_TODO_TODO: "multiple" or "all"
-Anypoint Monitoring is available in multiple control plane regions that host Anypoint Platform. 
+Anypoint Monitoring is available in all control plane regions that host Anypoint Platform.  
 
-//TODO_TODO_TODO: WHAT ABOUT GOV CLOUD AND PCE? 
 include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 
 * https://anypoint.mulesoft.com/monitoring[US Cloud] and https://eu1.anypoint.mulesoft.com/monitoring[EU Cloud] (Feature availability depends on your <<billing, billing package or plan>>):
@@ -37,8 +35,10 @@ include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 ** <<insights>> 
 ** <<functional-monitoring>> 
 
-//TODO_TODO_TODO: VERIFY LINK
-For more information Anypoint Platform control plane regions, see xref:hosting-home::index.adoc##control-plane-hosting-options[Control Plane Hosting Options].
+//NOTE:
+//Insights is not supported in Anypoint Platform Private Cloud Edition (Anypoint Platform PCE) or in MuleSoft Government Cloud.
+
+For more information Anypoint Platform control plane regions, see xref:hosting-home::index.adoc#control-plane-hosting-options[Control Plane Hosting Options].
 
 [[insights]]
 === Anypoint Insights Dashboards
@@ -84,7 +84,7 @@ Manage logs and log data for your deployments with these logging features:
 [[log-search]]
 ==== Log Search
 
-Search across log files, including archived logs to find information and events based on a specific query.
+Anypoint Monitoring provides a link to *Log Search* features in Runtime Manager. Log search enables search across log files, including archived logs to find information and events based on a specific query.
 
 image::intro-logs.png[Logs]
 

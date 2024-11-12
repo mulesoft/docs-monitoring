@@ -9,11 +9,9 @@ Identify and troubleshoot data on your deployments with:
 
 * Metrics across multiple Mule app and API deployments
 +
-//TODO: VERIFY 7 DAYS (SATHISH)
-Get up to the last 7 days of metrics on response times, error volume, and request volume. Use filters to narrow your results. {download-chart-data}
+Get up to the last 7 days (Advanced package) or 24 hours (Starter package) of metrics on response times, error volume, and request volume. Use filters to narrow your results. {download-chart-data}
 * Metrics on individual Mule app and API deployments
 +
-//TODO: VERIFY 30 DAYS (SATHISH)
 Get up to the last 30 days of metrics on requests, latency, errors, JVM data, performance, and client apps. {download-chart-data}
 
 [[dashboard-overview]]
@@ -51,7 +49,8 @@ include::partial$include-nav-entities.adoc[tags="anypoint-regions-useu"]
 
 ** Runtime Fabric
 ** CloudHub 2.0
-//TODO_TODO_TODO: hybrid not supported? CH 1 not supported? 
+** CloudHub (US and EU in Advanced and Titanium packages only)
+** Hybrid (US and EU in Advanced and Titanium packages only)
 
 * The *Monitoring Viewer* permission to Anypoint Monitoring and the permissions required for viewing apps and APIs (see xref:monitoring::am-permissions.adoc[])
 * A supported version of Mule Runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[])
@@ -60,8 +59,6 @@ include::partial$include-nav-entities.adoc[tags="anypoint-regions-useu"]
 == Monitor Your Deployments
 
 Monitor Mule apps and APIs within a selected business group and environment.
-
-//To review metrics:
 
 . Meet the prerequisites in <<prereqs>>. 
 . Log in to Anypoint Platform, and navigate to Anypoint Monitoring. 
@@ -84,7 +81,7 @@ image::insights-entity-clicked.png["Overview of a deployment metrics"]
 .. Review metrics in the charts for the entity, for example: 
 +
 [[charts-detailed]]
-image::insights-deployment-charts.png["Entity dashboard for a deployed app or API"]
+image::insights-deployment-charts.png["Dashboard for a deployed app or API"]
 
 [calloutlist]
 . Details page for a Mule app or API implementation
@@ -145,12 +142,6 @@ entity_type = 'APP'`
 entity IN ['99aea888-77de-6e06-5c55-d1234de56789', '09f99999-888d-7b77-6da5-bebd43210fc1']
 ----
 
-|`entity_response_status`
-|`=`
-|Filter by the response code (*OK* or *FAILED*), for example:
-----
-entity_response_status = 'OK'
-----
 |===
 
 `IN` captures exact matches to any comma-separated element in the array.
