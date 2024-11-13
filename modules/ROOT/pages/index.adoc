@@ -36,7 +36,7 @@ include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 ** <<functional-monitoring>> 
 
 //NOTE:
-//Insights is not supported in Anypoint Platform Private Cloud Edition (Anypoint Platform PCE) or in MuleSoft Government Cloud.
+//Insights and API Functional Monitoring are not supported in Anypoint Platform Private Cloud Edition (Anypoint Platform PCE) or in MuleSoft Government Cloud. 
 
 For more information Anypoint Platform control plane regions, see xref:hosting-home::index.adoc#control-plane-hosting-options[Control Plane Hosting Options].
 
@@ -109,7 +109,6 @@ In https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesof
 
 See xref:tools.adoc[Tools].
 
-//TODO_TODO_TODO: VERIFY ALL REGIONS
 [[functional-monitoring]]
 === API Functional Monitoring
 
