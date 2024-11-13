@@ -1,4 +1,4 @@
-= Create a Custom Dashboard
+= Creating a Custom Dashboard
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
