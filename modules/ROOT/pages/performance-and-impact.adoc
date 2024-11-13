@@ -1,4 +1,4 @@
-= Anypoint Monitoring Performance Impact, Limits, and Data Retention
+= Understanding Performance Impact, Limits, and Data Retention
 
 Anypoint Monitoring processes and retains massive amounts of data with a low performance impact. Titanium subscribers receive an enhanced data retention package and more storage than Gold and Platinum subscribers. For better performance and readability, your log data is truncated into short lines.
 
