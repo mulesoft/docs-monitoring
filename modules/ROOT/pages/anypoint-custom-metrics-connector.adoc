@@ -1,4 +1,4 @@
-= Custom Metrics
+= Creating Custom Metrics
 
 
 The Anypoint Custom Metrics connector enables you to send operational and business metric values that you define from an app to Anypoint Monitoring. You can then use the built-in *Custom metrics* dashboard and a custom dashboard in *Advanced* mode to visualize the custom metrics in real time. 

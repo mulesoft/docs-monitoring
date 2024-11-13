@@ -2,9 +2,9 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-= Set Up Basic Alerts for Servers, Mule Apps, and APIs
+= Setting Up Basic Alerts in Anypoint Monitoring
 
-You can set up basic alerts to trigger email notifications when a metric you are measuring passes a specified threshold.
+You can set up basic alerts for Servers, Mule Apps, and APIs. Alerts trigger email notifications when a metric you are measuring passes a specified threshold.
 
 You can create basic alerts for the following metrics:
 

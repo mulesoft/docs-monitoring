@@ -1,4 +1,4 @@
-= Export App Data to a CSV File
+= Exporting App Data to a CSV File
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

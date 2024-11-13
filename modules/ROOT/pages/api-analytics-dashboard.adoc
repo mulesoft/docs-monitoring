@@ -1,4 +1,4 @@
-= API Analytics Dashboards
+= Using Built-in API Dashboards
 
 The API analytics dashboards provide charts to monitor API usage, which gives you insight into how your APIs are used and how they are performing.
 

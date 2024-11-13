@@ -1,4 +1,4 @@
-= Alerts
+= Getting Alerts in Anypoint Monitoring
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
