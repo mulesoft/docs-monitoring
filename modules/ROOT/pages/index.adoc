@@ -71,7 +71,7 @@ image::intro-alerts.png[Alerts]
 
 You can trigger alerts based on rules (or thresholds) and policies for your resources. When these thresholds are crossed for a certain period of time, you can receive notification to take action. The method of notification depends on the severity of the alert that you define.
 
-See xref:alerts.adoc[Alerts].
+See xref:alerts.adoc[].
 
 [[logging]]
 === Log Management
@@ -92,27 +92,27 @@ Anypoint Monitoring facilitates distributed log searches of raw log and event da
 
 The log aggregator system holds raw operational data and records events that occur in the operating system or Mule app. Log aggregation compiles, organizes, and indexes log files to facilitate management, searching, and analysis. Aggregated logs complement the monitoring system by helping you identify causes of operational issues and investigate failures.
 
-See xref:logs.adoc[Logs].
+See xref:logs.adoc[].
 
 [[raw-data-downloads]]
 ==== Raw Data Downloads
 
 Download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
 
-See xref:raw-data.adoc[Raw Data].
+See xref:raw-data.adoc[].
 
 === Tools for Monitoring Integrations
 
 In https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions, link to connectors that help deliver Anypoint Monitoring notifications to external systems, including custom metrics connectors.
 
-See xref:tools.adoc[Tools].
+See xref:tools.adoc[].
 
 [[functional-monitoring]]
 === API Functional Monitoring
 
 Monitor APIs and endpoints at scheduled intervals. Receive reports about whether tests pass or fail, and view statistics about API and endpoint performance.
 
-See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring in Anypoint Monitoring]. 
+See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring]. 
 
 //Rajesh 11/24: retain data-storage-retention
 [[data-storage-retention]]
