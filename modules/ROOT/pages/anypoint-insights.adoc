@@ -1,4 +1,4 @@
-= Monitoring Metrics with Anypoint Insights
+= Monitoring Metrics from Anypoint Insights
 :page-notice-banner-message: For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights remains a Beta release available in the Advanced and Titanium tiers at this time.
 :selector-all-dashboards: This selector is available to all Insights dashboards.
 :download-chart-data: You can download most chart data to CSV or XSL.
