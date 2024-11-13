@@ -1,4 +1,4 @@
-= Log Search Query Syntax
+= Log Search Query Syntax Reference
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

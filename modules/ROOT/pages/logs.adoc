@@ -1,4 +1,4 @@
-= Logs in Anypoint Monitoring
+= Using Logs in Anypoint Monitoring
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

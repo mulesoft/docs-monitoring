@@ -1,4 +1,4 @@
-= Alerts
+= Getting Alerts in Anypoint Monitoring
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -29,7 +29,7 @@ include::reuse::partial$billing/pricing.adoc[tag=monitoringAlerts]
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. In the Anypoint Monitoring navigation menu, click *Alerts*.
+include::partial$include-nav-alerts.adoc[]
 
 In the *Alerts* page, you can:
 
