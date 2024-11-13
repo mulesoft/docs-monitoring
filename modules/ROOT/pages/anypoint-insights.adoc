@@ -1,5 +1,5 @@
 = Monitor Deployments with Anypoint Insights
-:page-notice-banner-message: For Japan (JP) and Canada (CA) instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU instances, Anypoint Insights remains a Beta release available in the Advanced package only at this time.
+:page-notice-banner-message: For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights remains a Beta release available in the Advanced and Titanium tiers at this time.
 :selector-all-dashboards: This selector is available to all Insights dashboards.
 :download-chart-data: You can download most chart data to CSV or XSL.
 
@@ -42,15 +42,14 @@ Required prerequisites:
 include::partial$include-nav-entities.adoc[tags="anypoint-regions-hyperforce"] 
 
 ** {empty}
-include::partial$include-nav-entities.adoc[tags="anypoint-regions-useu"] 
-(Beta release for Advanced and Titanium tier plans only at this time)
+include::partial$include-nav-entities.adoc[tags="anypoint-regions-useu"]
 
 * A running Mule app or Mule Gateway API that is deployed to a supported target:
 
 ** Runtime Fabric
 ** CloudHub 2.0
-** CloudHub (US and EU in Advanced and Titanium packages only)
-** Hybrid (US and EU in Advanced and Titanium packages only)
+** CloudHub (supported in US and EU regions, in Advanced and Titanium packages only)
+** Hybrid (supported in US and EU regions, in Advanced and Titanium packages only)
 
 * The *Monitoring Viewer* permission to Anypoint Monitoring and the permissions required for viewing apps and APIs (see xref:monitoring::am-permissions.adoc[])
 * A supported version of Mule Runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[])

@@ -30,15 +30,15 @@ include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 ** <<insights>> (Beta)
 ** <<functional-monitoring>>
 
+//TEMP INFO: Hyperforce 12/24 (W-17225983)
 * https://ca1.platform.mulesoft.com/monitoring[Canada Cloud] and https://jp1.platform.mulesoft.com/monitoring[Japan Cloud] (Only Starter package features are available at this time):
 
 ** <<insights>> 
 ** <<functional-monitoring>> 
 
-//NOTE:
-//Insights and API Functional Monitoring are not supported in Anypoint Platform Private Cloud Edition (Anypoint Platform PCE) or in MuleSoft Government Cloud. 
+//NOT SUPPORTED in PCE & Gov Cloud: Insights, Traces, Telemetry Exporter, API Functional Monitoring
 
-For more information Anypoint Platform control plane regions, see xref:hosting-home::index.adoc#control-plane-hosting-options[Control Plane Hosting Options].
+For more information about Anypoint Platform clouds, see xref:hosting-home::index.adoc#control-plane-hosting-options[Control Plane Hosting Options].
 
 [[insights]]
 === Anypoint Insights Dashboards
@@ -94,12 +94,10 @@ The log aggregator system holds raw operational data and records events that occ
 
 See xref:logs.adoc[Logs].
 
-
-//TODO_TODO_TODO: IS THIS CORRECT?
 [[raw-data-downloads]]
 ==== Raw Data Downloads
 
-Download warehoused log data on a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
+Download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
 
 See xref:raw-data.adoc[Raw Data].
 
@@ -116,7 +114,7 @@ Monitor APIs and endpoints at scheduled intervals. Receive reports about whether
 
 See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring in Anypoint Monitoring]. 
 
-//Rajesh says to retain data-storage-retention
+//Rajesh 11/24: retain data-storage-retention
 [[data-storage-retention]]
 === Data Storage and Retention
 
