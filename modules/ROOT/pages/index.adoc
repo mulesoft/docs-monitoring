@@ -54,13 +54,13 @@ Use built-in dashboards or customize your own to provide instant visibility into
 
 image::intro-dashboard-built-in.png[Built-in Dashboard Example]
 
-Built-in and custom dashboards expose the metrics on your app network. They provide visual representations of your resources so you can detect anomalies, troubleshoot issues, and see trends that are not obvious in raw form.
+Built-in and custom dashboards expose the metrics on your app network. They provide visual representations of your resources so you can detect anomalies, troubleshoot issues, and see trends that aren't obvious in raw form.
 
 A custom dashboard provides a single screen that can bring together specific metrics and data points that are important to your organization. Custom dashboards can display graphs and other charts, such as single statistics.
 
 You can track many data points and metrics from a custom dashboard that looks across multiple services in the app and in your dashboards across all systems.
 
-See xref:dashboards-using.adoc[Dashboards].
+See xref:dashboards.adoc[].
 
 [[alerts]]
 === Event-Driven Alerts
