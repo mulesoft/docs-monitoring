@@ -1,9 +1,9 @@
-= Anypoint Monitoring Settings
+= Managing CloudHub and Hybrid Settings 
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-On the *Settings* page, you can:
+On the *Settings* page in Anypoint Monitoring, you can:
 
 * Find the instructions to install Anypoint Monitoring on an on-premises server to monitor Mule applications running on that server.
 * Enable (or disable) monitoring for applications running on Mule.

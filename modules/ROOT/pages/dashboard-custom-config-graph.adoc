@@ -1,4 +1,4 @@
-= Configure Graphs in a Custom Dashboard
+= Configuring Graphs in a Custom Dashboard
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

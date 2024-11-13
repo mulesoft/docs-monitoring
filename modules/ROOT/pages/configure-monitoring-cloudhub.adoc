@@ -1,4 +1,4 @@
-= Configure and Enable Anypoint Monitoring for Mule Apps (CloudHub)
+= Setting Up Monitoring for CloudHub Deployments
 
 To start monitoring Mule apps that are managed in CloudHub, you must deploy them to a supported version of Mule runtime engine and set the runtime version in your Mule app.
 

@@ -1,4 +1,4 @@
-= Monitor Applications on Runtime Fabric
+= Setting Up Monitoring for Runtime Fabric Deployments
 
 Monitoring for applications deployed to Runtime Fabric is enabled by default.
 
