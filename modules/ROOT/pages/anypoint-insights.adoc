@@ -244,6 +244,7 @@ Understand the monitoring data in Anypoint Insights charts:
 ==== Performance Metrics
 
 Monitor high-level performance metrics across your deployments. 
+
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 Total Entities::
@@ -253,13 +254,15 @@ Entities with Errors::
 Total number of entities that have received errors
 
 * For API implementations, this metric counts HTTP status codes that identify errors (for example, `404` or `502`). 
-* For Mule apps, this metric counts a response codes that indicate an error (for example, `FAILED`).
+* For Mule apps, this metric counts response codes that indicate an error (for example, `FAILED`).
 
 Total Requests::
 Total number of requests to the listed entities
 
 Error Rate:: 
-Percentage equal to the total number of entities with errors divided by the total number of requests for those entities
+For entities with request errors, the percentage equal to the total number of request errors  divided by the total number of requests (with and without errors)
++
+For example, assume that 1 out of 5 total requests to API A produces an error and that 2 requests out of 5 to Application B produces an error. The error rate is 3/10, or 30%. 
 
 //
 // H4: Performance Trends
@@ -267,13 +270,14 @@ Percentage equal to the total number of entities with errors divided by the tota
 ==== Performance Trends
 
 Monitor high-level performance over time across your deployments. 
+
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 //TODO_TODO: slow -> Slow
 //TODO_TODO: is the percentile calculated in the normal way? are we saying x% are faster or slower?
-Entities with Slow Response Times:: 
+Entities with Slow Response Times::
 Response times, in milliseconds, of the entities with the slowest response times
-
++
 The metric uses percentile values for response times (calculated from highest to lowest times) to identify entities with the slowest responses. You can select the *p99* (default), *p95*, *p90*, or *p75*.
 
 Error Volume:: 
@@ -290,7 +294,11 @@ Number requests over time for the entities
 [[entities-list]]
 === Entities List
 
-Anypoint Insights provides a list of deployed Mule apps and APIs (_entities_) that match the selected time period and any query <<filters, filters>>:
+Check key metrics on individual Mule apps and APIs (_entity_), and click an entity's name to get many detailed charts on the entity. 
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+*Entities List* provides these metrics:
 
 Entity Name:: 
 Name of the deployed entity
