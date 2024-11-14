@@ -105,7 +105,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 Request Latency by Endpoint::
 Inbound or outbound latency, in milliseconds, by endpoint
 +
-The chart captures the request latency average and p50, p75, p90, p95, p99 percentile values.
+The chart captures the average latency and the p50, p75, p90, p95, and p99 percentile latency values.
  
 //end::app-detail-requests[]
 //-----------------------//
@@ -371,7 +371,7 @@ Total number of requests
 //  shared chart: Overview tab
 //tag::request-latency[]
 Request Latency::
-Latency over time, in milliseconds (ms), for the average and p90, p95, p99 percentile requests
+Latency over time, in milliseconds (ms), for the average request and the p90, p95, p99 percentile requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //can download as CSV, XLS
