@@ -243,27 +243,26 @@ Understand the monitoring data in Anypoint Insights charts:
 [[performance-metrics-overview]]
 ==== Performance Metrics
 
-Total Entities::
-Total number of entities that match your currently selected time range and any query <<filters, filters>>.
+Monitor high-level performance metrics across your deployments. 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+Total Entities::
+Total number of entities
 
 Entities with Errors::
-Count of entities that have an error that matches your current search conditions in the selected date and time range.
-include::partial$include-insights-charts.adoc[tags="data-scope"] 
-+
-Errors are dependent on the type of deployment. 
+Total number of errors for the listed entities
 
-* For API implementations, an error is based on the HTTP status code (for example, `404` or `502`). 
-* For Mule apps, an error is based on the response status (for example, `FAILED`).
+* For API implementations, this metric counts HTTP status codes that identify errors (for example, `404` or `502`). 
+* For Mule apps, this metric counts a response status that identifies an error (for example, `FAILED`).
 
 Total Requests::
-Total request volume for entities that match your current search conditions in the selected date and time range.
-include::partial$include-insights-charts.adoc[tags="data-scope"] 
+Total number of requests to the listed entities
 
 Error Rate:: 
-Error rate for entities that match your current search conditions in the selected date and time range. The error rate is calculated using the total number of entity errors divided by the total number of requests for those entities.
-include::partial$include-insights-charts.adoc[tags="data-scope"]
 
+Percent of the listed entities that have request errors
++
+This metric equals the total number of entities with errors divided by the total number of requests for those entities.  
 
 //
 // H4: Performance Trends
@@ -272,11 +271,11 @@ include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 Entities with Slow Response Times:: 
 Response time of the top entities that match your current search conditions in the selected date and time range. The top entities are calculated based on the percentile values of their response times (highest response time to lowest response time). The chart uses `P99` as the percentile index by default; however, you can select `P95`, `P90`, or `P75` to use as the percentile index.
-include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 
 Error Volume:: 
 Total number of entities that match your current search conditions in the selected date and time range.
-include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 +
 Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
 Request Volume:: 
@@ -326,7 +325,7 @@ Anypoint Monitoring provides details on individual Mule apps that are deployed t
 ==== Mule Application Metrics
 
 High-level metrics are available above Anypoint Insights tabs that contain detailed Mule app metrics. 
-include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 
 include::partial$include-insights-charts.adoc[tag=app-detail-header]
 
@@ -334,7 +333,7 @@ include::partial$include-insights-charts.adoc[tag=app-detail-header]
 ==== Overview Metrics for a Mule Application
 
 Charts with overview metrics are available in the *Overview* tab for a Mule app in Anypoint Insights.
-include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 
 
 include::partial$include-insights-charts.adoc[tag="app-detail-overview"]
@@ -343,7 +342,7 @@ include::partial$include-insights-charts.adoc[tag="app-detail-overview"]
 ==== Request Metrics for a Mule Application
 
 Charts with request metrics are available in the *Requests* tab for a Mule app in Anypoint Insights.
-include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 
 
 include::partial$include-insights-charts.adoc[tag="app-detail-requests"]
@@ -352,7 +351,7 @@ include::partial$include-insights-charts.adoc[tag="app-detail-requests"]
 ==== Error Metrics for a Mule Application
 
 Charts with error metrics are available in the *Errors* tab for a Mule app in Anypoint Insights.
-include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 
 
 include::partial$include-insights-charts.adoc[tag="app-detail-errors"]
@@ -361,7 +360,7 @@ include::partial$include-insights-charts.adoc[tag="app-detail-errors"]
 ==== JVM Metrics for a Mule Application
 
 Charts with JVM metrics are available in the *JVM* tab for a Mule app in Anypoint Insights.
-include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 
 include::partial$include-insights-charts.adoc[tag="app-detail-jvm"]
 
@@ -383,7 +382,7 @@ Anypoint Monitoring provides details on individual API implementations that are 
 ==== API Implementation Metrics
 
 Charts with these metrics are available above Anypoint Insights tabs that contain detailed API implementation metrics.
-include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 
 include::partial$include-insights-charts.adoc[tags="api-detail-header"]
 
@@ -391,7 +390,7 @@ include::partial$include-insights-charts.adoc[tags="api-detail-header"]
 ==== Overview Metrics for an API Implementation 
 
 Charts with overview metrics are available in the *Overview* tab for each API implementation that you can monitor in Anypoint Insights.
-include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 
 include::partial$include-insights-charts.adoc[tags="api-detail-overview"]
 
@@ -399,7 +398,7 @@ include::partial$include-insights-charts.adoc[tags="api-detail-overview"]
 ==== Request Metrics for an API Implementation 
 
 Charts with request metrics are available in the *Requests* tab for each API implementation that you can monitor in Anypoint Insights.
-include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 
 include::partial$include-insights-charts.adoc[tags="api-detail-requests"]
 
@@ -407,7 +406,7 @@ include::partial$include-insights-charts.adoc[tags="api-detail-requests"]
 ==== Error Metrics for an API Implementation 
 
 Charts with error metrics are available in the *Errors* tab for each API implementation that you can monitor in Anypoint Insights.
-include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 
 include::partial$include-insights-charts.adoc[tags="api-detail-errors"]
 
@@ -415,7 +414,7 @@ include::partial$include-insights-charts.adoc[tags="api-detail-errors"]
 ==== Performance Metrics for an API Implementation
 
 Charts with performance metrics are available in the *Performance* tab for each API implementation that you can monitor in Anypoint Insights.
-include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 
 include::partial$include-insights-charts.adoc[tags="api-detail-performance"]
 
@@ -423,7 +422,7 @@ include::partial$include-insights-charts.adoc[tags="api-detail-performance"]
 ==== Client Application Metrics for an API Implementation 
 
 Charts with client Application metrics are available in the *Client Applications* tab for each API implementation that you can monitor in Anypoint Insights. 
-include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 
 include::partial$include-insights-charts.adoc[tags="api-detail-client-apps"]
 

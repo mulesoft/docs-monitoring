@@ -383,9 +383,9 @@ You can download data in this chart as a CSV or XSL file.
 //end::download-as[]
 //
 //  shared content: data is for selected time & query filters
-// tag:data-scope[]
-The scope of captured data depends on the selected time period and query filters.
-// end:data-scope[]
+// tag::data-scope[]
+The scope of metrics depends on the selected environment, time period, and any query <<filters, filters>>.
+// end::data-scope[]
 //
 //--------------------------------------------//
 //
