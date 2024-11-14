@@ -250,36 +250,40 @@ Total Entities::
 Total number of entities
 
 Entities with Errors::
-Total number of errors for the listed entities
+Total number of entities that have received errors
 
 * For API implementations, this metric counts HTTP status codes that identify errors (for example, `404` or `502`). 
-* For Mule apps, this metric counts a response status that identifies an error (for example, `FAILED`).
+* For Mule apps, this metric counts a response codes that indicate an error (for example, `FAILED`).
 
 Total Requests::
 Total number of requests to the listed entities
 
 Error Rate:: 
-
-Percent of the listed entities that have request errors
-+
-This metric equals the total number of entities with errors divided by the total number of requests for those entities.  
+Percentage equal to the total number of entities with errors divided by the total number of requests for those entities
 
 //
 // H4: Performance Trends
 [[performance-trends-overview]]
 ==== Performance Trends
 
-Entities with Slow Response Times:: 
-Response time of the top entities that match your current search conditions in the selected date and time range. The top entities are calculated based on the percentile values of their response times (highest response time to lowest response time). The chart uses `P99` as the percentile index by default; however, you can select `P95`, `P90`, or `P75` to use as the percentile index.
+Monitor high-level performance over time across your deployments. 
+include::partial$include-insights-charts.adoc[tags="data-scope"]
 
+//TODO_TODO: slow -> Slow
+//TODO_TODO: is the percentile calculated in the normal way? are we saying x% are faster or slower?
+Entities with Slow Response Times:: 
+Response times, in milliseconds, of the entities with the slowest response times
+
+The metric uses percentile values for response times (calculated from highest to lowest times) to identify entities with the slowest responses. You can select the *p99* (default), *p95*, *p90*, or *p75*.
 
 Error Volume:: 
-Total number of entities that match your current search conditions in the selected date and time range.
+Number of errors received by the entities over time
 
-+
-Errors are dependent on the context of the entity. For API entities, an error is based on the HTTP status code (for example, `4xx` or `5xx`) and for application entities, an error is based on the response status (for example, `FAILED`)
+* For API implementations, this metric counts HTTP error codes (for example, `404` or `502`). 
+* For Mule apps, this metric counts error response codes (for example, `FAILED`).
+
 Request Volume:: 
-The total number of request to entities that match your current search conditions in the selected date and time range. 
+Number requests over time for the entities 
 
 //
 //H3: ENTITIES LIST
