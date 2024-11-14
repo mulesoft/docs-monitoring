@@ -16,29 +16,55 @@ of issues (MTTI).
 * Store and search log data at scale.
 
 [[features]]
-== Monitoring Features by Control Plane Region
+== Monitoring Features by Control Plane
 
-Anypoint Monitoring is available in all control plane regions that host Anypoint Platform.  
-
+Anypoint Monitoring feature availability depends on your <<billing, billing package or plan>> and control plane region. 
 include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 
-* https://anypoint.mulesoft.com/monitoring[US Cloud] and https://eu1.anypoint.mulesoft.com/monitoring[EU Cloud] (Feature availability depends on your <<billing, billing package or plan>>):
+[%header,cols="3a,1a,1a,1a"]
+|===
+|Anypoint Monitoring Feature |US & EU Clouds | Canada & Japan Clouds | Government & Private Clouds
 
-** <<dashboards>>
-** <<alerts>>
-** <<logging>> 
-** <<insights>> (Beta)
-** <<functional-monitoring>>
+|{empty}
+
+* <<dashboards, Dashboards>> 
+* <<alerts, Alerts>>
+* <<logging, Log management>> 
+* xref:reports.adoc[Reports]
+* xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
+* xref:tools.adoc[Notifications to external systems]
+.^| yes
+.^| no
+.^| yes
+
+|{empty} 
+  <<insights, Anypoint Insights dashboards>>
+| yes (Beta)
+| yes
+| no
+
+|{empty}
+  <<functional-monitoring>>
+| yes
+| yes
+| no
+
+|{empty}
+  xref:telemetry-exporter.adoc[Telemetry exports]
+| yes
+| no
+| no
+|===
+
+* US Cloud and EU Cloud (https://anypoint.mulesoft.com/monitoring[US], https://eu1.anypoint.mulesoft.com/monitoring[EU]) offer all monitoring features.
 
 //TEMP INFO: Hyperforce 12/24 (W-17225983)
-* https://ca1.platform.mulesoft.com/monitoring[Canada Cloud] and https://jp1.platform.mulesoft.com/monitoring[Japan Cloud] (Only Starter package features are available at this time):
+* Canada Cloud and Japan Cloud (https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan]) features are available in the usage-based <<plans-usage-based, Starter>> package only at this time.
 
-** <<insights>> 
-** <<functional-monitoring>> 
 
 //NOT SUPPORTED in PCE & Gov Cloud: Insights, Traces, Telemetry Exporter, API Functional Monitoring
 
-For more information about Anypoint Platform clouds, see xref:hosting-home::index.adoc#control-plane-hosting-options[Control Plane Hosting Options].
+For more information about Anypoint Platform clouds, including MuleSoft Government Cloud and Anypoint Platform Private Cloud Edition (Anypoint Platform PCE), see xref:hosting-home::index.adoc#control-plane-hosting-options[Control Plane Hosting Options].
 
 [[insights]]
 === Anypoint Insights Dashboards
