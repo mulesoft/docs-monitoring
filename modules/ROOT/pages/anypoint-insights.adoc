@@ -122,7 +122,7 @@ This table lists supported filters:
 
 |`deployment_type`
 |`=`, `IN`
-|Filter by deployment target, CloudHub 2.0 (*CLOUDHUB2*) or Runtime Fabric (*RTF*), for example:
+|Filter by deployment target, such as CloudHub 2.0 (*CLOUDHUB2*) or Runtime Fabric (*RTF*), for example:
 ----
 deployment_type IN ['CLOUDHUB2', 'RTF']
 ----
