@@ -105,7 +105,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 Request Latency by Endpoint::
 Inbound or outbound latency, in milliseconds, by endpoint
 +
-The chart captures the average latency of all requests and specific percentages (p50, p75, p90, p95, and p99) of requests. The latency of the remaining, uncounted 50%, 25%, 10%, 5%, and 1% of requests is typically greater than the corresponding p50, p75, p90, p95, and p99 value at a given point of time because this metric starts with the lowest latency value and progresses in ascending order before averaging the collected values.
+The chart captures the request latency average and p50, p75, p90, p95, p99 percentile values.
  
 //end::app-detail-requests[]
 //-----------------------//
@@ -327,7 +327,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //TODO:  Can we say "Bottom 95p Response Time" or similar?
 //You can download as CSV, XLS
 Top 20 Paths by 95th percentile Response Time::
-For the 20 most requested endpoints, the average response time of 95% of requests; the response time of the remaining 5% is typically greater than this number
+95th percentile value for each of the 20 most requested endpoints
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //end::api-detail-performance[]
@@ -358,9 +358,7 @@ Average request latency, in milliseconds (ms)
 // shared chart: Overview tab
 //tag::p95-latency[]
 P95 Latency::
-Average latency, in milliseconds (ms), of 95% (p95) of the requests
-+
-The latency of the remaining, uncounted 5% of requests is typically greater than the p95 value because calculation of this metric starts with the lowest latency value and progresses in ascending order before averaging the collected values.
+Latency, in milliseconds (ms), of 95th percentile (p95) request
 //end::p95-latency[]
 //
 //  shared chart: Overview tab
@@ -373,9 +371,7 @@ Total number of requests
 //  shared chart: Overview tab
 //tag::request-latency[]
 Request Latency::
-Latency over time, in milliseconds (ms), for 90% (p90), 95% (p95), 99% (p99) of the requests, and the average latency of all requests
-+
-The latency of the remaining, uncounted 10%, 5%, or 1% of requests is typically greater than the corresponding p90, p95, or p99 value at a given point of time because this metric starts with the lowest latency value and progresses in ascending order before averaging the collected values.
+Latency over time, in milliseconds (ms), for the average and p90, p95, p99 percentile requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //can download as CSV, XLS

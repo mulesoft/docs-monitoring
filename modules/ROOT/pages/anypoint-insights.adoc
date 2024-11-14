@@ -301,9 +301,7 @@ Request Volume::
 Total number of requests to this entity
 
 Response Time (p99):: 
-Average response time, in milliseconds, for 99% of the requests
-+
-Calculation of this metric starts from the lowest response time value, so the time for the remaining, uncounted 1% of responses is likely to be higher than the p99 response time.
+Response time, in milliseconds for the 99th percentile of requests
 
 Error Rate:: 
 Percentage of requests that resulted in errors 
