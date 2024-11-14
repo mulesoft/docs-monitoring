@@ -23,7 +23,10 @@ include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 
 [%header,cols="3a,1a,1a,1a"]
 |===
-|Anypoint Monitoring Feature |US & EU Clouds | Canada & Japan Clouds | Government & Private Clouds
+|Anypoint Monitoring Feature 
+|https://anypoint.mulesoft.com/monitoring[US], https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds
+| https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds (Hyperforce)
+| Government & Private Clouds
 
 |{empty}
 
@@ -38,8 +41,8 @@ include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 .^| yes
 
 |{empty} 
-  <<insights, Anypoint Insights dashboards>>
-| yes (Beta)
+  <<insights, Anypoint Insights>>
+| yes
 | yes
 | no
 
@@ -55,12 +58,6 @@ include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 | no
 | no
 |===
-
-* US Cloud and EU Cloud (https://anypoint.mulesoft.com/monitoring[US], https://eu1.anypoint.mulesoft.com/monitoring[EU]) offer all monitoring features.
-
-//TEMP INFO: Hyperforce 12/24 (W-17225983)
-* Canada Cloud and Japan Cloud (https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan]) features are available in the usage-based <<plans-usage-based, Starter>> package only at this time.
-
 
 //NOT SUPPORTED in PCE & Gov Cloud: Insights, Traces, Telemetry Exporter, API Functional Monitoring
 
