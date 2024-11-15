@@ -89,17 +89,13 @@ Outbound request count total, which you can group by response time, protocol, or
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
-//TODO_TODO: WHICH SLOWEST? (SATHISH)
-//TODO_TODO: FIX "requests" -> "Requests"
-Top Slowest requests by Path::
-Up to 20 endpoints with requests that last more than 25ms
+//TODO UI: slowest -> Slowest
+Top Slowest Requests by Path::
+Up to 20 endpoints with the slowest requests
 +
-If no data is available, then no requests take more than 25ms to process.
+The requests must take more than 25ms. If no data is available, then no requests take more than 25ms to process.
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
-//TODO_TODO: TBD if can download as CSV, XLS an other details
-//+
-//include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //  NOTE: looks like you _can't_ download as CSV, XLS
 Request Latency by Endpoint::
@@ -241,7 +237,7 @@ include::partial$include-insights-charts.adoc[tag="total-requests"]
 
 //TODO_TODO: to avoid duplication (see chart with same name this one) CHANGE NAME to something like Policy Violation Volume (or similar)
 Policy Violations::
-Number of API policy violations
+Number of requests blocked because of API policy violations
 
 Request Volume::
 Request count over time
@@ -255,11 +251,12 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //TODO_TODO: WHICH POLICIES, which APIs (incorporated into a Mule API Gateway?), and WHAT TRIGGERS the violation (SATHISH)
 //TODO: For information about Mule gateway policies, see TODO
-//TODO: TBD: can you download as CSV, XLS??
 Policy Violations::
-API policy violation count over time
-//+
-//include::partial$include-insights-charts.adoc[tag="download-as"]
+Number of requests blocked over time because of API policy violations
++
+For information about policies, see xref:api-manager::manage-policies-overview.adoc[].
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 //end::api-detail-overview[]
 //-------------------------------------------------------------//
 //

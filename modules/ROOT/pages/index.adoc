@@ -41,13 +41,9 @@ include::partial$include-nav-entities.adoc[tags="region-data-not-shared"]
 .^| yes
 
 |{empty} 
-  <<insights, Anypoint Insights>>
-| yes
-| yes
-| no
 
-|{empty}
-  <<functional-monitoring>>
+* <<insights, Anypoint Insights>>
+* <<functional-monitoring>>
 | yes
 | yes
 | no
