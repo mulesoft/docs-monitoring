@@ -3,16 +3,14 @@
 :selector-all-dashboards: This selector is available to all Insights dashboards.
 :download-chart-data: You can download most chart data to CSV or XSL.
 
-Monitor performance data and issues across your deployed Mule apps and API implementations (_entities_) with Anypoint Insights, in Anypoint Monitoring. 
+Monitor performance data and issues across your deployed Mule apps and API implementations (_entities_) with Anypoint Insights, in Anypoint Monitoring: 
 
-Identify and troubleshoot data on your deployments with:
-
-* Metrics across multiple Mule app and API deployments
+* Check metrics across multiple Mule apps and API implementations
 +
-Get up to the last 7 days (Advanced package) or 24 hours (Starter package) of metrics on response times, error volume, and request volume. Use filters to narrow your results. {download-chart-data}
-* Metrics on individual Mule app and API deployments
+Get up to the last 7 days (Advanced package) or 24 hours (Starter package) of high-level metrics on requests, errors, and responses. Use filters to narrow your results. {download-chart-data}
+* Check metrics on individual Mule apps and API implementations
 +
-Get up to the last 30 days of metrics on requests, latency, errors, JVM data, performance, and client apps. {download-chart-data}
+Get up to the last 30 days of metrics on latency, requests, responses, errors, Mule messages and the JVM for Mule apps, and for API implementations, data on policy violations, performance, and client apps. {download-chart-data}
 
 [[entities]]
 include::partial$include-entities.adoc[tags="entity-definition"]
