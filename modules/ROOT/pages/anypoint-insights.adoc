@@ -14,6 +14,9 @@ Get up to the last 7 days (Advanced package) or 24 hours (Starter package) of me
 +
 Get up to the last 30 days of metrics on requests, latency, errors, JVM data, performance, and client apps. {download-chart-data}
 
+[[entities]]
+include::partial$include-entities.adoc[tags="entity-definition"]
+
 [[dashboard-overview]]
 //don't change order of numbers in graphic or calloutlist
 image::insights.png["Anypoint Insights UI"]
@@ -238,7 +241,7 @@ include::partial$include-entities.adoc[tags="entity-definition"]
 [[charts-performance]]
 === Performance Metrics and Trends
 
-*Performance Metrics* and *Performance Trends* provide insights across your deployments:
+*Performance Metrics* and *Performance Trends* provide insights across your entities:
 
 * <<performance-metrics-overview>>
 * <<performance-trends-overview>>
@@ -247,7 +250,9 @@ include::partial$include-entities.adoc[tags="entity-definition"]
 [[performance-metrics-overview]]
 ==== Performance Metrics
 
-Monitor high-level performance metrics across your deployments. 
+Monitor high-level performance metrics across your entities. 
+
+include::partial$include-entities.adoc[tags="entity-definition"]
 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
@@ -264,16 +269,18 @@ Total Requests::
 Total number of requests to the listed entities
 
 Error Rate:: 
-For entities with request errors, the percentage equal to the total number of request errors  divided by the total number of requests (with and without errors)
+For entities with request errors, the percentage equal to the total number of request errors divided by the total number of requests
 +
-For example, assume that 1 out of 5 total requests to API A produces an error and that 2 requests out of 5 to Application B produces an error. The error rate is 3/10, or 30%. 
+For example, assume that 1 out of 5 total requests to _API A_ produces an error and that 2 requests out of 5 to _App B_ produces an error. The error rate is 3/10, or 30%. 
 
 //
 // H4: Performance Trends
 [[performance-trends-overview]]
 ==== Performance Trends
 
-Monitor high-level performance over time across your deployments. 
+Monitor high-level performance over time across your entities. 
+
+include::partial$include-entities.adoc[tags="entity-definition"]
 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
@@ -300,36 +307,39 @@ Number requests over time for the entities
 
 Check key metrics on individual Mule apps and APIs (_entity_), and click an entity's name to get many detailed charts on the entity. 
 
+include::partial$include-entities.adoc[tags="entity-definition"]
+
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 *Entities List* provides these metrics:
 
 Entity Name:: 
-Name of the deployed entity
+Name of the entity
 
-//TODO_TODO_TODO: Mule Gateway APIs only or other API instance?
-//TODO: SHOULD BE "API" not "Api"
+//NOTE: changed value Api -> API
 Entity Type:: 
-Type of entity deployed, such as *API* or *Application*
+Type of entity, such as *API* or *Application* (Mule app)
 
 Request Volume::
 Total number of requests to this entity
 
 Response Time (p99):: 
-Response time, in milliseconds for the 99th percentile of requests
+Response time, in milliseconds, for the 99th percentile of requests to this entity
++
+This response time is greater than 99% of all response times for this entity.
 
 Error Rate:: 
-Percentage of requests that resulted in errors 
+Percentage of requests to this entity that resulted in errors 
 
 Deployment Type:: 
-Host for this deployed entity, such as *CloudHub 2.0* or *Runtime Fabric* 
+Deployment target of this entity, such as *CloudHub 2.0* or *Runtime Fabric* 
 
 //
 //H3: ENTITY METRICS for APPS (ONLY)
 [[entity-metrics-apps]]
-=== Detailed Metrics for Mule Applications
+=== Application Details
 
-Anypoint Monitoring provides details on individual Mule apps that are deployed to a supported target.
+Anypoint Monitoring provides details on individual Mule apps deployed to a supported target.
 
 * <<entity-metrics-app-header>>
 * <<entity-metrics-app-overview>>
@@ -337,11 +347,12 @@ Anypoint Monitoring provides details on individual Mule apps that are deployed t
 * <<entity-metrics-app-errors>>
 * <<entity-metrics-app-jvm>>
 
+include::partial$include-entities.adoc[tags="entity-definition"]
+
 [[entity-metrics-app-header]]
 ==== Mule Application Metrics
 
 High-level metrics are available above Anypoint Insights tabs that contain detailed Mule app metrics. 
-
 
 include::partial$include-insights-charts.adoc[tag=app-detail-header]
 
@@ -350,8 +361,6 @@ include::partial$include-insights-charts.adoc[tag=app-detail-header]
 
 Charts with overview metrics are available in the *Overview* tab for a Mule app in Anypoint Insights.
 
-
-
 include::partial$include-insights-charts.adoc[tag="app-detail-overview"]
 
 [[entity-metrics-app-requests]]
@@ -359,16 +368,12 @@ include::partial$include-insights-charts.adoc[tag="app-detail-overview"]
 
 Charts with request metrics are available in the *Requests* tab for a Mule app in Anypoint Insights.
 
-
-
 include::partial$include-insights-charts.adoc[tag="app-detail-requests"]
 
 [[entity-metrics-app-errors]]
 ==== Error Metrics for a Mule Application
 
 Charts with error metrics are available in the *Errors* tab for a Mule app in Anypoint Insights.
-
-
 
 include::partial$include-insights-charts.adoc[tag="app-detail-errors"]
 
@@ -383,9 +388,9 @@ include::partial$include-insights-charts.adoc[tag="app-detail-jvm"]
 //
 //H3: ENTITY METRICS for APIs (ONLY)
 [[entity-metrics-apis]]
-=== Detailed Metrics for API Implementations
+=== API Details
 
-Anypoint Monitoring provides details on individual API implementations that are deployed to a supported target.
+Anypoint Monitoring provides details on individual API implementations deployed to a supported target.
 
 * <<entity-metrics-api-header>>
 * <<entity-metrics-api-overview>>
@@ -394,11 +399,12 @@ Anypoint Monitoring provides details on individual API implementations that are 
 * <<entity-metrics-api-performance>>
 * <<entity-metrics-api-client-apps>>
 
+include::partial$include-entities.adoc[tags="entity-definition"]
+
 [[entity-metrics-api-header]]
 ==== API Implementation Metrics
 
 Charts with these metrics are available above Anypoint Insights tabs that contain detailed API implementation metrics.
-
 
 include::partial$include-insights-charts.adoc[tags="api-detail-header"]
 
@@ -407,14 +413,12 @@ include::partial$include-insights-charts.adoc[tags="api-detail-header"]
 
 Charts with overview metrics are available in the *Overview* tab for each API implementation that you can monitor in Anypoint Insights.
 
-
 include::partial$include-insights-charts.adoc[tags="api-detail-overview"]
 
 [[entity-metrics-api-requests]]
 ==== Request Metrics for an API Implementation 
 
 Charts with request metrics are available in the *Requests* tab for each API implementation that you can monitor in Anypoint Insights.
-
 
 include::partial$include-insights-charts.adoc[tags="api-detail-requests"]
 
@@ -423,7 +427,6 @@ include::partial$include-insights-charts.adoc[tags="api-detail-requests"]
 
 Charts with error metrics are available in the *Errors* tab for each API implementation that you can monitor in Anypoint Insights.
 
-
 include::partial$include-insights-charts.adoc[tags="api-detail-errors"]
 
 [[entity-metrics-api-performance]]
@@ -431,14 +434,12 @@ include::partial$include-insights-charts.adoc[tags="api-detail-errors"]
 
 Charts with performance metrics are available in the *Performance* tab for each API implementation that you can monitor in Anypoint Insights.
 
-
 include::partial$include-insights-charts.adoc[tags="api-detail-performance"]
 
 [[entity-metrics-api-client-apps]]
 ==== Client Application Metrics for an API Implementation 
 
 Charts with client Application metrics are available in the *Client Applications* tab for each API implementation that you can monitor in Anypoint Insights. 
-
 
 include::partial$include-insights-charts.adoc[tags="api-detail-client-apps"]
 

@@ -24,6 +24,6 @@ Data isn't shared across the separate instances of Anypoint Platform.
 
 //
 // tag::entity-definition[]
-*Entities* are deployable units (such as Mule apps and APIs) that generate the data that's displayed in Anypoint Insights.
+_Entities_ are deployable units (such as Mule apps and API implementations) that generate the data that's displayed in Anypoint Insights.
 // end::entity-definition[]
 //

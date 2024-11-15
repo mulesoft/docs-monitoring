@@ -7,20 +7,19 @@ Type::
 Mule application type (*Application*)
 
 Status::
-Status code that indicates whether a Mule app is running or in some other xref:runtime-manager::managing-deployed-applications.adoc#status_states[state]
+Status code that indicates whether this Mule app is running or in some other xref:runtime-manager::managing-deployed-applications.adoc#status_states[state]
 +
 This code comes from Runtime Manager.
 
 URL:: 
-URL of this Mule app
-//TODO: suggest Runtime Version conform on Runtime (App) vs. Runtime Version (API)
+URL of this deployed Mule app
 
+//TODO: Runtime -> Runtime Version (SATHISH)
 Runtime::
 Mule runtime engine version of this Mule app
 
-
 Replicas::
-Virtual core fraction and count of this Mule app, for example, *0.1 vCores x 1* (= 10% of 1 vCore)
+Virtual core fraction and count for this Mule app, for example, *0.1 vCores x 1* (= 10% of 1 vCore)
 
 Last Updated::
 Date-time stamp for the last redeployment of this Mule app
@@ -37,34 +36,29 @@ include::partial$include-insights-charts.adoc[tag="average-latency"]
 include::partial$include-insights-charts.adoc[tag="p95-latency"]
 include::partial$include-insights-charts.adoc[tag="total-requests"]
 
-//TODO: change to Mule Message Volume (SATHISH)
+//TODO: Messages -> Message (SATHISH)
 Mule Messages Volume::
 Total Mule message count for this app
 +
 For information about Mule messages, see xref:mule-runtime::about-mule-event.adoc[].
 
 //  shared metric in Overview tab
-//      can download as CSV, XLS
 include::partial$include-insights-charts.adoc[tag="request-latency"]
 
-//  shared metric in Overview tab
-//      can download as CSV, XLS
 Inbound Request Volume::
 Inbound request count over time, including successful and unsuccessful (failing) inbound requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //  shared metric in Overview tab
-//      can download as CSV, XLS
 Failed Inbound Request Volume::
-Unsuccessful inbound request count over time
+Count of unsuccessful inbound requests over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //  shared metric in Overview tab
-//      can download as CSV, XLS
 Mule Messages::
-Mule message count over time
+Mule message count for this Mule app over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 +
@@ -75,21 +69,17 @@ For information about Mule messages, see xref:mule-runtime::about-mule-event.ado
 //---------------------------------------------------------------------------------//
 // APP DETAIL REQUESTS: Requests tab
 //tag::app-detail-requests[]
-//  can group by protocol, response time or not group at all
-//  can download as CSV, XLS
 Inbound Request Volume::
 Inbound request count total, which you can group by response time or protocol 
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
-//  can group by protocol, response time or not group at all
-//  can download as CSV, XLS
 Outbound Request Volume::
-Outbound request count total, which you can group by response time, protocol, or by up to 20 hosts (such as an Object Store or a `cloudhub.io` address) with the most outbound requests 
+Outbound request count total, which you can group by response time, protocol, or by the 20 hosts (such as an Object Store or a `cloudhub.io` address) with the most outbound requests 
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
-//TODO UI: slowest -> Slowest
+//TODO: requests -> Requests (SATHISH)
 Top Slowest Requests by Path::
 Up to 20 endpoints with the slowest requests
 +
@@ -97,11 +87,10 @@ The requests must take more than 25ms. If no data is available, then no requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
-//  NOTE: looks like you _can't_ download as CSV, XLS
 Request Latency by Endpoint::
 Inbound or outbound latency, in milliseconds, by endpoint
 +
-The chart captures the average latency and the p50, p75, p90, p95, and p99 percentile latency values.
+The chart captures the average latency and the latency value of requests at the p50, p75, p90, p95, and p99 percentiles.
  
 //end::app-detail-requests[]
 //-----------------------//
@@ -120,7 +109,7 @@ Number of inbound or outbound requests to the 20 endpoints with the most failed 
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Top 20 Failed Outbound Requests by Total Count::
-Number of failed outbound requests to the 20 endpoints with the most failed requests
+Number of unsuccessful outbound requests to the 20 endpoints with the most failed requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //end::app-detail-errors[]
@@ -129,25 +118,25 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //-----------------------//
 // APP DETAIL JVM: JVM tab
 //tag::app-detail-jvm[]
-//TODO: clarify name (SATHISH)
+//TODO: Old Gen GC Count -> Old Generation Garbage Collection Count (SATHISH)
 Old Gen GC Count::
 Number of times old generation Java garbage collection occurred
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
-//TODO: clarify name (SATHISH)
+//TODO: Old Gen GC Duration -> Old Generation Garbage Collection Duration (SATHISH)
 Old Gen GC Duration::
 Amount of time taken for old generation Java garbage collection
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
-//TODO: clarify name (SATHISH)
+//TODO: Young Gen GC Count -> Young Generation Garbage Collection Count (SATHISH)
 Young Gen GC Count::
 Number of times young generation Java garbage collection occurred
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
-//TODO: clarify name (SATHISH)
+//TODO: Young Gen GC Duration -> Young Generation Garbage Collection Duration (SATHISH)
 Young Gen GC Duration::
 Amount of time taken for young generation Java garbage collection
 +
@@ -164,7 +153,7 @@ Amount of physical memory used
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Thread Count::
-//TODO: threads that are available or used??? (SATHISH)
+//TODO: QUESTION: threads that are available or used??? (SATHISH)
 Number of threads for simultaneous requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
@@ -349,20 +338,20 @@ You can click the request volume number on the map to get more detailed informat
 // shared chart: Overview tab
 //tag::average-latency[]
 Average Latency::
-Average request latency, in milliseconds (ms)
+Average request latency, in milliseconds (ms), of this entity
 //end::average-latency[]
 //
 // shared chart: Overview tab
 //tag::p95-latency[]
 P95 Latency::
-Latency, in milliseconds (ms), of 95th percentile (p95) request
+Latency, in milliseconds (ms), of 95th percentile (p95) request for this entity
 //end::p95-latency[]
 //
 //  shared chart: Overview tab
 //tag::total-requests[]
 //TODO: "Requests" -> "Request", and can we remove "Volume"? or change to "Request Total"
 Total Requests Volume::
-Total number of requests
+Total number of requests to this entity
 //end::total-requests[]
 //
 //  shared chart: Overview tab
