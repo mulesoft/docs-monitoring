@@ -46,19 +46,19 @@ For information about Mule messages, see xref:mule-runtime::about-mule-event.ado
 include::partial$include-insights-charts.adoc[tag="request-latency"]
 
 Inbound Request Volume::
-Inbound request count over time, including successful and unsuccessful (failing) inbound requests
+Inbound request count at specific time points
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //  shared metric in Overview tab
 Failed Inbound Request Volume::
-Count of unsuccessful inbound requests over time
+Count of unsuccessful inbound requests at specific time points
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //  shared metric in Overview tab
 Mule Messages::
-Mule message count for this Mule app over time
+Mule message count for this Mule app at specific time points
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 +
@@ -99,7 +99,7 @@ The chart captures the average latency and the latency value of requests at the 
 //  APP DETAIL ERRORS: Errors tab
 //tag::app-detail-errors[]
 Failed Outbound Request Volume::
-Number of failed outbound requests over time
+Number of failed outbound requests at specific time points
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
@@ -178,32 +178,32 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //-------------------------
 //tag::api-detail-header[]
 
-//TODO: change to API (SATHISH)
+//TODO: Api -> API (SATHISH)
 Type::
-API implementation type (*Api*)
+API implementation type (*API*)
 
+//TODO: verify for Insights; info is from API Manager docs (SATHISH)
 Status::
 Status code that indicates whether the governance policies and SLA tiers are functional (*Active*) or not
 +
 For all codes, see information on xref:api-manager::latest-overview-concept.adoc#what-api-manager-looks-like[tracking registration status] in the API Manager UI documentation.
 
+//TODO: Url -> URL (SATHISH)
 Implementation URL:: 
 URL of deployed API integration
 
-//TODO: suggest Runtime Version conform on Runtime (App) vs. Runtime Version (API)
-//TODO:what If the runtime version is empty... (SEE BOOKS API IN STGX)
-//TODO: capitalize "version"?
+//TODO: Runtime version -> Runtime Version (SATHISH)
+//TODO: issue: value can be empty; SEE BOOKS API IN STGX (SATHISH)
 //(SATHISH)
-Runtime version::
+Runtime Version::
 Mule Gateway or Flex Gateway runtime version used by the API implementation 
 
-
-//TODO_TODO_TODO: What if empty but seems to be running?
+//TODO: issue: value can be empty; SEE BOOKS API IN STGX 
 API Instance ID::
 Instance identifier for an API implementation incorporated into a Flex Gateway or API Gateway runtime
 
-//TODO: capitalize "version"?
-API version::
+//TODO: version -> Version (SATHISH)
+API Version::
 Version of the API implementation
 +
 For more information, see xref:api-manager::api-instance-landing-page.adoc[].
@@ -224,24 +224,31 @@ include::partial$include-insights-charts.adoc[tag="p95-latency"]
 //shared Overview metric
 include::partial$include-insights-charts.adoc[tag="total-requests"]
 
-//TODO_TODO: to avoid duplication (see chart with same name this one) CHANGE NAME to something like Policy Violation Volume (or similar)
+//TODO: issue: 2 charts named Policy Violations
+//TODO: Policy Violations -> Policy Violation Count (or similar) (SATHISH)
 Policy Violations::
 Number of requests blocked because of API policy violations
 
+Request Latency::
+Latency, in milliseconds, for requests to this API at specific time points
++
+The chart provides values for the average latency and the p90, p95, p99 percentiles. 
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
+
 Request Volume::
-Request count over time
+Number of requests to this API at specific time points
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Failed Requests::
-Unsuccessful request count over time
+Number of unsuccessful requests to this API at specific time points
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
-//TODO_TODO: WHICH POLICIES, which APIs (incorporated into a Mule API Gateway?), and WHAT TRIGGERS the violation (SATHISH)
-//TODO: For information about Mule gateway policies, see TODO
+//TODO: issue: 2 charts named Policy Violations (SATHISH)
 Policy Violations::
-Number of requests blocked over time because of API policy violations
+Number of requests blocked at specific time points because of API policy violations
 +
 For information about policies, see xref:api-manager::manage-policies-overview.adoc[].
 +
@@ -254,45 +261,44 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //-------------------------
 //tag::api-detail-requests[]
 Request Volume by HTTP Method::
-Number of requests over time, grouped by the HTTP method used
+Number of requests at specific time points, grouped by the HTTP method used for the request
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Request Volume by Response Code::
-Number of requests over time, grouped by the response code (such as *2xx*)
+Number of requests at specific time points, grouped by the response code (such as *2xx*)
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
-// TODO: capitalize "paths" -> "Paths" and "N" to "20" if that's the limit (SATHISH)
+// TODO: paths -> Paths (SATHISH)
+// TODO: top 20 paths
 Request Volume by Top N paths::
-Number of requests over time from endpoints with the most requests
+Number of requests at specific time points from the 20 endpoints with the most requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //end::api-detail-requests[]
-//-------------------------------------------------------------//
+//------------------------------------------------------------//
 //
 //-------------------------------------------------------------//
 // API DETAILS: Errors tab
 //-------------------------
 //tag::api-detail-errors[]
-// TODO: downloads available?
 Failed Requests Volume by HTTP Method::
-Number of unsuccessful requests over time, grouped by the HTTP method used
-//+
-//include::partial$include-insights-charts.adoc[tag="download-as"]
+Number of unsuccessful requests specific time points, grouped by the HTTP method used
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 
 // TODO: downloads available?
 Failed Requests Volume by Response Code::
-Number of unsuccessful requests over time, grouped by the response code (such as *2xx*)
-//+
-//include::partial$include-insights-charts.adoc[tag="download-as"]
+Number of unsuccessful requests specific time points, grouped by the response code (such as *2xx*)
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 
-// TODO: capitalize "paths" -> "Paths" and "N" to "20" if that's the limit (SATHISH)
-// TODO: downloads available?
-Failed Requests by Top N paths::
-Number of unsuccessful requests over time from endpoints with the most requests
-//+
-//include::partial$include-insights-charts.adoc[tag="download-as"]
+// TODO: paths -> Paths and "N" to "20" if that's the limit (SATHISH)
+Failed Requests by Top N Paths::
+Number of unsuccessful requests at specific time points from the 20 endpoints with the most requests
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //end::api-detail-errors[]
 //
@@ -302,17 +308,19 @@ Number of unsuccessful requests over time from endpoints with the most requests
 //----------------------------
 //tag::api-detail-performance[]
 
-//TODO: RESPONSE TIME UNIT MISSING from chart
+//TODO: issue: RESPONSE TIME UNIT MISSING from chart (SATHISH)
+//
 //can download as CSV, XLS
 Top 20 Paths by Average Response Time::
-Average response time of the 20 most requested endpoints. 
+Average response time of the 20 most requested endpoints 
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
-//TODO: 95p or capitalize "percentile" -> "Percentile"
-//TODO:  Can we say "Bottom 95p Response Time" or similar?
+//TODO: 95p (to standardize) or capitalize "percentile" -> "Percentile" (SATHISH)
+//TODO: issue: missing time units on X axis
+//TODO: issue: duplication of time values along the X axis
 //You can download as CSV, XLS
-Top 20 Paths by 95th percentile Response Time::
+Top 20 Paths by 95th Percentile Response Time::
 95th percentile value for each of the 20 most requested endpoints
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
@@ -324,7 +332,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //-------------------------
 //tag::api-detail-client-apps[]
 Request Volume by Location::
-Maps the number of requests to geographic areas across the globe
+Maps with the number of requests to geographic areas across the globe
 +
 You can click the request volume number on the map to get more detailed information.
 //end::api-detail-client-apps[]
@@ -338,18 +346,18 @@ You can click the request volume number on the map to get more detailed informat
 // shared chart: Overview tab
 //tag::average-latency[]
 Average Latency::
-Average request latency, in milliseconds (ms), of this entity
+Average latency, in milliseconds (ms), for requests to this entity
 //end::average-latency[]
 //
 // shared chart: Overview tab
 //tag::p95-latency[]
 P95 Latency::
-Latency, in milliseconds (ms), of 95th percentile (p95) request for this entity
+Latency value, in milliseconds (ms), for 95th percentile (p95) request for this entity
 //end::p95-latency[]
 //
 //  shared chart: Overview tab
 //tag::total-requests[]
-//TODO: "Requests" -> "Request", and can we remove "Volume"? or change to "Request Total"
+//TODO: Requests -> Request" (SATHISH)
 Total Requests Volume::
 Total number of requests to this entity
 //end::total-requests[]
@@ -357,7 +365,7 @@ Total number of requests to this entity
 //  shared chart: Overview tab
 //tag::request-latency[]
 Request Latency::
-Latency over time, in milliseconds (ms), for the average request and the p90, p95, p99 percentile requests
+Latency, in milliseconds (ms), at specific time points for the average request and the p90, p95, and p99 percentile requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //can download as CSV, XLS
