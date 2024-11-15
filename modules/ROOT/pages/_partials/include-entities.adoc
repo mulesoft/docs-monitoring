@@ -18,6 +18,12 @@ https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.c
 
 //
 // tag::region-data-not-shared[]
-Data is not shared across the separate regional instances of Anypoint Platform. 
+Data isn't shared across the separate instances of Anypoint Platform. 
 // end::region-data-not-shared[]
+//
+
+//
+// tag::entity-definition[]
+*Entities* are deployable units (such as Mule apps and APIs) that generate the data that's displayed in Anypoint Insights.
+// end::entity-definition[]
 //

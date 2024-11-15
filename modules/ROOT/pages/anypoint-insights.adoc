@@ -39,17 +39,19 @@ Required prerequisites:
 * An Anypoint Platform account in a region that supports Anypoint Insights
 
 ** {empty}
-include::partial$include-nav-entities.adoc[tags="anypoint-regions-hyperforce"] 
+include::partial$include-entities.adoc[tags="anypoint-regions-hyperforce"] 
 
 ** {empty}
-include::partial$include-nav-entities.adoc[tags="anypoint-regions-useu"]
+include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 
 * A running Mule app or Mule Gateway API that is deployed to a supported target:
 
 ** Runtime Fabric
 ** CloudHub 2.0
-** CloudHub (supported in US and EU regions, in Advanced and Titanium packages only)
-** Hybrid (supported in US and EU regions, in Advanced and Titanium packages only)
+//TEMP INFO: Hyperforce 12/24 (W-17225983)
+** CloudHub (for US and EU clouds, in Advanced and Titanium tiers only)
+//TEMP INFO: Hyperforce 12/24 (W-17225983)
+** Hybrid (for US and EU clouds, in Advanced and Titanium tiers only)
 
 * The *Monitoring Viewer* permission to Anypoint Monitoring and the permissions required for viewing apps and APIs (see xref:monitoring::am-permissions.adoc[])
 * A supported version of Mule Runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[])
@@ -62,7 +64,7 @@ Monitor Mule apps and APIs within a selected business group and environment.
 . Meet the prerequisites in <<prereqs>>. 
 . Log in to Anypoint Platform, and navigate to Anypoint Monitoring. 
 //Nav step
-include::partial$include-nav-entities.adoc[tags="open-insights"]
+include::partial$include-entities.adoc[tags="open-insights"]
 . In Anypoint Insights, set your environment, such as Design, Production, and Sandbox. 
 +
 For guidance, see <<change-environment>>.
@@ -229,6 +231,8 @@ Understand the monitoring data in Anypoint Insights charts:
 * <<entities-list>>
 * <<entity-metrics-apps>>
 * <<entity-metrics-apis>>
+
+include::partial$include-entities.adoc[tags="entity-definition"]
 
 //H3: PERFORMANCE
 [[charts-performance]]
