@@ -284,13 +284,13 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //-------------------------
 //tag::api-detail-errors[]
 Failed Requests Volume by HTTP Method::
-Number of unsuccessful requests specific time points, grouped by the HTTP method used
+Number of unsuccessful requests at specific time points, grouped by the HTTP method used
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 // TODO: downloads available?
 Failed Requests Volume by Response Code::
-Number of unsuccessful requests specific time points, grouped by the response code (such as *2xx*)
+Number of unsuccessful requests at specific time points, grouped by the response code (such as *2xx*)
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
