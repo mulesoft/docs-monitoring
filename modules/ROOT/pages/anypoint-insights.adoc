@@ -45,7 +45,7 @@ include::partial$include-entities.adoc[tags="anypoint-regions-hyperforce"]
 ** {empty}
 include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 
-* A Mule app or Mule Gateway API running on a supported version of Mule Runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
+* A Mule app or API implementation running on a supported version of Mule Runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
 
 ** Runtime Fabric
 ** CloudHub 2.0
@@ -248,7 +248,6 @@ include::partial$include-entities.adoc[tags="entity-definition"]
 ==== Performance Metrics
 
 Monitor high-level performance metrics across your entities. 
-
 include::partial$include-entities.adoc[tags="entity-definition"]
 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
@@ -276,7 +275,6 @@ For example, assume that 1 out of 5 total requests to _API A_ produces an error 
 ==== Performance Trends
 
 Monitor high-level performance over time across your entities. 
-
 include::partial$include-entities.adoc[tags="entity-definition"]
 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
@@ -303,7 +301,6 @@ Number requests over time for the entities
 === Entities List
 
 Check key metrics on individual Mule apps and APIs (_entity_), and click an entity's name to get many detailed charts on the entity. 
-
 include::partial$include-entities.adoc[tags="entity-definition"]
 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
@@ -349,7 +346,7 @@ include::partial$include-entities.adoc[tags="entity-definition"]
 [[entity-metrics-app-header]]
 ==== Mule Application Metrics
 
-High-level metrics are available above Anypoint Insights tabs that contain detailed Mule app metrics. 
+High-level metrics are available in Application Details dashboards for individual Mule apps. 
 
 include::partial$include-insights-charts.adoc[tag=app-detail-header]
 
@@ -401,7 +398,7 @@ include::partial$include-entities.adoc[tags="entity-definition"]
 [[entity-metrics-api-header]]
 ==== API Implementation Metrics
 
-Charts with these metrics are available above Anypoint Insights tabs that contain detailed API implementation metrics.
+High-level metrics are available in *API Details* dashboards for individual API implementations.
 
 include::partial$include-insights-charts.adoc[tags="api-detail-header"]
 
