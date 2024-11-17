@@ -54,11 +54,10 @@ include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 //TEMP INFO: Hyperforce 12/24 (W-17225983)
 ** Hybrid (for US and EU clouds, in Advanced and Titanium tiers only)
 
-* For Canada Cloud and Japan Cloud deployments: 
+* For Canada Cloud and Japan Cloud: 
 +
-Configure Mule runtime engine properties to enable access to Anypoint Platform and to display entity metrics in Anypoint Monitoring.
+Enable Mule runtime access to Anypoint Platform so that you can display entity metrics in Anypoint Monitoring.
 +
-//TODO: WHAT ABOUT RTF?
 For guidance, see xref:hyperforce::configure-mule-hyperforce.adoc[].
 
 * The *Monitoring Viewer* permission to Anypoint Monitoring and the permissions required for viewing apps and APIs (see xref:monitoring::am-permissions.adoc[])
