@@ -59,7 +59,7 @@ include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 Configure Mule runtime engine properties to enable access to Anypoint Platform and to display entity metrics in Anypoint Monitoring.
 +
 //TODO: WHAT ABOUT RTF?
-For guidance, see xref:hyperforce::configure-mule-hyperforce.adoc[]. For information about deployments to CloudHub 2.0 in these clouds, see xref:hyperforce::deploy-mule-apps-hyperforce.adoc[].
+For guidance, see xref:hyperforce::configure-mule-hyperforce.adoc[].
 
 * The *Monitoring Viewer* permission to Anypoint Monitoring and the permissions required for viewing apps and APIs (see xref:monitoring::am-permissions.adoc[])
 
