@@ -211,7 +211,8 @@ To change the business group setting:
 * To select a business group without changing the default, use the business group selector in Anypoint Insights. 
 * To select a default business group:
 
-.. Click your profile icon, and select the name of your profile (see <<profile, item 2>> in the example).
+.. Click your profile icon (see <<profile, item 2>> in the example). 
+.. Select the name of your profile to open Access Management *Settings*.
 .. In Access Management *Settings*, select a business group to use as the default, for example:
 +
 image::insights-default-selector.png["Default selector in Access Management"]
