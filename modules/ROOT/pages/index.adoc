@@ -300,7 +300,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-|xref:api-functional-monitoring[API Functional Monitoring] +
+|<<functional-monitoring, API Functional Monitoring>>
 |Yes
 |No
 |Yes
