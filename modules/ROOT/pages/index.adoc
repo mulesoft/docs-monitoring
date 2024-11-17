@@ -71,7 +71,7 @@ See xref:anypoint-insights.adoc[].
 
 [[dashboards]]
 === Built-in and Custom Dashboards
-
+//ADVANCED TIER FOR CUSTOM DASHBOARDS
 Use built-in dashboards or customize your own to provide instant visibility into your apps' performance and detailed analysis of your network.
 
 image::intro-dashboard-built-in.png[Built-in Dashboard Example]
@@ -86,7 +86,7 @@ See xref:dashboards.adoc[].
 
 [[alerts]]
 === Event-Driven Alerts
-
+//ADVANCED TIER
 Track trends and add your own alerts to identify abnormal behavior and problems in your app network.
 
 image::intro-alerts.png[Alerts]
@@ -97,7 +97,7 @@ See xref:alerts.adoc[].
 
 [[logging]]
 === Log Management
-
+//TIERS TBD
 Manage logs and log data for your deployments with these logging features:
 
 * <<log-search>>
@@ -126,7 +126,7 @@ See xref:log-points.adoc[].
 
 [[raw-data-downloads]]
 ==== Raw Data Downloads
-
+//ADVANCED TIER
 Download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
 
 See xref:raw-data.adoc[].

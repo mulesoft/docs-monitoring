@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 
 [[general_settings]]
-
+//TODO: ANY SPECIAL SUBSCRIPTIONS FOR ADVANCED QUERIES (Advanced? Others?)
 General settings include <<mode_basic, basic>> and <<mode_advanced, advanced>> queries (or modes) for configuring time-series data. Both configurations share fields for the title and a short description.
 
 image::config-general-common.png[Example: Basic Configuration]
