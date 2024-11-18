@@ -120,7 +120,7 @@ Percent of heap used
 +
 This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
 +
-The value of this metric is equal to `heap_used`/`heap_total`. It is important to understand that `heap_total` isn't the same as `heap_committed`, and `heap_total` isn't the STATIC MAX HEAP allocated to the Mule app on CloudHub. For example, 0.2 vCores indicates that the maximum heap memory is 1 GB (see the table in xref:cloudhub::cloudhub-architecture.adoc#cloudhub-workers[CloudHub Workers]), but the value of `heap_total` isn't 1GB. For more information about the JVM Heap Total Memory values, see xref:dashboard-config-ref.adoc#metrics_advanced[].
+Anypoint Monitoring monitors heap usage and triggers memory alerts based on the value of `heap_used`/`heap_total`. The `heap_total` isn't the same as `heap_committed`, and `heap_total` isn't the maximum heap memory allocated to the Mule app on CloudHub. For example, 0.2 vCores indicates that the maximum heap memory is 1 GB (see the table in xref:cloudhub::cloudhub-architecture.adoc#cloudhub-workers[CloudHub Workers]), but the value of `heap_total` isn't 1GB. For more information about the JVM Heap Total Memory values, see xref:dashboard-config-ref.adoc#metrics_advanced[].
 
 Thread count::
 Total number of threads used
