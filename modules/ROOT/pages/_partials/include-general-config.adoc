@@ -96,7 +96,7 @@ Supports conditional logic for filtering the *From* data source you selected.
 +
 Example: `Where env_id = Sandbox`
 +
-Grouping `OR` or `AND` within parentheses is not allowed.
+Grouping `OR` or `AND` conditions within parentheses is not allowed.
 | Select a|
 Add one or more `field` settings to create a function that selects a field from the *From* data and applies an operation to it (such as the `mean` of the `heap_total`). 
 
