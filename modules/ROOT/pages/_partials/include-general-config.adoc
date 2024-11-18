@@ -92,8 +92,15 @@ Supports conditional logic for filtering the *From* data source you selected.
  ** `=` The value on the left matches the value on the right.
  ** `<` The value on the left is less than the value on the right. 
  ** `>` The value on the left is greater than the value on the right.
-* You can also construct a query that contains multiple filtering expressions by using logical `AND` or `OR` operators between the expressions. +
-Example: `Where env_id = Sandbox`
+* You can also construct a query that contains multiple filtering expressions by using logical `AND` or `OR` operators between the expressions. 
++
+Example: 
+
+* `Where env_id = Sandbox`
+* `Where env_id = Sandbox AND app_id= app3`
+* `Where env_id = Sandbox OR env_id= Production`
+
+Grouping `AND` or `OR` conditions within parentheses is _not allowed_. For example, `Where env_id = Sandbox AND (app_id= app3 OR app_id=app2)` isn’t allowed.  
 | Select a|
 Add one or more `field` settings to create a function that selects a field from the *From* data and applies an operation to it (such as the `mean` of the `heap_total`). 
 
