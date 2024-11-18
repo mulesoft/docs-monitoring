@@ -159,7 +159,7 @@ For complete details about pricing, contact your customer support representative
 [[billing]]
 == Anypoint Monitoring Packages and Plans
 
-Anypoint Monitoring packages and plans are available:
+Feature availability depends on the tier of your Anypoint Monitoring package or plan:
 
 * <<plans-usage-based>>
 * <<plans-legacy>>
