@@ -37,7 +37,7 @@ image::insights.png["Anypoint Insights UI"]
 
 Required prerequisites:
 
-* An Anypoint Platform account in a region that supports Anypoint Insights
+* An Anypoint Platform account in a control plane that supports Anypoint Insights:
 
 ** {empty}
 include::partial$include-entities.adoc[tags="anypoint-regions-hyperforce"] 
@@ -287,8 +287,6 @@ include::partial$include-entities.adoc[tags="entity-definition"]
 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
-//TODO_TODO: slow -> Slow
-//TODO_TODO: is the percentile calculated in the normal way? are we saying x% are faster or slower?
 Entities with Slow Response Times::
 Response times, in milliseconds, of the entities with the slowest response times
 +
