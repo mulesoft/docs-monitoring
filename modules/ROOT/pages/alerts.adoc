@@ -1,8 +1,8 @@
 = Getting Alerts in Anypoint Monitoring
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 :page-aliases: alerts-using.adoc, alerts-config.adoc
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvSubReqMonitoring]
 
 Alerts indicate whether a resource (such as a Mule app) is behaving as expected or exceeding a defined threshold.
 

@@ -210,22 +210,22 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |Yes
 |Yes
 
-|Advanced metrics for Inbound and Outbound charts
+|Advanced metrics for xref:app-dashboards.adoc#built-in-charts-app[Inbound and Outbound charts]
 |No
 |No
 |Yes
 
-|Flows charts
+|xref:app-dashboards.adoc#built-in-charts-app[Flow charts]
 |No
 |No
 |Yes
 
-|Connectors charts
+|xref:app-dashboards.adoc#built-in-charts-app[Connector charts]
 |No
 |No
 |Yes
 
-|Anypoint Visualizer app network integration
+|<<note-visualizer, Anypoint Visualizer>> app network integration
 |No
 |No
 |Yes
@@ -249,12 +249,12 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 4+| xref:dashboard-custom-config.adoc[*Custom Dashboards*]
 
-|Basic mode settings for charts
+|Basic mode settings for charts (graphs, singlestats, tables)
 |Yes
 |Yes
 |Yes
 
-|Advanced mode settings for charts
+|Advanced mode settings for charts (graphs, singlestats, tables)
 |Yes, with limited functionality
 |Yes, with limited functionality
 |Yes
@@ -312,6 +312,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 |===
 
+[[note-visualizer]]
 NOTE: Anypoint Visualizer app network integration refers to an Anypoint Visualizer widget within Anypoint Monitoring. Anypoint Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
 
 

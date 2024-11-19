@@ -1,7 +1,7 @@
 = Configuring Singlestats in a Custom Dashboard
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 Anypoint Monitoring custom dashboards provide a way for you to configure singlestat charts for a single measure (such as a response time or heap usage) of your Mule app environment over a given time range.
 

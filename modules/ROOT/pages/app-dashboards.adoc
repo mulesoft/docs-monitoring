@@ -40,8 +40,10 @@ The built-in dashboard for the application or API is displayed.
 image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
 
 Your data is prepopulated and displayed in the built-in dashboards and logs; no configuration is needed. 
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvFunctionality] 
+//TBD:
+//include::reuse::partial$billing/pricing.adoc[tag=featureAdvFunctionality] 
 
+[[built-in-charts-app]]
 Built-in dashboards include various pages to view different types of charts:
 
 [%header,cols="1,4"]
@@ -334,8 +336,7 @@ The sum of outbound requests for the selected time period, grouped by remote hos
 
 [[flows-charts]]
 == Flows
-
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 Inbound - Response Time by Flow::
 The average inbound response time, grouped by flow.
