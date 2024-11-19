@@ -35,6 +35,7 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 * <<dashboards, Dashboards>> 
 * xref:tools.adoc[Notifications] 
 * xref:reports.adoc[Reports]
+* xref:reports.adoc[Tools]
 | Yes
 | No
 | Yes
@@ -151,9 +152,13 @@ Download warehoused (archived) log data for a Mule app, for example, to help inv
 
 See xref:raw-data.adoc[].
 
+[[tools]]
 === Tools for Monitoring Integrations
 
-In https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions, link to connectors that help deliver Anypoint Monitoring notifications to external systems, including custom metrics connectors.
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+
+Use connectors that help deliver Anypoint Monitoring notifications to external systems, including custom metrics connectors.
 
 See xref:tools.adoc[].
 
