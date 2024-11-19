@@ -1,7 +1,7 @@
 = Log Search Query Syntax Reference
 
 //feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
 
 In addition to using the query builder and facet search user interface in Anypoint Monitoring log search, you can use the log search query language.
 

@@ -121,7 +121,7 @@ Manage logs and log data for your deployments with these logging features:
 ==== Log Search
 
 //feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
 
 Anypoint Monitoring provides a link to *Log Search* features in Runtime Manager. Log search enables search across log files, including archived logs to find information and events based on a specific query.
 
