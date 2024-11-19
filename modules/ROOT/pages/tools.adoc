@@ -15,11 +15,11 @@ image::tools.png[Tools]
 . Click *Tools*. 
 . Review the connectors.
 +
-You can scroll over a connector link to learn more before navigating to Anypoint Exchange. For example, Salesforce connector is for creating tickets in the Salesforce Service Cloud in response to Anypoint Monitoring alert notifications:
+You can hover over a connector link to learn more before navigating to Anypoint Exchange. For example, Salesforce connector is for creating tickets in the Salesforce Service Cloud in response to Anypoint Monitoring alert notifications:
 +
-|==
-| image:tools-salesforce.png[Salesforce connector link] |
-  image:tools-salesforce-description.png[Salesforce connector description]
+|===
+| image:tools-salesforce.png[Salesforce connector link] |{empty}
+image:tools-salesforce-description.png[Salesforce connector description]
 |===
 
 Other connectors on the page help with Service Now, JIRA, and other integrations.
