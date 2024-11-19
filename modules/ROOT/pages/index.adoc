@@ -69,7 +69,7 @@ For more information about Anypoint Platform clouds, including MuleSoft Governme
 === Anypoint Insights
 
 //feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+include::reuse::partial$billing/pricing.adoc[tag=featureUsageReqMonitoring]
 
 Monitor performance data and issues across your deployed Mule apps and APIs  (_entities_), and get detailed insights on specific deployments. 
 
