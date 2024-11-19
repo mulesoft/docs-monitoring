@@ -51,7 +51,7 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 |{empty}
  <<logging, Log management>>
 | Yes
-| Yes (Log Search)
+| Yes (limited log search)
 | Yes
 
 |{empty}
