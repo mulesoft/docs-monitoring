@@ -80,11 +80,12 @@ See xref:anypoint-insights.adoc[].
 
 [[dashboards]]
 === Built-in and Custom Dashboards
-//ADVANCED TIER FOR CUSTOM DASHBOARDS
+
 Use built-in dashboards or customize your own to provide instant visibility into your apps' performance and detailed analysis of your network.
 
 image::intro-dashboard-built-in.png[Built-in Dashboard Example]
 
+//ADVANCED/TITANIUM TIER FOR CUSTOM DASHBOARDS
 Built-in dashboards and custom dashboards (available in xref:monitoring::index.adoc#billing[Advanced and Titanium tiers]) expose the metrics on your app network. They provide visual representations of your resources so you can detect anomalies, troubleshoot issues, and see trends that aren't obvious in raw form.
 
 A custom dashboard provides a single screen that can bring together specific metrics and data points that are important to your organization. Custom dashboards can display graphs and other charts, such as single statistics.
@@ -172,6 +173,9 @@ See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional
 //Rajesh 11/24: retain data-storage-retention
 [[data-storage-retention]]
 === Data Storage and Retention
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 Data storage and retention limits are determined by your pricing plan.
 include::reuse::partial$billing/pricing.adoc[tag=featureAdvLimits]
