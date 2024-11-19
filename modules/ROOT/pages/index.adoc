@@ -18,7 +18,7 @@ of issues (MTTI).
 [[features]]
 == Monitoring Features by Control Plane
 
-Anypoint Monitoring feature availability depends on the control plane for your Anypoint Platform instance and your <<billing, billing package or plan>>. 
+Anypoint Monitoring feature availability depends on the control plane for your Anypoint Platform instance and your <<billing, usage-based or subscription-based tier>>. 
 include::partial$include-entities.adoc[tags="region-data-not-shared"]
 
 [%header,cols="3a,1a,1a,1a"]
@@ -188,7 +188,7 @@ For complete details about pricing, contact your customer support representative
 [[billing]]
 == Anypoint Monitoring Packages and Plans
 
-Feature availability depends on the tier of your Anypoint Monitoring package or plan:
+Feature availability depends on the tier of your Anypoint Platform pricing package or plan:
 
 * <<plans-usage-based>>
 * <<plans-legacy>>
