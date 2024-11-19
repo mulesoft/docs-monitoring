@@ -186,9 +186,9 @@ For complete details about pricing, contact your customer support representative
 
 
 [[billing]]
-== Anypoint Monitoring Packages and Plans
+== Anypoint Platform Packages and Plans
 
-Feature availability depends on the tier of your Anypoint Platform pricing package or plan:
+Feature availability in Anypoint Monitoring depends on the tier of your Anypoint Platform pricing package or plan:
 
 * <<plans-usage-based>>
 * <<plans-legacy>>
