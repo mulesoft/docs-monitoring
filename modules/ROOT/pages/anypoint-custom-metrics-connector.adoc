@@ -1,14 +1,14 @@
 = Creating Custom Metrics
 
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+//include::reuse::partial$billing/pricing.adoc[tag=connectorAvailability]
 
 The Anypoint Custom Metrics connector enables you to send operational and business metric values that you define from an app to Anypoint Monitoring. You can then use the built-in *Custom metrics* dashboard and a custom dashboard in *Advanced* mode to visualize the custom metrics in real time. 
 
 Define metrics in the Anypoint Custom Metrics connector to select which metrics to display in the dashboard. You can filter and group the metrics along the dimensions you define to include multiple custom and built-in metrics in a single dashboard visualization.
 
 The Custom Metrics connector is available for both Mule 3 and Mule 4 in the *Monitoring > Custom Metrics* page.
-
-//TODO: ADVANCED Package?
-include::reuse::partial$billing/pricing.adoc[tag=connectorAvailability]
 
 == Prerequisites
 

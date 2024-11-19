@@ -15,6 +15,9 @@ image::dashboard-built-in.png[Built-in Dashboard Example]
 
 == Custom Dashboards
 
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+
 Custom dashboards in Anypoint Monitoring can bring together important metrics and data points that you need to see on one screen. You can specify the resources and metrics that you want to monitor, allowing you to:
 
 * Correlate diverse metrics

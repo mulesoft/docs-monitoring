@@ -33,26 +33,31 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 * <<alerts, Alerts>>
 * xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
 * <<dashboards, Dashboards>> 
-* <<logging, Log management>>
 * xref:tools.adoc[Notifications] 
 * xref:reports.adoc[Reports]
-| yes
-| no
-| yes
+| Yes
+| No
+| Yes
 
 |{empty} 
 
 * <<insights, Anypoint Insights>>
 * <<functional-monitoring>>
-| yes
-| yes
-| no
+| Yes
+| Yes
+| No
+
+|{empty}
+ <<logging, Log management>>
+| Yes
+| Yes (limited to Log Search)
+| Yes
 
 |{empty}
   xref:telemetry-exporter.adoc[Telemetry exports]
-| yes
-| no
-| no
+| Yes
+| No
+| No
 |===
 
 //NOT SUPPORTED in PCE & Gov Cloud: Insights, Traces, Telemetry Exporter, API Functional Monitoring
@@ -61,6 +66,9 @@ For more information about Anypoint Platform clouds, including MuleSoft Governme
 
 [[insights]]
 === Anypoint Insights
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 Monitor performance data and issues across your deployed Mule apps and APIs  (_entities_), and get detailed insights on specific deployments. 
 
@@ -86,7 +94,10 @@ See xref:dashboards.adoc[].
 
 [[alerts]]
 === Event-Driven Alerts
-//ADVANCED TIER
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvSubReqMonitoring]
+
 Track trends and add your own alerts to identify abnormal behavior and problems in your app network.
 
 image::intro-alerts.png[Alerts]
@@ -107,6 +118,9 @@ Manage logs and log data for your deployments with these logging features:
 [[log-search]]
 ==== Log Search
 
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+
 Anypoint Monitoring provides a link to *Log Search* features in Runtime Manager. Log search enables search across log files, including archived logs to find information and events based on a specific query.
 
 image::intro-logs.png[Logs]
@@ -120,13 +134,19 @@ See xref:logs.adoc[].
 [[log-points]]
 ==== Log Points
 
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+
 Generate logs for Mule apps and APIs in real-time and without writing code.
 
 See xref:log-points.adoc[].
 
 [[raw-data-downloads]]
 ==== Raw Data Downloads
-//ADVANCED TIER
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+
 Download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
 
 See xref:raw-data.adoc[].
@@ -210,22 +230,22 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |Yes
 |Yes
 
-|Advanced metrics for Inbound and Outbound charts
+|Advanced metrics for xref:app-dashboards.adoc#built-in-charts-app[Inbound and Outbound charts]
 |No
 |No
 |Yes
 
-|Flows charts
+|xref:app-dashboards.adoc#built-in-charts-app[Flow charts]
 |No
 |No
 |Yes
 
-|Connectors charts
+|xref:app-dashboards.adoc#built-in-charts-app[Connector charts]
 |No
 |No
 |Yes
 
-|Anypoint Visualizer app network integration
+|<<note-visualizer, Anypoint Visualizer>> app network integration
 |No
 |No
 |Yes
@@ -249,12 +269,12 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 4+| xref:dashboard-custom-config.adoc[*Custom Dashboards*]
 
-|Basic mode settings for charts
+|Basic mode settings for charts (graphs, singlestats, tables)
 |Yes
 |Yes
 |Yes
 
-|Advanced mode settings for charts
+|Advanced mode settings for charts (graphs, singlestats, tables)
 |Yes, with limited functionality
 |Yes, with limited functionality
 |Yes
@@ -295,7 +315,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 4+| *Additional Anypoint Monitoring features*
 
-|Anypoint Monitoring Archive API
+|xref:api-analytics-dashboard.adoc#anypoint-monitoring-archive-api[Anypoint Monitoring Archive API]
 |No
 |No
 |Yes
@@ -312,6 +332,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 |===
 
+[[note-visualizer]]
 NOTE: Anypoint Visualizer app network integration refers to an Anypoint Visualizer widget within Anypoint Monitoring. Anypoint Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
 
 

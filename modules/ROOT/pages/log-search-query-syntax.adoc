@@ -1,7 +1,7 @@
 = Log Search Query Syntax Reference
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 In addition to using the query builder and facet search user interface in Anypoint Monitoring log search, you can use the log search query language.
 
