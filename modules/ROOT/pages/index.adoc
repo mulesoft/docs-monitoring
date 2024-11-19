@@ -193,17 +193,17 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-|Telemetry Exporter for audit logs and traces
+|xref:telemetry-exporter.adoc[Telemetry Exporter] for audit logs and traces
 |No
 |No
 |Yes
 
-|Custom metrics
+|xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
 |No
 |No
 |Yes
 
-4+| *Built-in App Dashboards*
+4+| xref:app-dashboards.adoc[*Built-in App Dashboards*]
 |More than 80 out-of-the-box charts covering metrics in the following categories: Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure
 
 |Yes
@@ -235,7 +235,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-4+| *Built-in API Dashboards*
+4+| xref:api-analytics-dashboard.adoc[*Built-in API Dashboards*]
 
 |16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application
 |Yes
@@ -247,14 +247,14 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-4+| *Custom Dashboards*
+4+| xref:dashboard-custom-config.adoc[*Custom Dashboards*]
 
-|Basic mode
+|Basic mode settings for charts
 |Yes
 |Yes
 |Yes
 
-|Advanced mode
+|Advanced mode settings for charts
 |Yes, with limited functionality
 |Yes, with limited functionality
 |Yes
@@ -266,29 +266,29 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 4+| *Alerts*
 
-|Basic alerts for apps, servers, and APIs
+|xref:basic-alerts.adoc[Basic alerts] for apps, servers, and APIs
 |Yes
 |Yes
 |Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
 
-|Advanced alerts
+|xref:advanced-alerts.adoc[Advanced alerts]
 |No
 |No
 |Yes
 
 4+| *Log Management*
 
-|Log search
+|xref:log-search-query-syntax.adoc[Log search]
 |No
 |No
 |Yes
 
-|Log points
+|xref:log-points.adoc[Log points]
 |No
 |No
 |Yes
 
-|Raw data
+|xref:raw-data.adoc[Raw data]
 |No
 |No
 |Yes
@@ -305,12 +305,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-|Reports
-|No
-|No
-|Yes
-
-|Telemetry Exporter
+|xref:reports.adoc[Reports]
 |No
 |No
 |Yes
