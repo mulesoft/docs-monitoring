@@ -17,8 +17,6 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 +
-image::management-center-menu.png[Management Center Menu]
-+
 If you do not see Anypoint Monitoring or are unable to use it, it might be a permissions issue. See <<required_permission>>.
 +
 . From Anypoint Monitoring, you can find and use the monitoring tools:
