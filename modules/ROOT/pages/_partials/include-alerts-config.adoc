@@ -18,7 +18,6 @@ Note that you can also view <<state_history, state history>> and <<delete_alert,
 
 [[alert_config]]
 == Configure an Advanced Alert
-//TODO: ANY SPECIAL SUBSCRIPTIONS FOR ADVANCED QUERIES (Advanced? Others?)
 
 In the *Alert Config* section, configure the condition under which an advanced alert is triggered.
 
