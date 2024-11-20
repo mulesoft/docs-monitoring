@@ -10,9 +10,10 @@ The Application Log Points feature enables you to log information from connector
 
 To use this feature, you must have the following:
 
+//TODO: 3.8.5??? Check Mule version req.
 * Mule 3.8.5 or later
 
-include::reuse::partial$billing/pricing.adoc[tag=prereqBullet]
+include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
 * The *Runtime Manager > Manage Settings* permission
 
@@ -104,6 +105,7 @@ The following Anypoint Connectors are available for use with the Log Points feat
 
 === Supported Mule Versions
 
+//TODO: 3.8.5 and 4.1.1??? Check Mule version req.
 * Mule 3 versions 3.8.5 and later
 * Mule 4 versions 4.1.1 and later
 
@@ -136,9 +138,10 @@ For example, you can specify a cookie header in an API to see if an injection at
 
 To use this feature, you must have the following:
 
+//TODO: 3.8.5??? Check Mule version req.
 * Mule 3.8.5 or later
 
-include::reuse::partial$billing/pricing.adoc[tag=prereqBullet]
+include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
 * The *API Manager > Manage Policies* permission
 
