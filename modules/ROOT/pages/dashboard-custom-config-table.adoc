@@ -56,10 +56,6 @@ If you select Time Series to Aggregations, you can add pre-defined columns to th
 | Count | Provides the total number of data points collected on the metric.
 |===
 
-////
-TODO _REMOVED FOR CONNECT. MIGHT COME BACK LATER.
-| A blank text box | Appears when JSON Data is selected. *TODO: need JSON example?*
-////
 
 === Paging (Options tab)
 
