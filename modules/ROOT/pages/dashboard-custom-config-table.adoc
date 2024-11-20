@@ -29,31 +29,18 @@ In the Options configuration tab, you can set layout, column, and pagination opt
 2+| Value Settings
 | Time Series to Rows a|
 
-Creates a table with values for a given metric at a given time period. Like Time Series to Columns, the first column, Time, is for timestamps (such as `2018-04-25 06:37:40`). However, subsequent columns are Metric (for listing specific metrics, such as `worker-0`) and Value for listing the values of the metric at that time period. Example:
+Creates a table with values for a given metric at a given time period. Like Time Series to Columns, the first column, Time, is for timestamps (such as `2018-04-25 06:37:40`). However, subsequent columns are Metric (for listing specific metrics, such as `worker-0`) and Value for listing the values of the metric at that time period.
 
-image::table-series-to-rows.png[Time Series to Columns]
 | Time Series to Columns a|
 
-Creates a table that shows values for a given metric at a given time period. Like Time Series to Rows, the first column, Time, is for timestamps. However, there is a column for each metric, such as `worker-0`, which lists the values of that metric at a given time period. Example:
-
-image::table-series-to-columns.png[Time Series to Columns]
-
+Creates a table that shows values for a given metric at a given time period. Like Time Series to Rows, the first column, Time, is for timestamps. However, there is a column for each metric, such as `worker-0`, which lists the values of that metric at a given time period. 
 
 | Time Series to Aggregations a|
 
-Transforms time series into a table that calculates totals, averages, and so on for a given metric. The first column, Metric, is for metrics such as `worker-0`, and subsequent columns are for any combination of these values: Avg, Min, Max, Total, Current, or Count for a given metric. Example:
-
-image::table-aggregations.png[Time Series to Aggregations]
+Transforms time series into a table that calculates totals, averages, and so on for a given metric. The first column, Metric, is for metrics such as `worker-0`, and subsequent columns are for any combination of these values: Avg, Min, Max, Total, Current, or Count for a given metric. 
 
 Note that this example uses color-coded <<thresholds, thresholds>> (see the cell coloring in the Avg and Max cells and value coloring for the Min value).
 |===
-
-////
-TODO _REMOVED FOR CONNECT, TO RETURN LATER
-| Annotations | Displays annotations in a table if annotations are enabled for the dashboard. In this mode, queries you have in the metrics tab will be ignored. *TODO, VERIFY and how do you enable annotations?*
-| Table | *TODO, what does this do* Columns and their order are determined by the data query.
-| JSON Data | Mode to use for Elasticsearch or Elasticsearch Raw Document queries without a date histogram. *TODO: VERIFY mention Elasticsearch?*
-////
 
 If you select Time Series to Aggregations, you can add pre-defined columns to the table.
 
