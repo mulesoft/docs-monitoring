@@ -1,17 +1,14 @@
 = Using Logs in Anypoint Monitoring
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-
 :page-aliases: logs-using.adoc
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
 
 In addition to logging through xref:runtime-manager::viewing-log-data.adoc[Runtime Manager], Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. You can use aggregated logs in conjunction with monitoring to help identify issues and investigate failures quickly. These features support:
 
 * Comparative analysis and identification of event and information patterns based on searches across selected Mule apps and environments.
 * Searches within the logs of a specific worker (or set of workers) for a Mule app so that you can narrow scope of issues to check.
 * Sharing a snapshot of important logs with developers who can work on the source of the issue.
-
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
 [CAUTION]
 ====

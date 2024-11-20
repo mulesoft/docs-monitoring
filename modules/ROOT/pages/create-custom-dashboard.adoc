@@ -1,7 +1,7 @@
 = Creating a Custom Dashboard
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 Create a custom dashboard to configure the metrics and data points you want to view.  
 

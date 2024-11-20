@@ -33,7 +33,7 @@ Basic alerts for APIs::
 Six per API instance.
 
 === Anypoint Integration Advanced Package Limits
-
+//Retain extra info on Advanced package
 Organizations that have the Anypoint Integration Advanced package receive more robust data retention and feature limits:
 
 Logs::

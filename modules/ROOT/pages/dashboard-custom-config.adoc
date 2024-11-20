@@ -1,7 +1,7 @@
 = Configuring Custom Dashboards and Charts
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvSubReqMonitoring]
 
 You can create and configure as many custom dashboards as you need. 
 

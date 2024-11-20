@@ -1,7 +1,7 @@
 = Configuring Graphs in a Custom Dashboard
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 In Anypoint Monitoring, you can configure one or more sets of time-series data in a graph. The graph measures the changes to time-series data over time. A graph in a custom dashboard can display a metric for a resource in a given environment. For example, to configure a graph, you might select a response time or heap usage as the metric to graph for a Mule app in your Design or Sandbox environment.
 
@@ -96,6 +96,7 @@ After you complete your configuration, you can click Save Changes. To exit the c
 == Alerts (Configuration, Notifications, History)
 
 include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
+//include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 In the *Alerts* tab, set up alerts that trigger when JVM memory utilization is too high.
 
