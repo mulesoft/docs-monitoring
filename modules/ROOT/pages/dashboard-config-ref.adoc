@@ -139,6 +139,7 @@ These metrics are available if you use basic mode for APIs using the *API Analyt
 
 [[metrics_advanced]]
 == Advanced Mode Metrics for Applications
+
 These metrics are available when you use *Advanced* mode for apps:
 
 .Advanced Metrics for Apps
