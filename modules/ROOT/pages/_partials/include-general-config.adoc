@@ -1,7 +1,4 @@
 = General Settings for Basic and Advanced Data Queries
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 
 [[general_settings]]
 
@@ -16,18 +13,12 @@ image::config-general-common.png[Example: Basic Configuration]
 | Description | Short description to display in the UI when users hover over the information (`i`) icon.
 |===
 
-////
-*TODO: VERIFY:* It can contain Markdown and links. If true, SHOW EXs WITH MARKDOWN AND LINKS
-////
-
 Other settings are specific to the setting mode (basic or advanced).
 
 [[mode_basic]]
 == Basic Mode
 
 In the *General* configuration tab, a basic query selects a single metric for a resource (a deployed application or API) in a given environment.
-
-image::ap-monitoring-basic-settings.png[Example: Basic Configuration]
 
 [%header,cols="1,4"]
 |===
@@ -152,19 +143,3 @@ To use your tag as an alias, the tag must be used to `group by` in the query.
 After you complete your configuration, click *Save Changes*. 
 
 To exit the configuration and return to the dashboard, click the *X*.
-
-////
-TODO /QUESTION: CAN YOU DO Regex matching ON WHERE?
-TODO / SELECT:  row you can specify what fields and functions you want to use. If you have a group by time you need an aggregation function. Some functions like derivative require an aggregation function. The editor tries simplify and unify this part of the query. For example:
-*TODO: DESCRIPTIONS NEEDED*: Group By.
-*TODO: VALID VALUES NEEDED, explain supported variables, too. MK's notes say "Series Name"*
-*TODO: NEED DESCRIPTIONS OF MANY OF THESE SETTINGS*
-
-TODO: SEE IF ANY OF THIS COULD GO ABOVE:
-.Advanced Query Options
-|===
-| From | Identifies the source of the data to measure in your graph. For example, you might select Mule app (`app`) or Java virtual machine (`jvm`) data, such as `app_inbound_metric`, `app_outbound_metric`, `jvm.classloading`, `jvm.cpu.operatingsystem`, `jvm.garbagecollector.parnew`, `jvm.memory`, `jvm.runtime`, `jvm.threading`, or one of the many other sources.
-| Where | For filtering the source based on a given property (such as the organization ID (`org_id`) or environment ID (`env_id`), or both) to which the metric applies. Operators for the properties are `=`, `!=`, `<>` (less than or greater than, but not equal to), `<`, `>` (for example, `env_id = Sandbox`). Available properties also include `app_id`, `endpoint`, `endpoint_type`, `flow_id`, `org_id`, `response_type`, and `worker_id`.
-| Select | For manipulating data in one or more fields, such as `avg_request_count` , `avg_response_time`.
-|===
-////
