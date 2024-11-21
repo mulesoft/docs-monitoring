@@ -23,8 +23,6 @@ Virtual core fraction and count for this Mule app, for example, *0.1 vCores x 1*
 
 Last Updated::
 Date-time stamp for the last update or redeployment of this Mule app
-+
-This stamp comes from Runtime Manager data.
 //end::app-detail-header[]
 //
 //
@@ -46,7 +44,7 @@ For information about Mule messages, see xref:mule-runtime::about-mule-event.ado
 include::partial$include-insights-charts.adoc[tag="request-latency"]
 
 Inbound Request Volume::
-Inbound request count at specific time points
+Total number of inbound requests to this app at specific time points
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
@@ -81,7 +79,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //TODO: requests -> Requests (SATHISH)
 Top Slowest Requests by Path::
-Up to 20 endpoints with the slowest requests
+The 20 slowest endpoints in this app
 +
 The requests must take more than 25ms. If no data is available, then no requests take more than 25ms to process.
 +
@@ -90,7 +88,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 Request Latency by Endpoint::
 Inbound or outbound latency, in milliseconds, by endpoint
 +
-The chart captures the average latency and the latency value of requests at the p50, p75, p90, p95, and p99 percentiles.
+The table captures the average latency and the latency value of requests at the p50, p75, p90, p95, and p99 percentiles.
  
 //end::app-detail-requests[]
 //-----------------------//
@@ -99,12 +97,12 @@ The chart captures the average latency and the latency value of requests at the 
 //  APP DETAIL ERRORS: Errors tab
 //tag::app-detail-errors[]
 Failed Outbound Request Volume::
-Number of failed outbound requests at specific time points
+Total number of failed outbound requests at specific time points
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Top 20 Failed Requests by Total Count::
-Number of inbound or outbound requests to the 20 endpoints with the most failed requests
+Total number of inbound or outbound requests to the 20 endpoints with the most failed requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
