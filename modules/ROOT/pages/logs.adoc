@@ -28,11 +28,18 @@ Do not override the default JVM timezone for applications deployed to CloudHub a
 
 == Search Logs
 
-In Anypoint Monitoring, click *Log Search* in the menu on the left. On the log search page, you can search for text in logs in a few different ways. You can type your search query into the search field, you can use the UI to add a filter, and you can create a query.
+From Anypoint Monitoring, find *Log Search* to search for text in logs from the search field, through a filter, or with a DSL query.
+
+image::intro-logs.png[Logs]
+
+* <<search-field>>
+* <<search-filter>>
+* <<search-dsl>>
 
 When you search for logs for APIs deployed through Flex Gateway, use the *Application* filter. Use the *App ID* field to identify the instance.
 
-=== Log Search Query
+[[search-field]]
+=== Search from the Log Search Field
 
 To search the logs, type your search query into the log search field and press *Enter*.
 
@@ -50,7 +57,8 @@ Example results from the wildcard search `payload=org.glassfish.grizzly*`:
 
 image::log-search-wildcard.png[Log Search Using a Wildcard]
 
-=== Add a Filter
+[[search-filter]]
+=== Search with a Filter
 You can create a filter to search logs using predefined fields, operators, and values.
 
 . Click *+Add a filter*.
@@ -83,7 +91,8 @@ The filter appears to the right of *+Add a filter*.
 NOTE:
 When you use the *Application* filter, the results include APIs deployed through Flex Gateway.
 
-=== Search Query
+[[search-dsl]]
+=== Search with the Query DSL
 
 To convert a search query into a Query DSL:
 
