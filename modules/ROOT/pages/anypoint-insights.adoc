@@ -364,12 +364,16 @@ include::partial$include-insights-charts.adoc[tag=app-detail-header]
 
 Charts with overview metrics are available in the *Overview* tab for a Mule app in Anypoint Insights.
 
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 include::partial$include-insights-charts.adoc[tag="app-detail-overview"]
 
 [[entity-metrics-app-requests]]
 ==== Request Metrics for a Mule Application
 
 Charts with request metrics are available in the *Requests* tab for a Mule app in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tag="app-detail-requests"]
 
@@ -378,6 +382,8 @@ include::partial$include-insights-charts.adoc[tag="app-detail-requests"]
 
 Charts with error metrics are available in the *Errors* tab for a Mule app in Anypoint Insights.
 
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 include::partial$include-insights-charts.adoc[tag="app-detail-errors"]
 
 [[entity-metrics-app-jvm]]
@@ -385,6 +391,7 @@ include::partial$include-insights-charts.adoc[tag="app-detail-errors"]
 
 Charts with JVM metrics are available in the *JVM* tab for a Mule app in Anypoint Insights.
 
+include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tag="app-detail-jvm"]
 
@@ -416,12 +423,16 @@ include::partial$include-insights-charts.adoc[tags="api-detail-header"]
 
 Charts with overview metrics are available in the *Overview* tab for each API implementation that you can monitor in Anypoint Insights.
 
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 include::partial$include-insights-charts.adoc[tags="api-detail-overview"]
 
 [[entity-metrics-api-requests]]
 ==== Request Metrics for an API Implementation 
 
 Charts with request metrics are available in the *Requests* tab for each API implementation that you can monitor in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tags="api-detail-requests"]
 
@@ -430,6 +441,8 @@ include::partial$include-insights-charts.adoc[tags="api-detail-requests"]
 
 Charts with error metrics are available in the *Errors* tab for each API implementation that you can monitor in Anypoint Insights.
 
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 include::partial$include-insights-charts.adoc[tags="api-detail-errors"]
 
 [[entity-metrics-api-performance]]
@@ -437,12 +450,16 @@ include::partial$include-insights-charts.adoc[tags="api-detail-errors"]
 
 Charts with performance metrics are available in the *Performance* tab for each API implementation that you can monitor in Anypoint Insights.
 
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 include::partial$include-insights-charts.adoc[tags="api-detail-performance"]
 
 [[entity-metrics-api-client-apps]]
 ==== Client Application Metrics for an API Implementation 
 
 Charts with client Application metrics are available in the *Client Applications* tab for each API implementation that you can monitor in Anypoint Insights. 
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tags="api-detail-client-apps"]
 
