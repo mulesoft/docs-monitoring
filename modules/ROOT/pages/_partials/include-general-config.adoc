@@ -1,7 +1,4 @@
 = General Settings for Basic and Advanced Data Queries
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 
 [[general_settings]]
 *General* tab settings include <<mode_basic, basic>> and <<mode_advanced, advanced>> queries (or modes) for configuring time-series data. Both configurations share fields for the title and a short description.
@@ -19,8 +16,6 @@ Other settings are specific to the setting mode (basic or advanced).
 == Basic Mode
 
 In the *General* configuration tab, a basic query selects a single metric for a resource (a deployed application or API) in a given environment.
-
-image::ap-monitoring-basic-settings.png[Example: Basic Configuration]
 
 [%header,cols="1,4"]
 |===
@@ -144,4 +139,4 @@ To use your tag as an alias, the tag must be used to `group by` in the query.
 
 After you complete your configuration, click *Save Changes*. 
 
-To exit the configuration and return to the dashboard, click the *X*.
+To exit the configuration and return to the dashboard, click *X*.

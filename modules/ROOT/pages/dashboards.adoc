@@ -46,7 +46,6 @@ For example, when using custom dashboards, you selected two app IDs at the same 
 
 == See Also
 
-* xref:dashboards-using.adoc[Using Dashboards]
 * xref:app-dashboards.adoc[Built-in Application Dashboards]
 * xref:dashboard-custom-config.adoc[Configuring Custom Dashboards]
 * xref:api-analytics-dashboard.adoc[API Analytics Dashboard]
