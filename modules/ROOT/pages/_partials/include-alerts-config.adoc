@@ -8,7 +8,8 @@ image::graph-alert-config.png[Advanced Alert Configuration]
 . Provide a general configuration for the graph that (at minimum) defines the metric, environment, and resource for which you want to set the advanced alert. +
 For guidance, see xref:dashboard-custom-config-graph.adoc#general_settings[General Settings].
 . Navigate to the *Alert* configuration tab for the graph.
-. Click *Create Alert*.
+. Click *Add Alert*.
+//TODO: I DON'T SEE Alert Config 
 . Use *Alert Config* to configure the alert. See <<alert_config, Alert Config>>.
 . Configure email notifications when an advanced alert is triggered. See <<notifications, Notifications>>.
 . Click *Save Changes*.
