@@ -165,9 +165,12 @@ You can repeat these steps to add multiple key values.
 [NOTE]
 Custom Metrics Connector requires all *Facts* to be sent from every operation, even if they contain empty or 0 value in them.
 
-== Configure Custom Metrics Values Using Anypoint Studio
+== Configure Custom Metrics
 
-. Search Anypoint Exchange for the Anypoint Custom Metrics connector. 
+. From Anypoint Monitoring:
+.. Click *Custom Metrics*.
+.. Click the *Custom Metrics Connector* to open the connector on Anypoint Exchange.
+.. Download the connector.
 . Drag the *Send Custom Metric* operation to the canvas. 
 . Add the *Send Custom Metric* operation to your application flow. +
 This image shows an example flow for custom metrics in Anypoint Studio. 
