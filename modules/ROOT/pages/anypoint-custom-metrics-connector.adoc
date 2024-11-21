@@ -48,6 +48,9 @@ If a particular custom metrics chart slows down and affects other charts in the 
 
 Due to internal database restrictions, you cannot use the following keywords to define `dimensionName` or `factName` while using the Anypoint Custom Metrics connector:
 
+[%collapsible]
+.Restricted Keywords
+====
 * `ALL`
 * `ALTER`
 * `ANALYZE`
@@ -123,6 +126,7 @@ Due to internal database restrictions, you cannot use the following keywords to 
 * `WITH`
 * `WRITE`
 * `TIME`
+====
 
 == Use Design Center to Configure the Custom Metrics Values
 
