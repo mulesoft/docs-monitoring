@@ -22,7 +22,7 @@ Replicas::
 Virtual core fraction and count for this Mule app, for example, *0.1 vCores x 1* (= 10% of 1 vCore)
 
 Last Updated::
-Date-time stamp for the last redeployment of this Mule app
+Date-time stamp for the last update or redeployment of this Mule app
 +
 This stamp comes from Runtime Manager data.
 //end::app-detail-header[]
