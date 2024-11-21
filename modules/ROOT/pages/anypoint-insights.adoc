@@ -357,6 +357,8 @@ include::partial$include-entities.adoc[tags="entity-definition"]
 
 High-level metrics are available in Application Details dashboards for individual Mule apps. 
 
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
 include::partial$include-insights-charts.adoc[tag=app-detail-header]
 
 [[entity-metrics-app-overview]]
@@ -415,6 +417,8 @@ include::partial$include-entities.adoc[tags="entity-definition"]
 ==== API Implementation Metrics
 
 High-level metrics are available in *API Details* dashboards for individual API implementations.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tags="api-detail-header"]
 
