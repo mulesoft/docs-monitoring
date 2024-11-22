@@ -225,7 +225,7 @@ include::partial$include-insights-charts.adoc[tag="total-requests"]
 //TODO: issue: 2 charts named Policy Violations
 //TODO: Policy Violations -> Policy Violation Count (or similar) (SATHISH)
 Policy Violations::
-Number of requests blocked because of API policy violations
+Number of requests rejected because of API policy violations
 
 Request Latency::
 Latency, in milliseconds, for requests to this API at specific time points
@@ -246,7 +246,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //TODO: issue: 2 charts named Policy Violations (SATHISH)
 Policy Violations::
-Number of requests blocked at specific time points because of API policy violations
+Number of requests rejected at specific time points because of API policy violations
 +
 For information about policies, see xref:api-manager::manage-policies-overview.adoc[].
 +
