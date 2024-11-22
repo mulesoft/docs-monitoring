@@ -135,7 +135,7 @@ The log aggregator system holds raw operational data and records events that occ
 
 [[single-app]]
 //single-app logs:
-NOTE: More limited log search is available from Runtime Manager for individual Mule apps. You can navigate to Runtime Manager, open the app, and then click *Logs*. 
+NOTE: Log search limited to individual deployed apps is available in Runtime Manager. You can navigate to Runtime Manager, open the app, and then click *Logs*. 
 
 See xref:logs.adoc[].
 
