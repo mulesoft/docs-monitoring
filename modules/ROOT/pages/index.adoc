@@ -67,7 +67,7 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 
 //NOT SUPPORTED in PCE & Gov Cloud: Insights, Traces, Telemetry Exporter, API Functional Monitoring
 
-For more information about Anypoint Platform clouds, including MuleSoft Government Cloud and Anypoint Platform Private Cloud Edition (Anypoint Platform PCE), see xref:hosting-home::index.adoc#control-plane-hosting-options[Control Plane Hosting Options].
+For more information about MuleSoft Government Cloud and Anypoint Platform Private Cloud Edition (Anypoint Platform PCE), see xref:hosting-home::index.adoc#control-plane-hosting-options[Control Plane Hosting Options].
 
 [[insights]]
 === Anypoint Insights
