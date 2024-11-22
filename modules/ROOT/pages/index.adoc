@@ -122,12 +122,12 @@ Manage logs and log data for your deployments with these logging features:
 * <<raw-data-downloads>>
 
 [[log-search]]
-==== Log Search
+==== Distributed Log Search
 
 //feature tier:
 include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
 
-Anypoint Monitoring provides a link to *Log Search* features in Runtime Manager. Log search enables search across log files, including archived logs to find information and events based on a specific query.
+Distributed log search enables search across log files, including archived logs to find information and events based on a specific query.
 
 image::intro-logs.png[Logs]
 
