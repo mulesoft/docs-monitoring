@@ -50,7 +50,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //  shared metric in Overview tab
 Failed Inbound Request Volume::
-Count of unsuccessful inbound requests at specific time points
+Total number of unsuccessful inbound requests at specific time points
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
