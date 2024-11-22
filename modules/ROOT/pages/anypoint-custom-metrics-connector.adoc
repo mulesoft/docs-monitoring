@@ -165,14 +165,16 @@ You can repeat these steps to add multiple key values.
 [NOTE]
 Custom Metrics Connector requires all *Facts* to be sent from every operation, even if they contain empty or 0 value in them.
 
-== Configure Custom Metrics Values Using Anypoint Studio
+== Configure Custom Metrics from Anypoint Studio
 
-. Search Anypoint Exchange for the Anypoint Custom Metrics connector. 
-. Drag the *Send Custom Metric* operation to the canvas. 
-. Add the *Send Custom Metric* operation to your application flow. +
-This image shows an example flow for custom metrics in Anypoint Studio. 
+. From Anypoint Monitoring:
+.. Click *Custom Metrics*.
+.. Click the *Custom Metrics Connector* to open the connector on Anypoint Exchange.
+.. Click *Dependency Snippet*, and copy the Maven snippet.
+. In Anypoint Studio, add the snippet for the connector to your project's `pom.xml` file. 
 +
-image::custom-metric-example-flow.png["Example app flow in Studio with Custom Metrics Connector Send Custom Metrics source, a Logger component, and Salesforce and Amazon S3 connector operations"]
+The connector is now available in the Studio palette.
+. From the palette, drag the *Send Custom Metric* operation to the canvas for your project. 
 . Click the *Send Custom Metric* operation to add values for the operation. 
 . Add the dimension for the metric:
 .. In *Metric name*, enter a meaningful value, for example "sales." 
