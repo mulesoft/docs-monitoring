@@ -135,7 +135,7 @@ The log aggregator system holds raw operational data and records events that occ
 
 [[single-app]]
 //single-app logs:
-NOTE: Log search limited to individual deployed apps is available in Runtime Manager. You can navigate to Runtime Manager, open the app, and then click *Logs*. 
+NOTE: Log search limited to individual deployed apps is available in Runtime Manager. You can navigate to Runtime Manager, open the app, and then click *Logs*. For more logging options, see xref:runtime-manager::deployment-strategies.adoc#logging[Logging by Deployment Model].
 
 See xref:logs.adoc[].
 
@@ -373,6 +373,7 @@ Support engineer Carole searches through Anypoint Monitoring logs and notices so
 Business owner Devon has apps across different runtime planes. He has aggregated dashboards of the regional or project-specific apps, and he can easily determine what is consuming the most resources and evangelize accordingly.
 
 
+[[see-also]]
 == See Also
 
 * xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]
