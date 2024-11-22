@@ -107,7 +107,7 @@ Total number of inbound or outbound requests to the 20 endpoints with the most f
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Top 20 Failed Outbound Requests by Total Count::
-Number of unsuccessful outbound requests to the 20 endpoints with the most failed requests
+Total number of unsuccessful outbound requests to the 20 endpoints with the most failed requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //end::app-detail-errors[]
@@ -118,7 +118,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //tag::app-detail-jvm[]
 //TODO: Old Gen GC Count -> Old Generation Garbage Collection Count (SATHISH)
 Old Gen GC Count::
-Number of times old generation Java garbage collection occurred
+Total number of times old generation Java garbage collection occurred
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
@@ -130,7 +130,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //TODO: Young Gen GC Count -> Young Generation Garbage Collection Count (SATHISH)
 Young Gen GC Count::
-Number of times young generation Java garbage collection occurred
+Total number of times young generation Java garbage collection occurred
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
@@ -152,7 +152,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Thread Count::
 //TODO: QUESTION: threads that are available or used??? (SATHISH)
-Number of threads for simultaneous requests
+Total number of threads for simultaneous requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
@@ -225,7 +225,9 @@ include::partial$include-insights-charts.adoc[tag="total-requests"]
 //TODO: issue: 2 charts named Policy Violations
 //TODO: Policy Violations -> Policy Violation Count (or similar) (SATHISH)
 Policy Violations::
-Number of requests rejected because of API policy violations
+Total number of requests rejected because of API policy violations
++
+For information about policies, see xref:api-manager::manage-policies-overview.adoc[]. For permissions, see xref:access-management::permissions-by-product.adoc#api-governance[View Policies] in the Access Management documentation.
 
 Request Latency::
 Latency, in milliseconds, for requests to this API at specific time points
@@ -235,20 +237,20 @@ The chart provides values for the average latency and the p90, p95, p99 percenti
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Request Volume::
-Number of requests to this API at specific time points
+Total number of requests to this API at specific time points
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Failed Requests::
-Number of unsuccessful requests to this API at specific time points
+Total number of unsuccessful requests to this API at specific time points
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //TODO: issue: 2 charts named Policy Violations (SATHISH)
 Policy Violations::
-Number of requests rejected at specific time points because of API policy violations
+Total number of requests rejected at specific time points because of API policy violations
 +
-For information about policies, see xref:api-manager::manage-policies-overview.adoc[].
+For information about policies, see xref:api-manager::manage-policies-overview.adoc[]. For permissions, see xref:access-management::permissions-by-product.adoc#api-governance[View Policies] in the Access Management documentation.
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //end::api-detail-overview[]
@@ -259,19 +261,19 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //-------------------------
 //tag::api-detail-requests[]
 Request Volume by HTTP Method::
-Number of requests at specific time points, grouped by the HTTP method used for the request
+Total number of requests at specific time points, grouped by the HTTP method used for the request
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Request Volume by Response Code::
-Number of requests at specific time points, grouped by the response code (such as *2xx*)
+Total number of requests at specific time points, grouped by the response code (such as *2xx*)
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 // TODO: paths -> Paths (SATHISH)
 // TODO: top 20 paths
 Request Volume by Top N paths::
-Number of requests at specific time points from the 20 endpoints with the most requests
+Total number of requests at specific time points from the 20 endpoints with the most requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //end::api-detail-requests[]
@@ -282,19 +284,19 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //-------------------------
 //tag::api-detail-errors[]
 Failed Requests Volume by HTTP Method::
-Number of unsuccessful requests at specific time points, grouped by the HTTP method used
+Total number of unsuccessful requests at specific time points, grouped by the HTTP method used
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 // TODO: downloads available?
 Failed Requests Volume by Response Code::
-Number of unsuccessful requests at specific time points, grouped by the response code (such as *2xx*)
+Total number of unsuccessful requests at specific time points, grouped by the response code (such as *2xx*)
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 // TODO: paths -> Paths and "N" to "20" if that's the limit (SATHISH)
 Failed Requests by Top N Paths::
-Number of unsuccessful requests at specific time points from the 20 endpoints with the most requests
+Total number of unsuccessful requests at specific time points from the 20 endpoints with the most requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
