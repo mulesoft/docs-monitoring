@@ -26,7 +26,7 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 |Anypoint Monitoring Feature 
 |https://anypoint.mulesoft.com/monitoring[US], https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds
 | https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds (on Hyperforce)
-| Government Cloud | Private Cloud
+| Government Cloud | Private Cloud (3.x)
 
 |{empty}
 
