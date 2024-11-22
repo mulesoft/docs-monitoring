@@ -37,21 +37,13 @@ When you search for logs for APIs deployed through Flex Gateway, use the *Applic
 
 === Log Search Query
 
-To search the logs, type your search query into the log search field and press *Enter*.
+To search the logs, type your search query into the log search field and press *Enter*. 
 
-Provide the exact term you're looking for, such as `"code 400"` to find  bad requests. For
-exact matches of more than one word, surround the search term
-with quotation marks.
-
-Example results from a `"code 400"` search:
-
-image::log-search-string.png[Log Search]
-
-Use the asterisk wildcard in a search if you don't know the exact term.
-
-Example results from the wildcard search `payload=org.glassfish.grizzly*`:
-
-image::log-search-wildcard.png[Log Search Using a Wildcard]
+* Search for a term, such as `"Info Dynamic Logging"`.
++
+Without quotes, the query returns results for matches to each term. 
+* Use a wildcard in your search, such as `resourceId=hellowor*. 
+* Use logical operators, such as `resourceId=hellowor* AND "Info Dynamic Logging"`.
 
 === Add a Filter
 You can create a filter to search logs using predefined fields, operators, and values.
@@ -369,14 +361,10 @@ You can edit and use that filter like any other filter. See <<filters_predefined
 
 You can share the URL to your logs.
 
-. From Logs, click the three vertical dots on the top-right of the screen.
+. From Logs, click *Share*.
 +
-image::logs-sharing.png[Sharing Logs]
-+
+image::logs-sharing.png["Sharing logs"]
 . Select *Share* to load the URL of your log page to a *Share Logs Search Link* field.
-+
-image::logs-sharing-url.png[Sharing Logs Link]
-+
 . Click *Copy*.
 
 [[save_view_log_searches]]
@@ -387,11 +375,6 @@ Save and view log searches.
 . Click *Save Search*.
 . Select *View saved searches*.
 . Click *View Saved Searches* again to return to the main Logs page.
-
-image::logs-search-save-menu.png[Save Log Search Menu]
-
-image::logs-search-save-view.png[View Saved Log Search]
-
 
 == Clear a Search
 
