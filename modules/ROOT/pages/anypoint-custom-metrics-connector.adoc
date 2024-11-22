@@ -202,6 +202,8 @@ image::custom-metrics-connector-config.png["Send Custom Metrics source general c
 == Deploy the Application
 
 . Deploy the app.
++
+For guidance, see xref:
 . In Anypoint Monitoring, xref:dashboard-custom-config.adoc[add a new custom dashboard] for the custom metric. +
 This image shows an example of the configuration for a graph to display t-shirt sales.
 +
