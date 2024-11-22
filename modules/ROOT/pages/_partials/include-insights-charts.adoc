@@ -141,7 +141,7 @@ Amount of time taken for young generation Java garbage collection
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Heap Committed::
-Amount of physical memory committed to the JVM
+Amount of memory the JVM guarantees to be available for the heap
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
@@ -151,13 +151,12 @@ Amount of physical memory used
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Thread Count::
-//TODO: QUESTION: threads that are available or used??? (SATHISH)
-Total number of threads for simultaneous requests
+Number of active threads currently running in the JVM
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Committed Virtual Memory::
-Amount of memory (in MB) committed to the JVM
+Amount of virtual memory the operating systems guarantees to be available for the JVM
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
