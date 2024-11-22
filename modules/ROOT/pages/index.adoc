@@ -122,7 +122,7 @@ Manage logs and log data for your deployments with these logging features:
 * <<raw-data-downloads>>
 
 [[log-search]]
-==== Distributed Log Search
+==== Log Search
 
 //feature tier:
 include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
