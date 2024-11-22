@@ -174,16 +174,12 @@ See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional
 [[data-storage-retention]]
 === Data Storage and Retention
 
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
-
 Data storage and retention limits are determined by your pricing plan.
 include::reuse::partial$billing/pricing.adoc[tag=featureAdvLimits]
 
 include::reuse::partial$billing/pricing.adoc[tag=dataRetentionMonitoring]
 
-For complete details about pricing, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
-
+See <<billing>>. For complete details about pricing, contact your customer support representative. 
 
 [[billing]]
 == Anypoint Platform Packages and Plans
@@ -201,7 +197,7 @@ Anypoint Monitoring is the standard method of monitoring Mule app and API perfor
 * *Anypoint Integration Starter* package is available to all Anypoint Platform regions.
 * *Anypoint Integration Advanced* package is available in the https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions only at this time.
 
-All organizations receive fundamental monitoring regardless of pricing model. However, organizations that have the Anypoint Integration Advanced package receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
+All organizations receive fundamental monitoring regardless of pricing model. However, organizations that have the Anypoint Integration Advanced package receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility. For more information, see https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
 
 If your organization changes its subscription model from the Anypoint Advanced Integration package to the Anypoint Integration Starter package, ensure you have preserved your logs outside of Anypoint Platform. Within an hour of changing pricing models, MuleSoft clears the storage that formerly kept log data.
 
