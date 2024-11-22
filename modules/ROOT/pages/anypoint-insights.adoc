@@ -48,20 +48,21 @@ include::partial$include-entities.adoc[tags="anypoint-regions-hyperforce"]
 ** {empty}
 include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 
-* A Mule app or API running on a supported version of Mule Runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
+* A Mule app or API (xref:gateway-home::index.adoc[Mule Gateway or Flex Gateway API]) running on a supported version of Mule Runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
 
-** Runtime Fabric
 ** CloudHub 2.0
 //TEMP INFO: Hyperforce 12/24 (W-17225983)
 ** CloudHub (for US and EU clouds, in Advanced and Titanium tiers only)
 //TEMP INFO: Hyperforce 12/24 (W-17225983)
 ** Hybrid (for US and EU clouds, in Advanced and Titanium tiers only)
+** Runtime Fabric
 
 * For Canada Cloud and Japan Cloud: 
-+
-Enable Mule runtime access to Anypoint Platform so that you can display entity metrics in Anypoint Monitoring.
+
+** Enable Mule runtime access to Anypoint Platform so that you can display entity metrics in Anypoint Monitoring.
 +
 For guidance, see xref:hyperforce::configure-mule-hyperforce.adoc[].
+** For information about Runtime Fabric feature support in these clouds, see xref:hyperforce::index.adoc#features-supported-on-hyperforce[Features Supported on Hyperforce].
 
 * The *Monitoring Viewer* permission to Anypoint Monitoring and the permissions required for viewing apps and APIs (see xref:monitoring::am-permissions.adoc[])
 
