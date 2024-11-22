@@ -135,7 +135,7 @@ The log aggregator system holds raw operational data and records events that occ
 
 [[single-app]]
 //single-app logs:
-NOTE: Log search limited to individual deployed apps is available in Runtime Manager. You can navigate to Runtime Manager, open the app, and then click *Logs*. For more logging options, see xref:runtime-manager::deployment-strategies.adoc#logging[Logging by Deployment Model].
+NOTE: Log search limited to individual apps is available in Runtime Manager for apps deployed to CloudHub and CloudHub 2.0. You can navigate to Runtime Manager, open the app, and then click *Logs*. For more logging options, see xref:runtime-manager::deployment-strategies.adoc#logging[Logging by Deployment Model].
 
 See xref:logs.adoc[].
 
