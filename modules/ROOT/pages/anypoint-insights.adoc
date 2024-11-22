@@ -86,6 +86,8 @@ For guidance, see <<filter-by-time>>.
 For guidance, see <<filter-by-data>>.
 . To get additional metrics on a specific app or API:
 .. Find and click its name in *Entities List*.
++
+Apps in the *Started* state and APIs in the *Active* state are listed.
 .. Click *View Entity Metrics*, for example:
 +
 image::insights-entity-clicked.png["Overview of a deployment metrics"]
@@ -481,7 +483,15 @@ Anypoint Monitoring charts display data in configurable date-time ranges, which 
 [[automatic-interval]]
 === Data Points in Anypoint Monitoring Charts
 
-Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. Depending on the date-time range you select for a chart, each data point represents a minimum period of one minute to a maximum period of four hours.
+Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. 
+
+//TBD: PROPOSAL
+Maximum granularity of the data captured in charts:
+
+* 1 minute for metrics captured within the last 7 days
+* 1 hour for metrics captured between before the last 7 days
++
+Up to the last 30 days of metrics are collected.
 
 For example, if a chart displays data collected in the last 15 minutes, the chart contains 15 data points, one for each minute of data collection. Each data point aggregates data collected during that minute. If a chart displays the past seven days of data, each data point aggregates data collected within each four-hour period of the last seven days. 
 
