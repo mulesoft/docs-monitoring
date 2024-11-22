@@ -226,7 +226,7 @@ include::partial$include-insights-charts.adoc[tag="total-requests"]
 Policy Violations::
 Total number of requests rejected because of API policy violations
 +
-For information about policies, see xref:api-manager::manage-policies-overview.adoc[]. For permissions, see xref:access-management::permissions-by-product.adoc#api-governance[View Policies] in the Access Management documentation.
+For information about policies, see xref:api-manager::manage-policies-overview.adoc[].
 
 Request Latency::
 Latency, in milliseconds, for requests to this API at specific time points
@@ -249,7 +249,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 Policy Violations::
 Total number of requests rejected at specific time points because of API policy violations
 +
-For information about policies, see xref:api-manager::manage-policies-overview.adoc[]. For permissions, see xref:access-management::permissions-by-product.adoc#api-governance[View Policies] in the Access Management documentation.
+For information about policies, see xref:api-manager::manage-policies-overview.adoc[].
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //end::api-detail-overview[]
