@@ -9,7 +9,6 @@
  ** xref:monitoring-settings-page.adoc[]
  ** xref:performance-and-impact.adoc[]
 * xref:dashboards.adoc[]
- ** xref:dashboards-using.adoc[]
  ** xref:app-dashboards.adoc[]
  ** xref:api-analytics-dashboard.adoc[]
  ** xref:save-builtin-dashboard-as-custom.adoc[]
