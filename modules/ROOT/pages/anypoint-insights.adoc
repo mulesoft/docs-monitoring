@@ -78,15 +78,15 @@ include::partial$include-entities.adoc[tags="open-insights"]
 . In Anypoint Insights, set your environment, such as Design, Production, and Sandbox. 
 +
 For guidance, see <<change-environment>>.
+. To capture deployments for another business group you belong to in the *Entities List*, select the business group.
++
+For guidance, see <<change-bg>>.
 . Set the time period to capture in your charts.
 +
 For guidance, see <<filter-by-time>>.
 . Filter the deployment data to display in the charts, as needed, to focus on areas of interest.
 +
 For guidance, see <<filter-by-data>>.
-. To review entities belonging to another business group in the *Entities List*, select the business group.
-+
-For guidance, see <<change-bg>>.
 . To get additional metrics on a specific app or API:
 .. Find and click its name in *Entities List*.
 +
