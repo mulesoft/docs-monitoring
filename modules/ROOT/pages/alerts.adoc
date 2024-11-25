@@ -91,7 +91,7 @@ Instead of seeing links to API and runtime alerts, you receive visual guidance s
 [[other-alerts]]
 == Add API Manager and Runtime Manager Alerts
 
-In addition to creating alerts in Anypoint Monitoring, you can also navigate from Anypoint Monitoring to alert creation pages in API Manager and Runtime Manager. 
+In addition to creating basic and advanced alerts in Anypoint Monitoring, you can also navigate from Anypoint Monitoring to alert creation pages in API Manager and Runtime Manager. 
 
 //TODO: VERIFY NOTE
 NOTE: If you create an alert for an API using the interface in API Manager, the alert doesn't appear in Anypoint Monitoring *Alerts*.
