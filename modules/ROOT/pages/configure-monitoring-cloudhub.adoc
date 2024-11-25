@@ -1,4 +1,5 @@
 = Setting Up Monitoring for CloudHub Deployments
+:page-aliases: enable-apps-deployed-to-cloud.adoc
 
 To start monitoring Mule apps that are managed in CloudHub, you must deploy them to a supported version of Mule runtime engine and set the runtime version in your Mule app.
 
