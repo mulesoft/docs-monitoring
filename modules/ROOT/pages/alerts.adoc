@@ -97,7 +97,7 @@ In addition to creating basic and advanced alerts in Anypoint Monitoring, you ca
 NOTE: If you create an alert for an API using the interface in API Manager, the alert doesn't appear in Anypoint Monitoring *Alerts*.
 
 . From *Alerts* in Anypoint Monitoring, click *+ New alert*.
-. Select the API Manager or Runtime Manager option to access API Manager or Runtime Manager alert configuration page. 
+. Select the *Other* option for API Manager or Runtime Manager to access its alert configuration page. 
 +
 image::alerts-menu.png["Alerts menu options to set up basic, advanced, or other types of alerts", 40%, 40%]
 . To configure the alert, see:
