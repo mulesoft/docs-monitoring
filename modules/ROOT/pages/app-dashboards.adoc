@@ -4,7 +4,7 @@ Built-in dashboards display deployment information about your application at the
 
 image::dashboard-built-in-info.png["Deployment info for an app in a built-in dashboard"]
 
-The graphs and tables in built-in dashboards support many metrics, including application metrics. The *Overview* tab provides overall measures. You can view more granular application metrics through *Inbound*, *Outbound*, *Flows*, *Connectors*, *Performance*, *Failures*, and other provided tabs.
+The graphs and tables in built-in dashboards support many metrics, including application metrics. The *Overview* tab provides overall measures. You can view more granular application metrics through <<built-in-charts-app, additional tabs>>.
 
 When converting quantities of memory, Anypoint Monitoring uses the power of 10 (_MB_) to reflect metrics values rather than the power of 2 (_MiB_).
 
@@ -18,6 +18,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 Anypoint Monitoring collects some metrics that are also collected using Cloudwatch in Anypoint Runtime Manager. Anypoint Monitoring shows data that is aggregated in one minute intervals, and it is possible that data shown in Cloudwatch does not match based on when the data is collected.
 
+[[view-dashboard]]
 == View a Built-in Dashboard
 
 Built-in and custom dashboards are available from Anypoint Monitoring. You can view application metrics for applications deployed to CloudHub and to hybrid targets in both built-in and custom dashboards.
