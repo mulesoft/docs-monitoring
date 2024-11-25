@@ -7,7 +7,7 @@ include::reuse::partial$billing/pricing.adoc[tag=featureAdvSubReqMonitoring]
 Alerts indicate whether a resource (such as a Mule app or API) is behaving as expected or exceeding a defined threshold. 
 
 [[alerts]]
-image::intro-alerts.png["Alerts page that contains alerts"]
+image::intro-alerts.png["Alerts in Anypoint Monitoring"]
 
 You can create different types of alerts:
 
@@ -99,7 +99,7 @@ NOTE: If you create an alert for an API using the interface in API Manager, the 
 . From *Alerts* in Anypoint Monitoring, click *+ New alert*.
 . Select the API Manager or Runtime Manager option to access API Manager or Runtime Manager alert configuration page. 
 +
-image::alerts-menu.png["Alerts menu options to set up, basic, advanced, or other types of alerts", 40%, 40%]
+image::alerts-menu.png["Alerts menu options to set up basic, advanced, or other types of alerts", 40%, 40%]
 . To configure the alert, see:
 
 * xref:runtime-manager::alerts-on-runtime-manager.adoc[Runtime Manager Alerts].
