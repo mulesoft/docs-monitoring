@@ -2,17 +2,9 @@
 
 Built-in dashboards display deployment information about your application at the top of the screen and provide access to a number of different graphs, for example:
 
-image::dashboard-built-in-info.png[Deployment Info on an App in a Built-In Dashboard]
+image::dashboard-built-in-info.png["Deployment info for an app in a built-in dashboard"]
 
-The graphs and tables in built-in dashboards support a number of metrics, including application metrics. The *Overview* tab provides overall measures. You can view more granular application metrics through the *Inbound*, *Outbound*, and *Failure* tabs.
-
-Example use cases for monitoring are end-to-end tracing of API calls and dependency analyses to help you isolate the source of issues. For example, you can track response times at each endpoint (outbound or inbound).
-
-.Example: Average Response Time Grouped by Endpoint Outbound
-image::dashboard-outbound-response-table.png[Average Response Time Grouped By Endpoint Outbound]
-
-* Infrastructure-level and JVM metrics
-* Performance metrics that break down inbound and outbound response times into averages and percentiles
+The graphs and tables in built-in dashboards support many metrics, including application metrics. The *Overview* tab provides overall measures. You can view more granular application metrics through *Inbound*, *Outbound*, *Flows*, *Connectors*, *Performance*, *Failures*, and other provided tabs.
 
 When converting quantities of memory, Anypoint Monitoring uses the power of 10 (_MB_) to reflect metrics values rather than the power of 2 (_MiB_).
 
@@ -37,7 +29,7 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 The built-in dashboard for the application or API is displayed.
 . To switch to a dashboard for a different resource, click the built-in dashboard selector at the top of the page.
 +
-image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
+image::builtin-dashboard-selection-interaction.png["Built-in dashboard selector"]
 
 Your data is prepopulated and displayed in the built-in dashboards and logs; no configuration is needed. 
 //TBD:
@@ -679,7 +671,7 @@ The amount of memory the system is swapping, grouped by worker in automatic inte
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 .Example: Infrastructure Dashboard
-image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
+image::dashboard-built-in-infrastructure.png["Example: Infrastructure dashboard"]
 
 [[custom-metrics-charts]]
 == Custom Metrics
