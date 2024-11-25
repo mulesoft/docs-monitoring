@@ -112,31 +112,23 @@ image::dashboard-custom-metadata.png[Dashboard Metadata]
 [[charts_adding]]
 == Add Charts to a Custom Dashboard
 
-. In *Anypoint Monitoring*, click *Custom dashboards* in the left-side menu.
+. In *Anypoint Monitoring*, click *Custom dashboards* from the sidebar.
 +
 * To create a custom dashboard, click *+New Dashboard*.
-* To add a row for your text panel, click the *Add Row* button at the bottom of the screen.
+* If you need a new row for your chart, scroll down to find and click *Add Row*.
 +
-. Click *Add* to add a chart to the row.
+. To add a chart to the row, click *Add*.
 +
 .Example: Adding a Text Panel
 +
 image::dashboard-custom-text-add.png[Adding a Text Panel to a Custom Dashboard]
 +
-If the chart (widget) icons shown above are not visible:
+If chart icons are not visible in your row:
 +
-.. Mouse over a row, then click the three vertical dots located at the top-left corner of the row, for example:
-+
-image::dashboard-menu-widget.png[Opening the Widget Menu]
-+
-.. Use the *Add Widget* option in the left-side menu on a new or existing row, for example:
-+
-image::dashboard-custom-widget-add-move-delete.png[Adding a Chart (Widget) to a Custom Dashboard]
-+
-. From the chart (widget), click *Configure* (from the three vertical dots on the top right side of the widget) to open a configuration window:
-+
-image::dashboard-custom-config-dup-delete.png[Configure a Chart]
-+
+.. Mouse over the row to display the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*) for the row, and click 
++*Add widget*. 
+.. Click one of the chart types for your row.
+. Mouse over the chart to display its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), click *Configure*.
 . To configure the chart in a custom dashboard, see:
 +
 * xref:dashboard-custom-config-graph.adoc[Configuring Graphs]
@@ -150,11 +142,7 @@ image::dashboard-custom-config-dup-delete.png[Configure a Chart]
 To create a copy of a custom dashboard:
 
 . From *Custom Dashboards*, open a custom dashboard.
-. Click the three vertical dots on the top-right of the dashboard, and select *Duplicate*.
-+
-[[dup_delete_dashboard]]
-image::dashboard-custom-dup-delete.png[Duplicate Dashboard]
-+
+. From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Duplicate*.
 . Save a *New Name* for the dashboard.
 +
 Your copy of the dashboard opens.
@@ -164,7 +152,7 @@ Your copy of the dashboard opens.
 You can export app data to a CSV file, which you can then use in other apps. 
 
 . From *Custom Dashboards*, open a custom dashboard.
-. Click the three vertical dots on the top-right of the dashboard, and select *Export CSV*.
+. From a chart's header, click the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Export CSV*.
 
 For more information about how to export app data, see xref:export-app-data-to-csv.adoc[Export App Data to a CSV].
 
@@ -172,7 +160,7 @@ For more information about how to export app data, see xref:export-app-data-to-c
 == Delete a Custom Dashboard
 
 . From *Custom Dashboards*, open a custom dashboard.
-. Click the three vertical dots on the top-right of the dashboard, and select <<dup_delete_dashboard, Delete>>.
+. From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select <<dup_delete_dashboard, Delete>>.
 . Confirm your deletion.
 
 == See Also

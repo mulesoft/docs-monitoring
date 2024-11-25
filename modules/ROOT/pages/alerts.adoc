@@ -4,20 +4,26 @@
 //feature tier:
 include::reuse::partial$billing/pricing.adoc[tag=featureAdvSubReqMonitoring]
 
-Alerts indicate whether a resource (such as a Mule app) is behaving as expected or exceeding a defined threshold.
+Alerts indicate whether a resource (such as a Mule app or API) is behaving as expected or exceeding a defined threshold. 
 
-You can implement any of several types of alerts. From *Alerts* in Anypoint Monitoring, you can create xref:basic-alerts.adoc[basic alerts], or you can create alerts for API Manager and Anypoint Runtime Manager.
-//TODO: VERIFY Titanium subscription info:
-If you have a Titanium subscription, you can also view, enable, and disable xref:advanced-alerts.adoc[advanced alerts] that are configured for graphs in custom dashboards.
+You can configure several types of alerts: 
 
-Using Anypoint Monitoring, you can configure two different types of alerts:
+* From *Alerts*, in Anypoint Monitoring, you can:
 
-* xref:basic-alerts.adoc[Basic alerts] for servers, Mule apps, and APIs
-* xref:advanced-alerts.adoc[Advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
-* Operational alerts for APIs through API Manager
-* Operational alerts for server and app events through Runtime Manager
+** Create xref:basic-alerts.adoc[basic alerts] for servers, Mule apps, and APIs
+** Create xref:advanced-alerts.adoc[advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
+** Filter by <<alert_status, alert status>>
+** Filter by <<alert_severity, alert severity>>
+** Enable or disable xref:advanced-alerts.adoc[advanced alerts] configured for graphs in custom dashboards
 
-For basic and advanced alerts, thresholds are checked every five minutes. The evaluated query is the average value of the metric in the last five minutes. For advanced alerts, the evaluated metric is the one referenced in the *General* tab for the graph. If the value of the metric passes the threshold, the alert is triggered. The alert is triggered only if the alert state changes (from `OK` state to `Alerting` state or vice versa), and if you change the email address of the alert recipient, they do not receive an email until the alert is triggered.
+* From links to API Manager and Anypoint Runtime Manager provided by Anypoint Monitoring, you can create <<other-alerts>>:
+
+** Operational alerts for APIs through API Manager
+** Operational alerts for server and app events through Runtime Manager
+
+== Alert Thresholds
+
+For basic and advanced alerts in Anypoint Monitoring, thresholds are checked every five minutes. The evaluated query is the average value of the metric in the last five minutes. For advanced alerts, the evaluated metric is the one referenced in the *General* tab for the graph. If the value of the metric passes the threshold, the alert triggers. The alert triggers only if the alert state changes (from `OK` state to `Alerting` state or vice versa). If you change the email address of the alert recipient, the recipient doesn't receive an email until the alert triggers.
 
 == Alert Limits
 
@@ -26,26 +32,20 @@ The number of active alerts allocated to your organization varies based on your 
 include::reuse::partial$billing/pricing.adoc[tag=monitoringAlerts]
 
 
-== Access the Alerts Page
+== Open Alerts from Anypoint Monitoring
 
-include::partial$include-nav-steps-no-permissions.adoc[]
-
+. From Anypoint Platform, open *Monitoring*.
+//step 
 include::partial$include-nav-alerts.adoc[]
-
-In the *Alerts* page, you can:
-
-* Create basic alerts
-* View basic alerts for servers, apps, and APIs +
-Note: If you create an alert for an API using the interface in API Manager, the alert does not appear in the *Alerts* page in Anypoint Monitoring.
 +
-* View advanced alerts for graphs in custom dashboards (Titanium subscription required)
-* Enable or disable alerts
-* Filter by <<alert_status, alert status>>
-* Filter by <<alert_severity, alert severity>>
-* Navigate to alert configuration in Runtime Manager and API Manager
-
 [[alerts]]
-image::alerts.png["List of alerts in different states"]
+image::intro-alerts.png["Alerts page that contains alerts"]
++
+You can create any of these alerts:
+
+* xref:basic-alerts.adoc[basic alerts] 
+* xref:advanced-alerts.adoc[advanced alerts]
+* <<other-alerts>>
 
 === Filter Alerts by Alert State
 
@@ -99,15 +99,22 @@ For guidance about alerts in Runtime Manager, see xref:runtime-manager::alerts-o
 
 Instead of seeing links to API and runtime alerts, you receive visual guidance showing how to open the configuration area for alerts in graphs for custom dashboards.
 
+[[other-alerts]]
 == Add API Manager and Runtime Manager Alerts
 
-Click *+ New alert* to access API Manager and Runtime Manager alert configuration pages. You can also get basic instructions for configuring alerts for a chart (widget) in a custom dashboard.
+In addition to creating alerts in Anypoint Monitoring, you can also navigate from Anypoint Monitoring to alert creation pages in API Manager and Runtime Manager. 
 
+//TODO: VERIFY NOTE
+NOTE: If you create an alert for an API using the interface in API Manager, the alert doesn't appear in Anypoint Monitoring *Alerts*.
+
+. From *Alerts* in Anypoint Monitoring, click *+ New alert*.
+. Select the API Manager or Runtime Manager option to access API Manager or Runtime Manager alert configuration page. 
++
 image::alerts-menu.png["Alerts menu options to set up, basic, advanced, or other types of alerts", 40%, 40%]
+. To configure the alert, see:
 
-You can also duplicate or delete an alert from a chart in a custom dashboard:
-
-image::dashboard-custom-config-dup-delete.png["Menu with options to duplicate or delete an alert"]
+* xref:runtime-manager::alerts-on-runtime-manager.adoc[Runtime Manager Alerts].
+* xref:api-manager::using-api-alerts.adoc[API Manager Alerts].
 
 == See Also
 
