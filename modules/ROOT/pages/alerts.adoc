@@ -13,7 +13,7 @@ You can create different types of alerts:
 
 * xref:basic-alerts.adoc[Basic alerts] for servers, Mule apps, and APIs
 * xref:advanced-alerts.adoc[Advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
-* Other alerts in <<other-alerts, alerts in API Manager or Runtime Manager>>:
+* <<other-alerts, Other alerts in API Manager or Runtime Manager>>:
 
 ** Operational alerts for APIs through API Manager
 ** Operational alerts for server and app events through Runtime Manager
@@ -93,13 +93,16 @@ Instead of seeing links to API and runtime alerts, you receive visual guidance s
 
 In addition to creating basic and advanced alerts in Anypoint Monitoring, you can also navigate from Anypoint Monitoring to alert creation pages in API Manager and Runtime Manager. 
 
+image::alerts-menu.png["Alerts menu options to set up basic, advanced, or other types of alerts"]
+
 //TODO: VERIFY NOTE
 NOTE: If you create an alert for an API using the interface in API Manager, the alert doesn't appear in Anypoint Monitoring *Alerts*.
 
 . From *Alerts* in Anypoint Monitoring, click *+ New alert*.
 . Select the *Other* option for API Manager or Runtime Manager to access its alert configuration page. 
-+
-image::alerts-menu.png["Alerts menu options to set up basic, advanced, or other types of alerts", 40%, 40%]
+
+* *Create an alert for your API in API Manager*
+* *Create an alert for your API in Runtime Manager*
 . To configure the alert, see:
 
 * xref:runtime-manager::alerts-on-runtime-manager.adoc[Runtime Manager Alerts]
