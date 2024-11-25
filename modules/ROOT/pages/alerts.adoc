@@ -6,20 +6,21 @@ include::reuse::partial$billing/pricing.adoc[tag=featureAdvSubReqMonitoring]
 
 Alerts indicate whether a resource (such as a Mule app or API) is behaving as expected or exceeding a defined threshold. 
 
-You can configure several types of alerts: 
+[[alerts]]
+image::intro-alerts.png["Alerts page that contains alerts"]
 
-* From *Alerts*, in Anypoint Monitoring, you can:
-
-** Create xref:basic-alerts.adoc[basic alerts] for servers, Mule apps, and APIs
-** Create xref:advanced-alerts.adoc[advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
-** Enable or disable advanced alerts configured for graphs in custom dashboards
-** Filter by <<alert_status, alert status>>
-** Filter by <<alert_severity, alert severity>>
-
-* From links to API Manager and Anypoint Runtime Manager provided by Anypoint Monitoring, you can create <<other-alerts>>:
+* Create xref:basic-alerts.adoc[basic alerts] for servers, Mule apps, and APIs
+* Create xref:advanced-alerts.adoc[advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
+* Create other alerts in <<other-alerts, alerts in API Manager or Runtime Manager>>:
 
 ** Operational alerts for APIs through API Manager
 ** Operational alerts for server and app events through Runtime Manager
+
+For alerts in Anypoint Monitoring, you can: 
+
+** Enable or disable advanced alerts configured for graphs in custom dashboards
+** Filter by <<alert_status, alert status>>
+** Filter by <<alert_severity, alert severity>>
 
 == Alert Thresholds
 
@@ -32,20 +33,6 @@ The number of active alerts allocated to your organization varies based on your 
 include::reuse::partial$billing/pricing.adoc[tag=monitoringAlerts]
 
 
-== Open Alerts from Anypoint Monitoring
-
-. From Anypoint Platform, open *Monitoring*.
-//step 
-include::partial$include-nav-alerts.adoc[]
-+
-[[alerts]]
-image::intro-alerts.png["Alerts page that contains alerts"]
-+
-You can create any of these alerts:
-
-* xref:basic-alerts.adoc[basic alerts] 
-* xref:advanced-alerts.adoc[advanced alerts]
-* <<other-alerts>>
 
 === Filter Alerts by Alert State
 
