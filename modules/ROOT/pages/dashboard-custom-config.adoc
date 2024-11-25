@@ -9,9 +9,7 @@ You can create and configure as many custom dashboards as you need.
 +
 * You can configure one or more charts (also called widgets) for displaying your data in each row of a dashboard.
 +
-image::dashboard-custom-widgets.png[Custom Dashboard Widgets]
-+
-// TODO_HIGH: VERIFY DESCRIPTION of Table
+image::dashboard-custom-widgets.png["Custom dashboard widgets"]
 +
 [[chart_examples]]
 * *Graph*: Can display a wide variety of metrics as time-series data. Graphs support a query language capable of pinpointing the data you need to see.
@@ -119,9 +117,7 @@ image::dashboard-custom-metadata.png[Dashboard Metadata]
 +
 . To add a chart to the row, click *Add*.
 +
-.Example: Adding a Text Panel
-+
-image::dashboard-custom-text-add.png[Adding a Text Panel to a Custom Dashboard]
+image::dashboard-custom-widgets.png["Custom dashboard widgets"]
 +
 If chart icons are not visible in your row:
 +
