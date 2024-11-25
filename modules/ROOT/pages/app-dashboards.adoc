@@ -1,8 +1,6 @@
 = Using Built-in Mule App Dashboards
 
-Built-in dashboards display deployment information about your application at the top of the screen and provide access to a number of different graphs, for example:
-
-image::dashboard-built-in-info.png["Deployment info for an app in a built-in dashboard"]
+Built-in dashboards display deployment information about your application at the top of the screen and provide access to a number of different graphs.
 
 The graphs and tables in built-in dashboards support many metrics, including application metrics. The *Overview* tab provides overall measures. You can view more granular application metrics through <<built-in-charts-app, additional tabs>>.
 
