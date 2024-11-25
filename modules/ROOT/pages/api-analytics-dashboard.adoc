@@ -24,12 +24,6 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 +
 On the API analytics page, you can view information about a running, managed API. 
 . Select the date and time range to view the statistics for and click *Confirm*. 
-+
-The details panel displays information about the API:
-+
-//TODO: outdated: shows Mule 3.9
-image::api-analytics-detail-panel.png["Information about an API in the details panel showing the type, status, deployment information, and Mule runtime version"]
-+
 . To view API analytics metrics in API Manager, click the *View API in API Manager* link.
 
 [[enhanced-api-metrics]]
