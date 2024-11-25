@@ -671,9 +671,6 @@ The amount of memory the system is swapping, grouped by worker in automatic inte
 +
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
-.Example: Infrastructure Dashboard
-image::dashboard-built-in-infrastructure.png["Example: Infrastructure dashboard"]
-
 [[custom-metrics-charts]]
 == Custom Metrics
 
