@@ -91,11 +91,6 @@ Example:
 Grouping `AND` or `OR` conditions within parentheses is _not allowed_. For example, `Where env_id = Sandbox AND (app_id= app3 OR app_id=app2)` isn’t allowed.  
 | Select a|
 Add one or more `field` settings to create a function that selects a field from the *From* data and applies an operation to it (such as the `mean` of the `heap_total`). 
-
-image::config-general-advanced-select.png[Select Options]
-
-//*TODO_VERIFY* Note that when you group by time, you need to use an aggregation function. In addition, some functions like derivatives also require an aggregation function.
-
 | Group By a|
 
 //*TODO_VERIFY*
