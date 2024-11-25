@@ -11,7 +11,7 @@ Dashboards in Anypoint Monitoring provide visibility into Mule apps and APIs tha
 Built-in dashboards contain graphs that plot current and historical data collected over a given time and date period. There is a built-in dashboard for each Mule application and API in each environment.
 
 .Example: Built-in Dashboard for a Mule Application
-image::dashboard-built-in.png["Built-in dashboard example"]
+image::intro-dashboard-built-in.png["Built-in dashboard example"]
 
 == Custom Dashboards
 
