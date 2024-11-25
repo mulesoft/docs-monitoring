@@ -9,9 +9,11 @@ Alerts indicate whether a resource (such as a Mule app or API) is behaving as ex
 [[alerts]]
 image::intro-alerts.png["Alerts page that contains alerts"]
 
-* Create xref:basic-alerts.adoc[basic alerts] for servers, Mule apps, and APIs
-* Create xref:advanced-alerts.adoc[advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
-* Create other alerts in <<other-alerts, alerts in API Manager or Runtime Manager>>:
+You can create different types of alerts:
+
+* xref:basic-alerts.adoc[Basic alerts] for servers, Mule apps, and APIs
+* xref:advanced-alerts.adoc[Advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
+* Other alerts in <<other-alerts, alerts in API Manager or Runtime Manager>>:
 
 ** Operational alerts for APIs through API Manager
 ** Operational alerts for server and app events through Runtime Manager
