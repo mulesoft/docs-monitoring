@@ -12,9 +12,9 @@ You can configure several types of alerts:
 
 ** Create xref:basic-alerts.adoc[basic alerts] for servers, Mule apps, and APIs
 ** Create xref:advanced-alerts.adoc[advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
+** Enable or disable advanced alerts configured for graphs in custom dashboards
 ** Filter by <<alert_status, alert status>>
 ** Filter by <<alert_severity, alert severity>>
-** Enable or disable xref:advanced-alerts.adoc[advanced alerts] configured for graphs in custom dashboards
 
 * From links to API Manager and Anypoint Runtime Manager provided by Anypoint Monitoring, you can create <<other-alerts>>:
 
