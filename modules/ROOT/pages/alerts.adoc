@@ -102,8 +102,8 @@ NOTE: If you create an alert for an API using the interface in API Manager, the 
 image::alerts-menu.png["Alerts menu options to set up basic, advanced, or other types of alerts", 40%, 40%]
 . To configure the alert, see:
 
-* xref:runtime-manager::alerts-on-runtime-manager.adoc[Runtime Manager Alerts].
-* xref:api-manager::using-api-alerts.adoc[API Manager Alerts].
+* xref:runtime-manager::alerts-on-runtime-manager.adoc[Runtime Manager Alerts]
+* xref:api-manager::using-api-alerts.adoc[API Manager Alerts]
 
 == See Also
 
