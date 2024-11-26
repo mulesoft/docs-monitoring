@@ -22,7 +22,7 @@ The *Options* tab includes settings for singlestat <<value_singlestat, values>>,
 
 Configure values for your singlestat. Value settings include the type of value you want (such as an average), the unit of measure, and others.
 
-image::singlestat-config-options.png[Example: Singlestat Options]
+image::singlestat-config-options.png["Singlestat options example"]
 
 [%header,cols="1,4"]
 |===
@@ -97,7 +97,7 @@ After you complete your configuration, you can click Save Changes. To exit the c
 
 From the *Value Mappings* configuration tab, you can provide a human-readable label for a summary statistic.
 
-image::singlestat-config-value-mapping.png[Example: Value Mapping]
+image::singlestat-config-value-mapping.png["Value mapping example"]
 
 [%header,cols="1,4"]
 |===

@@ -22,7 +22,7 @@ A list of custom dashboards is displayed.
 . In the custom dashboard list, click the dashboard to view. +
 You can also search for a custom dashboard by entering its name in the search field. 
 
-image::dashboard-select-custom.png[Select a Dashboard]
+image::dashboard-select-custom.png["Selecting a dashboard"]
 
 == See Also 
 

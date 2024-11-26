@@ -15,23 +15,23 @@ image::dashboard-custom-widgets.png["Custom dashboard widgets"]
 * *Graph*: Can display a wide variety of metrics as time-series data. Graphs support a query language capable of pinpointing the data you need to see.
 +
 .Example: Graph
-image::dashboard-graph.png[Example: Graph]
+image::dashboard-graph.png["Graph example"]
 +
 * *Singlestat*: Provides a summary statistic (a single total or number) for a single grouping of time-series data, such as a response time or a heap usage statistic.
 +
 .Example: SingleStat
-image::dashboard-singlestat.png[Example: SingleStat]
+image::dashboard-singlestat.png["SingleStat example"]
 +
 * *Table*: Supports time-series data in a tabular format. It allows for cell coloring and date and value formatting.
 +
 .Example: Table
-image::dashboard-table.png[Example: Table]
+image::dashboard-table.png["Table example"]
 +
 * *Text*: Provides an area for textual information (titles and descriptions) written in Markdown or HTML within rows or cells of a dashboard. For example, you might use it as a header for your dashboard.
 +
 [[text_example]]
 .Example: Text Widget as a Dashboard Header
-image::dashboard-text-header.png[Example: Text]
+image::dashboard-text-header.png["Text chart example"]
 //TODO_REMOVED FOR NOW: , annotation, and raw JSON for Table description
 
 See <<charts_adding, Adding Charts to a Custom Dashboard>>.
@@ -95,7 +95,7 @@ image::dashboard-custom-config-rows.png["Dashboard row configurations"]
 Use the *Metadata* tab for high-level custom dashboard configurations to view metrics on a custom dashboard.
 
 [[dashboard_config_metadata]]
-image::dashboard-custom-metadata.png[Dashboard Metadata]
+image::dashboard-custom-metadata.png["Dashboard metadata"]
 
 [%header,cols="1,4"]
 |===
