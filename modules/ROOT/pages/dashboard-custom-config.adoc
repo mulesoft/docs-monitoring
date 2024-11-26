@@ -51,7 +51,7 @@ To perform dashboard-level configurations of custom dashboards, navigate to a cu
 === Configure General Dashboard Properties
 
 [[dashboard_config]]
-image::dashboard-custom-config-high-level.png[Dashboard Configuration]
+image::dashboard-custom-config-high-level.png["Dashboard configuration example"]
 
 [%header,cols="1,4"]
 |===
@@ -77,7 +77,7 @@ Most graphs track data over time, so your time options are important. Your optio
 Use the *Rows* tab for high-level custom dashboard configurations to provide titles for rows, move rows up or down in the dashboard, and delete rows.
 
 [[dashboard_config_rows]]
-image::dashboard-custom-config-rows.png[Dashboard Row Configurations]
+image::dashboard-custom-config-rows.png["Dashboard row configurations"]
 
 [%header,cols="1,4"]
 |===
@@ -127,10 +127,10 @@ If chart icons are not visible in your row:
 . Mouse over the chart to display its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), click *Configure*.
 . To configure the chart in a custom dashboard, see:
 +
-* xref:dashboard-custom-config-graph.adoc[Configuring Graphs]
-* xref:dashboard-custom-config-singlestat.adoc[Configuring Singlestats]
-* xref:dashboard-custom-config-table.adoc[Configuring Tables]
-* xref:dashboard-custom-config-text.adoc[Configuring Text Panels]
+* xref:dashboard-custom-config-graph.adoc["Configuring graphs"]
+* xref:dashboard-custom-config-singlestat.adoc["Configuring singlestat charts"]
+* xref:dashboard-custom-config-table.adoc["Configuring tables"]
+* xref:dashboard-custom-config-text.adoc["Configuring text panels"]
 
 [[dup_dashboard]]
 == Duplicate a Custom Dashboard

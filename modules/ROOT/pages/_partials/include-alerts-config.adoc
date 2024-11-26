@@ -2,8 +2,6 @@
 //INCLUDED IN GRAPH CONFIG FILE (dashboard-custom-config-graph.adoc#create-an-advanced-alert), advanced-alert.adoc
 [[alerts]]
 
-image::graph-alert-config.png["Advanced alert configuration"]
-
 . Navigate to the configuration screen for a graph in a custom dashboard. For guidance, see xref:dashboard-custom-config.adoc[Configuring Custom Dashboards].
 . Provide a general configuration for the graph that (at minimum) defines the metric, environment, and resource for which you want to set the advanced alert. +
 For guidance, see xref:dashboard-custom-config-graph.adoc#general_settings[General Settings].
