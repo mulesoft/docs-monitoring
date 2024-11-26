@@ -70,24 +70,6 @@ You can enable or disable an alert by toggling the <<alerts, switch>> on the rig
 Depending on the value, the alert transitions to `OK` or `Alerting`.
 * Disabling an alert causes the alert to transition to `Disabled`.
 
-== Configure API Manager and Runtime Manager Alerts
-
-From the *Alerts* page in Anypoint Monitoring, you can access configuration pages for API Manager and Runtime Manager alerts.
-
-Depending on your subscription level:
-
-* After selecting *New alert*, you can opt to create an alert in API Manager or Runtime Manager:
-
-** *Create an alert for your API in API Manager*
-+
-For guidance about alerts in API Manager, see xref:2.x@api-manager::using-api-alerts.adoc[About API Alerts]. Note that these alerts are not listed in the *Alerts* page for Anypoint Monitoring.
-** *Create an alert for your server in Runtime Manager*
-+
-For guidance about alerts in Runtime Manager, see xref:runtime-manager::alerts-on-runtime-manager.adoc[About Configuring Alerts Using Runtime Manager]. Note that these alerts are not listed in the *Alerts* page for Anypoint Monitoring.
-* If you don't have a Titanium subscription, you might see *https://www.mulesoft.com/anypoint-pricing[Titanium subscription required]*.
-
-Instead of seeing links to API and runtime alerts, you receive visual guidance showing how to open the configuration area for alerts in graphs for custom dashboards.
-
 [[other-alerts]]
 == Add API Manager and Runtime Manager Alerts
 
@@ -96,15 +78,17 @@ In addition to creating basic and advanced alerts in Anypoint Monitoring, you ca
 image::alerts-menu.png["Alerts menu options to set up basic, advanced, or other types of alerts"]
 
 //TODO: VERIFY NOTE
-NOTE: If you create an alert for an API using the interface in API Manager, the alert doesn't appear in Anypoint Monitoring *Alerts*.
+NOTE: Alerts created in API Manager and Runtime Manager aren't listed in Anypoint Monitoring *Alerts*.
 
 . From *Alerts* in Anypoint Monitoring, click *+ New alert*.
 . Select the *Other* option for API Manager or Runtime Manager to access its alert configuration page. 
 
 * *Create an alert for your API in API Manager*
++
+Alerts created in API Manager aren't listed in Anypoint Monitoring *Alerts*.
 * *Create an alert for your API in Runtime Manager*
-. To configure the alert, see:
 
+. To create these alerts, proceed to:
 * xref:runtime-manager::alerts-on-runtime-manager.adoc[Runtime Manager Alerts]
 * xref:api-manager::using-api-alerts.adoc[API Manager Alerts]
 
