@@ -129,43 +129,6 @@ Due to internal database restrictions, you cannot use the following keywords to 
 * `TIME`
 ====
 
-== Use Design Center to Configure the Custom Metrics Values
-
-Create a Mule application project in Design Center and configure the Custom Metrics connector.
-
-. In *Design Center*, create a new Mule application project. +
-The project opens in Design Center. 
-. Select the trigger for your flow, and click *Next*.
-. For *Target*, select *Anypoint Custom Metrics Connector*, and click *Done*. 
-+
-image::custom-metric-dc-select-target.png["A list of targets for a workflow"]
-+
-The connector has one operation called *Send Custom Metric*. 
-. On the design canvas, open the *Anypoint Custom Metrics Connector* card to add your metrics.
-. In *Metric Name*, enter a meaningful value. 
-. Next to *Dimensions*, click *Add* to enter the name and value for the metric's dimension.  
-+
-image::custom-metric-dc-add-dimension.png["A form with fields for metric name, dimensions, facts, and a checkbox for runtime exception on validation failure"]
-.. In the *Add Item* dialog box, enter the *Dimension Name* and *Value* for the dimension.
-.. Leave the *Collapsible* option with the default of *True*.
-.. Click *OK*. 
-+
-image::custom-metric-dc-add-item.png["A form with fields for dimension name, value, collapsible option and OK button"]
-+
-You can repeat these steps to add multiple key values.
-.  Next to *Facts*, click *Add* to add facts for the metric. Values for measurements are always numerical.
-.. In the *Add Item* dialog box, enter a *Fact Name* and numerical *Value* for the fact. +
-[NOTE]
-For facts, the value must always be numerical. This is not validated at design time, but a non-numerical value will cause a runtime exception once deployed.
-+
-image::custom-metrics-add-fact.png["A form with fields for a fact name, a value, and an OK button"]
-+
-.. Click *OK*. +
-You can repeat these steps to add multiple key values.
-. Select the *Throw Runtime Exception on Validation Failure* option if you want the flow to break if invalid values are entered for the metric. If this option is left unchecked, an error will be logged, but the flow won't break.
-[NOTE]
-Custom Metrics Connector requires all *Facts* to be sent from every operation, even if they contain empty or 0 value in them.
-
 == Configure Custom Metrics from Anypoint Studio
 
 . From Anypoint Monitoring:
