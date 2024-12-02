@@ -60,7 +60,7 @@ image::dashboard-custom-config-high-level.png[Dashboard Configuration]
 2+| General Dashboard Settings
 | Name | Name for your Dashboard.
 | Description | Description that end users can see from the (i) icon.
-| Tags | A short identifier that can help you locate a dashboard in the custom dashboard list. See xref:dashboards-using.adoc#favorite_dashboard[Setting Favorite Custom Dashboards] for an example.
+| Tags | A short identifier that can help you locate a dashboard in the custom dashboard list.
 | Timezone a|
 
 Most graphs track data over time, so your time options are important. Your options are:
