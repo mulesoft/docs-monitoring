@@ -2,7 +2,9 @@
 
 include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
-Set up advanced alerts for charts in xref:create-custom-dashboard.adoc[custom dashboards], from the chart's *Alert* tab. Alerts trigger email notifications when a data point you're measuring passes a specified threshold in the past 5 minutes. Workers are 
+Set up advanced alerts for charts in xref:create-custom-dashboard.adoc[custom dashboards], from the chart's *Alert* tab. Alerts trigger email notifications if a data point you're measuring passed a specified threshold in the past 5 minutes. This 5 minute period is fixed and not configurable. 
+
+For apps that run on more than one worker, charts measuring worker-related activity in Anypoint Monitoring dashboards break down activity by worker. 
 
 When you configure an advanced alert for a graph, an alert state icon appears in the chart.
 
