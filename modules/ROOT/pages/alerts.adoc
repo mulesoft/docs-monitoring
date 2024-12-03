@@ -9,7 +9,7 @@ Alerts indicate whether a resource (such as a Mule app or API) is behaving as ex
 [[alerts]]
 image::intro-alerts.png["Alerts in Anypoint Monitoring"]
 
-You can create different types of alerts:
+You can create these types of alerts:
 
 * xref:basic-alerts.adoc[Basic alerts] for servers, Mule apps, and APIs
 * xref:advanced-alerts.adoc[Advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
