@@ -1,6 +1,6 @@
 //
 // tag::open-insights[]
-. In the Anypoint Monitoring sidebar, click *Insights* to open *Anypoints Insights*.
+. In the Anypoint Monitoring sidebar, click *Insights* to open Anypoints Insights.
 // end::open-insights[]
 //
 
