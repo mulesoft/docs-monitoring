@@ -29,7 +29,7 @@ Do not override the default JVM timezone for applications deployed to CloudHub a
 [[log-search]]
 == Search Logs
 
-From Anypoint Monitoring, find *Log Search* to search for text in logs from the search field, through a filter, or with a DSL query.
+From Anypoint Monitoring, click *Log Search* to search for text in logs from the search field, through a filter, or with a DSL query.
 
 image::intro-logs.png["Logs in Anypoint Monitoring"]
 
@@ -47,7 +47,7 @@ To search the logs, type your search query into the log search field and press *
 * Search for a term, such as `"Info Dynamic Logging"`.
 +
 Without quotes, the query returns results for matches to each term. 
-* Use a wildcard in your search, such as `resourceId=hellowor*. 
+* Use a wildcard in your search, such as `resourceId=hellowor*`. 
 * Use logical operators, such as `resourceId=hellowor* AND "Info Dynamic Logging"`.
 
 [[search-filter]]
@@ -245,7 +245,7 @@ image::log-filter-select.png["Predefined log filter"]
 After you select a predefined filter from the Quick Filter list, you see it
 near the top of the page, next to *Add a Filter*.
 
-image::log-filter-actions.png["Filter actions"]
+image::log-filter-actions.png["Predefined filter actions"]
 
 When you hover over a filter, you can select from the following actions:
 
@@ -272,7 +272,7 @@ image::log-filter-column.png["Filter column in the logs"]
 To remove the filter column, click the column icon for the filter field,
 for example:
 
-image::log-filter-remove-field.png["Removing a filter column from the logs"]
+image::log-filter-remove-field.png["Column icon for removing the column from the logs"]
 
 You can also remove it with the <<column_move, X icon>> that appears when you scroll over the column.
 
@@ -281,7 +281,7 @@ You can also remove it with the <<column_move, X icon>> that appears when you sc
 
 To move filter columns in your log results to the left or right, you simply scroll over the column heading and use the arrow icons.
 
-image::log-filter-column-move.png["Removing a filter column from the logs"]
+image::log-filter-column-move.png["Arrow icons for moving a filter column to the left or right"]
 
 [[filters_predefined]]
 === Search Filters
@@ -356,7 +356,7 @@ You can use these operators when creating a search filter. For example `log-leve
 
 You can use the funnel-shaped icons on any log in your results to create and remove a filter for the entire log field value.
 
-image::log-filter-create-funnel.png["Creating a log message filter"]
+image::log-filter-create-funnel.png["Funnel icon used to create a log message filter"]
 
 The filter you create is visible as a filter tag in the Filters area at the top of the page, for example:
 

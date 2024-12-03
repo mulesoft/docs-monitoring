@@ -16,7 +16,7 @@ You must also xref:am-installing.adoc[install the Anypoint Monitoring Agent].
 
 == Locate the Custom Metrics Connector
 
-From Anypoint Monitoring, click *Custom Metrics* to locate *Anypoint Monitoring Custom Metrics Connector*. Alternatively, you can search for the connector from Anypoint Exchange. 
+From Anypoint Monitoring, click *Custom Metrics* to locate *Anypoint Monitoring Custom Metrics Connector*. Alternatively, you can search for the connector in Anypoint Exchange. 
 
 == Custom Metrics Best Practices
 
@@ -135,7 +135,7 @@ Due to internal database restrictions, you cannot use the following keywords to 
 
 . From Anypoint Monitoring:
 .. Click *Custom Metrics*.
-.. Click the *Custom Metrics Connector* to open the connector on Anypoint Exchange.
+.. Click *Custom Metrics Connector* to open the connector on Anypoint Exchange.
 .. Click *Dependency Snippet*, and copy the Maven snippet.
 . In Anypoint Studio, add the snippet for the connector to your project's `pom.xml` file. 
 +
