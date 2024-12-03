@@ -183,7 +183,7 @@ API implementation type (*API*)
 Status::
 Status code that indicates whether the governance policies and SLA tiers are functional (*Active*) or not
 +
-For all codes, see information on xref:api-manager::latest-overview-concept.adoc#what-api-manager-looks-like[tracking registration status] in the API Manager UI documentation.
+For all codes, see information about xref:api-manager::latest-overview-concept.adoc#what-api-manager-looks-like[tracking registration status] in the API Manager documentation.
 
 //TODO: Url -> URL (SATHISH)
 Implementation URL:: 
