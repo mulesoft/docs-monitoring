@@ -2,9 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:useu-regions: (US and EU Regions)
-:hyperforce-regions: (CA and JP Regions)
-:all-regions: (All Regions)
 
 Understanding the state of your infrastructure and systems is important for ensuring the reliability and stability of your services. As part of Anypoint Platform, Anypoint Monitoring provides visibility into integrations across your app network. The monitoring tools provide feedback from Mule flows and components in your app network.
 
@@ -78,7 +75,7 @@ For more information about MuleSoft Government Cloud and Anypoint Platform Priva
 //feature tier:
 include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
 
-Monitor performance data and issues across your deployed Mule apps and APIs  (_entities_), and get detailed insights on specific deployments. 
+Monitor performance data and issues across your deployed Mule apps and APIs (_entities_), and get detailed insights on specific deployments. 
 
 //TEMP INFO: Hyperforce 12/24 (W-17225983)
 For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights remains a Beta release available in the Advanced and Titanium tiers at this time.
@@ -242,7 +239,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-4+| xref:app-dashboards.adoc[*Built-in App Dashboards*]
+4+| xref:app-dashboards.adoc[Built-in App Dashboards]
 |More than 80 out-of-the-box charts covering metrics in the following categories: Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure
 
 |Yes
@@ -274,7 +271,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-4+| xref:api-analytics-dashboard.adoc[*Built-in API Dashboards*]
+4+| xref:api-analytics-dashboard.adoc[Built-in API Dashboards]
 
 |16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application
 |Yes
@@ -286,7 +283,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-4+| xref:dashboard-custom-config.adoc[*Custom Dashboards*]
+4+| xref:dashboard-custom-config.adoc[Custom Dashboards]
 
 |Basic mode settings for charts (graphs, singlestats, tables)
 |Yes
@@ -360,9 +357,10 @@ NOTE: Anypoint Visualizer app network integration refers to an Anypoint Visualiz
 The following use cases provide examples of how you can use Anypoint Monitoring.
 
 * Understand performance-related KPIs +
-DevOps engineer Gary maintains a series of APIs related to a transaction processing system. Because the TPS requires swift response time, Gary uses API response time dashboards and alerts to send an email when there is a bottleneck. After gathering some data, Gary can then size his apps.
+DevOps engineer Gary maintains a series of APIs related to a transaction processing system. Because the TPS requires swift response, Gary uses API response-time dashboards and alerts to send an email when a bottleneck occurs. After gathering some data, Gary can then size his apps.
 
-* Plan resource allocation across the app network +
+* Plan resource allocation across the app network 
++
 IT specialist Peyton uses Anypoint Visualizer to view their app network. For CloudHub and Anypoint Runtime Fabric apps, Peyton sees CPU and memory utilization and idle capacity using integrated Anypoint Monitoring.
 
 * Pinpoint root causes of issues +

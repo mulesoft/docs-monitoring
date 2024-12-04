@@ -8,10 +8,10 @@ include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
 
 Monitor performance data and issues across your deployed Mule apps and API implementations (_entities_) with Anypoint Insights, in Anypoint Monitoring: 
 
-* Check metrics across multiple Mule apps and API implementations
+* Check metrics across multiple Mule apps and API implementations.
 +
 Get up to the last 7 days (Advanced package) or 24 hours (Starter package) of high-level metrics on requests, errors, and responses. Use filters to narrow your results. {download-chart-data}
-* Check metrics on individual Mule apps and API implementations
+* Check metrics on individual Mule apps and API implementations.
 +
 Get up to the last 30 days of metrics on latency, requests, responses, errors, Mule messages and the JVM for Mule apps, and for API implementations, data on policy violations, performance, and client apps. {download-chart-data}
 
@@ -48,7 +48,7 @@ include::partial$include-entities.adoc[tags="anypoint-regions-hyperforce"]
 ** {empty}
 include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 
-* A Mule app or API (xref:gateway-home::index.adoc[Mule Gateway or Flex Gateway API]) running on a supported version of Mule Runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
+* A Mule app or API (xref:gateway-home::index.adoc[Mule Gateway or Flex Gateway API]) running on a supported version of Mule runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
 
 ** CloudHub 2.0
 //TEMP INFO: Hyperforce 12/24 (W-17225983)
@@ -64,7 +64,7 @@ include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 For guidance, see xref:hyperforce::configure-mule-hyperforce.adoc[].
 ** For information about Runtime Fabric feature support in these clouds, see xref:hyperforce::index.adoc#features-supported-on-hyperforce[Features Supported on Hyperforce].
 
-* The *Monitoring Viewer* permission to Anypoint Monitoring and the permissions required for viewing apps and APIs (see xref:monitoring::am-permissions.adoc[])
+* The Monitoring Viewer permission to Anypoint Monitoring and the permissions required for viewing apps and APIs (see xref:monitoring::am-permissions.adoc[])
 
 [[monitor-deployments]]
 == Monitor Your Deployments
@@ -75,7 +75,7 @@ Monitor Mule apps and APIs within a selected business group and environment.
 . Log in to Anypoint Platform, and navigate to Anypoint Monitoring. 
 //Nav step
 include::partial$include-entities.adoc[tags="open-insights"]
-. In Anypoint Insights, set your environment, such as Design, Production, and Sandbox. 
+. In Anypoint Insights, set your environment, such as Design, Production, or Sandbox. 
 +
 For guidance, see <<change-environment>>.
 . To capture deployments for another business group you belong to in the *Entities List*, select the business group.
@@ -87,7 +87,7 @@ For guidance, see <<filter-by-time>>.
 . Filter the deployment data to display in the charts, as needed, to focus on areas of interest.
 +
 For guidance, see <<filter-by-data>>.
-. To get additional metrics on a specific app or API:
+. To get additional metrics for a specific app or API:
 .. Find and click its name in *Entities List*.
 +
 Apps in the *Started* state and APIs in the *Active* state are listed.
@@ -166,7 +166,7 @@ entity IN ['99aea888-77de-6e06-5c55-d1234de56789', '09f99999-888d-7b77-6da5-bebd
 [[filter-by-time]]
 === Filter Data by Time Period
 
-Use the time period selector (<<dashboard-overview, item 6>> in the example) to display data points collected for a given time period (such as the last 15 minutes or the last 24 hours). Your setting applies across all data in *Anypoint Insights* overview, including the *Entities List*.
+Use the time-period selector (<<dashboard-overview, item 6>> in the example) to show data points collected for a given time period (such as the last 15 minutes or the last 24 hours). Your setting applies across all data in *Anypoint Insights* overview, including items in the *Entities List*.
 
 If you don't see data on the page, check that the selected time range is correct.
 
@@ -208,15 +208,15 @@ Charts in Anypoint Insights display metrics for deployments in a specific busine
 image::insights-business-group-change.png["Business group selection options"]
 
 [calloutlist]
-. Business group selector 
+. Business-group selector 
 . User profile, for selecting defaults
 
-To change the business group setting: 
+To change the business-group setting: 
 
 . Open Anypoint Monitoring. 
 . Set a new business group:
 
-* To select a business group without changing the default, use the business group selector in Anypoint Insights. 
+* To select a business group without changing the default, use the business-group selector in Anypoint Insights. 
 * To select a default business group:
 
 .. Click your profile icon (see <<profile, item 2>> in the example). 
@@ -299,7 +299,7 @@ include::partial$include-insights-charts.adoc[tags="data-scope"]
 Entities with Slow Response Times::
 Response times, in milliseconds, of the entities with the slowest response times
 +
-The metric uses percentile values for response times (calculated from highest to lowest times) to identify entities with the slowest responses. You can select the *p99* (default), *p95*, *p90*, or *p75*.
+The metric uses percentile values for response times (calculated from highest to lowest times) to identify entities with the slowest responses. You can select *p99* (default), *p95*, *p90*, or *p75*.
 
 Error Volume:: 
 Number of errors received by the entities over time
@@ -315,7 +315,7 @@ Number requests over time for the entities
 [[entities-list]]
 === Entities List
 
-Check key metrics on individual Mule apps and APIs (_entity_), and click an entity's name to get many detailed charts on the entity. 
+Check key metrics on individual Mule apps and APIs (_entity_), and click an entity's name to get detailed charts for the entity. 
 include::partial$include-entities.adoc[tags="entity-definition"]
 
 include::partial$include-insights-charts.adoc[tags="data-scope"] The entities belong to the selected <<change-bg, business group>>.
@@ -467,7 +467,7 @@ include::partial$include-insights-charts.adoc[tags="api-detail-performance"]
 [[entity-metrics-api-client-apps]]
 ==== Client Application Metrics for an API Implementation 
 
-Charts with client Application metrics are available in the *Client Applications* tab for each API implementation that you can monitor in Anypoint Insights. 
+Charts with client application metrics are available in the *Client Applications* tab for each API implementation that you can monitor in Anypoint Insights. 
 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
