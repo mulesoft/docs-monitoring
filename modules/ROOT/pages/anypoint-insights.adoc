@@ -361,7 +361,7 @@ include::partial$include-entities.adoc[tags="entity-definition"]
 [[entity-metrics-app-header]]
 ==== Mule Application Metrics
 
-High-level metrics are available in Application Details dashboards for individual Mule apps. 
+High-level metrics are available in *Application Details* dashboards for individual Mule apps. 
 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
