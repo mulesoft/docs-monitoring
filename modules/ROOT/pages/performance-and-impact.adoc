@@ -4,6 +4,8 @@ Anypoint Monitoring processes and retains massive amounts of data with a low per
 
 You can also improve your Anypoint Monitoring experience by adjusting your screen resolution.
 
+For core-based subscription tier, see xref:index.adoc#plans-legacy[Anypoint Monitoring Features for Legacy Subscription-Based Plans].
+
 
 == Mule Monitoring Agent Performance Impact
 
@@ -68,7 +70,7 @@ Telemetry Exporter Connections::
 
 === Gold and Platinum Subscription Limits
 
-Gold and Platinum subscribers to Anypoint Platform receive modest data retention and feature limits:
+xref:index.adoc#plans-legacy[Gold and Platinum tier] subscribers to Anypoint Platform receive modest data retention and feature limits:
 
 Logs::
 Log limits are documented in xref:runtime-manager::viewing-log-data.adoc#log-persistence[Runtime Manager].
@@ -87,7 +89,7 @@ Six basic alerts per API instance.
 
 === Titanium Subscription Limits
 
-Titanium subscribers to Anypoint Platform receive more robust data retention and feature limits:
+xref:index.adoc#plans-legacy[Titanium tier] subscribers to Anypoint Platform receive more robust data retention and feature limits:
 
 Logs::
 In raw format, your logs can occupy as much space as you receive with your Titanium subscription. Note that the storage space you receive with your Titanium subscription is used to store logs and metrics data. Because metrics do not take up much storage capacity, you can use the majority of your storage for raw log data.

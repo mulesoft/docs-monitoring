@@ -9,7 +9,7 @@ The enhanced metrics view includes detailed information about your APIs, and cha
 Charts displaying the `Last 1 hour` label show data that was collected during the past 60 minutes, starting with the current time.
 
 [NOTE]
-For Gold and Platinum subscriptions, Anypoint Monitoring retains API analytics metrics data for 30 days. API Manager retains API analytics metrics data for 30 days.
+For xref:index.adoc#plans-legacy[Gold and Platinum subscriptions], Anypoint Monitoring retains API analytics metrics data for 30 days. API Manager retains API analytics metrics data for 30 days.
 
 == Supported Versions of Mule Runtime Engine
 
