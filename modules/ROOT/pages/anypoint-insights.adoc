@@ -93,7 +93,7 @@ For guidance, see <<filter-by-data>>.
 Apps in the *Started* state and APIs in the *Active* state are listed.
 .. Click *View Entity Metrics*, for example:
 +
-image::insights-entity-clicked.png["Overview of a deployment metrics"]
+image::insights-entity-clicked.png["Overview of deployment metrics"]
 .. Review metrics in the charts for the entity, for example: 
 +
 [[charts-detailed]]
