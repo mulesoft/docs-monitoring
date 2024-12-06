@@ -1,7 +1,7 @@
 = Configuring Text Panels in a Custom Dashboard
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 You can add text panels to custom dashboards in Anypoint Monitoring. A text panel can provide information about your dashboard. You can add one to any row in the dashboard.
 
@@ -15,7 +15,7 @@ You can write text in these modes:
 
 * Markdown: See xref:dashboard-config-ref.adoc#samples_markdown[Markdown Syntax Support] for Markdown examples. a|
 
-image::text-config-html.png[Example: Text Panel in a Custom Dashboard]
+image::text-config-html.png["A text panel in a custom dashboard"]
 |===
 
 == Markdown Example
@@ -23,7 +23,7 @@ image::text-config-html.png[Example: Text Panel in a Custom Dashboard]
 As this Markdown example shows, you can see how your text will appear in the UI as you type.
 
 .Markdown Example
-image::text-config.png[Markdown Example]
+image::text-config.png["A Markdown example"]
 
 After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
 
@@ -31,7 +31,7 @@ After you complete your configuration, you can click Save Changes. To exit the c
 
 This HTML example creates the heading shown in xref:dashboard-custom-config.adoc#text_example[Text example]:
 
-image::dashboard-text-config-html.png[HTML Example]
+image::dashboard-text-config-html.png["An HTML example"]
 
 ////
 THIS IS NOT SUPPOSED TO BE IN THE UI, PER PABLO:

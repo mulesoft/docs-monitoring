@@ -1,17 +1,14 @@
 = Using Logs in Anypoint Monitoring
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-
 :page-aliases: logs-using.adoc
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
 
 In addition to logging through xref:runtime-manager::viewing-log-data.adoc[Runtime Manager], Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. You can use aggregated logs in conjunction with monitoring to help identify issues and investigate failures quickly. These features support:
 
 * Comparative analysis and identification of event and information patterns based on searches across selected Mule apps and environments.
 * Searches within the logs of a specific worker (or set of workers) for a Mule app so that you can narrow scope of issues to check.
 * Sharing a snapshot of important logs with developers who can work on the source of the issue.
-
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
 [CAUTION]
 ====
@@ -29,31 +26,32 @@ Do not override the default JVM timezone for applications deployed to CloudHub a
 
 ====
 
+[[log-search]]
 == Search Logs
 
-In Anypoint Monitoring, click *Log Search* in the menu on the left. On the log search page, you can search for text in logs in a few different ways. You can type your search query into the search field, you can use the UI to add a filter, and you can create a query.
+From Anypoint Monitoring, click *Log Search* to search for text in logs from the search field, through a filter, or with a DSL query.
+
+image::intro-logs.png["Logs in Anypoint Monitoring"]
+
+* <<search-field>>
+* <<search-filter>>
+* <<search-dsl>>
 
 When you search for logs for APIs deployed through Flex Gateway, use the *Application* filter. Use the *App ID* field to identify the instance.
 
-=== Log Search Query
+[[search-field]]
+=== Search from the Log Search Field
 
-To search the logs, type your search query into the log search field and press *Enter*.
+To search the logs, type your search query into the log search field and press *Enter*. 
 
-Provide the exact term you're looking for, such as `"code 400"` to find  bad requests. For
-exact matches of more than one word, surround the search term
-with quotation marks.
+* Search for a term, such as `"Info Dynamic Logging"`.
++
+Without quotes, the query returns results for matches to each term. 
+* Use a wildcard in your search, such as `resourceId=hellowor*`. 
+* Use logical operators, such as `resourceId=hellowor* AND "Info Dynamic Logging"`.
 
-Example results from a `"code 400"` search:
-
-image::log-search-string.png[Log Search]
-
-Use the asterisk wildcard in a search if you don't know the exact term.
-
-Example results from the wildcard search `payload=org.glassfish.grizzly*`:
-
-image::log-search-wildcard.png[Log Search Using a Wildcard]
-
-=== Add a Filter
+[[search-filter]]
+=== Search with a Filter
 You can create a filter to search logs using predefined fields, operators, and values.
 
 . Click *+Add a filter*.
@@ -74,7 +72,7 @@ When you select the operator, if a value is required, a *Value* box appears on t
 . If applicable, enter a value. +
 The following image shows an example of using a search filter to search for all logs that have a timestamp that falls between the given dates.
 +
-image::log-filter-timestamp.png[Using a Filter Query]
+image::log-filter-timestamp.png["Using a filter query"]
 +
 See <<filters_predefined>> and <<operators>>.
 +
@@ -86,7 +84,8 @@ The filter appears to the right of *+Add a filter*.
 NOTE:
 When you use the *Application* filter, the results include APIs deployed through Flex Gateway.
 
-=== Search Query
+[[search-dsl]]
+=== Search with the Query DSL
 
 To convert a search query into a Query DSL:
 
@@ -133,7 +132,7 @@ Some complex search queries do not have an equivalent in the search filter value
 
 By default, the log entries in your log search results are abbreviated. You can expand and view the log message and details as a table or in JSON format.
 
-image::log-expanded.png[To Expand a Log Message]
+image::log-expanded.png["Expanding a log message"]
 
 === Tabular Logs
 
@@ -209,11 +208,11 @@ After finding a log on a particular issue, you can view the complete log on a de
 
 . From the selected log, click *View This Log*.
 +
-image::logs-view-surrounding.png[View This Log]
+image::logs-view-surrounding.png["View This Log feature"]
 +
 . View the extended log in tabular or JSON format.
 +
-image::logs-view-extended.png[Viewing Extended Logs]
+image::logs-view-extended.png["Viewing extended logs"]
 
 == View Surrounding Logs
 
@@ -221,11 +220,11 @@ After finding a log for a particular issue, you might want to know what other lo
 
 . From the selected log, click *View Surrounding Logs*.
 +
-image::logs-view-surrounding.png[View Surrounding Logs tab]
+image::logs-view-surrounding.png["View Surrounding Logs tab"]
 +
 . Load the number of logs that you want to see before and after the selected log, or use the default.
 +
-image::logs-set-surrounding.png[View Surrounding Logs]
+image::logs-set-surrounding.png["Viewing surrounding logs"]
 
 The default settings are:
 
@@ -241,12 +240,12 @@ For every result group, the *Quick Filters* list displays the first five results
 
 This example of a predefined filter selects the ERROR log level.
 
-image::log-filter-select.png[Predefined Log Filter]
+image::log-filter-select.png["Predefined log filter"]
 
 After you select a predefined filter from the Quick Filter list, you see it
 near the top of the page, next to *Add a Filter*.
 
-image::log-filter-actions.png[Filter Actions]
+image::log-filter-actions.png["Predefined filter actions"]
 
 When you hover over a filter, you can select from the following actions:
 
@@ -268,12 +267,12 @@ image::log-filter-add-field.png[To Add a Filter Column to the Logs]
 
 The resulting `log-level` column looks like this in the logs:
 
-image::log-filter-column.png[Filter Column in the Logs]
+image::log-filter-column.png["Filter column in the logs"]
 
 To remove the filter column, click the column icon for the filter field,
 for example:
 
-image::log-filter-remove-field.png[To Remove a Filter Column from the Logs]
+image::log-filter-remove-field.png["Column icon for removing the column from the logs"]
 
 You can also remove it with the <<column_move, X icon>> that appears when you scroll over the column.
 
@@ -282,7 +281,7 @@ You can also remove it with the <<column_move, X icon>> that appears when you sc
 
 To move filter columns in your log results to the left or right, you simply scroll over the column heading and use the arrow icons.
 
-image::log-filter-column-move.png[To Remove a Filter Column from the Logs]
+image::log-filter-column-move.png["Arrow icons for moving a filter column to the left or right"]
 
 [[filters_predefined]]
 === Search Filters
@@ -357,11 +356,11 @@ You can use these operators when creating a search filter. For example `log-leve
 
 You can use the funnel-shaped icons on any log in your results to create and remove a filter for the entire log field value.
 
-image::log-filter-create-funnel.png[Creating a Log Message Filter]
+image::log-filter-create-funnel.png["Funnel icon used to create a log message filter"]
 
 The filter you create is visible as a filter tag in the Filters area at the top of the page, for example:
 
-image::log-filter-tag.png[Log Message Filter Tag]
+image::log-filter-tag.png["Log message filter tag"]
 
 You can edit and use that filter like any other filter. See <<filters_predefined>>.
 
@@ -369,14 +368,10 @@ You can edit and use that filter like any other filter. See <<filters_predefined
 
 You can share the URL to your logs.
 
-. From Logs, click the three vertical dots on the top-right of the screen.
+. From Logs, click *Share*.
 +
-image::logs-sharing.png[Sharing Logs]
-+
+image::logs-sharing.png["Sharing logs"]
 . Select *Share* to load the URL of your log page to a *Share Logs Search Link* field.
-+
-image::logs-sharing-url.png[Sharing Logs Link]
-+
 . Click *Copy*.
 
 [[save_view_log_searches]]
@@ -387,11 +382,6 @@ Save and view log searches.
 . Click *Save Search*.
 . Select *View saved searches*.
 . Click *View Saved Searches* again to return to the main Logs page.
-
-image::logs-search-save-menu.png[Save Log Search Menu]
-
-image::logs-search-save-view.png[View Saved Log Search]
-
 
 == Clear a Search
 

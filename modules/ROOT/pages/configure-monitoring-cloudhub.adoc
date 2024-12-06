@@ -1,4 +1,5 @@
 = Setting Up Monitoring for CloudHub Deployments
+:page-aliases: enable-apps-deployed-to-cloud.adoc
 
 To start monitoring Mule apps that are managed in CloudHub, you must deploy them to a supported version of Mule runtime engine and set the runtime version in your Mule app.
 
@@ -90,11 +91,8 @@ Enable monitoring for Mule apps running on supported versions of Mule by adding 
 . In the list of applications, select the application for which you want to enable monitoring.
 The application must be deployed to CloudHub and running on a supported version of Mule.
 . In the navigation menu, click *Settings*.
-. Click *Properties*, and add the following property: +
+. Click *Properties*, and add the following property to the *Text* view: +
 `anypoint.platform.config.analytics.agent.enabled=true`
-+
-image::enable-monitoring-cloudhub.png["Runtime Manager application settings window with Properties tab selected"]
-+
 . Click *Apply Changes*.
 
 === Enable Monitoring using the Anypoint CLI

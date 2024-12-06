@@ -1,9 +1,7 @@
 = Downloading Raw Data
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 You can use Anypoint Monitoring to download archived log data (raw data) collected on Mule apps that are running in hybrid, CloudHub, or Runtime Fabric deployments. This data is helpful for security, compliance, or other purposes where you need to examine or collect your warehoused data.
 
