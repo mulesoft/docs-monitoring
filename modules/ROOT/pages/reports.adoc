@@ -1,11 +1,11 @@
 = Viewing Reports in Anypoint Monitoring
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 Reports allow you to view a list of apps running in an environment. The reports display information about overall performance and behavior across all the apps in the environment. These reports can help you identify app performance and availability problems across the environment so you can better maintain the expected level of service for your apps.
+
+image::reports-main-page.png["List of reports on the Reports page"]
 
 From any of the *Reports* tabs, you can:
 
@@ -18,8 +18,6 @@ From any of the *Reports* tabs, you can:
 * Click on column headings to sort the lists from highest to lowest, or from lowest to highest numbers.
 * Refresh the page.
 * Export a report as a CSV file.
-
-image::reports-main-page.png[Requests reports Main Page]
 
 
 == Access Reports

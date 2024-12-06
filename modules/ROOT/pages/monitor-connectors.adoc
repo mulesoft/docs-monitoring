@@ -1,8 +1,9 @@
 = Getting Performance Metrics from Connectors
 
-You can view performance metrics for supported connectors in your application such as what operation is being performed, how long the operations are taking, and whether they are succeeding or failing.
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
+You can view performance metrics for supported connectors in your application such as what operation is being performed, how long the operations are taking, and whether they are succeeding or failing.
 
 You also need the Unified Agent.
 

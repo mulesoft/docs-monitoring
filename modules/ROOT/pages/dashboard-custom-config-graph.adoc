@@ -1,7 +1,7 @@
 = Configuring Graphs in a Custom Dashboard
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 In Anypoint Monitoring, you can configure one or more sets of time-series data in a graph. The graph measures the changes to time-series data over time. A graph in a custom dashboard can display a metric for a resource in a given environment. For example, to configure a graph, you might select a response time or heap usage as the metric to graph for a Mule app in your Design or Sandbox environment.
 
@@ -64,7 +64,7 @@ After you complete your configuration, you can click Save Changes. To exit the c
 == Visuals (Bar, Line, Data Point Settings)
 You can configure the style and look of graph to use. Bar, line, and point graphs are supported.
 
-image::graph-config-visuals.png[Example: Singlestat Visuals]
+image::graph-config-visuals.png["Singlestat example"]
 
 [%header,cols="1,4"]
 |===
@@ -94,8 +94,7 @@ After you complete your configuration, you can click Save Changes. To exit the c
 
 [[alerts_config]]
 == Alerts (Configuration, Notifications, History)
-
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 In the *Alerts* tab, set up alerts that trigger when JVM memory utilization is too high.
 
@@ -107,40 +106,11 @@ include::partial$include-alerts-config.adoc[leveloffset=+1]
 
 Add and configure legends, thresholds, and other features for your graph.
 
-////
-TODO_REMOVED FOR NOW PER PABLO:
-
-=== Links (Advanced Setting)
-In the Advanced configuration tab, you can configure links that appear in the dropdown menu for a graph in a custom dashboard, for example:
-
-image::dashboard-custom-link.png[Link in a Custom Dashboard]
-
-[%header,cols="1,3"]
-|===
-2+|Link Settings for Custom Dashboards
-| Type | Valid values are `dashboard` for links to another custom dashboard and `absolute` for links to URLs.
-| Dashboard | Appears if the `dashboard` type is selected. For the name of the dashboard to which you want to link.
-| URL | Appears if the `absolute` type is selected. Accepts an unparameterized URL, for example: `https://developer.salesforce.com/forums/`. See URL Params to specify parameters.
-| Title | For specifying a label for the link. End users see this title in the Link drop-down menu on the graph.
-| URL Params | For appending any URL parameters to the specified URL, for example: `id=906F0000000MKvjIAG`.
-| Include Time Range |
-| Include Variables |
-| Open in New Tab |
-| Remove Link | Button for removing the link configuration.
-|===
-////
-////
-TODO_ABOVE:
-| Include Time Range | *TODO: JIRA: MONITORING-651*
-| Include Variables | *TODO: JIRA: MONITORING-651*
-| Open in New Tab | *TODO: JIRA: MONITORING-651*
-////
-
 === Legends (Advanced Setting)
 
 In the *Advanced configuration* tab, configure legends for your graphs.
 
-image::graph-advanced-legend.png[Advanced Graph Settings: Legend]
+image::graph-advanced-legend.png["Advanced graph settings for a legend"]
 
 [%header,cols="1,4"]
 |===
@@ -172,7 +142,7 @@ To exit the configuration and return to the dashboard, click the *X*.
 
 In the *Advanced configuration* tab, you can configure a hover tooltip to display information about a data point in a graph when you hover over the value.
 
-image::graph-advanced-stacking-hover.png[Advanced Graph Settings: Stack and Hover]
+image::graph-advanced-stacking-hover.png["Advanced graph settings, Stack and Hover"]
 
 [%header,cols="1,4"]
 |===
@@ -205,7 +175,7 @@ In the *Advanced* configuration tab, you can set one or more thresholds, such as
 [NOTE]
 Thresholds are not available when an alert is in place on the graph. To re-enable thresholds for a chart, you must delete the alert.
 
-image::graph-advanced-threshold.png[Threshold Settings for a Graph]
+image::graph-advanced-threshold.png["Threshold settings for a graph"]
 
 [%header,cols="1,4"]
 |===

@@ -1,7 +1,7 @@
 = Configuring Tables in a Custom Dashboard
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 In Anypoint Monitoring, you can configure tables for custom dashboard. In addition to configuring properties that are common to other charts, such advanced or basic metric queries and time ranges, you can also:
 
@@ -113,15 +113,6 @@ For providing a description of the link. This text appears when the end user hov
 | Decimals | The level of precision allowed for a decimal value, for example, `2` to limit a value of `10.12345` to `10.12`.
 |===
 
-////
-DOES NOT SEEM TO BE TRUE FOR TABLE LINKS:
-(relative or absolute). You can use special variables to specify cell values:
-
-Valid values:
-
-* `$__cell` refers to current cell value.
-* `$__cell_n` refers to Nth column value in current row. Column indexes are started from `0`. For instance, ``$__cell_1` refers to second column's value.
-////
 
 [[thresholds]]
 === Thresholds (Column Styles tab)

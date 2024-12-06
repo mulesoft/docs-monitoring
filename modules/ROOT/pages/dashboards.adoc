@@ -11,9 +11,12 @@ Dashboards in Anypoint Monitoring provide visibility into Mule apps and APIs tha
 Built-in dashboards contain graphs that plot current and historical data collected over a given time and date period. There is a built-in dashboard for each Mule application and API in each environment.
 
 .Example: Built-in Dashboard for a Mule Application
-image::dashboard-built-in.png[Built-in Dashboard Example]
+image::intro-dashboard-built-in.png["Built-in dashboard example"]
 
 == Custom Dashboards
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 Custom dashboards in Anypoint Monitoring can bring together important metrics and data points that you need to see on one screen. You can specify the resources and metrics that you want to monitor, allowing you to:
 
