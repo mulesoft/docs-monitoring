@@ -1,8 +1,7 @@
-[[basic-alerts]]
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 = Setting Up Basic Alerts in Anypoint Monitoring
+
+//feature tier: 
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvSubReqMonitoring]
 
 You can set up basic alerts for servers, Mule apps, and APIs. Alerts trigger email notifications when a metric you are measuring passes a specified threshold.
 
@@ -83,7 +82,6 @@ Recipients of the alert email
 You can select up to 20 platform user IDs and enter up to 20 email addresses. If you add or change the email address of an alert recipient, they do not receive an email until the alert is triggered.
 . Click *Create*.
 
-image::basic-alerts-config.png[Configure a Basic Alert, 50%, 50%]
 
 [[alert-severity]]
 === Alert Severity

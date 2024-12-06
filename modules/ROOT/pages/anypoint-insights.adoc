@@ -1,0 +1,504 @@
+= Monitoring Metrics from Anypoint Insights
+:page-notice-banner-message: For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights remains a Beta release available in the Advanced and Titanium tiers at this time.
+:selector-all-dashboards: This selector is available to all Insights dashboards.
+:download-chart-data: You can download most chart data to CSV or XSL.
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
+
+Monitor performance data and issues across your deployed Mule apps and API implementations (_entities_) with Anypoint Insights, in Anypoint Monitoring: 
+
+* Check metrics across multiple Mule apps and API implementations.
++
+Get up to the last 7 days (Advanced package) or 24 hours (Starter package) of high-level metrics on requests, errors, and responses. Use filters to narrow your results. {download-chart-data}
+* Check metrics on individual Mule apps and API implementations.
++
+Get up to the last 30 days of metrics on latency, requests, responses, errors, Mule messages and the JVM for Mule apps, and for API implementations, data on policy violations, performance, and client apps. {download-chart-data}
+
+[[entities]]
+include::partial$include-entities.adoc[tags="entity-definition"]
+
+[[dashboard-overview]]
+//don't change order of numbers in graphic or calloutlist
+image::insights.png["Anypoint Insights UI"]
+
+[calloutlist]
+. Dashboard that provides an overview of metrics across of your deployed Mule apps and APIs
+. Environment selector for your deployments (such as Sandbox or Production)
+. <<filter, Filters>> to narrow the data in charts
+. Performance <<charts-performance, metrics and trends>> across your deployed Mule apps and APIs
+. <<entities-list, List of each Mule app and API>> that you can click to display <<charts-detailed, detailed metrics>> on a specific deployment
+. Selector for the time range covered by the charts 
++
+{selector-all-dashboards}
+. Selector for auto-refresh interval, displayed when auto-refresh is enabled 
++
+{selector-all-dashboards}
+
+[[prereqs]]
+== Before You Begin
+
+Required prerequisites:
+
+* An Anypoint Platform account in a control plane that supports Anypoint Insights:
+
+** {empty}
+include::partial$include-entities.adoc[tags="anypoint-regions-hyperforce"] 
+
+** {empty}
+include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
+
+* A Mule app or API (xref:gateway-home::index.adoc[Mule Gateway or Flex Gateway API]) running on a supported version of Mule runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
+
+** CloudHub 2.0
+//TEMP INFO: Hyperforce 12/24 (W-17225983)
+** CloudHub (for US and EU clouds, in Advanced and Titanium tiers only)
+//TEMP INFO: Hyperforce 12/24 (W-17225983)
+** Hybrid (for US and EU clouds, in Advanced and Titanium tiers only)
+** Runtime Fabric
+
+* For Canada Cloud and Japan Cloud: 
+
+** Enable Mule runtime access to Anypoint Platform so that you can display entity metrics in Anypoint Monitoring.
++
+For guidance, see xref:hyperforce::configure-mule-hyperforce.adoc[].
+** For information about Runtime Fabric feature support in these clouds, see xref:hyperforce::index.adoc#features-supported-on-hyperforce[Features Supported on Hyperforce].
+
+* The Monitoring Viewer permission to Anypoint Monitoring and the permissions required for viewing apps and APIs (see xref:monitoring::am-permissions.adoc[])
+
+[[monitor-deployments]]
+== Monitor Your Deployments
+
+Monitor Mule apps and APIs within a selected business group and environment.
+
+. Meet the prerequisites in <<prereqs>>. 
+. Log in to Anypoint Platform, and navigate to Anypoint Monitoring. 
+//Nav step
+include::partial$include-entities.adoc[tags="open-insights"]
+. In Anypoint Insights, set your environment, such as Design, Production, or Sandbox. 
++
+For guidance, see <<change-environment>>.
+. To capture deployments for another business group you belong to in the *Entities List*, select the business group.
++
+For guidance, see <<change-bg>>.
+. Set the time period to capture in your charts.
++
+For guidance, see <<filter-by-time>>.
+. Filter the deployment data to display in the charts, as needed, to focus on areas of interest.
++
+For guidance, see <<filter-by-data>>.
+. To get additional metrics for a specific app or API:
+.. Find and click its name in *Entities List*.
++
+Apps in the *Started* state and APIs in the *Active* state are listed.
+.. Click *View Entity Metrics*, for example:
++
+image::insights-entity-clicked.png["Overview of deployment metrics"]
+.. Review metrics in the charts for the entity, for example: 
++
+[[charts-detailed]]
+image::insights-deployment-charts.png["Dashboard for a deployed app or API"]
+
+[calloutlist]
+. Details page for a Mule app or API implementation
+. Charts with detailed metrics
++
+Detailed metrics are available in dashboards specific to <<entity-metrics-apps, Mule apps>> and <<entity-metrics-apis, API implementations>>.
+. Selector for the time range covered by the charts 
++
+By default, the date period in dashboards with detailed metrics on specific entities matches the time period selected for cross-entity charts in the *Anypoint Insights* overview. 
+. Selector for auto-refresh interval, displayed when auto-refresh is enabled
++
+By default, the auto-refresh interval in dashboards with detailed metrics on specific entities matches the time period interval for cross-entity charts in the *Anypoint Insights* overview. 
+
+//
+//H2: FILTER DATA
+[[filters]]
+== Filter Monitoring Data Across Deployments
+
+You can narrow the data in *Anypoint Insights* charts by deployment details, such as the deployment type, and by time range.
+
+* <<filter-by-data>>
+* <<filter-by-time>>
+
+//  H3: FILTER DEPLOYMENT DATA
+[[filter-by-data]]
+=== Filter Deployment Data
+
+Use one or more filters to narrow the data in your charts. The filters support operators `=` and `IN`. Multiple filter settings are allowed. For example, this filter returns Mule apps deployed to CloudHub 2.0: 
+
+----
+entity_type = 'APP' deployment_type = 'CLOUDHUB2'
+---- 
+
+This table lists supported filters:
+
+[%header,cols="10a,80a,10a"]
+|===
+| Filter | Operators | Description
+
+|`deployment_type`
+|`=`, `IN`
+|Filter by deployment target, such as CloudHub 2.0 (*CLOUDHUB2*) or Runtime Fabric (*RTF*), for example:
+----
+deployment_type IN ['CLOUDHUB2', 'RTF']
+----
+
+|`entity_type`
+|`=`, `IN`
+|Filter by deployment type (*APP* or *API*), for example:
+----
+entity_type = 'APP'`
+----
+
+|`entity`
+|`=`, `IN`
+|Filter by specific app or API deployments, for example:
+----
+entity IN ['99aea888-77de-6e06-5c55-d1234de56789', '09f99999-888d-7b77-6da5-bebd43210fc1']
+----
+
+|===
+
+`IN` captures exact matches to any comma-separated element in the array.
+
+//  H3: FILTER TIME PERIOD
+[[filter-by-time]]
+=== Filter Data by Time Period
+
+Use the time-period selector (<<dashboard-overview, item 6>> in the example) to show data points collected for a given time period (such as the last 15 minutes or the last 24 hours). Your setting applies across all data in *Anypoint Insights* overview, including items in the *Entities List*.
+
+If you don't see data on the page, check that the selected time range is correct.
+
+//
+//H2: CHANGE ENVIRONMENT
+[[change-environment]]
+== Change the Environment
+
+Charts in Anypoint Insights provide metrics on a specific environment (such as Production or Sandbox). 
+
+To change current or default environment:
+
+. Open Anypoint Monitoring. 
+. Set a new environment:
+
+* To select an environment without changing the default, use the environment selector in Anypoint Monitoring, for example:
++
+image::insights-environment-selector.png["Environment selector in Anypoint Monitoring"]
+* To select a default environment:
+
+.. Click your profile icon (see <<profile, item 2>> in the example). 
+.. Select the name of your profile to open Access Management *Settings*.
+.. In *Settings*, select an environment as the default environment to view for the selected business group in Anypoint Monitoring, for example: 
++
+image::insights-default-selector.png["Default selector in Access Management"]
+.. Return to Anypoint Monitoring to check for the new business group setting.
++
+Refresh the page, if necessary. 
+
+//
+//H2: CHANGE BUSINESS GROUP
+[[change-bg]]
+== Change the Business Group
+
+Charts in Anypoint Insights display metrics for deployments in a specific business group. If you belong to more than one business group, you can change the selected group and the business group that Anypoint Monitoring selects by default.
+
+//do not change the order of numbers in the graphic or calloutlist
+[[profile]]
+image::insights-business-group-change.png["Business group selection options"]
+
+[calloutlist]
+. Business-group selector 
+. User profile, for selecting defaults
+
+To change the business-group setting: 
+
+. Open Anypoint Monitoring. 
+. Set a new business group:
+
+* To select a business group without changing the default, use the business-group selector in Anypoint Insights. 
+* To select a default business group:
+
+.. Click your profile icon (see <<profile, item 2>> in the example). 
+.. Select the name of your profile to open Access Management *Settings*.
+.. In Access Management *Settings*, select a business group to use as the default, for example:
++
+image::insights-default-selector.png["Default selector in Access Management"]
+.. Return to Anypoint Monitoring to check for the new default setting.
++
+Refresh the page, if necessary. 
+
+[[download-chart-data]]
+== Download Chart Data
+
+After opening a set of charts in Anypoint Insights, you can download metrics from charts that provide a download menu in the chart.
+
+. Click the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*)) on a chart to open the download menu. 
+. Select the file format for your metrics:
+
+* *Download as CSV*
+* *Download as XLS*
+
+//H2: REFERENCES
+== Insights Chart Reference
+
+Understand the monitoring data in Anypoint Insights charts:
+
+* <<charts-performance>>
+* <<entities-list>>
+* <<entity-metrics-apps>>
+* <<entity-metrics-apis>>
+
+include::partial$include-entities.adoc[tags="entity-definition"]
+
+//H3: PERFORMANCE
+[[charts-performance]]
+=== Performance Metrics and Trends
+
+*Performance Metrics* and *Performance Trends* provide insights across your entities:
+
+* <<performance-metrics-overview>>
+* <<performance-trends-overview>>
+
+//  H4: Performance Metrics
+[[performance-metrics-overview]]
+==== Performance Metrics
+
+Monitor high-level performance metrics across your entities. 
+include::partial$include-entities.adoc[tags="entity-definition"]
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+Total Entities::
+Total number of entities
+
+Entities with Errors::
+Total number of entities that have received errors
+
+* For API implementations, this metric counts HTTP status codes that identify errors (for example, `404` or `502`). 
+* For Mule apps, this metric counts response codes that indicate an error (for example, `FAILED`).
+
+Total Requests::
+Total number of requests to the listed entities
+
+Error Rate:: 
+For entities with request errors, the percentage equal to the total number of request errors divided by the total number of requests
++
+For example, assume that 1 out of 5 total requests to _API A_ produces an error and that 2 requests out of 5 to _App B_ produces an error. The error rate is 3/10, or 30%. 
+
+//
+// H4: Performance Trends
+[[performance-trends-overview]]
+==== Performance Trends
+
+Monitor high-level performance over time across your entities. 
+include::partial$include-entities.adoc[tags="entity-definition"]
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+Entities with Slow Response Times::
+Response times, in milliseconds, of the entities with the slowest response times
++
+The metric uses percentile values for response times (calculated from highest to lowest times) to identify entities with the slowest responses. You can select *p99* (default), *p95*, *p90*, or *p75*.
+
+Error Volume:: 
+Number of errors received by the entities over time
+
+* For API implementations, this metric counts HTTP error codes (for example, `404` or `502`). 
+* For Mule apps, this metric counts error response codes (for example, `FAILED`).
+
+Request Volume:: 
+Number requests over time for the entities 
+
+//
+//H3: ENTITIES LIST
+[[entities-list]]
+=== Entities List
+
+Check key metrics on individual Mule apps and APIs (_entity_), and click an entity's name to get detailed charts for the entity. 
+include::partial$include-entities.adoc[tags="entity-definition"]
+
+include::partial$include-insights-charts.adoc[tags="data-scope"] The entities belong to the selected <<change-bg, business group>>.
+
+*Entities List* provides these metrics:
+
+Entity Name:: 
+Name of the entity
+
+//NOTE: changed value Api -> API
+Entity Type:: 
+Type of entity, such as *API* or *Application* (Mule app)
+
+Request Volume::
+Total number of requests to this entity
+
+Response Time (p99):: 
+Response time, in milliseconds, for the 99th percentile of requests to this entity
++
+This response time is greater than 99% of all response times for this entity.
+
+Error Rate:: 
+Percentage of requests to this entity that resulted in errors 
+
+Deployment Type:: 
+Deployment target of this entity, such as *CloudHub 2.0* or *Runtime Fabric* 
+
+//
+//H3: ENTITY METRICS for APPS (ONLY)
+[[entity-metrics-apps]]
+=== Application Details
+
+Anypoint Monitoring provides details on individual Mule apps deployed to a supported target.
+
+* <<entity-metrics-app-header>>
+* <<entity-metrics-app-overview>>
+* <<entity-metrics-app-requests>>
+* <<entity-metrics-app-errors>>
+* <<entity-metrics-app-jvm>>
+
+include::partial$include-entities.adoc[tags="entity-definition"]
+
+[[entity-metrics-app-header]]
+==== Mule Application Metrics
+
+High-level metrics are available in *Application Details* dashboards for individual Mule apps. 
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tag=app-detail-header]
+
+[[entity-metrics-app-overview]]
+==== Overview Metrics for a Mule Application
+
+Charts with overview metrics are available in the *Overview* tab for a Mule app in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tag="app-detail-overview"]
+
+[[entity-metrics-app-requests]]
+==== Request Metrics for a Mule Application
+
+Charts with request metrics are available in the *Requests* tab for a Mule app in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tag="app-detail-requests"]
+
+[[entity-metrics-app-errors]]
+==== Error Metrics for a Mule Application
+
+Charts with error metrics are available in the *Errors* tab for a Mule app in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tag="app-detail-errors"]
+
+[[entity-metrics-app-jvm]]
+==== JVM Metrics for a Mule Application
+
+Charts with JVM metrics are available in the *JVM* tab for a Mule app in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tag="app-detail-jvm"]
+
+//
+//H3: ENTITY METRICS for APIs (ONLY)
+[[entity-metrics-apis]]
+=== API Details
+
+Anypoint Monitoring provides details on individual API implementations deployed to a supported target.
+
+* <<entity-metrics-api-header>>
+* <<entity-metrics-api-overview>>
+* <<entity-metrics-api-requests>>
+* <<entity-metrics-api-errors>>
+* <<entity-metrics-api-performance>>
+* <<entity-metrics-api-client-apps>>
+
+include::partial$include-entities.adoc[tags="entity-definition"]
+
+[[entity-metrics-api-header]]
+==== API Implementation Metrics
+
+High-level metrics are available in *API Details* dashboards for individual API implementations.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tags="api-detail-header"]
+
+[[entity-metrics-api-overview]]
+==== Overview Metrics for an API Implementation 
+
+Charts with overview metrics are available in the *Overview* tab for each API implementation that you can monitor in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tags="api-detail-overview"]
+
+[[entity-metrics-api-requests]]
+==== Request Metrics for an API Implementation 
+
+Charts with request metrics are available in the *Requests* tab for each API implementation that you can monitor in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tags="api-detail-requests"]
+
+[[entity-metrics-api-errors]]
+==== Error Metrics for an API Implementation 
+
+Charts with error metrics are available in the *Errors* tab for each API implementation that you can monitor in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tags="api-detail-errors"]
+
+[[entity-metrics-api-performance]]
+==== Performance Metrics for an API Implementation
+
+Charts with performance metrics are available in the *Performance* tab for each API implementation that you can monitor in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tags="api-detail-performance"]
+
+[[entity-metrics-api-client-apps]]
+==== Client Application Metrics for an API Implementation 
+
+Charts with client application metrics are available in the *Client Applications* tab for each API implementation that you can monitor in Anypoint Insights. 
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tags="api-detail-client-apps"]
+
+//
+//H2: DATA COLLECTION
+[[data-collection]]
+== Data Collection Intervals in Anypoint Monitoring Charts
+
+Anypoint Monitoring charts display data in configurable date-time ranges, which include the last 15 minutes, hour, week, a custom date-time range, and other periods.
+
+* <<automatic-interval>>
+* <<data-collection-intervals>>
+
+[[automatic-interval]]
+=== Data Points in Anypoint Monitoring Charts
+
+Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. 
+
+//TBD: PROPOSAL
+Maximum granularity of the data captured in charts:
+
+* 1 minute for metrics captured within the last 7 days
+* 1 hour for metrics captured between before the last 7 days
++
+Up to the last 30 days of metrics are collected.
+
+For example, if a chart displays data collected in the last 15 minutes, the chart contains 15 data points, one for each minute of data collection. Each data point aggregates data collected during that minute. If a chart displays the past seven days of data, each data point aggregates data collected within each four-hour period of the last seven days. 
+
+//include for How Anypoint Monitoring Collects Metrics
+[[data-collection-intervals]]
+include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+2]
+
