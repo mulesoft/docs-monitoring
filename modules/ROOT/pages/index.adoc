@@ -12,73 +12,190 @@ Operations and development teams use the monitoring tools to diagnose issues and
 of issues (MTTI).
 * Store and search log data at scale.
 
-== Dashboards
+[[features]]
+== Monitoring Features by Control Plane
 
-Use built-in dashboards or customize your own to provide instant visibility into your applications' performance and detailed analysis of your network.
+Anypoint Monitoring feature availability depends on the control plane for your Anypoint Platform instance and your <<billing, Anypoint Platform package or plan>>.
+include::partial$include-entities.adoc[tags="region-data-not-shared"]
 
-image::intro-dashboard-built-in.png[Built-in Dashboard Example]
+[%header,cols="3a,1a,1a,1a,1a"]
+|===
+|Anypoint Monitoring Feature 
+|https://anypoint.mulesoft.com/monitoring[US], https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds
+| https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds (on Hyperforce)
+| Government Cloud | Private Cloud (3.x)
 
-Built-in and custom dashboards expose the metrics on your app network. They provide visual representations of your resources so you can detect anomalies, troubleshoot issues, and see trends that are not obvious in raw form.
+|{empty}
+
+* <<alerts, Alerts>>
+* xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
+* <<dashboards, Dashboards>> 
+* xref:tools.adoc[Notifications] 
+* xref:reports.adoc[Reports]
+* xref:tools.adoc[Tools]
+| Yes
+| No
+| Yes
+| Yes
+
+| <<insights, Anypoint Insights>>
+| Yes
+| Yes
+| No
+| No
+
+| <<functional-monitoring>>
+| Yes
+| Yes
+| No
+| No
+
+
+| <<logging, Log management>>
+| Yes
+| Yes (<<single-app, limited log search>>)
+| Yes
+| No
+
+|{empty}
+  xref:telemetry-exporter.adoc[Telemetry exports]
+| Yes
+| No
+| No
+| No
+|===
+
+//NOT SUPPORTED in PCE & Gov Cloud: Insights, Traces, Telemetry Exporter, API Functional Monitoring
+
+For more information about MuleSoft Government Cloud and Anypoint Platform Private Cloud Edition (Anypoint Platform PCE), see xref:hosting-home::index.adoc#control-plane-hosting-options[Control Plane Hosting Options].
+
+[[insights]]
+=== Anypoint Insights
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
+
+Monitor performance data and issues across your deployed Mule apps and APIs (_entities_), and get detailed insights on specific deployments. 
+
+//TEMP INFO: Hyperforce 12/24 (W-17225983)
+For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights remains a Beta release available in the Advanced and Titanium tiers at this time.
+
+See xref:anypoint-insights.adoc[].
+
+[[dashboards]]
+=== Built-in and Custom Dashboards
+
+Use built-in dashboards or customize your own to provide instant visibility into your apps' performance and detailed analysis of your network.
+
+image::intro-dashboard-built-in.png["Built-in dashboard example"]
+
+//ADVANCED/TITANIUM TIER FOR CUSTOM DASHBOARDS
+Built-in dashboards and custom dashboards (available in xref:monitoring::index.adoc#billing[Advanced and Titanium tiers]) expose the metrics on your app network. They provide visual representations of your resources so you can detect anomalies, troubleshoot issues, and see trends that aren't obvious in raw form.
 
 A custom dashboard provides a single screen that can bring together specific metrics and data points that are important to your organization. Custom dashboards can display graphs and other charts, such as single statistics.
 
 You can track many data points and metrics from a custom dashboard that looks across multiple services in the app and in your dashboards across all systems.
 
-See xref:dashboards.adoc[Dashboards].
+See xref:dashboards.adoc[].
 
-== Event-Driven Alerts
+[[alerts]]
+=== Event-Driven Alerts
 
-Track trends and add your own alerts to identify abnormal behavior and problems in your application network.
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvSubReqMonitoring]
 
-image::intro-alerts.png[Alerts]
+Track trends and add your own alerts to identify abnormal behavior and problems in your app network.
+
+image::intro-alerts.png["Alerts in Anypoint Monitoring"]
 
 You can trigger alerts based on rules (or thresholds) and policies for your resources. When these thresholds are crossed for a certain period of time, you can receive notification to take action. The method of notification depends on the severity of the alert that you define.
 
-See xref:alerts.adoc[Alerts].
+See xref:alerts.adoc[].
 
-== Logging System
+[[logging]]
+=== Log Management
+//TIERS TBD
+Manage logs and log data for your deployments with these logging features:
 
-Search across log files, including archived logs to find information and events based on a specific query.
+* <<log-search>>
+* <<log-points>>
+* <<raw-data-downloads>>
 
-image::intro-logs.png[Logs]
+[[log-search]]
+==== Log Search
 
-Anypoint Monitoring facilitates distributed log searches of raw log and event data from across the app network so that you can pinpoint the root cause of a problem.
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
+
+Search across log files, including archived logs to find information and events based on a specific query. Logs includes raw log and event data from across the app network so that you can pinpoint the root cause of a problem.
+
+image::intro-logs.png["Logs in Anypoint Monitoring"]
+
+See xref:logs.adoc[].
+
+[[single-app]]
+//single-app logs:
+[NOTE]
+====
+Log search limited to individual apps is available in Runtime Manager for apps deployed to CloudHub and CloudHub 2.0. You can navigate to Runtime Manager, open the app, and then click *Logs*. 
 
 The log aggregator system holds raw operational data and records events that occur in the operating system or Mule app. Log aggregation compiles, organizes, and indexes log files to facilitate management, searching, and analysis. Aggregated logs complement the monitoring system by helping you identify causes of operational issues and investigate failures.
 
-See xref:logs.adoc[Logs].
+For more logging options, see xref:runtime-manager::deployment-strategies.adoc#logging[Logging by Deployment Model].
+====
 
-[data_storage_retention]
-== Data Storage and Retention
+[[log-points]]
+==== Log Points
 
-Limits on data storage and retention are determined by your pricing plan. All organizations receive Anypoint Monitoring regardless of pricing plan. 
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+
+Generate logs for Mule apps and APIs in real-time and without writing code.
+
+See xref:log-points.adoc[].
+
+[[raw-data-downloads]]
+==== Raw Data Downloads
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+
+Download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
+
+See xref:raw-data.adoc[].
+
+[[tools]]
+=== Tools for Monitoring Integrations
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+
+Use connectors that help deliver Anypoint Monitoring notifications to external systems, including custom metrics connectors.
+
+See xref:tools.adoc[].
+
+[[functional-monitoring]]
+=== API Functional Monitoring
+
+Monitor APIs and endpoints at scheduled intervals. Receive reports about whether tests pass or fail, and view statistics about API and endpoint performance.
+
+See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring]. 
+
+//Rajesh 11/24: retain data-storage-retention
+[[data-storage-retention]]
+=== Data Storage and Retention
+
+Data storage and retention limits are determined by your pricing plan.
 include::reuse::partial$billing/pricing.adoc[tag=featureAdvLimits]
 
 include::reuse::partial$billing/pricing.adoc[tag=dataRetentionMonitoring]
 
-For complete details about pricing, contact your customer support representative. See also https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
+See <<billing>>. For complete details about pricing, contact your customer support representative. 
 
-== Raw Data Downloads
+[[billing]]
+== Anypoint Platform Packages and Plans
 
-You can download warehoused log data on a Mule app, for example, to help investigate  security, compliance, or other issues that logs can reveal.
-
-See xref:raw-data.adoc[Raw Data].
-
-== Tools for Monitoring Integrations
-
-You can link to connectors that help deliver Anypoint Monitoring notifications to external systems, including custom metrics connectors.
-
-See xref:tools.adoc[Tools].
-
-== API Functional Monitoring
-
-Monitor APIs and endpoints at scheduled intervals. Receive reports about whether tests pass or fail, and view statistics about API and endpoint performance.
-
-See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional Monitoring in Anypoint Monitoring].
-
-== Anypoint Monitoring Packages and Plans
-
-Anypoint Monitoring packages and plans are available:
+Feature availability in Anypoint Monitoring depends on the tier of your Anypoint Platform pricing package or plan:
 
 * <<plans-usage-based>>
 * <<plans-legacy>>
@@ -86,16 +203,21 @@ Anypoint Monitoring packages and plans are available:
 [[plans-usage-based]]
 === Anypoint Monitoring Features for Usage-Based Packages
 
-Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. All organizations receive fundamental monitoring regardless of pricing model. However, organizations that have the Anypoint Integration Advanced package receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
+Anypoint Monitoring is the standard method of monitoring Mule app and API performance so that you can more quickly identify and resolve issues. 
+
+* *Anypoint Integration Starter* package is available to all Anypoint Platform regions.
+* *Anypoint Integration Advanced* package is available in the https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions only at this time.
+
+All organizations receive fundamental monitoring regardless of pricing model. However, organizations that have the Anypoint Integration Advanced package receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility. For more information, see https://www.mulesoft.com/anypoint-pricing[Anypoint Platform pricing].
 
 If your organization changes its subscription model from the Anypoint Advanced Integration package to the Anypoint Integration Starter package, ensure you have preserved your logs outside of Anypoint Platform. Within an hour of changing pricing models, MuleSoft clears the storage that formerly kept log data.
 
 include::reuse::partial$billing/pricing.adoc[tag=monitoringTable]
 
 [[plans-legacy]]
-=== Anypoint Monitoring Features for Legacy Subscription-Based Plans
+=== Anypoint Monitoring Features for Legacy Core-Based Plans
 
-Anypoint Monitoring is the standard method of monitoring Mule application and API performance so that you can more quickly identify and resolve issues. All organizations receive fundamental monitoring capabilities with their subscriptions. However, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
+Anypoint Monitoring is the standard method of monitoring Mule app and API performance so that you can more quickly identify and resolve issues. Core-based subscriptions are based on vCore allotments instead of usage. All organizations receive fundamental monitoring capabilities with their subscriptions. However, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
 If your organization changes its subscription model from a Titanium to a Gold or Platinum subscription, ensure you have preserved your logs outside of Anypoint Platform. Within an hour of changing subscription models, MuleSoft clears the storage that formerly kept log data.
 
@@ -107,39 +229,39 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-|Telemetry Exporter for audit logs and traces
+|xref:telemetry-exporter.adoc[Telemetry Exporter] for audit logs and traces
 |No
 |No
 |Yes
 
-|Custom metrics
+|xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
 |No
 |No
 |Yes
 
-4+| *Built-in Application Dashboards*
+4+| xref:app-dashboards.adoc[Built-in App Dashboards]
 |More than 80 out-of-the-box charts covering metrics in the following categories: Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure
 
 |Yes
 |Yes
 |Yes
 
-|Advanced metrics for Inbound and Outbound charts
+|Advanced metrics for xref:app-dashboards.adoc#built-in-charts-app[Inbound and Outbound charts]
 |No
 |No
 |Yes
 
-|Flows charts
+|xref:app-dashboards.adoc#built-in-charts-app[Flow charts]
 |No
 |No
 |Yes
 
-|Connectors charts
+|xref:app-dashboards.adoc#built-in-charts-app[Connector charts]
 |No
 |No
 |Yes
 
-|Anypoint Visualizer application network integration
+|<<note-visualizer, Anypoint Visualizer>> app network integration
 |No
 |No
 |Yes
@@ -149,7 +271,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-4+| *Built-in API Dashboards*
+4+| xref:api-analytics-dashboard.adoc[Built-in API Dashboards]
 
 |16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application
 |Yes
@@ -161,14 +283,14 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-4+| *Custom Dashboards*
+4+| xref:dashboard-custom-config.adoc[Custom Dashboards]
 
-|Basic mode
+|Basic mode settings for charts (graphs, singlestats, tables)
 |Yes
 |Yes
 |Yes
 
-|Advanced mode
+|Advanced mode settings for charts (graphs, singlestats, tables)
 |Yes, with limited functionality
 |Yes, with limited functionality
 |Yes
@@ -180,58 +302,54 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 4+| *Alerts*
 
-|Basic alerts for apps, servers, and APIs
+|xref:basic-alerts.adoc[Basic alerts] for apps, servers, and APIs
 |Yes
 |Yes
 |Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
 
-|Advanced alerts
+|xref:advanced-alerts.adoc[Advanced alerts]
 |No
 |No
 |Yes
 
 4+| *Log Management*
 
-|Log search
+|xref:log-search-query-syntax.adoc[Log search]
 |No
 |No
 |Yes
 
-|Log points
+|xref:log-points.adoc[Log points]
 |No
 |No
 |Yes
 
-|Raw data
+|xref:raw-data.adoc[Raw data]
 |No
 |No
 |Yes
 
 4+| *Additional Anypoint Monitoring features*
 
-|Anypoint Monitoring Archive API
+|xref:api-analytics-dashboard.adoc#anypoint-monitoring-archive-api[Anypoint Monitoring Archive API]
 |No
 |No
 |Yes
 
-|xref:api-functional-monitoring[API Functional Monitoring] +
+|<<functional-monitoring, API Functional Monitoring>>
 |Yes
 |No
 |Yes
 
-|Reports
-|No
-|No
-|Yes
-
-|Telemetry Exporter
+|xref:reports.adoc[Reports]
 |No
 |No
 |Yes
 
 |===
 
-NOTE: Anypoint Visualizer application network integration refers to an Anypoint Visualizer widget within Anypoint Monitoring. Anypoint Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
+[[note-visualizer]]
+NOTE: Anypoint Visualizer app network integration refers to an Anypoint Visualizer widget within Anypoint Monitoring. Anypoint Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
 
 
 == Use Cases
@@ -239,10 +357,11 @@ NOTE: Anypoint Visualizer application network integration refers to an Anypoint 
 The following use cases provide examples of how you can use Anypoint Monitoring.
 
 * Understand performance-related KPIs +
-DevOps engineer Gary maintains a series of APIs related to a transaction processing system. Because the TPS requires swift response time, Gary uses API response time dashboards and alerts to send an email when there is a bottleneck. After gathering some data, Gary can then size his applications.
+DevOps engineer Gary maintains a series of APIs related to a transaction processing system. Because the TPS requires swift response, Gary uses API response-time dashboards and alerts to send an email when a bottleneck occurs. After gathering some data, Gary can then size his apps.
 
-* Plan resource allocation across the application network +
-IT specialist Peyton uses Anypoint Visualizer to view their application network. For CloudHub and Anypoint Runtime Fabric applications, Peyton sees CPU and memory utilization and idle capacity using integrated Anypoint Monitoring.
+* Plan resource allocation across the app network 
++
+IT specialist Peyton uses Anypoint Visualizer to view their app network. For CloudHub and Anypoint Runtime Fabric apps, Peyton sees CPU and memory utilization and idle capacity using integrated Anypoint Monitoring.
 
 * Pinpoint root causes of issues +
 Support team member Darius receives a call that the system is running slowly. He examines dashboards and checks response times, failed requests, and so on. He identifies that the backend is not scaling for the number of requests; he can add capacity for Mule apps, or he can throttle requests for other backend issues.
@@ -260,6 +379,7 @@ Support engineer Carole searches through Anypoint Monitoring logs and notices so
 Business owner Devon has apps across different runtime planes. He has aggregated dashboards of the regional or project-specific apps, and he can easily determine what is consuming the most resources and evangelize accordingly.
 
 
+[[see-also]]
 == See Also
 
 * xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]

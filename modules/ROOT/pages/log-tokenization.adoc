@@ -1,9 +1,11 @@
 = Setting Up Log Tokenization for Flows
+
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+
 App metrics are collected and forwarded to Anypoint Monitoring, where you can manage and search the logs in the Anypoint Monitoring log management console. Log tokenization provides an extra layer of security for logs that may contain sensitive data. 
 
 Log messages are often difficult to parse in order to apply meaningful tokenization because they can have so many different formats. The tokenization service connector helps you tokenize logs by parsing the unstructured content of logs to find the break points so that log messages can be broken into meaningful tokens. You can leverage the Anypoint Security tokenization service, which runs in Runtime Fabric, to tokenize and detokenize Mule app logs. 
-
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
 
 == Supported Mule Versions
 

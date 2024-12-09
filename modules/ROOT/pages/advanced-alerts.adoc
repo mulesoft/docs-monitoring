@@ -1,6 +1,7 @@
 = Setting Up Advanced Alerts in Anypoint Monitoring
 
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 Set up advanced alerts for charts in xref:create-custom-dashboard.adoc[custom dashboards], from the chart's *Alert* tab. Alerts trigger email notifications if a data point you're measuring passed a specified threshold in the past 5 minutes. This 5 minute period is fixed and not configurable. 
 

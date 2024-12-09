@@ -1,18 +1,8 @@
 = Using Built-in Mule App Dashboards
 
-Built-in dashboards display deployment information about your application at the top of the screen and provide access to a number of different graphs, for example:
+Built-in dashboards display deployment information about your application at the top of the screen and provide access to a number of different graphs.
 
-image::dashboard-built-in-info.png[Deployment Info on an App in a Built-In Dashboard]
-
-The graphs and tables in built-in dashboards support a number of metrics, including application metrics. The *Overview* tab provides overall measures. You can view more granular application metrics through the *Inbound*, *Outbound*, and *Failure* tabs.
-
-Example use cases for monitoring are end-to-end tracing of API calls and dependency analyses to help you isolate the source of issues. For example, you can track response times at each endpoint (outbound or inbound).
-
-.Example: Average Response Time Grouped by Endpoint Outbound
-image::dashboard-outbound-response-table.png[Average Response Time Grouped By Endpoint Outbound]
-
-* Infrastructure-level and JVM metrics
-* Performance metrics that break down inbound and outbound response times into averages and percentiles
+The graphs and tables in built-in dashboards support many metrics, including application metrics. The *Overview* tab provides overall measures. You can view more granular application metrics through <<built-in-charts-app, additional tabs>>.
 
 When converting quantities of memory, Anypoint Monitoring uses the power of 10 (_MB_) to reflect metrics values rather than the power of 2 (_MiB_).
 
@@ -26,6 +16,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 Anypoint Monitoring collects some metrics that are also collected using Cloudwatch in Anypoint Runtime Manager. Anypoint Monitoring shows data that is aggregated in one minute intervals, and it is possible that data shown in Cloudwatch does not match based on when the data is collected.
 
+[[view-dashboard]]
 == View a Built-in Dashboard
 
 Built-in and custom dashboards are available from Anypoint Monitoring. You can view application metrics for applications deployed to CloudHub and to hybrid targets in both built-in and custom dashboards.
@@ -37,11 +28,13 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 The built-in dashboard for the application or API is displayed.
 . To switch to a dashboard for a different resource, click the built-in dashboard selector at the top of the page.
 +
-image::builtin-dashboard-selection-interaction.png[Built-in Dashboard Selector]
+image::builtin-dashboard-selection-interaction.png["Built-in dashboard selector"]
 
 Your data is prepopulated and displayed in the built-in dashboards and logs; no configuration is needed. 
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvFunctionality] 
+//TBD:
+//include::reuse::partial$billing/pricing.adoc[tag=featureAdvFunctionality] 
 
+[[built-in-charts-app]]
 Built-in dashboards include various pages to view different types of charts:
 
 [%header,cols="1,4"]
@@ -334,8 +327,7 @@ The sum of outbound requests for the selected time period, grouped by remote hos
 
 [[flows-charts]]
 == Flows
-
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReq]
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 Inbound - Response Time by Flow::
 The average inbound response time, grouped by flow.
@@ -676,9 +668,6 @@ Operating System Swap Space::
 The amount of memory the system is swapping, grouped by worker in automatic intervals.
 +
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
-
-.Example: Infrastructure Dashboard
-image::dashboard-built-in-infrastructure.png[Example: Infrastructure Dashboard]
 
 [[custom-metrics-charts]]
 == Custom Metrics
