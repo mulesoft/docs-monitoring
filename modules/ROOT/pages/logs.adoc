@@ -72,7 +72,7 @@ When you select the operator, if a value is required, a *Value* box appears on t
 . If applicable, enter a value. +
 The following image shows an example of using a search filter to search for all logs that have a timestamp that falls between the given dates.
 +
-image::log-filter-timestamp.png["Using a filter query"]
+image::log-filter-timestamp.png["A form to add a filter for timestamps"]
 +
 See <<filters_predefined>> and <<operators>>.
 +
@@ -132,7 +132,7 @@ Some complex search queries do not have an equivalent in the search filter value
 
 By default, the log entries in your log search results are abbreviated. You can expand and view the log message and details as a table or in JSON format.
 
-image::log-expanded.png["Expanding a log message"]
+image::log-expanded.png["A log file entry"]
 
 === Tabular Logs
 
@@ -212,7 +212,7 @@ image::logs-view-surrounding.png["View This Log feature"]
 +
 . View the extended log in tabular or JSON format.
 +
-image::logs-view-extended.png["Viewing extended logs"]
+image::logs-view-extended.png["Extended logs example"]
 
 == View Surrounding Logs
 
@@ -224,7 +224,7 @@ image::logs-view-surrounding.png["View Surrounding Logs tab"]
 +
 . Load the number of logs that you want to see before and after the selected log, or use the default.
 +
-image::logs-set-surrounding.png["Viewing surrounding logs"]
+image::logs-set-surrounding.png["Surrounding logs view example"]
 
 The default settings are:
 
@@ -263,7 +263,7 @@ From the Quick Filters list, you can add and remove columns to or from log resul
 
 Click the column icon for a filter field, for example:
 
-image::log-filter-add-field.png[To Add a Filter Column to the Logs]
+image::log-filter-add-field.png["Log filter column example"]
 
 The resulting `log-level` column looks like this in the logs:
 

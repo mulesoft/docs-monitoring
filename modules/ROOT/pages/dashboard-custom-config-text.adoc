@@ -15,7 +15,7 @@ You can write text in these modes:
 
 * Markdown: See xref:dashboard-config-ref.adoc#samples_markdown[Markdown Syntax Support] for Markdown examples. a|
 
-image::text-config-html.png["A text panel in a custom dashboard"]
+image::text-config-html.png["A dropdown menu displays "html" for Mode and "markdown" for Content."]
 |===
 
 == Markdown Example
@@ -23,7 +23,7 @@ image::text-config-html.png["A text panel in a custom dashboard"]
 As this Markdown example shows, you can see how your text will appear in the UI as you type.
 
 .Markdown Example
-image::text-config.png["A Markdown example"]
+image::text-config.png["A text editor that uses Markdown to format text."]
 
 After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
 

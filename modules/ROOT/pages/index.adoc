@@ -203,7 +203,8 @@ Feature availability in Anypoint Monitoring depends on the tier of your Anypoint
 [[plans-usage-based]]
 === Anypoint Monitoring Features for Usage-Based Packages
 
-Anypoint Monitoring is the standard method of monitoring Mule app and API performance so that you can more quickly identify and resolve issues. 
+//intro (shared)
+include::partial$shared-general-info.adoc[tag=am-intro]
 
 * *Anypoint Integration Starter* package is available to all Anypoint Platform regions.
 * *Anypoint Integration Advanced* package is available in the https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions only at this time.
@@ -217,7 +218,9 @@ include::reuse::partial$billing/pricing.adoc[tag=monitoringTable]
 [[plans-legacy]]
 === Anypoint Monitoring Features for Legacy Core-Based Plans
 
-Anypoint Monitoring is the standard method of monitoring Mule app and API performance so that you can more quickly identify and resolve issues. Core-based subscriptions are based on vCore allotments instead of usage. All organizations receive fundamental monitoring capabilities with their subscriptions. However, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
+//intro (shared)
+include::partial$shared-general-info.adoc[tag=am-intro]
+Core-based subscriptions are based on vCore allotments instead of usage. All organizations receive fundamental monitoring capabilities with their subscriptions. However, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
 If your organization changes its subscription model from a Titanium to a Gold or Platinum subscription, ensure you have preserved your logs outside of Anypoint Platform. Within an hour of changing subscription models, MuleSoft clears the storage that formerly kept log data.
 

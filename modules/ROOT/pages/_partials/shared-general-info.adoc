@@ -1,0 +1,12 @@
+//
+//tag::intro-am[]
+Anypoint Monitoring provides standard tooling for monitoring Mule app and API performance so that you can more quickly identify and resolve issues.  
+//end::intro-am[]
+//
+
+//
+//tag::refresh[]
+Refresh the page, if necessary. 
+//end::refresh[]
+//
+
