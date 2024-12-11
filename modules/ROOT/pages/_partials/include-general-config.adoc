@@ -60,7 +60,7 @@ In the *General* configuration tab, advanced settings support one or more fine-t
 [IMPORTANT]
 If you switch back to the basic configuration, some of the advanced configuration queries are removed.
 
-image::config-general-advanced.png["Advanced configuration example"]
+image::config-general-advanced.png["Advanced configuration mode is on."]
 
 [%header,cols="1,4"]
 |===
