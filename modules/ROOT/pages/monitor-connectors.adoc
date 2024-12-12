@@ -9,11 +9,12 @@ You also need the Unified Agent.
 
 == Supported Mule Versions
 
-To monitor connectors, you must use a supported version of Mule:
+To monitor connectors, you must use a xref:release-notes::mule-runtime/mule-esb.adoc[supported Mule version] for your apps: 
 
-* Hybrid apps running on Mule 4.2.0, 4.1.x, 3.9.x, or 3.8.7
-* CloudHub apps running on Mule 4.1.x or later
-* CloudHub 2.0 apps running on Mule 4.3 or later
+* Hybrid deployments
+* CloudHub and CloudHub 2.0 deployments
+//TODO: RTF DEPLOYMENTS
+//* Runtime Fabric deployments
 
 If your app is using Java 17, you must specify the version during deployment. For a list of compatible connectors, see https://help.salesforce.com/s/articleView?language=en_US&id=000782248&type=1[Java 17 Compatible Anypoint Connectors].
 
