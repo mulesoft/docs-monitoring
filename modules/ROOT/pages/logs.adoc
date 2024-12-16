@@ -369,8 +369,6 @@ You can edit and use that filter like any other filter. See <<filters_predefined
 You can share the URL to your logs.
 
 . From Logs, click *Share*.
-+
-image::logs-sharing.png["Sharing logs"]
 . Select *Share* to load the URL of your log page to a *Share Logs Search Link* field.
 . Click *Copy*.
 

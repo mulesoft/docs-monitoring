@@ -15,7 +15,7 @@ You can write text in these modes:
 
 * Markdown: See xref:dashboard-config-ref.adoc#samples_markdown[Markdown Syntax Support] for Markdown examples. a|
 
-image::text-config-html.png["A dropdown menu displays "html" for Mode and "markdown" for Content."]
+image::text-config-html.png["A dropdown menu displays 'html' for Mode and 'markdown' for Content."]
 |===
 
 == Markdown Example
