@@ -1,4 +1,5 @@
-:page-info-pills: anypoint-pricing-titanium
+//feature tier:
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
 You can access API analytics metrics data directly via the Anypoint Monitoring Archive API. Using this API, you can navigate and discover your API metrics data using a directory hierarchy.
 
