@@ -92,7 +92,8 @@ After you complete your configuration, you can click Save Changes. To exit the c
 
 [[alerts_config]]
 == Alerts (Configuration, Notifications, History)
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
 In the *Alerts* tab, set up alerts that trigger when JVM memory utilization is too high.
 
