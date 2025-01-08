@@ -1,10 +1,5 @@
 = Sending Notifications to External Systems
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+:page-info-pills: anypoint-pricing-titanium
 
 To help deliver Anypoint Monitoring notifications to external systems, Anypoint Monitoring provides links to connectors on Anypoint Exchange that you can incorporate into a Mule app.
 

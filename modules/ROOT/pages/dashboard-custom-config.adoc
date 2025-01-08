@@ -1,7 +1,5 @@
 = Configuring Custom Dashboards and Charts
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvSubReqMonitoring]
+:page-info-pills: anypoint-pricing-core
 
 You can create and configure as many custom dashboards as you need. 
 

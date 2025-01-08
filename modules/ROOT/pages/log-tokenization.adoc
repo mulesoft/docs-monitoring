@@ -1,7 +1,5 @@
 = Setting Up Log Tokenization for Flows
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+:page-info-pills: anypoint-pricing-titanium
 
 App metrics are collected and forwarded to Anypoint Monitoring, where you can manage and search the logs in the Anypoint Monitoring log management console. Log tokenization provides an extra layer of security for logs that may contain sensitive data. 
 
