@@ -90,7 +90,7 @@ Application metrics::
 30 days.
 
 Enhanced API metrics::
-30 days.  These limits also apply:
+30 days. These limits also apply:
 
 * Data in the *Client Applications* tab is limited to 1 hour.
 * Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
