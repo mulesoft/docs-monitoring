@@ -13,9 +13,9 @@ Based on typical use, the expected CPU utilization from the Mule monitoring agen
 
 Anypoint Monitoring asynchronously collects data at a resolution of one minute, which does not block Mule runtime data processing.
 
-== Data Retention and Limits
+== Data Retention Limits
 
-Data retention and limits vary by xref:index.adoc#billing[subscription tier].
+Limits vary by xref:index.adoc#billing[subscription tier]:
 
 * <<starter>>
 * <<advanced>>
@@ -101,7 +101,7 @@ Basic alerts for servers and Mule apps::
 Basic alerts for APIs::
 Six basic alerts per API instance.
 
-[[titanium]
+[[titanium]]
 === Titanium Subscription Limits
 
 xref:index.adoc#plans-legacy[Titanium tier] subscribers to Anypoint Platform receive more robust data retention and feature limits:
