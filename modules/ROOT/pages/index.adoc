@@ -334,7 +334,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 |Log Tailing
 |Yes
-|Yes
+|
 |Yes
 
 4+| *Additional Anypoint Monitoring features*
