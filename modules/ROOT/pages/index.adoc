@@ -319,7 +319,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 |xref:log-search-query-syntax.adoc[Log search]
 |Yes (single application only)
-|Yes (single application only)
+|
 |Yes (cross-application)
 
 |xref:log-points.adoc[Log points]
