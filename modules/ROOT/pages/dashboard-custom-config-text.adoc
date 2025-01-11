@@ -1,7 +1,5 @@
 = Configuring Text Panels in a Custom Dashboard
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+:page-info-pills: anypoint-pricing-titanium
 
 You can add text panels to custom dashboards in Anypoint Monitoring. A text panel can provide information about your dashboard. You can add one to any row in the dashboard.
 

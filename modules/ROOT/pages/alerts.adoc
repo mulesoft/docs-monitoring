@@ -1,8 +1,6 @@
 = Getting Alerts in Anypoint Monitoring
 :page-aliases: alerts-using.adoc, alerts-config.adoc
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvSubReqMonitoring]
+:page-info-pills: anypoint-pricing-core
 
 Alerts indicate whether a resource (such as a Mule app or API) is behaving as expected or exceeding a defined threshold. 
 

@@ -1,0 +1,23 @@
+//tag::anypoint-pricing-titanium[]
+[grid=all]
+|===
+|
+image:info.png[title="This feature requires an Advanced or Titanium subscription.",15,15] Availability: xref:index.adoc#billing[Advanced and Titanium tiers only]
+|===
+//end::anypoint-pricing-titanium[]
+
+//tag::anypoint-pricing-core[]
+[grid=all]
+|===
+|
+image:info.png[title="This feature requires an Advanced or Core-based subscription.",15,15] Availability: xref:index.adoc#billing[Advanced and Core-based tiers only]
+|===
+//end::anypoint-pricing-core[]
+
+//tag::anypoint-pricing-usage-titanium[]
+[grid=all]
+|===
+|
+image:info.png[title="This feature requires a Usage-based or Titanium subscription.",15,15] Availability: xref:index.adoc#billing[Usage-based and Titanium tiers only]
+|===
+//end::anypoint-pricing-usage-titanium[]

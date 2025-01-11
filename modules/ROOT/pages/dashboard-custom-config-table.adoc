@@ -1,7 +1,5 @@
 = Configuring Tables in a Custom Dashboard
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+:page-info-pills: anypoint-pricing-titanium
 
 In Anypoint Monitoring, you can configure tables for custom dashboard. In addition to configuring properties that are common to other charts, such advanced or basic metric queries and time ranges, you can also:
 
