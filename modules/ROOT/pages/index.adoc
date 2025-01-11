@@ -312,9 +312,9 @@ If your organization changes its subscription model from a Titanium to a Gold or
 4+| *Log Management*
 
 |xref:log-search-query-syntax.adoc[Log search]
-|No
-|No
-|Yes
+|Yes (single application only)
+|
+|Yes (cross-application)
 
 |xref:log-points.adoc[Log points]
 |No
@@ -324,6 +324,11 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |xref:raw-data.adoc[Raw data]
 |No
 |No
+|Yes
+
+|Log Tailing
+|Yes
+|
 |Yes
 
 4+| *Additional Anypoint Monitoring features*
