@@ -183,9 +183,8 @@ Enabling monitoring can impact CPU utilization and memory utilization depending 
 - If you do not find connection failure or retry entries, contact MuleSoft technical support.
 
 == Disable Log Forwarding for Hybrid Runtime Servers
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
 You can disable log forwarding to Anypoint Monitoring if you have AM installer v.2.5.10 or later. To disable this feature, you must configure a JVM property on each hybrid server for which you want to disable log forwarding. You cannot disable log forwarding per application.
 

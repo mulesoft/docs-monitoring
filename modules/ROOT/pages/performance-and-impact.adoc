@@ -13,8 +13,16 @@ Based on typical use, the expected CPU utilization from the Mule monitoring agen
 
 Anypoint Monitoring asynchronously collects data at a resolution of one minute, which does not block Mule runtime data processing.
 
-== Data Retention and Limits
+== Data Retention Limits
 
+Limits vary by xref:index.adoc#billing[subscription tier]:
+
+* <<starter>>
+* <<advanced>>
+* <<gold-platinum>>
+* <<titanium>>
+
+[[starter]]
 === Anypoint Integration Starter Package Limits
 
 Organizations that have the Anypoint Integration Starter package receive modest data retention and feature limits:
@@ -26,7 +34,7 @@ Application metrics::
 30 days.
 
 Enhanced API metrics::
-30 days. The limit for data in the *Client Applications* tab is 1 hour.
+30 days. Data in the *Client Applications* tab is limited to 1 hour.
 
 Basic alerts for servers and Mule apps::
 Six per server or app. 
@@ -34,6 +42,7 @@ Six per server or app.
 Basic alerts for APIs::
 Six per API instance.
 
+[[advanced]]
 === Anypoint Integration Advanced Package Limits
 //Retain extra info on Advanced package
 Organizations that have the Anypoint Integration Advanced package receive more robust data retention and feature limits:
@@ -49,7 +58,8 @@ Application metrics::
 365 days.
 
 Enhanced API metrics::
-30 days. The following limits also apply:
+30 days. These limits also apply:
+
 * Data in the *Client Applications* tab is limited to 1 hour.
 * Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
 
@@ -68,6 +78,7 @@ Basic alerts for APIs::
 Telemetry Exporter Connections::
 10 per organization.
 
+[[gold-platinum]]
 === Gold and Platinum Subscription Limits
 
 xref:index.adoc#plans-legacy[Gold and Platinum tier] subscribers to Anypoint Platform receive modest data retention and feature limits:
@@ -79,7 +90,10 @@ Application metrics::
 30 days.
 
 Enhanced API metrics::
-30 days. The limit for data in the *Client Applications* tab is 1 hour.
+30 days. These limits also apply:
+
+* Data in the *Client Applications* tab is limited to 1 hour.
+* Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
 
 Basic alerts for servers and Mule apps::
 50 basic alerts.
@@ -87,6 +101,7 @@ Basic alerts for servers and Mule apps::
 Basic alerts for APIs::
 Six basic alerts per API instance.
 
+[[titanium]]
 === Titanium Subscription Limits
 
 xref:index.adoc#plans-legacy[Titanium tier] subscribers to Anypoint Platform receive more robust data retention and feature limits:
@@ -102,7 +117,8 @@ Application metrics::
 365 days.
 
 Enhanced API metrics::
-30 days. The following limits also apply:
+30 days. These limits also apply:
+
 * Data in the *Client Applications* tab is limited to 1 hour.
 * Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
 

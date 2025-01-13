@@ -235,7 +235,7 @@ include::partial$shared-general-info.adoc[tags="refresh"]
 
 After opening a set of charts in Anypoint Insights, you can download metrics from charts that provide a download menu in the chart.
 
-. Click the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*)) on a chart to open the download menu. 
+. Click the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*) on a chart to open the download menu. 
 . Select the file format for your metrics:
 
 * *Download as CSV*

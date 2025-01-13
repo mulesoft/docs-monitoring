@@ -327,7 +327,9 @@ The sum of outbound requests for the selected time period, grouped by remote hos
 
 [[flows-charts]]
 == Flows
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
+
 
 Inbound - Response Time by Flow::
 The average inbound response time, grouped by flow.

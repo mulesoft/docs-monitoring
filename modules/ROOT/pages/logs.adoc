@@ -66,23 +66,21 @@ You can create a filter to search logs using predefined fields, operators, and v
   * `thread`
   * `timestamp`
   * `worker`
-. Select the operator from the drop-down list. +
-The available operators change according to the field you select. +
-When you select the operator, if a value is required, a *Value* box appears on the right.
-. If applicable, enter a value. +
-The following image shows an example of using a search filter to search for all logs that have a timestamp that falls between the given dates.
+. Select the operator from the drop-down list. 
 +
-image::log-filter-timestamp.png["A form to add a filter for timestamps"]
+Operators vary by the field you select.
+. If applicable, enter a value, for example:
++
+image::log-filter-example.png["A form to add a filter for errors"]
 +
 See <<filters_predefined>> and <<operators>>.
 +
 . (Optional) Enter a value in *Label*.
-. Click *Save*. +
-The filter appears to the right of *+Add a filter*.
+. Click *Save*.
 
 
-NOTE:
-When you use the *Application* filter, the results include APIs deployed through Flex Gateway.
+NOTE::
+Results for the *Application* filter include APIs deployed through Flex Gateway.
 
 [[search-dsl]]
 === Search with the Query DSL
@@ -140,7 +138,7 @@ This example shows an expanded log entry as a table. The table contains log filt
 
 [source,text,linenums]
 ----
-application	      test40x.us-e1.qax.cloudhub.io
+application	      abcd40x.us-a1.abc.cloudhub.io
 class	            qtp437897409-31
 environment	      Sandbox
 environment type	%{[fields][env_type]}
@@ -157,7 +155,7 @@ message
 
                   (set debug level logging or '-Dmule.verbose.exceptions=true' for everything)
                   ****************************************************
-timestamp         April 25th 2018, 17:09:53.517
+timestamp         April 25th 2024, 17:09:53.517
 worker            0
 ----
 
@@ -175,7 +173,7 @@ This example shows an expanded log entry in JSON format.
     "class": "qtp437897409-31",
     "logger": "DefaultMessagingExceptionStrategy",
     "_ending": 0,
-    "timestamp": "2018-04-26T00:09:53.517Z",
+    "timestamp": "2024-11-26T00:09:53.517Z",
     "message": ".Example***
     .ExampleMessage: No record could be found in payload or in flow variable
     BATCH_RECORD (java.lang.IllegalStateException)..ExampleElement...",
@@ -187,12 +185,12 @@ This example shows an expanded log entry in JSON format.
   },
   "fields": {
     "timestamp": [
-      "2018-04-26T00:09:53.517Z"
+      "2024-11-26T00:09:53.517Z"
     ]
   },
   "highlight": {
     "orgId": [
-      "@kibana-highlighted-field@6046b96d@/..."
+      "@abcde@6046b96d@/..."
     ]
   },
   "sort": [
