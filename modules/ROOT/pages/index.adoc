@@ -71,9 +71,8 @@ For more information about MuleSoft Government Cloud and Anypoint Platform Priva
 
 [[insights]]
 === Anypoint Insights
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
 
 Monitor performance data and issues across your deployed Mule apps and APIs (_entities_), and get detailed insights on specific deployments. 
 
@@ -100,9 +99,8 @@ See xref:dashboards.adoc[].
 
 [[alerts]]
 === Event-Driven Alerts
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvSubReqMonitoring]
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-core"]
 
 Track trends and add your own alerts to identify abnormal behavior and problems in your app network.
 
@@ -123,9 +121,8 @@ Manage logs and log data for your deployments with these logging features:
 
 [[log-search]]
 ==== Log Search
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
 
 Search across log files, including archived logs to find information and events based on a specific query. Logs includes raw log and event data from across the app network so that you can pinpoint the root cause of a problem.
 
@@ -146,9 +143,8 @@ For more logging options, see xref:runtime-manager::deployment-strategies.adoc#l
 
 [[log-points]]
 ==== Log Points
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
 Generate logs for Mule apps and APIs in real-time and without writing code.
 
@@ -156,9 +152,8 @@ See xref:log-points.adoc[].
 
 [[raw-data-downloads]]
 ==== Raw Data Downloads
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
 Download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
 
@@ -166,9 +161,8 @@ See xref:raw-data.adoc[].
 
 [[tools]]
 === Tools for Monitoring Integrations
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
 Use connectors that help deliver Anypoint Monitoring notifications to external systems, including custom metrics connectors.
 
@@ -197,13 +191,14 @@ See <<billing>>. For complete details about pricing, contact your customer suppo
 
 Feature availability in Anypoint Monitoring depends on the tier of your Anypoint Platform pricing package or plan:
 
-* <<plans-usage-based>>
-* <<plans-legacy>>
+* <<plans-usage-based>> (Starter and Advanced tiers) 
+* <<plans-legacy>> (Gold, Platinum, and Titanium tiers)
 
 [[plans-usage-based]]
 === Anypoint Monitoring Features for Usage-Based Packages
 
-Anypoint Monitoring is the standard method of monitoring Mule app and API performance so that you can more quickly identify and resolve issues. 
+//intro (shared)
+include::partial$shared-general-info.adoc[tag=am-intro]
 
 * *Anypoint Integration Starter* package is available to all Anypoint Platform regions.
 * *Anypoint Integration Advanced* package is available in the https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions only at this time.
@@ -217,7 +212,9 @@ include::reuse::partial$billing/pricing.adoc[tag=monitoringTable]
 [[plans-legacy]]
 === Anypoint Monitoring Features for Legacy Core-Based Plans
 
-Anypoint Monitoring is the standard method of monitoring Mule app and API performance so that you can more quickly identify and resolve issues. Core-based subscriptions are based on vCore allotments instead of usage. All organizations receive fundamental monitoring capabilities with their subscriptions. However, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
+//intro (shared)
+include::partial$shared-general-info.adoc[tag=am-intro]
+Core-based subscriptions are based on vCore allotments instead of usage. All organizations receive fundamental monitoring capabilities with their subscriptions. However, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
 If your organization changes its subscription model from a Titanium to a Gold or Platinum subscription, ensure you have preserved your logs outside of Anypoint Platform. Within an hour of changing subscription models, MuleSoft clears the storage that formerly kept log data.
 
@@ -315,9 +312,9 @@ If your organization changes its subscription model from a Titanium to a Gold or
 4+| *Log Management*
 
 |xref:log-search-query-syntax.adoc[Log search]
-|No
-|No
-|Yes
+|Yes (single application only)
+|
+|Yes (cross-application)
 
 |xref:log-points.adoc[Log points]
 |No
@@ -327,6 +324,11 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |xref:raw-data.adoc[Raw data]
 |No
 |No
+|Yes
+
+|Log Tailing
+|Yes
+|
 |Yes
 
 4+| *Additional Anypoint Monitoring features*

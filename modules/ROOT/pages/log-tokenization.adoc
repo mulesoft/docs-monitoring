@@ -1,7 +1,5 @@
 = Setting Up Log Tokenization for Flows
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+:page-info-pills: anypoint-pricing-titanium
 
 App metrics are collected and forwarded to Anypoint Monitoring, where you can manage and search the logs in the Anypoint Monitoring log management console. Log tokenization provides an extra layer of security for logs that may contain sensitive data. 
 
@@ -9,18 +7,16 @@ Log messages are often difficult to parse in order to apply meaningful tokenizat
 
 == Supported Mule Versions
 
-Log tokenization is supported on:
+Log tokenization is available for Hybrid and CloudHub deployments running on xref:release-notes::mule-runtime/mule-esb.adoc[supported Mule versions].
 
-* Hybrid apps running on Mule 3.x or 4.x
-* CloudHub apps running on Mule 3.x or 4.x  
+== Before You Begin
 
-== Prerequisites
-
+//TODO: version 1.13 RTF?? Any other versions? Those pages don't exist in latest RTF docs, btw. 
 . xref:1.13@runtime-fabric::install-create-rtf-arm.adoc[Install Runtime Fabric].
 . xref:1.13@runtime-fabric::enable-inbound-traffic.adoc[Enable inbound traffic] on Runtime Fabric. 
 . In Anypoint Security, xref:anypoint-security::create-tokenization-format.adoc[create a tokenization format].
 . In Runtime Manager, xref:anypoint-security::tokenization-example.adoc[create the tokenization service]. 
-. In API Manager, xref:2.x@api-manager::getting-started-proxy.adoc[set up the API gateway] for the Mule app to serve as the proxy.
+. In API Manager, xref:@api-manager::getting-started-proxy.adoc[set up the API gateway] for the Mule app to serve as the proxy.
 
 == Add the Required Components to Your App Flow
 

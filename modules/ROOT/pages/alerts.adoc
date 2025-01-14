@@ -1,8 +1,6 @@
 = Getting Alerts in Anypoint Monitoring
 :page-aliases: alerts-using.adoc, alerts-config.adoc
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvSubReqMonitoring]
+:page-info-pills: anypoint-pricing-core
 
 Alerts indicate whether a resource (such as a Mule app or API) is behaving as expected or exceeding a defined threshold. 
 
@@ -77,15 +75,11 @@ In addition to creating basic and advanced alerts in Anypoint Monitoring, you ca
 
 image::alerts-menu.png["Alerts menu options to set up basic, advanced, or other types of alerts"]
 
-//TODO: VERIFY NOTE
 NOTE: Alerts created in API Manager and Runtime Manager aren't listed in the Anypoint Monitoring Alerts page.
 
 . From *Alerts* in Anypoint Monitoring, click *+ New alert*.
 . Select *Other* for API Manager or Runtime Manager to access its alert configuration page. 
-
 * *Create an alert for your API in API Manager*
-+
-Alerts created in API Manager aren't listed in Anypoint Monitoring *Alerts*.
 * *Create an alert for your API in Runtime Manager*
 
 . To create these alerts, proceed to:

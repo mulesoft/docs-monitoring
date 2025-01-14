@@ -194,7 +194,8 @@ image::insights-environment-selector.png["Environment selector in Anypoint Monit
 image::insights-default-selector.png["Default selector in Access Management"]
 .. Return to Anypoint Monitoring to check for the new business group setting.
 +
-Refresh the page, if necessary. 
+//shared: refresh if necessary
+include::partial$shared-general-info.adoc[tags="refresh"]
 
 //
 //H2: CHANGE BUSINESS GROUP
@@ -226,14 +227,15 @@ To change the business-group setting:
 image::insights-default-selector.png["Default selector in Access Management"]
 .. Return to Anypoint Monitoring to check for the new default setting.
 +
-Refresh the page, if necessary. 
+//shared: refresh if necessary
+include::partial$shared-general-info.adoc[tags="refresh"]
 
 [[download-chart-data]]
 == Download Chart Data
 
 After opening a set of charts in Anypoint Insights, you can download metrics from charts that provide a download menu in the chart.
 
-. Click the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*)) on a chart to open the download menu. 
+. Click the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*) on a chart to open the download menu. 
 . Select the file format for your metrics:
 
 * *Download as CSV*

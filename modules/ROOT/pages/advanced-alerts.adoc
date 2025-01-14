@@ -1,11 +1,11 @@
 = Setting Up Advanced Alerts in Anypoint Monitoring
+:page-info-pills: anypoint-pricing-titanium
 
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+Set up advanced alerts for charts in xref:create-custom-dashboard.adoc[custom dashboards], from the chart's *Alert* tab. Alerts trigger email notifications if a data point you're measuring passed a specified threshold in the past 5 minutes. This 5 minute period is fixed and not configurable. 
 
-You can set up advanced alerts for graphs in custom dashboards. Alerts trigger email notifications when a data point you are measuring passes a specified threshold. Advanced alerts are listed in the *Alerts* page in Anypoint Monitoring.
+For apps configured to run with more than one worker, charts that display worker-related metrics in Anypoint Monitoring dashboards break down the metrics by worker. 
 
-When you configure an advanced alert for a graph, an alert state icon appears at the top of the graph.
+When you configure an advanced alert for a graph, an alert state icon appears in the chart.
 
 image::alert-in-graph.png["Line chart showing CPU usage over time with an alert state of OK"]
 
