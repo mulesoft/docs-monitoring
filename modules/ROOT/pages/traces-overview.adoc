@@ -1,6 +1,8 @@
-= Traces 
+= Trace Requests Across Apps and APIs 
 
-The Traces feature in Anypoint Monitoring enables you to observe requests for apps and APIs as they travel across services. _Traces_ describe the journey that the requests make throughout their pipelines of services. Each trace originates from an _entity_, such as an app or API, that is available in Anypoint Platform. The Traces feature uses the OTel format.
+Observe requests for apps and APIs as they travel across services with Traces in Anypoint Monitoring. _Traces_ describe the journey that requests make throughout their service pipelines. 
+//TODO: WHAT DOES "that is available in Anypoint Platform" mean exactly?
+Each trace originates from an _entity_, such as an app or API, that is available in Anypoint Platform. The Traces feature uses the OTel format.
 
 The *Traces* overview page enables you to see a list of traces that are currently available in Anypoint Platform. You can use this data to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track your entity requests end-to-end. For example, an Ops administrator can use traces to search for a specific transaction and have a visualization for that transaction that includes only the services through which it progresses. The visibility enables transparent asset performance observation and management. 
 
