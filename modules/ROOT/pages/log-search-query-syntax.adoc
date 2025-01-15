@@ -1,7 +1,7 @@
 = Log Search Query Syntax Reference
 
 //feature tier:
-include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
 
 In addition to using the query builder and facet search user interface in Anypoint Monitoring log search, you can use the log search query language.
 
