@@ -2,7 +2,7 @@
 :page-aliases: logs-using.adoc
 
 //feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
 In addition to logging through xref:runtime-manager::viewing-log-data.adoc[Runtime Manager], Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. You can use aggregated logs in conjunction with monitoring to help identify issues and investigate failures quickly. These features support:
 

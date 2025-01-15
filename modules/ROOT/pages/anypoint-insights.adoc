@@ -4,7 +4,7 @@
 :download-chart-data: You can download most chart data to CSV or XSL.
 
 //feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
 Monitor performance data and issues across your deployed Mule apps and API implementations (_entities_) with Anypoint Insights, in Anypoint Monitoring: 
 
