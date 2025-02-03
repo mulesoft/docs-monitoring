@@ -136,6 +136,16 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationP
 A warning appears that confirms whether you want to delete the configuration. 
 . Click *Delete Configuration*. 
 
+== Errors
+
+If you receive this error, ensure that you endpoint supports OpenTelemetry:  
+
+----
+Error : validating connection request. Please check your request and try again
+----
+
+See <<third-party-support>>.
+
 == Known Issues
 
 include::partial$telemetry-exporter-notes.adoc[tag=knownIssuesGen]
