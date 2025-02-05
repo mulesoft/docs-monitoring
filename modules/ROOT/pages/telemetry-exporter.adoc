@@ -20,7 +20,7 @@ include::partial$telemetry-exporter-notes.adoc[tag=auditLogDuplicates]
 
 The Telemetry Exporter enables you to create connections to most third-party observability and analytics platforms that:
 
-* Have OpenTelemetry-supported endpoints. For example, the endpoint URL for New Relic is `https://otlp.nr-data.net:4318`. Your team must set up endpoints for the monitoring platform you are using.
+* Have OpenTelemetry-supported endpoints. For example, the endpoint URL for New Relic is `https://otlp.nr-data.net:4318`. Your team must set up endpoints for the monitoring platform you use.
 * Allow you to create an instrumentation key or access token.
 
 Azure Monitor and Splunk HEC are also compatible. 
