@@ -34,7 +34,7 @@ Before you configure the Telemetry Exporter, ensure that you have:
 * The Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform. 
 * Telemetry Exporter Administrator permission, so you can create or modify connections. For more information, see xref:am-permissions.adoc[].
 * Telemetry Exporter Configurations Manager permission, so you can create or modify configurations. For more information, see xref:am-permissions.adoc[].
-* Access information for your third-party observability platform, including the endpoint that supports OpenTelemetry.
+* Access information for your third-party observability platform.
 * The ability to create an instrumentation key or access token for your third-party observability platform.
 * Enabled trace data collection for CloudHub 2.0 apps deployed to xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[shared] or xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[private spaces]. This requirement applies only if you want to export trace data for CloudHub 2.0.
 * Enabled trace data collection for xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric] apps. This requirement applies only if you want to export trace data for Runtime Fabric.
