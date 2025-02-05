@@ -138,7 +138,7 @@ A warning appears that confirms whether you want to delete the configuration.
 
 == Errors
 
-If you receive this error, ensure that you endpoint supports OpenTelemetry:  
+If you receive this error, ensure that your endpoint supports OpenTelemetry:  
 
 ----
 Error : validating connection request. Please check your request and try again
