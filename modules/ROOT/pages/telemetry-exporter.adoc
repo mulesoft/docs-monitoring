@@ -62,7 +62,7 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPerm
 . On the *Connection Details* page, enter the following information: 
 * *Connection Name*: Name for your connection, using only alphanumeric characters and hyphens.
 * *Destination Type*: Third-party observability platform to which you want to transfer data. 
-* *Endpoint URL*: Endpoint supporting OpenTelemetry that enables external connections to your third-party observability platform (see <<third-party-support>>). The location of this endpoint depends on your platform. 
+* *Endpoint URL*: Endpoint that enables external connections to your third-party observability platform (see <<third-party-support>>). The location of this endpoint depends on your platform. 
 . Click *Next*.
 . On the *Authentication* page, enter the information needed to authenticate your connection to the observability platform. Some platforms require only access tokens, while others also require a header key.
 . Click *Test Connection* to ensure that Anypoint Platform can connect to your third-party observability platform.
