@@ -59,7 +59,7 @@ Outbound connections are made to the following endpoints:
 
 == Supported Operating Systems
 
-Install the Anypoint Monitoring agent to a server that runs on a tested operating system:
+Install the Anypoint Monitoring agent to a server that runs on a supported operating system. These versions have been tested:
 
 * CentOS 7
 * RedHat Enterprise Linux 7
