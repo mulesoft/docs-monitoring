@@ -191,7 +191,7 @@ Requests by Location:: The sum of requests during the time period specified, gro
 +
 This metric is not supported for APIs deployed through Flex Gateway.
 
-For information about chart data collection, including charts identified as *Other*, see xref:app-dashboards.adoc#endpoint-operation-metrics[How Endpoint and Operation Use Metrics Are Gathered].
+For information about chart data collection, including the chart group *Other*, see xref:app-dashboards.adoc#endpoint-operation-metrics[How Endpoint and Operation Use Metrics Are Gathered].
 
 == Anypoint Monitoring Archive API
 
