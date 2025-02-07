@@ -1,25 +1,26 @@
 = Exporting Telemetry Data to Third-Party Monitoring Systems
 :page-info-pills: anypoint-pricing-titanium
 
-The Telemetry Exporter enables you to export xref:access-management::audit-logging.adoc[_audit logs_] and trace data from apps to third-party observability and analytics apps, such as Azure Monitor, Splunk HEC, and OpenTelemetry compliant tools. Exporting trace data is supported only for apps deployed using compatible versions of CloudHub 2.0 and Runtime Fabric. 
+The Telemetry Exporter enables you to export xref:access-management::audit-logging.adoc[_audit logs_] and Mule app trace data to third-party observability and analytics platforms, such as Azure Monitor, Splunk HEC, and OpenTelemetry compliant tools. Exporting trace data is supported only for Mule apps deployed using compatible versions of CloudHub 2.0 and Runtime Fabric. 
 
 // add a link when trace overview become available
 
 To use the Telemetry Exporter, you must: 
 
-* Create a connection with a third-party app to authorize Anypoint Platform to share data.
-* Create a configuration to specify the types of data Anypoint Platform exports and which business groups and environments allow content to be exported to connections.
+* Create a connection by providing a third-party observability platform credential that authorizes Anypoint Platform to share data with the observability platform. See also, <<third-party-support>>.
+* Create a configuration that specifies the type of data Anypoint Platform exports and which business group and environment allows content to be exported to the connections that you configure.
 
 You can also edit and delete connections and configurations. 
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
 include::partial$telemetry-exporter-notes.adoc[tag=auditLogDuplicates]
 
+[[third-party-support]]
 == Supported Third-Party Monitoring Products
 
-The Telemetry Exporter enables you to create connections with most third-party observability and analytics apps that:
+The Telemetry Exporter enables you to create connections to most third-party observability and analytics platforms that:
 
-* Have OpenTelemetry-supported endpoints. For example, the endpoint URL for New Relic is `https://otlp.nr-data.net:4318`.
+* Have OpenTelemetry-supported endpoints. For example, the endpoint URL for New Relic is `https://otlp.nr-data.net:4318`. Your team must set up endpoints for the monitoring platform you use.
 * Allow you to create an instrumentation key or access token.
 
 Azure Monitor and Splunk HEC are also compatible. 
@@ -31,10 +32,10 @@ Before you configure the Telemetry Exporter, ensure that you have:
 //include::reuse::partial$billing/pricing.adoc[tag=prereqBullet] - Removing for now. Including as plain text. 
 //retain refs to Advanced and Titanium
 * The Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform. 
-* Telemetry Exporter Administrator permission, so you can create or modify connections.
-* Telemetry Exporter Configurations Manager permission, so you can create or modify configurations.
-* Access information for your third-party app, including the endpoint.
-* The ability to create an instrumentation key or access token for your third-party app.
+* Telemetry Exporter Administrator permission, so you can create or modify connections. For more information, see xref:am-permissions.adoc[].
+* Telemetry Exporter Configurations Manager permission, so you can create or modify configurations. For more information, see xref:am-permissions.adoc[].
+* Access information for your third-party observability platform.
+* The ability to create an instrumentation key or access token for your third-party observability platform.
 * Enabled trace data collection for CloudHub 2.0 apps deployed to xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[shared] or xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[private spaces]. This requirement applies only if you want to export trace data for CloudHub 2.0.
 * Enabled trace data collection for xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric] apps. This requirement applies only if you want to export trace data for Runtime Fabric.
 
@@ -43,11 +44,11 @@ Before you configure the Telemetry Exporter, ensure that you have:
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=eitherPermission]
 
 
-You can switch between the *Configurations* and *Connections* tabs to create, edit, or view data configurations and connections to third-party apps.
+You can switch between the *Configurations* and *Connections* tabs to create, edit, or view data configurations and connections to third-party observability platforms.
 
 == Manage a Connection 
 
-Anypoint Platform needs permission to send data to third-party apps. Create a connection with a third-party app, such as New Relic or Splunk, to authorize data transfers. You can configure up to 10 connections.
+Anypoint Platform needs permission to send data to third-party observability platforms. Create a connection with a third-party platform, such as New Relic or Splunk, to authorize data transfers. You can configure up to 10 connections.
 
 
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
@@ -60,11 +61,11 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPerm
 . Click *New Connection*.
 . On the *Connection Details* page, enter the following information: 
 * *Connection Name*: Name for your connection, using only alphanumeric characters and hyphens.
-* *Destination Type*: Third-party app to which you want to transfer data. 
-* *Endpoint URL*: Endpoint that enables external connections to your third-party app. The location of this endpoint depends on your app.
+* *Destination Type*: Third-party observability platform to which you want to transfer data. 
+* *Endpoint URL*: Endpoint that enables external connections to your third-party observability platform (see <<third-party-support>>). Some platforms, such as DataDog, require an OpenTelemetry collector endpoint that is enabled to translate the OpenTelemetry standard to DataDog formats.
 . Click *Next*.
-. On the *Authentication* page, enter the information needed to authenticate your app. Some apps require only access tokens, while others also require a header key.
-. Click *Test Connection* to ensure that Anypoint Platform can connect to your third-party app.
+. On the *Authentication* page, enter the information needed to authenticate your connection to the observability platform. Some platforms require only access tokens, while others also require a header key.
+. Click *Test Connection* to ensure that Anypoint Platform can connect to your third-party observability platform.
 . Click *Save Connection*. 
 +
 The new connection appears in the *Connections* tab on the *Telemetry Exporter* page.
@@ -90,7 +91,7 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPerm
 
 == Manage Configurations
 
-After you create a connection to a third-party app, you must create a configuration to specify the scope of the data to send to your third-party app. When you create a new configuration, specify a data type, business group, environment type (traces only), and destination. You can export traces and audit logs from all of your business groups or a specific business group.
+After you create a connection to your third-party observability platform, you must create a configuration to specify the scope of the data to send to the platform. When you create a new configuration, specify a data type, business group, environment type (traces only), and destination. You can export traces and audit logs from all of your business groups or a specific business group.
 
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
@@ -134,6 +135,16 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationP
 +
 A warning appears that confirms whether you want to delete the configuration. 
 . Click *Delete Configuration*. 
+
+== Errors
+
+If you receive this error, ensure that your endpoint supports OpenTelemetry:  
+
+----
+Error : validating connection request. Please check your request and try again
+----
+
+See <<third-party-support>>.
 
 == Known Issues
 
