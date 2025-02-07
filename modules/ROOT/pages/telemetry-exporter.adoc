@@ -7,7 +7,7 @@ The Telemetry Exporter enables you to export xref:access-management::audit-loggi
 
 To use the Telemetry Exporter, you must: 
 
-* Create a connection with a third-party observability platform that authorizes Anypoint Platform to share data with the platform. See also, <<third-party-support>>.
+* Create a connection by providing a third-party observability platform credential that authorizes Anypoint Platform to share data with the observability platform. See also, <<third-party-support>>.
 * Create a configuration that specifies the type of data Anypoint Platform exports and which business group and environment allows content to be exported to the connections that you configure.
 
 You can also edit and delete connections and configurations. 
