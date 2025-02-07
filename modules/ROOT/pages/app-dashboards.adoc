@@ -656,8 +656,6 @@ The average number of threads of the JVM, grouped by worker.
 
 System CPU % Utilization::
 The percentage of CPU used by all processes. This metric often aligns with the Cloudwatch System CPU % metric, but there may be different values given the timing of data aggregation for Anypoint Monitoring metrics.
-+
-include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 JVM CPU Time::
 The cumulative CPU time consumed by the JVM.
