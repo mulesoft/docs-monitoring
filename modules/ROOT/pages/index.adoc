@@ -311,7 +311,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 |xref:log-search-query-syntax.adoc[Log search]
 |Yes (single application only)
-|
+|No
 |Yes (cross-application)
 
 |xref:log-points.adoc[Log points]
@@ -326,7 +326,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 |Log Tailing
 |Yes
-|
+|Yes
 |Yes
 
 4+| *Additional Anypoint Monitoring features*
