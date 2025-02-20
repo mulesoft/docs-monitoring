@@ -184,7 +184,7 @@ include::reuse::partial$billing/pricing.adoc[tag=featureAdvLimits]
 
 include::reuse::partial$billing/pricing.adoc[tag=dataRetentionMonitoring]
 
-See <<billing>>. For complete details about pricing, contact your customer support representative. 
+For information about specific subscription tiers, see xref:performance-and-impact.adoc#data-retention-limits[Data Retention Limits]. For complete details about pricing, contact your customer support representative. 
 
 [[billing]]
 == Anypoint Platform Packages and Plans

@@ -26,6 +26,20 @@ Do not override the default JVM timezone for applications deployed to CloudHub a
 
 ====
 
+[[log-storage]]
+== Log Data Storage
+
+Storage limits depend on your subscription tier. Limits on storage apply across logs and metrics. Once the allotted storage reaches its capacity, older logs are deleted, starting from the earliest date, and the storage space returns to its original allocation.
+
+* Advanced tier: 
+** 
+
+* Titanium tier:
+** 200 GB for each Production environment core and 50 GB for each Sandbox environment core. 
+** For storing indexes of searchable logs, an additional 10% of your purchased storage, which is equal to `0.1((number of production vCores * 200) + (number of pre-production vCores *50)`
+
+//TODO: DO WE STORE LOG DATA FOR OTHER TIERS?
+
 [[log-search]]
 == Search Logs
 
