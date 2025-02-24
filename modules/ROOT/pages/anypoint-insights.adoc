@@ -66,6 +66,7 @@ For guidance, see xref:hyperforce::configure-mule-hyperforce.adoc[].
 
 * The Monitoring Viewer permission to Anypoint Monitoring and the permissions required for viewing apps and APIs (see xref:monitoring::am-permissions.adoc[])
 
+
 [[monitor-deployments]]
 == Monitor Your Deployments
 
@@ -488,19 +489,15 @@ Anypoint Monitoring charts display data in configurable date-time ranges, which 
 [[automatic-interval]]
 === Data Points in Anypoint Monitoring Charts
 
-Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. 
-
-//TBD: PROPOSAL
-Maximum granularity of the data captured in charts:
-
-* 1 minute for metrics captured within the last 7 days
-* 1 hour for metrics captured between before the last 7 days
-+
-Up to the last 30 days of metrics are collected.
-
-For example, if a chart displays data collected in the last 15 minutes, the chart contains 15 data points, one for each minute of data collection. Each data point aggregates data collected during that minute. If a chart displays the past seven days of data, each data point aggregates data collected within each four-hour period of the last seven days. 
+Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. If the units time for data in your charts are larger or smaller than you require, try narrowing or expanding the time range that your charts capture. Alternatively, you can use the <<metrics-api, Metrics API>> to aggregate data within the API's limits.
 
 //include for How Anypoint Monitoring Collects Metrics
 [[data-collection-intervals]]
 include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+2]
 
+[[metrics-api]]
+== Metrics API
+
+Use Anypoint Monitoring Metrics API to access metrics that Anypoint Monitoring exposes. The documentation for this API is available on Anypoint Exchange. 
+//TODO: See ADD_URL_TO_API_ON PROD EXCHANGE_ 
+//TODO: QAX URL (don't use): https://qax.anypoint.mulesoft.com/exchange/6046b96d-c9aa-4cb2-9b30-90a54fc01a7b/metrics-api/minor/1.0/pages/home/ 
