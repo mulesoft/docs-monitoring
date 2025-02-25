@@ -489,7 +489,7 @@ Anypoint Monitoring charts display data in configurable date-time ranges, which 
 [[automatic-interval]]
 === Data Points in Anypoint Monitoring Charts
 
-Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. If the units time for data in your charts are larger or smaller than you require, try narrowing or expanding the time range that your charts capture. Alternatively, you can use the <<metrics-api, Metrics API>> to aggregate data within the API's limits.
+Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. If the time units for data in your charts are larger or smaller than you require, try narrowing or expanding the time range that your charts capture. Alternatively, you can use the <<metrics-api, Metrics API>> to aggregate data within the API's limits.
 
 //include for How Anypoint Monitoring Collects Metrics
 [[data-collection-intervals]]
