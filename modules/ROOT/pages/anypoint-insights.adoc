@@ -507,7 +507,6 @@ Data aggregation periods depend on the age of the data:
 * Data less than or equal to 7 days old is aggregated into 1-minute segments. 
 * Data over 7 days old is aggregated into 5-minute segments. 
 
-//TODO: FILL IN TODO IN URL
 To use the API and get information about data retention, see the API documentation on Anypoint Exchange: https://anypoint.mulesoft.com/exchange/TODO_TODO
 
 //TODO: QAX URL (don't use): https://qax.anypoint.mulesoft.com/exchange/6046b96d-c9aa-4cb2-9b30-90a54fc01a7b/metrics-api/minor/1.0/pages/home/ //
