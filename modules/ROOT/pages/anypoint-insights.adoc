@@ -502,7 +502,7 @@ include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+2]
 
 Anypoint Insights uses the Metrics API to collect data for charts. You can use this API to collect metrics data for your needs. 
 
-Age-based data aggregation limits determine the intervals available for retrieving metrics data:
+Age-based data aggregation limits determine the minimum intervals available for retrieving metrics data:
 
 * Data less than or equal to 7 days old is aggregated into 1-minute segments. 
 * Data over 7 days old is aggregated into 5-minute segments. 
