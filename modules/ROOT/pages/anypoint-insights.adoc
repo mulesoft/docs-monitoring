@@ -504,8 +504,8 @@ Anypoint Insights uses Anypoint Monitoring Metrics API to collect data for chart
 
 Age-based data aggregation limits determine the minimum intervals available for retrieving metrics data:
 
-* Data less than or equal to 7 days old is available in 1-minute segments. 
-* Data over 7 days old is aggregated into 5-minute segments. 
+* Data less than or equal to 7 days old is available at a minimum of 1-minute intervals. 
+* Data over 7 days old is available at a minimum of 5-minute intervals. 
 
 To use the API and get information about data retention, see the API documentation on Anypoint Exchange: https://anypoint.mulesoft.com/exchange/TODO_TODO
 
