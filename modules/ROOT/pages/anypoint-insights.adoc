@@ -18,8 +18,6 @@ Get up to the last 30 days of metrics on latency, requests, responses, errors, M
 [[entities]]
 include::partial$include-entities.adoc[tags="entity-definition"]
 
-Anypoint Insights uses <<metrics_api, Anypoint Monitoring Metrics API>> to collect data for charts. Data aggregation and retention limits in Anypoint Insights are derived from the service that supports the Metrics API. 
-
 [[dashboard-overview]]
 //don't change order of numbers in graphic or calloutlist
 image::insights.png["Anypoint Insights UI"]
@@ -36,6 +34,8 @@ image::insights.png["Anypoint Insights UI"]
 . Selector for auto-refresh interval, displayed when auto-refresh is enabled 
 +
 {selector-all-dashboards}
+
+Anypoint Insights uses <<metrics_api, Anypoint Monitoring Metrics API>> to collect data for charts. Data aggregation and retention limits in Anypoint Insights are derived from the service that supports the Metrics API. 
 
 [[prereqs]]
 == Before You Begin
