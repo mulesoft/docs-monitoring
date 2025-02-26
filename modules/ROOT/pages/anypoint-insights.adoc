@@ -498,6 +498,15 @@ include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+2]
 [[metrics-api]]
 == Metrics API
 
-Use Anypoint Monitoring Metrics API to access metrics that Anypoint Monitoring exposes. The documentation for this API is available on Anypoint Exchange. 
-//TODO: See ADD_URL_TO_API_ON PROD EXCHANGE_ 
-//TODO: QAX URL (don't use): https://qax.anypoint.mulesoft.com/exchange/6046b96d-c9aa-4cb2-9b30-90a54fc01a7b/metrics-api/minor/1.0/pages/home/ 
+Anypoint Insights uses the Metrics API to collect data for charts. You can use this API to collect metrics data for your needs. Documentation of this API is available on Anypoint Exchange. 
+
+Data aggregation periods depends on the age of the data:
+
+* Data less than or equal to 7 days old is aggregated into 1-minute segments. 
+* Data over 7 days old is aggregated into 5-minute segments. 
+
+//TODO: FILL IN TODO IN URL
+To use the API and get information about data retention, see the API documentation on Anypoint Exchange: https://anypoint.mulesoft.com/exchange/TODO_TODO
+
+//TODO: QAX URL (don't use): https://qax.anypoint.mulesoft.com/exchange/6046b96d-c9aa-4cb2-9b30-90a54fc01a7b/metrics-api/minor/1.0/pages/home/ //
+//TODO: IF URL UNAVAILABLE, perhaps we could just put search URL https://anypoint.mulesoft.com/exchange/?search=%27Anypoint%20Monitoring%20Metrics%20API%27&show=all-org&sort=score Should be the first hit once API is up on the site.
