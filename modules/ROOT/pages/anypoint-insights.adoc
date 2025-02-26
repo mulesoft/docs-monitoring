@@ -35,7 +35,7 @@ image::insights.png["Anypoint Insights UI"]
 +
 {selector-all-dashboards}
 
-Anypoint Insights uses <<metrics_api, Anypoint Monitoring Metrics API>> to collect data for charts. Data aggregation and retention limits in Anypoint Insights are derived from the service that supports the Metrics API. 
+Anypoint Insights uses <<metrics-api, Anypoint Monitoring Metrics API>> to collect data for charts. Data aggregation and retention limits in Anypoint Insights are derived from the service that supports the Metrics API. 
 
 [[prereqs]]
 == Before You Begin
