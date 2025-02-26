@@ -15,6 +15,8 @@ Get up to the last 7 days (Advanced package) or 24 hours (Starter package) of hi
 +
 Get up to the last 30 days of metrics on latency, requests, responses, errors, Mule messages and the JVM for Mule apps, and for API implementations, data on policy violations, performance, and client apps. {download-chart-data}
 
+Anypoint Insights uses the <<metrics_api, Metrics API>> to collect data for charts. Data aggregation and retention limits in Anypoint Insights are derived from the service that supports the Metrics API. 
+
 [[entities]]
 include::partial$include-entities.adoc[tags="entity-definition"]
 
@@ -498,7 +500,7 @@ include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+2]
 [[metrics-api]]
 == Metrics API
 
-Anypoint Insights uses the Metrics API to collect data for charts. You can use this API to collect metrics data for your needs. Documentation of this API is available on Anypoint Exchange. 
+Anypoint Insights uses the Metrics API to collect data for charts. You can use this API to collect metrics data for your needs. 
 
 Data aggregation periods depends on the age of the data:
 
