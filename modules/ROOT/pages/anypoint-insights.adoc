@@ -508,6 +508,3 @@ Age-based data aggregation limits determine the minimum intervals available for 
 * Data over 7 days old is available at a minimum of 5-minute intervals. 
 
 To use the API and get information about data retention, see the API documentation on Anypoint Exchange: https://anypoint.mulesoft.com/exchange/TODO_TODO
-
-//TODO: QAX URL (don't use): https://qax.anypoint.mulesoft.com/exchange/6046b96d-c9aa-4cb2-9b30-90a54fc01a7b/metrics-api/minor/1.0/pages/home/ //
-//TODO: IF URL UNAVAILABLE, perhaps we could just put search URL https://anypoint.mulesoft.com/exchange/?search=%27Anypoint%20Monitoring%20Metrics%20API%27&show=all-org&sort=score Should be the first hit once API is up on the site.
