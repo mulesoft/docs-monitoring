@@ -256,7 +256,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-|<<note-visualizer, Anypoint Visualizer>> app network integration
+|<<note-visualizer, Anypoint Visualizer>>: *Application Network* tab for the Anypoint Visualizer app network integration 
 |No
 |No
 |Yes
@@ -349,7 +349,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |===
 
 [[note-visualizer]]
-NOTE: Anypoint Visualizer app network integration refers to an Anypoint Visualizer widget within Anypoint Monitoring. Anypoint Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
+NOTE: Anypoint Visualizer app network integration refers to features in the *Application Network* tab within Anypoint Monitoring. Anypoint Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
 
 
 == Use Cases
