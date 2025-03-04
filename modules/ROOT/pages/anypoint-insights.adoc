@@ -500,7 +500,7 @@ include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+2]
 [[metrics-api]]
 == Metrics API
 
-Anypoint Insights uses Anypoint Monitoring Metrics API to collect data for charts. You can use this API to collect metrics data for your needs. 
+Anypoint Insights uses Anypoint Monitoring Metrics API to collect data for charts. You can use this API to query data for your needs. 
 
 Age-based data aggregation limits determine the minimum intervals available for retrieving metrics data:
 
