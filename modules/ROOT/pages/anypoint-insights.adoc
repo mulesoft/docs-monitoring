@@ -507,4 +507,4 @@ Age-based data aggregation limits determine the minimum intervals available for 
 * Data less than or equal to 7 days old is available at a minimum of 1-minute intervals. 
 * Data over 7 days old is available at a minimum of 5-minute intervals. 
 
-To use the API and get information about data retention, see the API documentation on Anypoint Exchange: https://anypoint.mulesoft.com/exchange/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/metrics-api/minor/1.0/ 
+To use the API and get information about data retention, see the API documentation on Anypoint Exchange: https://anypoint.mulesoft.com/exchange/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/metrics-api/minor/1.0/[Anypoint Monitoring Metrics API]
