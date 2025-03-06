@@ -76,9 +76,6 @@ include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
 
 Monitor performance data and issues across your deployed Mule apps and APIs (_entities_), and get detailed insights on specific deployments. 
 
-//TEMP INFO: Hyperforce 12/24 (W-17225983)
-For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights remains a Beta release available in the Advanced and Titanium tiers at this time.
-
 See xref:anypoint-insights.adoc[].
 
 [[dashboards]]
