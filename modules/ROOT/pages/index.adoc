@@ -177,7 +177,7 @@ See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional
 
 //Rajesh 11/24: retain data-storage-retention
 [[data-storage-retention]]
-=== Data Storage and Retention
+== Data Storage and Retention
 
 Data storage and retention limits are determined by your pricing plan.
 include::reuse::partial$billing/pricing.adoc[tag=featureAdvLimits]
