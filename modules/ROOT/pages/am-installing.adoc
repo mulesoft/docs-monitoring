@@ -94,7 +94,7 @@ Ensure that one of the following Mule Runtime Manager agent versions is installe
 Mule deployments must be visible and managed in the Runtime Manager user interface. To ensure they appear, use the Runtime Manager user interface or the ARM REST API for new deployments.
 
 [IMPORTANT]
-Runtime Manager agent 2.7.x is compatible with all HSA flavors, including GovCloud and PCE. However, FIPS isn't certified. If you need to enable FIPS, we recommend skipping this version.
+Runtime Manager agent 2.7.x is compatible with all HSA flavors, including GovCloud and PCE. However, FIPS isn't certified. If you need to enable FIPS, skip this version.
 
 == Hardware Prerequisites
 
