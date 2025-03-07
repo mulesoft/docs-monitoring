@@ -401,6 +401,9 @@ include::partial$include-insights-charts.adoc[tag="app-detail-errors"]
 [[entity-metrics-app-jvm]]
 ==== JVM Metrics for a Mule Application
 
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-jvm"]
+
 Charts with JVM metrics are available in the *JVM* tab for a Mule app in Anypoint Insights.
 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
