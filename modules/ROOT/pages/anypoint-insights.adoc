@@ -401,6 +401,7 @@ include::partial$include-insights-charts.adoc[tag="app-detail-errors"]
 [[entity-metrics-app-jvm]]
 ==== JVM Metrics for a Mule Application
 
+//TODO: REMOVE IF/WHEN THIS NO LONGER APPLIES
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-jvm"]
 
