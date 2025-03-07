@@ -35,6 +35,8 @@ image::insights.png["Anypoint Insights UI"]
 +
 {selector-all-dashboards}
 
+Anypoint Insights uses <<metrics-api, Anypoint Monitoring Metrics API>> to query for data that appears in charts. Data aggregation and retention limits in Anypoint Insights are derived from the service that supports the Metrics API. 
+
 [[prereqs]]
 == Before You Begin
 
@@ -65,6 +67,7 @@ For guidance, see xref:hyperforce::configure-mule-hyperforce.adoc[].
 ** For information about Runtime Fabric feature support in these clouds, see xref:hyperforce::index.adoc#features-supported-on-hyperforce[Features Supported on Hyperforce].
 
 * The Monitoring Viewer permission to Anypoint Monitoring and the permissions required for viewing apps and APIs (see xref:monitoring::am-permissions.adoc[])
+
 
 [[monitor-deployments]]
 == Monitor Your Deployments
@@ -488,19 +491,20 @@ Anypoint Monitoring charts display data in configurable date-time ranges, which 
 [[automatic-interval]]
 === Data Points in Anypoint Monitoring Charts
 
-Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. 
-
-//TBD: PROPOSAL
-Maximum granularity of the data captured in charts:
-
-* 1 minute for metrics captured within the last 7 days
-* 1 hour for metrics captured between before the last 7 days
-+
-Up to the last 30 days of metrics are collected.
-
-For example, if a chart displays data collected in the last 15 minutes, the chart contains 15 data points, one for each minute of data collection. Each data point aggregates data collected during that minute. If a chart displays the past seven days of data, each data point aggregates data collected within each four-hour period of the last seven days. 
+Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. If the time units for data in your charts are larger or smaller than you require, try narrowing or expanding the time range that your charts capture. Alternatively, you can use the <<metrics-api, Metrics API>> to aggregate data within the API's limits.
 
 //include for How Anypoint Monitoring Collects Metrics
 [[data-collection-intervals]]
 include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+2]
 
+[[metrics-api]]
+== Metrics API
+
+Anypoint Insights uses Anypoint Monitoring Metrics API to submit queries for data used in charts. You can use this API to query data for your needs. 
+
+Age-based data aggregation limits determine the minimum intervals available for retrieving metrics data:
+
+* Data less than or equal to 7 days old is available at a minimum of 1-minute intervals. 
+* Data over 7 days old is available at a minimum of 5-minute intervals. 
+
+To use the API and get information about data retention, see the API documentation on Anypoint Exchange: https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/metrics-api/[Anypoint Monitoring Metrics API]
