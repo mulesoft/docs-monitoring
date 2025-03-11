@@ -94,7 +94,7 @@ Ensure that one of the following Mule Runtime Manager agent versions is installe
 Mule deployments must be visible and managed in the Runtime Manager user interface. To ensure they appear, use the Runtime Manager user interface or the ARM REST API for new deployments.
 
 [IMPORTANT]
-FIPS isn't certified in Runtime Manager agent 2.7.x. If you need to enable FIPS, skip this version.
+FIPS isn't certified in xref:release-notes::runtime-manager-agent/runtime-manager-agent-2.7.x-release-notes.adoc#2-7-0[Runtime Manager agent 2.7.x]. If you need to enable FIPS, skip this version.
 
 == Hardware Prerequisites
 
