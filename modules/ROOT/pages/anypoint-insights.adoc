@@ -1,5 +1,5 @@
 = Monitoring Metrics from Anypoint Insights
-:page-notice-banner-message: For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights remains a Beta release available in the Advanced and Titanium tiers at this time.
+:page-notice-banner-message: For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights is a Beta release available to all subscription tiers.
 :selector-all-dashboards: This selector is available to all Insights dashboards.
 :download-chart-data: You can download most chart data to CSV or XSL.
 
@@ -378,6 +378,7 @@ include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tag="app-detail-overview"]
 
+
 [[entity-metrics-app-requests]]
 ==== Request Metrics for a Mule Application
 
@@ -398,6 +399,10 @@ include::partial$include-insights-charts.adoc[tag="app-detail-errors"]
 
 [[entity-metrics-app-jvm]]
 ==== JVM Metrics for a Mule Application
+
+//TODO: REMOVE IF/WHEN THIS NO LONGER APPLIES
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-jvm"]
 
 Charts with JVM metrics are available in the *JVM* tab for a Mule app in Anypoint Insights.
 
