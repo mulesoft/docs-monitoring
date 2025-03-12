@@ -71,12 +71,10 @@ For more information about MuleSoft Government Cloud and Anypoint Platform Priva
 
 [[insights]]
 === Anypoint Insights
-//feature tier (for h2-h4 headings):
-include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
 
 Monitor performance data and issues across your deployed Mule apps and APIs (_entities_), and get detailed insights on specific deployments. 
 
-//TEMP INFO: Hyperforce 12/24 (W-17225983)
+//TEMP INFO: Hyperforce 12/24 (W-17225983) & Beta all tiers EU US March 2025
 For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights is a Beta release available to all <<billing, subscription tiers>>.
 See xref:anypoint-insights.adoc[].
 
