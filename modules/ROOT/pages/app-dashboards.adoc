@@ -233,8 +233,6 @@ The average response time of outbound requests. If a Mule app has more than one 
 
 JVM - CPU % Utilization::
 The average percentage of CPU used by the JVM, grouped by worker. The JVM used in this chart is the Mule JVM process. The calculation for CPU utilization is relative to the physical server on which Mule is deployed. For example, in RTF, the resource usage indicates the JVM use with respect to the entire server, and not with respect to the pod maximum CPU allocation.
-+
-include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 JVM - Heap Used::
 The average amount of heap memory utilized by the JVM, grouped by worker. The JVM used in this chart is the Mule JVM process.
@@ -658,8 +656,6 @@ The average number of threads of the JVM, grouped by worker.
 
 System CPU % Utilization::
 The percentage of CPU used by all processes. This metric often aligns with the Cloudwatch System CPU % metric, but there may be different values given the timing of data aggregation for Anypoint Monitoring metrics.
-+
-include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 JVM CPU Time::
 The cumulative CPU time consumed by the JVM.
@@ -705,6 +701,7 @@ include::partial$average-response-time.adoc[]
 == How Endpoint and Operation Use Metrics Are Gathered
 
 include::partial$endpoint-operation-metrics.adoc[]
+
 == See Also
 
 * xref:dashboard-custom-config.adoc[Configuring Custom Dashboards and Charts]

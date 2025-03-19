@@ -71,14 +71,11 @@ For more information about MuleSoft Government Cloud and Anypoint Platform Priva
 
 [[insights]]
 === Anypoint Insights
-//feature tier (for h2-h4 headings):
-include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
 
 Monitor performance data and issues across your deployed Mule apps and APIs (_entities_), and get detailed insights on specific deployments. 
 
-//TEMP INFO: Hyperforce 12/24 (W-17225983)
-For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights remains a Beta release available in the Advanced and Titanium tiers at this time.
-
+//TEMP INFO: Hyperforce 12/24 (W-17225983) & Beta all tiers EU US March 2025
+For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights is a Beta release available to all <<billing, subscription tiers>>.
 See xref:anypoint-insights.adoc[].
 
 [[dashboards]]
@@ -177,7 +174,7 @@ See xref:api-functional-monitoring::afm-in-anypoint-platform.adoc[API Functional
 
 //Rajesh 11/24: retain data-storage-retention
 [[data-storage-retention]]
-=== Data Storage and Retention
+== Data Storage and Retention
 
 Data storage and retention limits are determined by your pricing plan.
 include::reuse::partial$billing/pricing.adoc[tag=featureAdvLimits]
@@ -198,7 +195,7 @@ Feature availability in Anypoint Monitoring depends on the tier of your Anypoint
 === Anypoint Monitoring Features for Usage-Based Packages
 
 //intro (shared)
-include::partial$shared-general-info.adoc[tag=am-intro]
+include::partial$shared-general-info.adoc[tag=intro-am]
 
 * *Anypoint Integration Starter* package is available to all Anypoint Platform regions.
 * *Anypoint Integration Advanced* package is available in the https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] regions only at this time.
@@ -212,8 +209,6 @@ include::reuse::partial$billing/pricing.adoc[tag=monitoringTable]
 [[plans-legacy]]
 === Anypoint Monitoring Features for Legacy Core-Based Plans
 
-//intro (shared)
-include::partial$shared-general-info.adoc[tag=am-intro]
 Core-based subscriptions are based on vCore allotments instead of usage. All organizations receive fundamental monitoring capabilities with their subscriptions. However, customers subscribing at the Titanium tier receive greater storage, guaranteed resources, and advanced capabilities that allow for greater control and flexibility.
 
 If your organization changes its subscription model from a Titanium to a Gold or Platinum subscription, ensure you have preserved your logs outside of Anypoint Platform. Within an hour of changing subscription models, MuleSoft clears the storage that formerly kept log data.
@@ -258,7 +253,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-|<<note-visualizer, Anypoint Visualizer>> app network integration
+|<<note-visualizer, Anypoint Visualizer>>: *Application Network* tab for the Anypoint Visualizer app network integration 
 |No
 |No
 |Yes
@@ -313,7 +308,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 |xref:log-search-query-syntax.adoc[Log search]
 |Yes (single application only)
-|
+|No
 |Yes (cross-application)
 
 |xref:log-points.adoc[Log points]
@@ -328,7 +323,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 |Log Tailing
 |Yes
-|
+|Yes
 |Yes
 
 4+| *Additional Anypoint Monitoring features*
@@ -351,7 +346,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |===
 
 [[note-visualizer]]
-NOTE: Anypoint Visualizer app network integration refers to an Anypoint Visualizer widget within Anypoint Monitoring. Anypoint Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
+NOTE: Anypoint Visualizer app network integration refers to features in the *Application Network* tab within Anypoint Monitoring. Anypoint Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
 
 
 == Use Cases
