@@ -77,14 +77,6 @@ Outbound request count total, which you can group by response time, protocol, or
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
-//TODO: requests -> Requests (SATHISH)
-Top Slowest Requests by Path::
-The 20 slowest endpoints in this app
-+
-The requests must take more than 25ms. If no data is available, then no requests take more than 25ms to process.
-+
-include::partial$include-insights-charts.adoc[tag="download-as"]
-
 Request Latency by Endpoint::
 Inbound or outbound latency, in milliseconds, by endpoint
 +
