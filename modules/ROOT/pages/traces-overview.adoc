@@ -1,4 +1,4 @@
-= Trace Requests Across Apps and APIs 
+= Tracing Requests Across Apps and APIs 
 
 Observe requests for apps and APIs as they travel across services with Traces in Anypoint Monitoring. _Traces_ describe the journey that requests make throughout their service pipelines. 
 //TODO: WHAT DOES "that is available in Anypoint Platform" mean exactly?
@@ -26,6 +26,10 @@ include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
 [NOTE]
 Trace data collection is not supported on apps that are deployed to CloudHub 1.0.
+
+== Sampling Rate for Traces
+
+Trace data is based on a sampling rate of ten percent (10%). For example, 10% of requests to a given Mule app receive corresponding traces within Anypoint Monitoring. 
 
 //Sara - I would consider making this access topic a link in all the subsequent topics. I don't want to mess up anything you have going on here, so I won't change it but I think it would be nice!
 == Access Traces
