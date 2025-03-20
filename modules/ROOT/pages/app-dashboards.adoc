@@ -703,7 +703,7 @@ The chart on the *Application Network* tab shows the xref:visualizer::troublesho
 You can click *Metrics* to see statistics, such as average response time and failures, related to the app you selected. For more information about metrics in Anypoint Visualizer, see xref:visualizer::troubleshooting-visualization.adoc#choosing-your-metric[Choosing Your Metric].
 
 [[endpoint-operation-metrics]]
-==  Endpoint and Operation Metrics Collection - Other Group
+==  Endpoint and Operation Metrics Collection (Other Group)
 
 include::partial$endpoint-operation-metrics.adoc[]
 

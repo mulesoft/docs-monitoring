@@ -194,7 +194,7 @@ This metric is not supported for APIs deployed through Flex Gateway.
 For information about chart metric collection, including the chart group *Other*, see xref:app-dashboards.adoc#endpoint-operation-metrics[How Endpoint and Operation Use Metrics Are Gathered].
 
 [[endpoint-operation-metrics]]
-==  Endpoint and Operation Metrics Collection - Other Group
+==  Endpoint and Operation Metrics Collection (Other Group)
 
 include::partial$endpoint-operation-metrics.adoc[]
 
