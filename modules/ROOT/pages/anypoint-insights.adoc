@@ -2,9 +2,6 @@
 :selector-all-dashboards: This selector is available to all Insights dashboards.
 :download-chart-data: You can download most chart data to CSV or XSL.
 
-//feature tier:
-include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
-
 Monitor performance data and issues across your deployed Mule apps and API implementations (_entities_) with Anypoint Insights, in Anypoint Monitoring: 
 
 * Check metrics across multiple Mule apps and API implementations.
