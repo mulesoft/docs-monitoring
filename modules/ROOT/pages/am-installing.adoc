@@ -14,20 +14,22 @@ To use Anypoint Monitoring across a server group or cluster, you must install An
 
 Before installing the Anypoint Monitoring agent, set up and run a Mule runtime engine instance on your server. For guidance, see xref:mule-runtime::mule-standalone.adoc[].
 
-If you have an outbound firewall, open port 443.
+If you have an outbound firewall, open port 443 and 8443.
 
 Outbound connections are made to the following endpoints:
 
 * US Control Plane
+** us1.ingest.mulesoft.com:8443 (only for am.zip versions 3.x and newer)
 ** data-authenticator.anypoint.mulesoft.com:443
-** dias-ingestor-router.us-east-1.prod.cloudhub.io:443
+** dias-ingestor-router.us-east-1.prod.cloudhub.io:443 (only for am.zip versions 2.x and older)
 ** s3.amazonaws.com:443
 * US-GOV Control Plane
 ** data-authenticator.gov.anypoint.mulesoft.com:443
 ** dias-ingestor-router.us-gov-west-1.gprod.msap.io:443
 * EU Control Plane
+** eu1.ingest.mulesoft.com:8443 (only for am.zip versions 3.x and newer)
 ** data-authenticator.eu1.anypoint.mulesoft.com:443
-** dias-ingestor-router.eu-central-1.prod-eu.msap.io:443
+** dias-ingestor-router.eu-central-1.prod-eu.msap.io:443 (only for am.zip versions 2.x and older)
 ** s3.eu-central-1.amazonaws.com:443
 
 
@@ -36,6 +38,7 @@ Outbound connections are made to the following endpoints:
 [%header,cols="10a,50a,10a"]
 |===
 |Region |Name |Port
+|*US*|us1.ingest.mulesoft.com | 8443
 |*US*|anypoint.mulesoft.com | 443
 |*US*|mule-manager.anypoint.mulesoft.com | 443
 |*US*|runtime-manager.anypoint.mulesoft.com | 443
@@ -48,6 +51,7 @@ Outbound connections are made to the following endpoints:
 |*US-GOV*|gov.anypoint.mulesoft.com | 443
 |*US-GOV*|exchange-files.gov.anypoint.mulesoft.com | 443
 |*US-GOV*|exchange2-asset-manager-kgprod.s3.us-gov-west-1.amazonaws.com | 443
+|*EU*|eu1.ingest.mulesoft.com | 8443
 |*EU*|eu1.anypoint.mulesoft.com | 443
 |*EU*|mule-manager.eu1.anypoint.mulesoft.com | 443
 |*EU*|runtime-manager.eu1.anypoint.mulesoft.com | 443
@@ -61,10 +65,9 @@ Outbound connections are made to the following endpoints:
 
 Ensure that Anypoint Monitoring is installed on a server running one of the following operating systems:
 
-* CentOS 7
-* RedHat Enterprise Linux 7
-* Ubuntu 16.04 and 18.04
-* Windows Server 2016, Windows Server 2019
+* RedHat Enterprise Linux 9
+* Ubuntu 20.04
+* Windows Server 2019
 
 To install the agent, you must have root or administrative privileges.
 
@@ -91,10 +94,10 @@ Ensure that one of the following Mule Runtime Manager agent versions is installe
 * 1.11.x
 * 1.10.0
 
-Mule deployments must be visible and managed in the Runtime Manager user interface. To ensure they appear, use the Runtime Manager user interface or the ARM REST API for new deployments.
+[NOTE]
+The new Anypoint Monitoring Agent version 3.x and higher require Mule Runtime Manager Agent version 2.7.x or higher.
 
-[IMPORTANT]
-FIPS isn't certified in xref:release-notes::runtime-manager-agent/runtime-manager-agent-2.7.x-release-notes.adoc#2-7-0[Runtime Manager agent 2.7.x]. If you need to enable FIPS, skip this version.
+Mule deployments must be visible and managed in the Runtime Manager user interface. To ensure they appear, use the Runtime Manager user interface or the ARM REST API for new deployments.
 
 == Hardware Prerequisites
 
@@ -121,6 +124,25 @@ Mule runtime engine must be installed and running.
 * When you install the Anypoint Monitoring agent on a hybrid server in a server group, use Runtime Manager to restart the server to enable Anypoint Monitoring to begin collecting metrics.
 
 == SOCKS5 Proxy Setting
+For am.zip versions 3.x and newer:
+
+The latest version of the Anypoint Monitoring Agent now supports HTTP/S protocol proxy on Linux servers (only).
+If you proxy your monitoring data as it leaves the data center, the proxy must support the HTTP/S protocol,
+and you must configure the Anypoint Monitoring agent to communicate through the proxy.
+
+To configure the agent for the HTTP/S proxy:
+
+. Set up Runtime Manager with a proxy. See xref:runtime-manager::servers-create.adoc[Create a Server in Runtime Manager].
+
+. Install the Anypoint Monitoring agent and use the `-p` option. For example, on a Linux server, at the command line, enter:
++
+----
+$ ./install -p https://user:password@https-server:1080
+----
++
+If the user or password of the SOCKS5 proxy configuration contains URI reserved characters, it must be percent-encoded following the encoding rules of RFC 3986.
+
+Below section is for am.zip versions 2.x and older:
 
 If you proxy your monitoring data as it leaves the data center, the proxy must support the SOCKS5 protocol, and you must configure the Anypoint Monitoring agent to communicate through the proxy.
 
@@ -156,9 +178,12 @@ If you do not see data in the charts, verify that Anypoint Monitoring is able to
 If necessary, you can add the endpoint to an allowlist for outbound firewall rules so your server allows connections. The endpoints to add to the allowlist are listed in xref:am-installing#before-you-begin[Before You Begin].
 
 . Log into the server on which the Anypoint Monitoring agent is running.
-. Open the log file for the data-transfer agent. The log file is in this path: `./am/filebeat/logs`
+. Open the log file for the data-transfer agent. For Anypoint Monitoring Agent versions 2.x and older,
+the log file is in this path: `./am/filebeat/logs`. For Anypoint Monitoring Agent versions 3.x and newer, Linux only,
+the log file is in the `./am/logs` path
 [NOTE]
-If you are using Linux and the Anypoint Monitoring agent is running as a service, the log file is in the `/var/log/filebeat` directory.
+For Anypoint Monitoring versions 3.x and newer, if you are using Linux and the Anypoint Monitoring agent is running as a service, the log file is in the `/var/log/otel-collector` directory.
+For Anypoint Monitoring versions 2.x and older, if you are using Linux and the Anypoint Monitoring agent is running as a service, the log file is in the `/var/log/filebeat` directory.
 
 . Look for entries that mention connection failures or connection retries.
 
@@ -183,7 +208,7 @@ Enabling monitoring can impact CPU utilization and memory utilization depending 
 
 == Troubleshooting
 
-- If you find connection failure or retry entries, ensure that port 443 in your outbound firewall is open.
+- If you find connection failure or retry entries, ensure that port 8443 and 443 in your outbound firewall are open.
 - If you do not find connection failure or retry entries, contact MuleSoft technical support.
 
 == Disable Log Forwarding for Hybrid Runtime Servers
