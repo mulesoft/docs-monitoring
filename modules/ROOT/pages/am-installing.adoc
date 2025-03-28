@@ -32,8 +32,8 @@ Outbound connections are made to the following endpoints:
 *** s3.amazonaws.com:443
 
 * US-GOV Control Plane
-** dias-ingestor-router.us-east-1.prod.cloudhub.io:443
-** data-authenticator.anypoint.mulesoft.com:443
+** data-authenticator.gov.anypoint.mulesoft.com:443
+** dias-ingestor-router.us-gov-west-1.gprod.msap.io:443
 
 * EU Control Plane
 ** 3.x agent:
