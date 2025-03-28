@@ -24,7 +24,6 @@ Outbound connections are made to the following endpoints:
 * US Control Plane
 ** 3.x agents: 
 *** us1.ingest.mulesoft.com:8443 
-*** data-authenticator.anypoint.mulesoft.com:443
 *** s3.amazonaws.com:443
 ** 2.x agents:
 *** dias-ingestor-router.us-east-1.prod.cloudhub.io:443
