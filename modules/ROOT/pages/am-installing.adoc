@@ -81,7 +81,7 @@ Ensure that Anypoint Monitoring is installed on a server running one of the foll
 
 * RedHat Enterprise Linux 9
 * Ubuntu 20.04
-* Windows Server 2019 (not currently available for 3.x agents)
+* Windows Server 2019 (not currently supported for the 3.x agent)
 
 To install the agent, you must have root or administrative privileges.
 
