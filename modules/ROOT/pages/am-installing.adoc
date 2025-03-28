@@ -91,11 +91,11 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 == Supported Versions of Mule Runtime Manager Agent
 
-In the Mule runtime engine on your server, install a supported version of xref:runtime-manager::runtime-manager-agent.adoc[Anypoint Runtime Manager agent]. 
-
-Anypoint Monitoring agent version 3.x and higher requires Mule Runtime Manager Agent version 2.7.1 or higher. 
+You must install a supported version of the Anypoint Runtime Manager agent in the Mule runtime engine running on the server. For more information, see xref:runtime-manager::runtime-manager-agent.adoc[].
 
 * 2.7.x
++
+Anypoint Monitoring agent version 3.x and higher requires Mule Runtime Manager Agent version 2.7.1 or higher. 
 * 2.6.x
 * 2.5.x
 * 2.4.x
