@@ -95,7 +95,7 @@ You must install a supported version of the Anypoint Runtime Manager agent in th
 
 * 2.7.x
 +
-Anypoint Monitoring agent version 3.x and higher requires Mule Runtime Manager Agent version 2.7.1 or higher. 
+Anypoint Monitoring agent version 3.x and higher requires Mule Runtime Manager agent version 2.7.1 or higher. 
 * 2.6.x
 * 2.5.x
 * 2.4.x
@@ -143,7 +143,7 @@ If you proxy your monitoring data as it leaves the data center, you must configu
 
 The configuration and supported protocol depends on the version of the agent:
 
-* <<v3, Version 3.x and later>>: Supports the HTTP/HTTPS protocol and does not support SOCKS5 
+* <<v3, Version 3.x>>: Supports the HTTP/HTTPS protocol and does not support SOCKS5 
 * <<v2, Version 2.x>>: Supports the SOCKS5 protocol and does not support HTTP/HTTPS
 
 See also, <<os-support>>.
