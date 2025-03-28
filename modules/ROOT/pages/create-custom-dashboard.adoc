@@ -5,7 +5,7 @@ Create a custom dashboard to configure the metrics and data points you want to v
 
 To create a custom dashboard:
 
-. In *Anypoint Monitoring*, click *Custom dashboards* in the left navigation menu.
+. In *Anypoint Monitoring*, click *Custom dashboards* from the sidebar. 
 . Click *+ New Dashboard*.
 . Add and configure a chart for your dashboard.
 . Click *Save Changes*.
