@@ -14,7 +14,7 @@ To use Anypoint Monitoring across a server group or cluster, you must install An
 
 Before installing the Anypoint Monitoring agent, set up and run a Mule runtime engine instance on your server. For guidance, see xref:mule-runtime::mule-standalone.adoc[].
 
-If you have an outbound firewall, open one of these ports based on the `am.zip` version:
+If you have an outbound firewall, open ports based on the `am.zip` version:
 
 * 443 for all agent versions 
 * 8443 for agent versions 3.x and later
