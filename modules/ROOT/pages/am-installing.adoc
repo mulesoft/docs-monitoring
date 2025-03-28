@@ -138,15 +138,19 @@ Mule runtime engine must be installed and running.
 
 == Proxy Settings
 
-If you proxy your monitoring data as it leaves the data center, you must configure the Anypoint Monitoring agent to communicate through the proxy. The configuration and the supported protocol depends on the version of the agent:
+If you proxy your monitoring data as it leaves the data center, you must configure the Anypoint Monitoring agent to communicate through the proxy. 
+
+The configuration and supported protocol depends on the version of the agent:
 
 * <<v3, Version 3.x and later>>: Supports the HTTP/HTTPS protocol and does not support SOCKS5 
 * <<v2, Version 2.x>>: Supports the SOCKS5 protocol and does not support HTTP/HTTPS
 
+See also, <<os-support>>.
+
 [[v3]]
 === Configure Proxy Communication for a 3.x Agent (HTTP/HTTPS Protocol)
 
-If you proxy your monitoring data as it leaves the data center and you're using a 3.x version on a <<os-support, supported operating system>>, the proxy must support the HTTP/HTTPS protocol, and you must configure the Anypoint Monitoring agent to communicate through the proxy.
+If you proxy your monitoring data as it leaves the data center and you're using a 3.x version, the proxy must support the HTTP/HTTPS protocol, and you must configure the Anypoint Monitoring agent to communicate through the proxy.
 
 To configure the agent for an HTTP or HTTPS proxy:
 
