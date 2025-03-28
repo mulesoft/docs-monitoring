@@ -127,7 +127,9 @@ Ensure that the server has the minimum hardware requirements for Anypoint Monito
 . Meet the prerequisites in <<prereqs>>:
 +
 Mule runtime engine must be installed and running.
-. Follow the steps in xref:monitoring-settings-page.adoc[] to download the agent's `am.zip` file and install the agent from *Settings*, in Anypoint Monitoring.
+. Follow the steps in xref:monitoring-settings-page.adoc[] to download the _latest version_ of the agent's `am.zip` file and install the agent from *Settings*, in Anypoint Monitoring.
++
+To install an earlier version, such as a 2.x version, you must download the agent's zip file from the *Anypoint Monitoring* tab in your customer portal. 
 
 * When you extract the `am.zip` file, a folder called `am` is created in the location where you extracted the ZIP.
 * The installation script asks if you want Anypoint Monitoring installed as a service.
