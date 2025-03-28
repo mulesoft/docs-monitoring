@@ -178,7 +178,7 @@ Charts in Anypoint Insights provide metrics on a specific environment (such as P
 
 To change current or default environment:
 
-. Open Anypoint Monitoring. 
+. Open Anypoint Insights from Anypoint Monitoring. 
 . Set a new environment:
 
 * To select an environment without changing the default, use the environment selector in Anypoint Monitoring, for example:
@@ -213,7 +213,7 @@ image::insights-business-group-change.png["Business group selection options"]
 
 To change the business-group setting: 
 
-. Open Anypoint Monitoring. 
+. Open Anypoint Insights from Anypoint Monitoring. 
 . Set a new business group:
 
 * To select a business group without changing the default, use the business-group selector in Anypoint Insights. 
