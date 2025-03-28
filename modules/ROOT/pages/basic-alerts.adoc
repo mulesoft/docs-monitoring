@@ -28,7 +28,7 @@ When you create a basic alert, you can select a source for the basic alert, conf
 To create a basic alert:
 
 . Navigate to Anypoint Monitoring.
-. Click the *Alerts* tab.
+. From the sidebar, click *Alerts*.
 . Click the *+ New Alerts* button.
 . Click *Basic alert*.
 . In the *Add basic alert* window, enter the information required to create your basic alert:
@@ -327,6 +327,7 @@ Available values are `OK` or `Alerting`.
 |`${api}`| Name of the API that triggers the alert
 |`${comparison}`| Above, above or equal, equal, below or equal, below
 |`${condition}`|Metric for which the alert is triggered
+|`${dashboardLink}`|URL that points to the built-in dashboard for the app or API that triggers the alert
 |`${environment}`|Name of the environment in which the resource is deployed
 |`${memberName}`|Name of the server within the server group or cluster
 |`${operator}` |An operator, such as `< > =`

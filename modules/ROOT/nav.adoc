@@ -28,7 +28,6 @@
  ** xref:basic-alerts.adoc[Setting Up Basic Alerts]
  ** xref:advanced-alerts.adoc[Setting Up Advanced Alerts]
 * xref:logs.adoc[Using Logs]
- ** xref:log-tokenization.adoc[]
  ** xref:log-points.adoc[]
  ** xref:raw-data.adoc[]
  ** xref:log-search-query-syntax.adoc[Log Search Query Syntax]

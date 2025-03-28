@@ -1,10 +1,7 @@
 = Monitoring Metrics from Anypoint Insights
-:page-notice-banner-message: For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights remains a Beta release available in the Advanced and Titanium tiers at this time.
+:page-notice-banner-message: For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights is a Beta release available to all subscription tiers.
 :selector-all-dashboards: This selector is available to all Insights dashboards.
 :download-chart-data: You can download most chart data to CSV or XSL.
-
-//feature tier:
-include::reuse::partial$billing/pricing.adoc[tag=featureUsageTitReqMonitoring]
 
 Monitor performance data and issues across your deployed Mule apps and API implementations (_entities_) with Anypoint Insights, in Anypoint Monitoring: 
 
@@ -34,6 +31,8 @@ image::insights.png["Anypoint Insights UI"]
 . Selector for auto-refresh interval, displayed when auto-refresh is enabled 
 +
 {selector-all-dashboards}
+
+Anypoint Insights uses <<metrics-api, Anypoint Monitoring Metrics API>> to query for data that appears in charts. Data aggregation and retention limits in Anypoint Insights are derived from the service that supports the Metrics API. 
 
 [[prereqs]]
 == Before You Begin
@@ -65,6 +64,7 @@ For guidance, see xref:hyperforce::configure-mule-hyperforce.adoc[].
 ** For information about Runtime Fabric feature support in these clouds, see xref:hyperforce::index.adoc#features-supported-on-hyperforce[Features Supported on Hyperforce].
 
 * The Monitoring Viewer permission to Anypoint Monitoring and the permissions required for viewing apps and APIs (see xref:monitoring::am-permissions.adoc[])
+
 
 [[monitor-deployments]]
 == Monitor Your Deployments
@@ -179,7 +179,7 @@ Charts in Anypoint Insights provide metrics on a specific environment (such as P
 
 To change current or default environment:
 
-. Open Anypoint Monitoring. 
+. Open Anypoint Insights from Anypoint Monitoring. 
 . Set a new environment:
 
 * To select an environment without changing the default, use the environment selector in Anypoint Monitoring, for example:
@@ -214,7 +214,7 @@ image::insights-business-group-change.png["Business group selection options"]
 
 To change the business-group setting: 
 
-. Open Anypoint Monitoring. 
+. Open Anypoint Insights from Anypoint Monitoring. 
 . Set a new business group:
 
 * To select a business group without changing the default, use the business-group selector in Anypoint Insights. 
@@ -399,6 +399,10 @@ include::partial$include-insights-charts.adoc[tag="app-detail-errors"]
 [[entity-metrics-app-jvm]]
 ==== JVM Metrics for a Mule Application
 
+//TODO: REMOVE IF/WHEN THIS NO LONGER APPLIES
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-jvm"]
+
 Charts with JVM metrics are available in the *JVM* tab for a Mule app in Anypoint Insights.
 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
@@ -488,19 +492,20 @@ Anypoint Monitoring charts display data in configurable date-time ranges, which 
 [[automatic-interval]]
 === Data Points in Anypoint Monitoring Charts
 
-Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. 
-
-//TBD: PROPOSAL
-Maximum granularity of the data captured in charts:
-
-* 1 minute for metrics captured within the last 7 days
-* 1 hour for metrics captured between before the last 7 days
-+
-Up to the last 30 days of metrics are collected.
-
-For example, if a chart displays data collected in the last 15 minutes, the chart contains 15 data points, one for each minute of data collection. Each data point aggregates data collected during that minute. If a chart displays the past seven days of data, each data point aggregates data collected within each four-hour period of the last seven days. 
+Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. If the time units for data in your charts are larger or smaller than you require, try narrowing or expanding the time range that your charts capture. Alternatively, you can use the <<metrics-api, Metrics API>> to aggregate data within the API's limits.
 
 //include for How Anypoint Monitoring Collects Metrics
 [[data-collection-intervals]]
 include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+2]
 
+[[metrics-api]]
+== Metrics API
+
+Anypoint Insights uses Anypoint Monitoring Metrics API to submit queries for data used in charts. You can use this API to query data for your needs. 
+
+Age-based data aggregation limits determine the minimum intervals available for retrieving metrics data:
+
+* Data less than or equal to 7 days old is available at a minimum of 1-minute intervals. 
+* Data over 7 days old is available at a minimum of 5-minute intervals. 
+
+To use the API and get information about data retention, see the API documentation on Anypoint Exchange: https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/metrics-api/[Anypoint Monitoring Metrics API]

@@ -23,6 +23,7 @@ Built-in and custom dashboards are available from Anypoint Monitoring. You can v
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
+. From the sidebar, click *Built-in dashboards*. 
 . Select the *Environment* and *Resource name* for the app or API to view the corresponding dashboard.
 . Click *View*. +
 The built-in dashboard for the application or API is displayed.
@@ -207,8 +208,23 @@ The chart on the *Application Network* tab shows the xref:visualizer::troublesho
 include::reuse::partial$billing/pricing.adoc[tag=appNetworkTabAvailability]
 |===
 
+== Chart Reference
+
+Anypoint Monitoring provides charts in these built-in dashboards:
+
+* <<Overview>>
+* <<inbound-charts>>
+* <<outbound-charts>>
+* <<flows-charts>>
+* <<connectors-charts>>
+* <<performance-charts>>
+* <<failures-charts>>
+* <<jvm-charts>>
+* <<infrastructure-charts>>
+* <<custom-metrics-charts>>
+
 [[overview-charts]]
-== Overview
+=== Overview 
 
 The following charts appear on the *Overview* dashboard:
 
@@ -233,8 +249,6 @@ The average response time of outbound requests. If a Mule app has more than one 
 
 JVM - CPU % Utilization::
 The average percentage of CPU used by the JVM, grouped by worker. The JVM used in this chart is the Mule JVM process. The calculation for CPU utilization is relative to the physical server on which Mule is deployed. For example, in RTF, the resource usage indicates the JVM use with respect to the entire server, and not with respect to the pod maximum CPU allocation.
-+
-include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 JVM - Heap Used::
 The average amount of heap memory utilized by the JVM, grouped by worker. The JVM used in this chart is the Mule JVM process.
@@ -243,7 +257,7 @@ JVM - Thread Count::
 The average number of threads of the JVM, grouped by worker. The JVM used in this chart is the Mule JVM process.
 
 [[inbound-charts]]
-== Inbound
+=== Inbound
 
 Inbound metrics are retained for 24 hours.
 The following charts appear on the *Inbound* dashboard:
@@ -288,7 +302,7 @@ The sum of inbound requests, grouped by remote hosts (endpoints).
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 [[outbound-charts]]
-== Outbound
+=== Outbound
 
 The following charts appear on the *Outbound* dashboard:
 
@@ -326,7 +340,7 @@ Outbound - Endpoints::
 The sum of outbound requests for the selected time period, grouped by remote hosts (endpoints). For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
 
 [[flows-charts]]
-== Flows
+=== Flows
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
@@ -387,7 +401,7 @@ The sum of outbound requests whose response time is greater than 1000 ms, groupe
 // we need name changes for the last 7 charts.
 
 [[connectors-charts]]
-== Connectors
+=== Connectors
 
 include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
 
@@ -499,7 +513,7 @@ Other Connector Failures::
 The average number of requests failures of connectors of type `other`.
 
 [[performance-charts]]
-== Performance
+=== Performance
 
 The following charts appear on the *Performance* dashboard:
 
@@ -533,7 +547,7 @@ Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)::
 The response time of the 99th, 90th, 75th, and 50th percentile of outbound requests.
 
 [[failures-charts]]
-== Failures
+=== Failures
 
 _Inbound failed requests_ occur when there are exceptions in Mule flows. In Mule 3 versions, these requests prompt 400- and 500-errors.
 
@@ -574,7 +588,7 @@ Outbound - Total Failed Requests by HTTP Endpoint::
 The sum of failed outbound requests, grouped by endpoint.
 
 [[jvm-charts]]
-== JVM
+=== JVM
 
 Anypoint Monitoring collects JVM metrics based on the JVM CPU and not the system CPU. As such, CPU metrics found in Cloudwatch reports are higher than JVM metrics in Anypoint Monitoring.
 
@@ -637,7 +651,7 @@ The amount of virtual memory guaranteed to be available to the running process, 
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 [[infrastructure-charts]]
-== Infrastructure
+=== Infrastructure
 
 The following charts appear on the *Infrastructure* dashboard:
 
@@ -658,8 +672,6 @@ The average number of threads of the JVM, grouped by worker.
 
 System CPU % Utilization::
 The percentage of CPU used by all processes. This metric often aligns with the Cloudwatch System CPU % metric, but there may be different values given the timing of data aggregation for Anypoint Monitoring metrics.
-+
-include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 JVM CPU Time::
 The cumulative CPU time consumed by the JVM.
@@ -672,7 +684,7 @@ The amount of memory the system is swapping, grouped by worker in automatic inte
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
 
 [[custom-metrics-charts]]
-== Custom Metrics
+=== Custom Metrics
 
 include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
 
@@ -691,6 +703,11 @@ The chart on the *Application Network* tab shows the xref:visualizer::troublesho
 
 You can click *Metrics* to see statistics, such as average response time and failures, related to the app you selected. For more information about metrics in Anypoint Visualizer, see xref:visualizer::troubleshooting-visualization.adoc#choosing-your-metric[Choosing Your Metric].
 
+[[endpoint-operation-metrics]]
+==  Endpoint and Operation Metrics Collection (Other Group)
+
+include::partial$endpoint-operation-metrics.adoc[]
+
 [[automatic-interval]]
 == How Data is Aggregated in Intervals
 
@@ -701,10 +718,7 @@ include::partial$data-aggregation.adoc[]
 
 include::partial$average-response-time.adoc[]
 
-[[endpoint-operation-metrics]]
-== How Endpoint and Operation Use Metrics Are Gathered
 
-include::partial$endpoint-operation-metrics.adoc[]
 == See Also
 
 * xref:dashboard-custom-config.adoc[Configuring Custom Dashboards and Charts]
