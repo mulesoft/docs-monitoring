@@ -37,7 +37,7 @@ Outbound connections are made to the following endpoints:
 
 * EU Control Plane
 ** 3.x agents:
-** eu1.ingest.mulesoft.com:8443
+*** eu1.ingest.mulesoft.com:8443
 *** data-authenticator.eu1.anypoint.mulesoft.com:443
 *** s3.eu-central-1.amazonaws.com:443
 ** 2.x agents:
