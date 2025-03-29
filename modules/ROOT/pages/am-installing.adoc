@@ -93,7 +93,7 @@ You must install a supported version of the Anypoint Runtime Manager agent in th
 
 * 2.7.x
 +
-Anypoint Monitoring agent installer version 3.x and higher requires Mule Runtime Manager agent version 2.7.1 or higher. 
+An Anypoint Monitoring agent from the version 3.x installer requires Mule Runtime Manager agent version 2.7.1 or higher. 
 * 2.6.x
 * 2.5.x
 * 2.4.x
@@ -150,9 +150,9 @@ The configuration and supported protocol depends on the version of the Anypoint 
 See also, <<os-support>>.
 
 [[v3]]
-=== Configure Proxy Communication for 3.x Monitoring Agent Installers (HTTP/HTTPS Protocol)
+=== Configure Proxy Communication for Monitoring Agents from Version 3.x Installers (HTTP/HTTPS Protocol)
 
-If you proxy your monitoring data as it leaves the data center and you're using a 3.x installer version, the proxy must support the HTTP/HTTPS protocol, and you must configure the Anypoint Monitoring agent to communicate through the proxy.
+If you proxy your monitoring data as it leaves the data center and you're using an Anypoint Monitoring agent from a _version 3.x_ installer, the proxy must support the HTTP/HTTPS protocol, and you must configure the Anypoint Monitoring agent to communicate through the proxy.
 
 To configure the agent for an HTTP or HTTPS proxy:
 
@@ -166,10 +166,10 @@ $ ./install -p https://user:password@https-server:1080
 +
 For a user or password of the proxy configuration that contains URI-reserved characters, you must percent-encode the characters according to the encoding rules of RFC 3986.
 
-[[v3]]
-=== Configure Proxy Communication for 2.x Monitoring Agent Installers (SOCKS5 Protocol)
+[[v2]]
+=== Configure Proxy Communication for Monitoring Agents from Version 2.x Installers (SOCKS5 Protocol)
 
-If you proxy your monitoring data as it leaves the data center and you're using a 2.x version of the Anypoint Monitoring agent installer, the proxy must support the SOCKS5 protocol, and you must configure the Anypoint Monitoring agent to communicate through the proxy.
+If you proxy your monitoring data as it leaves the data center and you're using an Anypoint Monitoring agent from a _version 3.x_ installer, the proxy must support the SOCKS5 protocol, and you must configure the Anypoint Monitoring agent to communicate through the proxy.
 
 To configure the agent for the SOCKS5 proxy:  
 
@@ -234,7 +234,7 @@ Enabling monitoring can impact CPU utilization and memory utilization depending 
 
 == Troubleshooting
 
-- If you find connection failure or retry entries, ensure that port 8443 (Anypoint Monitoring agent installer version 3.x and later) and 443 (all Anypoint Monitoring agent installer versions) in your outbound firewall are open.
+- If you find connection failure or retry entries, ensure that port 8443 (Anypoint Monitoring agents from installer version 3.x and later only) and 443 (all Anypoint Monitoring agents) in your outbound firewall are open.
 - If you don't find connection failure or retry entries, contact MuleSoft technical support.
 
 == Disable Log Forwarding for Hybrid Runtime Servers
