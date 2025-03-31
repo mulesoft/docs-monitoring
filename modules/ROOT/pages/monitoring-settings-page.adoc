@@ -17,7 +17,6 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 . In the Anypoint Monitoring navigation menu, click *Settings*. 
 . To install Anypoint Monitoring to monitor applications deployed to a local server, select *Hybrid*. 
 +
-The UI displays instructions for installing Anypoint Monitoring on-premises. The UI provides access to the latest version of the Anypoint Monitoring agent (`am.zip`). 
 //HIDING FOR NOW:
 // For earlier versions, you must download the agent from the *Anypoint Monitoring* tab in your customer portal. 
 . To enable (or disable) monitoring for apps deployed to CloudHub, select *CloudHub*.
