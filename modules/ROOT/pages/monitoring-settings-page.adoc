@@ -17,8 +17,7 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 . In the Anypoint Monitoring navigation menu, click *Settings*. 
 . To monitor applications deployed to a local server, select *Hybrid*, and follow the procedure to install Anypoint Monitoring agent from the latest version of the agent's installer in `am.zip`. 
 +
-//HIDING FOR NOW:
-// For earlier versions, you must download the agent from the *Anypoint Monitoring* tab in your customer portal. 
+To use an earlier version, see the knowledge article https://help.mulesoft.com/s/downloads?tabset-169e6=7ea44[Unable to Download Anypoint Monitoring Agent Installer for Windows after April 1st, 2025 from Anypoint Monitoring UI]. 
 . To enable (or disable) monitoring for apps deployed to CloudHub, select *CloudHub*.
 
 [NOTE]
