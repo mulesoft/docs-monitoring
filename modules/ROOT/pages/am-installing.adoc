@@ -14,21 +14,34 @@ To use Anypoint Monitoring across a server group or cluster, you must install An
 
 Before installing the Anypoint Monitoring agent, set up and run a Mule runtime engine instance on your server. For guidance, see xref:mule-runtime::mule-standalone.adoc[].
 
-If you have an outbound firewall, open port 443.
+If you have an outbound firewall, open ports based on the `am.zip` installer version for the Anypoint Monitoring agent:
+
+* 443 for all installer versions 
+* 8443 for 3.x installer versions
 
 Outbound connections are made to the following endpoints:
 
 * US Control Plane
-** data-authenticator.anypoint.mulesoft.com:443
-** dias-ingestor-router.us-east-1.prod.cloudhub.io:443
-** s3.amazonaws.com:443
+** 3.x installers: 
+*** us1.ingest.mulesoft.com:8443 
+*** s3.amazonaws.com:443
+** 2.x installers:
+*** dias-ingestor-router.us-east-1.prod.cloudhub.io:443
+*** data-authenticator.anypoint.mulesoft.com:443
+*** s3.amazonaws.com:443
+
 * US-GOV Control Plane
 ** data-authenticator.gov.anypoint.mulesoft.com:443
 ** dias-ingestor-router.us-gov-west-1.gprod.msap.io:443
+
 * EU Control Plane
-** data-authenticator.eu1.anypoint.mulesoft.com:443
-** dias-ingestor-router.eu-central-1.prod-eu.msap.io:443
-** s3.eu-central-1.amazonaws.com:443
+** 3.x installers:
+*** eu1.ingest.mulesoft.com:8443
+*** s3.eu-central-1.amazonaws.com:443
+** 2.x installers:
+*** dias-ingestor-router.eu-central-1.prod-eu.msap.io:443
+*** data-authenticator.eu1.anypoint.mulesoft.com:443
+*** s3.eu-central-1.amazonaws.com:443
 
 
 === Ports 
@@ -36,6 +49,7 @@ Outbound connections are made to the following endpoints:
 [%header,cols="10a,50a,10a"]
 |===
 |Region |Name |Port
+|*US*|us1.ingest.mulesoft.com | 8443
 |*US*|anypoint.mulesoft.com | 443
 |*US*|mule-manager.anypoint.mulesoft.com | 443
 |*US*|runtime-manager.anypoint.mulesoft.com | 443
@@ -48,6 +62,7 @@ Outbound connections are made to the following endpoints:
 |*US-GOV*|gov.anypoint.mulesoft.com | 443
 |*US-GOV*|exchange-files.gov.anypoint.mulesoft.com | 443
 |*US-GOV*|exchange2-asset-manager-kgprod.s3.us-gov-west-1.amazonaws.com | 443
+|*EU*|eu1.ingest.mulesoft.com | 8443
 |*EU*|eu1.anypoint.mulesoft.com | 443
 |*EU*|mule-manager.eu1.anypoint.mulesoft.com | 443
 |*EU*|runtime-manager.eu1.anypoint.mulesoft.com | 443
@@ -57,14 +72,14 @@ Outbound connections are made to the following endpoints:
 |*EU*|exchange2-asset-manager-kprod-eu.s3.eu-central-1.amazonaws.com |  443
 |===
 
+[[os-support]]
 == Supported Operating Systems
 
 Ensure that Anypoint Monitoring is installed on a server running one of the following operating systems:
 
-* CentOS 7
-* RedHat Enterprise Linux 7
-* Ubuntu 16.04 and 18.04
-* Windows Server 2016, Windows Server 2019
+* RedHat Enterprise Linux 9
+* Ubuntu 20.04
+* Windows Server 2019 (not currently supported by the 3.x agent installer)
 
 To install the agent, you must have root or administrative privileges.
 
@@ -74,9 +89,11 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 == Supported Versions of Mule Runtime Manager Agent
 
-Ensure that one of the following Mule Runtime Manager agent versions is installed in the Mule runtime engine running on the server:
+You must install a supported version of the Anypoint Runtime Manager agent in the Mule runtime engine running on the server. For more information, see xref:runtime-manager::runtime-manager-agent.adoc[].
 
 * 2.7.x
++
+An Anypoint Monitoring agent from the version 3.x installer requires Mule Runtime Manager agent version 2.7.1 or higher. 
 * 2.6.x
 * 2.5.x
 * 2.4.x
@@ -91,10 +108,7 @@ Ensure that one of the following Mule Runtime Manager agent versions is installe
 * 1.11.x
 * 1.10.0
 
-Mule deployments must be visible and managed in the Runtime Manager user interface. To ensure they appear, use the Runtime Manager user interface or the ARM REST API for new deployments.
-
-[IMPORTANT]
-FIPS isn't certified in xref:release-notes::runtime-manager-agent/runtime-manager-agent-2.7.x-release-notes.adoc#2-7-0[Runtime Manager agent 2.7.x]. If you need to enable FIPS, skip this version.
+You must manage Mule deployments in Runtime Manager. You can add and check for your hybrid deployments from the xref:runtime-manager::deploying-to-your-own-servers[Runtime Manager UI] or the xref:Runtime Manager UI or the xref:runtime-manager::runtime-manager-api.adoc[Runtime Manager REST API].
 
 == Hardware Prerequisites
 
@@ -111,7 +125,10 @@ Ensure that the server has the minimum hardware requirements for Anypoint Monito
 . Meet the prerequisites in <<prereqs>>:
 +
 Mule runtime engine must be installed and running.
-. Follow the steps in xref:monitoring-settings-page.adoc[] to download the agent's `am.zip` file and install the agent from *Settings*, in Anypoint Monitoring.
+. Follow the steps in xref:monitoring-settings-page.adoc[] to download the _latest version_ of the agent's `am.zip` file and install the agent from *Settings*, in Anypoint Monitoring.
++
+//TODO: TEMPORARY UNTIL WE have a better location for earlier versions
+To use an earlier version of the agent, see the knowledge article https://help.salesforce.com/s/articleView?id=004576938&type=1[Unable to Download Anypoint Monitoring Agent Installer for Windows after April 1st, 2025 from Anypoint Monitoring UI]. 
 
 * When you extract the `am.zip` file, a folder called `am` is created in the location where you extracted the ZIP.
 * The installation script asks if you want Anypoint Monitoring installed as a service.
@@ -120,9 +137,39 @@ Mule runtime engine must be installed and running.
 * You cannot install the Anypoint Monitoring agent on a server that has an existing filebeat instance running.
 * When you install the Anypoint Monitoring agent on a hybrid server in a server group, use Runtime Manager to restart the server to enable Anypoint Monitoring to begin collecting metrics.
 
-== SOCKS5 Proxy Setting
+[[proxy-settings]]
+== Proxy Settings
 
-If you proxy your monitoring data as it leaves the data center, the proxy must support the SOCKS5 protocol, and you must configure the Anypoint Monitoring agent to communicate through the proxy.
+If you proxy your monitoring data as it leaves the data center, you must configure the Anypoint Monitoring agent to communicate through the proxy. 
+
+The configuration and supported protocol depends on the version of the Anypoint Monitoring agent's installer:
+
+* <<v3, 3.x>>: Supports the HTTP/HTTPS protocol and does not support SOCKS5 
+* <<v2, 2.x>>: Supports the SOCKS5 protocol and does not support HTTP/HTTPS
+
+See also, <<os-support>>.
+
+[[v3]]
+=== Configure Proxy Communication for Monitoring Agents from Version 3.x Installers (HTTP/HTTPS Protocol)
+
+If you proxy your monitoring data as it leaves the data center and you're using an Anypoint Monitoring agent from a _version 3.x_ installer, the proxy must support the HTTP/HTTPS protocol, and you must configure the Anypoint Monitoring agent to communicate through the proxy.
+
+To configure the agent for an HTTP or HTTPS proxy:
+
+. Set up Runtime Manager with a proxy. See xref:runtime-manager::servers-create.adoc[Create a Server in Runtime Manager].
+
+. Install the Anypoint Monitoring agent and use the `-p` option. For example, on a Linux server, at the command line, enter:
++
+----
+$ ./install -p https://user:password@https-server:1080
+----
++
+For a user or password of the proxy configuration that contains URI-reserved characters, you must percent-encode the characters according to the encoding rules of RFC 3986.
+
+[[v2]]
+=== Configure Proxy Communication for Monitoring Agents from Version 2.x Installers (SOCKS5 Protocol)
+
+If you proxy your monitoring data as it leaves the data center and you're using an Anypoint Monitoring agent from a _version 3.x_ installer, the proxy must support the SOCKS5 protocol, and you must configure the Anypoint Monitoring agent to communicate through the proxy.
 
 To configure the agent for the SOCKS5 proxy:  
 
@@ -139,7 +186,7 @@ For a Linux server, enter:
 $ ./install -p socks5://user:password@socks5-server:1080
 ----
 +
-If the user or password of the SOCKS5 proxy configuration contains URI reserved characters, it must be percent-encoded following the encoding rules of RFC 3986.
+For a user or password of the proxy configuration that contains URI-reserved characters, you must percent-encode the characters according to the encoding rules of RFC 3986.
 
 
 == Verify the Anypoint Monitoring Agent is Running
@@ -156,10 +203,14 @@ If you do not see data in the charts, verify that Anypoint Monitoring is able to
 If necessary, you can add the endpoint to an allowlist for outbound firewall rules so your server allows connections. The endpoints to add to the allowlist are listed in xref:am-installing#before-you-begin[Before You Begin].
 
 . Log into the server on which the Anypoint Monitoring agent is running.
-. Open the log file for the data-transfer agent. The log file is in this path: `./am/filebeat/logs`
-[NOTE]
-If you are using Linux and the Anypoint Monitoring agent is running as a service, the log file is in the `/var/log/filebeat` directory.
+. Open the log file for the data-transfer agent: 
 
+* 3.x log file path: `./am/logs`
++
+If this agent is running as a service on Linux, the log file path is `/var/log/otel-collector`.
+* 2.x log file path: `/var/log/filebeat`
++
+If this agent is running as a service on Linux, the log file path is /var/log/filebeat`.
 . Look for entries that mention connection failures or connection retries.
 
 == Update the Anypoint Monitoring Agent
@@ -183,8 +234,8 @@ Enabling monitoring can impact CPU utilization and memory utilization depending 
 
 == Troubleshooting
 
-- If you find connection failure or retry entries, ensure that port 443 in your outbound firewall is open.
-- If you do not find connection failure or retry entries, contact MuleSoft technical support.
+- If you find connection failure or retry entries, ensure that port 8443 (Anypoint Monitoring agents from installer version 3.x and later only) and 443 (all Anypoint Monitoring agents) in your outbound firewall are open.
+- If you don't find connection failure or retry entries, contact the support team.
 
 == Disable Log Forwarding for Hybrid Runtime Servers
 //feature tier (for h2-h4 headings):
@@ -206,4 +257,3 @@ To disable log forwarding:
 * xref:monitoring-settings-page.adoc[Anypoint Monitoring Settings]
 * xref:mule-runtime::runtime-installation-task.adoc[Download and Install Mule 4]
 * xref:runtime-manager::installing-and-configuring-runtime-manager-agent.adoc[Installing and Configuring Mule Runtime Manager Agent]
-* xref:3.9@mule-runtime::installing.adoc[Installing and Deploying Mule Runtime 3.9]
