@@ -235,7 +235,7 @@ Enabling monitoring can impact CPU utilization and memory utilization depending 
 == Troubleshooting
 
 - If you find connection failure or retry entries, ensure that port 8443 (Anypoint Monitoring agents from installer version 3.x and later only) and 443 (all Anypoint Monitoring agents) in your outbound firewall are open.
-- If you don't find connection failure or retry entries, contact MuleSoft technical support.
+- If you don't find connection failure or retry entries, contact the support team.
 
 == Disable Log Forwarding for Hybrid Runtime Servers
 //feature tier (for h2-h4 headings):
