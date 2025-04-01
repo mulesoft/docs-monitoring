@@ -21,6 +21,8 @@ include::partial$telemetry-exporter-notes.adoc[tag=auditLogDuplicates]
 The Telemetry Exporter enables you to create connections to most third-party observability and analytics platforms that:
 
 * Have OpenTelemetry-supported endpoints. For example, the endpoint URL for New Relic is `https://otlp.nr-data.net:4318`. Your team must set up endpoints for the monitoring platform you use.
++
+You must allow
 * Allow you to create an instrumentation key or access token.
 
 Azure Monitor and Splunk HEC are also compatible. 
@@ -29,14 +31,14 @@ Azure Monitor and Splunk HEC are also compatible.
 
 Before you configure the Telemetry Exporter, ensure that you have:
 
-* Telemetry Exporter Administrator permission, so you can create or modify connections. For more information, see xref:am-permissions.adoc[].
-* Telemetry Exporter Configurations Manager permission, so you can create or modify configurations. For more information, see xref:am-permissions.adoc[].
-* Access information for your third-party observability platform.
+* Permissions that you require for your uses of Telemetry Exporter (see xref:am-permissions.adoc[])
+** *Telemetry Exporter Administrator* permission for creating and modifying connections
+** *Telemetry Exporter Configurations Manager* permission for creating and modifying configurations
+* Access information for your third-party observability platform
 * The ability to create an instrumentation key or access token for your third-party observability platform.
 * Enabled trace data collection for your Mule apps:
-
 ** For CloudHub 2.0 deployments, see xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[shared] and xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[private spaces].
-* For Runtime Fabric deployments, see xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric].
+** For Runtime Fabric deployments, see xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric].
 
 
 == Access Telemetry Exporter
