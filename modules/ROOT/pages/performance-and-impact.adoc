@@ -1,4 +1,5 @@
 = Understanding Performance Impact, Limits, and Data Retention
+:data-cleanup: Metrics data can persist beyond the data retention period. The data is removed when the automated cleanup cycle takes place.
 
 Anypoint Monitoring processes and retains massive amounts of data with a low performance impact. Titanium subscribers receive an enhanced data retention package and more storage than Gold and Platinum subscribers. For better performance and readability, your log data is truncated into short lines.
 
@@ -63,6 +64,8 @@ Enhanced API metrics::
 * Data in the *Client Applications* tab is limited to 1 hour.
 * Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
 
+{data-cleanup}
+
 Custom metrics::
 365 days in production environments.
 
@@ -95,6 +98,8 @@ Enhanced API metrics::
 * Data in the *Client Applications* tab is limited to 1 hour.
 * Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
 
+{data-cleanup}
+
 Basic alerts for servers and Mule apps::
 50 basic alerts.
 
@@ -121,6 +126,8 @@ Enhanced API metrics::
 
 * Data in the *Client Applications* tab is limited to 1 hour.
 * Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
+
+{data-cleanup}
 
 Custom metrics::
 365 days in production environments.
