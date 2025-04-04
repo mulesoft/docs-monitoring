@@ -63,7 +63,7 @@ Enhanced API metrics::
 
 * Data in the *Client Applications* tab is limited to 1 hour.
 * Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
-
++
 {data-cleanup}
 
 Custom metrics::
@@ -97,7 +97,7 @@ Enhanced API metrics::
 
 * Data in the *Client Applications* tab is limited to 1 hour.
 * Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
-
++
 {data-cleanup}
 
 Basic alerts for servers and Mule apps::
@@ -126,7 +126,7 @@ Enhanced API metrics::
 
 * Data in the *Client Applications* tab is limited to 1 hour.
 * Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
-
++
 {data-cleanup}
 
 Custom metrics::
