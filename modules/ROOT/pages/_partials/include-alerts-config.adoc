@@ -1,4 +1,4 @@
-= Create an Alert for a Custom Dashboard
+= Create an Alert for a Chart in a Custom Dashboard
 
 [[alerts]]
 
