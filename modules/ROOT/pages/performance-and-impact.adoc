@@ -53,7 +53,6 @@ In raw format, your logs can occupy as much space as you receive with your prici
 
 
 Searchable logs::
-<<<<<<< HEAD
 You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs.
 +
 Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can download logs to access older logs. 
