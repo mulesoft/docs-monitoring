@@ -51,9 +51,12 @@ Organizations that have the Anypoint Integration Advanced package receive more r
 Logs::
 In raw format, your logs can occupy as much space as you receive with your pricing package. Note that the storage space you receive with your pricing package is used to store logs and metrics data. Because metrics do not take up much storage capacity, you can use the majority of your storage for raw log data.
 
+
 Searchable logs::
-You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs. +
-Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can download logs to access older logs. + 
+You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs.
++
+Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can download logs to access older logs. 
++
 Total storage capacity is shared globally across all apps and is limited by the number of messages that your organization purchases and the maximum searchable storage allocation limit of 6TB.
 
 * For every flow purchased, this subscription tier receives:
@@ -62,7 +65,6 @@ Total storage capacity is shared globally across all apps and is limited by the 
 * For every 1M messages purchased, this subscription tier receives:
 ** 2.5GB of archival storage
 ** 0.25GB of searchable storage (10% of archival storage)
-
 
 Application metrics::
 365 days.
