@@ -53,6 +53,7 @@ In raw format, your logs can occupy as much space as you receive with your prici
 
 
 Searchable logs::
+<<<<<<< HEAD
 You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs.
 +
 Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can download logs to access older logs. 
@@ -173,7 +174,7 @@ To log longer segments of information, you must split them up into chunks that a
 
 Use a minimum screen resolution of 1024 by 768 pixels.
 
-== Grace Period for Data Retention Prior to Decommissioning 
+== Grace Period for Metrics Data Retention
 
 If your organization downgrades to a lower subscription tier (usage-based or core-based) or cancels your subscription, your data is removed according to this schedule:
 
