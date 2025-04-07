@@ -171,7 +171,7 @@ To log longer segments of information, you must split them up into chunks that a
 
 Use a minimum screen resolution of 1024 by 768 pixels.
 
-== Grace Period for Data Retention Prior to Decommissioning 
+== Grace Period for Data Retention
 
 If your organization downgrades to a lower subscription tier (usage-based or core-based) or cancels your subscription, your data is removed according to this schedule:
 
