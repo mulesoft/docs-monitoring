@@ -10,7 +10,7 @@ image::intro-alerts.png["Alerts in Anypoint Monitoring"]
 You can create these types of alerts:
 
 * xref:basic-alerts.adoc[Basic alerts] for servers, Mule apps, and APIs
-* xref:advanced-alerts.adoc[Advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
+* xref:custom-dashboard-alerts.adoc[Custom dashboard alerts] for graphs in custom dashboards in Anypoint Monitoring
 * <<other-alerts, Other alerts in API Manager or Runtime Manager>>:
 
 ** Operational alerts for APIs through API Manager
@@ -18,13 +18,13 @@ You can create these types of alerts:
 
 For alerts in Anypoint Monitoring, you can: 
 
-** Enable or disable advanced alerts configured for graphs in custom dashboards
+** Enable or disable alerts configured for graphs in custom dashboards
 ** Filter by <<alert_status, alert status>>
 ** Filter by <<alert_severity, alert severity>>
 
 == Alert Thresholds
 
-For basic and advanced alerts in Anypoint Monitoring, thresholds are checked every five minutes. The evaluated query is the average value of the metric in the last five minutes. For advanced alerts, the evaluated metric is the one referenced in the *General* tab for the graph. If the value of the metric passes the threshold, the alert triggers. The alert triggers only if the alert state changes (from `OK` state to `Alerting` state or vice versa). If you change the email address of the alert recipient, the recipient doesn't receive an email until the alert triggers.
+For basic and custom dashboard alerts in Anypoint Monitoring, thresholds are checked every five minutes. The evaluated query is the average value of the metric in the last five minutes. For custom dashboard alerts, the evaluated metric is the one referenced in the *General* tab for the graph. If the value of the metric passes the threshold, the alert triggers. The alert triggers only if the alert state changes (from `OK` state to `Alerting` state or vice versa). If you change the email address of the alert recipient, the recipient doesn't receive an email until the alert triggers.
 
 == Alert Limits
 
@@ -46,7 +46,7 @@ include::partial$include-alert-state.adoc[leveloffset=+1]
 
 === Filter Alerts by Alert Severity
 
-When you create basic and advanced alerts, you can select the severity for those alerts. The severity indicates how important the alert is for the recipients of the alerts.
+When you create basic and custom dashboard alerts, you can select the severity for those alerts. The severity indicates how important the alert is for the recipients of the alerts.
 
 [[alert_severity]]
 Filter alerts based on severity using the following filters:
@@ -71,9 +71,9 @@ Depending on the value, the alert transitions to `OK` or `Alerting`.
 [[other-alerts]]
 == Add API Manager and Runtime Manager Alerts
 
-In addition to creating basic and advanced alerts in Anypoint Monitoring, you can navigate from Anypoint Monitoring to the alert-creation pages in API Manager and Runtime Manager. 
+In addition to creating basic and custom dashboard alerts in Anypoint Monitoring, you can navigate from Anypoint Monitoring to the alert-creation pages in API Manager and Runtime Manager. 
 
-image::alerts-menu.png["Alerts menu options to set up basic, advanced, or other types of alerts"]
+image::alerts-menu.png["Alerts menu options to set up basic, custom dashboard, or other types of alerts"]
 
 NOTE: Alerts created in API Manager and Runtime Manager aren't listed in the Anypoint Monitoring Alerts page.
 
@@ -89,4 +89,4 @@ NOTE: Alerts created in API Manager and Runtime Manager aren't listed in the Any
 == See Also
 
 * xref:basic-alerts.adoc[Basic Alerts]
-* xref:advanced-alerts.adoc[Advanced Alerts]
+* xref:custom-dashboard-alerts.adoc[Custom Dashboard Alerts]
