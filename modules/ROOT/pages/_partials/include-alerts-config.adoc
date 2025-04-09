@@ -43,7 +43,7 @@ Configure an email notification when an alert is triggered.
 [%header,cols="1,4"]
 |===
 2+| Notification Settings for Alerts
-| `Send To` | Email address for each recipient of the alert notification. If you add or change the email address of an alert recipient, they do not receive an email until the alert is triggered.
+| `Send To` | Email address for each recipient of the alert notification. If you add or change the email address of an alert recipient, they don't receive an email until the alert is triggered.
 | `Message` | Message to send to the recipient.
 |===
 
