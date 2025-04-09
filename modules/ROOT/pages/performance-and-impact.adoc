@@ -1,4 +1,5 @@
 = Understanding Performance Impact, Limits, and Data Retention
+:data-cleanup: Metrics data can persist beyond the data retention period. The data is removed when the automated cleanup cycle takes place.
 
 Anypoint Monitoring processes and retains massive amounts of data with a low performance impact. Titanium subscribers receive an enhanced data retention package and more storage than Gold and Platinum subscribers. For better performance and readability, your log data is truncated into short lines.
 
@@ -50,9 +51,20 @@ Organizations that have the Anypoint Integration Advanced package receive more r
 Logs::
 In raw format, your logs can occupy as much space as you receive with your pricing package. Note that the storage space you receive with your pricing package is used to store logs and metrics data. Because metrics do not take up much storage capacity, you can use the majority of your storage for raw log data.
 
+
 Searchable logs::
-You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs. +
-Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can download logs to access older logs.
+You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs.
++
+Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can retrieve older logs with the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[Anypoint Monitoring Archive API]. 
++
+Total storage capacity is shared globally across all apps and is limited by the number of messages that your organization purchases and the maximum searchable storage allocation limit of 6TB.
+
+* For every flow purchased, this subscription tier receives:
+** 5GB of archival storage
+** 0.5GB of searchable storage (10% of archival storage)
+* For every 1M messages purchased, this subscription tier receives:
+** 2.5GB of archival storage
+** 0.25GB of searchable storage (10% of archival storage)
 
 Application metrics::
 365 days.
@@ -62,11 +74,13 @@ Enhanced API metrics::
 
 * Data in the *Client Applications* tab is limited to 1 hour.
 * Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
++
+{data-cleanup}
 
 Custom metrics::
 365 days in production environments.
 
-Advanced alerts::
+Custom dashboard alerts::
 10 per app or API instance.
 
 Basic alerts for servers and Mule apps::
@@ -94,6 +108,8 @@ Enhanced API metrics::
 
 * Data in the *Client Applications* tab is limited to 1 hour.
 * Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
++
+{data-cleanup}
 
 Basic alerts for servers and Mule apps::
 50 basic alerts.
@@ -113,6 +129,13 @@ Searchable logs::
 You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs. +
 Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can download logs to access older logs.
 
+* For each production vCore, this subscription tier receives:  
+** 200GB of archival storage
+** 20GB of searchable storage (10% of archival storage)
+* For each pre-production vCore, this subscription tier receives: 
+** 50GB of archival storage
+** 5GB of searchable storage (10% of archival storage)
+
 Application metrics::
 365 days.
 
@@ -121,12 +144,14 @@ Enhanced API metrics::
 
 * Data in the *Client Applications* tab is limited to 1 hour.
 * Data from *api_path_metric* and *api_client_ip_metric* tables in advanced mode of custom dashboards is limited to 1 hour.
++
+{data-cleanup}
 
 Custom metrics::
 365 days in production environments.
 // future: 30 days storage only for Sandbox - this is currently not implemented. We can either skip this part, or we can document 30 days which is future looking
 
-Advanced alerts::
+Custom dashboard alerts::
 20 per parent organization.
 
 Basic alerts for servers and Mule apps::
@@ -147,3 +172,12 @@ To log longer segments of information, you must split them up into chunks that a
 == Screen Resolution
 
 Use a minimum screen resolution of 1024 by 768 pixels.
+
+== Grace Period for Metrics Data Retention
+
+If your organization downgrades to a lower subscription tier (usage-based or core-based) or cancels your subscription, your metrics data is removed according to this schedule:
+
+* Downgrades: Approximately 14 days after a downgrade to a lower tier, an additional 21-day grace period takes place before your data is removed.
+* Cancellations: Approximately 90 days after a cancellation, an additional 21-day grace period takes place before your data is removed.
+
+To retrieve metrics data, you can use the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[Anypoint Monitoring Archive API].
