@@ -306,7 +306,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 4+| *Log Management*
 
-|<<log-search>>
+|Log search
 |Yes (single application only)
 |No
 |Yes (cross-application)
