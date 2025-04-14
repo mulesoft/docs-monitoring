@@ -117,7 +117,7 @@ Manage logs and log data for your deployments with these logging features:
 * <<raw-data-downloads>>
 
 [[log-search]]
-==== Log Search
+==== Log Search Across Your App Network
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
 
@@ -131,7 +131,7 @@ See xref:logs.adoc[].
 //single-app logs:
 [NOTE]
 ====
-Log search limited to individual apps is available in Runtime Manager for apps deployed to CloudHub and CloudHub 2.0. You can navigate to Runtime Manager, open the app, and then click *Logs*. 
+Log search limited to individual apps is available to all subscription tiers in Runtime Manager for apps deployed to CloudHub and CloudHub 2.0. You can navigate to Runtime Manager, open the app, and then click *Logs*. 
 
 The log aggregator system holds raw operational data and records events that occur in the operating system or Mule app. Log aggregation compiles, organizes, and indexes log files to facilitate management, searching, and analysis. Aggregated logs complement the monitoring system by helping you identify causes of operational issues and investigate failures.
 
@@ -306,7 +306,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 4+| *Log Management*
 
-|xref:log-search-query-syntax.adoc[Log search]
+|<<log-search>>
 |Yes (single application only)
 |No
 |Yes (cross-application)
