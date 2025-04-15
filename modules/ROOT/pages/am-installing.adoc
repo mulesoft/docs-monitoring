@@ -23,7 +23,8 @@ Outbound connections are made to the following endpoints:
 
 * US Control Plane
 ** 3.x installers: 
-*** us1.ingest.mulesoft.com:8443 
+*** us1.ingest.mulesoft.com:8443
+*** data-authenticator.anypoint.mulesoft.com:443 
 *** s3.amazonaws.com:443
 ** 2.x installers:
 *** dias-ingestor-router.us-east-1.prod.cloudhub.io:443
@@ -37,6 +38,7 @@ Outbound connections are made to the following endpoints:
 * EU Control Plane
 ** 3.x installers:
 *** eu1.ingest.mulesoft.com:8443
+*** data-authenticator.anypoint.mulesoft.com:443
 *** s3.eu-central-1.amazonaws.com:443
 ** 2.x installers:
 *** dias-ingestor-router.eu-central-1.prod-eu.msap.io:443
