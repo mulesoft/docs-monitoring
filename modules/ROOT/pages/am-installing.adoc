@@ -75,11 +75,18 @@ Outbound connections are made to the following endpoints:
 [[os-support]]
 == Supported Operating Systems
 
-Ensure that Anypoint Monitoring is installed on a server running one of the following operating systems:
+Install the Anypoint Monitoring agent on a supported operating systems:
 
-* RedHat Enterprise Linux 9
-* Ubuntu 20.04
-* Windows Server 2019 (not currently supported by the 3.x agent installer)
+* 3.x versions of the installer:
+** RedHat Enterprise Linux 9
+** Ubuntu 20.04
+** Windows Server 2019 (not currently supported by the 3.x agent installer)
+
+* 2.x versions of the installer: 
+** CentOS 7
+** RedHat Enterprise Linux 7
+** Ubuntu 16.04 and 18.04
+** Windows Server 2016, Windows Server 2019
 
 To install the agent, you must have root or administrative privileges.
 
