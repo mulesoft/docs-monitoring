@@ -78,7 +78,7 @@ Enhanced API metrics::
 {data-cleanup}
 
 Custom metrics::
-30 days in production environments.
+30 days
 
 Custom dashboard alerts::
 10 per app or API instance.
@@ -148,8 +148,7 @@ Enhanced API metrics::
 {data-cleanup}
 
 Custom metrics::
-30 days in production environments.
-// future: 30 days storage only for Sandbox - this is currently not implemented. We can either skip this part, or we can document 30 days which is future looking
+30 days
 
 Custom dashboard alerts::
 20 per parent organization.
