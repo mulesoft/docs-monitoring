@@ -82,7 +82,7 @@ Install the Anypoint Monitoring agent on a supported operating systems:
 * 3.x versions of the installer:
 ** RedHat Enterprise Linux 9
 ** Ubuntu 20.04
-** Windows Server 2019 (not currently supported by the 3.x agent installer)
+** Windows Server 2019
 
 * 2.x versions of the installer: 
 ** CentOS 7
