@@ -23,7 +23,8 @@ Outbound connections are made to the following endpoints:
 
 * US Control Plane
 ** 3.x installers: 
-*** us1.ingest.mulesoft.com:8443 
+*** us1.ingest.mulesoft.com:8443
+*** data-authenticator.anypoint.mulesoft.com:443 
 *** s3.amazonaws.com:443
 ** 2.x installers:
 *** dias-ingestor-router.us-east-1.prod.cloudhub.io:443
@@ -37,6 +38,7 @@ Outbound connections are made to the following endpoints:
 * EU Control Plane
 ** 3.x installers:
 *** eu1.ingest.mulesoft.com:8443
+*** data-authenticator.anypoint.mulesoft.com:443
 *** s3.eu-central-1.amazonaws.com:443
 ** 2.x installers:
 *** dias-ingestor-router.eu-central-1.prod-eu.msap.io:443
@@ -75,11 +77,18 @@ Outbound connections are made to the following endpoints:
 [[os-support]]
 == Supported Operating Systems
 
-Ensure that Anypoint Monitoring is installed on a server running one of the following operating systems:
+Install the Anypoint Monitoring agent on a supported operating systems:
 
-* RedHat Enterprise Linux 9
-* Ubuntu 20.04
-* Windows Server 2019 (not currently supported by the 3.x agent installer)
+* 3.x versions of the installer:
+** RedHat Enterprise Linux 9
+** Ubuntu 20.04
+** Windows Server 2019 (not currently supported by the 3.x agent installer)
+
+* 2.x versions of the installer: 
+** CentOS 7
+** RedHat Enterprise Linux 7
+** Ubuntu 16.04 and 18.04
+** Windows Server 2016, Windows Server 2019
 
 To install the agent, you must have root or administrative privileges.
 
