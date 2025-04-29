@@ -1,5 +1,5 @@
 = Setting Up Alerts for Custom Dashboards in Anypoint Monitoring
-:page-alias: advanced-alerts.adoc
+:page-aliases: advanced-alerts.adoc
 :page-info-pills: anypoint-pricing-titanium
 
 Set up alerts for charts in xref:create-custom-dashboard.adoc[custom dashboards], from the chart's *Alert* tab. Alerts trigger email notifications if a data point you're measuring has passed a specified threshold in the past five minutes. This five-minute period is fixed and not configurable. 
