@@ -57,7 +57,7 @@ You receive additional storage that is 10% of the size of purchased storage for 
 +
 Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can retrieve older logs with the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[Anypoint Monitoring Archive API]. 
 +
-Total storage capacity is shared globally across all apps and is limited by the number of messages that your organization purchases and the maximum searchable storage allocation limit of 6TB.
+Total storage capacity is shared globally across all apps and is limited by the number of messages and flows that your organization purchases and the maximum searchable storage allocation limit of 6TB.
 
 * For every flow purchased, this subscription tier receives:
 ** 5GB of archival storage
