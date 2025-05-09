@@ -5,12 +5,25 @@
 Alerts indicate whether a resource (such as a Mule app or API) is behaving as expected or exceeding a defined threshold. 
 
 [[alerts]]
-image::intro-alerts.png["Alerts in Anypoint Monitoring"]
 
 You can create these types of alerts:
 
 * xref:basic-alerts.adoc[Basic alerts] for servers, Mule apps, and APIs
-* xref:custom-dashboard-alerts.adoc[Custom dashboard alerts] for graphs in custom dashboards in Anypoint Monitoring
+
+** EU and US Anypoint Platform instances:
++
+image::intro-alerts.png["Alerts in Anypoint Monitoring"]
+
+** Japan (JP) and Canada (CA) Anypoint Platform instances:
++
+TODO_TODO: IMAGE_HERE
+//image::alerts-hyperforce.png["Alerts in Anypoint Monitoring instances in Hyperforce regions"]
+
+** xref:custom-dashboard-alerts.adoc[Custom dashboard alerts] for infographics in custom dashboards in Anypoint Monitoring
++
+TODO_TODO: IMAGE_HERE
+//image::TODO.png["TODO"]
+
 * <<other-alerts, Other alerts in API Manager or Runtime Manager>>:
 
 ** Operational alerts for APIs through API Manager
@@ -18,18 +31,20 @@ You can create these types of alerts:
 
 For alerts in Anypoint Monitoring, you can: 
 
-** Enable or disable alerts configured for graphs in custom dashboards
+** Enable or disable alerts configured for infographics in custom dashboards
 ** Filter by <<alert_status, alert status>>
 ** Filter by <<alert_severity, alert severity>>
 
 == Alert Thresholds
 
-For basic and custom dashboard alerts in Anypoint Monitoring, thresholds are checked every five minutes. The evaluated query is the average value of the metric in the last five minutes. For custom dashboard alerts, the evaluated metric is the one referenced in the *General* tab for the graph. If the value of the metric passes the threshold, the alert triggers. The alert triggers only if the alert state changes (from `OK` state to `Alerting` state or vice versa). If you change the email address of the alert recipient, the recipient doesn't receive an email until the alert triggers.
+//TODO: VERIFY ALL THRESHOLD INFO IS UP-TO-DATE
+For basic and custom dashboard alerts in Anypoint Monitoring, thresholds are checked every five minutes. The evaluated query is the average value of the metric in the last five minutes. For custom dashboard alerts, the evaluated metric is the one referenced in the *General* tab for the infographic. If the value of the metric passes the threshold, the alert triggers. The alert triggers only if the alert state changes (from `OK` state to `Alerting` state or vice versa). If you change the email address of the alert recipient, the recipient doesn't receive an email until the alert triggers.
 
 == Alert Limits
 
 The number of active alerts allocated to your organization depends on your organization's pricing model.
 
+//TODO: VERIFY ALL THRESHOLD INFO IS UP-TO-DATE
 include::reuse::partial$billing/pricing.adoc[tag=monitoringAlerts]
 
 
@@ -39,10 +54,30 @@ include::reuse::partial$billing/pricing.adoc[tag=monitoringAlerts]
 [[alert_status]]
 Filter alerts based on state using the following filters:
 
-All states::
+
+[%header, cols="2,2"]
+|===
+| US and EU | JP and CA 
+
+| 
+* *All states*
 Lists all alerts
 
-include::partial$include-alert-state.adoc[leveloffset=+1]
+include::partial$include-alert-state.adoc[]
+
+| 
+//TODO: VERIFY THESE (ARE THEY CHANGING?)
+* *All statuses*:
+Lists all alerts
+
+* *Not Alerting*: TODO:
+
+* *Pending...*: TODO:
+
+* *TODO_TODO*: TODO:
+
+|===
+
 
 === Filter Alerts by Alert Severity
 

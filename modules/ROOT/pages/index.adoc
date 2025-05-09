@@ -53,7 +53,7 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 
 | <<logging, Log management>>
 | Yes
-| Yes (<<single-app, limited log search>>)
+| Yes
 | Yes
 | No
 
@@ -74,6 +74,7 @@ For more information about MuleSoft Government Cloud and Anypoint Platform Priva
 
 Monitor performance data and issues across your deployed Mule apps and APIs (_entities_), and get detailed insights on specific deployments. 
 
+//TODO: CONSIDER ADDING SCREENSHOT HERE 
 
 See xref:anypoint-insights.adoc[].
 
@@ -81,8 +82,6 @@ See xref:anypoint-insights.adoc[].
 === Built-in and Custom Dashboards
 
 Use built-in dashboards or customize your own to provide instant visibility into your apps' performance and detailed analysis of your network.
-
-image::intro-dashboard-built-in.png["Built-in dashboard example"]
 
 //ADVANCED/TITANIUM TIER FOR CUSTOM DASHBOARDS
 Built-in dashboards and custom dashboards (available in xref:monitoring::index.adoc#billing[Advanced and Titanium tiers]) expose the metrics on your app network. They provide visual representations of your resources so you can detect anomalies, troubleshoot issues, and see trends that aren't obvious in raw form.
@@ -99,8 +98,6 @@ See xref:dashboards.adoc[].
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-core"]
 
 Track trends and add your own alerts to identify abnormal behavior and problems in your app network.
-
-image::intro-alerts.png["Alerts in Anypoint Monitoring"]
 
 You can trigger alerts based on rules (or thresholds) and policies for your resources. When these thresholds are crossed for a certain period of time, you can receive notification to take action. The method of notification depends on the severity of the alert that you define.
 
@@ -121,8 +118,6 @@ Manage logs and log data for your deployments with these logging features:
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
 
 Search across log files, including archived logs to find information and events based on a specific query. Logs includes raw log and event data from across the app network so that you can pinpoint the root cause of a problem.
-
-image::intro-logs.png["Logs in Anypoint Monitoring"]
 
 See xref:logs.adoc[].
 
@@ -213,7 +208,7 @@ Core-based subscriptions are based on vCore allotments instead of usage. All org
 If your organization changes its subscription model from a Titanium to a Gold or Platinum subscription, ensure you have preserved your logs outside of Anypoint Platform. Within an hour of changing subscription models, MuleSoft clears the storage that formerly kept log data.
 
 |===
-| Feature | Gold and Platinum Subscription Features | Platinum Subscription for Mulesoft Government Cloud Features | Titanium Subscription Features
+| Feature | Gold and Platinum Subscription Features | Platinum Subscription for MuleSoft Government Cloud Features | Titanium Subscription Features
 
 |Dedicated infrastructure for data processing and storage
 |No
