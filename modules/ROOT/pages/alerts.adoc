@@ -6,7 +6,7 @@ Alerts indicate whether a resource (such as a Mule app or API) is behaving as ex
 
 [[alerts]]
 
-You can create these types of alerts:
+Create basic and custom dashboard alerts in Anypoint Monitoring.
 
 * xref:basic-alerts.adoc[Basic alerts] for servers, Mule apps, and APIs
 
@@ -19,10 +19,7 @@ image::intro-alerts.png["Alerts in Anypoint Monitoring"]
 TODO_TODO: IMAGE_HERE
 //image::alerts-hyperforce.png["Alerts in Anypoint Monitoring instances in Hyperforce regions"]
 
-** xref:custom-dashboard-alerts.adoc[Custom dashboard alerts] for infographics in custom dashboards in Anypoint Monitoring
-+
-TODO_TODO: IMAGE_HERE
-//image::TODO.png["TODO"]
+* xref:custom-dashboard-alerts.adoc[Custom dashboard alerts] for infographics in custom dashboards in Anypoint Monitoring
 
 * <<other-alerts, Other alerts in API Manager or Runtime Manager>>:
 
