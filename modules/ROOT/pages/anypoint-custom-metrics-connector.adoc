@@ -152,7 +152,7 @@ Due to internal database restrictions, you cannot use the following keywords to 
 +
 Your connector version value might differ from the example. After you add the dependency, the connector becomes available in the Studio palette. 
 +
-If you encounter issues with this step, see xref:studio::add-modules-in-studio-to.adoc[] to add the connector from Exchange through the Studio pallet.
+If you encounter issues with this step, see xref:studio::add-modules-in-studio-to.adoc[] to add the connector in Studio from Exchange.
 . From the palette, drag the *Send Custom Metric* operation to the canvas for your project. 
 . Click the *Send Custom Metric* operation to add values for the operation. 
 . Add the dimension for the metric:
