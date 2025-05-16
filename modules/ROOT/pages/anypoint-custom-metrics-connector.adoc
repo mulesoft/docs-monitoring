@@ -137,7 +137,7 @@ Due to internal database restrictions, you cannot use the following keywords to 
 .. Click *Custom Metrics Connector* for the latest Mule version to open the connector on Anypoint Exchange.
 .. Click *Dependency Snippet*, and copy the Maven snippet.
 . In Anypoint Studio, add the `<dependency/>` snippet for the latest version of the connector to your Mule project's `pom.xml` file within the `<dependencies/>` element, for example:
-+
++ 
 ----
 <dependencies>
 ...
@@ -148,7 +148,7 @@ Due to internal database restrictions, you cannot use the following keywords to 
     <classifier>mule-plugin</classifier>
   </dependency>
 </dependencies>
------
+----
 +
 Your connector version value might differ from the example. After you add the dependency, the connector becomes available in the Studio palette. 
 +
@@ -181,6 +181,9 @@ You can repeat these steps to add multiple key values.
 +
 For guidance, see xref:mule-runtime::deploying.adoc[].
 . In Anypoint Monitoring, xref:dashboard-custom-config.adoc[add a new custom dashboard] for the custom metric. 
+. Configure a chart to use your custom metric. 
++
+For guidance, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
 +
 This example shows a configuration for a graph that displays t-shirt sales.
 +
