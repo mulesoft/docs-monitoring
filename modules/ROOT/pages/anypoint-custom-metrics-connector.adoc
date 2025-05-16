@@ -181,7 +181,7 @@ You can repeat these steps to add multiple key values.
 +
 For guidance, see xref:mule-runtime::deploying.adoc[].
 . In Anypoint Monitoring, xref:dashboard-custom-config.adoc[add a new custom dashboard] for the custom metric. 
-. Configure a chart to use with your custom metric. 
+. Configure a chart to use your custom metric. 
 +
 For guidance, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
 +
