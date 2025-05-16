@@ -11,7 +11,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 You must also xref:am-installing.adoc[install the Anypoint Monitoring Agent].
 
-Review xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector] to understand connector configuration details. Connector configuration is required in your Mule app flow before you deploy or redeploy the app the application to a server or server cluster. 
+Review xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector] to understand connector configuration details. Connector configuration is required in your Mule app flow before you deploy or redeploy your app to a server or server cluster. 
 
 == Locate the Custom Metrics Connector
 
