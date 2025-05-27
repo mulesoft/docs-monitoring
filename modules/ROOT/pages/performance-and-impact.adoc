@@ -67,7 +67,7 @@ Total storage capacity is shared globally across all apps and is limited by the 
 ** 0.25GB of searchable storage (10% of archival storage)
 
 Application metrics::
-30 days.
+365 days.
 
 Enhanced API metrics::
 30 days. These limits also apply:
@@ -78,7 +78,7 @@ Enhanced API metrics::
 {data-cleanup}
 
 Custom metrics::
-30 days
+365 days in production environments.
 
 Custom dashboard alerts::
 10 per app or API instance.
@@ -137,7 +137,7 @@ Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and
 ** 5GB of searchable storage (10% of archival storage)
 
 Application metrics::
-30 days.
+365 days.
 
 Enhanced API metrics::
 30 days. These limits also apply:
@@ -148,7 +148,8 @@ Enhanced API metrics::
 {data-cleanup}
 
 Custom metrics::
-30 days
+365 days in production environments.
+// future: 30 days storage only for Sandbox - this is currently not implemented. We can either skip this part, or we can document 30 days which is future looking
 
 Custom dashboard alerts::
 20 per parent organization.
