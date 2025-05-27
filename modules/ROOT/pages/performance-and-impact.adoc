@@ -67,7 +67,9 @@ Total storage capacity is shared globally across all apps and is limited by the 
 ** 0.25GB of searchable storage (10% of archival storage)
 
 Application metrics::
-365 days.
+365 days for built-in dashboards.
++
+For Anypoint Insights, see xref:anypoint-insights.adoc[].
 
 Enhanced API metrics::
 30 days. These limits also apply:
@@ -137,7 +139,9 @@ Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and
 ** 5GB of searchable storage (10% of archival storage)
 
 Application metrics::
-365 days.
+365 days for built-in dashboards.
++
+For Anypoint Insights, see xref:anypoint-insights.adoc[].
 
 Enhanced API metrics::
 30 days. These limits also apply:
