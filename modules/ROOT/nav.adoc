@@ -22,7 +22,6 @@
   *** xref:dashboard-config-ref.adoc[Dashboard Configuration Reference]
  ** xref:monitor-connectors.adoc[]
  ** xref:export-app-data-to-csv.adoc[]
-//BETA for EU/US, GA Hyperforce
 * xref:anypoint-insights.adoc[Monitoring Metrics from Insights]
 //BETA
 * xref:traces-overview.adoc[Exploring Trace Data]
