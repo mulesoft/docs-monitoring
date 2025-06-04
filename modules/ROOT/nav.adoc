@@ -30,7 +30,7 @@
 * xref:reports.adoc[Viewing Reports]
 * xref:alerts.adoc[Getting Alerts]
  ** xref:basic-alerts.adoc[Setting Up Basic Alerts]
- ** xref:advanced-alerts.adoc[Setting Up Advanced Alerts]
+ ** xref:custom-dashboard-alerts.adoc[Setting Up Alerts for Custom Dashboards]
 * xref:logs.adoc[Using Logs]
  ** xref:log-points.adoc[]
  ** xref:raw-data.adoc[]

@@ -1,5 +1,4 @@
 = Monitoring Metrics from Anypoint Insights
-:page-notice-banner-message: For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights is a Beta release available to all subscription tiers.
 :selector-all-dashboards: This selector is available to all Insights dashboards.
 :download-chart-data: You can download most chart data to CSV or XSL.
 
@@ -500,6 +499,9 @@ include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+2]
 
 [[metrics-api]]
 == Metrics API
+
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-all-tiers"]
 
 Anypoint Insights uses Anypoint Monitoring Metrics API to submit queries for data used in charts. You can use this API to query data for your needs. 
 

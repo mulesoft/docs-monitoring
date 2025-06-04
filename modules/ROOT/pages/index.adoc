@@ -74,8 +74,7 @@ For more information about MuleSoft Government Cloud and Anypoint Platform Priva
 
 Monitor performance data and issues across your deployed Mule apps and APIs (_entities_), and get detailed insights on specific deployments. 
 
-//TEMP INFO: Hyperforce 12/24 (W-17225983) & Beta all tiers EU US March 2025
-For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights is a Beta release available to all <<billing, subscription tiers>>.
+
 See xref:anypoint-insights.adoc[].
 
 [[dashboards]]
@@ -131,7 +130,7 @@ See xref:logs.adoc[].
 //single-app logs:
 [NOTE]
 ====
-Log search limited to individual apps is available in Runtime Manager for apps deployed to CloudHub and CloudHub 2.0. You can navigate to Runtime Manager, open the app, and then click *Logs*. 
+Log search limited to individual apps is available to all subscription tiers in Runtime Manager for apps deployed to CloudHub and CloudHub 2.0. You can navigate to Runtime Manager, open the app, and then click *Logs*. 
 
 The log aggregator system holds raw operational data and records events that occur in the operating system or Mule app. Log aggregation compiles, organizes, and indexes log files to facilitate management, searching, and analysis. Aggregated logs complement the monitoring system by helping you identify causes of operational issues and investigate failures.
 
@@ -299,14 +298,14 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |Yes
 |Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
 
-|xref:advanced-alerts.adoc[Advanced alerts]
+|xref:custom-dashboard-alerts.adoc[Alerts for Custom Dashboards]
 |No
 |No
 |Yes
 
 4+| *Log Management*
 
-|xref:log-search-query-syntax.adoc[Log search]
+|Log search
 |Yes (single application only)
 |No
 |Yes (cross-application)
