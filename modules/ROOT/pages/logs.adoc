@@ -27,7 +27,115 @@ Do not override the default JVM timezone for applications deployed to CloudHub a
 ====
 
 [[log-search]]
-== Search Logs
+The Log Search UI varies by Anypoint Platform instance. 
+
+* <<log-search-comm-cloud>>
+* <<log-search-hyperforce>>
+
+[[log-search-comm-cloud]]
+== Search Logs from CA and JP Instances of Anypoint Platform
+
+From Anypoint Monitoring, click *Log Search* to search for text in logs from the search field, through a filter, or with a DSL query.
+
+image::intro-logs.png["Logs in Anypoint Monitoring"]
+
+* <<search-field>>
+* <<search-filter>>
+* <<search-dsl>>
+
+When you search for logs for APIs deployed through Flex Gateway, use the *Application* filter. Use the *App ID* field to identify the instance.
+
+[[search-field]]
+=== Search from the Log Search Field
+
+To search the logs, type your search query into the log search field and press *Enter*. 
+
+* Search for a term, such as `"Info Dynamic Logging"`.
++
+Without quotes, the query returns results for matches to each term. 
+* Use a wildcard in your search, such as `resourceId=hellowor*`. 
+* Use logical operators, such as `resourceId=hellowor* AND "Info Dynamic Logging"`.
+
+[[search-filter]]
+=== Search with a Filter
+You can create a filter to search logs using predefined fields, operators, and values.
+
+. Click *+Add a filter*.
+. Select the predefined field from the drop-down list. +
+  * `application`
+  * `class`
+  * `environment`
+  * `environment type`
+  * `log level`
+  * `logger`
+  * `message`
+  * `thread`
+  * `timestamp`
+  * `worker`
+. Select the operator from the drop-down list. 
++
+Operators vary by the field you select.
+. If applicable, enter a value, for example:
++
+image::log-filter-example.png["A form to add a filter for errors"]
++
+See <<filters_predefined>> and <<operators>>.
++
+. (Optional) Enter a value in *Label*.
+. Click *Save*.
+
+
+NOTE::
+Results for the *Application* filter include APIs deployed through Flex Gateway.
+
+[[search-dsl]]
+=== Search with the Query DSL
+
+To convert a search query into a Query DSL:
+
+. Click *+Add a filter*.
+. Click *Edit Query DSL*. +
+. Enter your query, and click *Save*. +
+This example shows a query for log-level INFO:
++
+[source,text,linenums]
+----
+{
+  "query": {
+    "match": {
+      "log-level": {
+        "query": "INFO",
+        "type": "phrase"
+      }
+    }
+  }
+}
+----
++
+The search query UI provides a link to the query documentation so that you can perform more complex queries than otherwise available.
++
+This example shows a complex query.
+[source,text,linenums]
+----
+{
+  "query": {
+    "range": {
+      "workerId": {
+        "gte": 0,
+        "lte": 20
+      }
+    }
+  }
+}
+----
+
+[NOTE]
+Some complex search queries do not have an equivalent in the search filter values UI, so you can only create and view such queries in the query UI.
+
+//END HYPERFORCE LOGS
+
+[[log-search-hyperforce]]
+== Search Logs from EU and US Instances of Anypoint Platform
 
 From Anypoint Monitoring, click *Log Search* to search for text in logs from the search field, through a filter, or with a DSL query.
 
