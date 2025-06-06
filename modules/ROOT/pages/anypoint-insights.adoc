@@ -49,10 +49,8 @@ include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 * A Mule app or API (xref:gateway-home::index.adoc[Mule Gateway or Flex Gateway API]) running on a supported version of Mule runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
 
 ** CloudHub 2.0
-//TEMP INFO: Hyperforce 12/24 (W-17225983)
-** CloudHub (for US and EU clouds, in Advanced and Titanium tiers only)
-//TEMP INFO: Hyperforce 12/24 (W-17225983)
-** Hybrid (for US and EU clouds, in Advanced and Titanium tiers only)
+** CloudHub
+** Hybrid
 ** Runtime Fabric
 
 * For Canada Cloud and Japan Cloud: 
