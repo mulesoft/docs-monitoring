@@ -1,0 +1,6 @@
+= Using Logs in Anypoint Monitoring (Canada and Japan)
+
+//feature tier:
+include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only"]
+
+In the Canada and Japan Clouds, search for logs across your deployed apps.  

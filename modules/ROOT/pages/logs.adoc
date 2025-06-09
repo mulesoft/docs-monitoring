@@ -1,0 +1,11 @@
+= Getting Logs
+
+Use Anypoint Monitoring to work with logs on your deployed applications:
+
+* xref:logs-eu-us.adoc[US and EU] Anypoint Platform instances
+** *Log Search* for logs across your deployed applications
+** *Log Points* for real-time log generation
+** *Raw Data* for raw-data downloads
+
+* xref:logs-jp-ca.adoc[Japan and Canada] Anypoint Platform instances
+** *Logs* for logs across your deployed applications
