@@ -11,6 +11,8 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 You must also xref:am-installing.adoc[install the Anypoint Monitoring Agent].
 
+Review xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector] to understand connector configuration details. Connector configuration is required in your Mule app flow before you deploy or redeploy your app to a server or server cluster. 
+
 == Locate the Custom Metrics Connector
 
 From Anypoint Monitoring, click *Custom Metrics* to locate *Anypoint Monitoring Custom Metrics Connector*. Alternatively, you can search for the connector in Anypoint Exchange. 
@@ -132,11 +134,25 @@ Due to internal database restrictions, you cannot use the following keywords to 
 
 . From Anypoint Monitoring:
 .. Click *Custom Metrics*.
-.. Click *Custom Metrics Connector* to open the connector on Anypoint Exchange.
+.. Click *Custom Metrics Connector* for the latest Mule version to open the connector on Anypoint Exchange.
 .. Click *Dependency Snippet*, and copy the Maven snippet.
-. In Anypoint Studio, add the snippet for the connector to your project's `pom.xml` file. 
+. In Anypoint Studio, add the `<dependency/>` snippet for the latest version of the connector to your Mule project's `pom.xml` file within the `<dependencies/>` element, for example:
++ 
+----
+<dependencies>
+...
+  <dependency>
+    <groupId>com.mule.modules</groupId>
+    <artifactId>mule-custom-metrics-extension</artifactId>
+    <version>2.3.1</version>
+    <classifier>mule-plugin</classifier>
+  </dependency>
+</dependencies>
+----
 +
-The connector is now available in the Studio palette.
+Your connector version value might differ from the example. After you add the dependency, the connector becomes available in the Studio palette. 
++
+If you encounter issues with this step, see xref:studio::add-modules-in-studio-to.adoc[] to add the connector in Studio from Exchange.
 . From the palette, drag the *Send Custom Metric* operation to the canvas for your project. 
 . Click the *Send Custom Metric* operation to add values for the operation. 
 . Add the dimension for the metric:
@@ -165,6 +181,9 @@ You can repeat these steps to add multiple key values.
 +
 For guidance, see xref:mule-runtime::deploying.adoc[].
 . In Anypoint Monitoring, xref:dashboard-custom-config.adoc[add a new custom dashboard] for the custom metric. 
+. Configure a chart to use your custom metric. 
++
+For guidance, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
 +
 This example shows a configuration for a graph that displays t-shirt sales.
 +
