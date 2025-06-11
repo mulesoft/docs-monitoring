@@ -2,6 +2,7 @@
 
 //feature tier:
 include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only"]
+include::partial$subsection-pills.adoc[tag="release-pilot-hyperforce"]
 
 In the https://ca1.platform.mulesoft.com/monitoring[Canada] and  https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds, search for up to 30 days of logs across apps deployed to one of your organization's environments. Logs provide the time, log level, and expandable message details.
 

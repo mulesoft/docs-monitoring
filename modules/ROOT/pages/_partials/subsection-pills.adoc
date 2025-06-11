@@ -45,3 +45,11 @@ image:info.png[title="This feature is available to all subscription tiers.",15,1
 image:info.png[title="This feature requires an Advanced subscription in a supported Anypoint Platform region.",15,15] Availability: xref:index.adoc#billing[Advanced tier only]
 |===
 //end::anypoint-cloud-support-advanced-only[]
+
+//tag::release-pilot-hyperforce[]
+[grid=all]
+|===
+|
+image:info.png[title="Pilot: This feature is for a Pilot release in specific Anypoint Platform regions.",15,15] Pilot release for Anypoint Platform instances in the Canada and Japan Clouds. 
+|===
+//end::release-pilot-hyperforce[]
