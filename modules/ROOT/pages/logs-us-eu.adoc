@@ -1,5 +1,4 @@
 = Using Logs in Anypoint Monitoring (EU and US)
-:page-aliases: logs-using.adoc
 
 //feature tier:
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
