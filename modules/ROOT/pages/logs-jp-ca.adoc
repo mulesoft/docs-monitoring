@@ -42,7 +42,7 @@ Any other environments that your organization xref:access-management::environmen
 
 Use filters to narrow the results of your search for logs. The filters match values of fields in the logs:
 
-* `application` accepts an *=* operator followed by an application name.
+* `application` accepts an *=* operator followed by an application name. The name must be an exact match.
 //TODO: TBD IF *TRACE* IS ALSO A VALID LOG LEVEL
 * `log_level` accepts an *=* operator followed by a value *INFO*, *WARN*, *CRITICAL*, *FATAL*, or *DEBUG* 
 * `message` accepts a *LIKE* operator for partial or exact matches in log `message` fields. 
