@@ -26,7 +26,7 @@ image::logs-hyperforce.png["Logs UI"]
 +
 Built-in and custom selections are available for up to the last 30 days of logs for selected time ranges. 
 . Select an environment.
-. Provide a <<ref-query, log query>>.
+. To narrow the search results, provide a <<ref-query, log query>>.
 . Review the search results.
 +
 You can expand the message to get message details.
