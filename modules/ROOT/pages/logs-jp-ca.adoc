@@ -6,11 +6,23 @@ include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only
 
 In the https://ca1.platform.mulesoft.com/monitoring[Canada] and  https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds, search for up to 30 days of logs across apps deployed to one of your organization's environments. Logs provide the time, log level, and expandable message details.
 
-TODO: IMAGE HERE
+[[logs-overview]]
+//don't change order of numbers in graphic or calloutlist
+image::logs-hyperforce.png["Logs UI"]
+
+[calloutlist]
+. Logs in Anypoint Monitoring
+. <<environments, Environment selector>> for your deployments (such as Sandbox or Production)
+. <<ref-query, Filters>> to narrow the list of logs that return
+. Matching log entry, which includes a date-time stamp, log level, and message
+. Expanded log message data and any available data from other log fields 
+. Selector for the date and time range to capture
+. <<refresh, Refresh>> button
+
 
 == Search for Logs
 
-. Select a time and date range, from the last 15 minutes to the last 30 days.
+. Select a time and date range, from the last 15 minutes (default) to the last 30 days.
 +
 Custom selections are available for up to the last 30 days of logs and for selected time ranges. 
 . Select an environment.
@@ -19,12 +31,14 @@ Custom selections are available for up to the last 30 days of logs and for selec
 +
 You can expand the message to get message details.
 +
-If no data returns, try a different date-time range, query, or environment. 
+If no data returns, try a different date-time range, query, or environment. Also review the <<search-query-rules, search query behavior>>.
 
+[[refresh]]
 == View the Latest Data
 
-To review the latest log data, click the Refresh button. 
+To review the latest log data, click the Refresh button. After a log search displays results, no new log data appears until you refresh the page. 
 
+[[environments]]
 == Environments
 
 When displaying logs, select the environment that contains the logs you intend to review.
@@ -42,16 +56,18 @@ Any other environments that your organization xref:access-management::environmen
 
 Use filters to narrow the results of your search for logs. The filters match values of fields in the logs:
 
-* `application` accepts an *=* operator followed by an application name. The name must be an exact match.
-//TODO: TBD IF *TRACE* IS ALSO A VALID LOG LEVEL
-* `log_level` accepts an *=* operator followed by a value *INFO*, *WARN*, *CRITICAL*, *FATAL*, or *DEBUG* 
+* `application` accepts an *=* operator followed by an application name. 
+* `log_level` accepts an *=* operator followed by a value of *DEBUG*, *INFO*, *WARN*, *ERROR*, or *FATAL*. 
 * `message` accepts a *LIKE* operator for partial or exact matches in log `message` fields. 
 
-Search query rules:
+[[search-query-rules]]
+Search query behavior:
 
 * Each filter allows a single value. 
 * You can use any or all of the available filters in your query.
 +
 Multiple filters in a query are processed as logical ANDs (and not as ORs), meaning that searches return data matching all the filter criteria, not just some of it. 
 * Multiple filters of the same type, such as two `application` filters, aren't allowed. 
-* Quotation marks around search strings aren't necessary. 
+* For single-word search strings, you do not need to add quotation marks around search the string. For multi-word strings, manually surround the string in quotes. 
+* Some message searches must provide an exact match. For example, a match to `some` in a package name lke `com.some.package.name` isn't supported. 
+
