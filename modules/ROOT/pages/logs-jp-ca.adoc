@@ -22,9 +22,9 @@ image::logs-hyperforce.png["Logs UI"]
 
 == Search for Logs
 
-. Select a time and date range, from the last 15 minutes (default) to the last 30 days.
+. Select a date-time range (defaults to the last 15 minutes).
 +
-Custom selections are available for up to the last 30 days of logs and for selected time ranges. 
+Built-in and custom selections are available for up to the last 30 days of logs for selected time ranges. 
 . Select an environment.
 . Provide a <<ref-query, log query>>.
 . Review the search results.
