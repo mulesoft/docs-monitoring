@@ -36,7 +36,7 @@ If no data returns, try a different date-time range, query, or environment. Also
 [[refresh]]
 == View the Latest Data
 
-To review the latest log data, click the Refresh button. After a log search displays results, no new log data appears until you refresh the page. 
+To review the latest log data, click *Refresh*. After a query executes and produces log data, no new log data appears until you perform a new query, refresh, or reload the page. 
 
 [[environments]]
 == Environments
