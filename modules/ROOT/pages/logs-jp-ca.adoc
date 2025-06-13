@@ -15,7 +15,7 @@ image::logs-hyperforce.png["Logs UI"]
 . <<environments, Environment selector>> for your deployments (such as Sandbox or Production)
 . <<ref-query, Filters>> to narrow the list of logs that return
 . Matching log entry, which includes a date-time stamp, log level, and message
-. Expanded log message data and any available data from other log fields 
+. Expanded log message data and data available from other log fields 
 . Selector for the date and time range to capture
 . <<refresh, Refresh>> button
 
