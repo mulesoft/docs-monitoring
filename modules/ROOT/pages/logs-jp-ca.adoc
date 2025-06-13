@@ -34,7 +34,7 @@ You can expand the message to get message details.
 If no data returns, try a different date-time range, query, or environment. Also review the <<search-query-rules, search query behavior>>.
 
 [[refresh]]
-== View the Latest Data
+== View the Latest Logs
 
 To review the latest log data, click *Refresh*. After a query executes and produces log data, no new log data appears until you perform a new query, refresh, or reload the page. 
 
