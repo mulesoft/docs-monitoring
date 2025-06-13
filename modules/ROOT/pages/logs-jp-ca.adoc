@@ -41,7 +41,7 @@ To review the latest log data, click *Refresh*. After a query executes and produ
 [[environments]]
 == Environments
 
-When displaying logs, select the environment that contains the logs you intend to review.
+When displaying logs, select the environment containing the logs you intend to review.
 
 Built-in xref:access-management::environments#types-of-environments.adoc[environments] are:
 
