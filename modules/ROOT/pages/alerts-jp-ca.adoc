@@ -1,0 +1,155 @@
+= Getting Alerts in Anypoint Monitoring (Canada and Japan)
+//:page-notice-banner-message: <b>Pilot release</b>: This feature is for a Pilot release in Canada and Japan Cloud instances of Anypoint Platform. 
+
+//feature tier:
+include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only"]
+
+In the https://ca1.platform.mulesoft.com/monitoring[Canada] and https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds, create and receive alert notifications for your deployed entities (Mule app and APIs). 
+
+[[alerts-overview]]
+//don't change order of numbers in graphic or calloutlist
+image::TODO.png["Alerts UI"]
+
+[calloutlist]
+. Alerts in Anypoint Monitoring
+. TODO
+. TODO
+
+[[find]]
+== Find Alerts
+
+To find the list of alerts:
+
+. In Anypoint Monitoring, navigate to *Alerts*.
+. To narrow the list of alerts, use any of these filtering options:
+
+* <<status, Status>> 
+* <<severity, Severity>>
+* <<search, Search>> 
+. Review the alert list that returns. 
++
+Each alert provides:
+
+* *Alert Name*: Name of the alert
+* *Severity*: Configured <<severity, severity>> of the alert
+* *Status*: Current <<status, Status>> of the alert
+* *Metric*: Name of the <<metrics, metric>> that the alert reports
+* *Entity*: Name of the Mule app or API that the alert is for
+* *Last Alerted*: Most recent date the alert triggered or *N/A* 
++
+TODO: for how long (ever or in the last x time period?)
+* *Creation Date*: Date the alert was created
+* *Availability*: *Enabled* or TODO
+
+[[create]]
+== Create an Alert
+
+Configure an alert, the condition for triggering the alert, and the alert notification.
+
+. From *Alerts* in Anypoint Monitoring, click *Create Alert*. 
+. Configure alert properties:
+.. Provide a name for the alert.
+.. Select the <<environment, environment>> in your organization for this alert. 
+.. Select the <<entities, entity type and entity>> that the alert is for. 
+.. Click *Next* to open *Set Alert Condition*. 
+. In *Set Alert Condition*, configure the criteria for triggering the alert:
+.. Select the <<metrics, metric>> that the alert uses.
+.. Select the <<severity, severity>> of the alert.
+.. Provide a <<threshold, threshold>> for triggering the alert.
+.. Click *Next* to open *Configure Email Notification*. 
+. In *Configure Email Notification*, configure the email to send when the alert triggers.
++
+To use variables in the email, see <<variables>>.
+.. Provide a subject.
+.. Provide the message.
+.. Identify recipients. 
+
+
+[[status]]
+== Alert Statuses
+
+TODO: INTRO
+
+* *Not Alerting*
+* TODO: additional statuss
+
+
+[[severity]]
+== Alert Severities
+
+Use your organization's alerting criteria when setting an alert's severity. Available severity levels are:
+
+* *Low*
+* *Medium*
+* *High*
+* *Critical*
+
+[[search]]
+== Search Rules
+
+TODO: INTRO, determine search syntax requirements and any limitations
+
+
+[[threshold]]
+== Alert Thresholds
+
+Alert thresholds indicate when the value of a metric triggers the alert. Threshold configurations follow this form:
+
+*Trigger alert when [selected metric] is [Above|Below] [Number] for each of the last [Number] consecutive minutes.*
+
+Example:
+
+*Trigger alert when Message Count is Above 4 for each of the last 10 consecutive minutes.*
+
+The example configures an alert to trigger when the selected metric (*Message Count*) is greater than (*Above*) 4 for 10 consecutive minutes. In other words, the count must exceed 4 for each minute of minutes 1-10.  For example, if the count is greater than 4 for 9 of 10 minutes, the alert does not trigger, even if it triggers at minute 11. If the count is is greater than 4 for minutes 11-20, the alert triggers.
+
+//TODO: MINIMUM CAPTURE PERIOD (5 MINS?)
+
+[[environment]]
+== Environment
+
+Alerts are specific to one of your Anypoint Platform environments.
+
+Built-in xref:access-management::environments#types-of-environments.adoc[environments] are:
+
+TODO: CONFIRM ENVIRONMENT NAMES IN THE UI
+
+* *Environment: Design*
+* *Environment: Production*
+* *Environment: Sandbox*
+
+TODO: CONFIRM:
+
+Any other environments that your organization xref:access-management::environments.adoc#to-create-a-new-environment[creates] are also available.
+
+[[entities]]
+== Entities and Entity Types
+
+Entities are deployable units (such as Mule apps and API implementations) that produce the metrics data underlying  alert threshold configurations.
+
+An entity type is an A
+
+[[metrics]]
+== Metrics
+
+Metrics are TODO
+
+TODO: IDENTIFY METRICS (same as Insights, e.g. Metric API)?
+
+
+[[variables]]
+== Notification Variable Reference
+
+Alerts deliver notifications as emails to designated recipients for each alert. 
+
+
+TODO: Determine which of these apply and if there will be any new ones.
+
+
+== Alert Limits
+
+Your Anypoint Platform subscription determines the number of alerts you can create.
+
+A disabled *Create Alert* button indicates that your subscription does not allow more alerts. 
+
+TODO: XREF OR ADD DETAILS AND is there a hard limit AND is this enabled alerts or any alerts at all?

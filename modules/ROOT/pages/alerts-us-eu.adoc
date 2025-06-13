@@ -1,4 +1,4 @@
-= Getting Alerts in Anypoint Monitoring (US and EU Clouds)
+= Getting Alerts (US and EU Clouds)
 :page-aliases: alerts-using.adoc, alerts-config.adoc
 :page-info-pills: anypoint-pricing-core
 
