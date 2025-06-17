@@ -54,7 +54,7 @@ Click the *Performance* tab to view information about app performance metrics, i
 Click the *Failures* tab to view information about app request failures, including:
 
 * *Request Volume*: The total number of inbound requests to the app within the specified time range.
-* *Failed Requests*: The total number of failed inbound requests to the app for the specified time range. An inbound request failure occurs when a Mule flow in your deployed Mule app throws an exception. Inbound failures differ from outbound failures, which indicate exceptions from outbound connector operations, such as from an HTTP Request operation in the Anypoint Connector for HTTP (HTTP Connector). Failure counts apply only to exceptions from the app, so a 4xx or 5xx reply code to a caller isn't a failure unless the reply is due to an exception.
+* *Failed Requests*: The total number of failed inbound requests to the app for the specified time range. An inbound request failure occurs when a Mule flow in your deployed Mule app throws an exception. Inbound failures differ from outbound failures, which indicate exceptions from outbound connector operations, such as from an HTTP Request operation in the Anypoint Connector for HTTP (HTTP Connector). Failure counts apply only to exceptions from the app, so a 4xx or 5xx reply code to a caller isn't a failure unless the reply is due to an unmanaged exception.
 * *Successful Requests*: The number of successful inbound requests to the app in the specified time range.
 
 === CPU Utilization
