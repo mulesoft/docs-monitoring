@@ -36,7 +36,7 @@ If no logs return, try a different date-time range, query, or environment. Also 
 [[refresh]]
 == View the Latest Logs
 
-After a query executes and produces log data (or no results), no new log data appears until you perform a new query, refresh, or reload the page. 
+After a search query executes and produces log data (or no results), no new log data appears until you perform a new query, refresh, or reload the page. 
 
 To retrieve the latest log data, click *Refresh*. 
 
