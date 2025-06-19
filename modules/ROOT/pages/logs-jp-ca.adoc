@@ -43,7 +43,7 @@ To retrieve the latest log data, click *Refresh*.
 [[environments]]
 == Environments
 
-When displaying logs, select the environment containing the logs you intend to review.
+When displaying logs, select the environment containing the applications you intend to review.
 
 Built-in xref:access-management::environments#types-of-environments.adoc[environments] are:
 
