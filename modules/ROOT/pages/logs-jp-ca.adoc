@@ -45,13 +45,13 @@ To retrieve the latest log data, click *Refresh*.
 
 When displaying logs, select the environment containing the applications you intend to review.
 
-Built-in xref:access-management::environments#types-of-environments.adoc[environments] are:
+Your organization adminstrator xref:access-management::environments.adoc#to-create-a-new-environment[creates] the environments that are available to you.
 
-* *Environment: Design*
-* *Environment: Production*
-* *Environment: Sandbox*
+Anypoint Platform supports these types of xref:access-management::environments#types-of-environments.adoc[environments]:
 
-Any other environments that your organization xref:access-management::environments.adoc#to-create-a-new-environment[creates] are also available.
+* *Design*
+* *Production*
+* *Sandbox*
 
 [[ref-query]]
 == Log Query Reference
