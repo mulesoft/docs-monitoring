@@ -29,7 +29,7 @@ Built-in and custom selections are available for up to the last 30 days of logs 
 . To narrow the search results, provide a <<ref-query, log query>>.
 . Review the search results.
 +
-You can expand the message to get message details.
+You can expand a log entry to get additional details.
 +
 If no data returns, try a different date-time range, query, or environment. Also review the <<search-query-rules, search query behavior>>.
 
