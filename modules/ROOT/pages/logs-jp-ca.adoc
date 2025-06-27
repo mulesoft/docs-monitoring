@@ -60,7 +60,7 @@ Use filters to narrow the results of your search for logs. The filters match val
 
 * `application` accepts an *=* operator followed by an application name. 
 * `log_level` accepts an *=* operator followed by a value of *DEBUG*, *INFO*, *WARN*, *ERROR*, or *FATAL*. 
-* `message` accepts a *LIKE* operator for partial or exact matches in log `message` fields. 
+* `message` accepts a *LIKE* operator for partial matches in log `message` fields. 
 
 [[search-query-rules]]
 Search query behavior:
