@@ -51,9 +51,9 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 | No
 
 
-| <<logging, Log management>>
+| <<logging, Logging features>>
 | Yes
-| Yes (<<single-app, limited log search>>)
+| Yes
 | Yes
 | No
 
@@ -116,13 +116,11 @@ Manage logs and log data for your deployments with these logging features:
 * <<raw-data-downloads>>
 
 [[log-search]]
-==== Log Search
+==== Log Searches
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
 
-Search across log files, including archived logs to find information and events based on a specific query. Logs includes raw log and event data from across the app network so that you can pinpoint the root cause of a problem.
-
-image::intro-logs.png["Logs in Anypoint Monitoring"]
+Search for and review logs from across your deployed applications. 
 
 See xref:logs.adoc[].
 
@@ -142,7 +140,7 @@ For more logging options, see xref:runtime-manager::deployment-strategies.adoc#l
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-Generate logs for Mule apps and APIs in real-time and without writing code.
+In the US and EU Clouds, generate logs for Mule apps and APIs in real-time and without writing code.
 
 See xref:log-points.adoc[].
 
@@ -151,7 +149,7 @@ See xref:log-points.adoc[].
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-Download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
+In the US and EU Clouds, download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
 
 See xref:raw-data.adoc[].
 

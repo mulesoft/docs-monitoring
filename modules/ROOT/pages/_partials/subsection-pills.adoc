@@ -37,3 +37,11 @@ image:info.png[title="This feature is available on Japan and Canada cloud instan
 image:info.png[title="This feature is available to all subscription tiers.",15,15] Availability: This feature is available to all subscription tiers.
 |===
 //end::anypoint-pricing-all-tiers[]
+
+//tag::anypoint-cloud-support-advanced-only[]
+[grid=all]
+|===
+|
+image:info.png[title="This feature requires an Advanced subscription in a supported Anypoint Platform region.",15,15] Availability: xref:index.adoc#billing[Advanced tier only]
+|===
+//end::anypoint-cloud-support-advanced-only[]
