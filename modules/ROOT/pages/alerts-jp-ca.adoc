@@ -73,7 +73,7 @@ To use variables in the email, see <<variables>>.
 TODO: INTRO
 
 * *Not Alerting*
-* TODO: additional statuss
+* TODO: additional status
 
 
 [[severity]]
@@ -127,26 +127,58 @@ Any other environments that your organization xref:access-management::environmen
 [[entities]]
 == Entities and Entity Types
 
-Entities are deployable units (such as Mule apps and API implementations) that produce the metrics data underlying  alert threshold configurations.
+Entities are deployable units (Mule apps and API implementations) that produce the metrics data underlying  alert threshold configurations. 
 
-An entity type is an A
+Entity Types:
 
-[[metrics]]
+* Application
+* API
+
+
 == Metrics
 
-Metrics are TODO
+Conditions that you set on Mule application and API metrics determine when an alert triggers.
 
-TODO: IDENTIFY METRICS (same as Insights, e.g. Metric API)?
+Mule app metrics:
+
+* *Message Count*:
+* *Message Error Count*:
+* *Average Response Time*:
+* *CPU Utilization*:
+* *Memory Utilization*:
+* *Thread Count*:
+
+API metrics:
+
+* *Total Request Time*: 
+* *Average Response Time*:
+* *Response Codes*:
+* *Policy Violations*:
 
 
 [[variables]]
-== Notification Variable Reference
-
-Alerts deliver notifications as emails to designated recipients for each alert. 
-
+== Email Notification Variables
 
 TODO: Determine which of these apply and if there will be any new ones.
 
+Alerts deliver notifications as emails to designated recipients for each alert. Your email template can incorporate variables in the *Subject* and *Message* fields. For the description of each variable, see <<alert-variables>>.
+
+[%header,cols="25a,50a,20a"]
+.Variables for Alerts
+|===
+| Alert Type | Metric | Applicable Variables
+
+include::partial$include-alert-variables.adoc[tag="alerts-app-ch"]
+
+include::partial$include-alert-variables.adoc[tag="alerts-app-rtf"]
+
+include::partial$include-alert-variables.adoc[tag="alerts-api"]
+
+|===
+
+[[alert-variables]]
+
+include::partial$include-alert-variables.adoc[tag="alerts-variables"]
 
 == Alert Limits
 
