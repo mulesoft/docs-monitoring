@@ -6,6 +6,8 @@ include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only
 
 In the https://ca1.platform.mulesoft.com/monitoring[Canada] and https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds, create and receive alert notifications for your deployed entities (Mule app and APIs). 
 
+//TODO: ALERTS FOR WHAT?
+
 [[alerts-overview]]
 //don't change order of numbers in graphic or calloutlist
 image::TODO.png["Alerts UI"]
