@@ -141,9 +141,9 @@ Conditions that you set on Mule application and API metrics determine when an al
 
 Mule app metrics:
 
-* *Message Count*:
-* *Message Error Count*:
-* *Average Response Time*:
+* *Message Count*: Total number of log messages.
+* *Message Error Count*: Total number of error-related log messages.
+* *Average Response Time*: 
 * *CPU Utilization*:
 * *Memory Utilization*:
 * *Thread Count*:
