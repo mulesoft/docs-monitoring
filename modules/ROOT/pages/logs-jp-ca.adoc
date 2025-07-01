@@ -71,5 +71,4 @@ Multiple filters in a query are processed as logical ANDs (and not as ORs), mean
 * Multiple filters of the same type, such as two `application` filters, aren't allowed. 
 * Each filter allows a single value. 
 * For single-word search string values, you do not need to add quotation marks around the string. For multi-word strings, manually surround the string in quotes. 
-* Some message searches must provide an exact match. For example, a match to `package` in a package name like `com.some.package.name` isn't supported. 
 
