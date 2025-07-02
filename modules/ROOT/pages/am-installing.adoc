@@ -113,7 +113,7 @@ An Anypoint Monitoring agent from the version 3.x installer requires Mule Runtim
 * 1.11.x
 * 1.10.0
 
-You must manage Mule deployments in Runtime Manager. You can add and check for your hybrid deployments from the xref:runtime-manager::deploying-to-your-own-servers[Runtime Manager UI] or the xref:Runtime Manager UI or the xref:runtime-manager::runtime-manager-api.adoc[Runtime Manager REST API].
+You must manage Mule deployments in Runtime Manager. You can add and check for your hybrid deployments from the xref:runtime-manager::deploying-to-your-own-servers.adoc[Runtime Manager UI] or the xref:Runtime Manager UI or the xref:runtime-manager::runtime-manager-api.adoc[Runtime Manager REST API].
 
 == Hardware Prerequisites
 
