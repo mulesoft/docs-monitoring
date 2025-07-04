@@ -39,9 +39,7 @@ Each alert provides:
 * *Metric*: Name of the <<metrics, metric>> that the alert reports
 //NOT SUPPORTED YET:
 //* *Entity*: Name of the Mule app or API that the alert is for
-* *Last Alerted*: Most recent date and time the alert triggered or *-* (if never alerted)
-+
-TODO: for how long (ever or in the last x time period?)
+* *Last Alerted*: Most recent date and time the alert triggered or *-* for an alert that has never triggered
 * *Creation Date*: Alert creation date and time
 * *Availability*: *Enabled* or *Disabled* alert setting
 
