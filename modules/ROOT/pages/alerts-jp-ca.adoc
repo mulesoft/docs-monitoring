@@ -100,7 +100,8 @@ TODO: WHAT ARE THE SEARCH RULES? Partial, exact, regex, operators?
 
 Alert thresholds indicate when the value of a metric triggers the alert. Threshold configurations follow this form:
 
-*Trigger alert when [selected metric] is [Above|Below] [Number] for each of the last [Number] consecutive minutes.*
+//TODO: VERIFY THE Above/Below
+*Trigger alert when selected metric is [Above|Below] [Number] for each of the last [Number] consecutive minutes.*
 
 Example:
 
@@ -160,8 +161,6 @@ API metrics:
 
 [[variables]]
 == Email Notification Variables
-
-TODO: Determine which of these apply and if there will be any new ones.
 
 Alerts deliver notifications as emails to designated recipients for each alert. Your email template can incorporate variables in the *Subject* and *Message* fields. For the description of each variable, see <<alert-variables>>.
 
