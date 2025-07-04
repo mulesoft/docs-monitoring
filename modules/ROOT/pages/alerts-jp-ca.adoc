@@ -6,16 +6,16 @@ include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only
 
 In the https://ca1.platform.mulesoft.com/monitoring[Canada] and https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds, create and receive alert notifications for your deployed entities (Mule app and APIs). 
 
-//TODO: ALERTS FOR WHAT?
-
 [[alerts-overview]]
-//don't change order of numbers in graphic or calloutlist
-image::TODO.png["Alerts UI"]
+//TBD: WILL TRY TO ADD OVERVIEW IMAGE WITH CALLOUTS TO DOCS BEFORE GA
+//image::TODO.png["Alerts UI"]
 
-[calloutlist]
-. Alerts in Anypoint Monitoring
-. TODO
-. TODO
+//[calloutlist]
+//TODO: ONCE OVERVIEW IMAGE IS READY, CONVERT BULLETED LIST ITEMS (* ) BELOW TO NUMBERED LIST ITEMS (. )
+// TBD: Status and Environment might not be available at GA
+//. Status selector
+//. Environment selector
+//. Search field
 
 [[find]]
 == Find Alerts
@@ -23,11 +23,12 @@ image::TODO.png["Alerts UI"]
 To find the list of alerts:
 
 . In Anypoint Monitoring, navigate to *Alerts*.
-. To narrow the list of alerts, use any of these filtering options:
-
-* <<status, Status>> 
-* <<severity, Severity>>
-* <<search, Search>> 
+//. To narrow the list of alerts, use any of these filtering options:
+//
+//* <<status, Status>> 
+//* <<severity, Severity>>
+//* <<search, Search>> 
+. To narrow the list of alerts, <<search, search>> search alert. 
 . Review the alert list that returns. 
 +
 Each alert provides:
@@ -36,12 +37,13 @@ Each alert provides:
 * *Severity*: Configured <<severity, severity>> of the alert
 * *Status*: Current <<status, Status>> of the alert
 * *Metric*: Name of the <<metrics, metric>> that the alert reports
-* *Entity*: Name of the Mule app or API that the alert is for
-* *Last Alerted*: Most recent date the alert triggered or *N/A* 
+//NOT SUPPORTED YET:
+//* *Entity*: Name of the Mule app or API that the alert is for
+* *Last Alerted*: Most recent date and time the alert triggered or *-* (if never alerted)
 +
 TODO: for how long (ever or in the last x time period?)
-* *Creation Date*: Date the alert was created
-* *Availability*: *Enabled* or TODO
+* *Creation Date*: Alert creation date and time
+* *Availability*: *Enabled* or *Disabled* alert setting
 
 [[create]]
 == Create an Alert
@@ -52,7 +54,8 @@ Configure an alert, the condition for triggering the alert, and the alert notifi
 . Configure alert properties:
 .. Provide a name for the alert.
 .. Select the <<environment, environment>> in your organization for this alert. 
-.. Select the <<entities, entity type and entity>> that the alert is for. 
+//TODO: IS "resource" the term we'll use 
+.. Select the <<entities, resource type and resource>> that the alert is for. 
 .. Click *Next* to open *Set Alert Condition*. 
 . In *Set Alert Condition*, configure the criteria for triggering the alert:
 .. Select the <<metrics, metric>> that the alert uses.
@@ -70,15 +73,15 @@ To use variables in the email, see <<variables>>.
 [[status]]
 == Alert Statuses
 
-TODO: INTRO
+The *Alerts* page indicates whether an alert is currently triggering or in some other state.  
 
-* *Not Alerting*
-* TODO: additional status
-
+//TODO: Same as comm cloud or not?
+include::partial$include-alert-state.adoc[leveloffset=+1]
 
 [[severity]]
 == Alert Severities
 
+//Note: This is different from comm cloud -- migration issue?
 Use your organization's alerting criteria when setting an alert's severity. Available severity levels are:
 
 * *Low*
@@ -90,7 +93,7 @@ Use your organization's alerting criteria when setting an alert's severity. Avai
 == Search Rules
 
 TODO: INTRO, determine search syntax requirements and any limitations
-
+TODO: WHAT ARE THE SEARCH RULES? Partial, exact, regex, operators?
 
 [[threshold]]
 == Alert Thresholds
@@ -112,28 +115,27 @@ The example configures an alert to trigger when the selected metric (*Message Co
 
 Alerts are specific to one of your Anypoint Platform environments.
 
-Built-in xref:access-management::environments#types-of-environments.adoc[environments] are:
+Your organization administrator xref:access-management::environments.adoc#to-create-a-new-environment[creates] the environments that are available to you.
 
-TODO: CONFIRM ENVIRONMENT NAMES IN THE UI
+Anypoint Platform supports these types of xref:access-management::environments#types-of-environments.adoc[environments]:
 
-* *Environment: Design*
-* *Environment: Production*
-* *Environment: Sandbox*
-
-TODO: CONFIRM:
-
-Any other environments that your organization xref:access-management::environments.adoc#to-create-a-new-environment[creates] are also available.
+* *Design*
+* *Production*
+* *Sandbox*
 
 [[entities]]
-== Entities and Entity Types
+//== Entities and Entity Types
+== Resources and Resource Types
 
-Entities are deployable units (Mule apps and API implementations) that produce the metrics data underlying  alert threshold configurations. 
+//Entities are deployable units (Mule apps and API implementations) that produce the metrics data underlying alert threshold configurations. 
 
-Entity Types:
+Resources are deployable units (Mule apps and API implementations) that produce the metrics data underlying alert threshold configurations. When creating an alert, you select a resource type and a specific resource that belongs to the resource type. 
+
+//Entity Types:
+Resource Types:
 
 * Application
 * API
-
 
 == Metrics
 
