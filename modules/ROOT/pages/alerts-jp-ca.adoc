@@ -28,7 +28,9 @@ To find the list of alerts:
 //* <<status, Status>> 
 //* <<severity, Severity>>
 //* <<search, Search>> 
-. To narrow the list of alerts, <<search, search>> search alert. 
+. To narrow the list of alerts, <<search, search>> for an alert name. 
++
+The search field accepts partial word searches.
 . Review the alert list that returns. 
 +
 Each alert provides:
@@ -87,12 +89,6 @@ Use your organization's alerting criteria when setting an alert's severity. Avai
 * *High*
 * *Critical*
 
-[[search]]
-== Search Rules
-
-TODO: INTRO, determine search syntax requirements and any limitations
-TODO: WHAT ARE THE SEARCH RULES? Partial, exact, regex, operators?
-
 [[threshold]]
 == Alert Thresholds
 
@@ -109,6 +105,8 @@ The example configures an alert to trigger when the selected metric (*Message Co
 
 //TODO: MINIMUM CAPTURE PERIOD (5 MINS?)
 
+////
+Not in GA: keep for later
 [[environment]]
 == Environment
 
@@ -121,6 +119,8 @@ Anypoint Platform supports these types of xref:access-management::environments#t
 * *Design*
 * *Production*
 * *Sandbox*
+
+////
 
 [[entities]]
 //== Entities and Entity Types
@@ -145,16 +145,16 @@ Mule app metrics:
 * *Message Count*: Total number of log messages.
 * *Message Error Count*: Total number of error-related log messages.
 * *Average Response Time*: 
-* *CPU Utilization*:
-* *Memory Utilization*:
-* *Thread Count*:
+* *CPU Utilization*: 
+* *Memory Utilization*: 
+* *Thread Count*: 
 
 API metrics:
 
 * *Total Request Time*: 
-* *Average Response Time*:
-* *Response Codes*:
-* *Policy Violations*:
+* *Average Response Time*: 
+* *Response Codes*: 
+* *Policy Violations*: 
 
 
 [[variables]]
