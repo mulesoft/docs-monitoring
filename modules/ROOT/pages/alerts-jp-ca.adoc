@@ -118,7 +118,7 @@ Use your organization's alerting criteria when setting an alert's severity. Avai
 [[threshold]]
 == Alert Conditions
 
-Alert condition configurations indicate when the data collected on a <<alert-metrics, metric>> triggers the alert. The configurations follow this form:
+Alert condition configurations indicate when the data collected on a <<alert-metrics, metric>> triggers the alert. Configurations for alert thresholds follow this form:
 
 //TODO: VERIFY THE Above/Below; verify variable replacement of "selected metric" with name of metric
 
