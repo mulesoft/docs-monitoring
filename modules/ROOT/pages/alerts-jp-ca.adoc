@@ -6,7 +6,7 @@ include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only
 
 In the https://ca1.platform.mulesoft.com/monitoring[Canada] and https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds, create and receive alert notifications for your deployed resources (Mule app and APIs). 
 
-Limits apply (see <<limits>>). 
+Limitations apply (see <<limits>>). 
 
 [[alerts-overview]]
 //TBD: WILL TRY TO ADD OVERVIEW IMAGE WITH CALLOUTS TO DOCS BEFORE GA
@@ -18,6 +18,26 @@ Limits apply (see <<limits>>).
 //. Status selector
 //. Environment selector
 //. Search field
+
+== Before You Begin
+
+Required prerequisites:
+
+* Your organization must subscribe to a xref:index.html#billing[tier] in an Anypoint Platform cloud that supports this feature. 
+* You must have the xref:am-permissions.adoc[permissions] required for viewing or managing Anypoint Monitoring. 
+* At least one Mule app or API must be deployed to a supported host:
+
+//TODO: VERIFY THESE, AND POST GA, ADD LINKS TO DOC
+** Mule app:
+*** CloudHub or CloudHub 2.0
+*** Runtime Fabric
+*** Hybrid 
+** API managed by Mule Gateway or Flex Gateway
+
+//For more information, see https://docs.mulesoft.com/hosting-home/#runtime-plane-hosting-options and https://docs.mulesoft.com/gateway-home/
+//TODO: NEED XREFS POST GA; ADD LINKS TO HOSTING OPTIONS AND GATEWAY DOCS 
+
+
 
 [[find]]
 == Find Alerts
@@ -97,18 +117,18 @@ Use your organization's alerting criteria when setting an alert's severity. Avai
 [[threshold]]
 == Alert Thresholds
 
-Alert thresholds indicate when the value of a metric triggers the alert. Threshold configurations follow this form:
+Alert thresholds indicate when the value of a <<alert-metrics, metric>> triggers the alert. Threshold configurations follow this form:
 
-//TODO: VERIFY THE Above/Below
+//TODO: VERIFY THE Above/Below; verify variable replacement of "selected metric" with name of metric
 
+[%header,cols="1a,1a"]
 |===
-| 
-*Trigger alert when selected metric is _\[Above|Below]_ _\[Number]_ for each of the last _\[Number]_ consecutive minutes.*
-|
-Example: *Trigger alert when Message Count is _Above_ _4_ for each of the last _10_ consecutive minutes.*
+| Configuration Pattern | Example 
+| *Trigger alert when selected metric is _Above\|Below_ _Number_ for each of the last _Number_ consecutive minutes.*
+| *Trigger alert when selected metric is _Above_ _4_ for each of the last _10_ consecutive minutes.*
 |===
 
-The example configures an alert to trigger when the selected metric (*Message Count*) is greater than (*Above*) 4 for 10 consecutive minutes. In other words, the count must exceed 4 for each minute of minutes 1-10.  For example, if the count is greater than 4 for 9 of 10 minutes, but not for the tenth minute, the alert does not trigger, even if the count reaches 4 at minute 11. Following the same rule, if the count is greater than 4 for minutes 11-20, the alert triggers.
+The example configures an alert to trigger when the selected metric (such as *Message Count*) is greater than (*Above*) 4 for 10 consecutive minutes. In other words, the count must exceed 4 for each minute of minutes 1-10.  For example, if the count is greater than 4 for 9 of 10 minutes, but not for the tenth minute, the alert does not trigger, even if the count reaches 4 at minute 11. Following the same rule, if the count is greater than 4 for minutes 11-20, the alert triggers.
 
 //TODO: MINIMUM CAPTURE PERIOD (5 MINS?)
 
@@ -136,7 +156,7 @@ A Mule application or API metric is part of the <<threshold, configuration for t
 
 Mule app metrics:
 
-* *Message Count*: Total number of Mule messages that are processed successfully
+* *Message Count*: Total number of Mule messages that processed successfully
 * *Message Error Count*: Number of Mule messages that return an exception in a flow
 * *Average Response Time*: Response time (in milliseconds) of a message
 * *CPU Utilization*: Percent of CPU used on the virtual machine 
