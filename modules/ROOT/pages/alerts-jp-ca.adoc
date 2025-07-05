@@ -25,18 +25,19 @@ Required prerequisites:
 
 * Your organization must subscribe to a xref:index.html#billing[tier] in an Anypoint Platform cloud that supports this feature. 
 * You must have the xref:am-permissions.adoc[permissions] required for viewing or managing Anypoint Monitoring. 
-* At least one Mule app or API must be deployed to a supported host:
 
-//TODO: VERIFY THESE, AND POST GA, ADD LINKS TO DOC
-** Mule app:
+//TODO: VERIFY THESE TARGETS
+* At least one Mule application or API must be deployed to a supported host:
+
+** Mule application:
 *** CloudHub or CloudHub 2.0
 *** Runtime Fabric
 *** Hybrid 
 ** API managed by Mule Gateway or Flex Gateway
++
+See xref:gateway-home::index.adoc[].
 
-//For more information, see https://docs.mulesoft.com/hosting-home/#runtime-plane-hosting-options and https://docs.mulesoft.com/gateway-home/
-//TODO: NEED XREFS POST GA; ADD LINKS TO HOSTING OPTIONS AND GATEWAY DOCS 
-
+For information about deployment targets for Mule applications, see xref:hosting-home::index.adoc#runtime-plane-hosting-options[Runtime Plane Hosting Options].
 
 
 [[find]]
