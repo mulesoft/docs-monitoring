@@ -1,4 +1,4 @@
-= Setting Up Alerts for Custom Dashboards in Anypoint Monitoring
+= Setting Up Alerts for Custom Dashboards in Anypoint Monitoring (US and EU)
 :page-aliases: advanced-alerts.adoc
 :page-info-pills: anypoint-pricing-titanium
 

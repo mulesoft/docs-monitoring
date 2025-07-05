@@ -1,4 +1,4 @@
-= Setting Up Basic Alerts in Anypoint Monitoring
+= Setting Up Basic Alerts in Anypoint Monitoring (US and EU)
 :page-info-pills: anypoint-pricing-core
 
 You can set up basic alerts for servers, Mule apps, and APIs. Alerts trigger email notifications when a metric you are measuring passes a specified threshold.
