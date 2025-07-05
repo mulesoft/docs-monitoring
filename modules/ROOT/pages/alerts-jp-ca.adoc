@@ -23,7 +23,7 @@ Limitations apply (see <<limits>>).
 
 Required prerequisites:
 
-* Your organization must subscribe to a xref:index.html#billing[tier] in an Anypoint Platform cloud that supports this feature. 
+* Your organization must subscribe to a xref:index.adoc#billing[tier] in an Anypoint Platform cloud that supports this feature. 
 * You must have the xref:am-permissions.adoc[permissions] required for viewing or managing Anypoint Monitoring. 
 
 //TODO: VERIFY THESE TARGETS
