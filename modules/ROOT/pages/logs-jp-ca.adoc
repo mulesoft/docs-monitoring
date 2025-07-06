@@ -19,6 +19,8 @@ image::logs-hyperforce.png["Logs UI"]
 . Selector for the date and time range to capture
 . <<refresh, Refresh>> button
 
+//TODO: ADD RTM?
+//For logging in Runtime Manager, see xref:runtime-manager::viewing-log-data.adoc[Runtime Manager].
 
 == Search for Logs
 

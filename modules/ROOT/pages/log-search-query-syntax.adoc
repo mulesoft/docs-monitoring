@@ -1,7 +1,7 @@
-= Log Search Query Syntax Reference
+= Log Search Query Syntax Reference (US and EU)
 
 //feature tier:
-include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"] on https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds
 
 In addition to using the query builder and facet search user interface in Anypoint Monitoring log search, you can use the log search query language.
 

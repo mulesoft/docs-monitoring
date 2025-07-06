@@ -3,10 +3,10 @@
 
 Use Anypoint Monitoring to retrieve logs on your deployed applications:
 
-* xref:logs-us-eu.adoc[US and EU] Anypoint Platform instances
+* xref:logs-us-eu.adoc[US and EU] Anypoint Platform clouds
 ** *Log Search* for logs across your deployed applications
 ** *Log Points* for real-time log generation
 ** *Raw Data* for raw-data downloads
 
-* xref:logs-jp-ca.adoc[Japan and Canada] Anypoint Platform instances
+* xref:logs-jp-ca.adoc[Japan and Canada] Anypoint Platform clouds
 ** *Logs* for logs across your deployed applications
