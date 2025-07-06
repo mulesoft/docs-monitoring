@@ -1,13 +1,14 @@
-= Using Logs in Anypoint Monitoring (EU and US)
+= Using Logs in Anypoint Monitoring (US and EU)
+:page-info-pills: anypoint-pricing-titanium
 
 //feature tier:
-include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
-
-In addition to logging through xref:runtime-manager::viewing-log-data.adoc[Runtime Manager], Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. You can use aggregated logs in conjunction with monitoring to help identify issues and investigate failures quickly. These features support:
+On https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. You can use aggregated logs in conjunction with monitoring to help identify issues and investigate failures quickly. These features support:
 
 * Comparative analysis and identification of event and information patterns based on searches across selected Mule apps and environments.
 * Searches within the logs of a specific worker (or set of workers) for a Mule app so that you can narrow scope of issues to check.
 * Sharing a snapshot of important logs with developers who can work on the source of the issue.
+
+You can also search for individual application logs in Runtime Manager, see xref:runtime-manager::viewing-log-data.adoc[].
 
 [CAUTION]
 ====
