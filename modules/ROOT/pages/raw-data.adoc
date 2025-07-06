@@ -1,7 +1,7 @@
 = Downloading Raw Data (US and EU)
 :page-info-pills: anypoint-pricing-titanium
 
- On https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, you can use Anypoint Monitoring to download archived log data (raw data) collected on Mule apps that are running in hybrid, CloudHub, or Runtime Fabric deployments. This data is helpful for security, compliance, or other purposes where you need to examine or collect your warehoused data.
+On https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, you can use Anypoint Monitoring to download archived log data (raw data) collected on Mule apps that are running in hybrid, CloudHub, or Runtime Fabric deployments. This data is helpful for security, compliance, or other purposes where you need to examine or collect your warehoused data.
 
 [NOTE]
 Log data is archived regularly.
