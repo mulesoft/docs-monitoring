@@ -6,14 +6,15 @@ include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only
 
 In the https://ca1.platform.mulesoft.com/monitoring[Canada] and https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds, create and receive alert notifications for your deployed resources (Mule app and APIs). 
 
-Limitations apply (see <<limits>>). 
+//TODO POST GA: ADD LINK TO LIMITATIONS SECTION
+//Limitations apply (see <<limits>>). 
 
 [[alerts-overview]]
 //TBD: WILL TRY TO ADD OVERVIEW IMAGE WITH CALLOUTS TO DOCS BEFORE GA
 //image::TODO.png["Alerts UI"]
 
 //[calloutlist]
-//TODO: ONCE OVERVIEW IMAGE IS READY, CONVERT BULLETED LIST ITEMS (* ) BELOW TO NUMBERED LIST ITEMS (. )
+//TODO: POST GA ADD OVERVIEW IMAGE, CONVERT BULLETED LIST ITEMS (* ) BELOW TO NUMBERED LIST ITEMS (. )
 // TBD: Status and Environment might not be available at GA
 //. Status selector
 //. Environment selector
@@ -46,14 +47,15 @@ For information about deployment targets for Mule applications, see xref:hosting
 To find the list of alerts:
 
 . In Anypoint Monitoring, navigate to *Alerts*.
+//TODO: POST GA FEATURES TO ADD -- KEEP COMMENTED OUT UNTIL THEN
 //. To narrow the list of alerts, use any of these filtering options:
 //
 //* <<status, Status>> 
 //* <<severity, Severity>>
 //* <<search, Search>> 
-. To narrow the list of alerts, search for an alert name. 
-+
-The search field accepts partial word searches.
+//. To narrow the list of alerts, search for an alert name. 
+//+
+//The search field accepts partial word searches.
 . Review the alert list that returns. 
 +
 Each alert provides:
@@ -212,6 +214,8 @@ include::partial$include-alert-variables.adoc[tag="alerts-api"]
 
 include::partial$include-alert-variables.adoc[tag="alerts-variables"]
 
+////
+//POST GA START: ADD SECTION WITH NECESSARY DETAIL:
 [[limits]]
 == Alert Limits and Rate Limiting
 
@@ -244,3 +248,5 @@ Your organization can increase storage on a per tenant basis.
 
 //TODO: HELP PEOPLE UNDERSTAND DETAILS
 For more information, see xref:TODO.adoc[TODO].
+//POST GA END: ADD SECTION WITH NECESSARY DETAIL
+////
