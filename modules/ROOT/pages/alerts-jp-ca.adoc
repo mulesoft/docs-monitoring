@@ -155,6 +155,7 @@ Anypoint Platform supports these types of xref:access-management::environments#t
 ////
 
 //TODO: TECH DEBT - TURN THE METRICS INTO INCLUDES - descriptions from basic-alerts.adoc
+[[metrics]]
 == Alert Metrics
 
 A Mule application or API metric is part of the <<threshold, configuration for triggering the alert>>. 
