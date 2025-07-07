@@ -19,8 +19,7 @@ image::logs-hyperforce.png["Logs UI"]
 . Selector for the date and time range to capture
 . <<refresh, Refresh>> button
 
-//TODO: ADD RTM?
-//For logging in Runtime Manager, see xref:runtime-manager::viewing-log-data.adoc[Runtime Manager].
+For logs in other Anypoint Platform clouds, see xref:logs-us-eu.adoc[]. To view single-application logs in Runtime Manager, see xref:runtime-manager::viewing-log-data.adoc[View Log Data].
 
 == Search for Logs
 
