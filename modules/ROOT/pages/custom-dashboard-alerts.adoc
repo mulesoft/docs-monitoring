@@ -2,7 +2,7 @@
 :page-aliases: advanced-alerts.adoc
 :page-info-pills: anypoint-pricing-titanium
 
-Set up alerts for charts in xref:create-custom-dashboard.adoc[custom dashboards], from the chart's *Alert* tab. Alerts trigger email notifications if a data point you're measuring has passed a specified threshold in the past five minutes. This five-minute period is fixed and not configurable. 
+In the https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, set up alerts for charts in xref:create-custom-dashboard.adoc[custom dashboards], from the chart's *Alert* tab. Alerts trigger email notifications if a data point you're measuring has passed a specified threshold in the past five minutes. This five-minute period is fixed and not configurable. 
 
 For apps configured to run with more than one worker, charts that display worker-related metrics in Anypoint Monitoring dashboards break down the metrics by worker. 
 
