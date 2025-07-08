@@ -33,7 +33,7 @@ Required prerequisites:
 * At least one Mule application or API must be deployed to a supported host:
 
 ** Mule application:
-*** CloudHub or CloudHub 2.0
+*** CloudHub 2.0
 *** Runtime Fabric
 *** Hybrid 
 ** API managed by Mule Gateway or Flex Gateway
