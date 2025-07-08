@@ -54,6 +54,8 @@ Name of the environment where the resource is deployed
 * *Resource name* (apps), *Server name* (servers), *API* (APIs)
 +
 Application, server, or API to apply the alert to
++
+For APIs, you must also provide an API version. Only active versions of an API are selectable. Inactive APIs do not submit metrics. 
 * *Metric*
 +
 Condition that triggers the alert
