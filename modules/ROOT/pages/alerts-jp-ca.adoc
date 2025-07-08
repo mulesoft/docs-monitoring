@@ -82,7 +82,7 @@ Configure an alert, the condition for triggering the alert, and the alert notifi
 .. Provide a name for the alert.
 .. Select the <<environment, environment>> in your organization for this alert. 
 //TODO: IS "resource" the term we'll use; check on final name in UI. Was "entity" and "entity type"
-.. Select the resource type and resource that the alert is for. Only actively running resources are available.
+.. Select the resource type and resource that the alert is for. Only active resources that can receive traffic are available.
 
 * *Resource Type*: *API* or *Mule Application*
 * *Resource:* Name of the API or Mule application 
