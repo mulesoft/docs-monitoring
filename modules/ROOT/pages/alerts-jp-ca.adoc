@@ -86,7 +86,7 @@ Configure an alert, the condition for triggering the alert, and the alert notifi
 
 * *Resource Type*: *API* or *Mule Application*
 * *Resource:* Name of the API or Mule application 
-.. For an API alert, select an API version. 
+.. For an API alert, select an API version and up to ten response codes. 
 .. Click *Next* to open *Set Alert Condition*. 
 . In *Set Alert Condition*, configure the criteria for triggering the alert:
 .. Select the <<metrics, metric>> that the alert uses.
