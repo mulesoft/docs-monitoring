@@ -96,6 +96,7 @@ Configure an alert, the condition for triggering the alert, and the alert notifi
 . In *Configure Email Notification*, configure the email to send when the alert triggers.
 +
 To use variables in the email, see <<variables>>.
+
 .. Provide a subject.
 .. Provide the message.
 .. Identify recipients. 
