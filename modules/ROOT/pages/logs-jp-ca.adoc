@@ -57,7 +57,7 @@ Anypoint Platform supports these types of xref:access-management::environments#t
 [[ref-query]]
 == Log Query Reference
 
-Use filters to narrow the results of your search for logs. The filters match values of fields in the logs:
+Use these filters to narrow the results of your search for logs:
 
 * `application` accepts an *=* operator followed by an application name. 
 * `log_level` accepts an *=* operator followed by a value of *DEBUG*, *INFO*, *WARN*, *ERROR*, or *FATAL*. 
