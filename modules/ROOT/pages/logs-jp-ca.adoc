@@ -68,7 +68,7 @@ Search query behavior:
 
 * You can use any or all of the available filters in your query.
 +
-Multiple filters in a query are processed as logical ANDs (and not as ORs), meaning that searches return data matching all the filter criteria, not just some of it. 
+Multiple filters in a query are processed as logical ANDs (not ORs), meaning results must match all filter criteria not just some.
 * Multiple filters of the same type, such as two `application` filters, aren't allowed. 
 * Each filter allows a single value. 
 * For single-word search string values, you do not need to add quotation marks around the string. For multi-word strings, manually surround the string in quotes. 
