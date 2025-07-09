@@ -44,7 +44,7 @@ To retrieve the latest log data, click *Refresh*.
 [[environments]]
 == Environments
 
-When displaying logs, select the environment containing the applications you intend to review.
+When displaying logs, select the environment containing the applications you want to review.
 
 Your organization administrator xref:access-management::environments.adoc#to-create-a-new-environment[creates] the environments that are available to you.
 
