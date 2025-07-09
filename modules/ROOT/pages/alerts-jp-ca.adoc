@@ -131,7 +131,7 @@ Alert condition configurations indicate when the data collected on a <<alert-met
 [%header,cols="1a,1a"]
 |===
 | Configuration Pattern | Example 
-| *Trigger alert when selected metric is _Above\|Below_ _Number_ for each of the last _Number_ consecutive minutes.*
+| *Trigger alert when selected metric is _Greater than\|Less than\|Greater than or equal to\|Less than or equal to\|Equal to_ _Number_ for each of the last _Number_ consecutive minutes.*
 | *Trigger alert when selected metric is _Above_ _4_ for each of the last _10_ consecutive minutes.*
 |===
 
