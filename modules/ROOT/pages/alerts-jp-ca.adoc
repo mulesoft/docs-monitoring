@@ -131,11 +131,11 @@ Alert condition configurations indicate when the data collected on a <<alert-met
 [%header,cols="1a,1a"]
 |===
 | Configuration Pattern | Example 
-| *Trigger alert when selected metric is _Greater than\|Less than\|Greater than or equal to\|Less than or equal to\|Equal to_ _Number_ for each of the last _Number_ consecutive minutes.*
-| *Trigger alert when selected metric is _Greater than_ _4_ for each of the last _10_ consecutive minutes.*
+| *Trigger alert when selected metric is Above\|Less than\|Above or equal to\|Less than or equal to\|Equal to_ _Number_ for each of the last _Number_ consecutive minutes.*
+| *Trigger alert when selected metric is _Above_ _4_ for each of the last _10_ consecutive minutes.*
 |===
 
-The example configures an alert to trigger when the selected metric (such as *Message Count*) is *Greater than* 4 for 10 consecutive minutes. In other words, the count must exceed 4 for each minute of minutes 1-10. For example, if the count exceeds 4 for 9 of 10 minutes, but not the tenth minute, the alert doesn't trigger, even if the count exceeds 4 at minute 11. Following the same criteria, if the count exceeds 4 for each minute of minutes 11-20, the alert triggers.
+The example configures an alert to trigger when the selected metric (such as *Message Count*) is *Above* 4 for 10 consecutive minutes. In other words, the count must exceed 4 for each minute of minutes 1-10. For example, if the count exceeds 4 for 9 of 10 minutes, but not the tenth minute, the alert doesn't trigger, even if the count exceeds 4 at minute 11. Following the same criteria, if the count exceeds 4 for each minute of minutes 11-20, the alert triggers.
 
 //TODO: MINIMUM CAPTURE PERIOD (5 MINS?)
 
