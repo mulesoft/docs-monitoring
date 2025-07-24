@@ -131,6 +131,8 @@ Searchable logs::
 You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs. +
 Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can download logs to access older logs.
 
+Total storage capacity is shared globally across all apps and is limited by the number of messages and flows that your organization purchases and the maximum searchable storage allocation limit of 6TB.
+
 * For each production vCore, this subscription tier receives:  
 ** 200GB of archival storage
 ** 20GB of searchable storage (10% of archival storage)
