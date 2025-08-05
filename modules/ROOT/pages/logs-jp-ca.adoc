@@ -19,7 +19,7 @@ image::logs-hyperforce.png["Logs UI"]
 . Selector for the date and time range to capture
 . <<refresh, Refresh>> button
 
-For logs in other Anypoint Platform clouds, see xref:logs-us-eu.adoc[]. To view single-application logs in Runtime Manager, see xref:runtime-manager::viewing-log-data.adoc[View Log Data].
+To view logs in other Anypoint Platform clouds, see xref:logs-us-eu.adoc[]. To view single-application logs in Runtime Manager, see xref:runtime-manager::viewing-log-data.adoc[View Log Data].
 
 == Search for Logs
 
@@ -44,7 +44,7 @@ To retrieve the latest log data, click *Refresh*.
 [[environments]]
 == Environments
 
-When displaying logs, select the environment containing the applications you intend to review.
+When displaying logs, select the environment containing the applications you want to review.
 
 Your organization administrator xref:access-management::environments.adoc#to-create-a-new-environment[creates] the environments that are available to you.
 
@@ -57,7 +57,7 @@ Anypoint Platform supports these types of xref:access-management::environments#t
 [[ref-query]]
 == Log Query Reference
 
-Use filters to narrow the results of your search for logs. The filters match values of fields in the logs:
+Use these filters to narrow the results of your search for logs:
 
 * `application` accepts an *=* operator followed by an application name. 
 * `log_level` accepts an *=* operator followed by a value of *DEBUG*, *INFO*, *WARN*, *ERROR*, or *FATAL*. 
@@ -68,8 +68,8 @@ Search query behavior:
 
 * You can use any or all of the available filters in your query.
 +
-Multiple filters in a query are processed as logical ANDs (and not as ORs), meaning that searches return data matching all the filter criteria, not just some of it. 
+Multiple filters in a query are processed as logical ANDs (not ORs), meaning results must match all filter criteria not just some.
 * Multiple filters of the same type, such as two `application` filters, aren't allowed. 
 * Each filter allows a single value. 
-* For single-word search string values, you do not need to add quotation marks around the string. For multi-word strings, manually surround the string in quotes. 
+* For single-word search string values, you don't need to add quotation marks around the string. For multi-word strings, manually surround the string in quotes. 
 
