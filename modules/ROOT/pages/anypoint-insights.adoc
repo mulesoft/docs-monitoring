@@ -70,9 +70,7 @@ Monitor Mule apps and APIs within a selected business group and environment.
 
 . Meet the prerequisites in <<prereqs>>. 
 . Log in to Anypoint Platform, and navigate to Anypoint Monitoring. 
-//Nav step
-include::partial$include-entities.adoc[tags="open-insights"]
-. In Anypoint Insights, set your environment, such as Design, Production, or Sandbox. 
+. Open Anypoint Insights, and set your environment, such as Design, Production, or Sandbox. 
 +
 For guidance, see <<change-environment>>.
 . To capture deployments for another business group you belong to in the *Entities List*, select the business group.
