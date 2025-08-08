@@ -13,7 +13,7 @@ include::partial$include-time-range-config.adoc[]
 
 == Options Tab
 
-The *Options* tab includes settings for singlestat <<value_singlestat, values>>, <<font_singlestat, fonts>>, <<color_singlestat, coloring>>, <<spark_singlestat, spark lines>>, and <<gauge_singlestat, gauge icon>> settings.
+The *Options* tab includes settings for singlestat <<value_singlestat, values>>, fonts, <<color_singlestat, coloring>>, <<spark_singlestat, spark lines>>, and <<gauge_singlestat, gauge icon>> settings.
 
 [[value_singlestat]]
 === Value Settings for Singlestats
