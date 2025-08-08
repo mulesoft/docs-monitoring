@@ -21,7 +21,7 @@ image::insights.png["Anypoint Insights UI"]
 [calloutlist]
 . Dashboard that provides an overview of metrics across of your deployed Mule apps and APIs
 . Environment selector for your deployments (such as Sandbox or Production)
-. <<filter, Filters>> to narrow the data in charts
+. <<filters, Filters>> to narrow the data in charts
 . Performance <<charts-performance, metrics and trends>> across your deployed Mule apps and APIs
 . <<entities-list, List of each Mule app and API>> that you can click to display <<charts-detailed, detailed metrics>> on a specific deployment
 . Selector for the time range covered by the charts 
