@@ -1,0 +1,10 @@
+
+//
+//tag::am-installer-setup[]
+. To monitor applications deployed to a local server, select *Hybrid*, and follow the procedure to install Anypoint Monitoring agent from the latest version of the agent's installer in `am.zip`. 
++
+//TODO: TEMPORARY UNTIL WE have a better location for earlier versions
+To use an earlier version, see the knowledge article https://help.salesforce.com/s/articleView?id=004576938&type=1[Unable to Download Anypoint Monitoring Agent Installer for Windows after April 1st, 2025 from Anypoint Monitoring UI]. 
+. To enable (or disable) monitoring for apps deployed to CloudHub, select *CloudHub*.
+//end::am-installer-setup[]
+//
