@@ -257,7 +257,8 @@ To disable log forwarding:
 +
 . Restart Mule.
 
-== Normalize API Paths Patterns
+[[normalize-path]]
+== Normalize API Paths
 
 Anypoint Platform analytics gives you full control over how your API paths are normalized, ensuring consistent data for analysis. This is useful for APIs with dynamic segments that might otherwise lead to inconsistent data.
 
