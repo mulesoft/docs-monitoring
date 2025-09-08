@@ -257,6 +257,33 @@ To disable log forwarding:
 +
 . Restart Mule.
 
+== Normalize API Paths Patterns
+
+Anypoint Platform analytics gives you full control over how your API paths are normalized, ensuring consistent data for analysis. This is useful for APIs with dynamic segments that might otherwise lead to inconsistent data.
+
+Configure the `anypoint.platform.config.analytics.endpoint.patterns` property to define patterns for your dynamic endpoints and normalize your API paths.
+
+=== Configure the Property in Runtime Manager
+
+You can define this property when deploying a new application to CloudHub or on a running Mule application in Runtime Manager. To configure the property, follow these steps:
+
+. Log in to your Anypoint Platform account and select *Runtime Manager*.
+. Either click *Deploy Application* for a new deployment, or select an existing application and click *Manage Application*.
+. Navigate to the *Properties* tab in the *Settings* section.
+. Under *New Key*, add `anypoint.platform.config.analytics.endpoint.patterns`.
+. Under *New Value*, add the pattern for your dynamic endpoint, for example: `/api/V1/proc/payments/{}/cancel`.
+. Click *Apply Changes*.
+
+By defining an explicit pattern, you can ensure consistent normalization of dynamic endpoints in your analytics data. All incoming requests matching the pattern are correctly normalized to a single endpoint, making your analytics data clean and actionable.
+
+For example, provide a pattern that identifies the variable part:
+
+Pattern: `/api/V1/proc/payments/{}/cancel`
+
+Incoming request: `/api/V1/proc/payments/CAjjAXjh/cancel`
+
+Normalized result: `/api/V1/proc/payments/X/cancel`
+
 == See Also
 
 * xref:monitoring-settings-page.adoc[Anypoint Monitoring Settings]
