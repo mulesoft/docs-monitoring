@@ -286,7 +286,7 @@ Therefore, when you define your property value, for example:
 
 * `/api/V1/proc/payments/{X}/cancel
 
-An incoming requests with an empty string or with a string value:
+All incoming requests with an empty string or with a string value:
 
 * `/api/V1/proc/payments//cancel` +
 * `/api/V1/proc/payments/CAjjAXjh/cancel` +
