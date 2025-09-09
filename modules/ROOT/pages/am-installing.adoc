@@ -275,16 +275,24 @@ You can configure this property when deploying a new application to CloudHub or 
 
 By defining an explicit pattern, you can ensure consistent normalization of dynamic endpoints in your analytics data. All incoming requests matching the pattern are correctly normalized to a single endpoint.
 
-For example, provide a pattern that identifies the variable part:
+For example, provide a pattern that identifies the variable part. +
 
-Pattern: `/api/V1/proc/payments/{}/cancel` +
-Where `{}` represents the variable part.
+The variable can be either:
 
-Incoming request: `/api/V1/proc/payments/CAjjAXjh/cancel` +
-Where `CAjjAXjh` is the variable part `{}` in the incoming request.
+* `{}` with an empty string
+* `{string}` with a string value
 
-Normalized result: `/api/V1/proc/payments/X/cancel` +
-Where `X` is the normalized variable part `CAjjAXjh` in your analytics.
+Therefore, when you define your property value, for example:
+
+* `/api/V1/proc/payments/{X}/cancel
+
+An incoming requests with an empty string or with a string value:
+
+* `/api/V1/proc/payments//cancel` +
+* `/api/V1/proc/payments/CAjjAXjh/cancel` +
+
+Normalizes the result as: `/api/V1/proc/payments/X/cancel` +
+
 
 
 == See Also
