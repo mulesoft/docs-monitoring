@@ -242,6 +242,7 @@ Enabling monitoring can impact CPU utilization and memory utilization depending 
 - If you find connection failure or retry entries, ensure that port 8443 (Anypoint Monitoring agents from installer version 3.x and later only) and 443 (all Anypoint Monitoring agents) in your outbound firewall are open.
 - If you don't find connection failure or retry entries, contact the support team.
 - On Windows, if Anypoint Monitoring agent is configured to run as a service and throws Error 1064 when starting, find the root cause by opening the Windows application Events Viewer to *Windows Logs* -> *Applications*.
+- If you encounter inconsistent path normalization, refer to the <<normalize-path, Normalize API Paths>> section.
 
 == Disable Log Forwarding for Hybrid Runtime Servers
 //feature tier (for h2-h4 headings):
