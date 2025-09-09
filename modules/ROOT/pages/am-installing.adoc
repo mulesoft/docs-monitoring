@@ -270,7 +270,7 @@ You can configure this property when deploying a new application to CloudHub or 
 . Either click *Deploy Application* for a new deployment, or select an existing application and click *Manage Application*.
 . Navigate to the *Properties* tab in the *Settings* section.
 . Under *New Key*, add `anypoint.platform.config.analytics.endpoint.patterns`.
-. Under *New Value*, add the pattern for your dynamic endpoint, for example: `/api/V1/proc/payments/{}/cancel`.
+. Under *New Value*, add the pattern for your dynamic endpoint, for example: `/api/V1/proc/payments/{X}/cancel`.
 . Click *Apply Changes*.
 
 By defining an explicit pattern, you can ensure consistent normalization of dynamic endpoints in your analytics data. All incoming requests matching the pattern are correctly normalized to a single endpoint.
