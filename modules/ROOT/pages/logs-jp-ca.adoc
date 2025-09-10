@@ -1,6 +1,9 @@
 = Using Logs in Anypoint Monitoring (Canada and Japan)
 //:page-notice-banner-message: <b>Pilot release</b>: This feature is for a release in Canada and Japan Cloud instances of Anypoint Platform. 
 
+//Beta Banner
+include::reuse::partial$beta-banner.adoc[tag="monitoring-advanced"]
+
 //feature tier:
 include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only"]
 
