@@ -309,7 +309,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 4+| *Log Management*
 
 |Log search
-|Yes (single application only)
+|Yes (<<single-app, single application only in Runtime Manager>>)
 |No
 |Yes (cross-application)
 
