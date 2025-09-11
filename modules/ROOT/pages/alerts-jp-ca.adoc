@@ -1,5 +1,4 @@
 = Getting Alerts in Anypoint Monitoring (Canada and Japan)
-//:page-notice-banner-message: <b>Pilot release</b>: This feature is for a Pilot release in Canada and Japan Cloud instances of Anypoint Platform. 
 
 //Beta Banner
 include::reuse::partial$beta-banner.adoc[tag="monitoring-advanced"]
@@ -8,6 +7,17 @@ include::reuse::partial$beta-banner.adoc[tag="monitoring-advanced"]
 include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only"]
 
 In the https://ca1.platform.mulesoft.com/monitoring[Canada] and https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds, create and receive alert notifications for your deployed resources (Mule app and APIs). 
+
+[[logs-overview]]
+//don't change order of numbers in graphic or calloutlist
+image::alerts-hyperforce.png["Alerts UI"]
+
+[calloutlist]
+. Alerts in Anypoint Monitoring
+. <<alert-properties, Alert properties>>
+. List of configured alerts. Each alert name opens to more information about the alert, including the alert threshold and recipients of alert notifications.
+. *Create Alert* opens to the <<create, alert creation wizard>>.
+. Enable, disable, or delete an alert from its image:more-menu-vert-ellipsis.png["",15,15] (*More* menu).
 
 For alerts in other Anypoint Platform clouds, see xref:alerts-us-eu.adoc[].
 
@@ -63,6 +73,7 @@ To find the list of alerts:
 //The search field accepts partial word searches.
 . Review the alert list that returns. 
 +
+[[alert-properties]]
 Each alert provides:
 
 * *Alert Name*: Name of the alert
@@ -104,6 +115,15 @@ To use variables in the email, see <<variables>>.
 .. Provide the message.
 .. Identify recipients. 
 
+[[more-menu]]
+== Enable, Disable, or Delete an Alert
+
+Alerts are enabled by default when they are created. You can disable, re-enable, or delete an alert.
+
+. In Anypoint Monitoring, navigate to *Alerts*.
+. Find the alert in the Alerts table.
+. Click the alert's image:more-menu-vert-ellipsis.png["",15,15] (*More* menu).
+. Enable, disable, or delete the alert.
 
 [[status]]
 == Alert Statuses
@@ -223,38 +243,8 @@ include::partial$include-alert-variables.adoc[tag="alerts-api"]
 include::partial$include-alert-variables.adoc[tag="alerts-variables"]
 
 ////
-//POST GA START: ADD SECTION WITH NECESSARY DETAIL:
 [[limits]]
 == Alert Limits and Rate Limiting
 
 *TODO:* XREF TO MORE DETAIL AND is there a hard limit AND is this enabled alerts or any alerts at all? And see commented out TODOs on adoc page. A lot more info is needed.
-//TODO: TBD: IS THIS THE RIGHT PLACE FOR THIS INFO?
-
-Alerts are subject to these limits: 
-
-* Alert limits: 
-Your Anypoint Platform subscription determines the number of alerts you can create.
-+
-//TODO: IS THIS STILL VALID? 
-A disabled *Create Alert* button indicates that your subscription does not allow more alerts. 
-
-//TODO: HOW DOES RATE LIMITING APPLY TO ALERTS?
-* Rate limiting:
-Anypoint Monitoring instances in this cloud region enforce rate limits on a per tenant basis. 
-+
-Activity that exceeds the limit leads to:
-
-//TODO: NEED TO UNDERSTAND MORE ABOUT RELATIONSHIP OF INGESTED EVENTS
-
-** Dropping events that provide the metrics and other data ingested by Anypoint Monitoring
-** Returning a 429 error on requests from search queries 
-
-//TODO: DOES INCREASED STORAGE RELATED TO RATE LIMITING OR NUMBER OF ALERTS OR WHAT?
-Your organization can increase storage on a per tenant basis. 
-//From Pablo: CommCloud customers can buy additional searchable storage on 30 GB increments. 
-//For HF we can’t support 30 GB
-
-//TODO: HELP PEOPLE UNDERSTAND DETAILS
-For more information, see xref:TODO.adoc[TODO].
-//POST GA END: ADD SECTION WITH NECESSARY DETAIL
 ////
