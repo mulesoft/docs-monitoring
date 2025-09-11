@@ -270,7 +270,7 @@ You can configure this property when deploying a new application to CloudHub or 
 . Either click *Deploy Application* for a new deployment, or select an existing application and click *Manage Application*.
 . Navigate to the *Properties* tab in the *Settings* section.
 . Under *New Key*, add `anypoint.platform.config.analytics.endpoint.patterns`.
-. Under *New Value*, add the pattern for your dynamic endpoint, for example: `/api/V1/proc/payments/{X}/cancel`.
+. Under *New Value*, add the pattern for your dynamic endpoint, for example: `/api/V1/proc/payments/{paymentId}/cancel`.
 . Click *Apply Changes*.
 
 By defining an explicit pattern, you can ensure consistent normalization of dynamic endpoints in your analytics data. All incoming requests matching the pattern are correctly normalized to a single endpoint.
@@ -284,13 +284,20 @@ The variable can be either:
 
 Therefore, when you define your property value, for example:
 
-* `/api/V1/proc/payments/{paymentId}/cancel`
+* `/api/V1/proc/payments/{paymentId}/cancel` (single property)
+* `/api/V1/proc/order/{orderId},/api/V1/proc/order/{}/cancel` (multiple properties separated by `,`)
 
-All incoming requests with an empty string or with a string value:
+All incoming requests matching the pattern:
 
-* `/api/V1/proc/payments/CAjjAXjh/cancel` +
+* `/api/V1/proc/payments/CAjjAXjh/cancel`
+* `/api/V1/proc/order/jAXjh`
+* `/api/V1/proc/order/jAXjh/cancel`
 
-Normalizes the result as: `/api/V1/proc/payments/X/cancel` +
+Normalizes the result as:
+
+* `/api/V1/proc/payments/X/cancel`
+* `/api/V1/proc/order/X`
+* `/api/V1/proc/order/X/cancel`
 
 
 
