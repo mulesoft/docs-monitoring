@@ -16,7 +16,7 @@ image::alerts-hyperforce.png["Alerts UI"]
 . Alerts in Anypoint Monitoring
 . <<alert-properties, Alert properties>>
 . List of configured alerts. Each alert name opens to more information about the alert, including the alert threshold and recipients of alert notifications.
-. *Create Alert* opens to the <<create, alert creation wizard>>.
+. *Create Alert* is for <<create, configuring a new alert>>.
 . Enable, disable, or delete an alert from its image:more-menu-vert-ellipsis.png["",15,15] (*More* menu).
 
 For alerts in other Anypoint Platform clouds, see xref:alerts-us-eu.adoc[].
@@ -147,7 +147,7 @@ Use your organization's alerting criteria when setting an alert's severity. Avai
 [[threshold]]
 == Alert Conditions
 
-Alert condition configurations indicate when the data collected on a <<alert-metrics, metric>> triggers the alert. Configurations for alert thresholds follow this form:
+Alert condition configurations indicate when the data collected on a <<metrics, metric>> triggers the alert. Configurations for alert thresholds follow this form:
 
 //TODO: VERIFY THE Above/Below; verify variable replacement of "selected metric" with name of metric
 
@@ -162,22 +162,6 @@ The example configures an alert to trigger when the selected metric (such as *Me
 
 //TODO: MINIMUM CAPTURE PERIOD (5 MINS?)
 
-////
-Not in GA: keep for later
-[[environment]]
-== Environment
-
-Alerts are specific to one of your Anypoint Platform environments.
-
-Your organization administrator xref:access-management::environments.adoc#to-create-a-new-environment[creates] the environments that are available to you.
-
-Anypoint Platform supports these types of xref:access-management::environments#types-of-environments.adoc[environments]:
-
-* *Design*
-* *Production*
-* *Sandbox*
-
-////
 
 //TODO: TECH DEBT - TURN THE METRICS INTO INCLUDES - descriptions from basic-alerts.adoc
 [[metrics]]
@@ -198,7 +182,7 @@ Percent of heap used
 +
 This metric is available only for apps deployed to CloudHub or Anypoint Runtime Fabric.
 +
-Anypoint Monitoring tracks heap usage and triggers memory alerts based on the value of `heap_used`/`heap_total`. Note that `heap_total` isn't identical to the maximum heap memory allocated to the Mule app on CloudHub. For example, 0.2 vCores indicates that the maximum heap memory is 1 GB (see the table in xref:cloudhub::cloudhub-architecture.adoc#cloudhub-workers[CloudHub Workers]), but the value of `heap_total` isn't 1GB. Instead, `heap_total` is the maximum amount of memory that the JVM can use for heap memory, where objects are created and stored. In Java, this value changes dynamically depending on memory fragmentation, garbage collection, and other memory management features. For more information about the JVM Heap Total Memory values, see xref:dashboard-config-ref.adoc#metrics_advanced[].
+Anypoint Monitoring tracks heap usage and triggers memory alerts based on the value of `heap_used`/`heap_total`. Note that `heap_total` isn't identical to the maximum heap memory allocated to the Mule app on CloudHub. For example, 0.2 vCores indicates that the maximum heap memory is 1 GB (see the table in xref:cloudhub::cloudhub-architecture.adoc#cloudhub-workers[CloudHub Workers]), but the value of `heap_total` isn't 1GB. Instead, `heap_total` is the maximum amount of memory that the JVM can use for heap memory, where objects are created and stored. In Java, this value changes dynamically depending on memory fragmentation, garbage collection, and other memory management features.
 * *Thread Count*:
 Total number of threads used
 +
@@ -219,6 +203,18 @@ Data is aggregated in one minute increments.
 //* *Policy Violations*: 
 //Sum of requests that return policy violations that you select in the alert condition.
 
+[[environment]]
+== Environments
+
+Alerts are specific to one of your Anypoint Platform environments.
+
+Your organization administrator xref:access-management::environments.adoc#to-create-a-new-environment[creates] the environments that are available to you.
+
+Anypoint Platform supports these types of xref:access-management::environments#types-of-environments.adoc[environments]:
+
+* *Design*
+* *Production*
+* *Sandbox*
 
 [[variables]]
 == Email Notification Variables
