@@ -277,7 +277,7 @@ By defining an explicit pattern, you can ensure consistent normalization of dyna
 
 For example, provide a pattern that identifies the variable part. +
 
-The variable can be either:
+For variables, you can use:
 
 * `{}` with an empty string
 * `{string}` with a string value
