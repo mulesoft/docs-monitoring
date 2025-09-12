@@ -1,5 +1,6 @@
 = Understanding Performance Impact, Limits, and Data Retention
 :data-cleanup: Metrics data can persist beyond the data retention period. The data is removed when the automated cleanup cycle takes place.
+:total-storage: Total storage capacity is shared globally across all apps and is limited by the number of messages and flows that your organization purchases and the maximum searchable storage allocation limit of 6TB.
 
 Anypoint Monitoring processes and retains massive amounts of data with a low performance impact. Titanium subscribers receive an enhanced data retention package and more storage than Gold and Platinum subscribers. For better performance and readability, your log data is truncated into short lines.
 
@@ -57,7 +58,7 @@ You receive additional storage that is 10% of the size of purchased storage for 
 +
 Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can retrieve older logs with the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[Anypoint Monitoring Archive API]. 
 +
-Total storage capacity is shared globally across all apps and is limited by the number of messages and flows that your organization purchases and the maximum searchable storage allocation limit of 6TB.
+{total-storage}
 
 * For every flow purchased, this subscription tier receives:
 ** 5GB of archival storage
@@ -128,8 +129,11 @@ Logs::
 In raw format, your logs can occupy as much space as you receive with your Titanium subscription. Note that the storage space you receive with your Titanium subscription is used to store logs and metrics data. Because metrics do not take up much storage capacity, you can use the majority of your storage for raw log data.
 
 Searchable logs::
-You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs. +
+You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs. 
++
 Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can download logs to access older logs.
++
+{total-storage}
 
 * For each production vCore, this subscription tier receives:  
 ** 200GB of archival storage

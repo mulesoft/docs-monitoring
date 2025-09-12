@@ -8,7 +8,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 == Runtime Fabric Setup
 
-Follow the instructions for xref:1.3@runtime-fabric::install-create-rtf-arm.adoc[setting up Runtime Fabric]. After you install Runtime Fabric, applications that are running and deployed to Runtime Fabric appear in Monitoring.
+Follow the instructions for xref:runtime-fabric::setting-up-runtime-fabric.adoc[]. After you install Runtime Fabric, applications that are running and deployed to Runtime Fabric appear in Monitoring.
 
 === See Also
 

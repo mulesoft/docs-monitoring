@@ -27,7 +27,7 @@ Access to xref:api-manager::analytics-chart.adoc[Key Metrics in API Manager] rel
 | Install the Anypoint Monitoring agent. See xref:monitoring::am-installing.adoc[]. If you proxy your monitoring data as it leaves the data center, you must configure the Anypoint Monitoring agent to communicate through the proxy. See xref:monitoring::am-installing.adoc#proxy-settings[Proxy Settings].
 
 | Standalone Deployments On-Prem
-| Key Metrics are not supported because standalone deployments are not managed in Anypoint Platform. If you require Key Metrics, convert your standalone deployment to a hybrid deployment (see xref:runtime-manager::servers-create.adoc[]), and install the Anypoint Monitoring agent (see <<hybrid, Hybrid Deployments>>).
+| Key Metrics are not supported because standalone deployments are not managed in Anypoint Platform. If you require Key Metrics, convert your standalone deployment to a hybrid deployment (see xref:runtime-manager::servers-create.adoc[]), and install the Anypoint Monitoring agent (see Hybrid Deployments).
 
 |===
 
