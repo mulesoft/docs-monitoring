@@ -293,7 +293,7 @@ These incoming requests match one of the defined patterns:
 * `/api/V1/proc/order/jAXjh`
 * `/api/V1/proc/order/jAXjh/cancel`
 
-Normalizes the result as:
+Normalized results for the example requests:
 
 * `/api/V1/proc/payments/X/cancel`
 * `/api/V1/proc/order/X`
