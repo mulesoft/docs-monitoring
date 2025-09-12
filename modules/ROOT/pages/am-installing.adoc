@@ -282,7 +282,7 @@ For variables, you can use:
 * `{}` with an empty string
 * `{string}` with a string value
 
-Therefore, when you define your property value, for example:
+For example, assume property values that follow these patterns:
 
 * `/api/V1/proc/payments/{paymentId}/cancel` (single property)
 * `/api/V1/proc/order/{orderId},/api/V1/proc/order/{}/cancel` (multiple properties separated by `,`)
