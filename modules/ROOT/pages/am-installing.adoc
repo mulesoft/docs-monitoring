@@ -287,7 +287,7 @@ Therefore, when you define your property value, for example:
 * `/api/V1/proc/payments/{paymentId}/cancel` (single property)
 * `/api/V1/proc/order/{orderId},/api/V1/proc/order/{}/cancel` (multiple properties separated by `,`)
 
-All incoming requests matching the pattern:
+These incoming requests match one of the defined patterns:
 
 * `/api/V1/proc/payments/CAjjAXjh/cancel`
 * `/api/V1/proc/order/jAXjh`
