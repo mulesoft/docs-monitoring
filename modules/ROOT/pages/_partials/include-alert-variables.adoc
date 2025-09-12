@@ -1,0 +1,187 @@
+//
+//tag::alerts-app-ch[]
+.6+| CloudHub App Alerts
+|*CPU Utilization* .6+|* `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${timestamp}`
+* `${resource}`
+| *Memory Utilization*
+| *Thread Count*
+| *Message Count*
+| *Message Error Count*
+| *Message Response Time*
+//end::alerts-app-ch[]
+//
+
+//
+//tag::alerts-app-rtf[]
+.6+| Anypoint Runtime Fabric App Alerts
+|*CPU Utilization* .6+|* `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${timestamp}`
+* `${resource}`
+| *Memory Utilization*
+| *Thread Count*
+| *Message Count*
+| *Message Error Count*
+| *Message Response Time*
+//end::alerts-app-rtf[]
+//
+
+//
+//tag::alerts-app-hybrid[]
+.3+|Hybrid App Alerts
+| *Message Count* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${timestamp}`
+* `${targetName}`
+* `${resource}`
+| *Message Error Count*
+| *Message Response Time*
+//end::alerts-app-hybrid[]
+//
+
+//
+//tag::alerts-server-on-prem[]
+.3+|On-premises Server Alerts
+| *CPU Utilization* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${timestamp}`
+* `${targetName}`
+| *Memory Utilization*
+| *Thread Count*
+//end::alerts-server-on-prem[]
+//
+
+//
+//tag::alerts-server-group[]
+.3+|Server Group Alerts
+| *CPU Utilization* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${timestamp}`
+* `${memberName}`
+* `${targetName}`
+| *Memory Utilization*
+| *Thread Count*
+//end::alerts-server-group[]
+//
+
+//
+//tag::alerts-server-cluster[]
+.3+|Server Cluster Alerts
+| *CPU Utilization* .3+| * `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${timestamp}`
+* `${memberName}`
+* `${targetName}`
+| *Memory Utilization*
+| *Thread Count*
+//end::alerts-server-cluster[]
+//
+
+//
+//tag::alerts-api[]
+.6+| API Alerts
+|*Total Request Count* .4+|* `${severity}`
+* `${operator}`
+* `${threshold}`
+* `${period}`
+* `${value}`
+* `${condition}`
+* `${organization}`
+* `${environment}`
+* `${alertLink}`
+* `${dashboardLink}`
+* `${timestamp}`
+* `${api}`
+* `${policy}`
+| *Average Response Time*
+| *Response Codes*
+| *Policy Violations*
+//end::alerts-api[]
+//
+
+
+
+//
+//tag::alerts-variables[]
+[%header%autowidth.spread]
+[[alert-variables]]
+.Variable Definitions
+|===
+|Variable |Definition
+|`${alertLink}`|URL of the triggered alert
+|`${alertState}`|State of the alert when it was triggered.
+
+Available values are `OK` or `Alerting`.
+|`${api}`| Name of the API that triggers the alert
+|`${comparison}`| Above, above or equal, equal, below or equal, below
+|`${condition}`|Metric for which the alert is triggered
+|`${dashboardLink}`|URL that points to the built-in dashboard for the app or API that triggers the alert
+|`${environment}`|Name of the environment in which the resource is deployed
+|`${memberName}`|Name of the server within the server group or cluster
+|`${operator}` |An operator, such as `< > =`
+|`${organization}` |Name of the organization that owns the alert
+|`${period}` |Period of time over which to measure
+|`${policy}` |Name of the policy whose violation triggers the alert
+|`${resource}` a| Name of the item that triggers the alert:
+
+* CloudHub Apps: Name of the app that triggers the alert
+* Hybrid Apps: Name of the resource in the app that triggers the alert
+|`${severity}` | Severity of the alert
+|`${targetName}`|Name of the server, server group, or cluster
+|`${targetState}` |Server state when the alert was triggered
+|`${threshold}` |Count over the period of time that triggers the alert
+|`${timestamp}` |Time when the alert was triggered
+|`${value}` | Value of the metric that triggers the alert
+|===
+//end::alerts-variables[]
+//

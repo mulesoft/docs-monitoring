@@ -1,6 +1,7 @@
 No data::
 No data is available in the series to evaluate the alert threshold.
 
+//HYPERFORCE: NOT a Status in JP/CA for Hyperforce GA July 2025
 Disabled::
 The alert is disabled.
 
