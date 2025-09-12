@@ -1,4 +1,4 @@
-= Getting Alerts in Anypoint Monitoring (Canada and Japan)
+= Getting Alerts (Canada and Japan)
 
 //Beta Banner
 include::reuse::partial$beta-banner.adoc[tag="monitoring-advanced"]
