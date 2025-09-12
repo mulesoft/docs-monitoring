@@ -39,7 +39,7 @@ Before you configure the Telemetry Exporter, ensure that you have:
 ** For Runtime Fabric deployments, see xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric].
 * An endpoint for telemetry data that is accessible from across the internet (CIDR `0.0.0.0/0`) if your observability provider or your organization's endpoint requires an IP allowlist or firewall rule
 +
-Consult your organization’s security guidelines when configuring open access rules for this endpoint. Telemetry Exporter generates its IP addresses dynamically, so allowlisting specific IPs, URLs, domains is not possible at this time.
+Consult your organization’s security guidelines when configuring open access rules for this endpoint. Telemetry Exporter generates its IP address dynamically, so allowlisting specific IPs, URLs, domains is not possible at this time.
 
 
 == Access Telemetry Exporter
