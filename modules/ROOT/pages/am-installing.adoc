@@ -273,9 +273,9 @@ You can configure this property when deploying a new application to CloudHub or 
 . Under *New Value*, add the pattern for your dynamic endpoint, for example, `/api/V1/proc/payments/{paymentId}/cancel`.
 . Click *Apply Changes*.
 
-By defining an explicit pattern, you can ensure consistent normalization of dynamic endpoints in your analytics data. All incoming requests matching the pattern are correctly normalized to a single endpoint.
+By defining an explicit pattern, you can ensure consistent normalization of dynamic endpoints. All incoming requests matching the pattern are correctly normalized to a single endpoint.
 
-For example, provide a pattern that identifies the variable part. +
+For example, provide a pattern that identifies the variable part. 
 
 For variables, you can use:
 
