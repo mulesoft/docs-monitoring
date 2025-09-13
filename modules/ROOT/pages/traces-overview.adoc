@@ -8,7 +8,7 @@ Use Anypoint Monitoring to track the end-to-end flow of requests through service
 //"The *Traces* overview lists traces that are currently available in Anypoint Platform."
 Use trace data to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track requests end-to-end. For example, find and view the course of a specific transaction through the services it travels to monitor its performance. 
 
-Traces uses the OTel format.
+Anypoint Monitoring uses the Open Telemetry (OTel) data format for traces.
 
 You can use xref:telemetry-exporter.adoc[Telemetry Exporter] as an alternative to integrate with your chosen observability ecosystem. 
 
