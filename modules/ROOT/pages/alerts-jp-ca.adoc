@@ -8,14 +8,22 @@ include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only
 
 In the https://ca1.platform.mulesoft.com/monitoring[Canada] and https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds, create and receive alert notifications for your deployed resources (Mule app and APIs). 
 
-[[logs-overview]]
+[[alerts-overview]]
 //don't change order of numbers in graphic or calloutlist
 image::alerts-hyperforce.png["Alerts UI"]
 
 [calloutlist]
 . Alerts in Anypoint Monitoring
 . <<alert-properties, Alert properties>>
-. List of configured alerts. Each alert name opens to more information about the alert, including the alert threshold and recipients of alert notifications.
+. List of configured alerts. 
++
+Each alert name opens to more information about the alert, including the alert threshold and recipients of alert notifications:
++
+//alert detail popup
+image::alerts-hyperforce-popup.png["Alert details", 40%]
+.. Name of the selected alert
+.. <<threshold, Threshold configuration>> for triggering the alert
+.. Email address that receives an alert notification when the alert triggers
 . *Create Alert* is for <<create, configuring a new alert>>.
 . Enable, disable, or delete an alert from its image:more-menu-vert-ellipsis.png["",15,15] (*More* menu).
 
@@ -23,10 +31,6 @@ For alerts in other Anypoint Platform clouds, see xref:alerts-us-eu.adoc[].
 
 //TODO POST GA: ADD LINK TO LIMITATIONS SECTION
 //Limitations apply (see <<limits>>). 
-
-[[alerts-overview]]
-//TBD: WILL TRY TO ADD OVERVIEW IMAGE WITH CALLOUTS TO DOCS BEFORE GA
-//image::TODO.png["Alerts UI"]
 
 //[calloutlist]
 //TODO: POST GA ADD OVERVIEW IMAGE, CONVERT BULLETED LIST ITEMS (* ) BELOW TO NUMBERED LIST ITEMS (. )
