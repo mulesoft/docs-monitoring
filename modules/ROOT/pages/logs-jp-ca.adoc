@@ -51,7 +51,7 @@ When displaying logs, select the environment containing the applications you wan
 
 Your organization administrator xref:access-management::environments.adoc#to-create-a-new-environment[creates] the environments that are available to you.
 
-Anypoint Platform supports these types of xref:access-management::environments#types-of-environments.adoc[environments]:
+Anypoint Platform supports these _types_ of xref:access-management::environments#types-of-environments.adoc[environments]:
 
 * *Design*
 * *Production*
@@ -63,7 +63,7 @@ Anypoint Platform supports these types of xref:access-management::environments#t
 Use these filters to narrow the results of your search for logs:
 
 * `application` accepts an *=* operator followed by an application name. 
-* `log_level` accepts an *=* operator followed by a value of *DEBUG*, *INFO*, *WARN*, *ERROR*, or *FATAL*. 
+* `log_level` accepts an *=* operator followed by a _case-sensitive_ value of *DEBUG*, *INFO*, *WARN*, *ERROR*, or *FATAL*. 
 * `message` accepts a *LIKE* operator for partial matches in log `message` fields. 
 
 [[search-query-rules]]
@@ -74,5 +74,4 @@ Search query behavior:
 Multiple filters in a query are processed as logical ANDs (not ORs), meaning results must match all filter criteria not just some.
 * Multiple filters of the same type, such as two `application` filters, aren't allowed. 
 * Each filter allows a single value. 
-* For single-word search string values, you don't need to add quotation marks around the string. For multi-word strings, manually surround the string in quotes. 
-
+* For single-word search string values, you don't need to add quotation marks around the string. For multi-word strings, manually surround the value in _single_ quotes, such as `'error request'`. 
