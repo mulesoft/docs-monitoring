@@ -2,7 +2,7 @@ No data::
 No data is available in the series to evaluate the alert threshold.
 
 Paused::
-The alert is disabled and no longer active .
+The alert is disabled and no longer active.
 
 Alerting::
 The value of the metric passes the specified threshold.
