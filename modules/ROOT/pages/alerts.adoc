@@ -28,7 +28,10 @@ For basic and custom dashboard alerts in Anypoint Monitoring, thresholds are che
 
 == Alert Limits
 
-The number of active alerts allocated to your organization depends on your organization's pricing model.
+The number of alerts allocated to your organization depends on your organization's pricing model. Alert counts differ by alert type:
+
+* For API alerts, only active alerts count toward the alert limit. Paused alerts do not count towards the limit.
+* For Mule apps and Server (server, server group, or cluster) alerts, all alerts count toward the alert limit, both active and paused.
 
 include::reuse::partial$billing/pricing.adoc[tag=monitoringAlerts]
 
