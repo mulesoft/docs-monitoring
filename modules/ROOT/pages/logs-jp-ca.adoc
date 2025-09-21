@@ -1,0 +1,77 @@
+= Using Logs in Anypoint Monitoring (Canada and Japan)
+//:page-notice-banner-message: <b>Pilot release</b>: This feature is for a release in Canada and Japan Cloud instances of Anypoint Platform. 
+
+//Beta Banner
+include::reuse::partial$beta-banner.adoc[tag="monitoring-advanced"]
+
+//feature tier:
+include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only"]
+
+In the https://ca1.platform.mulesoft.com/monitoring[Canada] and https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds, search for up to 30 days of logs across apps deployed to one of your organization's environments.
+
+[[logs-overview]]
+//don't change order of numbers in graphic or calloutlist
+image::logs-hyperforce.png["Logs UI"]
+
+[calloutlist]
+. Logs in Anypoint Monitoring
+. <<environments, Environment selector>> for your deployments (such as Sandbox or Production)
+. <<ref-query, Filters>> to narrow the list of logs that return
+. Matching log entry, which includes a date-time stamp, log level, and message
+. Expanded log message data and data available from other log fields 
+. Selector for the date and time range to capture
+. <<refresh, Refresh>> button
+
+To view logs in other Anypoint Platform clouds, see xref:logs-us-eu.adoc[]. To view single-application logs in Runtime Manager, see xref:runtime-manager::viewing-log-data.adoc[View Log Data].
+
+== Search for Logs
+
+. Select a date-time range (defaults to the last 15 minutes).
++
+Built-in and custom selections are available for up to the last 30 days of logs for selected time ranges. 
+. Select an environment.
+. To narrow the search results, provide a <<ref-query, log query>>.
+. Review the search results.
++
+You can expand a log entry to get additional details.
++
+If no logs return, try a different date-time range, query, or environment. Also review the <<search-query-rules, search query behavior>>.
+
+[[refresh]]
+== View the Latest Logs
+
+After a search query executes and produces log data (or no results), no new log data appears until you perform a new query, refresh, or reload the page. 
+
+To retrieve the latest log data, click *Refresh*. 
+
+[[environments]]
+== Environments
+
+When displaying logs, select the environment containing the applications you want to review.
+
+Your organization administrator xref:access-management::environments.adoc#to-create-a-new-environment[creates] the environments that are available to you.
+
+Anypoint Platform supports these _types_ of xref:access-management::environments#types-of-environments.adoc[environments]:
+
+* *Design*
+* *Production*
+* *Sandbox*
+
+[[ref-query]]
+== Log Query Reference
+
+Use these filters to narrow the results of your search for logs:
+
+* `application` accepts an *=* operator followed by an application name. 
+* `log_level` accepts an *=* operator followed by a _case-sensitive_ value of *DEBUG*, *INFO*, *WARN*, *ERROR*, or *FATAL*. 
+* `message` accepts a *LIKE* operator for partial matches in log `message` fields. 
+
+[[search-query-rules]]
+Search query behavior:
+
+* You can use any or all of the available filters in your query.
++
+Multiple filters in a query are processed as logical ANDs (not ORs), meaning results must match all filter criteria not just some.
+* Multiple filters of the same type, such as two `application` filters, aren't allowed. 
+* Each filter allows a single value. 
+* For single-word search string values, you don't need to add quotation marks around the string. For multi-word strings, manually surround the value in _single_ quotes, such as `'error request'`. 
