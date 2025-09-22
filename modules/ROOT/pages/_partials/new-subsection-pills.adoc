@@ -1,0 +1,47 @@
+//tag::anypoint-pricing-titanium[]
+[grid=all]
+|===
+|
+image:info.png[title="This feature requires an Advanced or Titanium subscription.",15,15] Availability: xref:index.adoc#billing[Advanced and Titanium tiers only]
+|===
+//end::anypoint-pricing-titanium[]
+
+//tag::anypoint-pricing-core[]
+[grid=all]
+|===
+|
+image:info.png[title="This feature requires an Advanced or Core-based subscription.",15,15] Availability: xref:index.adoc#billing[Advanced and Core-based tiers only]
+|===
+//end::anypoint-pricing-core[]
+
+//tag::anypoint-pricing-usage-titanium[]
+[grid=all]
+|===
+|
+image:info.png[title="This feature requires a Usage-based or Titanium subscription.",15,15] Availability: xref:index.adoc#billing[Usage-based and Titanium tiers only]
+|===
+//end::anypoint-pricing-usage-titanium[]
+
+//tag::anypoint-cloud-support-jvm[]
+[grid=all]
+|===
+|
+image:info.png[title="This feature is available on Japan and Canada cloud instances of Anypoint Platform only.",15,15] Availability: Japan and Canada cloud instances of Anypoint Platform only at this time
+|===
+//end::anypoint-cloud-support-jvm[]
+
+//tag::anypoint-pricing-all-tiers[]
+[grid=all]
+|===
+|
+image:info.png[title="This feature is available to all subscription tiers.",15,15] Availability: This feature is available to all subscription tiers.
+|===
+//end::anypoint-pricing-all-tiers[]
+
+//tag::anypoint-cloud-support-advanced-only[]
+[grid=all]
+|===
+|
+image:info.png[title="This feature requires an Advanced subscription in a supported Anypoint Platform region.",15,15] Availability: xref:index.adoc#billing[Advanced tier only]
+|===
+//end::anypoint-cloud-support-advanced-only[]
