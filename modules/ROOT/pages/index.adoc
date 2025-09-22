@@ -27,7 +27,6 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 
 |{empty}
 
-* <<alerts, Alerts>>
 * xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
 * <<dashboards, Dashboards>> 
 * xref:tools.adoc[Notifications] 
@@ -35,6 +34,14 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 * xref:tools.adoc[Tools]
 | Yes
 | No
+| Yes
+| Yes
+
+|{empty}
+
+<<alerts, Alerts>>
+| Yes
+| Yes
 | Yes
 | Yes
 
@@ -98,11 +105,9 @@ See xref:dashboards.adoc[].
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-core"]
 
-Track trends and add your own alerts to identify abnormal behavior and problems in your app network.
+Configure alerts to receive notifications about abnormal behavior and problems in your app network.
 
-image::intro-alerts.png["Alerts in Anypoint Monitoring"]
-
-You can trigger alerts based on rules (or thresholds) and policies for your resources. When these thresholds are crossed for a certain period of time, you can receive notification to take action. The method of notification depends on the severity of the alert that you define.
+You can trigger alert notifications based on thresholds you define for your Mule apps and APIs. 
 
 See xref:alerts.adoc[].
 
