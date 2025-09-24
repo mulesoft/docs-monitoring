@@ -2,6 +2,8 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
+:visualizer: Anypoint Visualizer
+:visualizer-former: (formerly Anypoint Visualizer)
 
 Understanding the state of your infrastructure and systems is important for ensuring the reliability and stability of your services. As part of Anypoint Platform, Anypoint Monitoring provides visibility into integrations across your app network. The monitoring tools provide feedback from Mule flows and components in your app network.
 
@@ -255,7 +257,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-|<<note-visualizer, API Visualizer>> (formerly Anypoint Visualizer): *Application Network* tab for the API Visualizer app network integration 
+|<<note-visualizer, {visualizer}>>: *Application Network* tab for the {visualizer} app network integration 
 |No
 |No
 |Yes
@@ -348,8 +350,10 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |===
 
 [[note-visualizer]]
-NOTE: API Visualizer app network integration refers to features in the *Application Network* tab within Anypoint Monitoring. API Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
-
+NOTE:
+--
+{visualizer} app network integration refers to features in the *Application Network* tab within Anypoint Monitoring. {visualizer} as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
+--
 
 == Use Cases
 
@@ -360,7 +364,7 @@ DevOps engineer Gary maintains a series of APIs related to a transaction process
 
 * Plan resource allocation across the app network 
 +
-IT specialist Peyton uses API Visualizer to view their app network. For CloudHub and Anypoint Runtime Fabric apps, Peyton sees CPU and memory utilization and idle capacity using integrated Anypoint Monitoring.
+IT specialist Peyton uses {visualizer} to view their app network. For CloudHub and Anypoint Runtime Fabric apps, Peyton sees CPU and memory utilization and idle capacity using integrated Anypoint Monitoring.
 
 * Pinpoint root causes of issues +
 Support team member Darius receives a call that the system is running slowly. He examines dashboards and checks response times, failed requests, and so on. He identifies that the backend is not scaling for the number of requests; he can add capacity for Mule apps, or he can throttle requests for other backend issues.

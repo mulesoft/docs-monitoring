@@ -1,4 +1,6 @@
 = Using Built-in Mule App Dashboards
+:visualizer: Anypoint Visualizer
+:visualizer-former: (formerly Anypoint Visualizer)
 
 Built-in dashboards display deployment information about your application at the top of the screen and provide access to a number of different graphs.
 
@@ -693,7 +695,7 @@ include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
 
 include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
 
-Setup requirements change based on your app deployment. Some deployment types require you to enable header injection or modify how API Visualizer (formerly Anypoint Visualizer) collects data. For more information, see the documentation for each deployment type:
+Setup requirements change based on your app deployment. Some deployment types require you to enable header injection or modify how {visualizer} collects data. For more information, see the documentation for each deployment type:
 
 * xref:visualizer::cloudhub-setup.adoc[CloudHub Setup]
 * xref:visualizer::runtime-fabric-setup.adoc[Runtime Fabric Setup]
@@ -701,7 +703,7 @@ Setup requirements change based on your app deployment. Some deployment types re
 
 The chart on the *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app, which must be started. The chart shows only direct callers and callees for the selected app. The connections are based on the selected time range, with a max of the most recent seven days.
 
-You can click *Metrics* to see statistics, such as average response time and failures, related to the app you selected. For more information about metrics in API Visualizer, see xref:visualizer::troubleshooting-visualization.adoc#choosing-your-metric[Choosing Your Metric].
+You can click *Metrics* to see statistics, such as average response time and failures, related to the app you selected. For more information about metrics in {visualizer}, see xref:visualizer::troubleshooting-visualization.adoc#choosing-your-metric[Choosing Your Metric].
 
 [[endpoint-operation-metrics]]
 ==  Endpoint and Operation Metrics Collection (Other Group)
