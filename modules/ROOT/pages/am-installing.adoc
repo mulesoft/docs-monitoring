@@ -267,7 +267,7 @@ Normalize paths to API endpoints with `anypoint.platform.config.analytics.endpoi
 Availability:
 
 * CloudHub
-* CloudHub 2
+* CloudHub 2.0
 
 You can configure this property when deploying a new application to CloudHub or on a running Mule application in Runtime Manager: 
 
