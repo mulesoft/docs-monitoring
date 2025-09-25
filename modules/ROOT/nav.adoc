@@ -23,7 +23,7 @@
  ** xref:monitor-connectors.adoc[]
  ** xref:export-app-data-to-csv.adoc[]
 * xref:anypoint-insights.adoc[Monitoring Metrics from Insights]
-* xref:traces.adoc[Viewing Traces (Beta)]
+* xref:traces.adoc[]
 * xref:reports.adoc[Viewing Reports]
 * xref:alerts.adoc[Getting Alerts]
 ** xref:alerts-us-eu.adoc[Getting Alerts (US and EU)]

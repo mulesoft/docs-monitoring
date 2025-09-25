@@ -70,6 +70,13 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 | No
 | No
 | No
+
+|{empty}
+  xref:traces.adoc[Traces]
+| Yes
+| No
+| No
+| No
 |===
 
 //NOT SUPPORTED in PCE & Gov Cloud: Insights, Traces, Telemetry Exporter, API Functional Monitoring
