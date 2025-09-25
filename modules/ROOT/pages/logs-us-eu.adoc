@@ -216,7 +216,7 @@ This example shows an expanded log entry in JSON format.
 [[search-agentic]]
 == Get Agent, Broker, and MCP Server Logs
 
-API Manager and Agent Visualizer provide links to logs for individual agents, brokers, and MCP servers. To search for these logs from Anypoint Monitoring, provide the name of the instance in the search field with any filters to narrow your query.
+API Manager and Agent Visualizer provide links to logs for individual agents, brokers, and MCP servers. To search for these logs from Anypoint Monitoring, provide the instance ID for the application or API in the search field with any filters to narrow your query.
 
 [IMPORTANT]
 --
