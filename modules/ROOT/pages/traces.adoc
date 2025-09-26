@@ -4,6 +4,21 @@
 
 Track the end-to-end flow of requests through service pipelines. View traces in Open Telementry (OTEL) spans to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track requests end-to-end. For example, find and view the course of a specific transaction through the services it travels to monitor its performance. 
 
+[[traces-overview]]
+//don't change order of numbers in graphic or calloutlist
+image::traces.png["Logs UI"]
+
+[calloutlist]
+. Traces in Anypoint Monitoring
+. <<environments, Environment selector>> for your deployments (such as Sandbox or Production)
+. <<ref-query, Filter>> field for queries that narrow the list of logs that return
+. List of spans for the supported entities (Agents, Brokers, MCP Servers, and Mule apps)
+. Expanded log message data and data available from other log fields 
+. Selector for the period of time to capture (up to the last 7 days)
+. <<refresh, Auto-Refresh>> every 5, 15, or 30 minutes, every hour, or one time per day
+. Manual page refresh button
+
+
 As an alternative to Traces, use xref:telemetry-exporter.adoc[Telemetry Exporter] with third-party observability and analytics platforms.
 
 == Before You Begin
@@ -22,13 +37,11 @@ include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
 == Supported Runtime Plane Hosts
 
-Traces in Anypoint Monitoring supports these runtime plane hosts:
+Traces in Anypoint Monitoring displays spans from instances deployed to:
 
 * CloudHub 2
-* Runtime Fabric
 
-[NOTE]
-Trace data collection isn't supported on apps deployed to CloudHub 1.0 or hybrid standalone deployments.
+//TODO: ASK BHAVIN IF ANYTHING ELSE. 
 
 == Sampling Rate for Traces
 
@@ -37,15 +50,20 @@ Trace data sampling rate:
 * 100%: Agents, brokers, and MCP servers
 * 10%: Mule apps and APIs
 
-== Access Traces
+
+[[trace-overview]]
+== List All Spans
+
+Get a list of available spans from *Traces Overview*. Use filters and select the time range and environment to capture the spans you intend to examine.
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
 include::partial$include-nav-distributed-tracing.adoc[]
 
-== Trace Overview Metrics
-
-Search for traces shown in the *Traces* overview page by using a time period selector and queries. 
+. Select up to the last 7 days of spans.
+. Select the environment that contains the spans.
+. Optionally, provide a filter query to narrow the search results.
+. Review the span details by clicking a span.
 
 === Search for Traces by Using the Time Period Selector
 
@@ -73,6 +91,7 @@ You can query using the following criteria:
 
 If no traces appear after applying a query, limit your conditions. 
 
+[[trace-details]]
 == Get Trace Details
 
 Each trace available in the *Traces* overview page contains associated metrics for you to examine. Clicking a trace opens a *Trace Details* page, which shows the origin of the initial request, associated entities, events associated with the request, and more. Additionally, you can see flows, logs, and events associated with the trace in the form of _spans_. Each span contains details that explain the operations in the specific *Trace Detail* page.
