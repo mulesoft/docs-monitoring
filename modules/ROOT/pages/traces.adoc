@@ -1,28 +1,39 @@
-= Viewing Traces
+= Reviewing Traces
 :page-notice-banner-message: Open Beta Release: Traces is in open beta. Any use of Anypoint Monitoring features in the beta state is subject to the applicable beta services terms and conditions.
 :page-info-pills: anypoint-pricing-titanium
+:entities: Agents, Brokers, MCP Servers, and Mule apps
+:auto-refresh: every 5, 15, or 30 minutes, every hour, or one time per day
 
-Track the end-to-end flow of requests through service pipelines. View traces in Open Telementry (OTEL) spans to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track requests end-to-end. For example, find and view the course of a specific transaction through the services it travels to monitor its performance. 
+Use *Traces* in Anypoint Monitoring to track the flow of requests that travel through service pipelines. Examine traces in Open Telementry (OTEL) spans to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track requests end-to-end. Find and view the course of a specific transaction through the services it travels to monitor its performance. 
 
 [[traces-overview]]
 //don't change order of numbers in graphic or calloutlist
-image::traces.png["Logs UI"]
+image::traces.png["Span list in the Traces overview pages"]
 
 [calloutlist]
 . Traces in Anypoint Monitoring
-. <<environments, Environment selector>> for your deployments (such as Sandbox or Production)
+. <<environment, Environment selector>> for your deployments (such as Sandbox or Production)
 . <<ref-query, Filter>> field for queries that narrow the list of logs that return
-. List of spans for the supported entities (Agents, Brokers, MCP Servers, and Mule apps)
-. Expanded log message data and data available from other log fields 
+//{entities} = Agents, Brokers, MCP Servers, and Mule apps
+. List of spans for the supported {entities}
 . Selector for the period of time to capture (up to the last 7 days)
-. <<refresh, Auto-Refresh>> every 5, 15, or 30 minutes, every hour, or one time per day
+. <<refresh, Auto-Refresh>> {auto-refresh}
 . Manual page refresh button
 
 As an alternative to Traces, use xref:telemetry-exporter.adoc[Telemetry Exporter] with third-party observability and analytics platforms.
 
-=== Supported Runtime Plane Hosts
+=== Supported Traces
 
-Traces in Anypoint Monitoring displays spans from instances deployed to:
+Spans include traces for:
+
+* Agentic assets: Agent, broker, MCP server instances
+* Flows: Mule flows for the selected task of the specific service
+* Logs: Contextual logs for the selected task
+* Events: Mule runtime events or user actions for the selected service
+
+=== Hosts
+
+Traces in Anypoint Monitoring displays spans from entities deployed to:
 
 * CloudHub 2
 * Runtime Fabric
@@ -43,39 +54,77 @@ Before you use traces, ensure that you have:
 include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
 * xref:access-management::permissions-by-product.adoc#monitoring[Permission to view] Mule apps, APIs, and instances of agents, brokers, and MCP servers in Anypoint Monitoring 
+* For apps deployed to CloudHub 2:
+** xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
+** xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
+* For Runtime Fabric, enabled trace data collection on apps deployed to xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric]
 //TODO: MULE VERSION RELATES TO JUST MULE APPS OR MORE?
 * Mule runtime version 4.6 or later
 //TODO: CONNECTOR RELATES TO JUST MULE APPS OR MORE?
 * HTTP Connector version 1.8 or later
-* Enabled tracing on apps deployed to CloudHub 2.0:
-** xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
-** xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
-* Enabled trace data collection on apps that are deployed to xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric]
 
 
 [[trace-overview]]
-== List All Spans
+== Get Trace Data from Spans
 
-Get a list of available spans from *Traces Overview*. Use filters and select the time range and environment to capture the spans you intend to examine.
+View a list of spans from across entities ({entities}) from *Traces Overview*. Get details on specific , time range, and environment settings. Get details on root spans. 
 
 include::partial$include-nav-steps-no-permissions.adoc[]
-//include::partial$include-nav-distributed-tracing.adoc[]
 
-. Select up to the last 7 days of spans.
-. Select the environment that contains the spans.
-. Optionally, provide a filter query to narrow the search results.
-. Review the span details by clicking a span.
+include::partial$include-nav-distributed-tracing.adoc[]
+. Select up to the last 7 days of spans (see <<traces-overview, item 5>>).
++
+You capture the last 5, 10, or 15 minutes, the last hour, or the last 
+. Select the <<environments, environment>> that contains your spans.
+. Optionally, provide a <<filters, filter query>> to narrow the search results.
+. Click a span to get its <<trace-details, trace details>>.
++
+View an instance's traces as in a span tree, starting from the root span for the instance. Get details on any span in the tree, for example:
++
+image::trace-details.png["An instance's spans in the Traces Details page"]
 
-=== Search for Traces by Using the Time Period Selector
+.. *Trace Details* page for a span selected from *Trace Overview*
+.. High-level data about the selected span:
 
-Use the time period selector to display traces for the last given period of time (such as the last 5 or 30 minutes) or over a given date and time range. Use the drop-down in the calendar icon to select the time period to display in a graph. Your setting applies across all traces in the *Traces* overview page.
+* *Status Code*: The HTTP response status of the trace (for example `0 No Response`, `200 OK`,`500 Internal Server Error`)
+* *Trace Start Time*: The time the trace started, in UTC
+* *Total Response Time*: The time taken for the trace to execute 
+* *Root Span*: The request or operation that initiated the trace
+.. Filter spans by full or partial matches to the span name
++
+Filtering displays a span tree with the highest to lowest spans in the traces that match your search.
+.. Trace hierarchy from a root span and to its descendants
+. To get more information about a span in the details page, click the span:
++
+image::trace-details-span.png["Details of a span in the Traces Details page", width=90%]
 
-[NOTE]
-Anypoint Monitoring retains up to 7 days of trace data.
+.. *Span Name*: Name of the span.
+.. Details: 
 
-=== Search for Traces Using Queries
+* *Span Duration*: Time the span took to execute
+//TODO: what does UNSET mean?
+* *Span Status*: Status of the span (*OK*, *ERROR*, *Unset*)
+* *Span ID*: ID of the span
+* *Span Kind*: Source of the span operation or request (*Server*, *Internal*, *Client*)
+* *Span Start Time*: Time when the span started, in UTC
+* *Trace ID*: The ID of the trace in which the span occurred.
+* *Correlation ID*: Unique identifier string generated before sending an event to the next processor in the Mule flow (see xref:mule-runtime::correlation-id.adoc[]).
+* *HTTP Status Code*: The HTTP status code of a span that is a request. Statuses include *0 No Response*, *200 OK*, *500 Internal Server Error*
+* *Entity Type*: Type of entity associated with the trace. Types include *App*, *API*.
+//TODO: BAD LINK TO ENTITY IN INSIGHTS, WILL WE FIX IT?
+* *Entity Name*: The name of the entity associated with the trace
+* *Business Group*
+* <<environments, *Environment*>>
+* *Parent Span ID*: ID of a span that contains the selected span. 
++
+Parent spans don't have a value in this field. Use the Trace ID to track this span.
+//TODO: BAD LINK TO LOGS IN MONITORING, WILL WE FIX IT?
+* *View Logs*: Find the root span in Anypoint Monitoring logs. 
 
-Use the search bar to select fields to query entities and their traces. If you are at the root organization level, you can query all content across the organization. If you are in a specific business group, the query returns only content from that business group.
+[[filters]]
+== Filter Spans
+
+Provide a query in *Traces Overview* filter the spans in the *Span List*. 
 
 You can query using the following criteria:
 
@@ -92,65 +141,33 @@ You can query using the following criteria:
 
 If no traces appear after applying a query, limit your conditions. 
 
-[[trace-details]]
-== Get Trace Details
+[[environments]]
+== Environments
 
-Each trace available in the *Traces* overview page contains associated metrics for you to examine. Clicking a trace opens a *Trace Details* page, which shows the origin of the initial request, associated entities, events associated with the request, and more. Additionally, you can see flows, logs, and events associated with the trace in the form of _spans_. Each span contains details that explain the operations in the specific *Trace Detail* page.
+Select the environment containing the spans you want to review.
 
-=== Access Trace Details
+Your organization administrator xref:access-management::environments.adoc#to-create-a-new-environment[creates] the environments that are available to you.
 
-include::partial$include-nav-steps-no-permissions.adoc[]
+Anypoint Platform supports these _types_ of xref:access-management::environments#types-of-environments.adoc[environments]:
 
-include::partial$include-nav-distributed-tracing.adoc[]
+* *Design*
+* *Production*
+* *Sandbox*
 
-. If needed, use the search function to query the list of traces that appears in the *Traces* overview page.
-. Click the trace ID of the trace you want to examine.
+== Business Groups
 
-=== Understand Trace Details
+If you work from the root organization level, you can query all spans across the entire organization. If you're working from a specific business group, the query returns content from that business group only.
 
-Each trace detail page contains response times for spans at a glance. They also show the following contextual data:
+To view or select a different business group, use the business group dropdown.
 
-* *Status Code*: The HTTP response status of the trace: 
-** `0 No Response`
-** `200 OK`
-** `500 Internal Server Error`
-* *Trace Start Time*: The time the trace initiated in UTC.
-* *Total Response Time*: The time taken for the trace to execute. 
-* *Root Span*: The request or operation that initiated the trace.
+image::business-groups.png["Business group menu"]
 
-Within each trace detail page, the following span types are captured and displayed alongside response time (where applicable):
+[calloutlist]
+. Business group that contains spans in the *Span List*
+. Selectable business groups
++
+In the example, the root organization is active.
 
-Flows:: Mule Flows for the selected task of the specific service.
-Logs:: Contextual logs for the selected task.
-Events:: Mule runtime events or user actions for the selected service.
-
-=== View Span Details
-
-On the *Trace Details* page, click a flow, log, or event name to expand the span and see the *Span Details* box.
-
-The *Span Details* box contains the following information:
-
-* *Span Name*: Name of the span.
-* *Span Status*: Status of the span. 
-** `OK`
-** `ERROR`
-* *Span ID*: ID of the span.
-* *Span Kind*: Source of the span operation or request.
-** `Server`
-** `Internal`
-** `Client`
-* *Span Duration*: Time the span took to execute.
-* *Span Start Time*: Time when the span started, in UTC.
-* *Entity Type*: Type of entity associated with the trace. 
-** `App`
-** `API`
-* *Entity Name*: The name of the entity associated with the trace.
-* *Trace ID*: The ID of the trace in which the span occurred.
-* *Parent Span ID*: ID of a span that contains the selected span. Parent spans don't have a value in this field and should be tracked by using the trace ID.
-* *HTTP Status Code*: The HTTP status code of a span that is a request. Statuses include:
-** `0 No Response`
-** `200 OK`
-** `500 Internal Server Error`
 
 == See Also
 * xref:telemetry-exporter.adoc[]
