@@ -18,8 +18,23 @@ image::traces.png["Logs UI"]
 . <<refresh, Auto-Refresh>> every 5, 15, or 30 minutes, every hour, or one time per day
 . Manual page refresh button
 
-
 As an alternative to Traces, use xref:telemetry-exporter.adoc[Telemetry Exporter] with third-party observability and analytics platforms.
+
+=== Supported Runtime Plane Hosts
+
+Traces in Anypoint Monitoring displays spans from instances deployed to:
+
+* CloudHub 2
+* Runtime Fabric
+
+//TODO: verify with Bhavin 
+
+=== Sampling Rate for Traces
+
+Trace data sampling rate:
+
+* 100%: Agents, brokers, and MCP servers
+* 10%: Mule apps and APIs
 
 == Before You Begin
 
@@ -28,27 +43,14 @@ Before you use traces, ensure that you have:
 include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
 * xref:access-management::permissions-by-product.adoc#monitoring[Permission to view] Mule apps, APIs, and instances of agents, brokers, and MCP servers in Anypoint Monitoring 
+//TODO: MULE VERSION RELATES TO JUST MULE APPS OR MORE?
 * Mule runtime version 4.6 or later
+//TODO: CONNECTOR RELATES TO JUST MULE APPS OR MORE?
 * HTTP Connector version 1.8 or later
 * Enabled tracing on apps deployed to CloudHub 2.0:
 ** xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
 ** xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
 * Enabled trace data collection on apps that are deployed to xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric]
-
-== Supported Runtime Plane Hosts
-
-Traces in Anypoint Monitoring displays spans from instances deployed to:
-
-* CloudHub 2
-
-//TODO: ASK BHAVIN IF ANYTHING ELSE. 
-
-== Sampling Rate for Traces
-
-Trace data sampling rate:
-
-* 100%: Agents, brokers, and MCP servers
-* 10%: Mule apps and APIs
 
 
 [[trace-overview]]
@@ -57,8 +59,7 @@ Trace data sampling rate:
 Get a list of available spans from *Traces Overview*. Use filters and select the time range and environment to capture the spans you intend to examine.
 
 include::partial$include-nav-steps-no-permissions.adoc[]
-
-include::partial$include-nav-distributed-tracing.adoc[]
+//include::partial$include-nav-distributed-tracing.adoc[]
 
 . Select up to the last 7 days of spans.
 . Select the environment that contains the spans.
