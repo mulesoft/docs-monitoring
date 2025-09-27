@@ -16,7 +16,7 @@ image::traces.png["Span list in the Traces overview pages"]
 . <<ref-query, Filter>> field for queries that narrow the list of logs that return
 //{entities} = Agents, Brokers, MCP Servers, and Mule apps
 . List of spans for the supported {entities}
-. Selector for the period of time to capture (up to the last 7 days)
+. Selector for the period of time to capture (from the last 15 minutes to the last 7 days)
 . <<refresh, Auto-Refresh>> {auto-refresh}
 . Manual page refresh button
 
@@ -124,22 +124,47 @@ Parent spans don't have a value in this field. Use the Trace ID to track this sp
 [[filters]]
 == Filter Spans
 
-Provide a query in *Traces Overview* filter the spans in the *Span List*. 
+To narrow the list of spans in *Traces Overview*, provide a filter query in the search field.  
 
-You can query using the following criteria:
-
+. Click within the search field to display a list of filters. 
+. Select a filter from the dropdown. 
++
+[[filter-list]]
+[%header,cols="1a,3a,1a"]
 |===
-|Criterion |Description
-| `api_version` | Version number of the API you want to see traces for. 
-| `entity` | ID of the entity you want to see traces for.
-| `entity_type` | Type of entity to see traces for. You can query apps or APIs.
-| `entry_span_id` | ID of a span contained in traces.
-|`entry_span_name` | Name of a span contained in traces.
-| `http_status_code`| HTTP status code associated with a trace. You can query 0, 200, or 500 codes.
-|`trace_id` | ID associated with a trace.
+|Filter |Operators |Description
+| `api_instance_id` | `=` |Version of an API instance that's associated with a span. This ID is available for the instance from API Manager. 
+| `correlation_id` | `=` |ID of the entity you want to see traces for.
+| `entity_name` | `=`, `IN` | Name of an entity that's associated with a span in the *Span List*. 
+| `http_status_code` | `=`, `IN` | HTTP status code associated with spans in the *Span List*. 
+| `span_id` | `=` | ID of a span contained in traces.
+|`span_name` | `=`, `IN` | Name of a span contained in traces  in the *Span List*. 
+|`trace_id` | `=`, `IN` | ID associated with a span in the *Span List*.
 |===
+. Select an operator for the filter:
 
-If no traces appear after applying a query, limit your conditions. 
+* `=`: For exact matches to a single alphanumeric value
+* `IN`: Logical OR for exact matches to at least one of the comma-separated, alphanumeric values
+. Select a top value from the list. If you don't see the value in the top value list, start typing to surface the value and then select the value from the list.
++
+If you're providing values for `IN`, manually adding the comma after a value before selecting another value from the list can help you produce valid queries.
+
+Example: 
+
+This example gets spans named `my-span` that have status code '404', '502', or '200':
+
+`http_status_code IN [ '404', '502', '200' ] span_name = my-span`
+
+To edit or delete a filter, click the filter, and then click *Edit Filter* or *Delete Filter* from the *Actions* list for the filter. To avoid issues when editing, you can delete the filter and add it back with the values you want.
+
+Tips:
+
+* If no traces appear after applying a query, change your filters.
+* Selecting multiple filters of the same type isn't allowed.
+* Multiple filters in a query are processed as logical ANDs, meaning that the conditions of both filters must be true to produce results.
+
+
+
 
 [[environments]]
 == Environments
@@ -166,7 +191,7 @@ image::business-groups.png["Business group menu"]
 . Business group that contains spans in the *Span List*
 . Selectable business groups
 +
-In the example, the root organization is active.
+In the example, the root organization is active in this example.
 
 
 == See Also
