@@ -131,7 +131,7 @@ To narrow the list of spans in *Traces Overview*, provide a filter query in the 
 . Select a filter from the dropdown. 
 +
 [[filter-list]]
-[%header,cols="1a,3a,1a"]
+[%header,cols="1a,1a,3a"]
 |===
 |Filter |Operators |Description
 | `api_instance_id` | `=` |Version of an API instance that's associated with a span. This ID is available for the instance from API Manager. 
@@ -144,16 +144,16 @@ To narrow the list of spans in *Traces Overview*, provide a filter query in the 
 |===
 . Select an operator for the filter:
 
-* `=`: For exact matches to a single alphanumeric value
-* `IN`: Logical OR for exact matches to at least one of the comma-separated, alphanumeric values
-. Select a top value from the list. If you don't see the value in the top value list, start typing to surface the value and then select the value from the list.
+* `=` accepts a single alphanumeric value.
+* `IN` accepts one or more comma-separated, alphanumeric values. The values get processed as logical ORs. 
+. Select a value from the search field's *Top Value* list. If the value you're looking for isn't in the list, start typing a partial match to your value, and then select the value.
 +
-If you're providing values for `IN`, manually adding the comma after a value before selecting another value from the list can help you produce valid queries.
-
+Tip: If you're providing search values to the `IN` operator (such as `entity_name IN ['value1', 'value2']`), manually adding a comma after one value before selecting another value from the *Top Value* list can help with valid query formation.
++
 Example: 
-
++
 This example gets spans named `my-span` that have status code '404', '502', or '200':
-
++
 `http_status_code IN [ '404', '502', '200' ] span_name = my-span`
 
 To edit or delete a filter, click the filter, and then click *Edit Filter* or *Delete Filter* from the *Actions* list for the filter. To avoid issues when editing, you can delete the filter and add it back with the values you want.
