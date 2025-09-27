@@ -94,6 +94,7 @@ image::trace-details.png["An instance's spans in the Traces Details page"]
 +
 Filtering displays a span tree with the highest to lowest spans in the traces that match your search.
 .. Trace hierarchy from a root span and to its descendants
+.. Trace ID of the root span
 . To get more information about a span in the details page, click the span:
 +
 image::trace-details-span.png["Details of a span in the Traces Details page", width=90%]
