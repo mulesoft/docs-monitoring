@@ -220,7 +220,7 @@ API Manager and Agent Visualizer provide links to logs for individual agents, br
 
 [IMPORTANT]
 --
-By default, broker logs don't include reasoning data due to privacy concerns. For troubleshooting purposes, you can enable these logs when deploying the broker. 
+By default, broker logs include the actions the broker takes (including agents called and MCP tools executed), but they don't include reasoning data due to privacy concerns.
 
 Enabling reasoning logs risks inclusion of personally identifiable information and secrets. 
 --
