@@ -24,7 +24,7 @@ As an alternative to Traces, use xref:telemetry-exporter.adoc[Telemetry Exporter
 
 === Supported Traces
 
-Spans include traces for:
+Traces include spans for:
 
 * Agentic assets: Agent, broker, MCP server instances
 * Flows: Mule flows for the selected task of the specific service
