@@ -25,7 +25,6 @@
 * xref:anypoint-insights.adoc[Monitoring Metrics from Insights]
 * xref:anypoint-insights-agentic.adoc[]
 * xref:traces.adoc[]
-* xref:reports.adoc[Viewing Reports]
 * xref:alerts.adoc[Getting Alerts]
 ** xref:alerts-us-eu.adoc[Getting Alerts (US and EU)]
  *** xref:basic-alerts.adoc[Setting Up Basic Alerts]
@@ -38,4 +37,5 @@
   *** xref:log-search-query-syntax.adoc[Log Search Query Syntax]
  ** xref:logs-jp-ca.adoc[]
 * xref:telemetry-exporter.adoc[Exporting Telemetry Data]
+* xref:reports.adoc[Viewing Reports]
 * xref:tools.adoc[]
