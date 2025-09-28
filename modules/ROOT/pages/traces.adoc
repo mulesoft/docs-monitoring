@@ -18,7 +18,7 @@ image::traces.png["Span list in Traces Overview"]
 . List of spans for the supported {entities}
 . Lookback selector for the period of time to capture in the *Span List* (from the default of 15 minutes to the last 7 days)
 . Auto-Refresh {auto-refresh}
-. Refresh the page manually
+. Manual refresh button
 
 In addition to reviewing traces in Anypoint Monitoring, you can use xref:telemetry-exporter.adoc[Telemetry Exporter] to export traces to third-party observability and analytics platforms.
 
@@ -150,7 +150,7 @@ Tips:
 
 == Span Details
 
-Traces provide information about a root span and its descendants in a dedicated *Trace Details* page. Each span listed on the page links to details about that span:
+Traces provide information about a root span and its descendants in dedicated *Trace Details* pages. Each span listed on the page links to details about that span:
 
 * *Span Duration*: Time the span took to execute
 //TODO: what does UNSET mean? Are there any other statuses?
