@@ -1,7 +1,7 @@
 = Monitoring Traces
 :page-notice-banner-message: Open Beta Release: Traces is in open beta. Any use of Anypoint Monitoring features in the beta state is subject to the applicable beta services terms and conditions.
 :page-info-pills: anypoint-pricing-titanium
-:entities: Agents, Brokers, MCP Servers, and Mule apps
+:entities: Agents, brokers, MCP servers, and Mule apps
 :auto-refresh: every 5, 15, or 30 minutes, every hour, or one time per day
 
 Use Traces to track the flow of requests that travel through service pipelines. Examine traces in Open Telemetry (OTEL) spans. Troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track calls end-to-end. Monitor the performance of a specific transaction as it travels through services. 
@@ -70,7 +70,7 @@ include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 [[trace-overview]]
 == Get Trace Data from Spans
 
-View a list of spans from across entities ({entities}) in *Traces Overview*. Get details on root spans. Use filters to narrow the scope of spans in the *Spans List*.
+View a list of spans from across entities ({entities}) in *Traces Overview*. Get details on root spans and their descendants. Use filters to narrow the scope of spans in the *Spans List*.
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 

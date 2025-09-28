@@ -1,0 +1,63 @@
+= Monitoring Agentic Assets
+
+//TODO: VERIFY API MANAGER
+In US and EU Cloud instances of Anypoint Platform, navigate from Agent Visualizer or API Manager to view detailed metrics on agentic assets (agent, broker, or MCP server instances).
+
+* Agent: An autonomous software component that uses goals, context, and available tools (often via an LLM) to decide and execute actions on behalf of a user or system.
+* Broker: An intelligent routing service that coordinates task delegation across specialized agents in your enterprise. Brokers originate from MuleSoft and are referenced in the agent network YAML. 
+* MCP server: A service that implements the Model Context Protocol to expose tools and data to AI clients, enabling LLMs to invoke external capabilities through a standard interface.
+
+For information about Agent Visualizer, see xref:agent-visualizer::index.adoc[]. 
+
+//TODO: PREREQS: sub tier, permissions, instances on API Manager or Agent Visualizer? anything else?
+
+//TODO: LOOKBACK settings 24 hours, anything else?
+//TODO: AUTO-REFRESH INTERVALS 
+//TODO: MANUAL REFRESH
+
+//TODO: PROVIDE LINKS TO DOCS WITH INFO ON HOW TO OPEN THE METRICS PAGES
+
+[[properties]]
+== Instance Properties
+
+//TODO: WHERE DO THE LINKS to Runtime Target, Implementation URI, and Proxy URL go?
+
+Agent, broker, and MCP server pages display these properties:
+
+include::partial$include-insights-agentic-details.adoc[tag=metadata]
+
+[[agent]]
+== Agent Metrics 
+
+Agents protected by a Flex Gateway ingress policy (xref:policies::policies-availability-by-gateway.adoc[A2A Agent Card]) produce metrics in these charts:
+
+* *Total Received*: All requests to the agent
+* *Failed Requests*: Number of requests to the agent that failed
+* *Failed Request Rate*: Percentage of requests to the agent that failed 
+
+The agent's Flex Gateway ingress supports request counts. The charts reflect calls to the agent through that ingress.
+
+[[broker]]
+== Broker Metrics
+
+Brokers provide these metrics in these charts:
+
+* *Requests Received*:
+** *Total Received*: Number of requests to the broker
+** *Failed Requests*: Number of requests to the broker that failed
+** *Failed Request Rate*: Percentage of requests to the broker that failed 
+
+* *Calls Sent*:
+* *A2A Calls Sent*: Number of requests the broker sent to agents
+* *MCP Calls Sent*: Number of requests the broker sent to MCP servers
+
+[[mcp-server]]
+== MCP Server Metrics
+
+MCP servers protected by a Flex Gateway ingress policy (xref:policies::policies-availability-by-gateway.adoc[MCP Support]) produce metrics in these charts:
+
+* *Total Received*: All requests to the agent
+* *Failed Requests*: Number of requests to the agent that failed
+* *Failed Request Rate*: Percentage of requests to the agent that failed 
+
+The MCP server's Flex Gateway ingress supports request counts. The charts reflect calls to the MCP server through that ingress.
