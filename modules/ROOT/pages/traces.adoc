@@ -104,7 +104,24 @@ The page displays matching spans.
 image::trace-details-span.png["Details of a span in the Traces Details page", width=90%]
 
 .. *Span Name*: Name of the span.
-.. Span details: 
+.. <<span-details, Span details>>
+
+== Span Properties and Details
+
+Traces provide information about root span properties and details about spans that make up a trace. 
+
+* <<root-span-info>>
+* <<trace-span-details>>
+
+[[root-span-info]]
+=== Root Span Properties
+
+include::partial$include-insights-agentic-details.adoc[tag=metadata]
+
+[[trace-span-details]]
+=== Span Details
+
+Each *Trace Details* page for a root span opens to a trace hierarchy for that span (from root to descendant spans). Each span listed on the page links to details about that span. 
 
 * *Span Duration*: Time the span took to execute
 //TODO: what does UNSET mean? Are there any other statuses?
