@@ -106,43 +106,6 @@ image::trace-details-span.png["Details of a span in the Traces Details page", wi
 .. *Span Name*: Name of the span.
 .. <<span-details, Span details>>
 
-== Span Properties and Details
-
-Traces provide information about root span properties and details about spans that make up a trace. 
-
-* <<root-span-info>>
-* <<trace-span-details>>
-
-[[root-span-info]]
-=== Root Span Properties
-
-include::partial$include-insights-agentic-details.adoc[tag=metadata]
-
-[[trace-span-details]]
-=== Span Details
-
-Each *Trace Details* page for a root span opens to a trace hierarchy for that span (from root to descendant spans). Each span listed on the page links to details about that span. 
-
-* *Span Duration*: Time the span took to execute
-//TODO: what does UNSET mean? Are there any other statuses?
-* *Span Status*: Status of the span (*OK*, *ERROR*, *Unset*)
-* *Span ID*: ID of the span
-* *Span Kind*: Source of the span operation or request (*Server*, *Internal*, *Client*)
-* *Span Start Time*: Time that the span started, in UTC
-* *Trace ID*: The ID of the trace in which the span occurred
-* *Correlation ID*: Unique identifier that's generated before sending an event to the next processor in the Mule flow (see xref:mule-runtime::correlation-id.adoc[])
-* *HTTP Status Code*: HTTP status code of a span that is a request. Statuses include *0 No Response*, *200 OK*, and *500 Internal Server Error*.
-* *Entity Type*: Type of entity associated with the trace. Types include *App*, *API*.
-//TODO: BAD LINK TO ENTITY IN INSIGHTS, WILL WE FIX IT?
-* *Entity Name*: The name of the entity associated with the trace
-* <<business-groups, *Business Group*>> that the span belongs to
-* <<environments, *Environment*>> that the span belongs to
-* *Parent Span ID*: ID of a span that contains the selected span 
-+
-Parent spans don't have a value in this field. Use the Trace ID to track this span.
-//TODO: BAD LINK TO LOGS IN MONITORING, WILL WE FIX IT?
-* *View Logs*: Find the root span in Anypoint Monitoring logs. 
-
 [[filters]]
 == Filter Spans
 
@@ -184,6 +147,31 @@ Tips:
 * If no traces appear after applying a query, change your filters, the lookback setting, or business group.
 * Selecting multiple filters of the same type isn't allowed.
 * Filters get processed as logical ANDs. If a span doesn't match one of the filters, the query won't return spans.
+
+== Span Details
+
+Traces provide information about a root span and its descendants in a dedicated *Trace Details* page. Each span listed on the page links to details about that span:
+
+* *Span Duration*: Time the span took to execute
+//TODO: what does UNSET mean? Are there any other statuses?
+* *Span Status*: Status of the span (*OK*, *ERROR*, *Unset*)
+* *Span ID*: ID of the span
+* *Span Kind*: Source of the span operation or request (*Server*, *Internal*, *Client*)
+* *Span Start Time*: Time that the span started, in UTC
+* *Trace ID*: The ID of the trace in which the span occurred
+* *Correlation ID*: Unique identifier that's generated before sending an event to the next processor in the Mule flow (see xref:mule-runtime::correlation-id.adoc[])
+* *HTTP Status Code*: HTTP status code of a span that is a request. Statuses include *0 No Response*, *200 OK*, and *500 Internal Server Error*.
+* *Entity Type*: Type of entity associated with the trace. Types include *App*, *API*.
+//TODO: BAD LINK TO ENTITY IN INSIGHTS, WILL WE FIX IT?
+* *Entity Name*: The name of the entity associated with the trace
+* <<business-groups, *Business Group*>> that the span belongs to
+* <<environments, *Environment*>> that the span belongs to
+* *Parent Span ID*: ID of a span that contains the selected span 
++
+Parent spans don't have a value in this field. Use the Trace ID to track this span.
+//TODO: BAD LINK TO LOGS IN MONITORING, WILL WE FIX IT?
+* *View Logs*: Find the root span in Anypoint Monitoring logs. 
+
 
 [[environments]]
 == Environments
