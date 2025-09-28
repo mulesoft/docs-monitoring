@@ -1,26 +1,26 @@
-= Reviewing Traces
+= Monitoring Traces
 :page-notice-banner-message: Open Beta Release: Traces is in open beta. Any use of Anypoint Monitoring features in the beta state is subject to the applicable beta services terms and conditions.
 :page-info-pills: anypoint-pricing-titanium
 :entities: Agents, Brokers, MCP Servers, and Mule apps
 :auto-refresh: every 5, 15, or 30 minutes, every hour, or one time per day
 
-Use *Traces* in Anypoint Monitoring to track the flow of requests that travel through service pipelines. Examine traces in Open Telementry (OTEL) spans to troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track requests end-to-end. Find and view the course of a specific transaction through the services it travels to monitor its performance. 
+Use Traces to track the flow of requests that travel through service pipelines. Examine traces in Open Telemetry (OTEL) spans. Troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track calls end-to-end. Monitor the performance of a specific transaction as it travels through services. 
 
 [[traces-overview]]
 //don't change order of numbers in graphic or calloutlist
-image::traces.png["Span list in the Traces overview pages"]
+image::traces.png["Span list in Traces Overview"]
 
 [calloutlist]
 . Traces in Anypoint Monitoring
 . <<environment, Environment selector>> for your deployments (such as Sandbox or Production)
-. <<ref-query, Filter>> field for queries that narrow the list of logs that return
+. <<filters, Filter>> field for queries that narrow the list of logs to return
 //{entities} = Agents, Brokers, MCP Servers, and Mule apps
 . List of spans for the supported {entities}
-. Selector for the period of time to capture (from the last 15 minutes to the last 7 days)
-. <<refresh, Auto-Refresh>> {auto-refresh}
-. Manual page refresh button
+. Lookback selector for the period of time to capture in the *Span List* (from the default of 15 minutes to the last 7 days)
+. Auto-Refresh {auto-refresh}
+. Refresh the page manually
 
-As an alternative to Traces, use xref:telemetry-exporter.adoc[Telemetry Exporter] with third-party observability and analytics platforms.
+In addition to Traces, you can use xref:telemetry-exporter.adoc[Telemetry Exporter] to export traces to third-party observability and analytics platforms.
 
 === Supported Traces
 
@@ -38,18 +38,20 @@ Traces in Anypoint Monitoring displays spans from entities deployed to:
 * CloudHub 2
 * Runtime Fabric
 
-//TODO: verify with Bhavin 
+//TODO: VERIFY with Bhavin 
 
-=== Sampling Rate for Traces
+=== Sampling Rate
 
 Trace data sampling rate:
 
 * 100%: Agents, brokers, and MCP servers
 * 10%: Mule apps and APIs
 
+//TODO: VERIFY ask Bhavin or Sathish
+
 == Before You Begin
 
-Before you use traces, ensure that you have:
+Before using traces, ensure that you have:
 
 include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
@@ -58,28 +60,30 @@ include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 ** xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
 ** xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
 * For Runtime Fabric, enabled trace data collection on apps deployed to xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric]
-//TODO: MULE VERSION RELATES TO JUST MULE APPS OR MORE?
+//* Requirements for Mule apps:
+//TODO: MULE VERSION RELATES TO JUST MULE APPS OR MORE? AND VERIFY VERSION.
 * Mule runtime version 4.6 or later
-//TODO: CONNECTOR RELATES TO JUST MULE APPS OR MORE?
+//TODO: CONNECTOR RELATES TO JUST MULE APPS OR MORE? AND VERIFY VERSION.
 * HTTP Connector version 1.8 or later
 
 
 [[trace-overview]]
 == Get Trace Data from Spans
 
-View a list of spans from across entities ({entities}) from *Traces Overview*. Get details on specific , time range, and environment settings. Get details on root spans. 
+View a list of spans from across entities ({entities}) in *Traces Overview*. Get details on root spans. Use filters to narrow the scope of spans in the *Spans List*.
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
 include::partial$include-nav-distributed-tracing.adoc[]
+. Make sure you're using the <<business-groups, business group>> that contains the spans.
 . Select up to the last 7 days of spans (see <<traces-overview, item 5>>).
 +
-You capture the last 5, 10, or 15 minutes, the last hour, or the last 
+15 minutes is the default.
 . Select the <<environments, environment>> that contains your spans.
 . Optionally, provide a <<filters, filter query>> to narrow the search results.
-. Click a span to get its <<trace-details, trace details>>.
+. To get <<trace-details, trace details>> on a span in the *Span List*, click a span.
 +
-View an instance's traces as in a span tree, starting from the root span for the instance. Get details on any span in the tree, for example:
+*Trace Details* displays the selected instance's traces in a span tree, starting from the root span for the instance.
 +
 image::trace-details.png["An instance's spans in the Traces Details page"]
 
@@ -90,9 +94,9 @@ image::trace-details.png["An instance's spans in the Traces Details page"]
 * *Trace Start Time*: The time the trace started, in UTC
 * *Total Response Time*: The time taken for the trace to execute 
 * *Root Span*: The request or operation that initiated the trace
-.. Filter spans by full or partial matches to the span name
+.. Search for spans by full or partial matches to the span name
 +
-Filtering displays a span tree with the highest to lowest spans in the traces that match your search.
+The page displays matching spans. 
 .. Trace hierarchy from a root span and to its descendants
 .. Trace ID of the root span
 . To get more information about a span in the details page, click the span:
@@ -100,23 +104,23 @@ Filtering displays a span tree with the highest to lowest spans in the traces th
 image::trace-details-span.png["Details of a span in the Traces Details page", width=90%]
 
 .. *Span Name*: Name of the span.
-.. Details: 
+.. Span details: 
 
 * *Span Duration*: Time the span took to execute
-//TODO: what does UNSET mean?
+//TODO: what does UNSET mean? Are there any other statuses?
 * *Span Status*: Status of the span (*OK*, *ERROR*, *Unset*)
 * *Span ID*: ID of the span
 * *Span Kind*: Source of the span operation or request (*Server*, *Internal*, *Client*)
-* *Span Start Time*: Time when the span started, in UTC
-* *Trace ID*: The ID of the trace in which the span occurred.
-* *Correlation ID*: Unique identifier string generated before sending an event to the next processor in the Mule flow (see xref:mule-runtime::correlation-id.adoc[]).
-* *HTTP Status Code*: The HTTP status code of a span that is a request. Statuses include *0 No Response*, *200 OK*, *500 Internal Server Error*
+* *Span Start Time*: Time that the span started, in UTC
+* *Trace ID*: The ID of the trace in which the span occurred
+* *Correlation ID*: Unique identifier that's generated before sending an event to the next processor in the Mule flow (see xref:mule-runtime::correlation-id.adoc[])
+* *HTTP Status Code*: HTTP status code of a span that is a request. Statuses include *0 No Response*, *200 OK*, and *500 Internal Server Error*.
 * *Entity Type*: Type of entity associated with the trace. Types include *App*, *API*.
 //TODO: BAD LINK TO ENTITY IN INSIGHTS, WILL WE FIX IT?
 * *Entity Name*: The name of the entity associated with the trace
-* *Business Group*
-* <<environments, *Environment*>>
-* *Parent Span ID*: ID of a span that contains the selected span. 
+* <<business-groups, *Business Group*>> that the span belongs to
+* <<environments, *Environment*>> that the span belongs to
+* *Parent Span ID*: ID of a span that contains the selected span 
 +
 Parent spans don't have a value in this field. Use the Trace ID to track this span.
 //TODO: BAD LINK TO LOGS IN MONITORING, WILL WE FIX IT?
@@ -127,20 +131,20 @@ Parent spans don't have a value in this field. Use the Trace ID to track this sp
 
 To narrow the list of spans in *Traces Overview*, provide a filter query in the search field.  
 
-. Click within the search field to display a list of filters. 
-. Select a filter from the dropdown. 
+. Place your cursor within the search field and click to display a list of filters. 
+. Select a filter from the field's dropdown. 
 +
 [[filter-list]]
 [%header,cols="1a,1a,3a"]
 |===
 |Filter |Operators |Description
-| `api_instance_id` | `=` |Version of an API instance that's associated with a span. This ID is available for the instance from API Manager. 
-| `correlation_id` | `=` |ID of the entity you want to see traces for.
-| `entity_name` | `=`, `IN` | Name of an entity that's associated with a span in the *Span List*. 
-| `http_status_code` | `=`, `IN` | HTTP status code associated with spans in the *Span List*. 
+| `api_instance_id` | `=` |Version of an API instance that's associated with a span. You can find the instance's ID in API Manager. 
+| `correlation_id` | `=` |Correlation ID associated with a span (see xref:mule-runtime::correlation-id.adoc[]).
+| `entity_name` | `=`, `IN` | Name of entities associated with spans. 
+| `http_status_code` | `=`, `IN` | HTTP status codes associated with span. 
 | `span_id` | `=` | ID of a span contained in traces.
-|`span_name` | `=`, `IN` | Name of a span contained in traces  in the *Span List*. 
-|`trace_id` | `=`, `IN` | ID associated with a span in the *Span List*.
+| `span_name` | `=`, `IN` | Name of a span. 
+| `trace_id` | `=`, `IN` | ID associated with a span.
 |===
 . Select an operator for the filter:
 
@@ -148,7 +152,7 @@ To narrow the list of spans in *Traces Overview*, provide a filter query in the 
 * `IN` accepts one or more comma-separated, alphanumeric values. The values get processed as logical ORs. 
 . Select a value from the search field's *Top Value* list. If the value you're looking for isn't in the list, start typing a partial match to your value, and then select the value.
 +
-Tip: If you're providing search values to the `IN` operator (such as `entity_name IN ['value1', 'value2']`), manually adding a comma after one value before selecting another value from the *Top Value* list can help with valid query formation.
+Tip: If you're providing search values to the `IN` operator (such as `entity_name IN ['value1', 'value2']`), manually adding a comma after a value before selecting another value from the *Top Value* list can help with valid query formation.
 +
 Example: 
 +
@@ -156,16 +160,13 @@ This example gets spans named `my-span` that have status code '404', '502', or '
 +
 `http_status_code IN [ '404', '502', '200' ] span_name = my-span`
 
-To edit or delete a filter, click the filter, and then click *Edit Filter* or *Delete Filter* from the *Actions* list for the filter. To avoid issues when editing, you can delete the filter and add it back with the values you want.
+To edit or delete a filter, click the filter, and then click *Edit Filter* or *Delete Filter* from the *Actions* list for the filter. To avoid issues when editing, you can delete the filter and then add it back with the values you want.
 
 Tips:
 
-* If no traces appear after applying a query, change your filters.
+* If no traces appear after applying a query, change your filters, the lookback setting, or business group.
 * Selecting multiple filters of the same type isn't allowed.
-* Multiple filters in a query are processed as logical ANDs, meaning that the conditions of both filters must be true to produce results.
-
-
-
+* Filters get processed as logical ANDs. If a span doesn't match one of the filters, the query won't return spans.
 
 [[environments]]
 == Environments
@@ -180,9 +181,10 @@ Anypoint Platform supports these _types_ of xref:access-management::environments
 * *Production*
 * *Sandbox*
 
+[[business-groups]]
 == Business Groups
 
-If you work from the root organization level, you can query all spans across the entire organization. If you're working from a specific business group, the query returns content from that business group only.
+If you work from the root organization level, you can query all spans across the entire organization. If you're working from a business group that's a descendant of the root, the query returns spans from that business group only.
 
 To view or select a different business group, use the business group dropdown.
 
@@ -192,7 +194,7 @@ image::business-groups.png["Business group menu"]
 . Business group that contains spans in the *Span List*
 . Selectable business groups
 +
-In the example, the root organization is active in this example.
+In the example, the root organization is active.
 
 
 == See Also
