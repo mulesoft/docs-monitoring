@@ -1,10 +1,10 @@
-= Monitoring Traces
+= Examining Traces
 :page-notice-banner-message: Open Beta Release: Traces is in open beta. Any use of Anypoint Monitoring features in the beta state is subject to the applicable beta services terms and conditions.
 :page-info-pills: anypoint-pricing-titanium
 :entities: Agents, brokers, MCP servers, and Mule apps
 :auto-refresh: every 5, 15, or 30 minutes, every hour, or one time per day
 
-Use Traces to track the flow of requests that travel through service pipelines. Examine traces in Open Telemetry (OTEL) spans. Troubleshoot requests that have errors or slow response times, optimize your resource allocation, and track calls end-to-end. Monitor the performance of a specific transaction as it travels through services. 
+Use Traces to track the flow of requests that travel through service pipelines. Get data from the Open Telemetry (OTEL) spans that form your traces. Troubleshoot requests with errors or slow response times, optimize your resource allocation, and track calls end-to-end. Monitor the performance of a specific transaction as it travels through services. 
 
 [[traces-overview]]
 //don't change order of numbers in graphic or calloutlist
@@ -20,7 +20,7 @@ image::traces.png["Span list in Traces Overview"]
 . Auto-Refresh {auto-refresh}
 . Refresh the page manually
 
-In addition to Traces, you can use xref:telemetry-exporter.adoc[Telemetry Exporter] to export traces to third-party observability and analytics platforms.
+In addition to reviewing traces in Anypoint Monitoring, you can use xref:telemetry-exporter.adoc[Telemetry Exporter] to export traces to third-party observability and analytics platforms.
 
 === Supported Traces
 
@@ -70,7 +70,7 @@ include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 [[trace-overview]]
 == Get Trace Data from Spans
 
-View a list of spans from across entities ({entities}) in *Traces Overview*. Get details on root spans and their descendants. Use filters to narrow the scope of spans in the *Spans List*.
+View a list of spans from across entities ({entities}) in *Traces Overview*. Get high-level details on each root span in a trace. Use filters to narrow the scope of spans in the *Spans List*. Get additional detail on each span in the hierarchy of spans that form a trace (from root span to its descendants). 
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
@@ -97,7 +97,7 @@ image::trace-details.png["An instance's spans in the Traces Details page"]
 .. Search for spans by full or partial matches to the span name
 +
 The page displays matching spans. 
-.. Trace hierarchy from a root span and to its descendants
+.. Trace hierarchy of spans, starting from the root span through its descendants
 .. Trace ID of the root span
 . To get more information about a span in the details page, click the span:
 +
