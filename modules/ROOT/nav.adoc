@@ -23,6 +23,7 @@
  ** xref:monitor-connectors.adoc[]
  ** xref:export-app-data-to-csv.adoc[]
 * xref:anypoint-insights.adoc[Monitoring Metrics from Insights]
+* xref:anypoint-insights-agentic.adoc[]
 * xref:traces.adoc[]
 * xref:reports.adoc[Viewing Reports]
 * xref:alerts.adoc[Getting Alerts]
