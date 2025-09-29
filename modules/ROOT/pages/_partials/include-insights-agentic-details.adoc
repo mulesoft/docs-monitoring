@@ -43,7 +43,8 @@ If configured, provides a proxy application URI that consumers use when making r
 //  IN MOCK
 * *Implementation URI*:
 Upstream URI on the backend
-TODO for the instance
+
+//TODO for the instance
 
 * *Instance Conformance*:
 Most severe conformance issue level detected by API Governance
@@ -54,8 +55,8 @@ Most severe conformance issue level detected by API Governance
 Mule runtime engine version for the instance
 
 //  IN MOCK
-* *Proxy Application*:
-TODO for the instance
+* *Proxy Application*
+//TODO for the instance
 
 //  IN MOCK
 //  TODO: VERIFY DESCRIPTION -- is this optional?
@@ -63,8 +64,8 @@ TODO for the instance
 The URL to the proxy for the instance, if one exists 
 
 //  IN MOCK
-* *Runtime Target*:
-TODO for the instance
+* *Runtime Target*
+//TODO for the instance
 
 //  IN MOCK
 * *Type*:
