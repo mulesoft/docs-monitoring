@@ -6,68 +6,67 @@
 //METADATA ON DETAILS PAGES (SOURCE: API MANAGER)
 //tag::metadata[]
 
-//IN MOCK
-//  TODO: Is this unique even if there are multiple instances of the same API? Confusing!
-* *API Instance ID*: 
+//GA
+//  TODO: Is this unique even if there are multiple instances of the same API? Check description in UI. 
+//Note: Name change from API Instance ID in API Manager. 
+* *Instance ID*: 
 Unique identifier that API Manager generates for the instance 
 
-// IN MOCK
-//  TODO: the config is optional
-* *API Label*:
+// GA -- Note: Name change from API Instance Label in API Manager. 
+//  TODO: the config is optional; check description. 
+* *Instance Label*:
 Unique identifier configured in API Manager as an optional instance property that distinguishes one instance from another instance of the same API
 
-//IN MOCK
-* *API Status*:
+// GA -- Note: Name change from API Status in API Manager. 
+* *Status*:
 *Active*, *Inactive*, or *Unregistered* status for the instance
 +
 For more detail, see xref:api-manager*:latest-overview-concept.adoc#tracking-registration-status[Tracking Registration Status] in the API Manager documentation.
 +
 Applies to agents, brokers, and MCP servers
 
-//  IN MOCK
-//  TODO: VERIFY DESCRIPTION
-* *API Version*: 
-Version of the API (example: *V1*) that the agent, broker, or MCP server instantiates
+// not GA, in MOCK
+//NOT FOR GA: TODO: VERIFY DESCRIPTION
+//* *API Version*: 
+//Version of the API (example: *V1*) that the agent, broker, or MCP server instantiates
 
-//  IN MOCK
-//  TODO: VERIFY DESCRIPTION
+// GA
+// TODO: VERIFY DESCRIPTION -- displayed in Exchange?
 * *Asset Version*:
-Version of the API displayed in Anypoint Exchange that the instance implements
+Version of the asset (in xref:exchange::asset-versions.adoc[Anypoint Exchange]) that the instance implements
++
 Examples: *1.0.0 (Latest)*, *1.0.2*
 
-//  IN MOCK
+// not GA, in MOCK
 //  TODO: VERIFY DESCRIPTION -- this config is optional 
-* *Consumer Endpoint*:
-If configured, provides a proxy application URI that consumers use when making requests to the instance
+//* *Consumer Endpoint*:
+//If configured, provides a proxy application URI that consumers use when making requests to the instance
 
-//  IN MOCK
+// GA
+// LINK DOESN'T/SHOULDN'T WORK?
 * *Implementation URI*:
-Upstream URI on the backend
+Upstream URI for the backend
 
-//TODO for the instance
-
-* *Instance Conformance*:
-Most severe conformance issue level detected by API Governance
+// not GA, in MOCK
+//* *Instance Conformance*:
+//Most severe conformance issue level detected by API Governance
 //TODO: POINT TO LIST OF VALUES
 
-//  IN MOCK
-* *Mule Version*:
-Mule runtime engine version for the instance
+// not GA, in MOCK
+//* *Mule Version*:
+//Mule runtime engine version for the instance
 
-//  IN MOCK
-* *Proxy Application*
-//TODO for the instance
+// not GA, in MOCK
+//* *Proxy Application*
 
-//  IN MOCK
-//  TODO: VERIFY DESCRIPTION -- is this optional?
-* *Proxy URL*:
-The URL to the proxy for the instance, if one exists 
+// not GA, in MOCK, VERIFY DESCRIPTION
+//* *Proxy URL*:
+//The URL to the proxy for the instance, if one exists 
 
-//  IN MOCK
-* *Runtime Target*
-//TODO for the instance
+// not GA, in MOCK
+//* *Runtime Target*
 
-//  IN MOCK
+// GA
 * *Type*:
 An *Agent*, *Broker*, or *MCP Server* instance type
 
