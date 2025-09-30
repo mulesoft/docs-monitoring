@@ -55,22 +55,19 @@ Before using traces, ensure that you have:
 
 include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
-* xref:access-management::permissions-by-product.adoc#monitoring[Permission to view] Mule apps, APIs, and instances of agents, brokers, and MCP servers in Anypoint Monitoring 
-* For apps deployed to CloudHub 2:
-** xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
-** xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
-* For Runtime Fabric, enabled trace data collection on apps deployed to xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric]
-//* Requirements for Mule apps:
-//TODO: MULE VERSION RELATES TO JUST MULE APPS OR MORE? AND VERIFY VERSION.
-* Mule runtime version 4.6 or later
-//TODO: CONNECTOR RELATES TO JUST MULE APPS OR MORE? AND VERIFY VERSION.
-* HTTP Connector version 1.8 or later
-
+* xref:access-management::permissions-by-product.adoc#monitoring[Permission to view] Mule apps, APIs, and agentic assets (agent, broker, and MCP server instances) in Anypoint Monitoring 
+* For Mule apps and APIs:
+** For apps deployed to CloudHub 2:
+*** xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
+*** xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
+** For Runtime Fabric, enabled trace data collection on apps deployed to xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric]
+** Mule runtime version 4.6 or later
+** HTTP Connector version 1.8 or later
 
 [[trace-overview]]
-== Get Trace Data from Spans
+== Get Traces from Traces Overview
 
-View a list of spans from across entities ({entities}) in *Traces Overview*. Get high-level details on each root span in a trace. Use filters to narrow the scope of spans in the *Spans List*. Get additional detail on each span in the hierarchy of spans that form a trace (from root span to its descendants). 
+View a list of spans from across entities ({entities}) in *Traces Overview* in Anypoint Monitoring. Get high-level details on each root span in a trace. Use filters to narrow the scope of spans in the *Spans List*. Get additional detail on each span in the hierarchy of spans that form a trace (from root span to its descendants). 
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
@@ -81,7 +78,25 @@ include::partial$include-nav-distributed-tracing.adoc[]
 15 minutes is the default.
 . Select the <<environments, environment>> that contains your spans.
 . Optionally, provide a <<filters, filter query>> to narrow the search results.
-. To get <<trace-details, trace details>> on a span in the *Span List*, click a span.
+. <<get-trace-details, Get trace details>>.
+
+[[visualizer]]
+== Find Traces for Agent Visualizer Nodes
+
+Agent Visualizer links to traces for agentic assets (agent, broker, and MCP server instances). 
+
+. In Agent Visualizer, click a node to open its detail card.
+. Click *View Traces* to navigate to the traces for the node in *Trace Details* (in Anypoint Monitoring).
+. <<get-trace-details, Get trace details>>.
+
+For more information about nodes in Agent Visualizer, see xref:agent-visualizer::index.adoc[].
+
+[[get-trace-details]]
+== Get Trace Details
+
+After navigating to *Trace Details* from <<trace-overview, *Traces Overview*>> in Anypoint Monitoring or from a <<visualizer, node in Agent Visualizer>>, get information about the trace and its spans.
+
+. Review information about the trace:
 +
 *Trace Details* displays the selected instance's traces in a span tree, starting from the root span for the instance.
 +
