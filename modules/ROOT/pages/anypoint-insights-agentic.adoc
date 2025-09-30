@@ -25,11 +25,17 @@ For information about Agent Visualizer, see xref:agent-visualizer::index.adoc[].
 
 == Find Metrics for Agentic Assets
 
-TODO (FROM VISUALIZER)
+Agent Visualizer links to metrics for agentic assets (agent, broker, and MCP server instances) from nodes in the visualizer graph. 
+
+. In Agent Visualizer, click a node to open its detail card.
+. In *Performance and Health*, click *View metrics* to view additional metrics in Anypoint Monitoring. 
+. Optional:
+.. Set the lookback period to different range.
+.. Review <<properties, properties>> and metrics for the <<agent, agent>>, <<broker, broker>>, or <<mcp-server, MCP server>> instance. 
+
+For more information about nodes in Agent Visualizer, see xref:agent-visualizer::index.adoc[].
 
 //TODO: PREREQS: sub tier, permissions, instances on API Manager or Agent Visualizer? anything else?
-
-//TODO: PROVIDE LINKS TO DOCS WITH INFO ON HOW TO OPEN THE METRICS PAGES
 
 [[lookback]]
 == Set Lookback Period for Metrics

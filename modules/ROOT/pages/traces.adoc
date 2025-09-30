@@ -36,7 +36,7 @@ Traces in Anypoint Monitoring displays spans from entities deployed to:
 
 * CloudHub 2
 //TODO: RTF - MG SAYS LIMITED AVAILABILITY FOR RTF Agent Fabric (what about non-AF instance)
-//TODO: TAG MICHAEL HAMMOND --
+//TODO: TAG MICHAEL HAMMOND -- seems to be confusion over this
 * Runtime Fabric (Limited Availabilty)
 
 === Sampling Rate
@@ -54,9 +54,8 @@ include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
 * xref:access-management::permissions-by-product.adoc#monitoring[Permission to view] Mule apps, APIs, and agentic assets (agent, broker, and MCP server instances) in Anypoint Monitoring 
 
-For traces that don't originate from a managed Flex Gateway and the broker instance it protects, additional requirements apply: 
+For Mule app and API tracing, these prerequisites apply: 
 
-* For Mule apps and APIs:
 ** For apps deployed to CloudHub 2:
 *** xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
 *** xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
