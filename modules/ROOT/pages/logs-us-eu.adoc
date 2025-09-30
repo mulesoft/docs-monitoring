@@ -221,9 +221,9 @@ API Manager and Agent Visualizer provide links to logs for agentic assets (agent
 
 * In API Manager, navigate to an agentic API instance that runs on *Runtime* type Flex Gateway:
 ** To find Flex Gateway logs, click *Logs* from the sidebar, and then click *View logs in Anypoint Monitoring*.
-** To find logs for policies applied to agents, brokers, and MCP server, click *Message Logs* from the sidebar, and then click *View logs in Anypoint Monitoring*.
+** To find logs for policies applied to agents, brokers, and MCP servers, click *Message Logs* from the sidebar, and then click *View logs in Anypoint Monitoring*.
 ** For a broker's reasoning logs, click *Message Logs* from the sidebar, and then click the button dedicated to the broker. These logs come from the broker application.
-* In Agent Visualizer, click a node in the visual graph. For guidance, see xref:agent-visualizer.adoc#access-logs[Access Logs] in the Agent Visualizer documentation.
+* In Agent Visualizer, click a node in the visual graph, and navigate to logs. For guidance, see xref:agent-visualizer.adoc#access-logs[Access Logs] in the Agent Visualizer documentation.
 +
 For more information about Agent Visualizer, see xref:agent-visualizer::index.adoc[].
 
