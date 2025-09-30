@@ -217,7 +217,7 @@ This example shows an expanded log entry in JSON format.
 [[search-agentic]]
 == Get Logs for Agentic Assets
 
-API Manager and Agent Visualizer provide links to logs for agentic assets (agent, broker, or MCP server instances):
+API Manager and Agent Visualizer provide links to logs for agentic assets (agent, broker, and MCP server instances):
 
 * In API Manager, navigate to an agentic API instance that runs on *Runtime* type Flex Gateway:
 ** To find Flex Gateway logs, click *Logs* from the sidebar, and then click *View logs in Anypoint Monitoring*.
