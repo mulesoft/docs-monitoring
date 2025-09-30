@@ -11,7 +11,7 @@ This example shows metrics for an instance of an agent.
 
 [[dashboard-overview]]
 //don't change order of numbers in graphic or calloutlist
-image::metric-agent.png["Metrics for an instance of an agent in Anypoint Monitoring"]
+image::metrics-agent.png["Metrics for an instance of an agent in Anypoint Monitoring"]
 
 [calloutlist]
 . Name of the instance
