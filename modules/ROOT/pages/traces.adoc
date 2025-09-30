@@ -26,9 +26,8 @@ In addition to reviewing traces in Anypoint Monitoring, you can use xref:telemet
 
 Traces include spans for:
 
-* Agentic assets: Agent, broker, MCP server instances
+* Agentic assets: Broker instances and their managed Flex Gateways (ingress and egress)
 * Flows: Mule flows for the selected task of the specific service
-* Logs: Contextual logs for the selected task
 * Events: Mule runtime events or user actions for the selected service
 
 === Hosts
@@ -37,22 +36,26 @@ Traces in Anypoint Monitoring displays spans from entities deployed to:
 
 * CloudHub 2
 //TODO: RTF - MG SAYS LIMITED AVAILABILITY FOR RTF Agent Fabric (what about non-AF instance)
-* Runtime Fabric 
+//TODO: TAG MICHAEL HAMMOND --
+* Runtime Fabric (Limited Availabilty)
 
 === Sampling Rate
 
 Trace data sampling rate:
 
 * 100%: Agents, brokers, and MCP servers
-* 10%: Mule apps and APIs
+* 10%: Mule apps and APIs 
 
 == Before You Begin
 
-Before using traces, ensure that you have:
+For all types of traces, these prerequisites apply: 
 
 include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
 * xref:access-management::permissions-by-product.adoc#monitoring[Permission to view] Mule apps, APIs, and agentic assets (agent, broker, and MCP server instances) in Anypoint Monitoring 
+
+For traces that don't originate from a managed Flex Gateway and the broker instance it protects, additional requirements apply: 
+
 * For Mule apps and APIs:
 ** For apps deployed to CloudHub 2:
 *** xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
