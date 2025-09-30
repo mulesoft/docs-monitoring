@@ -7,12 +7,31 @@ In US and EU Cloud instances of Anypoint Platform, navigate from Agent Visualize
 * Broker: An intelligent routing service that coordinates task delegation across specialized agents in your enterprise. Brokers originate from MuleSoft and are referenced in the agent network YAML. 
 * MCP server: A service that implements the Model Context Protocol to expose tools and data to AI clients, enabling LLMs to invoke external capabilities through a standard interface.
 
+This example shows metrics for an instance of an agent. 
+
+[[dashboard-overview]]
+//don't change order of numbers in graphic or calloutlist
+image::metric-agent.png["Metrics for an instance of an agent in Anypoint Monitoring"]
+
+[calloutlist]
+. Name of the instance
+. <<properties, Properties of the instance>> that match properties in API Manager
+. <<agent, Agent metrics>>
+. <<lookback, Lookback period>> selected for the agent
+. <<refresh, Auto-refresh>> (subscription tier requirement)
+. Manual refresh option
+
 For information about Agent Visualizer, see xref:agent-visualizer::index.adoc[]. 
+
+== Find Metrics for Agentic Assets
+
+TODO (FROM VISUALIZER)
 
 //TODO: PREREQS: sub tier, permissions, instances on API Manager or Agent Visualizer? anything else?
 
 //TODO: PROVIDE LINKS TO DOCS WITH INFO ON HOW TO OPEN THE METRICS PAGES
 
+[[lookback]]
 == Set Lookback Period for Metrics
 
 After navigating to the metrics for an agent, broker, or MCP server instance from Agent Visualizer, get up to the last 30 days of metrics on the instance. 
@@ -39,8 +58,6 @@ Agents protected by a Flex Gateway ingress policy (xref:policies::policies-avail
 * *Total Received*: All requests to the agent
 * *Failed Requests*: Number of requests to the agent that failed
 * *Failed Request Rate*: Percentage of requests to the agent that failed 
-
-The agent's Flex Gateway ingress supports request counts. The charts reflect calls to the agent through that ingress.
 
 [[broker]]
 == Broker Metrics
@@ -70,7 +87,7 @@ MCP servers protected by a Flex Gateway ingress policy (xref:policies::policies-
 
 The MCP server's Flex Gateway ingress supports request counts. The charts reflect calls to the MCP server through that ingress.
 
-
+[[refresh]]
 == Refreshing Metrics
 
 //SUBSCRIPTION LEVELS APPLY TO AUTO-REFRESH
