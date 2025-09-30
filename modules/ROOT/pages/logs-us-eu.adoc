@@ -238,8 +238,6 @@ If your organization opts to enable a broker's reasoning logs, set the broker's 
 
 `INSECURE-LOGGING` category to `DEBUG`
 
-For guidance with this setting for deployments to CloudHub 2, see xref:cloudhub-2::ch2-deploy-shared-space.adoc#configure-logging[Configure Log Levels and Categories].
-
 [[view_logs]]
 === View Full Logs on a Dedicated Page
 
