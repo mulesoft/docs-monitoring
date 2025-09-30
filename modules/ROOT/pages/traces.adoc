@@ -191,7 +191,7 @@ Parent spans don't have a value in this field. Use the Trace ID to track this sp
 [[environments]]
 == Environments
 
-Select the environment containing the spans you want to review.
+Select the environment containing the spans you want to review in *Traces Overview*.
 
 Your organization administrator xref:access-management::environments.adoc#to-create-a-new-environment[creates] the environments that are available to you.
 
