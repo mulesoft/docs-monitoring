@@ -215,12 +215,17 @@ This example shows an expanded log entry in JSON format.
 ----
 
 [[search-agentic]]
-== Get Agent, Broker, and MCP Server Logs
+== Get Logs for Agentic Assets
 
-API Manager and Agent Visualizer provide links to logs to agentic assets (an agent, broker, or MCP server instance). To search for these logs from Anypoint Monitoring, provide the instance ID for the application or API in the search field with any filters to narrow your query.
+API Manager and Agent Visualizer provide links to logs for agentic assets (agent, broker, or MCP server instances):
 
-* In API Manager, navigate to an agentic API instance that runs on *Runtime* type Flex Gateway, and click *Logs*.
-* In Agent Visualizer, click a node, go to *Performance and Health*, and click *View Logs*.
+* In API Manager, navigate to an agentic API instance that runs on *Runtime* type Flex Gateway:
+** To find Flex Gateway logs, click *Logs* from the sidebar, and then click *View logs in Anypoint Monitoring*.
+** To find logs policies applied to agents, brokers, and MCP server, click *Message Logs* from the sidebar, and then click *View logs in Anypoint Monitoring*.
+** For a broker's reasoning logs, click *Message Logs* from the sidebar, and then click the button dedicated to the broker. These logs come from the broker application.
+* In Agent Visualizer, click a node in the visual graph. For guidance, see xref:agent-visualizer.adoc#access-logs[Access Logs] in the Agent Visualizer documentation.
++
+For more information about Agent Visualizer, see xref:agent-visualizer::index.adoc[].
 
 [IMPORTANT]
 --
@@ -229,7 +234,7 @@ By default, broker logs include the actions the broker takes (including agents c
 Enabling reasoning logs risks inclusion of personally identifiable information and secrets. 
 --
 
-If your organization opts to enable a broker's reasoning logs, set the broker's category field in Runtime Manager:
+If your organization opts to enable a broker's reasoning logs, set the broker's `category` field in Runtime Manager:
 
 `INSECURE-LOGGING` category to `DEBUG`
 
