@@ -26,7 +26,7 @@ In addition to reviewing traces in Anypoint Monitoring, you can use xref:telemet
 
 Traces include spans for:
 
-* Agentic assets: Broker instances and their managed Flex Gateways (ingress and egress)
+* Agentic assets: Broker instances protected by managed Flex Gateways (ingress and egress)
 * Flows: Mule flows for the selected task of the specific service
 * Events: Mule runtime events or user actions for the selected service
 
@@ -56,13 +56,13 @@ include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
 For Mule app and API tracing, these prerequisites apply: 
 
-** For apps deployed to CloudHub 2:
-*** xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
-*** xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
+* For apps deployed to CloudHub 2:
+** xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
+** xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
 //TODO: RTF -MG SAYS LIMITED AVAILABILITY FOR RTF Agent Fabric (what about non-AF instance)
-** For Runtime Fabric, enabled trace data collection on apps deployed to xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric]
-** Mule runtime version 4.6 or later
-** HTTP Connector version 1.8 or later
+* For Runtime Fabric, enabled trace data collection on apps deployed to xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric]
+* Mule runtime version 4.6 or later
+* HTTP Connector version 1.8 or later
 
 [[trace-overview]]
 == Get Traces from Traces Overview
