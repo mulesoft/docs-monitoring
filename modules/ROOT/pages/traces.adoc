@@ -102,7 +102,7 @@ After navigating to *Trace Details* from <<trace-overview, *Traces Overview*>> i
 +
 image::trace-details.png["An instance's spans in the Traces Details page"]
 
-.. *Trace Details* page for a span selected from *Trace Overview*
+.. *Trace Details* page for a span selected from *Trace Overview* or through a node in Agent Visualizer
 .. High-level data about the selected span:
 
 * *Status Code*: The HTTP response status of the trace (for example `0 No Response`, `200 OK`,`500 Internal Server Error`)
