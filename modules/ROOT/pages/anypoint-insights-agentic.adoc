@@ -65,6 +65,7 @@ Agents protected by a Flex Gateway ingress policy (xref:policies::policies-avail
 * *Failed Requests*: Number of requests to the agent that failed
 * *Failed Request Rate*: Percentage of requests to the agent that failed 
 
+The agent's Flex Gateway ingress supports request counts. The charts reflect calls to the agent through that ingress.
 [[broker]]
 == Broker Metrics
 
