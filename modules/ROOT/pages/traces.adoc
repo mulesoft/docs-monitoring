@@ -106,7 +106,7 @@ image::trace-details.png["An instance's spans in the Traces Details page"]
 .. High-level data about the selected span:
 
 * *Status Code*: The HTTP response status of the trace (for example `0 No Response`, `200 OK`,`500 Internal Server Error`)
-* *Trace Start Time*: The time the trace started, in UTC
+* *Span Start Time*: The time the trace started, in UTC
 * *Total Response Time*: The time taken for the trace to execute 
 * *Root Span*: The request or operation that initiated the trace
 .. Search for spans by full or partial matches to the span name
