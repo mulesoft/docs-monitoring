@@ -1,8 +1,8 @@
 No data::
 No data is available in the series to evaluate the alert threshold.
 
-Disabled::
-The alert is disabled.
+Paused::
+The alert is disabled and no longer active.
 
 Alerting::
 The value of the metric passes the specified threshold.

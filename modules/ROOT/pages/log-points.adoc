@@ -1,7 +1,7 @@
-= Generating Real-Time Logs
+= Generating Real-Time Logs (US and EU)
 :page-info-pills: anypoint-pricing-titanium
 
-The Log Points feature in Anypoint Monitoring allows you to generate logs for apps and APIs in real-time and without writing code. For apps, you can specify the level of logs you want to generate, and for APIs, you can specify properties for the logs. This allows you to extract logs on-demand from applications in real-time, without causing re-deployment or application downtime. Permissions control allows you to manage access. All logs seamlessly flow into log management.
+On https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, the Log Points feature in Anypoint Monitoring allows you to generate logs for apps and APIs in real-time and without writing code. For apps, you can specify the level of logs you want to generate, and for APIs, you can specify properties for the logs. This allows you to extract logs on-demand from applications in real-time, without causing re-deployment or application downtime. Permissions control allows you to manage access. All logs seamlessly flow into log management.
 
 == Log Points for Apps
 
