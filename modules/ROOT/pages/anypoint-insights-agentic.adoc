@@ -69,7 +69,7 @@ The agent's Flex Gateway ingress supports request counts. The charts reflect cal
 [[broker]]
 == Broker Metrics
 
-Brokers provide these metrics in these charts:
+Metrics reported for brokers appear in these charts:
 
 * *Requests Received*:
 ** *Total Received*: Number of requests to the broker

@@ -219,8 +219,9 @@ This example shows an expanded log entry in JSON format.
 
 API Manager and Agent Visualizer provide links to logs for agentic assets (agent, broker, and MCP server instances):
 
-* In API Manager, navigate to an instance that runs on *Runtime* type Flex Gateway:
-** To find Flex Gateway logs, click *Logs* from the sidebar, and then click *View logs in Anypoint Monitoring*.
+* In API Manager, navigate to *Agent and Tool Instances*, and click an instance:
+// REMOVED:
+//** To find Flex Gateway logs, click *Logs* from the sidebar, and then click *View logs in Anypoint Monitoring*.
 ** To find logs for policies applied to agents, brokers, and MCP servers, click *Message Log* from the sidebar, and then click *View logs in Anypoint Monitoring*.
 ** For a broker's reasoning logs, click *Message Log* from the sidebar, and then click the button dedicated to the broker. These logs come from the broker application.
 * In Agent Visualizer, click a node in the visual graph, and navigate to logs. For guidance, see xref:agent-visualizer::troubleshoot-agent-network:adoc#access-logs[Access Logs] in the Agent Visualizer documentation.
