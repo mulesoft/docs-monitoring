@@ -34,7 +34,7 @@ Traces include spans for:
 
 Traces in Anypoint Monitoring displays spans from entities deployed to:
 
-* CloudHub 2
+* CloudHub 2.0
 //TODO: RTF - MG SAYS LIMITED AVAILABILITY FOR RTF Agent Fabric (what about non-AF instance)
 //TODO: TAG MICHAEL HAMMOND -- seems to be confusion over this
 * Runtime Fabric (Limited Availabilty)
