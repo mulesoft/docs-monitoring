@@ -17,7 +17,7 @@ image::metrics-agent.png["Metrics for an instance of an agent in Anypoint Monito
 . Name of the instance
 . <<properties, Properties of the instance>> that correspond to properties in API Manager
 . <<agent, Agent metrics>>
-. <<lookback, Lookback period>> selected for the agent
+. Lookback period selected for the agent
 . <<refresh, Auto-refresh>> (subscription tier requirement)
 . Manual refresh option
 
@@ -29,22 +29,13 @@ Agent Visualizer links to metrics for agentic assets (agent, broker, and MCP ser
 
 . In Agent Visualizer, click a node to open its detail card.
 . In *Performance and Health*, click *View metrics* to view additional metrics in Anypoint Monitoring. 
-.. Optionally, set the lookback period to different range.
+
+.. Optionally, set the lookback period (<<dashboard-overview, see 4>>) to different range.
++
+Defaults to the last 24 hours. Select a period from the last 30 minutes to the last 30 days.
 .. Review <<properties, properties>> and metrics for the <<agent, agent>>, <<broker, broker>>, or <<mcp-server, MCP server>> instance. 
 
 For more information about nodes in Agent Visualizer, see xref:agent-visualizer::index.adoc[].
-
-//TODO: PREREQS: sub tier, permissions, instances on API Manager or Agent Visualizer? anything else?
-
-[[lookback]]
-== Set Lookback Period for Metrics
-
-After navigating to the metrics for an agent, broker, or MCP server instance from Agent Visualizer, get up to the last 30 days of metrics on the instance. 
-
-* Default: *Past 1 hour*
-* Maximum: *Past 30 days*
-
-//Available periods are identical to the periods available for Anypoint Insights. 
 
 [[properties]]
 == Instance Properties
