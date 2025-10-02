@@ -29,7 +29,7 @@ Agent Visualizer links to metrics for agentic assets (agent, broker, and MCP ser
 
 . In Agent Visualizer, click a node to open its detail card.
 . In *Performance and Health*, click *View metrics* to view additional metrics in Anypoint Monitoring. 
-.. Set the lookback period to different range.
+.. Optionally, set the lookback period to different range.
 .. Review <<properties, properties>> and metrics for the <<agent, agent>>, <<broker, broker>>, or <<mcp-server, MCP server>> instance. 
 
 For more information about nodes in Agent Visualizer, see xref:agent-visualizer::index.adoc[].
