@@ -173,7 +173,7 @@ Traces provide information about a root span and its descendants in dedicated *T
 * *Span ID*: ID of the span
 * *Span Kind*: Source of the span operation or request (*Server*, *Internal*, *Client*)
 * *Span Start Time*: Time that the span started, in UTC
-* *Trace ID*: The ID of the trace in which the span occurred
+* *Trace ID*: ID of the trace in which the span occurred
 * *Correlation ID*: Unique identifier that's generated before sending an event to the next processor in the Mule flow (see xref:mule-runtime::correlation-id.adoc[])
 * *HTTP Status Code*: HTTP status code of a span that is a request. Statuses include *0 No Response*, *200 OK*, and *500 Internal Server Error*.
 * *Entity Type*: Type of entity associated with the trace. Types include *App*, *API*.
