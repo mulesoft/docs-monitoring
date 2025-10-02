@@ -16,7 +16,7 @@ image::traces.png["Span list in Traces Overview"]
 . <<filters, Filter>> field for queries that narrow the list of logs to return
 //{entities} = Agents, Brokers, MCP Servers, and Mule apps
 . List of spans for the supported {entities}
-. Lookback selector for the period of time to capture in the *Span List* (from the default of 15 minutes to the last 7 days)
+. Lookback selector for the period of time to capture in the *Span List* (from the default of 15 minutes to the last seven days)
 . Auto-Refresh {auto-refresh}
 . Manual refresh button
 
