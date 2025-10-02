@@ -178,7 +178,7 @@ Traces provide information about a root span and its descendants in dedicated *T
 * *HTTP Status Code*: HTTP status code of a span that is a request. Statuses include *0 No Response*, *200 OK*, and *500 Internal Server Error*.
 * *Entity Type*: Type of entity associated with the trace. Types include *App*, *API*.
 //TODO: BAD LINK TO ENTITY IN INSIGHTS, WILL WE FIX IT?
-* *Entity Name*: The name of the entity associated with the trace
+* *Entity Name*: Name of the entity associated with the trace
 * <<business-groups, *Business Group*>> that the span belongs to
 * <<environments, *Environment*>> that the span belongs to
 * *Parent Span ID*: ID of a span that contains the selected span 
