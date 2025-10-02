@@ -88,9 +88,9 @@ NOT FOR GA
 
 MCP servers protected by a Flex Gateway ingress policy (xref:policies::policies-availability-by-gateway.adoc[MCP Support]) produce metrics in these charts:
 
-* *Total Received*: All requests to the agent
-* *Failed Requests*: Number of requests to the agent that failed
-* *Failed Request Rate*: Percentage of requests to the agent that failed 
+* *Total Received*: All requests to the MCP server
+* *Failed Requests*: Number of requests to the MCP server that failed
+* *Failed Request Rate*: Percentage of requests to the MCP server that failed 
 
 The MCP server's Flex Gateway ingress supports request counts. The charts reflect calls to the MCP server through that ingress.
 
