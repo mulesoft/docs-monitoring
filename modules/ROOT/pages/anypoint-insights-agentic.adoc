@@ -15,7 +15,7 @@ image::metrics-agent.png["Metrics for an instance of an agent in Anypoint Monito
 
 [calloutlist]
 . Name of the instance
-. <<properties, Properties of the instance>> that match properties in API Manager
+. <<properties, Properties of the instance>> that correspond to properties in API Manager
 . <<agent, Agent metrics>>
 . <<lookback, Lookback period>> selected for the agent
 . <<refresh, Auto-refresh>> (subscription tier requirement)
