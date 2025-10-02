@@ -49,8 +49,6 @@ After navigating to the metrics for an agent, broker, or MCP server instance fro
 [[properties]]
 == Instance Properties
 
-//TODO: WHERE DO THE LINKS to Runtime Target, Implementation URI, and Proxy URL go?
-
 Agent, broker, and MCP server pages display these properties:
 
 include::partial$include-insights-agentic-details.adoc[tag=metadata]
