@@ -57,7 +57,7 @@ include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 For Mule app and API tracing, these prerequisites apply: 
 
 * For apps deployed to CloudHub 2.0:
-** xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
+** xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enable trace data collection for your app in a shared space]
 ** xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
 //TODO: RTF -MG SAYS LIMITED AVAILABILITY FOR RTF Agent Fabric (what about non-AF instance)
 * For Runtime Fabric, enabled trace data collection on apps deployed to xref:runtime-fabric::use-anypoint-monitoring.adoc#enable-trace-data[Runtime Fabric]
