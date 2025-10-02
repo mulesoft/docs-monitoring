@@ -95,7 +95,7 @@ MCP servers protected by a Flex Gateway ingress policy (xref:policies::policies-
 The MCP server's Flex Gateway ingress supports request counts. The charts reflect calls to the MCP server through that ingress.
 
 [[refresh]]
-== Refreshing Metrics
+== Refresh Metrics
 
 //SUBSCRIPTION LEVELS APPLY TO AUTO-REFRESH
 
