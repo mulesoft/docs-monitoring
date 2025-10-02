@@ -219,5 +219,5 @@ In the example, the root organization is active.
 
 == See Also
 * xref:telemetry-exporter.adoc[]
-* xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a shared space]
+* xref:cloudhub-2::ch2-deploy-shared-space.adoc#enable-trace-data-collection[Enable Trace Data Collection]
 * xref:cloudhub-2::ch2-deploy-private-space.adoc#enable-trace-data-collection[Enabled trace data collection for your app in a private space]
