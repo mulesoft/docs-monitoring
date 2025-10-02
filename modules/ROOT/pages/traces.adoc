@@ -1,7 +1,7 @@
 = Examining Traces
 :page-notice-banner-message: Open Beta Release: Traces is in open beta. Any use of Anypoint Monitoring features in the beta state is subject to the applicable beta services terms and conditions.
 :page-info-pills: anypoint-pricing-titanium
-:entities: Agents, brokers, MCP servers, and Mule apps
+:entities: agents, brokers, MCP servers, and Mule apps
 :auto-refresh: every 5, 15, or 30 minutes, every hour, or one time per day
 
 On US and EU Cloud instances of Anypoint Platform, use Traces to track the flow of requests that travel through service pipelines. Get data from the Open Telemetry (OTEL) spans that form your traces. Troubleshoot requests with errors or slow response times, optimize your resource allocation, and track calls end-to-end. Monitor the performance of a specific transaction as it travels through services. 
