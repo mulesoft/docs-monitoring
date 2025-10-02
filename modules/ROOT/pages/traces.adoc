@@ -14,7 +14,7 @@ image::traces.png["Span list in Traces Overview"]
 . Traces in Anypoint Monitoring
 . <<environment, Environment selector>> for your deployments (such as Sandbox or Production)
 . <<filters, Filter>> field for queries that narrow the list of logs to return
-//{entities} = Agents, Brokers, MCP Servers, and Mule apps
+//{entities} = agents, brokers, MCP Servers, and Mule apps
 . List of spans for the supported {entities}
 . Lookback selector for the period of time to capture in the *Span List* (from the default of 15 minutes to the last seven days)
 . Auto-Refresh {auto-refresh}
