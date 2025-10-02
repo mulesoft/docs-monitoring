@@ -73,7 +73,7 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 
 include::partial$include-nav-distributed-tracing.adoc[]
 . Make sure you're using the <<business-groups, business group>> that contains the spans.
-. Select up to the last 7 days of spans (see <<traces-overview, item 5>>).
+. Select up to the last seven days of spans (see <<traces-overview, item 5>>).
 +
 15 minutes is the default.
 . Select the <<environments, environment>> that contains your spans.
