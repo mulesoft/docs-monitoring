@@ -28,7 +28,7 @@ For information about Agent Visualizer, see xref:agent-visualizer::index.adoc[].
 Agent Visualizer links to metrics for agentic assets (agent, broker, and MCP server instances) from nodes in the visualizer graph. 
 
 . In Agent Visualizer, click a node to open its detail card.
-. In *Performance and Health*, click *View metrics* to view additional metrics in Anypoint Monitoring. 
+. In *Performance and Health*, click *View Metrics* to view additional metrics in Anypoint Monitoring. 
 
 .. Optionally, set the lookback period (<<dashboard-overview, see 4>>) to different range.
 +
