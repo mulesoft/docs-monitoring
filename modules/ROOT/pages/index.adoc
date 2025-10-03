@@ -70,6 +70,13 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 | No
 | No
 | No
+
+|{empty}
+  xref:traces.adoc[Traces]
+| Yes
+| No
+| No
+| No
 |===
 
 //NOT SUPPORTED in PCE & Gov Cloud: Insights, Traces, Telemetry Exporter, API Functional Monitoring
@@ -255,7 +262,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-|<<note-visualizer, Anypoint Visualizer>>: *Application Network* tab for the Anypoint Visualizer app network integration 
+|<<note-visualizer, API Visualizer>>: *Application Network* tab for the API Visualizer app network integration 
 |No
 |No
 |Yes
@@ -348,8 +355,10 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |===
 
 [[note-visualizer]]
-NOTE: Anypoint Visualizer app network integration refers to features in the *Application Network* tab within Anypoint Monitoring. Anypoint Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
-
+NOTE:
+--
+API Visualizer (formerly Anypoint Visualizer) app network integration refers to features in the *Application Network* tab within Anypoint Monitoring. API Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
+--
 
 == Use Cases
 
@@ -360,7 +369,7 @@ DevOps engineer Gary maintains a series of APIs related to a transaction process
 
 * Plan resource allocation across the app network 
 +
-IT specialist Peyton uses Anypoint Visualizer to view their app network. For CloudHub and Anypoint Runtime Fabric apps, Peyton sees CPU and memory utilization and idle capacity using integrated Anypoint Monitoring.
+IT specialist Peyton uses API Visualizer to view their app network. For CloudHub and Anypoint Runtime Fabric apps, Peyton sees CPU and memory utilization and idle capacity using integrated Anypoint Monitoring.
 
 * Pinpoint root causes of issues +
 Support team member Darius receives a call that the system is running slowly. He examines dashboards and checks response times, failed requests, and so on. He identifies that the backend is not scaling for the number of requests; he can add capacity for Mule apps, or he can throttle requests for other backend issues.
