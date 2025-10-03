@@ -23,10 +23,8 @@
  ** xref:monitor-connectors.adoc[]
  ** xref:export-app-data-to-csv.adoc[]
 * xref:anypoint-insights.adoc[Monitoring Metrics from Insights]
-//BETA
-* xref:traces-overview.adoc[Exploring Trace Data]
- ** xref:trace-details.adoc[Trace and Span Details]
-* xref:reports.adoc[Viewing Reports]
+* xref:anypoint-insights-agentic.adoc[]
+* xref:traces.adoc[]
 * xref:alerts.adoc[Getting Alerts]
 ** xref:alerts-us-eu.adoc[Getting Alerts (US and EU)]
  *** xref:basic-alerts.adoc[Setting Up Basic Alerts]
@@ -39,6 +37,7 @@
   *** xref:log-search-query-syntax.adoc[Log Search Query Syntax]
  ** xref:logs-jp-ca.adoc[]
 * xref:telemetry-exporter.adoc[Exporting Telemetry Data]
+* xref:reports.adoc[Viewing Reports]
 * xref:tools.adoc[]
 //BETA
 * xref:am-apis.adoc[APIs for Anypoint Monitoring]

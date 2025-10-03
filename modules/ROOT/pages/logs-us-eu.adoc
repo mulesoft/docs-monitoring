@@ -11,11 +11,12 @@ On https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesof
 ////
 Anypoint Monitoring provides logs for several types of instances, including:
 
-TODO: VERIFY LIST and IDEALLY DEPLOYMENT TYPES (PABLO AGHEMO: CH1, CH2, Flex logs... Let me get back to you on the rest)
-* Mule app and API logs
+TODO: VERIFY LIST and IDEALLY DEPLOYMENT TYPES (PABLO AGHEMO: CH1, CH2, Flex logs... No navigating to logs option for API instances with a Mule Gateway listed in API Manager)
+* Mule app logs
 * Flex Gateway logs
-* Message logs from policies applied to agent, MCP server, and LLM instances
-* Logs from agents that serve as brokers
+* Agentic asset logs:
+** Message logs from policies applied to agents, MCP servers, and LLM instances
+** Logs from agents that serve as brokers
 
 TODO: Add Visualizer to this?
 API Manager also displays Flex Gateway, message, and broker logs.
@@ -214,24 +215,29 @@ This example shows an expanded log entry in JSON format.
 ----
 
 [[search-agentic]]
-== Get Agent, Broker, and MCP Server Logs
+== Get Logs for Agentic Assets
 
-API Manager and Agent Visualizer provide links to logs for individual agents, brokers, and MCP servers. To search for these logs from Anypoint Monitoring, provide the instance ID for the application or API in the search field with any filters to narrow your query.
+API Manager and Agent Visualizer provide links to logs for agentic assets (agent, broker, and MCP server instances):
+
+* In API Manager, navigate to *Agent and Tool Instances*, and click an instance:
+// REMOVED:
+//** To find Flex Gateway logs, click *Logs* from the sidebar, and then click *View logs in Anypoint Monitoring*.
+** To find logs for policies applied to agents, brokers, and MCP servers, click *Message Log* from the sidebar, and then click *View logs in Anypoint Monitoring*.
+** For a broker's reasoning logs, click *Message Log* from the sidebar, and then click the button dedicated to the broker. These logs come from the broker application.
+* In Agent Visualizer, click a node in the visual graph, and navigate to logs. For guidance, see xref:agent-visualizer::troubleshoot-agent-network:adoc#access-logs[Access Logs] in the Agent Visualizer documentation.
++
+For more information about Agent Visualizer, see xref:agent-visualizer::index.adoc[].
 
 [IMPORTANT]
 --
-By default, broker logs don't include reasoning data due to privacy concerns. For troubleshooting purposes, you can enable these logs when deploying the broker. 
+By default, broker logs include the actions the broker takes (including agents called and MCP tools executed), but they don't include reasoning data due to privacy concerns.
 
 Enabling reasoning logs risks inclusion of personally identifiable information and secrets. 
 --
 
-If your organization opts to enable a broker's reasoning logs, set this property in Runtime Mananger when deploying the broker instance.
-
-In Runtime Manager, set the broker's category field:
+If your organization opts to enable a broker's reasoning logs, set the broker's `category` field in Runtime Manager:
 
 `INSECURE-LOGGING` category to `DEBUG`
-
-For guidance with this setting for deployments to CloudHub 2, see xref:cloudhub-2::ch2-deploy-shared-space.adoc#configure-logging[Configure Log Levels and Categories].
 
 [[view_logs]]
 === View Full Logs on a Dedicated Page
