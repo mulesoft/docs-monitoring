@@ -234,7 +234,7 @@ By default, broker logs include the actions the broker takes (including agents c
 --
 +
 If your organization opts to enable a broker's reasoning logs, set the broker's `category` field in Runtime Manager:
-
++
 `INSECURE-LOGGING` category to `DEBUG`
 
 [[view_logs]]
