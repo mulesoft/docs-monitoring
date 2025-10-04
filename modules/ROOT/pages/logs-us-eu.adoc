@@ -230,9 +230,7 @@ For more information about Agent Visualizer, see xref:agent-visualizer::index.ad
 
 [IMPORTANT]
 --
-By default, broker logs include the actions the broker takes (including agents called and MCP tools executed), but they don't include reasoning data due to privacy concerns.
-
-Enabling reasoning logs risks inclusion of personally identifiable information and secrets. 
+By default, broker logs include the actions the broker takes (including agents called and MCP tools executed), but they don’t include reasoning data due to potential logging of personally identifiable information.
 --
 
 If your organization opts to enable a broker's reasoning logs, set the broker's `category` field in Runtime Manager:
