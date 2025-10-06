@@ -27,7 +27,7 @@ When you create a basic alert, you can select a source for the basic alert, conf
 
 To create a basic alert:
 
-. Navigate to Anypoint Monitoring.
+. Navigate to *Monitoring* in Anypoint Platform.
 . From the sidebar, click *Alerts*.
 . Click the *+ New Alerts* button.
 . Click *Basic alert*.
