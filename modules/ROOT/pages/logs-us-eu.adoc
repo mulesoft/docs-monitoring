@@ -43,7 +43,7 @@ Do not override the default JVM timezone for applications deployed to CloudHub a
 [[log-search]]
 == Search Logs
 
-From *Monitoring*, click *Log Search* to search for text in logs from the search field, through a filter, or with a DSL query.
+In the sidebar, click *Log Search* to search for text in logs from the search field, through a filter, or with a DSL query.
 
 image::intro-logs.png["Logs in Anypoint Monitoring"]
 
