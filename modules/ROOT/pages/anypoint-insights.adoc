@@ -69,7 +69,8 @@ For guidance, see xref:hyperforce::configure-mule-hyperforce.adoc[].
 Monitor Mule apps and APIs within a selected business group and environment.
 
 . Meet the prerequisites in <<prereqs>>. 
-. Log in to Anypoint Platform, and navigate to *Monitoring*. 
+include::partial$include-nav-steps-no-permissions.adoc[]
+
 . Open Anypoint Insights, and set your environment, such as Design, Production, or Sandbox. 
 +
 For guidance, see <<change-environment>>.
