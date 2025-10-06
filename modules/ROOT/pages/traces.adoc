@@ -24,7 +24,7 @@ In addition to reviewing traces in Anypoint Monitoring, you can use xref:telemet
 
 == Traces Availability
 
-Traces is available for specific:
+Traces are available for specific:
 
 * <<support-spans, Spans>>
 * <<support-hosts, Hosts>>
