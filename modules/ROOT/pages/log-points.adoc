@@ -108,7 +108,7 @@ The following Anypoint Connectors are available for use with the Log Points feat
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. In the *Monitoring* sidebar, click *Log Points*.
+. In the sidebar, click *Log Points*.
 . Select the following: +
 * *Environment*: The environment in which the app is running.
 * *Resource name*: The name of the app.
@@ -161,7 +161,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. In the *Monitoring* sidebar, click *Log Points*.
+. In the sidebar, click *Log Points*.
 . Select the following: +
 * *Environment*: The environment the API is running in.
 * *Resource name*: The name of the API.
