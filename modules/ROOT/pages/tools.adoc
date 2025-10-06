@@ -6,8 +6,10 @@ To help deliver Anypoint Monitoring notifications to external systems, Anypoint 
 .Tools Available in Anypoint Monitoring
 image::tools.png["Tools in Anypoint Monitoring"]
 
-. Open *Monitoring* from Anypoint Platform.
-. Click *Tools*. 
+. Open Anypoint Monitoring.
++
+For guidance, see xref:quick-start.adoc#using_monitoring[Use Anypoint Monitoring].
+. In the sidebar, click *Tools*. 
 . Review the connectors.
 +
 You can hover over a connector link to learn more before navigating to Anypoint Exchange.
