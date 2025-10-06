@@ -17,7 +17,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 +
-If you do not see Anypoint Monitoring or are unable to use it, it might be a permissions issue. See <<required_permission>>.
+If you do not find *Monitoring* or are unable to use Anypoint Monitoring, check your permissions (<<required_permission>>).
 
 . From the sidebar, you can find and use the monitoring tools:
 +
