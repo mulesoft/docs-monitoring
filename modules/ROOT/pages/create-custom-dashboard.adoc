@@ -5,7 +5,7 @@ Create a custom dashboard to configure the metrics and data points you want to v
 
 To create a custom dashboard:
 
-. In *Monitoring*, click *Custom dashboards* from the sidebar. 
+. In the sidebar, click *Custom dashboards* from the sidebar. 
 . Click *+ New Dashboard*.
 . Add and configure a chart for your dashboard.
 . Click *Save Changes*.
@@ -15,7 +15,7 @@ To create a custom dashboard:
 
 You can view custom dashboards for apps deployed to CloudHub and to hybrid targets in *Custom dashboards*.
 
-. In *Monitoring*, click *Custom dashboards* in the sidebar to display custom dashboards. 
+. In the sidebar, click *Custom dashboards* in the sidebar to display custom dashboards. 
 . Use search to find the dashboard.
 . In the custom dashboard list, click the dashboard. 
 
