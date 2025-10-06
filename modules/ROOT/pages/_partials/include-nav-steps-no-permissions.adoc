@@ -1,4 +1,4 @@
 . Log in to Anypoint Platform with a user account that has xref:am-permissions.adoc[permission to access Anypoint Monitoring content].
 . Navigate to Anypoint Monitoring:
 +
-To open Anypoint Monitoring, you can click *Monitoring* from the Anypoint Platform home page or from the *Runtimes* menu in the header.
+Click *Monitoring* from the Anypoint Platform home page or from the *Runtimes* menu in the header.
