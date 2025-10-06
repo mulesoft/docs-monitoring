@@ -19,7 +19,7 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 +
 If you do not find *Monitoring* or are unable to use Anypoint Monitoring, check your permissions (<<required_permission>>).
 
-. From the *Monitoring* sidebar, you can find xref:index.adoc#features[Anypoint Monitoring features].
+. From the sidebar, you can find xref:index.adoc#features[Anypoint Monitoring features].
 
 == Configurations
 
