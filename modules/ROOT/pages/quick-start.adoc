@@ -19,10 +19,7 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 +
 If you do not find *Monitoring* or are unable to use Anypoint Monitoring, check your permissions (<<required_permission>>).
 
-. From the sidebar, you can find and use the monitoring tools:
-+
-* xref:logs.adoc[Using Logs]
-* xref:alerts.adoc[Alerts]
+. From the *Monitoring* sidebar, you can find Anypoint Monitoring features.
 
 == Configurations
 
