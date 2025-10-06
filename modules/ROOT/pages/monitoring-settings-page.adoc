@@ -14,7 +14,7 @@ To access the *Settings* page, you must have the Anypoint Monitoring User and th
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. In the *Monitoring* sidebar, click *Settings*. 
+. In the sidebar, click *Settings*. 
 //follow am installer steps in hybrid setup page
 include::partial$include-am-setup.adoc[tag="am-installer-setup"]
 . To enable (or disable) monitoring for apps deployed to CloudHub, select *CloudHub*.

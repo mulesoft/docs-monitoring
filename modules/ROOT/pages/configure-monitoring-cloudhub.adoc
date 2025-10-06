@@ -55,7 +55,7 @@ To configure automatic monitoring for each Mule app as it is deployed to CloudHu
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. In the *Monitoring* sidebar, click *Settings*:
+. In the sidebar, click *Settings*:
 . Select *CloudHub*.
 . Select *Enable Anypoint Monitoring for newly deployed CloudHub applications*.
 
@@ -73,7 +73,7 @@ Use the *Settings* page in Anypoint Monitoring to enable or disable monitoring f
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. In the *Monitoring* sidebar, click *Settings*:
+. In the sidebar, click *Settings*:
 . Select *CloudHub*.
 . In the *Environment* list, select the environment where the application is running. 
 +

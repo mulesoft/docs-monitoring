@@ -7,7 +7,7 @@ Follow these steps to save a built-in dashboard as a custom dashboard.
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. From the sidebar, click *Built-in dashboards*.
+. In the sidebar,click *Built-in dashboards*.
 . Click the tab for the built-in dashboard to save, for example, *Performance*.
 . Click the *Save as* icon.
 . In the *Save as* dialog, enter a *Name* for your custom dashboard, and click *Save*. +
