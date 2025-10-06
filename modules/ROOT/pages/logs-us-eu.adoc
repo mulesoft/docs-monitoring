@@ -219,7 +219,7 @@ This example shows an expanded log entry in JSON format.
 
 API Manager and Agent Visualizer provide links to logs for agentic assets (agent, broker, and MCP server instances):
 
-* In Agent Visualizer, click a node in the visual graph, and navigate to logs. For guidance, see xref:agent-visualizer::troubleshoot-agent-network:adoc#access-logs[Access Logs] in the Agent Visualizer documentation.
+* In Agent Visualizer, click a node in the visual graph, and navigate to logs. For guidance, see xref:agent-visualizer::troubleshoot-agent-network.adoc#access-logs[Access Logs] in the Agent Visualizer documentation.
 +
 For more information about Agent Visualizer, see xref:agent-visualizer::index.adoc[].
 * In API Manager, navigate to *Agent and Tool Instances*, and click an instance:
