@@ -12,7 +12,7 @@ image::traces.png["Span list in Traces Overview"]
 
 [calloutlist]
 . Traces in Anypoint Monitoring
-. <<environment, Environment selector>> for your deployments (such as Sandbox or Production)
+. <<environments, Environment selector>> for your deployments (such as Sandbox or Production)
 . <<filters, Filter>> field for queries that narrow the list of logs to return
 //{entities} = agents, brokers, MCP Servers, and Mule apps
 . List of spans for the supported {entities}
@@ -22,6 +22,15 @@ image::traces.png["Span list in Traces Overview"]
 
 In addition to reviewing traces in Anypoint Monitoring, you can use xref:telemetry-exporter.adoc[Telemetry Exporter] to export traces to third-party observability and analytics platforms.
 
+== Traces Availability
+
+Traces is available for specific:
+
+* <<support-spans, Spans>>
+* <<support-hosts, Hosts>>
+* <<support-sampling, Sampling Rates>>
+
+[[support-spans]]
 === Supported Traces
 
 Traces include spans for:
@@ -30,6 +39,7 @@ Traces include spans for:
 * Flows: Mule flows for the selected task of the specific service
 * Events: Mule runtime events or user actions for the selected service
 
+[[support-hosts]]
 === Hosts
 
 Traces in Anypoint Monitoring displays spans from entities deployed to:
@@ -39,6 +49,7 @@ Traces in Anypoint Monitoring displays spans from entities deployed to:
 //TODO: TAG MICHAEL HAMMOND -- seems to be confusion over this
 * Anypoint Runtime Fabric (Limited Availabilty)
 
+[[support-sampling]]
 === Sampling Rate
 
 Trace data sampling rate:
