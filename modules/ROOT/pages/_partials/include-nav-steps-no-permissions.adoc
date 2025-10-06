@@ -1,2 +1,2 @@
 . Log in to Anypoint Platform with a user account that has xref:am-permissions.adoc[permission to access Anypoint Monitoring content].
-. Navigate to *Anypoint Monitoring*.
+. Navigate to *Monitoring* from Anypoint Platform.

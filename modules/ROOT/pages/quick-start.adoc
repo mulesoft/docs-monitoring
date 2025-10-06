@@ -19,7 +19,7 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 +
 If you do not see Anypoint Monitoring or are unable to use it, it might be a permissions issue. See <<required_permission>>.
 +
-. From Anypoint Monitoring, you can find and use the monitoring tools:
+. From *Monitoring*, you can find and use the monitoring tools:
 +
 * xref:logs.adoc[Using Logs]
 * xref:alerts.adoc[Alerts]

@@ -15,7 +15,7 @@ Review xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Con
 
 == Locate the Custom Metrics Connector
 
-From Anypoint Monitoring, click *Custom Metrics* to locate *Anypoint Monitoring Custom Metrics Connector*. Alternatively, you can search for the connector in Anypoint Exchange. 
+From *Monitoring*, click *Custom Metrics* to locate *Anypoint Monitoring Custom Metrics Connector*. Alternatively, you can search for the connector in Anypoint Exchange. 
 
 == Custom Metrics Best Practices
 
