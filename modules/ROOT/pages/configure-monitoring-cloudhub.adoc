@@ -3,7 +3,7 @@
 
 To start monitoring Mule apps that are managed in CloudHub, you must deploy them to a supported version of Mule runtime engine and set the runtime version in your Mule app.
 
-CloudHub 2.0: Anypoint Monitoring is enabled by default for Mule apps deployed to CloudHub 2.0.
+CloudHub 2.0: Anypoint Monitoring is enabled by default for Mule apps deployed to CloudHub 2.0. For information about path normalization in CloudHub 2.0 and CloudHub, see <<normalize-path>>.
 
 == Supported Versions of Mule Deployed to CloudHub
 
@@ -105,6 +105,12 @@ Use the Anypoint CLI and set the following property during your CI/CD deployment
 Enabling Anypoint Monitoring can impact CPU utilization and memory utilization, which varies depending upon specific application behavior, such as inbound and outbound call rates.
 For a typical application, expected CPU utilization impact is less than 5%.
 For an accurate impact analysis specific to your application, test and estimate any performance impact in your pre-production environment prior to enabling monitoring in your production environment.
+
+[[normalize-path]]
+== Normalize API Paths
+
+//shared with CH/CH2, Hybrid
+include::partial$include-path-normalization.adoc[]
 
 == See Also
 
