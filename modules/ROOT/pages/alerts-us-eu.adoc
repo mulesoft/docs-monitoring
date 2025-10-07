@@ -75,7 +75,7 @@ In addition to creating basic and custom dashboard alerts in Anypoint Monitoring
 
 image::alerts-menu.png["Alerts menu options to set up basic, custom dashboard, or other types of alerts"]
 
-NOTE: Alerts created in API Manager and Runtime Manager aren't listed in the Anypoint Monitoring Alerts page.
+NOTE: Alerts created in API Manager and Runtime Manager aren't listed in the *Alerts* page for Anypoint Monitoring.
 
 . From *Alerts* in Anypoint Monitoring, click *+ New alert*.
 . Select *Other* for API Manager or Runtime Manager to access its alert configuration page. 

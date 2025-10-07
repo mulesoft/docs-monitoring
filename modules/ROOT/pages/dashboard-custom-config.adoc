@@ -108,7 +108,7 @@ image::dashboard-custom-metadata.png["Dashboard metadata"]
 [[charts_adding]]
 == Add Charts to a Custom Dashboard
 
-. In *Anypoint Monitoring*, click *Custom dashboards* from the sidebar.
+. In the sidebar, click *Custom dashboards* from the sidebar.
 +
 * To create a custom dashboard, click *+New Dashboard*.
 * If you need a new row for your chart, scroll down to find and click *Add Row*.

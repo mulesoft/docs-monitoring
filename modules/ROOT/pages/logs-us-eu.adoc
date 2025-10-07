@@ -43,7 +43,7 @@ Do not override the default JVM timezone for applications deployed to CloudHub a
 [[log-search]]
 == Search Logs
 
-From Anypoint Monitoring, click *Log Search* to search for text in logs from the search field, through a filter, or with a DSL query.
+In the sidebar, click *Log Search* to search for text in logs from the search field, through a filter, or with a DSL query.
 
 image::intro-logs.png["Logs in Anypoint Monitoring"]
 
@@ -224,9 +224,8 @@ API Manager and Agent Visualizer provide links to logs for agentic assets (agent
 For more information about Agent Visualizer, see xref:agent-visualizer::index.adoc[].
 * In API Manager, navigate to *Agent and Tool Instances*, and click an instance:
 // REMOVED:
-//** To find Flex Gateway logs, click *Logs* from the sidebar, and then click *View logs in Anypoint Monitoring*.
-** To find logs for policies applied to agents, brokers, and MCP servers, click *Message Log* from the sidebar, and then click *View logs in Anypoint Monitoring*.
-** For a broker's reasoning logs, click *Message Log* from the sidebar, and then click the button dedicated to the broker. These logs come from the broker application.
+** To find logs for policies applied to agents, brokers, and MCP servers, click *Message Log*, and then click *View logs in Anypoint Monitoring*.
+** For a broker's reasoning logs, click *Message Log*, and then click the button dedicated to the broker. These logs come from the broker application.
 +
 [IMPORTANT]
 --

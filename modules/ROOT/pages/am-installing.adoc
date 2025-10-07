@@ -131,7 +131,7 @@ Ensure that the server has the minimum hardware requirements for Anypoint Monito
 . Meet the prerequisites in <<prereqs>>:
 +
 Mule runtime engine must be installed and running.
-. In the Anypoint Monitoring navigation menu, click *Settings*. 
+. In the sidebar, click *Settings*. 
 //follow am installer steps in hybrid setup page
 include::partial$include-am-setup.adoc[tag="am-installer-setup"]
 

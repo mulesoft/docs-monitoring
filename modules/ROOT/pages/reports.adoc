@@ -22,7 +22,7 @@ From any of the *Reports* tabs, you can:
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. From the Anypoint Monitoring sidebar, click *Reports*.
+. In the sidebar, click *Reports*.
 . In the *Environment* drop-down list, select the environment where the apps you want to view reports for are deployed, and click *View*. +
 The first time you view the reports page, the *Requests* report is displayed.
 . Select a time range from the drop-down list to view reports for a specific time range.
@@ -73,7 +73,7 @@ Click the *Memory Utilization* tab to view information about the memory utilizat
 
 You can export a report as a CSV file and save it locally for any of the tabs in the Reports page.
 
-. From the Anypoint Monitoring sidebar, click *Reports*.
+. In the sidebar, click *Reports*.
 . Click on the tab for the report to export.
 . (Optional) Apply a time filter to download reports for the specified time period.
 . In the upper right corner of the page, click *Export CSV*. +

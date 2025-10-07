@@ -4,7 +4,7 @@ In built-in and custom dashboards, you can export app data to a CSV file, which 
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. From the Anypoint Monitoring sidebar, click *Built-in dashboards* or *Custom dashboards*.
+. In the sidebar, click *Built-in dashboards* or *Custom dashboards*.
 . Select the application for which to download the data.
 . Specify the time range for the data to download.
 . In the chart that contains the data to download, click the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Export CSV*.
