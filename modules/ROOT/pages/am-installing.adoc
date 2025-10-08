@@ -264,11 +264,6 @@ To disable log forwarding:
 
 Normalize paths to API endpoints with `anypoint.platform.config.analytics.endpoint.patterns`. This property is useful for paths with dynamic segments.
 
-Availability:
-
-* CloudHub
-* CloudHub 2.0
-
 You can configure this property when deploying a new application to CloudHub or on a running Mule application in Runtime Manager: 
 
 . Log in to your Anypoint Platform account and select *Runtime Manager*.
