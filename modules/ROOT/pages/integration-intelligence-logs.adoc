@@ -1,0 +1,26 @@
+= Getting Logs in Integration Intelligence
+
+INTRO_HERE
+TODO: DEFINE EVENT LOGS
+
+[[prereqs]]
+== Before You Begin
+
+TODO_TODO
+
+== Check Logs
+
+. Meet the prerequisites in <<prereqs>>. 
+include::partial$include-nav-steps-no-permissions.adoc[]
+//TODO: VERIFY
+. From the Anypoint Insights header, click *Integration Intelligence*.
+. TODO: HOW TO NAVIGATE TO Logs
+. 
+
+
+
+Log Events::
+Graphs the number of logging events at each point. 
+//TODO: IS THIS EVERY MINUTE OR WHAT? CAN YOU CONFIGURE/SELECT THE AGGREGATED PERIOD?
+
+Re

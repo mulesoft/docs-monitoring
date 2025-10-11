@@ -1,0 +1,131 @@
+= Monitoring with Integration Intelligence
+:page-notice-banner-message: Open Beta Release: Integration Intelligence is in open beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
+:salesforce-cloud: Salesforce Cloud
+
+Use built-in dashboards to monitor your Mule apps and APIs, and get insights into your business data with Integration Intelligence in {salesforce-cloud}.
+
+//TODO:_MORE_DETAIL_ABOUT_SALESFORCE_CLOUD?_TODO:
+
+== Before You Begin
+
+Required prerequisites:
+
+//TODO:_COMPLETE_TODO:
+* Obtain necessary Anypoint Monitoring permissions.* Complete the xref:TODO_TODO.adoc[setup].
+//TODO:BUSINESS_GROUP_TODO:
+
+== Supported Deployments
+
+//TODO:_COMPLETE_TODO:
+
+* CloudHub
+* CloudHub 2.0
+* Runtime Fabric
+//TODO:_ANY OTHERS_TODO:
+
+[[apps]]
+== Monitor Your Apps 
+
+INTRO_HERE
+
+SCREENSHOT_HERE_LABLED
+
+CALLOUTLIST_HERE
+
+
+//. Meet prerequisites. 
+. Select the lookback period to examine.
++
+Defaults to TODO_TODO. 
+//TODO: SAY MORE ABOUT RANGE OF LOOKBACK PERIOD.
+. Optionally: 
+.. Select a specific application type. 
+//TODO: SAY MORE ABOUT default and AVAILABLE TYPES.
+.. Select a specific deployment type. 
+//TODO: SAY MORE ABOUT default and the DEPLOYMENT TYPES.
+.. Select an error rate. 
+//TODO: SAY MORE ABOUT default and the ERROR RATE OPTIONS.
+. Get high-level metrics:
+
+** *App Name*
+** *ID*
+** *Deployment Type*
+** *Avg Response Time*
+. Get detailed metrics on an app.
+//TODO: What info do they get clicking app from Deployed Apps chart?
+
+[[apis]]
+== Monitor Your APIs 
+
+INTRO_HERE
+
+SCREENSHOT_HERE_LABLED
+
+CALLOUTLIST_HERE
+
+STEPS_TO_REVIEW_HERE
+. TODO_PRELIM_STEPS
+. Get high-level metrics:
+
+** *API Name*
+** *ID*
+** *Version*
+** *Endpoint*
+** *# Clients*
+** *Request Volume (7d)*
+. Get detailed metrics on an app.
+//TODO: What info do they get clicking an API in APIs chart?
+
+[[business-insights]]
+== Get Business Insights  
+
+INTRO_HERE
+
+SCREENSHOT_HERE_LABLED
+
+CALLOUTLIST_HERE
+
+STEPS_TO_REVIEW_HERE
+. TODO_PRELIM_STEPS
+. Get high-level metrics:
+
+** *App Name*
+** *ID*
+** *Flow Count*
+** *Messages*
+** *Request Volume (7d)*
+. Get detailed metrics on an app.
+//TODO: What info do they get clicking app from App Usage: Flow, Message & Request Totals chart?
+
+
+[[reference]]
+== Reference
+
+Monitor Mule apps in your organization:
+
+* *Apps by Deployment Type*: 
+//TODO:_COMPLETE_TODO:
+* *Top CPU Utilization*: 
+//TODO:_COMPLETE_TODO:
+* *Deployed Apps*: 
+//TODO:_COMPLETE_TODO:
+
+Monitor Mule APIs in your organization:
+
+* *Request Volume by Location*: 
+//TODO:_COMPLETE_TODO:
+* *Top API Consumers by Endpoint*: 
+//TODO:_COMPLETE_TODO:
+* *APIs*: 
+//TODO:_COMPLETE_TODO:
+
+Get business insights for your organization:
+
+* *Top 10 Apps by Flow Count*: 
+//TODO:_COMPLETE_TODO:
+* *Total Policy Violations*: 
+//TODO:_COMPLETE_TODO:
+* *App Usage: Flow, Message & Request Totals*: 
+//TODO:_COMPLETE_TODO:
+* *Request Volume by Endpoint (Inbound|Outbound)*:
+//TODO:_COMPLETE_TODO:

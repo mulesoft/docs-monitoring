@@ -1,0 +1,16 @@
+= Integration Intelligence 
+:page-notice-banner-message: Open Beta Release: Integration Intelligence is in open beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
+
+
+INTRO_HERE
+
+
+* <<setup, Set Up Integration Intelligence>>
+* xref:integration-intelligence-dashboards.adoc[Dashboards]: Monitor Mule apps and APIs, and get business insights
+* xref:integration-intelligence-dashboards.adoc[Logs]: TODO_TODO
+
+
+[[setup]]
+== Set Up Integration Intelligence
+
+TODO_TODO
