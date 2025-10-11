@@ -13,4 +13,18 @@ INTRO_HERE
 [[setup]]
 == Set Up Integration Intelligence
 
+INTRO_HERE
+
+* <<setup-mulesoft>>
+* <<setup-salesforce>>
+
+[[setup-mulesoft]]
+=== Set Up in Anypoint Platform
+
+TODO_TODO
+
+[[setup-salesforce]]
+=== Set Up in Salesforce Cloud
+
+
 TODO_TODO
