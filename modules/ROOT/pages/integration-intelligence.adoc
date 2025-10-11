@@ -15,16 +15,21 @@ INTRO_HERE
 
 INTRO_HERE
 
+* <<prereqs, Meet prerequisites>>
 * <<setup-mulesoft>>
 * <<setup-salesforce>>
 
+[[prereqs]]
+=== Before You Begin
+
+TODO_TODO
+
 [[setup-mulesoft]]
-=== Set Up in Anypoint Platform
+=== Set Up Anypoint Platform
 
 TODO_TODO
 
 [[setup-salesforce]]
-=== Set Up in Salesforce Cloud
-
+=== Set Up Salesforce Cloud
 
 TODO_TODO
