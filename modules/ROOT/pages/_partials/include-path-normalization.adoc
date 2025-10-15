@@ -1,0 +1,42 @@
+Normalize paths to API endpoints with `anypoint.platform.config.analytics.endpoint.patterns`. This property is useful for paths with dynamic segments.
+
+Supported deployments:
+
+* CloudHub
+* CloudHub 2.0
+* Hybrid
+
+You can configure this property on a running Mule app in Runtime Manager or when deploying a new application to CloudHub or CloudHub 2.0: 
+
+. Log in to your Anypoint Platform account and select *Runtime Manager*.
+. Either click *Deploy Application* for a new deployment, or select an existing application and click *Manage Application*.
+. Navigate to the *Properties* tab in the *Settings* section.
+. Under *New Key*, add `anypoint.platform.config.analytics.endpoint.patterns`.
+. Under *New Value*, add the pattern for your dynamic endpoint, for example, `/api/V1/proc/payments/{paymentId}/cancel`.
+. Click *Apply Changes*.
+
+By defining an explicit pattern, you can ensure consistent normalization of dynamic endpoints. All incoming requests matching the pattern are correctly normalized to a single endpoint.
+
+For example, provide a pattern that identifies the variable part. 
+
+For variables, you can use:
+
+* `{}` with an empty string
+* `{string}` with a string value
+
+For example, assume property values that follow these patterns:
+
+* `/v1/payments/{paymentId}/cancel` (single property)
+* `/v1/order/{orderId},/v1/order/{}/cancel` (multiple properties separated by `,`)
+
+These incoming requests match one of the defined patterns:
+
+* `/v1/order/jAXjh`
+* `/v1/payments/CAjjAXjh/cancel`
+* `/v1/order/jAXjh/cancel`
+
+Normalized results for the example requests:
+
+* `/v1/payments/X/cancel`
+* `/v1/order/X`
+* `/v1/order/X/cancel`
