@@ -41,7 +41,7 @@ INTRO_HERE
 [[prereqs]]
 === Before You Begin
 
-TODO_TODO
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=prereqs]
 
 [[setup-mulesoft]]
 === Set Up Anypoint Platform
