@@ -22,14 +22,13 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 . From the Anypoint Insights header, click *Integration Intelligence*.
 . TODO: HOW TO NAVIGATE TO Logs
 . Optionally:
-.. Filter by log level:
-//TODO: LIST LEVELS
+.. Filter by log level.
 .. Change the lookback period:
-//TODO: LIST LEVELS
+//TODO: LIST PERIODS, UNDERSTAND LOG RETENTION
 . Review logs:
 
 * *Timestamp*: Date and time of the log.
-* *Log Level*: TODO: WHAT ARE THE LEVELS?
+* *Log Level*: TODO: VERIFY: *DEBUG*, *INFO*, *WARN*, *ERROR*, *FATAL* 
 * *App Name*: Name of the Mule app.
 * *Logger*: TODO: NEED DESCRIPTION
 * *Message*: Log message 
