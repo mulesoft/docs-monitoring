@@ -1,12 +1,26 @@
-Normalize paths to API endpoints with `anypoint.platform.config.analytics.endpoint.patterns`. This property is useful for paths with dynamic segments.
+Rely on the <<normalization-default, default path normalization>> for inbound HTTP endpoints, or configure a <<normalization-custom, custom normalization pattern>> with the `anypoint.platform.config.analytics.endpoint.patterns` property. Proper path normalization helps to ensure correct counting of requests to these endpoints in Runtime Manager and Anypoint Monitoring dashboards. Normalization enables charts in these dashboards to ignore insignificant differences, typically from dynamic variables, between URLs that make requests to the same endpoint. 
 
 Supported deployments:
 
 * CloudHub
 * CloudHub 2.0
 * Hybrid
+* Runtime Fabric
 
-You can configure this property on a running Mule app in Runtime Manager or when deploying a new application to CloudHub or CloudHub 2.0: 
+[[normalization-default]]
+=== Default Path Normalization
+
+The default path normalization process follows these substitution patterns for:
+
+* Digits: Replace any part of the path containing a digit with `X`. For example, `/booking/abc123/pax/A1B2C4` becomes `/booking/X/pax/X`.
+* Uppercase segments: Replace any part of the path containing completely uppercase characters with `X`. For example, `/booking/ABC/pax/A1B2C4` becomes `/booking/X/pax/X`.
+
+Any parts that don't contain digits nor all uppercase characters remain the same. For example, `/booking/abc123/pax/PAisdf` remains `/booking/X/pax/PAisdf`.
+
+[[normalization-custom]]
+=== Configure a Custom Path Normalization Pattern
+
+To override the default behavior, you can configure `anypoint.platform.config.analytics.endpoint.patterns` on a running Mule app in Runtime Manager or when deploying a new application to CloudHub or CloudHub 2.0: 
 
 . Log in to your Anypoint Platform account and select *Runtime Manager*.
 . Either click *Deploy Application* for a new deployment, or select an existing application and click *Manage Application*.
