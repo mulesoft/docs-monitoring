@@ -1,0 +1,18 @@
+= Setting Up Integration Intelligence
+
+Integration Intelligence enhances monitoring, analysis, and troubleshooting of MuleSoft integrations through AI-powered capabilities.
+
+[[before-you-begin]]
+== Before You Begin
+
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=prereqs]
+
+[[ii-salesforce-setup]]
+== Set Up Integration Intelligence in the Connected Salesforce Organization
+
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=ii-salesforce-setup]
+
+[[set-up-data-cloud]]
+=== Set up Data Cloud
+
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=set-up-data-cloud]

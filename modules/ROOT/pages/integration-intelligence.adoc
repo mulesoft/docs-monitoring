@@ -23,32 +23,13 @@ Integration Intelligence provides:
 
 * Single-click navigation means you can gain deeper insights directly from  the Anypoint Platform Monitoring *Insights* page. 
 
+== What's Next
 
-* <<setup, Set Up Integration Intelligence>>
+* xref:integration-intelligence-setup.adoc[Set up Integration Intelligence]
 * xref:integration-intelligence-dashboards.adoc[Dashboards]: Monitor Mule apps and APIs, and get business insights
 * xref:integration-intelligence-dashboards.adoc[Logs]: TODO_TODO
 
 
-[[setup]]
-== Set Up Integration Intelligence
+== See Also
 
-INTRO_HERE
 
-* <<prereqs, Meet prerequisites>>
-* <<setup-mulesoft>>
-* <<setup-salesforce>>
-
-[[prereqs]]
-=== Before You Begin
-
-include::access-management::partial$include-integration-intelligence-setup.adoc[tag=prereqs]
-
-[[setup-mulesoft]]
-=== Set Up Anypoint Platform
-
-TODO_TODO
-
-[[setup-salesforce]]
-=== Set Up Salesforce Cloud
-
-TODO_TODO
