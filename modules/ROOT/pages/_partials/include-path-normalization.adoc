@@ -22,7 +22,7 @@ Any parts that don't contain digits nor all uppercase characters remain the same
 [[normalization-custom]]
 === Configure a Custom Path Normalization Pattern
 
-To override the default behavior, you can configure `anypoint.platform.config.analytics.endpoint.patterns` on a running Mule app in Runtime Manager or when deploying a new application to CloudHub or CloudHub 2.0: 
+To override the default behavior, you can configure `anypoint.platform.config.analytics.endpoint.patterns` on a running Mule app in Runtime Manager or when deploying a new application: 
 
 . Log in to your Anypoint Platform account and select *Runtime Manager*.
 . Either click *Deploy Application* for a new deployment, or select an existing application and click *Manage Application*.
