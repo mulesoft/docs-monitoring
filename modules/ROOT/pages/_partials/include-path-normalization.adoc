@@ -1,6 +1,8 @@
-Rely on the <<normalization-default, default path normalization>> for inbound HTTP endpoints, or configure a <<normalization-custom, custom normalization pattern>> with the `anypoint.platform.config.analytics.endpoint.patterns` property. Proper path normalization helps to ensure correct counting of requests to these endpoints in Runtime Manager and Anypoint Monitoring dashboards. Normalization enables charts in these dashboards to ignore insignificant differences, typically from dynamic variables, between URLs that make requests to the same endpoint. 
+ Proper path normalization helps to ensure correct counting of requests to these endpoints in Runtime Manager and Anypoint Monitoring dashboards. Normalization enables charts in these dashboards to ignore insignificant differences, typically from dynamic variables, between URLs that make requests to the same endpoint. 
 
-Supported deployments:
+For inbound HTTP endpoints, you can rely on the <<normalization-default, default path normalization>> or configure a <<normalization-custom, custom normalization pattern>> with the `anypoint.platform.config.analytics.endpoint.patterns` property.
+
+Supported deployment types:
 
 * CloudHub
 * CloudHub 2.0
