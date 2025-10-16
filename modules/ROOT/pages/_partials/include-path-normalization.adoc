@@ -17,7 +17,7 @@ The default path normalization process follows these substitution patterns for:
 * Digits: Replace any part of the path containing a digit with `X`. For example, `/booking/abc123/pax/A1B2C4` becomes `/booking/X/pax/X`.
 * Uppercase segments: Replace any part of the path containing uppercase characters but no lower case characters with `X`. For example, `/booking/ABC/pax/A1B2C4` becomes `/booking/X/pax/X`.
 
-Any parts that don't contain digits nor uppercase characters remain the same. For example, `/booking/abc123/pax/PAisdf` remains `/booking/X/pax/PAisdf`.
+Parts that don't contain digits or that contain lower case characters remain the same. For example, `/booking/abc123/pax/PAisdf` remains `/booking/X/pax/PAisdf`.
 
 [[normalization-custom]]
 === Configure a Custom Path Normalization Pattern
