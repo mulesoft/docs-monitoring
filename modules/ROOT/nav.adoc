@@ -25,6 +25,7 @@
 * xref:anypoint-insights.adoc[Monitoring Metrics from Insights]
 * xref:anypoint-insights-agentic.adoc[]
 * xref:integration-intelligence.adoc[]
+ ** xref:integration-intelligence-setup.adoc[]
  ** xref:integration-intelligence-dashboards.adoc[]
  ** xref:integration-intelligence-logs.adoc[]
 * xref:traces.adoc[]
