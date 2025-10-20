@@ -29,5 +29,3 @@ Integration Intelligence provides:
 * xref:integration-intelligence-dashboards.adoc[Dashboards]: Monitor Mule apps and APIs, and get business insights
 * xref:integration-intelligence-dashboards.adoc[Logs]: TODO_TODO
 
-
-== See Also
