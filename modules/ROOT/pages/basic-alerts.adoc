@@ -328,7 +328,6 @@ For the description of each variable, see <<alert-variables>>.
 
 Available values are `OK` or `Alerting`.
 |`${api}`| Name of the API that triggers the alert
-|`${comparison}`| Above, above or equal, equal, below or equal, below
 |`${condition}`|Metric for which the alert is triggered
 |`${dashboardLink}`|URL that points to the built-in dashboard for the app or API that triggers the alert
 |`${environment}`|Name of the environment in which the resource is deployed
