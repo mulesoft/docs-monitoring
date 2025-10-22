@@ -20,18 +20,10 @@ TODO_TODO
 . Meet the prerequisites in <<prereqs>>. 
 include::partial$include-nav-steps-no-permissions.adoc[]
 //TODO: VERIFY
-. From the Anypoint Insights header, click *Integration Intelligence*.
-. TODO: HOW TO NAVIGATE TO Logs
-. Optionally:
-.. Filter by log level.
+. From the banner in the Anypoint Insights header, click *Integration Intelligence*.
+. From the sidebar of the Integration Intelligence app in your Salesforce org, click *Logs*. 
+. Optionally, filter by log level.
+//TODO: NOT CLEAR IF LOOKBACK PERIOD WILL BE THERE. 
 .. Change the lookback period:
 //TODO: LIST PERIODS, UNDERSTAND LOG RETENTION
 . Review logs:
-
-* *Timestamp*: Date and time of the log.
-* *Log Level*: TODO: VERIFY: *DEBUG*, *INFO*, *WARN*, *ERROR*, *FATAL* 
-* *App Name*: Name of the Mule app.
-* *Logger*: TODO: NEED DESCRIPTION
-* *Message*: Log message 
-+
-Hover over a message to get the full log message. 
