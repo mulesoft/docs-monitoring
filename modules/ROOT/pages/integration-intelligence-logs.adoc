@@ -13,7 +13,8 @@ Graphs the number of logging events at each point.
 [[prereqs]]
 == Before You Begin
 
-TODO_TODO
+Complete the procedures in xref:integration-intelligence-setup.adoc[].
+
 
 == Check Logs
 
