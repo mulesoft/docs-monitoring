@@ -31,7 +31,7 @@ For information about hosts, see xref:hosting-home::index.adoc#runtime-plane-hos
 [[nav-ii]]
 == Navigate to Integration Intelligence from Anyoint Platform
 
-Monitor metrics for your Mule apps, APIs, and business data from Integration Intelligence. 
+Navigate to Integration Intelligence dashboards containing metrics on your Mule apps, APIs, and business data from Anypoint Platform. 
 
 //. Meet prerequisites. 
 . Meet the prerequisites in <<prereqs>>.
@@ -45,67 +45,125 @@ include::partial$include-nav-integration-intelligence.adoc[tags="open-ii-from-in
 * <<apis, *APIs*>>
 * <<business-insights, *Business Insights*>>
 
+You can also navigate to Integration Intelligence through the App Launcher in the Salesforce environment. See <<app-launcher>>.
+
 [[apps]]
 == Monitor Your Mule Apps
 
-After navigating to the *Apps* dashboard, monitor Mule app metrics:
+Monitor Mule app metrics in Integration Intelligence:
 
-. Use *Time Period* select the lookback period to examine.
-+ 
-Only apps that have traffic during the selected period can produce metrics in the dashboard.
-//TODO: DEFAULT? Defaults to TODO_TODO. Look back from X_UNITS to Y_UNITS. 
-. Optionally, narrow the scope of the metrics by selecting: 
-.. A Mule app type 
+. Navigate to the *Apps* dashboard. 
++
+For guidance, see <<nav-ii>>.
+//TODO: NO LOOKBACK IN THE UI AS OF 10/23
+//. Select the lookback period to examine from *Time Period*.
+//+ 
+//Only apps that have traffic during the selected period can produce metrics in the dashboard.
+//TODO: VERIFY and what's the DEFAULT? Defaults to TODO_TODO. Look back from X_UNITS to Y_UNITS. 
+. Optionally, narrow the scope of apps to review by:
+
+//TODO: TYPO IN UI: SAYS "App Type" but lists "Apps"
+** Selecting one or more applications from the *App* menu.
+** Selecting *CloudHub 2.0* or *Runtime Fabric* from the *Deployment* menu.
+//TODO: NOT (YET?) IMPLEMENTED IN ORGFARM INSTANCE
+//.. A Mule app type 
 //TODO: VERIFY deployment TYPES
-.. Select a specific deployment type (*CloudHub 2.0* or *Runtime Fabric*). 
+//.. A deployment type (*CloudHub 2.0* or *Runtime Fabric*). 
 //TODO: SAY MORE ABOUT default and the DEPLOYMENT TYPES.
-.. Select an error rate. 
+//.. Select an error rate. 
 //TODO: SAY MORE ABOUT default and the ERROR RATE OPTIONS.
-. Get high-level metrics:
+. Get app metrics:
 
 * *Apps by Deployment Type*: 
-Hover over the data in the chart to get the number apps by type, such as apps deployed to CloudHub 2.0. 
+Hover over the data in the chart to get the number of apps by type, such as apps deployed to CloudHub 2.0. 
+//TODO: WE LIST ALL APPS HERE? SUPER JUNKY LOOKING when there are many apps. 
 * *Top CPU Utilization*: 
-//TODO:_COMPLETE_TODO:
+Monitor performance by identifying apps that are using the most CPU resources. If there are too many apps in the chart, you can 
 * *Deployed Apps*: 
-//TODO:_COMPLETE_TODO:
+Check average response time, error rate, and request volume of apps over the selected lookback period.
 
 
 [[apis]]
 == Monitor Your APIs 
 
-After navigating to the *APIs* dashboard, monitor API metrics:
+Monitor API metrics in Integration Intelligence:
 
-. Optionally, use filters to adjust the scope of APIs available to the dashboard. 
-
-* *API Name*
-* *ID*
-* *Version*
-* *Endpoint*
-* *# Clients*
-* *Request Volume (7d)*
-. Get business insights on the APIs:
+. Navigate to the *API* dashboard. 
++
+For guidance, see <<nav-ii>>.
+//TODO: NOT AVAILABLE AS OF 10/23 IN ORGFARM; DOESN'T MATCH FIGMA
+//. Optionally, use filters to adjust the scope of APIs available to the dashboard. 
+//
+//* *API Name*
+//* *ID*
+//* *Version*
+//* *Endpoint*
+//* *# Clients*
+//* *Request Volume (7d)*
+. Get metrics on your APIs:
 
 * *Request Volume by Location*: 
-//TODO:_COMPLETE_TODO:
+View the relative request volume by region, such as United States. Hovering over the data in the chart displays the number of requests. 
 * *Top API Consumers by Endpoint*: 
-//TODO:_COMPLETE_TODO:
+View relative API endpoint requests ordered by APIs with the most to least requests. Hovering over the data in the chart displays the number of requests.
 * *APIs*: 
-//TODO:_COMPLETE_TODO:
+Get the number of clients and request volume one or more versions of your APIs.
 
 [[business-insights]]
 == Get Business Insights
 
-After navigating to the *Business Insights* dashboard, monitor business metrics on your Mule apps:
+Monitor business metrics in Integration Intelligence:
 
-. Optionally, filter by app name and lookback period to narrow the scope of apps. 
+. Navigate to the *Business Insights* dashboard. 
++
+For guidance, see <<nav-ii>>.
+//TODO: WHY CAN WE ONLY FILTER BY APPS AND NOT APIS? Policy violations 
+. Optionally, select one or more apps to review from the *App* menu.
+//TODO: LOOKBACK (Time Period menu not in the 10/23 orgfarm implementation) 
 . Get business insights for your organization:
 
 * *Top 10 Apps by Flow Count*:
-//TODO:_COMPLETE_TODO:
+View apps by their relative flow counts. 
+//TODO: POLICY VIOLATIONS: NEED XREF TO the Policy Availability link. 
 * *Total Policy Violations*:
-//TODO:_COMPLETE_TODO:
+View the number of policy violations. For a list of policies, see https://docs.mulesoft.com/policies/policies-availability-by-gateway#policy-availability[Policy Availability].
 * *App Usage: Flow, Message & Request Totals*:
-//TODO:_COMPLETE_TODO:
+Get the flow count, number of messages, and request volume for selected apps. 
 * *Request Volume by Endpoint (Inbound|Outbound)*:
-//TODO:_COMPLETE_TODO:
+Get the number of inbound and outbound requests from your apps. Hovering over the apps provides the number and type of request metric (for inbound requests, `mulesoft.app._inbound_.requests.sum`, and for outbound, `mulesoft.app._outbound_.requests.sum`). 
+
+
+== View Metrics in Tableau Next
+
+TODO: ARE WE SUPPORTING THIS IN THE BETA?
+//if supporting, how to use this?
+
+
+[[more-actions]]
+== Copy, Download, or Explore Metrics
+
+Copy or download an image of any chart or table in a dashboard, or open a page dedicated to the chart or table. 
+
+. In a chart or table in a dashboard, click an empty area, and then hover to display a image:menu-arrow-icon.png["",15,15] (menu arrow).
+. Click image:menu-arrow-icon.png["",15,15] (menu arrow). 
+. Select an option:
+
+* *Copy Image*: Copies a screenshot of the chart or table to your clipboard.
+* *Download Image*: Downloads a screenshot of the chart or table to your local drive.
+* *Explore*: Opens a new tab that contains the chart or table on a full page.
+
+// In the new tab there's an Add to Dashboard button on this page just allows me to add the chart to one of my existing dashboards 
+// OR to create a new dashboard with the chart. TODO: DO WE WANT TO DOC THIS? 
+// And if I opt to create a new dashboard, there's an option to edit, save, clone (a dashboard with the chart in it),
+// get details, and download an image. 
+// If I click Details from the arrow menu, nothing works. OMG!!!!! 
+
+[[app-launcher]]
+== Navigate to Dashboards from the App Launcher
+
+Integration Intelligence resides in the Integration app. If you're connected to the Salesforce org that supports your MuleSoft telemetry data, you can navigate directly to your Integration Intelligence dashboards from the App Launcher:
+
+. Click the App Launcher. 
+. Find and select the *Integration* app. 
++
+The app opens to the *Intelligence* tab that contains your dashboards.
