@@ -10,7 +10,7 @@ Integration Intelligence provides:
 
 * Unified data storage by bringing your MuleSoft telemetry data, including metrics, logs, and traces, into Salesforce Data Cloud. This ensures better data retention and centralized access for analysis.
 
-* Targeted data ingestion for the specified Business Group. You can also select an initial ingestion timeframe (such as 1, 2, or 4 weeks) for historical data backfill, providing you with immediate historical context for analysis.
+* Targeted data ingestion for the specified Business Group. You can also select an initial ingestion period (such as 1, 2, or 4 weeks) for historical data backfill, providing you with immediate historical context for analysis.
 
 * Advanced visualization with Tableau Next. Using Data Cloud and Tableau Next, you can transform how you analyze integration performance. Tableau Next serves as the primary experience tier for visualizing your data. 
 
@@ -21,7 +21,7 @@ Integration Intelligence provides:
 
 * Seamless cross-platform access with seamless login (SSO) removes barriers between Anypoint Platform and Salesforce, enabling faster access to troubleshooting data.
 
-* Single-click navigation means you can gain deeper insights directly from  the Anypoint Platform Monitoring *Insights* page. 
+* Single-click navigation means you can gain deeper insights directly from the Anypoint Platform Monitoring *Insights* page. 
 
 == What's Next
 
