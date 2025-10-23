@@ -2,7 +2,7 @@
 :page-notice-banner-message: Open Beta Release: Integration Intelligence is in open beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
 
 
-Use Integration Intelligence (Beta) to monitor, analyze, and troubleshoot MuleSoft telemetry data in the Salesforce ecosystem.
+Use Integration Intelligence (Beta) to monitor, analyze, and troubleshoot MuleSoft telemetry data within the Salesforce ecosystem.
 
 Integration Intelligence provides:
 
