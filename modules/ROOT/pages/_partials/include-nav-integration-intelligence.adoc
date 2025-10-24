@@ -1,4 +1,4 @@
-//tags::open-ii-from-insights[]
+//tag::open-ii-from-insights[]
 . In from the banner in the Anypoint Insights header, click *Go to Integration Intelligence*. 
 +
 In the Salesforce environment, Integration Intelligence automatically opens *Dashboards* from the sidebar. 
