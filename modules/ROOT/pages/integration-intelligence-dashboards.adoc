@@ -29,9 +29,12 @@ Unsupported at this time:
 For information about hosts, see xref:hosting-home::index.adoc#runtime-plane-hosting-options[Runtime Plane Hosting Options].
 
 [[nav-ii]]
-== Navigate to Integration Intelligence from Anyoint Platform
+== Navigate to Integration Intelligence from Anypoint Platform
 
 Navigate to Integration Intelligence dashboards containing metrics on your Mule apps, APIs, and business data from Anypoint Platform. 
+
+image:ii-go-to-ii.png["Banner for navigating to Integration Intelligence from Anypoint Insights"]
+
 
 //. Meet prerequisites. 
 . Meet the prerequisites in <<prereqs>>.
@@ -144,8 +147,8 @@ TODO: ARE WE SUPPORTING THIS IN THE BETA?
 
 Copy or download an image of any chart or table in a dashboard, or open a page dedicated to the chart or table. 
 
-. In a chart or table in a dashboard, click an empty area, and then hover to display a image:menu-arrow-icon.png["",15,15] (menu arrow).
-. Click image:menu-arrow-icon.png["",15,15] (menu arrow). 
+. In a chart or table in a dashboard, click an empty area, and then hover to display a image:ii-menu-arrow-icon.png["",15,15] (menu arrow).
+. Click image:ii-menu-arrow-icon.png["",15,15] (menu arrow). 
 . Select an option:
 
 * *Copy Image*: Copies a screenshot of the chart or table to your clipboard.
