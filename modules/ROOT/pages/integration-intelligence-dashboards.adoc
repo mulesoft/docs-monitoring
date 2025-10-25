@@ -29,14 +29,20 @@ Unsupported at this time:
 For information about hosts, see xref:hosting-home::index.adoc#runtime-plane-hosting-options[Runtime Plane Hosting Options].
 
 [[nav-ii]]
-== Navigate to Integration Intelligence from Anypoint Platform
+== Find Integration Intelligence
+
+Integration Intelligence is accessible from your Anypoint Platform and through the Salesforce App Launcher:
+
+* <<nav-insights>>
+* <<nav-salesforce>>
+
+[[nav-insights]]
+=== Navigate to Integration Intelligence from Anypoint Platform
 
 Navigate to Integration Intelligence dashboards containing metrics on your Mule apps, APIs, and business data from Anypoint Platform. 
 
 image:ii-go-to-ii.png["Banner for navigating to Integration Intelligence from Anypoint Insights"]
 
-
-//. Meet prerequisites. 
 . Meet the prerequisites in <<prereqs>>.
 //log in and navigate to Insights
 include::partial$include-nav-steps-no-permissions.adoc[]
@@ -44,18 +50,33 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 include::partial$include-nav-integration-intelligence.adoc[tags="open-ii-from-insights"] 
 . Select a tab for the dashboard you want to examine:
 
-* <<apps, *Apps*>>
+* <<apps, *Apps*>> (default)
 * <<apis, *APIs*>>
 * <<business-insights, *Business Insights*>>
 
-You can also navigate to Integration Intelligence through the App Launcher in the Salesforce environment. See <<app-launcher>>.
+[[nav-salesforce]]
+=== Navigate to Dashboards from the App Launcher
+
+Integration Intelligence resides in the Integration app. If you're connected to the Salesforce org that supports your MuleSoft telemetry data, you can navigate directly to your Integration Intelligence dashboards from the App Launcher:
+
+// Meet prerequisites. 
+. Meet the prerequisites in <<prereqs>>.
+. From your Salesforce environment, click image:ii-app-launcher-icon.png["",20,20] (App Launcher). 
+. From the App Launcher, find and select the *Integration* app. 
++
+The launcher opens to the app's *Intelligence* tab, which contains your dashboards.
+. Select a tab for the dashboard you want to examine:
+
+* <<apps, *Apps*>> (default)
+* <<apis, *APIs*>>
+* <<business-insights, *Business Insights*>>
 
 [[apps]]
 == Monitor Your Mule Apps
 
 Monitor Mule app metrics in Integration Intelligence:
 
-. Navigate to the *Apps* dashboard. 
+. Navigate to the *Apps* dashboard. A
 +
 For guidance, see <<nav-ii>>.
 //TODO: NO LOOKBACK IN THE UI AS OF 10/23
@@ -160,13 +181,3 @@ Copy or download an image of any chart or table in a dashboard, or open a page d
 // And if I opt to create a new dashboard, there's an option to edit, save, clone (a dashboard with the chart in it),
 // get details, and download an image. 
 // If I click Details from the arrow menu, nothing works. OMG!!!!! 
-
-[[app-launcher]]
-== Navigate to Dashboards from the App Launcher
-
-Integration Intelligence resides in the Integration app. If you're connected to the Salesforce org that supports your MuleSoft telemetry data, you can navigate directly to your Integration Intelligence dashboards from the App Launcher:
-
-. Click the App Launcher. 
-. Find and select the *Integration* app. 
-+
-The app opens to the *Intelligence* tab that contains your dashboards.
