@@ -55,7 +55,7 @@ include::partial$include-nav-integration-intelligence.adoc[tags="open-ii-from-in
 * <<business-insights, *Business Insights*>>
 
 [[nav-salesforce]]
-=== Navigate to Dashboards from the App Launcher
+=== Navigate to Dashboards from the Salesforce App Launcher
 
 Integration Intelligence resides in the Integration app. If you're connected to the Salesforce org that supports your MuleSoft telemetry data, you can navigate directly to your Integration Intelligence dashboards from the App Launcher:
 
