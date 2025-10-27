@@ -15,16 +15,44 @@ Graphs the number of logging events at each point.
 
 Complete the procedures in xref:integration-intelligence-setup.adoc[].
 
+[[nav-ii]]
+== Find Integration Intelligence Logs
 
+Integration Intelligence logs are accessible from your Anypoint Platform and through the Salesforce App Launcher:
+
+* <<nav-insights>>
+* <<nav-salesforce>>
+
+[[nav-insights]]
+=== Navigate to Logs from Anypoint Platform
+
+Navigate to Integration Intelligence logs from Anypoint Platform. 
+
+image:ii-go-to-ii.png["Banner for navigating to Integration Intelligence from Anypoint Insights"]
+
+. Meet the prerequisites in <<prereqs>>.
+//log in and navigate to Insights
+include::partial$include-nav-steps-no-permissions.adoc[]
+//navigate to Integration Intelligence from Insights
+include::partial$include-nav-integration-intelligence.adoc[tags="open-ii-from-insights"] 
+. From the Integration Intelligence sidebar, click *Logs*.
+. <<check-logs, Check your logs>>.
+
+[[nav-salesforce]]
+=== Navigate to Logs from the Salesforce App Launcher
+
+Integration Intelligence resides in the Integration app. If you're connected to the Salesforce org that supports your MuleSoft telemetry data, you can navigate directly to your Integration Intelligence logs from the App Launcher:
+
+// Meet prerequisites. 
+. Meet the prerequisites in <<prereqs>>.
+. From your Salesforce environment, click image:ii-app-launcher-icon.png["",20,20] (App Launcher). 
+. From the App Launcher, find and select the *Integration* app. 
++
+The launcher opens to the app's *Intelligence* tab.
+. From the Integration Intelligence sidebar, click *Logs*.
+. <<check-logs, Check your logs>>.
+
+[[check-logs]]
 == Check Logs
 
-. Meet the prerequisites in <<prereqs>>. 
-include::partial$include-nav-steps-no-permissions.adoc[]
-//TODO: VERIFY
-. From the banner in the Anypoint Insights header, click *Integration Intelligence*.
-. From the sidebar of the Integration Intelligence app in your Salesforce org, click *Logs*. 
-. Optionally, filter by log level.
-//TODO: NOT CLEAR IF LOOKBACK PERIOD WILL BE THERE. 
-.. Change the lookback period:
-//TODO: LIST PERIODS, UNDERSTAND LOG RETENTION
-. Review logs:
+<video tabindex="-1" style="width: 100%; height: 100%;" playsinline="playsinline" data-embed="default" data-player="Q4OxsCweb" data-account="6415665815001" id="bc-player_html5_api" class="vjs-tech" preload="metadata" disablepictureinpicture="" src="blob:https://s.yimg.com/8a91f28c-5be0-4102-aad7-4c606413f40f" aria-labelledby="vjs-title-bar-title-91" aria-describedby="vjs-title-bar-description-92"></video>

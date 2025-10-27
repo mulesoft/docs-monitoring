@@ -29,7 +29,7 @@ Unsupported at this time:
 For information about hosts, see xref:hosting-home::index.adoc#runtime-plane-hosting-options[Runtime Plane Hosting Options].
 
 [[nav-ii]]
-== Find Integration Intelligence
+== Find Integration Intelligence Dashboards
 
 Integration Intelligence is accessible from your Anypoint Platform and through the Salesforce App Launcher:
 
