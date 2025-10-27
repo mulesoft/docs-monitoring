@@ -55,4 +55,3 @@ The launcher opens to the app's *Intelligence* tab.
 [[check-logs]]
 == Check Logs
 
-<video tabindex="-1" style="width: 100%; height: 100%;" playsinline="playsinline" data-embed="default" data-player="Q4OxsCweb" data-account="6415665815001" id="bc-player_html5_api" class="vjs-tech" preload="metadata" disablepictureinpicture="" src="blob:https://s.yimg.com/8a91f28c-5be0-4102-aad7-4c606413f40f" aria-labelledby="vjs-title-bar-title-91" aria-describedby="vjs-title-bar-description-92"></video>
