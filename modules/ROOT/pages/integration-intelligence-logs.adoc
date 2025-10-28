@@ -55,3 +55,21 @@ The launcher opens to the app's *Intelligence* tab.
 [[check-logs]]
 == Check Logs
 
+Use *Logs* in Integration Intelligence to troubleshoot issues with your Mule apps. 
+
+. Navigate to *Logs*.
++
+For guidance see <<nav-ii>>.
+. Optionally, narrow the scope of logs:
+
+//From Anshuman on 10/27:
+* *Log Levels* includes *WARN*, *ERROR*, or *FATAL*.
+// TODO: Operation Name -> Logger (where do the names of the loggers come from?)
+// See https://docs.mulesoft.com/monitoring/logs-us-eu#filters_predefined. (EU/US log search)
+* *Logger*: Log4j logger class, such as `HttpListenerRegistry`
+// TODO: Service Name -> Application (where do the names of the loggers come from?) or "App"?
+* *Application*: Name of the Mule app that produces the logs. 
+
+. Review the log message. 
++
+For long messages, you can click the message to review the entire message. 
