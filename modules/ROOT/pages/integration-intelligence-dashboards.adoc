@@ -10,7 +10,7 @@ image::ii-dashboards.png["Integration Intelligence Dashboards"]
 . *Dashboard* page in Integration Intelligence
 . Available dashboards: *Apps* (default), *APIs*, *Business Insights*
 . Filters for specific apps and deployment types, such as CloudHub 2.0
-. Metrics for the selected dashboard
+. Navigation to Tableau Next to enhance your metrics 
 
 [[prereqs]]
 == Before You Begin
@@ -181,7 +181,20 @@ Copy or download an image of any chart or table in a dashboard, or open a page d
 // get details, and download an image. 
 // If I click Details from the arrow menu, nothing works. OMG!!!!! 
 
-== View Metrics in Tableau Next
+== Enhance Metrics in Tableau Next
+
+//Use Tableau Next to ... note: there's a Tableau Next overview video
+Turn your data into actionable insights with Tableau Next. 
+
+NOTES_TO_SUMMARIZE
+* Organized around workspaces (organizational structures for the assets for each of your projects)
+* Can access from App Launcher
+* Data, semantic models where you can build metrics, visualizations that can be combined in dashboards
+* Connect to data in your org or in Data Cloud or upload new data and create semantic models for your data (that provide consistent interpretations of business terms and logic across all your data; build models to support your analytics) semantic models power metrics (KPIs that track business performance)
+* Can create new assets from workspace, or add existing assets that are reused or shared across workspaces in your org
+* Dashboard builder: Can create charts and tables for sharing insights, which you can add to shareable dashboards
+*  
+
 
 TODO_NEED_OVERVIEW_OF_INTENDED_USE_CASES
 
