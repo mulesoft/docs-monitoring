@@ -9,7 +9,7 @@ image::ii-dashboards.png["Integration Intelligence Dashboards"]
 . Integration Intelligence in the Integration app
 . *Dashboard* page in Integration Intelligence
 . Available dashboards: *Apps* (default), *APIs*, *Business Insights*
-. Filters for apps and deployment types, such as CloudHub 2.0
+. Filters for specific apps and deployment types, such as CloudHub 2.0
 . Metrics for the selected dashboard
 
 [[prereqs]]
