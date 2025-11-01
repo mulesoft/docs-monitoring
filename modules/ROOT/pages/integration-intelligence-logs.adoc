@@ -1,14 +1,14 @@
 = Getting Logs in Integration Intelligence
 :page-notice-banner-message: Open Beta Release: Integration Intelligence is in open beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
 
-INTRO_HERE
-TODO: DEFINE EVENT LOGS
+image::ii-logs.png["Integration Intelligence Logs"]
 
-TODO: SCREENSHOT
-
-Log Events::
-Graphs the number of logging events at each point. 
-//TODO: IS THIS EVERY MINUTE OR WHAT? CAN YOU CONFIGURE/SELECT THE AGGREGATED PERIOD?
+[calloutlist]
+. Integration Intelligence in the Salesforce Integration app
+. *Logs* in Integration Intelligence
+. Log count over time
+. Filters for specific log levels, loggers, and Mule apps 
+. Logs by timestamp, log level, app, logger, and log message
 
 [[prereqs]]
 == Before You Begin

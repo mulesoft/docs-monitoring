@@ -6,7 +6,7 @@ Use dashboards in the Salesforce ecosystem to monitor Mule app and API metrics, 
 image::ii-dashboards.png["Integration Intelligence Dashboards"]
 
 [calloutlist]
-. Integration Intelligence in the Integration app
+. Integration Intelligence in the Salesforce Integration app
 . *Dashboard* page in Integration Intelligence
 . Available dashboards: *Apps* (default), *APIs*, *Business Insights*
 . Filters for specific apps and deployment types, such as CloudHub 2.0
