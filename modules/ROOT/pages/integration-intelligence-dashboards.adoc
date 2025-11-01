@@ -175,28 +175,22 @@ Copy or download an image of any chart or table in a dashboard, or open a page d
 * *Download Image*: Downloads a screenshot of the chart or table to your local drive.
 * *Explore*: Opens a new tab that contains the selected chart or table on a full page. You can also add the chart to an existing dashboard or create a dashboard for the chart from this page.   
 
-// In the new tab there's an Add to Dashboard button on this page just allows me to add the chart to one of my existing dashboards 
-// OR to create a new dashboard with the chart. TODO: DO WE WANT TO DOC THIS? 
-// And if I opt to create a new dashboard, there's an option to edit, save, clone (a dashboard with the chart in it),
-// get details, and download an image. 
-// If I click Details from the arrow menu, nothing works. OMG!!!!! 
+== Review and Manage Metrics in Tableau Next
 
-== Enhance Metrics in Tableau Next
+Tableau Next is a composable AI analytics platform for turning your data into actionable insights with Tableau Next. 
 
-//Use Tableau Next to ... note: there's a Tableau Next overview video
-Turn your data into actionable insights with Tableau Next. 
+//TODO_NEED_OVERVIEW_OF_INTENDED_USE_CASES
 
-////
-NOTES_TO_SUMMARIZE
-* Organized around workspaces (organizational structures for the assets for each of your projects)
-* Can access from App Launcher
-* Data, semantic models where you can build metrics, visualizations that can be combined in dashboards
-* Connect to data in your org or in Data Cloud or upload new data and create semantic models for your data (that provide consistent interpretations of business terms and logic across all your data; build models to support your analytics) semantic models power metrics (KPIs that track business performance)
-* Can create new assets from workspace, or add existing assets that are reused or shared across workspaces in your org
-* Dashboard builder: Can create charts and tables for sharing insights, which you can add to shareable dashboards
-////
+. Navigate to Tableau Next from *Dashboard* or from the App Launcher:
 
+* In the *Dashboard* header, click *View Data in Tableau Next*.
+* Click image:ii-app-launcher-icon.png["",20,20] (App Launcher), and then search for and click Tableau Next.
+. If you're new to Tableau Next, get an introduction to Tableau Next features from the Getting Started video and other items under *Recommended for You*.
+. If you're familiar with Tableau Next, you can review, create, and manage your organization's assets:
 
-TODO_NEED_OVERVIEW_OF_INTENDED_USE_CASES
+* Workspaces for collecting and managing analytic assets, launching data analysis, and collaborating with your team
+* Data that's hosted in Data Cloud as data lake objects
+* Semantic models that map data to standardized terms and logic for useful insights and that provide a way to create metrics
+* Visualizations that you can add to your own dashboards
 
-TODO_LINKS_TO_TABLEAU_NEXT_DOCS_FOR_USE_CASES
+//TODO_LINKS_TO_TABLEAU_NEXT_DOCS_FOR_USE_CASES
