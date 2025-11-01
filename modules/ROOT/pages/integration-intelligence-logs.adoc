@@ -61,7 +61,6 @@ Use *Logs* in Integration Intelligence to troubleshoot issues with your Mule app
 +
 For guidance see <<nav-ii>>.
 . Optionally, narrow the scope of logs:
-
 //From Anshuman on 10/27:
 * *Log Levels* includes *WARN*, *ERROR*, or *FATAL*.
 // TODO: Operation Name -> Logger (where do the names of the loggers come from?)
