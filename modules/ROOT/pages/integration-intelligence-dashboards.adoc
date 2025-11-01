@@ -3,9 +3,14 @@
 
 Use dashboards in the Salesforce ecosystem to monitor Mule app and API metrics, and get insights into related business data.
 
-SCREENSHOT_HERE_LABLED
+image::ii-dashboards.png["Integration Intelligence Dashboards"]
 
-CALLOUTLIST_HERE
+[calloutlist]
+. Integration Intelligence in the Integration app
+. *Dashboard* page in Integration Intelligence
+. Available dashboards: *Apps* (default), *APIs*, *Business Insights*
+. Filters for apps and deployment types, such as CloudHub 2.0
+. Metrics for the selected dashboard
 
 [[prereqs]]
 == Before You Begin
@@ -157,16 +162,10 @@ Get the flow count, number of messages, and request volume for selected apps.
 Get the number of inbound and outbound requests from your apps. Hovering over the apps provides the number and type of request metric (for inbound requests, `mulesoft.app._inbound_.requests.sum`, and for outbound, `mulesoft.app._outbound_.requests.sum`). 
 
 
-== View Metrics in Tableau Next
-
-TODO: ARE WE SUPPORTING THIS IN THE BETA?
-//if supporting, how to use this?
-
-
 [[more-actions]]
 == Copy, Download, or Explore Metrics
 
-Copy or download an image of any chart or table in a dashboard, or open a page dedicated to the chart or table. 
+Copy or download an image of any chart or table in a dashboard, or open a page dedicated to specific metrics. 
 
 . In a chart or table in a dashboard, click an empty area, and then hover to display a image:ii-menu-arrow-icon.png["",15,15] (menu arrow).
 . Click image:ii-menu-arrow-icon.png["",15,15] (menu arrow). 
@@ -174,10 +173,15 @@ Copy or download an image of any chart or table in a dashboard, or open a page d
 
 * *Copy Image*: Copies a screenshot of the chart or table to your clipboard.
 * *Download Image*: Downloads a screenshot of the chart or table to your local drive.
-* *Explore*: Opens a new tab that contains the chart or table on a full page.
+* *Explore*: Opens a new tab that contains the selected chart or table on a full page. You can also add the chart to an existing dashboard or create a dashboard for the chart from this page.   
 
 // In the new tab there's an Add to Dashboard button on this page just allows me to add the chart to one of my existing dashboards 
 // OR to create a new dashboard with the chart. TODO: DO WE WANT TO DOC THIS? 
 // And if I opt to create a new dashboard, there's an option to edit, save, clone (a dashboard with the chart in it),
 // get details, and download an image. 
 // If I click Details from the arrow menu, nothing works. OMG!!!!! 
+
+== View Metrics in Tableau Next
+
+TODO: ARE WE SUPPORTING THIS IN THE BETA?
+//if supporting, how to use this?
