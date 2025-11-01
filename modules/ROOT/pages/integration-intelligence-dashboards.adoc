@@ -183,5 +183,6 @@ Copy or download an image of any chart or table in a dashboard, or open a page d
 
 == View Metrics in Tableau Next
 
-TODO: ARE WE SUPPORTING THIS IN THE BETA?
-//if supporting, how to use this?
+TODO_NEED_OVERVIEW_OF_INTENDED_USE_CASES
+
+TODO_LINKS_TO_TABLEAU_NEXT_DOCS_FOR_USE_CASES
