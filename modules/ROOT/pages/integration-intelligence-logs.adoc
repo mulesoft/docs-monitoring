@@ -69,7 +69,6 @@ For guidance see <<nav-ii>>.
 * *Logger*: Log4j logger class, such as `HttpListenerRegistry`
 // TODO: Service Name -> Application (where do the names of the loggers come from?) or "App"?
 * *Application*: Name of the Mule app that produces the logs. 
-
 . Review the log message. 
 +
 For long messages, you can click the message to review the entire message. 

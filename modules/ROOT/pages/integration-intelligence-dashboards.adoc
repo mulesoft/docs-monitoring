@@ -186,7 +186,7 @@ Tableau Next is a composable AI analytics platform for turning your data into ac
 * In the *Dashboard* header, click *View Data in Tableau Next*.
 * Click image:ii-app-launcher-icon.png["",20,20] (App Launcher), and then search for and click Tableau Next.
 . If you're new to Tableau Next, get an introduction to Tableau Next features from the Getting Started video and other items under *Recommended for You*.
-. If you're familiar with Tableau Next, you can review, create, and manage your organization's assets:
+. If you're familiar with Tableau Next, review, create, or manage your organization's assets:
 
 * Workspaces for collecting and managing analytic assets, launching data analysis, and collaborating with your team
 * Data that's hosted in Data Cloud as data lake objects
