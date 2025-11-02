@@ -186,11 +186,10 @@ Use Tableau Next to review and manage your organization's <<assets, assets>> (wo
 * When starting from the *Dashboard* header, click *View Data in Tableau Next*.
 * When starting from image:ii-app-launcher-icon.png["",20,20] (App Launcher), search for and click Tableau Next.
 . If you're new to Tableau Next, get an introduction its features from the Getting Started video and other items under *Recommended for You*.
-[[assets]]
-. If you're familiar with Tableau Next, review and manage your organization's assets:
+. If you're familiar with Tableau Next, review and manage your organization's assets: [[assets]]
 
 * Workspaces for collecting and managing analytic assets, launching data analysis, and collaborating with your team
-* Data that's hosted in Data Cloud as data lake objects
+* Data, including telemetry data from your Mule apps and APIs, hosted in Data Cloud as data lake objects
 * Semantic models that map data to standardized terms and logic for useful insights and that provide a way to create metrics
 * Visualizations that you can add to your own dashboards
 
