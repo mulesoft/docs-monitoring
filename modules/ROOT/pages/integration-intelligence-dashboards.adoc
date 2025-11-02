@@ -10,7 +10,7 @@ image::ii-dashboards.png["Integration Intelligence Dashboards"]
 . *Dashboard* page in Integration Intelligence
 . Available dashboards: *Apps* (default), *APIs*, *Business Insights*
 . Filters for selecting specific apps and deployment types, such as CloudHub 2.0, in the *Apps* dashboard
-. <<tableau-next, Navigation to Tableau Next>> to enhance your metrics 
+. <<tableau-next, Navigation to Tableau Next>> to enhance your metrics experience
 
 [[prereqs]]
 == Before You Begin
