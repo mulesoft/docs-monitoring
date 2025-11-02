@@ -1,7 +1,10 @@
 = Getting Logs in Integration Intelligence
 :page-notice-banner-message: Open Beta Release: Integration Intelligence is in open beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
 
-Troubleshoot your Mule apps and APIs with logs.
+//TODO: IS APPS _AND APIS_ CORRECT? WHAT PRODUCES LOGS?
+Troubleshoot your Mule apps and APIs by reviewing log messages.
+
+//TODO: NEED LOOKBACK PERIOD
 
 image::ii-logs.png["Integration Intelligence Logs"]
 
@@ -57,7 +60,7 @@ The launcher opens to the app's *Intelligence* tab.
 [[check-logs]]
 == Check Logs
 
-Use *Logs* in Integration Intelligence to troubleshoot issues with your Mule apps. 
+Use *Logs* in Integration Intelligence to troubleshoot issues. 
 
 . Navigate to *Logs*.
 +
@@ -67,9 +70,13 @@ For guidance see <<nav-ii>>.
 * *Log Levels* includes *WARN*, *ERROR*, or *FATAL*.
 // TODO: Operation Name -> Logger (where do the names of the loggers come from?)
 // See https://docs.mulesoft.com/monitoring/logs-us-eu#filters_predefined. (EU/US log search)
+//TODO: VERIFY:
 * *Logger*: Log4j logger class, such as `HttpListenerRegistry`
 // TODO: Service Name -> Application (where do the names of the loggers come from?) or "App"?
 * *Application*: Name of the Mule app that produces the logs. 
 . Review the log message. 
 +
-For long messages, you can click the message to review the entire message. 
+For long messages, you can click the message to display the entire message. 
+
+//== See Also
+//LINKS TO TN DOCS

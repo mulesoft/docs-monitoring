@@ -9,8 +9,8 @@ image::ii-dashboards.png["Integration Intelligence Dashboards"]
 . Integration Intelligence in the Salesforce Integration app
 . *Dashboard* page in Integration Intelligence
 . Available dashboards: *Apps* (default), *APIs*, *Business Insights*
-. Filters for specific apps and deployment types, such as CloudHub 2.0
-. Navigation to Tableau Next to enhance your metrics 
+. Filters for selecting specific apps and deployment types, such as CloudHub 2.0, in the *Apps* dashboard
+. <<tableau-next, Navigation to Tableau Next>> to enhance your metrics 
 
 [[prereqs]]
 == Before You Begin
@@ -34,17 +34,17 @@ Unsupported at this time:
 For information about hosts, see xref:hosting-home::index.adoc#runtime-plane-hosting-options[Runtime Plane Hosting Options].
 
 [[nav-ii]]
-== Find Integration Intelligence Dashboards
+== Find Dashboards in Integration Intelligence
 
-Integration Intelligence is accessible from your Anypoint Platform and through the Salesforce App Launcher:
+Integration Intelligence is accessible from Anypoint Platform and through the Salesforce App Launcher:
 
 * <<nav-insights>>
 * <<nav-salesforce>>
 
 [[nav-insights]]
-=== Navigate to Integration Intelligence from Anypoint Platform
+=== Navigate to Dashboards from Anypoint Platform
 
-Navigate to Integration Intelligence dashboards containing metrics on your Mule apps, APIs, and business data from Anypoint Platform. 
+Navigate from Anypoint Platform to Integration Intelligence to review dashboards with metrics on your Mule apps, APIs, and business data. 
 
 image:ii-go-to-ii.png["Banner for navigating to Integration Intelligence from Anypoint Insights"]
 
@@ -81,7 +81,7 @@ The launcher opens to the app's *Intelligence* tab, which contains your dashboar
 
 Monitor Mule app metrics in Integration Intelligence:
 
-. Navigate to the *Apps* dashboard. A
+. Navigate to the *Apps* dashboard.
 +
 For guidance, see <<nav-ii>>.
 //TODO: NO LOOKBACK IN THE UI AS OF 10/23
@@ -91,26 +91,22 @@ For guidance, see <<nav-ii>>.
 //TODO: VERIFY and what's the DEFAULT? Defaults to TODO_TODO. Look back from X_UNITS to Y_UNITS. 
 . Optionally, narrow the scope of apps to review by:
 
-//TODO: TYPO IN UI: SAYS "App Type" but lists "Apps"
-** Selecting one or more applications from the *App* menu.
-** Selecting *CloudHub 2.0* or *Runtime Fabric* from the *Deployment* menu.
-//TODO: NOT (YET?) IMPLEMENTED IN ORGFARM INSTANCE
-//.. A Mule app type 
-//TODO: VERIFY deployment TYPES
-//.. A deployment type (*CloudHub 2.0* or *Runtime Fabric*). 
-//TODO: SAY MORE ABOUT default and the DEPLOYMENT TYPES.
-//.. Select an error rate. 
-//TODO: SAY MORE ABOUT default and the ERROR RATE OPTIONS.
+** Selecting one or more Mule apps from the *App* menu.
+** Selecting a deployment type, such as *CloudHub 2.0* or *Runtime Fabric*, from the *Deployment* menu.
+
 . Get app metrics:
 
 * *Apps by Deployment Type*: 
 Hover over the data in the chart to get the number of apps by type, such as apps deployed to CloudHub 2.0. 
 //TODO: WE LIST ALL APPS HERE? SUPER JUNKY LOOKING when there are many apps. 
 * *Top CPU Utilization*: 
-Monitor performance by identifying apps that are using the most CPU resources. If there are too many apps in the chart, you can 
+Monitor performance by identifying apps that are using the most CPU resources.
 * *Deployed Apps*: 
 Check average response time, error rate, and request volume of apps over the selected lookback period.
 
+//TODO: FILTERS NOT IMPLEMENTED (YET?): 
+//.. A Mule app type 
+//.. Select an error rate. 
 
 [[apis]]
 == Monitor Your APIs 
@@ -132,11 +128,12 @@ For guidance, see <<nav-ii>>.
 . Get metrics on your APIs:
 
 * *Request Volume by Location*: 
-View the relative request volume by region, such as United States. Hovering over the data in the chart displays the number of requests. 
+View the relative request volume by region, such as United States. 
 * *Top API Consumers by Endpoint*: 
-View relative API endpoint requests ordered by APIs with the most to least requests. Hovering over the data in the chart displays the number of requests.
+View relative API endpoint requests ordered by APIs with the most to least requests. 
 * *APIs*: 
-Get the number of clients and request volume one or more versions of your APIs.
+Get the number of clients and request volume for one or more versions of your APIs.
+. To get more detail, such as the number of requests, hover over the data in the charts. 
 
 [[business-insights]]
 == Get Business Insights
@@ -175,22 +172,29 @@ Copy or download an image of any chart or table in a dashboard, or open a page d
 * *Download Image*: Downloads a screenshot of the chart or table to your local drive.
 * *Explore*: Opens a new tab that contains the selected chart or table on a full page. You can also add the chart to an existing dashboard or create a dashboard for the chart from this page.   
 
+[[tableau-next]]
 == Review and Manage Metrics in Tableau Next
 
-Tableau Next is a composable AI analytics platform for turning your data into actionable insights with Tableau Next. 
+Tableau Next is a composable AI analytics platform for turning your data into actionable insights. 
+
+Use Tableau Next to review and manage your organization's <<assets, assets>> (workspaces, data, semantic models, dashboards, and visualizations). Tableau Next also provides resources for learning to work with assets.
 
 //TODO_NEED_OVERVIEW_OF_INTENDED_USE_CASES
 
-. Navigate to Tableau Next from *Dashboard* or from the App Launcher:
+. Navigate to Tableau Next from *Dashboard* in Integration Intelligence or from the Salesforce App Launcher:
 
-* In the *Dashboard* header, click *View Data in Tableau Next*.
-* Click image:ii-app-launcher-icon.png["",20,20] (App Launcher), and then search for and click Tableau Next.
-. If you're new to Tableau Next, get an introduction to Tableau Next features from the Getting Started video and other items under *Recommended for You*.
-. If you're familiar with Tableau Next, review, create, or manage your organization's assets:
+* When starting from the *Dashboard* header, click *View Data in Tableau Next*.
+* When starting from image:ii-app-launcher-icon.png["",20,20] (App Launcher), search for and click Tableau Next.
+. If you're new to Tableau Next, get an introduction its features from the Getting Started video and other items under *Recommended for You*.
+. If you're familiar with Tableau Next, review and manage your organization's assets:
 
+[[assets]]
 * Workspaces for collecting and managing analytic assets, launching data analysis, and collaborating with your team
 * Data that's hosted in Data Cloud as data lake objects
 * Semantic models that map data to standardized terms and logic for useful insights and that provide a way to create metrics
 * Visualizations that you can add to your own dashboards
 
 //TODO_LINKS_TO_TABLEAU_NEXT_DOCS_FOR_USE_CASES
+
+//== See Also
+//LINKS TO TN DOCS
