@@ -18,7 +18,28 @@ image::ii-logs.png["Integration Intelligence Logs"]
 [[prereqs]]
 == Before You Begin
 
+Meet these prerequisites:
+
 Complete the procedures in xref:integration-intelligence-setup.adoc[].
+
+== Supported Deployment Types
+
+Integration Intelligence supports Mule apps and Mule APIs deployed to these hosts:
+
+//* CloudHub
+* CloudHub 2.0 
+* Runtime Fabric
+//* Hybrid
+
+Unsupported at this time:
+
+* Flex Gateway APIs
+* Agentic assets (brokers, agents, and MCP servers)
+
+== Lookback Period
+
+//TODO: UPDATE FOR GA
+For the Beta release, data collection for dashboards begins after you set up Integration Intelligence.
 
 [[nav-ii]]
 == Find Integration Intelligence Logs

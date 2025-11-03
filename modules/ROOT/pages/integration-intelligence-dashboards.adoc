@@ -33,6 +33,11 @@ Unsupported at this time:
 
 For information about hosts, see xref:hosting-home::index.adoc#runtime-plane-hosting-options[Runtime Plane Hosting Options].
 
+== Lookback Period
+
+//TODO: UPDATE FOR GA
+For the Beta release, data collection for dashboards begins after you set up Integration Intelligence.
+
 [[nav-ii]]
 == Find Dashboards in Integration Intelligence
 
