@@ -175,7 +175,9 @@ Copy or download an image of any chart or table in a dashboard, or open a page d
 
 * *Copy Image*: Copies a screenshot of the chart or table to your clipboard.
 * *Download Image*: Downloads a screenshot of the chart or table to your local drive.
-* *Explore*: Opens a new tab that contains the selected chart or table on a full page. You can also add the chart to an existing dashboard or create a dashboard for the chart from this page.   
+* *Explore*: Opens a new tab that contains the selected chart or table on a full page. You can also add the chart to an existing dashboard or create a dashboard for the chart from this page.  
++
+In the Beta, any new dashboards that you create won't reside in Integration Intelligence. Instead, they'll be accessible from a Tableau Next workspace. 
 
 [[tableau-next]]
 == Review and Manage Metrics in Tableau Next
@@ -190,7 +192,7 @@ Use Tableau Next to review and manage your organization's <<assets, assets>> (wo
 
 * When starting from the *Dashboard* header, click *View Data in Tableau Next*.
 * When starting from image:ii-app-launcher-icon.png["",20,20] (App Launcher), search for and click Tableau Next.
-. If you're new to Tableau Next, get an introduction its features from the Getting Started video and other items under *Recommended for You*.
+. If you're new to Tableau Next, get an introduction to its features from the Getting Started video and other items under *Recommended for You*.
 . If you're familiar with Tableau Next, review and manage your organization's assets: [[assets]]
 
 * Workspaces for collecting and managing analytic assets, launching data analysis, and collaborating with your team
