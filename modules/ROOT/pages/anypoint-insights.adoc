@@ -316,9 +316,10 @@ Number requests over time for the entities
 Check key metrics on individual Mule apps and APIs (_entity_), and click an entity's name to get detailed charts for the entity. 
 include::partial$include-entities.adoc[tags="entity-definition"]
 
-include::partial$include-insights-charts.adoc[tags="data-scope"] The entities belong to the selected <<change-bg, business group>>.
+include::partial$include-insights-charts.adoc[tags="data-scope"] 
+Only entities with traffic in the selected period and <<change-bg, business group>> appear in *Entities List*.
 
-*Entities List* provides these metrics:
+The list provides these metrics on entities:
 
 Entity Name:: 
 Name of the entity
