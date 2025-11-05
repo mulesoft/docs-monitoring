@@ -141,6 +141,7 @@ include::partial$include-am-setup.adoc[tag="am-installer-setup"]
 ** You can call the installation script with the `-x` argument to skip this prompt. If you skip the prompt, Anypoint Monitoring is not installed as a service.
 * You cannot install the Anypoint Monitoring agent on a server that has an existing filebeat instance running.
 * When you install the Anypoint Monitoring agent on a hybrid server in a server group, use Runtime Manager to restart the server to enable Anypoint Monitoring to begin collecting metrics.
+* To change the telemetry listening port (defaults to port `8888`) when installing the agent, use the `-t` parameter. Example: `$ ./install -t 8889` 
 
 [[proxy-settings]]
 == Proxy Settings
