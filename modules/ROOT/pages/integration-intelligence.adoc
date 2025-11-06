@@ -17,7 +17,7 @@ Integration Intelligence provides:
 * Out-of-the-Box dashboards with preconfigured pages within a new Integration Intelligence Lightning App in Salesforce, featuring dashboards for:
 ** App Insights, offering a unified view of application metrics, health, and usage.
 ** API Insights, providing a unified view of all API metrics, including health and usage.
-** Logs and Traces, enabling you to view tabular pages of log events (including filtering capabilities for timeframe andlog level).
+** Logs and Traces, enabling you to view tabular pages of log events (including filtering capabilities for timeframe and log level).
 
 * Seamless cross-platform access with seamless login (SSO) removes barriers between Anypoint Platform and Salesforce, enabling faster access to troubleshooting data.
 
