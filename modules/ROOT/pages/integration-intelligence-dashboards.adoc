@@ -1,5 +1,5 @@
 = Monitoring with Integration Intelligence
-:page-notice-banner-message: Open Beta Release: Integration Intelligence is in open beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
+:page-notice-banner-message: Closed Beta Release: Integration Intelligence is in closed beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
 
 Use dashboards in the Salesforce ecosystem to monitor Mule app and API metrics, and get insights into related business data.
 
