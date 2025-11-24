@@ -1,5 +1,5 @@
 = Getting Logs in Integration Intelligence
-:page-notice-banner-message: Closed Beta Release: Integration Intelligence is in closed beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
+:page-notice-banner-message: Beta Release: Integration Intelligence is in beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
 
 //TODO: IS APPS _AND APIS_ CORRECT? WHAT PRODUCES LOGS?
 Troubleshoot your Mule apps and APIs by reviewing log messages.
