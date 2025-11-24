@@ -10,7 +10,7 @@
  ** xref:performance-and-impact.adoc[]
 * xref:dashboards.adoc[]
  ** xref:app-dashboards.adoc[]
- ** xref:api-analytics-dashboard.adoc[]
+ ** xref:api-dashboard.adoc[]
  ** xref:save-builtin-dashboard-as-custom.adoc[]
  ** xref:anypoint-custom-metrics-connector.adoc[]
  ** xref:create-custom-dashboard.adoc[]
