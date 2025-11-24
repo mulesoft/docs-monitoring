@@ -1,0 +1,96 @@
+= Getting Logs in Integration Intelligence
+:page-notice-banner-message: Beta Release: Integration Intelligence is in beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
+
+//TODO: IS APPS _AND APIS_ CORRECT? WHAT PRODUCES LOGS?
+Troubleshoot your Mule apps and APIs by reviewing log messages.
+
+//TODO: NEED LOOKBACK PERIOD
+
+image::ii-logs.png["Integration Intelligence Logs"]
+
+[calloutlist]
+. Integration Intelligence in the Salesforce Integration app
+. *Logs* in Integration Intelligence
+. Log count over time
+. Filters for specific log levels, loggers, and Mule apps 
+. Logs by timestamp, log level, app, logger, and log message
+
+[[prereqs]]
+== Before You Begin
+
+Meet these prerequisites:
+
+Complete the procedures in xref:integration-intelligence-setup.adoc[].
+
+== Supported Deployment Types
+
+Integration Intelligence supports Mule apps and Mule APIs deployed to these hosts:
+
+* CloudHub 2.0 
+* Runtime Fabric
+
+== Lookback Period
+
+//TODO: UPDATE FOR GA
+For the Beta release, data collection for dashboards begins after you set up Integration Intelligence.
+
+[[nav-ii]]
+== Find Integration Intelligence Logs
+
+Integration Intelligence logs are accessible from your Anypoint Platform and through the Salesforce App Launcher:
+
+* <<nav-insights>>
+* <<nav-salesforce>>
+
+[[nav-insights]]
+=== Navigate to Logs from Anypoint Platform
+
+Navigate to Integration Intelligence logs from Anypoint Platform. 
+
+image:ii-go-to-ii.png["Banner for navigating to Integration Intelligence from Anypoint Insights"]
+
+. Meet the prerequisites in <<prereqs>>.
+//log in and navigate to Insights
+include::partial$include-nav-steps-no-permissions.adoc[]
+//navigate to Integration Intelligence from Insights
+include::partial$include-nav-integration-intelligence.adoc[tags="open-ii-from-insights"] 
+. From the Integration Intelligence sidebar, click *Logs*.
+. <<check-logs, Check your logs>>.
+
+[[nav-salesforce]]
+=== Navigate to Logs from the Salesforce App Launcher
+
+Integration Intelligence resides in the Integration app. If you're connected to the Salesforce org that supports your MuleSoft telemetry data, you can navigate directly to your Integration Intelligence logs from the App Launcher:
+
+// Meet prerequisites. 
+. Meet the prerequisites in <<prereqs>>.
+. From your Salesforce environment, click image:ii-app-launcher-icon.png["",20,20] (App Launcher). 
+. From the App Launcher, find and select the *Integration* app. 
++
+The launcher opens to the app's *Intelligence* tab.
+. From the Integration Intelligence sidebar, click *Logs*.
+. <<check-logs, Check your logs>>.
+
+[[check-logs]]
+== Check Logs
+
+Use *Logs* in Integration Intelligence to troubleshoot issues. 
+
+. Navigate to *Logs*.
++
+For guidance see <<nav-ii>>.
+. Optionally, narrow the scope of logs:
+//From Anshuman on 10/27:
+* *Log Levels* includes *WARN*, *ERROR*, or *FATAL*.
+// TODO: Operation Name -> Logger (where do the names of the loggers come from?)
+// See https://docs.mulesoft.com/monitoring/logs-us-eu#filters_predefined. (EU/US log search)
+//TODO: VERIFY:
+* *Logger*: Log4j logger class, such as `HttpListenerRegistry`
+// TODO: Service Name -> Application (where do the names of the loggers come from?) or "App"?
+* *Application*: Name of the Mule app that produces the logs. 
+. Review the log message. 
++
+For long messages, you can click the message to display the entire message. 
+
+//== See Also
+//LINKS TO TN DOCS
