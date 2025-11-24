@@ -1,21 +1,22 @@
 = Using Built-in API Dashboards
+:note-flex-deployments-not-supported: This metric is not supported for APIs deployed through Flex Gateway.
 
-The API analytics dashboards provide charts to monitor API usage, which gives you insight into how your APIs are used and how they are performing.
+The API dashboards provide charts to monitor API usage, which gives you insight into how your APIs are used and how they are performing.
 
-If you have xref:api-manager::api-auto-discovery-new-concept.adoc[enabled API auto-discovery], your API metrics are available in the API analytics dashboards in Anypoint Monitoring.
+If you have xref:api-manager::api-auto-discovery-new-concept.adoc[enabled API auto-discovery], your API metrics are available in the API dashboards in Anypoint Monitoring.
 
 The enhanced metrics view includes detailed information about your APIs, and charts are sorted into dashboards based on the type of data displayed.
 
 Charts displaying the `Last 1 hour` label show data that was collected during the past 60 minutes, starting with the current time.
 
 [NOTE]
-For xref:index.adoc#plans-legacy[Gold and Platinum subscriptions], Anypoint Monitoring retains API analytics metrics data for 30 days. API Manager retains API analytics metrics data for 30 days.
+For xref:index.adoc#plans-legacy[Gold and Platinum subscriptions], Anypoint Monitoring retains API metrics data for 30 days. API Manager retains API metrics data for 30 days.
 
 == Supported Versions of Mule Runtime Engine
 
 include::partial$include-supported-mule-runtime-version.adoc[]
 
-== View the API Analytics Dashboard
+== View the API Dashboard
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
@@ -25,18 +26,18 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 +
 On the API analytics page, you can view information about a running, managed API. 
 . Select the date and time range to view the statistics for and click *Confirm*. 
-. To view API analytics metrics in API Manager, click the *View API in API Manager* link.
+. To view API metrics in API Manager, click the *View API in API Manager* link.
 
 [[enhanced-api-metrics]]
-== Enhanced Metrics View for API Analytics Dashboards
+== Enhanced Metrics View for API Dashboards
 
-API analytics dashboards provide you with various pages from which you can view different types of charts.
+API dashboards provide you with various pages from which you can view different types of charts.
 
-The following charts are available in the enhanced metrics view for API analytics:
+The following charts are available in the enhanced metrics view for APIs:
 
 [%header,cols="1,4"]
 |===
-| API Analytics Dashboards | Charts
+| API Dashboards | Charts
 
 | <<overview-charts>> a|
 
@@ -65,8 +66,7 @@ The following charts are available in the enhanced metrics view for API analytic
 
 | <<performance-charts>> a|
 
-* Requests by Performance (line chart)
-* Requests by Performance (table)
+* Requests by Performance
 * Slow Requests +
 include::reuse::partial$billing/pricing.adoc[tag=availabilityParenthetical]
 
@@ -130,6 +130,8 @@ Failures:: The sum of failed requests in the selected time period, grouped by th
 
 +
 This metric is not supported for APIs deployed through Flex Gateway.
++
+NOTE: {note-flex-deployments-not-supported}
 
 Failures by Method:: The sum of failed requests in the selected time period, grouped by method. Data is aggregated in one minute increments.
 
@@ -142,7 +144,7 @@ Requests by Response Size:: The sum of failed requests in the selected time peri
 [[performance-charts]]
 === Performance Charts
 
-The following charts appear on the *Performance* dashboard:
+These charts appear on the *Performance* dashboard:
 
 Requests by Performance (line chart):: The average request response times, grouped by path.
 +
@@ -152,6 +154,8 @@ Requests by Performance (line chart):: The average request response times, group
 
 +
 This metric is not supported for APIs deployed through Flex Gateway.
++
+NOTE: {note-flex-deployments-not-supported}
 
 Requests by Performance (table):: The average request response times, grouped by path.
 +
@@ -161,6 +165,8 @@ Requests by Performance (table):: The average request response times, grouped by
 
 +
 This metric is not supported for APIs deployed through Flex Gateway.
++
+NOTE: {note-flex-deployments-not-supported}
 
 Slow Requests:: The average response times that are greater than one second, grouped by path. +
 include::reuse::partial$billing/pricing.adoc[tag=apiChartAvailability]
@@ -171,6 +177,8 @@ include::reuse::partial$billing/pricing.adoc[tag=apiChartAvailability]
 
 +
 This metric is not supported for APIs deployed through Flex Gateway.
++
+NOTE: {note-flex-deployments-not-supported}
 
 [[client-applications-charts]]
 === Client Applications Charts
@@ -187,10 +195,14 @@ Requests by Client IP:: The sum of requests in the period, grouped by client IP 
 
 +
 This metric is not supported for APIs deployed through Flex Gateway.
++
+NOTE: {note-flex-deployments-not-supported}
 
 Requests by Location:: The sum of requests during the time period specified, grouped by country. Data retention for the Requests by Location chart is one hour.
 +
 This metric is not supported for APIs deployed through Flex Gateway.
+
+NOTE: {note-flex-deployments-not-supported}
 
 For information about chart metric collection, including the chart group *Other*, see xref:app-dashboards.adoc#endpoint-operation-metrics[How Endpoint and Operation Use Metrics Are Gathered].
 
