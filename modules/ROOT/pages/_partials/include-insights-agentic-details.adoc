@@ -21,7 +21,7 @@ Unique identifier configured in API Manager as an optional instance property tha
 * *Status*:
 *Active*, *Inactive*, or *Unregistered* status for the instance
 +
-For more detail, see xref:api-manager:latest-overview-concept.adoc#tracking-registration-status[Tracking Registration Status] in the API Manager documentation.
+For more detail, see xref:api-manager::latest-overview-concept.adoc#tracking-registration-status[Tracking Registration Status] in the API Manager documentation.
 +
 Applies to agents, brokers, and MCP servers
 
