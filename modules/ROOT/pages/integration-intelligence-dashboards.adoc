@@ -1,0 +1,196 @@
+= Monitoring with Integration Intelligence
+:page-notice-banner-message: Beta Release: Integration Intelligence is in beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
+
+Use dashboards in the Salesforce ecosystem to monitor Mule app and API metrics, and get insights into related business data.
+
+image::ii-dashboards.png["Integration Intelligence Dashboards"]
+
+[calloutlist]
+. Integration Intelligence in the Salesforce Integration app
+. *Dashboard* page in Integration Intelligence
+. Available dashboards: *Apps* (default), *APIs*, *Business Insights*
+. Filters for selecting specific apps and deployment types, such as CloudHub 2.0, in the *Apps* dashboard
+. <<tableau-next, Navigation to Tableau Next>> to enhance your metrics experience
+
+[[prereqs]]
+== Before You Begin
+
+Complete the procedures in xref:integration-intelligence-setup.adoc[].
+
+== Supported Deployment Types
+
+Integration Intelligence supports Mule apps and Mule APIs deployed to these hosts:
+
+* CloudHub 2.0 
+* Runtime Fabric
+
+For information about hosts, see xref:hosting-home::index.adoc#runtime-plane-hosting-options[Runtime Plane Hosting Options].
+
+== Lookback Period
+
+//TODO: UPDATE FOR GA
+For the Beta release, data collection for dashboards begins after you set up Integration Intelligence.
+
+[[nav-ii]]
+== Find Dashboards in Integration Intelligence
+
+Integration Intelligence is accessible from Anypoint Platform and through the Salesforce App Launcher:
+
+* <<nav-insights>>
+* <<nav-salesforce>>
+
+[[nav-insights]]
+=== Navigate to Dashboards from Anypoint Platform
+
+Navigate from Anypoint Platform to Integration Intelligence to review dashboards with metrics on your Mule apps, APIs, and business data. 
+
+image:ii-go-to-ii.png["Banner for navigating to Integration Intelligence from Anypoint Insights"]
+
+. Meet the prerequisites in <<prereqs>>.
+//log in and navigate to Insights
+include::partial$include-nav-steps-no-permissions.adoc[]
+//navigate to Integration Intelligence from Insights
+include::partial$include-nav-integration-intelligence.adoc[tags="open-ii-from-insights"] 
+. Select a tab for the dashboard you want to examine:
+
+* <<apps, *Apps*>> (default)
+* <<apis, *APIs*>>
+* <<business-insights, *Business Insights*>>
+
+[[nav-salesforce]]
+=== Navigate to Dashboards from the Salesforce App Launcher
+
+Integration Intelligence resides in the Integration app. If you're connected to the Salesforce org that supports your MuleSoft telemetry data, you can navigate directly to your Integration Intelligence dashboards from the App Launcher:
+
+// Meet prerequisites. 
+. Meet the prerequisites in <<prereqs>>.
+. From your Salesforce environment, click image:ii-app-launcher-icon.png["",20,20] (App Launcher). 
+. From the App Launcher, find and select the *Integration* app. 
++
+The launcher opens to the app's *Intelligence* tab, which contains your dashboards.
+. Select a tab for the dashboard you want to examine:
+
+* <<apps, *Apps*>> (default)
+* <<apis, *APIs*>>
+* <<business-insights, *Business Insights*>>
+
+[[apps]]
+== Monitor Your Mule Apps
+
+Monitor Mule app metrics in Integration Intelligence:
+
+. Navigate to the *Apps* dashboard.
++
+For guidance, see <<nav-ii>>.
+//TODO: NO LOOKBACK IN THE UI AS OF 10/23
+//. Select the lookback period to examine from *Time Period*.
+//+ 
+//Only apps that have traffic during the selected period can produce metrics in the dashboard.
+//TODO: VERIFY and what's the DEFAULT? Defaults to TODO_TODO. Look back from X_UNITS to Y_UNITS. 
+. Optionally, narrow the scope of apps to review by:
+
+** Selecting one or more Mule apps from the *App* menu.
+** Selecting a deployment type, such as *CloudHub 2.0* or *Runtime Fabric*, from the *Deployment* menu.
+
+. Get app metrics:
+
+* *Apps by Deployment Type*: 
+Hover over the data in the chart to get the number of apps by type, such as apps deployed to CloudHub 2.0. 
+//TODO: WE LIST ALL APPS HERE? SUPER JUNKY LOOKING when there are many apps. 
+* *Top CPU Utilization*: 
+Monitor performance by identifying apps that are using the most CPU resources.
+* *Deployed Apps*: 
+Check average response time, error rate, and request volume of apps over the selected lookback period.
+
+//TODO: FILTERS NOT IMPLEMENTED (YET?): 
+//.. A Mule app type 
+//.. Select an error rate. 
+
+[[apis]]
+== Monitor Your APIs 
+
+Monitor API metrics in Integration Intelligence:
+
+. Navigate to the *API* dashboard. 
++
+For guidance, see <<nav-ii>>.
+//TODO: NOT AVAILABLE AS OF 10/23 IN ORGFARM; DOESN'T MATCH FIGMA
+//. Optionally, use filters to adjust the scope of APIs available to the dashboard. 
+//
+//* *API Name*
+//* *ID*
+//* *Version*
+//* *Endpoint*
+//* *# Clients*
+//* *Request Volume (7d)*
+. Get metrics on your APIs:
+
+* *Request Volume by Location*: 
+View the relative request volume by region, such as United States. 
+* *Top API Consumers by Endpoint*: 
+View relative API endpoint requests ordered by APIs with the most to least requests. 
+* *APIs*: 
+Get the number of clients and request volume for one or more versions of your APIs.
+. To get more detail, such as the number of requests, hover over the data in the charts. 
+
+[[business-insights]]
+== Get Business Insights
+
+Monitor business metrics in Integration Intelligence:
+
+. Navigate to the *Business Insights* dashboard. 
++
+For guidance, see <<nav-ii>>.
+//TODO: WHY CAN WE ONLY FILTER BY APPS AND NOT APIS? Policy violations 
+. Optionally, select one or more apps to review from the *App* menu.
+//TODO: LOOKBACK (Time Period menu not in the 10/23 orgfarm implementation) 
+. Get business insights for your organization:
+
+* *Top 10 Apps by Flow Count*:
+View apps by their relative flow counts. 
+//TODO: POLICY VIOLATIONS: NEED XREF TO the Policy Availability link. 
+* *Total Policy Violations*:
+View the number of policy violations. For a list of policies, see https://docs.mulesoft.com/policies/policies-availability-by-gateway#policy-availability[Policy Availability].
+* *App Usage: Flow, Message & Request Totals*:
+Get the flow count, number of messages, and request volume for selected apps. 
+* *Request Volume by Endpoint (Inbound|Outbound)*:
+Get the number of inbound and outbound requests from your apps. Hovering over the apps provides the number and type of request metric (for inbound requests, `mulesoft.app._inbound_.requests.sum`, and for outbound, `mulesoft.app._outbound_.requests.sum`). 
+
+
+[[more-actions]]
+== Copy, Download, or Explore Metrics
+
+Copy or download an image of any chart or table in a dashboard, or open a page dedicated to specific metrics. 
+
+. In a chart or table in a dashboard, click an empty area, and then hover to display a image:ii-menu-arrow-icon.png["",15,15] (menu arrow).
+. Click image:ii-menu-arrow-icon.png["",15,15] (menu arrow). 
+. Select an option:
+
+* *Copy Image*: Copies a screenshot of the chart or table to your clipboard.
+* *Download Image*: Downloads a screenshot of the chart or table to your local drive.
+* *Explore*: Opens a new tab that contains the selected chart or table on a full page. You can also add the chart to an existing dashboard or create a dashboard for the chart from this page.  
++
+In the Beta, any new dashboards that you create won't reside in Integration Intelligence. Instead, they'll be accessible from a Tableau Next workspace that you create.
+
+[[tableau-next]]
+== Review and Manage Metrics in Tableau Next
+
+Tableau Next is a composable AI analytics platform for turning your data into actionable insights. 
+
+Use Tableau Next to review and manage your organization's <<assets, assets>> (workspaces, data, semantic models, dashboards, and visualizations). Tableau Next also provides resources for learning to work with assets.
+
+//TODO_NEED_OVERVIEW_OF_INTENDED_USE_CASES
+
+. Navigate to Tableau Next from *Dashboard* in Integration Intelligence or from the Salesforce App Launcher:
+
+* When starting from the *Dashboard* header, click *View Data in Tableau Next*.
+* When starting from image:ii-app-launcher-icon.png["",20,20] (App Launcher), search for and click Tableau Next.
+. If you're new to Tableau Next, get an introduction to its features from the Getting Started video and other items under *Recommended for You*.
+. If you're familiar with Tableau Next, review and manage your organization's assets: [[assets]]
+
+* Workspaces for collecting and managing analytic assets, launching data analysis, and collaborating with your team
+* Data, including telemetry data from your Mule apps and APIs, hosted in Data Cloud as data lake objects
+* Semantic models that map data to standardized terms and logic for useful insights and that provide a way to create metrics
+* Visualizations that you can add to your own dashboards
+
+For more information, see https://help.salesforce.com/s/articleView?id=analytics.tua_reference.htm&type=5[About Tableau Next].

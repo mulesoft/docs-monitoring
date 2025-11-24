@@ -1,0 +1,30 @@
+= Integration Intelligence 
+:page-notice-banner-message: Beta Release: Integration Intelligence is in beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
+
+
+Use Integration Intelligence (Beta) to monitor, analyze, and troubleshoot MuleSoft telemetry data within the Salesforce ecosystem.
+
+Integration Intelligence provides:
+
+* Enhanced visibility into your MuleSoft telemetry data by creating a new data tier that overcomes limitations of endpoint monitoring.
+
+* Unified data storage by bringing your MuleSoft telemetry data, including metrics, logs, and traces, into Salesforce Data Cloud. This ensures better data retention and centralized access for analysis.
+
+* Targeted data ingestion for the specified Business Group. 
+
+* Advanced visualization with Tableau Next. Using Data Cloud and Tableau Next, you can transform how you analyze integration performance. Tableau Next serves as the primary experience tier for visualizing your data. 
+
+* Out-of-the-Box dashboards with preconfigured pages within a new Integration Intelligence Lightning App in Salesforce, featuring dashboards for:
+** App Insights, offering a unified view of application metrics, health, and usage.
+** API Insights, providing a unified view of all API metrics, including health and usage.
+** Logs and Traces, enabling you to view tabular pages of log events (including filtering capabilities for timeframe and log level).
+
+* Seamless cross-platform access with seamless login (SSO) removes barriers between Anypoint Platform and Salesforce, enabling faster access to troubleshooting data.
+
+* Single-click navigation means you can gain deeper insights directly from the Anypoint Platform Monitoring *Insights* page. 
+
+== What's Next
+
+* xref:integration-intelligence-setup.adoc[Setup]: Set up Integration Intelligence in a Salesforce organization, and enable Integration Intelligence in Anypoint Platform.
+* xref:integration-intelligence-dashboards.adoc[Dashboards]: Monitor Mule apps and APIs, and get business insights. 
+* xref:integration-intelligence-dashboards.adoc[Logs]: Troubleshoot issues reported in your logs.
