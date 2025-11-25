@@ -1,5 +1,5 @@
 = Using Built-in API Dashboards
-:page-alias: api-analytics-dashboard
+:page-aliases: api-analytics-dashboard
 :note-flex-deployments-not-supported: This metric is not supported for APIs deployed through Flex Gateway.
 
 The API dashboards provide charts to monitor API usage, which gives you insight into how your APIs are used and how they are performing.
