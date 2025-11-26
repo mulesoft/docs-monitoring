@@ -38,12 +38,6 @@ Application metrics::
 Enhanced API metrics::
 30 days. Data in the *Client Applications* tab is limited to 1 hour.
 
-Basic alerts for servers and Mule apps::
-Six per server or app. 
-
-Basic alerts for APIs::
-Six per API instance.
-
 [[advanced]]
 === Anypoint Integration Advanced Package Limits
 //Retain extra info on Advanced package
