@@ -146,10 +146,11 @@ The default field, `message`, does not require a field indicator in the query. H
 
 To search for an exact match to all tex in a _single-line_ log `message` field, you can use the `message.keyword:` prefix followed by a string in double quotatation marks. The string must exactly match all the log message's content. 
 
-Examples:
+Example:
 
-
-* 
+* message.keyword: "System started successfully"
++
+This query returns any logs with a message field that matches the entire value exactly, including spaces, punctuation, and case.
 
 The prefix `message.keyword:` makes the search evaluate the full message, including spaces, punctuation, and case.
 
