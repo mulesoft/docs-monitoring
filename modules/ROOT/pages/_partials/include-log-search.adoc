@@ -138,3 +138,37 @@ For example, to find logs with a message that contains "called the function Valu
 The default field, `message`, does not require a field indicator in the query. However, the `application` field must be specified before the `message` field in this query. 
 
 // end::search-fields[]
+
+// tag::exact-match[]
+[[exact-match]]
+
+== Exact-Match Searches for Messages
+
+To search for an exact match to all tex in a _single-line_ log `message` field, you can use the `message.keyword:` prefix followed by a string in double quotatation marks. The string must exactly match all the log message's content. 
+
+Examples:
+
+
+* 
+
+The prefix `message.keyword:` makes the search evaluate the full message, including spaces, punctuation, and case.
+
+// tag::regex[]
+[[regex]]
+== Regular Expressions for Messages
+
+Use a regular expressions with the `message.keyword:` prefix to search for log messages. 
+
+Examples:
+
+* `message.keyword: /Error code: [0-9]+/`
++
+This pattern matches any message that contains `Error code:` followed by a space and one or more digits ([0-9]+), such as `Error code: 12345`.
+* `message.keyword: /Stop.*/`
++
+The pattern matches any message that starts with `Stop` followed by zero or more characters (`.*`), such as `Stop processing` or `Stopping DefaultSchedulerService...`.
+* `message.keyword: /.*java.io.*/`
++
+This pattern matches any message that contains the substring `java.io`, such as `java.io.FileNotFoundException` or `Error in java.io stream`.
+* 
+// end::regex[]
