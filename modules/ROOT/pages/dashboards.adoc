@@ -48,4 +48,4 @@ For example, when using custom dashboards, you selected two app IDs at the same 
 
 * xref:app-dashboards.adoc[Built-in Application Dashboards]
 * xref:dashboard-custom-config.adoc[Configuring Custom Dashboards]
-* xref:api-analytics-dashboard.adoc[API Analytics Dashboard]
+* xref:api-dashboard.adoc[API Analytics Dashboard]

@@ -272,7 +272,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-4+| xref:api-analytics-dashboard.adoc[Built-in API Dashboards]
+4+| xref:api-dashboard.adoc[Built-in API Dashboards]
 
 |16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application
 |Yes
@@ -337,7 +337,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 4+| *Additional Anypoint Monitoring features*
 
-|xref:api-analytics-dashboard.adoc#anypoint-monitoring-archive-api[Anypoint Monitoring Archive API]
+|xref:api-dashboard.adoc#anypoint-monitoring-archive-api[Anypoint Monitoring Archive API]
 |No
 |No
 |Yes
