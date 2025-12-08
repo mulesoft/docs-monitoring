@@ -75,7 +75,7 @@ The launcher opens to the app's *Intelligence* tab, which contains your dashboar
 * <<business-insights, *Business Insights*>>
 
 [[apps]]
-== Monitor Your Mule Apps
+== Monitor Your Mule Apps in a Built-in Dashboard
 
 Monitor Mule app metrics in Integration Intelligence:
 
@@ -107,7 +107,7 @@ Check average response time, error rate, and request volume of apps over the sel
 //.. Select an error rate. 
 
 [[apis]]
-== Monitor Your APIs 
+== Monitor Your APIs in a Built-in Dashboard
 
 Monitor API metrics in Integration Intelligence:
 
@@ -134,7 +134,7 @@ Get the number of clients and request volume for one or more versions of your AP
 . To get more detail, such as the number of requests, hover over the data in the charts. 
 
 [[business-insights]]
-== Get Business Insights
+== Get Business Insights from a Built-in Dashboard
 
 Monitor business metrics in Integration Intelligence:
 
@@ -194,3 +194,27 @@ Use Tableau Next to review and manage your organization's <<assets, assets>> (wo
 * Visualizations that you can add to your own dashboards
 
 For more information, see https://help.salesforce.com/s/articleView?id=analytics.tua_reference.htm&type=5[About Tableau Next].
+
+[[dashboards-custom]]
+== Create Custom Dashboards in Tableau Next
+
+Create a custom dashboard for your metrics in Tableau Next from the Integration Intelligence *Dashboard* page. Custom dashboards are useful for tailoring your metrics experience to your organization's needs.
+
+TODO: NEED INTRO
+
+. From Anypoint Insights, navigate to Tableau Next.
+. Create a workspace with the name `...`
+//+
+//TODO: IS THE NAME ... required?
+. [Recommended] Import the semantic model.
+//+
+//TODO: HOW TO DO THIS.
+. Start creating your custom dashboard.
+//+
+//TODO: DO WE HAVE AN EXAMPLE?
+. 
+
+
+// Create Effective Dashboards With Tableau Next
+//https://help.salesforce.com/s/articleView?id=analytics.tua_create_dashboard.htm&type=5
+//
