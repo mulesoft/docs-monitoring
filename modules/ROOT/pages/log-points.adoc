@@ -23,83 +23,64 @@ The following Anypoint Connectors are available for use with the Log Points feat
 
 .Supported Connectors
 |===
-|Supported Anypoint Connectors |Supported for Mule 3.x |Supported for Mule 4.x
+|Supported Anypoint Connectors |Supported for Mule 4.x
 
 |Amazon S3
-|x
 |x
 
 |Amazon SQS
 |x
-|x
 
 |Database
-|x
 |x
 
 |Email
 |x
-|x
 
 |File
-|x
 |x
 
 |FTP
 |x
-|x
 
 |IBM MQ
-|
 |x
 
 |JMS
 |x
-|x
 
 |Microsoft Service Bus
-|x
 |x
 
 |MongoDB
 |x
-|x
 
 |MQ
-|x
 |x
 
 |Object Store
 |x
-|x
 
 |Salesforce
-|x
 |x
 
 |SFTP
 |x
-|x
 
 |Sockets
-|
 |x
 
-|TCP
-|x
-|
+//|TCP
+//|
 
-|UDP
-|x
-|
+//|UDP
+//|
 
 |VM Transport
 |x
-|x
 
-|WMQ
-|x
-|
+//|WMQ
+//|
 
 |===
 
@@ -132,8 +113,8 @@ For example, you can specify a cookie header in an API to see if an injection at
 
 To use this feature, you must have the following:
 
-//TODO: 3.8.5??? Check Mule version req.
-* Mule 3.8.5 or later
+
+* A xref:release-notes::mule-runtime/mule-esb.adoc[supported Mule version]
 
 include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
