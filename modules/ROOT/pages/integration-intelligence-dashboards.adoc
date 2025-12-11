@@ -177,7 +177,7 @@ In the Beta, any new dashboards that you create won't reside in Integration Inte
 
 Tableau Next is a composable AI analytics platform for turning your data into actionable insights. 
 
-Use Tableau Next to review and manage your organization's <<assets, assets>> (workspaces, data, semantic models, dashboards, and visualizations). Tableau Next also provides resources for learning to work with assets.
+Use Tableau Next to review and manage your organization's assets (workspaces, data, semantic models, dashboards, and visualizations). Tableau Next also provides resources for learning to work with assets.
 
 //TODO_NEED_OVERVIEW_OF_INTENDED_USE_CASES
 
