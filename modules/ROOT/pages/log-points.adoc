@@ -70,17 +70,17 @@ The following Anypoint Connectors are available for use with the Log Points feat
 |Sockets
 |x
 
-|TCP
-|
+//|TCP
+//|
 
-|UDP
-|
+//|UDP
+//|
 
 |VM Transport
 |x
 
-|WMQ
-|
+//|WMQ
+//|
 
 |===
 
