@@ -266,6 +266,7 @@ To disable log forwarding:
 //Hybrid, CH2, and CH
 include::partial$include-path-normalization.adoc[]
 
+[[tier-change]]
 == Restart After Changing Subscription Tiers
 
 For the _2.x version_ of Anypoint Monitoring agent, changes to your subscription tier require further action to continue collecting metrics. 
