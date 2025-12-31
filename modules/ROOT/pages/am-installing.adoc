@@ -266,6 +266,17 @@ To disable log forwarding:
 //Hybrid, CH2, and CH
 include::partial$include-path-normalization.adoc[]
 
+[[tier-change]]
+== Restart After Changing Subscription Tiers
+
+For the _2.x version_ of Anypoint Monitoring agent, changes to your subscription tier require further action to continue collecting metrics. 
+
+To trigger metrics collection through a 2.x agent after changing your subscription:
+
+. Stop Mule runtime engine.
+. Uninstall and reinstall the agent. 
+
+This action isn't required for the 3.x version of the agent. Version 3.x maintains persistent monitoring connectivity and adapts to backend infrastructure updates dynamically. 
 
 == See Also
 
