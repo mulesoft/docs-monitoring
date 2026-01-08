@@ -212,11 +212,21 @@ For more guidance, see the Tableau Next documentation https://help.salesforce.co
 . From your new workspace, click *Add Existing Asset*, and import the semantic model named *MuleSoft Observability Semantic Model*.
 +
 This model connects to the Integration Intelligence data that's required for  visualizations (such as charts) that you add to your dashboard.
+//TODO: WHEN DO/CAN/SHOULD WE CREATE THE DASHBOARD? NOW OR FROM TABLEAU NEXT? 
+// TODO: COMPARE WITH VIDEO   
 . Start creating your custom dashboard.
 //+
 //TODO: DO WE HAVE AN EXAMPLE?
-. Add visualization to your dashboard.
-//+
+. Add visualization from a semantic model to your dashboard.
+.. Click *Add+*, and select *Visualization*.
+.. In the *Add Visualization* dialog, select *From Semantic Model*.
+.. Select the *MuleSoft Observability Semantic Model*, and click *Create*.
+. Name the visualization, select the visualization type, and then add and configure fields for it.
+. Open your dashboard, and drag your new visualization onto the dashboard canvas.
+. Navigate back to Integration Intelligence to view your custom dashboard tab.
++
+Refresh the Integration Intelligence if the tab doesn't appear immediately.
+. Open the custom dashboard tab to view your new dashboard with the added visualization.
 //TODO: ADD LINK TO INFO ON HOW TO CREATE VISUALIZATIONS.
 
 For more information, see https://help.salesforce.com/s/articleView?id=analytics.tua_create.htm&type=5[Create Visualizations and Dashboards in Tableau Next].
