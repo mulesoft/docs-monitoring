@@ -1,4 +1,4 @@
-Anypoint Monitoring collects top occurring endpoints or operations for each data collection interval. Endpoints or operations that are not top occurring are sorted into a group called *Other*.
+Anypoint Monitoring collects top occurring endpoints or operations for each data collection interval. Endpoints or operations that are not top occurring are sorted into a group called *Other*. This grouping applies to built-in and custom metrics.
 
 In each data collection interval, top occurring endpoints or operations vary. An endpoint or operation that is top occurring in one interval might not be top occurring in the next.
 
