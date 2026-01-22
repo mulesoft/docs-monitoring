@@ -174,11 +174,11 @@ You can repeat these steps to add multiple key values.
 . Select the *Throw runtime exception on validation failure* option if you want the flow to break if invalid values are entered for the metric. If this option is left unchecked, an error is will be logged, but the flow won't break.
 . Proceed to <<get-metrics>>.
 
-== Example: Using DataWeave to Send Custom Metrics
-
-This example uses `custom-metrics:send` to submit custom metric values defined as variables in `ee:transform` and `ee:set-variable` components. 
-
 [[example-flow]]
+== Example: Using DataWeave When Sending Custom Metrics
+
+This flow example uses `custom-metrics:send` to submit custom metric values defined as variables in `ee:transform` and `ee:set-variable` components. 
+
 ----
 <flow name="custom-metrics-flow" >
   <http:listener doc:name="Listener" 
@@ -220,7 +220,7 @@ output application/java
   <logger level="INFO" doc:name="Logger" 
        message="custom metric processed"/>
 </flow>
-  ----
+----
 
 [[get-metrics]]
 == Get App Metrics in Anypoint Monitoring
