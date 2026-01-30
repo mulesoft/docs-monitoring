@@ -1,0 +1,96 @@
+= Monitoring Agentic Assets
+
+//TODO: CHECK IF API MANAGER OR ANY OTHER PRODUCT OPENS TO THIS PAGE
+In US and EU Cloud instances of Anypoint Platform, navigate from Agent Visualizer to view detailed metrics on agentic assets (agent, broker, or MCP server instances).
+
+* Agent: An autonomous software component that uses goals, context, and available tools (often via an LLM) to decide and execute actions on behalf of a user or system.
+* Broker: An intelligent routing service that coordinates task delegation across specialized agents in your enterprise. Brokers originate from MuleSoft and are referenced in the agent network YAML. 
+* MCP server: A service that implements the Model Context Protocol to expose tools and data to AI clients, enabling LLMs to invoke external capabilities through a standard interface.
+
+This example shows metrics for an instance of an agent. 
+
+[[dashboard-overview]]
+//don't change order of numbers in graphic or calloutlist
+image::metrics-agent.png["Metrics for an instance of an agent in Anypoint Monitoring"]
+
+[calloutlist]
+. Name of the instance
+. <<properties, Properties of the instance>> that correspond to properties in API Manager
+. <<agent, Agent metrics>>
+. Lookback period selected for the agent
+. <<refresh, Auto-refresh>> (subscription tier requirement)
+. Manual refresh option
+
+For information about Agent Visualizer, see xref:agent-visualizer::index.adoc[]. 
+
+== Find Metrics for Agentic Assets
+
+Agent Visualizer links to metrics for agentic assets (agent, broker, and MCP server instances) from nodes in the visualizer graph. 
+
+. In Agent Visualizer, click a node to open its detail card.
+. In *Performance and Health*, click *View Metrics* to view additional metrics in Anypoint Monitoring. 
+
+.. Optionally, set the lookback period (<<dashboard-overview, see 4>>) to different range.
++
+Defaults to the last 24 hours. Select a period from the last 30 minutes to the last 30 days.
+.. Review <<properties, properties>> and metrics for the <<agent, agent>>, <<broker, broker>>, or <<mcp-server, MCP server>> instance. 
+
+For more information about nodes in Agent Visualizer, see xref:agent-visualizer::index.adoc[].
+
+[[properties]]
+== Instance Properties
+
+Agent, broker, and MCP server pages display these properties:
+
+include::partial$include-insights-agentic-details.adoc[tag=metadata]
+
+[[agent]]
+== Agent Metrics 
+
+Agents protected by a Flex Gateway ingress policy (xref:policies::policies-availability-by-gateway.adoc[A2A Agent Card]) produce metrics in these charts:
+
+* *Total Received*: All requests to the agent
+* *Failed Requests*: Number of requests to the agent that failed
+* *Failed Request Rate*: Percentage of requests to the agent that failed 
+
+The agent's Flex Gateway ingress supports request counts. The charts reflect calls to the agent through that ingress.
+
+[[broker]]
+== Broker Metrics
+
+Metrics reported for brokers appear in these charts:
+
+* *Requests Received*:
+** *Total Received*: Number of requests to the broker
+** *Failed Requests*: Number of requests to the broker that failed
+** *Failed Request Rate*: Percentage of requests to the broker that failed 
+
+////
+NOT FOR GA
+* *Calls Sent*:
+* *A2A Calls Sent*: Number of requests the broker sent to agents
+* *MCP Calls Sent*: Number of requests the broker sent to MCP servers
+////
+
+[[mcp-server]]
+== MCP Server Metrics
+
+MCP servers protected by a Flex Gateway ingress policy (xref:policies::policies-availability-by-gateway.adoc[MCP Support]) produce metrics in these charts:
+
+* *Total Received*: All requests to the MCP server
+* *Failed Requests*: Number of requests to the MCP server that failed
+* *Failed Request Rate*: Percentage of requests to the MCP server that failed 
+
+The MCP server's Flex Gateway ingress supports request counts. The charts reflect calls to the MCP server through that ingress.
+
+[[refresh]]
+== Refresh Metrics
+
+//SUBSCRIPTION LEVELS APPLY TO AUTO-REFRESH
+
+Refresh metrics in either of these ways:
+
+* Manual refresh is available to all subscription levels.
+* Auto refresh is available to Advanced and Titanium subscriptions.
++
+Refresh cycles range from every 5 minutes to one time per day. 

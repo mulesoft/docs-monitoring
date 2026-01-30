@@ -108,7 +108,7 @@ image::dashboard-custom-metadata.png["Dashboard metadata"]
 [[charts_adding]]
 == Add Charts to a Custom Dashboard
 
-. In *Anypoint Monitoring*, click *Custom dashboards* from the sidebar.
+. In the sidebar, click *Custom dashboards* from the sidebar.
 +
 * To create a custom dashboard, click *+New Dashboard*.
 * If you need a new row for your chart, scroll down to find and click *Add Row*.
@@ -153,7 +153,7 @@ For more information about how to export app data, see xref:export-app-data-to-c
 == Delete a Custom Dashboard
 
 . From *Custom Dashboards*, open a custom dashboard.
-. From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select <<dup_delete_dashboard, Delete>>.
+. From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Delete*.
 . Confirm your deletion.
 
 == See Also

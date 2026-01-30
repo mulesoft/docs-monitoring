@@ -1,5 +1,4 @@
 = Monitoring Metrics from Anypoint Insights
-:page-notice-banner-message: For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights is a Beta release available to all subscription tiers.
 :selector-all-dashboards: This selector is available to all Insights dashboards.
 :download-chart-data: You can download most chart data to CSV or XSL.
 
@@ -22,7 +21,7 @@ image::insights.png["Anypoint Insights UI"]
 [calloutlist]
 . Dashboard that provides an overview of metrics across of your deployed Mule apps and APIs
 . Environment selector for your deployments (such as Sandbox or Production)
-. <<filter, Filters>> to narrow the data in charts
+. <<filters, Filters>> to narrow the data in charts
 . Performance <<charts-performance, metrics and trends>> across your deployed Mule apps and APIs
 . <<entities-list, List of each Mule app and API>> that you can click to display <<charts-detailed, detailed metrics>> on a specific deployment
 . Selector for the time range covered by the charts 
@@ -50,10 +49,8 @@ include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 * A Mule app or API (xref:gateway-home::index.adoc[Mule Gateway or Flex Gateway API]) running on a supported version of Mule runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
 
 ** CloudHub 2.0
-//TEMP INFO: Hyperforce 12/24 (W-17225983)
-** CloudHub (for US and EU clouds, in Advanced and Titanium tiers only)
-//TEMP INFO: Hyperforce 12/24 (W-17225983)
-** Hybrid (for US and EU clouds, in Advanced and Titanium tiers only)
+** CloudHub
+** Hybrid
 ** Runtime Fabric
 
 * For Canada Cloud and Japan Cloud: 
@@ -72,10 +69,9 @@ For guidance, see xref:hyperforce::configure-mule-hyperforce.adoc[].
 Monitor Mule apps and APIs within a selected business group and environment.
 
 . Meet the prerequisites in <<prereqs>>. 
-. Log in to Anypoint Platform, and navigate to Anypoint Monitoring. 
-//Nav step
-include::partial$include-entities.adoc[tags="open-insights"]
-. In Anypoint Insights, set your environment, such as Design, Production, or Sandbox. 
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+. Open Anypoint Insights, and set your environment, such as Design, Production, or Sandbox. 
 +
 For guidance, see <<change-environment>>.
 . To capture deployments for another business group you belong to in the *Entities List*, select the business group.
@@ -320,9 +316,10 @@ Number requests over time for the entities
 Check key metrics on individual Mule apps and APIs (_entity_), and click an entity's name to get detailed charts for the entity. 
 include::partial$include-entities.adoc[tags="entity-definition"]
 
-include::partial$include-insights-charts.adoc[tags="data-scope"] The entities belong to the selected <<change-bg, business group>>.
+include::partial$include-insights-charts.adoc[tags="data-scope"] 
+Only entities with traffic in the selected period and <<change-bg, business group>> appear in *Entities List*.
 
-*Entities List* provides these metrics:
+The list provides these metrics on entities:
 
 Entity Name:: 
 Name of the entity
@@ -500,6 +497,9 @@ include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+2]
 
 [[metrics-api]]
 == Metrics API
+
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-all-tiers"]
 
 Anypoint Insights uses Anypoint Monitoring Metrics API to submit queries for data used in charts. You can use this API to query data for your needs. 
 

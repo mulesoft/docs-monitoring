@@ -22,7 +22,7 @@ From any of the *Reports* tabs, you can:
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. From the Anypoint Monitoring sidebar, click *Reports*.
+. In the sidebar, click *Reports*.
 . In the *Environment* drop-down list, select the environment where the apps you want to view reports for are deployed, and click *View*. +
 The first time you view the reports page, the *Requests* report is displayed.
 . Select a time range from the drop-down list to view reports for a specific time range.
@@ -54,7 +54,7 @@ Click the *Performance* tab to view information about app performance metrics, i
 Click the *Failures* tab to view information about app request failures, including:
 
 * *Request Volume*: The total number of inbound requests to the app within the specified time range.
-* *Failed Requests*: The total number of failed inbound requests to the app for the specified time range.
+* *Failed Requests*: The total number of failed inbound requests to the app for the specified time range. An inbound request failure occurs when a Mule flow in your deployed Mule app throws an exception. Inbound failures differ from outbound failures, which indicate exceptions from outbound connector operations, such as from an HTTP Request operation in the Anypoint Connector for HTTP (HTTP Connector). Failure counts apply only to exceptions from the app, so a 4xx or 5xx reply code to a caller isn't a failure unless the reply is due to an unmanaged exception.
 * *Successful Requests*: The number of successful inbound requests to the app in the specified time range.
 
 === CPU Utilization
@@ -73,7 +73,7 @@ Click the *Memory Utilization* tab to view information about the memory utilizat
 
 You can export a report as a CSV file and save it locally for any of the tabs in the Reports page.
 
-. From the Anypoint Monitoring sidebar, click *Reports*.
+. In the sidebar, click *Reports*.
 . Click on the tab for the report to export.
 . (Optional) Apply a time filter to download reports for the specified time period.
 . In the upper right corner of the page, click *Export CSV*. +

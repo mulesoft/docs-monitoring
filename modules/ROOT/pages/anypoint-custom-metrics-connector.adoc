@@ -11,9 +11,11 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 You must also xref:am-installing.adoc[install the Anypoint Monitoring Agent].
 
+Review xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector] to understand connector configuration details. Connector configuration is required in your Mule app flow before you deploy or redeploy your app to a server or server cluster. 
+
 == Locate the Custom Metrics Connector
 
-From Anypoint Monitoring, click *Custom Metrics* to locate *Anypoint Monitoring Custom Metrics Connector*. Alternatively, you can search for the connector in Anypoint Exchange. 
+In the sidebar, click *Custom Metrics* to locate *Anypoint Monitoring Custom Metrics Connector*. Alternatively, you can search for the connector in Anypoint Exchange. 
 
 == Custom Metrics Best Practices
 
@@ -132,11 +134,25 @@ Due to internal database restrictions, you cannot use the following keywords to 
 
 . From Anypoint Monitoring:
 .. Click *Custom Metrics*.
-.. Click *Custom Metrics Connector* to open the connector on Anypoint Exchange.
+.. Click *Custom Metrics Connector* for the latest Mule version to open the connector on Anypoint Exchange.
 .. Click *Dependency Snippet*, and copy the Maven snippet.
-. In Anypoint Studio, add the snippet for the connector to your project's `pom.xml` file. 
+. In Anypoint Studio, add the `<dependency/>` snippet for the latest version of the connector to your Mule project's `pom.xml` file within the `<dependencies/>` element, for example:
++ 
+----
+<dependencies>
+...
+  <dependency>
+    <groupId>com.mule.modules</groupId>
+    <artifactId>mule-custom-metrics-extension</artifactId>
+    <version>2.3.1</version>
+    <classifier>mule-plugin</classifier>
+  </dependency>
+</dependencies>
+----
 +
-The connector is now available in the Studio palette.
+Your connector version value might differ from the example. After you add the dependency, the connector becomes available in the Studio palette. 
++
+If you encounter issues with this step, see xref:studio::add-modules-in-studio-to.adoc[] to add the connector in Studio from Exchange.
 . From the palette, drag the *Send Custom Metric* operation to the canvas for your project. 
 . Click the *Send Custom Metric* operation to add values for the operation. 
 . Add the dimension for the metric:
@@ -158,6 +174,54 @@ You can repeat these steps to add multiple key values.
 . Select the *Throw runtime exception on validation failure* option if you want the flow to break if invalid values are entered for the metric. If this option is left unchecked, an error is will be logged, but the flow won't break.
 . Proceed to <<get-metrics>>.
 
+[[example-flow]]
+== Example: Using DataWeave When Sending Custom Metrics
+
+This flow example uses `custom-metrics:send` to submit custom metric values defined as variables in `ee:transform` and `ee:set-variable` components. 
+
+----
+<flow name="custom-metrics-flow" >
+  <http:listener doc:name="Listener" 
+       config-ref="HTTP_Listener_config" 
+       path="test"/>
+  <logger level="INFO" doc:name="Logger" 
+       message="about to send a custom metric"/>
+  <ee:transform doc:name="Transform Message" >
+    <ee:message >
+    </ee:message>
+    <ee:variables >
+      <ee:set-variable variableName="metricFacts" ><![CDATA[%dw 2.0
+output application/json
+---
+[
+{
+  factName: "request_count",
+  value: 1
+}
+]]]></ee:set-variable>
+  <ee:set-variable variableName="metricProperties" ><![CDATA[%dw 2.0
+output application/java
+---
+[
+{
+      dimensionName: "response_type", 
+      value: "FAILED",
+      collapsible: true
+  }
+]]]></ee:set-variable>
+    </ee:variables>
+  </ee:transform>
+  <custom-metrics:send doc:name="Send Custom Metric" 
+      metricName="test-471243020" 
+      throwOnValidationFailure="true" 
+      facts="#[vars.metricFacts]" 
+      dimensions="#[vars.metricProperties]">
+  </custom-metrics:send>
+  <logger level="INFO" doc:name="Logger" 
+       message="custom metric processed"/>
+</flow>
+----
+
 [[get-metrics]]
 == Get App Metrics in Anypoint Monitoring
 
@@ -165,6 +229,9 @@ You can repeat these steps to add multiple key values.
 +
 For guidance, see xref:mule-runtime::deploying.adoc[].
 . In Anypoint Monitoring, xref:dashboard-custom-config.adoc[add a new custom dashboard] for the custom metric. 
+. Configure a chart to use your custom metric. 
++
+For guidance, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
 +
 This example shows a configuration for a graph that displays t-shirt sales.
 +

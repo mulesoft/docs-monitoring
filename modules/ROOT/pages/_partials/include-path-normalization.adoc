@@ -1,0 +1,58 @@
+Proper path normalization helps to ensure correct counting of requests to inbound HTTP endpoints in Runtime Manager and Anypoint Monitoring dashboards. Normalization enables charts in these dashboards to ignore insignificant differences, typically from dynamic variables, between URLs that make requests to the same endpoint. 
+
+For inbound HTTP endpoints, you can rely on the <<normalization-default, default path normalization>> or configure a <<normalization-custom, custom normalization pattern>> with the `anypoint.platform.config.analytics.endpoint.patterns` property.
+
+Supported deployment types:
+
+* CloudHub
+* CloudHub 2.0
+* Hybrid
+* Runtime Fabric
+
+[[normalization-default]]
+=== Default Path Normalization
+
+The default path normalization process follows these substitution patterns for:
+
+* Digits: Replace any part of the path containing a digit with `X`. For example, `/booking/abc123/pax/A1B2C4` becomes `/booking/X/pax/X`.
+* Uppercase segments: Replace any part of the path containing uppercase characters but no lower case characters with `X`. For example, `/booking/ABC/pax/A1B2C4` becomes `/booking/X/pax/X`.
+
+Parts that contain a mix of upper case and lower case characters remain the same. For example, `/booking/abc123/pax/PAisdf` remains `/booking/X/pax/PAisdf`.
+
+[[normalization-custom]]
+=== Configure a Custom Path Normalization Pattern
+
+To override the default behavior, you can configure `anypoint.platform.config.analytics.endpoint.patterns` on a running Mule app in Runtime Manager or when deploying a new application: 
+
+. Log in to your Anypoint Platform account and select *Runtime Manager*.
+. Either click *Deploy Application* for a new deployment, or select an existing application and click *Manage Application*.
+. Navigate to the *Properties* tab in the *Settings* section.
+. Under *New Key*, add `anypoint.platform.config.analytics.endpoint.patterns`.
+. Under *New Value*, add the pattern for your dynamic endpoint, for example, `/api/V1/proc/payments/{paymentId}/cancel`.
+. Click *Apply Changes*.
+
+By defining an explicit pattern, you can ensure consistent normalization of dynamic endpoints. All incoming requests matching the pattern are correctly normalized to a single endpoint.
+
+For example, provide a pattern that identifies the variable part. 
+
+For variables, you can use:
+
+* `{}` with an empty string
+* `{string}` with a string value
+
+For example, assume property values that follow these patterns:
+
+* `/v1/payments/{paymentId}/cancel` (single property)
+* `/v1/order/{orderId},/v1/order/{}/cancel` (multiple properties separated by `,`)
+
+These incoming requests match one of the defined patterns:
+
+* `/v1/order/jAXjh`
+* `/v1/payments/CAjjAXjh/cancel`
+* `/v1/order/jAXjh/cancel`
+
+Normalized results for the example requests:
+
+* `/v1/payments/X/cancel`
+* `/v1/order/X`
+* `/v1/order/X/cancel`

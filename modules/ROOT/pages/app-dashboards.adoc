@@ -23,7 +23,7 @@ Built-in and custom dashboards are available from Anypoint Monitoring. You can v
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. From the sidebar, click *Built-in dashboards*. 
+. In the sidebar, click *Built-in dashboards*. 
 . Select the *Environment* and *Resource name* for the app or API to view the corresponding dashboard.
 . Click *View*. +
 The built-in dashboard for the application or API is displayed.
@@ -549,7 +549,7 @@ The response time of the 99th, 90th, 75th, and 50th percentile of outbound reque
 [[failures-charts]]
 === Failures
 
-_Inbound failed requests_ occur when there are exceptions in Mule flows. In Mule 3 versions, these requests prompt 400- and 500-errors.
+_Inbound failed requests_ occur when there are exceptions in Mule flows. 
 
 _Outbound failed requests_ occur when outbound connectors are invoked and exceptions occur. These exceptions prompt 400- and 500-status codes. Outbound failed requests may also appear for other types of exceptions.
 
@@ -693,7 +693,7 @@ include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
 
 include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
 
-Setup requirements change based on your app deployment. Some deployment types require you to enable header injection or modify how Anypoint Visualizer collects data. For more information, see the documentation for each deployment type:
+Setup requirements change based on your app deployment. Some deployment types require you to enable header injection or modify how API Visualizer (formerly Anypoint Visualizer) collects data. For more information, see the documentation for each deployment type:
 
 * xref:visualizer::cloudhub-setup.adoc[CloudHub Setup]
 * xref:visualizer::runtime-fabric-setup.adoc[Runtime Fabric Setup]
@@ -701,7 +701,7 @@ Setup requirements change based on your app deployment. Some deployment types re
 
 The chart on the *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app, which must be started. The chart shows only direct callers and callees for the selected app. The connections are based on the selected time range, with a max of the most recent seven days.
 
-You can click *Metrics* to see statistics, such as average response time and failures, related to the app you selected. For more information about metrics in Anypoint Visualizer, see xref:visualizer::troubleshooting-visualization.adoc#choosing-your-metric[Choosing Your Metric].
+You can click *Metrics* to see statistics, such as average response time and failures, related to the app you selected. For more information about metrics in API Visualizer, see xref:visualizer::troubleshooting-visualization.adoc#choosing-your-metric[Choosing Your Metric].
 
 [[endpoint-operation-metrics]]
 ==  Endpoint and Operation Metrics Collection (Other Group)

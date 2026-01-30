@@ -1,11 +1,10 @@
 = Exporting App Data to a CSV File
-:page-info-pills: anypoint-pricing-titanium
 
 In built-in and custom dashboards, you can export app data to a CSV file, which you can then use in other applications. The data export works on an individual chart level, so only data in the specified chart is exported. When you apply a filter to a dashboard, the exported data includes only the data included in the filter you set. For example, if you apply a time period filter, only the data for that time period is exported.
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. From the Anypoint Monitoring sidebar, click *Built-in dashboards* or *Custom dashboards*.
+. In the sidebar, click *Built-in dashboards* or *Custom dashboards*.
 . Select the application for which to download the data.
 . Specify the time range for the data to download.
 . In the chart that contains the data to download, click the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Export CSV*.

@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Monitoring provides data on Mule apps that are running on either CloudHub or an on-premises server. It is part of the Management Center in Anypoint Platform, and you need to have the <<required_permission>> to use it.
+Anypoint Monitoring provides data on Mule apps, APIs, and  instances of agents, brokers, and MCP servers.
 
 [NOTE]
 Functional Monitoring is covered in xref:api-functional-monitoring::index.adoc[API Functional Monitoring].
@@ -17,12 +17,9 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 +
-If you do not see Anypoint Monitoring or are unable to use it, it might be a permissions issue. See <<required_permission>>.
-+
-. From Anypoint Monitoring, you can find and use the monitoring tools:
-+
-* xref:logs.adoc[Using Logs]
-* xref:alerts.adoc[Alerts]
+If you do not find *Monitoring* or are unable to use Anypoint Monitoring, check your permissions (<<required_permission>>).
+
+. From the sidebar, you can find xref:index.adoc#features[Anypoint Monitoring features].
 
 == Configurations
 
@@ -34,9 +31,7 @@ Custom dashboards and alerts require configuration before you can use them. For 
 [[required_permission]]
 == Required Permission
 
-To use Anypoint Monitoring, you need this permission:
-
-* Anypoint Monitoring User
+xref:access-management::permissions-by-product.adoc#monitoring[Monitoring permissions] lists user and administrator permissions.
 
 Typically, administrators set permissions through Access Management. See xref:access-management::users.adoc#granting-permissions-and-roles-to-users[Granting Permissions and Roles to Users].
 

@@ -1,7 +1,7 @@
-= Setting Up Basic Alerts in Anypoint Monitoring
+= Setting Up Basic Alerts in Anypoint Monitoring (US and EU)
 :page-info-pills: anypoint-pricing-core
 
-You can set up basic alerts for servers, Mule apps, and APIs. Alerts trigger email notifications when a metric you are measuring passes a specified threshold.
+In the https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, you can set up basic alerts for servers, Mule apps, and APIs. Alerts trigger email notifications when a metric you are measuring passes a specified threshold.
 
 You can create basic alerts for the following metrics:
 
@@ -27,8 +27,9 @@ When you create a basic alert, you can select a source for the basic alert, conf
 
 To create a basic alert:
 
-. Navigate to Anypoint Monitoring.
-. From the sidebar, click *Alerts*.
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+. In the sidebar, click *Alerts*.
 . Click the *+ New Alerts* button.
 . Click *Basic alert*.
 . In the *Add basic alert* window, enter the information required to create your basic alert:
@@ -54,6 +55,8 @@ Name of the environment where the resource is deployed
 * *Resource name* (apps), *Server name* (servers), *API* (APIs)
 +
 Application, server, or API to apply the alert to
++
+For APIs, you must also provide an API version. Only active versions of an API are selectable. Inactive APIs do not submit metrics. 
 * *Metric*
 +
 Condition that triggers the alert
@@ -325,7 +328,6 @@ For the description of each variable, see <<alert-variables>>.
 
 Available values are `OK` or `Alerting`.
 |`${api}`| Name of the API that triggers the alert
-|`${comparison}`| Above, above or equal, equal, below or equal, below
 |`${condition}`|Metric for which the alert is triggered
 |`${dashboardLink}`|URL that points to the built-in dashboard for the app or API that triggers the alert
 |`${environment}`|Name of the environment in which the resource is deployed

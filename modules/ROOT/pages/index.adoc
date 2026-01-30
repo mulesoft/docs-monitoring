@@ -27,7 +27,6 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 
 |{empty}
 
-* <<alerts, Alerts>>
 * xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
 * <<dashboards, Dashboards>> 
 * xref:tools.adoc[Notifications] 
@@ -35,6 +34,14 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 * xref:tools.adoc[Tools]
 | Yes
 | No
+| Yes
+| Yes
+
+|{empty}
+
+<<alerts, Alerts>>
+| Yes
+| Yes
 | Yes
 | Yes
 
@@ -51,14 +58,21 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 | No
 
 
-| <<logging, Log management>>
+| <<logging, Logging features>>
 | Yes
-| Yes (<<single-app, limited log search>>)
+| Yes
 | Yes
 | No
 
 |{empty}
   xref:telemetry-exporter.adoc[Telemetry exports]
+| Yes
+| Yes
+| No
+| No
+
+|{empty}
+  xref:traces.adoc[Traces]
 | Yes
 | No
 | No
@@ -74,8 +88,7 @@ For more information about MuleSoft Government Cloud and Anypoint Platform Priva
 
 Monitor performance data and issues across your deployed Mule apps and APIs (_entities_), and get detailed insights on specific deployments. 
 
-//TEMP INFO: Hyperforce 12/24 (W-17225983) & Beta all tiers EU US March 2025
-For Japan Cloud and Canada Cloud instances of Anypoint Platform, Anypoint Insights is available in the Starter package. For US and EU clouds, Anypoint Insights is a Beta release available to all <<billing, subscription tiers>>.
+
 See xref:anypoint-insights.adoc[].
 
 [[dashboards]]
@@ -99,11 +112,9 @@ See xref:dashboards.adoc[].
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-core"]
 
-Track trends and add your own alerts to identify abnormal behavior and problems in your app network.
+Configure alerts to receive notifications about abnormal behavior and problems in your app network.
 
-image::intro-alerts.png["Alerts in Anypoint Monitoring"]
-
-You can trigger alerts based on rules (or thresholds) and policies for your resources. When these thresholds are crossed for a certain period of time, you can receive notification to take action. The method of notification depends on the severity of the alert that you define.
+You can trigger alert notifications based on thresholds you define for your Mule apps and APIs. 
 
 See xref:alerts.adoc[].
 
@@ -117,13 +128,11 @@ Manage logs and log data for your deployments with these logging features:
 * <<raw-data-downloads>>
 
 [[log-search]]
-==== Log Search
+==== Log Searches
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
 
-Search across log files, including archived logs to find information and events based on a specific query. Logs includes raw log and event data from across the app network so that you can pinpoint the root cause of a problem.
-
-image::intro-logs.png["Logs in Anypoint Monitoring"]
+Search for and review logs from across your deployed applications. 
 
 See xref:logs.adoc[].
 
@@ -131,7 +140,7 @@ See xref:logs.adoc[].
 //single-app logs:
 [NOTE]
 ====
-Log search limited to individual apps is available in Runtime Manager for apps deployed to CloudHub and CloudHub 2.0. You can navigate to Runtime Manager, open the app, and then click *Logs*. 
+Log search limited to individual apps is available to all subscription tiers in Runtime Manager for apps deployed to CloudHub and CloudHub 2.0. You can navigate to Runtime Manager, open the app, and then click *Logs*. 
 
 The log aggregator system holds raw operational data and records events that occur in the operating system or Mule app. Log aggregation compiles, organizes, and indexes log files to facilitate management, searching, and analysis. Aggregated logs complement the monitoring system by helping you identify causes of operational issues and investigate failures.
 
@@ -143,7 +152,7 @@ For more logging options, see xref:runtime-manager::deployment-strategies.adoc#l
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-Generate logs for Mule apps and APIs in real-time and without writing code.
+In the US and EU Clouds, generate logs for Mule apps and APIs in real-time and without writing code.
 
 See xref:log-points.adoc[].
 
@@ -152,7 +161,7 @@ See xref:log-points.adoc[].
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-Download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
+In the US and EU Clouds, download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
 
 See xref:raw-data.adoc[].
 
@@ -253,7 +262,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-|<<note-visualizer, Anypoint Visualizer>>: *Application Network* tab for the Anypoint Visualizer app network integration 
+|<<note-visualizer, API Visualizer>>: *Application Network* tab for the API Visualizer app network integration 
 |No
 |No
 |Yes
@@ -263,7 +272,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-4+| xref:api-analytics-dashboard.adoc[Built-in API Dashboards]
+4+| xref:api-dashboard.adoc[Built-in API Dashboards]
 
 |16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application
 |Yes
@@ -299,15 +308,15 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |Yes
 |Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
 
-|xref:advanced-alerts.adoc[Advanced alerts]
+|xref:custom-dashboard-alerts.adoc[Alerts for Custom Dashboards]
 |No
 |No
 |Yes
 
 4+| *Log Management*
 
-|xref:log-search-query-syntax.adoc[Log search]
-|Yes (single application only)
+|Log search
+|Yes (<<single-app, single application only in Runtime Manager>>)
 |No
 |Yes (cross-application)
 
@@ -328,7 +337,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 4+| *Additional Anypoint Monitoring features*
 
-|xref:api-analytics-dashboard.adoc#anypoint-monitoring-archive-api[Anypoint Monitoring Archive API]
+|xref:api-dashboard.adoc#anypoint-monitoring-archive-api[Anypoint Monitoring Archive API]
 |No
 |No
 |Yes
@@ -346,8 +355,10 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |===
 
 [[note-visualizer]]
-NOTE: Anypoint Visualizer app network integration refers to features in the *Application Network* tab within Anypoint Monitoring. Anypoint Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
-
+NOTE:
+--
+API Visualizer (formerly Anypoint Visualizer) app network integration refers to features in the *Application Network* tab within Anypoint Monitoring. API Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
+--
 
 == Use Cases
 
@@ -358,7 +369,7 @@ DevOps engineer Gary maintains a series of APIs related to a transaction process
 
 * Plan resource allocation across the app network 
 +
-IT specialist Peyton uses Anypoint Visualizer to view their app network. For CloudHub and Anypoint Runtime Fabric apps, Peyton sees CPU and memory utilization and idle capacity using integrated Anypoint Monitoring.
+IT specialist Peyton uses API Visualizer to view their app network. For CloudHub and Anypoint Runtime Fabric apps, Peyton sees CPU and memory utilization and idle capacity using integrated Anypoint Monitoring.
 
 * Pinpoint root causes of issues +
 Support team member Darius receives a call that the system is running slowly. He examines dashboards and checks response times, failed requests, and so on. He identifies that the backend is not scaling for the number of requests; he can add capacity for Mule apps, or he can throttle requests for other backend issues.

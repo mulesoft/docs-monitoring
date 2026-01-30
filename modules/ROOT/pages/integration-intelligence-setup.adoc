@@ -1,0 +1,44 @@
+= Setting Up Integration Intelligence
+:page-notice-banner-message: Beta Release: Integration Intelligence is in beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
+
+Integration Intelligence enhances monitoring, analysis, and troubleshooting of MuleSoft integrations through AI-powered capabilities.
+
+[[before-you-begin]]
+== Before You Begin
+
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=prereqs]
+
+[[ii-salesforce-setup]]
+== Set Up Integration Intelligence in the Connected Salesforce Organization
+
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=ii-salesforce-setup]
+
+[[set-up-data-cloud]]
+=== Set up Data Cloud
+
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=set-up-data-cloud]
+
+[[connect-with-anypoint-platform]]
+=== Complete the Connection with Anypoint Platform
+
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=connect-with-anypoint-platform]
+
+[[enable-telemetry-data]]
+=== Enable Telemetry Data
+
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=enable-telemetry-data]
+
+[[enable-seamless-login]]
+=== Enable Seamless Login for Anypoint Platform Users
+
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=enable-seamless-login]
+
+[[install-integration-intelligence]]
+=== Install Integration Intelligence
+
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=install-integration-intelligence]
+
+[[enable-ii-in-anypoint-platform]]
+== Enable Integration Intelligence in Anypoint Platform
+
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=enable-ii-in-anypoint-platform]
