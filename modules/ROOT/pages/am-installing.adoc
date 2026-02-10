@@ -141,7 +141,26 @@ include::partial$include-am-setup.adoc[tag="am-installer-setup"]
 ** You can call the installation script with the `-x` argument to skip this prompt. If you skip the prompt, Anypoint Monitoring is not installed as a service.
 * You cannot install the Anypoint Monitoring agent on a server that has an existing filebeat instance running.
 * When you install the Anypoint Monitoring agent on a hybrid server in a server group, use Runtime Manager to restart the server to enable Anypoint Monitoring to begin collecting metrics.
-* To change the telemetry listening port (defaults to port `8888`) when installing the agent, use the `-t` parameter. Example: `$ ./install -t 8889` 
+* To change the telemetry listening port (defaults to port `8888`), see <<port-change>>. 
+
+[[change-port]]
+=== Set Listening Ports
+
+You can set the agent's telemetry listening port (defaults to port `8888`) when running the installer. When installing as a service on a single Linux host, you can configure multiple ports by installing separate instances of the agent. 
+ 
+* For a single port, use the `-t` parameter. Example: `$ ./install -t 8889` 
+* For multi-port configuration on a single Linux host when installing as a service, each instance of the agent installed to the host must use a unique port and installation name. You can use the default configuration for the first installation, and use of parameters to set a port or installation name is optional. For subsequent installations of the agent to the host, you must use both the `-t` and `-n` parameters.
++
+Example:  `$ ./install -t <port> -n <installation-name>`
++
+The installer prompts you for a unique installation name and port.
+
+* `-t`: For setting a port number to an integer between 1024 and 65535. Defaults to 8888.
++
+Required only when installing second and subsequent instances of the agent to a single Linux host. 
+* `-n`: For setting a unique name that becomes part service name. The name must be less than or equal to (<=) eight alphanumeric characters. Defaults to an unnamed port.
++
+Required only when installing second and subsequent instances of the agent to a single Linux host. 
 
 [[proxy-settings]]
 == Proxy Settings
