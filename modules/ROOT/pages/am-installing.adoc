@@ -143,7 +143,7 @@ include::partial$include-am-setup.adoc[tag="am-installer-setup"]
 * When you install the Anypoint Monitoring agent on a hybrid server in a server group, use Runtime Manager to restart the server to enable Anypoint Monitoring to begin collecting metrics.
 * To change the telemetry listening port (defaults to port `8888`), see <<port-change>>. 
 
-[[change-port]]
+[[port-change]]
 === Set Listening Ports
 
 When you install an agent instance, you can set the telemetry listening port. The default port is 8888.
