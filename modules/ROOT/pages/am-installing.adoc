@@ -161,7 +161,7 @@ The installer prompts you for a unique port and installation name.
 Parameters:
 
 * `-t`: Sets the port number to an integer from 1024 through 65535. The default is 8888. 
-* `-n`: Sets a unique name that becomes part of the service name. The name must be no more than eight alphanumeric characters. The default is an unnamed port. Required for the second and subsequent agent instances on a single Linux host. Supported with `t` only for service installations.
+* `-n`: Sets a unique name that becomes part of the service name. The name must be no more than eight alphanumeric characters. The default is an unnamed port. Required for the second and subsequent agent instances on a single Linux host. Supported with `-t` only for service installations.
 
 [[proxy-settings]]
 == Proxy Settings
