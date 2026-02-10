@@ -151,13 +151,13 @@ Example: `$ ./install -t 8889`.
 
 On a Linux host, you can install multiple agent instances:
 
-* To install multiple agent instances, assign a unique port to each agent instance:
+* Non-service installations: To install multiple agent instances, assign a unique port to each agent instance.
 +
 Set the `-t` parameter to an integer from 1024 through 65535.
 +
 Example: `$ ./install -t 8889`
 
-* To install multiple agent instances as services, assign a unique port and installation name to each instance:
+* Service installations: To install multiple agent instances as services, assign a unique port and installation name to each instance.
 
 ** For the first service installation, you can use the default configuration. The `-t` and `-n` parameters are optional.
 ** For subsequent service installations, you must use both `-t` and `-n`. Example: `$ ./install -t <port> -n <installation-name>`
