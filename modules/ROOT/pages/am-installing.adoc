@@ -160,7 +160,9 @@ Example: `$ ./install -t 8889`
 * Service installations: To install multiple agent instances as services, assign a unique port and installation name to each instance.
 
 ** For the first service installation, you can use the default configuration. The `-t` and `-n` parameters are optional.
-** For subsequent service installations, you must use both `-t` and `-n`. Example: `$ ./install -t <port> -n <installation-name>`
+** For subsequent service installations, you must use both `-t` and `-n`. 
++
+Example: `$ ./install -t <port> -n <installation-name>`
 +
 The installer prompts you for a unique port and installation name.
 
