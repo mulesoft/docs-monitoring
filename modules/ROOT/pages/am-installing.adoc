@@ -153,7 +153,9 @@ On a Linux host, you can install multiple agent instances:
 
 * To install multiple agent instances, assign a unique port to each agent instance:
 +
-To set a custom port, use the `-t` parameter when installing. Example: `$ ./install -t 8889`
+Set the `-t` parameter to an integer from 1024 through 65535.
++
+Example: `$ ./install -t 8889`
 
 * To install multiple agent instances as services, assign a unique port and installation name to each agent instance:
 
