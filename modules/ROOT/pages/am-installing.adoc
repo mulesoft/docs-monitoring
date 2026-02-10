@@ -146,21 +146,22 @@ include::partial$include-am-setup.adoc[tag="am-installer-setup"]
 [[change-port]]
 === Set Listening Ports
 
-You can set the agent's telemetry listening port (defaults to port `8888`) when running the installer. When installing as a service on a single Linux host, you can configure multiple ports by installing separate instances of the agent. 
- 
-* For a single port, use the `-t` parameter. Example: `$ ./install -t 8889` 
-* For multi-port configuration on a single Linux host when installing as a service, each instance of the agent installed to the host must use a unique port and installation name. You can use the default configuration for the first installation, and use of parameters to set a port or installation name is optional. For subsequent installations of the agent to the host, you must use both the `-t` and `-n` parameters.
-+
-Example:  `$ ./install -t <port> -n <installation-name>`
-+
-The installer prompts you for a unique installation name and port.
+When you install an agent instance, you can set the telemetry listening port. The default port is 8888.
 
-* `-t`: For setting a port number to an integer between 1024 and 65535. Defaults to 8888.
+To use multiple ports on a single Linux host, install separate agent instances as services. Each instance must have a unique installation name and a free port.
+
+* To set a custom port, use the `-t` parameter. Example: `$ ./install -t 8889`
+* To configure multiple ports on a single Linux host, assign a unique port and installation name to each agent instance. The agent must be installed as a service.
+
+** For the first service installation, you can use the default configuration. The `-t` and `-n` parameters are optional.
+** For subsequent service installations, you must use both `-t` and `-n`. Example: `$ ./install -t <port> -n <installation-name>`
 +
-Required only when installing second and subsequent instances of the agent to a single Linux host. 
-* `-n`: For setting a unique name that becomes part service name. The name must be less than or equal to (<=) eight alphanumeric characters. Defaults to an unnamed port.
-+
-Required only when installing second and subsequent instances of the agent to a single Linux host. 
+The installer prompts you for a unique port and installation name.
+
+Parameters:
+
+* `-t`: Sets the port number to an integer from 1024 through 65535. The default is 8888. 
+* `-n`: Sets a unique name that becomes part of the service name. The name must be no more than eight alphanumeric characters. The default is an unnamed port. Required for the second and subsequent agent instances on a single Linux host. Supported with `t` only for service installations.
 
 [[proxy-settings]]
 == Proxy Settings
