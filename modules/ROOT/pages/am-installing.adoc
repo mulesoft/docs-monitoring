@@ -141,21 +141,25 @@ include::partial$include-am-setup.adoc[tag="am-installer-setup"]
 ** You can call the installation script with the `-x` argument to skip this prompt. If you skip the prompt, Anypoint Monitoring is not installed as a service.
 * You cannot install the Anypoint Monitoring agent on a server that has an existing filebeat instance running.
 * When you install the Anypoint Monitoring agent on a hybrid server in a server group, use Runtime Manager to restart the server to enable Anypoint Monitoring to begin collecting metrics.
-* To change the telemetry listening port (defaults to port `8888`) or provide multiple ports on a Linux host, see <<port-change>>. 
+* To change the telemetry listening port (defaults to port `8888`), set the `-t` parameter to an integer from 1024 through 65535. 
++
+Example: `$ ./install -t 8889`. 
+* To install multiple instances of the agent on a Linux host, see <<install-multiple-agents>>. 
 
-[[port-change]]
-=== Set Listening Ports
+[[install-multiple-agents]]
+=== Install Multiple Agents to a Linux Host
 
-When you install an agent instance, you can set the telemetry listening port. The default port is 8888.
+On a Linux host, you can install multiple agent instances:
 
-To use multiple ports on a single Linux host, install separate agent instances as services. Each instance must have a unique installation name and a free port.
+* To install multiple agent instances, assign a unique port to each agent instance:
++
+To set a custom port, use the `-t` parameter when installing. Example: `$ ./install -t 8889`
 
-* To set a custom port, use the `-t` parameter. Example: `$ ./install -t 8889`
-* To configure multiple ports on a single Linux host, assign a unique port and installation name to each agent instance. The agent must be installed as a service.
+* To install multiple agent instances as services, assign a unique port and installation name to each agent instance:
 
 ** For the first service installation, you can use the default configuration. The `-t` and `-n` parameters are optional.
 ** For subsequent service installations, you must use both `-t` and `-n`. Example: `$ ./install -t <port> -n <installation-name>`
-+
+
 The installer prompts you for a unique port and installation name.
 
 Parameters:
