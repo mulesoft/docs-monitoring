@@ -159,7 +159,7 @@ To set a custom port, use the `-t` parameter when installing. Example: `$ ./inst
 
 ** For the first service installation, you can use the default configuration. The `-t` and `-n` parameters are optional.
 ** For subsequent service installations, you must use both `-t` and `-n`. Example: `$ ./install -t <port> -n <installation-name>`
-
++
 The installer prompts you for a unique port and installation name.
 
 Parameters:
