@@ -22,6 +22,8 @@ Integration Intelligence provides:
 ** API Insights, providing a unified view of all API metrics, including health and usage.
 ** Logs and Traces, enabling you to view tabular pages of log events (including filtering capabilities for timeframe and log level).
 
+* Targeted data ingestion for the specified Business Group.
+
 * Single-click navigation means you can gain deeper insights directly from the Anypoint Platform Monitoring *Insights* page. 
 
 == What's Next
