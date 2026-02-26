@@ -1,14 +1,14 @@
 = Integration Intelligence 
 
-Use Integration Intelligence to extend the value of MuleSoft telemetry beyond real-time monitoring. Together with Anypoint Monitoring and the Diagnostics Agent, it adds long-term analytics and actionable insight so you maximize uptime today and optimize performance over time.
+Use Integration Intelligence to extend the value of MuleSoft telemetry beyond real-time monitoring. Together with Anypoint Monitoring and the Diagnostics Agent, it adds long-term analytics and actionable insight so that you maximize uptime today and optimize performance over time.
 
 Integration Intelligence provides:
 
-* Long-term performance visibility through deeper data retention in Salesforce Data 360. View historical context, trends, seasonality, and recurring issues that real-time monitoring alone cannot surface, so you can identify systemic patterns.
+* Gain long-term performance visibility through deeper data retention in Salesforce Data 360. View historical context, trends, seasonality, and recurring issues that real-time monitoring alone cannot surface, so that you can identify systemic patterns.
 
 * Unified data storage by bringing your MuleSoft telemetry data, including metrics, logs, and traces, into Salesforce Data 360. This ensures better data retention and centralized access for analysis.
 
-* Actionable insight through customizable dashboards with Tableau Next. Build views that matter to your team for operational efficiency, partner performance, and reliability. Preconfigured pages for App Insights, API Insights, and Logs and Traces in the Integration Intelligence Lightning App give you a starting point.
+* Get actionable insight through customizable dashboards with Tableau Next. Build views that matter to your team for operational efficiency, partner performance, and reliability. Preconfigured pages for App Insights, API Insights, and Logs and Traces in the Integration Intelligence Lightning App give you a starting point.
 
 * Advanced visualization with Tableau Next. Using Data Cloud and Tableau Next, you can transform how you analyze integration performance. Tableau Next serves as the primary experience tier for visualizing your data. 
 
