@@ -31,3 +31,7 @@ Integration Intelligence provides:
 * xref:integration-intelligence-setup.adoc[Setup]: Set up Integration Intelligence in a Salesforce organization, and enable Integration Intelligence in Anypoint Platform.
 * xref:integration-intelligence-dashboards.adoc[Dashboards]: Monitor Mule apps and APIs, and get business insights. 
 * xref:integration-intelligence-dashboards.adoc[Logs]: Troubleshoot issues reported in your logs.
+
+== See Also
+
+xref:runtime-manager::troubleshooting#troubleshooting-applications[Troubleshooting with MuleSoft Diagnostics Agent]
