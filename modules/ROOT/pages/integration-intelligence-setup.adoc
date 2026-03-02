@@ -43,4 +43,4 @@ include::access-management::partial$include-integration-intelligence-setup.adoc[
 
 == Next Steps
 
-xref:integration-intelligence-dashboards.adoc[Use dashboards] in the Salesforce ecosystem to monitor Mule app and API metrics, and get insights into related business data.]
+xref:integration-intelligence-dashboards.adoc[Use dashboards] in the Salesforce ecosystem to monitor Mule app and API metrics, and get insights into related business data.
