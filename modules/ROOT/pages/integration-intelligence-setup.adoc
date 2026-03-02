@@ -5,41 +5,41 @@ Integration Intelligence enhances monitoring, analysis, and troubleshooting of M
 [[before-you-begin]]
 == Before You Begin
 
-include::partial$include-integration-intelligence-setup.adoc[tag=prereqs]
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=prereqs]
 
 [[ii-salesforce-setup]]
 == Integration Intelligence High-Level Flow
 
-include::partial$include-integration-intelligence-setup.adoc[tag=ii-salesforce-setup]
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=ii-salesforce-setup]
 
 [[set-up-data-cloud]]
 == Set up Data 360
 
-include::partial$include-integration-intelligence-setup.adoc[tag=set-up-data-cloud]
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=set-up-data-cloud]
 
 == Enable Data 360 Connectors
 
-include::partial$include-integration-intelligence-setup.adoc[tag=enable-data-360-connectors]
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=enable-data-360-connectors]
 
 [[connect-with-anypoint-platform]]
 == Complete the Connection with Anypoint Platform
 
-include::partial$include-integration-intelligence-setup.adoc[tag=connect-with-anypoint-platform]
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=connect-with-anypoint-platform]
 
 [[enable-telemetry-data]]
 == Enable Telemetry Data
-include::partial$include-integration-intelligence-setup.adoc[tag=enable-telemetry-data]
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=enable-telemetry-data]
 
 
 [[enable-seamless-login]]
 == Enable Seamless Login for Anypoint Platform Users
 
-include::partial$include-integration-intelligence-setup.adoc[tag=enable-seamless-login]
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=enable-seamless-login]
 
 [[install-integration-intelligence]]
 == Install Integration Intelligence
 
-include::partial$include-integration-intelligence-setup.adoc[tag=install-integration-intelligence]
+include::access-management::partial$include-integration-intelligence-setup.adoc[tag=install-integration-intelligence]
 
 == Next Steps
 
