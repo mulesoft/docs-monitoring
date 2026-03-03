@@ -13,7 +13,7 @@ include::access-management::partial$include-integration-intelligence-setup.adoc[
 include::access-management::partial$include-integration-intelligence-setup.adoc[tag=ii-salesforce-setup]
 
 [[set-up-data-cloud]]
-== Set up Data 360
+== Set up Salesforce Data 360
 
 include::access-management::partial$include-integration-intelligence-setup.adoc[tag=set-up-data-cloud]
 

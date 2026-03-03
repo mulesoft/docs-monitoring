@@ -6,7 +6,7 @@ With Integration Intelligence, you can:
 
 * Select a business group for targeted data ingestion so that only the telemetry you need is brought into the analytics tier.
 
-* Bring your MuleSoft telemetry data, including metrics, logs, and traces, into Salesforce Data 360 for better data retention and centralized access for analysis.
+* Bring your MuleSoft telemetry data, including metrics, logs, and traces into Salesforce Data 360 for better data retention and centralized access for analysis.
 
 * Gain long-term performance visibility through deeper data retention in Salesforce Data 360. View historical context, trends, seasonality, and recurring issues that real-time monitoring alone can't surface, so that you can identify systemic patterns.
 
