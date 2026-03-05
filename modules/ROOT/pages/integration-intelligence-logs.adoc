@@ -26,9 +26,7 @@ Complete the procedures in xref:integration-intelligence-setup.adoc[].
 
 Integration Intelligence supports Mule apps and Mule APIs deployed to these hosts:
 
-* CloudHub
 * CloudHub 2.0 
-* Flex Gateway
 * Runtime Fabric
 
 [[lookback]]
@@ -37,7 +35,7 @@ Integration Intelligence supports Mule apps and Mule APIs deployed to these host
 //TODO: UPDATE FOR GA
 Data collection for logs begins after you set up Integration Intelligence.
 
-From the *Time Period* filter, you can select from predefined ranges for the year (including the fiscal year), month, week, day, or quarter (including fiscal quarter), or you can select a custom date range. The custom date range selector also indicates the available date range for your data.
+From the *Time Period* filter, you can select from predefined ranges for the year (including the fiscal year), month, week, day, or quarter (including the fiscal quarter), or you can select a custom date range. The custom date range selector also indicates the available date range for your data.
 
 [[nav-ii]]
 == Find Integration Intelligence Logs
