@@ -1,5 +1,4 @@
 = Monitoring with Integration Intelligence
-:page-notice-banner-message: Beta Release: Integration Intelligence is in beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
 
 Use dashboards in the Salesforce ecosystem to monitor Mule app and API metrics, and get insights into related business data.
 
@@ -28,8 +27,8 @@ For information about hosts, see xref:hosting-home::index.adoc#runtime-plane-hos
 
 == Lookback Period
 
-//TODO: UPDATE FOR GA
-For the Beta release, data collection for dashboards begins after you set up Integration Intelligence.
+//TODO: IS THIS TRUE FOR GA?
+Data collection for dashboards begins after you set up Integration Intelligence.
 
 [[nav-ii]]
 == Find Dashboards in Integration Intelligence
@@ -169,8 +168,8 @@ Copy or download an image of any chart or table in a dashboard, or open a page d
 * *Copy Image*: Copies a screenshot of the chart or table to your clipboard.
 * *Download Image*: Downloads a screenshot of the chart or table to your local drive.
 * *Explore*: Opens a new tab that contains the selected chart or table on a full page. You can also add the chart to an existing dashboard or create a dashboard for the chart from this page.  
-+
-In the Beta, any new dashboards that you create won't reside in Integration Intelligence. Instead, they'll be accessible from a Tableau Next workspace that you create.
+
+//TODO: PUT THIS IN RNs? In the Beta, any new dashboards that you create won't reside in Integration Intelligence. Instead, they'll be accessible from a Tableau Next workspace that you create.
 
 [[tableau-next]]
 == Review and Manage Metrics in Tableau Next
