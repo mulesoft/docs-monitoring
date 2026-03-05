@@ -1,5 +1,5 @@
 = Getting Logs in Integration Intelligence
-:page-notice-banner-message: Beta Release: Integration Intelligence is in beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
+//:page-notice-banner-message: Beta Release: Integration Intelligence is in beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
 
 //TODO: IS APPS _AND APIS_ CORRECT? WHAT PRODUCES LOGS?
 Troubleshoot your Mule apps and APIs by reviewing log messages.
@@ -32,7 +32,9 @@ Integration Intelligence supports Mule apps and Mule APIs deployed to these host
 == Lookback Period
 
 //TODO: UPDATE FOR GA
-For the Beta release, data collection for dashboards begins after you set up Integration Intelligence.
+Data collection for logs begins after you set up Integration Intelligence.
+
+From the *Time Period* filter, you can select from predefined ranges for the year (including the fiscal year), month, week, day, or quarter (including fiscal quarter), or you can select a custom date range. The custom date range selector also indicates the available date range for your data.
 
 [[nav-ii]]
 == Find Integration Intelligence Logs

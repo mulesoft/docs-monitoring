@@ -8,8 +8,8 @@ image::ii-dashboards.png["Integration Intelligence Dashboards"]
 . Integration Intelligence in the Salesforce Integration app
 . *Dashboard* page in Integration Intelligence
 . Available dashboards: *Apps* (default), *APIs*, *Business Insights*
-. Filters for selecting specific apps and deployment types, such as CloudHub 2.0, in the *Apps* dashboard
-. <<tableau-next, Navigation to Tableau Next>> to enhance your metrics experience
+. Filters for selecting a <<lookback,time period>>, apps, and deployment types, such as CloudHub 2.0, in the *Apps* dashboard
+. <<tableau-next, Navigation to Tableau Next>> to enhance your metrics experience with custom dashboards and visualizations in Tableau Next
 
 [[prereqs]]
 == Before You Begin
@@ -20,15 +20,20 @@ Complete the procedures in xref:integration-intelligence-setup.adoc[].
 
 Integration Intelligence supports Mule apps and Mule APIs deployed to these hosts:
 
-* CloudHub 2.0 
-* Runtime Fabric
+* CloudHub (*CLOUDHUB*)
+* CloudHub 2.0 (*CLOUDHUB2*)
+* Flex Gateway (*FLEX*)
+* Runtime Fabric (*RTF*)
 
 For information about hosts, see xref:hosting-home::index.adoc#runtime-plane-hosting-options[Runtime Plane Hosting Options].
 
+[[lookback]]
 == Lookback Period
 
 //TODO: IS THIS TRUE FOR GA?
 Data collection for dashboards begins after you set up Integration Intelligence.
+
+From the *Time Period* filter, you can select from predefined ranges for the year (including the fiscal year), month, week, day, or quarter (including fiscal quarter), or you can select a custom date range. The custom date range selector also indicates the available date range for your data.
 
 [[nav-ii]]
 == Find Dashboards in Integration Intelligence
@@ -55,6 +60,7 @@ include::partial$include-nav-integration-intelligence.adoc[tags="open-ii-from-in
 * <<apps, *Apps*>> (default)
 * <<apis, *APIs*>>
 * <<business-insights, *Business Insights*>>
+* A <<dashboards-custom, custom dashboard>> created by your team in Tableau Next
 
 [[nav-salesforce]]
 === Navigate to Dashboards from the Salesforce App Launcher
@@ -72,6 +78,7 @@ The launcher opens to the app's *Intelligence* tab, which contains your dashboar
 * <<apps, *Apps*>> (default)
 * <<apis, *APIs*>>
 * <<business-insights, *Business Insights*>>
+* A <<dashboards-custom, custom dashboard>> created by your team in Tableau Next
 
 [[apps]]
 == Monitor Your Mule Apps in a Built-in Dashboard
@@ -88,17 +95,19 @@ For guidance, see <<nav-ii>>.
 //TODO: VERIFY and what's the DEFAULT? Defaults to TODO_TODO. Look back from X_UNITS to Y_UNITS. 
 . Optionally, narrow the scope of apps to review by:
 
+** Selecting a range of time to review from the *Time Period* menu.
 ** Selecting one or more Mule apps from the *App* menu.
 ** Selecting a deployment type, such as *CloudHub 2.0* or *Runtime Fabric*, from the *Deployment* menu.
 
 . Get app metrics:
 
+* *Performance Metrics*: Get the total number of apps (*Total Apps*), number of apps with errors (*Apps with Error*), total number of requests to the apps (*Total App Requests*), and the error rate for the apps (*App Error Rate*).
 * *Apps by Deployment Type*: 
 Hover over the data in the chart to get the number of apps by type, such as apps deployed to CloudHub 2.0. 
 //TODO: WE LIST ALL APPS HERE? SUPER JUNKY LOOKING when there are many apps. 
 * *Top CPU Utilization*: 
 Monitor performance by identifying apps that are using the most CPU resources.
-* *Deployed Apps*: 
+* *Deployed*: 
 Check average response time, error rate, and request volume of apps over the selected lookback period.
 
 //TODO: FILTERS NOT IMPLEMENTED (YET?): 
@@ -124,6 +133,7 @@ For guidance, see <<nav-ii>>.
 //* *Request Volume (7d)*
 . Get metrics on your APIs:
 
+* *Performance Metrics*: Get the total number of APIs (*Total APIs*), number of APIs with errors (*APIs with Error*), total number of requests to the APIs (*Total API Requests*), and the error rate for the APIs (*API Error Rate*).
 * *Request Volume by Location*: 
 View the relative request volume by region, such as United States. 
 * *Top API Consumers by Endpoint*: 
