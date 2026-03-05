@@ -209,15 +209,23 @@ For more information, see https://help.salesforce.com/s/articleView?id=analytics
 
 Create a custom dashboard for your metrics in Tableau Next from the Integration Intelligence *Dashboard* page. Custom dashboards are useful for tailoring your metrics experience to your organization's needs.
 
-//TODO: NEED INTRO
+image::ii-dashboards-custom.png["Custom Integration Intelligence Dashboard"]
+
+[calloutlist]
+. Integration Intelligence in the Salesforce Integration app
+. *Dashboard* page in Integration Intelligence
+. Custom dashboard example *My Custom Dashboard*
+. Visualization examples
+. *Dashboard Management* for creating and managing custom dashboards in Tableau Next
 
 . From Anypoint Insights, navigate to Tableau Next.
+//TODO: IS THIS WORKSPACE CREATION STEP STILL REQUIRED?
 . Create a workspace with the name *Integration Intelligence - Custom Dashboards*.
 +
 This required name dedicates the workspace to Integration Intelligence.
 +
 For more guidance, see the Tableau Next documentation https://help.salesforce.com/s/articleView?id=analytics.tua_workspace_create.htm&type=5[Create a Workspace in Tableau Next].
-//TODO: VERIFY THIS STEP:
+//TODO: VERIFY THIS STEP AND IF IT'S STILL REQUIRED
 . From your new workspace, click *Add Existing Asset*, and import the semantic model named *MuleSoft Observability Semantic Model*.
 +
 This model connects to the Integration Intelligence data that's required for  visualizations (such as charts) that you add to your dashboard.
