@@ -190,6 +190,9 @@ Use Tableau Next to review and manage your organization's assets (workspaces, da
 
 //TODO_NEED_OVERVIEW_OF_INTENDED_USE_CASES
 
+. Navigate to Integration Intelligence dashboards.
++
+See <<nav-ii>> for guidance.
 . Navigate to Tableau Next from *Dashboard* in Integration Intelligence or from the Salesforce App Launcher:
 
 * When starting from the *Dashboard* header, click *View Data in Tableau Next*.
@@ -207,22 +210,53 @@ For more information, see https://help.salesforce.com/s/articleView?id=analytics
 [[dashboards-custom]]
 == Create Custom Dashboards in Tableau Next
 
-Create a custom dashboard for your metrics in Tableau Next from the Integration Intelligence *Dashboard* page. Custom dashboards are useful for tailoring your metrics experience to your organization's needs.
+Create custom dashboards for your metrics in Tableau Next from the Integration Intelligence *Dashboard* page. Custom dashboards are useful for tailoring your metrics experience to your organization's needs.
 
 image::ii-dashboards-custom.png["Custom Integration Intelligence Dashboard"]
 
 [calloutlist]
 . Integration Intelligence in the Salesforce Integration app
 . *Dashboard* page in Integration Intelligence
-. Custom dashboard example *My Custom Dashboard*
+. Custom dashboard example in the *My Custom Dashboard* tab
 . Visualization examples
-. *Dashboard Management* for creating and managing custom dashboards in Tableau Next
+. *Dashboard Management* for creating and managing custom dashboards
 
-. From Anypoint Insights, navigate to Tableau Next.
-//TODO: IS THIS WORKSPACE CREATION STEP STILL REQUIRED?
-. Create a workspace with the name *Integration Intelligence - Custom Dashboards*.
+== Before You Begin with Custom Dashboards
+
+To create dashboards and a workspace for your custom Integration Intelligence dashboards, you must have the *Tableau Admin / Creator* permission in Tableau Next.
+
+[[create-dashboard]]
+== Create a Custom Dashboard in the Integration Intelligence - Custom Dashboards Workspace
+
+You can create one or more custom dashboards for Integration Intelligence. 
+
+. From Integration Intelligence, find *Manage Dashboards* or *Create Dashboard*.
+
+* If *Create Dashboard* is present, follow the <<first-setup, first-time setup instructions>> before proceeding to the next steps.
+* If *Manage Dashboard* is present, click to open the *Integration Intelligence - Custom Dashboards* workspace. 
+. In the workspace, click *Add* and select *Create Dashboard*.
+. Select *Blank Dashboard*, and provide a name to use for it in Integration Intelligence.
+. Select from visualizations and metrics for your dashboard.
+. Click *Save*.
+
+These instructions guide you through the process of setting up a workspace for custom dashboards and visualizations in Integration Intelligence for the first time:
+
+[[first-setup]]
+== Configure Tableau Next for Custom Dashboards in Integration Intelligence
+
+Before creating custom dashboards in Integration Intelligence, it's necessary to configure a workspace in Tableau Next named *Integration Intelligence - Custom Dashboards* and to connect to *MuleSoft Observability Semantic Model*.
+
+. From Integration Intelligence, find *Manage Dashboards* or *Create Dashboard*.
+
+* If *Create Dashboard* is present, follow the next steps in this procedure.
+* If *Manage Dashboard* is present, proceed to <<create-dashboard>>. 
 +
-This required name dedicates the workspace to Integration Intelligence.
+Your workspace is already set up.
+
+//TODO: IS THIS WORKSPACE CREATION STEP STILL REQUIRED?
+. From Tableau Next, create a workspace with the name *Integration Intelligence - Custom Dashboards*.
++
+This required name dedicates the workspace to Integration Intelligence for all custom Integration Intelligence dashboards that you create. 
 +
 For more guidance, see the Tableau Next documentation https://help.salesforce.com/s/articleView?id=analytics.tua_workspace_create.htm&type=5[Create a Workspace in Tableau Next].
 //TODO: VERIFY THIS STEP AND IF IT'S STILL REQUIRED
@@ -255,74 +289,3 @@ For more information, see https://help.salesforce.com/s/articleView?id=analytics
 == See Also
 
 * https://help.salesforce.com/s/articleView?id=analytics.tua_learning_resources.htm&type=5[Tableau Next Learning Resources]
-
-// Create Effective Dashboards With Tableau Next
-//https://help.salesforce.com/s/articleView?id=analytics.tua_create_dashboard.htm&type=5
-//
-
-// Diego: semantic model we provide (what's its name?) or they create and if they create the model, how to identify the data from MuleSoft. Leandro Gil. 
-
-
-////
-To create a dashboard in Tableau Next, you first connect data in Data Cloud, build a reusable Semantic Model defining metrics and relationships, then create individual Visualizations from that model (e,g., bar, line charts), and finally drag those saved visualizations onto a new Dashboard canvas, adding context and interactivity before sharing. It's a structured, governed approach where the semantic model acts as the single source of truth. 
-
-
-Step 1: Set Up & Connect Data (Data Cloud)
-Get Data: In Data Cloud, bring in your data (e.g., sales data) as a governed dataset.
-Add to Workspace: In Tableau Next, add this dataset to your workspace. 
-This video shows how to add data and create a semantic model in Tableau Next:
-https://encrypted-vtbn2.gstatic.com/video?q=tbn:ANd9GcS75P9Lab_63joC-7uZ9NWH0YcyNvvCT3LBxgfmG3zo0LNlNIkz
-
-
-Step 2: Create the Semantic Model (Governed Logic)
-Start New Model: In your workspace, choose to create a new Semantic Model.
-Add Data Objects: Bring in related data objects (like Accounts, Users, Orders).
-Define Relationships: Drag fields to link objects (e.g., Account ID to User ID).
-Create Metrics: Define business logic like Profit Ratio = Profit / Sales.
-Save: Save the model; it's now reusable for everyone. 
-Watch this demo to see how to build a semantic model with relationships:
-Related video thumbnail
-48s
-
-
-Step 3: Build Visualizations (The Charts)
-New Visualization: In your workspace, create a new Visualization using your Semantic Model.
-Drag & Drop: Drag fields (e.g., Sales, Category) to Rows/Columns/Color/Labels.
-Choose Chart Type: Select Bar, Line, Donut, etc., from the Marks card.
-Add Calculations: Use Quick Table Calculations (like Percent Difference) for deeper insights.
-Save: Save each visualization (e.g., "Sales by Segment Donut", "Sales Over Time"). 
-This video demonstrates how to create a basic visualization in Tableau Next:
-
-Step 4: Assemble the Dashboard (The Story)
-New Dashboard: Create a new Dashboard in your workspace.
-Add Visualizations: Drag your saved visualizations onto the canvas.
-Arrange & Resize: Position and size elements as needed.
-Add Interactivity: Make charts act as filters by clicking on them.
-Context: Add titles and text boxes for clarity.
-Share: Save and share your dashboard, ensuring governed data access. 
-This video provides a full walkthrough of creating a dashboard in Tableau Next:
-Related video thumbnail
-00:45
-
-
-The Information Lab
-YouTube • Jul 10, 2025
-Tableau Next Full Dashboard Creation in 5 minutes
-Sep 30, 2025 — in this series we showed you a lot of different and exciting features in Tableau Next but for this eighth and final ep...
-
-
-YouTube
-·The Information Lab Nederland
-4:59
-Step 7: Build Out Tableau Next
-* Create Workspaces. * Connect Data to Workspaces. * Create Semantic Models. * Define and Add Metrics. * Build Visualizations and ...
-
-Tableau
-Explore Semantic Models for Enhanced Data Insights - Trailhead
-Meet Semantic Models Tableau Semantics, an AI-infused semantic layer integrated in Data 360, powers Tableau Next with business-ric...
-
-Trailhead
-
-Show all
-
-////
