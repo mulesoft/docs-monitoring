@@ -273,7 +273,7 @@ Notice that the dashboard is in the *Integration Intelligence - Custom Dashboard
 . Sharing and preview options for the dashboard
 +
 For more information, see https://help.salesforce.com/s/articleView?id=analytics.tua_deploy_share.htm&type=5[Share and Embed] and https://help.salesforce.com/s/articleView?id=analytics.tua_create_dashboard_preview.htm&type=5[Preview and Save Dashboards].
-. Content options for visualizations and metrics, and design options for the look of the visualizations (such as grid, theme, and background image)
+. Content options for visualizations and metrics, and design options for the workspace (such as grid, theme, and background image)
 +
 For more information, see https://help.salesforce.com/s/articleView?id=analytics.tua_create_dashboard.htm&type=5[Create Effective Dashboards With Tableau Next].
 
