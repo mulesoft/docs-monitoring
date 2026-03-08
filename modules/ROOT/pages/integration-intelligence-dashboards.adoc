@@ -173,7 +173,7 @@ Get the number of inbound and outbound requests from your apps. Hovering over th
 
 Custom dashboards are useful for tailoring your metrics experience to your organization's needs. Use Tableau Next to create custom dashboards for Integration Intelligence. Create visualizations for your dashboard to display metrics on the MuleSoft telemetry data that matters most to your organization.
 
-Like Integration Intelligence, Tableau Next built on the Salesforce Platform.
+Like Integration Intelligence, Tableau Next is built on the Salesforce Platform.
 
 image::ii-dashboards-custom.png["Custom Integration Intelligence Dashboard"]
 
@@ -266,13 +266,12 @@ image::ii-dashboards-custom-edit-view.png["Configuration page for a custom dashb
 . A custom dashboard configuration page in Tableau Next
 +
 Notice that the dashboard is in the *Integration Intelligence - Custom Dashboards* workspace so that it can appear in Integration Intelligence. 
-. A custom dashboard named *My Custom Dashboard*
+. A custom dashboard configuration named *My Custom Dashboard*
 . Visualizations in the custom dashboard
 +
 {visualizations}
-. Sharing and preview options for the dashboard
-+
-For more information, see https://help.salesforce.com/s/articleView?id=analytics.tua_deploy_share.htm&type=5[Share and Embed] and https://help.salesforce.com/s/articleView?id=analytics.tua_create_dashboard_preview.htm&type=5[Preview and Save Dashboards].
+. Tab for Integration Intelligence workspace (*Integration Intelligence - Custom Dashboards*) in Tableau Next
+. Tab for a custom dashboard configuration page
 . Content options for visualizations and metrics, and design options for the workspace (such as grid, theme, and background image)
 +
 For more information, see https://help.salesforce.com/s/articleView?id=analytics.tua_create_dashboard.htm&type=5[Create Effective Dashboards With Tableau Next].
@@ -289,11 +288,13 @@ For more guidance, see the Tableau Next documentation https://help.salesforce.co
 //TODO: VERIFY THIS STEP AND IF IT'S STILL REQUIRED
 . Add the required semantic model to your workspace: 
 +
-Click *Add Existing Asset*, and import the semantic model named *MuleSoft Observability Semantic Model*.
+.. Click *Add* and select *Semantic Model* to open *Add Semantic Model*. 
+.. Under *Add Existing*, click *Semantic Model*.
+.. Select and *Add* the model named *MuleSoft Observability Semantic Model*.
 +
 //TODO: SHOULD THEY CONNECT IT TO THE WORKSPACE OR A DASHBOARD? 
 //OR WILL IT GET ADDED TO THE WORKSPACE IF THEY CONNECT IT TO A DASHBOARD?
-This model connects to the Integration Intelligence data that's required for  visualizations (such as charts) that you add to your dashboard.
+This model connects to the Integration Intelligence data and metrics required for visualizations (such as charts) that you add to your dashboard.
 . Create a custom dashboard with visualizations.
 +
 For guidance, see https://help.salesforce.com/s/articleView?id=analytics.tua_create.htm&language=en_US&type=5[Create Visualizations and Dashboards in Tableau Next]
