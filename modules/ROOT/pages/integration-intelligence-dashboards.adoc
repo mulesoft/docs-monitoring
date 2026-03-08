@@ -247,12 +247,16 @@ If *Manage Dashboards* appears instead of *Create Dashboard*, your workspace is 
 This required name dedicates the workspace to Integration Intelligence for all custom Integration Intelligence dashboards that you create. 
 +
 For guidance, See https://help.salesforce.com/s/articleView?id=analytics.tua_workspace_create.htm&type=5[Create a Workspace in Tableau Next].
-. Add the asset *MuleSoft Observability Semantic Model* to your workspace:
+. Add the required semantic model to your workspace: 
 +
-From the *Add* menu, select *Existing Asset*, and then add the existing MuleSoft model to the workspace.
+.. Click *Add* and select *Semantic Model* to open *Add Semantic Model*. 
+.. Under *Add Existing*, click *Semantic Model*.
+.. Select and *Add* the model named *MuleSoft Observability Semantic Model*.
 +
-For more guidance, see https://help.salesforce.com/s/articleView?id=analytics.tua_workspace_asset.htm&type=5[Create or Add an Asset in a Workspace].
-
+//TODO: SHOULD THEY CONNECT IT TO THE WORKSPACE OR A DASHBOARD? 
++
+//OR WILL IT GET ADDED TO THE WORKSPACE IF THEY CONNECT IT TO A DASHBOARD?
+This model connects to the Integration Intelligence data and metrics required for visualizations (such as charts) that you add to your dashboard.
 You're now ready to create a custom dashboard for Integration Intelligence. For guidance see <<dashboard-create>>.
 
 [[dashboard-create]]
@@ -286,15 +290,11 @@ If *Create Dashboard* is present instead of *Manage Dashboard*, <<workspace-conf
 +
 For more guidance, see the Tableau Next documentation https://help.salesforce.com/s/articleView?id=analytics.tua_workspace_create.htm&type=5[Create a Workspace in Tableau Next].
 //TODO: VERIFY THIS STEP AND IF IT'S STILL REQUIRED
-. Add the required semantic model to your workspace: 
+. Add the asset *MuleSoft Observability Semantic Model* to your custom dashboard:
 +
-.. Click *Add* and select *Semantic Model* to open *Add Semantic Model*. 
-.. Under *Add Existing*, click *Semantic Model*.
-.. Select and *Add* the model named *MuleSoft Observability Semantic Model*.
+From the *Add* menu, select *Existing Asset*, and then add the existing MuleSoft model to the workspace.
 +
-//TODO: SHOULD THEY CONNECT IT TO THE WORKSPACE OR A DASHBOARD? 
-//OR WILL IT GET ADDED TO THE WORKSPACE IF THEY CONNECT IT TO A DASHBOARD?
-This model connects to the Integration Intelligence data and metrics required for visualizations (such as charts) that you add to your dashboard.
+For more guidance, see https://help.salesforce.com/s/articleView?id=analytics.tua_workspace_asset.htm&type=5[Create or Add an Asset in a Workspace].
 . Create a custom dashboard with visualizations.
 +
 For guidance, see https://help.salesforce.com/s/articleView?id=analytics.tua_create.htm&language=en_US&type=5[Create Visualizations and Dashboards in Tableau Next]
