@@ -253,9 +253,9 @@ From the *Add* menu, select *Existing Asset*, and then add the existing MuleSoft
 +
 For more guidance, see https://help.salesforce.com/s/articleView?id=analytics.tua_workspace_asset.htm&type=5[Create or Add an Asset in a Workspace].
 
-You're now ready to create a custom dashboard for Integration Intelligence. For guideance see <<dashboard-create>>.
+You're now ready to create a custom dashboard for Integration Intelligence. For guidance see <<dashboard-create>>.
 
-[[dashboards-create]]
+[[dashboard-create]]
 === Configure a Custom Dashboard in Tableau Next 
 
 Use Tableau Next to configure a custom dashboard with visualizations for Integration Intelligence. You can create one or more dashboards to suit your organization's needs, and each dashboard can contain multiple visualizations.
@@ -279,7 +279,7 @@ For more information, see https://help.salesforce.com/s/articleView?id=analytics
 
 Create a custom dashboard:
 
-. Meet the prerequisites in <<prereqs-custom-dashboards>>, and <<workspace-configure, set up a dedicated workspace in Tableau Next>>.
+. Meet the prerequisites in <<prereqs-custom-dashboards>>.
 //TODO: VERIFY THIS STEP AND WORK ON SUBSEQUENT STEPS FROM HERE
 . From Integration Intelligence, click *Manage Dashboards* to open your workspace for your custom Integration Intelligence dashboards and related assets.
 +
