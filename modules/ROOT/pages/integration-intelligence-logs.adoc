@@ -22,12 +22,17 @@ Meet these prerequisites:
 
 Complete the procedures in xref:integration-intelligence-setup.adoc[].
 
+[[supported-deployment-types]]
 == Supported Deployment Types
 
-Integration Intelligence supports Mule apps and Mule APIs deployed to these hosts:
+For logs, Integration Intelligence supports Mule apps and Mule APIs deployed to these hosts:
 
 * CloudHub 2.0 
 * Runtime Fabric
+
+For dashboards in Integration Intelligence, see xref:integration-intelligence-dashboards.adoc#supported-deployment-types[Supported Deployment Types (for metrics in dashboards)].
+
+For information about hosts, see xref:hosting-home::index.adoc#runtime-plane-hosting-options[Runtime Plane Hosting Options].
 
 [[lookback]]
 == Lookback Period

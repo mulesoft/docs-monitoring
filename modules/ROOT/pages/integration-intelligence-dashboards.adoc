@@ -19,14 +19,17 @@ This button's label changes from *Create Dashboard* to *Manage Dashboard* after 
 
 Complete the procedures in xref:integration-intelligence-setup.adoc[].
 
+[[supported-deployment-types]]
 == Supported Deployment Types
 
-Integration Intelligence supports Mule apps and Mule APIs deployed to these hosts:
+For metrics in dashboards, Integration Intelligence supports Mule apps and Mule APIs deployed to these hosts:
 
 * CloudHub (*CLOUDHUB*)
 * CloudHub 2.0 (*CLOUDHUB2*)
 * Flex Gateway (*FLEX*)
 * Runtime Fabric (*RTF*)
+
+For logs in Integration Intelligence, see xref:integration-intelligence-logs.adoc#supported-deployment-types[Supported Deployment Types for Logs].
 
 For information about hosts, see xref:hosting-home::index.adoc#runtime-plane-hosting-options[Runtime Plane Hosting Options].
 
