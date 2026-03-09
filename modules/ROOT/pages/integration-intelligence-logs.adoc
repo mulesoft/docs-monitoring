@@ -1,4 +1,4 @@
-= Getting Logs in Integration Intelligence
+= Getting Logs with Integration Intelligence
 //:page-notice-banner-message: Beta Release: Integration Intelligence is in beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
 
 //TODO: IS APPS _AND APIS_ CORRECT? WHAT PRODUCES LOGS?
