@@ -1,30 +1,31 @@
 = Integration Intelligence 
-:page-notice-banner-message: Beta Release: Integration Intelligence is in beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
 
+Use Integration Intelligence to extend the value of MuleSoft telemetry beyond real-time monitoring. Together with Anypoint Monitoring and the Diagnostics Agent, it adds long-term analytics and actionable insights so that you can maximize uptime and optimize performance over time.
 
-Use Integration Intelligence (Beta) to monitor, analyze, and troubleshoot MuleSoft telemetry data within the Salesforce ecosystem.
+With Integration Intelligence, you can:
 
-Integration Intelligence provides:
+* Select a business group for targeted data ingestion so that only the telemetry you need is brought into the analytics tier.
 
-* Enhanced visibility into your MuleSoft telemetry data by creating a new data tier that overcomes limitations of endpoint monitoring.
+* Bring your MuleSoft telemetry data, including metrics, logs, and traces into Salesforce Data 360 for better data retention and centralized access for analysis.
 
-* Unified data storage by bringing your MuleSoft telemetry data, including metrics, logs, and traces, into Salesforce Data Cloud. This ensures better data retention and centralized access for analysis.
+* Gain long-term performance visibility through deeper data retention in Salesforce Data 360. View historical context, trends, seasonality, and recurring issues that real-time monitoring alone can't surface, so that you can identify systemic patterns.
 
-* Targeted data ingestion for the specified Business Group. 
-
-* Advanced visualization with Tableau Next. Using Data Cloud and Tableau Next, you can transform how you analyze integration performance. Tableau Next serves as the primary experience tier for visualizing your data. 
-
-* Out-of-the-Box dashboards with preconfigured pages within a new Integration Intelligence Lightning App in Salesforce, featuring dashboards for:
+* Get actionable insight through dashboards with Tableau Next. Preconfigured pages in the Integration Intelligence Lightning App in Salesforce give you a starting point:
 ** App Insights, offering a unified view of application metrics, health, and usage.
 ** API Insights, providing a unified view of all API metrics, including health and usage.
 ** Logs and Traces, enabling you to view tabular pages of log events (including filtering capabilities for timeframe and log level).
+Build custom views that matter to your team for operational efficiency, partner performance, and reliability.
 
-* Seamless cross-platform access with seamless login (SSO) removes barriers between Anypoint Platform and Salesforce, enabling faster access to troubleshooting data.
+* Troubleshoot with agent-assisted analysis to uncover root causes, detect emerging patterns, and fine-tune operations without manually combing through logs and dashboards.
 
-* Single-click navigation means you can gain deeper insights directly from the Anypoint Platform Monitoring *Insights* page. 
+* Reach the experience from Anypoint Platform. Cross-platform access with single sign-on (SSO) lets Anypoint Platform users log in once to access Tableau Next dashboards in Salesforce, and single-click navigation from the Anypoint Monitoring *Insights* page takes you to deeper insights. 
 
 == What's Next
 
 * xref:integration-intelligence-setup.adoc[Setup]: Set up Integration Intelligence in a Salesforce organization, and enable Integration Intelligence in Anypoint Platform.
 * xref:integration-intelligence-dashboards.adoc[Dashboards]: Monitor Mule apps and APIs, and get business insights. 
 * xref:integration-intelligence-dashboards.adoc[Logs]: Troubleshoot issues reported in your logs.
+
+== See Also
+
+xref:runtime-manager::troubleshooting#troubleshooting-applications[Troubleshooting with MuleSoft Diagnostics Agent]
