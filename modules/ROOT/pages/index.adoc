@@ -67,7 +67,7 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 |{empty}
   xref:telemetry-exporter.adoc[Telemetry exports]
 | Yes
-| No
+| Yes
 | No
 | No
 

@@ -174,6 +174,54 @@ You can repeat these steps to add multiple key values.
 . Select the *Throw runtime exception on validation failure* option if you want the flow to break if invalid values are entered for the metric. If this option is left unchecked, an error is will be logged, but the flow won't break.
 . Proceed to <<get-metrics>>.
 
+[[example-flow]]
+== Example: Using DataWeave When Sending Custom Metrics
+
+This flow example uses `custom-metrics:send` to submit custom metric values defined as variables in `ee:transform` and `ee:set-variable` components. 
+
+----
+<flow name="custom-metrics-flow" >
+  <http:listener doc:name="Listener" 
+       config-ref="HTTP_Listener_config" 
+       path="test"/>
+  <logger level="INFO" doc:name="Logger" 
+       message="about to send a custom metric"/>
+  <ee:transform doc:name="Transform Message" >
+    <ee:message >
+    </ee:message>
+    <ee:variables >
+      <ee:set-variable variableName="metricFacts" ><![CDATA[%dw 2.0
+output application/json
+---
+[
+{
+  factName: "request_count",
+  value: 1
+}
+]]]></ee:set-variable>
+  <ee:set-variable variableName="metricProperties" ><![CDATA[%dw 2.0
+output application/java
+---
+[
+{
+      dimensionName: "response_type", 
+      value: "FAILED",
+      collapsible: true
+  }
+]]]></ee:set-variable>
+    </ee:variables>
+  </ee:transform>
+  <custom-metrics:send doc:name="Send Custom Metric" 
+      metricName="test-471243020" 
+      throwOnValidationFailure="true" 
+      facts="#[vars.metricFacts]" 
+      dimensions="#[vars.metricProperties]">
+  </custom-metrics:send>
+  <logger level="INFO" doc:name="Logger" 
+       message="custom metric processed"/>
+</flow>
+----
+
 [[get-metrics]]
 == Get App Metrics in Anypoint Monitoring
 

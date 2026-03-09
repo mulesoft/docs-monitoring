@@ -141,7 +141,35 @@ include::partial$include-am-setup.adoc[tag="am-installer-setup"]
 ** You can call the installation script with the `-x` argument to skip this prompt. If you skip the prompt, Anypoint Monitoring is not installed as a service.
 * You cannot install the Anypoint Monitoring agent on a server that has an existing filebeat instance running.
 * When you install the Anypoint Monitoring agent on a hybrid server in a server group, use Runtime Manager to restart the server to enable Anypoint Monitoring to begin collecting metrics.
-* To change the telemetry listening port (defaults to port `8888`) when installing the agent, use the `-t` parameter. Example: `$ ./install -t 8889` 
+* To change the telemetry listening port (defaults to port `8888`), set the `-t` parameter to an integer from 1024 through 65535. 
++
+Example: `$ ./install -t 8889`. 
+* To install multiple instances of the agent on a Linux host, see <<install-multiple-agents>>. 
+
+[[install-multiple-agents]]
+=== Install Multiple Agents to a Linux Host
+
+On a Linux host, you can install multiple agent instances:
+
+* Non-service installations: To install multiple agent instances, assign a unique port to each agent instance.
++
+Set the `-t` parameter to an integer from 1024 through 65535.
++
+Example: `$ ./install -t 8889`
+
+* Service installations: To install multiple agent instances as services, assign a unique port and installation name to each instance.
+
+** For the first service installation, you can use the default configuration. The `-t` and `-n` parameters are optional.
+** For subsequent service installations, you must use both `-t` and `-n`. 
++
+Example: `$ ./install -t <port> -n <installation-name>`
++
+The installer prompts you for a unique port and installation name.
+
+Parameters:
+
+* `-t`: Sets the port number to an integer from 1024 through 65535. The default is 8888. 
+* `-n`: Sets a unique name that becomes part of the service name. The name must be no more than eight alphanumeric characters. The default is an unnamed port. Required for the second and subsequent agent instances on a single Linux host. Supported with `-t` only for service installations.
 
 [[proxy-settings]]
 == Proxy Settings
@@ -266,6 +294,17 @@ To disable log forwarding:
 //Hybrid, CH2, and CH
 include::partial$include-path-normalization.adoc[]
 
+[[tier-change]]
+== Restart After Changing Subscription Tiers
+
+For the _2.x version_ of Anypoint Monitoring agent, changes to your subscription tier require further action to continue collecting metrics. 
+
+To trigger metrics collection through a 2.x agent after changing your subscription:
+
+. Stop Mule runtime engine.
+. Uninstall and reinstall the agent. 
+
+This action isn't required for the 3.x version of the agent. Version 3.x maintains persistent monitoring connectivity and adapts to backend infrastructure updates dynamically. 
 
 == See Also
 
