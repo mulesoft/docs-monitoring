@@ -49,6 +49,8 @@ Integration Intelligence is accessible from Anypoint Platform and through the Sa
 * <<nav-insights>>
 * <<nav-salesforce>>
 
+Important:: Dashboard data can take up to 10 minutes to appear.
+
 [[nav-insights]]
 === Navigate to Dashboards from Anypoint Platform
 

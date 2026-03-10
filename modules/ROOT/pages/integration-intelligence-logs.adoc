@@ -81,6 +81,8 @@ The launcher opens to the app's *Intelligence* tab.
 
 Use *Logs* in Integration Intelligence to troubleshoot issues. 
 
+Important:: Log data can take up to 15 minutes to appear.
+
 . Navigate to *Logs*.
 +
 For guidance see <<nav-ii>>.
