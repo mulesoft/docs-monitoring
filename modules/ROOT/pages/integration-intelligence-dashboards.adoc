@@ -1,7 +1,7 @@
 = Getting Analytics and Insights with Integration Intelligence
 :visualizations: Visualizations are visual representations of your data as a chart or graph.
 
-Use dashboards in the Salesforce ecosystem to monitor Mule app and API metrics, and get insights into related business data.
+Use dashboards in the Salesforce ecosystem to analyze Mule app and API metrics, and get insights into related business data.
 
 image::ii-dashboards.png["Integration Intelligence Dashboards"]
 
@@ -87,9 +87,9 @@ The launcher opens to the app's *Intelligence* tab, which contains your dashboar
 * A <<dashboards-custom, custom dashboard>> created by your team in Tableau Next
 
 [[apps]]
-== Monitor Your Mule Apps in a Built-in Dashboard
+== Analyze Your Mule Apps in a Built-in Dashboard
 
-Monitor Mule app metrics in Integration Intelligence:
+Analyze Mule app metrics in Integration Intelligence:
 
 . Navigate to the *Apps* dashboard.
 +
@@ -112,7 +112,7 @@ For guidance, see <<nav-ii>>.
 Hover over the data in the chart to get the number of apps by type, such as apps deployed to CloudHub 2.0. 
 //TODO: WE LIST ALL APPS HERE? SUPER JUNKY LOOKING when there are many apps. 
 * *Top CPU Utilization*: 
-Monitor performance by identifying apps that are using the most CPU resources.
+Check performance by identifying apps that are using the most CPU resources.
 * *Deployed*: 
 Check average response time, error rate, and request volume of apps over the selected lookback period.
 
@@ -121,9 +121,9 @@ Check average response time, error rate, and request volume of apps over the sel
 //.. Select an error rate. 
 
 [[apis]]
-== Monitor Your APIs in a Built-in Dashboard
+== Analyze Your APIs in a Built-in Dashboard
 
-Monitor API metrics in Integration Intelligence:
+Analyze API metrics in Integration Intelligence:
 
 . Navigate to the *API* dashboard. 
 +
@@ -151,7 +151,7 @@ Get the number of clients and request volume for one or more versions of your AP
 [[business-insights]]
 == Get Business Insights from a Built-in Dashboard
 
-Monitor business metrics in Integration Intelligence:
+Get business metrics in Integration Intelligence:
 
 . Navigate to the *Business Insights* dashboard. 
 +
@@ -197,9 +197,9 @@ This button's label changes from *Create Dashboard* to *Manage Dashboard* after 
 
 Before creating custom dashboards and visualizations for Integration Intelligence in Tableau Next:
 
-* Acquire the Tableau Next Admin permission so that you can create a dedicated workspace and manage your custom dashboards. Dashboards in this workspace appear as tabs within the Integration Intelligence.
-+
-A Salesforce Administrator can assign a https://help.salesforce.com/s/articleView?id=analytics.tua_governance.htm&type=5[Tableau Next permission set].
+* Acquire one of the permission sets that's associated with the Tableau Next Creator license so that you can create a dedicated workspace and manage your custom dashboards. A Salesforce Administrator can assign a https://help.salesforce.com/s/articleView?id=analytics.tua_governance.htm&type=5[Tableau Next permission set].
+** Tableau Unmetered Platform Analyst or Tableau Next Platform Analyst
+** Tableau Unmetered Platform Analyst or Tableau Next Platform Analyst
 
 * Familiarize yourself with Tableau Next basics. See <<tableau-next-learn>>.
 
