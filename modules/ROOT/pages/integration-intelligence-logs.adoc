@@ -1,10 +1,7 @@
 = Getting Logs with Integration Intelligence
-//:page-notice-banner-message: Beta Release: Integration Intelligence is in beta. Any use of features in the beta state is subject to the applicable beta services terms and conditions.
+//:page-notice-banner-message: N/A
 
-//TODO: IS APPS _AND APIS_ CORRECT? WHAT PRODUCES LOGS?
-Troubleshoot your Mule apps and APIs by reviewing log messages.
-
-//TODO: NEED LOOKBACK PERIOD
+Troubleshoot, analyze, and retain logs for your Mule apps and APIs in Integration Intelligence.
 
 image::ii-logs.png["Integration Intelligence Logs"]
 
