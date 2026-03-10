@@ -197,7 +197,7 @@ This button's label changes from *Create Dashboard* to *Manage Dashboard* after 
 
 Before creating custom dashboards and visualizations for Integration Intelligence in Tableau Next:
 
-* Acquire one of the permission sets that's associated with the Tableau Next Creator license so that you can create a dedicated workspace and manage your custom dashboards. A Salesforce Administrator can assign a https://help.salesforce.com/s/articleView?id=analytics.tua_governance.htm&type=5[Tableau Next permission set].
+* Acquire one of the permission sets associated with the Tableau Next Creator license so that you can create a dedicated workspace and manage your custom dashboards. A Salesforce Administrator can assign a https://help.salesforce.com/s/articleView?id=analytics.tua_governance.htm&type=5[Tableau Next permission set].
 ** Tableau Unmetered Platform Analyst or Tableau Next Platform Analyst
 ** Tableau Unmetered Platform Analyst or Tableau Next Platform Analyst
 
