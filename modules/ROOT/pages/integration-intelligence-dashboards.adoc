@@ -179,7 +179,7 @@ Get the number of inbound and outbound requests from your apps. Hovering over th
 [[dashboards-custom]]
 == Create Custom Dashboards in Tableau Next
 
-Custom dashboards are useful for tailoring your analytics experience to your organization's needs. Use Tableau Next to create custom dashboards for Integration Intelligence. Create visualizations for your dashboard to display metrics on the MuleSoft telemetry data that matters most to your organization.
+Custom dashboards are useful for tailoring your analytics experience to your organization's needs. Use Tableau Next to create custom dashboards for Integration Intelligence. Create visualizations for your dashboard to show metrics on the MuleSoft telemetry data that matters most to your organization.
 
 Like Integration Intelligence, Tableau Next is built on the Salesforce Platform.
 
