@@ -289,7 +289,6 @@ For more information, see https://help.salesforce.com/s/articleView?id=analytics
 Create a custom dashboard:
 
 . Meet the prerequisites in <<prereqs-custom-dashboards>>.
-//TODO: VERIFY THIS STEP AND WORK ON SUBSEQUENT STEPS FROM HERE
 . From Integration Intelligence, click *Manage Dashboards* to open your workspace for your custom Integration Intelligence dashboards and related assets.
 +
 If *Create Dashboard* is present instead of *Manage Dashboard*, <<workspace-configure, set up a dedicated workspace in Tableau Next>> before creating a dashboard.
