@@ -260,7 +260,6 @@ For guidance, See https://help.salesforce.com/s/articleView?id=analytics.tua_wor
 .. Under *Add Existing*, click *Semantic Model*.
 .. Select and *Add* the model named *MuleSoft Observability Semantic Model*.
 +
-//TODO: SHOULD THEY CONNECT IT TO THE WORKSPACE OR A DASHBOARD? 
 +
 //OR WILL IT GET ADDED TO THE WORKSPACE IF THEY CONNECT IT TO A DASHBOARD?
 This model connects to the Integration Intelligence data and metrics required for visualizations (such as charts) that you add to your dashboard.
