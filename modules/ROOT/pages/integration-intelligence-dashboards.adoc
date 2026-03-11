@@ -194,7 +194,6 @@ image::ii-dashboards-custom.png["Custom Integration Intelligence Dashboard"]
 {visualizations}
 . *Manage Dashboard* for access to custom dashboard creation and management features in Tableau Next
 +
-//TODO: TO SEE THE BUTTON IS THE TABLEAU NEXT ADMIN OR SOME OTHER PERMISSION REQUIRED?
 This button's label changes from *Create Dashboard* to *Manage Dashboard* after you provide a dedicated workspace in Tableau Next for custom dashboards in Integration Intelligence.
 
 [[prereqs-custom-dashboards]]
