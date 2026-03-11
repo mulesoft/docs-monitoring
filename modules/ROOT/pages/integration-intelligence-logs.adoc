@@ -37,7 +37,7 @@ For information about hosts, see xref:hosting-home::index.adoc#runtime-plane-hos
 //TODO: UPDATE FOR GA
 Data collection for logs begins after you set up Integration Intelligence.
 
-From the *Time Period* filter, you can select from predefined ranges for the year (including the fiscal year), month, week, day, or quarter (including the fiscal quarter), or you can select a custom date range. The custom date range selector also indicates the available date range for your data.
+From the *Time Period* filter, you can select from predefined ranges for the year (including the fiscal year), month, week, day (defaults to 30 days), or quarter (including the fiscal quarter), or you can select a custom date range. The custom date range selector also indicates the available date range for your data.
 
 [[nav-ii]]
 == Find Integration Intelligence Logs
@@ -83,7 +83,7 @@ Use *Logs* in Integration Intelligence to troubleshoot issues.
 
 [IMPORTANT] 
 ====
-Log data can take up to 15 minutes to appear in Integration Intelligence.
+After initial ingestion, data can take up to 10 minutes to appear in Integration Intelligence. The first time you open *Logs*, it can take a few additional minutes for the visualizations to load.
 ====
 
 . Navigate to *Logs*.

@@ -51,7 +51,7 @@ Integration Intelligence is accessible from Anypoint Platform and through the Sa
 
 [IMPORTANT] 
 ====
-Dashboard data can take up to 15 minutes to appear in Integration Intelligence.
+After initial ingestion, data can take up to 10 minutes to appear in Integration Intelligence. The first time you open *Dashboards*, it can take a few additional minutes for the visualizations to load.
 ====
 
 [[nav-insights]]
