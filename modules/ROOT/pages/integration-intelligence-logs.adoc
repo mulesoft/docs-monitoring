@@ -83,7 +83,7 @@ Use *Logs* in Integration Intelligence to troubleshoot issues.
 
 [IMPORTANT] 
 ====
-After initial ingestion, data can take up to 10 minutes to appear in Integration Intelligence. The first time you open *Logs*, it can take a few additional minutes for the visualizations to load.
+After initial ingestion, data can take up to 10 minutes to appear in Integration Intelligence. The first time you open *Logs*, it can take a few additional minutes for events and log entries to load.
 ====
 
 . Navigate to *Logs*.
