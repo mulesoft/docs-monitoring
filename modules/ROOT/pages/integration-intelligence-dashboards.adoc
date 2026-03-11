@@ -229,7 +229,7 @@ For more information, see https://help.salesforce.com/s/articleView?id=analytics
 * Any existing workspaces for collecting and managing analytic assets, launching data analysis, and collaborating with your team
 +
 You'll require a workspace named *Integration Intelligence - Custom Dashboards* for custom dashboards in Integration Intelligence. 
-* Data, including telemetry data from your Mule apps and APIs, hosted in Data Cloud as data lake objects
+* Data, including telemetry data from your Mule apps and APIs, hosted in Data 360 as data lake objects
 * Semantic models that map data to standardized terms and logic for useful insights
 +
 You'll use the *MuleSoft Observability Semantic Model* when creating visualizations for your workspace.
@@ -244,7 +244,7 @@ After familiarizing yourself with Tableau Next, you can proceed to <<workspace-c
 [[workspace-configure]]
 === Configure a Workspace for Your Custom Dashboards
 
-Before creating your first custom dashboard for Integration Intelligence, it's necessary to create a workspace named *Integration Intelligence - Custom Dashboards* and connect to *MuleSoft Observability Semantic Model*. This model incorporates Anypoint Monitoring metrics to capture insights on your app and API telemetry data.
+Before creating your first custom dashboard for Integration Intelligence, create a workspace named *Integration Intelligence - Custom Dashboards* and connect to *MuleSoft Observability Semantic Model*. This model incorporates Anypoint Monitoring metrics to capture insights on your app and API telemetry data.
 
 . Meet the prerequisites in <<prereqs-custom-dashboards>>.
 . From Integration Intelligence, click *Create Dashboard*.
@@ -305,7 +305,7 @@ From the *Add* menu, select *Existing Asset*, and then add the existing MuleSoft
 For more guidance, see https://help.salesforce.com/s/articleView?id=analytics.tua_workspace_asset.htm&type=5[Create or Add an Asset in a Workspace].
 . Create a custom dashboard with visualizations.
 +
-For guidance, see https://help.salesforce.com/s/articleView?id=analytics.tua_create.htm&language=en_US&type=5[Create Visualizations and Dashboards in Tableau Next]
+For guidance, see https://help.salesforce.com/s/articleView?id=analytics.tua_create.htm&language=en_US&type=5[Create Visualizations and Dashboards in Tableau Next].
 . After creating your custom dashboard and visualization, view the dashboard in Integration Intelligence by clicking the tab for your custom dashboard.
 +
 For help opening Integration Intelligence, see <<nav-ii>>.
