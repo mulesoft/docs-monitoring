@@ -36,7 +36,6 @@ For information about hosts, see xref:hosting-home::index.adoc#runtime-plane-hos
 [[lookback]]
 == Lookback Period
 
-//TODO: IS THIS TRUE FOR GA?
 Data collection for dashboards begins after you set up Integration Intelligence.
 
 From the *Time Period* filter, you can select from predefined ranges for the year (including the fiscal year), month, week, day, or quarter (including the fiscal quarter), or you can select a custom date range. The custom date range selector also indicates the available date range for your data.
