@@ -8,7 +8,7 @@ image::ii-dashboards.png["Integration Intelligence Dashboards"]
 [calloutlist]
 . Integration Intelligence in the Salesforce Integration app
 . *Dashboard* page in Integration Intelligence
-. Available dashboards: *Apps* (default), *APIs*, *Business Insights*
+. Built-in dashboards: *Apps* (default), *APIs*, *Business Insights*
 . Filters for selecting a <<lookback,time period>>, apps, and deployment types, such as CloudHub 2.0, in the *Apps* dashboard
 . <<dashboards-custom, Navigation to Tableau Next>> for custom dashboard setup and management
 +
