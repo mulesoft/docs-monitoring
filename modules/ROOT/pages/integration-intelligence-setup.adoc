@@ -1,4 +1,5 @@
 = Setting Up Integration Intelligence
+:page-info-pills: anypoint-pricing-titanium
 
 Integration Intelligence enhances monitoring, analysis, and troubleshooting of MuleSoft integrations through AI-powered capabilities.
 

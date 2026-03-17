@@ -1,4 +1,5 @@
-= Integration Intelligence 
+= Integration Intelligence
+:page-info-pills: anypoint-pricing-titanium
 
 Use Integration Intelligence to extend the value of MuleSoft telemetry beyond real-time monitoring. Together with Anypoint Monitoring and the Diagnostics Agent, it adds long-term analytics and actionable insights so that you can maximize uptime and optimize performance over time.
 

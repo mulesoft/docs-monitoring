@@ -1,4 +1,5 @@
 = Getting Analytics and Insights with Integration Intelligence
+:page-info-pills: anypoint-pricing-titanium
 :visualizations: Visualizations are visual representations of your data as a chart or graph.
 
 Use dashboards in the Salesforce ecosystem to analyze Mule app and API metrics, and get insights into related business data.

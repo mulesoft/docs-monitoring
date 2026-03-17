@@ -1,5 +1,5 @@
 = Getting Logs with Integration Intelligence
-//:page-notice-banner-message: N/A
+:page-info-pills: anypoint-pricing-titanium
 
 Troubleshoot, analyze, and retain logs for your Mule apps and APIs in Integration Intelligence.
 
