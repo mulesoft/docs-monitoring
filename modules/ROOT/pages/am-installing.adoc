@@ -178,7 +178,7 @@ Parameters:
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-For installer version 3.2.14 or later, you can enable trace data collection for Anypoint Monitoring. On each hybrid server where you want to collect trace data, configure a JVM property and install agent with the trace data collection option. Version 3.2.1.4 was released xref:release-notes::anypoint-monitoring-installer-release-notes.adoc#march-5-2026[November 2025].
+For installer version 3.2.14 or later, you can enable trace data collection for Anypoint Monitoring. On each hybrid server where you want to collect trace data, configure a JVM property and install agent with the trace data collection option. Version 3.2.1.4 was released xref:release-notes::monitoring/anypoint-monitoring-installer-release-notes.adoc#march-5-2026[March 5 2025].
 
 . Upgrade to an Anypoint Monitoring agent version that supports trace data collection (am-3.2.14.0.zip or later).
 . Stop Mule.
