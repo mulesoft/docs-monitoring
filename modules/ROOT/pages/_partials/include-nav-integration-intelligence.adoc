@@ -1,6 +1,5 @@
 //tag::open-ii-from-insights[]
 . From the banner in the Anypoint Insights header, click *Go to Integration Intelligence*. 
-. Use your Anypoint Platform credentials to log in to the Salesforce environment.
 +
-Integration Intelligence automatically opens *Dashboards* from the sidebar. 
+Integration Intelligence automatically opens to *Dashboards*, and *Logs* is accessible from the Integration Intelligence sidebar. 
 //end::open-ii-from-insights[]
