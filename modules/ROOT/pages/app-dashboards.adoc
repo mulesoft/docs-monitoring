@@ -38,174 +38,171 @@ Your data is prepopulated and displayed in the built-in dashboards and logs; no 
 [[built-in-charts-app]]
 Built-in dashboards include various pages to view different types of charts:
 
-[%header,cols="1,4"]
+[%header,cols="1,4,4"]
 |===
-| Built-In Dashboards | Charts
-| <<overview-charts>> a|
+| Built-In Dashboards | Charts | Available in Anypoint Insights
+.10+| <<overview-charts>> 
+    | Mule Messages | Overview tab: Mule Messages
+    | Average Response Time | N/A
+    | Errors | Overview tab: Failed Inbound Request Volume
+    | Inbound - Total Requests by Response Type | Requests tab: Inbound Request volume - choose group by Response type
+    | Inbound - Average Response Time | Overview tab: Inbound Request Latency (avg is one of the chart series)
+    | Outbound - Total Requests by Response Type | Requests tab: Inbound Request volume - choose group by Response type
+    | Outbound - Average Response Time | N/A
+    | JVM - CPU % Utilization | JVM Tab: CPU Utilization
+    | JVM - Heap Used | JVM Tab: Heap usage
+    | JVM - Thread Count | JVM tab: Thread Count 
 
-* Mule Messages
-* Average Response Time
-* Errors
-* Inbound - Total Requests by Response Type
-* Inbound - Average Response Time
-* Outbound - Total Requests by Response Type
-* Outbound - Average Response Time
-* JVM - CPU % Utilization
-* JVM - Heap Used
-* JVM - Thread Count
+.10+| <<inbound-charts>> 
+    | Inbound - Total Requests by Response Type | Requests tab: Inbound Request Volume - choose group by Response type 
+    | Inbound - Average Response Time | N/A 
+    | Inbound - Average Response Time by HTTP Endpoint | Requests tab: Request Latency by Endpoint table, choose group by Inbound
+    | Inbound - Response Time by HTTP Endpoint | Requests tab: Request Latency by Endpoint table, choose group by Inbound
+    | Inbound - Total Requests by Endpoint | TODO 
+    | Inbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Overview tab: Inbound Request Latency chart 
+    | Inbound - Total Failed Requests (TODO: Outbound - Failure Total Request Count) | Errors tab: Failed Outbound Request Volume chart
+//TODO
+//include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
+    | Inbound - Protocols | Requests tab: Request Volume by Protocol - choose group by Inbound 
+    | Inbound - HTTP Endpoints | Requests tab: Request Volume by HTTP Endpoint 
+    | Inbound - Maximum Response Time | Requests tab: Inbound - Maximum Response Time by Endpoint  
 
-| <<inbound-charts>> a|
+.10+| <<outbound-charts>>
+    | Outbound - Total Requests by Response Type | Requests tab: Outbound Request Volume - choose group by Response type 
+    | Outbound - Average Response Time | N/A 
+    | Outbound - Average Response Time by HTTP Endpoint | Requests tab: Request Latency by Endpoint - choose group by Outbound 
+    | Outbound - Total Requests by HTTP Endpoint | Requests tab: Request Latency by Endpoint - choose group by Outbound 
+    | Outbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Requests tab: Outbound Request Latency chart 
+    | Outbound - Total Failed Requests | TODO 
+//TODO
+//include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
+    | Outbound - HTTP Ports | TODO 
+    | Outbound - Operations | TODO 
+    | Outbound - HTTP Protocols | TODO 
+    | Outbound - Endpoints | TODO 
 
-* Inbound - Total Requests by Response Type
-* Inbound - Average Response Time
-* Inbound - Response Time by HTTP Endpoint
-* Inbound - Total Requests by Endpoint
-* Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
-* Inbound - Total Failed Requests
+.14+| <<flows-charts>>
+//TODO
+//include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
+    | Inbound - Response Time by Flow | Flows tab 
+    | Outbound - Response Time by Flow | Flows tab 
+    | Inbound - Requests by Flow | Flows tab 
+    | Outbound - Requests by Flow | Flows tab 
+    | Failures by Flow | Flows tab 
+    | Inbound - Slow Requests by Flow | N/A
+    | Outbound - Slow Requests by Flow | N/A
+    | Inbound - Response Time by Flow | Flows tab
+    | Outbound - Response Time by Flow | Flows tab
+    | Inbound - Requests by Flow | Flows tab
+    | Outbound - Requests by Flow | Flows tab
+    | Failures by Flow | Flows tab 
+    | Inbound - Slow Requests by Flow | N/A 
+    | Outbound - Slow Requests by Flow | N/A 
 
-include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
+//TODO
+//include::reuse::partial$billing/pricing.adoc[tag=flowsTabAvailability]
 
-* Inbound - Protocols
-* Inbound - HTTP Endpoints
-* Inbound - Maximum Response Time
+.35+| <<connectors-charts>>
+    | Connector Message Volume .35+| Connectors tab 
+    | Response Time by Connector
+    | Salesforce Requests 
+    | Salesforce Response Time
+    | Salesforce Failures
+    | Database Requests
+    | Database Response Time 
+    | Database Failures 
+    | HTTP Requests 
+    | HTTP Response Time 
+    | HTTP Failures
+    | Web Services Requests
+    | Web Services Response Time 
+    | Web Services Failures 
+    | FTP Requests
+    | FTP Response Time 
+    | FTP Failures
+    | SFTP Requests 
+    | SFTP Response Time 
+    | SFTP Failures 
+    | SMTP Requests
+    | SMTP Response Time 
+    | SMTP Failures 
+    | Object Store Requests
+    | Object Store Response Time 
+    | Object Store Failures 
+    | Anypoint MQ Operations - Inbound
+    | Anypoint MQ Response Time - Inbound
+    | Anypoint MQ Failures - Inbound
+    | Anypoint MQ Operations - Outbound
+    | Anypoint MQ Response Time - Outbound
+    | Anypoint MQ Failures - Outbound
+    | Other Connector Requests 
+    | Other Connector Response Time 
+    | Other Connector Failures 
 
+//TODO
+//include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
+.8+| <<performance-charts>>
+    | Mule Messages | TODO 
+    | Average Response Time | TODO 
+    | Inbound - Average Response Time | TODO 
+    | Inbound - Response Time by HTTP Endpoint | TODO 
+    | Inbound - Response Time graphs (99, 90, 75, and 50 percentiles) | TODO 
+    | Outbound - Average Response Time | TODO 
+    | Outbound - Response Time by Endpoint | TODO 
+    | Outbound - Response Time graphs (99, 90, 75, and 50 percentiles) | TODO 
 
-| <<outbound-charts>> a|
+.9+| <<failures-charts>>
+    | Errors | TODO
+    | Inbound - Total Failed Requests | TODO
+    | Outbound Total Failed Requests | TODO
+    | Inbound - Total Requests by Response Type | TODO
+    | Outbound - Total Requests by Response Type | TODO
+    | Inbound - Failure Response Time by Endpoint | TODO
+    | Inbound - Total Failed Requests by Endpoint | TODO
+    | Outbound - Failure Response Time by HTTP Endpoint | TODO
+    | Outbound - Total Failed Requests by HTTP Endpoint | TODO
 
-* Outbound - Total Requests by Response Type
-* Outbound - Average Response Time
-* Outbound - Average Response Time by HTTP Endpoint
-* Outbound - Total Requests by HTTP Endpoint
-* Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)
-* Outbound - Total Failed Requests
+.15+| <<jvm-charts>>
+    | Old Gen GC Count | TODO
+    | Old Gen GC Time | TODO
+    | Young Gen GC Count | TODO
+    | Young Gen GC Time | TODO
+    | Classes (Loaded, Loaded Total, Unloaded) | TODO
+    | Heap (Committed, Used) | TODO
+    | Thread Count | TODO
+    | JVM Uptime | TODO: TBD (PENDING WORK?)
+    | Eden Space graphs (Used, Max, Init, and Committed) | TODO
+    | Survivor Space graphs (Used, Max, Init, and Committed) | TODO
+    | Metaspace graphs (Used, Max, Init, and Committed) | TODO
+    | Code Cache graphs (Used, Max, Init, and Committed) | TODO
+    | Compressed Class Space graphs (Used, Max, Init, and Committed) | TODO
+    | Old Gen Mem graphs (Used, Max, Init, and Committed) | TODO
+//TODO
+//include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
+    | Committed Virtual Memory | TODO
 
-include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
+.8+| <<infrastructure-charts>>
+    | JVM - CPU % Utilization .8+| N/A (not available at this time)
+    | JVM - Heap Used
+    | Total System Processors
+    | System Memory
+    | JVM Thread Count
+//TODO
+//include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
+    | System CPU % Utilization
+    | JVM CPU Time
+    | Operating System Swap Space
 
-* Outbound - HTTP Ports
-* Outbound - Operations
-* Outbound - HTTP Protocols
-* Outbound - Endpoints
-| <<flows-charts>> a|
-
-include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-
-* Inbound - Response Time by Flow
-* Outbound - Response Time by Flow
-* Inbound - Requests by Flow
-* Outbound - Requests by Flow
-* Failures by Flow
-* Inbound - Slow Requests by Flow
-* Outbound - Slow Requests by Flow
-* Inbound - Response Time by Flow
-* Outbound - Response Time by Flow
-* Inbound - Requests by Flow
-* Outbound - Requests by Flow
-* Failures by Flow
-* Inbound - Slow Requests by Flow
-* Outbound- Slow Requests by Flow
-
-include::reuse::partial$billing/pricing.adoc[tag=flowsTabAvailability]
-| <<connectors-charts>> a|
-
-* Connector Message Volume
-
-* Response Time by Connector
-* Salesforce Requests
-* Salesforce Response Time
-* Salesforce Failures
-* Database Requests
-* Database Response Time
-* Database Failures
-* HTTP Requests
-* HTTP Response Time
-* HTTP Failures
-* Web Services Requests
-* Web Services Response Time
-* Web Services Failures
-* FTP Requests
-* FTP Response Time
-* FTP Failures
-* SFTP Requests
-* SFTP Response Time
-* SFTP Failures
-* SMTP Requests
-* SMTP Response Time
-* SMTP Failures
-* Object Store Requests
-* Object Store Response Time
-* Object Store Failures
-* Anypoint MQ Operations - Inbound
-* Anypoint MQ Response Time - Inbound
-* Anypoint MQ Failures - Inbound
-* Anypoint MQ Operations - Outbound
-* Anypoint MQ Response Time - Outbound
-* Anypoint MQ Failures - Outbound
-* Other Connector Requests
-* Other Connector Response Time
-* Other Connector Failures
-
-include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
-| <<performance-charts>> a|
-
-* Mule Messages
-* Average Response Time
-* Inbound - Average Response Time
-* Inbound - Response Time by HTTP Endpoint
-* Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
-* Outbound - Average Response Time
-* Outbound - Response Time by Endpoint
-* Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)
-| <<failures-charts>> a|
-
-* Errors
-* Inbound - Total Failed Requests
-* Outbound Total Failed Requests
-* Inbound - Total Requests by Response Type
-* Outbound - Total Requests by Response Type
-* Inbound - Failure Response Time by Endpoint
-* Inbound - Total Failed Requests by Endpoint
-* Outbound - Failure Response Time by HTTP Endpoint
-* Outbound - Total Failed Requests by HTTP Endpoint
-| <<jvm-charts>> a|
-
-* Old Gen GC Count
-* Old Gen GC Time
-* Young Gen GC Count
-* Young Gen GC Time
-* Classes (Loaded, Loaded Total, Unloaded)
-* Heap (Committed, Used)
-* Thread Count
-* JVM Uptime
-* Eden Space graphs (Used, Max, Init, and Committed)
-* Survivor Space graphs (Used, Max, Init, and Committed)
-* Metaspace graphs (Used, Max, Init, and Committed)
-* Code Cache graphs (Used, Max, Init, and Committed)
-* Compressed Class Space graphs (Used, Max, Init, and Committed)
-* Old Gen Mem graphs (Used, Max, Init, and Committed)
-
-include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-
-* Committed Virtual Memory
-| <<infrastructure-charts>> a|
-
-* JVM - CPU % Utilization
-* JVM - Heap Used
-* Total System Processors
-* System Memory
-* JVM Thread Count
-
-include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-
-* System CPU % Utilization
-* JVM CPU Time
-* Operating System Swap Space
-| <<custom-metrics-charts>> a|
-
+| <<custom-metrics-charts>>
+|
 include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
-| <<application-network>> a|
+| TODO (HORIZONALLY MERGE?)
 
-The chart on the *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app. 
+| <<application-network>>
+    | The chart on the *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app.
+
 include::reuse::partial$billing/pricing.adoc[tag=appNetworkTabAvailability]
+   
 |===
 
 == Chart Reference
