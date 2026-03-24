@@ -33,7 +33,7 @@ image::insights.png["Anypoint Insights UI"]
 
 Anypoint Insights uses <<metrics-api, Anypoint Monitoring Metrics API>> to query for data that appears in charts. Data aggregation and retention limits in Anypoint Insights are derived from the service that supports the Metrics API. 
 
-For specific subscription tiers, Integration Intelligence is also accessible from Anypoint Insights. To extend your MuleSoft telemetry data analysis beyond real-time monitoring, see xref:integration-intelligence.adoc[].
+For specific subscription tiers, Integration Intelligence is accessible from Anypoint Insights. To extend your MuleSoft telemetry data analysis beyond real-time monitoring, see xref:integration-intelligence.adoc[]. 
 
 [[prereqs]]
 == Before You Begin
