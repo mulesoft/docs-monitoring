@@ -447,7 +447,7 @@ The *Custom Metrics* tab for an application appears in Anypoint Insights only if
 
 ====== Create Custom Metrics
 
-To create custom metrics, use the Anypoint Custom Metrics Connector in your application flow to collect metrics for your business and operational needs. After you deploy your application, your defined custom metrics charts appear in this tab. For guidance on using the Anypoint Custom Metrics Connector, see xref:monitoring/anypoint-custom-metrics-connector.adoc[].
+To create custom metrics, use the Anypoint Custom Metrics Connector in your application flow to collect metrics for your business and operational needs. After you deploy your application, your defined custom metrics charts appear in this tab. For guidance using the Anypoint Custom Metrics Connector, see xref:monitoring::anypoint-custom-metrics-connector.adoc[].
 
 //TODO: WHAT DEPLOYMENT TARGETS SUPPORT CUSTOM METRICS? VERIFY AND ADD TO PREREQS IF NECESSARY (I SEE server or server cluster in built-in metrics doc but not clear about CH, CH2, RTF, etc.)
 
@@ -529,6 +529,15 @@ Charts with error metrics are available in the *Errors* tab for each API impleme
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tags="api-detail-errors"]
+
+[[entity-metrics-api-policies]]
+==== Policy Metrics for an API Implementation 
+
+Charts with policy metrics are available in the *Policies* tab for each API implementation that you can monitor in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tags="api-detail-policies"]
 
 [[entity-metrics-api-performance]]
 ==== Performance Metrics for an API Implementation
