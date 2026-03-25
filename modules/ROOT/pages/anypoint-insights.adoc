@@ -351,6 +351,8 @@ Deployment target of this entity, such as *CloudHub 2.0* or *Runtime Fabric*
 
 Anypoint Monitoring provides details on individual Mule apps deployed to a supported target.
 
+//TODO: LABELED SCREENSHOT 
+
 * <<entity-metrics-app-header>>
 * <<entity-metrics-app-overview>>
 * <<entity-metrics-app-requests>>
@@ -477,6 +479,8 @@ Chart settings correspond to and reflect values available to Mule apps from buil
 === API Details
 
 Anypoint Monitoring provides details on individual API implementations deployed to a supported target.
+
+//TODO: LABELED SCREENSHOT API PAGE
 
 * <<entity-metrics-api-header>>
 * <<entity-metrics-api-overview>>
