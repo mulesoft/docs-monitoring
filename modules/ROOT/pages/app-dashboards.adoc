@@ -40,60 +40,60 @@ Built-in dashboards include various pages to view different types of charts:
 
 [%header,cols="1,4,4"]
 |===
-| Built-In Dashboards | Charts | Available in Anypoint Insights
+| Built-In Dashboards | Charts | Counterpart in Anypoint Insights
 .10+| <<overview-charts>> 
-    | Mule Messages | Overview tab: Mule Messages
+    | Mule Messages | Mule Messages (xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview tab])
     | Average Response Time | N/A
-    | Errors | Overview tab: Failed Inbound Request Volume
-    | Inbound - Total Requests by Response Type | Requests tab: Inbound Request volume - choose group by Response type
-    | Inbound - Average Response Time | Overview tab: Inbound Request Latency (avg is one of the chart series)
-    | Outbound - Total Requests by Response Type | Requests tab: Outbound Request volume - choose group by Response type
+    | Errors | Failed Inbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview tab])
+    | Inbound - Total Requests by Response Type | Inbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab])
+    | Inbound - Average Response Time | TODO::Inbound Request Latency  pass:[<!-- (avg is one of the chart series) -->]
+    | Outbound - Total Requests by Response Type | Outbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) pass:[<!-- select response type -->]
     | Outbound - Average Response Time | N/A (not available)
-    | JVM - CPU % Utilization | JVM Tab: CPU Utilization
-    | JVM - Heap Used | JVM Tab: Heap usage
-    | JVM - Thread Count | JVM tab: Thread Count 
+    | JVM - CPU % Utilization | CPU Utilization (xref:anypoint-insights.adoc#chart-jvm-cpu-utilization[JVM tab])
+    | JVM - Heap Used | Heap Usage (xref:anypoint-insights.adoc#chart-jvm-heap-usage[JVM tab])
+    | JVM - Thread Count | Thread Count (xref:anypoint-insights.adoc#chart-jvm-thread-count[JVM tab])
 
 .12+| <<inbound-charts>> 
-    | Inbound - Total Requests by Response Type | Requests tab: Inbound Request Volume - choose group by Response type 
+    | Inbound - Total Requests by Response Type |Inbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) pass:[<!-- choose group by Response type -->]
     | Inbound - Average Response Time | N/A (not available)
-    | Inbound - Average Response Time by HTTP Endpoint .5+| Requests tab: Request Latency by Endpoint table, choose group by Inbound
+    | Inbound - Average Response Time by HTTP Endpoint .5+| Request Latency by Endpoint (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) pass:[<!-- choose group by Inbound -->]
     | Inbound - Response Time by HTTP Endpoint
     | Inbound - Min Response Time by HTTP Endpoint
     | Inbound - Max Response Time by HTTP Endpoint
     | Inbound - Total Requests by HTTP Endpoint
-    | Inbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Overview tab: Inbound Request Latency chart 
-    | Inbound - Total Failed Requests (TODO: Inbound - Failure Total Request Count) | Overview tab: Failed Inbound Request Volume 
+    | Inbound - Response Time graphs (99, 90, 75, and 50 percentiles) | TODO::Inbound Request Latency chart (≈[Overview tab]) 
+    | Inbound - Total Failed Requests (TODO: Inbound - Failure Total Request Count) | Failed Inbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview tab]) 
 //TODO
 //include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-    | Inbound - Protocols | Requests tab: Request Volume by Protocol - choose group by Inbound 
-    | Inbound - HTTP Endpoints | Requests tab: Request Volume by HTTP Endpoint 
-    | Inbound - Maximum Response Time | Requests tab: Inbound - Maximum Response Time by Endpoint  
+    | Inbound - Protocols | Request Volume by Protocol (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) pass:[<!-- choose group by Inbound -->]
+    | Inbound - HTTP Endpoints | Request Volume by HTTP Endpoint (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
+    | Inbound - Maximum Response Time | Inbound - Maximum Response Time by Endpoint (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab])  
 
 .10+| <<outbound-charts>>
-    | Outbound - Total Requests by Response Type | Requests tab: Outbound Request Volume - choose group by Response type 
+    | Outbound - Total Requests by Response Type | Outbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
     | Outbound - Average Response Time | N/A (not available)
-    | Outbound - Average Response Time by HTTP Endpoint | Requests tab: Request Latency by Endpoint - choose group by Outbound 
-    | Outbound - Total Requests by HTTP Endpoint | Requests tab: Request Latency by Endpoint - choose group by Outbound 
-    | Outbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Requests tab: Outbound Request Latency chart 
+    | Outbound - Average Response Time by HTTP Endpoint | Request Latency by Endpoint (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
+    | Outbound - Total Requests by HTTP Endpoint | Request Latency by Endpoint (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
+    | Outbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Outbound Request Latency (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
     | Outbound - Total Failed Requests | Errors tab: Failed Outbound Request Volume chart 
 //TODO
 //include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-    | Outbound - HTTP Ports | Requests tab: Outbound Request Volume by Port 
-    | Outbound - Operations | Requests tab: Outbound Request Volume by Operation 
-    | Outbound - HTTP Protocols | Requests tab: Request Volume by Protocol table - choose group by Outbound 
-    | Outbound - Endpoints | Requests tab: Outbound Request Volume by Remote Host 
+    | Outbound - HTTP Ports | Outbound Request Volume by Port (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab])
+    | Outbound - Operations | Outbound Request Volume by Operation (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
+    | Outbound - HTTP Protocols | Request Volume by Protocol (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
+    | Outbound - Endpoints | Outbound Request Volume by Remote Host (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
 
 .14+| <<flows-charts>>
 //TODO
 //include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-    | Inbound - Response Time by Flow .5+| Flows tab 
+    | Inbound - Response Time by Flow .5+| xref:anypoint-insights.adoc#entity-metrics-app-flows[Flows tab] 
     | Outbound - Response Time by Flow
     | Inbound - Requests by Flow
     | Outbound - Requests by Flow
     | Failures by Flow
     | Inbound - Slow Requests by Flow | N/A (not available)
     | Outbound - Slow Requests by Flow | N/A (not available)
-    | Inbound - Response Time by Flow .5+| Flows tab
+    | Inbound - Response Time by Flow .5+| xref:anypoint-insights.adoc#entity-metrics-app-flows[Flows tab]
     | Outbound - Response Time by Flow
     | Inbound - Requests by Flow
     | Outbound - Requests by Flow
@@ -106,9 +106,19 @@ Built-in dashboards include various pages to view different types of charts:
 
 .35+| <<connectors-charts>>
 
-include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
+-
+If you don’t see the *Connectors* tab, verify that:
 
-    | Connector Message Volume .35+| Connectors tab 
+* You have the Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform. 
+
+* The app you selected is a hybrid app deployed to a server, server group, or cluster.
+
+For more information, see xref:monitor-connectors.adoc[Monitor Connectors].
+-
+
+//include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
+
+    | Connector Message Volume .35+| xref:anypoint-insights.adoc#tab app-detail-connectors[Connectors tab] in Anypoint Insights
     | Response Time by Connector
     | Salesforce Requests 
     | Salesforce Response Time
@@ -144,52 +154,52 @@ include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
     | Other Connector Response Time 
     | Other Connector Failures 
 .8+| <<performance-charts>>
-    | Mule Messages | Overview tab: Mule Messages 
+    | Mule Messages | Mule Messages (xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview tab]) 
     | Average Response Time | N/A (not available) 
-    | Inbound - Average Response Time | Overview tab: Inbound Request Latency (avg is one of the chart series) 
-    | Inbound - Response Time by HTTP Endpoint | Requests tab: Request Latency by Endpoint table, choose group by Inbound 
-    | Inbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Overview tab: Inbound Request Latency chart 
+    | Inbound - Average Response Time | Request Latency (avg is one of the chart series) (xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview tab]) 
+    | Inbound - Response Time by HTTP Endpoint | Request Latency by Endpoint (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
+    | Inbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Request Latency (xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview tab]) 
     | Outbound - Average Response Time | N/A (not available) 
-    | Outbound - Response Time by Endpoint | Requests tab: Request Latency by Endpoint - choose group by Outbound 
-    | Outbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Requests tab: Outbound Request Latency chart 
+    | Outbound - Response Time by Endpoint | Request Latency by Endpoint (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
+    | Outbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Outbound Request Latency (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
 
-.9+| <<failures-charts>> TODO: TBD "All charts in Failures tab are duplicates. FIND AND IDENTIFY WHERE THEY ARE, NAMES NOT FOUND ELSEWHERE 
-    | Errors | Overview tab: Failed Inbound Request Volume
+.9+| <<failures-charts>> 
+    | Errors | Failed Inbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview tab])
     | Inbound - Total Failed Requests | TODO: Where is this listed?
     | Outbound Total Failed Requests | TODO: Where is this listed?
-    | Inbound - Total Requests by Response Type | Requests tab: Inbound Request volume - choose group by Response type
-    | Outbound - Total Requests by Response Type | Requests tab: Outbound Request volume - choose group by Response type
+    | Inbound - Total Requests by Response Type | Inbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab])
+    | Outbound - Total Requests by Response Type | Outbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab])
     | Inbound - Failure Response Time by Endpoint | TODO: Where is this listed?
     | Inbound - Total Failed Requests by Endpoint | TODO: Where is this listed?
     | Outbound - Failure Response Time by HTTP Endpoint | TODO: Where is this listed?
     | Outbound - Total Failed Requests by HTTP Endpoint | TODO: Where is this listed?
 
 .15+| <<jvm-charts>>
-    | Old Gen GC Count | Old Gen GC Count
-    | Old Gen GC Time | Old Gen GC Duration
-    | Young Gen GC Count | Young Gen GC Count
-    | Young Gen GC Time | Young Gen GC Duration
-    | Classes (Loaded, Loaded Total, Unloaded) | Classes Loaded, Classes Loaded Total, Classes Unloaded
-    | Heap (Committed, Used) | Heap Committed, Heap Usage
-    | Thread Count | Thread Count
+    | Old Gen GC Count | Old Gen GC Count (xref:anypoint-insights.adoc#chart-jvm-old-gen-gc-count[JVM tab])
+    | Old Gen GC Time | Old Gen GC Duration (xref:anypoint-insights.adoc#chart-jvm-old-gen-gc-duration[JVM tab])
+    | Young Gen GC Count | Young Gen GC Count (xref:anypoint-insights.adoc#chart-jvm-young-gen-gc-count[JVM tab])
+    | Young Gen GC Time | Young Gen GC Duration (xref:anypoint-insights.adoc#chart-jvm-young-gen-gc-duration[JVM tab])
+    | Classes (Loaded, Loaded Total, Unloaded) | Classes Loaded (xref:anypoint-insights.adoc#chart-jvm-classes-loaded[JVM tab]), Classes Loaded Total (xref:anypoint-insights.adoc#chart-jvm-classes-loaded-total[JVM tab]), Classes Unloaded (xref:anypoint-insights.adoc#chart-jvm-classes-unloaded[JVM tab])
+    | Heap (Committed, Used) | Heap Committed (xref:anypoint-insights.adoc#chart-jvm-heap-committed[JVM tab]), Heap Usage (xref:anypoint-insights.adoc#chart-jvm-heap-usage[JVM tab])
+    | Thread Count | Thread Count (xref:anypoint-insights.adoc#chart-jvm-thread-count[JVM tab])
     | JVM Uptime | N/A (not available at this time)
-    | Eden Space graphs (Used, Max, Init, and Committed) | Par Eden Space
-    | Survivor Space graphs (Used, Max, Init, and Committed) | Survivor Space
-    | Metaspace graphs (Used, Max, Init, and Committed) | Metaspace
-    | Code Cache graphs (Used, Max, Init, and Committed) | Code Cache 
-    | Compressed Class Space graphs (Used, Max, Init, and Committed) | Compressed Class Space
-    | Old Gen Mem graphs (Used, Max, Init, and Committed) | TODO: Split into Tenured Gen and G1 Old Gen charts *DETERMINE IMPLEMENTATION*
+    | Eden Space graphs (Used, Max, Init, and Committed) | Par Eden Space (xref:anypoint-insights.adoc#chart-jvm-par-eden-space[JVM tab])
+    | Survivor Space graphs (Used, Max, Init, and Committed) | Par Survivor Space (xref:anypoint-insights.adoc#chart-jvm-par-survivor-space[JVM tab])
+    | Metaspace graphs (Used, Max, Init, and Committed) | Metaspace (xref:anypoint-insights.adoc#chart-jvm-metaspace[JVM tab])
+    | Code Cache graphs (Used, Max, Init, and Committed) | Code Cache (xref:anypoint-insights.adoc#chart-jvm-code-cache[JVM tab]) 
+    | Compressed Class Space graphs (Used, Max, Init, and Committed) | Compressed Class Space (xref:anypoint-insights.adoc#chart-jvm-compressed-class-space[JVM tab])
+    | Old Gen Mem graphs (Used, Max, Init, and Committed) | Tenured Gen (xref:anypoint-insights.adoc#chart-jvm-tenured-gen[JVM tab]), G1 Old Gen (xref:anypoint-insights.adoc#chart-jvm-g1-old-gen[JVM tab]) pass:[<!-- DETERMINE IMPLEMENTATION -->]
 //TODO
 //include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
     | Committed Virtual Memory | TODO
 
 .8+| <<infrastructure-charts>>
     //N/A in INSIGHTS: 3/31/26 Release
-    | JVM - CPU % Utilization | JVM Tab: CPU Utilization
-    | JVM - Heap Used | JVM Tab: Heap usage
+    | JVM - CPU % Utilization | CPU Utilization (xref:anypoint-insights.adoc#chart-jvm-cpu-utilization[JVM tab])
+    | JVM - Heap Used | Heap Usage (xref:anypoint-insights.adoc#chart-jvm-heap-usage[JVM tab])
     | Total System Processors | TODO: Where is this listed?
     | System Memory | TODO: Where is this listed?
-    | JVM Thread Count | JVM tab: Thread Count
+    | JVM Thread Count | Thread Count (xref:anypoint-insights.adoc#chart-jvm-thread-count[JVM tab])
 //TODO
 //include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
     | System CPU % Utilization
