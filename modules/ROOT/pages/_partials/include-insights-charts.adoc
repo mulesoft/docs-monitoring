@@ -47,8 +47,11 @@ Total Mule message count for this app
 +
 For information about Mule messages, see xref:mule-runtime::about-mule-event.adoc[].
 
-//  shared metric in Overview tab
-include::partial$include-insights-charts.adoc[tag="request-latency"]
+[[chart-overview-inbound-request-latency]]
+Inbound Request Latency::
+Latency in milliseconds of inbound requests to this app over time
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-overview-inbound-request-volume]]
 Inbound Request Volume::

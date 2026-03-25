@@ -358,6 +358,7 @@ Anypoint Monitoring provides details on individual Mule apps deployed to a suppo
 * <<entity-metrics-app-flows>>
 * <<entity-metrics-app-connectors>>
 * <<entity-metrics-app-jvm>>
+* <<entity-metrics-app-custom-metrics>>
 
 include::partial$include-entities.adoc[tags="entity-definition"]
 
@@ -427,6 +428,48 @@ Charts with JVM metrics are available in the *JVM* tab for a Mule app in Anypoin
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tag="app-detail-jvm"]
+
+[[entity-metrics-app-custom-metrics]]
+==== Custom Metrics for a Mule Application
+
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
+
+Monitor and adjust settings of charts that use your organization's custom metrics for a Mule application. 
+
+====== Before You Begin
+
+Meet subscription tier and Mule runtime version requirements:
+
+The *Custom Metrics* tab for an application appears in Anypoint Insights only if your organization has the Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform and the application you selected is running on a supported version of Mule. 
+
+====== Create Custom Metrics
+
+To create custom metrics, use the Anypoint Custom Metrics Connector in your application flow to collect metrics for your business and operational needs. After you deploy your application, your defined custom metrics charts appear in this tab. For guidance on using the Anypoint Custom Metrics Connector, see xref:monitoring/anypoint-custom-metrics-connector.adoc[].
+
+====== Configure Custom Metrics Charts
+
+To adjust the custom metrics settings of a Mule application chart in Anypoint Insights:
+
+. From a Mule application listed in Anypoint Insights, click the *Custom Metrics* tab.
+. Select a value these fields, and then click *Apply* to update the chart:
+
+* *Aggregations* values include:
+
+** *None* (Default) - Performs no data aggregation.  
+** *count* - Displays the total number of items collected for the measurement.
+** *distinct* - Returns the unique values for the given measurement.
+** *integral* - Returns the area under the curve for subsequent values.
+** *mean* - Returns the arithmetic average of the specified measurement over a given interval of time.
+** *median* - Displays the middle value for the collected metrics.
+** *mode* - Displays the most frequent value in the metrics collected for the defined measurement. 
+** *sum* - Displays the sum of all the values for the defined measurement. 
+
+* *Measurement*: These options are determined by the measurement values you define in the Custom Metrics connector.
+
+* *Dimensions*: The choices in this list are determined by the values you define in the Custom Metrics connector. 
+
+Chart settings correspond to and reflect values available to Mule apps from built-in dashboards (in *Built-in Dashboards*) that have custom metrics. The *Dimensions* setting is named *Group By* in built-in dashboards. See xref:monitoring/anypoint-custom-metrics-connector.adoc#custom-metrics-chart-settings[Configure Charts with Custom Metrics in a Built-In Dashboard]).
 
 //
 //H3: ENTITY METRICS for APIs (ONLY)
