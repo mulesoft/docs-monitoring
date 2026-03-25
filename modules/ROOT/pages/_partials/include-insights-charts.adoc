@@ -202,8 +202,7 @@ Response Time by Connector::
 Response times in milliseconds by connector over time
 
 Salesforce Requests::
-Number of requests to Salesforce connector endpoints
-//TODO: VERIFY, No EXAMPLE AVAILABLE, Salesforce connector or endpoint or???
+Number of requests over time to Salesforce connector endpoints
 
 Salesforce Response Time::
 Response times in milliseconds for requests to Salesforce connector endpoints
@@ -214,7 +213,7 @@ Get total number of failed requests to Salesforce connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, Salesforce connector or endpoint or???
 
 Database Requests::
-Get total number of requests to Database connector endpoints
+Number of requests over time to Database connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, Database connector or endpoint or???
 
 Database Response Time::
@@ -226,11 +225,11 @@ Get total number of failed requests to Database connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, Database connector or endpoint or???
 
 HTTP Requests::
-Get total number of requests to HTTP connector endpoints
+Number of requests over time to HTTP connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, HTTP connector or endpoint or???
 
 HTTP Response Time::
-Get response times in milliseconds for requests to HTTP connector endpoints
+Response times in milliseconds for requests over time to HTTP connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, HTTP connector or endpoint or???
 
 HTTP Failures::
@@ -238,11 +237,11 @@ Get total number of failed requests to HTTP connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, HTTP connector or endpoint or???
 
 Web Service Requests::
-Get total number of requests to Web Service connector endpoints
+Number of requests over time to Web Service connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, Web Service connector or endpoint or???
 
 Web Service Response Time::
-Get response times in milliseconds for requests to Web Service connector endpoints
+Response times in milliseconds for requests over time to Web Service connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, Web Service connector or endpoint or???
 
 Web Service Failures::
@@ -250,23 +249,23 @@ Get total number of failed requests to Web Service connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, Web Service connector or endpoint or???
 
 FTP Requests::
-Get total number of requests to FTP connector endpoints
+Number of requests over time to FTP connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, FTP connector or endpoint or???
 
 FTP Response Time::
-Get response times in milliseconds for requests to FTP connector endpoints
+Response times in milliseconds for requests over time to FTP connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, FTP connector or endpoint or??? 
 
 FTP Failures::
-Get total number of failed requests to FTP connector endpoints
+Number of failed requests to FTP connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, FTP connector or endpoint or???
 
 SFTP Requests::
-Get total number of requests to SFTP connector endpoints
+Number of requests over time to SFTP connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, SFTP connector or endpoint or???    
 
 SFTP Response Time::
-Get response times in milliseconds for requests to SFTP connector endpoints
+Response times in milliseconds for requests over time to SFTP connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, SFTP connector or endpoint or???
 
 SFTP Failures::
@@ -274,31 +273,29 @@ Get total number of failed requests to SFTP connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, SFTP connector or endpoint or???
 
 SMTP Requests::
-Get total number of requests to SMTP connector endpoints
+Number of requests over time to SMTP connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, SMTP connector or endpoint or???
 
 SMTP Response Time::
-Get response times in milliseconds for requests to SMTP connector endpoints
+Response times in milliseconds for requests over time to SMTP connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, SMTP connector or endpoint or???
 
 SMTP Failures::
-Get total number of failed requests to SMTP connector endpoints
+Number of failed requests to SMTP connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, SMTP connector or endpoint or???
 
 Object Store Requests::
-Number of requests to Object Store connector endpoints
-//TODO: VERIFY, No EXAMPLE AVAILABLE, Object Store connector or endpoint or???
+Number of requests over time to Object Store connector endpoints
 
 Object Store Response Time::
-Response times in milliseconds for requests to Object Store connector endpoints
-//TODO: VERIFY, No EXAMPLE AVAILABLE, Object Store connector or endpoint or???
+Response times in milliseconds for requests over time to Object Store connector endpoints
 
 Object Store Failures:: 
 Number of failed requests to Object Store connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, Object Store connector or endpoint or???
 
 Anypoint MQ Operations - Inbound::
-Number of inbound operations to Anypoint MQ connector endpoints
+Number of inbound Anypoint MQ connector operations
 //TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
 
 Anypoint MQ Response Time - Inbound::
@@ -306,11 +303,11 @@ Inbound response times in milliseconds for requests to Anypoint MQ connector end
 //TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
 
 Anypoint MQ Failures - Inbound::
-Number of failed inbound requests to Anypoint MQ connector endpoints
+Number of failed inbound Anypoint MQ connector operations
 //TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
 
 Anypoint MQ Operations - Outbound::
-Number of outbound operations to Anypoint MQ connector endpoints
+Number of outbound Anypoint MQ connector operations
 //TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
 
 Anypoint MQ Response Time - Outbound::
