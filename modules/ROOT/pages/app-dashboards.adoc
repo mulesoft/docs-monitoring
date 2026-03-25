@@ -53,10 +53,10 @@ Built-in dashboards include various pages to view different types of charts:
     | JVM - Heap Used | JVM Tab: Heap usage
     | JVM - Thread Count | JVM tab: Thread Count 
 
-.10+| <<inbound-charts>> 
+.12+| <<inbound-charts>> 
     | Inbound - Total Requests by Response Type | Requests tab: Inbound Request Volume - choose group by Response type 
     | Inbound - Average Response Time | N/A (not available)
-    | Inbound - Average Response Time by HTTP Endpoint .4+| Requests tab: Request Latency by Endpoint table, choose group by Inbound
+    | Inbound - Average Response Time by HTTP Endpoint .5+| Requests tab: Request Latency by Endpoint table, choose group by Inbound
     | Inbound - Response Time by HTTP Endpoint
     | Inbound - Min Response Time by HTTP Endpoint
     | Inbound - Max Response Time by HTTP Endpoint
@@ -105,6 +105,9 @@ Built-in dashboards include various pages to view different types of charts:
 //include::reuse::partial$billing/pricing.adoc[tag=flowsTabAvailability]
 
 .35+| <<connectors-charts>>
+
+include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
+
     | Connector Message Volume .35+| Connectors tab 
     | Response Time by Connector
     | Salesforce Requests 
@@ -140,9 +143,6 @@ Built-in dashboards include various pages to view different types of charts:
     | Other Connector Requests 
     | Other Connector Response Time 
     | Other Connector Failures 
-
-//TODO
-//include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
 .8+| <<performance-charts>>
     | Mule Messages | Overview tab: Mule Messages 
     | Average Response Time | N/A (not available) 

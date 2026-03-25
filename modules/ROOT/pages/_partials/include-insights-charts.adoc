@@ -83,30 +83,29 @@ Inbound or outbound latency, in milliseconds, by endpoint
 The table captures the average latency and the latency value of requests at the p50, p75, p90, p95, and p99 percentiles.
 
 Inbound - Maximum Response Time by Endpoint::
-TODO
+Maximum response time, in milliseconds, for inbound requests by endpoint
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Request Volume by Protocol::
-TODO: Group by Inbound or Outbound
-TODO: Get Protocol and Total (requests) 
+Total number of inbound or outbound requests by protocol, such as HTTPS
 
 Request Volume by HTTP Endpoint::
-TODO: Group by Inbound or Outbound
-TODO: Get Endpoint and Total (requests) 
+Total number of inbound or outbound requests by HTTP endpoint
 
 Outbound Request Volume by Port::
-TODO: no dropdown
-TODO: Get Port and Total (requests)
+Total number of outbound requests by port number, such as 443.
 
 Outbound Request Volume by Remote Host::
-TODO: no dropdown
-TODO: TBD: Get Remote Host and Total (requests) - NO EXAMPLE AVAILABLE
+Total number of outbound requests by remote host, such as an Object Store or a `cloudhub.io` address. 
 
 Outbound Request Latency::
-Get latency by percentile (p50, p75, p90, p95) and the average latency in milliseconds for outbound requests.
+Outbound request latency in milliseconds, as a percentile (p50, p75, p90, p95) and an average.
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Outbound Request Volume by Operation::
-TODO: no dropdown
-TODO: Get Operation and Total (requests) - NO EXAMPLE AVAILABLE
+Total number of requests by operation, such as a `retrieve` or `store` operation.
 
  
 //end::app-detail-requests[]
@@ -131,22 +130,16 @@ Total number of unsuccessful outbound requests to the 20 endpoints with the most
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Inbound - Response Time by Endpoint::
-TODO: TBD: NOT DROPDOWN OR EXAMPLE AVAILABLE -- FOR ERRORS?
-Get inbound response time by endpoint, average, minimum, and maximum response times. 
-TODO: NO TIME UNITS AVAILABLE.
+Average, minimum, and maximum response times in milliseconds for inbound requests by endpoint
 
 Outbound - Response Time by Endpoint::
-TODO: TBD: NOT DROPDOWN OR EXAMPLE AVAILABLE -- FOR ERRORS?
-Get response time by endpoint, average, minimum, and maximum response times. 
-TODO: NO TIME UNITS AVAILABLE.
+Average, minimum, and maximum response times in milliseconds for outbound requests by endpoint
 
 Inbound - Request Count by Endpoint:: 
-TODO: TBD: NOT DROPDOWN OR EXAMPLE AVAILABLE -- FOR ERRORS?
-Get total number of inbound requests by endpoint.
+Total number of inbound requests by endpoint
 
 Outbound - Request Count by Endpoint::
-TODO: TBD: NOT DROPDOWN OR EXAMPLE AVAILABLE -- FOR ERRORS?
-Get total number of outbound requests by endpoint.
+Total number of outbound requests by endpoint
 
 //end::app-detail-errors[]
 //-----------------------//
@@ -156,44 +149,44 @@ Get total number of outbound requests by endpoint.
 //tag::app-detail-flows[]
 
 Inbound - Response Time by Flow::
-Get inbound response times in milliseconds by application flow. 
-TODO: VERIFY
+Inbound responses in milliseconds over time by application flow
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Outbound - Response Time by Flow::
-Get outbound response times in milliseconds by application flow. 
-TODO: VERIFY
+Outbound responses in milliseconds over time by application flow
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Inbound - Requests by Flow::
-Get total number of inbound requests by application flow.
-TODO: VERIFY
+Number of inbound requests over time by application flow
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Outbound - Requests by Flow::
-Get total number of outbound requests by application flow.
-TODO: VERIFY    
+Number of outbound requests over time by application flow
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Failures by Flow::
-Get total number of failed requests by application flow.
-TODO: VERIFY, No EXAMPLE AVAILABLE
+Number of failures over time by application flow
++
+include::partial$include-insights-charts.adoc[tag="download-as"]
 
 Inbound - Response Time by Flow::
-Get average, minimum, and maximum response times in milliseconds by application flow.
-TODO: VERIFY 
+Average, minimum, and maximum inbound response times in milliseconds by application flow
 
 Outbound - Response Time by Flow::
-Get average, minimum, and maximum response times in milliseconds by application flow.
-TODO: VERIFY, No EXAMPLE AVAILABLE
+Average, minimum, and maximum outbound response times in milliseconds by application flow
 
 Inbound - Requests by Flow::
-Get total number of inbound requests by application flow.
-TODO: VERIFY, No EXAMPLE AVAILABLE  
+Number of inbound requests by application flow
 
 Outbound - Requests by Flow::
-Get total number of outbound requests by application flow.
-TODO: VERIFY, No EXAMPLE AVAILABLE
+Number of outbound requests by application flow
 
 Failures by Flow::
-Get total number of failures by application flow.
-TODO: WHAT TYPE OF FAILURES? NO EXAMPLE AVAILABLE. VERIFY.
+Number of failures by application flow
 
 //end::app-detail-flows[]
 //-----------------------//
@@ -203,144 +196,142 @@ TODO: WHAT TYPE OF FAILURES? NO EXAMPLE AVAILABLE. VERIFY.
 //tag::app-detail-connectors[]
 
 Connector Message Volume::
-Get total number of messages processed by connectors in this application.
-TODO: VERIFY, No EXAMPLE AVAILABLE
+Number of messages processed by connector over time
 
 Response Time by Connector::
-Get response times in milliseconds by connector.
-TODO: VERIFY, No EXAMPLE AVAILABLE
+Response times in milliseconds by connector over time
 
 Salesforce Requests::
-Get total number of requests to Salesforce endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Salesforce connector or endpoint or???
+Number of requests to Salesforce connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Salesforce connector or endpoint or???
 
 Salesforce Response Time::
-Get response times in milliseconds for requests to Salesforce endpoints.
+Response times in milliseconds for requests to Salesforce connector endpoints
 TODO: VERIFY, No EXAMPLE AVAILABLE, Salesforce connector or endpoint or???  
 
 Salesforce Failures::
-Get total number of failed requests to Salesforce endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Salesforce connector or endpoint or???
+Get total number of failed requests to Salesforce connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Salesforce connector or endpoint or???
 
 Database Requests::
-Get total number of requests to database endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Database connector or endpoint or???
+Get total number of requests to Database connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Database connector or endpoint or???
 
 Database Response Time::
-Get response times in milliseconds for requests to database endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Database connector or endpoint or???
+Get response times in milliseconds for requests to Database connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Database connector or endpoint or???
 
 Database Failures::
-Get total number of failed requests to database endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Database connector or endpoint or???
+Get total number of failed requests to Database connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Database connector or endpoint or???
 
 HTTP Requests::
-Get total number of requests to HTTP endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, HTTP connector or endpoint or???
+Get total number of requests to HTTP connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, HTTP connector or endpoint or???
 
 HTTP Response Time::
-Get response times in milliseconds for requests to HTTP endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, HTTP connector or endpoint or???
+Get response times in milliseconds for requests to HTTP connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, HTTP connector or endpoint or???
 
 HTTP Failures::
-Get total number of failed requests to HTTP endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, HTTP connector or endpoint or???
+Get total number of failed requests to HTTP connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, HTTP connector or endpoint or???
 
 Web Service Requests::
-Get total number of requests to Web Service endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Web Service connector or endpoint or???
+Get total number of requests to Web Service connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Web Service connector or endpoint or???
 
 Web Service Response Time::
-Get response times in milliseconds for requests to Web Service endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Web Service connector or endpoint or???
+Get response times in milliseconds for requests to Web Service connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Web Service connector or endpoint or???
 
 Web Service Failures::
-Get total number of failed requests to Web Service endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Web Service connector or endpoint or???
+Get total number of failed requests to Web Service connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Web Service connector or endpoint or???
 
 FTP Requests::
-Get total number of requests to FTP endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, FTP connector or endpoint or???
+Get total number of requests to FTP connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, FTP connector or endpoint or???
 
 FTP Response Time::
-Get response times in milliseconds for requests to FTP endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, FTP connector or endpoint or??? 
+Get response times in milliseconds for requests to FTP connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, FTP connector or endpoint or??? 
 
 FTP Failures::
-Get total number of failed requests to FTP endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, FTP connector or endpoint or???
+Get total number of failed requests to FTP connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, FTP connector or endpoint or???
 
 SFTP Requests::
-Get total number of requests to SFTP endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, SFTP connector or endpoint or???    
+Get total number of requests to SFTP connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, SFTP connector or endpoint or???    
 
 SFTP Response Time::
-Get response times in milliseconds for requests to SFTP endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, SFTP connector or endpoint or???
+Get response times in milliseconds for requests to SFTP connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, SFTP connector or endpoint or???
 
 SFTP Failures::
-Get total number of failed requests to SFTP endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, SFTP connector or endpoint or???
+Get total number of failed requests to SFTP connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, SFTP connector or endpoint or???
 
 SMTP Requests::
-Get total number of requests to SMTP endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, SMTP connector or endpoint or???
+Get total number of requests to SMTP connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, SMTP connector or endpoint or???
 
 SMTP Response Time::
-Get response times in milliseconds for requests to SMTP endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, SMTP connector or endpoint or???
+Get response times in milliseconds for requests to SMTP connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, SMTP connector or endpoint or???
 
 SMTP Failures::
-Get total number of failed requests to SMTP endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, SMTP connector or endpoint or???
+Get total number of failed requests to SMTP connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, SMTP connector or endpoint or???
 
 Object Store Requests::
-Get total number of requests to Object Store endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Object Store connector or endpoint or???
+Number of requests to Object Store connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Object Store connector or endpoint or???
 
 Object Store Response Time::
-Get response times in milliseconds for requests to Object Store endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Object Store connector or endpoint or???
+Response times in milliseconds for requests to Object Store connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Object Store connector or endpoint or???
 
 Object Store Failures:: 
-Get total number of failed requests to Object Store endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Object Store connector or endpoint or???
+Number of failed requests to Object Store connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Object Store connector or endpoint or???
 
 Anypoint MQ Operations - Inbound::
-Get total number of inbound operations to Anypoint MQ endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
+Number of inbound operations to Anypoint MQ connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
 
 Anypoint MQ Response Time - Inbound::
-Get inboundresponse times in milliseconds for requests to Anypoint MQ endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
+Inbound response times in milliseconds for requests to Anypoint MQ connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
 
 Anypoint MQ Failures - Inbound::
-Get total number of failed inbound requests to Anypoint MQ endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
+Number of failed inbound requests to Anypoint MQ connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
 
 Anypoint MQ Operations - Outbound::
-Get total number of outbound operations to Anypoint MQ endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
+Number of outbound operations to Anypoint MQ connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
 
 Anypoint MQ Response Time - Outbound::
-Get outbound response times in milliseconds for requests to Anypoint MQ endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
+Outbound response times in milliseconds for requests to Anypoint MQ connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
 
 Anypoint MQ Failures - Outbound::
-Get total number of failed outbound requests to Anypoint MQ endpoints.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or??? 
+Number of failed outbound requests to Anypoint MQ connector endpoints
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Anypoint MQ connector or endpoint or???
 
 Other Connector Requests::
-Get total number of requests to connectors other than Salesforce, Database, HTTP, Web Service, FTP, SFTP, SMTP, Object Store, and Anypoint MQ.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Other connectors or endpoints or???
+Number of requests to connectors other than Salesforce, Database, HTTP, Web Service, FTP, SFTP, SMTP, Object Store, and Anypoint MQ
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Other connectors or endpoints or???
 
 Other Connector Response Time::
-Get response times in milliseconds for requests to connectors other than Salesforce, Database, HTTP, Web Service, FTP, SFTP, SMTP, Object Store, and Anypoint MQ.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Other connectors or endpoints or???
+Response times in milliseconds for requests to connectors other than Salesforce, Database, HTTP, Web Service, FTP, SFTP, SMTP, Object Store, and Anypoint MQ
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Other connectors or endpoints or???
 
 Other Connector Failures::
-Get total number of failed requests to connectors other than Salesforce, Database, HTTP, Web Service, FTP, SFTP, SMTP, Object Store, and Anypoint MQ.
-TODO: VERIFY, No EXAMPLE AVAILABLE, Other connectors or endpoints or???
+Number of failed requests to connectors other than Salesforce, Database, HTTP, Web Service, FTP, SFTP, SMTP, Object Store, and Anypoint MQ
+//TODO: VERIFY, No EXAMPLE AVAILABLE, Other connectors or endpoints or???
 
 //end::app-detail-connectors[]
 //-----------------------//
