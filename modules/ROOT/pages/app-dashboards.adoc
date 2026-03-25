@@ -47,20 +47,22 @@ Built-in dashboards include various pages to view different types of charts:
     | Errors | Overview tab: Failed Inbound Request Volume
     | Inbound - Total Requests by Response Type | Requests tab: Inbound Request volume - choose group by Response type
     | Inbound - Average Response Time | Overview tab: Inbound Request Latency (avg is one of the chart series)
-    | Outbound - Total Requests by Response Type | Requests tab: Inbound Request volume - choose group by Response type
-    | Outbound - Average Response Time | N/A
+    | Outbound - Total Requests by Response Type | Requests tab: Outbound Request volume - choose group by Response type
+    | Outbound - Average Response Time | N/A (not available)
     | JVM - CPU % Utilization | JVM Tab: CPU Utilization
     | JVM - Heap Used | JVM Tab: Heap usage
     | JVM - Thread Count | JVM tab: Thread Count 
 
 .10+| <<inbound-charts>> 
     | Inbound - Total Requests by Response Type | Requests tab: Inbound Request Volume - choose group by Response type 
-    | Inbound - Average Response Time | N/A 
-    | Inbound - Average Response Time by HTTP Endpoint | Requests tab: Request Latency by Endpoint table, choose group by Inbound
-    | Inbound - Response Time by HTTP Endpoint | Requests tab: Request Latency by Endpoint table, choose group by Inbound
-    | Inbound - Total Requests by Endpoint | TODO 
+    | Inbound - Average Response Time | N/A (not available)
+    | Inbound - Average Response Time by HTTP Endpoint .4+| Requests tab: Request Latency by Endpoint table, choose group by Inbound
+    | Inbound - Response Time by HTTP Endpoint
+    | Inbound - Min Response Time by HTTP Endpoint
+    | Inbound - Max Response Time by HTTP Endpoint
+    | Inbound - Total Requests by HTTP Endpoint
     | Inbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Overview tab: Inbound Request Latency chart 
-    | Inbound - Total Failed Requests (TODO: Outbound - Failure Total Request Count) | Errors tab: Failed Outbound Request Volume chart
+    | Inbound - Total Failed Requests (TODO: Inbound - Failure Total Request Count) | Overview tab: Failed Inbound Request Volume 
 //TODO
 //include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
     | Inbound - Protocols | Requests tab: Request Volume by Protocol - choose group by Inbound 
@@ -69,35 +71,35 @@ Built-in dashboards include various pages to view different types of charts:
 
 .10+| <<outbound-charts>>
     | Outbound - Total Requests by Response Type | Requests tab: Outbound Request Volume - choose group by Response type 
-    | Outbound - Average Response Time | N/A 
+    | Outbound - Average Response Time | N/A (not available)
     | Outbound - Average Response Time by HTTP Endpoint | Requests tab: Request Latency by Endpoint - choose group by Outbound 
     | Outbound - Total Requests by HTTP Endpoint | Requests tab: Request Latency by Endpoint - choose group by Outbound 
     | Outbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Requests tab: Outbound Request Latency chart 
-    | Outbound - Total Failed Requests | TODO 
+    | Outbound - Total Failed Requests | Errors tab: Failed Outbound Request Volume chart 
 //TODO
 //include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-    | Outbound - HTTP Ports | TODO 
-    | Outbound - Operations | TODO 
-    | Outbound - HTTP Protocols | TODO 
-    | Outbound - Endpoints | TODO 
+    | Outbound - HTTP Ports | Requests tab: Outbound Request Volume by Port 
+    | Outbound - Operations | Requests tab: Outbound Request Volume by Operation 
+    | Outbound - HTTP Protocols | Requests tab: Request Volume by Protocol table - choose group by Outbound 
+    | Outbound - Endpoints | Requests tab: Outbound Request Volume by Remote Host 
 
 .14+| <<flows-charts>>
 //TODO
 //include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-    | Inbound - Response Time by Flow | Flows tab 
-    | Outbound - Response Time by Flow | Flows tab 
-    | Inbound - Requests by Flow | Flows tab 
-    | Outbound - Requests by Flow | Flows tab 
-    | Failures by Flow | Flows tab 
-    | Inbound - Slow Requests by Flow | N/A
-    | Outbound - Slow Requests by Flow | N/A
-    | Inbound - Response Time by Flow | Flows tab
-    | Outbound - Response Time by Flow | Flows tab
-    | Inbound - Requests by Flow | Flows tab
-    | Outbound - Requests by Flow | Flows tab
-    | Failures by Flow | Flows tab 
-    | Inbound - Slow Requests by Flow | N/A 
-    | Outbound - Slow Requests by Flow | N/A 
+    | Inbound - Response Time by Flow .5+| Flows tab 
+    | Outbound - Response Time by Flow
+    | Inbound - Requests by Flow
+    | Outbound - Requests by Flow
+    | Failures by Flow
+    | Inbound - Slow Requests by Flow | N/A (not available)
+    | Outbound - Slow Requests by Flow | N/A (not available)
+    | Inbound - Response Time by Flow .5+| Flows tab
+    | Outbound - Response Time by Flow
+    | Inbound - Requests by Flow
+    | Outbound - Requests by Flow
+    | Failures by Flow
+    | Inbound - Slow Requests by Flow .2+| N/A (not available)
+    | Outbound - Slow Requests by Flow
 
 //TODO
 //include::reuse::partial$billing/pricing.adoc[tag=flowsTabAvailability]
@@ -142,51 +144,52 @@ Built-in dashboards include various pages to view different types of charts:
 //TODO
 //include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
 .8+| <<performance-charts>>
-    | Mule Messages | TODO 
-    | Average Response Time | TODO 
-    | Inbound - Average Response Time | TODO 
-    | Inbound - Response Time by HTTP Endpoint | TODO 
-    | Inbound - Response Time graphs (99, 90, 75, and 50 percentiles) | TODO 
-    | Outbound - Average Response Time | TODO 
-    | Outbound - Response Time by Endpoint | TODO 
-    | Outbound - Response Time graphs (99, 90, 75, and 50 percentiles) | TODO 
+    | Mule Messages | Overview tab: Mule Messages 
+    | Average Response Time | N/A (not available) 
+    | Inbound - Average Response Time | Overview tab: Inbound Request Latency (avg is one of the chart series) 
+    | Inbound - Response Time by HTTP Endpoint | Requests tab: Request Latency by Endpoint table, choose group by Inbound 
+    | Inbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Overview tab: Inbound Request Latency chart 
+    | Outbound - Average Response Time | N/A (not available) 
+    | Outbound - Response Time by Endpoint | Requests tab: Request Latency by Endpoint - choose group by Outbound 
+    | Outbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Requests tab: Outbound Request Latency chart 
 
-.9+| <<failures-charts>>
-    | Errors | TODO
-    | Inbound - Total Failed Requests | TODO
-    | Outbound Total Failed Requests | TODO
-    | Inbound - Total Requests by Response Type | TODO
-    | Outbound - Total Requests by Response Type | TODO
-    | Inbound - Failure Response Time by Endpoint | TODO
-    | Inbound - Total Failed Requests by Endpoint | TODO
-    | Outbound - Failure Response Time by HTTP Endpoint | TODO
-    | Outbound - Total Failed Requests by HTTP Endpoint | TODO
+.9+| <<failures-charts>> TODO: TBD "All charts in Failures tab are duplicates. FIND AND IDENTIFY WHERE THEY ARE, NAMES NOT FOUND ELSEWHERE 
+    | Errors | Overview tab: Failed Inbound Request Volume
+    | Inbound - Total Failed Requests | TODO: Where is this listed?
+    | Outbound Total Failed Requests | TODO: Where is this listed?
+    | Inbound - Total Requests by Response Type | Requests tab: Inbound Request volume - choose group by Response type
+    | Outbound - Total Requests by Response Type | Requests tab: Outbound Request volume - choose group by Response type
+    | Inbound - Failure Response Time by Endpoint | TODO: Where is this listed?
+    | Inbound - Total Failed Requests by Endpoint | TODO: Where is this listed?
+    | Outbound - Failure Response Time by HTTP Endpoint | TODO: Where is this listed?
+    | Outbound - Total Failed Requests by HTTP Endpoint | TODO: Where is this listed?
 
 .15+| <<jvm-charts>>
-    | Old Gen GC Count | TODO
-    | Old Gen GC Time | TODO
-    | Young Gen GC Count | TODO
-    | Young Gen GC Time | TODO
-    | Classes (Loaded, Loaded Total, Unloaded) | TODO
-    | Heap (Committed, Used) | TODO
-    | Thread Count | TODO
-    | JVM Uptime | TODO: TBD (PENDING WORK?)
-    | Eden Space graphs (Used, Max, Init, and Committed) | TODO
-    | Survivor Space graphs (Used, Max, Init, and Committed) | TODO
-    | Metaspace graphs (Used, Max, Init, and Committed) | TODO
-    | Code Cache graphs (Used, Max, Init, and Committed) | TODO
-    | Compressed Class Space graphs (Used, Max, Init, and Committed) | TODO
-    | Old Gen Mem graphs (Used, Max, Init, and Committed) | TODO
+    | Old Gen GC Count | Old Gen GC Count
+    | Old Gen GC Time | Old Gen GC Duration
+    | Young Gen GC Count | Young Gen GC Count
+    | Young Gen GC Time | Young Gen GC Duration
+    | Classes (Loaded, Loaded Total, Unloaded) | Classes Loaded, Classes Loaded Total, Classes Unloaded
+    | Heap (Committed, Used) | Heap Committed, Heap Usage
+    | Thread Count | Thread Count
+    | JVM Uptime | N/A (not available at this time)
+    | Eden Space graphs (Used, Max, Init, and Committed) | Par Eden Space
+    | Survivor Space graphs (Used, Max, Init, and Committed) | Survivor Space
+    | Metaspace graphs (Used, Max, Init, and Committed) | Metaspace
+    | Code Cache graphs (Used, Max, Init, and Committed) | Code Cache 
+    | Compressed Class Space graphs (Used, Max, Init, and Committed) | Compressed Class Space
+    | Old Gen Mem graphs (Used, Max, Init, and Committed) | TODO: Split into Tenured Gen and G1 Old Gen charts *DETERMINE IMPLEMENTATION*
 //TODO
 //include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
     | Committed Virtual Memory | TODO
 
 .8+| <<infrastructure-charts>>
-    | JVM - CPU % Utilization .8+| N/A (not available at this time)
-    | JVM - Heap Used
-    | Total System Processors
-    | System Memory
-    | JVM Thread Count
+    //N/A in INSIGHTS: 3/31/26 Release
+    | JVM - CPU % Utilization | JVM Tab: CPU Utilization
+    | JVM - Heap Used | JVM Tab: Heap usage
+    | Total System Processors | TODO: Where is this listed?
+    | System Memory | TODO: Where is this listed?
+    | JVM Thread Count | JVM tab: Thread Count
 //TODO
 //include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
     | System CPU % Utilization

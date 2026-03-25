@@ -355,6 +355,8 @@ Anypoint Monitoring provides details on individual Mule apps deployed to a suppo
 * <<entity-metrics-app-overview>>
 * <<entity-metrics-app-requests>>
 * <<entity-metrics-app-errors>>
+* <<entity-metrics-app-flows>>
+* <<entity-metrics-app-connectors>>
 * <<entity-metrics-app-jvm>>
 
 include::partial$include-entities.adoc[tags="entity-definition"]
@@ -394,6 +396,24 @@ Charts with error metrics are available in the *Errors* tab for a Mule app in An
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tag="app-detail-errors"]
+
+[[entity-metrics-app-flows]]
+==== Flow Metrics for a Mule Flow
+
+Charts with error metrics are available in the *Flows* tab for a Mule app in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tag="app-detail-flows"]
+
+[[entity-metrics-app-connectors]]
+==== Connector Metrics for a MuleSoft Connector
+
+Charts with error metrics are available in the *Connectors* tab for a Mule app in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tag="app-detail-connectors"]
 
 [[entity-metrics-app-jvm]]
 ==== JVM Metrics for a Mule Application
