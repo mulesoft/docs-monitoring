@@ -449,6 +449,9 @@ The *Custom Metrics* tab for an application appears in Anypoint Insights only if
 
 To create custom metrics, use the Anypoint Custom Metrics Connector in your application flow to collect metrics for your business and operational needs. After you deploy your application, your defined custom metrics charts appear in this tab. For guidance on using the Anypoint Custom Metrics Connector, see xref:monitoring/anypoint-custom-metrics-connector.adoc[].
 
+//TODO: WHAT DEPLOYMENT TARGETS SUPPORT CUSTOM METRICS? VERIFY AND ADD TO PREREQS IF NECESSARY (I SEE server or server cluster in built-in metrics doc but not clear about CH, CH2, RTF, etc.)
+
+[[custom-metrics-chart-config]]
 ====== Configure Custom Metrics Charts
 
 To adjust the custom metrics settings of a Mule application chart in Anypoint Insights:
