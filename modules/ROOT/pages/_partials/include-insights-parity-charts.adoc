@@ -101,93 +101,95 @@
     | *Outbound - Endpoints* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Outbound Request Volume by Remote Host*
 
 .10+| <<flows-charts, *Flows*>>
-    | *Inbound - Response Time by Flow* | xref:anypoint-insights.adoc#entity-metrics-app-flows[Flows] | *Inbound - Response Time by Flow*
-    | *Outbound - Response Time by Flow* | xref:anypoint-insights.adoc#entity-metrics-app-flows[Flows] | *Outbound - Response Time by Flow*
-    | *Inbound - Requests by Flow* | xref:anypoint-insights.adoc#entity-metrics-app-flows[Flows] | *Inbound - Requests by Flow*
-    | *Outbound - Requests by Flow* | xref:anypoint-insights.adoc#entity-metrics-app-flows[Flows] | *Outbound - Requests by Flow*
-    | *Failures by Flow* | xref:anypoint-insights.adoc#entity-metrics-app-flows[Flows] | *Failures by Flow*
-    | *Inbound - Response Time by Flow* | xref:anypoint-insights.adoc#entity-metrics-app-flows[Flows] | *Inbound - Response Time by Flow*
-    | *Outbound - Response Time by Flow* | xref:anypoint-insights.adoc#entity-metrics-app-flows[Flows] | *Outbound - Response Time by Flow*
-    | *Inbound - Requests by Flow* | xref:anypoint-insights.adoc#entity-metrics-app-flows[Flows] | *Inbound - Requests by Flow*
-    | *Outbound - Requests by Flow* | xref:anypoint-insights.adoc#entity-metrics-app-flows[Flows] | *Outbound - Requests by Flow*
-    | *Failures by Flow* | xref:anypoint-insights.adoc#entity-metrics-app-flows[Flows] | *Failures by Flow*
+    | *Inbound - Response Time by Flow* .10+| xref:anypoint-insights.adoc#entity-metrics-app-flows[*Flows*] | *Inbound - Response Time by Flow*
+    | *Outbound - Response Time by Flow*        | *Outbound - Response Time by Flow*
+    | *Inbound - Requests by Flow*              | *Inbound - Requests by Flow*
+    | *Outbound - Requests by Flow*             | *Outbound - Requests by Flow*
+    | *Failures by Flow*                        | *Failures by Flow*
+    | *Inbound - Response Time by Flow*         | *Inbound - Response Time by Flow*
+    | *Outbound - Response Time by Flow*        | *Outbound - Response Time by Flow*
+    | *Inbound - Requests by Flow*              | *Inbound - Requests by Flow*
+    | *Outbound - Requests by Flow*             | *Outbound - Requests by Flow*
+    | *Failures by Flow*                        | *Failures by Flow*
 
 .35+| <<connectors-charts, *Connectors*>>
-    | *Connector Message Volume* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Connector Message Volume*
-    | *Response Time by Connector* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Response Time by Connector*
-    | *Salesforce Requests* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Salesforce Requests*
-    | *Salesforce Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Salesforce Response Time*
-    | *Salesforce Failures* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Salesforce Failures*
-    | *Database Requests* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Database Requests*
-    | *Database Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Database Response Time*
-    | *Database Failures* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Database Failures*
-    | *HTTP Requests* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *HTTP Requests*
-    | *HTTP Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *HTTP Response Time*
-    | *HTTP Failures* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *HTTP Failures*
-    | *Web Services Requests* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Web Services Requests*
-    | *Web Services Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Web Services Response Time*
-    | *Web Services Failures* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Web Services Failures*
-    | *FTP Requests* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *FTP Requests*
-    | *FTP Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *FTP Response Time*
-    | *FTP Failures* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *FTP Failures*
-    | *SFTP Requests* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *SFTP Requests*
-    | *SFTP Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *SFTP Response Time*
-    | *SFTP Failures* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *SFTP Failures*
-    | *SMTP Requests* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *SMTP Requests*
-    | *SMTP Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *SMTP Response Time*
-    | *SMTP Failures* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *SMTP Failures*
-    | *Object Store Requests* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Object Store Requests*
-    | *Object Store Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Object Store Response Time*
-    | *Object Store Failures* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Object Store Failures*
-    | *Anypoint MQ Operations - Inbound* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Anypoint MQ Operations - Inbound*
-    | *Anypoint MQ Response Time - Inbound* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Anypoint MQ Response Time - Inbound*
-    | *Anypoint MQ Failures - Inbound* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Anypoint MQ Failures - Inbound*
-    | *Anypoint MQ Operations - Outbound* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Anypoint MQ Operations - Outbound*
-    | *Anypoint MQ Response Time - Outbound* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Anypoint MQ Response Time - Outbound*
-    | *Anypoint MQ Failures - Outbound* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Anypoint MQ Failures - Outbound*
-    | *Other Connector Requests* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Other Connector Requests*
-    | *Other Connector Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Other Connector Response Time*
-    | *Other Connector Failures* | xref:anypoint-insights.adoc#entity-metrics-app-connectors[Connectors] | *Other Connector Failures*
+    | *Connector Message Volume* .35+| xref:anypoint-insights.adoc#entity-metrics-app-connectors[*Connectors*] 
+                                                | *Connector Message Volume*
+    | *Response Time by Connector*              | *Response Time by Connector*
+    | *Salesforce Requests*                     | *Salesforce Requests*
+    | *Salesforce Response Time*                | *Salesforce Response Time*
+    | *Salesforce Failures*                     | *Salesforce Failures*
+    | *Database Requests*                       | *Database Requests*
+    | *Database Response Time*                  | *Database Response Time*
+    | *Database Failures*                       | *Database Failures*
+    | *HTTP Requests*                           | *HTTP Requests*
+    | *HTTP Response Time*                      | *HTTP Response Time*
+    | *HTTP Failures*                           | *HTTP Failures*
+    | *Web Services Requests*                   | *Web Services Requests*
+    | *Web Services Response Time*              | *Web Services Response Time*
+    | *Web Services Failures*                   | *Web Services Failures*
+    | *FTP Requests*                            | *FTP Requests*
+    | *FTP Response Time*                       | *FTP Response Time*
+    | *FTP Failures*                            | *FTP Failures*
+    | *SFTP Requests*                           | *SFTP Requests*
+    | *SFTP Response Time*                      | *SFTP Response Time*
+    | *SFTP Failures*                           | *SFTP Failures*
+    | *SMTP Requests*                           | *SMTP Requests*
+    | *SMTP Response Time*                      | *SMTP Response Time*
+    | *SMTP Failures*                           | *SMTP Failures*
+    | *Object Store Requests*                   | *Object Store Requests*
+    | *Object Store Response Time*              | *Object Store Response Time*
+    | *Object Store Failures*                   | *Object Store Failures*
+    | *Anypoint MQ Operations - Inbound*        | *Anypoint MQ Operations - Inbound*
+    | *Anypoint MQ Response Time - Inbound*     | *Anypoint MQ Response Time - Inbound*
+    | *Anypoint MQ Failures - Inbound*          | *Anypoint MQ Failures - Inbound*
+    | *Anypoint MQ Operations - Outbound*       | *Anypoint MQ Operations - Outbound*
+    | *Anypoint MQ Response Time - Outbound*    | *Anypoint MQ Response Time - Outbound*
+    | *Anypoint MQ Failures - Outbound*         | *Anypoint MQ Failures - Outbound*
+    | *Other Connector Requests*                | *Other Connector Requests*
+    | *Other Connector Response Time*           | *Other Connector Response Time*
+    | *Other Connector Failures*                | *Other Connector Failures*
 
 .35+| <<jvm-charts, *JVM*>>
-    | *Old Gen GC Count* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Old Gen GC Count*
-    | *Old Gen GC Time* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Old Gen GC Duration*
-    | *Young Gen GC Count* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Young Gen GC Count*
-    | *Young Gen GC Time* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Young Gen GC Duration*
-    | *Classes Loaded* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Classes Loaded*
-    | *Classes Loaded Total* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Classes Loaded Total*
-    | *Classes Unloaded* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Classes Unloaded*
-    | *Heap Committed* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Heap Committed*
-    | *Heap Used* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Heap Usage*
-    | *Thread Count* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Thread Count*
-    | *Eden Space Used* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Par Eden Space* (Select *Used*)
-    | *Eden Space Max* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Par Eden Space* (Select *Max*)
-    | *Eden Space Init* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Par Eden Space* (Select *Init*)
-    | *Eden Space Committed* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Par Eden Space* (Select *Committed*)
-    | *Survivor Space Used* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Survivor Space* (Par Survivor Space* and G1 Survivor Space*, Select *Used*) 
-    | *Survivor Space Max* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Survivor Space* (Par Survivor Space* and G1 Survivor Space*, Select *Max*)
-    | *Survivor Space Init* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Survivor Space* (Par Survivor Space* and G1 Survivor Space*, Select *Init*)
-    | *Survivor Space Committed* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Survivor Space* (Par Survivor Space* and G1 Survivor Space*, Select *Committed*)
-    | *Metaspace Used* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Metaspace* (Select *Used*) 
-    | *Metaspace Max* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Metaspace* (Select *Max*)
-    | *Metaspace Init* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Metaspace* (Select *Init*)
-    | *Metaspace Committed* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Metaspace* (Select *Committed*) 
-    | *Code Cache Used* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Code Cache* (Select *Used*)
-    | *Code Cache Max* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Code Cache* (Select *Max*) 
-    | *Code Cache Init* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Code Cache* (Select *Init*) 
-    | *Code Cache Committed* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Code Cache* (Select *Committed*)
-    | *Compressed Class Space Used* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Compressed Class Space* (Select *Used*)
-    | *Compressed Class Space Max* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Compressed Class Space* (Select *Max*)
-    | *Compressed Class Space Init* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Compressed Class Space* (Select *Init*)
-    | *Compressed Class Space Committed* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Compressed Class Space* (Select *Committed*)
-    | *Old Gen Mem Used* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Tenured Gen, G1 Old Gen charts* (Select *Used*)
-    | *Old Gen Mem Max* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Tenured Gen, G1 Old Gen charts* (Select *Max*)
-    | *Old Gen Mem Init* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Tenured Gen, G1 Old Gen charts* (Select *Init*)
-    | *Old Gen Mem Committed* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Tenured Gen, G1 Old Gen charts* (Select *Committed*)
-    | *Committed Virtual Memory* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] | *Committed Virtual Memory*
+    | *Old Gen GC Count*    .35+| xref:anypoint-insights.adoc#entity-metrics-app-jvm[*JVM*] 
+                                            | *Old Gen GC Count*
+    | *Old Gen GC Time*                     | *Old Gen GC Duration*
+    | *Young Gen GC Count*                  | *Young Gen GC Count*
+    | *Young Gen GC Time*                   | *Young Gen GC Duration*
+    | *Classes Loaded*                      | *Classes Loaded*
+    | *Classes Loaded Total*                | *Classes Loaded Total*
+    | *Classes Unloaded*                    | *Classes Unloaded*
+    | *Heap Committed*                      | *Heap Committed*
+    | *Heap Used*                           | *Heap Usage*
+    | *Thread Count*                        | *Thread Count*
+    | *Eden Space Used*                     | *Par Eden Space* (Select *Used*)
+    | *Eden Space Max*                      | *Par Eden Space* (Select *Max*)
+    | *Eden Space Init*                     | *Par Eden Space* (Select *Init*)
+    | *Eden Space Committed*                | *Par Eden Space* (Select *Committed*)
+    | *Survivor Space Used*                 | *Survivor Space* (Par Survivor Space* and G1 Survivor Space*, Select *Used*) 
+    | *Survivor Space Max*                  | *Survivor Space* (Par Survivor Space* and G1 Survivor Space*, Select *Max*)
+    | *Survivor Space Init*                 | *Survivor Space* (Par Survivor Space* and G1 Survivor Space*, Select *Init*)
+    | *Survivor Space Committed*            | *Survivor Space* (Par Survivor Space* and G1 Survivor Space*, Select *Committed*)
+    | *Metaspace Used*                      | *Metaspace* (Select *Used*) 
+    | *Metaspace Max*                       | *Metaspace* (Select *Max*)
+    | *Metaspace Init*                      | *Metaspace* (Select *Init*)
+    | *Metaspace Committed*                 | *Metaspace* (Select *Committed*) 
+    | *Code Cache Used*                     | *Code Cache* (Select *Used*)
+    | *Code Cache Max*                      | *Code Cache* (Select *Max*) 
+    | *Code Cache Init*                     | *Code Cache* (Select *Init*) 
+    | *Code Cache Committed*                | *Code Cache* (Select *Committed*)
+    | *Compressed Class Space Used*         | *Compressed Class Space* (Select *Used*)
+    | *Compressed Class Space Max*          | *Compressed Class Space* (Select *Max*)
+    | *Compressed Class Space Init*         | *Compressed Class Space* (Select *Init*)
+    | *Compressed Class Space Committed*    | *Compressed Class Space* (Select *Committed*)
+    | *Old Gen Mem Used*                    | *Tenured Gen, G1 Old Gen charts* (Select *Used*)
+    | *Old Gen Mem Max*                     | *Tenured Gen, G1 Old Gen charts* (Select *Max*)
+    | *Old Gen Mem Init*                    | *Tenured Gen, G1 Old Gen charts* (Select *Init*)
+    | *Old Gen Mem Committed*               | *Tenured Gen, G1 Old Gen charts* (Select *Committed*)
+    | *Committed Virtual Memory*            | *Committed Virtual Memory*
  
 | <<custom-metrics-charts, *Custom Metrics*>> 
-    | *Charts* | *Custom Metrics* tab for charts that use your organization's custom metrics.
+    | *Charts* | xref:anypoint-insights.adoc#entity-metrics-app-custom-metrics[*Custom Metrics*] | Charts that use your organization's custom metrics.
 |===
 
 //end::app-chart-parity[]
