@@ -4,7 +4,7 @@
 //APIs
 [%header,cols="1,3,1,3"]
 |===
-| Built-in Dashboard Tab for API | Built-in Dashboard Chart | Anypoint Insights Tab | Anypoint Insights Chart
+| Built-in Dashboard Tab for an API | Built-in Dashboard Chart | Anypoint Insights Tab for an API | Anypoint Insights Chart
 
 .6+|  <<overview-charts, *Overview*>>
     | *Requests Volume* .6+| xref:anypoint-insights.adoc#entity-metrics-api-overview[*Overview*] 
@@ -54,7 +54,7 @@
 //Apps
 [%header,cols="1,3,1,3"]
 |===
-| Built-in Dashboard Tab for API | Built-in Dashboard Chart | Anypoint Insights Tab | Anypoint Insights Chart
+| Built-in Dashboard Tab for an App | Built-in Dashboard Chart | Anypoint Insights Tab for an App | Anypoint Insights Chart
 
 .9+| <<Overview, *Overview*>> 
     | *Mule Messages* .2+| xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] 
