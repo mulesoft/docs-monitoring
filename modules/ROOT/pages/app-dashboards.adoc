@@ -2,7 +2,7 @@
 
 Built-in dashboards display deployment information about your application at the top of the screen and provide access to a number of different graphs.
 
-The graphs and tables in built-in dashboards support many metrics, including application metrics. The *Overview* tab provides overall measures. You can view more granular application metrics through <<built-in-charts-app, additional tabs>>.
+The graphs and tables in built-in dashboards support many metrics, including application metrics. The *Overview* tab provides overall measures. You can view more granular application metrics through <<chart-reference, additional tabs>>.
 
 When converting quantities of memory, Anypoint Monitoring uses the power of 10 (_MB_) to reflect metrics values rather than the power of 2 (_MiB_).
 
@@ -33,193 +33,9 @@ image::builtin-dashboard-selection-interaction.png["Built-in dashboard selector"
 
 Your data is prepopulated and displayed in the built-in dashboards and logs; no configuration is needed. 
 //TBD:
-//include::reuse::partial$billing/pricing.adoc[tag=featureAdvFunctionality] 
+//include::reuse::partial$billing/pricing.adoc[tag=featureAdvFunctionality]
 
-////
-[[built-in-charts-app]]
-Built-in dashboards include various pages to view different types of charts:
-
-[%header,cols="1,4,4"]
-|===
-| Built-In Dashboards | Charts | Counterpart in Anypoint Insights
-.10+| <<overview-charts>> 
-    | Mule Messages | Mule Messages (xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview tab])
-    | Average Response Time | N/A
-    | Errors | Failed Inbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview tab])
-    | Inbound - Total Requests by Response Type | Inbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab])
-    | Inbound - Average Response Time | TODO::Inbound Request Latency  pass:[<!-- (avg is one of the chart series) -->]
-    | Outbound - Total Requests by Response Type | Outbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) pass:[<!-- select response type -->]
-    | Outbound - Average Response Time | N/A (not available)
-    | JVM - CPU % Utilization | CPU Utilization (xref:anypoint-insights.adoc#chart-jvm-cpu-utilization[JVM tab])
-    | JVM - Heap Used | Heap Usage (xref:anypoint-insights.adoc#chart-jvm-heap-usage[JVM tab])
-    | JVM - Thread Count | Thread Count (xref:anypoint-insights.adoc#chart-jvm-thread-count[JVM tab])
-
-.12+| <<inbound-charts>> 
-    | Inbound - Total Requests by Response Type |Inbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) pass:[<!-- choose group by Response type -->]
-    | Inbound - Average Response Time | N/A (not available)
-    | Inbound - Average Response Time by HTTP Endpoint .5+| Request Latency by Endpoint (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) pass:[<!-- choose group by Inbound -->]
-    | Inbound - Response Time by HTTP Endpoint
-    | Inbound - Min Response Time by HTTP Endpoint
-    | Inbound - Max Response Time by HTTP Endpoint
-    | Inbound - Total Requests by HTTP Endpoint
-    | Inbound - Response Time graphs (99, 90, 75, and 50 percentiles) | TODO::Inbound Request Latency chart (≈[Overview tab]) 
-    | Inbound - Total Failed Requests (TODO: Inbound - Failure Total Request Count) | Failed Inbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview tab]) 
-//TODO
-//include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-    | Inbound - Protocols | Request Volume by Protocol (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) pass:[<!-- choose group by Inbound -->]
-    | Inbound - HTTP Endpoints | Request Volume by HTTP Endpoint (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
-    | Inbound - Maximum Response Time | Inbound - Maximum Response Time by Endpoint (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab])  
-
-.10+| <<outbound-charts>>
-    | Outbound - Total Requests by Response Type | Outbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
-    | Outbound - Average Response Time | N/A (not available)
-    | Outbound - Average Response Time by HTTP Endpoint | Request Latency by Endpoint (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
-    | Outbound - Total Requests by HTTP Endpoint | Request Latency by Endpoint (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
-    | Outbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Outbound Request Latency (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
-    | Outbound - Total Failed Requests | Errors tab: Failed Outbound Request Volume chart 
-//TODO
-//include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-    | Outbound - HTTP Ports | Outbound Request Volume by Port (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab])
-    | Outbound - Operations | Outbound Request Volume by Operation (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
-    | Outbound - HTTP Protocols | Request Volume by Protocol (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
-    | Outbound - Endpoints | Outbound Request Volume by Remote Host (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
-
-.14+| <<flows-charts>>
-//TODO
-//include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-    | Inbound - Response Time by Flow .5+| xref:anypoint-insights.adoc#entity-metrics-app-flows[Flows tab] 
-    | Outbound - Response Time by Flow
-    | Inbound - Requests by Flow
-    | Outbound - Requests by Flow
-    | Failures by Flow
-    | Inbound - Slow Requests by Flow | N/A (not available)
-    | Outbound - Slow Requests by Flow | N/A (not available)
-    | Inbound - Response Time by Flow .5+| xref:anypoint-insights.adoc#entity-metrics-app-flows[Flows tab]
-    | Outbound - Response Time by Flow
-    | Inbound - Requests by Flow
-    | Outbound - Requests by Flow
-    | Failures by Flow
-    | Inbound - Slow Requests by Flow .2+| N/A (not available)
-    | Outbound - Slow Requests by Flow
-
-//TODO
-//include::reuse::partial$billing/pricing.adoc[tag=flowsTabAvailability]
-
-.35+| <<connectors-charts>>
-
--
-If you don’t see the *Connectors* tab, verify that:
-
-* You have the Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform. 
-
-* The app you selected is a hybrid app deployed to a server, server group, or cluster.
-
-For more information, see xref:monitor-connectors.adoc[Monitor Connectors].
--
-
-//include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
-
-    | Connector Message Volume .35+| xref:anypoint-insights.adoc#tab app-detail-connectors[Connectors tab] in Anypoint Insights
-    | Response Time by Connector
-    | Salesforce Requests 
-    | Salesforce Response Time
-    | Salesforce Failures
-    | Database Requests
-    | Database Response Time 
-    | Database Failures 
-    | HTTP Requests 
-    | HTTP Response Time 
-    | HTTP Failures
-    | Web Services Requests
-    | Web Services Response Time 
-    | Web Services Failures 
-    | FTP Requests
-    | FTP Response Time 
-    | FTP Failures
-    | SFTP Requests 
-    | SFTP Response Time 
-    | SFTP Failures 
-    | SMTP Requests
-    | SMTP Response Time 
-    | SMTP Failures 
-    | Object Store Requests
-    | Object Store Response Time 
-    | Object Store Failures 
-    | Anypoint MQ Operations - Inbound
-    | Anypoint MQ Response Time - Inbound
-    | Anypoint MQ Failures - Inbound
-    | Anypoint MQ Operations - Outbound
-    | Anypoint MQ Response Time - Outbound
-    | Anypoint MQ Failures - Outbound
-    | Other Connector Requests 
-    | Other Connector Response Time 
-    | Other Connector Failures 
-.8+| <<performance-charts>>
-    | Mule Messages | Mule Messages (xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview tab]) 
-    | Average Response Time | N/A (not available) 
-    | Inbound - Average Response Time | Request Latency (avg is one of the chart series) (xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview tab]) 
-    | Inbound - Response Time by HTTP Endpoint | Request Latency by Endpoint (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
-    | Inbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Request Latency (xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview tab]) 
-    | Outbound - Average Response Time | N/A (not available) 
-    | Outbound - Response Time by Endpoint | Request Latency by Endpoint (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
-    | Outbound - Response Time graphs (99, 90, 75, and 50 percentiles) | Outbound Request Latency (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab]) 
-
-.9+| <<failures-charts>> 
-    | Errors | Failed Inbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview tab])
-    | Inbound - Total Failed Requests | TODO: Where is this listed?
-    | Outbound Total Failed Requests | TODO: Where is this listed?
-    | Inbound - Total Requests by Response Type | Inbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab])
-    | Outbound - Total Requests by Response Type | Outbound Request Volume (xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests tab])
-    | Inbound - Failure Response Time by Endpoint | TODO: Where is this listed?
-    | Inbound - Total Failed Requests by Endpoint | TODO: Where is this listed?
-    | Outbound - Failure Response Time by HTTP Endpoint | TODO: Where is this listed?
-    | Outbound - Total Failed Requests by HTTP Endpoint | TODO: Where is this listed?
-
-.15+| <<jvm-charts>>
-    | Old Gen GC Count | Old Gen GC Count (xref:anypoint-insights.adoc#chart-jvm-old-gen-gc-count[JVM tab])
-    | Old Gen GC Time | Old Gen GC Duration (xref:anypoint-insights.adoc#chart-jvm-old-gen-gc-duration[JVM tab])
-    | Young Gen GC Count | Young Gen GC Count (xref:anypoint-insights.adoc#chart-jvm-young-gen-gc-count[JVM tab])
-    | Young Gen GC Time | Young Gen GC Duration (xref:anypoint-insights.adoc#chart-jvm-young-gen-gc-duration[JVM tab])
-    | Classes (Loaded, Loaded Total, Unloaded) | Classes Loaded (xref:anypoint-insights.adoc#chart-jvm-classes-loaded[JVM tab]), Classes Loaded Total (xref:anypoint-insights.adoc#chart-jvm-classes-loaded-total[JVM tab]), Classes Unloaded (xref:anypoint-insights.adoc#chart-jvm-classes-unloaded[JVM tab])
-    | Heap (Committed, Used) | Heap Committed (xref:anypoint-insights.adoc#chart-jvm-heap-committed[JVM tab]), Heap Usage (xref:anypoint-insights.adoc#chart-jvm-heap-usage[JVM tab])
-    | Thread Count | Thread Count (xref:anypoint-insights.adoc#chart-jvm-thread-count[JVM tab])
-    | JVM Uptime | N/A (not available at this time)
-    | Eden Space graphs (Used, Max, Init, and Committed) | Par Eden Space (xref:anypoint-insights.adoc#chart-jvm-par-eden-space[JVM tab])
-    | Survivor Space graphs (Used, Max, Init, and Committed) | Par Survivor Space (xref:anypoint-insights.adoc#chart-jvm-par-survivor-space[JVM tab])
-    | Metaspace graphs (Used, Max, Init, and Committed) | Metaspace (xref:anypoint-insights.adoc#chart-jvm-metaspace[JVM tab])
-    | Code Cache graphs (Used, Max, Init, and Committed) | Code Cache (xref:anypoint-insights.adoc#chart-jvm-code-cache[JVM tab]) 
-    | Compressed Class Space graphs (Used, Max, Init, and Committed) | Compressed Class Space (xref:anypoint-insights.adoc#chart-jvm-compressed-class-space[JVM tab])
-    | Old Gen Mem graphs (Used, Max, Init, and Committed) | Tenured Gen (xref:anypoint-insights.adoc#chart-jvm-tenured-gen[JVM tab]), G1 Old Gen (xref:anypoint-insights.adoc#chart-jvm-g1-old-gen[JVM tab]) pass:[<!-- DETERMINE IMPLEMENTATION -->]
-//TODO
-//include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-    | Committed Virtual Memory | TODO
-
-.8+| <<infrastructure-charts>>
-    //N/A in INSIGHTS: 3/31/26 Release
-    | JVM - CPU % Utilization | CPU Utilization (xref:anypoint-insights.adoc#chart-jvm-cpu-utilization[JVM tab])
-    | JVM - Heap Used | Heap Usage (xref:anypoint-insights.adoc#chart-jvm-heap-usage[JVM tab])
-    | Total System Processors | TODO: Where is this listed?
-    | System Memory | TODO: Where is this listed?
-    | JVM Thread Count | Thread Count (xref:anypoint-insights.adoc#chart-jvm-thread-count[JVM tab])
-//TODO
-//include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-    | System CPU % Utilization
-    | JVM CPU Time
-    | Operating System Swap Space
-
-| <<custom-metrics-charts>>
-|
-include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
-| TODO (HORIZONALLY MERGE?)
-
-| <<application-network>>
-    | The chart on the *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app.
-
-include::reuse::partial$billing/pricing.adoc[tag=appNetworkTabAvailability]
-   
-|===
-////
-
+[[chart-reference]]
 == Chart Reference
 
 Anypoint Monitoring provides charts in these built-in dashboards:
@@ -302,16 +118,22 @@ Inbound - Maximum Response Time::
 The maximum response time, grouped by endpoint.
 +
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 Inbound - Protocols::
 The sum of inbound requests, grouped by protocol.
 +
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 Inbound - HTTP Endpoints::
 The sum of inbound requests, grouped by remote hosts (endpoints).
 +
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 [[outbound-charts]]
 === Outbound
@@ -341,21 +163,30 @@ The sum of failed outbound requests, grouped by type of response.
 
 Outbound - HTTP Ports::
 The sum of outbound requests, grouped by remote port.
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent AND Titanium or Advanced? WHAT IS THAT?
 
 Outbound - Operations::
 The estimated count of outbound requests, grouped by operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent AND Titanium or Advanced? WHAT IS THAT?
 
 Outbound - HTTP Protocols::
 The sum of outbound requests for the selected time period, grouped by protocol.
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent AND Titanium or Advanced? WHAT IS THAT?
 
 Outbound - Endpoints::
 The sum of outbound requests for the selected time period, grouped by remote hosts (endpoints). For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent AND Titanium or Advanced? WHAT IS THAT?
 
 [[flows-charts]]
 === Flows
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
-
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 Inbound - Response Time by Flow::
 The average inbound response time, grouped by flow.
@@ -661,6 +492,8 @@ Committed Virtual Memory::
 The amount of virtual memory guaranteed to be available to the running process, grouped by worker.
 +
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 [[infrastructure-charts]]
 === Infrastructure
@@ -684,16 +517,24 @@ The average number of threads of the JVM, grouped by worker.
 
 System CPU % Utilization::
 The percentage of CPU used by all processes. This metric often aligns with the Cloudwatch System CPU % metric, but there may be different values given the timing of data aggregation for Anypoint Monitoring metrics.
++
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 JVM CPU Time::
 The cumulative CPU time consumed by the JVM.
 +
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 Operating System Swap Space::
 The amount of memory the system is swapping, grouped by worker in automatic intervals.
 +
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 [[custom-metrics-charts]]
 === Custom Metrics
