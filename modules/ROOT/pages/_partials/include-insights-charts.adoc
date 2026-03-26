@@ -49,13 +49,13 @@ For information about Mule messages, see xref:mule-runtime::about-mule-event.ado
 
 [[chart-overview-inbound-request-latency]]
 Inbound Request Latency::
-Latency in milliseconds of inbound requests to this app over time
+Latency in milliseconds of inbound requests to this app over time by percentile (p40, p75, p90, p95, p99) and average
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-overview-inbound-request-volume]]
 Inbound Request Volume::
-Total number of inbound requests to this app at specific time points
+Total number of inbound requests to this app at specific time points grouped by protocol, response type, or ungrouped
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
@@ -447,13 +447,13 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-jvm-heap-usage]]
 Heap Usage::
-Amount of physical memory used
+Amount of physical memory used in MB by worker
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-jvm-thread-count]]
 Thread Count::
-Number of active threads currently running in the JVM
+Number of active threads currently running in the JVM by worker
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
