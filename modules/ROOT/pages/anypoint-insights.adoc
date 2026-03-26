@@ -439,6 +439,8 @@ include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
 Monitor apps that use your organization’s custom metrics for a Mule app. Adjust settings of the charts that use your custom metrics.
 
+Custom dashboards in Anypoint Insights aren't available at this time. 
+
 ====== Before You Begin
 
 Meet subscription tier and Mule runtime version requirements:
