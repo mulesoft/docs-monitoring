@@ -5,7 +5,7 @@
 //tag::app-detail-header[]
 [[chart-detail-type]]
 Type::
-Mule application type (*Application*)
+Mule app type (*Application*)
 
 [[chart-detail-status]]
 Status::
@@ -55,14 +55,14 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-overview-inbound-request-volume]]
 Inbound Request Volume::
-Total number of inbound requests to this app over time grouped by protocol, response type, or ungrouped
+Number of inbound requests to this app over time grouped by protocol, response type, or ungrouped
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //  shared metric in Overview tab
 [[chart-overview-failed-inbound-request-volume]]
 Failed Inbound Request Volume::
-Total number of unsuccessful inbound requests over time
+Number of unsuccessful inbound requests over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
@@ -106,19 +106,19 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-detail-request-volume-by-protocol]]
 Request Volume by Protocol::
-Total number of inbound or outbound requests by protocol, such as HTTPS
+Number of inbound or outbound requests by protocol, such as HTTPS
 
 [[chart-detail-request-volume-by-http-endpoint]]
 Request Volume by HTTP Endpoint::
-Total number of inbound or outbound requests by HTTP endpoint
+Number of inbound or outbound requests by HTTP endpoint
 
 [[chart-detail-outbound-request-volume-by-port]]
 Outbound Request Volume by Port::
-Total number of outbound requests by port number, such as 443.
+Number of outbound requests by port number, such as 443.
 
 [[chart-detail-outbound-request-volume-by-remote-host]]
 Outbound Request Volume by Remote Host::
-Total number of outbound requests by remote host, such as an Object Store or a `cloudhub.io` address. 
+Number of outbound requests by remote host, such as an Object Store or a `cloudhub.io` address. 
 
 [[chart-detail-outbound-request-latency]]
 Outbound Request Latency::
@@ -128,7 +128,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-detail-outbound-request-volume-by-operation]]
 Outbound Request Volume by Operation::
-Total number of requests by operation, such as a `retrieve` or `store` operation.
+Number of requests by operation, such as a `retrieve` or `store` operation.
 
  
 //end::app-detail-requests[]
@@ -139,19 +139,19 @@ Total number of requests by operation, such as a `retrieve` or `store` operation
 //tag::app-detail-errors[]
 [[chart-failed-outbound-request-volume]]
 Failed Outbound Request Volume::
-Total number of failed outbound requests over time
+Number of failed outbound requests over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-errors-top-20-failed-requests-by-total-count]]
 Top 20 Failed Requests by Total Count::
-Total number of inbound or outbound requests to the 20 endpoints with the most failed requests
+Number of inbound or outbound requests to the 20 endpoints with the most failed requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-errors-top-20-failed-outbound-requests-by-total-count]]
 Top 20 Failed Outbound Requests by Total Count::
-Total number of unsuccessful outbound requests to the 20 endpoints with the most failed requests
+Number of unsuccessful outbound requests to the 20 endpoints with the most failed requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
@@ -165,11 +165,15 @@ Average, minimum, and maximum response times in milliseconds for outbound reques
 
 [[chart-errors-inbound-request-count-by-endpoint]]
 Inbound - Request Count by Endpoint:: 
-Total number of inbound requests by endpoint
+Number of inbound requests by endpoint
 
 [[chart-errors-outbound-request-count-by-endpoint]]
 Outbound - Request Count by Endpoint::
-Total number of outbound requests by endpoint
+Number of outbound requests by endpoint
+
+[[chart-errors-failed-mule-messages]]
+Failed Mule Messages::
+Number of failed Mule messages over time
 
 //end::app-detail-errors[]
 //-----------------------//
@@ -180,59 +184,59 @@ Total number of outbound requests by endpoint
 
 [[chart-flows-inbound-response-time-by-flow-ms]]
 Inbound - Response Time by Flow::
-Inbound responses in milliseconds over time by application flow
+Inbound responses in milliseconds over time by app flow
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-flows-outbound-response-time-by-flow-ms]]
 Outbound - Response Time by Flow::
-Outbound responses in milliseconds over time by application flow
+Outbound responses in milliseconds over time by app flow
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-flows-inbound-requests-by-flow-count]]
 Inbound - Requests by Flow::
-Number of inbound requests over time by application flow
+Number of inbound requests over time by app flow
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-flows-outbound-requests-by-flow-count]]
 Outbound - Requests by Flow::
-Number of outbound requests over time by application flow
+Number of outbound requests over time by app flow
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-flows-failures-by-flow]]
 Failures by Flow::
-Number of failures over time by application flow
+Number of failures over time by app flow
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-flows-inbound-response-time-by-flow-avg-min-max]]
 Inbound - Response Time by Flow::
-Average, minimum, and maximum inbound response times in milliseconds by application flow
+Average, minimum, and maximum inbound response times in milliseconds by app flow
 
 [[chart-flows-outbound-response-time-by-flow-avg-min-max]]
 Outbound - Response Time by Flow::
-Average, minimum, and maximum outbound response times in milliseconds by application flow
+Average, minimum, and maximum outbound response times in milliseconds by app flow
 
 [[chart-flows-inbound-requests-by-flow-totals]]
 Inbound - Requests by Flow::
-Number of inbound requests by application flow
+Number of inbound requests by app flow
 
 [[chart-flows-outbound-requests-by-flow-totals]]
 Outbound - Requests by Flow::
-Number of outbound requests by application flow
+Number of outbound requests by app flow
 
 [[chart-flows-failures-by-flow-number]]
 Failures by Flow::
-Number of failures by application flow
+Number of failures by app flow
 
 //end::app-detail-flows[]
 //-----------------------//
 //
 //-----------------------//
-//  APP DETAIL FLOWS: Flows tab
+//  APP DETAIL CONNECTORS: Connectors tab
 //tag::app-detail-connectors[]
 
 [[chart-connectors-connector-message-volume]]
@@ -254,7 +258,7 @@ Response times in milliseconds for requests to Salesforce connector endpoints
 
 [[chart-connectors-salesforce-failures]]
 Salesforce Failures::
-Get total number of failed requests to Salesforce connector endpoints
+Number of failed requests to Salesforce connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, Salesforce connector or endpoint or???
 
 [[chart-connectors-database-requests]]
@@ -269,7 +273,7 @@ Get response times in milliseconds for requests to Database connector endpoints
 
 [[chart-connectors-database-failures]]
 Database Failures::
-Get total number of failed requests to Database connector endpoints
+Number of failed requests to Database connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, Database connector or endpoint or???
 
 [[chart-connectors-http-requests]]
@@ -284,7 +288,7 @@ Response times in milliseconds for requests over time to HTTP connector endpoint
 
 [[chart-connectors-http-failures]]
 HTTP Failures::
-Get total number of failed requests to HTTP connector endpoints
+Number of failed requests to HTTP connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, HTTP connector or endpoint or???
 
 [[chart-connectors-web-service-requests]]
@@ -299,7 +303,7 @@ Response times in milliseconds for requests over time to Web Service connector e
 
 [[chart-connectors-web-service-failures]]
 Web Service Failures::
-Get total number of failed requests to Web Service connector endpoints
+Number of failed requests to Web Service connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, Web Service connector or endpoint or???
 
 [[chart-connectors-ftp-requests]]
@@ -329,7 +333,7 @@ Response times in milliseconds for requests over time to SFTP connector endpoint
 
 [[chart-connectors-sftp-failures]]
 SFTP Failures::
-Get total number of failed requests to SFTP connector endpoints
+Number of failed requests to SFTP connector endpoints
 //TODO: VERIFY, No EXAMPLE AVAILABLE, SFTP connector or endpoint or???
 
 [[chart-connectors-smtp-requests]]
@@ -414,28 +418,28 @@ Number of failed requests to connectors other than Salesforce, Database, HTTP, W
 //TODO: Old Gen GC Count -> Old Generation Garbage Collection Count (SATHISH)
 [[chart-jvm-old-gen-gc-count]]
 Old Gen GC Count::
-Total number of times old generation Java garbage collection occurred
+Number of times old generation Java garbage collection occurred over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //TODO: Old Gen GC Duration -> Old Generation Garbage Collection Duration (SATHISH)
 [[chart-jvm-old-gen-gc-duration]]
 Old Gen GC Duration::
-Amount of time taken for old generation Java garbage collection
+Amount of time in milliseconds taken for old generation Java garbage collection over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //TODO: Young Gen GC Count -> Young Generation Garbage Collection Count (SATHISH)
 [[chart-jvm-young-gen-gc-count]]
 Young Gen GC Count::
-Total number of times young generation Java garbage collection occurred
+Number of times young generation Java garbage collection occurred over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //TODO: Young Gen GC Duration -> Young Generation Garbage Collection Duration (SATHISH)
 [[chart-jvm-young-gen-gc-duration]]
 Young Gen GC Duration::
-Amount of time taken for young generation Java garbage collection
+Amount of time in milliseconds taken for young generation Java garbage collection over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
@@ -471,27 +475,27 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-jvm-classes-loaded]]
 Classes Loaded::
-Get the total number of Java classes currently loaded in the JVM by worker.
+Number of Java classes loaded in the JVM by worker over time
 //TODO: VERIFY
 
 [[chart-jvm-classes-loaded-total]]
 Classes Loaded Total:: 
-Get the total number of Java classes loaded in the JVM by worker since the application was deployed.
+Number of Java classes loaded over time in the JVM by worker
 //TODO: VERIFY
 
 [[chart-jvm-classes-unloaded]]
 Classes Unloaded::
-Get the total number of Java classes currently unloaded in the JVM by worker.
+Number of Java classes unloaded in the JVM by worker over time
 //TODO: VERIFY
 
 [[chart-jvm-jvm-uptime]]
 JVM Uptime::
-Get the amount of time in milliseconds that the JVM has been running since the application was deployed.
+Amount of time in milliseconds that the JVM has been running
 //TODO: VERIFY, NO TIME UNITS AVAILABLE, NO EXAMPLE AVAILABLE
 
 [[chart-jvm-par-eden-space]]
 Par Eden Space:: 
-Get the amount of memory used in the Par Eden Space, which is part of the heap used for young generation garbage collection. Select metrics on this data by space used, initial size, committed size, or maximum size.
+Amount of memory used in the Par Eden Space, which is part of the heap used for young generation garbage collection. Select metrics on this data by space used, initial size, committed size, or maximum size.
 //TODO: VERIFY, No EXAMPLE AVAILABLE
 
 [[chart-jvm-g1-eden-space]]
@@ -502,45 +506,43 @@ Get the amount of memory used in the G1 Eden Space, which is part of the heap us
 
 [[chart-jvm-par-survivor-space]]
 Par Survivor Space::
-Get the amount of memory used in the Par Survivor Space, which is part of the heap used for young generation garbage collection. Select metrics on this data by space used, initial size, committed size, or maximum size.
+Amount of memory used in the Par Survivor Space, which is part of the heap used for young generation garbage collection. Select metrics on this data by space used, initial size, committed size, or maximum size.
 //TODO: VERIFY, No EXAMPLE AVAILABLE
 
 [[chart-jvm-g1-survivor-space]]
 G1 Survivor Space:: 
-Get the amount of memory used in the G1 Survivor Space, which is part of the heap used for young generation garbage collection. Select metrics on this data by space used, initial size, committed size, or maximum size.
+Amount of memory used in the G1 Survivor Space, which is part of the heap used for young generation garbage collection. Select metrics on this data by space used, initial size, committed size, or maximum size.
 //TODO: VERIFY, No EXAMPLE AVAILABLE
 
 [[chart-jvm-metaspace]]
 Metaspace::
-Get megabytes (MB) of memory used in the Metaspace by worker. Metaspace is memory used for class metadata. Select metrics on this data by space used, initial size, committed size, or maximum size.
+Megabytes (MB) of memory used in the Metaspace by worker. Metaspace is memory used for class metadata. Select metrics on this data by space used, initial size, committed size, or maximum size.
 //TODO: VERIFY, No EXAMPLE AVAILABLE
 
 [[chart-jvm-compressed-class-space]]
 Compressed Class Space::
-Get megabytes (MB) of memory used in the Compressed Class Space by worker. Compressed Class Space is memory used for class metadata for 64-bit JVMs with compressed object pointers. Select metrics on this data by space used, initial size, committed size, or maximum size.
+Megabytes (MB) of memory used in the Compressed Class Space by worker. Compressed Class Space is memory used for class metadata for 64-bit JVMs with compressed object pointers. Select metrics on this data by space used, initial size, committed size, or maximum size.
 //TODO: VERIFY, No EXAMPLE AVAILABLE
 
 [[chart-jvm-jvm-memory-code-cache]]
 JVM Memory Code Cache::
-Get megabytes (MB) of memory used in the JVM Code Cache by worker. JVM Code Cache is memory used for compilation and storage of Java bytecode. Select metrics on this data by space used, initial size, committed size, or maximum size.
+Megabytes (MB) of memory used in the JVM Code Cache by worker. JVM Code Cache is memory used for compilation and storage of Java bytecode. Select metrics on this data by space used, initial size, committed size, or maximum size.
 //TODO: VERIFY, No EXAMPLE AVAILABLE
 
 [[chart-jvm-code-cache]]
 Code Cache::
-Get megabytes (MB) of memory for Code Cache by worker. Code Cache is memory used for compilation and storage of Java bytecode. Select metrics on this data by space used, initial size, committed size, or maximum size.
+Megabytes (MB) of memory for Code Cache by worker. Code Cache is memory used for compilation and storage of Java bytecode. Select metrics on this data by space used, initial size, committed size, or maximum size.
 //TODO: VERIFY, No EXAMPLE AVAILABLE  
 
 [[chart-jvm-tenured-gen]]
 Tenured Gen::
-Get megabytes (MB) of memory for Tenured Generation by worker. Tenured Generation is part of the heap used for old generation garbage collection. Select metrics on this data by space used, initial size, committed size, or maximum size.
+Megabytes (MB) of memory for Tenured Generation by worker. Tenured Generation is part of the heap used for old generation garbage collection. Select metrics on this data by space used, initial size, committed size, or maximum size.
 //TODO: VERIFY, No EXAMPLE AVAILABLE
 
 [[chart-jvm-g1-old-gen]]
 G1 Old Gen:: 
-Get megabytes (MB) of memory for G1 Old Generation by worker. G1 Old Generation is part of the heap used for old generation garbage collection. Select metrics on this data by space used, initial size, committed size, or maximum size.
+Megabytes (MB) of memory for G1 Old Generation by worker. G1 Old Generation is part of the heap used for old generation garbage collection. Select metrics on this data by space used, initial size, committed size, or maximum size.
 //TODO: VERIFY, No EXAMPLE AVAILABLE
-
-
 
 //end::app-detail-jvm[]
 //------------------------------------------------------//
@@ -609,7 +611,7 @@ include::partial$include-insights-charts.adoc[tag="total-requests"]
 //TODO: Policy Violations -> Policy Violation Count (or similar) (SATHISH)
 [[chart-overview-policy-violations]]
 Policy Violations::
-Total number of requests rejected because of API policy violations
+Number of requests rejected because of API policy violations
 
 [[chart-overview-request-latency]]
 Request Latency::
@@ -621,30 +623,30 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-overview-request-volume]]
 Request Volume::
-Total number of requests to this API over time
+Number of requests to this API over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-overview-failed-requests]]
 Failed Requests::
-Total number of unsuccessful requests to this API over time
+Number of unsuccessful requests to this API over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-overview-total-4xx-errors]]
 Total 4xx Errors::
-Total number of requests to this API over time that resulted in a 4xx response code.
+Number of requests to this API over time that resulted in a 4xx response code.
 //TODO: VERIFY
 
 [[chart-overview-total-5xx-errors]]
 Total 5xx Errors::
-Total number of requests to this API over time that resulted in a 5xx response code.
+Number of requests to this API over time that resulted in a 5xx response code.
 //TODO: VERIFY
 
 //TODO: issue: 2 charts named Policy Violations (SATHISH)
 [[chart-overview-policy-violations-time]]
 Policy Violations::
-Total number of requests rejected over time because of API policy violations
+Number of requests rejected over time because of API policy violations
 +
 For information about policies, see xref:api-manager::manage-policies-overview.adoc[].
 +
@@ -658,13 +660,13 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //tag::api-detail-requests[]
 [[chart-requests-request-volume-by-http-method]]
 Request Volume by HTTP Method::
-Total number of requests over time, grouped by the HTTP method used for the request
+Number of requests over time, grouped by the HTTP method used for the request
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-requests-request-volume-by-response-code]]
 Request Volume by Response Code::
-Total number of requests over time, grouped by the response code (such as *2xx*)
+Number of requests over time, grouped by the response code (such as *2xx*)
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
@@ -672,7 +674,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 // TODO: top 20 paths
 [[chart-requests-request-volume-by-top-n-paths]]
 Request Volume by Top N paths::
-Total number of requests from the 20 endpoints with the most requests
+Number of requests from the 20 endpoints with the most requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //end::api-detail-requests[]
@@ -683,10 +685,11 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //-------------------------
 //tag::api-detail-errors[]
 
+//TODO: IS THIS THE 
 //TODO: VERIFY Failed Mule Messages NAME ONCE IN TO PRODUCT BUILD
 [[chart-errors-failed-mule-messages]]
 Failed Mule Messages::
-Total number of failed Mule messages over time 
+Number of failed Mule messages over time 
 
 [[chart-errors-failed-requests-volume-by-http-method]]
 Failed Requests Volume by HTTP Method::
@@ -805,7 +808,7 @@ Average latency, in milliseconds (ms), for requests to this entity
 //tag::p95-latency[]
 [[chart-p95-latency]]
 P95 Latency::
-Latency value, in milliseconds (ms), for 95th percentile (p95) request for this entity
+Latency value, in milliseconds (ms), for 95th percentile (p95) requests for this entity
 //end::p95-latency[]
 //
 //  shared chart: Overview tab
@@ -813,7 +816,7 @@ Latency value, in milliseconds (ms), for 95th percentile (p95) request for this 
 //TODO: Requests -> Request" (SATHISH)
 [[chart-total-requests-volume]]
 Total Requests Volume::
-Total number of requests to this entity
+Number of requests to this entity
 //end::total-requests[]
 //
 //  shared chart: Overview tab
