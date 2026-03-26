@@ -437,26 +437,26 @@ include::partial$include-insights-charts.adoc[tag="app-detail-jvm"]
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-Monitor and adjust settings of charts that use your organization's custom metrics for a Mule application. 
+Monitor apps that use your organization’s custom metrics for a Mule app. Adjust settings of the charts that use your custom metrics.
 
 ====== Before You Begin
 
 Meet subscription tier and Mule runtime version requirements:
 
-The *Custom Metrics* tab for an application appears in Anypoint Insights only if your organization has the Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform and the application you selected is running on a supported version of Mule. 
+The *Custom Metrics* tab for an app appears in Anypoint Insights only if your organization has the Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform and the app you selected is running on a supported version of Mule. 
 
 ====== Create Custom Metrics
 
-To create custom metrics, use the Anypoint Custom Metrics Connector in your application flow to collect metrics for your business and operational needs. After you deploy your application, your defined custom metrics charts appear in this tab. For guidance using the Anypoint Custom Metrics Connector, see xref:monitoring::anypoint-custom-metrics-connector.adoc[].
+To create custom metrics, use the Anypoint Custom Metrics Connector in your app flow to collect metrics for your business and operational needs. After you deploy your app, your defined custom metrics charts appear in this tab. For guidance using the Anypoint Custom Metrics Connector, see xref:monitoring::anypoint-custom-metrics-connector.adoc[].
 
 //TODO: WHAT DEPLOYMENT TARGETS SUPPORT CUSTOM METRICS? VERIFY AND ADD TO PREREQS IF NECESSARY (I SEE server or server cluster in built-in metrics doc but not clear about CH, CH2, RTF, etc.)
 
 [[custom-metrics-chart-config]]
 ====== Configure Custom Metrics Charts
 
-To adjust the custom metrics settings of a Mule application chart in Anypoint Insights:
+To adjust the custom metrics settings of a Mule app chart in Anypoint Insights:
 
-. From a Mule application listed in Anypoint Insights, click the *Custom Metrics* tab.
+. From a Mule app listed in Anypoint Insights, click the *Custom Metrics* tab.
 . Select a value these fields, and then click *Apply* to update the chart:
 
 * *Aggregations* values include:
@@ -551,7 +551,7 @@ include::partial$include-insights-charts.adoc[tags="api-detail-performance"]
 [[entity-metrics-api-client-apps]]
 ==== Client Application Metrics for an API Implementation 
 
-Charts with client application metrics are available in the *Client Applications* tab for each API implementation that you can monitor in Anypoint Insights. 
+Charts with client app metrics are available in the *Client Applications* tab for each API implementation that you can monitor in Anypoint Insights. 
 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 
