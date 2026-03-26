@@ -52,10 +52,10 @@
 .9+| <<Overview, *Overview*>> 
     | *Mule Messages* | xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview] tab: *Mule Messages*
     | *Errors* | xref:anypoint-insights.adoc#entity-metrics-app-errors[Errors] tab: *Failed Mule Messages*
-    | *Inbound - Total Requests by Response Type* | xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests] tab: *Inbound Request volume - choose group by Response type*
+    | *Inbound - Total Requests by Response Type* | xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests] tab: *Inbound Request Volume* (Select *inbound*)
     | *Inbound - Average Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-overview[Overview] tab: *Inbound Request Latency* (*avg*)
-    | *Outbound - Total Requests by Response Type* | *Requests* tab: *Outbound Request Volume* (*response type*)
-    | *Outbound - Average Response Time* | *Requests* tab: *Outbound Request Latency* (*avg*)
+    | *Outbound - Total Requests by Response Type* | *Requests* tab: *Outbound Request Volume* (Select *response type*)
+    | *Outbound - Average Response Time* | *Requests* tab: *Outbound Request Latency* (Select *avg*)
     | *JVM - CPU % Utilization* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[JVM] tab: *CPU Utilization*
     | *JVM - Heap Used* | *JVM* tab: *Heap usage*
     | *JVM - Thread Count* | *JVM* tab: *Thread Count*
