@@ -35,6 +35,7 @@ Your data is prepopulated and displayed in the built-in dashboards and logs; no 
 //TBD:
 //include::reuse::partial$billing/pricing.adoc[tag=featureAdvFunctionality] 
 
+////
 [[built-in-charts-app]]
 Built-in dashboards include various pages to view different types of charts:
 
@@ -217,6 +218,7 @@ include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
 include::reuse::partial$billing/pricing.adoc[tag=appNetworkTabAvailability]
    
 |===
+////
 
 == Chart Reference
 
@@ -727,6 +729,13 @@ include::partial$data-aggregation.adoc[]
 == Charting Inactivity for Average Response Time
 
 include::partial$average-response-time.adoc[]
+
+[[app-chart-parity]]
+== App Chart Mapping (Built-in and Insights Dashboards)
+
+Charts and visualizations in the built-in dashboards and Anypoint Insights share application metrics. 
+
+include::partial$include-insights-parity-charts.adoc[tags=app-chart-parity]
 
 
 == See Also
