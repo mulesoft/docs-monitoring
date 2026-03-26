@@ -57,48 +57,55 @@
 | Built-in Dashboard Tab for API | Built-in Dashboard Chart | Anypoint Insights Tab | Anypoint Insights Chart
 
 .9+| <<Overview, *Overview*>> 
-    | *Mule Messages* | xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] | *Mule Messages*
-    | *Errors* | xref:anypoint-insights.adoc#entity-metrics-app-errors[*Errors*] | *Failed Mule Messages*
-    | *Inbound - Total Requests by Response Type* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Inbound Request Volume* (Select *By Response*)
-    | *Inbound - Average Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] |  *Inbound Request Latency* (Displays *avg*)
-    | *Outbound - Total Requests by Response Type* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Outbound Request Volume* (Select *By Response Type*)
-    | *Outbound - Average Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Outbound Request Latency* (Select *avg*)
-    | *JVM - CPU % Utilization* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[*JVM*] | *CPU Utilization*
-    | *JVM - Heap Used* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[*JVM*] | *Heap Usage*
-    | *JVM - Thread Count* | xref:anypoint-insights.adoc#entity-metrics-app-jvm[*JVM*] | *Thread Count*
+    | *Mule Messages* .2+| xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] 
+                                                    | *Mule Messages*
+    | *Inbound - Average Response Time*             | *Inbound Request Latency* (Displays *avg*)
+
+    | *Errors* .1+| xref:anypoint-insights.adoc#entity-metrics-app-errors[*Errors*] 
+                                                    | *Failed Mule Messages*
+    | *Inbound - Total Requests by Response Type* .3+| xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] 
+                                                    | *Inbound Request Volume* (Select *By Response*)
+    | *Outbound - Total Requests by Response Type*  | *Outbound Request Volume* (Select *By Response Type*)
+    | *Outbound - Average Response Time*            | *Outbound Request Latency* (Select *avg*)
+    | *JVM - CPU % Utilization* .3+| xref:anypoint-insights.adoc#entity-metrics-app-jvm[*JVM*] 
+                                                    | *CPU Utilization*
+    | *JVM - Heap Used*                             | *Heap Usage*
+    | *JVM - Thread Count*                          | *Thread Count*
 
 .14+| <<inbound-charts, *Inbound*>>
-    | *Inbound - Total Requests by Response Type* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Inbound Request Volume* (Select *By Response Type*)
-    | *Inbound - Average Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] | *Inbound Request Latency*  (Select *avg*)
-    | *Inbound - Average Response Time by HTTP Endpoint* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Request Latency by Endpoint* (Select *Inbound*, Displays *Average*)
-    | *Inbound - Min Response Time by HTTP Endpoint* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Request Latency by Endpoint* (Select *Inbound*, Displays *Min*)
-    | *Inbound - Max Response Time by HTTP Endpoint* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Request Latency by Endpoint* (Select *Inbound*, Displays *Max*)
-    | *Inbound - Total Requests by HTTP Endpoint* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Request Latency by Endpoint* (Select *Inbound*, Displays *Total*)
-    | *Inbound - Response Time - 99 Percentile* | xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] | *Inbound Request Latency* (Displays *p99*)
-    | *Inbound - Response Time - 90 Percentile* | xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] | *Inbound Request Latency* (Displays *p90*)
-    | *Inbound - Response Time - 75 Percentile* | xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] | *Inbound Request Latency* (Displays *p75*)
-    | *Inbound - Response Time - 50 Percentile* | xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] | *Inbound Request Latency* (Displays *p50*)
-    | *Inbound - Failure Total Request Count* | xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] | *Failed Inbound Request Volume* 
-    | *Inbound - Maximum Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Inbound - Maximum Response Time by Endpoint*
-    | *Inbound - Protocols* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Request Volume by Protocol* (Select *Inbound* )
-    | *Inbound - HTTP Endpoints* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Request Volume by HTTP Endpoint*
+    | *Inbound - Total Requests by Response Type* .8+| xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] 
+                                                            | *Inbound Request Volume* (Select *By Response Type*)    
+    | *Inbound - Average Response Time by HTTP Endpoint*    | *Request Latency by Endpoint* (Select *Inbound*, Displays *Average*)
+    | *Inbound - Min Response Time by HTTP Endpoint*        | *Request Latency by Endpoint* (Select *Inbound*, Displays *Min*)
+    | *Inbound - Max Response Time by HTTP Endpoint*        | *Request Latency by Endpoint* (Select *Inbound*, Displays *Max*)
+    | *Inbound - Total Requests by HTTP Endpoint*           | *Request Latency by Endpoint* (Select *Inbound*, Displays *Total*)
+    | *Inbound - Maximum Response Time*                     | *Inbound - Maximum Response Time by Endpoint*
+    | *Inbound - Protocols*                                 | *Request Volume by Protocol* (Select *Inbound* )
+    | *Inbound - HTTP Endpoints*                            | *Request Volume by HTTP Endpoint*
+    | *Inbound - Average Response Time* .6+| xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] | *Inbound Request Latency*  (Select *avg*)      
+    | *Inbound - Response Time - 99 Percentile*             | *Inbound Request Latency* (Displays *p99*)
+    | *Inbound - Response Time - 90 Percentile*             | *Inbound Request Latency* (Displays *p90*)
+    | *Inbound - Response Time - 75 Percentile*             | *Inbound Request Latency* (Displays *p75*)
+    | *Inbound - Response Time - 50 Percentile*             | *Inbound Request Latency* (Displays *p50*)
+    | *Inbound - Failure Total Request Count*               | *Failed Inbound Request Volume* 
 
 .15+| <<outbound-charts, *Outbound*>>
-    | *Outbound - Total Requests by Response Type* | xref:anypoint-insights.adoc#entity-metrics-app-requests[Requests] | *Outbound Request Volume* (Select *By Response Type*))
     | *Outbound - Average Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] | *Outbound Request Latency* (Displays *avg*)
-    | *Outbound - Average Response Time by Endpoint* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Request Latency by Endpoint* (Select *Outbound*, Displays *Average*)
-    | *Outbound - Min Response Time by Endpoint* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Request Latency by Endpoint*  (Select *Outbound*,  Displays *Min*)
-    | *Outbound - Max Response Time by Endpoint* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Request Latency by Endpoint* (Select *Outbound*, Displays *Max*)
-    | *Outbound - Total Requests by HTTP Endpoint* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Request Latency by Endpoint* (Select *Outbound*)
-    | *Outbound - Response Time - 99 Percentile* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Outbound Request Latency* (Displays *p99*)
-    | *Outbound - Response Time - 90 Percentile* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Outbound Request Latency* (Displays *p90*)
-    | *Outbound - Response Time - 75 Percentile* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Outbound Request Latency* (Displays *p75*)
-    | *Outbound - Response Time - 50 Percentile* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Outbound Request Latency* (Displays *p50*)
-    | *Outbound - Failure Total Request Count* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Failed Outbound Request Volume* 
-    | *Outbound - HTTP Ports* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Outbound Request Volume by Port*
-    | *Outbound - Operations* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Outbound Request Volume by Operation*
-    | *Outbound - HTTP Protocols* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Request Volume by Protocol*  (Select *Outbound*)
-    | *Outbound - Endpoints* | xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] | *Outbound Request Volume by Remote Host*
+    | *Outbound - Total Requests by Response Type* .14+| xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] 
+                                                        | *Outbound Request Volume* (Select *By Response Type*))
+    | *Outbound - Average Response Time by Endpoint*    | *Request Latency by Endpoint* (Select *Outbound*, Displays *Average*)
+    | *Outbound - Min Response Time by Endpoint*        | *Request Latency by Endpoint*  (Select *Outbound*,  Displays *Min*)
+    | *Outbound - Max Response Time by Endpoint*        | *Request Latency by Endpoint* (Select *Outbound*, Displays *Max*)
+    | *Outbound - Total Requests by HTTP Endpoint*      | *Request Latency by Endpoint* (Select *Outbound*)
+    | *Outbound - Response Time - 99 Percentile*        | *Outbound Request Latency* (Displays *p99*)
+    | *Outbound - Response Time - 90 Percentile*        | *Outbound Request Latency* (Displays *p90*)
+    | *Outbound - Response Time - 75 Percentile*        | *Outbound Request Latency* (Displays *p75*)
+    | *Outbound - Response Time - 50 Percentile*        | *Outbound Request Latency* (Displays *p50*)
+    | *Outbound - Failure Total Request Count*          | *Failed Outbound Request Volume* 
+    | *Outbound - HTTP Ports*                           | *Outbound Request Volume by Port*
+    | *Outbound - Operations*                           | *Outbound Request Volume by Operation*
+    | *Outbound - HTTP Protocols*                       | *Request Volume by Protocol*  (Select *Outbound*)
+    | *Outbound - Endpoints*                            | *Outbound Request Volume by Remote Host*
 
 .10+| <<flows-charts, *Flows*>>
     | *Inbound - Response Time by Flow* .10+| xref:anypoint-insights.adoc#entity-metrics-app-flows[*Flows*] | *Inbound - Response Time by Flow*
