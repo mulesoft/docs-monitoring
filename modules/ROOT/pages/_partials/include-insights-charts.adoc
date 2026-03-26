@@ -55,21 +55,21 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-overview-inbound-request-volume]]
 Inbound Request Volume::
-Total number of inbound requests to this app at specific time points grouped by protocol, response type, or ungrouped
+Total number of inbound requests to this app over time grouped by protocol, response type, or ungrouped
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //  shared metric in Overview tab
 [[chart-overview-failed-inbound-request-volume]]
 Failed Inbound Request Volume::
-Total number of unsuccessful inbound requests at specific time points
+Total number of unsuccessful inbound requests over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 //  shared metric in Overview tab
 [[chart-overview-mule-messages]]
 Mule Messages::
-Mule message count for this Mule app at specific time points
+Mule message count for this Mule app over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 +
@@ -139,7 +139,7 @@ Total number of requests by operation, such as a `retrieve` or `store` operation
 //tag::app-detail-errors[]
 [[chart-failed-outbound-request-volume]]
 Failed Outbound Request Volume::
-Total number of failed outbound requests at specific time points
+Total number of failed outbound requests over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
@@ -610,12 +610,10 @@ include::partial$include-insights-charts.adoc[tag="total-requests"]
 [[chart-overview-policy-violations]]
 Policy Violations::
 Total number of requests rejected because of API policy violations
-+
-For information about policies, see xref:api-manager::manage-policies-overview.adoc[].
 
 [[chart-overview-request-latency]]
 Request Latency::
-Latency, in milliseconds, for requests to this API at specific time points
+Latency, in milliseconds, for requests to this API over time
 +
 The chart provides values for the average latency and the p90, p95, p99 percentiles. 
 +
@@ -623,30 +621,30 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-overview-request-volume]]
 Request Volume::
-Total number of requests to this API at specific time points
+Total number of requests to this API over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-overview-failed-requests]]
 Failed Requests::
-Total number of unsuccessful requests to this API at specific time points
+Total number of unsuccessful requests to this API over time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-overview-total-4xx-errors]]
 Total 4xx Errors::
-Total number of requests to this API at specific time points that resulted in a 4xx response code.
-//TODO: VERIFY 4xx; is it all 4xx or specific 4xx codes? NEED EXAMPLE CODE. 400?
+Total number of requests to this API over time that resulted in a 4xx response code.
+//TODO: VERIFY
 
 [[chart-overview-total-5xx-errors]]
 Total 5xx Errors::
-Total number of requests to this API at specific time points that resulted in a 5xx response code.
-//TODO: VERIFY 5xx; is it all 5xx or specific 5xx codes? NEED EXAMPLE CODE. 500?
+Total number of requests to this API over time that resulted in a 5xx response code.
+//TODO: VERIFY
 
 //TODO: issue: 2 charts named Policy Violations (SATHISH)
 [[chart-overview-policy-violations-time]]
 Policy Violations::
-Total number of requests rejected at specific time points because of API policy violations
+Total number of requests rejected over time because of API policy violations
 +
 For information about policies, see xref:api-manager::manage-policies-overview.adoc[].
 +
@@ -660,13 +658,13 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //tag::api-detail-requests[]
 [[chart-requests-request-volume-by-http-method]]
 Request Volume by HTTP Method::
-Total number of requests at specific time points, grouped by the HTTP method used for the request
+Total number of requests over time, grouped by the HTTP method used for the request
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-requests-request-volume-by-response-code]]
 Request Volume by Response Code::
-Total number of requests at specific time points, grouped by the response code (such as *2xx*)
+Total number of requests over time, grouped by the response code (such as *2xx*)
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
@@ -674,7 +672,7 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 // TODO: top 20 paths
 [[chart-requests-request-volume-by-top-n-paths]]
 Request Volume by Top N paths::
-Total number of requests at specific time points from the 20 endpoints with the most requests
+Total number of requests from the 20 endpoints with the most requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //end::api-detail-requests[]
@@ -688,25 +686,25 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //TODO: VERIFY Failed Mule Messages NAME ONCE IN TO PRODUCT BUILD
 [[chart-errors-failed-mule-messages]]
 Failed Mule Messages::
-Total number of failed Mule messages over time. 
+Total number of failed Mule messages over time 
 
 [[chart-errors-failed-requests-volume-by-http-method]]
 Failed Requests Volume by HTTP Method::
-Total number of unsuccessful requests at specific time points, grouped by the HTTP method used
+Number of unsuccessful requests over time, grouped by the HTTP method used
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 // TODO: downloads available?
 [[chart-errors-failed-requests-volume-by-response-code]]
 Failed Requests Volume by Response Code::
-Total number of unsuccessful requests at specific time points, grouped by the response code (such as *2xx*)
+Number of unsuccessful requests over time, grouped by the response code (such as *2xx*)
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
 // TODO: paths -> Paths and "N" to "20" if that's the limit (SATHISH)
 [[chart-errors-failed-requests-by-top-n-paths]]
 Failed Requests by Top N Paths::
-Total number of unsuccessful requests at specific time points from the 20 endpoints with the most requests
+Number of unsuccessful requests over time from the 20 endpoints with the most requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 
@@ -719,20 +717,20 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 
 [[chart-policies-policy-violations-by-path]]
 Policy Violations by Path::
-Total number of requests rejected at specific time points because of API policy violations, grouped by endpoint. Data retention is 1 hour. 
+Number of requests rejected over time because of API policy violations, grouped by endpoint. Data retention is 1 hour. 
 //TODO: Verify Content. NO EXAMPLE. And paths -> Paths and "N" to "20" if that's the limit (SATHISH)
 +
 For information about policies, see xref:api-manager::manage-policies-overview.adoc
 
 [[chart-policies-policy-violations-by-outcome]]
 Policy Violations by Outcome::
-Total number of requests rejected at specific time points because of API policy violations, grouped by outcome (such as *Blocked* or *Alerted*). Data retention is 1 hour.
-//TODO: Verify Content. NO EXAMPLE. And outcomes -> Outcomes (SATHISH)
+Number of requests rejected over time because of API policy violations, grouped by outcome (such as *Blocked* or *Alerted*). Data retention is 1 hour.
+//TODO: Verify Content. NO EXAMPLE.
 
 [[chart-policies-policy-violations-by-policy]]
 Policy Violations by Policy::
-Total number of requests rejected at specific time points because of API policy violations, grouped by the specific policy that was violated. Data retention is 1 hour.
-//TODO: Verify Content. NO EXAMPLE. And policies -> Policies (SATHISH)
+Number of requests rejected over time because of API policy violations, grouped by the specific policy that was violated. Data retention is 1 hour.
+//TODO: Verify Content. NO EXAMPLE.
 
 //end::api-detail-policies[]
 //
@@ -779,6 +777,15 @@ Request Volume by Location::
 Map visualization with the number of requests in geographic areas across the globe. Review location-specific data by client ID and Client IP. Data retention is 1 hour.
 +
 You can click the request volume number on the map to get more detailed information.
+
+[[chart-requests-by-client-id]]
+Requests by Client ID::
+Number of requests by client ID
+
+[[chart-requests-by-client-ip]]
+Requests by Client IP::
+Number of requests by client IP
+
 //end::api-detail-client-apps[]
 //-------------------------------------------------------------//
 
@@ -813,7 +820,7 @@ Total number of requests to this entity
 //tag::request-latency[]
 [[chart-request-latency]]
 Request Latency::
-Latency, in milliseconds (ms), at specific time points for the average request and the p90, p95, and p99 percentile requests
+Latency, in milliseconds (ms), over time for the average request and the p90, p95, and p99 percentile requests
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 //can download as CSV, XLS
