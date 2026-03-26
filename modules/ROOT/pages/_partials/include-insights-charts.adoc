@@ -685,12 +685,6 @@ include::partial$include-insights-charts.adoc[tag="download-as"]
 //-------------------------
 //tag::api-detail-errors[]
 
-//TODO: IS THIS THE 
-//TODO: VERIFY Failed Mule Messages NAME ONCE IN TO PRODUCT BUILD
-[[chart-errors-failed-mule-messages]]
-Failed Mule Messages::
-Number of failed Mule messages over time 
-
 [[chart-errors-failed-requests-volume-by-http-method]]
 Failed Requests Volume by HTTP Method::
 Number of unsuccessful requests over time, grouped by the HTTP method used
