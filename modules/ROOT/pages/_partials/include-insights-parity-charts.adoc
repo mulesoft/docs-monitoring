@@ -1,0 +1,185 @@
+//
+//tag::api-chart-parity[]
+
+//APIs
+[%header,cols="1,2,2"]
+|===
+| Built-in Dashboard Tab (API-level) | Chart Name in Built-in Dashboard | Chart Name in Anypoint Insights
+
+.6+| Overview
+    | Requests Volume | Overview tab: Request Volume
+    | Failed Requests | Overview tab: Failed Requests
+    | Total 4xx Errors | Overview tab: Total 4xx Errors
+    | Total 5xx Errors | Overview tab: Total 5xx Errors
+    | Policy Violations | Overview tab: Policy Violations
+    | Average Response Time | Overview tab: Request Latency
+
+.6+| Requests
+    | Requests grouped by top20 paths | Request Volume by Top N paths
+    | Requests by Method | Request Volume by HTTP Method
+    | Requests by Response Code | Request Volume by Response Code
+    | Failures by top 20 paths | Failed Requests by Top N paths
+    | Failures by Method | Failed Requests Volume by HTTP Method
+    | Failures by Response Code | Failed Requests Volume by Response Code
+
+.3+| Policies
+    | Policy Violations by Path | Policy Violations by Path
+    | Policy Violations by Outcome | Policy Violations by Outcome
+    | Policy Violations by Violation ID | Policy Violations by Policy
+
+| Performance
+    | Requests by Performance | Request Latency by Endpoint
+
+.3+| Client applications
+    | Requests by ClientID | Requests by Client ID
+    | Requests by ClientIP | Requests by Client IP
+    | Requests by Location | Request Volume by Location
+|===
+
+//end::api-chart-parity[]
+//
+
+//
+//tag::app-chart-parity[]
+
+//Apps
+[%header,cols="1,2,2"]
+|===
+| Built-in Dashboard Tab (Application-level) | Chart Name in Built-in Dashboard | Chart Name in Anypoint Insights (Application-level)
+
+.9+| *Overview* tab 
+    | Mule Messages | Overview tab: Mule Messages
+    | Errors | Errors Tab: Failed Mule Messages
+    | Inbound - Total Requests by Response Type | Requests tab: Inbound Request volume - choose group by Response type
+    | Inbound - Average Response Time | Overview tab: Inbound Request Latency (avg is one of the chart series)
+    | Outbound - Total Requests by Response Type | Requests tab: Outbound Request volume - choose group by Response type
+    | Outbound - Average Response Time | Requests tab: Outbound Request Latency (avg is one of the chart series)
+    | JVM - CPU % Utilization | JVM Tab: CPU Utilization
+    | JVM - Heap Used | JVM Tab: Heap usage
+    | JVM - Thread Count | JVM tab: Thread Count
+
+.14+| *Inbound* tab
+    | Inbound - Total Requests by Response Type | Requests tab: Inbound Request Volume - choose group by Response type
+    | Inbound - Average Response Time | Overview tab: Inbound Request Latency (avg is one of the chart series)
+    | Inbound - Average Response Time by HTTP Endpoint | Inbound - Response Time
+    | Inbound - Min Response Time by HTTP Endpoint | Requests tab: Request Latency by Endpoint table, choose group by Inbound
+    | Inbound - Max Response Time by HTTP Endpoint | Requests tab: Request Latency by Endpoint table, choose group by Inbound
+    | Inbound - Total Requests by HTTP Endpoint | Requests tab: Request Latency by Endpoint table, choose group by Inbound
+    | Inbound - Response Time - 99 Percentile | Overview tab: Inbound Request Latency chart
+    | Inbound - Response Time - 90 Percentile | Overview tab: Inbound Request Latency chart
+    | Inbound - Response Time - 75 Percentile | Overview tab: Inbound Request Latency chart
+    | Inbound - Response Time - 50 Percentile | Overview tab: Inbound Request Latency chart
+    | Inbound - Failure Total Request Count | Overview tab: Failed Inbound Request Volume
+    | Inbound - Maximum Response Time | Requests tab: Inbound - Maximum Response Time by Endpoint
+    | Inbound - Protocols | Requests tab: Request Volume by Protocol - choose group by Inbound
+    | Inbound - HTTP Endpoints | Requests tab: Request Volume by HTTP Endpoint
+
+.15+| *Outbound* tab
+    | Outbound - Total Requests by Response Type | Requests tab: Outbound Request Volume - choose group by Response type
+    | Outbound - Average Response Time | Requests tab: Outbound Request Latency (avg is one of the chart series)
+    | Outbound - Average Response Time by Endpoint | Requests tab: Request Latency by Endpoint - choose group by Outbound
+    | Outbound - Min Response Time by Endpoint | Requests tab: Request Latency by Endpoint - choose group by Outbound
+    | Outbound - Max Response Time by Endpoint | Requests tab: Request Latency by Endpoint - choose group by Outbound
+    | Outbound - Total Requests by HTTP Endpoint | Requests tab: Request Latency by Endpoint - choose group by Outbound
+    | Outbound - Response Time - 99 Percentile | Requests tab: Outbound Request Latency chart
+    | Outbound - Response Time - 90 Percentile | Requests tab: Outbound Request Latency chart
+    | Outbound - Response Time - 75 Percentile | Requests tab: Outbound Request Latency chart
+    | Outbound - Response Time - 50 Percentile | Requests tab: Outbound Request Latency chart
+    | Outbound - Failure Total Request Count | Errors tab: Failed Outbound Request Volume chart
+    | Outbound - HTTP Ports | Requests tab: Outbound Request Volume by Port
+    | Outbound - Operations | Requests tab: Outbound Request Volume by Operation
+    | Outbound - HTTP Protocols | Requests tab: Request Volume by Protocol table - choose group by Outbound
+    | Outbound - Endpoints | Requests tab: Outbound Request Volume by Remote Host
+
+.10+| *Flows* tab
+    | Inbound - Response Time by Flow | Inbound - Response Time by Flow
+    | Outbound - Response Time by Flow | Outbound - Response Time by Flow
+    | Inbound - Requests by Flow | Inbound - Requests by Flow
+    | Outbound - Requests by Flow | Outbound - Requests by Flow
+    | Failures by Flow | Failures by Flow
+    | Inbound - Response Time by Flow | Inbound - Response Time by Flow
+    | Outbound - Response Time by Flow | Outbound - Response Time by Flow
+    | Inbound - Requests by Flow | Inbound - Requests by Flow
+    | Outbound - Requests by Flow | Outbound - Requests by Flow
+    | Failures by Flow | Failures by Flow
+
+.35+| *Connectors* tab
+    | Connector Message Volume | Connector Message Volume
+    | Response Time by Connector | Response Time by Connector
+    | Salesforce Requests | Salesforce Requests
+    | Salesforce Response Time | Salesforce Response Time
+    | Salesforce Failures | Salesforce Failures
+    | Database Requests | Database Requests
+    | Database Response Time | Database Response Time
+    | Database Failures | Database Failures
+    | HTTP Requests | HTTP Requests
+    | HTTP Response Time | HTTP Response Time
+    | HTTP Failures | HTTP Failures
+    | Web Services Requests | Web Services Requests
+    | Web Services Response Time | Web Services Response Time
+    | Web Services Failures | Web Services Failures
+    | FTP Requests | FTP Requests
+    | FTP Response Time | FTP Response Time
+    | FTP Failures | FTP Failures
+    | SFTP Requests | SFTP Requests
+    | SFTP Response Time | SFTP Response Time
+    | SFTP Failures | SFTP Failures
+    | SMTP Requests | SMTP Requests
+    | SMTP Response Time | SMTP Response Time
+    | SMTP Failures | SMTP Failures
+    | Object Store Requests | Object Store Requests
+    | Object Store Response Time | Object Store Response Time
+    | Object Store Failures | Object Store Failures
+    | Anypoint MQ Operations - Inbound | Anypoint MQ Operations - Inbound
+    | Anypoint MQ Response Time - Inbound | Anypoint MQ Response Time - Inbound
+    | Anypoint MQ Failures - Inbound | Anypoint MQ Failures - Inbound
+    | Anypoint MQ Operations - Outbound | Anypoint MQ Operations - Outbound
+    | Anypoint MQ Response Time - Outbound | Anypoint MQ Response Time - Outbound
+    | Anypoint MQ Failures - Outbound | Anypoint MQ Failures - Outbound
+    | Other Connector Requests | Other Connector Requests
+    | Other Connector Response Time | Other Connector Response Time
+    | Other Connector Failures | Other Connector Failures
+
+.35+| *JVM* tab
+    | Old Gen GC Count | Old Gen GC Count
+    | Old Gen GC Time | Old Gen GC Duration
+    | Young Gen GC Count | Young Gen GC Count
+    | Young Gen GC Time | Young Gen GC Duration
+    | Classes Loaded | Classes Loaded
+    | Classes Loaded Total | Classes Loaded Total
+    | Classes Unloaded | Classes Unloaded
+    | Heap Committed | Heap Committed
+    | Heap Used | Heap Usage
+    | Thread Count | Thread Count
+    | Eden Space Used | Par Eden Space - choose metric dropdown
+    | Eden Space Max | Par Eden Space - choose metric dropdown
+    | Eden Space Init | Par Eden Space - choose metric dropdown
+    | Eden Space Committed | Par Eden Space - choose metric dropdown
+    | Survivor Space Used | Survivor Space - choose metric dropdown
+    | Survivor Space Max | Survivor Space - choose metric dropdown
+    | Survivor Space Init | Survivor Space - choose metric dropdown
+    | Survivor Space Committed | Survivor Space - choose metric dropdown
+    | Metaspace Used | Metaspace - choose metric dropdown
+    | Metaspace Max | Metaspace - choose metric dropdown
+    | Metaspace Init | Metaspace - choose metric dropdown
+    | Metaspace Committed | Metaspace - choose metric dropdown
+    | Code Cache Used | Code cache - choose metric dropdown
+    | Code Cache Max | Code cache - choose metric dropdown
+    | Code Cache Init | Code cache - choose metric dropdown
+    | Code Cache Committed | Code cache - choose metric dropdown
+    | Compressed Class Space Used | Compressed class sspace - choose metric dropdown
+    | Compressed Class Space Max | Compressed class sspace - choose metric dropdown
+    | Compressed Class Space Init | Compressed class sspace - choose metric dropdown
+    | Compressed Class Space Committed | Compressed class sspace - choose metric dropdown
+    | Old Gen Mem Used | Split into Tenured Gen and G1 Old Gen charts
+    | Old Gen Mem Max | Split into Tenured Gen and G1 Old Gen charts
+    | Old Gen Mem Init | Split into Tenured Gen and G1 Old Gen charts
+    | Old Gen Mem Committed | Split into Tenured Gen and G1 Old Gen charts
+    | Committed Virtual Memory | Committed Virtual Memory
+
+| *Custom Metrics* tab 
+    | Charts | Tab with same name available in Insights detail page.
+|===
+
+//end::app-chart-parity[]
+//
