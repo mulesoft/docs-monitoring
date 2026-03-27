@@ -64,7 +64,7 @@
     | *Errors* .1+| xref:anypoint-insights.adoc#entity-metrics-app-errors[*Errors*] 
                                                     | *Failed Mule Messages*
     | *Inbound - Total Requests by Response Type* .3+| xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] 
-                                                    | *Inbound Request Volume* (Select *By Response*)
+                                                    | *Inbound Request Volume* (Select *By Response Type*)
     | *Outbound - Total Requests by Response Type*  | *Outbound Request Volume* (Select *By Response Type*)
     | *Outbound - Average Response Time*            | *Outbound Request Latency* (Select *avg*)
     | *JVM - CPU % Utilization* .3+| xref:anypoint-insights.adoc#entity-metrics-app-jvm[*JVM*] 
@@ -92,7 +92,7 @@
 .15+| <<outbound-charts, *Outbound*>>
     | *Outbound - Average Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] | *Outbound Request Latency* (Displays *avg*)
     | *Outbound - Total Requests by Response Type* .14+| xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] 
-                                                        | *Outbound Request Volume* (Select *By Response Type*))
+                                                        | *Outbound Request Volume* (Select *By Response Type*)
     | *Outbound - Average Response Time by Endpoint*    | *Request Latency by Endpoint* (Select *Outbound*, Displays *Average*)
     | *Outbound - Min Response Time by Endpoint*        | *Request Latency by Endpoint*  (Select *Outbound*,  Displays *Min*)
     | *Outbound - Max Response Time by Endpoint*        | *Request Latency by Endpoint* (Select *Outbound*, Displays *Max*)
@@ -173,10 +173,10 @@
     | *Eden Space Max*                      | *Par Eden Space* (Select *Max*)
     | *Eden Space Init*                     | *Par Eden Space* (Select *Init*)
     | *Eden Space Committed*                | *Par Eden Space* (Select *Committed*)
-    | *Survivor Space Used*                 | *Survivor Space* (Par Survivor Space* and G1 Survivor Space*, Select *Used*) 
-    | *Survivor Space Max*                  | *Survivor Space* (Par Survivor Space* and G1 Survivor Space*, Select *Max*)
-    | *Survivor Space Init*                 | *Survivor Space* (Par Survivor Space* and G1 Survivor Space*, Select *Init*)
-    | *Survivor Space Committed*            | *Survivor Space* (Par Survivor Space* and G1 Survivor Space*, Select *Committed*)
+    | *Survivor Space Used*                 | *Par Survivor Space* and *G1 Survivor Space* (Select *Used*) 
+    | *Survivor Space Max*                  | *Par *Survivor Space* and *G1 Survivor Space* (Select *Max*)
+    | *Survivor Space Init*                 | *Par *Survivor Space* and *G1 Survivor Space* (Select *Init*)
+    | *Survivor Space Committed*            | *Par Survivor Space* and *G1 Survivor Space* (Select *Committed*)
     | *Metaspace Used*                      | *Metaspace* (Select *Used*) 
     | *Metaspace Max*                       | *Metaspace* (Select *Max*)
     | *Metaspace Init*                      | *Metaspace* (Select *Init*)
