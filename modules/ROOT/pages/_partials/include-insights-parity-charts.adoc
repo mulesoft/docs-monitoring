@@ -78,7 +78,7 @@
     | *Inbound - Average Response Time by HTTP Endpoint*    | *Request Latency by Endpoint* (Select *Inbound*, Displays *Average*)
     | *Inbound - Min Response Time by HTTP Endpoint*        | *Request Latency by Endpoint* (Select *Inbound*, Displays *Min*)
     | *Inbound - Max Response Time by HTTP Endpoint*        | *Request Latency by Endpoint* (Select *Inbound*, Displays *Max*)
-    | *Inbound - Total Requests by HTTP Endpoint*           | *Request Latency by Endpoint* (Select *Inbound*, Displays *Total*)
+    | *Inbound - Total Requests by HTTP Endpoint*           | *Request Volume by HTTP Endpoint* (Select *Inbound*)
     | *Inbound - Maximum Response Time*                     | *Inbound - Maximum Response Time by Endpoint*
     | *Inbound - Protocols*                                 | *Request Volume by Protocol* (Select *Inbound* )
     | *Inbound - HTTP Endpoints*                            | *Request Volume by HTTP Endpoint*
