@@ -439,7 +439,7 @@ include::partial$include-insights-charts.adoc[tag="app-detail-connectors"]
 
 //TODO: REMOVE IF/WHEN THIS NO LONGER APPLIES
 //feature tier (for h2-h4 headings):
-include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-jvm"]
+//include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-jvm"]
 
 Charts with JVM metrics are available in the *JVM* tab for a Mule app in Anypoint Insights.
 
