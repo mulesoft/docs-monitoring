@@ -509,7 +509,7 @@ image::insights-details-api.png["Anypoint Insights API Details UI"]
 . *API Details* page for an API in Anypoint Insights
 . API associated with this details page and a dropdown for opening the detail page for another API or app in one of your environments
 . Tabs containing charts and visualizations for different types of metrics on the API
-. Navigation for switching to the traditional built-in dashboard for this API from Anypoint Insights
+. Navigation for switching to the traditional built-in dashboard for this API from Anypoint Insights, and for managing the API in API Manager
 
 Get information on the charts and visualization available for the API:
 
