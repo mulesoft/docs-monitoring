@@ -96,7 +96,7 @@
     | *Outbound - Average Response Time by Endpoint*    | *Request Latency by Endpoint* (Select *Outbound*, Displays *Average*)
     | *Outbound - Min Response Time by Endpoint*        | *Request Latency by Endpoint*  (Select *Outbound*,  Displays *Min*)
     | *Outbound - Max Response Time by Endpoint*        | *Request Latency by Endpoint* (Select *Outbound*, Displays *Max*)
-    | *Outbound - Total Requests by HTTP Endpoint*      | *Request Latency by Endpoint* (Select *Outbound*)
+    | *Outbound - Total Requests by HTTP Endpoint*      | *Request Volume by HTTP Endpoint* (Select *Outbound*)
     | *Outbound - Response Time - 99 Percentile*        | *Outbound Request Latency* (Displays *p99*)
     | *Outbound - Response Time - 90 Percentile*        | *Outbound Request Latency* (Displays *p90*)
     | *Outbound - Response Time - 75 Percentile*        | *Outbound Request Latency* (Displays *p75*)
