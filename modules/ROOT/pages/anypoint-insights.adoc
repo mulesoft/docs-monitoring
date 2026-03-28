@@ -357,7 +357,7 @@ image::insights-details-app.png["Anypoint Insights App Details UI"]
 
 [calloutlist]
 . *Application Details* page for an app in Anypoint Insights
-. App associated with this details page and a dropdown for opening the detail page for another app or API in any environment
+. App associated with this details page and a dropdown for opening the detail page for another app or API in one of your environments
 . Tabs containing charts and visualizations for different types of metrics on the app
 . Navigation for switching to the traditional built-in dashboard for this app, and for managing the app in Runtime Manager
 
@@ -501,7 +501,7 @@ image::insights-details-api.png["Anypoint Insights API Details UI"]
 
 [calloutlist]
 . *API Details* page for an API in Anypoint Insights
-. API associated with this details page and a dropdown for opening the detail page for another API or app in any environment
+. API associated with this details page and a dropdown for opening the detail page for another API or app in one of your environments
 . Tabs containing charts and visualizations for different types of metrics on the API
 . Navigation for switching to the traditional built-in dashboard for this API from Anypoint Insights
 
