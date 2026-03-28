@@ -413,6 +413,9 @@ include::partial$include-insights-charts.adoc[tag="app-detail-errors"]
 [[entity-metrics-app-flows]]
 ==== Flow Metrics for a Mule Flow
 
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
+
 Charts with error metrics are available in the *Flows* tab for a Mule app in Anypoint Insights.
 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
