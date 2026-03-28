@@ -427,6 +427,7 @@ include::partial$include-insights-charts.adoc[tag="app-detail-flows"]
 
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
+
 Charts with error metrics are available in the *Connectors* tab for a Mule app in Anypoint Insights.
 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
