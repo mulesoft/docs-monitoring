@@ -361,7 +361,7 @@ image::insights-details-app.png["Anypoint Insights App Details UI"]
 . Tabs containing charts and visualizations for different types of metrics on the app
 . Navigation for switching to the traditional built-in dashboard for this app, and for managing the app in Runtime Manager
 
-Get information on the charts and visualization available for the app:
+Get information on the charts and visualizations available for the app:
 
 * <<entity-metrics-app-header>>
 * <<entity-metrics-app-overview>>
