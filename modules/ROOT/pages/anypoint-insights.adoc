@@ -31,7 +31,7 @@ image::insights.png["Anypoint Insights UI"]
 +
 {selector-all-dashboards}
 
-Anypoint Insights uses <<metrics-api, Anypoint Monitoring Metrics API>> to query for data that appears in charts. Data aggregation and retention limits in Anypoint Insights are derived from the service that supports the Metrics API. 
+Anypoint Insights uses <<metrics-api, Anypoint Monitoring Metrics API>> to query for data that appears in charts. Data aggregation and retention limits in Anypoint Insights are derived from the service that supports the Metrics API. For information about data collection intervals in Anypoint Insights charts, see <<data-collection>>.
 
 For Advanced and Titanium subscription tiers, Integration Intelligence is accessible from Anypoint Insights. See xref:integration-intelligence.adoc[] to extend your MuleSoft telemetry data analysis beyond real-time monitoring.
 
@@ -374,6 +374,8 @@ Get information on the charts and visualizations available for the app:
 
 include::partial$include-entities.adoc[tags="entity-definition"]
 
+To compare *Application Details* charts and visualizations with those in the traditional  built-in dashboards for the same app, see xref:monitoring::app-dashboards.adoc#app-chart-parity[App Chart Mapping].
+
 [[entity-metrics-app-header]]
 ==== Mule Application Metrics
 
@@ -521,6 +523,8 @@ Get information on the charts and visualization available for the API:
 * <<entity-metrics-api-client-apps>>
 
 include::partial$include-entities.adoc[tags="entity-definition"]
+
+To compare *API Details* charts and visualizations with those in the traditional built-in dashboards for the same API, see  xref:monitoring::anypoint-insights.adoc#entity-metrics-apis[*API Details*] in Anypoint Insights.
 
 [[entity-metrics-api-header]]
 ==== API Implementation Metrics
