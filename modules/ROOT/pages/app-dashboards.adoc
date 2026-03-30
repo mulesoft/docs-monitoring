@@ -2,7 +2,7 @@
 
 Built-in dashboards display deployment information about your application at the top of the screen and provide access to a number of different graphs.
 
-The graphs and tables in built-in dashboards support many metrics, including application metrics. The *Overview* tab provides overall measures. You can view more granular application metrics through <<built-in-charts-app, additional tabs>>.
+The graphs and tables in built-in dashboards support many metrics, including application metrics. The *Overview* tab provides overall measures. You can view more granular application metrics through <<chart-reference, additional tabs>>.
 
 When converting quantities of memory, Anypoint Monitoring uses the power of 10 (_MB_) to reflect metrics values rather than the power of 2 (_MiB_).
 
@@ -33,181 +33,9 @@ image::builtin-dashboard-selection-interaction.png["Built-in dashboard selector"
 
 Your data is prepopulated and displayed in the built-in dashboards and logs; no configuration is needed. 
 //TBD:
-//include::reuse::partial$billing/pricing.adoc[tag=featureAdvFunctionality] 
+//include::reuse::partial$billing/pricing.adoc[tag=featureAdvFunctionality]
 
-[[built-in-charts-app]]
-Built-in dashboards include various pages to view different types of charts:
-
-[%header,cols="1,4"]
-|===
-| Built-In Dashboards | Charts
-| <<overview-charts>> a|
-
-* Mule Messages
-* Average Response Time
-* Errors
-* Inbound - Total Requests by Response Type
-* Inbound - Average Response Time
-* Outbound - Total Requests by Response Type
-* Outbound - Average Response Time
-* JVM - CPU % Utilization
-* JVM - Heap Used
-* JVM - Thread Count
-
-| <<inbound-charts>> a|
-
-* Inbound - Total Requests by Response Type
-* Inbound - Average Response Time
-* Inbound - Response Time by HTTP Endpoint
-* Inbound - Total Requests by Endpoint
-* Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
-* Inbound - Total Failed Requests
-
-include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-
-* Inbound - Protocols
-* Inbound - HTTP Endpoints
-* Inbound - Maximum Response Time
-
-
-| <<outbound-charts>> a|
-
-* Outbound - Total Requests by Response Type
-* Outbound - Average Response Time
-* Outbound - Average Response Time by HTTP Endpoint
-* Outbound - Total Requests by HTTP Endpoint
-* Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)
-* Outbound - Total Failed Requests
-
-include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-
-* Outbound - HTTP Ports
-* Outbound - Operations
-* Outbound - HTTP Protocols
-* Outbound - Endpoints
-| <<flows-charts>> a|
-
-include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-
-* Inbound - Response Time by Flow
-* Outbound - Response Time by Flow
-* Inbound - Requests by Flow
-* Outbound - Requests by Flow
-* Failures by Flow
-* Inbound - Slow Requests by Flow
-* Outbound - Slow Requests by Flow
-* Inbound - Response Time by Flow
-* Outbound - Response Time by Flow
-* Inbound - Requests by Flow
-* Outbound - Requests by Flow
-* Failures by Flow
-* Inbound - Slow Requests by Flow
-* Outbound- Slow Requests by Flow
-
-include::reuse::partial$billing/pricing.adoc[tag=flowsTabAvailability]
-| <<connectors-charts>> a|
-
-* Connector Message Volume
-
-* Response Time by Connector
-* Salesforce Requests
-* Salesforce Response Time
-* Salesforce Failures
-* Database Requests
-* Database Response Time
-* Database Failures
-* HTTP Requests
-* HTTP Response Time
-* HTTP Failures
-* Web Services Requests
-* Web Services Response Time
-* Web Services Failures
-* FTP Requests
-* FTP Response Time
-* FTP Failures
-* SFTP Requests
-* SFTP Response Time
-* SFTP Failures
-* SMTP Requests
-* SMTP Response Time
-* SMTP Failures
-* Object Store Requests
-* Object Store Response Time
-* Object Store Failures
-* Anypoint MQ Operations - Inbound
-* Anypoint MQ Response Time - Inbound
-* Anypoint MQ Failures - Inbound
-* Anypoint MQ Operations - Outbound
-* Anypoint MQ Response Time - Outbound
-* Anypoint MQ Failures - Outbound
-* Other Connector Requests
-* Other Connector Response Time
-* Other Connector Failures
-
-include::reuse::partial$billing/pricing.adoc[tag=connectorTabAvailability]
-| <<performance-charts>> a|
-
-* Mule Messages
-* Average Response Time
-* Inbound - Average Response Time
-* Inbound - Response Time by HTTP Endpoint
-* Inbound - Response Time graphs (99, 90, 75, and 50 percentiles)
-* Outbound - Average Response Time
-* Outbound - Response Time by Endpoint
-* Outbound - Response Time graphs (99, 90, 75, and 50 percentiles)
-| <<failures-charts>> a|
-
-* Errors
-* Inbound - Total Failed Requests
-* Outbound Total Failed Requests
-* Inbound - Total Requests by Response Type
-* Outbound - Total Requests by Response Type
-* Inbound - Failure Response Time by Endpoint
-* Inbound - Total Failed Requests by Endpoint
-* Outbound - Failure Response Time by HTTP Endpoint
-* Outbound - Total Failed Requests by HTTP Endpoint
-| <<jvm-charts>> a|
-
-* Old Gen GC Count
-* Old Gen GC Time
-* Young Gen GC Count
-* Young Gen GC Time
-* Classes (Loaded, Loaded Total, Unloaded)
-* Heap (Committed, Used)
-* Thread Count
-* JVM Uptime
-* Eden Space graphs (Used, Max, Init, and Committed)
-* Survivor Space graphs (Used, Max, Init, and Committed)
-* Metaspace graphs (Used, Max, Init, and Committed)
-* Code Cache graphs (Used, Max, Init, and Committed)
-* Compressed Class Space graphs (Used, Max, Init, and Committed)
-* Old Gen Mem graphs (Used, Max, Init, and Committed)
-
-include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-
-* Committed Virtual Memory
-| <<infrastructure-charts>> a|
-
-* JVM - CPU % Utilization
-* JVM - Heap Used
-* Total System Processors
-* System Memory
-* JVM Thread Count
-
-include::reuse::partial$billing/pricing.adoc[tag=chartAvailability]
-
-* System CPU % Utilization
-* JVM CPU Time
-* Operating System Swap Space
-| <<custom-metrics-charts>> a|
-
-include::reuse::partial$billing/pricing.adoc[tag=customMetricsTabAvailability]
-| <<application-network>> a|
-
-The chart on the *Application Network* tab shows the xref:visualizer::troubleshooting-visualization.adoc[Troubleshooting visualization] for the selected app. 
-include::reuse::partial$billing/pricing.adoc[tag=appNetworkTabAvailability]
-|===
-
+[[chart-reference]]
 == Chart Reference
 
 Anypoint Monitoring provides charts in these built-in dashboards:
@@ -290,16 +118,22 @@ Inbound - Maximum Response Time::
 The maximum response time, grouped by endpoint.
 +
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 Inbound - Protocols::
 The sum of inbound requests, grouped by protocol.
 +
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 Inbound - HTTP Endpoints::
 The sum of inbound requests, grouped by remote hosts (endpoints).
 +
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 [[outbound-charts]]
 === Outbound
@@ -329,21 +163,30 @@ The sum of failed outbound requests, grouped by type of response.
 
 Outbound - HTTP Ports::
 The sum of outbound requests, grouped by remote port.
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent AND Titanium or Advanced? WHAT IS THAT?
 
 Outbound - Operations::
 The estimated count of outbound requests, grouped by operation. For more information about which operations appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent AND Titanium or Advanced? WHAT IS THAT?
 
 Outbound - HTTP Protocols::
 The sum of outbound requests for the selected time period, grouped by protocol.
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent AND Titanium or Advanced? WHAT IS THAT?
 
 Outbound - Endpoints::
 The sum of outbound requests for the selected time period, grouped by remote hosts (endpoints). For more information about which endpoints appear, see the section about xref:monitoring::app-dashboards.adoc#endpoint-operation-metrics[endpoint and operation data collection].
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent AND Titanium or Advanced? WHAT IS THAT?
 
 [[flows-charts]]
 === Flows
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
-
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 Inbound - Response Time by Flow::
 The average inbound response time, grouped by flow.
@@ -649,6 +492,8 @@ Committed Virtual Memory::
 The amount of virtual memory guaranteed to be available to the running process, grouped by worker.
 +
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 [[infrastructure-charts]]
 === Infrastructure
@@ -672,16 +517,24 @@ The average number of threads of the JVM, grouped by worker.
 
 System CPU % Utilization::
 The percentage of CPU used by all processes. This metric often aligns with the Cloudwatch System CPU % metric, but there may be different values given the timing of data aggregation for Anypoint Monitoring metrics.
++
+include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 JVM CPU Time::
 The cumulative CPU time consumed by the JVM.
 +
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 Operating System Swap Space::
 The amount of memory the system is swapping, grouped by worker in automatic intervals.
 +
 include::reuse::partial$billing/pricing.adoc[tag=metricAvailability]
+//TBD IF STILL TRUE:
+//ALSO REQUIRED USE OF Unified Agent? WHAT IS THAT?
 
 [[custom-metrics-charts]]
 === Custom Metrics
@@ -717,6 +570,13 @@ include::partial$data-aggregation.adoc[]
 == Charting Inactivity for Average Response Time
 
 include::partial$average-response-time.adoc[]
+
+[[app-chart-parity]]
+== App Chart Mapping (Built-in and Insights Dashboards)
+
+Charts and visualizations in the built-in dashboards and Anypoint Insights share application metrics. 
+
+include::partial$include-insights-parity-charts.adoc[tags=app-chart-parity]
 
 
 == See Also

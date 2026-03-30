@@ -31,7 +31,9 @@ image::insights.png["Anypoint Insights UI"]
 +
 {selector-all-dashboards}
 
-Anypoint Insights uses <<metrics-api, Anypoint Monitoring Metrics API>> to query for data that appears in charts. Data aggregation and retention limits in Anypoint Insights are derived from the service that supports the Metrics API. 
+Anypoint Insights uses <<metrics-api, Anypoint Monitoring Metrics API>> to query for data that appears in charts. Data aggregation and retention limits in Anypoint Insights are derived from the service that supports the Metrics API. For information about data collection intervals in Anypoint Insights charts, see <<data-collection>>.
+
+For Advanced and Titanium subscription tiers, Integration Intelligence is accessible from Anypoint Insights. See xref:integration-intelligence.adoc[] to extend your MuleSoft telemetry data analysis beyond real-time monitoring.
 
 [[prereqs]]
 == Before You Begin
@@ -349,13 +351,30 @@ Deployment target of this entity, such as *CloudHub 2.0* or *Runtime Fabric*
 
 Anypoint Monitoring provides details on individual Mule apps deployed to a supported target.
 
+[[dashboard-details-app]]
+//don't change order of numbers in graphic or calloutlist
+image::insights-details-app.png["Anypoint Insights App Details UI"]
+
+[calloutlist]
+. *Application Details* page for an app in Anypoint Insights
+. App associated with this details page and a dropdown for opening the detail page for another app or API in one of your environments
+. Tabs containing charts and visualizations for different types of metrics on the app
+. Navigation for switching to the traditional built-in dashboard for this app, and for managing the app in Runtime Manager
+
+Get information on the charts and visualizations available for the app:
+
 * <<entity-metrics-app-header>>
 * <<entity-metrics-app-overview>>
 * <<entity-metrics-app-requests>>
 * <<entity-metrics-app-errors>>
+* <<entity-metrics-app-flows>>
+* <<entity-metrics-app-connectors>>
 * <<entity-metrics-app-jvm>>
+* <<entity-metrics-app-custom-metrics>>
 
 include::partial$include-entities.adoc[tags="entity-definition"]
+
+To compare *Application Details* charts and visualizations with those in the traditional  built-in dashboards for the same app, see xref:monitoring::app-dashboards.adoc#app-chart-parity[App Chart Mapping].
 
 [[entity-metrics-app-header]]
 ==== Mule Application Metrics
@@ -393,12 +412,36 @@ include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tag="app-detail-errors"]
 
+[[entity-metrics-app-flows]]
+==== Flow Metrics for a Mule Flow
+
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
+
+Charts with error metrics are available in the *Flows* tab for a Mule app in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tag="app-detail-flows"]
+
+[[entity-metrics-app-connectors]]
+==== Connector Metrics for a MuleSoft Connector
+
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
+
+Charts with error metrics are available in the *Connectors* tab for a Mule app in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tag="app-detail-connectors"]
+
 [[entity-metrics-app-jvm]]
 ==== JVM Metrics for a Mule Application
 
 //TODO: REMOVE IF/WHEN THIS NO LONGER APPLIES
 //feature tier (for h2-h4 headings):
-include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-jvm"]
+//include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-jvm"]
 
 Charts with JVM metrics are available in the *JVM* tab for a Mule app in Anypoint Insights.
 
@@ -406,12 +449,71 @@ include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tag="app-detail-jvm"]
 
+[[entity-metrics-app-custom-metrics]]
+==== Custom Metrics for a Mule Application
+
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
+
+Monitor apps that use your organization’s custom metrics for a Mule app. Adjust settings of the charts that use your custom metrics.
+
+Custom dashboards in Anypoint Insights aren't available at this time. 
+
+====== Before You Begin
+
+Meet subscription tier and Mule runtime version requirements:
+
+The *Custom Metrics* tab for an app appears in Anypoint Insights only if your organization has the Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform and the app you selected is running on a supported version of Mule. 
+
+====== Create Custom Metrics
+
+To create custom metrics, use the Anypoint Custom Metrics Connector in your app flow to collect metrics for your business and operational needs. After you deploy your app, your defined custom metrics charts appear in this tab. For guidance using the Anypoint Custom Metrics Connector, see xref:monitoring::anypoint-custom-metrics-connector.adoc[].
+
+//TODO: WHAT DEPLOYMENT TARGETS SUPPORT CUSTOM METRICS? VERIFY AND ADD TO PREREQS IF NECESSARY (I SEE server or server cluster in built-in metrics doc but not clear about CH, CH2, RTF, etc.)
+
+[[custom-metrics-chart-config]]
+====== Configure Custom Metrics Charts
+
+To adjust the custom metrics settings of a Mule app chart in Anypoint Insights:
+
+. From a Mule app listed in Anypoint Insights, click the *Custom Metrics* tab.
+. Select a value these fields, and then click *Apply* to update the chart:
+
+* *Aggregations* values include:
+
+** *None* (Default) - Performs no data aggregation.  
+** *count* - Displays the total number of items collected for the measurement.
+** *distinct* - Returns the unique values for the given measurement.
+** *integral* - Returns the area under the curve for subsequent values.
+** *mean* - Returns the arithmetic average of the specified measurement over a given interval of time.
+** *median* - Displays the middle value for the collected metrics.
+** *mode* - Displays the most frequent value in the metrics collected for the defined measurement. 
+** *sum* - Displays the sum of all the values for the defined measurement. 
+
+* *Measurement*: These options are determined by the measurement values you define in the Custom Metrics connector.
+
+* *Dimensions*: The choices in this list are determined by the values you define in the Custom Metrics connector. 
+
+Chart settings correspond to and reflect values available to Mule apps from built-in dashboards (in *Built-in Dashboards*) that have custom metrics. The *Dimensions* setting is named *Group By* in built-in dashboards. See xref:monitoring/anypoint-custom-metrics-connector.adoc#custom-metrics-chart-settings[Configure Charts with Custom Metrics in a Built-In Dashboard]).
+
 //
 //H3: ENTITY METRICS for APIs (ONLY)
 [[entity-metrics-apis]]
 === API Details
 
 Anypoint Monitoring provides details on individual API implementations deployed to a supported target.
+
+[[dashboard-details-api]]
+//don't change order of numbers in graphic or calloutlist
+image::insights-details-api.png["Anypoint Insights API Details UI"]
+
+[calloutlist]
+. *API Details* page for an API in Anypoint Insights
+. API associated with this details page and a dropdown for opening the detail page for another API or app in one of your environments
+. Tabs containing charts and visualizations for different types of metrics on the API
+. Navigation for switching to the traditional built-in dashboard for this API from Anypoint Insights, and for managing the API in API Manager
+
+Get information on the charts and visualization available for the API:
 
 * <<entity-metrics-api-header>>
 * <<entity-metrics-api-overview>>
@@ -421,6 +523,8 @@ Anypoint Monitoring provides details on individual API implementations deployed 
 * <<entity-metrics-api-client-apps>>
 
 include::partial$include-entities.adoc[tags="entity-definition"]
+
+To compare *API Details* charts and visualizations with those in the traditional built-in dashboards for the same API, see  xref:monitoring::anypoint-insights.adoc#entity-metrics-apis[*API Details*] in Anypoint Insights.
 
 [[entity-metrics-api-header]]
 ==== API Implementation Metrics
@@ -458,6 +562,15 @@ include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tags="api-detail-errors"]
 
+[[entity-metrics-api-policies]]
+==== Policy Metrics for an API Implementation 
+
+Charts with policy metrics are available in the *Policies* tab for each API implementation that you can monitor in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tags="api-detail-policies"]
+
 [[entity-metrics-api-performance]]
 ==== Performance Metrics for an API Implementation
 
@@ -470,7 +583,7 @@ include::partial$include-insights-charts.adoc[tags="api-detail-performance"]
 [[entity-metrics-api-client-apps]]
 ==== Client Application Metrics for an API Implementation 
 
-Charts with client application metrics are available in the *Client Applications* tab for each API implementation that you can monitor in Anypoint Insights. 
+Charts with client app metrics are available in the *Client Applications* tab for each API implementation that you can monitor in Anypoint Insights. 
 
 include::partial$include-insights-charts.adoc[tags="data-scope"]
 

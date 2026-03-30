@@ -223,7 +223,9 @@ output application/java
 ----
 
 [[get-metrics]]
-== Get App Metrics in Anypoint Monitoring
+== Get App Metrics in Anypoint Monitoring in Custom Dashboards
+
+From *Custom Dashboards* in Anypoint Monitoring, you can add custom metrics to a custom dashboard to visualize the custom metrics you defined in your app.
 
 . Deploy the app.
 +
@@ -242,7 +244,9 @@ You only see the custom metrics in the pre-populated metric selection drop-down 
 +
 image::custom-metric-custom-dashboard-graph.png["Two line charts showing revenue and sales for two stores"]
 
-== Use the Custom Metrics Dashboard
+== Configure Charts with Custom Metrics in a Built-in Dashboard
+
+From *Built-in Dashboards* in Anypoint Monitoring, you can configure charts for Mule apps that are configured to produce custom metrics from the application's *Custom Metrics* tab. For the corresponding charts in Anypoint Insights, see anypoint-insights.adoc#custom-metrics-chart-config[Custom Metrics for a Mule Application].
 
 Custom metrics are not collected for the app until you configure the xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector] in your application flow and deploy the application to a server or server cluster. 
 
