@@ -247,17 +247,17 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |Yes
 |Yes
 
-|Advanced metrics for xref:app-dashboards.adoc#built-in-charts-app[Inbound and Outbound charts]
+|Advanced metrics for xref:app-dashboards.adoc#inbound-charts[Inbound] and xref:app-dashboards.adoc#outbound-charts[Outbound] charts]
 |No
 |No
 |Yes
 
-|xref:app-dashboards.adoc#built-in-charts-app[Flow charts]
+|xref:app-dashboards.adoc#flows-charts[Flow charts]
 |No
 |No
 |Yes
 
-|xref:app-dashboards.adoc#built-in-charts-app[Connector charts]
+|xref:app-dashboards.adoc#connectors-charts[Connector charts]
 |No
 |No
 |Yes

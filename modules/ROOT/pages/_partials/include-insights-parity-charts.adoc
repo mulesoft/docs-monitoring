@@ -1,0 +1,203 @@
+//
+//tag::api-chart-parity[]
+
+//APIs
+[%header,cols="1,3,1,3"]
+|===
+| Built-in Dashboard Tab for an API | Built-in Dashboard Chart | Anypoint Insights Tab for an API | Anypoint Insights Chart
+
+.6+|  <<overview-charts, *Overview*>>
+    | *Requests Volume* .6+| xref:anypoint-insights.adoc#entity-metrics-api-overview[*Overview*] 
+                                | *Request Volume*
+    | *Failed Requests*         | *Failed Requests*
+    | *Total 4xx Errors*        | *Total 4xx Errors*
+    | *Total 5xx Errors*        | *Total 5xx Errors*
+    | *Policy Violations*       | *Policy Violations*
+    | *Average Response Time*   | *Request Latency* (Displays *avg*)
+
+.3+| <<requests-charts, *Requests*>>
+    | *Requests grouped by top20 paths* .3+| xref:anypoint-insights.adoc#entity-metrics-api-requests[*Requests*] 
+                                    | *Request Volume by Top N Paths*
+    | *Requests by Method*          | *Request Volume by HTTP Method*
+    | *Requests by Response Code*   | *Request Volume by Response Code*
+
+.3+| <<failures-charts, *Failures*>>
+    | *Failures by top 20 paths* .3+| xref:anypoint-insights.adoc#entity-metrics-api-errors[*Errors*] 
+                                    | *Failed Requests by Top N Paths*
+    | *Failures by Method*          | *Failed Requests Volume by HTTP Method*
+    | *Failures by Response Code*   | *Failed Requests Volume by Response Code*
+
+.3+| *Policies*
+    | *Policy Violations by Path* .3+| xref:anypoint-insights.adoc#entity-metrics-api-policies[*Policies*] 
+                                            | *Policy Violations by Path*
+    | *Policy Violations by Outcome*        | *Policy Violations by Outcome*
+    | *Policy Violations by Violation ID*   | *Policy Violations by Policy*
+
+.1+| <<performance-charts, *Performance*>>
+    | *Requests by Performance* | xref:anypoint-insights.adoc#entity-metrics-api-performance[*Performance*] 
+                                    | *Request Latency by Endpoint*
+
+.3+| <<client-applications-charts, *Client Applications*>>
+    | *Requests by ClientID* .3+| xref:anypoint-insights.adoc#entity-metrics-api-client-apps[*Client Applications*]
+                                | *Requests by Client ID*
+                                | *Requests by Client IP* 
+                                | *Requests by Location* 
+                                | *Request Volume by Location*
+|===
+
+//end::api-chart-parity[]
+//
+
+//
+//tag::app-chart-parity[]
+
+//Apps
+[%header,cols="1,3,1,3"]
+|===
+| Built-in Dashboard Tab for an App | Built-in Dashboard Chart | Anypoint Insights Tab for an App | Anypoint Insights Chart
+
+.9+| <<Overview, *Overview*>> 
+    | *Mule Messages* .2+| xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] 
+                                                    | *Mule Messages*
+    | *Inbound - Average Response Time*             | *Inbound Request Latency* (Displays *avg*)
+
+    | *Errors* .1+| xref:anypoint-insights.adoc#entity-metrics-app-errors[*Errors*] 
+                                                    | *Failed Mule Messages*
+    | *Inbound - Total Requests by Response Type* .3+| xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] 
+                                                    | *Inbound Request Volume* (Select *By Response Type*)
+    | *Outbound - Total Requests by Response Type*  | *Outbound Request Volume* (Select *By Response Type*)
+    | *Outbound - Average Response Time*            | *Outbound Request Latency* (Select *avg*)
+    | *JVM - CPU % Utilization* .3+| xref:anypoint-insights.adoc#entity-metrics-app-jvm[*JVM*] 
+                                                    | *CPU Utilization*
+    | *JVM - Heap Used*                             | *Heap Usage*
+    | *JVM - Thread Count*                          | *Thread Count*
+
+.14+| <<inbound-charts, *Inbound*>>
+    | *Inbound - Total Requests by Response Type* .8+| xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] 
+                                                            | *Inbound Request Volume* (Select *By Response Type*)    
+    | *Inbound - Average Response Time by HTTP Endpoint*    | *Request Latency by Endpoint* (Select *Inbound*, Displays *Average*)
+    | *Inbound - Min Response Time by HTTP Endpoint*        | *Request Latency by Endpoint* (Select *Inbound*, Displays *Min*)
+    | *Inbound - Max Response Time by HTTP Endpoint*        | *Request Latency by Endpoint* (Select *Inbound*, Displays *Max*)
+    | *Inbound - Total Requests by HTTP Endpoint*           | *Request Volume by HTTP Endpoint* (Select *Inbound*)
+    | *Inbound - Maximum Response Time*                     | *Inbound - Maximum Response Time by Endpoint*
+    | *Inbound - Protocols*                                 | *Request Volume by Protocol* (Select *Inbound* )
+    | *Inbound - HTTP Endpoints*                            | *Request Volume by HTTP Endpoint*
+    | *Inbound - Average Response Time* .6+| xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] | *Inbound Request Latency*  (Select *avg*)      
+    | *Inbound - Response Time - 99 Percentile*             | *Inbound Request Latency* (Displays *p99*)
+    | *Inbound - Response Time - 90 Percentile*             | *Inbound Request Latency* (Displays *p90*)
+    | *Inbound - Response Time - 75 Percentile*             | *Inbound Request Latency* (Displays *p75*)
+    | *Inbound - Response Time - 50 Percentile*             | *Inbound Request Latency* (Displays *p50*)
+    | *Inbound - Failure Total Request Count*               | *Failed Inbound Request Volume* 
+
+.15+| <<outbound-charts, *Outbound*>>
+    | *Outbound - Average Response Time* | xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*] | *Outbound Request Latency* (Displays *avg*)
+    | *Outbound - Total Requests by Response Type* .14+| xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*] 
+                                                        | *Outbound Request Volume* (Select *By Response Type*)
+    | *Outbound - Average Response Time by Endpoint*    | *Request Latency by Endpoint* (Select *Outbound*, Displays *Average*)
+    | *Outbound - Min Response Time by Endpoint*        | *Request Latency by Endpoint*  (Select *Outbound*,  Displays *Min*)
+    | *Outbound - Max Response Time by Endpoint*        | *Request Latency by Endpoint* (Select *Outbound*, Displays *Max*)
+    | *Outbound - Total Requests by HTTP Endpoint*      | *Request Volume by HTTP Endpoint* (Select *Outbound*)
+    | *Outbound - Response Time - 99 Percentile*        | *Outbound Request Latency* (Displays *p99*)
+    | *Outbound - Response Time - 90 Percentile*        | *Outbound Request Latency* (Displays *p90*)
+    | *Outbound - Response Time - 75 Percentile*        | *Outbound Request Latency* (Displays *p75*)
+    | *Outbound - Response Time - 50 Percentile*        | *Outbound Request Latency* (Displays *p50*)
+    | *Outbound - Failure Total Request Count*          | *Failed Outbound Request Volume* 
+    | *Outbound - HTTP Ports*                           | *Outbound Request Volume by Port*
+    | *Outbound - Operations*                           | *Outbound Request Volume by Operation*
+    | *Outbound - HTTP Protocols*                       | *Request Volume by Protocol*  (Select *Outbound*)
+    | *Outbound - Endpoints*                            | *Outbound Request Volume by Remote Host*
+
+.10+| <<flows-charts, *Flows*>>
+    | *Inbound - Response Time by Flow* .10+| xref:anypoint-insights.adoc#entity-metrics-app-flows[*Flows*] | *Inbound - Response Time by Flow*
+    | *Outbound - Response Time by Flow*        | *Outbound - Response Time by Flow*
+    | *Inbound - Requests by Flow*              | *Inbound - Requests by Flow*
+    | *Outbound - Requests by Flow*             | *Outbound - Requests by Flow*
+    | *Failures by Flow*                        | *Failures by Flow*
+    | *Inbound - Response Time by Flow*         | *Inbound - Response Time by Flow*
+    | *Outbound - Response Time by Flow*        | *Outbound - Response Time by Flow*
+    | *Inbound - Requests by Flow*              | *Inbound - Requests by Flow*
+    | *Outbound - Requests by Flow*             | *Outbound - Requests by Flow*
+    | *Failures by Flow*                        | *Failures by Flow*
+
+.35+| <<connectors-charts, *Connectors*>>
+    | *Connector Message Volume* .35+| xref:anypoint-insights.adoc#entity-metrics-app-connectors[*Connectors*] 
+                                                | *Connector Message Volume*
+    | *Response Time by Connector*              | *Response Time by Connector*
+    | *Salesforce Requests*                     | *Salesforce Requests*
+    | *Salesforce Response Time*                | *Salesforce Response Time*
+    | *Salesforce Failures*                     | *Salesforce Failures*
+    | *Database Requests*                       | *Database Requests*
+    | *Database Response Time*                  | *Database Response Time*
+    | *Database Failures*                       | *Database Failures*
+    | *HTTP Requests*                           | *HTTP Requests*
+    | *HTTP Response Time*                      | *HTTP Response Time*
+    | *HTTP Failures*                           | *HTTP Failures*
+    | *Web Services Requests*                   | *Web Services Requests*
+    | *Web Services Response Time*              | *Web Services Response Time*
+    | *Web Services Failures*                   | *Web Services Failures*
+    | *FTP Requests*                            | *FTP Requests*
+    | *FTP Response Time*                       | *FTP Response Time*
+    | *FTP Failures*                            | *FTP Failures*
+    | *SFTP Requests*                           | *SFTP Requests*
+    | *SFTP Response Time*                      | *SFTP Response Time*
+    | *SFTP Failures*                           | *SFTP Failures*
+    | *SMTP Requests*                           | *SMTP Requests*
+    | *SMTP Response Time*                      | *SMTP Response Time*
+    | *SMTP Failures*                           | *SMTP Failures*
+    | *Object Store Requests*                   | *Object Store Requests*
+    | *Object Store Response Time*              | *Object Store Response Time*
+    | *Object Store Failures*                   | *Object Store Failures*
+    | *Anypoint MQ Operations - Inbound*        | *Anypoint MQ Operations - Inbound*
+    | *Anypoint MQ Response Time - Inbound*     | *Anypoint MQ Response Time - Inbound*
+    | *Anypoint MQ Failures - Inbound*          | *Anypoint MQ Failures - Inbound*
+    | *Anypoint MQ Operations - Outbound*       | *Anypoint MQ Operations - Outbound*
+    | *Anypoint MQ Response Time - Outbound*    | *Anypoint MQ Response Time - Outbound*
+    | *Anypoint MQ Failures - Outbound*         | *Anypoint MQ Failures - Outbound*
+    | *Other Connector Requests*                | *Other Connector Requests*
+    | *Other Connector Response Time*           | *Other Connector Response Time*
+    | *Other Connector Failures*                | *Other Connector Failures*
+
+.35+| <<jvm-charts, *JVM*>>
+    | *Old Gen GC Count*    .35+| xref:anypoint-insights.adoc#entity-metrics-app-jvm[*JVM*] 
+                                            | *Old Gen GC Count*
+    | *Old Gen GC Time*                     | *Old Gen GC Duration*
+    | *Young Gen GC Count*                  | *Young Gen GC Count*
+    | *Young Gen GC Time*                   | *Young Gen GC Duration*
+    | *Classes Loaded*                      | *Classes Loaded*
+    | *Classes Loaded Total*                | *Classes Loaded Total*
+    | *Classes Unloaded*                    | *Classes Unloaded*
+    | *Heap Committed*                      | *Heap Committed*
+    | *Heap Used*                           | *Heap Usage*
+    | *Thread Count*                        | *Thread Count*
+    | *Eden Space Used*                     | *Par Eden Space* (Select *Used*)
+    | *Eden Space Max*                      | *Par Eden Space* (Select *Max*)
+    | *Eden Space Init*                     | *Par Eden Space* (Select *Init*)
+    | *Eden Space Committed*                | *Par Eden Space* (Select *Committed*)
+    | *Survivor Space Used*                 | *Par Survivor Space* and *G1 Survivor Space* (Select *Used*) 
+    | *Survivor Space Max*                  | *Par *Survivor Space* and *G1 Survivor Space* (Select *Max*)
+    | *Survivor Space Init*                 | *Par *Survivor Space* and *G1 Survivor Space* (Select *Init*)
+    | *Survivor Space Committed*            | *Par Survivor Space* and *G1 Survivor Space* (Select *Committed*)
+    | *Metaspace Used*                      | *Metaspace* (Select *Used*) 
+    | *Metaspace Max*                       | *Metaspace* (Select *Max*)
+    | *Metaspace Init*                      | *Metaspace* (Select *Init*)
+    | *Metaspace Committed*                 | *Metaspace* (Select *Committed*) 
+    | *Code Cache Used*                     | *Code Cache* (Select *Used*)
+    | *Code Cache Max*                      | *Code Cache* (Select *Max*) 
+    | *Code Cache Init*                     | *Code Cache* (Select *Init*) 
+    | *Code Cache Committed*                | *Code Cache* (Select *Committed*)
+    | *Compressed Class Space Used*         | *Compressed Class Space* (Select *Used*)
+    | *Compressed Class Space Max*          | *Compressed Class Space* (Select *Max*)
+    | *Compressed Class Space Init*         | *Compressed Class Space* (Select *Init*)
+    | *Compressed Class Space Committed*    | *Compressed Class Space* (Select *Committed*)
+    | *Old Gen Mem Used*                    | *Tenured Gen, G1 Old Gen charts* (Select *Used*)
+    | *Old Gen Mem Max*                     | *Tenured Gen, G1 Old Gen charts* (Select *Max*)
+    | *Old Gen Mem Init*                    | *Tenured Gen, G1 Old Gen charts* (Select *Init*)
+    | *Old Gen Mem Committed*               | *Tenured Gen, G1 Old Gen charts* (Select *Committed*)
+    | *Committed Virtual Memory*            | *Committed Virtual Memory*
+ 
+| <<custom-metrics-charts, *Custom Metrics*>> 
+    | *Charts* | xref:anypoint-insights.adoc#entity-metrics-app-custom-metrics[*Custom Metrics*] | Charts that use your organization's custom metrics.
+|===
+
+//end::app-chart-parity[]
+//
