@@ -29,4 +29,4 @@ Build custom views that matter to your team for operational efficiency, partner 
 
 == See Also
 
-xref:runtime-manager::troubleshooting#troubleshooting-applications[Troubleshooting with MuleSoft Diagnostics Agent]
+* xref:runtime-manager::troubleshooting#troubleshoot-applications[Troubleshooting with MuleSoft Diagnostics Agent]

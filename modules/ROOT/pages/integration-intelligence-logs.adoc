@@ -24,6 +24,7 @@ Complete the procedures in xref:integration-intelligence-setup.adoc[].
 
 For logs, Integration Intelligence supports Mule apps and Mule APIs deployed to these hosts:
 
+* CloudHub
 * CloudHub 2.0 
 * Runtime Fabric
 
