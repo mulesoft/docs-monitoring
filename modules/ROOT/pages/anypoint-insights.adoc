@@ -93,21 +93,9 @@ Apps in the *Started* state and APIs in the *Active* state are listed.
 +
 image::insights-entity-clicked.png["Overview of deployment metrics"]
 .. Review metrics in the charts for the entity, for example: 
-+
-[[charts-detailed]]
-image::insights-deployment-charts.png["Dashboard for a deployed app or API"]
 
-[calloutlist]
-. Details page for a Mule app or API implementation
-. Charts with detailed metrics
-+
-Detailed metrics are available in dashboards specific to <<entity-metrics-apps, Mule apps>> and <<entity-metrics-apis, API implementations>>.
-. Selector for the time range covered by the charts 
-+
-By default, the date period in dashboards with detailed metrics on specific entities matches the time period selected for cross-entity charts in the *Anypoint Insights* overview. 
-. Selector for auto-refresh interval, displayed when auto-refresh is enabled
-+
-By default, the auto-refresh interval in dashboards with detailed metrics on specific entities matches the time period interval for cross-entity charts in the *Anypoint Insights* overview. 
+* <<entity-metrics-apps>>
+* <<entity-metrics-apis>>
 
 //
 //H2: FILTER DATA
@@ -374,6 +362,10 @@ Get information on the charts and visualizations available for the app:
 
 include::partial$include-entities.adoc[tags="entity-definition"]
 
+By default, the date period in dashboards with detailed metrics on specific entities matches the time period selected for cross-entity charts in the *Anypoint Insights* overview. 
+
+By default, the auto-refresh interval in dashboards with detailed metrics on specific entities matches the time period interval for cross-entity charts in the *Anypoint Insights* overview. 
+
 To compare *Application Details* charts and visualizations with those in the traditional  built-in dashboards for the same app, see xref:monitoring::app-dashboards.adoc#app-chart-parity[App Chart Mapping].
 
 [[entity-metrics-app-header]]
@@ -513,7 +505,7 @@ image::insights-details-api.png["Anypoint Insights API Details UI"]
 . Tabs containing charts and visualizations for different types of metrics on the API
 . Navigation for switching to the traditional built-in dashboard for this API from Anypoint Insights, and for managing the API in API Manager
 
-Get information on the charts and visualization available for the API:
+Get information on the charts and visualizations available for the API:
 
 * <<entity-metrics-api-header>>
 * <<entity-metrics-api-overview>>
@@ -523,6 +515,10 @@ Get information on the charts and visualization available for the API:
 * <<entity-metrics-api-client-apps>>
 
 include::partial$include-entities.adoc[tags="entity-definition"]
+
+By default, the date period in dashboards with detailed metrics on specific entities matches the time period selected for cross-entity charts in the *Anypoint Insights* overview. 
+
+By default, the auto-refresh interval in dashboards with detailed metrics on specific entities matches the time period interval for cross-entity charts in the *Anypoint Insights* overview. 
 
 To compare *API Details* charts and visualizations with those in the traditional built-in dashboards for the same API, see  xref:monitoring::anypoint-insights.adoc#entity-metrics-apis[*API Details*] in Anypoint Insights.
 
