@@ -120,7 +120,7 @@ Six basic alerts per API instance.
 xref:index.adoc#plans-legacy[Titanium tier] subscribers to Anypoint Platform receive more robust data retention and feature limits:
 
 Logs::
-In raw format, your logs can occupy as much space as you receive with your Titanium subscription. Note that the storage space you receive with your Titanium subscription is used to store logs and metrics data. Because metrics do not take up much storage capacity, you can use the majority of your storage for raw log data. In the case that some logs require deletion due to risk of exposing sensitive data, see https://help.salesforce.com/s/articleView?id=001118219&type=1[Anypoint Monitoring Log FAQ].
+In raw format, your logs can occupy as much space as you receive with your Titanium subscription. Note that the storage space you receive with your Titanium subscription is used to store logs and metrics data. Because metrics do not take up much storage capacity, you can use the majority of your storage for raw log data. If your logs require deletion due to risk of exposing sensitive data, see https://help.salesforce.com/s/articleView?id=001118219&type=1[Anypoint Monitoring Log FAQ].
 
 Searchable logs::
 You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs. 
