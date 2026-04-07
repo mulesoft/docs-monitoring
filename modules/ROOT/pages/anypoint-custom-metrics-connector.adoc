@@ -157,6 +157,8 @@ If you encounter issues with this step, see xref:studio::add-modules-in-studio-t
 . Click the *Send Custom Metric* operation to add values for the operation. 
 . Add the dimension for the metric:
 .. In *Metric name*, enter a meaningful value, for example "sales." 
++
+For information about purged metric names, see <<metrics-fact-names>>.
 .. In *Enter contextual information* select *Edit inline* to enter the name and value for the dimension. 
 .. Click the green plus on the left to enter the values.
 .. In the *Dimension* dialog box, enter the *Name* and *Value* for the dimension.
@@ -166,8 +168,11 @@ You can repeat these steps to add multiple key values.
 . Enter the facts for the metric. Values for measurements are numerical.
 .. In *Enter measurements* select *Edit inline* to enter the name and value for the metric.
 .. In the *Fact* dialog box, enter a *Name* and numerical *Value* for the fact. +
-[NOTE]
-For facts, the value must always be numerical. This is not validated at design time, but a non-numerical value will cause a runtime exception once deployed.
+
+* To disambiguate fact names, use a fact name that is unique across your CloudHub applications.
+* Provide only numerical values for facts. Non-numerical values, which aren't validated at design time, cause a runtime exception after deployment.
++
+For more information about fact names, see <<metrics-fact-names>>.
 .. Leave the *Collapsible* option with the default of *True*.
 .. Click *Finish*. +
 You can repeat these steps to add multiple key values. 
@@ -270,6 +275,25 @@ image::custom-metrics-dashboard.png["A line chart showing orders placed over tim
 ** *sum* - Displays the sum of all the values for the defined measurement. 
 * *Measurement* - The choices in this list are determined by the measurement values you define in the Custom Metrics connector. 
 * *Group by* - The choices in this list are determined by the values you define in the Custom Metrics connector.
+
+[[metrics-fact-names]]
+== Metric and Fact Names
+
+Before providing a fact name or attempting to rename a metric, keep these best practices in mind:
+
+* Use unique fact names across applications, and understand limitations on fact name deletions:
+
+** In the *Custom Metrics* tab of the built-in dashboard for an application, fact names defined in one CloudHub application are visible to other applications. 
++
+Best practice: Provide unique fact names across all CloudHub applications.
+
+**  Fact names are removed from the dashboard only after the retention period expires. Other mechanisms for deleting or purging fact names aren't supported.
++
+Fact names that you remove with the *Send Custom Metric* operation of the Anypoint Monitoring Custom Metrics Connector continue to appear in the fact list within the *Custom Metrics* tab until the retention period expires.
+
+* Avoid changing metric names:
++
+If you use the *Send Custom Metric* operation of the Anypoint Monitoring Custom Metrics Connector with a new metric name, the old metric name continues to appear in the *Custom Metrics* tab. 
 
 == See Also 
 
