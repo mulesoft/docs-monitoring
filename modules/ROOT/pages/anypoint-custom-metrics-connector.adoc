@@ -293,7 +293,7 @@ Fact names that you remove with the *Send Custom Metric* operation of the Anypoi
 
 * Avoid changing metric names:
 +
-If you use the *Send Custom Metric* operation of the Anypoint Monitoring Custom Metrics Connector with a new metric name changes, the old metric name continues to appear in the *Custom Metrics* tab. 
+If you use the *Send Custom Metric* operation of the Anypoint Monitoring Custom Metrics Connector with a new metric name, the old metric name continues to appear in the *Custom Metrics* tab. 
 
 == See Also 
 
