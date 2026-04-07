@@ -283,7 +283,7 @@ Before providing a fact name or attempting to rename a metric, keep these best p
 
 * Use unique fact names across applications, and understand limitations on fact name deletions:
 
-** In the *Custom Metrics* tab of built-in dashboard for an application, fact names defined in one CloudHub application are visible to other applications. 
+** In the *Custom Metrics* tab of the built-in dashboard for an application, fact names defined in one CloudHub application are visible to other applications. 
 +
 Best practice: Provide unique fact names across all CloudHub applications.
 
