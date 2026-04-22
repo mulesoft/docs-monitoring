@@ -486,7 +486,7 @@ To adjust the custom metrics settings of a Mule app chart in Anypoint Insights:
 
 * *Dimensions*: The choices in this list are determined by the values you define in the Custom Metrics connector. 
 
-Chart settings correspond to and reflect values available to Mule apps from built-in dashboards (in *Built-in Dashboards*) that have custom metrics. The *Dimensions* setting is named *Group By* in built-in dashboards. See xref:monitoring/anypoint-custom-metrics-connector.adoc#custom-metrics-chart-settings[Configure Charts with Custom Metrics in a Built-In Dashboard]).
+Chart settings correspond to and reflect values available to Mule apps from built-in dashboards (in *Built-in Dashboards*) that have custom metrics. The *Dimensions* setting is named *Group By* in built-in dashboards. See xref:anypoint-custom-metrics-connector.adoc#custom-metrics-chart-settings[Configure Charts with Custom Metrics in a Built-In Dashboard]).
 
 //
 //H3: ENTITY METRICS for APIs (ONLY)
