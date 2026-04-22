@@ -99,6 +99,8 @@ For grouping the data by a selected time interval (such as `$&#95;interval`, `1s
 Valid values and arguments:
 
 * `time($&#95;interval)` for the automated time interval setting, or you can  specify time intervals of `1m`, `5m`, `10m`, `15m`, or `1h`.
++
+To avoid service timeouts when querying over long time ranges, consider using a time interval setting.
 * `fill()` where valid values are `none`, `null`, `0`, `previous`, `linear`.
 * `LIMIT`: Numeric value (N) used to limit the result to the first N data  points (combined series and timestamp values) returned by a query.
 * `SLIMIT`: Numeric value (N) used to return the all data points (combined series and timestamp values) from the first N series returned by the query.
@@ -125,6 +127,8 @@ For creating a function that selects a field (such as `request_size_average`,`re
 |Group by a|
 
 For grouping the data by a selected time interval (such as `$&#95;interval`, `1s`, `10m`, `1h`), filter tag (such as `tag(api_id)`), and fill options (such as `none`, `null`, `0`, `previous`, `linear`).
++
+To avoid service timeouts when querying over long time ranges, consider using a time interval setting.
 |Alias by a|
 
 You can create a label for your metric using a literal string (such as `my string`) or supported variables (for example, `$tag_api_id`). The alias must always begin with `$tag`. The syntax is `$tag_yourTagName`.
