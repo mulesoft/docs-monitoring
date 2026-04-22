@@ -46,6 +46,8 @@ If a particular custom metrics chart slows down and affects other charts in the 
 * Reduce the time range of the custom metric chart, for example, create a daily or weekly chart instead of a monthly or yearly chart 
 * Reduce the refresh frequency, for example, refresh hourly instead of every minute.
 
+NOTE: To ensure optimal performance, Anypoint Monitoring groups metrics based on unique combinations of your custom dimensions and supports up to 100 unique combinations. If your data exceeds this limit, lower-volume combinations are grouped under a single *Other* category. This limit applies to all custom dimensions combined. For more information, see xref:app-dashboards.adoc#endpoint-operation-metrics[Endpoint and Operation Metrics Collection (Other Group)].
+
 === Restricted Keywords
 
 Due to internal database restrictions, you cannot use the following keywords to define `dimensionName` or `factName` while using the Anypoint Custom Metrics connector:
