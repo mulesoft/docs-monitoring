@@ -23,7 +23,7 @@ image::insights.png["Anypoint Insights UI"]
 . Environment selector for your deployments (such as Sandbox or Production)
 . <<filters, Filters>> to narrow the data in charts
 . Performance <<charts-performance, metrics and trends>> across your deployed Mule apps and APIs
-. <<entities-list, List of each Mule app and API>> that you can click to display <<charts-detailed, detailed metrics>> on a specific deployment
+. <<entities-list, List of each Mule app and API>> that you can click to display detailed metrics on a specific <<entity-metrics-apps, app>> or <<entity-metrics-apis, API>>
 . Selector for the time range covered by the charts 
 +
 {selector-all-dashboards}
@@ -451,20 +451,20 @@ Monitor apps that use your organization’s custom metrics for a Mule app. Adjus
 
 Custom dashboards in Anypoint Insights aren't available at this time. 
 
-====== Before You Begin
+===== Before You Begin
 
 Meet subscription tier and Mule runtime version requirements:
 
 The *Custom Metrics* tab for an app appears in Anypoint Insights only if your organization has the Anypoint Integration Advanced package or a Titanium subscription to Anypoint Platform and the app you selected is running on a supported version of Mule. 
 
-====== Create Custom Metrics
+===== Create Custom Metrics
 
 To create custom metrics, use the Anypoint Custom Metrics Connector in your app flow to collect metrics for your business and operational needs. After you deploy your app, your defined custom metrics charts appear in this tab. For guidance using the Anypoint Custom Metrics Connector, see xref:monitoring::anypoint-custom-metrics-connector.adoc[].
 
 //TODO: WHAT DEPLOYMENT TARGETS SUPPORT CUSTOM METRICS? VERIFY AND ADD TO PREREQS IF NECESSARY (I SEE server or server cluster in built-in metrics doc but not clear about CH, CH2, RTF, etc.)
 
 [[custom-metrics-chart-config]]
-====== Configure Custom Metrics Charts
+===== Configure Custom Metrics Charts
 
 To adjust the custom metrics settings of a Mule app chart in Anypoint Insights:
 

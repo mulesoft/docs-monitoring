@@ -47,7 +47,7 @@ include::partial$include-insights-agentic-details.adoc[tag=metadata]
 [[agent]]
 == Agent Metrics 
 
-Agents protected by a the xref:gateway::policies-included-a2a-agent-card.ado[] policy produce metrics in these charts:
+Agents protected by a the xref:gateway::policies-included-a2a-agent-card.adoc[] policy produce metrics in these charts:
 
 * *Total Received*: All requests to the agent
 * *Failed Requests*: Number of requests to the agent that failed
