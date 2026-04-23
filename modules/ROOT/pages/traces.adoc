@@ -147,7 +147,6 @@ To narrow the list of spans in *Traces Overview*, provide a filter query in the 
 | `api_instance_id` | `=` |Version of an API instance that's associated with a span. You can find the instance's ID in API Manager. 
 | `correlation_id` | `=` |Correlation ID associated with a span (see xref:mule-runtime::correlation-id.adoc[]).
 | `entity_name` | `=`, `IN` | Name of entities associated with spans. 
-| `http_status_code` | `=`, `IN` | HTTP status codes associated with span. 
 | `span_id` | `=` | ID of a span contained in traces.
 | `span_name` | `=`, `IN` | Name of a span. 
 | `trace_id` | `=`, `IN` | ID associated with a span.
@@ -159,12 +158,6 @@ To narrow the list of spans in *Traces Overview*, provide a filter query in the 
 . Select a value from the search field's *Top Value* list. If the value you're looking for isn't in the list, start typing a partial match to your value, and then select the value.
 +
 Tip: If you're providing search values to the `IN` operator (such as `entity_name IN ['value1', 'value2']`), manually adding a comma after a value before selecting another value from the *Top Value* list can help with valid query formation.
-+
-Example: 
-+
-This example gets spans named `my-span` that have status code '404', '502', or '200':
-+
-`http_status_code IN [ '404', '502', '200' ] span_name = my-span`
 
 To edit or delete a filter, click the filter, and then click *Edit Filter* or *Delete Filter* from the *Actions* list for the filter. To avoid issues when editing, you can delete the filter and then add it back with the values you want.
 
