@@ -28,7 +28,7 @@ For metrics in dashboards, Integration Intelligence supports Mule apps and Mule 
 * CloudHub (*CLOUDHUB*)
 * CloudHub 2.0 (*CLOUDHUB2*)
 * Runtime Fabric (*RTF*)
-* Flex Gateway (*FLEX*)
+* Omni Gateway (formerly Flex Gateway, *FLEX*)
 
 For logs in Integration Intelligence, see xref:integration-intelligence-logs.adoc#supported-deployment-types[Supported Deployment Types for Logs].
 
