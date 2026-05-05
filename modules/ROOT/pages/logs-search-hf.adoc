@@ -167,13 +167,21 @@ image::logs-top5-hf.png["Top 5 Application Fields Example", width=50%]
 . Click *+* (Add) to create a search filter for this value.
 . Optionally, save the search filter for future reuse.
 +
-TODO: POINT TO SAVE SEARCH FILTER
+For guidance, see <<save-search>>.
 
 From a value in the top-5 list, you can also create a filter that includes (*+*) or excludes (*-*) a top-5 value, such as including your app (*appID: myapp*) or excluding your app (*NOT appID: myapp*).
 
+[[refresh-logss]]
 == Refresh Log Data
 
-//TODO: NO AUTO-REFRESH? 
+You can refresh log data manually and on a regular basis:
+
+* To refresh manually, click *Refresh*.
+* To auto-refresh on a regular basis:
+
+. Click image:logs-calandar-icon-hf.png["",20,20] (Calendar).
+. Under *Refresh every*, provide a number and time unit (seconds, minutes, or hours), such as *5 minutes*.
+. Click *Start* to initiate the autorefresh process.
 
 == Download Log Results as a CSV File
 
@@ -208,14 +216,14 @@ For guidance, see TODO_TODO
 +
 Notice that the search appears as a search filter.
 
-* To clear a saved search, use either of these methods:
+* To clear a saved search from a search query, use either of these methods:
 
-** Delete the saved search filter by hovering over the filter and clicking (*X*), for example:
+** Click image:logs-save-icon-hf.png["",20,20] (Save), hover over the saved search, and then click *Clear*.
+** Hover the filter and clicking (*X*). For example, if *my saved app* is a saved search, you can clear it without deleting:
 +
-image:logs-delete-filter-hf.png["Delete a Filter"]
+image:logs-delete-filter-hf.png["Delete a Filter", width=25%]
 +
-The saved filter remains available in your list of saved searches. Unsaved filters do not persist.
-** Click image:logs-save-icon-hf.png["",20,20] (Save), and then click *Clear*.
+The saved filter remains available in your list of saved searches. Unsaved search filters don't persist when you click (*X*).
 
 * To delete a saved search:
 
