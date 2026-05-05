@@ -42,21 +42,20 @@ For date-time range , see <<time-range>>.
 
 * Provide a query in the Search bar:
 
-** To search across log fields, provide a search term. 
-** To search within a selected log field, use TODO_TODO
-*** Use whole words.
-*** Use a pattern matching in your search, such as `appId: myap*`, or `appId: mya?p`
-* Use logical operators, such as `appId=myap* AND "Info Dynamic Logging"`.
+** Use words or quotes around multiple words or strings with special characters, such as `"HTTP GET"`, `"ab12c345-abc6-789d-e1fa-b124c5de6789"`, or `"https://api.mycompany.com:443"`.
++
+Without quotes, multi-word searches are treated as the query `HTTP OR GET`, where `OR` is a logical operator. For partial word searches, you can use pattern matching characters in your search, such as `myap*`, or `appId: mya?p`.
+** Use a <<field-names, field identifier>> to search within a specific log field, such as `appId: myapp` for an application named `myapp`.
+** Use logical operators, such as `appId=myap* AND `"forbidden (403)"`.
++
+For a list of supported operators, see xref:log-search-query-syntax.adoc#boolean-operators[Boolean Operators].
 * Use filters as needed to narrow or expand the scope of log results.
 +
 For guidance, see <<search-filters>>.
+** Escape special characters to 
 . Review results.
 
-=== Use Operators and Pattern Matching in Log Searches
-
-The Search field accepts some pattern matching symbols (`*`, `?`), logical operators, and arithmetic operators:
- 
-
+For more detail, see xref:log-search-query-syntax.adoc[].
 
 [[search-filters]]
 === Use Search Filters
@@ -74,17 +73,17 @@ For filters that have
 
 . Click *Add filter*. 
 [[field-names]]
-. Select a log field: 
+. Select a log field name, or use the field's identifier (such as `appId`) for Query DSL filters: 
 
-* *Application*: Name of the application (`appId` in Query DSL)
-* *Class*: Class name (`class` in Query DSL) 
-* *Environment*: Environment identifier (`envId` in Query DSL)
-* *Event*: Identifier for the associated Mule event (`event` in Query DSL)
-* *Log level*: Log value such as INFO, WARN, ERROR (`log-level` in Query DSL)
-* *Logger*: Name of the logger (`logger` in Query DSL)
-* *Message*: Log message (`message` in Query DSL)
-* *Timestamp*: Date and time of the a log entry (`timestamp` in Query DSL)
-* *Worker*: Identifier for the associated worker (`workerId` in Query DSL)
+* *Application* (`appId`): Name of the application
+* *Class* (`class`): Class name 
+* *Environment* (`envId`): Environment identifier
+* *Event* (`event`): Identifier for the associated Mule event
+* *Log level* (`log-level`): Log value such as INFO, WARN, ERROR 
+* *Logger* (`logger`): Name of the logger
+* *Message* (`message`): Log message
+* *Timestamp* (`timestamp`): Date and time of the a log entry
+* *Worker* (`workerId`): Identifier for the associated worker
 
 . Select an operator:
 * `is`: Contains the value you provide
