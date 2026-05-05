@@ -14,12 +14,12 @@ image::logs-search-hf.png["Log Search UI"]
 
 * *Selected fields*: Lists columns added to the log *Results* table. 
 * *Available fields*: Lists columns you can add to the log *Results* table. 
-. Search for specific words in log fields, including log *Message* fields. Click image:logs-save-icon-hf.png["",20,20] (Save) to save named searches for future use, and to select, update, or delete saved searches. When searching, try a whole-word search if a partial word search does not return a result.
+. Search for specific words in log fields, including log *Message* fields. Use image:logs-save-icon-hf.png["",20,20] (Save) to save named searches for future use, and to select, update, or delete saved searches. When searching, try a whole-word search if a partial word search does not return a result.
 . Set the time range for logs in the *Results* table using the clickable image:logs-calandar-icon-hf.png["",20,20] (Calendar) or date range. If you select a relative or absolute date range, the *Refresh* button toggles to an *Update* button to use for applying your date range.
 . *Refresh* is for manually refreshing the logs in the *Results* table.
 +
-To set an auto-refresh rate in seconds, minutes, or hours, click the image:logs-calandar-icon-hf.png["",20,20] (Calendar), and configure the *Refresh every* setting. 
-. Create search filters...
+To set an auto-refresh rate in seconds, minutes, or hours, use image:logs-calandar-icon-hf.png["",20,20] (Calendar), and configure the *Refresh every* setting. 
+. Create and use <<search-filters, search filters>>. Filters persist only if you save them. 
 . Review log counts by the selected date range. Timestamp units vary depending on the date or time range you select. The longer the range, the longer the timestamp period on the horizontal axis, which can display averages over 30 second, 12 hour, or weekly intervals, for example.
 . Use the *Results* table to review the results of your log search. You can also use *Download as CSV* to download up to 10,000 rows of log data.
 . Filter by the value in a cell of the *Results* table by hovering over the cell and clicking to add (*+*) or remove (*-*) the filter.
@@ -30,21 +30,38 @@ To set an auto-refresh rate in seconds, minutes, or hours, click the image:logs-
 Use *Log Search* to capture the logs you want to review. You can use the Search bar, a filter (including filters created with Query DSL), or combination the Search bar and a filter.
 
 [[search-bar]]
-=== Query from the Search Bar
+=== Query Logs from the Search Bar
 
-//TODO: HOW FAR BACK CAN PEOPLE GO?
-. Select an absolute or relative time range to review. 
+Use the Search bar with or without <<search-filters, search filters>> to capture the logs that you want to review.
 
-* Absolute: Specific date and time to start and end the search. The end time default to *now*.
-* Relative: A configurable number of seconds, minutes, hours, days, weeks, months, or years prior to (such as *Days ago*) or after (such as *Days from now*) the current date and time.
+. Select an absolute or relative date-time range to review. 
++
+For date-time range , see <<time-range>>.
+. Optionally, add or remove columns (available fields) from the log *Results* table.
+. Provide a search query using any of these methods:
 
-. Add columns (available fields) to the log *Results* table, as needed.
-. Use filters as needed to narrow or expand the scope of log results.
+* Provide a query in the Search bar:
+
+** To search across log fields, provide a search term. 
+** To search within a selected log field, use TODO_TODO
+*** Use whole words.
+*** Use a pattern matching in your search, such as `appId: myap*`, or `appId: mya?p`
+* Use logical operators, such as `appId=myap* AND "Info Dynamic Logging"`.
+* Use filters as needed to narrow or expand the scope of log results.
++
+For guidance, see <<search-filters>>.
 . Review results.
 
+=== Use Operators and Pattern Matching in Log Searches
+
+The Search field accepts some pattern matching symbols (`*`, `?`), logical operators, and arithmetic operators:
+ 
+
+
+[[search-filters]]
 === Use Search Filters
 
-Create, edit, and apply log search filters. You can use selectable fields and operators, or you can use the JSON-based OpenSearch Query Domain-Specific Language (DSL) for more complex filters. To save a filter for future use, see <<save-search>>.
+Create, edit, and apply log search filters. You can use selectable fields and operators, or you can use the JSON-based OpenSearch Query Domain-Specific Language (Query DSL) for more complex filters. To save a filter for future use, see <<save-search>>.
 
 * <<filter-simple>>
 * <<filter-query-dsl>>
@@ -56,10 +73,9 @@ Create, edit, and apply log search filters. You can use selectable fields and op
 For filters that have 
 
 . Click *Add filter*. 
-//WEIRD THAT IT OPENS AN *Edit filter* dialog
+[[field-names]]
 . Select a log field: 
 
-[[field-names]]
 * *Application*: Name of the application (`appId` in Query DSL)
 * *Class*: Class name (`class` in Query DSL) 
 * *Environment*: Environment identifier (`envId` in Query DSL)
@@ -71,17 +87,38 @@ For filters that have
 * *Worker*: Identifier for the associated worker (`workerId` in Query DSL)
 
 . Select an operator:
-
-* `is`
-* `is not`
-* `is one of`
-* `is not one of`
-* `exists`
-* `does not exist`
-
-. Optionally, create a reusable filter by providing a custom label name for your filter.
+* `is`: Contains the value you provide
 +
-A short label is useful for otherwise long filters.
+Example: `Application is my-app`
++
+Filter label: `appId: my-app`
+* `is not`: Doesn't contain the value you provide
++
+Example: `Application is not my-app`
++
+Filter label: `NOT appId: my-app`
+* `is one of`: Contains a match a value in the list of values that you provide
++
+Example: `Application is one of my-app another-app yet-another-app`
++
+Filter label: `appId: is one of my-app another-app yet-another-app`
+* `is not one of`: Doesn't match any value in the list of values you provide
++
+Example: `Application is not one of my-app another-app yet-another-app`
++
+Filter label: `NOT appId: is one of my-app another-app yet-another-app`
+* `exists`: Field is available to retrieved logs
+* `does not exist`: Field isn't available to retrieved logs
+
+. Optionally: 
+
+* Provide a custom label name for your filter.
++
+A short label is useful for long filter names. 
+* Save your filter so that you can reuse it.
++ 
+For guidance, see <<save-search>>.
+
 
 [[filter-query-dsl]]
 === Create a Filter with Query DSL
@@ -170,6 +207,28 @@ image::logs-top5-hf.png["Top 5 Application Fields Example", width=50%]
 For guidance, see <<save-search>>.
 
 From a value in the top-5 list, you can also create a filter that includes (*+*) or excludes (*-*) a top-5 value, such as including your app (*appID: myapp*) or excluding your app (*NOT appID: myapp*).
+
+[[time-range]]
+== Select a Log Date and Time Range
+
+By default Logs Search retrieves the last 15 minutes of logs. You can use and absolute or relative the date-time range:
+
+* Absolute: Specific date and time to start and end the search. The end time default to *now*.
+* Relative: A configurable number of seconds, minutes, hours, days, weeks, months, or years before (such as *Days ago*) or after (such as *Days from now*) the current date and time.
+
+To select the date-time range, use any of these options:
+
+* Click image:logs-calandar-icon-hf.png["",20,20] (Calendar), and use *Quick select* or *Commonly used* options:
+
+** Select the last number of *seconds*, *minutes*, *hours*, *days*, *weeks*, *months*, or *years*
+** Select a commonly used option, such as *Today*, *This week*, last number of minutes, hour, or days, *Last 1 year*.
+
+* Click *Show dates* or the date-time range in Logs Search:
+
+** Click *Absolute* to pick a specific start date and time for your log search.  
+** Click *Relative*, and set a number of seconds, minutes, hours, days, weeks, months, or years from now for your log search.
++
+You can opt to round to the day.
 
 [[refresh-logss]]
 == Refresh Log Data
