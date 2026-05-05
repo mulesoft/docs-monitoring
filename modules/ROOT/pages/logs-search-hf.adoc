@@ -29,6 +29,9 @@ To set an auto-refresh rate in seconds, minutes, or hours, use image:logs-caland
 
 Use *Log Search* to capture the logs you want to review. You can use the Search bar, a filter (including filters created with Query DSL), or combination the Search bar and a filter.
 
+* <<search-bar>>
+* <<search-filters>>
+
 [[search-bar]]
 === Query Logs from the Search Bar
 
@@ -71,20 +74,10 @@ Create, edit, and apply log search filters. You can use selectable fields and op
 
 For filters that have 
 
-. Click *Add filter*. 
-[[field-names]]
-. Select a log field name, or use the field's identifier (such as `appId`) for Query DSL filters: 
-
-* *Application* (`appId`): Name of the application
-* *Class* (`class`): Class name 
-* *Environment* (`envId`): Environment identifier
-* *Event* (`event`): Identifier for the associated Mule event
-* *Log level* (`log-level`): Log value such as INFO, WARN, ERROR 
-* *Logger* (`logger`): Name of the logger
-* *Message* (`message`): Log message
-* *Timestamp* (`timestamp`): Date and time of the a log entry
-* *Worker* (`workerId`): Identifier for the associated worker
-
+. Click *Add filter*.
+. Select a log field name, or use the field's identifier (such as `appId`) for Query DSL filters.  
++
+See <<field-names>> for log fields and identifiers.
 . Select an operator:
 * `is`: Contains the value you provide
 +
@@ -312,6 +305,21 @@ Log storage limits for your subscription tier determine your retention, and isn'
 //VERIFY STILL TRUE
 For other limitations on logs, see xref:performance-and-impact.adoc#logging-data-management[Logging Data Management].
 
+== Log Field Names
+
+[[field-names]]
+
+TODO
+
+* *Application* (`appId`): Name of the application
+* *Class* (`class`): Class name 
+* *Environment* (`envId`): Environment identifier
+* *Event* (`event`): Identifier for the associated Mule event
+* *Log level* (`log-level`): Log value such as INFO, WARN, ERROR 
+* *Logger* (`logger`): Name of the logger
+* *Message* (`message`): Log message
+* *Timestamp* (`timestamp`): Date and time of the a log entry
+* *Worker* (`workerId`): Identifier for the associated worker
 
 ////
 TODO: VERIFY
