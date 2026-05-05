@@ -13,7 +13,7 @@ image::logs-search-hf.png["Logs Search UI"]
 . Search for log fields to display or remove from the log *Results* table. Hover over a field name to add or remove the column, and to display top-5 values from the field.
 
 * *Selected fields*: Lists columns added to the log *Results* table. 
-* *Available fields*: Lists columns you can add to   *Results* table. 
+* *Available fields*: Lists columns you can add to the log *Results* table. 
 //TODO: ADD SAVE ICON
 . Search for specific words in log fields, including log *Message* fields. Click the Save icon to save named searches for future use, and to select, update, or delete saved searches. When searching, try a whole-word search if a partial word search does not return a result.
 . Set the time range for logs in the *Results* table using the clickable calendar icon or date range. If you select a relative or absolute date range, the *Refresh* button toggles to an *Update* button to use for applying your date range.
@@ -40,50 +40,27 @@ Use *Log Search to capture the logs you want to review.
 . Use filters as needed to narrow or expand the scope of log results.
 . Review results.
 
-== Use Filters for Log Searches
+=== Use Search Filters for Log Results
 
-[[filter-global-settings]]
-Global filter settings:
-
-* *Enable all* to enable all your filters
-* *Disable all* to disable 
-* *Pin all*
-* *Unpin all*
-* *Invert inclusion*
-* *Invert enabled/disabled*
-
-[[filter-individual-settings]]
-For individual filters, you can:
-
-* *Pin across all apps* 
-* *Unpin across all apps*
-* *Edit filter* to change the filter configuration
-* *Include results* to include the filter's results in the *Results* table
-* *Exclude results* to apply the *NOT* operator to the filter, which excludes its results from the *Results* table 
-* *Temporarily disable* to retain the filter without using it to return search results; toggles with *Re-enable*
-* *Delete* to permanently delete the filter
-
-
-=== Add or Edit a Filter
-
-Create or edit a filter using selectable fields and operators, or use Query DSL for more complex filters.
+Create, edit, and apply log search filters. You can use selectable fields and operators, or you can use Query DSL for more complex filters.
 //TODO: NEED QUERY DSL DOC OR DOC LINK
 
 . Click *Add filter*. 
 //WEIRD THAT IT OPENS AN *Edit filter* dialog
-. Select a field. //TODO: LIST FIELDS?
+. Select a log field: 
 
-* `appId`
-* `class`
-* `envId`
-* `event`
-* `log-level`
-* `logger`
-* `message`
-* `timestamp`
-* `workerId`
+[[field-names]]
+* *Application*: Name of the application (`appId` in Query DSL)
+* *Class*: Class name (`class` in Query DSL) 
+* *Environment*: Environment identifier (`envId` in Query DSL)
+* *Event*: Identifier for the associated Mule event (`event` in Query DSL)
+* *Log level*: Log value such as INFO, WARN, ERROR (`log-level` in Query DSL)
+* *Logger*: Name of the logger (`logger` in Query DSL)
+* *Message*: Log message (`message` in Query DSL)
+* *Timestamp*: Date and time of the a log entry (`timestamp` in Query DSL)
+* *Worker*: Identifier for the associated worker (`workerId` in Query DSL)
 
-. Select an operator.
+. Select an operator:
 
 * `is`
 * `is not`
@@ -93,7 +70,8 @@ Create or edit a filter using selectable fields and operators, or use Query DSL 
 * `does not exist`
 
 . Optionally, create a reusable filter by providing a custom label name for your filter.
-//TODO: VERIFY
++
+A short label is useful for otherwise long filters.
 
 [[filter-dsl]]
 === Create a Filter with Query DSL
@@ -135,22 +113,34 @@ This example shows a complex query that retrieves worker ID values greater than 
 }
 ----
 
-Valid field names:
-
-* `appId` for an application name
-* `class` for a class name
-* `envId` for an environment ID
-* `event` for an Mule event
-* `log-level` for a log Level
-* `logger` for a logger value
-* `message` for a message value
-* `timestamp` for a supported timestamp
-* `workerId` for a worker ID
+For more information, see <<field-names, valid Query DSL field names>>.
 
 ////
 [NOTE]
 Some complex search queries don't have an equivalent in the search filter values UI, so you can only create and view such queries in the query UI.
 ////
+
+
+[[filter-global-settings]]
+Global filter settings:
+
+* *Enable all* to enable all your filters
+* *Disable all* to disable 
+* *Pin all*
+* *Unpin all*
+* *Invert inclusion*
+* *Invert enabled/disabled*
+
+[[filter-individual-settings]]
+For individual filters, you can:
+
+* *Pin across all apps* 
+* *Unpin across all apps*
+* *Edit filter* to change the filter configuration
+* *Include results* to include the filter's results in the *Results* table
+* *Exclude results* to apply the *NOT* operator to the filter, which excludes its results from the *Results* table 
+* *Temporarily disable* to retain the filter without using it to return search results; toggles with *Re-enable*
+* *Delete* to permanently delete the filter
 
 == Get Top 5 Values
 
@@ -163,10 +153,67 @@ Get a list of top-5 log values from the list of fields used for columns in the *
 
 == Download Log Results as a CSV File
 
-TODO
+Download log search results for up to 10,000 log records into a CSV file. 
 
-== Lookback Window
+. Add fields that you want in your report to the log *Results* table.
++
+For guidance, see TODO_TODO.
+. Run your search query.
++
+For guidance, see TODO_TODO.
+. Click *Download as CSV*.
 
-For the lookback policy, see TODO
+== Save and Use Saved Searches
 
-//TODO: EXPLAIN 
+Save searches as reusable filters. After using the search, you can clear the search. You can also delete a saved search.
+
+To save a search:
+
+. Run a search query that you intend to save. 
++
+For guidance, see TODO_TODO
+. Click the Save icon TODO_TODO
+. Click *Save as new*. 
+. Provide a name for your search, and click *Save*
+
+To use a saved search:
+
+. Click the Save icon TODO_TODO
+. Click the saved search to apply the search.
++
+Notice that the search appears as a search filter.
+
+To clear a saved search, use either of these methods:
+
+* Delete the saved search filter.
+* Click the Save icon TODO_TODO, and click *Clear*.
+
+To delete a saved search:
+
+. Click the Save icon TODO_TODO
+. Hover over the saved search to delete.
+. Click the Delete icon TODO_TODO.
+
+[[data-retention-management]]
+== Data Retention and Management for Logs
+
+//VERIFY STILL TRUE
+Log storage limits for your subscription tier determine your retention, and isn't based on a set amount of time. For details, see xref:performance-and-impact.adoc#data-retention-limits[Data Retention Limits].
+
+//VERIFY STILL TRUE
+For other limitations on logs, see xref:performance-and-impact.adoc#logging-data-management[Logging Data Management].
+
+
+////
+TODO: VERIFY
+== Format Customized Logs in On-Prem Servers for Proper Indexing
+
+Logs produced by apps with customized logging (by changing the pattern layout in the `log4j2.xml` file) might not get indexed correctly into Anypoint Monitoring. To ensure correct indexing, use the Mule default pattern layout, which is one of the following:
+
+* `<PatternLayout pattern="%-5p %d [%t] [event: %X{correlationId}] %c: %m%n" />`, or
+* `<PatternLayout pattern="%d [%t] %-5p %c - %m%n" />`
+
+*For applications deployed to CloudHub and Anypoint Runtime Fabric with customized time zones:*
+
+Do not override the default JVM timezone for applications deployed to CloudHub and Anypoint Runtime Fabric with customized time zones. The timezone must be UTC. Changing the timezone to a local timezone causes logs to be indexed in Anypoint Monitoring with incorrect timestamps.
+////

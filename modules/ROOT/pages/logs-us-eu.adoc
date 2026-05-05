@@ -62,8 +62,8 @@ To search the logs, type your search query into the log search field and press *
 * Search for a term, such as `"Info Dynamic Logging"`.
 +
 Without quotes, the query returns results for matches to each term. 
-* Use a wildcard in your search, such as `resourceId=hellowor*`. 
-* Use logical operators, such as `resourceId=hellowor* AND "Info Dynamic Logging"`.
+* Use a wildcard in your search, such as `appId=myap*`. 
+* Use logical operators, such as `appId=myap* AND "Info Dynamic Logging"`.
 
 [[search-filter]]
 === Search with a Filter
