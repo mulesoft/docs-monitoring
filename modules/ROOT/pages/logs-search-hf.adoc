@@ -216,10 +216,10 @@ For guidance, see TODO_TODO
 +
 Notice that the search appears as a search filter.
 
-* To clear a saved search from a search query, use either of these methods:
+* To clear a saved search from a search query that is filtering your results, use either of these methods:
 
 ** Click image:logs-save-icon-hf.png["",20,20] (Save), hover over the saved search, and then click *Clear*.
-** Hover the filter and clicking (*X*). For example, if *my saved app* is a saved search, you can clear it without deleting:
+** Hover the filter and clicking (*x*). For example, if *my saved app* is a saved search, you can click (*x*) to clear it without deleting:
 +
 image:logs-delete-filter-hf.png["Delete a Filter", width=25%]
 +
