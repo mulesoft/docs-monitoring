@@ -1,6 +1,15 @@
 = Searching for Logs
 //EXPERIENCE ROLLOUT BANNER FOR THIS PAGE TO REMOVE ONCE ROLLOUT IS COMPLETE
 :page-notice-banner-message: From May through June 2026, Anypoint Monitoring introduces and enhanced Log Search experience that's available on a rolling basis. This experience replaces previous log search experiences in all supported Anypoint Platform cloud regions (including US, EU, Japan, and Canada).
+:page-info-pills: anypoint-pricing-titanium
+
+//feature tier:
+On https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. You can use aggregated logs in conjunction with monitoring to help identify issues and investigate failures quickly. These features support:
+
+//TODO: is "and environments" correct? SHOULD THESE BULLETS THIS BE TWEAKED?
+* Comparative analysis and identification of event and information patterns based on searches across selected Mule apps and environments.
+* Searches within the logs of a specific worker (or set of workers) for a Mule app so that you can narrow scope of issues to check.
+* Sharing a snapshot of important logs with developers who can work on the source of the issue.
 
 //TODO: JUST MULE APPS? BASICALLY LOGS FROM MULE RUNTIME? 
 Get logs on your Mule apps from *Log Search* in Anypoint Monitoring.
@@ -47,15 +56,15 @@ For date-time range , see <<time-range>>.
 
 ** Use words or quotes around multiple words or strings with special characters, such as `"HTTP GET"`, `"ab12c345-abc6-789d-e1fa-b124c5de6789"`, or `"https://api.mycompany.com:443"`.
 +
-Without quotes, multi-word searches are treated as the query `HTTP OR GET`, where `OR` is a logical operator. For partial word searches, you can use pattern matching characters in your search, such as `myap*`, or `appId: mya?p`.
+Without quotes, multi-word searches are treated as the query `HTTP OR GET`, where `OR` is a logical operator, and special characters can affect the search. For partial word searches, you can use pattern matching characters in your search, such as `myap*`, or `appId: mya?p`.
 ** Use a <<field-names, field identifier>> to search within a specific log field, such as `appId: myapp` for an application named `myapp`.
 ** Use logical operators, such as `appId=myap* AND `"forbidden (403)"`.
+** Escape special characters that aren't surrounded by 
 +
 For a list of supported operators, see xref:log-search-query-syntax.adoc#boolean-operators[Boolean Operators].
 * Use filters as needed to narrow or expand the scope of log results.
 +
 For guidance, see <<search-filters>>.
-** Escape special characters to 
 . Review results.
 
 For more detail, see xref:log-search-query-syntax.adoc[].
@@ -70,7 +79,7 @@ Create, edit, and apply log search filters. You can use selectable fields and op
 * <<filter-top5>>
 
 [[filter-simple]]
-== Create a Basic Filter
+==== Create a Basic Filter
 
 For filters that have 
 
@@ -80,31 +89,32 @@ For filters that have
 See <<field-names>> for log fields and identifiers.
 . Select an operator:
 * `is`: Contains the value you provide
-+
-Example: `Application is my-app`
-+
-Filter label: `appId: my-app`
+** Example: `Application is my-app`
+** Filter label: `appId: my-app`
+
 * `is not`: Doesn't contain the value you provide
-+
-Example: `Application is not my-app`
-+
-Filter label: `NOT appId: my-app`
+** Example: `Application is not my-app`
+** Filter label: `NOT appId: my-app`
+
 * `is one of`: Contains a match a value in the list of values that you provide
-+
-Example: `Application is one of my-app another-app yet-another-app`
-+
-Filter label: `appId: is one of my-app another-app yet-another-app`
+** Example: `Application is one of my-app another-app yet-another-app`
+** Filter label: `appId: is one of my-app another-app yet-another-app`
+
 * `is not one of`: Doesn't match any value in the list of values you provide
-+
-Example: `Application is not one of my-app another-app yet-another-app`
-+
-Filter label: `NOT appId: is one of my-app another-app yet-another-app`
-* `exists`: Field is available to retrieved logs
-* `does not exist`: Field isn't available to retrieved logs
+** Example: `Application is not one of my-app another-app yet-another-app`
+** Filter label: `NOT appId: is one of my-app another-app yet-another-app`
+
+* `exists`: Identifies a field that contains a value
+** Example: `Class exists`
+** Filter label: `class: exists`
+
+* `does not exist`: Identifies a field that contains an empty value
+** Example: `Class does not exist`
+** Filter label: `NOT class: exists`
 
 . Optionally: 
 
-* Provide a custom label name for your filter.
+* Provide a custom label for the filter.
 +
 A short label is useful for long filter names. 
 * Save your filter so that you can reuse it.
@@ -113,7 +123,7 @@ For guidance, see <<save-search>>.
 
 
 [[filter-query-dsl]]
-=== Create a Filter with Query DSL
+==== Create a Filter with Query DSL
 
 //TODO: NEED QUERY DSL VERSION TO LINK TO (latest is 3.6 or earlier?)
 
@@ -161,31 +171,8 @@ For more information, see <<field-names, valid Query DSL field names>>.
 Some complex search queries don't have an equivalent in the search filter values UI, so you can only create and view such queries in the query UI.
 ////
 
-
-[[filter-global-settings]]
-Global filter settings:
-
-* *Enable all* to enable all your filters
-* *Disable all* to disable 
-* *Pin all*
-* *Unpin all*
-* *Invert inclusion*
-* *Invert enabled/disabled*
-
-[[filter-individual-settings]]
-For individual filters, you can:
-
-* *Pin across all apps* 
-* *Unpin across all apps*
-* *Edit filter* to change the filter configuration
-* *Include results* to include the filter's results in the *Results* table
-* *Exclude results* to apply the *NOT* operator to the filter, which excludes its results from the *Results* table 
-* *Temporarily disable* to retain the filter without using it to return search results; toggles with *Re-enable*
-* *Delete* to permanently delete the filter
-
-
 [[filter-top5]]
-=== Use Top 5 Log Field Values to Create a Filter
+==== Use Top 5 Log Field Values to Create a Filter
 
 Get a list of top-5 log values from the list of fields used for columns in the *Results* table. For example, you can get a list of the top-5 apps or log messages ranked by the percentage of matches, such as 19% of log messages that match. 
 
@@ -305,11 +292,18 @@ Log storage limits for your subscription tier determine your retention, and isn'
 //VERIFY STILL TRUE
 For other limitations on logs, see xref:performance-and-impact.adoc#logging-data-management[Logging Data Management].
 
-== Log Field Names
+== Reference
+
+TODO_TODO
+
+* <<field-names>>
+* <<filter-global-options>>
+* <<filter-individual-options>>
 
 [[field-names]]
+== Log Field Names
 
-TODO
+TODO_TODO
 
 * *Application* (`appId`): Name of the application
 * *Class* (`class`): Class name 
@@ -320,6 +314,36 @@ TODO
 * *Message* (`message`): Log message
 * *Timestamp* (`timestamp`): Date and time of the a log entry
 * *Worker* (`workerId`): Identifier for the associated worker
+
+
+[[filter-global-options]]
+=== Global Filter Options
+
+TODO_TODO
+
+Global filter settings:
+
+* *Enable all* to enable all your filters
+* *Disable all* to disable 
+* *Pin all*
+* *Unpin all*
+* *Invert inclusion*
+* *Invert enabled/disabled*
+
+[[filter-individual-options]]
+=== Individual Filter Options
+
+TODO_TODO
+
+For individual filters, you can:
+
+* *Pin across all apps* 
+* *Unpin across all apps*
+* *Edit filter* to change the filter configuration
+* *Include results* to include the filter's results in the *Results* table
+* *Exclude results* to apply the *NOT* operator to the filter, which excludes its results from the *Results* table 
+* *Temporarily disable* to retain the filter without using it to return search results; toggles with *Re-enable*
+* *Delete* to permanently delete the filter
 
 ////
 TODO: VERIFY
