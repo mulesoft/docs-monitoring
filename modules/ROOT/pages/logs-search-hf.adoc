@@ -3,11 +3,11 @@
 :page-notice-banner-message: From May through June 2026, Anypoint Monitoring introduces and enhanced Log Search experience that's available on a rolling basis. This experience replaces previous log search experiences in all supported Anypoint Platform cloud regions (including US, EU, Japan, and Canada).
 
 //TODO: JUST MULE APPS? BASICALLY LOGS FROM MULE RUNTIME? 
-Get logs on your Mule apps from *Logs Search* in Anypoint Monitoring.
+Get logs on your Mule apps from *Log Search* in Anypoint Monitoring.
 
 [[log-search-overview]]
 //don't change order of numbers in graphic or calloutlist
-image::logs-search-hf.png["Logs Search UI"]
+image::logs-search-hf.png["Log Search UI"]
 
 [calloutlist]
 . Search for log fields to display or remove from the log *Results* table. Hover over a field name to add or remove the column, and to display top-5 values from the field.
@@ -15,20 +15,24 @@ image::logs-search-hf.png["Logs Search UI"]
 * *Selected fields*: Lists columns added to the log *Results* table. 
 * *Available fields*: Lists columns you can add to the log *Results* table. 
 //TODO: ADD SAVE ICON
-. Search for specific words in log fields, including log *Message* fields. Click the Save icon to save named searches for future use, and to select, update, or delete saved searches. When searching, try a whole-word search if a partial word search does not return a result.
-. Set the time range for logs in the *Results* table using the clickable calendar icon or date range. If you select a relative or absolute date range, the *Refresh* button toggles to an *Update* button to use for applying your date range.
+. Search for specific words in log fields, including log *Message* fields. Click image:logs-save-icon-hf.png["",20,20] (Save) to save named searches for future use, and to select, update, or delete saved searches. When searching, try a whole-word search if a partial word search does not return a result.
+. Set the time range for logs in the *Results* table using the clickable image:logs-calendar-icon-hf.png["",20,20] (Calendar) icon or date range. If you select a relative or absolute date range, the *Refresh* button toggles to an *Update* button to use for applying your date range.
 //TODO: ADD CALENDAR ICON
 . *Refresh* is for manually refreshing the logs in the *Results* table.
 +
-To set an auto-refresh rate in seconds, minutes, or hours, click the calendar icon, and configure the *Refresh every* setting. 
+To set an auto-refresh rate in seconds, minutes, or hours, click the image:logs-calendar-icon-hf.png["",20,20] (Calendar) icon, and configure the *Refresh every* setting. 
 . Create search filters...
 . Review log counts by the selected date range. Timestamp units vary depending on the date or time range you select. The longer the range, the longer the timestamp period on the horizontal axis, which can display averages over 30 second, 12 hour, or weekly intervals, for example.
 . Use the *Results* table to review the results of your log search. You can also use *Download as CSV* to download up to 10,000 rows of log data.
 . Filter by the value in a cell of the *Results* table by hovering over the cell and clicking to add (*+*) or remove (*-*) the filter.
 
-== Review Logs
+[[search-logs]]
+== Search for Logs
 
-Use *Log Search to capture the logs you want to review.
+Use *Log Search* to capture the logs you want to review. You can use the Search bar, a filter (including filters created with Query DSL), or combination the Search bar and a filter.
+
+[[search-bar]]
+=== Query from the Search Bar
 
 //TODO: HOW FAR BACK CAN PEOPLE GO?
 . Select an absolute or relative time range to review. 
@@ -40,10 +44,15 @@ Use *Log Search to capture the logs you want to review.
 . Use filters as needed to narrow or expand the scope of log results.
 . Review results.
 
-=== Use Search Filters for Log Results
+=== Use Search Filters
 
-Create, edit, and apply log search filters. You can use selectable fields and operators, or you can use Query DSL for more complex filters.
-//TODO: NEED QUERY DSL DOC OR DOC LINK
+Create, edit, and apply log search filters. You can use selectable fields and operators, or you can use the JSON-based OpenSearch Query Domain-Specific Language (DSL) for more complex filters. To save a filter for future use, see <<save-search>>.
+
+
+[[filter-simple]]
+== Create a Basic Filter
+
+For filters that have 
 
 . Click *Add filter*. 
 //WEIRD THAT IT OPENS AN *Edit filter* dialog
@@ -75,6 +84,8 @@ A short label is useful for otherwise long filters.
 
 [[filter-dsl]]
 === Create a Filter with Query DSL
+
+//TODO: NEED QUERY DSL VERSION TO LINK TO (latest is 3.6 or earlier?)
 
 You can use OpenSearch Query DSL to create a filter. To learn the basics of Query DSL, see https://docs.opensearch.org/latest/query-dsl/[Query DSL] in the OpenSearch documentation. 
 
@@ -144,7 +155,11 @@ For individual filters, you can:
 
 == Get Top 5 Values
 
-Get a list of top-5 log values from the list of fields used for columns in the *Results* table. For example, you can get a list of the top-5 apps or log messages ranked by the percentage of matches, such as 28.2% of log messages that match. From a value in the top-5 list, you can also create a filter that includes (*+*) or excludes (*-*) a top-5 value, such as including your app (*appID: myapp*) or excluding your app (*NOT appID: myapp*).
+Get a list of top-5 log values from the list of fields used for columns in the *Results* table. For example, you can get a list of the top-5 apps or log messages ranked by the percentage of matches, such as 28.2% of log messages that match. 
+
+image::logs-top5-hf.png["Top 5 Application Fields Example"]
+
+From a value in the top-5 list, you can also create a filter that includes (*+*) or excludes (*-*) a top-5 value, such as including your app (*appID: myapp*) or excluding your app (*NOT appID: myapp*).
 
 
 == Refresh Log Data
@@ -163,22 +178,23 @@ For guidance, see TODO_TODO.
 For guidance, see TODO_TODO.
 . Click *Download as CSV*.
 
-== Save and Use Saved Searches
+[[save-search]]
+== Save and Apply Saved Log Search Queries
 
-Save searches as reusable filters. After using the search, you can clear the search. You can also delete a saved search.
+Save search queries as reusable filters. After using a saved search query, you can clear the query filter so that it doesn't affect search results. You can also permanently delete a saved search.
 
 To save a search:
 
 . Run a search query that you intend to save. 
 +
 For guidance, see TODO_TODO
-. Click the Save icon TODO_TODO
+. Click image:logs-save-icon-hf.png["",20,20] (Save).
 . Click *Save as new*. 
 . Provide a name for your search, and click *Save*
 
 To use a saved search:
 
-. Click the Save icon TODO_TODO
+. Click image:logs-save-icon-hf.png["",20,20] (Save).
 . Click the saved search to apply the search.
 +
 Notice that the search appears as a search filter.
@@ -186,13 +202,27 @@ Notice that the search appears as a search filter.
 To clear a saved search, use either of these methods:
 
 * Delete the saved search filter.
-* Click the Save icon TODO_TODO, and click *Clear*.
+* Click image:logs-save-icon-hf.png["",20,20] (Save), and then click *Clear*.
 
 To delete a saved search:
 
-. Click the Save icon TODO_TODO
+. Click image:logs-save-icon-hf.png["",20,20] (Save).
 . Hover over the saved search to delete.
-. Click the Delete icon TODO_TODO.
+. Click image:logs-save-icon-hf.png["",20,20] (Delete).
+
+[[share-logs]]
+== Share Logs
+
+TODO_TODO: THIS IS GETTING IMPLEMENTED 
+
+////
+VERIFY/EDIT AS NEEDED FOR NEW UI:
+You can share the URL to your logs.
+
+. From Logs, click *Share*.
+. Select *Share* to load the URL of your log page to a *Share Log Search Link* field.
+. Click *Copy*.
+////
 
 [[data-retention-management]]
 == Data Retention and Management for Logs
