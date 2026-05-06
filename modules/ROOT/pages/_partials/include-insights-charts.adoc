@@ -577,12 +577,12 @@ URL of deployed API integration
 //(SATHISH)
 [[chart-runtime-version]]
 Runtime Version::
-Mule Gateway or Omni Gateway (formerly Flex Gateway) runtime version used by the API implementation 
+Mule Gateway or Omni Gateway runtime version used by the API implementation 
 
 //TODO: issue: value can be empty; SEE BOOKS API IN STGX 
 [[chart-api-instance-id]]
 API Instance ID::
-Instance identifier for an API implementation incorporated into a Omni Gateway (formerly Flex Gateway) or API Gateway runtime
+Instance identifier for an API implementation incorporated into a Omni Gateway or API Gateway runtime
 
 //TODO: version -> Version (SATHISH)
 [[chart-api-version]]

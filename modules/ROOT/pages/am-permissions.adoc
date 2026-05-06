@@ -25,13 +25,13 @@ In addition to Monitoring Administrator and Anypoint Monitoring Viewer permissio
 //|View API data
 //|xref:access-management::permissions-by-product.adoc#api-manager[API Manager]
 
-.2+| Omni Gateway (formerly Flex Gateway) Deployment Data
+.2+| Omni Gateway Deployment Data
 |View API Alerts
 |View the API alerts for Flex API data.
 |xref:access-management::permissions-by-product.adoc#api-manager[API Manager]
 
 |Read Servers
-|View server and Omni Gateway (formerly Flex Gateway) resources.
+|View server and Omni Gateway resources.
 |xref:access-management::permissions-by-product.adoc#runtime-manager[Runtime Manager]
 |===
 
