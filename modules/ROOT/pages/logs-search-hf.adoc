@@ -312,7 +312,7 @@ For other limitations on logs, see xref:performance-and-impact.adoc#logging-data
 
 == Reference
 
-TODO_TODO
+Get descriptions of fields and filter options:
 
 * <<field-names>>
 * <<filter-global-options>>
@@ -321,7 +321,7 @@ TODO_TODO
 [[field-names]]
 == Log Field Names
 
-TODO_TODO
+Log field names in the UI have field identifiers that appear in filter names and saved search labels. Query DSL configurations requires field identifiers.
 
 * *Application* (`appId`): Name of the application
 * *Class* (`class`): Class name 
@@ -337,9 +337,9 @@ TODO_TODO
 [[filter-global-options]]
 === Global Filter Options
 
-TODO_TODO
+TODO:TODO_TODO
 
-Global filter settings:
+Global filter options:
 
 * *Enable all* to enable all your filters
 * *Disable all* to disable 
@@ -351,7 +351,7 @@ Global filter settings:
 [[filter-individual-options]]
 === Individual Filter Options
 
-TODO_TODO
+TODO:TODO_TODO
 
 For individual filters, you can:
 
@@ -363,16 +363,15 @@ For individual filters, you can:
 * *Temporarily disable* to retain the filter without using it to return search results; toggles with *Re-enable*
 * *Delete* to permanently delete the filter
 
-////
-TODO: VERIFY
 == Format Customized Logs in On-Prem Servers for Proper Indexing
+
+TODO:TODO_TODO VERIFY
 
 Logs produced by apps with customized logging (by changing the pattern layout in the `log4j2.xml` file) might not get indexed correctly into Anypoint Monitoring. To ensure correct indexing, use the Mule default pattern layout, which is one of the following:
 
 * `<PatternLayout pattern="%-5p %d [%t] [event: %X{correlationId}] %c: %m%n" />`, or
 * `<PatternLayout pattern="%d [%t] %-5p %c - %m%n" />`
 
-*For applications deployed to CloudHub and Anypoint Runtime Fabric with customized time zones:*
+For applications deployed to CloudHub and Anypoint Runtime Fabric with customized time zones:
 
-Do not override the default JVM timezone for applications deployed to CloudHub and Anypoint Runtime Fabric with customized time zones. The timezone must be UTC. Changing the timezone to a local timezone causes logs to be indexed in Anypoint Monitoring with incorrect timestamps.
-////
+Don't override the default JVM timezone for applications deployed to CloudHub and Anypoint Runtime Fabric with customized time zones. The timezone must be UTC. Changing the timezone to a local timezone causes logs to be indexed in Anypoint Monitoring with incorrect timestamps.
