@@ -174,7 +174,7 @@ This example shows a complex query that retrieves worker ID values greater than 
 }
 ----
 
-For more information, see <<field-names, valid Query DSL field names>>.
+For more information, see <<field-names, valid field identifiers to use in Logs Search>> when creating a filter with Query DSL.
 
 ////
 [NOTE]
