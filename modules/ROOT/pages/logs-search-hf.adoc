@@ -374,4 +374,4 @@ image:filter-icons-hf.png["Filter Icons", width=25%]
 //* *Pin across all apps* 
 //* *Unpin across all apps*
 
-Any pinning or unpinning options that appear aren't used.
+Any pinning or unpinning options that appear for filters aren't used.
