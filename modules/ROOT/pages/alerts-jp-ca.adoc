@@ -53,7 +53,7 @@ Required prerequisites:
 *** CloudHub 2.0
 *** Runtime Fabric
 *** Hybrid 
-** API managed by Mule Gateway or Omni Gateway (formerly Flex Gateway)
+** API managed by Mule Gateway or Omni Gateway
 +
 See xref:gateway-home::index.adoc[].
 
