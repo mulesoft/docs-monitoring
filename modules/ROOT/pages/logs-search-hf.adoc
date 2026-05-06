@@ -352,10 +352,10 @@ Log field names in the UI have field identifiers that appear in filters labels a
 
 Filter options are available globally and to individual filters. 
 
-image:filter-icons-hf.png["Filter Icons"]
+image:filter-icons-hf.png["Filter Icons", width=25%]
 
 [calloutlist]
-. Click to open global filter options
+. Click to open global filter options:
 
 * *Enable all* to enable all your filters
 * *Disable all* to disable 
@@ -364,7 +364,7 @@ image:filter-icons-hf.png["Filter Icons"]
 // * *Pin all*
 // * *Unpin all*
 
-. Click to open individual filter options
+. Click to open individual filter options:
 
 * *Edit filter* to change the filter configuration
 * *Include results* to include the filter's results in the *Results* table
@@ -373,3 +373,5 @@ image:filter-icons-hf.png["Filter Icons"]
 * *Delete* to permanently delete the filter
 //* *Pin across all apps* 
 //* *Unpin across all apps*
+
+Any pinning or unpinning options that appear aren't used.
