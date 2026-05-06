@@ -310,6 +310,19 @@ Log storage limits for your subscription tier determine your retention, and isn'
 //VERIFY STILL TRUE
 For other limitations on logs, see xref:performance-and-impact.adoc#logging-data-management[Logging Data Management].
 
+== Format Customized Logs in On-Prem Servers for Proper Indexing
+
+TODO:TODO_TODO VERIFY
+
+Logs produced by apps with customized logging (by changing the pattern layout in the `log4j2.xml` file) might not get indexed correctly into Anypoint Monitoring. To ensure correct indexing, use the Mule default pattern layout, which is one of the following:
+
+* `<PatternLayout pattern="%-5p %d [%t] [event: %X{correlationId}] %c: %m%n" />`, or
+* `<PatternLayout pattern="%d [%t] %-5p %c - %m%n" />`
+
+For applications deployed to CloudHub and Anypoint Runtime Fabric with customized time zones:
+
+Don't override the default JVM timezone for applications deployed to CloudHub and Anypoint Runtime Fabric with customized time zones. The timezone must be UTC. Changing the timezone to a local timezone causes logs to be indexed in Anypoint Monitoring with incorrect timestamps.
+
 == Reference
 
 Get descriptions of fields and filter options:
@@ -321,7 +334,7 @@ Get descriptions of fields and filter options:
 [[field-names]]
 === Log Field Names
 
-Log field names in the UI have field identifiers that appear in filter names and saved search labels. Query DSL configurations requires field identifiers.
+Log field names in the UI have field identifiers that appear in filters labels and <<save-search, saved search labels>>. <<filter-query-dsl, Query DSL filters>> require field identifiers.
 
 * *Application* (`appId`): Name of the application
 * *Class* (`class`): Class name 
@@ -343,8 +356,8 @@ Global filter options:
 
 * *Enable all* to enable all your filters
 * *Disable all* to disable 
-* *Pin all*
-* *Unpin all*
+// * *Pin all*
+// * *Unpin all*
 * *Invert inclusion*
 * *Invert enabled/disabled*
 
@@ -355,23 +368,10 @@ TODO:TODO_TODO
 
 For individual filters, you can:
 
-* *Pin across all apps* 
-* *Unpin across all apps*
+//* *Pin across all apps* 
+//* *Unpin across all apps*
 * *Edit filter* to change the filter configuration
 * *Include results* to include the filter's results in the *Results* table
 * *Exclude results* to apply the *NOT* operator to the filter, which excludes its results from the *Results* table 
 * *Temporarily disable* to retain the filter without using it to return search results; toggles with *Re-enable*
 * *Delete* to permanently delete the filter
-
-== Format Customized Logs in On-Prem Servers for Proper Indexing
-
-TODO:TODO_TODO VERIFY
-
-Logs produced by apps with customized logging (by changing the pattern layout in the `log4j2.xml` file) might not get indexed correctly into Anypoint Monitoring. To ensure correct indexing, use the Mule default pattern layout, which is one of the following:
-
-* `<PatternLayout pattern="%-5p %d [%t] [event: %X{correlationId}] %c: %m%n" />`, or
-* `<PatternLayout pattern="%d [%t] %-5p %c - %m%n" />`
-
-For applications deployed to CloudHub and Anypoint Runtime Fabric with customized time zones:
-
-Don't override the default JVM timezone for applications deployed to CloudHub and Anypoint Runtime Fabric with customized time zones. The timezone must be UTC. Changing the timezone to a local timezone causes logs to be indexed in Anypoint Monitoring with incorrect timestamps.
