@@ -214,8 +214,8 @@ To select the date-time range, use any of these options:
 
 * Click *Show dates* or the date-time range in Logs Search:
 
-** Click *Absolute* to pick a specific start date and time for your log search.  
-** Click *Relative*, and set a number of seconds, minutes, hours, days, weeks, months, or years from now for your log search.
+** Click *Absolute* to pick a specific start date and time for your log search, and then click *Update*.  
+** Click *Relative*, and set a number of seconds, minutes, hours, days, weeks, months, or years from now for your log search, and then click *Update*.
 +
 You can opt to round to the day.
 
