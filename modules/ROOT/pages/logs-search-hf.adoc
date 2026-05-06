@@ -275,12 +275,12 @@ The saved filter remains available in your list of saved searches. Unsaved searc
 . Hover over the saved search to delete.
 . Click image:logs-delete-icon-hf.png["",30,30] (Delete).
 
+////
 [[share-logs]]
 == Share Logs
 
 TODO_TODO: THIS IS GETTING IMPLEMENTED 
 
-////
 VERIFY/EDIT AS NEEDED FOR NEW UI:
 You can share the URL to your logs.
 
@@ -289,6 +289,17 @@ You can share the URL to your logs.
 . Click *Copy*.
 ////
 
+== Move and Remove Columns in the Results
+
+After adding optional columns to the log *Results* table, such as *Application* and *Log level*, you can move and remove them. The *Time* and *Message* columns are not removable. However, you can move *Message* after adding optional columns.
+
+* Hover over the column heading, such as *Log level*, to reveal column options.
++
+
+
+** To move a column, use the arrow to move the column to the left or right.
+** To remove a column, click the *x*.
+** To sort the data in the column in ascending or descending order, click its up-down arrow to toggle the sorting order. 
 
 [[data-retention-management]]
 == Data Retention and Management for Logs
