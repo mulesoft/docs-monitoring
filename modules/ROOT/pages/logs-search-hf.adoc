@@ -22,7 +22,7 @@ image::logs-search-hf.png["Log Search UI"]
 * *Selected fields*: Lists columns added to the log *Results* table
 * *Available fields*: Lists columns you can add to the log *Results* table
 . Provide search queries for logs and log fields, including log *Message* fields. Use image:logs-save-icon-hf.png["",20,20] (Save) to save named searches for future use, and to select, update, or delete saved searches.
-. Set a date and time range to capture in the log *Results* table using the clickable image:logs-calandar-icon-hf.png["",20,20] (Calendar) or date range. If you select a relative or absolute date range, the *Refresh* button toggles to an *Update* button to use for applying your date range.
+. Set a date and time range to capture in the log *Results* table using the clickable image:logs-calandar-icon-hf.png["",20,20] (Calendar), *Show dates*, or a date range that appears in the UI after you click *Show dates*. If you select a relative or absolute date range, the *Refresh* button toggles to an *Update* button to use for applying your date range.
 . *Refresh* is for manually refreshing the logs in the *Results* table.
 +
 To set an autorefresh rate in seconds, minutes, or hours, open image:logs-calandar-icon-hf.png["",20,20] (Calendar) to configure the *Refresh every* setting. 
