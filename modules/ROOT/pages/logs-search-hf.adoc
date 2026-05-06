@@ -60,7 +60,7 @@ For more information, see xref:log-search-query-syntax.adoc#special-characters[S
 ** Use logical operators, such as `appId=myap* AND `"forbidden (403)"`.
 +
 For a list of supported operators, see xref:log-search-query-syntax.adoc#boolean-operators[Boolean Operators].
-* Use filters as needed to narrow or expand the scope of log results.
+* Add filters as needed to change the scope of log results.
 +
 For guidance, see <<search-filters>>.
 . Review search results in the *Results* table:
