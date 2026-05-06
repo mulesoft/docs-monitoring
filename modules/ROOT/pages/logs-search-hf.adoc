@@ -194,7 +194,7 @@ image::logs-top5-hf.png["Top 5 Application Fields Example", width=50%]
 . Click image:logs-top5-icon-hf.png["",20,20] (Top 5) to open the list of top-5 values for the field.
 . Click *+* (Add) to create a search filter for this value.
 +
-You can also negate the top-5 value filter by clicking (*-*). For example, you might use these features to create a filter on a log-level value (*log-level: ERROR*) or negate the value (*NOT log-level: ERROR*).
+You can also negate the top-5 value filter by clicking the *-*. For example, you might use these features to create a filter on a log-level value (*log-level: ERROR*) or negate the value (*NOT log-level: ERROR*).
 . Optionally, save the search filter for future reuse.
 +
 For guidance, see <<save-search>>.
