@@ -122,7 +122,7 @@ See <<field-names>> for log fields and identifiers.
 
 . Optionally: 
 
-* Create a custom label for the filter using *Create custom label?* when creating or editing a filter.
+* Create a custom label for the filter using *Create custom label?* when creating or editing a search filter.
 +
 A short label is useful for long filter names. 
 * Save your filter so that you can reuse it.
