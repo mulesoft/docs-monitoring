@@ -31,7 +31,12 @@ To set an autorefresh rate in seconds, minutes, or hours, open image:logs-caland
 . Use the *Results* table to review the results of your log search. You can also use *Download as CSV* to download up to 10,000 rows of log data.
 . Filter by the value in a cell of the *Results* table by hovering over the cell and clicking to add (*+*) or remove (*-*) the filter.
 
-NOTE: For on-premises servers with customized logging, see important information in <<caution-custom-logs>>.
+[NOTE] 
+====
+
+* For agentic log searches, see <<search-agentic>>.
+* For on-premises servers with customized logging, see important information in <<caution-custom-logs>>.
+====
 
 [[search-logs]]
 == Search for Logs
