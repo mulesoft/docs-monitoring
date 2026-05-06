@@ -24,7 +24,7 @@ image::logs-search-hf.png["Log Search UI"]
 . *Refresh* is for manually refreshing the logs in the *Results* table.
 +
 To set an auto-refresh rate in seconds, minutes, or hours, use image:logs-calandar-icon-hf.png["",20,20] (Calendar), and configure the *Refresh every* setting. 
-. Create and use <<search-filters, search filters>>. Filters <<save-search, persist only if you save them>>. 
+. Create and use <<search-filters, search filters>>, such as `appId: app`. Filters <<save-search, persist only if you save them>>. 
 . Review log counts by the selected date range. Timestamp units vary depending on the date or time range you select. The longer the range, the longer the timestamp period on the horizontal axis, which can display averages over 30 second, 12 hour, or weekly intervals, for example.
 . Use the *Results* table to review the results of your log search. You can also use *Download as CSV* to download up to 10,000 rows of log data.
 . Filter by the value in a cell of the *Results* table by hovering over the cell and clicking to add (*+*) or remove (*-*) the filter.
