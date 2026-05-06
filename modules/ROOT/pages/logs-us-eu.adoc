@@ -1,6 +1,10 @@
 = Using Logs in Anypoint Monitoring (US and EU)
 :page-info-pills: anypoint-pricing-titanium
 
+//EXPERIENCE ROLLOUT BANNER FOR THIS PAGE TO REMOVE ONCE ROLLOUT IS COMPLETE
+[.notice-banner]
+From May through June 2026, Anypoint Monitoring introduces a xref:log-search-hf.adoc[Log Search experience on the Hyperforce infrastructure] on a rolling basis in the US and EU Cloud instances of Anypoint Platform. This experience will replace the xref:logs-us-eu.adoc[earlier log search experience] over time. When your Log Search experience changes, you can use the Hyperforce version of the docs.
+
 //feature tier:
 On https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. You can use aggregated logs in conjunction with monitoring to help identify issues and investigate failures quickly. These features support:
 
