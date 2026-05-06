@@ -383,7 +383,7 @@ Filter options are available globally and to individual filters.
 image:filter-icons-hf.png["Filter Icons", width=25%]
 
 [calloutlist]
-. Click to open global filter options:
+. Click the filter icon to open global filter options:
 
 * *Enable all* to enable all your filters
 * *Disable all* to disable 
@@ -392,7 +392,7 @@ image:filter-icons-hf.png["Filter Icons", width=25%]
 // * *Pin all*
 // * *Unpin all*
 
-. Click to open individual filter options:
+. Click the filter label to open individual filter options:
 
 * *Edit filter* to change the filter configuration
 * *Include results* to include the filter's results in the *Results* table
