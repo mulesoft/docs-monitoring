@@ -219,18 +219,6 @@ To select the date-time range, use any of these options:
 +
 You can opt to round to the day.
 
-[[refresh-logss]]
-== Refresh Log Data (Manually and Automatically)
-
-You can refresh log data manually and on a regular basis:
-
-* To refresh manually, click *Refresh*.
-* To auto-refresh on a regular basis:
-
-. Click image:logs-calandar-icon-hf.png["",20,20] (Calendar).
-. Under *Refresh every*, provide a number and time unit (seconds, minutes, or hours), such as *5 minutes*.
-. Click *Start* to initiate the autorefresh process.
-
 [[save-search]]
 == Save and Apply Saved Log Search Queries
 
@@ -291,6 +279,18 @@ Hover over the column heading, such as *Log level*, to reveal column options:
 * To move a column, use the arrow to move the column to the left or right.
 * To remove a column, click the *x*.
 * To sort the data in the column in ascending or descending order, click its up-down arrow to toggle the sorting order.
+
+[[refresh-logs]]
+== Refresh Log Data (Manually and Automatically)
+
+You can refresh log data manually and on a regular basis:
+
+* To refresh manually, click *Refresh*.
+* To auto-refresh on a regular basis:
+
+. Click image:logs-calandar-icon-hf.png["",20,20] (Calendar).
+. Under *Refresh every*, provide a number and time unit (seconds, minutes, or hours), such as *5 minutes*.
+. Click *Start* to initiate the autorefresh process.
 
 == Download Log Results as a CSV File
 
