@@ -8,7 +8,7 @@ Get logs on your Mule apps from Anypoint Monitoring. On https://anypoint.mulesof
 
 * Comparative analysis and pattern identification across Mule apps
 * Focused log searches to isolate key data
-* Shared log searches and CSV downloads
+* Sharing log searches and CSV downloads
 
 [[log-search-overview]]
 //don't change order of numbers in graphic or calloutlist
@@ -63,7 +63,7 @@ For a list of supported operators, see xref:log-search-query-syntax.adoc#boolean
 For guidance, see <<search-filters>>.
 . Review search results in the *Results* table:
 
-image:logs-message-expanded.png["Expanded Log Message"]
+image:logs-message-expanded-hf.png["Expanded Log Message"]
 
 [calloutlist]
 . To expand log entry and view log fields, click *&gt;* in the *Time* field for a log entry. 
@@ -231,9 +231,9 @@ You can refresh log data manually and on a regular basis:
 
 Download log search results for up to 10,000 log records into a CSV file. 
 
-. Add fields that you want in your report to the log *Results* table.
+. Add columns for log fields that you want in your report to the log *Results* table.
 +
-For guidance, see TODO_TODO.
+For guidance, see <<adjust-columns>>.
 . Run your search query.
 +
 For guidance, see TODO_TODO.
@@ -289,6 +289,7 @@ You can share the URL to your logs.
 . Click *Copy*.
 ////
 
+[[adjust-columns]]
 == Move and Remove Columns in the Results
 
 After adding optional columns to the log *Results* table, such as *Application* and *Log level*, you can move and remove them. The *Time* and *Message* columns are not removable. However, you can move *Message* after adding optional columns.
