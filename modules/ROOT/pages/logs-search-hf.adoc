@@ -69,9 +69,9 @@ image:logs-message-expanded.png["Expanded Log Message"]
 . To expand log entry and view log fields, click *&gt;* in the *Time* field for a log entry. 
 +
 The arrow head points down (*&#8964;*) after you click it.
-. The expanded log includes *Table* and *JSON* views. 
+. The expanded log (*Expanded document*) includes *Table* and *JSON* views. 
 . For long, truncated log messages, use *Table* view to get full message by clicking the *&gt;* in table's *Message* field. 
-. You can also use *View surrounding logs* to get more context by displaying a configurable number of logs that preceded and followed the log, and you can use *View log* to open the log entry in a dedicated page.
+. Get more context on the log by clicking *View surrounding logs* and specifying a number of logs that precede and follow your log, or use *View log* to open the log entry in a dedicated page.
 
 For more detail, see xref:log-search-query-syntax.adoc[].
 
