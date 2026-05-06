@@ -61,7 +61,13 @@ For a list of supported operators, see xref:log-search-query-syntax.adoc#boolean
 * Use filters as needed to narrow or expand the scope of log results.
 +
 For guidance, see <<search-filters>>.
-. Review results.
+. Review search results in the *Results* table:
++
+* To view the full log message with all its fields, click *&gt;* in the *Time* field for a log entry. This action opens a *Table* and *JSON* view. 
+** For long, truncated log messages, you can use *Table* view to get full message by clicking the *&gt;* in table's *Message* field.
+** You can also use *View surrounding logs* to get context for the log entry, and you can use *View log* to TODO_TODO:TODO.
++
+For more information, see TODO_TODO:TODO.
 
 For more detail, see xref:log-search-query-syntax.adoc[].
 
@@ -83,7 +89,7 @@ For filters that have
 . Select a log field name, or use the field's identifier (such as `appId`) for Query DSL filters.  
 +
 See <<field-names>> for log fields and identifiers.
-. Select an operator:
+. Select an operator, and provide any required operands:
 * `is`: Contains the value you provide
 ** Example: `Application is my-app`
 ** Filter label: `appId: my-app`
@@ -278,6 +284,7 @@ You can share the URL to your logs.
 . Select *Share* to load the URL of your log page to a *Share Log Search Link* field.
 . Click *Copy*.
 ////
+
 
 [[data-retention-management]]
 == Data Retention and Management for Logs
