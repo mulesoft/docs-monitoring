@@ -3,7 +3,7 @@
 
 //EXPERIENCE ROLLOUT BANNER FOR THIS PAGE TO REMOVE ONCE ROLLOUT IS COMPLETE
 [.notice-banner]
-From May through June 2026, Anypoint Monitoring is rolling out an enhanced Log Search experience on the Hyperforce infrastructure in the US and EU instances of Anypoint Platform. Over time, this experience will replace the xref:monitoring::logs-us-eu.adoc[earlier Log Search experience]. When your Log Search experience changes, you can use this Hyperforce version of the Log Search documentation.
+From May through June 2026, Anypoint Monitoring is rolling out an enhanced Log Search experience on the Hyperforce infrastructure in the US and EU instances of Anypoint Platform. Over time, this experience will replace the xref:monitoring::logs-us-eu.adoc[traditional Log Search experience]. When your Log Search experience changes, you can use this Hyperforce version of the Log Search documentation.
 
 //feature tier:
 Get logs on your Mule apps from Anypoint Monitoring. On https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. These features support:
@@ -137,9 +137,7 @@ For guidance, see <<save-search>>.
 [[filter-query-dsl]]
 ==== Create a Filter with Query DSL
 
-//TODO: NEED QUERY DSL VERSION TO LINK TO (latest is 3.6 or earlier?)
-
-You can use OpenSearch Query Domain-Specific Language (Query DSL) to create a filter. To learn the basics of Query DSL, see https://docs.opensearch.org/latest/query-dsl/[Query DSL] in the OpenSearch documentation. 
+You can use OpenSearch Query Domain-Specific Language (Query DSL) to create a filter. To learn the basics of Query DSL, see https://docs.opensearch.org/3.3/query-dsl/[Query DSL v3.3] in the OpenSearch documentation. 
 
 . Click *Add a filter*.
 . Click *Edit Query DSL*. +
