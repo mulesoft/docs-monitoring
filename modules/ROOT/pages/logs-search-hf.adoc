@@ -102,7 +102,7 @@ See <<field-names>> for log fields and identifiers.
 ** Example: `Application is not my-app`
 ** Filter label: `NOT appId: my-app`
 
-* `is one of`: Contains a match a value in the list of values that you provide
+* `is one of`: Matches at least one value in the list of values that you provide
 ** Example: `Application is one of my-app another-app yet-another-app`
 ** Filter label: `appId: is one of my-app another-app yet-another-app`
 
@@ -236,7 +236,7 @@ Download log search results for up to 10,000 log records into a CSV file.
 For guidance, see <<adjust-columns>>.
 . Run your search query.
 +
-For guidance, see TODO_TODO.
+For guidance, see <<search-logs>>.
 . Click *Download as CSV*.
 
 [[save-search]]
@@ -248,7 +248,7 @@ Save search queries as reusable filters. After using a saved search query, you c
 
 . Run a search query that you intend to save. 
 +
-For guidance, see TODO_TODO
+For guidance, see <<search-logs>>.
 . Click image:logs-save-icon-hf.png["",20,20] (Save).
 . Click *Save as new*. 
 . Provide a name for your search, and click *Save*
@@ -328,9 +328,8 @@ Don't override the default JVM timezone for applications deployed to CloudHub an
 
 Get descriptions of fields and filter options:
 
-* <<field-names>>
-* <<filter-global-options>>
-* <<filter-individual-options>>
+* <<field-names>>: Log field names and identifiers
+* <<filter-options>>: Options for enabling, disabling, inverting, including, excluding, editing, and deleting filters
 
 [[field-names]]
 === Log Field Names
@@ -348,31 +347,29 @@ Log field names in the UI have field identifiers that appear in filters labels a
 * *Worker* (`workerId`): Identifier for the associated worker
 
 
-[[filter-global-options]]
-=== Global Filter Options
+[[filter-options]]
+=== Filter Options
 
-TODO:TODO_TODO
+Filter options are available globally and to individual filters. 
 
-Global filter options:
+image:filter-icons-hf.png["Filter Icons"]
+
+[calloutlist]
+. Click to open global filter options
 
 * *Enable all* to enable all your filters
 * *Disable all* to disable 
-// * *Pin all*
-// * *Unpin all*
 * *Invert inclusion*
 * *Invert enabled/disabled*
+// * *Pin all*
+// * *Unpin all*
 
-[[filter-individual-options]]
-=== Individual Filter Options
+. Click to open individual filter options
 
-TODO:TODO_TODO
-
-For individual filters, you can:
-
-//* *Pin across all apps* 
-//* *Unpin across all apps*
 * *Edit filter* to change the filter configuration
 * *Include results* to include the filter's results in the *Results* table
 * *Exclude results* to apply the *NOT* operator to the filter, which excludes its results from the *Results* table 
 * *Temporarily disable* to retain the filter without using it to return search results; toggles with *Re-enable*
 * *Delete* to permanently delete the filter
+//* *Pin across all apps* 
+//* *Unpin across all apps*
