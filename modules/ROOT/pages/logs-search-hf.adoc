@@ -142,7 +142,7 @@ For guidance, see <<save-search>>.
 [[filter-query-dsl]]
 ==== Create a Filter with Query DSL
 
-You can use OpenSearch Query Domain-Specific Language (Query DSL) to create a filter. To learn the basics of Query DSL, see https://docs.opensearch.org/3.3/query-dsl/[Query DSL] in the v3.3 OpenSearch documentation. 
+You can use OpenSearch Query Domain-Specific Language (Query DSL) to create a filter. To learn the basics, see https://docs.opensearch.org/3.3/query-dsl/[Query DSL] in the v3.3 OpenSearch documentation. 
 
 . Click *Add a filter*.
 . Click *Edit Query DSL*. +
