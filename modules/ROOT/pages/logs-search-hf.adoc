@@ -300,16 +300,7 @@ Hover over the column heading, such as *Log level*, to reveal column options:
 
 * To move a column, use the arrow to move the column to the left or right.
 * To remove a column, click the *x*.
-* To sort the data in the column in ascending or descending order, click its up-down arrow to toggle the sorting order. 
-
-[[data-retention-management]]
-== Data Retention and Management for Logs
-
-//VERIFY STILL TRUE
-Log storage limits for your subscription tier determine your retention, and isn't based on a set amount of time. For details, see xref:performance-and-impact.adoc#data-retention-limits[Data Retention Limits].
-
-//VERIFY STILL TRUE
-For other limitations on logs, see xref:performance-and-impact.adoc#logging-data-management[Logging Data Management].
+* To sort the data in the column in ascending or descending order, click its up-down arrow to toggle the sorting order.
 
 == Format Customized Logs in On-Prem Servers for Proper Indexing
 
@@ -323,6 +314,15 @@ Logs produced by apps with customized logging (by changing the pattern layout in
 For applications deployed to CloudHub and Anypoint Runtime Fabric with customized time zones:
 
 Don't override the default JVM timezone for applications deployed to CloudHub and Anypoint Runtime Fabric with customized time zones. The timezone must be UTC. Changing the timezone to a local timezone causes logs to be indexed in Anypoint Monitoring with incorrect timestamps.
+
+[[data-retention-management]]
+== Data Retention and Management for Logs
+
+//VERIFY STILL TRUE
+Log storage limits for your subscription tier determine your retention, and isn't based on a set amount of time. For details, see xref:performance-and-impact.adoc#data-retention-limits[Data Retention Limits].
+
+//VERIFY STILL TRUE
+For other limitations on logs, see xref:performance-and-impact.adoc#logging-data-management[Logging Data Management].
 
 == Reference
 
