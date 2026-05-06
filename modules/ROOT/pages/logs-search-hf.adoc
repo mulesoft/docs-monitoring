@@ -31,6 +31,8 @@ To set an autorefresh rate in seconds, minutes, or hours, open image:logs-caland
 . Use the *Results* table to review the results of your log search. You can also use *Download as CSV* to download up to 10,000 rows of log data.
 . Filter by the value in a cell of the *Results* table by hovering over the cell and clicking to add (*+*) or remove (*-*) the filter.
 
+NOTE: For on-premises servers with customized logging, see important information in <<caution-custom-logs>>.
+
 [[search-logs]]
 == Search for Logs
 
@@ -191,11 +193,11 @@ image::logs-top5-hf.png["Top 5 Application Fields Example", width=50%]
 . Hover over a field, such as *Application*, from the list of log field names.
 . Click image:logs-top5-icon-hf.png["",20,20] (Top 5) to open the list of top-5 values for the field.
 . Click *+* (Add) to create a search filter for this value.
++
+You can also negate the top-5 value filter by clicking (*-*). For example, you might use these features to create a filter on a log-level value (*log-level: ERROR*) or negate the value (*NOT log-level: ERROR*).
 . Optionally, save the search filter for future reuse.
 +
 For guidance, see <<save-search>>.
-
-From a value in the top-5 list, you can also create a filter that includes (*+*) or excludes (*-*) a top-5 value, such as including your app (*appID: myapp*) or excluding your app (*NOT appID: myapp*).
 
 [[time-range]]
 === Select a Log Date and Time Range
@@ -328,8 +330,6 @@ If your organization opts to enable a broker's reasoning logs, set the broker's 
 
 [[caution-custom-logs]]
 == Format Customized Logs in On-Prem Servers for Proper Indexing
-
-//TODO:TODO_TODO VERIFY
 
 Logs produced by apps with customized logging (by changing the pattern layout in the `log4j2.xml` file) might not get indexed correctly into Anypoint Monitoring. To ensure correct indexing, use the Mule default pattern layout, which is one of the following:
 
