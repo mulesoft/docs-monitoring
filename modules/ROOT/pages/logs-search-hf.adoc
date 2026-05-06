@@ -319,7 +319,7 @@ Get descriptions of fields and filter options:
 * <<filter-individual-options>>
 
 [[field-names]]
-== Log Field Names
+=== Log Field Names
 
 Log field names in the UI have field identifiers that appear in filter names and saved search labels. Query DSL configurations requires field identifiers.
 
