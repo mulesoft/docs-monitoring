@@ -50,12 +50,14 @@ For date-time range , see <<time-range>>.
 
 * Provide a query in the Search bar:
 
-** Use words or quotes around multiple words or strings with special characters, such as `"HTTP GET"`, `"ab12c345-abc6-789d-e1fa-b124c5de6789"`, or `"https://api.mycompany.com:443"`.
+** Use words or quotes around multiple words and strings containing special characters, such as `"HTTP GET"`, `"ab12c345-abc6-789d-e1fa-b124c5de6789"`, or `"https://api.mycompany.com:443"`.
 +
-Without quotes, multi-word searches are treated as the query `HTTP OR GET`, where `OR` is a logical operator, and special characters can affect the search. For partial word searches, you can use pattern matching characters in your search, such as `myap*`, or `appId: mya?p`.
+Without quotes, multi-word searches return matches to each word, and special characters can affect the search. For partial word searches, you can use pattern matching characters in your search, such as `myap*`, or `appId: mya?p`.
+** Escape special characters with the `\` character. 
++
+For more information, see xref:log-search-query-syntax.adoc#special-characters[Special Characters]. 
 ** Use a <<field-names, field identifier>> to search within a specific log field, such as `appId: myapp` for an application named `myapp`.
 ** Use logical operators, such as `appId=myap* AND `"forbidden (403)"`.
-** Escape special characters that aren't surrounded by 
 +
 For a list of supported operators, see xref:log-search-query-syntax.adoc#boolean-operators[Boolean Operators].
 * Use filters as needed to narrow or expand the scope of log results.
@@ -70,7 +72,7 @@ image:logs-message-expanded-hf.png["Expanded Log Message"]
 +
 The arrow head points down (*&#8964;*) after you click it.
 . The expanded log (*Expanded document*) includes *Table* and *JSON* views. 
-. For long, truncated log messages, use *Table* view to get full message by clicking the *&gt;* in table's *Message* field. 
+. For long, truncated log messages, open the full message by clicking the *&gt;* in  the *Table* view's *Message* field. 
 . Get more context on the log by clicking *View surrounding logs* and specifying a number of logs that precede and follow your log, or use *View log* to open the log entry in a dedicated page.
 
 For more detail, see xref:log-search-query-syntax.adoc[].
