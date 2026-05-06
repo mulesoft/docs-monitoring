@@ -15,15 +15,15 @@ Get logs on your Mule apps from Anypoint Monitoring. On https://anypoint.mulesof
 image::logs-search-hf.png["Log Search UI"]
 
 [calloutlist]
-. Search for log fields to display or remove from the log *Results* table. Hover over a field name to add or remove the column, and to display top-5 values from the field.
+. Search for log field columns to display or remove from the log *Results* table. Hover over a field name to add or remove the column, and to display top-5 values from the field.
 
-* *Selected fields*: Lists columns added to the log *Results* table. 
-* *Available fields*: Lists columns you can add to the log *Results* table. 
-. Search for specific words in log fields, including log *Message* fields. Use image:logs-save-icon-hf.png["",20,20] (Save) to save named searches for future use, and to select, update, or delete saved searches. When searching, try a whole-word search if a partial word search does not return a result.
-. Set the time range for logs in the *Results* table using the clickable image:logs-calandar-icon-hf.png["",20,20] (Calendar) or date range. If you select a relative or absolute date range, the *Refresh* button toggles to an *Update* button to use for applying your date range.
+* *Selected fields*: Lists columns added to the log *Results* table
+* *Available fields*: Lists columns you can add to the log *Results* table
+. Provide search queries for logs and log fields, including log *Message* fields. Use image:logs-save-icon-hf.png["",20,20] (Save) to save named searches for future use, and to select, update, or delete saved searches.
+. Set a date and time range to capture in the log *Results* table using the clickable image:logs-calandar-icon-hf.png["",20,20] (Calendar) or date range. If you select a relative or absolute date range, the *Refresh* button toggles to an *Update* button to use for applying your date range.
 . *Refresh* is for manually refreshing the logs in the *Results* table.
 +
-To set an auto-refresh rate in seconds, minutes, or hours, use image:logs-calandar-icon-hf.png["",20,20] (Calendar), and configure the *Refresh every* setting. 
+To set an autorefresh rate in seconds, minutes, or hours, open image:logs-calandar-icon-hf.png["",20,20] (Calendar) to configure the *Refresh every* setting. 
 . Create and use <<search-filters, search filters>>, such as `appId: app`. Filters <<save-search, persist only if you save them>>. 
 . Review log counts by the selected date range. Timestamp units vary depending on the date or time range you select. The longer the range, the longer the timestamp period on the horizontal axis, which can display averages over 30 second, 12 hour, or weekly intervals, for example.
 . Use the *Results* table to review the results of your log search. You can also use *Download as CSV* to download up to 10,000 rows of log data.
