@@ -216,7 +216,7 @@ To select the date-time range, use any of these options:
 You can opt to round to the day.
 
 [[refresh-logss]]
-== Refresh Log Data
+== Refresh Log Data (Manually and Automatically)
 
 You can refresh log data manually and on a regular basis:
 
