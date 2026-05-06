@@ -1,4 +1,4 @@
-= Searching for Logs
+= Searching for Logs in Anypoint Monitoring
 //EXPERIENCE ROLLOUT BANNER FOR THIS PAGE TO REMOVE ONCE ROLLOUT IS COMPLETE
 :page-notice-banner-message: From May through June 2026, Anypoint Monitoring introduces and enhanced Log Search experience that's available on a rolling basis. This experience replaces previous log search experiences in all supported Anypoint Platform cloud regions (including US, EU, Japan, and Canada).
 :page-info-pills: anypoint-pricing-titanium
