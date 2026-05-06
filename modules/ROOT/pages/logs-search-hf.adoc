@@ -52,7 +52,7 @@ For date-time range , see <<time-range>>.
 
 ** Use words or quotes around multiple words and strings containing special characters, such as `"HTTP GET"`, `"ab12c345-abc6-789d-e1fa-b124c5de6789"`, or `"https://api.mycompany.com:443"`.
 +
-Without quotes, multi-word searches return matches to each word, and special characters can affect the search. For partial word searches, you can use pattern matching characters in your search, such as `myap*`, or `appId: mya?p`.
+Without quotes, multi-word searches return matches to each word, and unescaped special characters can affect the search negatively. For partial word searches, you can use pattern matching characters in your search, such as `mya*`, or `appId: mya?p`.
 ** Escape special characters with the `\` character. 
 +
 For more information, see xref:log-search-query-syntax.adoc#special-characters[Special Characters]. 
@@ -68,7 +68,7 @@ For guidance, see <<search-filters>>.
 image:logs-message-expanded-hf.png["Expanded Log Message"]
 
 [calloutlist]
-. To expand log entry and view log fields, click *&gt;* in the *Time* field for a log entry. 
+. To expand a log entry and view log fields, click *&gt;* in the *Time* field for a log entry. 
 +
 The arrow head points down (*&#8964;*) after you click it.
 . The expanded log (*Expanded document*) includes *Table* and *JSON* views. 
