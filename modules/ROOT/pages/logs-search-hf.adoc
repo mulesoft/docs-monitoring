@@ -194,7 +194,7 @@ For guidance, see <<save-search>>.
 From a value in the top-5 list, you can also create a filter that includes (*+*) or excludes (*-*) a top-5 value, such as including your app (*appID: myapp*) or excluding your app (*NOT appID: myapp*).
 
 [[time-range]]
-== Select a Log Date and Time Range
+=== Select a Log Date and Time Range
 
 By default Logs Search retrieves the last 15 minutes of logs. You can use and absolute or relative the date-time range:
 
