@@ -66,7 +66,7 @@ Without quotes, multiword searches return matches to each word, and unescaped sp
 +
 For more information, see xref:log-search-query-syntax.adoc#special-characters[Special Characters]. 
 ** Use a <<field-names, field identifier>> to search within a specific log field, such as `appId: myapp` for an application named `myapp`.
-** Use logical operators, such as `appId=myap* AND "forbidden (403)"`.
+** Use logical operators, such as the `AND` in `appId: myap* AND "forbidden (403)"`.
 +
 For a list of supported operators, see xref:log-search-query-syntax.adoc#boolean-operators[Boolean Operators].
 * Add filters as needed to change the scope of log results.
