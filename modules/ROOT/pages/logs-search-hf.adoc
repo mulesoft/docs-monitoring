@@ -288,7 +288,7 @@ Hover over the column heading, such as *Log level*, to reveal column options:
 [[refresh-logs]]
 == Refresh Log Data (Manually and Automatically)
 
-You can refresh log data manually and on a regular basis:
+You can refresh log data manually and autorefresh on a regular basis:
 
 * To refresh manually, click *Refresh*.
 * To autorefresh on a regular basis:
