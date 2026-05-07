@@ -229,14 +229,18 @@ Optionally, round to the day.
 
 Save search queries as reusable filters. After using a saved search query, you can clear the query filter so it doesn't affect search results. You can also permanently delete a saved search.
 
-* To save a search:
+* To save a new search:
 
 . Run a search query you intend to save. 
 +
 For guidance, see <<search-logs>>.
 . Click image:logs-save-icon-hf.png["",20,20] (Save).
-. Click *Save as new*. 
+. Click *Save as new* or *Save current search*.
++
+*Save as new* appears if another filter or search query is applied to the current log search. 
 . Provide a name for your search, and click *Save*.
++
+Wait a moment for the save process to complete.
 
 * To use a saved search:
 
@@ -253,6 +257,16 @@ The search appears as a search filter.
 image:logs-delete-filter-hf.png["Delete a Filter", width=25%]
 +
 The saved filter remains available in your list of saved searches. Unsaved search filters don't persist when you click *X*.
+
+* To edit a saved search:
+
+. Click a saved search to display the results.
+. Modify your current search query or filters.
+. Click image:logs-save-icon-hf.png["",20,20] (Save).
+. Click *Save changes* to modify your saved search. 
+. Click *Save*.
++
+Wait a moment for the save process to complete.
 
 * To delete a saved search:
 
