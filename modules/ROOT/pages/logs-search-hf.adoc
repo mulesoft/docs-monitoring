@@ -397,7 +397,7 @@ image:filter-icons-hf.png["Filter Icons", width=25%]
 * *Edit filter* to change the filter configuration
 * *Include results* to include the filter's results in the *Results* table
 * *Exclude results* to apply the *NOT* operator to the filter, which excludes its results from the *Results* table 
-* *Temporarily disable* to retain the filter without using it to return search results; toggles to *Re-enable*
+* *Temporarily disable* to retain the filter without using it to return search results; switches to *Re-enable* when you click *Temporarily disable*
 * *Delete* to permanently delete the filter
 //* *Pin across all apps* 
 //* *Unpin across all apps*
