@@ -386,9 +386,9 @@ image:filter-icons-hf.png["Filter Icons", width=25%]
 . Click the filter icon to open global filter options:
 
 * *Enable all* to enable all your filters
-* *Disable all* to disable 
-* *Invert inclusion*
-* *Invert enabled/disabled*
+* *Disable all* to disable all your filters without deleting the filters
+* *Invert inclusion* to convert filters that use `NOT` to exclude matching results into filters that include matching results, and to include filters that include matching results into filters that use `NOT` exclude matching results
+* *Invert enabled/disabled* to disable all enabled filters and enable all disabled filters
 // * *Pin all*
 // * *Unpin all*
 
