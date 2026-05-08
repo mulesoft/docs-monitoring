@@ -1,4 +1,4 @@
-= Using Enhanced Logs in Anypoint Monitoring (US and EU)
+= Using Enhanced Log Search in Anypoint Monitoring (US and EU)
 :page-info-pills: anypoint-pricing-titanium
 
 //EXPERIENCE ROLLOUT BANNER FOR THIS PAGE TO REMOVE ONCE ROLLOUT IS COMPLETE
