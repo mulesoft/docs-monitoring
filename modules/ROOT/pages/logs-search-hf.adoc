@@ -226,6 +226,8 @@ To select the date-time range, use any of these options:
 +
 Optionally, round to the day.
 
+For information about log data retention, see <<data-retention-management>>.
+
 [[save-search]]
 == Save and Apply Saved Log Search Queries
 
