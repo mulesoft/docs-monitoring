@@ -3,7 +3,7 @@
 
 //EXPERIENCE ROLLOUT BANNER FOR THIS PAGE TO REMOVE ONCE ROLLOUT IS COMPLETE
 [.notice-banner]
-From May through June 2026, Anypoint Monitoring is rolling out an enhanced Log Search experience on the Hyperforce infrastructure in the US and EU instances of Anypoint Platform. Over time, this experience will replace the xref:monitoring::logs-us-eu.adoc[traditional Log Search experience]. When your Log Search experience changes, you can use this Hyperforce version of the Log Search documentation.
+From May through June 2026, Anypoint Monitoring is rolling out an enhanced Log Search experience in US and EU instances of Anypoint Platform. This version replaces the xref:monitoring::logs-us-eu.adoc[traditional Log Search]. 
 
 //feature tier:
 Get logs on your Mule apps from Anypoint Monitoring. On https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. These features support:
@@ -25,7 +25,8 @@ image::logs-search-hf.png["Log Search UI"]
 . Set a date and time range to capture in the log *Results* table using the clickable image:logs-calandar-icon-hf.png["",20,20] (Calendar), *Show dates*, or a date range that appears in the UI after you click *Show dates*. If you select a relative or absolute date range, the *Refresh* button switches to an *Update* button to use for applying your date range.
 . *Refresh* is for manually refreshing the logs in the *Results* table.
 +
-To set an autorefresh rate in seconds, minutes, or hours, open image:logs-calandar-icon-hf.png["",20,20] (Calendar) to configure the *Refresh every* setting. 
+To set an autorefresh rate in seconds, minutes, or hours, open image:logs-calandar-icon-hf.png["",20,20] (Calendar) to configure the *Refresh every* setting.
+. *Share* provides a link to your current search query.  
 . Create and use <<search-filters, search filters>>, such as `appId: app`. Filters <<save-search, persist for reuse only if you save them>>. 
 . Review log counts by the selected date range. Timestamp units on the horizontal axis vary depending on the date or time range you select. The longer the range, the longer the timestamp period, which can display averages over 30-second, 12-hour, or weekly intervals, for example.
 . Use the *Results* table to review the logs captured by your search. You can also use *Download as CSV* to download up to 10,000 rows of log data.
