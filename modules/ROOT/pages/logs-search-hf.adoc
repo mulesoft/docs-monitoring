@@ -405,8 +405,8 @@ image:filter-icons-hf.png["Filter Icons", width=25%]
 
 * *Enable all* to enable all your filters
 * *Disable all* to disable all your filters without deleting the filters
-* *Invert inclusion* to convert filters that use `NOT` to exclude matching results into filters that include matching results, and to include filters that include matching results into filters that use `NOT` exclude matching results
-* *Invert enabled/disabled* to disable all enabled filters and enable all disabled filters
+* *Invert inclusion* to convert filters that include matching results (such as `log-level: ERROR`) into filters that uses `NOT` to exclude matching result (such as `NOT log-level: ERROR`) and to convert filters that use `NOT` to exclude matching results into filters that include matching results
+* *Invert enabled/disabled* to disable all enabled filters or to enable all disabled filters
 // * *Pin all*
 // * *Unpin all*
 
