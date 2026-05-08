@@ -89,11 +89,13 @@ For more detail, see xref:log-search-query-syntax.adoc[].
 [[search-filters]]
 === Use Search Filters
 
-Create, edit, and apply log search filters. When defining a filter, you can use selectable fields and operators, or you can use the JSON-based OpenSearch Query Domain-Specific Language (Query DSL) for more complex filters. To save a filter for future use, see <<save-search>>.
+Create, edit, and apply log search filters. When defining a filter, you can use selectable fields and operators, or you can use the JSON-based OpenSearch Query Domain-Specific Language (Query DSL) for more complex filters. 
 
 * <<filter-simple>>
 * <<filter-query-dsl>>
 * <<filter-top5>>
+
+To save a filter for future use, see <<save-search>>.
 
 [[filter-simple]]
 ==== Create a Basic Filter
