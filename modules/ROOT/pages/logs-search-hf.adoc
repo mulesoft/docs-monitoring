@@ -166,7 +166,7 @@ This example shows a query for `log-level` INFO:
 }
 ----
 +
-This example shows a complex query that retrieves worker ID values greater than 0 and less than 20.
+This example shows a complex query that retrieves worker ID values from 0 to 20.
 [source,text,linenums]
 ----
 {
