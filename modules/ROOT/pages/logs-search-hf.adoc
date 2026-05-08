@@ -295,7 +295,7 @@ You can share the URL to your logs.
 [[adjust-columns]]
 == Move and Remove Columns in the Results
 
-After adding optional columns to the log *Results* table, such as *Application* and *Log level*, you can move and remove them. The *Time* and *Message* columns are not removable. However, you can move *Message* after adding optional columns.
+After adding optional columns to the log *Results* table, such as *Application* and *Log level*, you can move and remove them.
 
 Hover over the column heading, such as *Log level*, to reveal column options:
 
