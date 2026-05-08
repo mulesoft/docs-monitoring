@@ -1,4 +1,4 @@
-= Using Logs in Anypoint Monitoring (US and EU: Hyperforce)
+= Using Logs in Anypoint Monitoring (US and EU: Enhanced)
 :page-info-pills: anypoint-pricing-titanium
 
 //EXPERIENCE ROLLOUT BANNER FOR THIS PAGE TO REMOVE ONCE ROLLOUT IS COMPLETE
