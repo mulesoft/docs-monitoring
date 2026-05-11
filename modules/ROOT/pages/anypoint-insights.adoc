@@ -48,7 +48,7 @@ include::partial$include-entities.adoc[tags="anypoint-regions-hyperforce"]
 ** {empty}
 include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 
-* A Mule app or API (xref:gateway-home::index.adoc[Mule Gateway or Flex Gateway API]) running on a supported version of Mule runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
+* A Mule app or API (xref:gateway-home::index.adoc[Mule Gateway or Omni Gateway API]) running on a supported version of Mule runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
 
 ** CloudHub 2.0
 ** CloudHub
