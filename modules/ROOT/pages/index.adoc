@@ -101,6 +101,8 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 
 For more information about MuleSoft Government Cloud and Anypoint Platform Private Cloud Edition (Anypoint Platform PCE), see xref:hosting-home::index.adoc#control-plane-hosting-options[Control Plane Hosting Options].
 
+See also, <<classic>>.
+
 [[insights]]
 === Anypoint Insights
 
@@ -112,7 +114,7 @@ See xref:anypoint-insights.adoc[].
 [[dashboards]]
 === Built-in and Custom Dashboards
 
-Use built-in dashboards or customize your own to provide instant visibility into your apps' performance and detailed analysis of your network.
+In US and EU clouds, use built-in dashboards or customize your own to provide instant visibility into your apps' performance and detailed analysis of your network.
 
 image::intro-dashboard-built-in.png["Built-in dashboard example"]
 
@@ -403,6 +405,41 @@ Support engineer Carole searches through Anypoint Monitoring logs and notices so
 
 * Visualize regional or project-based consumption +
 Business owner Devon has apps across different runtime planes. He has aggregated dashboards of the regional or project-specific apps, and he can easily determine what is consuming the most resources and evangelize accordingly.
+
+== Classic and Enhanced Monitoring Features
+
+On EU and US Clouds, classic and enhanced monitoring feature sets are currently available. Clicking *Insights* from the classic Anypoint Monitoring mode opens to Anypoint Insights,  provides access to other enhanced monitoring features, and includes a link back to classic monitoring, *Open Classic Monitoring*. 
+
+|===
+| Classic Features | Enhanced Features
+
+| {empty}
+
+* *Built-in dashboard* 
+* *Custom dashboards* 
+* *Traces (Beta)*
+* *Telemetry Exporter*
+* *Reports*
+* *Alerts*
+* *Custom Metrics*
+* *Functional Monitoring*
+* *Log Management*
+** *Log Search*
+** *Log Points*
+** *Raw Data*
+* *Other*
+** *Tools*
+** *Settings*
+
+| {empty}
+
+* *Insights*
+* *Traces (Beta)*
+* *Log Search (New)*
+* *Quick Links*
+** *Functional Monitoring*
+** *Log Search*
+** *Log Points*
 
 
 [[see-also]]
