@@ -22,27 +22,11 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 |===
 |Anypoint Monitoring Feature 
 |https://anypoint.mulesoft.com/monitoring[US], https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds
-| https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds (on Hyperforce)
+| https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds
+| https://in1.platform.mulesoft.com/login/[India Cloud] 
 | Government Cloud | Private Cloud (3.x) 
-| India Cloud
 
-|{empty}
-
-//TODO: SPLIT UP?
-* xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
-* <<dashboards, Dashboards>> 
-* xref:tools.adoc[Notifications] 
-* xref:reports.adoc[Reports]
-* xref:tools.adoc[Tools]
-| Yes
-| No
-| Yes
-| Yes
-| TODO:TODO_TODO (No?)
-
-|{empty}
-
-<<alerts, Alerts>>
+| <<alerts, Alerts>>
 | Yes
 | Yes
 | Yes
@@ -52,8 +36,22 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 | <<insights, Anypoint Insights>>
 | Yes
 | Yes
+| Yes
 | No
 | No
+
+| <<dashboards, Classic Built-in and Custom Dashboards>>
+| Yes
+| No
+| No
+| Yes
+| Yes
+
+| xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
+| Yes
+| No
+| No
+| Yes
 | Yes
 
 | <<functional-monitoring>>
@@ -61,26 +59,37 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 | Yes
 | No
 | No
-| TODO:No?
-
+| No
 
 | <<logging, Logging features>>
 | Yes
 | Yes
 | Yes
+| Yes
 | No
+
+| xref:tools.adoc[Notifications]
+| Yes
+| No
+| No
+| Yes
 | Yes
 
-|{empty}
-  xref:telemetry-exporter.adoc[Telemetry exports]
-| Yes
+| xref:reports.adoc[Reports]
 | Yes
 | No
-| No
+| Yes
+| Yes
 | Yes
 
-|{empty}
-  xref:traces.adoc[Traces]
+| xref:telemetry-exporter.adoc[Telemetry exports]
+| Yes
+| Yes
+| Yes
+| No
+| No
+
+| xref:traces.adoc[Traces]
 | Yes
 | No
 | No
