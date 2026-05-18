@@ -407,11 +407,11 @@ Business owner Devon has apps across different runtime planes. He has aggregated
 [[classic]]
 == Classic and Enhanced Monitoring Features
 
-On EU and US Clouds, classic and enhanced monitoring feature sets are currently available. Clicking *Insights* from the classic Anypoint Monitoring mode opens to Anypoint Insights,  provides access to other enhanced monitoring features, and includes a link back to classic monitoring, *Open Classic Monitoring*. 
+On EU and US Clouds, classic and enhanced monitoring feature sets are currently available. Clicking *Insights* from the classic Anypoint Monitoring mode opens to Anypoint Insights, provides access to other enhanced monitoring features, and includes a link back to classic monitoring, *Open Classic Monitoring*. 
 
 [%header,cols="a,a"]
 |===
-| Classic Features | Enhanced Features
+| Classic Features (US and EU Clouds) | Enhanced Features (US and EU Clouds)
 
 |{empty}
 
