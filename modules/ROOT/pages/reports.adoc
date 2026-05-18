@@ -40,10 +40,6 @@ The first time you view the reports page, the *Requests* report is displayed.
 * <<cpu>>
 * <<memory>>
 
-
-[NOTE]
-*Classic Monitoring* mode on US and EU clouds support hybrid applications. You can view data only on the *Requests*, *Performance*, and *Failures* tabs. CPU and memory utilization data isn't available for hybrid applications.
-
 [[requests]]
 === Requests
 
@@ -74,6 +70,8 @@ Click the *Failures* tab to view information about app request failures, includi
 
 Click the *CPU Utilization* tab to view information about the average percentage of the CPU utilized by the JVM.
 
+NOTE: This tab isn't available to apps in xref:hybrid-standalone::index.adoc[hybrid standalone deployments].
+
 [[memory]]
 === Memory Utilization
 
@@ -82,6 +80,8 @@ Click the *Memory Utilization* tab to view information about the memory utilizat
 * *Memory Utilization*: The amount of the heap memory used by the JVM.
 * *Total Memory*: The total size of the app's heap memory.
 * *Memory Pressure*: The percentage of the heap memory used (the difference between memory used and memory total).
+
+NOTE: This tab isn't available to apps in xref:hybrid-standalone::index.adoc[hybrid standalone deployments].
 
 //TODO: VERIFY IMPLEMENTATION IN HYPERFORCE
 == Export a Report as a CSV
