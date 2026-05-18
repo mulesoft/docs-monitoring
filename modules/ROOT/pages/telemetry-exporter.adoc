@@ -46,9 +46,7 @@ Consult your organization’s security guidelines when configuring open access r
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=eitherPermission]
 
-
-You can switch between the *Configurations* and *Connections* tabs to create, edit, or view data configurations and connections to third-party observability platforms.
-
+[[manage-connection]]
 == Manage a Connection 
 
 Anypoint Platform needs permission to send data to third-party observability platforms. Create a connection with a third-party platform, such as New Relic or Splunk, to authorize data transfers. You can configure up to 10 connections.
@@ -56,6 +54,7 @@ Anypoint Platform needs permission to send data to third-party observability pla
 
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
+[[create-connections]]
 === Create a Connection
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPermission]
@@ -92,12 +91,14 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPerm
 * If the connection is not in use, the warning asks whether to delete the connection. Click *Delete Connection*.
 * If the connection is in use, the warning states that you must delete or redirect connections for any configurations that use the connection. Click *Dismiss*, and then <<edit-configuration,edit your configurations>> to use other existing connections before deleting the current connection.
 
+[[manage-configurations]]
 == Manage Configurations
 
 After you create a connection to your third-party observability platform, you must create a configuration to specify the scope of the data to send to the platform. When you create a new configuration, specify a data type, business group, environment type (traces only), and destination. You can export traces and audit logs from all of your business groups or a specific business group.
 
 include::partial$telemetry-exporter-notes.adoc[tag=hourDelay]
 
+[[create-configuration]]
 === Create a Configuration
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=configurationPermission]
