@@ -46,7 +46,9 @@ Consult your organization’s security guidelines when configuring open access r
 
 include::partial$include-nav-steps-telemetry-permissions.adoc[tag=eitherPermission]
 
-[[manage-connection]]
+To use create, view, edit, and delete connections and configurations for telemetry data exports, see <<manage-connections>> and <<manage-configurations>>.
+
+[[manage-connections]]
 == Manage a Connection 
 
 Anypoint Platform needs permission to send data to third-party observability platforms. Create a connection with a third-party platform, such as New Relic or Splunk, to authorize data transfers. You can configure up to 10 connections.
