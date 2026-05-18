@@ -101,8 +101,6 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 
 For more information about MuleSoft Government Cloud and Anypoint Platform Private Cloud Edition (Anypoint Platform PCE), see xref:hosting-home::index.adoc#control-plane-hosting-options[Control Plane Hosting Options].
 
-See also, <<classic>>.
-
 [[insights]]
 === Anypoint Insights
 
@@ -406,14 +404,16 @@ Support engineer Carole searches through Anypoint Monitoring logs and notices so
 * Visualize regional or project-based consumption +
 Business owner Devon has apps across different runtime planes. He has aggregated dashboards of the regional or project-specific apps, and he can easily determine what is consuming the most resources and evangelize accordingly.
 
+[[classic]]
 == Classic and Enhanced Monitoring Features
 
 On EU and US Clouds, classic and enhanced monitoring feature sets are currently available. Clicking *Insights* from the classic Anypoint Monitoring mode opens to Anypoint Insights,  provides access to other enhanced monitoring features, and includes a link back to classic monitoring, *Open Classic Monitoring*. 
 
+[%header,cols="1a,1a"]
 |===
 | Classic Features | Enhanced Features
 
-| {empty}
+|{empty}
 
 * *Built-in dashboard* 
 * *Custom dashboards* 
@@ -431,7 +431,7 @@ On EU and US Clouds, classic and enhanced monitoring feature sets are currently 
 ** *Tools*
 ** *Settings*
 
-| {empty}
+|{empty}
 
 * *Insights*
 * *Traces (Beta)*
@@ -440,7 +440,7 @@ On EU and US Clouds, classic and enhanced monitoring feature sets are currently 
 ** *Functional Monitoring*
 ** *Log Search*
 ** *Log Points*
-
+|===
 
 [[see-also]]
 == See Also

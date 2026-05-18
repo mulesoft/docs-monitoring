@@ -6,3 +6,4 @@ Use Anypoint Monitoring to create and receive alerts on your deployed applicatio
 ** Set up xref:basic-alerts.adoc[basic alerts]
 ** Set up xref:custom-dashboard-alerts.adoc[alerts for custom dashboards]
 * xref:alerts-jp-ca.adoc[Alerts on Japan and Canada] Anypoint Platform clouds
+* xref:alerts-hf.adoc[Alerts on India] Anypoint Platform cloud
