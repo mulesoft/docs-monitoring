@@ -42,7 +42,7 @@ The first time you view the reports page, the *Requests* report is displayed.
 
 
 [NOTE]
-For applications that run using a stand-alone runtime or hybrid environments, data is shown only for Requests, Performance, and Failures tabs. CPU and memory utilization data are not shown for hybrid applications.
+*Classic Monitoring* mode on US and EU clouds support hybrid applications. You can view data only on the *Requests*, *Performance*, and *Failures* tabs. CPU and memory utilization data isn't available for hybrid applications.
 
 [[requests]]
 === Requests
