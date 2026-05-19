@@ -35,7 +35,7 @@ Each alert name opens to more information about the alert, including the alert t
 +
 //alert detail popup
 //TODO: UPDATE IMAGE 
-image::alerts-hf-popup.png["Alert details", 40%]
+image::alerts-hf-popup.png["Alert details", 80%]
 .. Name of the selected alert
 //NEW: METRIC
 .. Name of the metric that the alert configuration uses
