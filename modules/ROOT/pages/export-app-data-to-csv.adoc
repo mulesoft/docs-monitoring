@@ -12,9 +12,6 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 * In *Mode*, select the format for the data:
  ** *Series as rows* formats the data in rows in the CSV file. 
  ** *Series as columns* formats the data as columns in the CSV file.
-* In *Date Time Format*, enter the values to specify the date format, for example: +
-`YYYY-MM-DDTHH:mm:ssZ`
-+
-. Click *Export*. 
-+
-The CSV file downloads automatically in the browser.
+* In *Date Time Format*, enter the values to specify the date format, for example: `YYYY-MM-DDTHH:mm:ssZ`
+* Determine whether to use *Excel CSV dialect* (enabled by default).
+. Click *Export*.
