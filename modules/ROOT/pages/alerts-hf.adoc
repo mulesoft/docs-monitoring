@@ -53,7 +53,7 @@ image::alerts-hf-popup.png["Alert details", 80%]
 // ID -- VERIFY DESCRIPTION
 * Identifier for the alert
 . *Create Alert* is for <<create, configuring a new alert>>.
-. Enable, disable, or delete an alert from its image:more-menu-vert-ellipsis.png["",15,15] (*More* menu).
+. Enable, disable, edit, or delete an alert from its image:more-menu-vert-ellipsis.png["",15,15] (*More* menu).
 
 For alerts in other Anypoint Platform clouds, see xref:alerts-us-eu.adoc[].
 
