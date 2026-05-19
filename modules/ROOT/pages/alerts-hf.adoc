@@ -38,18 +38,20 @@ Each alert name opens to more information about the alert, including the alert t
 image::alerts-hf-popup.png["Alert details", 80%]
 .. Name of the selected alert
 //NEW: METRIC
-.. Name of the metric that the alert configuration uses
-.. <<threshold, Threshold configuration>> for triggering the alert
+.. Alert properties
+
+* Name of the metric that the alert configuration uses
+* <<threshold, Threshold configuration>> for triggering the alert
 //NEW: SEVERITY
-.. Severity level that the alert configuration sets
+* Severity level that the alert configuration sets
 //LAST ALERTED
-.. Date and time the alert last triggered 
+* Date and time the alert last triggered 
 //RECIPIENTS
-.. Email address that receives an alert notification when the alert triggers
+* Email address that receives an alert notification when the alert triggers
 //STATUS
-.. Current status of the alert
+* Current status of the alert
 // ID -- VERIFY DESCRIPTION
-.. Identifier for the alert
+* Identifier for the alert
 . *Create Alert* is for <<create, configuring a new alert>>.
 . Enable, disable, or delete an alert from its image:more-menu-vert-ellipsis.png["",15,15] (*More* menu).
 
