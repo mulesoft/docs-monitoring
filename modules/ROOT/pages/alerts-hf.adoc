@@ -38,20 +38,15 @@ Each alert name opens to more information about the alert, including the alert t
 image::alerts-hf-popup.png["Alert details", 80%]
 .. Name of the selected alert
 //NEW: METRIC
-.. Alert properties
+.. Alert properties:
 
-* Name of the metric that the alert configuration uses
-* <<threshold, Threshold configuration>> for triggering the alert
-//NEW: SEVERITY
-* Severity level that the alert configuration sets
-//LAST ALERTED
-* Date and time the alert last triggered 
-//RECIPIENTS
-* Email address that receives an alert notification when the alert triggers
-//STATUS
-* Current status of the alert
-// ID -- VERIFY DESCRIPTION
-* Identifier for the alert
+* *Metric*: Name of the <<metrics, metric>> that the alert configuration uses
+* *Threshold*: <<threshold, Rule>> for triggering the alert
+* *Severity*: <<severity, Severity>> level of this alert
+* *Last Alerted*: Date and time the alert last triggered 
+* *Recipients*: Each email address that receives an alert notification when the alert triggers
+* *Status*: Current status of the alert
+* *ID*: Identifier for the alert
 . *Create Alert* is for <<create, configuring a new alert>>.
 . Enable, disable, edit, or delete an alert from its image:more-menu-vert-ellipsis.png["",15,15] (*More* menu).
 
@@ -62,10 +57,7 @@ For alerts in other Anypoint Platform clouds, see xref:alerts-us-eu.adoc[].
 
 //[calloutlist]
 //TODO: POST GA ADD OVERVIEW IMAGE, CONVERT BULLETED LIST ITEMS (* ) BELOW TO NUMBERED LIST ITEMS (. )
-// TBD: Status and Environment might not be available at GA
-//. Status selector
 //. Environment selector
-//. Search field
 
 == Before You Begin
 
@@ -109,10 +101,9 @@ Each alert provides:
 * *Alert Name*: Name of the alert
 * *Severity*: Configured <<severity, severity>> of the alert
 * *Status*: Current <<status, status>> of the alert
-* *Metric*: Name of the <<metrics, metric>> that the alert reports
+* *Metric*: Name of the <<metrics, metric>> that the alert uses
 //NOT SUPPORTED YET: Resource (was Entity)
 //* *Resource*: Name of the Mule app or API that the alert is for
-//TODO: *-* OR N/A? 
 * *Last Alerted*: Most recent date and time the alert triggered or *-* for an alert that has never triggered
 * *Creation Date*: Alert creation date and time
 * *Availability*: *Enabled* or *Disabled* alert setting
@@ -129,18 +120,18 @@ Configure an alert, the condition for triggering the alert, and the alert notifi
 //TODO: IS "resource" the term we'll use; check on final name in UI. Was "entity" and "entity type"
 .. Select the resource type and resource that the alert is for. Only active resources that can receive traffic are available.
 
-* *Resource Type*: *API* or *Mule Application*
-* *Resource:* Name of the API or Mule application 
+* *Resource Type*: *API* or *Application*
+* *Resource Name:* Name of the API or Mule application 
 .. For an API alert, select an API version and up to ten response codes. 
 .. Click *Next* to open *Set Alert Condition*. 
-. In *Set Alert Condition*, configure the criteria for triggering the alert:
+. In *Set Alert Condition*, configure the rule for triggering the alert:
 .. Select the <<metrics, metric>> that the alert uses.
 .. Select the <<severity, severity>> of the alert.
 .. Provide a <<threshold, threshold>> for triggering the alert.
-.. Click *Next* to open *Configure Email Notification*. 
-. In *Configure Email Notification*, configure the email to send when the alert triggers.
+.. Click *Next* to open *Configure Notifications*. 
+. In *Configure Notifications*, configure the message to send when the alert triggers.
 +
-To use variables in the email, see <<variables>>.
+To use variables in your email notification, see <<variables>>.
 
 .. Provide a subject.
 .. Provide the message.
@@ -185,7 +176,7 @@ Alert threshold configurations indicate when the data collected on a <<metrics, 
 [%header,cols="1a,1a"]
 |===
 | Configuration Pattern | Example 
-| *Trigger alert when selected metric is _Above\|Less than\|Above or equal to\|Less than or equal to\|Equal to_ _Number_ for each of the last _Number_ consecutive minutes.*
+| *Trigger alert when selected metric is _Above\|Below\|Above or equal to\|Below or equal to\|Equal to_ _Number_ for each of the last _Number_ consecutive minutes.*
 | *Trigger alert when selected metric is _Above_ _4_ for each of the last _10_ consecutive minutes.*
 |===
 
@@ -230,9 +221,9 @@ Data is aggregated in one minute increments.
 +
 Data is aggregated in one minute increments.
 * *Response Codes*: Sum of HTTP response codes that occur in the selected time period
-//TODO: IS POLICY VIOLATIONS COMING LATER?
-//* *Policy Violations*: 
-//Sum of requests that return policy violations that you select in the alert condition.
+//TODO: POLICY VIOLATIONS IS SUPPORTED NOW?
+* *Policy Violations*: 
+Sum of requests that return policy violations that you select in the alert condition.
 
 [[environment]]
 == Environments

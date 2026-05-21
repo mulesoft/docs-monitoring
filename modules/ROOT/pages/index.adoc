@@ -33,7 +33,7 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 | Yes
 | Yes
 
-| <<insights, Anypoint Insights>>
+| xref:anypoint-insights.adoc[Anypoint Insights]
 | Yes
 | Yes
 | Yes
