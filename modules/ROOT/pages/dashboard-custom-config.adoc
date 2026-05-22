@@ -127,11 +127,11 @@ image::dashboard-custom-widgets.png["Custom dashboard widgets"]
 +
 If chart icons aren't visible in your row:
 +
-.. Mouse over the row to display its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*) for the row, and click *+ Add widget*. 
+.. Hover over the row to display its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*) for the row, and click *+ Add widget*. 
 +
 This menu is above all the charts in the row.
 .. Click one of the chart types for your row.
-. Mouse over the chart to display its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), click *Configure*.
+. Hover over the chart to display its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and click *Configure*.
 . To configure the chart in a custom dashboard, see:
 +
 * xref:dashboard-custom-config-graph.adoc[Configuring graphs]
