@@ -139,30 +139,6 @@ This menu is above all the charts in the row.
 * xref:dashboard-custom-config-table.adoc[Configuring tables]
 * xref:dashboard-custom-config-text.adoc[Configuring text panels]
 
-[[dup_dashboard]]
-== Duplicate a Custom Dashboard
-
-Create a copy of a dashboard. The copy requires a unique name but retains the configuration and any charts. You can modify that configuration as needed.
-
-. From *Custom Dashboards*, open a custom dashboard.
-+
-For guidance, see <<view>>.
-. From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Duplicate*.
-. Save a *New Name* for the dashboard.
-+
-Your copy of the dashboard opens.
-
-[[delete_dashboard]]
-== Delete a Custom Dashboard
-
-Delete a custom dashboard you no longer need.
-
-. From *Custom Dashboards*, open a custom dashboard.
-+
-For guidance, see <<view>>.
-. From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Delete*.
-. Confirm your deletion.
-
 [[rows]]
 == Manage Custom Dashboard Rows
 
@@ -208,6 +184,30 @@ image::dashboard-custom-config-metadata-hf.png["Dashboard metadata"]
 | *Created by* | Username of person who created the dashboard.
 | *Version* | Version number of the dashboard. The version increments each time you save modifications to the dashboard.
 |===
+
+[[dup_dashboard]]
+== Duplicate a Custom Dashboard
+
+Create a copy of a dashboard. The copy requires a unique name but retains the configuration and any charts. You can modify that configuration as needed.
+
+. From *Custom Dashboards*, open a custom dashboard.
++
+For guidance, see <<view>>.
+. From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Duplicate*.
+. Save a *New Name* for the dashboard.
++
+Your copy of the dashboard opens.
+
+[[delete_dashboard]]
+== Delete a Custom Dashboard
+
+Delete a custom dashboard you no longer need.
+
+. From *Custom Dashboards*, open a custom dashboard.
++
+For guidance, see <<view>>.
+. From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Delete*.
+. Confirm your deletion.
 
 == Export a Chart to a CSV
 
