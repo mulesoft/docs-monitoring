@@ -2,7 +2,7 @@
 :page-info-pills: anypoint-pricing-titanium
 :page-aliases: create-custom-dashboard.adoc
 
-Create and configure custom dashboards that provide metrics on your Mule apps and APIs. 
+Create and configure custom dashboards to monitor the Mule app and API metrics that you choose. 
 
 [[view]]
 == View a Custom Dashboard
