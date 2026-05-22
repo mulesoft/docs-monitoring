@@ -59,7 +59,7 @@ image::dashboard-custom-config.png["Custom dashboard configuration"]
 * *Rows*: For configuring rows for the charts in your dashboard
 +
 See <<rows>>. 
-* *Metadata*: For viewing dashboard metadata, including creation and update dates, and versioning
+* *Metadata*: For viewing dashboard metadata, including creation dates, updates, and versioning
 +
 See <<metadata>>. 
 . Charts (also called panels or widgets) you can add to your custom dashboard:
@@ -110,9 +110,9 @@ For guidance, see <<charts_adding>>.
 [[charts_adding]]
 == Add Charts to a Custom Dashboard
 
-Charts are panels (or widgets) that you can add to rows in custom dashboards.
+Charts are panels (or widgets) you can add to rows in custom dashboards to display metrics on your Mule apps or APIs.
 
-NOTE: There is a hard limit of 25 queries per custom dashboard chart. 
+NOTE: Up to 25 queries per custom dashboard chart are allowed. 
 
 Add a chart to your dashboard:
 
