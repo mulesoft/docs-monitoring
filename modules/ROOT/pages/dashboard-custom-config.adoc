@@ -215,17 +215,17 @@ Manage charts in custom dashboards from the chart image:more-menu-vert-ellipsis.
 
 image::dashboard-custom-chart-more-hf.png["Chart More menu"]
 
-* Collapse the chart.
+* Collapse or expand the chart.
 * Configure the chart:
 ** xref:dashboard-custom-config-graph.adoc[]
 ** xref:dashboard-custom-config-singlestat.adoc[]
 ** xref:dashboard-custom-config-table.adoc[]
 ** xref:dashboard-custom-config-text.adoc[]
 * Duplicate the chart.
-* Add or edit an alert for the chart.
+* Add or edit an alert for a graph. Other chart types don't support alerts.
 +
-For information about these alerts, see xref:dashboard-custom-config-graph.adoc#alerts_config[Alerts (Configuration, Notifications, History)].
-* Export the chart data to a CSV file.
+For information about these alerts, see xref:dashboard-custom-config-graph.adoc#alerts_config[Create an Alert for a Chart in a Custom Dashboard].
+* Export graph or table data to a CSV file. Other chart types don't support CSV exports. 
 +
 For more information, see xref:export-app-data-to-csv.adoc[].
 * Delete the chart.
