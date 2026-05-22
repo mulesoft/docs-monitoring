@@ -52,7 +52,7 @@ image::dashboard-custom-config.png["Custom dashboard configuration"]
 [calloutlist]
 . Clicking image:dashboard-custom-config-icon.png["",20,20] (pencil) opens the dashboard configuration window.
 
-. Dashboard configuration options:
+. *Dashboard settings* tabs:
 
 * *General*: Provide a unique name, a time zone (local or UTC), tags, and a tooltip style for your dashboard. 
 * *Rows*: Configure rows for the charts in your dashboard.
@@ -60,7 +60,7 @@ image::dashboard-custom-config.png["Custom dashboard configuration"]
 See <<rows>>. 
 * *Metadata*: View dashboard metadata, including creation and update dates, and versioning.
 +
-See <<config_dashboard>>. 
+See <<metadata>>. 
 . Charts (also called panels or widgets) you can add to your custom dashboard:
 * *Graph*: Displays metrics over time.
 * *Singlestat*: Provides a summary statistic (a single total or number) for a single grouping of time-series data, such as a response time or a heap usage statistic.
