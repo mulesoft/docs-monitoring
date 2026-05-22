@@ -208,15 +208,3 @@ Delete a custom dashboard you no longer need.
 For guidance, see <<view>>.
 . From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Delete*.
 . Confirm your deletion.
-
-== Export a Chart to a CSV
-
-You can export a chart (panel or widget) to a CSV file.
-
-. From *Custom Dashboards*, open a custom dashboard.
-+
-For guidance, see <<view>>.
-. From a chart's header, click the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Export CSV*.
-
-
-For more guidance, see xref:export-app-data-to-csv.adoc[Export App Data to a CSV].
