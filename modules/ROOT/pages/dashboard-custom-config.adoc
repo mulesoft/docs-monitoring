@@ -155,6 +155,8 @@ Your copy of the dashboard opens.
 [[delete_dashboard]]
 == Delete a Custom Dashboard
 
+Delete a custom dashboard you no longer need.
+
 . From *Custom Dashboards*, open a custom dashboard.
 +
 For guidance, see <<view>>.
