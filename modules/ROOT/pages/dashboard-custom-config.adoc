@@ -16,7 +16,7 @@ To view a custom dashboard:
 . Navigate to Anypoint Monitoring:
 +
 Click *Monitoring* from the Anypoint Platform home page or from the *Runtimes* menu in the header.
-. In the sidebar, click *Custom Dashboards* in the sidebar to display custom dashboards. 
+. In the sidebar, click *Custom Dashboards* to display custom dashboards. 
 . Search for a custom dashboard by name or tag.
 . Click a name in the list to open the custom dashboard.
 +
