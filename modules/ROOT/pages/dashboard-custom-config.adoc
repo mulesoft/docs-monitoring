@@ -211,7 +211,7 @@ For guidance, see <<view>>.
 
 == Manage Custom Dashboard Charts
 
-Manage charts in custom dashboards from the chart image:more-menu-vert-ellipsis.png["",15,15] (*More menu*).
+Manage a chart from its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*).
 
 image::dashboard-custom-chart-more-hf.png["Chart More menu"]
 
