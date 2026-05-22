@@ -34,12 +34,13 @@ You can add multiple rows to a custom dashboard. Rows can contain multiple chart
 +
 You can create graphs, singlestat graphics, tables, and text panels for your custom dashboard. For more information, see <<charts_adding>>.
 . Lookback window, refresh options, and other dashboard settings:
-.. Zoom in or out.
-.. Set a time or date range for the lookback period.
-.. Set an autorefresh period, or manually refresh at any time.
-.. Favorite your dashboard.
-.. View in full screen mode.
-.. Duplicate or delete your dashboard.
+
+* Zoom in or out.
+* Set a time or date range for the lookback period.
+* Set an autorefresh period, or manually refresh at any time.
+* Favorite your dashboard.
+* View in full screen mode.
+* Duplicate or delete your dashboard.
 --
 
 [[config_dashboard]]
@@ -54,18 +55,18 @@ image::dashboard-custom-config.png["Custom dashboard configuration"]
 
 . *Dashboard settings* tabs:
 
-* *General*: Provide a unique name, a time zone (local or UTC), tags, and a tooltip style for your dashboard. 
-* *Rows*: Configure rows for the charts in your dashboard.
+* *General*: For configuring a unique name and description, a time zone (local or UTC), tags, and a tooltip style for your dashboard
+* *Rows*: For configuring rows for the charts in your dashboard
 +
 See <<rows>>. 
-* *Metadata*: View dashboard metadata, including creation and update dates, and versioning.
+* *Metadata*: For viewing dashboard metadata, including creation and update dates, and versioning
 +
 See <<metadata>>. 
 . Charts (also called panels or widgets) you can add to your custom dashboard:
-* *Graph*: Displays metrics over time.
-* *Singlestat*: Provides a summary statistic (a single total or number) for a single grouping of time-series data, such as a response time or a heap usage statistic.
-* *Table*: Supports time-series data in a tabular format. It allows for cell coloring and date and value formatting.
-* *Text*: Provides an area for textual information (titles and descriptions) written in Markdown or HTML within rows or cells of a dashboard. For example, you might use it as a header for your dashboard.
+* *Graph*: Display metrics over time.
+* *Singlestat*: Provide a summary statistic (a single total or number) for time-series data, such as a response time or a heap usage statistic.
+* *Table*: Display time-series data in a tabular format. You can change cell coloring, date, and value formatting.
+* *Text*: Add a panel with textual information (titles and descriptions) in Markdown or HTML.
 +
 See <<charts_adding, Adding Charts to a Custom Dashboard>>.
 
