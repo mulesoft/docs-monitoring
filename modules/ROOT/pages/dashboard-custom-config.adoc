@@ -55,7 +55,9 @@ image::dashboard-custom-config.png["Custom dashboard configuration"]
 . Dashboard configuration options:
 
 * *General*: Provide a unique name, a time zone (local or UTC), tags, and a tooltip style for your dashboard. 
-* *Rows*: Add rows for the charts in your dashboard. 
+* *Rows*: Configure rows for the charts in your dashboard.
++
+See <<rows>>. 
 * *Metadata*: View dashboard metadata, including creation and update dates, and versioning.
 +
 See <<config_dashboard>>. 
@@ -92,13 +94,14 @@ Most graphs track data over time, so your time options are important. Your optio
 * *Local browser time*: (Default) Time taken from the system time of the computer that the browser is running on.
 * *UTC*: Coordinated Universal Time standard, which uses a 24 hour cycle (for example, `19:20`) and corresponds to GMT.
 | *Graph Tooltip* a| Options include: 
-* *Default*: The crosshair cursor appears only in the chart that you mouse over.
+
+* *Default*: The crosshair cursor appears only in the chart that you hover over.
 * *Shared Crosshair*: The crosshair appears on all charts.
 * *Shared Tooltip*: The crosshair and the tooltip appears on all charts.
 |===
 . Optionally, click *Rows* to manage the row for charts you create.
 +
-You can provide a title for a row that's visible in the dashboard. See <<manage-rows>>.
+You can provide a title for a row and make the title visible in the dashboard. See <<rows>>.
 . Add graphs, singlestat charts, tables, or text panels to a row in your custom dashboard.
 +
 For guidance, see <<charts_adding>>.
@@ -112,18 +115,21 @@ NOTE: There is a hard limit of 25 queries per custom dashboard chart.
 
 Add a chart to your dashboard:
 
-. In the sidebar, click *Custom dashboards* from the sidebar.
+. From *Custom Dashboards*, open your custom dashboard.
 +
-* To create a custom dashboard, click *+New Dashboard*.
-* If you need a new row for your chart, scroll down to find and click *Add Row*.
+For guidance, see <<view>>.
+. If you need a new row for your chart, scroll down to find and click *Add Row*.
 +
+For row configuration options, see <<rows>>.
 . To add a chart to the row, click *Add*.
 +
 image::dashboard-custom-widgets.png["Custom dashboard widgets"]
 +
 If chart icons aren't visible in your row:
 +
-.. Mouse over the row to display the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*) for the row, and click *+ Add widget*. 
+.. Mouse over the row to display its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*) for the row, and click *+ Add widget*. 
++
+This menu is above all the charts in the row.
 .. Click one of the chart types for your row.
 . Mouse over the chart to display its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), click *Configure*.
 . To configure the chart in a custom dashboard, see:
@@ -136,24 +142,15 @@ If chart icons aren't visible in your row:
 [[dup_dashboard]]
 == Duplicate a Custom Dashboard
 
-To create a copy of a custom dashboard:
-
-. From *Custom Dashboards*, open a custom dashboard.
-. From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Duplicate*.
-. Save a *New Name* for the dashboard.
-+
-Your copy of the dashboard opens.
-
-== Export a Chart to a CSV
-
-You can export a chart (panel or widget) to a CSV file, which you can then use in other apps. 
+Create a copy of a dashboard. The copy requires a unique name but retains the configuration and any charts. You can modify that configuration as needed.
 
 . From *Custom Dashboards*, open a custom dashboard.
 +
 For guidance, see <<view>>.
-. From a chart's header, click the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Export CSV*.
-
-For more information about how to export app data, see xref:export-app-data-to-csv.adoc[Export App Data to a CSV].
+. From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Duplicate*.
+. Save a *New Name* for the dashboard.
++
+Your copy of the dashboard opens.
 
 [[delete_dashboard]]
 == Delete a Custom Dashboard
@@ -164,7 +161,7 @@ For guidance, see <<view>>.
 . From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Delete*.
 . Confirm your deletion.
 
-[[manage-rows]]
+[[rows]]
 == Manage Custom Dashboard Rows
 
 Manage dashboard rows from the dashboard configuration window. 
@@ -173,7 +170,7 @@ Manage dashboard rows from the dashboard configuration window.
 +
 For guidance, see <<view>>.
 . Click image:dashboard-custom-config-icon.png["",20,20] to open the dashboard configuration window.
-. Click *Rows* to configure your dashboard rows.
+. In *Dashboard Settings*, click *Rows* to configure your dashboard rows.
 +
 image::dashboard-custom-config-rows-hf.png["Dashboard row configuration options"]
 +
@@ -196,20 +193,30 @@ Get information about creation dates, updates, and the custom dashboard version.
 +
 For guidance, see <<view>>.
 . Click image:dashboard-custom-config-icon.png["",20,20] to open the dashboard configuration window.
-. Click *Metadata* to review your dashboard information.
+. In *Dashboard Settings*, click *Metadata* to review your dashboard information.
 +
 image::dashboard-custom-config-metadata-hf.png["Dashboard metadata"]
 +
 [%header,cols="1,4"]
 |===
 2+| Metadata Available for Custom Dashboards
-| Last Updated at | Date and time of last update to the dashboard.
-| Last Updated by | User who made the last update. 
-| Created at | Date and time the dashboard was created.
-| Created by | Username of person who created the dashboard.
-| Version | Version number of the dashboard. The version increments each time you save modifications to the dashboard.
+| *Last Updated at* | Date and time of last update to the dashboard.
+| *Last Updated by* | User who made the last update. 
+| *Created at* | Date and time the dashboard was created.
+| *Created by* | Username of person who created the dashboard.
+| *Version* | Version number of the dashboard. The version increments each time you save modifications to the dashboard.
 |===
 
+== Export a Chart to a CSV
+
+You can export a chart (panel or widget) to a CSV file, which you can then use in other apps. 
+
+. From *Custom Dashboards*, open a custom dashboard.
++
+For guidance, see <<view>>.
+. From a chart's header, click the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Export CSV*.
+
+For more information about how to export app data, see xref:export-app-data-to-csv.adoc[Export App Data to a CSV].
 
 == See Also
 
