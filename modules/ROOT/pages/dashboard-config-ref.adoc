@@ -142,6 +142,11 @@ These metrics are available if you use basic mode for APIs using the *API Analyt
 
 These metrics are available when you use *Advanced* mode for apps:
 
+
+//RUNTIME_MEASUREMENTS: "app_inbound_metric,app_outbound_metric,app_stats,disk_stats,eden_space,jvm.classloading,jvm.cpu.operatingsystem,jvm.garbagecollector.copy,jvm.garbagecollector.marksweepcompact,jvm.garbagecollector.parnew,jvm.memory,jvm.memory.code_cache,jvm.memory.compressed_class_space,jvm.memory.metaspace,jvm.memory.par_eden_space,jvm.memory.par_survivor_space,jvm.memory.tenured_gen,jvm.runtime,jvm.threading,operatingsystem,survivor_space,custom_metric"
+//ANALYTICS_MEASUREMENTS: "http_summary_metric"
+
+
 .Advanced Metrics for Apps
 [%header,cols="1,2,2"]
 |===
@@ -157,10 +162,18 @@ These metrics are available when you use *Advanced* mode for apps:
 
 * `avg_request_count`
 * `avg_response_count`
+| TODO: | `disk_stats` a|
+
+* `TODO:`
+* `TODO:`
 |  Disk Statistics | `disk_stats` a|
 
 * `disk_used`
 * `disk_free`
+| TODO: | `eden_space` a|
+
+* `TODO:`
+* `TODO:`
 |  JVM ClassLoader | `jvm.classloading` a|
 
 * `classes_loaded`
@@ -172,6 +185,11 @@ These metrics are available when you use *Advanced* mode for apps:
 * `cpu`
 * `load_average`
 * `total_physical_memory_size`
+//TODO: IS THIS ONE/COPY FOR REAL?
+| TODO: | `jvm.garbagecollector.copy` a|
+
+* `TODO:`
+* `TODO:`
 | JVM Garbage Collection | `jvm.garbagecollector.marksweepcompact` a|
 
 * `gc_marksweep_collection_count`
@@ -187,6 +205,7 @@ These metrics are available when you use *Advanced* mode for apps:
 * `heap_committed`
 * `heap_total`
 * `heap_used`
+//TODO: jvm.memorycode_cache? 
 |  JVM Memory “Code Cache” | `jvm.memory.code_cache` a|
 
 * `committed_memory`
@@ -231,32 +250,45 @@ These metrics are available when you use *Advanced* mode for apps:
 
 * `cpu_steal_time`
 * `cpu_io_wait`
-| HTTP Summary +
-*NOTE:*
-This metric is available for APIs only. | `http_summary_metric` a|
-
-* `request_count`
-* `request_size_average`
-* `request_size_max`
-* `request_size_min`
-* `request_size_sum`
-* `response_size_average`
-* `response_size_max`
-* `response_size_min`
-* `response_size_sum`
-* `response_time_average`
-* `response_time_max`
-* `response_time_min`
-* `response_time_sum`
+//REMOVED FROM HYPERFORCE EU/US MAY 2026 -- WAS DEPRECATED IN PROD
+// | HTTP Summary +
+//*NOTE:*
+//This metric is available for APIs only. | `http_summary_metric` a|
+//
+// * `request_count`
+// * `request_size_average`
+// * `request_size_max`
+// * `request_size_min`
+// * `request_size_sum`
+// * `response_size_average`
+// * `response_size_max`
+// * `response_size_min`
+// * `response_size_sum`
+// * `response_time_average`
+// * `response_time_max`
+// * `response_time_min`
+// * `response_time_sum`
 | Mule Message Count | `app_stats` a|
 
 * `messageCount`
+// | TODO: | `survivor_space` a|
+// 
+// * `TODO:`
+// | TODO: | `custom_metric` a|
+// 
+// * `TODO:`
+// | TODO: | `disk_stats` a|
+// 
+// * `TODO:`
 |===
 
 == Advanced Mode Metrics for APIs
 
 These metrics are available if you use advanced mode for APIs using the *API Panel* setting:
 
+//HTTP_MEASUREMENTS: "api_summary_metric,api_client_ip_metric,api_path_metric"
+
+//NOTE: These match STGX
 .Advanced Metrics for APIs
 [%header,cols="1,2,2"]
 |===
