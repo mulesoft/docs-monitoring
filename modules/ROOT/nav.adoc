@@ -13,6 +13,8 @@
  ** xref:api-dashboard.adoc[]
  ** xref:save-builtin-dashboard-as-custom.adoc[]
  ** xref:anypoint-custom-metrics-connector.adoc[]
+ ** xref:monitor-connectors.adoc[]
+ ** xref:export-app-data-to-csv.adoc[]
 //TODO: REMOVE create-custom-dashboard.adoc (consolidated into dashboard-custom-config.adoc)
 // ** xref:create-custom-dashboard.adoc[]
 * xref:dashboard-custom-config.adoc[]
@@ -21,8 +23,6 @@
   *** xref:dashboard-custom-config-table.adoc[Configuring Tables]
   *** xref:dashboard-custom-config-text.adoc[Configuring Text Panels] 
   *** xref:dashboard-config-ref.adoc[Dashboard Configuration Reference]
- ** xref:monitor-connectors.adoc[]
- ** xref:export-app-data-to-csv.adoc[]
 * xref:anypoint-insights.adoc[Monitoring Metrics from Insights]
 * xref:anypoint-insights-agentic.adoc[]
 * xref:integration-intelligence.adoc[]

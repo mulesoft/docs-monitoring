@@ -218,10 +218,4 @@ You can export a chart (panel or widget) to a CSV file, which you can then use i
 For guidance, see <<view>>.
 . From a chart's header, click the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Export CSV*.
 
-For more information about how to export app data, see xref:export-app-data-to-csv.adoc[Export App Data to a CSV].
-
-== See Also
-
-* xref:create-custom-dashboard.adoc[Create a Custom Dashboard]
-* xref:dashboard-config-ref.adoc[Dashboard Configuration Reference]
-* xref:export-app-data-to-csv.adoc[Export App Data to a CSV]
+For more guidance, see xref:export-app-data-to-csv.adoc[Export App Data to a CSV].
