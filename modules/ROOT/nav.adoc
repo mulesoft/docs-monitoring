@@ -15,8 +15,6 @@
  ** xref:anypoint-custom-metrics-connector.adoc[]
  ** xref:monitor-connectors.adoc[]
  ** xref:export-app-data-to-csv.adoc[]
-//TODO: REMOVE create-custom-dashboard.adoc (consolidated into dashboard-custom-config.adoc)
-// ** xref:create-custom-dashboard.adoc[]
 * xref:dashboard-custom-config.adoc[]
   *** xref:dashboard-custom-config-graph.adoc[Configuring Graphs]
   *** xref:dashboard-custom-config-singlestat.adoc[Configuring Singlestats]
