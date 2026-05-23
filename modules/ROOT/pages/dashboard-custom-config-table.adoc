@@ -1,7 +1,7 @@
 = Configuring Tables in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
 
-In Anypoint Monitoring, you can configure tables for custom dashboard. In addition to configuring properties that are common to other charts, such advanced or basic metric queries and time ranges, you can also:
+Configure tables for custom dashboards in Anypoint Monitoring. In addition to configuring properties that are common to other charts, such advanced or basic metric queries and time ranges, you can also:
 
 * Lay out for time-series data in a tabular format and display aggregated data.
 * Add color-coded thresholds to indicate whether a value is above, below, or within an given range.

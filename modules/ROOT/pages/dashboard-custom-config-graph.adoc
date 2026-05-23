@@ -11,7 +11,7 @@ Advanced configuration options support fine-tuned data sets. You can also custom
 Open the graph's configuration view.
 
 * To open the graph's configuration view, click its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
-* To create a graph in a custom dashboard, see dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
+* To create a graph in a custom dashboard, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
 
 //GENERAL SETTINGS shared by singlestat and graph
 //== General

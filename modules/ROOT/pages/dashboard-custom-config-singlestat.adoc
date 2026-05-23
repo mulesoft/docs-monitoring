@@ -1,7 +1,7 @@
 = Configuring Singlestats in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
 
-Anypoint Monitoring custom dashboards provide a way for you to configure singlestat charts for a single measure (such as a response time or heap usage) of your Mule app environment over a given time range.
+Configure singlestat charts for Mule app and APIs in an Anypoint Monitoring custom dashboard. A singlestat charts displays a single value, such as a JVM - CPU Load Average value.
 
 [[prereqs]]
 == Before You Begin
