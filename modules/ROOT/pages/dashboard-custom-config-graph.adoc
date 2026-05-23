@@ -1,9 +1,9 @@
 = Configuring Graphs in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
 
-Configure groups of time-series data in a graph. A custom dashboard graph in Anypoint Monitoring displays a metric for a Mule app or API in a given environment, such as your Design or Sandbox environment.
+Configure time-series data in a graph. A custom dashboard graph in Anypoint Monitoring displays a metric for a Mule app or API.
 
-Advanced configuration options support fine-tuned data sets. You can also customize the X and Y axes, the look of the graph, legends, and behavior when you hover over a data point.
+Advanced options support fine-tuned configurations. You can also customize X and Y axes, the look of the graph, legends, and behavior of the graph when you hover over a data point.
 
 [[prereqs]]
 == Before You Begin

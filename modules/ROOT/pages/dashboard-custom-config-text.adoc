@@ -1,11 +1,7 @@
 = Configuring Text Panels in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
 
-Configure text panels in Anypoint Monitoring custom dashboards. Supported formats are HTML and Markdown:
-
-* xref:dashboard-config-ref.adoc#samples_html[HTML Support]
-
-* xref:dashboard-config-ref.adoc#samples_markdown[Markdown Syntax Support] 
+Configure text panels in Anypoint Monitoring custom dashboards. Supported formats are HTML and Markdown.
 
 [[prereqs]]
 == Before You Begin
