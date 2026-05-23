@@ -3,18 +3,21 @@
 
 You can add text panels to custom dashboards in Anypoint Monitoring. A text panel can provide information about your dashboard. You can add one to any row in the dashboard.
 
-|===
+image::text-config-html.png["A dropdown menu displays 'html' for Mode and 'markdown' for Content."]
 
-a|
-
-You can write text in these modes:
+Supported formats:
 
 * HTML: See xref:dashboard-config-ref.adoc#samples_html[HTML Support] for HTML examples.
 
-* Markdown: See xref:dashboard-config-ref.adoc#samples_markdown[Markdown Syntax Support] for Markdown examples. a|
+* Markdown: See xref:dashboard-config-ref.adoc#samples_markdown[Markdown Syntax Support] for Markdown examples. 
 
-image::text-config-html.png["A dropdown menu displays 'html' for Mode and 'markdown' for Content."]
-|===
+[[prereqs]]
+== Before You Begin
+
+Open the text panel's configuration view.
+
+* To open the text panel's configuration view, click its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
+* To create a text panel in a custom dashboard, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
 
 == Markdown Example
 

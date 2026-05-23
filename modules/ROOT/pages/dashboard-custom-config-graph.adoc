@@ -1,11 +1,17 @@
 = Configuring Graphs in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
 
-In Anypoint Monitoring, you can configure one or more sets of time-series data in a graph. The graph measures the changes to time-series data over time. A graph in a custom dashboard can display a metric for a resource in a given environment. For example, to configure a graph, you might select a response time or heap usage as the metric to graph for a Mule app in your Design or Sandbox environment.
+Configure groups of time-series data in a graph. A custom dashboard graph in Anypoint Monitoring displays a metric for a Mule app or API in a given environment, such as your Design or Sandbox environment.
 
-Advanced configuration options allow for more fine-tuned data sets. You can also customize the X and Y axes, the look of the graph, legends, the behavior when you hover over a data point, and more.
+Advanced configuration options support fine-tuned data sets. You can also customize the X and Y axes, the look of the graph, legends, and behavior when you hover over a data point.
 
-To open a configuration page for a graph, see xref:dashboard-custom-config.adoc[Configure Custom Dashboards].
+[[prereqs]]
+== Before You Begin
+
+Open the graph's configuration view.
+
+* To open the graph's configuration view, click its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
+* To create a graph in a custom dashboard, see dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
 
 //GENERAL SETTINGS shared by singlestat and graph
 //== General
