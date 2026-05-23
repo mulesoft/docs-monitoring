@@ -28,7 +28,7 @@ image::text-config.png["A text editor that uses Markdown to format text."]
 . Select *markdown* from *Mode*.
 . Provide text in Markdown format to your text panel. 
 . Click *Save Changes*. 
-. To exit the configuration and return to the custom dashboard, click the `X`.
+. To exit the configuration and return to the custom dashboard,  click *X*.
 
 == Add HTML to a Text Panel
 
@@ -41,4 +41,4 @@ image::dashboard-text-config-html.png["An HTML example"]
 . Select *html* from *Mode*.
 . Provide text in HTML format to your text panel.
 . Click *Save Changes*. 
-. To exit the configuration and return to the custom dashboard, click the `X`.
+. To exit the configuration and return to the custom dashboard, click *X*.
