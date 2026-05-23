@@ -16,29 +16,29 @@ For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard
 . Click the text panel's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
 * To create a text panel in a custom dashboard, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
 
-== Markdown Example
+== Add Markdown to a Text Panel
 
-As this Markdown example shows, you can see how your text will appear in the UI as you type.
+This Markdown example shows how your text appears in the UI as you type.
 
 .Markdown Example
 image::text-config.png["A text editor that uses Markdown to format text."]
 
-After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
+. In the text panel's configuration, click *General*.
+. Provide a title and description.
+. Select *markdown* from *Mode*.
+. Provide text in Markdown format to your text panel. 
+. Click *Save Changes*. 
+. To exit the configuration and return to the custom dashboard, click the `X`.
 
-== HTML Example
+== Add HTML to a Text Panel
 
 This HTML example creates the heading shown in xref:dashboard-custom-config.adoc#text_example[Text example]:
 
 image::dashboard-text-config-html.png["An HTML example"]
 
-////
-THIS IS NOT SUPPOSED TO BE IN THE UI, PER PABLO:
-Text panels also support a templating language and provide auto-complete features. For example, when you start typing, you can see a list of matching template options from which you can select and edit, such as these:
-
-----
-{% codeblock %}
-code_snippet
-{% endcodeblock %}
-{% img class URL width height title_text alt_text %}
-----
-////
+. In the text panel's configuration, click *General*.
+. Provide a title and description.
+. Select *html* from *Mode*.
+. Provide text in HTML format to your text panel.
+. Click *Save Changes*. 
+. To exit the configuration and return to the custom dashboard, click the `X`.
