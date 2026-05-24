@@ -23,7 +23,7 @@ NOTE: In US and EU clouds only, clicking an app in *Reports* from the classic ve
 You can also sort columns by clicking a column heading.
 . Sets a lookback period for the reports (24 hours and 7, 15, 30, and 90 days) and provides a manual refresh option
 . Manually refreshes report data 
-. Downloads report data in CSV format
+. Downloads report data from the selected tab to CSV format
 
 
 [[access-reports]]
@@ -88,7 +88,7 @@ NOTE: This tab isn't available to apps in xref:hybrid-standalone::index.adoc[hyb
 
 == Export a Report as a CSV
 
-You can export a report as a CSV file and save it locally for any of the tabs in the Reports page.
+Export a report on the apps in the selected tab as a CSV file.
 
 . Navigate to a report.
 +
