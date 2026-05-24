@@ -15,12 +15,12 @@ image::reports-hf.png["List of reports on the Reports page"]
 . Lists apps you can click to get more app detail:
 +
 //VERIFY EU/US
-* Clicking an app opens to the details page in *Insights*. 
-+
-NOTE: In US and EU clouds only, clicking an app in *Reports* from the classic version of Anypoint Monitoring opens to the app details page in *Built-in Dashboards*.
 * Review the app target, request volume, and number of successful requests in the selected time range.
 +
 You can also sort columns by clicking a column heading.
+* Clicking an app opens to the details page in *Insights*. 
++
+NOTE: In US and EU clouds only, clicking an app in *Reports* from the classic version of Anypoint Monitoring opens to the app details page in *Built-in Dashboards*.
 . Sets a lookback period for the reports (24 hours and 7, 15, 30, and 90 days) and provides a manual refresh option
 . Manually refreshes report data 
 . Downloads report data from the selected tab to CSV format
