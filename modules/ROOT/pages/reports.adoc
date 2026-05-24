@@ -14,7 +14,8 @@ image::reports-hf.png["List of reports on the Reports page"]
 * CloudHub deployments provide *CPU Utilization* and *Memory Utilization* reports.
 . Lists applications by name, target, request volume, and number of successful requests in the selected time range
 +
-You can also sort columns by clicking a column heading, and you can click *Export CSV* to export report data to a CSV file.
+You can also sort columns by clicking a column heading.
+. Downloads a CSV file
 . Sets a lookback period for the reports (24 hours and 7, 15, 30, and 90 days) and provides a manual refresh option
 . List of apps you can click to get more app detail
 
@@ -82,7 +83,7 @@ Click the *Memory Utilization* tab to view information about the memory utilizat
 
 NOTE: This tab isn't available to apps in xref:hybrid-standalone::index.adoc[hybrid standalone deployments].
 
-//TODO: VERIFY IMPLEMENTATION IN HYPERFORCE
+
 == Export a Report as a CSV
 
 You can export a report as a CSV file and save it locally for any of the tabs in the Reports page.
