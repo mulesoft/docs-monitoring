@@ -1,39 +1,34 @@
 = Viewing Reports in Anypoint Monitoring
 :page-info-pills: anypoint-pricing-titanium
 
-View reports on Mule app performance and behavior across all the apps in an environment, such as a production or sandbox environment. Reports help you maintain the expected level of service for your apps.
+View reports on Mule app performance and behavior across all apps in an environment. Reports help you maintain the expected level of service for your apps.
 
 //UPDATED FOR HYPERFORCE RELEASE
 image::reports-hf.png["List of reports on the Reports page"]
 
-From any of the *Reports* tabs, you can:
+[calloutlist]
+. Selects an environment for Mule apps, such as a production or sandbox environment.
+. Displays reports:
 
-* View reports:
-** All deployment types provide *Requests*, *Performance*, and *Failures* reports.
-** CloudHub deployments provide *CPU Utilization* and *Memory Utilization* reports.
-* Switch environments.
-* Select a lookback period for the reports 
+* All deployment types provide *Requests*, *Performance*, and *Failures* reports.
+* CloudHub deployments provide *CPU Utilization* and *Memory Utilization* reports.
+. Lists applications by name, target, request volume, and number of successful requests in the selected time range
 +
-Options are 24 hours and 7, 15, 30, and 90 days.
-* Click an app in the list to open its details page.
-** In US and EU clouds, the app opens to the Built-in Dash
-* Sort columns by clicking a column heading.
-//TODO: VERIFY REFRESH IMPLEMENTATION IN HYPERFORCE
-* Refresh the page.
-//TODO: VERIFY CSV IMPLEMENTATION IN HYPERFORCE
-* Export a report as a CSV file.
+You can also sort columns by clicking a column heading, and you can click *Export CSV* to export report data to a CSV file.
+. Sets a lookback period for the reports (24 hours and 7, 15, 30, and 90 days) and provides a manual refresh option
+. List of apps you can click to get more app detail
 
-
+[[access-reports]]
 == Access Reports
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
 . In the sidebar, click *Reports*.
-. In the *Environment* drop-down list, select the environment where the apps you want to view reports for are deployed, and click *View*. +
+. From *Environment*, select the environment where the apps you want to view are deployed.
+. 
+
 The first time you view the reports page, the *Requests* report is displayed.
-. Select a time range from the drop-down list to view reports for a specific time range.
-//+
-//image::monitoring-reports-time-range-selector.png["Time range dropdown list with Last 15 days selected"]
+. Select the lookback period to view reports for that time range.
 . Click a report type:
 
 * <<requests>>
@@ -90,7 +85,7 @@ NOTE: This tab isn't available to apps in xref:hybrid-standalone::index.adoc[hyb
 
 You can export a report as a CSV file and save it locally for any of the tabs in the Reports page.
 
-. In the sidebar, click *Reports*.
-. Click on the tab for the report to export.
-. (Optional) Apply a time filter to download reports for the specified time range.
+. Navigate to a report.
++
+For guidance, see <<access-reports>>.
 . Click *Export CSV* to download the CSV file.
