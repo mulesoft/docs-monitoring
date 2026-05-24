@@ -1,20 +1,22 @@
 = Viewing Reports in Anypoint Monitoring
 :page-info-pills: anypoint-pricing-titanium
 
-View reports on apps running in an environment. The reports display information about overall performance and behavior across all the apps in the environment. These reports can help you identify app performance and availability problems across the environment so you can better maintain the expected level of service for your apps.
+View reports on Mule app performance and behavior across all the apps in an environment, such as a production or sandbox environment. Reports help you maintain the expected level of service for your apps.
 
-//TODO: REPLACE WITH UPDATED IMAGE FOR INDIA or other HYPERFORCE CLOUDS WHEN AVAILABLE (5/29?)
-//image::reports-main-page.png["List of reports on the Reports page"]
+//UPDATED FOR HYPERFORCE RELEASE
+image::reports-hf.png["List of reports on the Reports page"]
 
 From any of the *Reports* tabs, you can:
 
-* View these reports:
-** All deployment types provide *Requests* reports, *Performance* reports, and *Failures* reports.
-** CloudHub deployments provide *CPU Utilization* reports and *Memory Utilization* reports.
+* View reports:
+** All deployment types provide *Requests*, *Performance*, and *Failures* reports.
+** CloudHub deployments provide *CPU Utilization* and *Memory Utilization* reports.
 * Switch environments.
-* Select a time range for the reports.
-//TODO: VERIFY APP LINK IMPLEMENTATION IN HYPERFORCE
-* Click an app in the list to open its details page. 
+* Select a lookback period for the reports 
++
+Options are 24 hours and 7, 15, 30, and 90 days.
+* Click an app in the list to open its details page.
+** In US and EU clouds, the app opens to the Built-in Dash
 * Sort columns by clicking a column heading.
 //TODO: VERIFY REFRESH IMPLEMENTATION IN HYPERFORCE
 * Refresh the page.
