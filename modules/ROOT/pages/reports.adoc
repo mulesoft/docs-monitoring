@@ -18,7 +18,7 @@ You can also sort columns by clicking a column heading, and you can click *Expor
 . Sets a lookback period for the reports (24 hours and 7, 15, 30, and 90 days) and provides a manual refresh option
 . List of apps you can click to get more app detail
 
-NOTE: In US and EU clouds, the classic version of *Reports* provides the same functionality. Clicking an app from the classic version of reports opens to the app details page in Built-in Dashboards. Otherwise, clicking an app opens to the details page in Anypoint Insights. 
+NOTE: In US and EU clouds, the classic version of *Reports* provides the same functionality. Clicking an app from the classic version opens to the app details page in *Built-in Dashboards*. Otherwise, clicking an app opens to the details page in *Insights*. 
 
 [[access-reports]]
 == Access Reports
