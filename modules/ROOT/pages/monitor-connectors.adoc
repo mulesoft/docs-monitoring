@@ -66,7 +66,7 @@ The type of connector determines the charts that are displayed. Unless otherwise
 * Response Time: Average response time of SFTP connector requests, grouped by automatic intervals
 * Failures: Average number of SFTP connector request failures, grouped by automatic intervals
 
-//TODO: IS THIS NOW THE EMAIL CONNECTOR? AND DOES IT SUBMIT METRICS TO MONITORING STILL
+//TODO: EMAIL SUBMIT METRICS TO MONITORING STILL? ( Mule 4 EMAIL CONNECTOR merges SMTP, IMAP, and POP3)
 //|*SMTP* a|
 //
 //* Requests: Average number of SMTP connector requests, grouped by automatic intervals
