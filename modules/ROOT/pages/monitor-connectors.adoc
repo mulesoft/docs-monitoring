@@ -18,6 +18,7 @@ To monitor connectors, you must use a xref:release-notes::mule-runtime/mule-esb.
 // TODO: NEED A NEW LIST OF SUPPORTED CONNECTORS????
 NOTE: If your app is using Java 17, you must specify the version during deployment. For a list of compatible connectors, see https://help.salesforce.com/s/articleView?language=en_US&id=000782248&type=1[Java 17 Compatible Anypoint Connectors].
 
+//TODO: IS THIS LIST UP TO DATE?
 == Connector Metrics
 
 The type of connector determines the charts that are displayed. Unless otherwise specified, the following metrics are for outbound requests only.
