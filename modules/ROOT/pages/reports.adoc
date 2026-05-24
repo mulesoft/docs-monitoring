@@ -88,7 +88,7 @@ NOTE: This tab isn't available to apps in xref:hybrid-standalone::index.adoc[hyb
 
 == Export a Report as a CSV
 
-Export a report on the apps in the selected tab as a CSV file.
+Export a report on all apps in the selected tab as a CSV file.
 
 . Navigate to a report.
 +
