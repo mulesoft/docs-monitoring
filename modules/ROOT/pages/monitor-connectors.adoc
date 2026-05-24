@@ -1,9 +1,9 @@
 = Getting Performance Metrics from Connectors
 :page-info-pills: anypoint-pricing-titanium
 
-You can view performance metrics for supported connectors in your application such as what operation is being performed, how long the operations are taking, and whether they are succeeding or failing.
+View performance metrics for supported connectors in your Mule apps in Anypoint Monitoring dashboards. Built-in dashboards and Anypoint Insights support these connector metrics.
 
-You also need the Unified Agent.
+//TODO: THIS PAGE NEEDS AN UPDATE -- ALL CONNECTORS WILL BE JAVA 17 AT SOME POINT
 
 == Supported Mule Versions
 
@@ -14,7 +14,8 @@ To monitor connectors, you must use a xref:release-notes::mule-runtime/mule-esb.
 //TODO: RTF DEPLOYMENTS
 //* Runtime Fabric deployments
 
-If your app is using Java 17, you must specify the version during deployment. For a list of compatible connectors, see https://help.salesforce.com/s/articleView?language=en_US&id=000782248&type=1[Java 17 Compatible Anypoint Connectors].
+//NOTE: Standard support for Java 8 and 11 ends in August 2026 for 4.6 LTS.
+NOTE:If your app is using Java 17, you must specify the version during deployment. For a list of compatible connectors, see https://help.salesforce.com/s/articleView?language=en_US&id=000782248&type=1[Java 17 Compatible Anypoint Connectors].
 
 == Supported Connectors
 
@@ -65,6 +66,7 @@ The type of connector determines the charts that are displayed. Unless otherwise
 * Response Time: Average response time of SFTP connector requests, grouped by automatic intervals
 * Failures: Average number of SFTP connector request failures, grouped by automatic intervals
 
+//TODO: NOT JAVA 17? 
 |*SMTP* a|
 
 * Requests: Average number of SMTP connector requests, grouped by automatic intervals
@@ -89,9 +91,8 @@ The connector type "Other" is any connector not specified in this table.
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. Select the environment and resource name, then click *View*. +
-To view performance information, the resource you select must contain a supported connector with data.
-. In the *Built-in dashboards* page, click *Connectors*. +
+. Open *Insights* or *Built-in dashboards*.
+. Navigate to a Mule app that uses a supported connector.
+. In the detail page for the app, click *Connectors* to view connector metrics.
++
 include::reuse::partial$billing/pricing.adoc[tag=connectorTabReq]
- +
-The *Connectors* page displays the metrics for connectors.
