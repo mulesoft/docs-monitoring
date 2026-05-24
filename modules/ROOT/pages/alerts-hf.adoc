@@ -260,6 +260,8 @@ include::partial$include-alert-variables.adoc[tag="alerts-api"]
 
 include::partial$include-alert-variables.adoc[tag="alerts-variables"]
 
+//TODO: WHAT TO SAY ABOUT SLACK NOTIFICATIONS
+
 ////
 [[limits]]
 == Alert Limits and Rate Limiting
