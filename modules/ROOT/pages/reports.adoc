@@ -21,8 +21,9 @@ NOTE: In US and EU clouds only, clicking an app in *Reports* from the classic ve
 * Review the app target, request volume, and number of successful requests in the selected time range.
 +
 You can also sort columns by clicking a column heading.
-. Downloads a CSV file
 . Sets a lookback period for the reports (24 hours and 7, 15, 30, and 90 days) and provides a manual refresh option
+. Manually refreshes report data 
+. Downloads report data in CSV format
 
 
 [[access-reports]]
