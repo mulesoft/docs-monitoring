@@ -8,6 +8,8 @@ image::reports-hf.png["List of reports on the Reports page"]
 
 [calloutlist]
 . Selects an environment for Mule apps, such as a production or sandbox environment.
++
+In US and EU clouds only, the classic version of Anypoint Monitoring provides the environment selector on a separate page.
 . Displays reports:
 
 * All deployment types provide *Requests*, *Performance*, and *Failures* reports.
