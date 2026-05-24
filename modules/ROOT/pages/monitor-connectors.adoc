@@ -15,7 +15,8 @@ To monitor connectors, you must use a xref:release-notes::mule-runtime/mule-esb.
 //* Runtime Fabric deployments
 
 //NOTE: Standard support for Java 8 and 11 ends in August 2026 for 4.6 LTS.
-NOTE:If your app is using Java 17, you must specify the version during deployment. For a list of compatible connectors, see https://help.salesforce.com/s/articleView?language=en_US&id=000782248&type=1[Java 17 Compatible Anypoint Connectors].
+// TODO: NEED A NEW LIST OF SUPPORTED CONNECTORS????
+NOTE: If your app is using Java 17, you must specify the version during deployment. For a list of compatible connectors, see https://help.salesforce.com/s/articleView?language=en_US&id=000782248&type=1[Java 17 Compatible Anypoint Connectors].
 
 == Supported Connectors
 
