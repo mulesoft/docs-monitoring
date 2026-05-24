@@ -21,7 +21,7 @@ You can also sort columns by clicking a column heading.
 * Clicking an app opens to the details page in *Insights*. 
 +
 NOTE: In US and EU clouds only, clicking an app in *Reports* from the classic version of Anypoint Monitoring opens to the app details page in *Built-in Dashboards*.
-. Sets a lookback period for the reports (24 hours and 7, 15, 30, and 90 days) and provides a manual refresh option
+. Sets a lookback period for the reports (24 hours and 7, 15, 30, and 90 days)
 . Manually refreshes report data 
 . Downloads report data from the selected tab to CSV format
 
