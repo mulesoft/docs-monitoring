@@ -28,7 +28,7 @@ image::alerts-hf.png["Alerts UI"]
 //NEW: whole word search, not partial word
 *  Search field for alert names
 +
-Search supports whole-word searches are supported. Multi-word searches return all alert names that contain any of the words. The search ignores special characters in names, such as question marks (`?`), underscores (`_`), and hyphens (`-`).
+Whole-word searches are supported. Multi-word searches return all alert names that contain any of the words. The search ignores special characters in names, such as question marks (`?`), underscores (`_`), and hyphens (`-`).
 . <<alert-properties, Alert properties>>
 . List of configured alerts
 +
