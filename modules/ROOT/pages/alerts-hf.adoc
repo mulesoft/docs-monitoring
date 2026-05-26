@@ -92,8 +92,9 @@ To find the list of alerts:
 
 * <<status, Status>> 
 * <<severity, Severity>>
-* Search for the name of the alert.
-
+* Search for the name of the alert
++
+Whole-word searches are supported. Multi-word searches return all alert names that contain any of the words. The search ignores special characters in names, such as question marks (`?`), underscores (`_`), and hyphens (`-`).
 . Review the alert list that returns. 
 +
 [[alert-properties]]
