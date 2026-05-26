@@ -92,7 +92,7 @@ To find the list of alerts:
 
 * <<status, Status>> 
 * <<severity, Severity>>
-* Use whole-word search for the name of the alert, such as 
+* Search for the name of the alert.
 
 . Review the alert list that returns. 
 +
