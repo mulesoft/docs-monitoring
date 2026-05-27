@@ -27,7 +27,7 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 //| https://in1.platform.mulesoft.com/login/[India Cloud] 
 //| Government Cloud | Private Cloud (3.x) 
 
-| xref:alerts.adoc[]
+| xref:alerts.adoc[Alerts]
 | Yes
 | Yes
 //| Yes
