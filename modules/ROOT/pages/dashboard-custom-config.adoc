@@ -103,7 +103,7 @@ Most graphs track data over time, so your time options are important. Your optio
 . Add graphs, singlestat charts, tables, or text panels to a row in your custom dashboard.
 +
 For guidance, see <<charts_adding>>.
-. Optionally, click *Rows* to add and manage rows for your charts.
+. Optionally, click *Rows* to manage the row that contains your chart.
 +
 You can provide a title for a row and make the title visible in the dashboard. See <<rows>>.
 
