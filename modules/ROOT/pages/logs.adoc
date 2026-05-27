@@ -13,4 +13,4 @@ Use Anypoint Monitoring to retrieve logs on your deployed applications:
 
 //TEMPORARY REMOVAL AND RENAME SO THAT IT WON'T BUILD logs-search-hf-india
 //* xref:logs-search-hf-india.adoc[India] Anypoint Platform cloud
-** *Log Search* for logs across your deployed applications
+//** *Log Search* for logs across your deployed applications
