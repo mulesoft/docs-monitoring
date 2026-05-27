@@ -225,7 +225,7 @@ image::dashboard-custom-chart-more-hf.png["Chart More menu"]
 * Duplicate the chart.
 * Add or edit an alert for a graph. Other chart types don't support alerts.
 +
-For information about these alerts, see xref:dashboard-custom-config-graph.adoc#alerts_config[Create an Alert for a Chart in a Custom Dashboard].
+For information about these alerts, see <<alerts-custom-dashboards>>.
 * Export graph or table data to a CSV file. Other chart types don't support CSV exports. 
 +
 For more information, see xref:export-app-data-to-csv.adoc[].
@@ -233,7 +233,7 @@ For more information, see xref:export-app-data-to-csv.adoc[].
 
 //TODO: VERIFY
 [[alerts-custom-dashboards]]
-== Setting Up Alerts for Charts in Custom Dashboards
+== Set Up Alerts for Charts in Custom Dashboards
 
 In the https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, set up alerts for charts in xref:create-custom-dashboard.adoc[custom dashboards], from the chart's *Alert* tab. Alerts trigger email notifications if a data point you're measuring has passed a specified threshold in the past five minutes. This five-minute period is fixed and not configurable. 
 

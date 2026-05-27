@@ -1,6 +1,6 @@
 = Getting Alerts ({cloud})
 :cloud: Canada and Japan
-:page-aliases: alerts-jp-ca.adoc 
+:page-aliases: alerts-jp-ca.adoc
 
 //feature tier:
 include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only"]

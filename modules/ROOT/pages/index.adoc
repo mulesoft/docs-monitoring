@@ -321,7 +321,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 4+| *Alerts*
 
-|xref:basic-alerts.adoc[Basic alerts] for apps, servers, and APIs
+|xref:alerts-hf.adoc[Basic alerts] for apps, servers, and APIs
 |Yes
 |Yes
 |Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
