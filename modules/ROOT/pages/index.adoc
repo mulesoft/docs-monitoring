@@ -18,83 +18,91 @@ of issues (MTTI).
 Anypoint Monitoring feature availability depends on the control plane for your Anypoint Platform instance and your <<billing, Anypoint Platform package or plan>>.
 include::partial$include-entities.adoc[tags="region-data-not-shared"]
 
-[%header,cols="3a,1a,1a,1a,1a,1a"]
+//[%header,cols="3a,1a,1a,1a,1a"]
+[%header,cols="3a,1a,1a"]
 |===
 |Anypoint Monitoring Feature 
 |https://anypoint.mulesoft.com/monitoring[US], https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds
 | https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds
 //| https://in1.platform.mulesoft.com/login/[India Cloud] 
-| Government Cloud | Private Cloud (3.x) 
+//| Government Cloud | Private Cloud (3.x) 
 
-| <<alerts, Alerts>>
+| xref:alerts.adoc[]
 | Yes
 | Yes
 //| Yes
-| Yes
-| Yes
+//| Yes
+//| Yes
 
 | xref:anypoint-insights.adoc[Anypoint Insights]
 | Yes
 | Yes
 //| Yes
-| No
-| No
+//| No
+//| No
 
-| <<dashboards, Classic Built-in and Custom Dashboards>>
+| xref:dashboards.adoc[Classic built-in dashboards]
 | Yes
 | No
 //| No
+//| Yes
+//| Yes
+
+| xref:dashboard-custom-config.adoc[Custom dashboards]
 | Yes
-| Yes
+| No
+//| No
+//| Yes
+//| Yes
 
 | xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
 | Yes
 | No
 //| No
-| Yes
-| Yes
+//| Yes
+//| Yes
 
 | <<functional-monitoring>>
 | Yes
 | Yes
 //| No
-| No
-| No
+//| No
+//| No
 
 | <<logging, Logging features>>
 | Yes
 | Yes
 //| Yes
-| Yes
-| No
+//| Yes
+//| No
 
-| xref:tools.adoc[Notifications]
+| xref:tools.adoc[Notifications] (*Tools*)
 | Yes
 | No
 //| No
-| Yes
-| Yes
+//| Yes
+//| Yes
 
 | xref:reports.adoc[Reports]
 | Yes
-| No
+| Yes
 //| Yes
-| Yes
-| Yes
+//| Yes
+//| Yes
 
 | xref:telemetry-exporter.adoc[Telemetry exports]
 | Yes
 | Yes
 //| Yes
-| No
-| No
+//| No
+//| No
 
 | xref:traces.adoc[Traces]
 | Yes
 | No
 //| No
-| No
-| No
+//| No
+//| No
 |===
 
 //NOT SUPPORTED in PCE & Gov Cloud: Insights, Traces, Telemetry Exporter, API Functional Monitoring
@@ -109,6 +117,7 @@ Monitor performance data and issues across your deployed Mule apps and APIs (_en
 
 See xref:anypoint-insights.adoc[].
 
+////
 [[dashboards]]
 === Built-in and Custom Dashboards
 
@@ -125,16 +134,16 @@ You can track many data points and metrics from a custom dashboard that looks ac
 
 See xref:dashboards.adoc[].
 
+
 [[alerts]]
 === Event-Driven Alerts
-//feature tier (for h2-h4 headings):
-include::partial$subsection-pills.adoc[tag="anypoint-pricing-core"]
 
 Configure alerts to receive notifications about abnormal behavior and problems in your app network.
 
 You can trigger alert notifications based on thresholds you define for your Mule apps and APIs. 
 
 See xref:alerts.adoc[].
+////
 
 [[logging]]
 === Log Management
