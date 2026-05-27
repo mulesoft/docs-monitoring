@@ -33,7 +33,8 @@
  *** xref:basic-alerts.adoc[Setting Up Basic Alerts]
  *** xref:custom-dashboard-alerts.adoc[Setting Up Alerts for Custom Dashboards]
 ** xref:alerts-jp-ca.adoc[]
-** xref:alerts-hf.adoc[]
+//DELAYED:
+//** xref:alerts-hf.adoc[]
 * xref:logs.adoc[Using Logs]
  ** xref:logs-us-eu.adoc[]
   *** xref:logs-search-hf.adoc[]
@@ -41,7 +42,8 @@
   *** xref:raw-data.adoc[]
   *** xref:log-search-query-syntax.adoc[Log Search Query Syntax]
  ** xref:logs-jp-ca.adoc[]
- ** xref:logs-search-hf-india.adoc[]
+//DELAYED:
+// ** xref:logs-search-hf-india.adoc[]
 * xref:telemetry-exporter.adoc[Exporting Telemetry Data]
 * xref:reports.adoc[Viewing Reports]
 * xref:tools.adoc[]
