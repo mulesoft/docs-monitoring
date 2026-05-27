@@ -1,4 +1,5 @@
 = Getting Alerts ({cloud})
-:cloud: India
+:cloud: Canada and Japan
+:page-aliases: alerts-jp-ca.adoc
 
 include::partial$include-alerts-basic-hf.adoc[]

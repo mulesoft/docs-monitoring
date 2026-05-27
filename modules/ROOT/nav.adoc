@@ -32,9 +32,7 @@
 ** xref:alerts-us-eu.adoc[Getting Alerts (US and EU)]
  *** xref:basic-alerts.adoc[Setting Up Basic Alerts]
  *** xref:custom-dashboard-alerts.adoc[Setting Up Alerts for Custom Dashboards]
-** xref:alerts-jp-ca.adoc[]
-//DELAYED:
-//** xref:alerts-hf.adoc[]
+** xref:alerts-hf.adoc[]
 * xref:logs.adoc[Using Logs]
  ** xref:logs-us-eu.adoc[]
   *** xref:logs-search-hf.adoc[]

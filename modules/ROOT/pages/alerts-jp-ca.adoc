@@ -1,4 +1,0 @@
-= Getting Alerts ({cloud})
-:cloud: Canada and Japan
-
-include::partial$include-alerts-basic-hf.adoc[]
