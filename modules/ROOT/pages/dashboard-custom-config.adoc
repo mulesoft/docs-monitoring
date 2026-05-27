@@ -105,7 +105,7 @@ Most graphs track data over time, so your time options are important. Your optio
 For guidance, see <<charts_adding>>.
 . Optionally, click *Rows* to manage the row that contains your chart.
 +
-You can provide a title for a row and make the title visible in the dashboard. See <<rows>>.
+You can provide a title for a row and make the title visible in the dashboard. You can also create additional rows for your charts. See <<rows>>.
 
 [[charts_adding]]
 == Add Charts to a Custom Dashboard
