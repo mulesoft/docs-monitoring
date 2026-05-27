@@ -100,12 +100,12 @@ Most graphs track data over time, so your time options are important. Your optio
 * *Shared Crosshair*: The crosshair appears on all charts.
 * *Shared Tooltip*: The crosshair and the tooltip appears on all charts.
 |===
-. Optionally, click *Rows* to manage the row for charts you create.
-+
-You can provide a title for a row and make the title visible in the dashboard. See <<rows>>.
 . Add graphs, singlestat charts, tables, or text panels to a row in your custom dashboard.
 +
 For guidance, see <<charts_adding>>.
+. Optionally, click *Rows* to manage the row for charts you create.
++
+You can provide a title for a row and make the title visible in the dashboard. See <<rows>>.
 
 [[charts_adding]]
 == Add Charts to a Custom Dashboard
