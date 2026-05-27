@@ -3,8 +3,17 @@
 Use Anypoint Monitoring to create and receive alerts on your deployed applications:
 
 * xref:alerts-us-eu.adoc[Alerts on US and EU] Anypoint Platform clouds
-** Set up xref:basic-alerts.adoc[basic alerts]
-** Set up xref:custom-dashboard-alerts.adoc[alerts for custom dashboards]
++
+For custom dashboard alerts, see xref:dashboard-custom-config.adoc#alerts-custom-dashboards[Setting Up Alerts for Charts in Custom Dashboards].
 * xref:alerts-jp-ca.adoc[Alerts on Japan and Canada] Anypoint Platform clouds
 //DELAYED:
 //* xref:alerts-hf.adoc[Alerts on India] Anypoint Platform cloud
+
+//TODO: VERIFY THAT THESE STILL APPLY -- MESSAGE OUT TO AMAN
+////
+== Alert Limits
+
+The number of active alerts allocated to your organization depends on your organization's pricing model.
+
+include::reuse::partial$billing/pricing.adoc[tag=monitoringAlerts]
+////

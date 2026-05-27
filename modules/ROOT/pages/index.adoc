@@ -326,7 +326,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |Yes
 |Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
 
-|xref:custom-dashboard-alerts.adoc[Alerts for Custom Dashboards]
+|xref:dashboard-custom-config.adoc#alerts-custom-dashboards[Alerts for Custom Dashboards]
 |No
 |No
 |Yes

@@ -1,9 +1,5 @@
-//TODO: STILL BETA? NEED BETA FOR INDIA ALERTS?
-//Beta Banner (Canada and Japan Clouds)
-//include::reuse::partial$beta-banner.adoc[tag="monitoring-advanced"]
-
-//feature tier:
-include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only"]
+//feature tier varies by cloud:
+//include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only"]
 
 //In the https://ca1.platform.mulesoft.com/monitoring[Canada] and https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds, create and receive alert notifications for your deployed resources (Mule app and APIs). 
 //In https://in1.platform.mulesoft.com/login/[India] Cloud, create and receive alert notifications for your deployed resources (Mule app and APIs). 
