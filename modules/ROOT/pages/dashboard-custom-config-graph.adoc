@@ -140,7 +140,7 @@ After you complete your configuration, you can click Save Changes. To exit the c
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-From a graph's *Alerts* tab: 
+From a graph's *Alerts* tab, you can: 
 
 * <<configure, Configure an alert>>
 * <<state_history, View alert history>>
