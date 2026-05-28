@@ -132,7 +132,7 @@ After you complete your configuration, you can click Save Changes. To exit the c
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-In the *Alerts* tab, set up alerts that trigger, for example, when JVM memory utilization is too high.
+In the *Alerts* tab, set up alerts that trigger, for example, when JVM memory utilization is too high. Alerts aren't available to advanced mode graphs. 
 
 include::partial$include-alerts-config.adoc[]
 
@@ -240,3 +240,25 @@ Time ranges are calculated backwards from the present time. For example, you mig
 |===
 
 After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
+
+
+////
+TODO: TBD IF IT CAN SUPPLEMENT ALERTS INFO
+
+from the chart's *Alert* tab. Alerts trigger email notifications if a data point you're measuring has passed a specified threshold in the past five minutes. This five-minute period is fixed and not configurable. 
+
+For apps configured to run with more than one worker, charts that display worker-related metrics in Anypoint Monitoring dashboards break down the metrics by worker. 
+
+When you configure an alert for a graph, an alert state icon appears in the chart.
+
+image::alert-in-graph.png["Line chart showing CPU usage over time with an alert state of OK"]
+
+Hover over the bell icon to trigger a description popup. In this case, the description indicates `Status OK`.
+
+Alert states are defined as follows:
+
+include::partial$include-alert-state.adoc[leveloffset=+1]
+
+
+include::partial$include-alerts-config.adoc[leveloffset=+1]
+////

@@ -21,12 +21,19 @@ Many fields accept time and date interval values in the following format:
 |===
 
 [[metrics]]
-== Metrics Available to Graphs
+== Metrics Available to Charts
 
-Many <<metrics_basic, basic>> and <<metrics_advanced, advanced>> metrics are available when configuring custom dashboard graphs.
+Metrics are available to basic and advanced mode chart configurations.
+
+* <<metrics_basic>>
+* <<metrics_apis>>
+* <<metrics_advanced>>
+* <<advanced_apis>>
 
 [[metrics_basic]]
-== Basic Mode Metrics for Applications
+=== Basic Mode Metrics for Applications
+
+Basic Mode 
 
 include::partial$include-supported-mule-runtime-version.adoc[]
 
@@ -98,7 +105,8 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 | Outbound - Success Average Response Time by Flow | `ms`
 |===
 
-== Basic Mode Metrics for APIs
+[[metrics_apis]]
+=== Basic Mode Metrics for APIs
 
 These metrics are available when you use basic mode for APIs using the *API Panel* setting:
 
@@ -138,7 +146,7 @@ These metrics are available if you use basic mode for APIs using the *API Analyt
 |===
 
 [[metrics_advanced]]
-== Advanced Mode Metrics for Applications
+=== Advanced Mode Metrics for Applications
 
 These metrics are available when you use *Advanced* mode for apps:
 
@@ -162,18 +170,19 @@ These metrics are available when you use *Advanced* mode for apps:
 
 * `avg_request_count`
 * `avg_response_count`
-| TODO: | `disk_stats` a|
+| Application Statistics | `app_stats` a|
 
-* `TODO:`
-* `TODO:`
+* `errorCount`
+* `messageCount`
+* `responseTime`
 |  Disk Statistics | `disk_stats` a|
 
 * `disk_used`
 * `disk_free`
-| TODO: | `eden_space` a|
+//TODO: NO Select options in UI
+| Eden Space | `eden_space` a|
 
-* `TODO:`
-* `TODO:`
+N/A
 |  JVM ClassLoader | `jvm.classloading` a|
 
 * `classes_loaded`
@@ -186,10 +195,9 @@ These metrics are available when you use *Advanced* mode for apps:
 * `load_average`
 * `total_physical_memory_size`
 //TODO: IS THIS ONE/COPY FOR REAL?
-| TODO: | `jvm.garbagecollector.copy` a|
-
-* `TODO:`
-* `TODO:`
+//| JVM Garbage Collector Copy | `jvm.garbagecollector.copy` a|
+//
+//N/A
 | JVM Garbage Collection | `jvm.garbagecollector.marksweepcompact` a|
 
 * `gc_marksweep_collection_count`
@@ -205,7 +213,6 @@ These metrics are available when you use *Advanced* mode for apps:
 * `heap_committed`
 * `heap_total`
 * `heap_used`
-//TODO: jvm.memorycode_cache? 
 |  JVM Memory “Code Cache” | `jvm.memory.code_cache` a|
 
 * `committed_memory`
@@ -224,12 +231,12 @@ These metrics are available when you use *Advanced* mode for apps:
 * `init_memory`
 * `max_memory`
 * `used_memory`
-| JVM Memory “Eden Space” | `jvm.memory.par_eden_space` a|
+| JVM Memory (Par Eden Space) | `jvm.memory.par_eden_space` a|
 
 * `par_eden_committed`
 * `par_eden_total`
 * `par_eden_used`
-| JVM Memory “Survivor Space” | `jvm.memory.par_survivor_space` a|
+| JVM Memory (Survivor Space) | `jvm.memory.par_survivor_space` a|
 
 * `par_survivor_committed`
 * `par_survivor_total`
@@ -268,21 +275,18 @@ These metrics are available when you use *Advanced* mode for apps:
 // * `response_time_max`
 // * `response_time_min`
 // * `response_time_sum`
-| Mule Message Count | `app_stats` a|
-
-* `messageCount`
-// | TODO: | `survivor_space` a|
+// TODO: NO Select values for survivor_space
+| Survivor Space | `survivor_space` a|
+ 
+N/A
+// TODO: Not clear if custom_metric Select values are custom
+// | Custom Metric | `custom_metric` a|
 // 
-// * `TODO:`
-// | TODO: | `custom_metric` a|
-// 
-// * `TODO:`
-// | TODO: | `disk_stats` a|
-// 
-// * `TODO:`
+// N/A
 |===
 
-== Advanced Mode Metrics for APIs
+[[advanced_apis]]
+=== Advanced Mode Metrics for APIs
 
 These metrics are available if you use advanced mode for APIs using the *API Panel* setting:
 
