@@ -1,36 +1,55 @@
 = Configuring Tables in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
 
-Configure tables for custom dashboards in Anypoint Monitoring. In addition to configuring properties that are common to other charts, such advanced or basic metric queries and time ranges, you can also:
+Configure tables with Mule app and API metrics in custom dashboards. 
 
-* Lay out for time-series data in a tabular format and display aggregated data.
-* Add color-coded thresholds to indicate whether a value is above, below, or within an given range.
-* Provide links from values in a column to a specified web page.
-* Set pagination properties.
+image::dashboard-custom-config-table.png["Singlestat chart and configuration view"]
 
-[[prereqs]]
-== Before You Begin
+[calloutlist]
+. A table chart example configured with multiple queries in advanced mode
+. Table configuration tabs:
 
-Create or navigate to the table you plan to configure:
+* <<general, *General*>>: Singlestat title, description, and mode (basic or advanced)
+* <<time-range, *Time range*>>: Override settings for relative time ranges selected from the dashboard UI by end users
+* <<options, *Options*>>: Style settings
+* <<column-styles, *Column Styles*>>: TODO
+. *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> graph configuration mode
++
+Advanced mode graphs support complex configurations with up to 25 queries.
+. Icons for moving, duplicating, and deleting queries from an advanced mode configuration.
 
-* If your table exists, open its configuration view:
+[[create]]
+== Create a Table
+
+Create a table in a custom dashboard by following the guidance in xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
+
+[[configure]]
+== Configure a Table
+
+Configure a table in a custom dashboard.
 
 . From *Custom Dashboards*, open the custom dashboard that contains your table.
 +
-For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard].
+For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard]. 
 . Click the table's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
-
-* If the table doesn't exist:
-
-. Create the table.
+. Click the table's *General* configuration tab.
+.. Provide a title and description.
+.. Select and configure a table mode (basic or advanced).
 +
-For guidance, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
-. Navigate to its configuration view.
+Both modes require environment, resource (app or API), and metric settings. For more information, see <<general>>.
+. Optionally:
+.. In the table's <<time-range, *Time range*>> tab, set the table's overrides for the time range to capture.
+.. In the <<options, *Options*>> tab, configure table fonts, coloring, spark lines, and other style settings.
+.. In the <<value-mappings, *Value Mappings*>> tab, provide a human-readable label for a summary statistic.
+. Click *Apply Changes*. 
+. Exit the configuration view by clicking the *X* next to the configuration tabs.
 
+[[general]]
 //GENERAL SETTINGS shared by singlestat, graph, table
 //== General
 include::partial$include-general-config.adoc[leveloffset=+1]
 
+[[time-range]]
 // TIME RANGE SETTINGS shared by singlestat and table
 //==Time Range
 include::partial$include-time-range-config.adoc[]
@@ -88,9 +107,10 @@ In the Options configuration tab, you can set pagination properties for tables s
 
 After you complete your configuration, you can open another configuration tab or click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
 
+[[column-styles]]
 == Column Styles (Options, Data Types, Thresholds. Links)
 
-In the Column Styles configuration tab, you can create (+Add) and apply one or more rules for table columns. The rules are listed on the left side of the Column Styles pane.
+In the *Column Styles* configuration tab, you can create (*+Add*) and apply rules available for table columns.
 
 To remove a rule, you need to click it, then find and click the Remove Rule button near the bottom left of the screen.
 
