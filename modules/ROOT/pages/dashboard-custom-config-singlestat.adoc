@@ -3,7 +3,7 @@
 
 Configure singlestat charts for Mule apps and APIs in an Anypoint Monitoring custom dashboard. A singlestat chart displays a single value, such as the value of an Inbound - Average Request Count by Endpoint metric.
 
-image::dashboard-custom-config-singlesat.png["Singlestat chart and configuration view"]
+image::dashboard-custom-config-singlestat.png["Singlestat chart and configuration view"]
 
 [calloutlist]
 . A singlestat chart example
