@@ -8,7 +8,7 @@ image::dashboard-custom-config-singlestat.png["Singlestat chart and configuratio
 [calloutlist]
 . A singlestat chart example
 +
-You can change the look and other default properties of singlestats. 
+You can customize the look of singlestats.
 . Singlestat configuration tabs:
 
 * <<general, *General*>>: Singlestat title, description, and mode (basic or advanced)

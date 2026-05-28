@@ -1,13 +1,13 @@
 = General Settings for Basic and Advanced Data Queries
 
 [[general_settings]]
-*General* tab settings include <<mode_basic, basic>> and <<mode_advanced, advanced>> queries (or modes) for configuring time-series data. Both configurations share fields for the title and a short description.
+*General* tab settings include <<mode_basic, basic>> and <<mode_advanced, advanced>> modes (or queries) for configuring time-series data. Both configurations share fields for the title and a short description.
 
 [%header,cols="1,4"]
 |===
 2+| Basic and Advanced Mode Settings
-| Title | Title to display in the UI. Defaults to Panel Title.
-| Description | Short description to display in the UI when users hover over the information (`i`) icon.
+| *Title* | Title to display in the UI. Defaults to Panel Title.
+| *Description* | Short description to display in the UI when users hover over the information (`i`) bubble.
 |===
 
 Other settings are specific to the setting mode (basic or advanced).
@@ -20,10 +20,10 @@ In the *General* configuration tab, a basic query selects a single metric for a 
 [%header,cols="1,4"]
 |===
 2+| Basic Mode Settings
-| Panel Type a|
+| *Panel Type* a|
 From the drop-down menu, select the type of panel to display for the resource (*Application Panel* or *API Panel*)
 
-| Metric a|
+| *Metric* a|
 
 The drop-down menu includes these types of metrics:
 
@@ -33,16 +33,16 @@ The drop-down menu includes these types of metrics:
 
 For a list of basic metrics, see xref:dashboard-config-ref.adoc#metrics[Basic Mode Metrics]
 
-| Environment | The environment where your application or API is deployed.
-| Resource | A deployed application.
+| *Environment* | The environment where your application or API is deployed.
+| *Resource* | A deployed application.
 
-This option is available only if you selected `Application Panel` as your panel type.
-| API | A deployed API.
+This option is available if you select *Application Panel* as your panel type.
+| *API* | A deployed API. 
 
-This option is available only if you selected `API Panel` or `API Analytics Panel` (deprecated) as your panel type.
-| Version / Instance | The Mule version or instance on which your API is deployed.
+This option is available if you select *API Panel* as your panel type.
+| *Version / Instance* | The Mule version or instance on which your API is deployed.
 
-This option is available only if you selected `API Panel` or `API Analytics Panel` (deprecated) as your panel type.
+This option is available if you select *API Panel* as your panel type.
 |===
 
 After you complete your configuration, click *Save Changes*.
@@ -55,27 +55,27 @@ When you create an application panel using a JVM metric, the query that supports
 [[mode_advanced]]
 == Advanced Mode
 
-In the *General* configuration tab, advanced settings support one or more fine-tuned queries for your chart.
+In the *General* configuration tab, advanced mode settings support fine-tuned queries for metrics.
 
 [IMPORTANT]
-If you switch back to the basic configuration, some of the advanced configuration queries are removed.
+If you switch back to basic mode, some advanced configuration queries are removed.
 
 image::config-general-advanced.png["Advanced configuration mode is on."]
 
 [%header,cols="1,4"]
 |===
 2+| Advanced Mode Settings for Applications
-| From a|
+| *From* a|
 
-Lists JVM and Mule app properties (such as `jvm.memory` and `app_inbound_metric`) that you can add to your chart.
+Lists metrics, such as `jvm.memory` and `app_inbound_metric`, that you can add to your chart.
 
 This field provides matching suggestions when you type in a character. For example, `jvm.c` will produce a list of all values that contain those characters (such as `jvm.classloading` and `jvm.cpu.operatingsystem`).
 
 For a list of advanced metrics, see xref:dashboard-config-ref.adoc#metrics_advanced[Advanced Mode Metrics]
-| Where a|
+| *Where* a|
 Supports conditional logic for filtering the *From* data source you selected.
 
-* Select one or more filters tags (such as `app_id`, `env_id`, `org_id`, `worker_id`).
+* Select one or more filters tags (such as `app_id`, `env_id`, `org_id`, `worker_id`). To avoid an errors, you must provide required properties, such as the app or API, environment, and API version.
 * Available operators include: +
  ** `=` The value on the left matches the value on the right.
  ** `<` The value on the left is less than the value on the right. 
@@ -89,9 +89,9 @@ Example:
 * `Where env_id = Sandbox OR env_id= Production`
 
 Grouping `AND` or `OR` conditions within parentheses is _not allowed_. For example, `Where env_id = Sandbox AND (app_id= app3 OR app_id=app2)` isn’t allowed.  
-| Select a|
-Add one or more `field` settings to create a function that selects a field from the *From* data and applies an operation to it (such as the `mean` of the `heap_total`). 
-| Group By a|
+| *Select* a|
+Add one or more metric `field` settings to create a function that selects a field from the selected metric value in *From* and applies an operation to it (such as the `mean` of the `heap_total`). 
+| *Group By* a|
 
 //*TODO_VERIFY*
 For grouping the data by a selected time interval (such as `$&#95;interval`, `1s`, `10m`, `1h`), filter tag (such as `tag(env_id)`), and fill options (such as `none`, `null`, `0`, `previous`, `linear`).
@@ -104,31 +104,31 @@ Valid values and arguments:
 * `LIMIT`: Numeric value (N) used to limit the result to the first N data  points (combined series and timestamp values) returned by a query.
 * `SLIMIT`: Numeric value (N) used to return the all data points (combined series and timestamp values) from the first N series returned by the query.
 * `ORDER BY time DESC`: Returns results in descending time order.
-| Alias By | You can create a label for your metric using a literal string (such as `my string`) or supported variables (for example, `$tag_worker_id` or `$tag_env_id`).
+| *Alias By* | You can create a label for your metric using a literal string (such as `my string`) or supported variables (for example, `$tag_worker_id` or `$tag_env_id`).
 |===
 
 [%header,cols="1,4"]
 |===
 2+| Advanced Mode Settings for APIs
-| From a|
+| *From* a|
 
 `http_summary_metric` 
 
 For a list of advanced metrics, see xref:dashboard-config-ref.adoc#metrics_advanced[Advanced Mode Metrics]
-| Where a|
-Provides conditional logic for filtering the *From* data source you selected.
+| *Where* a|
+Provides conditional logic for filtering the metric selected from the *From* field.
 
 You can select one or more filter tags (such as `api_id`, `org_id`, `api_version_id`, `method`, `status code`). Example: `Where status_code = 200`.
 
-|Select a|
+|*Select* a|
 
-For creating a function that selects a field (such as `request_size_average`,`response_time_max`, or `response_time_sum`) from the HTTP summary and applies an operation to it (such as the `mean` of the `response_time_average`). You can add one or more `field` settings.
-|Group by a|
+For creating a function that selects a metric field (such as `request_size_average`,`response_time_max`, or `response_time_sum`) from the metric selected in the *From* field and applies an operation to it (such as the `mean` of the `response_time_average`). You can add one or more metric `field` settings.
+|*Group by* a|
 
 For grouping the data by a selected time interval (such as `$&#95;interval`, `1s`, `10m`, `1h`), filter tag (such as `tag(api_id)`), and fill options (such as `none`, `null`, `0`, `previous`, `linear`).
 
 * To avoid service timeouts when querying over long time ranges, consider using a time interval setting.
-|Alias by a|
+|*Alias by* a|
 
 You can create a label for your metric using a literal string (such as `my string`) or supported variables (for example, `$tag_api_id`). The alias must always begin with `$tag`. The syntax is `$tag_yourTagName`.
 

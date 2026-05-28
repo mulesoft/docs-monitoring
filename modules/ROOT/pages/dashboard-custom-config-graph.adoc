@@ -1,9 +1,9 @@
 = Configuring Graphs in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
 
-Configure time-series data in a graph. A custom dashboard graph in Anypoint Monitoring displays a metric for a Mule app or API.
+Configure time-series data in a graph. A custom dashboard graph in Anypoint Monitoring displays metrics for a Mule app or API.
 
-Advanced options support fine-tuned configurations. You can also customize X and Y axes, the look of the graph, legends, and behavior of the graph when you hover over a data point.
+Advanced options support fine-tuned configurations and multiple metrics in a single graph. You can also customize axes, the look of the graph, legends, and behavior of the graph when you hover over a data point.
 
 image::dashboard-custom-config-graph.png["Graph configuration view"]
 
@@ -12,13 +12,13 @@ image::dashboard-custom-config-graph.png["Graph configuration view"]
 . Graph configuration tabs:
 
 * <<general, *General*>>: Graph title, description, and mode (basic or advanced)
-* <<visuals, *Visuals*>>: Style settings, including bar, line, or data point settings
+* <<axes, *Axes*>>: Axis configurations
+* <<visuals, *Visuals*>>: Style settings, including bar, line, and data points configurations
 * <<alerts_config, *Alert*>>: Alerts settings
 +
 Advanced mode graphs don't support alert configurations.
 * <<advanced, *Advanced*>>: Legend, threshold, and other advanced settings
-* <<axes, *Axes*>>: Configure your graph's axes.
-. *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> graph configuration mode
+. *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> graph configurations
 +
 Advanced mode graphs support complex configurations with up to 25 queries.
 
@@ -45,7 +45,9 @@ For more information, see <<axes>>.
 . In the graph's *Visuals* tab, set <<visuals, bars, lines, or points>> for the graph.
 . Optionally:
 .. In the *Alert* tab, configure an <<alerts_config, alert and email notification>>.
-.. In the *Advance* tab, provide <<advanced, advanced configurations>>. 
++
+Alerting isn't available in advanced mode.
+.. In the *Advanced* tab, provide <<advanced, advanced configurations>>. 
 . Click *Apply Changes*. 
 . Exit the configuration view by clicking the *X* next to the configuration tabs.
 
