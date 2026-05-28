@@ -6,15 +6,21 @@ Configure HTML and Markdown text panels in Anypoint Monitoring custom dashboards
 [[prereqs]]
 == Before You Begin
 
-Open the text panel's configuration view.
+Create or navigate to the text panel you plan to configure:
 
-* To open the text panel's configuration view:
+* If your text panel exists, open its configuration view:
 
 . From *Custom Dashboards*, open the custom dashboard that contains your text panel.
 +
 For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard].
 . Click the text panel's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
-* To create a text panel in a custom dashboard, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
+
+* If the text panel doesn't exist:
+
+. Create the text panel.
++
+For guidance, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
+. Navigate to its configuration view.
 
 == Add Markdown to a Text Panel
 

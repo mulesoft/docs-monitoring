@@ -11,15 +11,21 @@ Configure tables for custom dashboards in Anypoint Monitoring. In addition to co
 [[prereqs]]
 == Before You Begin
 
-Open the table's configuration view. 
+Create or navigate to the table you plan to configure:
 
-* To open the table's configuration view:
+* If your table exists, open its configuration view:
 
 . From *Custom Dashboards*, open the custom dashboard that contains your table.
 +
 For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard].
 . Click the table's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
-* To create a table in a custom dashboard, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
+
+* If the table doesn't exist:
+
+. Create the table.
++
+For guidance, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
+. Navigate to its configuration view.
 
 //GENERAL SETTINGS shared by singlestat, graph, table
 //== General
