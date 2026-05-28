@@ -22,6 +22,33 @@ For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard
 For guidance, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
 . Navigate to its configuration view.
 
+[[create]]
+== Create a Text Panel
+
+Create a text panel in a custom dashboard by following the guidance in xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
+
+[[configure]]
+== Configure a Text Panel
+
+Configure a panel with HTML or Markdown text in a custom dashboard.
+
+. From *Custom Dashboards*, open the custom dashboard that contains your text panel.
++
+For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard]. 
+. Click the panel's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure* to open the panel's *General* configuration tab:
+
+.. Provide a title and description.
+.. Select the *markdown* or *html* mode.
+.. Provide content in the selected mode.
++
+For examples and more detailed steps, see:
+
+* <<markdown>>
+* <<html>>
+. Click *Apply changes*. 
+. Exit the configuration view by clicking the *X* next to the configuration tabs.
+
+[[markdown]]
 == Add Markdown to a Text Panel
 
 This Markdown example shows how your text appears in the UI as you type.
@@ -29,22 +56,9 @@ This Markdown example shows how your text appears in the UI as you type.
 .Markdown Example
 image::text-config.png["A text editor that uses Markdown to format text."]
 
-. In the text panel's configuration, click *General*.
-. Provide a title and description.
-. Select *markdown* from *Mode*.
-. Provide text in Markdown format to your text panel. 
-. Click *Save Changes*. 
-. To exit the configuration and return to the custom dashboard,  click *X*.
-
+[[html]]
 == Add HTML to a Text Panel
 
 This HTML example creates the heading shown in xref:dashboard-custom-config.adoc#text_example[Text example]:
 
 image::dashboard-text-config-html.png["An HTML example"]
-
-. In the text panel's configuration, click *General*.
-. Provide a title and description.
-. Select *html* from *Mode*.
-. Provide text in HTML format to your text panel.
-. Click *Save Changes*. 
-. To exit the configuration and return to the custom dashboard, click *X*.
