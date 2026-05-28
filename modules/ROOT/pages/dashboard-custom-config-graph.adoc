@@ -53,7 +53,7 @@ For more information, see <<prereqs>>.
 .. Select and configure a graph mode (basic or advanced).
 +
 For more information, see <<general>>.
-. In the graph's *Axes* tab, and set the graph's axes or use the defaults.
+. In the graph's *Axes* tab, set the graph's axes or use the defaults.
 +
 For more information, see <<axes>>.
 . In the graph's *Visuals* tab, set <<visuals, bars, lines, or points>> for the graph.
