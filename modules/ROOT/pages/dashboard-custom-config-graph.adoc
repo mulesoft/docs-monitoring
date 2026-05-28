@@ -45,20 +45,21 @@ For guidance, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to 
 
 Configure a graph in a custom dashboard.
 
-. Click the graph's *General* configuration tab.
-. Provide a title and description.
+. Navigate to the graph.
 +
-The description becomes available from an info bubble on the graph.
-. Select and configure a graph mode (basic or advanced).
+For more information, see <<prereqs>>.
+. Click the graph's *General* configuration tab.
+.. Provide a title and description.
+.. Select and configure a graph mode (basic or advanced).
 +
 For more information, see <<general>>.
-. Set the graph's axes or use the defaults.
+. In the graph's *Axes* tab, and set the graph's axes or use the defaults.
 +
 For more information, see <<axes>>.
-. Configure <<visuals, bars, lines, or points>> for the graph.
+. In the graph's *Visuals* tab, set <<visuals, bars, lines, or points>> for the graph.
 . Optionally:
-.. Configure an <<alerts_config, alert and email notification>> for a _basic mode_ graph.
-.. Add <<advanced, advanced configurations>>. 
+.. In the *Alert* tab, configure an <<alerts_config, alert and email notification>>.
+.. In the *Advance* tab, provide <<advanced, advanced configurations>>. 
 . Click *Apply Changes*. 
 . Exit the configuration view by clicking the *X* next to the configuration tabs.
 
