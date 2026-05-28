@@ -5,6 +5,7 @@ Configure time-series data in a graph. A custom dashboard graph in Anypoint Moni
 
 Advanced options support fine-tuned configurations and multiple metrics in a single graph. You can also customize axes, the look of the graph, legends, and behavior of the graph when you hover over a data point.
 
+//TODO: CONSIDER IMAGE THAT INCLUDES CONFIGURED GRAPH
 image::dashboard-custom-config-graph.png["Graph configuration view"]
 
 [calloutlist]
@@ -125,7 +126,7 @@ You can check one or more of these modes:
 
 Only available when the selected Draw Modes are Lines or Points.
 
-//TODO: VERIFY Point Radius and Line Width -- Claude thinks there's a contradition saying Lines relate to point; could be
+//TODO: VERIFY Point Radius and Line Width -- Claude thinks there's a contradition saying Lines relate to point
 * Point Radius: Only available when Lines is a selected Draw Mode. On a scale of `0` (none) to `10`, sets the thickness of the line that connects related data points on the graph.
 * Fill: Only available when Points is a selected Draw Mode. On a scale of `0` (none) to `10`, sets the opacity of the color used below related data points on the graph.
 * Line Width: Only available when Points is a selected Draw Mode. On a scale of `0` (none) to `10`, sets the thickness of the border of the fill.

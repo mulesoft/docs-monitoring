@@ -1,4 +1,4 @@
-= General Settings for Basic and Advanced Data Queries
+= General Settings for Basic and Advanced Queries
 
 [[general_settings]]
 *General* tab settings include <<mode_basic, basic>> and <<mode_advanced, advanced>> modes (or queries) for configuring time-series data. Both configurations share fields for the title and a short description.
@@ -135,7 +135,3 @@ You can create a label for your metric using a literal string (such as `my strin
 //TODO: VERIFY THIS SUGGESTED CHANGE:
 To use your tag as an alias, the tag must be included in the `group by` field of the query.
 |===
-
-After you complete your configuration, click *Save Changes*. 
-
-To exit the configuration and return to the dashboard, click *X*.
