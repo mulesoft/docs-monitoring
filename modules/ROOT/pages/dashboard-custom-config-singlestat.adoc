@@ -1,35 +1,62 @@
 = Configuring Singlestats in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
 
-Configure singlestat charts for Mule app and APIs in an Anypoint Monitoring custom dashboard. A singlestat charts displays a single value, such as a JVM - CPU Load Average value.
+Configure singlestat charts for Mule apps and APIs in an Anypoint Monitoring custom dashboard. A singlestat chart displays a single value, such as the value of an Inbound - Average Request Count by Endpoint metric.
 
-[[prereqs]]
-== Before You Begin
+image::dashboard-custom-config-singlesat.png["Singlestat chart and configuration view"]
 
-Create or navigate to the singlestat chart you plan to configure:
-
-* If your singlestat exists, open its configuration view:
-
-. From *Custom Dashboards*, open the custom dashboard that contains your singlestat.
+[calloutlist]
+. A singlestat chart example
 +
-For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard].
+You can change the look and other default properties of singlestats. 
+. Singlestat configuration tabs:
+
+* <<general, *General*>>: Singlestat title, description, and mode (basic or advanced)
+* <<time-range, *Time range*>>: Override settings for relative time ranges selected from the dashboard UI by end users
+* <<options, *Options*>>: Style settings
+* <<value-mappings, *Value Mappings*>>: Human-readable label settings
+. *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> graph configuration mode
+//+
+//Advanced mode graphs support complex configurations with up to 25 queries.
+//TODO: DO WE REALLY WANT PEOPLE USING ADVANCED MODE FOR MULTIPLE QUERIES? I GET ERRORS!
+
+[[create]]
+== Create a Singlestat Chart
+
+Create a singlestat chart in a custom dashboard by following the guidance in xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
+
+[[configure]]
+== Configure a Singlestat Chart
+
+Configure a singlestat chart in a custom dashboard.
+
+. From *Custom Dashboards*, open the custom dashboard that contains your singlestat chart.
++
+For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard]. 
 . Click the singlestat's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
-
-* If the singlestat doesn't exist:
-
-. Create the singlestat.
+. Click the singlestat's *General* configuration tab.
+.. Provide a title and description.
+.. Select and configure a singlestat chart mode (basic or advanced).
 +
-For guidance, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
-. Navigate to its configuration view.
+For more information, see <<general>>.
+. Optionally:
+.. In the singlestat's <<time-range, *Time range*>> tab, set the singlestat's overrides for the time range to capture.
+.. In the <<options, *Options*>> tab, configure singlestat fonts, coloring, spark lines, and other style settings.
+.. In the <<value-mappings, *Value Mappings*>> tab, provide a human-readable label for a summary statistic.
+. Click *Apply Changes*. 
+. Exit the configuration view by clicking the *X* next to the configuration tabs.
 
+[[general]]
 //GENERAL SETTINGS shared by singlestat and graph
 //== General
 include::partial$include-general-config.adoc[leveloffset=+1]
 
+[[time-range]]
 // TIME RANGE SETTINGS shared by singlestat and table
 //==Time Range
 include::partial$include-time-range-config.adoc[]
 
+[[options]]
 == Options Tab
 
 The *Options* tab includes settings for singlestat <<value_singlestat, values>>, fonts, <<color_singlestat, coloring>>, <<spark_singlestat, spark lines>>, and <<gauge_singlestat, gauge icon>> settings.
@@ -110,6 +137,7 @@ Display an arc-like gauge that represents the value of the singlestat.
 
 After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click *X*.
 
+[[value-mappings]]
 == Value Mappings
 
 From the *Value Mappings* configuration tab, you can provide a human-readable label for a summary statistic.
