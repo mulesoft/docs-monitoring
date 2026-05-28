@@ -1,7 +1,7 @@
 = Sending Notifications to External Systems
 :page-info-pills: anypoint-pricing-titanium
 
-To help deliver Anypoint Monitoring notifications to external systems, Anypoint Monitoring provides links to connectors on Anypoint Exchange that you can incorporate into a Mule app.
+Anypoint Monitoring provides links to connectors on Anypoint Exchange that you can incorporate into a Mule app to deliver notifications to external systems.
 
 .Tools Available in Anypoint Monitoring
 image::tools.png["Tools in Anypoint Monitoring"]

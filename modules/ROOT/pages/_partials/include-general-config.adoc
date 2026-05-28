@@ -75,7 +75,7 @@ For a list of advanced metrics, see xref:dashboard-config-ref.adoc#metrics_advan
 | *Where* a|
 Supports conditional logic for filtering the *From* data source you selected.
 
-* Select one or more filters tags (such as `app_id`, `env_id`, `org_id`, `worker_id`). To avoid an errors, you must provide required properties, such as the app or API, environment, and API version.
+* Select one or more filters tags (such as `app_id`, `env_id`, `org_id`, `worker_id`). To avoid errors, you must provide required properties, such as the app or API, environment, and API version.
 * Available operators include: +
  ** `=` The value on the left matches the value on the right.
  ** `<` The value on the left is less than the value on the right. 
@@ -86,7 +86,7 @@ Example:
 
 * `Where env_id = Sandbox`
 * `Where env_id = Sandbox AND app_id= app3`
-* `Where env_id = Sandbox OR env_id= Production`
+* `Where env_id = Sandbox OR env_id = Production`
 
 Grouping `AND` or `OR` conditions within parentheses is _not allowed_. For example, `Where env_id = Sandbox AND (app_id= app3 OR app_id=app2)` isn’t allowed.  
 | *Select* a|
@@ -98,11 +98,11 @@ For grouping the data by a selected time interval (such as `$&#95;interval`, `1s
 
 Valid values and arguments:
 
-* `time($&#95;interval)` for the automated time interval setting, or you can  specify time intervals of `1m`, `5m`, `10m`, `15m`, or `1h`.
+* `time($&#95;interval)` for the automated time interval setting, or you can specify time intervals of `1m`, `5m`, `10m`, `15m`, or `1h`.
 ** To avoid service timeouts when querying over long time ranges, consider using a time interval setting.
 * `fill()` where valid values are `none`, `null`, `0`, `previous`, `linear`.
-* `LIMIT`: Numeric value (N) used to limit the result to the first N data  points (combined series and timestamp values) returned by a query.
-* `SLIMIT`: Numeric value (N) used to return the all data points (combined series and timestamp values) from the first N series returned by the query.
+* `LIMIT`: Numeric value (N) used to limit the result to the first N data points (combined series and timestamp values) returned by a query.
+* `SLIMIT`: Numeric value (N) used to return all data points (combined series and timestamp values) from the first N series returned by the query.
 * `ORDER BY time DESC`: Returns results in descending time order.
 | *Alias By* | You can create a label for your metric using a literal string (such as `my string`) or supported variables (for example, `$tag_worker_id` or `$tag_env_id`).
 |===
@@ -120,19 +120,20 @@ Provides conditional logic for filtering the metric selected from the *From* fie
 
 You can select one or more filter tags (such as `api_id`, `org_id`, `api_version_id`, `method`, `status code`). Example: `Where status_code = 200`.
 
-|*Select* a|
+| *Select* a|
 
 For creating a function that selects a metric field (such as `request_size_average`,`response_time_max`, or `response_time_sum`) from the metric selected in the *From* field and applies an operation to it (such as the `mean` of the `response_time_average`). You can add one or more metric `field` settings.
-|*Group by* a|
+| *Group by* a|
 
 For grouping the data by a selected time interval (such as `$&#95;interval`, `1s`, `10m`, `1h`), filter tag (such as `tag(api_id)`), and fill options (such as `none`, `null`, `0`, `previous`, `linear`).
 
 * To avoid service timeouts when querying over long time ranges, consider using a time interval setting.
-|*Alias by* a|
+| *Alias by* a|
 
 You can create a label for your metric using a literal string (such as `my string`) or supported variables (for example, `$tag_api_id`). The alias must always begin with `$tag`. The syntax is `$tag_yourTagName`.
 
-To use your tag as an alias, the tag must be used to `group by` in the query. 
+//TODO: VERIFY THIS SUGGESTED CHANGE:
+To use your tag as an alias, the tag must be included in the `group by` field of the query.
 |===
 
 After you complete your configuration, click *Save Changes*. 

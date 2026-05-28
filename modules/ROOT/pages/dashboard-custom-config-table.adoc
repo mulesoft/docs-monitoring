@@ -3,13 +3,13 @@
 
 Configure tables with Mule app and API metrics in custom dashboards. 
 
-image::dashboard-custom-config-table.png["Singlestat chart and configuration view"]
+image::dashboard-custom-config-table.png["Table chart and configuration view"]
 
 [calloutlist]
 . A table chart example configured with multiple queries in advanced mode
 . Table configuration tabs:
 
-* <<general, *General*>>: Singlestat title, description, and mode (basic or advanced)
+* <<general, *General*>>: Table title, description, and mode (basic or advanced)
 * <<time-range, *Time range*>>: Override settings for relative time ranges selected from the dashboard UI by end users
 * <<options, *Options*>>: Table layout, column, and pagination options
 * <<column-styles, *Column Styles*>>: Rules for table columns
@@ -87,7 +87,7 @@ If you select Time Series to Aggregations, you can add pre-defined columns to th
 | Auto | Columns and their order are determined by the data query. Only available setting when Time Series to Rows, Time Series to Columns, Annotations, or Table is selected.
 | Avg | Averages the recorded data for a given metric.
 | Min | Provides the lowest recorded value for a given metric.
-| Max | Provides the highest recorded valued for a given metric.
+| Max | Provides the highest recorded value for a given metric.
 | Total | Provides the sum of all values recorded in the table.
 | Current | Shows the current value for a given metric.
 | Count | Provides the total number of data points collected on the metric.
@@ -96,7 +96,7 @@ If you select Time Series to Aggregations, you can add pre-defined columns to th
 
 === Paging (Options tab)
 
-In the Options configuration tab, you can set pagination properties for tables so that they do not become to long and are more manageable.
+In the *Options* configuration tab, you can set pagination properties for tables so they don't become too long and are more manageable.
 
 [%header,cols="1,4"]
 |===
@@ -109,7 +109,7 @@ In the Options configuration tab, you can set pagination properties for tables s
 After you complete your configuration, you can open another configuration tab or click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
 
 [[column-styles]]
-== Column Styles (Options, Data Types, Thresholds. Links)
+== Column Styles (Options, Data Types, Thresholds, Links)
 
 In the *Column Styles* configuration tab, you can create (*+Add*) and apply rules available for table columns.
 
@@ -120,7 +120,7 @@ To remove a rule, you need to click it, then find and click the Remove Rule butt
 [%header, cols="1,4"]
 |===
 2+| Options
-| Apply To Columns Named  | Identifies the column or columns to which the rule applies. Provide the name or a regular expression (regex) that matches the name of one or more columns in the table. For a regex, you  the following syntax: `/my.*regex/`
+| Apply To Columns Named  | Identifies the column or columns to which the rule applies. Provide the name or a regular expression (regex) that matches the name of one or more columns in the table. For a regex, use this syntax: `/my.*regex/`
 | Column Header | Provides a title for the column. For example, if you add the `Avg` column to a table that aggregates data, you might change the column name to `Average`. You can use strings such as `$1` for a regular expression.
 | Render Value As Link | Treats values in the column as a link that you can configure through the <<settings_link, Link>> settings.
 |===
@@ -128,7 +128,7 @@ To remove a rule, you need to click it, then find and click the Remove Rule butt
 [[settings_link]]
 === Link  (Column Styles tab)
 
-In the Column Styles configuration tab, you can use configure a link from a value to a specified web page.
+In the Column Styles configuration tab, you can configure a link from a value to a specified web page.
 
 Note that Link settings are only available when _Render Value As Link_ is checked.
 

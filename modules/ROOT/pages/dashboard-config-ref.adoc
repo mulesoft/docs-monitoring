@@ -33,7 +33,7 @@ Metrics are available to basic and advanced mode chart configurations.
 [[metrics_basic]]
 === Basic Mode Metrics for Applications
 
-Basic Mode 
+These metrics are available when you configure basic mode chart using the *Application Panel* setting.
 
 include::partial$include-supported-mule-runtime-version.adoc[]
 
@@ -108,7 +108,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 [[metrics_apis]]
 === Basic Mode Metrics for APIs
 
-These metrics are available when you use basic mode for APIs using the *API Panel* setting:
+These metrics are available when you configure basic mode chart using the *API Panel* setting.
 
 [%header,cols="3,1"]
 |===
@@ -225,7 +225,7 @@ N/A
 * `init_memory`
 * `max_memory`
 * `used_memory`
-| JVM Memory Pool “Tenured Generation” | `jvm.memory.metaspace` a|
+| JVM Memory Metaspace | `jvm.memory.metaspace` a|
 
 * `committed_memory`
 * `init_memory`
@@ -241,7 +241,7 @@ N/A
 * `par_survivor_committed`
 * `par_survivor_total`
 * `par_survivor_used`
-| JVM Memory “Tenured Generation” | `jvm.memory.tenured_gen` a|
+| JVM Memory (Tenured Generation) | `jvm.memory.tenured_gen` a|
 
 * `committed_memory`
 * `init_memory`

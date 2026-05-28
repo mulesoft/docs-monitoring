@@ -97,8 +97,8 @@ Valid values for a linear or logarithmic (log) scale for coordinates on the y-ax
 Valid values:
 
 * Time: The default option. Indicates that x-axis data is divided into time units (for example, hours or minutes).
-* Series: Indicates that data divided by series, and the y-axis provides the value of the series data.
-* Histogram: Converts the graph into a bar chart that represents collections of data at a specified, numeric intervals (called a buckets or bins), for example, . The higher a bar in a histogram, the greater the frequency (or count) of data collected at that interval.
+* Series: Indicates that data is divided by series, and the y-axis provides the value of the series data.
+* Histogram: Converts the graph into a bar chart that represents collections of data at specified, numeric intervals (called a buckets or bins). The higher a bar in a histogram, the greater the frequency (or count) of data collected at that interval.
 | Value | Visible only if Series is selected.
 | Buckets | Visible only if Histogram is selected. Divides the range of values for a given metric into the specified number of intervals so that the histogram can display the count or frequency of data points that fall into that interval.
 |===
@@ -125,6 +125,7 @@ You can check one or more of these modes:
 
 Only available when the selected Draw Modes are Lines or Points.
 
+//TODO: VERIFY Point Radius and Line Width -- Claude thinks there's a contradition saying Lines relate to point; could be
 * Point Radius: Only available when Lines is a selected Draw Mode. On a scale of `0` (none) to `10`, sets the thickness of the line that connects related data points on the graph.
 * Fill: Only available when Points is a selected Draw Mode. On a scale of `0` (none) to `10`, sets the opacity of the color used below related data points on the graph.
 * Line Width: Only available when Points is a selected Draw Mode. On a scale of `0` (none) to `10`, sets the thickness of the border of the fill.
@@ -241,7 +242,7 @@ image::graph-advanced-threshold.png["Threshold settings for a graph"]
 |===
 
 === Time Range Shift (Advanced Setting)
-In the *Advanced* configuration tab, you can set overrides any time intervals or ranges that end users select for the custom dashboard. Such selections are global and apply to all charts in the dashboard. Overrides are useful when the selection does not make sense for a particular graph.
+In the *Advanced* configuration tab, you can override any time intervals or ranges that end users select for the custom dashboard. Such selections are global and apply to all charts in the dashboard. Overrides are useful when the selection does not make sense for a particular graph.
 
 Time ranges are calculated backwards from the present time. For example, you might set the time range so you can view the last 2 hours of data in a graph. You can also shift the time range to calculate backwards from an earlier point in time, for example, from 1 hour ago instead of from the present time.
 
@@ -250,7 +251,7 @@ Time ranges are calculated backwards from the present time. For example, you mig
 2+| Time Range Shift Settings
 | Override Relative Time | The amount of time to show in the x-axis of the graph (for example, `2h`). Information about this setting is displayed under the title of the graph unless you select Hide Time Override Info.
 | Add Time Shift | Amount of time before now (the current time) to _end_ (or shift back in time) the duration set by Override Relative Time. For example, if the time right now is 10:00, and you shift the time to `1h` when the Override Relative Time is `2h`, end users will see the two hours of data available from 7:00 to 9:00, and the table will also display a message like this: `2 hours, ending 1 hour ago`.
-| Hide Time Override Info | Checkbox for hiding the description  of any Override Relative Time and Time Shift settings from the graph.
+| Hide Time Override Info | Checkbox for hiding the description of any Override Relative Time and Time Shift settings from the graph.
 |===
 
 After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.

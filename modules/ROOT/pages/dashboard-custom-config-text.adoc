@@ -45,7 +45,7 @@ For examples and more detailed steps, see:
 
 * <<markdown>>
 * <<html>>
-. Click *Apply changes*. 
+. Click *Apply Changes*. 
 . Exit the configuration view by clicking the *X* next to the configuration tabs.
 
 [[markdown]]

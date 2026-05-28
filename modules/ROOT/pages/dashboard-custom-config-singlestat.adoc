@@ -110,7 +110,7 @@ Add color-coded thresholds to a singlestat so that you can see whether it exceed
 [[spark_singlestat]]
 === Spark Lines
 
-Provide spark line settings for a singlestat to provide visual representation of the data.
+Configure spark line settings to show a visual representation of the data.
 
 [%header,cols="1,4"]
 |===
@@ -150,7 +150,3 @@ image::singlestat-config-value-mapping.png["Value mapping example"]
 | Value to Text | Maps a number to a textual description, for example: `0` -> `Error`, `1` -> `Success`
 | Range to Text | Maps a numeric range to a textual description, for example: From `5` To `10` Text `Warning`
 |===
-
-After you complete your configuration, click *Save changes*. 
-
-To exit the configuration and return to the dashboard, click *X*.

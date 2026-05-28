@@ -16,11 +16,11 @@ To view a custom dashboard:
 . Navigate to Anypoint Monitoring:
 +
 Click *Monitoring* from the Anypoint Platform home page or from the *Runtimes* menu in the header.
-. In the sidebar, click *Custom Dashboards* to display custom dashboards. 
+. In the sidebar, click *Custom Dashboards* to display custom dashboards.
 . Search for a custom dashboard by name or tag.
 . Click a name in the list to open the custom dashboard.
 +
-Custom dashboards share common properties, for example:
+Custom dashboards share common properties:
 +
 image::dashboard-custom-hf.png["Custom dashboard example"]
 +
@@ -32,7 +32,7 @@ image::dashboard-custom-hf.png["Custom dashboard example"]
 You can add multiple rows to a custom dashboard. Rows can contain multiple charts (also called panels or widgets).
 . Graphs in a custom dashboard row
 +
-You can create graphs, singlestat graphics, tables, and text panels for your custom dashboard. For more information, see <<charts_adding>>.
+You can create graphs, singlestat charts, tables, and text panels for your custom dashboard. For more information, see <<charts_adding>>.
 . Lookback window, refresh options, and other dashboard settings:
 
 * Zoom in or out.
@@ -98,7 +98,7 @@ Most graphs track data over time, so your time options are important. Your optio
 
 * *Default*: The crosshair cursor appears only in the chart that you hover over.
 * *Shared Crosshair*: The crosshair appears on all charts.
-* *Shared Tooltip*: The crosshair and the tooltip appears on all charts.
+* *Shared Tooltip*: The crosshair and the tooltip appear on all charts.
 |===
 . Add graphs, singlestat charts, tables, or text panels to a row in your custom dashboard.
 +
@@ -130,7 +130,7 @@ If chart icons aren't visible in your row:
 +
 .. Hover over the row to display its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*) for the row, and click *+ Add widget*. 
 +
-This menu is above all the charts in the row.
+This menu appears at the top of the row.
 .. Click one of the chart types for your row.
 . Hover over the chart to display its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and click *Configure*.
 . To configure the chart in a custom dashboard, see:
@@ -180,7 +180,7 @@ image::dashboard-custom-config-metadata-hf.png["Dashboard metadata"]
 |===
 2+| Metadata Available for Custom Dashboards
 | *Last Updated at* | Date and time of last update to the dashboard.
-| *Last Updated by* | User who made the last update. 
+| *Last Updated by* | User who made the last update.
 | *Created at* | Date and time the dashboard was created.
 | *Created by* | Username of person who created the dashboard.
 | *Version* | Version number of the dashboard. The version increments each time you save modifications to the dashboard.
@@ -189,7 +189,7 @@ image::dashboard-custom-config-metadata-hf.png["Dashboard metadata"]
 [[dup_dashboard]]
 == Duplicate a Custom Dashboard
 
-Create a copy of a dashboard. The copy requires a unique name but retains the configuration and any charts. You can modify that configuration as needed.
+Create a copy of a dashboard. The copy requires a unique name but retains the configuration and all charts. You can modify that configuration as needed.
 
 . From *Custom Dashboards*, open a custom dashboard.
 +
@@ -208,7 +208,7 @@ Delete a custom dashboard you no longer need.
 +
 For guidance, see <<view>>.
 . From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Delete*.
-. Confirm your deletion.
+. Confirm the deletion.
 
 == Manage Custom Dashboard Charts
 
