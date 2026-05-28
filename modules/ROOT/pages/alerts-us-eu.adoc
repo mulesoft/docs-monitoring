@@ -1,6 +1,5 @@
-= Getting Alerts ({cloud})
+= Getting Alerts (US and EU)
 :page-aliases: alerts-using.adoc, alerts-config.adoc
 :page-info-pills: anypoint-pricing-core
-:cloud: US and EU
 
 include::partial$include-alerts-basic-hf.adoc[]

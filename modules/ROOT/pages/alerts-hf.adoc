@@ -1,5 +1,4 @@
-= Getting Alerts ({cloud})
-:cloud: Canada and Japan
+= Getting Alerts (Canada and Japan)
 :page-aliases: alerts-jp-ca.adoc
 
 //feature tier:
