@@ -11,8 +11,8 @@ image::dashboard-custom-config-table.png["Singlestat chart and configuration vie
 
 * <<general, *General*>>: Singlestat title, description, and mode (basic or advanced)
 * <<time-range, *Time range*>>: Override settings for relative time ranges selected from the dashboard UI by end users
-* <<options, *Options*>>: Style settings
-* <<column-styles, *Column Styles*>>: TODO
+* <<options, *Options*>>: Table layout, column, and pagination options
+* <<column-styles, *Column Styles*>>: Rules for table columns
 . *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> graph configuration mode
 +
 Advanced mode graphs support complex configurations with up to 25 queries.
@@ -38,9 +38,9 @@ For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard
 +
 Both modes require environment, resource (app or API), and metric settings. For more information, see <<general>>.
 . Optionally:
-.. In the table's <<time-range, *Time range*>> tab, set the table's overrides for the time range to capture.
-.. In the <<options, *Options*>> tab, configure table fonts, coloring, spark lines, and other style settings.
-.. In the <<value-mappings, *Value Mappings*>> tab, provide a human-readable label for a summary statistic.
+.. In the table's <<time-range, *Time range*>> tab, set the table's overrides for the captured time range
+.. In the <<options, *Options*>> tab, configure table layout, column, and pagination options.
+.. In the <<column-styles, *Column Styles*>> tab, set rules for table columns.
 . Click *Apply Changes*. 
 . Exit the configuration view by clicking the *X* next to the configuration tabs.
 
@@ -54,6 +54,7 @@ include::partial$include-general-config.adoc[leveloffset=+1]
 //==Time Range
 include::partial$include-time-range-config.adoc[]
 
+[[options]]
 == Options (Data and Pagination Settings)
 
 In the Options configuration tab, you can set layout, column, and pagination options for tables in a custom dashboard.
@@ -119,7 +120,7 @@ To remove a rule, you need to click it, then find and click the Remove Rule butt
 [%header, cols="1,4"]
 |===
 2+| Options
-| Apply To Columns Named  | Identifies the column or columns to which the rule applies. You need to provides the name or a regular expression (regex) that matches the name of one or more columns in the table. For a regex, you  the following syntax: `/my.*regex/`
+| Apply To Columns Named  | Identifies the column or columns to which the rule applies. Provide the name or a regular expression (regex) that matches the name of one or more columns in the table. For a regex, you  the following syntax: `/my.*regex/`
 | Column Header | Provides a title for the column. For example, if you add the `Avg` column to a table that aggregates data, you might change the column name to `Average`. You can use strings such as `$1` for a regular expression.
 | Render Value As Link | Treats values in the column as a link that you can configure through the <<settings_link, Link>> settings.
 |===
