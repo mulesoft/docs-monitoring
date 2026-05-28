@@ -1,7 +1,7 @@
 = Configuring Graphs in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
 
-Configure time-series data in a graph. A custom dashboard graph in Anypoint Monitoring displays metrics for a Mule app or API.
+Configure metrics data in a graph. A custom dashboard graph in Anypoint Monitoring displays metrics for a Mule app or API.
 
 Advanced options support fine-tuned configurations and multiple metrics in a single graph. You can also customize axes, the look of the graph, legends, and behavior of the graph when you hover over a data point.
 
@@ -10,6 +10,7 @@ image::dashboard-custom-config-graph.png["Graph configuration view"]
 
 [calloutlist]
 
+. Graph example (basic mode)
 . Graph configuration tabs:
 
 * <<general, *General*>>: Graph title, description, and mode (basic or advanced)
@@ -19,9 +20,10 @@ image::dashboard-custom-config-graph.png["Graph configuration view"]
 +
 Advanced mode graphs don't support alert configurations.
 * <<advanced, *Advanced*>>: Legend, threshold, and other advanced settings
-. *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> graph configurations
+* *X* for closing the edit view
+. *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> configurations
 +
-Advanced mode graphs support complex configurations with up to 25 queries.
+Advanced mode support complex configurations with up to 25 queries.
 
 == Create a Graph
 
@@ -70,21 +72,21 @@ Set a vertical y-axis for the left (Left Y) or right (Right Y) side of your grap
 [%header,cols="1,4"]
 |===
 2+| Y-Axis Settings
-| Show | If unchecked, hides the y-axis from the graph.
-| Unit | The unit of measurement to use for values on the y-axis.  Values include `none`, data types (such as `short`, `percent (1-100)`), `currency` settings (including `Dollars $` or `Real ($)`), `time`, `data`, `data rate`, and many other types of values.
-| Scale a|
+| *Show* | If unchecked, hides the y-axis from the graph.
+| *Unit* | The unit of measurement to use for values on the y-axis.  Values include `none`, data types (such as `short`, `percent (1-100)`), `currency` settings (including `Dollars $` or `Real ($)`), `time`, `data`, `data rate`, and many other types of values.
+| *Scale* a|
 
 Valid values for a linear or logarithmic (log) scale for coordinates on the y-axis:
 
-* linear: For y-coordinates, such as `1`,`2`,`3`.
-* log (base 2): For y-coordinates, such as `1`,`4`,`16`.
-* log (base 10): For y-coordinates, such as `1`,`10`,`100`.
-* log (base 32): For y-coordinates, such as `1`,`32`,`1024`.
-* log (base 1024): For y-coordinates, such as `1`,`1024`,`1048576`.
-| Y-Min | The minimum value for a y-coordinate. Defaults to `auto`.
-| Y-Max | The maximum value for a y-coordinate. Defaults to `auto`.
-| Decimals | Override for the automatic decimal precision on y-coordinates, for example, where `2` limits a value of `10.12345` to `10.12`. Defaults to `auto`.
-| Label | A string used to label the Y axis. Defaults to `""`.
+* *linear*: For y-coordinates, such as `1`,`2`,`3`.
+* *log (base 2)*: For y-coordinates, such as `1`,`4`,`16`.
+* *log (base 10)*: For y-coordinates, such as `1`,`10`,`100`.
+* *log (base 32)*: For y-coordinates, such as `1`,`32`,`1024`.
+* *log (base 1024)*: For y-coordinates, such as `1`,`1024`,`1048576`.
+| *Y-Min* | The minimum value for a y-coordinate. Defaults to `auto`.
+| *Y-Max* | The maximum value for a y-coordinate. Defaults to `auto`.
+| *Decimals* | Overrides the automatic decimal precision on y-coordinates, for example, where `2` limits a value of `10.12345` to `10.12`. Defaults to `auto`.
+| *Label* | A string used to label the Y axis. Defaults to `""`.
 |===
 
 === X-Axis Settings
@@ -92,16 +94,16 @@ Valid values for a linear or logarithmic (log) scale for coordinates on the y-ax
 [%header,cols="1,4"]
 |===
 2+| X-Axis Settings
-| Show | If unchecked, hides the x-axis from the graph.
-| Mode a|
+| *Show* | If unchecked, hides the x-axis from the graph.
+| *Mode* a|
 
 Valid values:
 
-* Time: The default option. Indicates that x-axis data is divided into time units (for example, hours or minutes).
-* Series: Indicates that data is divided by series, and the y-axis provides the value of the series data.
-* Histogram: Converts the graph into a bar chart that represents collections of data at specified, numeric intervals (called a buckets or bins). The higher a bar in a histogram, the greater the frequency (or count) of data collected at that interval.
-| Value | Visible only if Series is selected.
-| Buckets | Visible only if Histogram is selected. Divides the range of values for a given metric into the specified number of intervals so that the histogram can display the count or frequency of data points that fall into that interval.
+* *Time*: The default option. Indicates that x-axis data is divided into time units (for example, hours or minutes).
+* *Series*: Indicates that data is divided by series, and the y-axis provides the value of the series data.
+* *Histogram*: Converts the graph into a bar chart that represents collections of data at specified, numeric intervals (called a buckets or bins). The higher a bar in a histogram, the greater the frequency (or count) of data collected at that interval.
+| *Value* | Visible only if *Series* mode is selected.
+| *Buckets* | Visible only if *Histogram* mode is selected. Divides the range of values for a given metric into the specified number of intervals so that the histogram can display the count or frequency of data points that fall into that interval.
 |===
 
 After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
@@ -115,29 +117,26 @@ image::graph-config-visuals.png["Singlestat example"]
 [%header,cols="1,4"]
 |===
 2+| Visual Configuration Options
-| Draw Modes a|
+| *Draw Modes* a|
 
 You can check one or more of these modes:
 
-* Bars: Checkbox for representing values as bar charts.
-* Lines: Checkbox for representing values as line graphs.
-* Points: Checkbox for representing values as data points.
-| Mode Options a|
+* *Bars*: Checkbox for representing values as bar charts.
+* *Lines*: Checkbox for representing values as line graphs.
+* *Points*: Checkbox for representing values as data points.
+| *Mode Options* a|
 
-Only available when the selected Draw Modes are Lines or Points.
+Only available when the selected *Draw Modes* are *Lines* or *Points*.
 
-//TODO: VERIFY Point Radius and Line Width -- Claude thinks there's a contradition saying Lines relate to point
-* Point Radius: Only available when Lines is a selected Draw Mode. On a scale of `0` (none) to `10`, sets the thickness of the line that connects related data points on the graph.
-* Fill: Only available when Points is a selected Draw Mode. On a scale of `0` (none) to `10`, sets the opacity of the color used below related data points on the graph.
-* Line Width: Only available when Points is a selected Draw Mode. On a scale of `0` (none) to `10`, sets the thickness of the border of the fill.
-* Staircase: Checkbox for displaying adjacent points in a staircase pattern.
-| Hide Series a|
+* *Point Radius*: Only available when *Points* is selected from *Draw Modes*. On a scale of `0` (none) to `10`, sets the circumference of the line that connects related data points on the graph.
+* *Fill*: Only available when *Lines* is selected from *Draw Modes*. On a scale of `0` (none) to `10`, sets the opacity of the color used below related data points on the graph.
+* *Line Width*: Only available when *Lines* is selected from *Draw Modes*. On a scale of `0` (none) to `10`, sets the thickness of the border of the fill.
+* *Staircase*: Checkbox for displaying adjacent points in a staircase pattern.
+| *Hide Series* a|
 
-* With Nulls Only: Checkbox for hiding any series that is filled with null values.
-* With Only Zeros: Checkbox for hiding any series that is filled with values of zero.
+* *With Nulls Only*: Checkbox for hiding any series that is filled with null values.
+* *With Only Zeros*: Checkbox for hiding any series that is filled with values of zero.
 |===
-
-After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
 
 [[alerts_config]]
 == Alerts (Configuration, Notifications, History)
@@ -165,20 +164,29 @@ In the *Advanced configuration* tab, configure legends for your graphs.
 
 image::graph-advanced-legend.png["Advanced graph settings for a legend"]
 
+//TODO: INFO ON LINKS IS MISSING: 
+// links will appear in dropdown panel window
+//Type (dashboard value goes with Dashboard and Title fields, 
+// absolute value goes with Url and Title fields)
+//open in a new Tab checkbox
+//Remove Link button
+//+Add Link button
+//screenshot in "advanced link options graph advanced mode custom dashboards.png"
+
 [%header,cols="1,4"]
 |===
-2+| Legend Options
-| Show  | Unchecking hides the legend. Checked by default.
-| As Table | Check to display the selected legend Values (such as `min` and `max`) in a table. Unchecked by default.
-| To the Right | Check to display the legend on the right side. Unchecked by default.
-| Width | Available when *To the Right* is checked. Sets the minimum width (in pixels) for the legend. Leave it blank to allow for automatic width selection.
+2+| *Legend Options*
+| *Show*  | Unchecking hides the legend. Checked by default.
+| *As Table* | Check to display the selected legend Values (such as `min` and `max`) in a table. Unchecked by default.
+| *To the Right* | Check to display the legend on the right side. Unchecked by default.
+| *Width* | Available when *To the Right* is checked. Sets the minimum width (in pixels) for the legend. Leave it blank to allow for automatic width selection.
 |===
 
 You can also display the following values in a legend:
 
 [%header,cols="1,4"]
 |===
-2+| Legend Values
+2+| *Legend Values*
 | Min | Minimum of all values returned from the query
 | Max | Maximum of all values returned from the query
 | Avg | Average of all values returned from the query

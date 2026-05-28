@@ -15,9 +15,10 @@ You can customize the look of singlestats.
 * <<time-range, *Time range*>>: Override settings for relative time ranges selected from the dashboard UI by end users
 * <<options, *Options*>>: Style settings
 * <<value-mappings, *Value Mappings*>>: Human-readable label settings
-. *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> graph configuration mode
+* *X* for closing the edit view
+. *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> configurations
 //+
-//Advanced mode graphs support complex configurations with up to 25 queries.
+//Advanced mode support complex configurations with up to 25 queries.
 //TODO: DO WE REALLY WANT PEOPLE USING ADVANCED MODE FOR MULTIPLE QUERIES? I GET ERRORS!
 
 [[create]]
