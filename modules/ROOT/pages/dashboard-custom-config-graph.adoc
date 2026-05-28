@@ -132,7 +132,11 @@ After you complete your configuration, you can click Save Changes. To exit the c
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-In the *Alerts* tab, set up alerts that trigger, for example, when JVM memory utilization is too high. Alerts aren't available to advanced mode graphs. 
+From a graph's *Alerts* tab: 
+
+* <<configure, Configure an alert>>
+* <<state_history, View alert history>>
+* <<delete_alert, Delete an alert>>
 
 include::partial$include-alerts-config.adoc[]
 
