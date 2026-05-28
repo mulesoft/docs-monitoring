@@ -34,8 +34,6 @@ Configure a graph in a custom dashboard.
 +
 For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard]. 
 . Click the graph's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
-+
-For more information, see <<prereqs>>.
 . Click the graph's *General* configuration tab.
 .. Provide a title and description.
 .. Select and configure a graph mode (basic or advanced).
