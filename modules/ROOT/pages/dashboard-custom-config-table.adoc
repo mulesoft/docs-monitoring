@@ -16,7 +16,7 @@ image::dashboard-custom-config-table.png["Singlestat chart and configuration vie
 . *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> graph configuration mode
 +
 Advanced mode graphs support complex configurations with up to 25 queries.
-. Icons for moving, duplicating, and deleting queries from an advanced mode configuration.
+. Icons for moving, duplicating, and deleting queries from an advanced mode configuration
 
 [[create]]
 == Create a Table
