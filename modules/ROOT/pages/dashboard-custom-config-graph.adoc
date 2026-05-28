@@ -22,30 +22,18 @@ Advanced mode graphs don't support alert configurations.
 +
 Advanced mode graphs support complex configurations with up to 25 queries.
 
-[[prereqs]]
-== Before You Begin
+== Create a Graph
 
-Create or navigate to the graph you plan to configure:
-
-* If your graph exists, open its configuration view:
-
-. From *Custom Dashboards*, open the custom dashboard that contains your graph.
-+
-For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard].
-. Click the graph's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
-
-* If the graph doesn't exist:
-
-. Create the graph.
-+
-For guidance, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
-. Navigate to its configuration view.
+Create a graph in a custom dashboard by following the guidance in xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
 
 == Configure a Graph
 
 Configure a graph in a custom dashboard.
 
-. Navigate to the graph.
+. From *Custom Dashboards*, open the custom dashboard that contains your graph.
++
+For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard]. 
+. Click the graph's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
 +
 For more information, see <<prereqs>>.
 . Click the graph's *General* configuration tab.
