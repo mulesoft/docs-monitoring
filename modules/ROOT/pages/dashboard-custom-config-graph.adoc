@@ -5,24 +5,49 @@ Configure time-series data in a graph. A custom dashboard graph in Anypoint Moni
 
 Advanced options support fine-tuned configurations. You can also customize X and Y axes, the look of the graph, legends, and behavior of the graph when you hover over a data point.
 
+image::dashboard-custom-config-graph.png["Graph configuration view"]
+
+[calloutlist]
+
+. Graph configuration tabs:
+
+* <<general, *General*>>: Graph title, description, and mode (basic or advanced)
+* <<visuals, *Visuals*>>: Style settings, including bar, line, or data point settings
+* <<alerts_config, *Alert*>>: Alerts settings
++
+Advanced mode graphs don't support alert configurations.
+* <<advanced, *Advanced*>>: Legend, threshold, and other advanced settings
+* <<axes, *Axes*>>: Configure your graph's axes.
+. *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> graph configuration mode
++
+Advanced mode graphs support complex configurations with up to 25 queries.
+
 [[prereqs]]
 == Before You Begin
 
-Open the graph's configuration view.
+Create or navigate to the graph you plan to configure:
 
-* To open the graph's configuration view:
+* If your graph exists, open its configuration view:
 
 . From *Custom Dashboards*, open the custom dashboard that contains your graph.
 +
 For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard].
-. Click the text graph's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
-* To create a graph in a custom dashboard, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
+. Click the graph's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
+
+* If the graph doesn't exist:
+
+. Create the graph.
++
+For guidance, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
+. Navigate to its configuration view.
 
 //GENERAL SETTINGS shared by singlestat and graph
 //== General
+[[general]]
 include::partial$include-general-config.adoc[leveloffset=+1]
 // END GENERAL
 
+[[axes]]
 == Axes (X-Axis and Y-Axis Settings)
 
 Configure the x-axis and y-axis of your graph in the *Axes* tab.
@@ -70,6 +95,7 @@ Valid values:
 
 After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
 
+[[visuals]]
 == Visuals (Bar, Line, Data Point Settings)
 You can configure the style and look of graph to use. Bar, line, and point graphs are supported.
 
@@ -112,6 +138,7 @@ include::partial$include-alerts-config.adoc[]
 
 //END ALERTS
 
+[[advanced]]
 == Advanced (Legends, Thresholds, Stacking, Hovering, Time Shift Settings)
 
 Add and configure legends, thresholds, and other features for your graph.
