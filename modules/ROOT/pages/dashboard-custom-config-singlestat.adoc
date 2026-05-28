@@ -36,9 +36,9 @@ For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard
 . Click the singlestat's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
 . Click the singlestat's *General* configuration tab.
 .. Provide a title and description.
-.. Select and configure a singlestat chart mode (basic or advanced).
+.. Select and configure a singlestat mode (basic or advanced).
 +
-For more information, see <<general>>.
+Both modes require environment, resource (app or API), and metric settings. For more information, see <<general>>.
 . Optionally:
 .. In the singlestat's <<time-range, *Time range*>> tab, set the singlestat's overrides for the time range to capture.
 .. In the <<options, *Options*>> tab, configure singlestat fonts, coloring, spark lines, and other style settings.
