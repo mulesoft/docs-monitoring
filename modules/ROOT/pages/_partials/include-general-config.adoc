@@ -15,7 +15,7 @@ Other settings are specific to the setting mode (basic or advanced).
 [[mode_basic]]
 == Basic Mode
 
-In the *General* configuration tab, a basic query selects a single metric for a resource (a deployed application or API) in a given environment.
+In the *General* configuration tab, a basic query selects a single metric for a deployed Mule app or API in a given environment.
 
 [%header,cols="1,4"]
 |===
@@ -45,10 +45,6 @@ This option is available if you select *API Panel* as your panel type.
 This option is available if you select *API Panel* as your panel type.
 |===
 
-After you complete your configuration, click *Save Changes*.
-
-To exit the configuration and return to the dashboard, click the *X*.
-
 [NOTE]
 When you create an application panel using a JVM metric, the query that supports the panel uses only the worker-id for the app. When you modify the panel at a later time, the resource fields are populated with the query content. Because some apps share a worker-id, the resource that appears in the selector might appear to be a different resource from the resource you selected originally. However, all resources share the same worker, so the query has the correct information despite the selector displaying a different resource name.
 
@@ -73,7 +69,7 @@ This field provides matching suggestions when you type in a character. For examp
 
 For a list of advanced metrics, see xref:dashboard-config-ref.adoc#metrics_advanced[Advanced Mode Metrics]
 | *Where* a|
-Supports conditional logic for filtering the *From* data source you selected.
+Supports conditional logic for filtering the *From* metric you selected.
 
 * Select one or more filters tags (such as `app_id`, `env_id`, `org_id`, `worker_id`). To avoid errors, you must provide required properties, such as the app or API, environment, and API version.
 * Available operators include: +
@@ -112,7 +108,7 @@ Valid values and arguments:
 2+| Advanced Mode Settings for APIs
 | *From* a|
 
-`http_summary_metric` 
+Lists metrics, such as `http_summary_metric`, that you can add to your chart.
 
 For a list of advanced metrics, see xref:dashboard-config-ref.adoc#metrics_advanced[Advanced Mode Metrics]
 | *Where* a|

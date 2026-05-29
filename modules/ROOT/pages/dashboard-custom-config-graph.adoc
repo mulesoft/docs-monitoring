@@ -23,7 +23,7 @@ Advanced mode graphs don't support alert configurations.
 * *X* for closing the edit view
 . *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> configurations
 +
-Advanced mode support complex configurations with up to 25 queries.
+Advanced mode supports complex configurations with up to 25 queries.
 
 == Create a Graph
 
