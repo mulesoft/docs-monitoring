@@ -83,7 +83,7 @@ Click the *Memory Utilization* tab to view information about the memory utilizat
 
 * *Memory Utilization*: The amount of the heap memory used by the JVM.
 * *Total Memory*: The total size of the app's heap memory.
-* *Memory Pressure*: he percentage of heap memory in use, calculated as memory used divided by total memory.
+* *Memory Pressure*: The percentage of heap memory in use, calculated as memory used divided by total memory.
 
 NOTE: This tab isn't available to apps in xref:hybrid-standalone::index.adoc[hybrid standalone deployments].
 
