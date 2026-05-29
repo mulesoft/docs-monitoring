@@ -13,10 +13,10 @@ image::dashboard-custom-config-table.png["Table chart and configuration view"]
 * <<time-range, *Time range*>>: Override settings for relative time ranges selected from the dashboard UI by end users
 * <<options, *Options*>>: Table layout, column, and pagination options
 * <<column-styles, *Column Styles*>>: Rules for table columns
+* *X* for closing the edit view
 . *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> configuration mode
 +
 Advanced mode support complex configurations with up to 25 queries.
-* *X* for closing the edit view
 . Icons for moving, duplicating, and deleting queries from an advanced mode configuration
 
 [[create]]
