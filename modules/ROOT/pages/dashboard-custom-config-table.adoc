@@ -39,7 +39,7 @@ For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard
 +
 Both modes require environment, resource (app or API), and metric settings. For more information, see <<general>>.
 . Optionally:
-.. In the table's <<time-range, *Time range*>> tab, set the table's overrides for the captured time range
+.. In the table's <<time-range, *Time range*>> tab, set the table's overrides for the time range selected by users.
 .. In the <<options, *Options*>> tab, configure table layout, column, and pagination options.
 .. In the <<column-styles, *Column Styles*>> tab, set rules for table columns.
 . Click *Apply Changes*. 

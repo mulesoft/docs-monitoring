@@ -41,7 +41,7 @@ For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard
 +
 Both modes require environment, resource (app or API), and metric settings. For more information, see <<general>>.
 . Optionally:
-.. In the singlestat's <<time-range, *Time range*>> tab, set the singlestat's overrides for the time range to capture.
+.. In the singlestat's <<time-range, *Time range*>> tab, set the singlestat's overrides for the time range selected by users.
 .. In the <<options, *Options*>> tab, configure singlestat fonts, coloring, spark lines, and other style settings.
 .. In the <<value-mappings, *Value Mappings*>> tab, provide a human-readable label for a summary statistic.
 . Click *Apply Changes*. 
