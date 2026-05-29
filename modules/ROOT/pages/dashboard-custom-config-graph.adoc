@@ -208,25 +208,25 @@ image::graph-advanced-stacking-hover.png["Advanced graph settings, Stack and Hov
 [%header,cols="1,4"]
 |===
 2+| Hover Tooltip Settings
-| Mode | To display one or all series in the tooltip.
-| Sort Order | Displays data in no order (None), Decreasing, or Increasing order. Defaults to None.
-| Stacked Value  a|
+| *Mode* | To display one or all series in the tooltip.
+| *Sort Order* | Displays data in no order (None), Decreasing, or Increasing order. Defaults to None.
+| *Stacked Value*  a|
 Available when *Stack* is checked. Controls the display of values in the tooltip.
 
 Valid values are:
 
-* Individual: The value of the series that you hover over.
-* Cumulative: Sum of series below the stacked value plus the series you hover over.
+* *Individual*: The value of the series that you hover over.
+* *Cumulative*: Sum of series below the stacked value plus the series you hover over.
 |===
 
 Stacking and Null functionality displays multiple series as a group within a stack. You can also specify how to deal with null values.
 
 [%header,cols="1,4"]
 |===
-2+| Stacking and Null Settings
-| Stack | When checked, stacks each series, one on top of another, instead of overlaying them.
-| Percent | Available when *Stack* is checked. Displays each series of stacked values as a percentage.
-| Null Value | Determines how to display null values: Connected, Null, Null As Zero.
+2+| *Stacking and Null Settings*
+| *Stack* | When checked, stacks each series, one on top of another, instead of overlaying them.
+| *Percent* | Available when *Stack* is checked. Displays each series of stacked values as a percentage.
+| *Null Value* | Determines how to display null values: Connected, Null, Null As Zero.
 |===
 
 === Threshold (Advanced Setting)
@@ -241,11 +241,12 @@ image::graph-advanced-threshold.png["Threshold settings for a graph"]
 [%header,cols="1,4"]
 |===
 2+| Threshold Settings
-| `gt` or `lt` | Indicates whether the limit applies to data that is greater than (`gt`) or less than (`lt`) the specified threshold value.
+| *gt* or *lt* | Indicates whether the limit applies to data that is greater than (`gt`) or less than (`lt`) the specified threshold value.
 | Threshold value | A numeric value for the threshold.
 | Threshold type | Identifier for the threshold (Custom, Critical, Warning, or OK).
-| Fill | Adds a filler color to the graph that corresponds to the specified threshold setting.
-| Line |  Adds a line to the graph that corresponds to the specified threshold setting.
+| *Fill* | Adds a filler color to the graph that corresponds to the specified threshold setting.
+| *Line* |  Adds a line to the graph that corresponds to the specified threshold setting.
+//TODO: DON'T SEE FILL COLOR OR LINE COLOR IN STGX
 | Fill Color  | Similar to *Fill* settings, but for custom thresholds only.
 | Line Color | Similar to *Line* settings, but for custom thresholds only.
 |===
@@ -257,14 +258,11 @@ Time ranges are calculated backwards from the present time. For example, you mig
 
 [%header,cols="1,3"]
 |===
-2+| Time Range Shift Settings
-| Override Relative Time | The amount of time to show in the x-axis of the graph (for example, `2h`). Information about this setting is displayed under the title of the graph unless you select Hide Time Override Info.
-| Add Time Shift | Amount of time before now (the current time) to _end_ (or shift back in time) the duration set by Override Relative Time. For example, if the time right now is 10:00, and you shift the time to `1h` when the Override Relative Time is `2h`, end users will see the two hours of data available from 7:00 to 9:00, and the table will also display a message like this: `2 hours, ending 1 hour ago`.
-| Hide Time Override Info | Checkbox for hiding the description of any Override Relative Time and Time Shift settings from the graph.
+2+| *Time Range Shift Settings*
+| *Override Relative Time* | The amount of time to show in the x-axis of the graph (for example, `2h`). Information about this setting is displayed under the title of the graph unless you select Hide Time Override Info.
+| *Add Time Shift* | Amount of time before now (the current time) to _end_ (or shift back in time) the duration set by Override Relative Time. For example, if the time right now is 10:00, and you shift the time to `1h` when the Override Relative Time is `2h`, end users will see the two hours of data available from 7:00 to 9:00, and the table will also display a message like this: `2 hours, ending 1 hour ago`.
+| *Hide Time Override Info* | Checkbox for hiding the description of any Override Relative Time and Time Shift settings from the graph.
 |===
-
-After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
-
 
 ////
 TODO: TBD IF IT CAN SUPPLEMENT ALERTS INFO
