@@ -28,7 +28,7 @@ You can create graphs, singlestat graphics, tables, and text panels for your cus
 
 Create a custom dashboard in Anypoint Monitoring.
 
-. In the sidebar, click *Custom dashboards* from the sidebar. 
+. In the sidebar, click *Custom dashboards*. 
 . Click *+ New Dashboard*.
 . Add and configure a chart for your dashboard.
 . Click *Save Changes*.
