@@ -39,7 +39,7 @@ Create a custom dashboard in Anypoint Monitoring.
 
 You can view custom dashboards for apps deployed to CloudHub and to hybrid targets in *Custom dashboards*.
 
-. In the sidebar, click *Custom dashboards* in the sidebar to display custom dashboards. 
+. In the sidebar, click *Custom dashboards* to display custom dashboards. 
 . Use search to find the dashboard.
 . In the custom dashboard list, click the dashboard. 
 
