@@ -68,7 +68,7 @@ See <<metadata>>.
 * *Table*: Display time-series data in a tabular format. You can change cell coloring, date, and value formatting.
 * *Text*: Add a panel with textual information (titles and descriptions) in Markdown or HTML.
 +
-See <<charts_adding, Adding Charts to a Custom Dashboard>>.
+See <<charts_adding>>.
 
 Set up a new dashboard:
 
@@ -111,8 +111,6 @@ You can provide a title for a row and make the title visible in the dashboard. Y
 == Add Charts to a Custom Dashboard
 
 Charts are panels (or widgets) you can add to rows in custom dashboards to display metrics on your Mule apps or APIs.
-
-NOTE: Up to 25 queries per custom dashboard chart are allowed. 
 
 Add a chart to your dashboard:
 
