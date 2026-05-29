@@ -136,7 +136,6 @@ Display an arc-like gauge that represents the value of the singlestat.
 | *Threshold Labels* | Checkbox for showing or hiding your Threshold settings.
 |===
 
-After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click *X*.
 
 [[value-mappings]]
 == Value Mappings
