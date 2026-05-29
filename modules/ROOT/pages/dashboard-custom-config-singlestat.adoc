@@ -72,26 +72,26 @@ image::singlestat-config-options.png["Singlestat options example"]
 [%header,cols="1,4"]
 |===
 2+| Values
-| Stat a|
+| *Stat* a|
 
 The value displayed by the singlestat. Available Settings:
 
-* Min: Minimum of recorded values for the specified metric.
-* Max: Maximum of recorded values for the specified metric.
-* Average: Average of the recorded values for the specified metric.
-* Current: The current value for the specified metric.
-* Total: Sum of recorded values for the specified metric.
-* Name: Name of the metric (for example, `worker-0`).
-* First: The first recorded value for the specified metric.
-* Delta: The total incremental increase in the series.
-* Difference: The difference between the Current value (last value) and the First value.
-* Range: The difference between Min and Max.
-* Time of Last Point: Timestamp of the last reading.
-| Prefix | Prepends text to the singlestat value.
-| Postfix | Appends text to the singlestat value.
-| Unit | Unit of measurement to display with the singlestat value (for example, `percent (0-100)`).
-| Decimals | Overrides the automatic decimal precision for the legend and tooltips.
-| Font size | Select the font size for the stat, prefix, and postfix.
+* *Min*: Minimum of recorded values for the specified metric.
+* *Max*: Maximum of recorded values for the specified metric.
+* *Average*: Average of the recorded values for the specified metric.
+* *Current*: The current value for the specified metric.
+* *Total*: Sum of recorded values for the specified metric.
+* *Name*: Name of the metric (for example, `worker-0`).
+* *First*: The first recorded value for the specified metric.
+* *Delta*: The total incremental increase in the series.
+* *Difference*: The difference between the Current value (last value) and the First value.
+* *Range*: The difference between Min and Max.
+* *Time of Last Point*: Timestamp of the last reading.
+| *Prefix* | Prepends text to the singlestat value.
+| *Postfix* | Appends text to the singlestat value.
+| *Unit* | Unit of measurement to display with the singlestat value (for example, `percent (0-100)`).
+| *Decimals* | Overrides the automatic decimal precision for the legend and tooltips.
+| *Font size* | Select the font size for the stat, prefix, and postfix.
 |===
 
 [[color_singlestat]]
@@ -102,10 +102,10 @@ Add color-coded thresholds to a singlestat so that you can see whether it exceed
 [%header,cols="1,4"]
 |===
 2+| Coloring
-| Background | Adds a background color determined by the *Thresholds* setting.
+| *Background* | Adds a background color determined by the *Thresholds* setting.
 | Value | Applies a color for the current singlestat value that matches the color determined by the *Thresholds* setting.
-| Thresholds | Sets a threshold using a numeric range such as `10,20` to distinguish values between the two numbers, below left-most number, and above the right-most number.
-| Colors | Sets the colors for the values that are below, within, or above the *Thresholds* settings. You can invert the colors, as needed.
+| *Thresholds* | Sets a threshold using a numeric range such as `10,20` to distinguish values between the two numbers, below left-most number, and above the right-most number.
+| *Colors* | Sets the colors for the values that are below, within, or above the *Thresholds* settings. You can invert the colors, as needed.
 |===
 
 [[spark_singlestat]]
@@ -116,10 +116,10 @@ Configure spark line settings to show a visual representation of the data.
 [%header,cols="1,4"]
 |===
 2+| Spark Lines
-| Show | Checkbox to show or hide the spark line.
-| Full Height | For covering the full height of the singlestat.
-| Line Color | For selecting the color of the spark line.
-| Fill Color | For selecting the color of the area below the spark line.
+| *Show* | Checkbox to show or hide the spark line.
+| *Full Height* | For covering the full height of the singlestat.
+| *Line Color* | For selecting the color of the spark line.
+| *Fill Color* | For selecting the color of the area below the spark line.
 |===
 
 [[gauge_singlestat]]
@@ -130,10 +130,10 @@ Display an arc-like gauge that represents the value of the singlestat.
 [%header,cols="1,4"]
 |===
 2+| Gauge
-| Show | Checkbox for showing or hiding the gauge.
-| Min | Sets a minimum value (such as `0` for a gauge that shows a percentage).
-| Max | Sets a maximum value (such as `100` for a gauge that shows a percentage).
-| Threshold Labels | Checkbox for showing or hiding your Threshold settings.
+| *Show* | Checkbox for showing or hiding the gauge.
+| *Min* | Sets a minimum value (such as `0` for a gauge that shows a percentage).
+| *Max* | Sets a maximum value (such as `100` for a gauge that shows a percentage).
+| *Threshold Labels* | Checkbox for showing or hiding your Threshold settings.
 |===
 
 After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click *X*.
@@ -148,6 +148,8 @@ image::singlestat-config-value-mapping.png["Value mapping example"]
 [%header,cols="1,4"]
 |===
 2+| Range to Text Settings
-| Value to Text | Maps a number to a textual description, for example: `0` -> `Error`, `1` -> `Success`
-| Range to Text | Maps a numeric range to a textual description, for example: From `5` To `10` Text `Warning`
+| *Value to Text* | Maps a number to a textual description, for example: `0` -> `Error`, `1` -> `Success`
+| *Range to Text* | Maps a numeric range to a textual description, for example: From `5` To `10` Text `Warning`
 |===
+
+//TODO: *Set value mappings* table in Value Mappings for singlestat
