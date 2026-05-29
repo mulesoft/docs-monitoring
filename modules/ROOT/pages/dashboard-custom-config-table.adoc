@@ -6,7 +6,7 @@ Configure tables with Mule app and API metrics in custom dashboards.
 image::dashboard-custom-config-table.png["Table chart and configuration view"]
 
 [calloutlist]
-. A table chart example configured with multiple queries in advanced mode
+. A table configured with multiple queries in advanced mode
 . Table configuration tabs:
 
 * <<general, *General*>>: Table title, description, and mode (basic or advanced)
