@@ -1,5 +1,5 @@
 = Setting Up Custom Dashboards
-:page-info-pills: anypoint-pricing-titanium
+:page-info-pills: anypoint-pricing-core
 :page-aliases: create-custom-dashboard.adoc custom-dashboard-alerts.adoc
 
 In the https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] clouds, create and configure custom dashboards to monitor metrics on your Mule apps and APIs. 
