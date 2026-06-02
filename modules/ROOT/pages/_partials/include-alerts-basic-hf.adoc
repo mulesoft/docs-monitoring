@@ -42,7 +42,8 @@ image::alerts-hf-popup.png["Alert details", 80%]
 . *Create Alert* is for <<create, configuring a new alert>>.
 . Enable, disable, edit, or delete an alert from its image:more-menu-vert-ellipsis.png["",15,15] (*More* menu).
 
-For alerts in other Anypoint Platform clouds, see xref:alerts-us-eu.adoc[].
+
+For alerts in custom dashboard graphs (US and EU clouds only), see xref:dashboard-custom-config-graph.adoc#alerts_config[Alerts]. 
 
 //TODO POST GA: ADD LINK TO LIMITATIONS SECTION
 //Limitations apply (see <<limits>>). 
@@ -225,7 +226,7 @@ Alerts are specific to one of your Anypoint Platform environments.
 
 Your organization administrator xref:access-management::environments.adoc#to-create-a-new-environment[creates] the environments that are available to you.
 
-Anypoint Platform supports these types of xref:access-management::environments.adoc#types-of-environments[environments]:
+Anypoint Platform supports these types of xref:access-management::environments.adoc#types-of-environmentsl[environments]:
 
 * *Design*
 * *Production*

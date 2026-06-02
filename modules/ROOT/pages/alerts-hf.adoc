@@ -1,7 +1,8 @@
-= Getting Alerts (Canada and Japan)
-:page-aliases: alerts-jp-ca.adoc
+= Getting Alerts
+:page-info-pills: anypoint-pricing-core
+:page-aliases: alerts-jp-ca.adoc, alerts-us-eu.adoc, alerts.adoc
 
 //feature tier:
-include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only"]
+//include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only"]
 
 include::partial$include-alerts-basic-hf.adoc[]

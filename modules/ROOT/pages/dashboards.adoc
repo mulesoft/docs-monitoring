@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Dashboards in Anypoint Monitoring provide visibility into Mule apps and APIs that are deployed to your environments (for example, Production, Sandbox, or Design).
+In https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] clouds, use built-in and custom dashboards in Anypoint Monitoring to get visibility into Mule apps and APIs deployed to your environments (for example, Production, Sandbox, or Design).
 
 [[builtin_dashboards]]
 == Built-In Dashboards

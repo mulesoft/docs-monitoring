@@ -19,88 +19,88 @@ Anypoint Monitoring feature availability depends on the control plane for your A
 include::partial$include-entities.adoc[tags="region-data-not-shared"]
 
 //[%header,cols="3a,1a,1a,1a,1a"]
-[%header,cols="3a,1a,1a"]
+[%header,cols="3a,1a,1a,1a"]
 |===
 |Anypoint Monitoring Feature 
 |https://anypoint.mulesoft.com/monitoring[US], https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds
 | https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds
-//| https://in1.platform.mulesoft.com/login/[India Cloud] 
+| https://in1.platform.mulesoft.com/login/[India] Cloud 
 //| Government Cloud | Private Cloud (3.x) 
 
-| xref:alerts.adoc[Alerts]
+| xref:alerts-hf.adoc[Alerts]
 | Yes
 | Yes
-//| Yes
+| Yes
 //| Yes
 //| Yes
 
 | xref:anypoint-insights.adoc[Anypoint Insights]
 | Yes
 | Yes
-//| Yes
+| Yes
 //| No
 //| No
 
-| xref:dashboards.adoc[Classic built-in dashboards]
+| xref:dashboards.adoc[Built-in dashboards (Classic mode)]
 | Yes
 | No
-//| No
+| No
 //| Yes
 //| Yes
 
 | xref:dashboard-custom-config.adoc[Custom dashboards]
 | Yes
 | No
-//| No
+| No
 //| Yes
 //| Yes
 
 | xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
 | Yes
 | No
-//| No
+| No
 //| Yes
 //| Yes
 
 | <<functional-monitoring>>
 | Yes
 | Yes
-//| No
+| No
 //| No
 //| No
 
 | <<logging, Logging features>>
 | Yes
 | Yes
-//| Yes
+| Yes
 //| Yes
 //| No
 
 | xref:tools.adoc[Notifications] (*Tools*)
 | Yes
 | No
-//| No
+| No
 //| Yes
 //| Yes
 
 | xref:reports.adoc[Reports]
 | Yes
 | Yes
-//| Yes
+| Yes
 //| Yes
 //| Yes
 
 | xref:telemetry-exporter.adoc[Telemetry exports]
 | Yes
 | Yes
-//| Yes
+| Yes
 //| No
 //| No
 
 | xref:traces.adoc[Traces]
 | Yes
 | No
-//| No
+| No
 //| No
 //| No
 |===
@@ -116,34 +116,6 @@ Monitor performance data and issues across your deployed Mule apps and APIs (_en
 
 
 See xref:anypoint-insights.adoc[].
-
-////
-[[dashboards]]
-=== Built-in and Custom Dashboards
-
-In US and EU clouds, use built-in dashboards or customize your own to provide instant visibility into your apps' performance and detailed analysis of your network.
-
-image::intro-dashboard-built-in.png["Built-in dashboard example"]
-
-//ADVANCED/TITANIUM TIER FOR CUSTOM DASHBOARDS
-Built-in dashboards and custom dashboards (available in xref:monitoring::index.adoc#billing[Advanced and Titanium tiers]) expose the metrics on your app network. They provide visual representations of your resources so you can detect anomalies, troubleshoot issues, and see trends that aren't obvious in raw form.
-
-A custom dashboard provides a single screen that can bring together specific metrics and data points that are important to your organization. Custom dashboards can display graphs and other charts, such as single statistics.
-
-You can track many data points and metrics from a custom dashboard that looks across multiple services in the app and in your dashboards across all systems.
-
-See xref:dashboards.adoc[].
-
-
-[[alerts]]
-=== Event-Driven Alerts
-
-Configure alerts to receive notifications about abnormal behavior and problems in your app network.
-
-You can trigger alert notifications based on thresholds you define for your Mule apps and APIs. 
-
-See xref:alerts.adoc[].
-////
 
 [[logging]]
 === Log Management

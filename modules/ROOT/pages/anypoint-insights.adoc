@@ -48,6 +48,9 @@ include::partial$include-entities.adoc[tags="anypoint-regions-hyperforce"]
 ** {empty}
 include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 
+** https://in1.platform.mulesoft.com/login/[India Cloud]
+
+
 * A Mule app or API (xref:gateway-home::index.adoc[Mule Gateway or Omni Gateway API]) running on a supported version of Mule runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
 
 ** CloudHub 2.0
