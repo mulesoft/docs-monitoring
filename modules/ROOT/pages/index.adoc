@@ -63,7 +63,7 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 | No
 
 |{empty}
-* xref:reports.adoc[Reports]
+xref:reports.adoc[Reports]
 | Yes
 | Yes
 | Yes
