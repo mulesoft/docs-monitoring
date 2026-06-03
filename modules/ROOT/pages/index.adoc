@@ -27,11 +27,9 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 
 |{empty}
 
+* xref:dashboards.adoc[Built-in and Custom dashboards]
 * xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
-* <<dashboards, Dashboards>> 
-* xref:tools.adoc[Notifications] 
-* xref:reports.adoc[Reports]
-* xref:tools.adoc[Tools]
+* xref:tools.adoc[Tools] (Notifications)
 | Yes
 | No
 | Yes
@@ -65,6 +63,13 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 | No
 
 |{empty}
+* xref:reports.adoc[Reports]
+| Yes
+| Yes
+| Yes
+| Yes
+
+|{empty}
   xref:telemetry-exporter.adoc[Telemetry exports]
 | Yes
 | Yes
@@ -90,22 +95,6 @@ Monitor performance data and issues across your deployed Mule apps and APIs (_en
 
 
 See xref:anypoint-insights.adoc[].
-
-[[dashboards]]
-=== Built-in and Custom Dashboards
-
-Use built-in dashboards or customize your own to provide instant visibility into your apps' performance and detailed analysis of your network.
-
-image::intro-dashboard-built-in.png["Built-in dashboard example"]
-
-//ADVANCED/TITANIUM TIER FOR CUSTOM DASHBOARDS
-Built-in dashboards and custom dashboards (available in xref:monitoring::index.adoc#billing[Advanced and Titanium tiers]) expose the metrics on your app network. They provide visual representations of your resources so you can detect anomalies, troubleshoot issues, and see trends that aren't obvious in raw form.
-
-A custom dashboard provides a single screen that can bring together specific metrics and data points that are important to your organization. Custom dashboards can display graphs and other charts, such as single statistics.
-
-You can track many data points and metrics from a custom dashboard that looks across multiple services in the app and in your dashboards across all systems.
-
-See xref:dashboards.adoc[].
 
 [[alerts]]
 === Event-Driven Alerts
