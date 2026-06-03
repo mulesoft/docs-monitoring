@@ -226,7 +226,7 @@ Alerts are specific to one of your Anypoint Platform environments.
 
 Your organization administrator xref:access-management::environments.adoc#to-create-a-new-environment[creates] the environments that are available to you.
 
-Anypoint Platform supports these types of xref:access-management::environments.adoc#types-of-environmentsl[environments]:
+Anypoint Platform supports these types of xref:access-management::environments.adoc#types-of-environments[environments]:
 
 * *Design*
 * *Production*
