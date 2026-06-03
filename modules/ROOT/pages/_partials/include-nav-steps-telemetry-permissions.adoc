@@ -1,17 +1,23 @@
 // tag::connectionPermission[]
 . Log in to Anypoint Platform using an account that has the Telemetry Exporter Administrator permission.
-. In the sidebar or the main Anypoint Platform screen, click *Monitoring*.
+. Navigate to Anypoint Monitoring:
++
+Click *Monitoring* from the Anypoint Platform home page or from the *Runtimes* menu in the header.
 . Click *Telemetry Exporter*.
 // end::connectionPermission[]
 
 // tag::configurationPermission[]
 . Log in to Anypoint Platform using an account that has the Telemetry Exporter Configurations Manager permission.
-. In the sidebar or the main Anypoint Platform screen, click *Monitoring*.
+. Navigate to Anypoint Monitoring:
++
+Click *Monitoring* from the Anypoint Platform home page or from the *Runtimes* menu in the header.
 . Click *Telemetry Exporter*.
 // end::configurationPermission[]
 
 // tag::eitherPermission[]
 . Log in to Anypoint Platform using an account that has the Telemetry Exporter Administrator or Telemetry Exporter Configurations Manager permission.
-. In the sidebar or the main Anypoint Platform screen, click *Monitoring*.
+. Navigate to Anypoint Monitoring:
++
+Click *Monitoring* from the Anypoint Platform home page or from the *Runtimes* menu in the header.
 . Click *Telemetry Exporter*.
 // end::eitherPermission[]
