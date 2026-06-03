@@ -1,47 +1,58 @@
 = Viewing Reports in Anypoint Monitoring
 :page-info-pills: anypoint-pricing-titanium
 
-Reports allow you to view a list of apps running in an environment. The reports display information about overall performance and behavior across all the apps in the environment. These reports can help you identify app performance and availability problems across the environment so you can better maintain the expected level of service for your apps.
+View reports on Mule app performance and behavior across all apps in an environment. Reports help you maintain the expected level of service for your apps.
 
-image::reports-main-page.png["List of reports on the Reports page"]
+//UPDATED FOR HYPERFORCE RELEASE
+image::reports-hf.png["List of reports on the Reports page"]
 
-From any of the *Reports* tabs, you can:
+[calloutlist]
+. Selects an environment for Mule apps, such as a production or sandbox environment.
++
+In US and EU clouds only, the classic version of Anypoint Monitoring provides the environment selector on a separate page.
+. Displays reports:
 
-* View these reports:
-** All deployment types provide *Requests* reports, *Performance* reports, and *Failures* reports.
-** CloudHub deployments provide *CPU Utilization* reports and *Memory Utilization* reports.
-* Switch environments.
-* Select a time range for which to view the reports.
-* Click an app in the list to go to its built-in dashboard.
-* Click on column headings to sort the lists from highest to lowest, or from lowest to highest numbers.
-* Refresh the page.
-* Export a report as a CSV file.
+* All deployment types provide *Requests*, *Performance*, and *Failures* reports.
+* CloudHub deployments provide *CPU Utilization* and *Memory Utilization* reports.
+. Lists apps you can click to get more details about the app:
++
+//VERIFY EU/US
+* Review the app target, request volume, and number of successful requests in the selected time range.
++
+You can also sort columns by clicking a column heading.
+* Clicking an app opens the details page in *Insights*. 
++
+NOTE: In US and EU clouds only, clicking an app in *Reports* from the classic version of Anypoint Monitoring opens to the app details page in *Built-in Dashboards*.
+. Sets a lookback period for the reports (24 hours and 7, 15, 30, and 90 days)
+. Manually refreshes report data 
+. Downloads report data from the selected tab to CSV format
 
 
+[[access-reports]]
 == Access Reports
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
 . In the sidebar, click *Reports*.
-. In the *Environment* drop-down list, select the environment where the apps you want to view reports for are deployed, and click *View*. +
-The first time you view the reports page, the *Requests* report is displayed.
-. Select a time range from the drop-down list to view reports for a specific time range.
-+
-image::monitoring-reports-time-range-selector.png["Time range dropdown list with Last 15 days selected"]
-+
-To view other reports, click the corresponding tab for the report to view. From any report tab, you can click the app name to view statistics for that app on its corresponding builtin dashboard.
+. From *Environment*, select the environment where the apps you want to view are deployed.
+. Select the lookback period to view reports for that time range.
+. Click a report type:
 
+* <<requests>>
+* <<performance>>
+* <<failures>>
+* <<cpu>>
+* <<memory>>
 
-[NOTE]
-For applications that run using a stand-alone runtime or hybrid environments, data is shown only for Requests, Performance, and Failures tabs. CPU and memory utilization data are not shown for hybrid applications.
-
+[[requests]]
 === Requests
 
 Click the *Requests* tab to view information about app requests, including:
 
-* *Request Volume*: The total number of inbound requests to the app within the specified time range.
+* *Request Volume*: The total number of inbound requests to the app in the specified time range.
 * *Successful Requests*: The total number of successful inbound requests to the app within the specified time range.
 
+[[performance]]
 === Performance
 
 Click the *Performance* tab to view information about app performance metrics, including:
@@ -49,32 +60,39 @@ Click the *Performance* tab to view information about app performance metrics, i
 * *Request Volume*: The total number of inbound requests to the app in the specified time range.
 * *Response Time*: The average response time (in milliseconds) for inbound requests to the app.
 
+[[failures]]
 === Failures
 
 Click the *Failures* tab to view information about app request failures, including:
 
-* *Request Volume*: The total number of inbound requests to the app within the specified time range.
-* *Failed Requests*: The total number of failed inbound requests to the app for the specified time range. An inbound request failure occurs when a Mule flow in your deployed Mule app throws an exception. Inbound failures differ from outbound failures, which indicate exceptions from outbound connector operations, such as from an HTTP Request operation in the Anypoint Connector for HTTP (HTTP Connector). Failure counts apply only to exceptions from the app, so a 4xx or 5xx reply code to a caller isn't a failure unless the reply is due to an unmanaged exception.
+* *Request Volume*: The total number of inbound requests to the app in the specified time range.
 * *Successful Requests*: The number of successful inbound requests to the app in the specified time range.
+* *Failed Requests*: The total number of failed inbound requests to the app in the specified time range. An inbound request failure occurs when a Mule flow in your deployed Mule app throws an exception. Inbound failures differ from outbound failures, which indicate exceptions from outbound connector operations, such as from an HTTP Request operation in the Anypoint Connector for HTTP (HTTP Connector). Failure counts apply only to exceptions from the app, so a 4xx or 5xx reply code to a caller isn't a failure unless the reply is due to an unmanaged exception.
 
+[[cpu]]
 === CPU Utilization
 
 Click the *CPU Utilization* tab to view information about the average percentage of the CPU utilized by the JVM.
 
+NOTE: This tab isn't available to apps in xref:hybrid-standalone::index.adoc[hybrid standalone deployments].
+
+[[memory]]
 === Memory Utilization
 
 Click the *Memory Utilization* tab to view information about the memory utilization of each app running in the environment, including:
 
 * *Memory Utilization*: The amount of the heap memory used by the JVM.
 * *Total Memory*: The total size of the app's heap memory.
-* *Memory Pressure*: The percentage of the heap memory used (the difference between memory used and memory total).
+* *Memory Pressure*: The percentage of heap memory in use, calculated as memory used divided by total memory.
+
+NOTE: This tab isn't available to apps in xref:hybrid-standalone::index.adoc[hybrid standalone deployments].
+
 
 == Export a Report as a CSV
 
-You can export a report as a CSV file and save it locally for any of the tabs in the Reports page.
+Export a report on all apps in the selected tab as a CSV file.
 
-. In the sidebar, click *Reports*.
-. Click on the tab for the report to export.
-. (Optional) Apply a time filter to download reports for the specified time period.
-. In the upper right corner of the page, click *Export CSV*. +
-The CSV file is automatically downloaded in your browser.
+. Navigate to a report.
++
+For guidance, see <<access-reports>>.
+. Click *Export CSV* to download the CSV file.

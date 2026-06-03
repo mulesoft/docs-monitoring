@@ -1,44 +1,64 @@
 = Configuring Text Panels in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
 
-You can add text panels to custom dashboards in Anypoint Monitoring. A text panel can provide information about your dashboard. You can add one to any row in the dashboard.
+Configure HTML and Markdown text panels in Anypoint Monitoring custom dashboards.
 
-|===
+[[prereqs]]
+== Before You Begin
 
-a|
+Create or navigate to the text panel you plan to configure:
 
-You can write text in these modes:
+* If your text panel exists, open its configuration view:
 
-* HTML: See xref:dashboard-config-ref.adoc#samples_html[HTML Support] for HTML examples.
+. From *Custom Dashboards*, open the custom dashboard that contains your text panel.
++
+For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard].
+. Click the text panel's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
 
-* Markdown: See xref:dashboard-config-ref.adoc#samples_markdown[Markdown Syntax Support] for Markdown examples. a|
+* If the text panel doesn't exist:
 
-image::text-config-html.png["A dropdown menu displays 'html' for Mode and 'markdown' for Content."]
-|===
+. Create the text panel.
++
+For guidance, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
+. Navigate to its configuration view.
 
-== Markdown Example
+[[create]]
+== Create a Text Panel
 
-As this Markdown example shows, you can see how your text will appear in the UI as you type.
+Create a text panel in a custom dashboard by following the guidance in xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
+
+[[configure]]
+== Configure a Text Panel
+
+Configure a panel with HTML or Markdown text in a custom dashboard.
+
+. From *Custom Dashboards*, open the custom dashboard that contains your text panel.
++
+For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard]. 
+. Click the panel's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure* to open the panel's *General* configuration tab:
+
+.. Provide a title and description.
+.. Select the *markdown* or *html* mode.
+.. Provide content in the selected mode.
++
+For examples and more detailed steps, see:
+
+* <<markdown>>
+* <<html>>
+. Click *Apply Changes*. 
+. Exit the configuration view by clicking the *X* next to the configuration tabs.
+
+[[markdown]]
+== Add Markdown to a Text Panel
+
+This Markdown example shows how your text appears in the UI as you type.
 
 .Markdown Example
 image::text-config.png["A text editor that uses Markdown to format text."]
 
-After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
-
-== HTML Example
+[[html]]
+== Add HTML to a Text Panel
 
 This HTML example creates the heading shown in xref:dashboard-custom-config.adoc#text_example[Text example]:
 
 image::dashboard-text-config-html.png["An HTML example"]
-
-////
-THIS IS NOT SUPPOSED TO BE IN THE UI, PER PABLO:
-Text panels also support a templating language and provide auto-complete features. For example, when you start typing, you can see a list of matching template options from which you can select and edit, such as these:
-
-----
-{% codeblock %}
-code_snippet
-{% endcodeblock %}
-{% img class URL width height title_text alt_text %}
-----
-////
