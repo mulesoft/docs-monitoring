@@ -132,9 +132,9 @@ Specify a field name or use the default when performing a search. The field name
 Search any field by typing the field name, followed by a colon, and then the term you are looking for.
 For example, to find logs with a message that contains "called the function Value Selector" in the app "my-app", enter either of the following:
 
-* `application: "my-app" AND message: "called the function Value Selector"`
-* `application: "my-app" AND "called the function Value Selector"`
+* `appId: "my-app" AND message: "called the function Value Selector"`
+* `appId: "my-app" AND "called the function Value Selector"`
 
-The default field, `message`, does not require a field indicator in the query. However, the `application` field must be specified before the `message` field in this query. 
+The default field, `message`, does not require a field indicator in the query.
 
 // end::search-fields[]

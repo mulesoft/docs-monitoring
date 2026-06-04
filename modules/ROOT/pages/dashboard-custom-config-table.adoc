@@ -1,31 +1,73 @@
 = Configuring Tables in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
 
-In Anypoint Monitoring, you can configure tables for custom dashboard. In addition to configuring properties that are common to other charts, such advanced or basic metric queries and time ranges, you can also:
+Configure tables with Mule app and API metrics in custom dashboards. 
 
-* Lay out for time-series data in a tabular format and display aggregated data.
-* Add color-coded thresholds to indicate whether a value is above, below, or within an given range.
-* Provide links from values in a column to a specified web page.
-* Set pagination properties.
+image::dashboard-custom-config-table.png["Table chart and configuration view"]
 
+[calloutlist]
+. A table configured with multiple queries in advanced mode
+. Table configuration tabs:
+
+* <<general, *General*>>: Table title, description, and mode (basic or advanced)
+* <<time-range, *Time range*>>: Override settings for relative time ranges selected from the dashboard UI by end users
+* <<options, *Options*>>: Table layout, column, and pagination options
+* <<column-styles, *Column Styles*>>: Rules for table columns
+* *X* for closing the edit view
+. *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> configuration mode
++
+Advanced mode support complex configurations with up to 25 queries.
+. Icons for moving, duplicating, and deleting queries from an advanced mode configuration
+
+[[create]]
+== Create a Table
+
+Create a table in a custom dashboard by following the guidance in xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
+
+[[configure]]
+== Configure a Table
+
+Configure a table in a custom dashboard.
+
+. From *Custom Dashboards*, open the custom dashboard that contains your table.
++
+For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard]. 
+. Click the table's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
+. Click the table's *General* configuration tab.
+.. Provide a title and description.
+.. Select and configure a table mode (basic or advanced).
++
+Both modes require environment, resource (app or API), and metric settings. For more information, see <<general>>.
+. Optionally:
+.. In the table's <<time-range, *Time range*>> tab, set the table's overrides for the time range selected by users.
+.. In the <<options, *Options*>> tab, configure table layout, column, and pagination options.
+.. In the <<column-styles, *Column Styles*>> tab, set rules for table columns.
+. Click *Apply Changes*. 
+. Exit the configuration view by clicking the *X* next to the configuration tabs.
+
+[[general]]
 //GENERAL SETTINGS shared by singlestat, graph, table
 //== General
 include::partial$include-general-config.adoc[leveloffset=+1]
 
+[[time-range]]
 // TIME RANGE SETTINGS shared by singlestat and table
 //==Time Range
 include::partial$include-time-range-config.adoc[]
 
+[[options]]
 == Options (Data and Pagination Settings)
 
-In the Options configuration tab, you can set layout, column, and pagination options for tables in a custom dashboard.
+In the *Options* configuration tab, you can set layout, column, and pagination options for tables in a custom dashboard.
 
 === Data Settings (Options tab)
+
+Provide time series data transformation, column, and paging configurations. 
 
 [%header,cols="1,4"]
 |===
 2+| Value Settings
-| Time Series to Rows a|
+| *Time Series to Rows* a|
 
 Creates a table with values for a given metric at a given time period. Like Time Series to Columns, the first column, Time, is for timestamps (such as `2018-04-25 06:37:40`). However, subsequent columns are Metric (for listing specific metrics, such as `worker-0`) and Value for listing the values of the metric at that time period.
 
@@ -45,33 +87,33 @@ If you select Time Series to Aggregations, you can add pre-defined columns to th
 [%header,cols="1,4"]
 |===
 2+| Columns for Aggregations
-| Auto | Columns and their order are determined by the data query. Only available setting when Time Series to Rows, Time Series to Columns, Annotations, or Table is selected.
-| Avg | Averages the recorded data for a given metric.
-| Min | Provides the lowest recorded value for a given metric.
-| Max | Provides the highest recorded valued for a given metric.
-| Total | Provides the sum of all values recorded in the table.
-| Current | Shows the current value for a given metric.
-| Count | Provides the total number of data points collected on the metric.
+| *Auto* | Columns and their order are determined by the data query. Only available setting when Time Series to Rows, Time Series to Columns, Annotations, or Table is selected.
+| *Avg* | Averages the recorded data for a given metric.
+| *Min* | Provides the lowest recorded value for a given metric.
+| *Max* | Provides the highest recorded value for a given metric.
+| *Total* | Provides the sum of all values recorded in the table.
+| *Current* | Shows the current value for a given metric.
+| *Count* | Provides the total number of data points collected on the metric.
 |===
 
 
 === Paging (Options tab)
 
-In the Options configuration tab, you can set pagination properties for tables so that they do not become to long and are more manageable.
+In the *Options* configuration tab, you can set pagination properties for tables so they don't become too long and are more manageable.
 
 [%header,cols="1,4"]
 |===
 2+| Paging Properties
-| Rows per Page | Number of table rows allowed per page.
-| Scroll | Checkbox for making the table scrollable.
-| Font Size | Percentage of the default font size from 80% to 250%.
+| *Rows per Page* | Number of table rows allowed per page.
+//TODO: NOT CLEAR where Scroll is. Was it removed?
+| *Scroll* | Checkbox for making the table scrollable.
+| *Font Size* | Percentage of the default font size from 80% to 250%.
 |===
 
-After you complete your configuration, you can open another configuration tab or click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
+[[column-styles]]
+== Column Styles (Options, Data Types, Thresholds, Links)
 
-== Column Styles (Options, Data Types, Thresholds. Links)
-
-In the Column Styles configuration tab, you can create (+Add) and apply one or more rules for table columns. The rules are listed on the left side of the Column Styles pane.
+In the *Column Styles* configuration tab, you can create (*+Add*) and apply rules available for table columns.
 
 To remove a rule, you need to click it, then find and click the Remove Rule button near the bottom left of the screen.
 
@@ -80,24 +122,24 @@ To remove a rule, you need to click it, then find and click the Remove Rule butt
 [%header, cols="1,4"]
 |===
 2+| Options
-| Apply To Columns Named  | Identifies the column or columns to which the rule applies. You need to provides the name or a regular expression (regex) that matches the name of one or more columns in the table. For a regex, you  the following syntax: `/my.*regex/`
-| Column Header | Provides a title for the column. For example, if you add the `Avg` column to a table that aggregates data, you might change the column name to `Average`. You can use strings such as `$1` for a regular expression.
-| Render Value As Link | Treats values in the column as a link that you can configure through the <<settings_link, Link>> settings.
+| *Apply To Columns Named* | Identifies the column or columns to which the rule applies. Provide the name or a regular expression (regex) that matches the name of one or more columns in the table. For a regex, use this syntax: `/my.*regex/`
+| *Column Header* | Provides a title for the column. For example, if you add the `Avg` column to a table that aggregates data, you might change the column name to `Average`. You can use strings such as `$1` for a regular expression.
+| *Render Value As Link* | Treats values in the column as a link that you can configure through the <<settings_link, Link>> settings.
 |===
 
 [[settings_link]]
 === Link  (Column Styles tab)
 
-In the Column Styles configuration tab, you can use configure a link from a value to a specified web page.
+In the Column Styles configuration tab, you can configure a link from a value to a specified web page.
 
-Note that Link settings are only available when _Render Value As Link_ is checked.
+Link settings are available only when _Render Value As Link_ is checked.
 
 [%header, cols="1,4"]
 |===
-2+| Link
+2+| *Link*
 | URL a|
 Specifies a URL that you can open when you click a value in the column.
-| Tooltip a|
+| *Tooltip* a|
 
 For providing a description of the link. This text appears when the end user hovers over the cell with the link. Use the same variables as for URL.
 | Open In New Tab | Displays the web content in a new browser tab when you click on the value.
@@ -106,9 +148,9 @@ For providing a description of the link. This text appears when the end user hov
 [%header, cols="1,4"]
 |===
 2+| Type
-| Type | Data type for values in the column. Valid values are Number, String, Date, and Hidden.
-| Unit | Label for the unit of measure to use for the value, such as `bytes` and `megabytes/second`. It is important to know the data type for your value before adding this label to the value. A wide variety of units are available.
-| Decimals | The level of precision allowed for a decimal value, for example, `2` to limit a value of `10.12345` to `10.12`.
+| *Type* | Data type for values in the column. Valid values are Number, String, Date, and Hidden.
+| *Unit* | Label for the unit of measure to use for the value, such as `bytes` and `megabytes/second`. It is important to know the data type for your value before adding this label to the value. A wide variety of units are available.
+| *Decimals* | The level of precision allowed for a decimal value, for example, `2` to limit a value of `10.12345` to `10.12`.
 |===
 
 
@@ -119,10 +161,8 @@ In the Column Styles configuration tab, you can set thresholds for your data if 
 
 [%header, cols="1,4"]
 |===
-2+| Thresholds
-| Thresholds | Comma-separated values, for example, `50000000,100000000`. Values between the two values might be treated as warning values. Values below the first value might be treated as acceptable, while values above the second value might be treated as errors. Note that your threshold values must match the unit of measure used for your data (for example, `byte`) _even if the specified Unit is converted to MB or GB in the table_.
-| Color Mode | Indicates whether to apply the color code to the Value in a cell, to the Cell, to the entire Row, or whether color coding is Disabled.
-| Color | Color used to code values below (left-most color box), between (middle color box), and above (right-most color box) the specified threshold settings. For example, green values might represent OK, yellow a warning, and red an error. You can also invert the color coding.
+2+| *Thresholds*
+| *Thresholds* | Comma-separated values, for example, `50000000,100000000`. Values between the two values might be treated as warning values. Values below the first value might be treated as acceptable, while values above the second value might be treated as errors. Note that your threshold values must match the unit of measure used for your data (for example, `byte`) _even if the specified Unit is converted to MB or GB in the table_.
+| *Color Mode* | Indicates whether to apply the color code to the Value in a cell, to the Cell, to the entire Row, or whether color coding is Disabled.
+| *Color* | Color used to code values below (left-most color box), between (middle color box), and above (right-most color box) the specified threshold settings. For example, green values might represent OK, yellow a warning, and red an error. You can also invert the color coding.
 |===
-
-After you complete your configuration, you can open another configuration tab or click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.

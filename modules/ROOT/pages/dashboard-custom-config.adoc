@@ -1,82 +1,156 @@
-= Configuring Custom Dashboards and Charts
+= Setting Up Custom Dashboards
 :page-info-pills: anypoint-pricing-core
+:page-aliases: create-custom-dashboard.adoc custom-dashboard-alerts.adoc
 
-You can create and configure as many custom dashboards as you need. 
+In the https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] clouds, create and configure custom dashboards to monitor metrics on your Mule apps and APIs. 
 
-* After you create a custom dashboard, you can configure dashboard-level properties, such as the name of the dashboard, any tags, its timezone, and metadata. See <<config_dashboard, Performing Dashboard-Level Configurations>>.
-+
-* You can configure one or more charts (also called widgets) for displaying your data in each row of a dashboard.
-+
-image::dashboard-custom-widgets.png["Custom dashboard widgets"]
-+
-[[chart_examples]]
-* *Graph*: Can display a wide variety of metrics as time-series data. Graphs support a query language capable of pinpointing the data you need to see.
-+
-.Example: Graph
-image::dashboard-graph.png["Graph example"]
-+
-* *Singlestat*: Provides a summary statistic (a single total or number) for a single grouping of time-series data, such as a response time or a heap usage statistic.
-+
-.Example: SingleStat
-image::dashboard-singlestat.png["SingleStat example"]
-+
-* *Table*: Supports time-series data in a tabular format. It allows for cell coloring and date and value formatting.
-+
-.Example: Table
-image::dashboard-table.png["Table example"]
-+
-* *Text*: Provides an area for textual information (titles and descriptions) written in Markdown or HTML within rows or cells of a dashboard. For example, you might use it as a header for your dashboard.
-+
-[[text_example]]
-.Example: Text Widget as a Dashboard Header
-image::dashboard-text-header.png["Text chart example"]
-//TODO_REMOVED FOR NOW: , annotation, and raw JSON for Table description
+[[view]]
+== View a Custom Dashboard
 
-See <<charts_adding, Adding Charts to a Custom Dashboard>>.
+Find and open a custom dashboard in Anypoint Monitoring.
 
-NOTE: There is a hard limit of 25 queries per custom dashboard panel.
+image::dashboard-custom-home-hf.png["Custom dashboards"]
+
+To view a custom dashboard:
+
+. Navigate to Anypoint Monitoring:
++
+Click *Monitoring* from the Anypoint Platform home page or from the *Runtimes* menu in the header.
+. In the sidebar, click *Custom Dashboards* to display custom dashboards.
+. Search for a custom dashboard by name or tag.
+. Click a name in the list to open the custom dashboard.
++
+Custom dashboards share common properties:
++
+image::dashboard-custom-hf.png["Custom dashboard example"]
++
+--
+[calloutlist]
+. Configurable name of the custom dashboard
+. Configurable title of a row in custom dashboard
++
+You can add multiple rows to a custom dashboard. Rows can contain multiple charts (also called panels or widgets).
+. Graphs in a custom dashboard row
++
+You can create graphs, singlestat charts, tables, and text panels for your custom dashboard. For more information, see <<charts_adding>>.
+. Lookback window, refresh options, and other dashboard settings:
+
+* Zoom in or out.
+* Set a time or date range for the lookback period.
+* Set an autorefresh period, or manually refresh at any time.
+* Favorite your dashboard.
+* View in full screen mode.
+* Duplicate or delete your dashboard.
+--
 
 [[config_dashboard]]
-== Configure a Dashboard
+== Set Up a Custom Dashboard
 
-To perform dashboard-level configurations of custom dashboards, navigate to a custom dashboard and click the <<dashboard_config, Pencil icon (beside the dashboard name)>> at the top of the page. Settings are for:
+Create and configure a custom dashboard in Anypoint Monitoring.
 
-* <<dashboard_general, General>> dashboard properties
-* <<dashboard_rows, Rows>> for charts in your dashboard
-* <<dashboard_metadata, Metadata>> (view only)
+image::dashboard-custom-config.png["Custom dashboard configuration"]
 
-[[dashboard_general]]
-=== Configure General Dashboard Properties
+[calloutlist]
+. Clicking image:dashboard-custom-config-icon.png["",20,20] (pencil) opens the dashboard configuration window.
 
-[[dashboard_config]]
-image::dashboard-custom-config-high-level.png["Dashboard configuration example"]
+. *Dashboard settings* tabs:
 
+* *General*: For configuring a unique name and description, a time zone (local or UTC), tags, and a tooltip style for your dashboard
+* *Rows*: For configuring rows for the charts in your dashboard
++
+See <<rows>>. 
+* *Metadata*: For viewing dashboard metadata, including creation dates, updates, and versioning
++
+See <<metadata>>. 
+. Charts (also called panels or widgets) you can add to your custom dashboard:
+* *Graph*: Display metrics over time.
+* *Singlestat*: Provide a summary statistic (a single total or number) for time-series data, such as a response time or a heap usage statistic.
+* *Table*: Display time-series data in a tabular format. You can change cell coloring, date, and value formatting.
+* *Text*: Add a panel with textual content in Markdown or HTML.
++
+See <<charts_adding>>.
+
+Set up a new dashboard:
+
+. Navigate to Anypoint Monitoring:
++
+Click *Monitoring* from the Anypoint Platform home page or from the *Runtimes* menu in the header.
+. In the sidebar, click *Custom Dashboards* to display custom dashboards. 
+. Click *New Dashboard*.
+. Click image:dashboard-custom-config-icon.png["",20,20] to open the dashboard configuration window.
+. Provide a name and other general dashboard settings.
++
+image::dashboard-custom-config-general-hf.png["Dashboard general configurations"]
++
 [%header,cols="1,4"]
 |===
 2+| General Dashboard Settings
-| Name | Name for your Dashboard.
-| Description | Description that end users can see from the (i) icon.
-| Tags | A short identifier that can help you locate a dashboard in the custom dashboard list.
-| Timezone a|
+| *Name* | Name for your dashboard.
+| *Description* | Description of your dashboard.
+| *Tags* | A short identifier that can help you locate a dashboard in the custom dashboard list.
+| *Timezone* a|
 
 Most graphs track data over time, so your time options are important. Your options are:
 
 * *Local browser time*: (Default) Time taken from the system time of the computer that the browser is running on.
 * *UTC*: Coordinated Universal Time standard, which uses a 24 hour cycle (for example, `19:20`) and corresponds to GMT.
-| Graph Tooltip a| Options include: 
-* *Default*: The crosshair cursor appears only in the chart that you mouse over.
+| *Graph Tooltip* a| Options include: 
+
+* *Default*: The crosshair cursor appears only in the chart that you hover over.
 * *Shared Crosshair*: The crosshair appears on all charts.
-* *Shared Tooltip*: The crosshair and the tooltip appears on all charts.
+* *Shared Tooltip*: The crosshair and the tooltip appear on all charts.
 |===
+. Add graphs, singlestat charts, tables, or text panels to a row in your custom dashboard.
++
+For guidance, see <<charts_adding>>.
+. Optionally, click *Rows* to manage the row that contains your chart.
++
+You can provide a title for a row and make the title visible in the dashboard. You can also create additional rows for your charts. See <<rows>>.
 
-[[dashboard_rows]]
-=== Configure Rows in a Custom Dashboard
+[[charts_adding]]
+== Add Charts to a Custom Dashboard
 
-Use the *Rows* tab for high-level custom dashboard configurations to provide titles for rows, move rows up or down in the dashboard, and delete rows.
+Charts are panels (or widgets) you can add to rows in custom dashboards to display metrics on your Mule apps or APIs.
 
-[[dashboard_config_rows]]
-image::dashboard-custom-config-rows.png["Dashboard row configurations"]
+Add a chart to your dashboard:
 
+. From *Custom Dashboards*, open your custom dashboard.
++
+For guidance, see <<view>>.
+. If you need a new row for your chart, scroll down to find and click *Add Row*.
++
+For row configuration options, see <<rows>>.
+. To add a chart to the row, click *Add*.
++
+image::dashboard-custom-widgets.png["Custom dashboard widgets"]
++
+If chart icons aren't visible in your row:
++
+.. Hover over the row to display its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*) for the row, and click *+ Add widget*. 
++
+This menu appears at the top of the row.
+.. Click one of the chart types for your row.
+. Hover over the chart to display its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and click *Configure*.
+. To configure the chart in a custom dashboard, see:
++
+* xref:dashboard-custom-config-graph.adoc[Configuring graphs]
+* xref:dashboard-custom-config-singlestat.adoc[Configuring singlestat charts]
+* xref:dashboard-custom-config-table.adoc[Configuring tables]
+* xref:dashboard-custom-config-text.adoc[Configuring text panels]
+
+[[rows]]
+== Manage Custom Dashboard Rows
+
+Manage dashboard rows from the dashboard configuration window. 
+
+. From *Custom Dashboards*, open your custom dashboard.
++
+For guidance, see <<view>>.
+. Click image:dashboard-custom-config-icon.png["",20,20] to open the dashboard configuration window.
+. In *Dashboard Settings*, click *Rows* to configure your dashboard rows.
++
+image::dashboard-custom-config-rows-hf.png["Dashboard row configuration options"]
++
 [%header,cols="1,4"]
 |===
 2+| Row Configuration Options for Custom Dashboards
@@ -87,77 +161,68 @@ image::dashboard-custom-config-rows.png["Dashboard row configurations"]
 | Trashcan icon | Delete the row and any charts it contains from the dashboard.
 |===
 
-[[dashboard_metadata]]
-=== View Metrics on a Custom Dashboard
+[[metadata]]
+== Get Custom Dashboard Metadata
 
-Use the *Metadata* tab for high-level custom dashboard configurations to view metrics on a custom dashboard.
+Get information about creation dates, updates, and the custom dashboard version. 
 
-[[dashboard_config_metadata]]
-image::dashboard-custom-metadata.png["Dashboard metadata"]
-
+. From *Custom Dashboards*, open your custom dashboard.
++
+For guidance, see <<view>>.
+. Click image:dashboard-custom-config-icon.png["",20,20] to open the dashboard configuration window.
+. In *Dashboard Settings*, click *Metadata* to review your dashboard information.
++
+image::dashboard-custom-config-metadata-hf.png["Dashboard metadata"]
++
 [%header,cols="1,4"]
 |===
 2+| Metadata Available for Custom Dashboards
-| Last Updated at | Date and time of last update to the dashboard.
-| Last Updated by | User who made the last update. 
-| Created at | Date and time the dashboard was created.
-| Created by | Username of person who created the dashboard.
-| Current Version | Version number of the dashboard. The version increments each time you save modifications to the dashboard.
+| *Last Updated at* | Date and time of last update to the dashboard.
+| *Last Updated by* | User who made the last update.
+| *Created at* | Date and time the dashboard was created.
+| *Created by* | Username of person who created the dashboard.
+| *Version* | Version number of the dashboard. The version increments each time you save modifications to the dashboard.
 |===
-
-[[charts_adding]]
-== Add Charts to a Custom Dashboard
-
-. In the sidebar, click *Custom dashboards* from the sidebar.
-+
-* To create a custom dashboard, click *+New Dashboard*.
-* If you need a new row for your chart, scroll down to find and click *Add Row*.
-+
-. To add a chart to the row, click *Add*.
-+
-image::dashboard-custom-widgets.png["Custom dashboard widgets"]
-+
-If chart icons aren't visible in your row:
-+
-.. Mouse over the row to display the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*) for the row, and click *+ Add widget*. 
-.. Click one of the chart types for your row.
-. Mouse over the chart to display its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), click *Configure*.
-. To configure the chart in a custom dashboard, see:
-+
-* xref:dashboard-custom-config-graph.adoc[Configuring graphs]
-* xref:dashboard-custom-config-singlestat.adoc[Configuring singlestat charts]
-* xref:dashboard-custom-config-table.adoc[Configuring tables]
-* xref:dashboard-custom-config-text.adoc[Configuring text panels]
 
 [[dup_dashboard]]
 == Duplicate a Custom Dashboard
 
-To create a copy of a custom dashboard:
+Create a copy of a dashboard. The copy requires a unique name but retains the configuration and all charts. You can modify that configuration as needed.
 
 . From *Custom Dashboards*, open a custom dashboard.
++
+For guidance, see <<view>>.
 . From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Duplicate*.
 . Save a *New Name* for the dashboard.
 +
 Your copy of the dashboard opens.
 
-== Export App Data to a CSV
-
-You can export app data to a CSV file, which you can then use in other apps. 
-
-. From *Custom Dashboards*, open a custom dashboard.
-. From a chart's header, click the image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Export CSV*.
-
-For more information about how to export app data, see xref:export-app-data-to-csv.adoc[Export App Data to a CSV].
-
 [[delete_dashboard]]
 == Delete a Custom Dashboard
 
+Delete a custom dashboard you no longer need.
+
 . From *Custom Dashboards*, open a custom dashboard.
++
+For guidance, see <<view>>.
 . From the dashboard's header, click image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Delete*.
-. Confirm your deletion.
+. Confirm the deletion.
 
-== See Also
+== Manage Custom Dashboard Charts
 
-* xref:create-custom-dashboard.adoc[Create a Custom Dashboard]
-* xref:dashboard-config-ref.adoc[Dashboard Configuration Reference]
-* xref:export-app-data-to-csv.adoc[Export App Data to a CSV]
+Manage a chart from its image:more-menu-vert-ellipsis.png["",15,15] (*More menu*).
+
+image::dashboard-custom-chart-more-hf.png["Chart More menu"]
+
+* Collapse or expand the chart.
+* Configure the chart:
+** xref:dashboard-custom-config-graph.adoc[]
+** xref:dashboard-custom-config-singlestat.adoc[]
+** xref:dashboard-custom-config-table.adoc[]
+** xref:dashboard-custom-config-text.adoc[]
+* Duplicate the chart.
+* Add or edit a graph's alert. Other chart types don't support alerts.
+* Export graph or table data to a CSV file. Other chart types don't support CSV exports. 
++
+For more information, see xref:export-app-data-to-csv.adoc[].
+* Delete the chart.

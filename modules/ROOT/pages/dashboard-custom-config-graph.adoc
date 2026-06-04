@@ -1,17 +1,66 @@
 = Configuring Graphs in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
 
-In Anypoint Monitoring, you can configure one or more sets of time-series data in a graph. The graph measures the changes to time-series data over time. A graph in a custom dashboard can display a metric for a resource in a given environment. For example, to configure a graph, you might select a response time or heap usage as the metric to graph for a Mule app in your Design or Sandbox environment.
+Configure metrics data in a graph. A custom dashboard graph in Anypoint Monitoring displays metrics for a Mule app or API.
 
-Advanced configuration options allow for more fine-tuned data sets. You can also customize the X and Y axes, the look of the graph, legends, the behavior when you hover over a data point, and more.
+Advanced options support fine-tuned configurations and multiple metrics in a single graph. You can also customize axes, the look of the graph, legends, and behavior of the graph when you hover over a data point.
 
-To open a configuration page for a graph, see xref:dashboard-custom-config.adoc[Configure Custom Dashboards].
+//TODO: CONSIDER IMAGE THAT INCLUDES CONFIGURED GRAPH
+image::dashboard-custom-config-graph.png["Graph configuration view"]
+
+[calloutlist]
+
+. Graph example (basic mode)
+. Graph configuration tabs:
+
+* <<general, *General*>>: Graph title, description, and mode (basic or advanced)
+* <<axes, *Axes*>>: Axis configurations
+* <<visuals, *Visuals*>>: Style settings, including bar, line, and data points configurations
+* <<alerts_config, *Alert*>>: Alerts settings
++
+Advanced mode graphs don't support alert configurations.
+* <<advanced, *Advanced*>>: Legend, threshold, and other advanced settings
+* *X* for closing the edit view
+. *Advanced Mode*: Switch for enabling <<mode_advanced, advanced>> configurations
++
+Advanced mode supports complex configurations with up to 25 queries.
+
+== Create a Graph
+
+Create a graph in a custom dashboard by following the guidance in xref:dashboard-custom-config.adoc#charts_adding[Add Charts to a Custom Dashboard].
+
+== Configure a Graph
+
+Configure a graph in a custom dashboard.
+
+. From *Custom Dashboards*, open the custom dashboard that contains your graph.
++
+For guidance, see xref:dashboard-custom-config.adoc#view[View a Custom Dashboard]. 
+. Click the graph's image:more-menu-vert-ellipsis.png["",15,15] (*More menu*), and select *Configure*.
+. Click the graph's *General* configuration tab.
+.. Provide a title and description.
+.. Select and configure a graph mode (basic or advanced).
++
+For more information, see <<general>>.
+. In the graph's *Axes* tab, set the graph's axes or use the defaults.
++
+For more information, see <<axes>>.
+. In the graph's *Visuals* tab, set <<visuals, bars, lines, or points>> for the graph.
+. Optionally:
+.. In the *Alert* tab, configure an <<alerts_config, alert and email notification>>.
++
+Alerting isn't available in advanced mode.
+.. In the *Advanced* tab, provide <<advanced, advanced configurations>>. 
+. Click *Apply Changes*. 
+. Exit the configuration view by clicking the *X* next to the configuration tabs.
 
 //GENERAL SETTINGS shared by singlestat and graph
 //== General
+[[general]]
 include::partial$include-general-config.adoc[leveloffset=+1]
 // END GENERAL
 
+[[axes]]
 == Axes (X-Axis and Y-Axis Settings)
 
 Configure the x-axis and y-axis of your graph in the *Axes* tab.
@@ -23,21 +72,21 @@ Set a vertical y-axis for the left (Left Y) or right (Right Y) side of your grap
 [%header,cols="1,4"]
 |===
 2+| Y-Axis Settings
-| Show | If unchecked, hides the y-axis from the graph.
-| Unit | The unit of measurement to use for values on the y-axis.  Values include `none`, data types (such as `short`, `percent (1-100)`), `currency` settings (including `Dollars $` or `Real ($)`), `time`, `data`, `data rate`, and many other types of values.
-| Scale a|
+| *Show* | If unchecked, hides the y-axis from the graph.
+| *Unit* | The unit of measurement to use for values on the y-axis.  Values include `none`, data types (such as `short`, `percent (1-100)`), `currency` settings (including `Dollars $` or `Real ($)`), `time`, `data`, `data rate`, and many other types of values.
+| *Scale* a|
 
 Valid values for a linear or logarithmic (log) scale for coordinates on the y-axis:
 
-* linear: For y-coordinates, such as `1`,`2`,`3`.
-* log (base 2): For y-coordinates, such as `1`,`4`,`16`.
-* log (base 10): For y-coordinates, such as `1`,`10`,`100`.
-* log (base 32): For y-coordinates, such as `1`,`32`,`1024`.
-* log (base 1024): For y-coordinates, such as `1`,`1024`,`1048576`.
-| Y-Min | The minimum value for a y-coordinate. Defaults to `auto`.
-| Y-Max | The maximum value for a y-coordinate. Defaults to `auto`.
-| Decimals | Override for the automatic decimal precision on y-coordinates, for example, where `2` limits a value of `10.12345` to `10.12`. Defaults to `auto`.
-| Label | A string used to label the Y axis. Defaults to `""`.
+* *linear*: For y-coordinates, such as `1`,`2`,`3`.
+* *log (base 2)*: For y-coordinates, such as `1`,`4`,`16`.
+* *log (base 10)*: For y-coordinates, such as `1`,`10`,`100`.
+* *log (base 32)*: For y-coordinates, such as `1`,`32`,`1024`.
+* *log (base 1024)*: For y-coordinates, such as `1`,`1024`,`1048576`.
+| *Y-Min* | The minimum value for a y-coordinate. Defaults to `auto`.
+| *Y-Max* | The maximum value for a y-coordinate. Defaults to `auto`.
+| *Decimals* | Overrides the automatic decimal precision on y-coordinates, for example, where `2` limits a value of `10.12345` to `10.12`. Defaults to `auto`.
+| *Label* | A string used to label the Y axis. Defaults to `""`.
 |===
 
 === X-Axis Settings
@@ -45,20 +94,21 @@ Valid values for a linear or logarithmic (log) scale for coordinates on the y-ax
 [%header,cols="1,4"]
 |===
 2+| X-Axis Settings
-| Show | If unchecked, hides the x-axis from the graph.
-| Mode a|
+| *Show* | If unchecked, hides the x-axis from the graph.
+| *Mode* a|
 
 Valid values:
 
-* Time: The default option. Indicates that x-axis data is divided into time units (for example, hours or minutes).
-* Series: Indicates that data divided by series, and the y-axis provides the value of the series data.
-* Histogram: Converts the graph into a bar chart that represents collections of data at a specified, numeric intervals (called a buckets or bins), for example, . The higher a bar in a histogram, the greater the frequency (or count) of data collected at that interval.
-| Value | Visible only if Series is selected.
-| Buckets | Visible only if Histogram is selected. Divides the range of values for a given metric into the specified number of intervals so that the histogram can display the count or frequency of data points that fall into that interval.
+* *Time*: The default option. Indicates that x-axis data is divided into time units (for example, hours or minutes).
+* *Series*: Indicates that data is divided by series, and the y-axis provides the value of the series data.
+* *Histogram*: Converts the graph into a bar chart that represents collections of data at specified, numeric intervals (called a buckets or bins). The higher a bar in a histogram, the greater the frequency (or count) of data collected at that interval.
+| *Value* | Visible only if *Series* mode is selected.
+| *Buckets* | Visible only if *Histogram* mode is selected. Divides the range of values for a given metric into the specified number of intervals so that the histogram can display the count or frequency of data points that fall into that interval.
 |===
 
 After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
 
+[[visuals]]
 == Visuals (Bar, Line, Data Point Settings)
 You can configure the style and look of graph to use. Bar, line, and point graphs are supported.
 
@@ -67,40 +117,43 @@ image::graph-config-visuals.png["Singlestat example"]
 [%header,cols="1,4"]
 |===
 2+| Visual Configuration Options
-| Draw Modes a|
+| *Draw Modes* a|
 
 You can check one or more of these modes:
 
-* Bars: Checkbox for representing values as bar charts.
-* Lines: Checkbox for representing values as line graphs.
-* Points: Checkbox for representing values as data points.
-| Mode Options a|
+* *Bars*: Checkbox for representing values as bar charts.
+* *Lines*: Checkbox for representing values as line graphs.
+* *Points*: Checkbox for representing values as data points.
+| *Mode Options* a|
 
-Only available when the selected Draw Modes are Lines or Points.
+Only available when the selected *Draw Modes* are *Lines* or *Points*.
 
-* Point Radius: Only available when Lines is a selected Draw Mode. On a scale of `0` (none) to `10`, sets the thickness of the line that connects related data points on the graph.
-* Fill: Only available when Points is a selected Draw Mode. On a scale of `0` (none) to `10`, sets the opacity of the color used below related data points on the graph.
-* Line Width: Only available when Points is a selected Draw Mode. On a scale of `0` (none) to `10`, sets the thickness of the border of the fill.
-* Staircase: Checkbox for displaying adjacent points in a staircase pattern.
-| Hide Series a|
+* *Point Radius*: Only available when *Points* is selected from *Draw Modes*. On a scale of `0` (none) to `10`, sets the circumference of the line that connects related data points on the graph.
+* *Fill*: Only available when *Lines* is selected from *Draw Modes*. On a scale of `0` (none) to `10`, sets the opacity of the color used below related data points on the graph.
+* *Line Width*: Only available when *Lines* is selected from *Draw Modes*. On a scale of `0` (none) to `10`, sets the thickness of the border of the fill.
+* *Staircase*: Checkbox for displaying adjacent points in a staircase pattern.
+| *Hide Series* a|
 
-* With Nulls Only: Checkbox for hiding any series that is filled with null values.
-* With Only Zeros: Checkbox for hiding any series that is filled with values of zero.
+* *With Nulls Only*: Checkbox for hiding any series that is filled with null values.
+* *With Only Zeros*: Checkbox for hiding any series that is filled with values of zero.
 |===
-
-After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
 
 [[alerts_config]]
 == Alerts (Configuration, Notifications, History)
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-In the *Alerts* tab, set up alerts that trigger when JVM memory utilization is too high.
+From a graph's *Alerts* tab, you can: 
 
-include::partial$include-alerts-config.adoc[leveloffset=+1]
+* <<configure, Configure an alert>>
+* <<state_history, View alert history>>
+* <<delete_alert, Delete an alert>>
+
+include::partial$include-alerts-config.adoc[]
 
 //END ALERTS
 
+[[advanced]]
 == Advanced (Legends, Thresholds, Stacking, Hovering, Time Shift Settings)
 
 Add and configure legends, thresholds, and other features for your graph.
@@ -111,20 +164,29 @@ In the *Advanced configuration* tab, configure legends for your graphs.
 
 image::graph-advanced-legend.png["Advanced graph settings for a legend"]
 
+//TODO: INFO ON LINKS IS MISSING: 
+// links will appear in dropdown panel window
+//Type (dashboard value goes with Dashboard and Title fields, 
+// absolute value goes with Url and Title fields)
+//open in a new Tab checkbox
+//Remove Link button
+//+Add Link button
+//screenshot in "advanced link options graph advanced mode custom dashboards.png"
+
 [%header,cols="1,4"]
 |===
-2+| Legend Options
-| Show  | Unchecking hides the legend. Checked by default.
-| As Table | Check to display the selected legend Values (such as `min` and `max`) in a table. Unchecked by default.
-| To the Right | Check to display the legend on the right side. Unchecked by default.
-| Width | Available when *To the Right* is checked. Sets the minimum width (in pixels) for the legend. Leave it blank to allow for automatic width selection.
+2+| *Legend Options*
+| *Show*  | Unchecking hides the legend. Checked by default.
+| *As Table* | Check to display the selected legend Values (such as `min` and `max`) in a table. Unchecked by default.
+| *To the Right* | Check to display the legend on the right side. Unchecked by default.
+| *Width* | Available when *To the Right* is checked. Sets the minimum width (in pixels) for the legend. Leave it blank to allow for automatic width selection.
 |===
 
 You can also display the following values in a legend:
 
 [%header,cols="1,4"]
 |===
-2+| Legend Values
+2+| *Legend Values*
 | Min | Minimum of all values returned from the query
 | Max | Maximum of all values returned from the query
 | Avg | Average of all values returned from the query
@@ -146,25 +208,25 @@ image::graph-advanced-stacking-hover.png["Advanced graph settings, Stack and Hov
 [%header,cols="1,4"]
 |===
 2+| Hover Tooltip Settings
-| Mode | To display one or all series in the tooltip.
-| Sort Order | Displays data in no order (None), Decreasing, or Increasing order. Defaults to None.
-| Stacked Value  a|
+| *Mode* | To display one or all series in the tooltip.
+| *Sort Order* | Displays data in no order (None), Decreasing, or Increasing order. Defaults to None.
+| *Stacked Value*  a|
 Available when *Stack* is checked. Controls the display of values in the tooltip.
 
 Valid values are:
 
-* Individual: The value of the series that you hover over.
-* Cumulative: Sum of series below the stacked value plus the series you hover over.
+* *Individual*: The value of the series that you hover over.
+* *Cumulative*: Sum of series below the stacked value plus the series you hover over.
 |===
 
 Stacking and Null functionality displays multiple series as a group within a stack. You can also specify how to deal with null values.
 
 [%header,cols="1,4"]
 |===
-2+| Stacking and Null Settings
-| Stack | When checked, stacks each series, one on top of another, instead of overlaying them.
-| Percent | Available when *Stack* is checked. Displays each series of stacked values as a percentage.
-| Null Value | Determines how to display null values: Connected, Null, Null As Zero.
+2+| *Stacking and Null Settings*
+| *Stack* | When checked, stacks each series, one on top of another, instead of overlaying them.
+| *Percent* | Available when *Stack* is checked. Displays each series of stacked values as a percentage.
+| *Null Value* | Determines how to display null values: Connected, Null, Null As Zero.
 |===
 
 === Threshold (Advanced Setting)
@@ -179,26 +241,46 @@ image::graph-advanced-threshold.png["Threshold settings for a graph"]
 [%header,cols="1,4"]
 |===
 2+| Threshold Settings
-| `gt` or `lt` | Indicates whether the limit applies to data that is greater than (`gt`) or less than (`lt`) the specified threshold value.
+| *gt* or *lt* | Indicates whether the limit applies to data that is greater than (`gt`) or less than (`lt`) the specified threshold value.
 | Threshold value | A numeric value for the threshold.
 | Threshold type | Identifier for the threshold (Custom, Critical, Warning, or OK).
-| Fill | Adds a filler color to the graph that corresponds to the specified threshold setting.
-| Line |  Adds a line to the graph that corresponds to the specified threshold setting.
+| *Fill* | Adds a filler color to the graph that corresponds to the specified threshold setting.
+| *Line* |  Adds a line to the graph that corresponds to the specified threshold setting.
+//TODO: DON'T SEE FILL COLOR OR LINE COLOR IN STGX
 | Fill Color  | Similar to *Fill* settings, but for custom thresholds only.
 | Line Color | Similar to *Line* settings, but for custom thresholds only.
 |===
 
 === Time Range Shift (Advanced Setting)
-In the *Advanced* configuration tab, you can set overrides any time intervals or ranges that end users select for the custom dashboard. Such selections are global and apply to all charts in the dashboard. Overrides are useful when the selection does not make sense for a particular graph.
+In the *Advanced* configuration tab, you can override any time intervals or ranges that end users select for the custom dashboard. Such selections are global and apply to all charts in the dashboard. Overrides are useful when the selection does not make sense for a particular graph.
 
 Time ranges are calculated backwards from the present time. For example, you might set the time range so you can view the last 2 hours of data in a graph. You can also shift the time range to calculate backwards from an earlier point in time, for example, from 1 hour ago instead of from the present time.
 
 [%header,cols="1,3"]
 |===
-2+| Time Range Shift Settings
-| Override Relative Time | The amount of time to show in the x-axis of the graph (for example, `2h`). Information about this setting is displayed under the title of the graph unless you select Hide Time Override Info.
-| Add Time Shift | Amount of time before now (the current time) to _end_ (or shift back in time) the duration set by Override Relative Time. For example, if the time right now is 10:00, and you shift the time to `1h` when the Override Relative Time is `2h`, end users will see the two hours of data available from 7:00 to 9:00, and the table will also display a message like this: `2 hours, ending 1 hour ago`.
-| Hide Time Override Info | Checkbox for hiding the description  of any Override Relative Time and Time Shift settings from the graph.
+2+| *Time Range Shift Settings*
+| *Override Relative Time* | The amount of time to show in the x-axis of the graph (for example, `2h`). Information about this setting is displayed under the title of the graph unless you select Hide Time Override Info.
+| *Add Time Shift* | Amount of time before now (the current time) to _end_ (or shift back in time) the duration set by Override Relative Time. For example, if the time right now is 10:00, and you shift the time to `1h` when the Override Relative Time is `2h`, end users will see the two hours of data available from 7:00 to 9:00, and the table will also display a message like this: `2 hours, ending 1 hour ago`.
+| *Hide Time Override Info* | Checkbox for hiding the description of any Override Relative Time and Time Shift settings from the graph.
 |===
 
-After you complete your configuration, you can click Save Changes. To exit the configuration and return to the dashboard, simply click the `X`.
+////
+TODO: TBD IF IT CAN SUPPLEMENT ALERTS INFO
+
+from the chart's *Alert* tab. Alerts trigger email notifications if a data point you're measuring has passed a specified threshold in the past five minutes. This five-minute period is fixed and not configurable. 
+
+For apps configured to run with more than one worker, charts that display worker-related metrics in Anypoint Monitoring dashboards break down the metrics by worker. 
+
+When you configure an alert for a graph, an alert state icon appears in the chart.
+
+image::alert-in-graph.png["Line chart showing CPU usage over time with an alert state of OK"]
+
+Hover over the bell icon to trigger a description popup. In this case, the description indicates `Status OK`.
+
+Alert states are defined as follows:
+
+include::partial$include-alert-state.adoc[leveloffset=+1]
+
+
+include::partial$include-alerts-config.adoc[leveloffset=+1]
+////
