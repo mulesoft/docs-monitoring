@@ -53,7 +53,7 @@ Agents protected by a the xref:gateway::policies-included-a2a-agent-card.adoc[] 
 * *Failed Requests*: Number of requests to the agent that failed
 * *Failed Request Rate*: Percentage of requests to the agent that failed 
 
-The agent's Omni Gateway ingress supports request counts. The charts reflect calls to the agent through that ingress.
+The agent's Omni Gateway (formerly Flex Gateway) ingress supports request counts. The charts reflect calls to the agent through that ingress.
 
 [[broker]]
 == Broker Metrics
@@ -75,13 +75,13 @@ NOT FOR GA
 [[mcp-server]]
 == MCP Server Metrics
 
-MCP servers protected by an Omni Gateway ingress policy (xref:gateway-home::index.adoc#policy-availability-by-gateway[MCP Support]) produce metrics in these charts:
+MCP servers protected by an Omni Gateway (formerly Flex Gateway) ingress policy (xref:gateway-home::index.adoc#policy-availability-by-gateway[MCP Support]) produce metrics in these charts:
 
 * *Total Received*: All requests to the MCP server
 * *Failed Requests*: Number of requests to the MCP server that failed
 * *Failed Request Rate*: Percentage of requests to the MCP server that failed 
 
-The MCP server's Omni Gateway ingress supports request counts. The charts reflect calls to the MCP server through that ingress.
+The MCP server's Omni Gateway (formerly Flex Gateway) ingress supports request counts. The charts reflect calls to the MCP server through that ingress.
 
 [[refresh]]
 == Refresh Metrics

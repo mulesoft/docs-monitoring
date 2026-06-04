@@ -1,6 +1,6 @@
 = Using Built-in API Dashboards
 :page-aliases: api-analytics-dashboard.adoc, api-analytics-dashboards.adoc
-:note-flex-deployments-not-supported: This metric isn't supported for APIs deployed through Omni Gateway.
+:note-flex-deployments-not-supported: This metric isn't supported for APIs deployed through Omni Gateway (formerly Flex Gateway).
 
 The API dashboards provide charts to monitor API usage, which gives you insight into how your APIs are used and how they are performing.
 

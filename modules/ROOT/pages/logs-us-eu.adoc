@@ -17,13 +17,13 @@ Anypoint Monitoring provides logs for several types of instances, including:
 
 TODO: VERIFY LIST and IDEALLY DEPLOYMENT TYPES (PABLO AGHEMO: CH1, CH2, Flex logs... No navigating to logs option for API instances with a Mule Gateway listed in API Manager)
 * Mule app logs
-* Omni Gateway logs
+* Omni Gateway (formerly Flex Gateway) logs
 * Agentic asset logs:
 ** Message logs from policies applied to agents, MCP servers, and LLM instances
 ** Logs from agents that serve as brokers
 
 TODO: Add Visualizer to this?
-API Manager also displays Omni Gateway, message, and broker logs.
+API Manager also displays Omni Gateway (formerly Flex Gateway), message, and broker logs.
 ////
 
 You can also search for individual application logs in Runtime Manager, see xref:runtime-manager::viewing-log-data.adoc[].
@@ -56,7 +56,7 @@ image::intro-logs.png["Logs in Anypoint Monitoring"]
 * <<search-dsl>>
 * <<search-agentic, Search for agent, broker, or MCP server logs>>
 
-When you search for logs for APIs deployed through Omni Gateway, use the *Application* filter. Use the *App ID* field to identify the instance.
+When you search for logs for APIs deployed through Omni Gateway (formerly Flex Gateway), use the *Application* filter. Use the *App ID* field to identify the instance.
 
 [[search-field]]
 === Search from the Log Search Field
@@ -99,7 +99,7 @@ See <<filters_predefined>> and <<operators>>.
 
 
 NOTE::
-Results for the *Application* filter include APIs deployed through Omni Gateway.
+Results for the *Application* filter include APIs deployed through Omni Gateway (formerly Flex Gateway).
 
 [[search-dsl]]
 === Search with the Query DSL
