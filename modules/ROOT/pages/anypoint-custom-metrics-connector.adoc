@@ -235,7 +235,7 @@ output application/java
 From *Custom Dashboards* in Anypoint Monitoring, you can add custom metrics to a custom dashboard to visualize the custom metrics you defined in your app.
 
 [IMPORTANT]
-To use a custom metric, you must add it to a chart within two days of creating the metric. After two days, the name no longer appears in the list of metrics available as a *metric_name* value. Custom metrics appear in the dropdown after an app produces logs on the custom metric. 
+To use a custom metric, you must add it to a chart within two days of creating the metric. After two days, the name no longer appears in the list of metrics available as a *metric_name* value in the advanced chart configuration UI. Custom metrics appear in the dropdown after an app produces logs on the custom metric. 
 
 . Deploy the app.
 +
