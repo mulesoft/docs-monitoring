@@ -114,7 +114,6 @@ For more information about MuleSoft Government Cloud and Anypoint Platform Priva
 
 Monitor performance data and issues across your deployed Mule apps and APIs (_entities_), and get detailed insights on specific deployments. 
 
-
 See xref:anypoint-insights.adoc[].
 
 [[logging]]
