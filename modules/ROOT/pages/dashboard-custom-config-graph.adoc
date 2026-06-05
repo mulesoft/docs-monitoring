@@ -149,6 +149,7 @@ From a graph's *Alerts* tab, you can:
 * <<state_history, View alert history>>
 * <<delete_alert, Delete an alert>>
 
+[[configure]]
 include::partial$include-alerts-config.adoc[leveloffset=+1]
 
 //END ALERTS
