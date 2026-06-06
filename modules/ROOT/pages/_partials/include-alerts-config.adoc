@@ -18,7 +18,7 @@ Alerts aren't available for charts with advanced mode configurations.
 
 Note that you can also view <<state_history, state history>> and <<delete_alert, delete>> alerts.
 
-[[alert_config]]
+[[configure]]
 === Configure an Alert for a Chart in a Custom Dashboard
 
 In the *Alert Config* section, configure the condition under which an alert is triggered.
