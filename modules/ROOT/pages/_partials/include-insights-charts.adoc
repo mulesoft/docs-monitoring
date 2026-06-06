@@ -36,8 +36,13 @@ Date-time stamp for the last update or redeployment of this Mule app
 //tag::app-detail-overview[]
 
 //  shared metric in Overview tab
+[[chart-average-latency-apps]]
 include::partial$include-insights-charts.adoc[tag="average-latency"]
+
+[[chart-p95-latency-apps]]
 include::partial$include-insights-charts.adoc[tag="p95-latency"]
+
+[[chart-total-requests-volume-apps]]
 include::partial$include-insights-charts.adoc[tag="total-requests"]
 
 //TODO: Messages -> Message (SATHISH)
@@ -599,12 +604,15 @@ For more information, see xref:api-manager::api-instance-landing-page.adoc[].
 //tag::api-detail-overview[]
 
 //shared Overview metric
+[[chart-average-latency-apis]]
 include::partial$include-insights-charts.adoc[tag="average-latency"]
 
 //shared Overview metric
+[[chart-p95-latency-apis]]
 include::partial$include-insights-charts.adoc[tag="p95-latency"]
 
 //shared Overview metric
+[[chart-total-requests-volume-apis]]
 include::partial$include-insights-charts.adoc[tag="total-requests"]
 
 //TODO: issue: 2 charts named Policy Violations
@@ -793,14 +801,12 @@ Number of requests by client IP
 //
 // shared chart: Overview tab
 //tag::average-latency[]
-[[chart-average-latency]]
 Average Latency::
 Average latency, in milliseconds (ms), for requests to this entity
 //end::average-latency[]
 //
 // shared chart: Overview tab
 //tag::p95-latency[]
-[[chart-p95-latency]]
 P95 Latency::
 Latency value, in milliseconds (ms), for 95th percentile (p95) requests for this entity
 //end::p95-latency[]
@@ -808,7 +814,6 @@ Latency value, in milliseconds (ms), for 95th percentile (p95) requests for this
 //  shared chart: Overview tab
 //tag::total-requests[]
 //TODO: Requests -> Request" (SATHISH)
-[[chart-total-requests-volume]]
 Total Requests Volume::
 Number of requests to this entity
 //end::total-requests[]
