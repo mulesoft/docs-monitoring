@@ -36,9 +36,9 @@
   *** xref:log-search-query-syntax.adoc[Log Search Query Syntax]
  ** xref:logs-jp-ca.adoc[]
 //DELAYED: TEMP FILE UNTIL all clouds consolidated AND data migration to EU/US is done:
- ** xref:logs-search-hf-india.adoc[] 
+ ** xref:logs-search-hf-india.adoc[]
+//US, EU, INDIA:
+ ** xref:raw-data.adoc[]
 * xref:telemetry-exporter.adoc[Exporting Telemetry Data]
 * xref:reports.adoc[Viewing Reports]
 * xref:tools.adoc[]
-//US, EU, INDIA:
-** xref:raw-data.adoc[]
