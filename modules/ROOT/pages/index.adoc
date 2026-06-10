@@ -159,7 +159,7 @@ See xref:log-points.adoc[].
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-In the US and EU Clouds, download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
+In the US, EU, and India Clouds, download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
 
 See xref:raw-data.adoc[].
 
