@@ -33,7 +33,7 @@
  *** xref:basic-alerts.adoc[Setting Up Basic Alerts]
  *** xref:custom-dashboard-alerts.adoc[Setting Up Alerts for Custom Dashboards]
 ** xref:alerts-jp-ca.adoc[]
-** xref:alerts-hf.adoc[Getting Alerts (India)]
+** xref:alerts-hf.adoc[]
 * xref:logs.adoc[Using Logs]
  ** xref:logs-us-eu.adoc[]
   *** xref:logs-search-hf.adoc[]
