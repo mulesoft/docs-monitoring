@@ -69,7 +69,7 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 //| No
 //| No
 
-| <<logging, Logging features>>
+| xref:logs.adoc[Logging features]
 | Yes
 | Yes
 | Yes
