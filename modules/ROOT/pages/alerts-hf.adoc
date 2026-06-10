@@ -1,6 +1,7 @@
 = Getting Alerts
 :page-info-pills: anypoint-pricing-core
-:page-aliases: alerts-jp-ca.adoc, alerts-us-eu.adoc, alerts.adoc
+//TEMP REMOVAL UNTIL NEW ALERTS RELEASED EVERYWHERE:
+//:page-aliases: alerts-jp-ca.adoc, alerts-us-eu.adoc, alerts.adoc
 
 //feature tier:
 //include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only"]

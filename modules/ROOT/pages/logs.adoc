@@ -6,14 +6,14 @@ Use Anypoint Monitoring to retrieve logs on your deployed applications:
 * xref:logs-us-eu.adoc[US and EU] Anypoint Platform clouds
 ** *Log Search* for logs across your deployed applications
 ** *Log Points* for real-time log generation
-** xref:raw-data.adoc[*Raw Data*] for downloads of archived log data
+** xref:raw-data.adoc[*Raw Data*] downloads of archived log data
 
 * xref:logs-jp-ca.adoc[Japan and Canada] Anypoint Platform clouds
 ** *Logs* for logs across your deployed applications
 
 * xref:logs-search-hf-india.adoc[India]
 ** *Log Search* for logs across your deployed applications
-** xref:raw-data.adoc[*Raw Data*] for downloads of archived log data
+** xref:raw-data.adoc[*Raw Data*] downloads of archived log data
 
 //TEMPORARY REMOVAL AND RENAME SO THAT IT WON'T BUILD logs-search-hf-india
 //* xref:logs-search-hf-india.adoc[India] Anypoint Platform cloud
