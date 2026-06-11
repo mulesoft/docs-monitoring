@@ -125,6 +125,8 @@ Manage logs and log data for your deployments with these logging features:
 * <<log-points>>
 * <<raw-data-downloads>>
 
+Support for logging features can vary by Anypoint Platform cloud. For details, see <<features>>.
+
 [[log-search]]
 ==== Log Searches
 //feature tier (for h2-h4 headings):
@@ -159,7 +161,7 @@ See xref:log-points.adoc[].
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-In the US, EU, and India Clouds, download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
+Download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
 
 See xref:raw-data.adoc[].
 
