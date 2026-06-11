@@ -234,6 +234,9 @@ output application/java
 
 From *Custom Dashboards* in Anypoint Monitoring, you can add custom metrics to a custom dashboard to visualize the custom metrics you defined in your app.
 
+[IMPORTANT]
+Custom metrics appear in the *metric_name* dropdown list only after an app starts emitting measurements for that metric. A custom metric that doesn't produce measurements for two consecutive days no longer appears in the list. To use a custom metric, add it to a chart while it's still actively producing data.
+
 . Deploy the app.
 +
 For guidance, see xref:mule-runtime::deploying.adoc[].
@@ -245,9 +248,6 @@ For guidance, see xref:dashboard-custom-config.adoc#charts_adding[Add Charts to 
 This example shows a configuration for a graph that displays t-shirt sales.
 +
 image::custom-metric-custom-dashboard-config.png["Custom dashboard for t-shirt sales displaying example values in the query builder"]
-+
-[NOTE]
-You only see the custom metrics in the pre-populated metric selection drop-down lists once something is logged for the custom metric. 
 +
 image::custom-metric-custom-dashboard-graph.png["Two line charts showing revenue and sales for two stores"]
 

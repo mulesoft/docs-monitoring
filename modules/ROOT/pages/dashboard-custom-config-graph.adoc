@@ -145,11 +145,13 @@ include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
 From a graph's *Alerts* tab, you can: 
 
+* <<create, Create an alert>>
 * <<configure, Configure an alert>>
 * <<state_history, View alert history>>
 * <<delete_alert, Delete an alert>>
 
-include::partial$include-alerts-config.adoc[]
+[[create]]
+include::partial$include-alerts-config.adoc[leveloffset=+1]
 
 //END ALERTS
 

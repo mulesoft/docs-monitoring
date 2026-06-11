@@ -14,7 +14,7 @@ Hover over the bell icon to trigger a description popup. In this case, the descr
 
 Alert states are defined as follows:
 
-include::partial$include-alert-state.adoc[leveloffset=+1]
+include::partial$include-alert-state.adoc[]
 
 
-include::partial$include-alerts-config.adoc[leveloffset=+1]
+include::partial$include-alerts-config.adoc[]

@@ -1,4 +1,4 @@
-= Create an Alert for a Chart in a Custom Dashboard
+== Create an Alert for a Chart in a Custom Dashboard
 
 [[alerts]]
 
@@ -18,7 +18,7 @@ Alerts aren't available for charts with advanced mode configurations.
 
 Note that you can also view <<state_history, state history>> and <<delete_alert, delete>> alerts.
 
-[[alert_config]]
+[[configure]]
 == Configure an Alert for a Chart in a Custom Dashboard
 
 In the *Alert Config* section, configure the condition under which an alert is triggered.
@@ -36,7 +36,7 @@ Available severity levels:
 include::partial$include-alert-severity.adoc[leveloffset=+1]
 
 [[notifications]]
-== Notifications
+== Send Notifications
 
 Configure an email notification when an alert is triggered.
 
@@ -48,13 +48,13 @@ Configure an email notification when an alert is triggered.
 |===
 
 [[state_history]]
-== State History
+== Get State History
 
 View the last fifty state changes in this section of the UI.
 
 You can also clear the history.
 
 [[delete_alert]]
-== Delete
+== Delete an Alert
 
 To delete an alert from a chart in a custom dashboard, click *Delete* from the chart's *Alerts* tab, and  confirm your deletion.
