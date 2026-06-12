@@ -254,11 +254,7 @@ include::partial$include-alert-variables.adoc[tag="alerts-api"]
 
 include::partial$include-alert-variables.adoc[tag="alerts-variables"]
 
-//TODO: WHAT TO SAY ABOUT SLACK NOTIFICATIONS
 
-////
-[[limits]]
-== Alert Limits and Rate Limiting
+== See Also
 
-*TODO:* XREF TO MORE DETAIL AND is there a hard limit AND is this enabled alerts or any alerts at all? And see commented out TODOs on adoc page. A lot more info is needed.
-////
+* xref:monitoring::performance-and-impact.adoc[]
