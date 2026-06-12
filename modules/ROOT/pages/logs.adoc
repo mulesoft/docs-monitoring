@@ -13,8 +13,5 @@ Use Anypoint Monitoring to retrieve logs on your deployed applications:
 
 * xref:logs-search-hf-india.adoc[India]
 ** *Log Search* for logs across your deployed applications
-** xref:raw-data.adoc[*Raw Data*] downloads of archived log data
-
-//TEMPORARY REMOVAL AND RENAME SO THAT IT WON'T BUILD logs-search-hf-india
-//* xref:logs-search-hf-india.adoc[India] Anypoint Platform cloud
-//** *Log Search* for logs across your deployed applications
+//DELAYED:
+//** xref:raw-data.adoc[*Raw Data*] downloads of archived log data

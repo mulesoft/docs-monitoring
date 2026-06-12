@@ -62,10 +62,10 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 //| Yes
 //| Yes
 
-| <<functional-monitoring>>
+| <<functional-monitoring>> link
 | Yes
 | Yes
-| No
+| Yes
 //| No
 //| No
 
