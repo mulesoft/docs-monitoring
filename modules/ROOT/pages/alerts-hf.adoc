@@ -1,0 +1,9 @@
+= Getting Alerts (India)
+:page-info-pills: anypoint-pricing-core
+//TEMP REMOVAL UNTIL NEW ALERTS RELEASED EVERYWHERE:
+//:page-aliases: alerts-jp-ca.adoc, alerts-us-eu.adoc, alerts.adoc
+
+//feature tier:
+//include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-advanced-only"]
+
+include::partial$include-alerts-basic-hf.adoc[]

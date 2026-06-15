@@ -3,6 +3,7 @@
 Use Anypoint Monitoring to create and receive alerts on your deployed applications:
 
 * xref:alerts-us-eu.adoc[Alerts on US and EU] Anypoint Platform clouds
-** Set up xref:basic-alerts.adoc[basic alerts]
-** Set up xref:custom-dashboard-alerts.adoc[alerts for custom dashboards]
++
+To configure alerts for graphs in custom dashboards, see xref:dashboard-custom-config-graph.adoc#alerts_config[Alerts (Configuration, Notifications, History)].
 * xref:alerts-jp-ca.adoc[Alerts on Japan and Canada] Anypoint Platform clouds
+* xref:alerts-hf.adoc[Alerts on India] Anypoint Platform cloud

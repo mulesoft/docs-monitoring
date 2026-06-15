@@ -18,70 +18,91 @@ of issues (MTTI).
 Anypoint Monitoring feature availability depends on the control plane for your Anypoint Platform instance and your <<billing, Anypoint Platform package or plan>>.
 include::partial$include-entities.adoc[tags="region-data-not-shared"]
 
-[%header,cols="3a,1a,1a,1a,1a"]
+//[%header,cols="3a,1a,1a,1a,1a"]
+[%header,cols="3a,1a,1a,1a"]
 |===
 |Anypoint Monitoring Feature 
 |https://anypoint.mulesoft.com/monitoring[US], https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds
-| https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds (on Hyperforce)
-| Government Cloud | Private Cloud (3.x)
+| https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds
+| https://in1.platform.mulesoft.com/login/[India] Cloud 
+//| Government Cloud | Private Cloud (3.x) 
 
-|{empty}
+| xref:alerts.adoc[Alerts]
+| Yes
+| Yes
+| Yes
+//| Yes
+//| Yes
 
-* xref:dashboards.adoc[Built-in and Custom dashboards]
-* xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
-* xref:tools.adoc[Tools] (Notifications)
-| Yes
-| No
+| xref:anypoint-insights.adoc[Anypoint Insights]
 | Yes
 | Yes
+| Yes
+//| No
+//| No
 
-|{empty}
-
-<<alerts, Alerts>>
-| Yes
-| Yes
-| Yes
-| Yes
-
-| <<insights, Anypoint Insights>>
-| Yes
+| xref:dashboards.adoc[Built-in dashboards (Classic mode)]
 | Yes
 | No
 | No
+//| Yes
+//| Yes
+
+| xref:dashboard-custom-config.adoc[Custom dashboards]
+| Yes
+| No
+| No
+//| Yes
+//| Yes
+
+| xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
+| Yes
+| No
+| No
+//| Yes
+//| Yes
 
 | <<functional-monitoring>>
 | Yes
 | Yes
-| No
-| No
+| Yes
+//| No
+//| No
 
+| xref:logs.adoc[Logging features]
+| Yes
+| Yes
+| Yes
+//| Yes
+//| No
 
-| <<logging, Logging features>>
-| Yes
-| Yes
+| xref:tools.adoc[Notifications] (*Tools*)
 | Yes
 | No
+| No
+//| Yes
+//| Yes
 
-|{empty}
-xref:reports.adoc[Reports]
+| xref:reports.adoc[Reports]
 | Yes
 | Yes
 | Yes
-| Yes
+//| Yes
+//| Yes
 
-|{empty}
-  xref:telemetry-exporter.adoc[Telemetry exports]
+| xref:telemetry-exporter.adoc[Telemetry exports]
 | Yes
 | Yes
-| No
-| No
+| Yes
+//| No
+//| No
 
-|{empty}
-  xref:traces.adoc[Traces]
+| xref:traces.adoc[Traces]
 | Yes
 | No
 | No
-| No
+//| No
+//| No
 |===
 
 //NOT SUPPORTED in PCE & Gov Cloud: Insights, Traces, Telemetry Exporter, API Functional Monitoring
@@ -93,19 +114,7 @@ For more information about MuleSoft Government Cloud and Anypoint Platform Priva
 
 Monitor performance data and issues across your deployed Mule apps and APIs (_entities_), and get detailed insights on specific deployments. 
 
-
 See xref:anypoint-insights.adoc[].
-
-[[alerts]]
-=== Event-Driven Alerts
-//feature tier (for h2-h4 headings):
-include::partial$subsection-pills.adoc[tag="anypoint-pricing-core"]
-
-Configure alerts to receive notifications about abnormal behavior and problems in your app network.
-
-You can trigger alert notifications based on thresholds you define for your Mule apps and APIs. 
-
-See xref:alerts.adoc[].
 
 [[logging]]
 === Log Management
@@ -115,6 +124,8 @@ Manage logs and log data for your deployments with these logging features:
 * <<log-search>>
 * <<log-points>>
 * <<raw-data-downloads>>
+
+Support for logging features can vary by Anypoint Platform cloud. For details, see <<features>>.
 
 [[log-search]]
 ==== Log Searches
@@ -150,7 +161,7 @@ See xref:log-points.adoc[].
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-In the US and EU Clouds, download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
+Download warehoused (archived) log data for a Mule app, for example, to help investigate security, compliance, or other issues that logs can reveal.
 
 See xref:raw-data.adoc[].
 
@@ -292,12 +303,12 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 4+| *Alerts*
 
-|xref:basic-alerts.adoc[Basic alerts] for apps, servers, and APIs
+|xref:alerts-hf.adoc[Basic alerts] for apps, servers, and APIs
 |Yes
 |Yes
 |Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
 
-|xref:custom-dashboard-alerts.adoc[Alerts for Custom Dashboards]
+|xref:dashboard-custom-config.adoc#alerts-custom-dashboards[Alerts for Custom Dashboards]
 |No
 |No
 |Yes
@@ -375,6 +386,43 @@ Support engineer Carole searches through Anypoint Monitoring logs and notices so
 * Visualize regional or project-based consumption +
 Business owner Devon has apps across different runtime planes. He has aggregated dashboards of the regional or project-specific apps, and he can easily determine what is consuming the most resources and evangelize accordingly.
 
+[[classic]]
+== Classic and Enhanced Monitoring Features
+
+On EU and US Clouds, classic and enhanced monitoring feature sets are currently available. Clicking *Insights* from the classic Anypoint Monitoring mode opens to Anypoint Insights, provides access to other enhanced monitoring features, and includes a link back to classic monitoring, *Open Classic Monitoring*. 
+
+[%header,cols="a,a"]
+|===
+| Classic Features (US and EU Clouds) | Enhanced Features (US and EU Clouds)
+
+|{empty}
+
+* *Built-in dashboard* 
+* *Custom dashboards* 
+* *Traces (Beta)*
+* *Telemetry Exporter*
+* *Reports*
+* *Alerts*
+* *Custom Metrics*
+* *Functional Monitoring*
+* *Log Management*
+** *Log Search*
+** *Log Points*
+** *Raw Data*
+* *Other*
+** *Tools*
+** *Settings*
+
+|{empty}
+
+* *Insights*
+* *Traces (Beta)*
+* *Log Search (New)*
+* *Quick Links*
+** *Functional Monitoring*
+** *Log Search*
+** *Log Points*
+|===
 
 [[see-also]]
 == See Also

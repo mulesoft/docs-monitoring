@@ -1,0 +1,410 @@
+[[log-search-overview]]
+//don't change order of numbers in graphic or calloutlist
+image::logs-search-hf.png["Log Search UI"]
+
+[calloutlist]
+. Search for log field columns to display or remove from the log *Results* table. Hover over a field name to add or remove the column, and to display top-5 values from the field.
+
+* *Selected fields*: Lists columns added to the log *Results* table
+* *Available fields*: Lists columns you can add to the log *Results* table
+. Provide search queries for logs and log fields, including log *Message* fields. Use image:logs-save-icon-hf.png["",20,20] (Save) to save named searches for future use, and to select, update, or delete saved searches.
+. Set a date and time range to capture in the log *Results* table using the clickable image:logs-calandar-icon-hf.png["",20,20] (Calendar), *Show dates*, or a date range that appears in the UI after you click *Show dates*. If you select a relative or absolute date range, the *Refresh* button switches to an *Update* button to use for applying your date range.
+. *Refresh* is for manually refreshing the logs in the *Results* table.
++
+To set an autorefresh rate in seconds, minutes, or hours, open image:logs-calandar-icon-hf.png["",20,20] (Calendar) to configure the *Refresh every* setting.
+. *Share* provides a link to your current search query.  
+. Create and use <<search-filters, search filters>>, such as `appId: app`. Filters <<save-search, persist for reuse only if you save them>>. 
+. Review log counts by the selected date range. Timestamp units on the horizontal axis vary depending on the date or time range you select. The longer the range, the longer the timestamp period, which can display averages over 30-second, 12-hour, or weekly intervals, for example.
+. Use the *Results* table to review the logs captured by your search. You can also use *Download as CSV* to download up to 10,000 rows of log data.
+. Filter by the value in a cell of the *Results* table by hovering over the cell and clicking to add (*+*) or remove (*-*) the filter.
+
+[NOTE] 
+====
+
+* For agent-related logs, see <<search-agentic>>.
+* For on-premises servers with customized logging, see important information in <<warning-custom-logs>>.
+====
+
+[[search-logs]]
+== Search for Logs
+
+Use *Log Search* to capture the logs you want to review. You can use the search bar, a filter (including filters created with Query DSL), or combination of the search bar and a filter.
+
+* <<search-bar>>
+* <<search-filters>>
+
+[[search-bar]]
+=== Query Logs from the Search Bar
+
+Use the search bar with or without <<search-filters, search filters>> to capture the logs you want to review.
+
+. Select an absolute or relative date-time range to review. 
++
+For date-time range selection, see <<time-range>>.
+. Optionally, add or remove columns (available fields) from the log *Results* table.
+. Provide a search query using any of these methods:
+
+* Provide a query in the search bar:
+
+** Use words or quotes around multiple words and strings containing special characters, such as `"HTTP GET"`, `"ab12c345-abc6-789d-e1fa-b124c5de6789"`, or `"https://api.mycompany.com:443"`.
++
+Without quotes, multiword searches return matches to each word, and unescaped special characters can affect the search negatively. For partial word searches, you can use pattern matching characters in your search, such as `mya*`, or `appId: mya?p`.
+** Escape special characters with the `\` character. 
++
+For more information, see xref:log-search-query-syntax.adoc#special-characters[Special Characters]. 
+** Use a <<field-names, field identifier>> to search within a specific log field, such as `appId: myapp` for an application named `myapp`.
+** Use logical operators, such as the `AND` in `appId: myap* AND "forbidden (403)"`.
++
+For a list of supported operators, see xref:log-search-query-syntax.adoc#boolean-operators[Boolean Operators].
+* Add filters as needed to change the scope of log results.
++
+For guidance, see <<search-filters>>.
+. Review search results in the *Results* table:
+
+image:logs-message-expanded-hf.png["Expanded Log Message"]
+
+[calloutlist]
+. To expand a log entry and view log fields, click *&gt;* in the *Time* field for a log entry. 
++
+The arrowhead points down (*&#8964;*) after you click it.
+. The expanded log (*Expanded document*) includes *Table* and *JSON* views. 
+. For long, truncated log messages, open the full message by clicking the *&gt;* in  the *Table* view's *Message* field. 
+. Get more context on the log by clicking *View surrounding logs* and specifying a number of logs that precede and follow your log, or use *View log* to open the log entry in a dedicated page.
+
+For more detail, see xref:log-search-query-syntax.adoc[].
+
+[[search-filters]]
+=== Use Search Filters
+
+Create, edit, and apply log search filters. When defining a filter, you can use selectable fields and operators, or you can use the JSON-based OpenSearch Query Domain-Specific Language (Query DSL) for more complex filters. 
+
+* <<filter-simple>>
+* <<filter-query-dsl>>
+* <<filter-top5>>
+
+To save a filter for future use, see <<save-search>>.
+
+[[filter-simple]]
+==== Create a Basic Filter
+
+Create a filter for your log search:
+
+. Click *Add filter*.
+. Select a log field name, or use the field's identifier (such as `appId`) for Query DSL filters.  
++
+See <<field-names>> for log fields and identifiers.
+. Select an operator, and provide any required operands:
+* `is`: Contains the value you provide
+** Example: `Application is my-app`
+** Filter label: `appId: my-app`
+
+* `is not`: Doesn't contain the value you provide
+** Example: `Application is not my-app`
+** Filter label: `NOT appId: my-app`
+
+* `is one of`: Matches at least one value in the list of values you provide
+** Example: `Application is one of my-app another-app yet-another-app`
+** Filter label: `appId: is one of my-app another-app yet-another-app`
+
+* `is not one of`: Doesn't match any value in the list of values you provide
+** Example: `Application is not one of my-app another-app yet-another-app`
+** Filter label: `NOT appId: is one of my-app another-app yet-another-app`
+
+* `exists`: Identifies a field that contains a value
+** Example: `Class exists`
+** Filter label: `class: exists`
+
+* `does not exist`: Identifies a field that contains an empty value
+** Example: `Class does not exist`
+** Filter label: `NOT class: exists`
+
+. Optionally, perform any of these actions: 
+
+* When creating or editing a search filter, use *Create custom label?*.
++
+A short label is useful for long filter names. 
+* Save your filter so you can reuse it.
++ 
+For guidance, see <<save-search>>.
+
+
+[[filter-query-dsl]]
+==== Create a Filter with Query DSL
+
+You can use OpenSearch Query Domain-Specific Language (Query DSL) to create a filter in JSON format. For information about valid log field identifiers, see <<field-names>>.
+
+. Click *Add a filter*.
+. Click *Edit Query DSL*.
+. Provide your query, and click *Save*. 
++
+This example shows a query for `log-level` INFO:
++
+[source,text,linenums]
+----
+{
+  "query": {
+    "match": {
+      "log-level": {
+        "query": "INFO",
+        "type": "phrase"
+      }
+    }
+  }
+}
+----
++
+This example shows a complex query that retrieves worker ID values from 0 to 20.
+[source,text,linenums]
+----
+{
+  "query": {
+    "range": {
+      "workerId": {
+        "gte": 0,
+        "lte": 20
+      }
+    }
+  }
+}
+----
+
+To learn more, see https://docs.opensearch.org/3.3/query-dsl/[Query DSL] in the v3.3 OpenSearch documentation. 
+
+////
+[NOTE]
+Some complex search queries don't have an equivalent in the search filter values UI, so you can only create and view such queries in the query UI.
+////
+
+[[filter-top5]]
+==== Use Top 5 Log Field Values to Create a Filter
+
+Get a list of top-5 log values from the list of fields used for columns in the *Results* table. For example, you can get a list of the top-5 apps or log messages ranked by the percentage of matches, such as 19% of log messages that match. 
+
+image::logs-top5-hf.png["Top 5 Application Fields Example", width=50%]
+
+. Hover over a field, such as *Application*, from the list of log field names.
+. Click image:logs-top5-icon-hf.png["",20,20] (Top 5) to open the list of top 5 values for the field.
+. Click *+* (Add) to create a search filter for this value.
++
+You can also negate the top-5 value filter by clicking the *-*. For example, you can use these features to create a filter on a log-level value (*log-level: ERROR*) or negate the value (*NOT log-level: ERROR*).
+. Optionally, save the search filter for reuse.
++
+For guidance, see <<save-search>>.
+
+[[time-range]]
+=== Select a Log Date and Time Range
+
+By default Log Search retrieves the last 15 minutes of logs. You can use an absolute or relative date-time range:
+
+* *Absolute*: Specific date-time to start and end the search. The end of the date-time period defaults to *now*.
+* *Relative*: A configurable number of seconds, minutes, hours, days, weeks, months, or years before (such as *Days ago*) or after (such as *Days from now*) the current date and time.
+
+To select the date-time range, use any of these options:
+
+* Click image:logs-calandar-icon-hf.png["",20,20] (Calendar), and use *Quick select* or *Commonly used* options:
+
+** Select the last number of *seconds*, *minutes*, *hours*, *days*, *weeks*, *months*, or *years*.
+** Select a commonly used option, such as *Today*, *This week*, last number of minutes, hours, or days, *Last 1 year*.
+
+* Click *Show dates* or the date-time range in Log Search:
+
+** Click *Absolute* to pick a specific start date and time for your log search, and then click *Update*.  
+** Click *Relative*, and set a number of seconds, minutes, hours, days, weeks, months, or years from now for your log search, and then click *Update*.
++
+Optionally, round to the day.
+
+For information about log data retention, see <<data-retention-management>>.
+
+[[save-search]]
+== Save and Apply Saved Log Search Queries
+
+Save search queries as reusable filters. After using a saved search query, you can clear the query filter so it doesn't affect search results. You can also permanently delete a saved search.
+
+* To save a new search:
+
+. Run a search query you intend to save. 
++
+For guidance, see <<search-logs>>.
+. Click image:logs-save-icon-hf.png["",20,20] (Save).
+. Click *Save as new* or *Save current search*.
++
+*Save as new* appears if another filter or search query is applied to the current log search. 
+. Provide a name for your search, and click *Save*.
++
+Wait a moment for the save process to complete.
+
+* To use a saved search:
+
+. Click image:logs-save-icon-hf.png["",20,20] (Save).
+. Click the saved search to apply the search.
++
+The search appears as a search filter.
+
+* To clear a saved search from a search query that's filtering your results, use either of these methods:
+
+** Click image:logs-save-icon-hf.png["",20,20] (Save), hover over the saved search, and then click *Clear*.
+** Hover over the filter and click *X*. For example, if *my saved app* is a saved search, you can click *X* to clear it without deleting:
++
+image:logs-delete-filter-hf.png["Delete a Filter", width=25%]
++
+The saved filter remains available in your list of saved searches. Unsaved search filters don't persist when you click *X*.
+
+* To edit a saved search:
+
+. Click a saved search to display the results.
+. Modify your current search query or filters.
+. Click image:logs-save-icon-hf.png["",20,20] (Save).
+. Click *Save changes* to modify your saved search. 
+. Click *Save*.
++
+Wait a moment for the save process to complete.
+
+* To delete a saved search:
+
+. Click image:logs-save-icon-hf.png["",20,20] (Save).
+. Hover over the saved search to delete.
+. Click image:logs-delete-icon-hf.png["",30,30] (Delete).
+
+////
+[[share-logs]]
+== Share Logs
+
+TODO_TODO: THIS IS GETTING IMPLEMENTED 
+
+VERIFY/EDIT AS NEEDED FOR NEW UI:
+You can share the URL to your logs.
+
+. From Logs, click *Share*.
+. Select *Share* to load the URL of your log page to a *Share Log Search Link* field.
+. Click *Copy*.
+////
+
+[[adjust-columns]]
+== Move and Remove Columns in the Results
+
+After adding optional columns to the log *Results* table, such as *Application* and *Log level*, you can move and remove them.
+
+Hover over the column heading, such as *Log level*, to reveal column options:
+
+* To move a column, use the arrow to move the column to the left or right.
+* To remove a column, click the *X*.
+* To sort the data in the column in ascending or descending order, click its up-down arrow to switch the sorting order.
+
+[[refresh-logs]]
+== Refresh Log Data (Manually and Automatically)
+
+You can refresh log data manually and autorefresh on a regular basis:
+
+* To refresh manually, click *Refresh*.
+* To autorefresh on a regular basis:
+
+. Click image:logs-calandar-icon-hf.png["",20,20] (Calendar).
+. Under *Refresh every*, provide a number and time unit (seconds, minutes, or hours), such as *5 minutes*.
+. Click *Start* to initiate the autorefresh process.
+
+== Download Log Results as a CSV File
+
+Download log search results for up to 10,000 log records into a CSV file. 
+
+. Add columns for log fields you want in your report to the log *Results* table.
++
+For guidance, see <<adjust-columns>>.
+. Run your search query.
++
+For guidance, see <<search-logs>>.
+. Click *Download as CSV*.
+
+[[search-agentic]]
+== Get Logs for Agentic Assets
+
+API Manager and Agent Visualizer provide links to logs for agent-related assets (agent, broker, and MCP server instances):
+
+* In Agent Visualizer, click a node in the visual graph, and navigate to logs. For guidance, see xref:agent-visualizer::troubleshoot-agent-network.adoc#access-logs[Access Logs] in the Agent Visualizer documentation.
++
+For more information about Agent Visualizer, see xref:agent-visualizer::index.adoc[].
+* In API Manager, navigate to *Agent and Tool Instances*, and click an instance:
+// REMOVED:
+** To find logs for policies applied to agents, brokers, and MCP servers, click *Message Log*, and then click *View logs in Anypoint Monitoring*.
+** For a broker's reasoning logs, click *Message Log*, and then click the button dedicated to the broker. These logs come from the broker application.
++
+[IMPORTANT]
+====
+By default, broker logs include the actions the broker takes (including agents called and MCP tools executed), but they don’t include reasoning data due to potential logging of personally identifiable information.
+====
++
+If your organization opts to enable a broker's reasoning logs, set the broker's `category` field in Runtime Manager:
++
+`INSECURE-LOGGING` category to `DEBUG`
+
+[[warning-custom-logs]]
+== Format Customized Logs in On-Premises Servers for Proper Indexing
+
+Logs produced by apps with customized logging (by changing the pattern layout in the `log4j2.xml` file) can fail to index correctly into Anypoint Monitoring. To ensure correct indexing, use the Mule default pattern layout, which is one of the following:
+
+* `<PatternLayout pattern="%-5p %d [%t] [event: %X{correlationId}] %c: %m%n" />`, or
+* `<PatternLayout pattern="%d [%t] %-5p %c - %m%n" />`
+
+For applications deployed to CloudHub and Anypoint Runtime Fabric with customized time zones:
+
+Don't override the default JVM time zone for applications deployed to CloudHub and Anypoint Runtime Fabric with customized time zones. The time zone must be UTC. Changing the time zone to a local time zone causes logs to be indexed in Anypoint Monitoring with incorrect timestamps.
+
+[[data-retention-management]]
+== Data Retention and Management for Logs
+
+//VERIFY STILL TRUE
+Log storage limits for your subscription tier determine your retention and aren't based on a set amount of time. For details, see xref:performance-and-impact.adoc#data-retention-limits[Data Retention Limits].
+
+//VERIFY STILL TRUE
+For other limitations on logs, see xref:performance-and-impact.adoc#logging-data-management[Logging Data Management].
+
+== Reference
+
+Get descriptions of fields and filter options:
+
+* <<field-names>>: Log field names and identifiers
+* <<filter-options>>: Options for enabling, disabling, inverting, including, excluding, editing, and deleting filters
+
+[[field-names]]
+=== Log Field Names
+
+Log field names in the UI have field identifiers that appear in filter labels and <<save-search, saved search labels>>. <<filter-query-dsl, Query DSL filters>> require field identifiers.
+
+* *Application* (`appId`): Name of the application
+* *Class* (`class`): Class name 
+* *Environment* (`envId`): Environment identifier
+* *Event* (`event`): Identifier for the associated Mule event
+* *Log level* (`log-level`): Log value such as INFO, WARN, ERROR 
+* *Logger* (`logger`): Name of the logger
+* *Message* (`message`): Log message
+* *Timestamp* (`timestamp`): Date and time of a log entry
+* *Worker* (`workerId`): Identifier for the associated worker
+
+
+[[filter-options]]
+=== Filter Options
+
+Filter options are available globally and to individual filters. 
+
+image:filter-icons-hf.png["Filter Icons", width=25%]
+
+[calloutlist]
+. Click the filter icon to open global filter options:
+
+* *Enable all* to enable all your filters
+* *Disable all* to disable all your filters without deleting the filters
+* *Invert inclusion* to convert filters that include matching results (such as `log-level: ERROR`) into filters that uses `NOT` to exclude matching result (such as `NOT log-level: ERROR`) and to convert filters that use `NOT` to exclude matching results into filters that include matching results
+* *Invert enabled/disabled* to disable all enabled filters or to enable all disabled filters
+// * *Pin all*
+// * *Unpin all*
+
+. Click the filter label to open individual filter options:
+
+* *Edit filter* to change the filter configuration
+* *Include results* to include the filter's results in the *Results* table
+* *Exclude results* to apply the *NOT* operator to the filter, which excludes its results from the *Results* table 
+* *Temporarily disable* to retain the filter without using it to return search results; switches to *Re-enable* when you click *Temporarily disable*
+* *Delete* to permanently delete the filter
+//* *Pin across all apps* 
+//* *Unpin across all apps*
+
+Any options related to pinning or unpinning filters aren't used.
