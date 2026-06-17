@@ -1,4 +1,5 @@
 = Getting Alerts in Anypoint Monitoring
+:page-aliases: basic-alerts.adoc
 
 Use Anypoint Monitoring to create and receive alerts on your deployed applications:
 

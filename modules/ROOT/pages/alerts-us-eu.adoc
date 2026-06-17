@@ -9,8 +9,8 @@ image::intro-alerts.png["Alerts in Anypoint Monitoring"]
 
 In the https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, you can create these types of alerts from Anypoint Monitoring:
 
-* xref:basic-alerts.adoc[Basic alerts] for servers, Mule apps, and APIs
-* xref:custom-dashboard-alerts.adoc[Custom dashboard alerts] for graphs in custom dashboards in Anypoint Monitoring
+* Basic alerts for servers, Mule apps, and APIs
+* xref:dashboard-custom-config-graph.adoc#create[Advanced alerts] for graphs in custom dashboards in Anypoint Monitoring
 * <<other-alerts, Other alerts in API Manager or Runtime Manager>>:
 
 ** Operational alerts for APIs through API Manager
@@ -85,8 +85,3 @@ NOTE: Alerts created in API Manager and Runtime Manager aren't listed in the *Al
 . To create these alerts, proceed to:
 * xref:runtime-manager::alerts-on-runtime-manager.adoc[Runtime Manager Alerts]
 * xref:api-manager::using-api-alerts.adoc[API Manager Alerts]
-
-== See Also
-
-* xref:basic-alerts.adoc[Basic Alerts]
-* xref:custom-dashboard-alerts.adoc[Custom Dashboard Alerts]

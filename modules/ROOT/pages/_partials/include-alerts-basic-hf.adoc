@@ -179,7 +179,7 @@ The example configures an alert to trigger when the selected metric (such as *Me
 //TODO: MINIMUM CAPTURE PERIOD (5 MINS?)
 
 
-//TODO: TECH DEBT - TURN THE METRICS INTO INCLUDES - descriptions from basic-alerts.adoc
+//TODO: TECH DEBT - TURN THE METRICS INTO INCLUDES - descriptions from DELETED basic-alerts.adoc
 [[metrics]]
 == Alert Metrics
 
