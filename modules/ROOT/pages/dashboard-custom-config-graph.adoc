@@ -151,7 +151,7 @@ From a graph's *Alerts* tab, you can:
 * <<delete_alert, Delete an alert>>
 
 [[create]]
-include::partial$include-alerts-config.adoc[leveloffset=+2]
+include::partial$include-alerts-config.adoc[]
 
 //END ALERTS
 
