@@ -143,7 +143,7 @@ Only available when the selected *Draw Modes* are *Lines* or *Points*.
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-From a graph's *Alerts* tab, you can: 
+From a graph's *Alerts* tab, you can:
 
 * <<create, Create an alert>>
 * <<configure, Configure an alert>>
@@ -151,7 +151,7 @@ From a graph's *Alerts* tab, you can:
 * <<delete_alert, Delete an alert>>
 
 [[create]]
-include::partial$include-alerts-config.adoc[leveloffset=+1]
+include::partial$include-alerts-config.adoc[leveloffset=+2]
 
 //END ALERTS
 
