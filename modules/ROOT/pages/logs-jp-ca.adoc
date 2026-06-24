@@ -1,5 +1,5 @@
 = Using Logs in Anypoint Monitoring (Canada and Japan)
-:page-info-pills: anypoint-pricing-core
+:page-info-pills: anypoint-pricing-titanium
 
 //feature tier:
 Get logs on your Mule apps from Anypoint Monitoring. On https://in1.platform.mulesoft.com/login/[India Cloud], Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. These features support:
