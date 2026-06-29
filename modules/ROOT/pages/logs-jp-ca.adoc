@@ -2,7 +2,7 @@
 :page-info-pills: anypoint-pricing-titanium
 
 //feature tier:
-Get logs on your Mule apps from Anypoint Monitoring. On https://in1.platform.mulesoft.com/login/[India Cloud], Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. These features support:
+Get logs on your Mule apps from Anypoint Monitoring. On https://ca1.platform.mulesoft.com/monitoring[Canada] and https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds, Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. These features support:
 
 * Comparative analysis and pattern identification across Mule apps
 * Focused log searches to isolate key data
