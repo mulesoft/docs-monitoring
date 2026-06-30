@@ -1,17 +1,30 @@
 = Using Logs in Anypoint Monitoring
 :page-aliases: logs-using.adoc
 
-Use Anypoint Monitoring to retrieve logs on your deployed applications:
+Use Anypoint Monitoring to retrieve logs on your deployed applications
 
-* xref:logs-us-eu.adoc[US and EU] Anypoint Platform clouds
-** *Log Search* for logs across your deployed applications
-** *Log Points* for real-time log generation
-** xref:raw-data.adoc[*Raw Data*] downloads of archived log data
 
-* xref:logs-jp-ca.adoc[Japan and Canada] Anypoint Platform clouds
-** *Logs* for logs across your deployed applications
+[%header,cols="2a,1a,1a,1a"]
+|===
+|Feature| US and EU Clouds | Canada and Japan Clouds |  India Cloud
 
-* xref:logs-search-hf-india.adoc[India]
-** *Log Search* for logs across your deployed applications
-//DELAYED:
-//** xref:raw-data.adoc[*Raw Data*] downloads of archived log data
+| *Log Search* for reviewing logs across your deployed apps
+| xref:monitoring::logs-us-eu.adoc[Yes] 
+| xref:monitoring::logs-jp-ca.adoc[Yes] 
+| xref:monitoring::logs-search-hf-india.adoc[Yes]
+
+| xref:monitoring::log-points.adoc[Log Points] for generating logs for apps and APIs in real-time without writing code 
+| Yes 
+| Yes 
+| Yes  
+
+| xref:monitoring::raw-data.adoc[Raw Data] for downloading archived log data 
+| Yes 
+| Yes
+| Yes 
+
+| xref:monitoring::tools.adoc[Tools] for links to connectors on Anypoint Exchange that you can incorporate into a Mule app to deliver notifications to external systems 
+| Yes 
+| Yes
+| Yes 
+|===
