@@ -65,8 +65,8 @@ Required prerequisites:
 ** Mule application:
 *** CloudHub 2.0
 *** Runtime Fabric
-//TODO: HYBRID? 
-*** Hybrid 
+//TODO: HYBRID: NOT YET (LIKELY 7/31)
+//*** Hybrid 
 ** API managed by Mule Gateway or Omni Gateway
 +
 See xref:gateway-home::index.adoc[].
