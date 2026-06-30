@@ -1,4 +1,4 @@
-= Using Logs in Anypoint Monitoring (US and EU)
+= Searching Logs in Anypoint Monitoring (US and EU)
 :page-info-pills: anypoint-pricing-titanium
 
 //EXPERIENCE ROLLOUT BANNER FOR THIS PAGE TO REMOVE ONCE ROLLOUT IS COMPLETE
