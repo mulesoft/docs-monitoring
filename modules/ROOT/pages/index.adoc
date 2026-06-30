@@ -78,8 +78,8 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 
 | xref:tools.adoc[Notifications] (*Tools*)
 | Yes
-| No
-| No
+| Yes
+| Yes
 //| Yes
 //| Yes
 
@@ -152,7 +152,7 @@ For more logging options, see xref:runtime-manager::deployment-strategies.adoc#l
 //feature tier (for h2-h4 headings):
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
-In the US and EU Clouds, generate logs for Mule apps and APIs in real-time and without writing code.
+Generate logs for Mule apps and APIs in real-time and without writing code.
 
 See xref:log-points.adoc[].
 
@@ -387,13 +387,13 @@ Support engineer Carole searches through Anypoint Monitoring logs and notices so
 Business owner Devon has apps across different runtime planes. He has aggregated dashboards of the regional or project-specific apps, and he can easily determine what is consuming the most resources and evangelize accordingly.
 
 [[classic]]
-== Classic and Enhanced Monitoring Features
+== Classic and Enhanced Monitoring Views
 
-On EU and US Clouds, classic and enhanced monitoring feature sets are currently available. Clicking *Insights* from the classic Anypoint Monitoring mode opens to Anypoint Insights, provides access to other enhanced monitoring features, and includes a link back to classic monitoring, *Open Classic Monitoring*. 
+On EU and US Clouds, access to features from classic and enhanced views are currently available. Clicking a feature, such as *Insights* from the Classic Monitoring view opens to features that are now available in the enhanced view, and includes a link back to Classic Monitoring view, *Open Classic Monitoring*.
 
 [%header,cols="a,a"]
 |===
-| Classic Features (US and EU Clouds) | Enhanced Features (US and EU Clouds)
+| Classic Monitoring View Feature List (US and EU Clouds) | Enhanced View Feature List (US and EU Clouds)
 
 |{empty}
 
@@ -409,19 +409,29 @@ On EU and US Clouds, classic and enhanced monitoring feature sets are currently 
 ** *Log Search*
 ** *Log Points*
 ** *Raw Data*
-* *Other*
+* *Others*
 ** *Tools*
 ** *Settings*
 
 |{empty}
 
 * *Insights*
+* *Custom Dashboards*
 * *Traces (Beta)*
-* *Log Search (New)*
-* *Quick Links*
-** *Functional Monitoring*
+* *Telemetry Exporter*
+* *Reports*
+* *Log Management*
 ** *Log Search*
 ** *Log Points*
+//TODO: NOT YET
+//** *Raw Data*
+* *Others*
+** *Tools*
+** *Settings*
+* *Quick Links*
+** *Functional Monitoring*
+** *Log Points*
+
 |===
 
 [[see-also]]
