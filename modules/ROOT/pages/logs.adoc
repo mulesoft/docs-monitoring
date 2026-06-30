@@ -9,9 +9,9 @@ Use Anypoint Monitoring to retrieve logs on your deployed applications
 |Feature| US and EU Clouds | Canada and Japan Clouds |  India Cloud
 
 | *Log Search* for reviewing logs across your deployed apps
-| xref:monitoring::https://docs.mulesoft.com/monitoring/logs-us-eu.adoc[Yes] 
+| xref:monitoring::logs-us-eu.adoc[Yes] 
 | xref:monitoring::logs-jp-ca.adoc[Yes] 
-| xref:monitoring::logs-search-hf-india.adoc[Yes] 
+| xref:monitoring::logs-search-hf-india.adoc[Yes]
 
 | xref:monitoring::log-points.adoc[Log Points] for generating logs for apps and APIs in real-time without writing code 
 | Yes 
