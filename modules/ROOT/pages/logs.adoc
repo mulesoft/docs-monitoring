@@ -28,21 +28,3 @@ Use Anypoint Monitoring to retrieve logs on your deployed applications
 | Yes
 | Yes 
 |===
-
-
-* US and EU Anypoint Platform clouds:
-** xref:logs-us-eu.adoc[Log Search] for logs across your deployed applications
-** xref:log-points.adoc[Log Points] for real-time log generation
-** xref:raw-data.adoc[*Raw Data*] downloads of archived log data
-
-* Japan and Canada Anypoint Platform clouds:
-** xref:logs-jp-ca.adoc[Log Search] for logs across your deployed applications
-** xref:log-points.adoc[Log Points] for real-time log generation
-** xref:raw-data.adoc[*Raw Data*] downloads of archived log data
-
-* India:
-** xref:logs-search-hf-india.adoc[Log Search] for logs across your deployed applications
-** xref:log-points.adoc[Log Points] for real-time log generation
-** xref:raw-data.adoc[*Raw Data*] downloads of archived log data
-
-*Settings* is available on all clouds for  from Mule apps to 
