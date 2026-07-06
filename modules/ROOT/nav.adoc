@@ -29,8 +29,6 @@
  ** xref:integration-intelligence-logs.adoc[]
 * xref:traces.adoc[]
 * xref:alerts.adoc[Getting Alerts]
-** xref:alerts-us-eu.adoc[Getting Alerts (US and EU)]
-** xref:alerts-jp-ca.adoc[]
 ** xref:alerts-hf.adoc[]
 * xref:logs.adoc[Using Logs]
  ** xref:logs-us-eu.adoc[]
