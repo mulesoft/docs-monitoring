@@ -66,7 +66,7 @@ include::partial$include-nav-steps-telemetry-permissions.adoc[tag=connectionPerm
 . On the *Connection Details* page, enter the following information: 
 * *Connection Name*: Name for your connection, using only alphanumeric characters and hyphens.
 * *Destination Type*: Third-party observability platform to which you want to transfer data. 
-* *Endpoint URL*: Endpoint that enables external connections to your third-party observability platform (see <<third-party-support>>). Some platforms, such as DataDog, require an OpenTelemetry collector endpoint that is enabled to translate the OpenTelemetry standard to DataDog formats.
+* *Endpoint URL*: Endpoint that enables external connections to your third-party observability platform (see <<third-party-support>>). Some platforms, such as DataDog and Splunk Observability Cloud, require an OpenTelemetry collector endpoint that is enabled to translate the OpenTelemetry standard to DataDog formats.
 . Click *Next*.
 . On the *Authentication* page, enter the information needed to authenticate your connection to the observability platform. Some platforms require only access tokens, while others also require a header key.
 . Click *Test Connection* to ensure that Anypoint Platform can connect to your third-party observability platform.
