@@ -1,16 +1,13 @@
-= Using Enhanced Log Search in Anypoint Monitoring (US and EU)
+= Searching Logs in Anypoint Monitoring
 :page-info-pills: anypoint-pricing-titanium
-
-//EXPERIENCE ROLLOUT BANNER FOR THIS PAGE TO REMOVE ONCE ROLLOUT IS COMPLETE
-[.notice-banner]
-From May through June 2026, Anypoint Monitoring is rolling out an enhanced Log Search experience in US and EU instances of Anypoint Platform. This version replaces the xref:monitoring::logs-us-eu.adoc[traditional Log Search]. 
+:page-aliases: logs-search-hf-india.adoc, logs-jp-ca.adoc
 
 //feature tier:
-Get logs on your Mule apps from Anypoint Monitoring. On https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. These features support:
+Get logs on your Mule apps from Anypoint Monitoring. Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. These features support:
 
 * Comparative analysis and pattern identification across Mule apps
 * Focused log searches to isolate key data
 * Sharing log searches and CSV downloads
 
-//Include shared b/t EU/US & India -- will consolidate all once CA/JP UI updated and EU/US data migration done
+//All Clouds
 include::partial$include-log-search-hf.adoc[]
