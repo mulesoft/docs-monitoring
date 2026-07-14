@@ -129,7 +129,9 @@ To use variables in your email notification, see <<variables>>.
 
 .. Provide a subject.
 .. Provide the message.
-.. Identify recipients. 
+.. Identify recipients.
++
+The first recipient appears in the email *To* field, and the remaining recipients appear in the *CC* field.
 
 [[more-menu]]
 == Enable, Disable, or Delete an Alert
