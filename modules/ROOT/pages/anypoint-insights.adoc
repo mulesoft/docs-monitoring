@@ -251,6 +251,8 @@ include::partial$include-entities.adoc[tags="entity-definition"]
 * <<performance-metrics-overview>>
 * <<performance-trends-overview>>
 
+Anypoint Insight reports transaction-level and flow-level timing for inbound and outbound endpoints, flow start and completion, and custom business events. Metrics don't include a per-component, per-event-processor timing breakdown for every processor within a flow. For processor-level latency, use xref:traces.adoc[Traces] or xref:telemetry-exporter.adoc[Telemetry Exporter].
+
 //  H4: Performance Metrics
 [[performance-metrics-overview]]
 ==== Performance Metrics
