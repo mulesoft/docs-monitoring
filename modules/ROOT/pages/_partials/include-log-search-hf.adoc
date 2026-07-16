@@ -83,7 +83,6 @@ Create, edit, and apply log search filters. When defining a filter, you can use 
 
 * <<filter-simple>>
 * <<filter-query-dsl>>
-* <<filter-top5>>
 
 To save a filter for future use, see <<save-search>>.
 
@@ -176,25 +175,6 @@ To learn more, see https://docs.opensearch.org/3.3/query-dsl/[Query DSL] in the 
 ////
 [NOTE]
 Some complex search queries don't have an equivalent in the search filter values UI, so you can only create and view such queries in the query UI.
-////
-
-////
-NOT IN NEW UI
-[[filter-top5]]
-==== Use Top 5 Log Field Values to Create a Filter
-
-Get a list of top-5 log values from the list of fields used for columns in the *Results* table. For example, you can get a list of the top-5 apps or log messages ranked by the percentage of matches, such as 19% of log messages that match. 
-
-image::logs-top5-hf.png["Top 5 Application Fields Example", width=50%]
-
-. Hover over a field, such as *Application*, from the list of log field names.
-. Click image:logs-top5-icon-hf.png["",20,20] (Top 5) to open the list of top 5 values for the field.
-. Click *+* (Add) to create a search filter for this value.
-+
-You can also negate the top-5 value filter by clicking the *-*. For example, you can use these features to create a filter on a log-level value (*log-level: ERROR*) or negate the value (*NOT log-level: ERROR*).
-. Optionally, save the search filter for reuse.
-+
-For guidance, see <<save-search>>.
 ////
 
 [[time-range]]
