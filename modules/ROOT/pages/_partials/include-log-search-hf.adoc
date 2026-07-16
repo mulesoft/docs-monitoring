@@ -3,10 +3,13 @@
 image::logs-search-hf.png["Log Search UI"]
 
 [calloutlist]
-. Search for log field columns to display or remove from the log *Results* table. Hover over a field name to add or remove the column, and to display top-5 values from the field.
+. Search for log field columns to display or remove from the log *Results* table. From an expanded field column heading, you can:
 
-* *Selected fields*: Lists columns added to the log *Results* table
-* *Available fields*: Lists columns you can add to the log *Results* table
+* View the highest five values in the field
+* Add or remove the field from the *Results* table
+* Filter by any of the displayed values or, if the field contains more than 5 values, create a <<search-filters, search filter>> from *See More*
++
+You can also create a search filter from <<filter-simple, *+ Add filter*>>.
 . Provide search queries for logs and log fields, including log *Message* fields. Use image:logs-save-icon-hf.png["",20,20] (Save) to save named searches for future use, and to select, update, or delete saved searches.
 . Set a date and time range to capture in the log *Results* table using the clickable image:logs-calandar-icon-hf.png["",20,20] (Calendar), *Show dates*, or a date range that appears in the UI after you click *Show dates*. If you select a relative or absolute date range, the *Refresh* button switches to an *Update* button to use for applying your date range.
 . *Refresh* is for manually refreshing the logs in the *Results* table.
@@ -175,6 +178,8 @@ To learn more, see https://docs.opensearch.org/3.3/query-dsl/[Query DSL] in the 
 Some complex search queries don't have an equivalent in the search filter values UI, so you can only create and view such queries in the query UI.
 ////
 
+////
+NOT IN NEW UI
 [[filter-top5]]
 ==== Use Top 5 Log Field Values to Create a Filter
 
@@ -190,6 +195,7 @@ You can also negate the top-5 value filter by clicking the *-*. For example, you
 . Optionally, save the search filter for reuse.
 +
 For guidance, see <<save-search>>.
+////
 
 [[time-range]]
 === Select a Log Date and Time Range
