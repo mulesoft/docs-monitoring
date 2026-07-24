@@ -19,90 +19,74 @@ Anypoint Monitoring feature availability depends on the control plane for your A
 include::partial$include-entities.adoc[tags="region-data-not-shared"]
 
 //[%header,cols="3a,1a,1a,1a,1a"]
-[%header,cols="3a,1a,1a,1a"]
+[%header,cols="3a,1a,1a,1a,1a"]
 |===
 |Anypoint Monitoring Feature 
 |https://anypoint.mulesoft.com/monitoring[US], https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds
 | https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds
 | https://in1.platform.mulesoft.com/login/[India] Cloud 
+| Australia Cloud
 //| Government Cloud | Private Cloud (3.x) 
 
 | xref:alerts.adoc[Alerts]
 | Yes
 | Yes
 | Yes
-//| Yes
-//| Yes
+| Yes
 
 | xref:anypoint-insights.adoc[Anypoint Insights]
 | Yes
 | Yes
 | Yes
-//| No
-//| No
+| Yes
 
 | xref:dashboards.adoc[Built-in dashboards (Classic mode)]
 | Yes
 | No
 | No
-//| Yes
-//| Yes
+| No
 
 | xref:dashboard-custom-config.adoc[Custom dashboards]
 | Yes
 | No
 | No
-//| Yes
-//| Yes
+| No
 
 | xref:anypoint-custom-metrics-connector.adoc[Custom metrics]
 | Yes
 | No
 | No
-//| Yes
-//| Yes
-
-| <<functional-monitoring>>
-| Yes
-| Yes
-| Yes
-//| No
-//| No
+| No
 
 | xref:logs.adoc[Logging features]
 | Yes
 | Yes
 | Yes
-//| Yes
-//| No
+| Yes
 
 | xref:tools.adoc[Notifications] (*Tools*)
 | Yes
 | Yes
 | Yes
-//| Yes
-//| Yes
+| TODO_TBD
 
 | xref:reports.adoc[Reports]
 | Yes
 | Yes
 | Yes
-//| Yes
-//| Yes
+| Yes
 
 | xref:telemetry-exporter.adoc[Telemetry exports]
 | Yes
 | Yes
 | Yes
-//| No
-//| No
+| Yes
 
 | xref:traces.adoc[Traces]
 | Yes
 | No
 | No
-//| No
-//| No
+| No
 |===
 
 //NOT SUPPORTED in PCE & Gov Cloud: Insights, Traces, Telemetry Exporter, API Functional Monitoring
