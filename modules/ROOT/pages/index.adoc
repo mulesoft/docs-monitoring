@@ -264,7 +264,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 |<<note-visualizer, API Visualizer>>: *Application Network* tab for the API Visualizer app network integration 
 |No
-|No
+|No (<<note-visualizer, see note on Visualizer availability>>)
 |Yes
 
 |xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
