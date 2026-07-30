@@ -21,71 +21,25 @@ include::reuse::partial$billing/pricing.adoc[tag=prereqBulletTitanium]
 
 === Supported Connectors
 
-The following Anypoint Connectors are available for use with the Log Points feature.
+These Anypoint Connectors are available to Log Points:
 
-.Supported Connectors
-|===
-|Supported Anypoint Connectors |Supported for Mule 4.x
-
-|Amazon S3
-|x
-
-|Amazon SQS
-|x
-
-|Database
-|x
-
-|Email
-|x
-
-|File
-|x
-
-|FTP
-|x
-
-|IBM MQ
-|x
-
-|JMS
-|x
-
-|Microsoft Service Bus
-|x
-
-|MongoDB
-|x
-
-|MQ
-|x
-
-|Object Store
-|x
-
-|Salesforce
-|x
-
-|SFTP
-|x
-
-|Sockets
-|x
-
-//|TCP
-//|
-
-//|UDP
-//|
-
-|VM Transport
-|x
-
-//|WMQ
-//|
-
-|===
-
+* Amazon S3
+* Amazon SQS
+* Anypoint MQ
+* Database
+* Email
+* File
+* FTP
+* HTTP
+* IBM MQ
+* JMS
+* Microsoft Service Bus
+* MongoDB (Mongo)
+* Object Store
+* Salesforce
+* SFTP
+* Sockets
+* VM 
 
 === Enable Application Log Points
 
