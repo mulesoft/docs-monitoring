@@ -24,8 +24,8 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 |Anypoint Monitoring Feature 
 |https://anypoint.mulesoft.com/monitoring[US], https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds
 | https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds
-| https://in1.platform.mulesoft.com/login/[India] Cloud 
-| Australia Cloud
+| https://in1.platform.mulesoft.com/monitoring[India] Cloud 
+| https://au1.platform.mulesoft.com/monitoring[Australia] Cloud
 //| Government Cloud | Private Cloud (3.x) 
 
 | xref:alerts.adoc[Alerts]
@@ -68,7 +68,7 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 | Yes
 | Yes
 | Yes
-| TODO_TBD
+| Yes
 
 | xref:reports.adoc[Reports]
 | Yes
