@@ -246,7 +246,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-|<<note-visualizer, API Visualizer>>: *Application Network* tab for the API Visualizer app network integration 
+|<<note-visualizer, *Application Network tab*>> for Anypoint Visualizer app network integration data in Anypoint Monitoring 
 |No
 |No
 |Yes
