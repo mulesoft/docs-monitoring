@@ -54,7 +54,6 @@ Outbound connections are made to the following endpoints:
 * Canada Control Plane (3.x installers, version 3.2.18.11 or later)
 ** ingest.ca1.mulesoft.com:8443
 ** data-authenticator.anypoint.mulesoft.com:443
-//VERIFY FULL ENDPOINT:
 ** s3.ca1-central-1.amazonaws.com:443
 
 * India Control Plane (3.x installers, version 3.2.18.11 or later)
