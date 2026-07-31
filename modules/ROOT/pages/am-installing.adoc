@@ -85,7 +85,7 @@ Outbound connections are made to the following endpoints:
 |*US-GOV*|gov.anypoint.mulesoft.com | 443
 |*US-GOV*|exchange-files.gov.anypoint.mulesoft.com | 443
 |*US-GOV*|exchange2-asset-manager-kgprod.s3.us-gov-west-1.amazonaws.com | 443
-//VERIFY ALL EU PLS:
+//CHECK ALL EU PLS:
 |*EU*|eu1.ingest.mulesoft.com | 8443
 |*EU*|eu1.anypoint.mulesoft.com | 443
 |*EU*|runtime-manager.eu1.anypoint.mulesoft.com | 443
@@ -93,33 +93,36 @@ Outbound connections are made to the following endpoints:
 |*EU*|data-authenticator.eu1.anypoint.mulesoft.com |  443
 //THIS ONE CAN'T BE RIGHT:
 |*EU*|exchange2-asset-manager-kprod-eu.s3.eu-central-1.amazonaws.com |  443
-//VERIFY ALL CANADA PLS:
+//CHECK ALL CANADA PLS:
 |*Canada*|ingest.ca1.mulesoft.com | 8443
 |*Canada*|ca1.anypoint.mulesoft.com | 443
 |*Canada*|runtime-manager.ca1.anypoint.mulesoft.com | 443
 |*Canada*|analytics-ingest.ca1.anypoint.mulesoft.com |  443
 |*Canada*|data-authenticator.ca1.anypoint.mulesoft.com |  443
 |*Canada*|exchange2-asset-manager-kprod-ca1.s3.ca1-central-1.amazonaws.com |  443
-//VERIFY ALL JAPAN PLS:
+//CHECK ALL JAPAN PLS:
 |*Japan*|ingest.jp1.mulesoft.com | 8443
 |*Japan*|jp1.anypoint.mulesoft.com | 443
 |*Japan*|runtime-manager.jp1.anypoint.mulesoft.com | 443
 |*Japan*|analytics-ingest.jp1.anypoint.mulesoft.com |  443
 |*Japan*|data-authenticator.jp1.anypoint.mulesoft.com |  443
+//THIS ONE CAN'T BE RIGHT:
 |*Japan*|exchange2-asset-manager-kprod-jp1.s3.jp1-central-1.amazonaws.com |  443
-//VERIFY ALL INDIA PLS:
+//CHECK ALL INDIA PLS:
 |*India*|ingest.in1.mulesoft.com | 8443
 |*India*|in1.anypoint.mulesoft.com | 443
 |*India*|runtime-manager.in1.anypoint.mulesoft.com | 443
 |*India*|analytics-ingest.in1.anypoint.mulesoft.com |  443
 |*India*|data-authenticator.in1.anypoint.mulesoft.com |  443
+//THIS ONE CAN'T BE RIGHT:
 |*India*|exchange2-asset-manager-kprod-in1.s3.in1-central-1.amazonaws.com |  443
-//VERIFY ALL AUSTRALIA PLS:
+//CHECK ALL AUSTRALIA PLS:
 |*Australia*|ingest.au1.mulesoft.com | 8443
 |*Australia*|au1.anypoint.mulesoft.com | 443
 |*Australia*|runtime-manager.au1.anypoint.mulesoft.com | 443
 |*Australia*|analytics-ingest.au1.anypoint.mulesoft.com |  443
 |*Australia*|data-authenticator.au1.anypoint.mulesoft.com |  443
+//THIS ONE CAN'T BE RIGHT:
 |*Australia*|exchange2-asset-manager-kprod-au1.s3.au1-central-1.amazonaws.com |  443
 |===s
 
