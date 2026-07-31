@@ -85,7 +85,6 @@ Outbound connections are made to the following endpoints:
 |*US-GOV*|gov.anypoint.mulesoft.com | 443
 |*US-GOV*|exchange-files.gov.anypoint.mulesoft.com | 443
 |*US-GOV*|exchange2-asset-manager-kgprod.s3.us-gov-west-1.amazonaws.com | 443
-//CHECK ALL EU PLS:
 |*EU*|eu1.ingest.mulesoft.com | 8443
 |*EU*|eu1.anypoint.mulesoft.com | 443
 |*EU*|runtime-manager.eu1.anypoint.mulesoft.com | 443
