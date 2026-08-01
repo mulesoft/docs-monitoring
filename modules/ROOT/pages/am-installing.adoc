@@ -94,25 +94,21 @@ CHECK ALL CANADA PLS:
 |*Canada*|ingest.ca1.platform.mulesoft.com | 8443
 |*Canada*|ca1.anypoint.mulesoft.com | 443
 |*Canada*|runtime-manager.ca1.platform.mulesoft.com | 8443
-TODO: UPDATE FOR exchange2-asset UNKNOWN -- MAYBE RTF TEAM CAN HELP?
 |*Canada*|exchange2-asset-manager-kprod-ca1 |  443
 CHECK ALL JAPAN PLS:
 |*Japan*|ingest.jp1.platform.mulesoft.com | 8443
 |*Japan*|jp1.anypoint.mulesoft.com | 443
 |*Japan*|runtime-manager.jp1.platform.mulesoft.com | 8443
-TODO: UPDATE FOR exchange2-asset UNKNOWN -- MAYBE RTF TEAM CAN HELP?
 |*Japan*|exchange2-asset-manager-kprod-jp1.s3 |  443
 CHECK ALL INDIA PLS:
 |*India*|ingest.in1.platform.mulesoft.com | 8443
 |*India*|in1.anypoint.mulesoft.com | 443
 |*India*|runtime-manager.in1.platform.mulesoft.com | 8443
-TODO: UPDATE FOR exchange2-asset UNKNOWN -- MAYBE RTF TEAM CAN HELP?
 |*India*|exchange2-asset-manager-kprod-in1 |  443
 ////
 |*Australia*|ingest.au1.platform.mulesoft.com | 8443
 |*Australia*|au1.anypoint.mulesoft.com | 443
 |*Australia*|runtime-manager.au1.platform.mulesoft.com | 443
-//TODO: UPDATE FOR exchange2-asset UNKNOWN -- MAYBE RTF TEAM CAN HELP?
 |*Australia*|exchange2-asset-manager-kprod-au1 |  443
 |===s
 
