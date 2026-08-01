@@ -94,30 +94,26 @@ CHECK ALL CANADA PLS:
 |*Canada*|ingest.ca1.platform.mulesoft.com | 8443
 |*Canada*|ca1.anypoint.mulesoft.com | 443
 |*Canada*|runtime-manager.ca1.platform.mulesoft.com | 8443
-|*Canada*|analytics-ingest.ca1.anypoint.mulesoft.com |  443
-|*Canada*|data-authenticator.ca1.anypoint.mulesoft.com |  443
-|*Canada*|exchange2-asset-manager-kprod-ca1.s3.ca1-central-1.amazonaws.com |  443
+TODO: UPDATE FOR exchange2-asset UNKNOWN -- MAYBE RTF TEAM CAN HELP?
+|*Canada*|exchange2-asset-manager-kprod-ca1 |  443
 CHECK ALL JAPAN PLS:
 |*Japan*|ingest.jp1.platform.mulesoft.com | 8443
 |*Japan*|jp1.anypoint.mulesoft.com | 443
 |*Japan*|runtime-manager.jp1.platform.mulesoft.com | 8443
-|*Japan*|analytics-ingest.jp1.anypoint.mulesoft.com |  443
-|*Japan*|data-authenticator.jp1.anypoint.mulesoft.com |  443
-|*Japan*|exchange2-asset-manager-kprod-jp1.s3.jp1-central-1.amazonaws.com |  443
+TODO: UPDATE FOR exchange2-asset UNKNOWN -- MAYBE RTF TEAM CAN HELP?
+|*Japan*|exchange2-asset-manager-kprod-jp1.s3 |  443
 CHECK ALL INDIA PLS:
 |*India*|ingest.in1.platform.mulesoft.com | 8443
 |*India*|in1.anypoint.mulesoft.com | 443
 |*India*|runtime-manager.in1.platform.mulesoft.com | 8443
-|*India*|analytics-ingest.in1.anypoint.mulesoft.com |  443
-|*India*|data-authenticator.in1.anypoint.mulesoft.com |  443
-|*India*|exchange2-asset-manager-kprod-in1.s3.in1-central-1.amazonaws.com |  443
+TODO: UPDATE FOR exchange2-asset UNKNOWN -- MAYBE RTF TEAM CAN HELP?
+|*India*|exchange2-asset-manager-kprod-in1 |  443
 ////
 |*Australia*|ingest.au1.platform.mulesoft.com | 8443
 |*Australia*|au1.anypoint.mulesoft.com | 443
 |*Australia*|runtime-manager.au1.platform.mulesoft.com | 443
-|*Australia*|analytics-ingest.au1.anypoint.mulesoft.com |  443
-|*Australia*|data-authenticator.au1.anypoint.mulesoft.com |  443
-|*Australia*|exchange2-asset-manager-kprod-au1.s3.au1-central-1.amazonaws.com |  443
+//TODO: UPDATE FOR exchange2-asset UNKNOWN -- MAYBE RTF TEAM CAN HELP?
+|*Australia*|exchange2-asset-manager-kprod-au1 |  443
 |===s
 
 [[os-support]]
@@ -146,6 +142,7 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 You must install a supported version of the Anypoint Runtime Manager agent in the Mule runtime engine running on the server. For more information, see xref:runtime-manager::runtime-manager-agent.adoc[].
 
+//Michael Lee:
 //ARE THERE ANY NEWER VERSIONS TO LIST HERE BEYOND 2.7.x? 
 //Looks like versions go up to 2.8.2 as of 7/31/26: https://docs.mulesoft.com/release-notes/runtime-manager-agent/runtime-manager-agent-release-notes
 * 2.7.x
