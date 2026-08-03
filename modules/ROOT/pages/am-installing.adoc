@@ -139,24 +139,14 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 You must install a supported version of the Anypoint Runtime Manager agent in the Mule runtime engine running on the server. For more information, see xref:runtime-manager::runtime-manager-agent.adoc[].
 
 //Michael Lee:
-//ARE THERE ANY NEWER VERSIONS TO LIST HERE BEYOND 2.7.x? 
+//ARE THERE ANY NEWER VERSIONS TO LIST HERE BEYOND 2.7.x?
 //Looks like versions go up to 2.8.2 as of 7/31/26: https://docs.mulesoft.com/release-notes/runtime-manager-agent/runtime-manager-agent-release-notes
+* 2.8.x
 * 2.7.x
 +
 An Anypoint Monitoring agent from the version 3.x installer requires Mule Runtime Manager agent version 2.7.1 or higher. 
 * 2.6.x
 * 2.5.x
-* 2.4.x
-* 2.3.0
-* 2.2.x
-* 2.1.9
-* 2.1.7
-* 2.1.6
-* 1.14.x
-* 1.13.0
-* 1.12.x
-* 1.11.x
-* 1.10.0
 
 You must manage Mule deployments in Runtime Manager. You can add and check for your hybrid deployments from the xref:runtime-manager::deploying-to-your-own-servers.adoc[Runtime Manager UI] or the xref:runtime-manager::runtime-manager-api.adoc[Runtime Manager REST API].
 
