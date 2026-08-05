@@ -46,20 +46,21 @@ Outbound connections are made to the following endpoints:
 *** data-authenticator.eu1.anypoint.mulesoft.com:443
 *** s3.eu-central-1.amazonaws.com:443
 
-* Japan Control Plane (3.x installers, version 3.2.18.11 or later)
-** jp1.ingest.mulesoft.com:8443
-** data-authenticator.anypoint.mulesoft.com:443
-** s3.jp1-central-1.amazonaws.com:443
+// EBM - Hidden until these go live (8/5)
+// * Japan Control Plane (3.x installers, version 3.2.18.11 or later)
+// ** jp1.ingest.mulesoft.com:8443
+// ** data-authenticator.anypoint.mulesoft.com:443
+// ** s3.jp1-central-1.amazonaws.com:443
 
-* Canada Control Plane (3.x installers, version 3.2.18.11 or later)
-** ingest.ca1.mulesoft.com:8443
-** data-authenticator.anypoint.mulesoft.com:443
-** s3.ca1-central-1.amazonaws.com:443
+// * Canada Control Plane (3.x installers, version 3.2.18.11 or later)
+// ** ingest.ca1.mulesoft.com:8443
+// ** data-authenticator.anypoint.mulesoft.com:443
+// ** s3.ca1-central-1.amazonaws.com:443
 
-* India Control Plane (3.x installers, version 3.2.18.11 or later)
-** ingest.in1.mulesoft.com:8443
-** data-authenticator.anypoint.mulesoft.com:443
-** s3.in1-central-1.amazonaws.com:443
+// * India Control Plane (3.x installers, version 3.2.18.11 or later)
+// ** ingest.in1.mulesoft.com:8443
+// ** data-authenticator.anypoint.mulesoft.com:443
+// ** s3.in1-central-1.amazonaws.com:443
 
 * Australia Control Plane (3.x installers, version 3.2.18.11 or later)
 ** ingest.au1.platform.mulesoft.com:8443
@@ -89,7 +90,7 @@ Outbound connections are made to the following endpoints:
 |*EU*|data-authenticator.eu1.anypoint.mulesoft.com |  443
 |*EU*|exchange2-asset-manager-kprod-eu.s3.eu-central-1.amazonaws.com |  443
 ////
-HIDING TEMPORARITY IN CASE THESE DON'T GO OUT
+HIDING TEMPORARITY IN CASE THESE DON'T GO OUT - EBM (8/5)-  Keeping these hidden until these go live 
 CHECK ALL CANADA PLS:
 |*Canada*|ingest.ca1.platform.mulesoft.com | 8443
 |*Canada*|ca1.anypoint.mulesoft.com | 443
