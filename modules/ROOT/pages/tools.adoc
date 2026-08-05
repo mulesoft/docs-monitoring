@@ -3,13 +3,11 @@
 
 Anypoint Monitoring provides links to connectors on Anypoint Exchange that you can incorporate into a Mule app to deliver notifications to external systems.
 
-//.Tools Available in Anypoint Monitoring
 //image::tools.png["Tools in Anypoint Monitoring"]
-//TODO: NEED UPDATED SCREENSHOT WHEN AVAILABLE
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. In the sidebar, click *Tools*. 
+. In the sidebar, click *Tools*.
 . Review the connectors.
 +
 You can hover over a connector link to learn more before navigating to Anypoint Exchange.

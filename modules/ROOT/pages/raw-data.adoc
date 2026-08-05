@@ -3,20 +3,26 @@
 
 Download archived log data (raw data) collected on Mule apps that are running in hybrid, CloudHub, or Runtime Fabric deployments. This data is helpful for security, compliance, or other purposes when you need to examine or collect your warehoused data.
 
-[NOTE]
+image::raw-data.png["Raw Data downloads in Anypoint Monitoring"]
+
 Log data is archived regularly.
 
-To download raw data:
 
-. From Anypoint Monitoring, click *Raw Data*. 
+== Download Raw Log Data
+
+include::partial$include-nav-steps-no-permissions.adoc[]
+
+. In the sidebar, click *Raw Data*. 
 . Select the *Environment* and *Resource*.
-+
-The resource is a Mule app that runs in CloudHub, hybrid, Runtime Fabric deployments.
-+
-. Provide the date for the data you want to download, for example: `08/31/2018`.
+. Provide the date for the data you want to download, for example: `07/31/2026`.
 . Locate and download log data that you want to examine.
 
-If data is not available for a particular date, it might be that the app was not running that day, your company did not have a subscription to the logging or archiving service, or the app did not exist at that time.
+== Troubleshoot
+
+These factors impact the availability of data on the selected date:
+
+* The app must be connected and running.
+* Your subscription must support this feature.
 
 == See Also
 
