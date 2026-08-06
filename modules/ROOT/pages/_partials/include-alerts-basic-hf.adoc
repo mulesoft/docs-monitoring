@@ -54,14 +54,12 @@ Anypoint Monitoring and Runtime Manager provide different alert systems.
 Use the alert page and API for the system that owns the alert you need.
 
 Anypoint Monitoring Alerts::
-API-behavior-focused alerts, including instance alerts (for example, response time, request count using sliding-window thresholds, policy violations, and HTTP status codes), plus Contracts, Basic, and Advanced alerts.
+Alerts for APIs, Mule applications, and servers, including instance alerts such as response time, request count, policy violations, and HTTP status codes, plus Contracts, Basic, and Advanced alerts. For instance alerts, the sliding window is configurable.
 +
 Use Anypoint Monitoring alert APIs for:
 +
 * Alert configuration (alert definitions)
 * Fired-alert history
-+
-Runtime Manager alert endpoints don't return these Anypoint Monitoring alerts.
 
 Runtime Manager Alerts::
 Infrastructure-focused alerts for servers, clusters, and application lifecycle events, such as CPU usage, memory usage, load average, thread count, deployment events, and server connectivity events.
