@@ -1,0 +1,93 @@
+
+
+//
+//tag::traffic-inspection-overview[]
+Intercept and inspect all HTTPS traffic through a proxy server that resides between your on-premises Mule apps and Anypoint Monitoring. To enable traffic inspection for your xref:runtime-manager::deployment-strategies.adoc#hybrid-deployments[hybrid deployments], you must install the 3.x version of Anypoint Monitoring agent.
+//end::traffic-inspection-overview[]
+//
+//
+//tag::traffic-inspection-limitations[]
+
+At this time, the Anypoint Monitoring agent that supports traffic inspection is available for Mule instances running on _Red Hat Enterprise Linux (RHEL) 7 and later_. 
+//end::traffic-inspection-limitations[]
+//
+//
+//
+//tag::traffic-inspection-prereqs[]
+
+**  A closed beta version of the Anypoint Monitoring agent from a Salesforce representative
++
+The agent's zip file is available to a limited customer base.
+** Traffic inspection is enabled for your on-premise Mule instances
++
+For guidance, see xref:runtime-manager::rtm-traffic-inspection.adoc[].
+** The private certificate in the proxy that communicates with the Anypont Monitoring agent in the Mule runtime instance includes `us1.ingest.mulesoft.com` in its Subject Alternative Name (SAN).
++
+In addition, you must add this private certificate or its CA certificate to the operating system's system-wide truststore. For guidance, see https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/securing_networks/using-shared-system-certificates_securing-networks#adding-new-certificates_using-shared-system-certificates[Adding new certificates] in the Redhat Linux documentation.
+** Access to Anypoint Monitoring 
++
+An Anypoint Platform administrator can provide access from Access Manager, in Anypoint Platform. For more information, see xref:monitoring::am-permissions.adoc[].
+
+//** The Runtime Manager Agent must be installed. See xref:runtime-manager::runtime-manager-agent.adoc[].
+// Perhaps if server is set up, it would be installed? Without it, I got this error: 
+// NoSuchFileException: /Users/sduke/Downloads/mule-enterprise-standalone-4.8.0/conf/mule-agent.yml
+//end::traffic-inspection-prereqs[]
+//
+
+
+//
+//
+//tag::traffic-inspection-procedure[]
+
+To enable traffic inspection: 
+
+. If an earlier version of Anypoint Monitoring agent is installed on your server, uninstall the agent and delete its `am` subfolder:
+
+.. From your agent's home directory (`${AM_HOME}`, typically `${MULE_HOME}/am`), run this command to uninstall the agent:
++
+----
+./bin/uninstall 
+----
+.. Delete the `am` subfolder from your Mule home directory (`${MULE_HOME}`).
+. Place the Anypoint Monitoring agent zip file (`am-3.x.zip`) into `${MULE_HOME}`.
++
+The zip is available as part of the closed beta program. 
+. Extract the zip file to add the `am` subfolder into your Mule home directory (`${MULE_HOME}`). 
+. From the command line:
+.. Navigate to the `am` subfolder, for example:
++
+----
+cd am
+----
+.. Install the agent to your Linux server:
++
+----
+./bin/install -p http:/proxy-server:port
+----
++
+Replace `+http:/proxy-server:port+` with the URI of your proxy server and port.
+. Restart your server in Runtime Manager.
++
+For guidance, see xref:runtime-manager::servers-actions.adoc[]
+. From your `am` subfolder, run the setup script:
++
+----
+./bin/setup
+----
+. After approximately five minutes, check for your Mule app's metrics in Anypoint Monitoring:
++
+From https://anypoint.mulesoft.com/monitoring/#/builtin[Anypoint Monitoring] (requires login), select your *Environment* (such as Sandbox or Production) and the *Resource name* of your hybrid Mule app to display the app's monitoring data.
++
+To troubleshoot issues, check the log files under `am/logs` in your Mule home directory.
+
+//end::traffic-inspection-procedure[]
+//
+
+
+//
+//tag::NOT-USED-YET[]
+. Open the *Hybrid* settings page in Anypoint Monitoring (https://anypoint.mulesoft.com/monitoring/#/settings/hybrid[US], https://eu1.anypoint.mulesoft.com/monitoring/#/settings/hybrid[EU]). 
++
+For more guidance, see xref:monitoring::monitoring-settings-page.adoc[].
+//end::NOT-USED-YET[]
+//
