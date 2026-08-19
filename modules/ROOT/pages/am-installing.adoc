@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:page-revdate: September 3, 2025
+:page-revdate: August 19, 2026
 
 Install the Anypoint Monitoring agent on an on-premises server to monitor applications that are running on that server and managed in the cloud.
 
@@ -46,21 +46,20 @@ Outbound connections are made to the following endpoints:
 *** data-authenticator.eu1.anypoint.mulesoft.com:443
 *** s3.eu-central-1.amazonaws.com:443
 
-// EBM - Hidden until these go live (8/5)
-// * Japan Control Plane (3.x installers, version 3.2.18.11 or later)
-// ** jp1.ingest.mulesoft.com:8443
-// ** data-authenticator.anypoint.mulesoft.com:443
-// ** s3.jp1-central-1.amazonaws.com:443
+* Japan Control Plane (3.x installers, version 3.2.18.11 or later)
+** jp1.ingest.mulesoft.com:8443
+** data-authenticator.anypoint.mulesoft.com:443
+** s3.jp1-central-1.amazonaws.com:443
 
-// * Canada Control Plane (3.x installers, version 3.2.18.11 or later)
-// ** ingest.ca1.mulesoft.com:8443
-// ** data-authenticator.anypoint.mulesoft.com:443
-// ** s3.ca1-central-1.amazonaws.com:443
+* Canada Control Plane (3.x installers, version 3.2.18.11 or later)
+** ingest.ca1.mulesoft.com:8443
+** data-authenticator.anypoint.mulesoft.com:443
+** s3.ca1-central-1.amazonaws.com:443
 
-// * India Control Plane (3.x installers, version 3.2.18.11 or later)
-// ** ingest.in1.mulesoft.com:8443
-// ** data-authenticator.anypoint.mulesoft.com:443
-// ** s3.in1-central-1.amazonaws.com:443
+* India Control Plane (3.x installers, version 3.2.18.11 or later)
+** ingest.in1.mulesoft.com:8443
+** data-authenticator.anypoint.mulesoft.com:443
+** s3.in1-central-1.amazonaws.com:443
 
 * Australia Control Plane (3.x installers, version 3.2.18.11 or later)
 ** ingest.au1.platform.mulesoft.com:8443
@@ -89,24 +88,18 @@ Outbound connections are made to the following endpoints:
 |*EU*|analytics-ingest.eu1.anypoint.mulesoft.com |  443
 |*EU*|data-authenticator.eu1.anypoint.mulesoft.com |  443
 |*EU*|exchange2-asset-manager-kprod-eu.s3.eu-central-1.amazonaws.com |  443
-////
-HIDING TEMPORARITY IN CASE THESE DON'T GO OUT - EBM (8/5)-  Keeping these hidden until these go live 
-CHECK ALL CANADA PLS:
 |*Canada*|ingest.ca1.platform.mulesoft.com | 8443
 |*Canada*|ca1.anypoint.mulesoft.com | 443
 |*Canada*|runtime-manager.ca1.platform.mulesoft.com | 8443
 |*Canada*|exchange2-asset-manager-kprod-ca1 |  443
-CHECK ALL JAPAN PLS:
 |*Japan*|ingest.jp1.platform.mulesoft.com | 8443
 |*Japan*|jp1.anypoint.mulesoft.com | 443
 |*Japan*|runtime-manager.jp1.platform.mulesoft.com | 8443
 |*Japan*|exchange2-asset-manager-kprod-jp1.s3 |  443
-CHECK ALL INDIA PLS:
 |*India*|ingest.in1.platform.mulesoft.com | 8443
 |*India*|in1.anypoint.mulesoft.com | 443
 |*India*|runtime-manager.in1.platform.mulesoft.com | 8443
 |*India*|exchange2-asset-manager-kprod-in1 |  443
-////
 |*Australia*|ingest.au1.platform.mulesoft.com | 8443
 |*Australia*|au1.anypoint.mulesoft.com | 443
 |*Australia*|runtime-manager.au1.platform.mulesoft.com | 443
@@ -139,9 +132,6 @@ include::partial$include-supported-mule-runtime-version.adoc[]
 
 You must install a supported version of the Anypoint Runtime Manager agent in the Mule runtime engine running on the server. For more information, see xref:runtime-manager::runtime-manager-agent.adoc[].
 
-//Michael Lee:
-//ARE THERE ANY NEWER VERSIONS TO LIST HERE BEYOND 2.7.x?
-//Looks like versions go up to 2.8.2 as of 7/31/26: https://docs.mulesoft.com/release-notes/runtime-manager-agent/runtime-manager-agent-release-notes
 * 2.8.x
 * 2.7.x
 +
