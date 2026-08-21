@@ -104,7 +104,7 @@ Outbound connections are made to the following endpoints:
 |*Australia*|au1.anypoint.mulesoft.com | 443
 |*Australia*|runtime-manager.au1.platform.mulesoft.com | 443
 |*Australia*|exchange2-asset-manager-kprod-au1 |  443
-|===s
+|===
 
 [[os-support]]
 == Supported Operating Systems
