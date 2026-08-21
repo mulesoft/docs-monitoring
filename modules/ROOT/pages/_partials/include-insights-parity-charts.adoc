@@ -40,9 +40,8 @@
 .3+| <<client-applications-charts, *Client Applications*>>
     | *Requests by ClientID* .3+| xref:anypoint-insights.adoc#entity-metrics-api-client-apps[*Client Applications*]
                                 | *Requests by Client ID*
-                                | *Requests by Client IP* 
-                                | *Requests by Location* 
-                                | *Request Volume by Location*
+    | *Requests by Client IP*   | *Requests by Client IP* 
+    | *Requests by Location*    | *Request Volume by Location*
 |===
 
 //end::api-chart-parity[]
