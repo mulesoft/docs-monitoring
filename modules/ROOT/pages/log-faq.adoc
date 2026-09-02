@@ -1,6 +1,7 @@
 = FAQ: Anypoint Monitoring Logs
 
-This page answers common questions about the Anypoint Monitoring logging feature.
+Anypoint Monitoring logging aggregates log events so you can manage, search, filter, and analyze them.
+Get answers to common questions about storage limits, deletion, log forwarding, and subscription changes.
 For full documentation, see xref:index.adoc[Anypoint Monitoring].
 
 == How do I get access to the Anypoint Monitoring logs?
@@ -37,14 +38,14 @@ When storage reaches capacity, the oldest logs are deleted first to reclaim spac
 
 == Can I recover logs that have been deleted or overwritten?
 
-No. Once logs are deleted or overwritten, they cannot be recovered.
+No. After logs are deleted or overwritten, they cannot be recovered.
 
 == What does the Anypoint Monitoring log feature do?
 
 Anypoint Monitoring logging aggregates your log events so you can manage, search, filter, and analyze them.
 For details, see xref:logs.adoc[Logs in Anypoint Monitoring].
 
-== How are logs stored in the backend?
+== How are logs stored in Anypoint Monitoring?
 
 Anypoint Monitoring stores raw logs and searchable logs separately.
 
@@ -53,9 +54,9 @@ Anypoint Monitoring stores raw logs and searchable logs separately.
 
 == Can I delete logs for specific applications and dates?
 
-No. Customers cannot delete logs directly.
+No. You cannot delete logs directly.
 In cases where sensitive data may be exposed in logs, you can raise a support case with MuleSoft.
-Requests to delete logs for other reasons will likely be rejected.
+Requests to delete logs for other reasons are likely to be rejected.
 
 == If I raise a support case to delete logs, what will MuleSoft delete?
 
@@ -77,14 +78,14 @@ WARNING: Deleted logs cannot be recovered or re-imported. Review the dry-run res
 
 == Can I import log data back into the system after deletion?
 
-No. It is not possible to import logs back into the system after deletion.
+No. It's not possible to import logs back into the system after deletion.
 
 == What happens to log data when I change my subscription?
 
 Log data is lost and the storage that held it is terminated within an hour when you change subscriptions (for example, from Titanium to Platinum or from Platinum to Titanium).
 The infrastructure changes and metrics are not migrated.
 
-Log data is also lost when moving from a Titanium trial to a paid Titanium subscription, because trials run on a multi-tenant cluster that is separate from the dedicated single-tenant infrastructure used for paid Titanium.
+Log data is also lost when moving from a Titanium trial to a paid Titanium subscription, because trials run on a multitenant cluster that is separate from the dedicated single-tenant infrastructure used for paid Titanium.
 
 IMPORTANT: Back up any logs you need before changing your subscription.
 
