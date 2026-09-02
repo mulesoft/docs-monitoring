@@ -43,14 +43,16 @@ Enhanced API metrics::
 //Retain extra info on Advanced package
 Organizations that have the Anypoint Integration Advanced package receive more robust data retention and feature limits:
 
+// OVERLAP: Raw log storage description also covered in anypoint-monitoring-log-faq.adoc ("What are the storage limits for Anypoint Monitoring logs?"). Consider consolidating or adding a cross-reference.
 Logs::
 In raw format, your logs can occupy as much space as you receive with your pricing package. Note that the storage space you receive with your pricing package is used to store logs and metrics data. Because metrics do not take up much storage capacity, you can use the majority of your storage for raw log data.
 
 
+// OVERLAP: Searchable log storage description (10% allocation, indexes most recent logs) also covered in anypoint-monitoring-log-faq.adoc. Consider consolidating or adding a cross-reference.
 Searchable logs::
 You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs.
 +
-Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can retrieve older logs with the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[Anypoint Monitoring Archive API]. 
+Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can retrieve older logs with the https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[Anypoint Monitoring Archive API].
 +
 {total-storage}
 
@@ -119,20 +121,22 @@ Six basic alerts per API instance.
 
 xref:index.adoc#plans-legacy[Titanium tier] subscribers to Anypoint Platform receive more robust data retention and feature limits:
 
+// OVERLAP: Raw log storage description also covered in anypoint-monitoring-log-faq.adoc ("What are the storage limits for Anypoint Monitoring logs?"). Consider consolidating or replacing with a cross-reference to the FAQ.
 Logs::
 In raw format, your logs can occupy as much space as you receive with your Titanium subscription. Note that the storage space you receive with your Titanium subscription is used to store logs and metrics data. Because metrics do not take up much storage capacity, you can use the majority of your storage for raw log data. For more information about logs or to request deletion of your logs, see https://help.salesforce.com/s/articleView?id=001118219&type=1[Anypoint Monitoring Log FAQ].
 
+// OVERLAP: Searchable log storage description (10% allocation, per-vCore breakdown, 6 TB cap, indexes most recent logs) also covered in anypoint-monitoring-log-faq.adoc. Consider consolidating or replacing with a cross-reference to the FAQ.
 Searchable logs::
-You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs. 
+You receive additional storage that is 10% of the size of purchased storage for indexes for searchable logs.
 +
 Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and quickly perform log search queries. Anypoint Monitoring indexes the most recent logs for searching, up to 10% of the total purchased storage size. You can download logs to access older logs.
 +
 Total storage capacity is shared globally across all apps and is limited by the number vCores that your organization purchases and the maximum searchable storage allocation limit of 6TB.
 
-* For each production vCore, this subscription tier receives:  
+* For each production vCore, this subscription tier receives:
 ** 200GB of archival storage
 ** 20GB of searchable storage (10% of archival storage)
-* For each pre-production vCore, this subscription tier receives: 
+* For each pre-production vCore, this subscription tier receives:
 ** 50GB of archival storage
 ** 5GB of searchable storage (10% of archival storage)
 

@@ -7,3 +7,5 @@ Use Anypoint Monitoring to retrieve logs on your deployed applications.
 * xref:monitoring::logs-search-hf.adoc[Log Search] for reviewing logs across your deployed apps
 * xref:monitoring::raw-data.adoc[Raw Data] for downloading archived log data 
 * xref:monitoring::log-points.adoc[Log Points] for generating logs for apps and APIs in real time without writing code 
+
+For common questions about logs, see xref:log-faq.adoc[].
