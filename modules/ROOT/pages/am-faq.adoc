@@ -4,24 +4,6 @@
 
 Common questions about Anypoint Monitoring logging, performance impact, storage and retention limits, log line constraints, log forwarding, and what happens to your data when your subscription changes.
 
-== Anypoint Monitoring Logging and Access
-
-These questions cover what Anypoint Monitoring logging does and which subscriptions include it.
-
-* <<log-feature-overview,What does Anypoint Monitoring logging do?>>
-* <<log-subscription-requirement,What subscription do I need to use Anypoint Monitoring logs?>>
-
-[[log-feature-overview]]
-=== What does Anypoint Monitoring logging do?
-
-Anypoint Monitoring logging aggregates your log events so you can manage, search, filter, and analyze them.
-For details, see xref:logs.adoc[Logs in Anypoint Monitoring].
-
-[[log-subscription-requirement]]
-=== What subscription do I need to use Anypoint Monitoring logs?
-
-Anypoint Monitoring logging is available with Titanium and Anypoint Integration Advanced subscriptions only.
-For Titanium pricing, contact your account team.
 
 == Performance
 
