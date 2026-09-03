@@ -2,7 +2,7 @@
 :page-tags: anypoint-monitoring, faq, performance, storage, retention, logs
 :page-aliases: performance-and-impact.adoc
 
-Common questions about Anypoint Monitoring logging, performance impact, storage and retention limits, log line constraints, log forwarding, and what happens to your data when your subscription changes.
+Get answers to common questions about Anypoint Monitoring logging, performance impact, storage and retention limits, log line constraints, log forwarding, and what happens to your data when your subscription changes.
 
 
 == Performance
