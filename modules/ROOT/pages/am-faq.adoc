@@ -22,7 +22,7 @@ For deployment-specific configuration, see xref:configure-monitoring-cloudhub.ad
 == Storage and Retention
 
 Storage and retention limits vary by subscription tier and data type.
-Learn what to expect for raw and searchable log storage, what happens when capacity is reached, metrics retention periods, alert limits, and Telemetry Exporter connection limits.
+Learn what to expect for raw and searchable log storage, what happens when capacity is reached, and what limits are available for metric retention, alerts, and Telemetry Exporter connections.
 
 * <<raw-log-storage,What are the raw log storage limits for Anypoint Monitoring?>>
 * <<searchable-log-storage,How does Anypoint Monitoring calculate searchable log storage, and what are the limits?>>
