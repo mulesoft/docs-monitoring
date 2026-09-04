@@ -1,0 +1,322 @@
+= FAQ: Anypoint Monitoring Logs, Performance, and Limits
+:page-tags: anypoint-monitoring, faq, performance, storage, retention, logs
+:page-aliases: performance-and-impact.adoc
+
+Get answers to common questions about Anypoint Monitoring logging, performance impact, storage and retention limits, log line constraints, log forwarding, and what happens to your data when your subscription changes.
+
+
+== Performance
+
+The Mule monitoring agent is designed to collect data with minimal overhead.
+Learn what to expect in terms of CPU and throughput impact on your running applications.
+
+* <<performance-impact,What is the performance impact of Anypoint Monitoring on my Mule applications?>>
+
+[[performance-impact]]
+=== What is the performance impact of Anypoint Monitoring on my Mule applications?
+
+The expected CPU utilization from the Mule monitoring agent is less than 5% based on typical use.
+Anypoint Monitoring collects data asynchronously at a one-minute resolution, so monitoring activity does not block Mule runtime data processing.
+For deployment-specific configuration, see xref:configure-monitoring-cloudhub.adoc#performance-impact[Configure and Enable Anypoint Monitoring for Mule Apps (CloudHub)].
+
+== Storage and Retention
+
+Storage and retention limits vary by subscription tier and data type.
+Learn what to expect for raw and searchable log storage, what happens when capacity is reached, and what limits are available for metric retention, alerts, and Telemetry Exporter connections.
+
+* <<raw-log-storage,What are the raw log storage limits for Anypoint Monitoring?>>
+* <<searchable-log-storage,How does Anypoint Monitoring calculate searchable log storage, and what are the limits?>>
+* <<storage-limit-reached,What happens when the log storage limit is reached?>>
+* <<application-metrics-retention,How long does Anypoint Monitoring retain application metrics?>>
+* <<enhanced-api-metrics-retention,How long does Anypoint Monitoring retain enhanced API metrics?>>
+* <<custom-metrics-retention,How long does Anypoint Monitoring retain custom metrics?>>
+* <<alert-limits,What are the alert limits in Anypoint Monitoring?>>
+* <<telemetry-exporter-limits,What are the Telemetry Exporter connection limits?>>
+
+[[raw-log-storage]]
+=== What are the raw log storage limits for Anypoint Monitoring?
+
+Raw log storage limits depend on your subscription tier:
+
+* *Titanium* — each production vCore includes 200 GB of storage and each pre-production vCore includes 50 GB. Storage is shared globally across all apps and across both logs and metrics. Because metrics use minimal storage, you can use most of your allocated storage for raw log data.
+* *Anypoint Integration Advanced* — raw logs can occupy as much space as your pricing package includes. Because metrics use minimal storage, you can use most of your allocated storage for raw log data.
+* *Anypoint Integration Starter and Gold/Platinum* — log limits for these tiers are documented in xref:runtime-manager::viewing-log-data.adoc#log-persistence[Anypoint Runtime Manager].
+
+[[searchable-log-storage]]
+=== How does Anypoint Monitoring calculate searchable log storage, and what are the limits?
+
+Anypoint Monitoring creates indexes on raw logs to enable fast log search queries.
+The searchable storage allocation equals 10% of your total purchased storage, and Anypoint Monitoring indexes only the most recent logs up to that limit.
+Total searchable storage across your organization is capped at 6 TB regardless of the number of vCores or flows you purchased.
+
+For Titanium subscriptions, you can calculate your total searchable storage allocation using this formula:
+
+----
+10% × (num_vCore_prod × 200 + num_vCore_preprod × 50)
+----
+
+Storage per unit purchased varies by subscription tier:
+
+[%header,cols="2,1,1,1"]
+|===
+|Subscription tier |Unit purchased |Archival storage |Searchable storage
+
+|Anypoint Integration Advanced
+|1 flow
+|5 GB
+|0.5 GB
+
+|Anypoint Integration Advanced
+|1M messages
+|2.5 GB
+|0.25 GB
+
+|Titanium
+|1 production vCore
+|200 GB
+|20 GB
+
+|Titanium
+|1 pre-production vCore
+|50 GB
+|5 GB
+|===
+
+To retrieve logs beyond the searchable index, use the link:https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[Anypoint Monitoring Archive API].
+
+[[storage-limit-reached]]
+=== What happens when the log storage limit is reached?
+
+When storage reaches capacity, the oldest logs are deleted first to reclaim space.
+
+[[application-metrics-retention]]
+=== How long does Anypoint Monitoring retain application metrics?
+
+Retention for application metrics depends on your subscription tier:
+
+* *Anypoint Integration Advanced and Titanium* — 365 days in built-in dashboards. For Anypoint Insights retention, see xref:anypoint-insights.adoc[Anypoint Insights].
+* *Anypoint Integration Starter and Gold/Platinum* — 30 days.
+
+[[enhanced-api-metrics-retention]]
+=== How long does Anypoint Monitoring retain enhanced API metrics?
+
+Anypoint Monitoring retains enhanced API metrics for 30 days across all subscription tiers. The following additional limits apply regardless of tier:
+
+* Data in the *Client Applications* tab is limited to one hour.
+* Data from the `api_path_metric` and `api_client_ip_metric` tables in advanced mode of custom dashboards is limited to one hour.
+
+NOTE: Metrics data can persist beyond the stated retention period. Data is removed when the automated cleanup cycle runs.
+
+[[custom-metrics-retention]]
+=== How long does Anypoint Monitoring retain custom metrics?
+
+For Anypoint Integration Advanced and Titanium subscribers, Anypoint Monitoring retains custom metrics  for 365 days in production environments.
+
+[[alert-limits]]
+=== What are the alert limits in Anypoint Monitoring?
+
+Alert limits vary by alert type and subscription tier:
+
+[%header,cols="3,1,1,1,1"]
+|===
+|Alert type |Starter |Advanced |Gold/Platinum |Titanium
+
+|Custom dashboard alerts
+|—
+|10 per app or API instance
+|—
+|20 per parent organization
+
+|Basic alerts for servers and Mule apps
+|—
+|10 per server or app
+|50
+|50 × production vCores + 100
+
+|Basic alerts for APIs
+|—
+|10 per server or app
+|6 per API instance
+|10 per API instance
+
+|===
+
+NOTE: For Titanium, your basic alert allowance for servers and Mule apps can also be used for sandbox deployments, subject to the overall xref:access-management::business-groups.adoc#redistribute-resources[production vCore limit].
+
+[[telemetry-exporter-limits]]
+=== What are the Telemetry Exporter connection limits?
+
+Anypoint Monitoring supports up to 10 Telemetry Exporter connections per organization for Anypoint Integration Advanced and Titanium subscribers.
+
+== Log Management
+
+Learn how logs are stored, constraints on log line length, deletion behavior, and how to retrieve log data.
+
+* <<log-storage-backend,How are logs stored in Anypoint Monitoring?>>
+* <<log-line-length,What is the maximum length for a single log line, and what happens if my data exceeds it?>>
+* <<delete-logs,Can I delete logs for specific applications and dates?>>
+* <<support-case-deletion,If I raise a support case to delete logs, what will MuleSoft delete?>>
+* <<recover-deleted-logs,Can I recover logs that have been deleted or overwritten?>>
+* <<import-logs,Can I import log data back into the system after deletion?>>
+* <<logs-after-app-deletion,What happens to logs after I delete an application?>>
+* <<archive-api-delay,Why is there a delay between the Anypoint Monitoring UI and the Archive API data?>>
+* <<app-not-in-filter,Why is my application not appearing in the Anypoint Monitoring log search filter?>>
+
+[[log-storage-backend]]
+=== How are logs stored in Anypoint Monitoring?
+
+Anypoint Monitoring stores raw logs and searchable logs separately.
+Raw logs are stored in archival storage and can be scoped by business group, environment, application, and date range.
+Searchable logs are stored as indexes on top of raw logs to support fast queries, but cover only the most recent logs up to 10% of your purchased storage.
+For details, see xref:raw-data.adoc[Raw Data in Anypoint Monitoring] and <<searchable-log-storage,How does Anypoint Monitoring calculate searchable log storage?>>.
+
+[[log-line-length]]
+=== What is the maximum length for a single log line, and what happens if my data exceeds it?
+
+The maximum length for a single log line is 8 KB, including date and thread metadata.
+Lines longer than 8 KB are truncated at the 8 KB mark.
+To log data that exceeds this limit, split it into chunks that are each smaller than 8 KB.
+
+[[delete-logs]]
+=== Can I delete logs for specific applications and dates?
+
+No. You cannot delete logs directly.
+In cases where sensitive data may be exposed in logs, you can raise a support case with MuleSoft.
+Requests to delete logs for other reasons are likely to be rejected.
+
+[[support-case-deletion]]
+=== If I raise a support case to delete logs, what will MuleSoft delete?
+
+The answer differs for raw logs and searchable logs.
+
+*Raw logs* can be scoped by business group, environment, application, and date range (UTC).
+MuleSoft can delete a targeted subset of raw logs without affecting other data.
+
+*Searchable logs* cannot be scoped by business group, environment, or application.
+Deletion is performed by dropping whole indices under the root organization.
+Under the current multitenant Log Search architecture on Hyperforce, a single searchable-log index can span several days, weeks, or months.
+The exact coverage depends on your SKU, index size, and storage usage.
+As a result, the actual date range deleted will be equal to or larger than the range you request — in some cases by a significant margin.
+
+Before executing the deletion, MuleSoft runs a dry-run of the operation and shares the cumulative date range that will be dropped, along with the list of affected indices, so you can confirm before proceeding.
+
+WARNING: Deleted logs cannot be recovered or re-imported. Review the dry-run results carefully before confirming.
+
+[[recover-deleted-logs]]
+=== Can I recover logs that have been deleted or overwritten?
+
+No. After logs are deleted or overwritten, they cannot be recovered.
+
+[[import-logs]]
+=== Can I import log data back into the system after deletion?
+
+No. It's not possible to import logs back into the system after deletion.
+
+[[logs-after-app-deletion]]
+=== What happens to logs after I delete an application?
+
+Logs stored in Anypoint Monitoring remain accessible after an application is deleted.
+You can retrieve them using the xref:archive-api.adoc[Anypoint Monitoring Archive API].
+Logs are deleted when storage capacity is reached, starting with the oldest logs.
+
+[[archive-api-delay]]
+=== Why is there a delay between the Anypoint Monitoring UI and the Archive API data?
+
+The Archive API is backed by an archival storage backend.
+A file becomes available for download when it reaches either 9 minutes of accumulation or 10 MB in size, whichever comes first.
+This delay is the difference between the real-time search engine that powers the UI and the batch process that powers the API.
+
+[[app-not-in-filter]]
+=== Why is my application not appearing in the Anypoint Monitoring log search filter?
+
+The app may not appear in the filter when recent log lines are not available or when a large number of apps are reporting recent logs.
+For more information, see xref:apps-not-showing-sidebar.adoc[Not All Apps Are Showing in the Left Sidebar in Anypoint Monitoring].
+
+== Log Forwarding and Connectivity
+
+Learn how Anypoint Monitoring connects to different deployment targets and how to control log forwarding independently of metrics collection.
+
+* <<mule-ee-logs,Are Mule runtime logs available in Anypoint Monitoring log search?>>
+* <<cloudhub1-disable-monitoring,If I disable Anypoint Monitoring for a CloudHub 1.0 application, will logs still be forwarded to Anypoint Platform?>>
+* <<disable-log-forwarding,Can I disable Anypoint Monitoring log forwarding while keeping metrics collection enabled?>>
+* <<rtf-connections,How does Anypoint Monitoring connect to Runtime Fabric, and how many connections does it use?>>
+* <<rtf-subscription,What subscription does Runtime Fabric require for Anypoint Monitoring?>>
+
+[[mule-ee-logs]]
+=== Are Mule runtime logs available in Anypoint Monitoring log search?
+
+No. You cannot view on-premises `mule_ee.log` files directly through Anypoint Monitoring log search.
+
+[[cloudhub1-disable-monitoring]]
+=== If I disable Anypoint Monitoring for a CloudHub 1.0 application, will logs still be forwarded to Anypoint Platform?
+
+Yes. If you disable Anypoint Monitoring by setting the following property:
+
+[source,text]
+----
+anypoint.platform.config.analytics.agent.enabled=false
+----
+
+Logs are still forwarded to Anypoint Platform and remain visible in the Anypoint Monitoring logs UI.
+
+[[disable-log-forwarding]]
+=== Can I disable Anypoint Monitoring log forwarding while keeping metrics collection enabled?
+
+Yes. The steps vary by deployment target:
+
+* *CloudHub 1.0*: See xref:cloudhub-disable-log-forwarding.adoc[How to Disable Log Forwarding to the Anypoint Monitoring Titanium Backend].
+* *CloudHub 2.0*: Private space and shared space have separate procedures. See xref:ch2-disable-log-forwarding.adoc[Disable Log Forwarding in CloudHub 2.0].
+* *Hybrid/on-premises*: See xref:hybrid-disable-log-forwarding.adoc[Disable Log Forwarding for Hybrid Deployments].
+
+[[rtf-connections]]
+=== How does Anypoint Monitoring connect to Runtime Fabric, and how many connections does it use?
+
+Each Runtime Fabric app has a sidecar container that makes one persistent connection to Anypoint Monitoring to send logs.
+Each pod uses one connection.
+
+[[rtf-subscription]]
+=== What subscription does Runtime Fabric require for Anypoint Monitoring?
+
+All deployment targets include a basic level of monitoring with the base subscription.
+Runtime Fabric requires a Platinum subscription for general monitoring.
+Certain features, such as logging, require a Titanium subscription.
+For details, see xref:performance-and-impact.adoc[Understanding Performance Impact, Limits, and Data Retention].
+
+== Subscription Changes
+
+Subscription changes affect log data and metrics data differently.
+Learn what to expect for each data type and how to retrieve data before it is removed.
+
+* <<subscription-change-logs,What happens to log data when I change my subscription?>>
+* <<subscription-change-metrics,What happens to my metrics data if I downgrade or cancel my Anypoint Monitoring subscription?>>
+
+[[subscription-change-logs]]
+=== What happens to log data when I change my subscription?
+
+Log data is lost and the storage that held it is terminated within an hour when you change subscriptions — for example, from Titanium to Platinum or from Platinum to Titanium.
+Log infrastructure changes are not migrated.
+
+Log data is also lost when moving from a Titanium trial to a paid Titanium subscription, because trials run on a multitenant cluster that is separate from the dedicated single-tenant infrastructure used for paid Titanium.
+
+IMPORTANT: Back up any logs you need before changing your subscription. Log data cannot be recovered after the change takes effect.
+
+[[subscription-change-metrics]]
+=== What happens to my metrics data if I downgrade or cancel my Anypoint Monitoring subscription?
+
+Unlike log data, metrics data is retained for a grace period before removal:
+
+* *Downgrade* — approximately 14 days after the downgrade takes effect, a 21-day grace period begins before your data is removed.
+* *Cancellation* — approximately 90 days after cancellation, a 21-day grace period begins before your data is removed.
+
+To retrieve metrics data before it is removed, use the link:https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[Anypoint Monitoring Archive API].
+
+== See Also
+
+* xref:index.adoc[Anypoint Monitoring]
+* xref:logs.adoc[Logs in Anypoint Monitoring]
+* xref:performance-and-impact.adoc[Understanding Performance Impact, Limits, and Data Retention]
+* xref:configure-monitoring-cloudhub.adoc[Configure and Enable Anypoint Monitoring for Mule Apps (CloudHub)]
+* xref:anypoint-insights.adoc[Anypoint Insights]
+* xref:archive-api.adoc[Anypoint Monitoring Archive API]
+* xref:raw-data.adoc[Raw Data in Anypoint Monitoring]
+* xref:runtime-manager::viewing-log-data.adoc#log-persistence[Log Persistence (Anypoint Runtime Manager)]
