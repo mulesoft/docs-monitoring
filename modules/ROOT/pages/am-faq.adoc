@@ -46,7 +46,7 @@ Raw log storage limits depend on your subscription tier:
 === How does Anypoint Monitoring calculate searchable log storage, and what are the limits?
 
 Anypoint Monitoring creates indexes on raw logs to enable fast log search queries.
-The searchable storage allocation equals 10% of your total purchased storage, and only the most recent logs are indexed up to that limit.
+The searchable storage allocation equals 10% of your total purchased storage, and Anypoint Monitoring indexes only the most recent logs up to that limit.
 Total searchable storage across your organization is capped at 6 TB regardless of the number of vCores or flows purchased.
 
 For Titanium subscriptions, you can calculate your total searchable storage allocation using this formula:
