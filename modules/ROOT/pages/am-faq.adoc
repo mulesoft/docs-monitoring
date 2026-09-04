@@ -100,7 +100,7 @@ Retention for application metrics depends on your subscription tier:
 [[enhanced-api-metrics-retention]]
 === How long does Anypoint Monitoring retain enhanced API metrics?
 
-Enhanced API metrics are retained for 30 days across all subscription tiers. The following additional limits apply regardless of tier:
+Anypoint Monitoring retains enhanced API metrics for 30 days across all subscription tiers. The following additional limits apply regardless of tier:
 
 * Data in the *Client Applications* tab is limited to one hour.
 * Data from the `api_path_metric` and `api_client_ip_metric` tables in advanced mode of custom dashboards is limited to one hour.
