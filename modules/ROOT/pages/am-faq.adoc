@@ -110,7 +110,7 @@ NOTE: Metrics data can persist beyond the stated retention period. Data is remov
 [[custom-metrics-retention]]
 === How long does Anypoint Monitoring retain custom metrics?
 
-Custom metrics are retained for 365 days in production environments for Anypoint Integration Advanced and Titanium subscribers.
+For Anypoint Integration Advanced and Titanium subscribers, Anypoint Monitoring retains custom metrics  for 365 days in production environments.
 
 [[alert-limits]]
 === What are the alert limits in Anypoint Monitoring?
