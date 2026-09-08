@@ -228,7 +228,7 @@ Logs are deleted when storage capacity is reached, starting with the oldest logs
 
 The Archive API is backed by an archival storage backend.
 A file becomes available for download when it reaches either 9 minutes of accumulation or 10 MB in size, whichever comes first.
-The delay between the UI and Archive API occurs because the real-time search engine that powers the UI processes data immediately, while the batch process that powers the Archive API accumulates it first.
+The delay between the UI and Archive API occurs because the Archive API's batch process accumulates data before a file becomes available, while the UI uses a real-time search engine.
 
 [[app-not-in-filter]]
 === Why is my application not appearing in the Anypoint Monitoring log search filter?
