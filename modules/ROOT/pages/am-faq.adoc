@@ -233,7 +233,7 @@ The delay between the UI and Archive API occurs because the Archive API's batch 
 [[app-not-in-filter]]
 === Why is my application not appearing in the Anypoint Monitoring log search filter?
 
-The app does not appear in the filter when recent log lines are unavailable or when a large number of apps are reporting recent logs.
+The app doesn't appear in the filter when recent log lines are unavailable or when a large number of apps are reporting recent logs.
 For more information, see xref:apps-not-showing-sidebar.adoc[Not All Apps Are Showing in the Left Sidebar in Anypoint Monitoring].
 
 == Log Forwarding and Connectivity
