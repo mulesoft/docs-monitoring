@@ -119,6 +119,19 @@ Six basic alerts per API instance.
 
 xref:index.adoc#plans-legacy[Titanium tier] subscribers to Anypoint Platform receive more robust data retention and feature limits:
 
+Quota::
+Logs and metrics share the same storage quota. Metrics consume very little storage. The searchable index is up to 10% of purchased storage.
+
+* For each production vCore, this subscription tier receives:  
+** 200GB of archival storage
+** 20GB of searchable storage (10% of archival storage)
+* For each pre-production vCore, this subscription tier receives: 
+** 50GB of archival storage
+** 5GB of searchable storage (10% of archival storage)
+
+* Runtime application logs are tied to the subscription plan/storage; 
+* Audit logs default to 1 year (6 years for orgs created before 2023-07-10), configurable 30–2190 days.
+
 Logs::
 In raw format, your logs can occupy as much space as you receive with your Titanium subscription. Note that the storage space you receive with your Titanium subscription is used to store logs and metrics data. Because metrics do not take up much storage capacity, you can use the majority of your storage for raw log data. For more information about logs or to request deletion of your logs, see https://help.salesforce.com/s/articleView?id=001118219&type=1[Anypoint Monitoring Log FAQ].
 
@@ -129,15 +142,8 @@ Anypoint Monitoring creates indexes on raw logs to enable you to efficiently and
 +
 Total storage capacity is shared globally across all apps and is limited by the number vCores that your organization purchases and the maximum searchable storage allocation limit of 6TB.
 
-* For each production vCore, this subscription tier receives:  
-** 200GB of archival storage
-** 20GB of searchable storage (10% of archival storage)
-* For each pre-production vCore, this subscription tier receives: 
-** 50GB of archival storage
-** 5GB of searchable storage (10% of archival storage)
-
 Application metrics::
-365 days for built-in dashboards
+365 days for built-in dashboards, and 30 days for enhanced API metrics
 +
 For Anypoint Insights, see xref:anypoint-insights.adoc[].
 
