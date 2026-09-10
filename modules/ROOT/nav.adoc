@@ -7,7 +7,7 @@
  ** xref:monitor-applications-on-rtf.adoc[Setting Up Runtime Fabric Deployments]
  ** xref:am-installing.adoc[Setting Up Hybrid Deployments]
  ** xref:monitoring-settings-page.adoc[]
- ** xref:performance-and-impact.adoc[]
+ ** xref:am-faq.adoc[]
 * xref:dashboards.adoc[]
  ** xref:app-dashboards.adoc[]
  ** xref:api-dashboard.adoc[]
