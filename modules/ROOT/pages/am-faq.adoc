@@ -163,6 +163,7 @@ Learn how logs are stored, constraints on log line length, deletion behavior, an
 * <<recover-deleted-logs,Can I recover logs that have been deleted or overwritten?>>
 * <<import-logs,Can I import log data back into the system after deletion?>>
 * <<logs-after-app-deletion,What happens to logs after I delete an application?>>
+* <<rm-log-purge-config,Does purging application logs in Runtime Manager require any special deployment configuration?>>
 * <<archive-api-delay,Why is there a delay between the Anypoint Monitoring UI and the Archive API data?>>
 * <<app-not-in-filter,Why is my application not appearing in the Anypoint Monitoring log search filter?>>
 
@@ -219,9 +220,29 @@ No. You can't import logs back into the system after deletion.
 [[logs-after-app-deletion]]
 === What happens to logs after I delete an application?
 
-Logs stored in Anypoint Monitoring remain accessible after an application is deleted.
-Retrieve them using the xref:archive-api.adoc[Anypoint Monitoring Archive API].
-Logs are deleted when storage capacity is reached, starting with the oldest logs.
+Anypoint Monitoring and Runtime Manager are separate systems with independent log retention policies.
+Deleting an application in Runtime Manager does not immediately remove its logs from Anypoint Monitoring.
+
+Logs stored in Anypoint Monitoring remain accessible after an application is deleted from Runtime Manager.
+Retrieve these logs using the xref:archive-api.adoc[Anypoint Monitoring Archive API].
+Anypoint Monitoring deletes the oldest logs first when storage capacity is reached.
+For details on Anypoint Monitoring storage limits, see <<raw-log-storage,What are the raw log storage limits for Anypoint Monitoring?>>.
+
+Runtime Manager maintains its own log storage with separate limits and rotation behavior.
+For Runtime Manager log retention details, see xref:runtime-manager::viewing-log-data.adoc#log-persistence[Log Persistence (Anypoint Runtime Manager)]. If your apps are deployed to CloudHub 2, see also https://help.salesforce.com/s/articleView?id=001119527&type=1[CloudHub 2.0 Logging FAQ].
+
+NOTE: Log removal operations in Anypoint Monitoring are organization-wide, not application-specific.
+To request log deletion due to sensitive data exposure, see <<support-case-deletion,If I raise a support case to delete logs, what will MuleSoft delete?>>.
+
+[[rm-log-purge-config]]
+=== Does purging application logs in Runtime Manager require any special deployment configuration?
+
+No. You can purge application logs in Runtime Manager regardless of how the application is deployed.
+No specific deployment configuration is required.
+For instructions, see xref:runtime-manager::viewing-log-data.adoc[Viewing Log Data in Runtime Manager].
+
+NOTE: Purging logs in Runtime Manager affects only the logs stored within Runtime Manager.
+It does not affect logs stored in Anypoint Monitoring, which are managed independently.
 
 [[archive-api-delay]]
 === Why is there a delay between the Anypoint Monitoring UI and the Archive API data?
@@ -324,3 +345,4 @@ To retrieve metrics data before it is removed, use the link:https://anypoint.mul
 * xref:archive-api.adoc[Anypoint Monitoring Archive API]
 * xref:raw-data.adoc[Raw Data in Anypoint Monitoring]
 * xref:runtime-manager::viewing-log-data.adoc#log-persistence[Log Persistence (Anypoint Runtime Manager)]
+* https://help.salesforce.com/s/articleView?id=001119527&type=1[CloudHub 2.0 Logging FAQ]
