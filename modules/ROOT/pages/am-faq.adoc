@@ -229,7 +229,7 @@ Anypoint Monitoring deletes the oldest logs first when storage capacity is reach
 For details on Anypoint Monitoring storage limits, see <<raw-log-storage,What are the raw log storage limits for Anypoint Monitoring?>>.
 
 Runtime Manager maintains its own log storage with separate limits and rotation behavior.
-For Runtime Manager log retention details, see xref:runtime-manager::viewing-log-data.adoc#log-persistence[Log Persistence (Anypoint Runtime Manager)].
+For Runtime Manager log retention details, see xref:runtime-manager::viewing-log-data.adoc#log-persistence[Log Persistence (Anypoint Runtime Manager)]. If your apps are deployed to CloudHub 2, see also https://help.salesforce.com/s/articleView?id=001119527&type=1[CloudHub 2.0 Logging FAQ].
 
 NOTE: Log removal operations in Anypoint Monitoring are organization-wide, not application-specific.
 To request log deletion due to sensitive data exposure, see <<support-case-deletion,If I raise a support case to delete logs, what will MuleSoft delete?>>.
@@ -345,3 +345,4 @@ To retrieve metrics data before it is removed, use the link:https://anypoint.mul
 * xref:archive-api.adoc[Anypoint Monitoring Archive API]
 * xref:raw-data.adoc[Raw Data in Anypoint Monitoring]
 * xref:runtime-manager::viewing-log-data.adoc#log-persistence[Log Persistence (Anypoint Runtime Manager)]
+* https://help.salesforce.com/s/articleView?id=001119527&type=1[CloudHub 2.0 Logging FAQ]
