@@ -1,8 +1,8 @@
-= FAQ: Anypoint Monitoring Logs, Performance, and Limits
-:page-tags: anypoint-monitoring, faq, performance, storage, retention, logs
+= FAQ: Anypoint Monitoring Logs, Metrics, Performance, and Limits
+:page-tags: anypoint-monitoring, faq, performance, storage, retention, logs, metrics-api, traffic-metrics, capacity-planning
 :page-aliases: performance-and-impact.adoc
 
-Get answers to common questions about Anypoint Monitoring logging, performance impact, storage and retention limits, log line constraints, log forwarding, and what happens to your data when your subscription changes.
+Get answers to common questions about Anypoint Monitoring logging, metrics, traffic data availability, performance impact, storage and retention limits, log line constraints, log forwarding, and what happens to your data when your subscription changes.
 
 
 == Performance
@@ -151,6 +151,79 @@ NOTE: For Titanium, your basic alert allowance for servers and Mule apps can als
 === What are the Telemetry Exporter connection limits?
 
 Anypoint Monitoring supports up to 10 Telemetry Exporter connections per organization for Anypoint Integration Advanced and Titanium subscribers.
+
+== Metrics and Traffic Data
+
+Learn what traffic and consumption metrics Anypoint Monitoring can and cannot provide, how to use the Metrics API for capacity planning, and how to avoid common query errors.
+
+* <<vpc-traffic-metrics,Can I get VPC-level network traffic metrics from Anypoint Monitoring?>>
+* <<outbound-traffic-totals,Can I get monthly outbound traffic totals from Anypoint Monitoring?>>
+* <<metrics-api-empty-data,Why does my Metrics API query return empty data even though the dashboard shows metrics?>>
+* <<metrics-api-traffic-attributes,What attributes should I use to query application traffic data via the Metrics API?>>
+* <<archive-api-custom-metrics,Can I export historical custom metrics in bulk using the Archive API?>>
+* <<cross-env-aggregation,Does Anypoint Monitoring aggregate application metrics across environments or business groups?>>
+
+[[vpc-traffic-metrics]]
+=== Can I get VPC-level network traffic metrics from Anypoint Monitoring?
+
+No. Anypoint Monitoring does not provide VPC-level network traffic metrics — such as total inbound or outbound bytes at the VPC or private space boundary.
+Anypoint Monitoring collects application-level metrics from the Mule runtime, not from the underlying network infrastructure.
+
+To estimate traffic volumes, use the link:https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/metrics-api/[Anypoint Monitoring Metrics API] to query application-level inbound and outbound metrics per Mule application.
+See <<metrics-api-traffic-attributes,What attributes should I use to query application traffic data via the Metrics API?>> for the correct metric names.
+
+[[outbound-traffic-totals]]
+=== Can I get monthly outbound traffic totals from Anypoint Monitoring?
+
+Not directly. Anypoint Monitoring does not provide a prebuilt report or dashboard view for monthly outbound traffic aggregated across all applications.
+
+To estimate monthly outbound traffic, use the Metrics API to query `mulesoft.app.outbound` metrics for each application and sum the results.
+This provides application-level outbound message counts and data volumes, which you can use as a proxy for network egress.
+
+[[metrics-api-empty-data]]
+=== Why does my Metrics API query return empty data even though the dashboard shows metrics?
+
+A Metrics API query can return a 200 OK response with `"data": []` when the Connected App used to generate the Bearer token lacks the required environment-level scopes for the target environment.
+
+To resolve this, grant the Connected App the following permissions for each business group and environment you want to query:
+
+* *API Configuration Viewer*
+* *Read Applications*
+
+Without these permissions, the API returns empty data rather than a permission error.
+For details, see the link:https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/metrics-api/[Anypoint Monitoring Metrics API] documentation.
+
+[[metrics-api-traffic-attributes]]
+=== What attributes should I use to query application traffic data via the Metrics API?
+
+Use the following metrics for application-level traffic data:
+
+* `mulesoft.app.inbound` — inbound message count and volume at the application level, with endpoint-level dimensions
+* `mulesoft.app.outbound` — outbound message count and volume at the application level, with endpoint-level dimensions
+
+Do not use `endpoint.type` or `endpoint.operation` as query attributes on the `mulesoft.api.summary` metric.
+These attributes were removed from `mulesoft.api.summary` because the data never existed at the API aggregation level.
+The same restriction applies to `mulesoft.api.path`, `mulesoft.api.client_ip`, and `mulesoft.api.geo_location` on that metric.
+For endpoint-level dimensions, use `mulesoft.app.inbound` and `mulesoft.app.outbound` instead.
+
+[[archive-api-custom-metrics]]
+=== Can I export historical custom metrics in bulk using the Archive API?
+
+No. The Anypoint Monitoring Archive API does not support bulk export of custom metrics.
+
+To retrieve standard application and API metrics via the Archive API, see xref:archive-api.adoc[Anypoint Monitoring Archive API].
+For custom metrics export, submit a product idea through the MuleSoft Ideas portal.
+
+[[cross-env-aggregation]]
+=== Does Anypoint Monitoring aggregate application metrics across environments or business groups?
+
+Not in a single dashboard view for general Mule application traffic.
+Application-level metrics in Anypoint Monitoring are scoped to individual environments.
+To aggregate traffic across environments, query the Metrics API separately for each environment and combine the results.
+
+NOTE: Anypoint DataGraph usage metrics are an exception — DataGraph provides aggregated GraphQL API request counts across all environments of a given type (production or sandbox) within a business group.
+This aggregation is specific to DataGraph and does not extend to general Mule application traffic.
+See xref:datagraph::usage-metrics.adoc[Viewing Usage Metrics for Anypoint DataGraph].
 
 == Log Management
 
@@ -339,10 +412,12 @@ To retrieve metrics data before it is removed, use the link:https://anypoint.mul
 
 * xref:index.adoc[Anypoint Monitoring]
 * xref:logs.adoc[Logs in Anypoint Monitoring]
+* link:https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/metrics-api/[Anypoint Monitoring Metrics API]
 * xref:performance-and-impact.adoc[Understanding Performance Impact, Limits, and Data Retention]
 * xref:configure-monitoring-cloudhub.adoc[Configure and Enable Anypoint Monitoring for Mule Apps (CloudHub)]
 * xref:anypoint-insights.adoc[Anypoint Insights]
 * xref:archive-api.adoc[Anypoint Monitoring Archive API]
 * xref:raw-data.adoc[Raw Data in Anypoint Monitoring]
+* xref:datagraph::usage-metrics.adoc[Viewing Usage Metrics for Anypoint DataGraph]
 * xref:runtime-manager::viewing-log-data.adoc#log-persistence[Log Persistence (Anypoint Runtime Manager)]
 * https://help.salesforce.com/s/articleView?id=001119527&type=1[CloudHub 2.0 Logging FAQ]
