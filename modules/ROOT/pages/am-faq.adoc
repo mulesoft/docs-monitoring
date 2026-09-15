@@ -160,6 +160,7 @@ Learn what traffic and consumption metrics Anypoint Monitoring provides and does
 * <<outbound-traffic-totals,Can I get monthly outbound traffic totals from Anypoint Monitoring?>>
 * <<metrics-api-empty-data,Why does my Metrics API query return empty data even though the dashboard shows metrics?>>
 * <<metrics-api-traffic-attributes,What attributes should I use to query application traffic data via the Metrics API?>>
+* <<access-api-analytics-metrics,How can I access API analytics metrics data programmatically?>>
 * <<archive-api-custom-metrics,Can I export historical custom metrics in bulk using the Archive API?>>
 * <<cross-env-aggregation,Does Anypoint Monitoring aggregate application metrics across environments or business groups?>>
 
@@ -167,7 +168,7 @@ Learn what traffic and consumption metrics Anypoint Monitoring provides and does
 === Can I get VPC-level network traffic metrics from Anypoint Monitoring?
 
 No. Anypoint Monitoring doesn't provide VPC-level network traffic metrics — such as total inbound or outbound bytes at the VPC or private space boundary.
-Anypoint Monitoring collects application-level metrics from the Mule runtime, not from the underlying network infrastructure.
+Anypoint Monitoring collects application-level metrics from Mule runtime, not from the underlying network infrastructure.
 
 To estimate traffic volumes, use the link:https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/metrics-api/[Anypoint Monitoring Metrics API] to query application-level inbound and outbound metrics per Mule application.
 See <<metrics-api-traffic-attributes,What attributes should I use to query application traffic data via the Metrics API?>> for the correct metric names.
@@ -201,17 +202,33 @@ Use the following metrics for application-level traffic data:
 * `mulesoft.app.inbound` — inbound message count and volume at the application level, with endpoint-level dimensions
 * `mulesoft.app.outbound` — outbound message count and volume at the application level, with endpoint-level dimensions
 
-Do not use `endpoint.type` or `endpoint.operation` as query attributes on the `mulesoft.api.summary` metric.
-These attributes were removed from `mulesoft.api.summary` because the data never existed at the API aggregation level.
+Don't use `endpoint.type` or `endpoint.operation` as query attributes on the `mulesoft.api.summary` metric.
+These attributes were removed from `mulesoft.api.summary`.
 The same restriction applies to `mulesoft.api.path`, `mulesoft.api.client_ip`, and `mulesoft.api.geo_location` on that metric.
 For endpoint-level dimensions, use `mulesoft.app.inbound` and `mulesoft.app.outbound` instead.
+
+[[access-api-analytics-metrics]]
+=== How can I access API analytics metrics data programmatically?
+
+You can access API analytics metrics data directly via the link:https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/home/[Anypoint Monitoring Archive API], available to Anypoint Integration Advanced and Titanium subscribers.
+The Archive API exposes your metrics data in a directory hierarchy you can navigate and download as files containing JSON objects, each representing one or more metric events.
+You can write an application to traverse the data and integrate it into your own system.
+
+To also capture non-aggregated API events — which contain more detailed information about each API invocation — enable them by setting the following property:
+
+[source,text]
+----
+anypoint.platform.config.analytics.agent.api_raw_metrics.enabled=true
+----
+
+Non-aggregated events are accessible under the `raw` file type in the Archive API.
 
 [[archive-api-custom-metrics]]
 === Can I export historical custom metrics in bulk using the Archive API?
 
 No. The Anypoint Monitoring Archive API doesn't support bulk export of custom metrics.
 
-To retrieve application and API metrics via the Archive API, see xref:archive-api.adoc[Anypoint Monitoring Archive API].
+To retrieve application and API metrics via the Archive API, see <<access-api-analytics-metrics,How can I access API analytics metrics data programmatically?>>.
 
 [[cross-env-aggregation]]
 === Does Anypoint Monitoring aggregate application metrics across environments or business groups?
@@ -296,7 +313,7 @@ Anypoint Monitoring and Runtime Manager are separate systems with independent lo
 Deleting an application in Runtime Manager does not immediately remove its logs from Anypoint Monitoring.
 
 Logs stored in Anypoint Monitoring remain accessible after an application is deleted from Runtime Manager.
-Retrieve these logs using the xref:archive-api.adoc[Anypoint Monitoring Archive API].
+Retrieve these logs using the link:https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/home/[Anypoint Monitoring Archive API].
 Anypoint Monitoring deletes the oldest logs first when storage capacity is reached.
 For details on Anypoint Monitoring storage limits, see <<raw-log-storage,What are the raw log storage limits for Anypoint Monitoring?>>.
 
@@ -415,7 +432,7 @@ To retrieve metrics data before it is removed, use the link:https://anypoint.mul
 * xref:performance-and-impact.adoc[Understanding Performance Impact, Limits, and Data Retention]
 * xref:configure-monitoring-cloudhub.adoc[Configure and Enable Anypoint Monitoring for Mule Apps (CloudHub)]
 * xref:anypoint-insights.adoc[Anypoint Insights]
-* xref:archive-api.adoc[Anypoint Monitoring Archive API]
+* link:https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/home/[Anypoint Monitoring Archive API]
 * xref:raw-data.adoc[Raw Data in Anypoint Monitoring]
 * xref:datagraph::usage-metrics.adoc[Viewing Usage Metrics for Anypoint DataGraph]
 * xref:runtime-manager::viewing-log-data.adoc#log-persistence[Log Persistence (Anypoint Runtime Manager)]
