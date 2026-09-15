@@ -323,6 +323,14 @@ Enabling monitoring can impact CPU utilization and memory utilization depending 
 - If you don't find connection failure or retry entries, contact the support team.
 - On Windows, if Anypoint Monitoring agent is configured to run as a service and throws Error 1064 when starting, find the root cause by opening the Windows application Events Viewer to *Windows Logs* -> *Applications*.
 - If you encounter inconsistent path normalization, refer to <<normalize-path>>.
+- Your metrics fail to export if port 8443 is blocked outbound or if your proxy performs SSL inspection. To address this issue:
++
+Verify that outbound traffic to `*.ingest.mulesoft.com:8443` is allowed and that SSL passthrough is enabled on your proxy or firewall. In `mule_ee.log`, the associated issues include:
+
+* `[OkHttp \https://us1.ingest.mulesoft.com:8443/...] Failed to export metrics... timeout`
+* `javax.net.ssl.SSLHandshakeException: Remote host terminated the handshake`
+* `java.net.ConnectException: Connection refused`
+
 
 == Disable Log Forwarding for Hybrid Runtime Servers
 //feature tier (for h2-h4 headings):
