@@ -12,7 +12,7 @@ Operations and development teams use the monitoring tools to diagnose issues and
 of issues (MTTI).
 * Store and search log data at scale.
 
-NOTE: Anypoint Monitoring provides application-level metrics for Mule apps and APIs. VPC-level network traffic and monthly outbound byte totals are not available. For details on metrics scope and how to estimate traffic using the Metrics API, see xref:am-faq.adoc#vpc-traffic-metrics[Anypoint Monitoring FAQ].
+NOTE: Anypoint Monitoring provides application-level metrics for Mule apps and APIs. VPC-level network traffic and monthly outbound byte totals aren't available. For details on metrics scope and how to estimate traffic using the Metrics API, see xref:am-faq.adoc#vpc-traffic-metrics[Anypoint Monitoring FAQ].
 
 [[features]]
 == Monitoring Features by Control Plane

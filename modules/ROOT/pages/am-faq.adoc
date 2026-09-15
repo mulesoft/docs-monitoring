@@ -166,7 +166,7 @@ Learn what traffic and consumption metrics Anypoint Monitoring provides and does
 [[vpc-traffic-metrics]]
 === Can I get VPC-level network traffic metrics from Anypoint Monitoring?
 
-No. Anypoint Monitoring does not provide VPC-level network traffic metrics — such as total inbound or outbound bytes at the VPC or private space boundary.
+No. Anypoint Monitoring doesn't provide VPC-level network traffic metrics — such as total inbound or outbound bytes at the VPC or private space boundary.
 Anypoint Monitoring collects application-level metrics from the Mule runtime, not from the underlying network infrastructure.
 
 To estimate traffic volumes, use the link:https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/metrics-api/[Anypoint Monitoring Metrics API] to query application-level inbound and outbound metrics per Mule application.
@@ -175,7 +175,7 @@ See <<metrics-api-traffic-attributes,What attributes should I use to query appli
 [[outbound-traffic-totals]]
 === Can I get monthly outbound traffic totals from Anypoint Monitoring?
 
-Not directly. Anypoint Monitoring does not provide a prebuilt report or dashboard view for monthly outbound traffic aggregated across all applications.
+Not directly. Anypoint Monitoring doesn't provide a prebuilt report or dashboard view for monthly outbound traffic aggregated across all applications.
 
 To estimate monthly outbound traffic, use the Metrics API to query `mulesoft.app.outbound` metrics for each application and sum the results.
 This provides application-level outbound message counts and data volumes as a proxy for network egress.
@@ -209,7 +209,7 @@ For endpoint-level dimensions, use `mulesoft.app.inbound` and `mulesoft.app.outb
 [[archive-api-custom-metrics]]
 === Can I export historical custom metrics in bulk using the Archive API?
 
-No. The Anypoint Monitoring Archive API does not support bulk export of custom metrics.
+No. The Anypoint Monitoring Archive API doesn't support bulk export of custom metrics.
 
 To retrieve application and API metrics via the Archive API, see xref:archive-api.adoc[Anypoint Monitoring Archive API].
 
