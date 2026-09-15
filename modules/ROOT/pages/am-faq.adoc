@@ -154,7 +154,7 @@ Anypoint Monitoring supports up to 10 Telemetry Exporter connections per organiz
 
 == Metrics and Traffic Data
 
-Learn what traffic and consumption metrics Anypoint Monitoring can and cannot provide, how to use the Metrics API for capacity planning, and how to avoid common query errors.
+Learn what traffic and consumption metrics Anypoint Monitoring provides and doesn't provide, how to use the Metrics API for capacity planning, and how to avoid common query errors.
 
 * <<vpc-traffic-metrics,Can I get VPC-level network traffic metrics from Anypoint Monitoring?>>
 * <<outbound-traffic-totals,Can I get monthly outbound traffic totals from Anypoint Monitoring?>>
@@ -178,7 +178,7 @@ See <<metrics-api-traffic-attributes,What attributes should I use to query appli
 Not directly. Anypoint Monitoring does not provide a prebuilt report or dashboard view for monthly outbound traffic aggregated across all applications.
 
 To estimate monthly outbound traffic, use the Metrics API to query `mulesoft.app.outbound` metrics for each application and sum the results.
-This provides application-level outbound message counts and data volumes, which you can use as a proxy for network egress.
+This provides application-level outbound message counts and data volumes as a proxy for network egress.
 
 [[metrics-api-empty-data]]
 === Why does my Metrics API query return empty data even though the dashboard shows metrics?
@@ -211,18 +211,17 @@ For endpoint-level dimensions, use `mulesoft.app.inbound` and `mulesoft.app.outb
 
 No. The Anypoint Monitoring Archive API does not support bulk export of custom metrics.
 
-To retrieve standard application and API metrics via the Archive API, see xref:archive-api.adoc[Anypoint Monitoring Archive API].
-For custom metrics export, submit a product idea through the MuleSoft Ideas portal.
+To retrieve application and API metrics via the Archive API, see xref:archive-api.adoc[Anypoint Monitoring Archive API].
 
 [[cross-env-aggregation]]
 === Does Anypoint Monitoring aggregate application metrics across environments or business groups?
 
-Not in a single dashboard view for general Mule application traffic.
-Application-level metrics in Anypoint Monitoring are scoped to individual environments.
+No. Anypoint Monitoring doesn't aggregate application metrics across environments or business groups in a single dashboard view.
+Application-level metrics are scoped to individual environments.
 To aggregate traffic across environments, query the Metrics API separately for each environment and combine the results.
 
 NOTE: Anypoint DataGraph usage metrics are an exception — DataGraph provides aggregated GraphQL API request counts across all environments of a given type (production or sandbox) within a business group.
-This aggregation is specific to DataGraph and does not extend to general Mule application traffic.
+This aggregation applies only to DataGraph, not to general Mule application traffic.
 See xref:datagraph::usage-metrics.adoc[Viewing Usage Metrics for Anypoint DataGraph].
 
 == Log Management
