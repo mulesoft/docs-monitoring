@@ -154,7 +154,7 @@ Anypoint Monitoring supports up to 10 Telemetry Exporter connections per organiz
 
 == Metrics and Traffic Data
 
-Learn what traffic and consumption metrics Anypoint Monitoring provides and doesn't provide, how to use the Metrics API for capacity planning, and how to avoid common query errors.
+Learn what traffic and consumption metrics Anypoint Monitoring provides and doesn't provide, how to use the Metrics API for capacity planning, how to avoid common query errors, and how to access metrics data programmatically using the Archive API.
 
 * <<vpc-traffic-metrics,Can I get VPC-level network traffic metrics from Anypoint Monitoring?>>
 * <<outbound-traffic-totals,Can I get monthly outbound traffic totals from Anypoint Monitoring?>>
