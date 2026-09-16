@@ -623,3 +623,7 @@ Age-based data aggregation limits determine the minimum intervals available for 
 * Data over 7 days old is available at a minimum of 5-minute intervals. 
 
 To use the API and get information about data retention, see the API documentation on Anypoint Exchange: https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/metrics-api/[Anypoint Monitoring Metrics API]
+
+NOTE: Queries can return empty data (`200 OK` with no results) if the Connected App lacks the required environment-level permissions.
+Also, the `endpoint.type` and `endpoint.operation` attributes are no longer valid on the `mulesoft.api.summary` metric.
+For details and workarounds, see xref:am-faq.adoc#metrics-api-empty-data[Why does my Metrics API query return empty data?] and xref:am-faq.adoc#metrics-api-traffic-attributes[What attributes should I use to query application traffic data?]
