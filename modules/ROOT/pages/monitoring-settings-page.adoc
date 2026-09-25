@@ -1,11 +1,11 @@
-= Managing CloudHub and Hybrid Settings
+= Managing Anypoint Monitoring Settings
 :description: Manage CloudHub and hybrid deployment settings in Anypoint Monitoring, including agent installation instructions and runtime monitoring configuration.
 :keywords: MuleSoft, Anypoint Monitoring, settings, CloudHub settings, hybrid settings, monitoring configuration, agent installation, deployment settings
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-On the *Settings* page in Anypoint Monitoring, you can:
+Use the Settings page in Anypoint Monitoring to install the monitoring agent, enable or disable monitoring for CloudHub apps, and configure path normalization.
 
 * Find the instructions to install Anypoint Monitoring on an on-premises server to monitor Mule applications running on that server.
 * Enable (or disable) monitoring for applications running on Mule.

@@ -5,7 +5,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Understanding the state of your infrastructure and systems is important for ensuring the reliability and stability of your services. As part of Anypoint Platform, Anypoint Monitoring provides visibility into integrations across your app network. The monitoring tools provide feedback from Mule flows and components in your app network.
+Anypoint Monitoring provides visibility into the performance, health, and behavior of your Mule apps, APIs, and agentic assets across all Anypoint Platform environments.
 
 Operations and development teams use the monitoring tools to diagnose issues and prescribe solutions to behavior that negatively impacts digital performance. The monitoring tools are designed to reduce the time to identify and resolve these issues through aggregated metrics, data visualization tools, alerts for issues, and a log aggregation system. Specifically, Anypoint Monitoring provides ways to:
 

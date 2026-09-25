@@ -4,7 +4,7 @@
 :description: Create and configure custom dashboards in Anypoint Monitoring to visualize metrics for your Mule apps and APIs.
 :keywords: MuleSoft, Anypoint Monitoring, custom dashboards, create dashboard, configure dashboard, dashboard charts, Mule app monitoring, API monitoring
 
-In the https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] clouds, create and configure custom dashboards to monitor metrics on your Mule apps and APIs. 
+Create and configure custom dashboards in Anypoint Monitoring to visualize the metrics that matter most for your Mule apps and APIs.
 
 [[view]]
 == View a Custom Dashboard

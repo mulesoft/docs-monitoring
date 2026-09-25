@@ -3,7 +3,7 @@
 :description: View and download reports on Mule app performance, requests, failures, CPU, and memory utilization across environments in Anypoint Monitoring.
 :keywords: MuleSoft, Anypoint Monitoring, reports, Mule app reports, performance reports, CPU utilization, memory utilization, app failures, monitoring reports
 
-View reports on Mule app performance and behavior across all apps in an environment. Reports help you maintain the expected level of service for your apps.
+View and download reports on Mule app performance, requests, failures, and resource utilization across environments in Anypoint Monitoring.
 
 //UPDATED FOR HYPERFORCE RELEASE
 image::reports-hf.png["List of reports on the Reports page"]

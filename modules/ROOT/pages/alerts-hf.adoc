@@ -1,4 +1,4 @@
-= Getting Alerts
+= Configuring Alerts in Anypoint Monitoring
 :page-info-pills: anypoint-pricing-core
 :page-aliases: alerts-jp-ca.adoc, alerts-us-eu.adoc, alerts.adoc, basic-alerts.adoc
 :description: Configure and manage alerts in Anypoint Monitoring to get notified when app or API metrics exceed defined thresholds.

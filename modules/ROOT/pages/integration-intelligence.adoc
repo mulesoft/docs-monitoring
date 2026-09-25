@@ -1,4 +1,4 @@
-= Integration Intelligence
+= Getting Long-Term Analytics with Integration Intelligence
 :page-info-pills: anypoint-pricing-titanium
 :description: Use Integration Intelligence to extend Anypoint Monitoring telemetry into Salesforce Data 360 for long-term analytics, AI-powered insights, and business visibility.
 :keywords: MuleSoft, Anypoint Monitoring, Integration Intelligence, Salesforce Data 360, long-term analytics, AI insights, Diagnostics Agent, uptime optimization
