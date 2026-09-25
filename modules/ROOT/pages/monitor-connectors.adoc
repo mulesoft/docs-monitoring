@@ -93,7 +93,7 @@ The connector type "Other" is any connector not specified in this table.
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. Open *Insights* or *Built-in dashboards*.
+. Open *Insights*.
 . Navigate to a Mule app that uses a supported connector.
 . In the detail page for the app, click *Connectors* to view connector metrics.
 +

@@ -352,8 +352,6 @@ image::insights-details-app.png["Anypoint Insights App Details UI"]
 . *Application Details* page for an app in Anypoint Insights
 . App associated with this details page and a dropdown for opening the detail page for another app or API in one of your environments
 . Tabs containing charts and visualizations for different types of metrics on the app
-. Navigation for switching to the traditional built-in dashboard for this app, and for managing the app in Runtime Manager
-
 Get information on the charts and visualizations available for the app:
 
 * <<entity-metrics-app-header>>
@@ -371,7 +369,7 @@ By default, the date period in dashboards with detailed metrics on specific enti
 
 By default, the auto-refresh interval in dashboards with detailed metrics on specific entities matches the time period interval for cross-entity charts in the *Anypoint Insights* overview. 
 
-To compare *Application Details* charts and visualizations with those in the traditional  built-in dashboards for the same app, see xref:monitoring::app-dashboards.adoc#app-chart-parity[App Chart Mapping].
+To find the equivalent charts in Anypoint Insights, see <<dashboard-chart-mapping, Chart Mapping from Built-in Dashboards>>.
 
 [[entity-metrics-app-header]]
 ==== Mule Application Metrics
@@ -491,7 +489,6 @@ To adjust the custom metrics settings of a Mule app chart in Anypoint Insights:
 
 * *Dimensions*: The choices in this list are determined by the values you define in the Custom Metrics connector. 
 
-Chart settings correspond to and reflect values available to Mule apps from built-in dashboards (in *Built-in Dashboards*) that have custom metrics. The *Dimensions* setting is named *Group By* in built-in dashboards. See xref:anypoint-custom-metrics-connector.adoc#custom-metrics-chart-settings[Configure Charts with Custom Metrics in a Built-In Dashboard]).
 
 //
 //H3: ENTITY METRICS for APIs (ONLY)
@@ -508,8 +505,6 @@ image::insights-details-api.png["Anypoint Insights API Details UI"]
 . *API Details* page for an API in Anypoint Insights
 . API associated with this details page and a dropdown for opening the detail page for another API or app in one of your environments
 . Tabs containing charts and visualizations for different types of metrics on the API
-. Navigation for switching to the traditional built-in dashboard for this API from Anypoint Insights, and for managing the API in API Manager
-
 Get information on the charts and visualizations available for the API:
 
 * <<entity-metrics-api-header>>
@@ -525,7 +520,6 @@ By default, the date period in dashboards with detailed metrics on specific enti
 
 By default, the auto-refresh interval in dashboards with detailed metrics on specific entities matches the time period interval for cross-entity charts in the *Anypoint Insights* overview. 
 
-To compare *API Details* charts and visualizations with those in the traditional built-in dashboards for the same API, see  xref:monitoring::anypoint-insights.adoc#entity-metrics-apis[*API Details*] in Anypoint Insights.
 
 [[entity-metrics-api-header]]
 ==== API Implementation Metrics
@@ -627,3 +621,16 @@ To use the API and get information about data retention, see the API documentati
 NOTE: Queries can return empty data (`200 OK` with no results) if the Connected App lacks the required environment-level permissions.
 Also, the `endpoint.type` and `endpoint.operation` attributes are no longer valid on the `mulesoft.api.summary` metric.
 For details and workarounds, see xref:am-faq.adoc#metrics-api-empty-data[Why does my Metrics API query return empty data?] and xref:am-faq.adoc#metrics-api-traffic-attributes[What attributes should I use to query application traffic data?]
+
+[[dashboard-chart-mapping]]
+== Chart Mapping from Built-in Dashboards
+
+If you previously used built-in dashboards in Anypoint Monitoring, use these tables to find the equivalent charts in Anypoint Insights.
+
+=== Mule App Charts
+
+include::partial$include-insights-parity-charts.adoc[tags=app-chart-parity]
+
+=== API Charts
+
+include::partial$include-insights-parity-charts.adoc[tags=api-chart-parity]

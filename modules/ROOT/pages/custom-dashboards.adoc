@@ -1,17 +1,10 @@
-= Monitoring Metrics from Dashboards
+= Using Custom Dashboards to Monitor Metrics
+:page-aliases: dashboards.adoc
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-In https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] clouds, use built-in and custom dashboards in Anypoint Monitoring to get visibility into Mule apps and APIs deployed to your environments (for example, Production, Sandbox, or Design).
-
-[[builtin_dashboards]]
-== Built-In Dashboards
-
-Built-in dashboards contain graphs that plot current and historical data collected over a given time and date period. There is a built-in dashboard for each Mule application and API in each environment.
-
-.Example: Built-in Dashboard for a Mule Application
-image::intro-dashboard-built-in.png["Built-in dashboard example"]
+Use custom dashboards in Anypoint Monitoring to monitor the resources and metrics you choose across your Mule apps and APIs. For standard, predefined dashboards, see xref:anypoint-insights.adoc[Anypoint Insights].
 
 == Custom Dashboards
 //feature tier (for h2-h4 headings):
@@ -27,6 +20,7 @@ Custom dashboards in Anypoint Monitoring can bring together important metrics an
 
 For example, you can compare live data with historic data to detect anomalies and expedite the troubleshooting process.
 
+//TBD: Verify that these no-data scenarios apply specifically to custom dashboards (not Anypoint Insights).
 [[no-data-scenarios]]
 == Causes of No Data Points Messages for Dashboards
 
@@ -46,6 +40,5 @@ For example, when using custom dashboards, you selected two app IDs at the same 
 
 == See Also
 
-* xref:app-dashboards.adoc[Built-in Application Dashboards]
 * xref:dashboard-custom-config.adoc[Configuring Custom Dashboards]
-* xref:api-dashboard.adoc[API Analytics Dashboard]
+* xref:anypoint-insights.adoc[Anypoint Insights]
