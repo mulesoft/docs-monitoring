@@ -280,12 +280,13 @@ For a user or password of the proxy configuration that contains URI-reserved cha
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. On the *Built-in Dashboards* page, select an app that is deployed on the server where you installed the Anypoint Monitoring agent.
-. Check whether the CPU Utilization and Memory Utilization charts are displaying data. +
-If you see data in the charts, the Anypoint Monitoring agent is installed and running. +
-If you do not see data in the charts, verify that Anypoint Monitoring is able to connect to the endpoint. +
-[NOTE]
-If necessary, you can add the endpoint to an allowlist for outbound firewall rules so your server allows connections. The endpoints to add to the allowlist are listed in <<prereqs>>.
+//TBD: Verify how to confirm the agent is running now that built-in dashboards are removed.
+// . On the *Built-in Dashboards* page, select an app that is deployed on the server where you installed the Anypoint Monitoring agent.
+// . Check whether the CPU Utilization and Memory Utilization charts are displaying data. +
+// If you see data in the charts, the Anypoint Monitoring agent is installed and running. +
+// If you do not see data in the charts, verify that Anypoint Monitoring is able to connect to the endpoint. +
+// [NOTE]
+// If necessary, you can add the endpoint to an allowlist for outbound firewall rules so your server allows connections. The endpoints to add to the allowlist are listed in <<prereqs>>.
 
 . Log into the server on which the Anypoint Monitoring agent is running.
 . Open the log file for the data-transfer agent: 

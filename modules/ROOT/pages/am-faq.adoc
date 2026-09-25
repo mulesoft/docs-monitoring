@@ -96,8 +96,10 @@ When storage reaches capacity, the oldest logs are deleted first to reclaim spac
 
 Retention for application metrics depends on your subscription tier:
 
-* *Anypoint Integration Advanced and Titanium* — 365 days in built-in dashboards. For Anypoint Insights retention, see xref:anypoint-insights.adoc[Anypoint Insights].
-* *Anypoint Integration Starter and Gold/Platinum* — 30 days.
+//SME REVIEW: Verify these retention periods are correct for Anypoint Insights now that built-in dashboards are removed. Previous value was 365 days for Advanced/Titanium in built-in dashboards.
+* *Anypoint Integration Advanced and Titanium* — Up to 7 days for high-level metrics and up to 30 days for individual app and API metrics in xref:anypoint-insights.adoc[Anypoint Insights].
+* *Anypoint Integration Starter* — Up to 24 hours for high-level metrics and up to 30 days for individual app and API metrics in xref:anypoint-insights.adoc[Anypoint Insights].
+* *Anypoint Integration Gold/Platinum* — 30 days.
 
 [[enhanced-api-metrics-retention]]
 === How long does Anypoint Monitoring retain enhanced API metrics?

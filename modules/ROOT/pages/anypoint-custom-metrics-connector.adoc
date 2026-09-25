@@ -1,7 +1,7 @@
 = Creating Custom Metrics
 :page-info-pills: anypoint-pricing-titanium
 
-The Anypoint Custom Metrics connector enables you to send operational and business metric values that you define from an app to Anypoint Monitoring. You can then use the built-in *Custom metrics* dashboard and a custom dashboard in *Advanced* mode to visualize the custom metrics in real time. 
+The Anypoint Custom Metrics connector enables you to send operational and business metric values that you define from an app to Anypoint Monitoring. You can then use *Anypoint Insights* or a custom dashboard in *Advanced* mode to visualize the custom metrics in real time. 
 
 Define metrics in the Anypoint Custom Metrics connector to select which metrics to display in the dashboard. You can filter and group the metrics along the dimensions you define to include multiple custom and built-in metrics in a single dashboard visualization.
 
@@ -46,7 +46,7 @@ If a particular custom metrics chart slows down and affects other charts in the 
 * Reduce the time range of the custom metric chart, for example, create a daily or weekly chart instead of a monthly or yearly chart 
 * Reduce the refresh frequency, for example, refresh hourly instead of every minute.
 
-NOTE: To ensure optimal performance, Anypoint Monitoring groups metrics based on unique combinations of your custom dimensions and supports up to 100 unique combinations. If your data exceeds this limit, lower-volume combinations are grouped under a single *Other* category. This limit applies to all custom dimensions combined. For more information, see xref:app-dashboards.adoc#endpoint-operation-metrics[Endpoint and Operation Metrics Collection (Other Group)].
+NOTE: To ensure optimal performance, Anypoint Monitoring groups metrics based on unique combinations of your custom dimensions and supports up to 100 unique combinations. If your data exceeds this limit, lower-volume combinations are grouped under a single *Other* category. This limit applies to all custom dimensions combined. For more information, see <<endpoint-operation-metrics, Endpoint and Operation Metrics Collection (Other Group)>>.
 
 === Restricted Keywords
 
@@ -251,9 +251,9 @@ image::custom-metric-custom-dashboard-config.png["Custom dashboard for t-shirt s
 +
 image::custom-metric-custom-dashboard-graph.png["Two line charts showing revenue and sales for two stores"]
 
-== Configure Charts with Custom Metrics in a Built-in Dashboard
+== Configure Charts with Custom Metrics
 
-From *Built-in Dashboards* in Anypoint Monitoring, you can configure charts for Mule apps that are configured to produce custom metrics from the application's *Custom Metrics* tab. For the corresponding charts in Anypoint Insights, see anypoint-insights.adoc#custom-metrics-chart-config[Custom Metrics for a Mule Application].
+From *Anypoint Insights*, you can configure charts for Mule apps that are configured to produce custom metrics from the application's *Custom Metrics* tab.
 
 Custom metrics are not collected for the app until you configure the xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector] in your application flow and deploy the application to a server or server cluster. 
 
@@ -285,7 +285,7 @@ Before providing a fact name or attempting to rename a metric, keep these best p
 
 * Use unique fact names across applications, and understand limitations on fact name deletions:
 
-** In the *Custom Metrics* tab of the built-in dashboard for an application, fact names defined in one CloudHub application are visible to other applications. 
+** In the *Custom Metrics* tab in Anypoint Insights, fact names defined in one CloudHub application are visible to other applications. 
 +
 Best practice: Provide unique fact names across all CloudHub applications.
 
@@ -297,6 +297,11 @@ Fact names that you remove with the *Send Custom Metric* operation of the Anypoi
 +
 If you use the *Send Custom Metric* operation of the Anypoint Monitoring Custom Metrics Connector with a new metric name, the old metric name continues to appear in the *Custom Metrics* tab. 
 
-== See Also 
+[[endpoint-operation-metrics]]
+== Endpoint and Operation Metrics Collection (Other Group)
+
+include::partial$endpoint-operation-metrics.adoc[]
+
+== See Also
 
 xref:connectors::metrics/custom-metrics-connector-reference.adoc[Anypoint Custom Metrics Connector Reference]
