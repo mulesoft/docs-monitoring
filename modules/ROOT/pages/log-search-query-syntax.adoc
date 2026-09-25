@@ -1,9 +1,11 @@
 = Log Search Query Syntax Reference (US and EU)
+:description: Reference for log search query syntax in Anypoint Monitoring on US and EU clouds, including search terms, modifiers, wildcards, and fuzzy search options.
+:keywords: MuleSoft, Anypoint Monitoring, log search, query syntax, search operators, wildcards, fuzzy search, log search reference
 
 //feature tier:
-include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"] 
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-usage-titanium"]
 
-On https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, fine tune your search by using log query syntax.
+On https://anypoint.mulesoft.com/monitoring[US] and https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds, fine tune your Anypoint Monitoring log search by using log query syntax.
 
 include::monitoring::partial$include-log-search.adoc[tag=search-terms]
 

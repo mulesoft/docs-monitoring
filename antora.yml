@@ -3,3 +3,7 @@ title: Monitoring
 version: ~
 nav:
 - modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    page-product-brand: MuleSoft
+    page-product-name: Anypoint Monitoring

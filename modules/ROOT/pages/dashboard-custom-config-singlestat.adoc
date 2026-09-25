@@ -1,5 +1,7 @@
 = Configuring Singlestats in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
+:description: Configure singlestat charts in Anypoint Monitoring custom dashboards to display a single aggregated metric value for a Mule app or API.
+:keywords: MuleSoft, Anypoint Monitoring, custom dashboards, singlestat chart, aggregated metrics, dashboard visualization, Mule app metrics
 
 Configure singlestat charts for Mule apps and APIs in an Anypoint Monitoring custom dashboard. A singlestat chart displays a single value, such as the value of an Inbound - Average Request Count by Endpoint metric.
 

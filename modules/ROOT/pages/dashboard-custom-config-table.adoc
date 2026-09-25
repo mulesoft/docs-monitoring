@@ -1,7 +1,9 @@
 = Configuring Tables in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
+:description: Configure table charts in Anypoint Monitoring custom dashboards to display detailed metric data for Mule apps and APIs in tabular format.
+:keywords: MuleSoft, Anypoint Monitoring, custom dashboards, table chart, tabular metrics, dashboard visualization, Mule app metrics, API metrics
 
-Configure tables with Mule app and API metrics in custom dashboards. 
+Configure tables with Mule app and API metrics in Anypoint Monitoring custom dashboards. 
 
 image::dashboard-custom-config-table.png["Table chart and configuration view"]
 

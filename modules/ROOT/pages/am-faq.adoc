@@ -1,4 +1,6 @@
 = FAQ: Anypoint Monitoring Logs, Metrics, Performance, and Limits
+:description: Answers to frequently asked questions about logs, metrics, data retention, performance, and limits in Anypoint Monitoring.
+:keywords: MuleSoft, Anypoint Monitoring, FAQ, logs, metrics, data retention, performance limits, troubleshooting, Anypoint Monitoring limits
 :page-tags: anypoint-monitoring, faq, performance, storage, retention, logs, metrics-api, traffic-metrics, capacity-planning
 :page-aliases: performance-and-impact.adoc
 

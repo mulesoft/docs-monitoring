@@ -1,5 +1,7 @@
 = Configuring Text Panels in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
+:description: Configure HTML and Markdown text panels in Anypoint Monitoring custom dashboards to add descriptive context to your visualizations.
+:keywords: MuleSoft, Anypoint Monitoring, custom dashboards, text panel, HTML panel, Markdown panel, dashboard documentation
 
 Configure HTML and Markdown text panels in Anypoint Monitoring custom dashboards.
 

@@ -1,6 +1,8 @@
 = Searching Logs in Anypoint Monitoring
 :page-info-pills: anypoint-pricing-titanium
 :page-aliases: logs-search-hf-india.adoc, logs-jp-ca.adoc
+:description: Search, filter, and analyze aggregated log data for your deployed Mule apps and APIs in Anypoint Monitoring.
+:keywords: MuleSoft, Anypoint Monitoring, log search, log filtering, Mule app logs, API logs, aggregated logs, log analysis
 
 //feature tier:
 Get logs on your Mule apps from Anypoint Monitoring. Anypoint Monitoring aggregates log files so you can manage, search for, filter, and analyze your logs. These features support:

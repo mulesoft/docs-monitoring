@@ -1,4 +1,6 @@
 = Setting Up Monitoring for Hybrid Deployments
+:description: Install and configure the Anypoint Monitoring agent on on-premises servers to monitor Mule apps in hybrid deployments.
+:keywords: MuleSoft, Anypoint Monitoring, hybrid deployment, monitoring agent, on-premises monitoring, agent installation, hybrid setup
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

@@ -1,7 +1,9 @@
 = Generating Real-Time Logs
 :page-info-pills: anypoint-pricing-titanium
+:description: Use Log Points in Anypoint Monitoring to generate real-time logs for Mule apps and APIs on demand, without code changes or redeployment.
+:keywords: MuleSoft, Anypoint Monitoring, Log Points, real-time logs, on-demand logging, Mule app logs, API logs, no redeployment
 
-Generate logs for apps and APIs in real-time and without writing code. For apps, specify the level of logs to generate, and for APIs, specify properties for the logs. This allows you to extract logs on-demand from applications in real-time, without causing redeployment or app downtime. Manage access with permissions control. All logs flow in to log management.
+Generate logs for apps and APIs in real-time and without writing code using Log Points in Anypoint Monitoring. For apps, specify the level of logs to generate, and for APIs, specify properties for the logs. This allows you to extract logs on-demand from applications in real-time, without causing redeployment or app downtime. Manage access with permissions control. All logs flow in to log management.
 
 image::log-points.png["Log Points in Anypoint Monitoring"]
 

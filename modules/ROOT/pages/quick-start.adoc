@@ -1,4 +1,6 @@
 = Getting Started
+:description: Get started with Anypoint Monitoring to view metrics, logs, traces, and alerts for Mule apps, APIs, and agentic assets across your Anypoint Platform environments.
+:keywords: MuleSoft, Anypoint Monitoring, getting started, quick start, Mule app monitoring, API monitoring, metrics, logs, traces, alerts
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

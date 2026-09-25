@@ -1,4 +1,6 @@
 = Anypoint Monitoring Overview
+:description: Anypoint Monitoring provides visibility into Mule apps, APIs, and agentic assets through metrics, logs, traces, alerts, and dashboards across Anypoint Platform environments.
+:keywords: MuleSoft, Anypoint Monitoring, overview, metrics, logs, traces, alerts, dashboards, Mule apps, APIs, agentic assets, Anypoint Platform
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

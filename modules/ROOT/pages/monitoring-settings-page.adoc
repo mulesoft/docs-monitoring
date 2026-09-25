@@ -1,4 +1,6 @@
-= Managing CloudHub and Hybrid Settings 
+= Managing CloudHub and Hybrid Settings
+:description: Manage CloudHub and hybrid deployment settings in Anypoint Monitoring, including agent installation instructions and runtime monitoring configuration.
+:keywords: MuleSoft, Anypoint Monitoring, settings, CloudHub settings, hybrid settings, monitoring configuration, agent installation, deployment settings
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

@@ -1,5 +1,7 @@
 = Getting Performance Metrics from Connectors
 :page-info-pills: anypoint-pricing-titanium
+:description: View performance metrics for supported Anypoint connectors in your Mule apps using Anypoint Monitoring and Anypoint Insights.
+:keywords: MuleSoft, Anypoint Monitoring, connector metrics, Anypoint connectors, connector performance, Mule app connectors, Anypoint Insights, connector monitoring
 
 View performance metrics for supported connectors in your Mule apps in Anypoint Monitoring dashboards. Built-in dashboards and Anypoint Insights support these connector metrics.
 

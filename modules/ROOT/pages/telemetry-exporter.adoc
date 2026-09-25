@@ -1,7 +1,9 @@
 = Exporting Telemetry Data to Third-Party Monitoring Systems
 :page-info-pills: anypoint-pricing-titanium
+:description: Use the Anypoint Monitoring Telemetry Exporter to send Mule app trace data and audit logs to third-party observability platforms like Azure Monitor, Splunk, and OpenTelemetry-compliant tools.
+:keywords: MuleSoft, Anypoint Monitoring, Telemetry Exporter, OpenTelemetry, OTEL, Splunk, Azure Monitor, third-party observability, trace export, audit logs
 
-Export Mule app trace data and xref:access-management::audit-logging.adoc[audit logs] to third-party observability platforms like Azure Monitor, Splunk HEC, and OpenTelemetry-compliant tools.
+Use the Anypoint Monitoring Telemetry Exporter to send Mule app trace data and xref:access-management::audit-logging.adoc[audit logs] to third-party observability platforms like Azure Monitor, Splunk HEC, and OpenTelemetry-compliant tools.
 
 // add a link when trace overview become available
 
