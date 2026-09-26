@@ -1,7 +1,9 @@
 = Monitoring Agentic Assets
+:description: View detailed performance metrics for agentic assets — agents, brokers, and MCP servers — in MuleSoft Anypoint Monitoring using Anypoint Insights.
+:keywords: MuleSoft, Anypoint Monitoring, Anypoint Insights, agentic assets, agents, brokers, MCP servers, agentic metrics, Agent Visualizer
 
 //TODO: CHECK IF API MANAGER OR ANY OTHER PRODUCT OPENS TO THIS PAGE
-In US and EU Cloud instances of Anypoint Platform, navigate from Agent Visualizer to view detailed metrics on agentic assets (agent, broker, or MCP server instances).
+In Anypoint Monitoring, navigate from Agent Visualizer to view detailed metrics on agentic assets (agent, broker, or MCP server instances) on US and EU Cloud instances of Anypoint Platform.
 
 * Agent: An autonomous software component that uses goals, context, and available tools (often via an LLM) to decide and execute actions on behalf of a user or system.
 * Broker: An intelligent routing service that coordinates task delegation across specialized agents in your enterprise. Brokers originate from MuleSoft and are referenced in the agent network YAML. 

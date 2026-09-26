@@ -1,4 +1,6 @@
 = Dashboard Configuration Reference
+:description: Reference for predefined values, identifiers, and configuration options for custom dashboards in MuleSoft Anypoint Monitoring.
+:keywords: MuleSoft, Anypoint Monitoring, custom dashboards, dashboard configuration, dashboard reference, metrics configuration, advanced mode
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

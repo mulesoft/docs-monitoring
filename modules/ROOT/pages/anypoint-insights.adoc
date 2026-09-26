@@ -1,6 +1,8 @@
 = Monitoring Metrics from Anypoint Insights
 :selector-all-dashboards: This selector is available to all Insights dashboards.
 :download-chart-data: You can download most chart data to CSV or XSL.
+:description: Use Anypoint Insights in MuleSoft Anypoint Monitoring to view standard, predefined performance metrics for your Mule apps and API implementations across all environments.
+:keywords: MuleSoft, Anypoint Monitoring, Anypoint Insights, app metrics, API metrics, performance metrics, standard dashboards, predefined dashboards, Mule app monitoring
 
 Monitor performance data and issues across your deployed Mule apps and API implementations (_entities_) with Anypoint Insights, in Anypoint Monitoring: 
 

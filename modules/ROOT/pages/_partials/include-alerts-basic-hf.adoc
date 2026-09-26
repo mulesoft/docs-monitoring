@@ -4,7 +4,7 @@
 //In the https://ca1.platform.mulesoft.com/monitoring[Canada] and https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds, create and receive alert notifications for your deployed resources (Mule app and APIs). 
 //In https://in1.platform.mulesoft.com/login/[India] Cloud, create and receive alert notifications for your deployed resources (Mule app and APIs). 
 
-Create and receive alert notifications for your deployed resources (Mule apps and APIs). 
+Create and receive alert notifications in Anypoint Monitoring for your deployed Mule apps and APIs.
 
 [[alerts-overview]]
 //don't change order of numbers in graphic or calloutlist

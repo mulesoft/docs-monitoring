@@ -1,5 +1,7 @@
 = Using Logs in Anypoint Monitoring
 :page-aliases: logs-using.adoc
+:description: Access and manage logs for deployed Mule apps in MuleSoft Anypoint Monitoring, including log search, log points, and raw data downloads.
+:keywords: MuleSoft, Anypoint Monitoring, logs, log management, log search, log points, raw log data, Mule app logging
 
 Use Anypoint Monitoring to retrieve logs on your deployed applications. 
 

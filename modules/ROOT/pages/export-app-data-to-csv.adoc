@@ -1,6 +1,8 @@
 = Exporting App Data to a CSV File
+:description: Export chart data from MuleSoft Anypoint Monitoring custom dashboards to CSV for further analysis or reporting.
+:keywords: MuleSoft, Anypoint Monitoring, export data, CSV export, custom dashboards, chart data, data download
 
-In custom dashboards, you can export chart data to a CSV file. If you apply a filter to a dashboard, the exported data includes only the data included in the filter you set, such as a time-range filter.
+In Anypoint Monitoring custom dashboards, you can export chart data to a CSV file. If you apply a filter to a dashboard, the exported data includes only the data included in the filter you set, such as a time-range filter.
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
