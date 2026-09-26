@@ -1,6 +1,6 @@
 = Setting Up Integration Intelligence
 :page-info-pills: anypoint-pricing-titanium
-:description: Set up Integration Intelligence to extend Anypoint Monitoring telemetry into the Salesforce ecosystem for long-term analytics, AI-powered insights, and deeper data retention.
+:description: Set up Integration Intelligence to extend MuleSoft Anypoint Monitoring telemetry into the Salesforce ecosystem for long-term analytics, AI-powered insights, and deeper data retention.
 :keywords: MuleSoft, Anypoint Monitoring, Integration Intelligence, setup, Salesforce Data 360, telemetry, Diagnostics Agent, AI-powered insights, long-term analytics
 
 Integration Intelligence enhances monitoring, analysis, and troubleshooting of MuleSoft integrations by extending Anypoint Monitoring telemetry with AI-powered capabilities.

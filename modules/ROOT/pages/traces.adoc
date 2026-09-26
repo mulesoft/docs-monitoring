@@ -3,7 +3,7 @@
 :page-info-pills: anypoint-pricing-titanium
 :entities: agents, brokers, MCP servers, and Mule apps
 :auto-refresh: every 5, 15, or 30 minutes, every hour, or one time per day
-:description: Use Traces in Anypoint Monitoring to track the flow of requests through service pipelines, troubleshoot errors, and optimize performance using OpenTelemetry span data.
+:description: Use Traces in MuleSoft Anypoint Monitoring to track the flow of requests through service pipelines, troubleshoot errors, and optimize performance using OpenTelemetry span data.
 :keywords: MuleSoft, Anypoint Monitoring, traces, distributed tracing, OpenTelemetry, OTEL, service pipelines, request tracing, span data, troubleshooting
 
 On US and EU Cloud instances of Anypoint Platform, use Traces in Anypoint Monitoring to track the flow of requests that travel through service pipelines. Get data from the Open Telemetry (OTEL) spans that form your traces. Troubleshoot requests with errors or slow response times, optimize your resource allocation, and track calls end-to-end. Monitor the performance of a specific transaction as it travels through services. 

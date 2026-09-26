@@ -1,6 +1,6 @@
 = Setting Up Monitoring for CloudHub Deployments
 :page-aliases: enable-apps-deployed-to-cloud.adoc
-:description: Configure Anypoint Monitoring for Mule apps deployed to CloudHub and CloudHub 2.0, including supported Mule runtime versions and path normalization settings.
+:description: Configure MuleSoft Anypoint Monitoring for Mule apps deployed to CloudHub and CloudHub 2.0, including supported Mule runtime versions and path normalization settings.
 :keywords: MuleSoft, Anypoint Monitoring, CloudHub, CloudHub 2.0, monitoring setup, Mule runtime, CloudHub monitoring, path normalization
 
 Enable and configure Anypoint Monitoring for Mule apps deployed to CloudHub. For CloudHub 2.0, Anypoint Monitoring is enabled by default.

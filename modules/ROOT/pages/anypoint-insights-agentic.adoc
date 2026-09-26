@@ -1,5 +1,5 @@
 = Monitoring Agentic Assets
-:description: View detailed performance metrics for agentic assets — agents, brokers, and MCP servers — in Anypoint Monitoring using Anypoint Insights.
+:description: View detailed performance metrics for agentic assets — agents, brokers, and MCP servers — in MuleSoft Anypoint Monitoring using Anypoint Insights.
 :keywords: MuleSoft, Anypoint Monitoring, Anypoint Insights, agentic assets, agents, brokers, MCP servers, agentic metrics, Agent Visualizer
 
 //TODO: CHECK IF API MANAGER OR ANY OTHER PRODUCT OPENS TO THIS PAGE

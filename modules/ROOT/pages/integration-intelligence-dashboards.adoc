@@ -1,7 +1,7 @@
 = Getting Analytics and Insights with Integration Intelligence
 :page-info-pills: anypoint-pricing-titanium
 :visualizations: Visualizations are visual representations of your data as a chart or graph.
-:description: Use Integration Intelligence dashboards in the Salesforce ecosystem to analyze Mule app and API metrics from Anypoint Monitoring and get insights into related business data.
+:description: Use Integration Intelligence dashboards in the Salesforce ecosystem to analyze Mule app and API metrics from MuleSoft Anypoint Monitoring and get insights into related business data.
 :keywords: MuleSoft, Anypoint Monitoring, Integration Intelligence, dashboards, Salesforce ecosystem, Mule app analytics, API analytics, business insights
 
 Use dashboards in the Salesforce ecosystem to analyze Mule app and API metrics from Anypoint Monitoring, and get insights into related business data.

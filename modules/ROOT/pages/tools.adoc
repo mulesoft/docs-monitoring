@@ -1,9 +1,9 @@
 = Sending Alert Notifications to External Systems
 :page-info-pills: anypoint-pricing-titanium
-:description: Use Anypoint Monitoring to find and configure connectors from Anypoint Exchange that deliver alert notifications to external systems such as PagerDuty and Slack.
+:description: Use MuleSoft Anypoint Monitoring to find and configure connectors from Anypoint Exchange that deliver alert notifications to external systems such as PagerDuty and Slack.
 :keywords: MuleSoft, Anypoint Monitoring, external notifications, PagerDuty, Slack, alert connectors, Anypoint Exchange, notification tools
 
-Anypoint Monitoring provides links to connectors on Anypoint Exchange that you can incorporate into a Mule app to deliver notifications to external systems.
+Anypoint Monitoring provides links to connectors on Anypoint Exchange that you can incorporate into a Mule app to deliver alert notifications to external systems.
 
 //image::tools.png["Tools in Anypoint Monitoring"]
 

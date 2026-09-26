@@ -1,6 +1,6 @@
 = Viewing Reports in Anypoint Monitoring
 :page-info-pills: anypoint-pricing-titanium
-:description: View and download reports on Mule app performance, requests, failures, CPU, and memory utilization across environments in Anypoint Monitoring.
+:description: View and download reports on Mule app performance, requests, failures, CPU, and memory utilization across environments in MuleSoft Anypoint Monitoring.
 :keywords: MuleSoft, Anypoint Monitoring, reports, Mule app reports, performance reports, CPU utilization, memory utilization, app failures, monitoring reports
 
 View and download reports on Mule app performance, requests, failures, and resource utilization across environments in Anypoint Monitoring.

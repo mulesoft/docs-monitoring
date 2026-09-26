@@ -1,11 +1,11 @@
 = Managing Permissions for Anypoint Monitoring
-:description: Manage user permissions to control access to Anypoint Monitoring features such as dashboards, alerts, and logs.
+:description: Manage user permissions to control access to MuleSoft Anypoint Monitoring features such as dashboards, alerts, and logs.
 :keywords: MuleSoft, Anypoint Monitoring, permissions, access control, monitoring roles, Anypoint Access Management, user permissions
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Monitoring has product-specific permissions that control access to its assets:
+Manage access to Anypoint Monitoring features — including dashboards, alerts, and logs — using these product-specific permissions:
 
 //all monitoring permissions
 include::access-management::partial$include-permissions-monitoring.adoc[tag=permsMonitoringAll]

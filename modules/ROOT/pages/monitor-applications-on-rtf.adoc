@@ -1,5 +1,5 @@
 = Setting Up Monitoring for Runtime Fabric Deployments
-:description: Configure Anypoint Monitoring for Mule apps deployed to Runtime Fabric, including supported Mule runtime versions and setup requirements.
+:description: Configure MuleSoft Anypoint Monitoring for Mule apps deployed to Runtime Fabric, including supported Mule runtime versions and setup requirements.
 :keywords: MuleSoft, Anypoint Monitoring, Runtime Fabric, RTF monitoring, Mule app monitoring, Runtime Fabric deployment, monitoring setup
 
 Anypoint Monitoring is enabled by default for applications deployed to Runtime Fabric.

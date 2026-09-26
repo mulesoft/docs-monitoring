@@ -1,7 +1,7 @@
 = Configuring Alerts in Anypoint Monitoring
 :page-info-pills: anypoint-pricing-core
 :page-aliases: alerts-jp-ca.adoc, alerts-us-eu.adoc, alerts.adoc, basic-alerts.adoc
-:description: Configure and manage alerts in Anypoint Monitoring to get notified when app or API metrics exceed defined thresholds.
+:description: Configure and manage alerts in MuleSoft Anypoint Monitoring to get notified when app or API metrics exceed defined thresholds.
 :keywords: MuleSoft, Anypoint Monitoring, alerts, alert notifications, threshold alerts, Mule app alerts, API alerts, alert conditions
 
 //content is no longer shared but no pressing need to remove:

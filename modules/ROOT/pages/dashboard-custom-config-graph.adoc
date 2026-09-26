@@ -1,6 +1,6 @@
 = Configuring Graphs in a Custom Dashboard
 :page-info-pills: anypoint-pricing-titanium
-:description: Configure graph charts in Anypoint Monitoring custom dashboards, including metrics, axes, display options, and advanced multi-metric configurations.
+:description: Configure graph charts in MuleSoft Anypoint Monitoring custom dashboards, including metrics, axes, display options, and advanced multi-metric configurations.
 :keywords: MuleSoft, Anypoint Monitoring, custom dashboards, graph charts, dashboard visualization, metrics charts, advanced mode, multi-metric graphs
 
 Configure metrics data in a graph. A custom dashboard graph in Anypoint Monitoring displays metrics for a Mule app or API.

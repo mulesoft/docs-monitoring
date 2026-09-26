@@ -1,6 +1,6 @@
 = Using Custom Dashboards to Monitor Metrics
 :page-aliases: dashboards.adoc
-:description: Create and use custom dashboards in Anypoint Monitoring to visualize the app and API metrics that matter most to your organization.
+:description: Create and use custom dashboards in MuleSoft Anypoint Monitoring to visualize the app and API metrics that matter most to your organization.
 :keywords: MuleSoft, Anypoint Monitoring, custom dashboards, dashboard creation, metrics visualization, Mule app dashboards, API dashboards, no-data troubleshooting
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
