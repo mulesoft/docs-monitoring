@@ -1,7 +1,7 @@
 = Getting Performance Metrics from Connectors
 :page-info-pills: anypoint-pricing-titanium
 
-View performance metrics for supported connectors in your Mule apps in Anypoint Monitoring dashboards. Built-in dashboards and Anypoint Insights support these connector metrics.
+View performance metrics for supported connectors in your Mule apps in Anypoint Monitoring dashboards.
 
 //TODO: THIS PAGE NEEDS AN UPDATE -- ALL CONNECTORS WILL BE JAVA 17 AT SOME POINT
 
