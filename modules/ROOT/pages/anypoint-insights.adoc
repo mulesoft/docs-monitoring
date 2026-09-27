@@ -369,8 +369,6 @@ By default, the date period in dashboards with detailed metrics on specific enti
 
 By default, the auto-refresh interval in dashboards with detailed metrics on specific entities matches the time period interval for cross-entity charts in the *Anypoint Insights* overview. 
 
-To find the equivalent charts in Anypoint Insights, see <<dashboard-chart-mapping, Chart Mapping from Built-in Dashboards>>.
-
 [[entity-metrics-app-header]]
 ==== Mule Application Metrics
 
@@ -452,8 +450,6 @@ include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
 Monitor apps that use your organization’s custom metrics for a Mule app. Adjust settings of the charts that use your custom metrics.
 
-Custom dashboards in Anypoint Insights aren't available at this time. 
-
 ===== Before You Begin
 
 Meet subscription tier and Mule runtime version requirements:
@@ -472,7 +468,7 @@ To create custom metrics, use the Anypoint Custom Metrics Connector in your app 
 To adjust the custom metrics settings of a Mule app chart in Anypoint Insights:
 
 . From a Mule app listed in Anypoint Insights, click the *Custom Metrics* tab.
-. Select a value these fields, and then click *Apply* to update the chart:
+. Select a value for these fields, and then click *Apply* to update the chart:
 
 * *Aggregations* values include:
 
