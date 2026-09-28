@@ -105,11 +105,11 @@ Retention (how long data is stored) and the lookback window (how far back you ca
 
 |Advanced and Titanium
 |365 days
-|Up to 7 days for high-level metrics; up to 90 days for individual app and API metrics
+|Up to 7 days for cross-entity overview metrics (aggregate totals across all apps and APIs, such as total requests and error rate); up to 90 days for individual app and API metrics
 
 |Starter
 |30 days
-|Up to 24 hours for high-level metrics; up to 30 days for individual app and API metrics
+|Up to 24 hours for cross-entity overview metrics; up to 30 days for individual app and API metrics
 
 |Gold/Platinum
 |30 days
