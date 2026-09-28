@@ -229,12 +229,9 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |Yes
 
 
-|<<note-visualizer, *Application Network tab*>> for Anypoint Visualizer app network integration data in Anypoint Monitoring 
-|No
-|No
-|Yes
 
-|xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
+//TODO: VERIFY THIS RETENTION PERIOD FOR CORE-BASED PLANS
+|xref:monitoring::am-faq.adoc#storage-and-retention[Data retention] for more than 30 days
 |No
 |No
 |Yes
@@ -261,7 +258,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |xref:alerts-hf.adoc[Basic alerts] for apps, servers, and APIs
 |Yes
 |Yes
-|Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
+|Yes, with xref:am-faq.adoc#alert-limits[higher limits]
 
 |xref:dashboard-custom-config.adoc#alerts-custom-dashboards[Alerts for Custom Dashboards]
 |No
@@ -323,11 +320,6 @@ These events contain more detailed information about each API invocation and can
 
 For more information about this API, see https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/home/[Anypoint Monitoring Archive API] in Anypoint Exchange.
 
-[[note-visualizer]]
-NOTE:
---
-API Visualizer (formerly Anypoint Visualizer) app network integration refers to features in the *Application Network* tab within Anypoint Monitoring. API Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
---
 
 == Use Cases
 
@@ -355,6 +347,9 @@ Support engineer Carole searches through Anypoint Monitoring logs and notices so
 * Visualize regional or project-based consumption +
 Business owner Devon has apps across different runtime planes. He has aggregated dashboards of the regional or project-specific apps, and he can easily determine what is consuming the most resources and evangelize accordingly.
 
+
+////
+NOT NEEDED WHEN BUILT_IN DASHBOARDS GO AWAY
 [[classic]]
 == Classic and Enhanced Monitoring Views
 
@@ -401,6 +396,7 @@ On EU and US Clouds, Anypoint Monitoring provides access to features from Classi
 ** *Log Points*
 
 |===
+////
 
 [[see-also]]
 == See Also

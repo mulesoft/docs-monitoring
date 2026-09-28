@@ -6,6 +6,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+//TODO: Follow up with engineering to determine whether it is possible to provide JSON templates that customers can import to recreate their built-in dashboards as custom dashboards. If yes, add guidance and link to templates here.
 Use custom dashboards in Anypoint Monitoring to monitor the resources and metrics you choose across your Mule apps and APIs. For standard, predefined dashboards, see xref:anypoint-insights.adoc[Anypoint Insights].
 
 == Custom Dashboards

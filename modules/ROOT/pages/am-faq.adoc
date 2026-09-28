@@ -21,6 +21,7 @@ The expected CPU utilization from the Mule monitoring agent is less than 5% base
 Anypoint Monitoring collects data asynchronously at a one-minute resolution, so monitoring activity does not block Mule runtime data processing.
 For deployment-specific configuration, see xref:configure-monitoring-cloudhub.adoc#performance-impact[Configure and Enable Anypoint Monitoring for Mule Apps (CloudHub)].
 
+[[storage-and-retention]]
 == Storage and Retention
 
 Storage and retention limits vary by subscription tier and data type.
@@ -98,10 +99,26 @@ When storage reaches capacity, the oldest logs are deleted first to reclaim spac
 
 Retention for application metrics depends on your subscription tier:
 
-//SME REVIEW: Verify these retention periods are correct for Anypoint Insights now that built-in dashboards are removed. Previous value was 365 days for Advanced/Titanium in built-in dashboards.
-* *Anypoint Integration Advanced and Titanium* — Up to 7 days for high-level metrics and up to 30 days for individual app and API metrics in xref:anypoint-insights.adoc[Anypoint Insights].
-* *Anypoint Integration Starter* — Up to 24 hours for high-level metrics and up to 30 days for individual app and API metrics in xref:anypoint-insights.adoc[Anypoint Insights].
-* *Anypoint Integration Gold/Platinum* — 30 days.
+Retention (how long data is stored) and the lookback window (how far back you can query in the xref:anypoint-insights.adoc[Anypoint Insights] UI) are separate limits.
+
+[%header,cols="3,2,2"]
+|===
+|Tier |Data retention |Anypoint Insights lookback window (individual app and API metrics)
+
+|Advanced and Titanium
+|365 days
+|Up to 90 days
+
+|Starter
+|30 days
+|Up to 30 days
+
+|Gold/Platinum
+|30 days
+|30 days
+|===
+
+NOTE: The cross-entity overview page in Anypoint Insights — which shows aggregate totals across all apps and APIs, such as total requests and error rate — has a maximum lookback window of 7 days for all subscription tiers.
 
 [[enhanced-api-metrics-retention]]
 === How long does Anypoint Monitoring retain enhanced API metrics?
@@ -245,6 +262,7 @@ NOTE: Anypoint DataGraph usage metrics are an exception — DataGraph provides a
 This aggregation applies only to DataGraph, not to general Mule application traffic.
 See xref:datagraph::usage-metrics.adoc[Viewing Usage Metrics for Anypoint DataGraph].
 
+[[logging-data-management]]
 == Log Management
 
 Learn how logs are stored, constraints on log line length, deletion behavior, and how to retrieve log data.
@@ -398,7 +416,6 @@ Each pod uses one connection.
 All deployment targets include a basic level of monitoring with the base subscription.
 Runtime Fabric requires a Platinum subscription for general monitoring.
 Certain features, such as logging, require a Titanium subscription.
-For details, see xref:performance-and-impact.adoc[Understanding Performance Impact, Limits, and Data Retention].
 
 == Subscription Changes
 
@@ -433,7 +450,6 @@ To retrieve metrics data before it is removed, use the link:https://anypoint.mul
 * xref:index.adoc[Anypoint Monitoring]
 * xref:logs.adoc[Logs in Anypoint Monitoring]
 * link:https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/metrics-api/[Anypoint Monitoring Metrics API]
-* xref:performance-and-impact.adoc[Understanding Performance Impact, Limits, and Data Retention]
 * xref:configure-monitoring-cloudhub.adoc[Configure and Enable Anypoint Monitoring for Mule Apps (CloudHub)]
 * xref:anypoint-insights.adoc[Anypoint Insights]
 * link:https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/home/[Anypoint Monitoring Archive API]

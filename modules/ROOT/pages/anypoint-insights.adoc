@@ -3,15 +3,16 @@
 :download-chart-data: You can download most chart data to CSV or XSL.
 :description: Use Anypoint Insights in MuleSoft Anypoint Monitoring to view standard, predefined performance metrics for your Mule apps and API implementations across all environments.
 :keywords: MuleSoft, Anypoint Monitoring, Anypoint Insights, app metrics, API metrics, performance metrics, standard dashboards, predefined dashboards, Mule app monitoring
+:page-aliases: app-dashboards.adoc, api-dashboard.adoc, save-builtin-dashboard-as-custom.adoc
 
 Monitor performance data and issues across your deployed Mule apps and API implementations (_entities_) with Anypoint Insights, in Anypoint Monitoring: 
 
 * Check metrics across multiple Mule apps and API implementations.
 +
-Get up to the last 7 days (Advanced package) or 24 hours (Starter package) of high-level metrics on requests, errors, and responses. Use filters to narrow your results. {download-chart-data}
+Get up to the last 7 days of aggregate metrics on requests, errors, and responses across all your apps and APIs. This lookback limit applies to all subscription tiers. Use filters to narrow your results. {download-chart-data}
 * Check metrics on individual Mule apps and API implementations.
 +
-Get up to the last 30 days of metrics on latency, requests, responses, errors, Mule messages and the JVM for Mule apps, and for API implementations, data on policy violations, performance, and client apps. {download-chart-data}
+Get up to the last 90 days (Advanced and Titanium) or 30 days (other tiers) of metrics on latency, requests, responses, errors, Mule messages and the JVM for Mule apps, and for API implementations, data on policy violations, performance, and client apps. {download-chart-data}
 
 [[entities]]
 include::partial$include-entities.adoc[tags="entity-definition"]
@@ -42,7 +43,7 @@ For Advanced and Titanium subscription tiers, Integration Intelligence is access
 
 Required prerequisites:
 
-* An Anypoint Platform account in a control plane that supports Anypoint Insights:
+* An Anypoint Platform account in a control plane that supports Anypoint Insights (see xref:index.adoc#features[Monitoring Features by Control Plane]):
 
 ** {empty}
 include::partial$include-entities.adoc[tags="anypoint-regions-hyperforce"] 
@@ -53,6 +54,7 @@ include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 ** https://in1.platform.mulesoft.com/login/[India Cloud]
 
 
+//TODO: Determine which specific Mule runtime versions support the metrics available in Anypoint Insights — the current link to release notes does not specify this.
 * A Mule app or API (xref:gateway-home::index.adoc[Mule Gateway or Omni Gateway API]) running on a supported version of Mule runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
 
 ** CloudHub 2.0
@@ -371,8 +373,6 @@ By default, the date period in dashboards with detailed metrics on specific enti
 
 By default, the auto-refresh interval in dashboards with detailed metrics on specific entities matches the time period interval for cross-entity charts in the *Anypoint Insights* overview. 
 
-To find the equivalent charts in Anypoint Insights, see <<dashboard-chart-mapping, Chart Mapping from Built-in Dashboards>>.
-
 [[entity-metrics-app-header]]
 ==== Mule Application Metrics
 
@@ -446,6 +446,15 @@ include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tag="app-detail-jvm"]
 
+[[entity-metrics-app-infrastructure]]
+==== Infrastructure Metrics for a Mule Application
+
+Charts with infrastructure metrics are available in the *Infrastructure* tab for a Mule app in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tag="app-detail-infrastructure"]
+
 [[entity-metrics-app-custom-metrics]]
 ==== Custom Metrics for a Mule Application
 
@@ -453,8 +462,6 @@ include::partial$include-insights-charts.adoc[tag="app-detail-jvm"]
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
 Monitor apps that use your organization’s custom metrics for a Mule app. Adjust settings of the charts that use your custom metrics.
-
-Custom dashboards in Anypoint Insights aren't available at this time. 
 
 ===== Before You Begin
 
@@ -474,7 +481,7 @@ To create custom metrics, use the Anypoint Custom Metrics Connector in your app 
 To adjust the custom metrics settings of a Mule app chart in Anypoint Insights:
 
 . From a Mule app listed in Anypoint Insights, click the *Custom Metrics* tab.
-. Select a value these fields, and then click *Apply* to update the chart:
+. Select a value for these fields, and then click *Apply* to update the chart:
 
 * *Aggregations* values include:
 
@@ -600,6 +607,8 @@ Anypoint Monitoring charts display data in configurable date-time ranges, which 
 === Data Points in Anypoint Monitoring Charts
 
 Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. If the time units for data in your charts are larger or smaller than you require, try narrowing or expanding the time range that your charts capture. Alternatively, you can use the <<metrics-api, Metrics API>> to aggregate data within the API's limits.
+
+To ensure charts are plotted continuously without interruptions, all average response time charts use a straight line to connect the last available value that precedes a period of app or API inactivity with the next available value. To understand activity in average response time charts, consider behavior in related charts, such as request counts, to get a holistic idea of your API or app's activity.
 
 //include for How Anypoint Monitoring Collects Metrics
 [[data-collection-intervals]]
