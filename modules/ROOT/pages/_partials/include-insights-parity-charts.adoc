@@ -223,12 +223,12 @@ _(Charts in this tab also appear in Overview, Inbound, and Outbound tabs)_
                                     | *CPU Utilization*
     | *JVM - Heap Used*             | *Heap Usage*
     | *JVM Thread Count*            | *Thread Count*
-//TODO: VERIFY with Vimil Saju — the feature parity spreadsheet marks these 5 charts as "Completed" in Insights but does not name the equivalent charts. Update from N/A once confirmed.
-    | *Total System Processors* 2+| N/A
-    | *System Memory*           2+| N/A
-    | *System CPU % Utilization* 2+| N/A
-    | *JVM CPU Time*            2+| N/A
-    | *Operating System Swap Space* 2+| N/A
+    | *Total System Processors* .5+| xref:anypoint-insights.adoc#entity-metrics-app-infrastructure[*Infrastructure*]
+                                    | *Total System Processors*
+    | *System Memory*               | *Total System Memory* and *Free System Memory*
+    | *System CPU % Utilization*    | *System CPU % Utilization*
+    | *JVM CPU Time*                | *JVM - CPU Time*
+    | *Operating System Swap Space* | *Total Swap Space* and *Free Swap Space*
 
 | *Application Network*
     | *App network visualization* 2+| No equivalent in Anypoint Insights. Use xref:docs-visualizer::index.adoc[API Visualizer (formerly Anypoint Visualizer)] to visualize app network data.

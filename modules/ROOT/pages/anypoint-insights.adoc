@@ -444,6 +444,15 @@ include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tag="app-detail-jvm"]
 
+[[entity-metrics-app-infrastructure]]
+==== Infrastructure Metrics for a Mule Application
+
+Charts with infrastructure metrics are available in the *Infrastructure* tab for a Mule app in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tag="app-detail-infrastructure"]
+
 [[entity-metrics-app-custom-metrics]]
 ==== Custom Metrics for a Mule Application
 

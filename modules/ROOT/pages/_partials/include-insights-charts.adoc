@@ -477,9 +477,8 @@ CPU Utilization::
 CPU work as a percentage of total CPU time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
-//TODO: Verify RTF CPU measurement behavior (pod vs node) with Vimil Saju before uncommenting the NOTE below.
-//+
-//NOTE: This metric reflects JVM CPU usage, not system-level CPU. It may differ from CPU values shown in CloudWatch or Runtime Manager, which measure system CPU across all processes. On Runtime Fabric, CPU is measured against the whole node rather than the pod limit, so values may appear lower than expected relative to the pod's allocated resources.
++
+NOTE: This metric reflects JVM CPU usage, not system-level CPU. It may differ from CPU values shown in CloudWatch or Runtime Manager, which measure system CPU across all processes. On Runtime Fabric, CPU is measured against the whole node rather than the pod limit, so values may appear lower than expected relative to the pod's allocated resources.
 
 [[chart-jvm-classes-loaded]]
 Classes Loaded::
@@ -553,6 +552,42 @@ Megabytes (MB) of memory for G1 Old Generation by worker. G1 Old Generation is p
 //TODO: VERIFY, No EXAMPLE AVAILABLE
 
 //end::app-detail-jvm[]
+//------------------------------------------------------//
+
+//  APP DETAIL INFRASTRUCTURE: Infrastructure tab
+//tag::app-detail-infrastructure[]
+
+[[chart-infra-total-system-processors]]
+Total System Processors::
+Number of processors available to the JVM on the host system
+
+[[chart-infra-total-system-memory]]
+Total System Memory::
+Total physical memory available on the host system, in bytes
+
+[[chart-infra-free-system-memory]]
+Free System Memory::
+Amount of free physical memory on the host system, in bytes
+
+[[chart-infra-system-cpu-utilization]]
+System CPU % Utilization::
+CPU utilization as a percentage of total system CPU across all processes on the host
++
+NOTE: This metric measures system-level CPU, not JVM CPU. It may differ from the *CPU Utilization* chart in the *JVM* tab, which measures only JVM CPU usage.
+
+[[chart-infra-jvm-cpu-time]]
+JVM - CPU Time::
+Cumulative CPU time consumed by the JVM, in nanoseconds
+
+[[chart-infra-total-swap-space]]
+Total Swap Space::
+Total swap space available on the host system, in bytes
+
+[[chart-infra-free-swap-space]]
+Free Swap Space::
+Amount of free swap space on the host system, in bytes
+
+//end::app-detail-infrastructure[]
 //------------------------------------------------------//
 
 //========================//

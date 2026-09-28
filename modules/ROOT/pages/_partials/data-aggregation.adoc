@@ -1,2 +1,0 @@
-//TODO: This partial is no longer included anywhere. Its content is covered by the existing sentence in anypoint-insights.adoc [[automatic-interval]] (Data Points in Anypoint Monitoring Charts): "Anypoint Monitoring charts aggregate data into data points along a horizontal Time axis. The number of data points shown in a chart varies based on your selected time interval." No merge needed — delete this file.
-Anypoint Monitoring aggregates data in charts based on the selected time interval. The number of data points shown in a chart varies based on your selected time interval.
