@@ -606,7 +606,7 @@ Anypoint Monitoring charts display data in configurable date-time ranges, which 
 
 Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. If the time units for data in your charts are larger or smaller than you require, try narrowing or expanding the time range that your charts capture. Alternatively, you can use the <<metrics-api, Metrics API>> to aggregate data within the API's limits.
 
-To ensure charts are plotted continuously without interruptions, all average response time charts use a straight line to connect the last available value that precedes a period of app or API inactivity with the next available value. To understand activity in average response time charts, consider behavior in related charts, such as request counts, to get a holistic idea of your API or app's activity.
+To make sure charts are plotted continuously, average response time charts use a straight line to connect the last data point before an app or API goes inactive with the next data point. To understand activity in average response time charts, review related charts, such as request counts, for a complete picture of your app or API's activity.
 
 //include for How Anypoint Monitoring Collects Metrics
 [[data-collection-intervals]]

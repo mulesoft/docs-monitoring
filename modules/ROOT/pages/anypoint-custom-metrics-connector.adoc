@@ -253,7 +253,7 @@ image::custom-metric-custom-dashboard-graph.png["Two line charts showing revenue
 
 == Configure Charts with Custom Metrics
 
-From *Anypoint Insights*, you can configure charts for Mule apps that are configured to produce custom metrics from the application's *Custom Metrics* tab.
+From *Anypoint Insights*, you can configure charts for Mule apps that produce custom metrics from the application's *Custom Metrics* tab.
 
 Custom metrics are not collected for the app until you configure the xref:connectors::metrics/custom-metrics-connector.adoc[Custom Metrics Connector] in your application flow and deploy the application to a server or server cluster. 
 
