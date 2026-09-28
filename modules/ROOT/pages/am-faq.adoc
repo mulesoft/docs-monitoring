@@ -129,7 +129,6 @@ Anypoint Monitoring retains enhanced API metrics for 30 days across all subscrip
 NOTE: Metrics data can persist beyond the stated retention period. Data is removed when the automated cleanup cycle runs.
 
 [[custom-metrics-retention]]
-//SME: TODO: VERIFY 365 RETENTION FOR CUSTOM METRICS
 === How long does Anypoint Monitoring retain custom metrics?
 
 For Anypoint Integration Advanced and Titanium subscribers, Anypoint Monitoring retains custom metrics for 365 days in production environments.
