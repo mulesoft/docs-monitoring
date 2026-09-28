@@ -477,6 +477,9 @@ CPU Utilization::
 CPU work as a percentage of total CPU time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
+//TODO: Verify RTF CPU measurement behavior (pod vs node) with Vimil Saju before uncommenting the NOTE below.
+//+
+//NOTE: This metric reflects JVM CPU usage, not system-level CPU. It may differ from CPU values shown in CloudWatch or Runtime Manager, which measure system CPU across all processes. On Runtime Fabric, CPU is measured against the whole node rather than the pod limit, so values may appear lower than expected relative to the pod's allocated resources.
 
 [[chart-jvm-classes-loaded]]
 Classes Loaded::

@@ -1,6 +1,7 @@
 = Monitoring Metrics from Anypoint Insights
 :selector-all-dashboards: This selector is available to all Insights dashboards.
 :download-chart-data: You can download most chart data to CSV or XSL.
+:page-aliases: app-dashboards.adoc, api-dashboard.adoc, save-builtin-dashboard-as-custom.adoc
 
 Monitor performance data and issues across your deployed Mule apps and API implementations (_entities_) with Anypoint Insights, in Anypoint Monitoring: 
 
@@ -40,7 +41,7 @@ For Advanced and Titanium subscription tiers, Integration Intelligence is access
 
 Required prerequisites:
 
-* An Anypoint Platform account in a control plane that supports Anypoint Insights:
+* An Anypoint Platform account in a control plane that supports Anypoint Insights (see xref:index.adoc#features[Monitoring Features by Control Plane]):
 
 ** {empty}
 include::partial$include-entities.adoc[tags="anypoint-regions-hyperforce"] 
@@ -51,6 +52,7 @@ include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 ** https://in1.platform.mulesoft.com/login/[India Cloud]
 
 
+//TODO: Determine which specific Mule runtime versions support the metrics available in Anypoint Insights — the current link to release notes does not specify this.
 * A Mule app or API (xref:gateway-home::index.adoc[Mule Gateway or Omni Gateway API]) running on a supported version of Mule runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
 
 ** CloudHub 2.0
@@ -594,6 +596,8 @@ Anypoint Monitoring charts display data in configurable date-time ranges, which 
 === Data Points in Anypoint Monitoring Charts
 
 Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. If the time units for data in your charts are larger or smaller than you require, try narrowing or expanding the time range that your charts capture. Alternatively, you can use the <<metrics-api, Metrics API>> to aggregate data within the API's limits.
+
+To ensure charts are plotted continuously without interruptions, all average response time charts use a straight line to connect the last available value that precedes a period of app or API inactivity with the next available value. To understand activity in average response time charts, consider behavior in related charts, such as request counts, to get a holistic idea of your API or app's activity.
 
 //include for How Anypoint Monitoring Collects Metrics
 [[data-collection-intervals]]

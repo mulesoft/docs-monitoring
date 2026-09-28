@@ -41,7 +41,7 @@
     | *Requests by ClientID* .3+| xref:anypoint-insights.adoc#entity-metrics-api-client-apps[*Client Applications*]
                                 | *Requests by Client ID*
     | *Requests by Client IP*   | *Requests by Client IP*
-    | *Requests by Location*    | *Request Volume by Location*
+    | *Requests by Location*    | *Request Volume by Location* (1-hour data retention)
 |===
 
 //end::api-chart-parity[]
@@ -223,11 +223,12 @@ _(Charts in this tab also appear in Overview, Inbound, and Outbound tabs)_
                                     | *CPU Utilization*
     | *JVM - Heap Used*             | *Heap Usage*
     | *JVM Thread Count*            | *Thread Count*
-    | *Total System Processors* 2+| No equivalent in Anypoint Insights
-    | *System Memory*           2+| No equivalent in Anypoint Insights
-    | *System CPU % Utilization* 2+| No equivalent in Anypoint Insights
-    | *JVM CPU Time*            2+| No equivalent in Anypoint Insights
-    | *Operating System Swap Space* 2+| No equivalent in Anypoint Insights
+//TODO: VERIFY with Vimil Saju — the feature parity spreadsheet marks these 5 charts as "Completed" in Insights but does not name the equivalent charts. Update from N/A once confirmed.
+    | *Total System Processors* 2+| N/A
+    | *System Memory*           2+| N/A
+    | *System CPU % Utilization* 2+| N/A
+    | *JVM CPU Time*            2+| N/A
+    | *Operating System Swap Space* 2+| N/A
 
 | *Application Network*
     | *App network visualization* 2+| No equivalent in Anypoint Insights. Use xref:docs-visualizer::index.adoc[API Visualizer (formerly Anypoint Visualizer)] to visualize app network data.
