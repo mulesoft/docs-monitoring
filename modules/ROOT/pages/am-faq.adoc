@@ -101,20 +101,22 @@ Retention (how long data is stored) and the lookback window (how far back you ca
 
 [%header,cols="3,2,2"]
 |===
-|Tier |Data retention |Anypoint Insights lookback window
+|Tier |Data retention |Anypoint Insights lookback window (individual app and API metrics)
 
 |Advanced and Titanium
 |365 days
-|Up to 90 days for individual app and API metrics; up to 7 days for cross-entity overview metrics (aggregate totals across all apps and APIs, such as total requests and error rate)
+|Up to 90 days
 
 |Starter
 |30 days
-|Up to 30 days for individual app and API metrics; up to 24 hours for cross-entity overview metrics
+|Up to 30 days
 
 |Gold/Platinum
 |30 days
 |30 days
 |===
+
+NOTE: The cross-entity overview page in Anypoint Insights — which shows aggregate totals across all apps and APIs, such as total requests and error rate — has a maximum lookback window of 7 days for all subscription tiers.
 
 [[enhanced-api-metrics-retention]]
 === How long does Anypoint Monitoring retain enhanced API metrics?

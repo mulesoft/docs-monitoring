@@ -6,7 +6,7 @@ Monitor performance data and issues across your deployed Mule apps and API imple
 
 * Check metrics across multiple Mule apps and API implementations.
 +
-Get up to the last 7 days (Advanced package) or 24 hours (Starter package) of high-level metrics on requests, errors, and responses. Use filters to narrow your results. {download-chart-data}
+Get up to the last 7 days of aggregate metrics on requests, errors, and responses across all your apps and APIs. This lookback limit applies to all subscription tiers. Use filters to narrow your results. {download-chart-data}
 * Check metrics on individual Mule apps and API implementations.
 +
 Get up to the last 90 days (Advanced and Titanium) or 30 days (other tiers) of metrics on latency, requests, responses, errors, Mule messages and the JVM for Mule apps, and for API implementations, data on policy violations, performance, and client apps. {download-chart-data}
