@@ -106,6 +106,35 @@
     | *Outbound - HTTP Protocols*                       | *Request Volume by Protocol*  (Select *Outbound*)
     | *Outbound - Endpoints*                            | *Outbound Request Volume by Remote Host*
 
+.9+| *Failures*
+    | *Errors* | xref:anypoint-insights.adoc#entity-metrics-app-errors[*Errors*]
+                                                    | *Failed Mule Messages*
+    | *Inbound - Failure Total Request Count* .2+| xref:anypoint-insights.adoc#entity-metrics-app-errors[*Errors*]
+                                                    | *Top 20 Failed Requests by Total Count* (Select *Inbound*)
+    | *Outbound - Failure Total Request Count*      | *Top 20 Failed Outbound Requests by Total Count*
+    | *Inbound - Total Requests by Response Type* .2+| xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*]
+                                                    | *Inbound Request Volume* (Select *By Response Type*)
+    | *Outbound - Total Requests by Response Type*  | *Outbound Request Volume* (Select *By Response Type*)
+    | *Inbound - Failure Response Time by Endpoint* .4+| xref:anypoint-insights.adoc#entity-metrics-app-errors[*Errors*]
+                                                    | *Inbound - Response Time by Endpoint*
+    | *Inbound - Failure Total Request Count by Endpoint*   | *Inbound - Request Count by Endpoint*
+    | *Outbound - Failure Response Time by Endpoint*        | *Outbound - Response Time by Endpoint*
+    | *Outbound - Failure Total Request Count by Endpoint*  | *Outbound - Request Count by Endpoint*
+
+.8+| *Performance* +
+_(Charts in this tab also appear in Overview, Inbound, and Outbound tabs)_
+    | *Mule Messages* .2+| xref:anypoint-insights.adoc#entity-metrics-app-overview[*Overview*]
+                                                    | *Mule Messages*
+    | *Average Response Time*                       | *Inbound Request Latency* (Displays *avg*)
+    | *Inbound - Average Response Time* .3+| xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*]
+                                                    | *Inbound Request Latency* (Displays *avg*)
+    | *Inbound - Response Time by Endpoint*         | *Request Latency by Endpoint* (Select *Inbound*)
+    | *Inbound - Response Time Percentiles*         | *Inbound Request Latency* (Displays *p99*, *p90*, *p75*, *p50*)
+    | *Outbound - Average Response Time* .3+| xref:anypoint-insights.adoc#entity-metrics-app-requests[*Requests*]
+                                                    | *Outbound Request Latency* (Displays *avg*)
+    | *Outbound - Response Time by Endpoint*        | *Request Latency by Endpoint* (Select *Outbound*)
+    | *Outbound - Response Time Percentiles*        | *Outbound Request Latency* (Displays *p99*, *p90*, *p75*, *p50*)
+
 .5+| *Flows*
     | *Inbound - Response Time by Flow* .5+| xref:anypoint-insights.adoc#entity-metrics-app-flows[*Flows*] | *Inbound - Response Time by Flow*
     | *Outbound - Response Time by Flow*        | *Outbound - Response Time by Flow*
@@ -189,12 +218,19 @@
     | *Old Gen Mem Committed*               | *Tenured Gen, G1 Old Gen charts* (Select *Committed*)
     | *Committed Virtual Memory*            | *Committed Virtual Memory*
 
-.5+| *Infrastructure*
-    | *System CPU %*            2+| No equivalent in Anypoint Insights
-    | *System Memory*           2+| No equivalent in Anypoint Insights
+.8+| *Infrastructure*
+    | *JVM - CPU % Utilization* .3+| xref:anypoint-insights.adoc#entity-metrics-app-jvm[*JVM*]
+                                    | *CPU Utilization*
+    | *JVM - Heap Used*             | *Heap Usage*
+    | *JVM Thread Count*            | *Thread Count*
     | *Total System Processors* 2+| No equivalent in Anypoint Insights
+    | *System Memory*           2+| No equivalent in Anypoint Insights
+    | *System CPU % Utilization* 2+| No equivalent in Anypoint Insights
     | *JVM CPU Time*            2+| No equivalent in Anypoint Insights
-    | *OS Swap*                 2+| No equivalent in Anypoint Insights
+    | *Operating System Swap Space* 2+| No equivalent in Anypoint Insights
+
+| *Application Network*
+    | *App network visualization* 2+| No equivalent in Anypoint Insights. Use xref:docs-visualizer::index.adoc[API Visualizer (formerly Anypoint Visualizer)] to visualize app network data.
 
 | *Custom Metrics*
     | *Charts* | xref:anypoint-insights.adoc#entity-metrics-app-custom-metrics[*Custom Metrics*] | Charts that use your organization's custom metrics.
