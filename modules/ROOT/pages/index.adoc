@@ -232,7 +232,8 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-|xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
+//TODO: VERIFY THIS RETENTION PERIOD FOR CORE-BASED PLANS
+|xref:monitoring::am-faq.adoc#storage-and-retention[Data retention] for more than 30 days
 |No
 |No
 |Yes
@@ -259,7 +260,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |xref:alerts-hf.adoc[Basic alerts] for apps, servers, and APIs
 |Yes
 |Yes
-|Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
+|Yes, with xref:am-faq.adoc#alert-limits[higher limits]
 
 |xref:dashboard-custom-config.adoc#alerts-custom-dashboards[Alerts for Custom Dashboards]
 |No
