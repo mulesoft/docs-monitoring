@@ -116,7 +116,7 @@ Retention (how long data is stored) and the lookback window (how far back you ca
 |Up to 30 days
 |===
 
-NOTE: The cross-entity overview page in Anypoint Insights — which shows aggregate totals across all apps and APIs, such as total requests and error rate — has a maximum lookback window:
+NOTE: The cross-entity overview page in Anypoint Insights shows aggregate totals across all apps and APIs, such as total requests and error rate. The page has a maximum lookback window:
 
 * 7 days: Advanced, Titanium, Platinum, and Gold tiers 
 * 24 hours: Starter tier
