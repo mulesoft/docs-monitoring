@@ -1,9 +1,11 @@
-= Getting Started
+= Getting Started with Anypoint Monitoring
+:description: Get started with MuleSoft Anypoint Monitoring to view metrics, logs, traces, and alerts for Mule apps, APIs, and agentic assets across your Anypoint Platform environments.
+:keywords: MuleSoft, Anypoint Monitoring, getting started, quick start, Mule app monitoring, API monitoring, metrics, logs, traces, alerts
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Anypoint Monitoring provides data on Mule apps, APIs, and  instances of agents, brokers, and MCP servers.
+Anypoint Monitoring provides metrics, logs, traces, and alerts for Mule apps, APIs, and agentic assets deployed across your Anypoint Platform environments.
 
 [NOTE]
 Functional Monitoring is covered in xref:api-functional-monitoring::index.adoc[API Functional Monitoring].
