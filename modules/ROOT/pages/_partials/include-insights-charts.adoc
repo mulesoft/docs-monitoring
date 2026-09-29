@@ -478,7 +478,7 @@ CPU work as a percentage of total CPU time
 +
 include::partial$include-insights-charts.adoc[tag="download-as"]
 +
-NOTE: This metric reflects JVM CPU usage, not system-level CPU. It can differ from CPU values shown in CloudWatch or Runtime Manager, which measure system CPU across all processes. On Runtime Fabric, CPU is measured against the whole node rather than the pod limit, so values can appear lower than expected relative to the pod's allocated resources.
+NOTE: This metric reflects JVM CPU usage, not system-level CPU. It can differ from CPU values shown in systems such as CloudWatch, which measure system CPU across all processes. On Runtime Fabric, CPU is measured against the whole node rather than the pod limit, so values can appear lower than expected relative to the pod's allocated resources.
 
 [[chart-jvm-classes-loaded]]
 Classes Loaded::

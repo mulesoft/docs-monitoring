@@ -7,10 +7,14 @@ Monitor performance data and issues across your deployed Mule apps and API imple
 
 * Check metrics across multiple Mule apps and API implementations.
 +
-Get up to the last 7 days of aggregate metrics on requests, errors, and responses across all your apps and APIs. This lookback limit applies to all subscription tiers. Use filters to narrow your results. {download-chart-data}
+Get up to the last 7 days of aggregate metrics on requests, errors, and responses across all your apps and APIs from the Anypoint Insights UI. This lookback limit applies to all subscription tiers. Use filters to narrow your results. {download-chart-data}
++
+For the Starter tier, the period is shorter: 24 hours.
 * Check metrics on individual Mule apps and API implementations.
 +
-Get up to the last 90 days (Advanced and Titanium) or 30 days (other tiers) of metrics on latency, requests, responses, errors, Mule messages and the JVM for Mule apps, and for API implementations, data on policy violations, performance, and client apps. {download-chart-data}
+Get up to the last 90 days (Advanced and Titanium) or 30 days (other tiers) of metrics on latency, requests, responses, errors, Mule messages and the JVM for Mule apps, and for API implementations, data on policy violations, performance, and client apps from the Anyoint Insights UI. {download-chart-data}
+
+For Advanced and Titanium tiers, the data retention period is a longer than the UI lookback window periods (see xref:am-faq.adoc#storage-and-retention[Storage and Retention].
 
 [[entities]]
 include::partial$include-entities.adoc[tags="entity-definition"]
