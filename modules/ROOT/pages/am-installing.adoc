@@ -296,7 +296,7 @@ If necessary, you can add the endpoint to an allowlist for outbound firewall rul
 * 3.x log file path: `./am/logs`
 +
 If this agent is running as a service on Linux, the log file path is `/var/log/otel-collector`.
-* 2.x log file path: `/var/log/filebeat`
+* 2.x log file path: `./am/filebeat/logs`
 +
 If this agent is running as a service on Linux, the log file path is /var/log/filebeat`.
 . Look for entries that mention connection failures or connection retries.
