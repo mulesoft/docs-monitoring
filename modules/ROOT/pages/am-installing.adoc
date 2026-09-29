@@ -285,7 +285,7 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 +
 If you see data in the charts, the Anypoint Monitoring agent is installed and running. 
 +
-If you do not see data in the charts, verify that Anypoint Monitoring can connect to the endpoint.
+If you don't see data in the charts, verify that Anypoint Monitoring can connect to the endpoint.
 +
 [NOTE]
 If necessary, you can add the endpoint to an allowlist for outbound firewall rules so your server allows connections. The endpoints to add to the allowlist are listed in <<prereqs>>.
