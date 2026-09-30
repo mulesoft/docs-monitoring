@@ -377,6 +377,8 @@ Logs are still forwarded to Anypoint Platform and remain visible in the Anypoint
 
 Yes.
 
+* *Hybrid/on-premises*: See xref:am-installing.adoc#disable-log-forwarding-for-hybrid-runtime-servers[Disable Log Forwarding for Hybrid Runtime Servers].
+
 [[rtf-connections]]
 === How does Anypoint Monitoring connect to Runtime Fabric, and how many connections does it use?
 
