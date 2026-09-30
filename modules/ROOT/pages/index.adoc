@@ -346,51 +346,30 @@ Business owner Devon has apps across different runtime planes. He has aggregated
 
 On EU and US Clouds, Anypoint Monitoring provides access to features from Classic Monitoring and enhanced views. Clicking a feature, such as *Insights* from the Classic Monitoring view opens to features that are now available from the enhanced view, and includes a link back to Classic Monitoring view, *Open Classic Monitoring*. 
 
-[%header,cols="a,a"]
-|===
-| Classic Monitoring View Feature List (US and EU Clouds) | Enhanced View Feature List (US and EU Clouds)
+*Classic only*
 
-|{empty}
-
-* xref:dashboard-custom-config.adoc#builtin_dashboards[Built-in Dashboards]
+* xref:dashboard-custom-config.adoc#builtin_dashboards[Built-in Dashboards] 
 +
-For the pending retirement of these dashboards, see:
-** xref:app-dashboards.adoc#app-chart-parity[App Chart Mapping (Built-in and Insights Dashboards)]
-** xref:api-dashboards.adoc#app-chart-parity[API Chart Mapping (Built-in and Insights Dashboards)]
-* xref:dashboard-custom-config.adoc#custom-dashboards[Custom Dashboards]
-* xref:traces.adoc[Traces (Beta)] (EU and US Clouds only)
-* xref:telemetry-exporter.adoc[Telemetry Exporter]
-* xref:reports.adoc[Reports]
-* xref:alerts-hf.adoc[Alerts]
-* xref:custom-metrics.adoc[Custom Metrics]
-** xref:api-functional-monitoring::index.adoc[Functional Monitoring]
-* *Log Management*
-** xref:logs-search-hf.adoc[Log Search]
-** xref:log-points.adoc[Log Points]
-** xref:raw-data.adoc[Raw Data]
-* *Others*
-** xref:tools.adoc[Tools]
-** xref:quick-start.adoc#access-key-metrics[Settings]
+For pending retirement details, see xref:app-dashboards.adoc#app-chart-parity[App Chart Mapping] and xref:api-dashboards.adoc#app-chart-parity[API Chart Mapping].
 
-|{empty}
+*Classic and Enhanced*
 
 * xref:anypoint-insights.adoc[Insights]
+* xref:custom-metrics.adoc[Custom Metrics] 
++
+In the Enhanced view, custom metrics connectors are consolidated into xref:tools.adoc[Tools].
+** xref:api-functional-monitoring::index.adoc[Functional Monitoring]
 * xref:dashboard-custom-config.adoc#custom-dashboards[Custom Dashboards]
 * xref:traces.adoc[Traces (Beta)] (EU and US Clouds only)
 * xref:telemetry-exporter.adoc[Telemetry Exporter]
-* xref:alerts-hf.adoc[Alerts]
 * xref:reports.adoc[Reports]
+* xref:alerts-hf.adoc[Alerts]
 * *Log Management*
 ** xref:logs-search-hf.adoc[Log Search]
 ** xref:log-points.adoc[Log Points]
 ** xref:raw-data.adoc[Raw Data]
-* *Others*
-** xref:tools.adoc[Tools]
-** xref:quick-start.adoc#access-key-metrics[Settings]
-* *Quick Links*
-** xref:api-functional-monitoring::index.adoc[Functional Monitoring]
-
-|===
+* xref:tools.adoc[Tools]
+* xref:quick-start.adoc#access-key-metrics[Settings]
 
 [[see-also]]
 == See Also
