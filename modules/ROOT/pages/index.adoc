@@ -344,7 +344,7 @@ Business owner Devon has apps across different runtime planes. He has aggregated
 [[classic]]
 == Classic and Enhanced Monitoring Views
 
-On EU and US Clouds, Anypoint Monitoring provides access to features from Classic Monitoring and enhanced views. Clicking a feature, such as *Insights* from the Classic Monitoring view opens to features that are now available from the enhanced view, and includes a link back to Classic Monitoring view, *Open Classic Monitoring*. 
+On EU and US Clouds, Anypoint Monitoring provides access to features from Classic Monitoring and enhanced views. Selecting a feature, such as *Insights*, from the Classic Monitoring view opens the enhanced view. To return to Classic Monitoring, select *Open Classic Monitoring*.
 
 *Classic only*
 
@@ -354,22 +354,21 @@ For pending retirement details, see xref:app-dashboards.adoc#app-chart-parity[Ap
 
 *Classic and Enhanced*
 
+* xref:alerts-hf.adoc[Alerts] (Alerts for Custom Dashboards: Titanium tier only)
+* xref:dashboard-custom-config.adoc#custom-dashboards[Custom Dashboards] (advanced features: Titanium tier only; US and EU Clouds only)
+* xref:functional-monitoring::index.adoc[Functional Monitoring]
 * xref:anypoint-insights.adoc[Insights] (Flow, Connector, and Custom Metrics tabs require Advanced and Titanium tiers only)
-* xref:custom-metrics.adoc[Custom Metrics] (Advanced and Titanium tiers only) 
-+
-In the Enhanced view, custom metrics connectors are consolidated into xref:tools.adoc[Tools].
-** xref:api-functional-monitoring::index.adoc[Functional Monitoring]
-* xref:dashboard-custom-config.adoc#custom-dashboards[Custom Dashboards] (advanced features require Titanium tier)
-* xref:traces.adoc[Traces (Beta)] (Advanced and Titanium tiers only; EU and US Clouds only)
-* xref:telemetry-exporter.adoc[Telemetry Exporter] (Advanced and Titanium tiers only)
-* xref:reports.adoc[Reports] (Advanced and Titanium tiers only)
-* xref:alerts-hf.adoc[Alerts] (Alerts for Custom Dashboards require Titanium tier only)
 * *Log Management*
-** xref:logs-search-hf.adoc[Log Search] (Usage-based and Titanium tiers)
 ** xref:log-points.adoc[Log Points] (Advanced and Titanium tiers)
+** xref:logs-search-hf.adoc[Log Search] (Usage-based and Titanium tiers)
 ** xref:raw-data.adoc[Raw Data] (Advanced and Titanium tiers)
-* xref:tools.adoc[Tools] (Advanced and Titanium tiers)
+* xref:custom-metrics.adoc[Custom Metrics] (Advanced and Titanium tiers only; US and EU Clouds only) +
+  In the Enhanced view, custom metrics connectors are consolidated into xref:tools.adoc[Tools].
+* xref:reports.adoc[Reports] (Advanced and Titanium tiers only)
 * xref:quick-start.adoc#access-key-metrics[Settings]
+* xref:telemetry-exporter.adoc[Telemetry Exporter] (Advanced and Titanium tiers only)
+* xref:tools.adoc[Tools] (Advanced and Titanium tiers)
+* xref:traces.adoc[Traces (beta)] (Advanced and Titanium tiers only; EU and US Clouds only)
 
 [[see-also]]
 == See Also
