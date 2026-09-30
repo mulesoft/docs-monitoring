@@ -344,7 +344,6 @@ The delay between the UI and Archive API occurs because the Archive API's batch 
 === Why is my application not appearing in the Anypoint Monitoring log search filter?
 
 The app doesn't appear in the filter when recent log lines are unavailable or when a large number of apps are reporting recent logs.
-For more information, see xref:apps-not-showing-sidebar.adoc[Not All Apps Are Showing in the Left Sidebar in Anypoint Monitoring].
 
 == Log Forwarding and Connectivity
 
@@ -376,11 +375,7 @@ Logs are still forwarded to Anypoint Platform and remain visible in the Anypoint
 [[disable-log-forwarding]]
 === Can I disable Anypoint Monitoring log forwarding while keeping metrics collection enabled?
 
-Yes. The steps vary by deployment target:
-
-* *CloudHub 1.0*: See xref:cloudhub-disable-log-forwarding.adoc[How to Disable Log Forwarding to the Anypoint Monitoring Titanium Backend].
-* *CloudHub 2.0*: Private space and shared space have separate procedures. See xref:ch2-disable-log-forwarding.adoc[Disable Log Forwarding in CloudHub 2.0].
-* *Hybrid/on-premises*: See xref:hybrid-disable-log-forwarding.adoc[Disable Log Forwarding for Hybrid Deployments].
+Yes.
 
 [[rtf-connections]]
 === How does Anypoint Monitoring connect to Runtime Fabric, and how many connections does it use?
