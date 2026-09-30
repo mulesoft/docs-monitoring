@@ -365,10 +365,10 @@ In the Enhanced view, custom metrics connectors are consolidated into xref:tools
 * xref:reports.adoc[Reports]
 * xref:alerts-hf.adoc[Alerts]
 * *Log Management*
-** xref:logs-search-hf.adoc[Log Search]
-** xref:log-points.adoc[Log Points]
-** xref:raw-data.adoc[Raw Data]
-* xref:tools.adoc[Tools]
+** xref:logs-search-hf.adoc[Log Search] (Usage-based and Titanium tiers)
+** xref:log-points.adoc[Log Points] (Advanced and Titanium tiers)
+** xref:raw-data.adoc[Raw Data] (Advanced and Titanium tiers)
+* xref:tools.adoc[Tools] (Advanced and Titanium tiers)
 * xref:quick-start.adoc#access-key-metrics[Settings]
 
 [[see-also]]
