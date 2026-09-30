@@ -367,7 +367,7 @@ For single-app log search available to all tiers, see xref:index.adoc#single-app
 * xref:anypoint-custom-metrics-connector.adoc[Custom Metrics] (Advanced and Titanium tiers only; US and EU Clouds only) +
   In the Enhanced view, custom metrics connectors are consolidated into xref:tools.adoc[Tools].
 * xref:reports.adoc[Reports] (Advanced and Titanium tiers only)
-* Settings for for connecting apps deployed to xref:monitoring::configure-monitoring-cloudhub.adoc[*CloudHub*] and xref:monitoring::am-installing.adoc[*Hybrid*], on-premise deployments to Anypoint Monitoring. Settings for CloudHub 2.0 and Runtime Fabric preconfigured.
+* *Settings* for connecting apps deployed to xref:monitoring::configure-monitoring-cloudhub.adoc[*CloudHub*] and xref:monitoring::am-installing.adoc[*Hybrid*], on-premise deployments to Anypoint Monitoring. Settings for CloudHub 2.0 and Runtime Fabric preconfigured.
 * xref:telemetry-exporter.adoc[Telemetry Exporter] (Advanced and Titanium tiers only)
 * xref:tools.adoc[Tools] (Advanced and Titanium tiers)
 * xref:traces.adoc[Traces (beta)] (Advanced and Titanium tiers only; EU and US Clouds only)
