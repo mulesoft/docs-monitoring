@@ -377,6 +377,7 @@ Logs are still forwarded to Anypoint Platform and remain visible in the Anypoint
 
 Yes.
 
+* *CloudHub 2.0*: See xref:cloudhub-2::ch2-manage-app-logs.adoc#configure-logging[Configure Logging for the App].
 * *Hybrid/on-premises*: See xref:am-installing.adoc#disable-log-forwarding-for-hybrid-runtime-servers[Disable Log Forwarding for Hybrid Runtime Servers].
 
 [[rtf-connections]]
