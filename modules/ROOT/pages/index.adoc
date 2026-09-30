@@ -26,8 +26,8 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 |Anypoint Monitoring Feature 
 |https://anypoint.mulesoft.com/monitoring[US], https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds
 | https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds
-| https://in1.platform.mulesoft.com/monitoring[India] Cloud 
-| https://au1.platform.mulesoft.com/monitoring[Australia] Cloud
+| https://in1.platform.mulesoft.com/monitoring[India] Cloud, https://au1.platform.mulesoft.com/monitoring[Australia] Cloud
+| https://gb1.platform.mulesoft.com[UK] Cloud (Great Britain)
 //| Government Cloud | Private Cloud (3.x) 
 
 | xref:alerts.adoc[Alerts]
@@ -42,13 +42,7 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 | Yes
 | Yes
 
-| xref:dashboards.adoc[Built-in dashboards (Classic mode)]
-| Yes
-| No
-| No
-| No
-
-| xref:dashboard-custom-config.adoc[Custom dashboards]
+| xref:custom-dashboards.adoc[Custom Dashboards]
 | Yes
 | No
 | No
@@ -226,46 +220,10 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |No
 |Yes
 
-4+| xref:app-dashboards.adoc[Built-in App Dashboards]
-|More than 80 out-of-the-box charts covering metrics in the following categories: Overview, Inbound, Outbound, Performance, Failures, JVM, and Infrastructure
 
-|Yes
-|Yes
-|Yes
 
-|Advanced metrics for xref:app-dashboards.adoc#inbound-charts[Inbound] and xref:app-dashboards.adoc#outbound-charts[Outbound] charts]
-|No
-|No
-|Yes
-
-|xref:app-dashboards.adoc#flows-charts[Flow charts]
-|No
-|No
-|Yes
-
-|xref:app-dashboards.adoc#connectors-charts[Connector charts]
-|No
-|No
-|Yes
-
-|<<note-visualizer, *Application Network tab*>> for Anypoint Visualizer app network integration data in Anypoint Monitoring 
-|No
-|No
-|Yes
-
-|xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
-|No
-|No
-|Yes
-
-4+| xref:api-dashboard.adoc[Built-in API Dashboards]
-
-|16 out-of-the-box charts covering metrics in the following categories: Overview, Requests, Failures, Performance, and Client Application
-|Yes
-|Yes
-|Yes
-
-|xref:monitoring::performance-and-impact.adoc#data-retention-and-aggregation[Data retention] for more than 30 days
+//TODO: VERIFY THIS RETENTION PERIOD FOR CORE-BASED PLANS
+|xref:monitoring::am-faq.adoc#storage-and-retention[Data retention] for more than 30 days
 |No
 |No
 |Yes
@@ -292,7 +250,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 |xref:alerts-hf.adoc[Basic alerts] for apps, servers, and APIs
 |Yes
 |Yes
-|Yes, with xref:performance-and-impact.adoc#data-retention-and-aggregation[higher limits]
+|Yes, with xref:am-faq.adoc#alert-limits[higher limits]
 
 |xref:dashboard-custom-config.adoc#alerts-custom-dashboards[Alerts for Custom Dashboards]
 |No
@@ -323,7 +281,7 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 4+| *Additional Anypoint Monitoring features*
 
-|xref:api-dashboard.adoc#anypoint-monitoring-archive-api[Anypoint Monitoring Archive API]
+|<<archive-api, Anypoint Monitoring Archive API>>
 |No
 |No
 |Yes
@@ -340,11 +298,20 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 |===
 
-[[note-visualizer]]
-NOTE:
---
-API Visualizer (formerly Anypoint Visualizer) app network integration refers to features in the *Application Network* tab within Anypoint Monitoring. API Visualizer as a product outside of Anypoint Monitoring is available to organizations regardless of pricing plan. 
---
+[[archive-api]]
+== Anypoint Monitoring Archive API
+
+include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
+
+You can access API analytics metrics data directly via the Anypoint Monitoring Archive API. Use this API to navigate and discover your API metrics data using a directory hierarchy.
+
+The Anypoint Monitoring Archive API enables you to download files that contain https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[JSON objects] that represent one or more metric events. You can write an application to navigate the data collected by the API and integrate it into your own system.
+
+You can also enable non-aggregated API events by setting this property: `anypoint.platform.config.analytics.agent.api_raw_metrics.enabled=true`.
+These events contain more detailed information about each API invocation, and you can access them with the Anypoint Monitoring Archive API under the `raw` file type.
+
+For more information about this API, see https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/home/[Anypoint Monitoring Archive API] in Anypoint Exchange.
+
 
 == Use Cases
 
@@ -372,55 +339,35 @@ Support engineer Carole searches through Anypoint Monitoring logs and notices so
 * Visualize regional or project-based consumption +
 Business owner Devon has apps across different runtime planes. He has aggregated dashboards of the regional or project-specific apps, and he can easily determine what is consuming the most resources and evangelize accordingly.
 
+
+//TODO: ?? RM Classic and Enhanced Monitoring Views WHEN BUILT-IN DASHBOARDS ??
 [[classic]]
 == Classic and Enhanced Monitoring Views
 
-On EU and US Clouds, Anypoint Monitoring provides access to features from Classic Monitoring and enhanced views. Clicking a feature, such as *Insights* from the Classic Monitoring view opens to features that are now available from the enhanced view, and includes a link back to Classic Monitoring view, *Open Classic Monitoring*. 
+On EU and US Clouds, Anypoint Monitoring provides access to features from Classic Monitoring and enhanced views. Selecting a feature, such as *Insights*, from the Classic Monitoring view opens the enhanced view. To return to Classic Monitoring, select *Open Classic Monitoring*.
 
-[%header,cols="a,a"]
-|===
-| Classic Monitoring View Feature List (US and EU Clouds) | Enhanced View Feature List (US and EU Clouds)
+*Classic only*
 
-|{empty}
+* Built-in Dashboards (xref:app-dashboards.adoc[app], xref:api-dashboard.adoc[API]) 
++
+For pending retirement details, see xref:app-dashboards.adoc#app-chart-parity[App Chart Mapping] and xref:api-dashboard.adoc#api-chart-parity[API Chart Mapping].
 
-* *Built-in dashboard* 
-* *Custom dashboards* 
-* *Traces (Beta)*
-* *Telemetry Exporter*
-* *Reports*
-* *Alerts*
-* *Custom Metrics*
-* *Functional Monitoring*
+*Classic and Enhanced*
+
+* xref:alerts-hf.adoc[Alerts] (Alerts for Custom Dashboards: Advanced and Titanium tiers only)
+* xref:dashboard-custom-config.adoc[Custom Dashboards] (advanced features: Titanium tier only; US and EU Clouds only)
+* xref:api-functional-monitoring::index.adoc[Functional Monitoring]
+* xref:anypoint-insights.adoc[Insights] (Flow, Connector, and Custom Metrics tabs in Anypoint Insights require Advanced and Titanium tiers only)
 * *Log Management*
-** *Log Search*
-** *Log Points*
-** *Raw Data*
-* *Others*
-** *Tools*
-** *Settings*
-
-|{empty}
-
-* *Insights*
-* *Custom Dashboards*
-* *Traces (Beta)*
-* *Telemetry Exporter*
-* *Reports*
-* *Log Management*
-** *Log Search*
-** *Log Points*
-//TODO: NOT YET
-//** *Raw Data*
-* *Others*
-** *Tools*
-** *Settings*
-* *Quick Links*
-** *Functional Monitoring*
-** *Log Points*
-
-|===
-
-[[see-also]]
-== See Also
-
-* xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]
+** xref:log-points.adoc[Log Points] (Advanced and Titanium tiers)
+** xref:logs-search-hf.adoc[Log Search] (Usage-based and Titanium tiers) 
++
+For single-app log search available to all tiers, see xref:index.adoc#single-app[Log Search for Individual Apps in Runtime Manager].
+** xref:raw-data.adoc[Raw Data] (Advanced and Titanium tiers)
+* xref:anypoint-custom-metrics-connector.adoc[Custom Metrics] (Advanced and Titanium tiers only; US and EU Clouds only) +
+  In the Enhanced view, custom metrics connectors are consolidated into xref:tools.adoc[Tools].
+* xref:reports.adoc[Reports] (Advanced and Titanium tiers only)
+* *Settings* for connecting apps deployed to xref:monitoring::configure-monitoring-cloudhub.adoc[*CloudHub*] and xref:monitoring::am-installing.adoc[*Hybrid*], on-premise deployments to Anypoint Monitoring. Settings for CloudHub 2.0 and Runtime Fabric preconfigured.
+* xref:telemetry-exporter.adoc[Telemetry Exporter] (Advanced and Titanium tiers only)
+* xref:tools.adoc[Tools] (Advanced and Titanium tiers)
+* xref:traces.adoc[Traces (beta)] (Advanced and Titanium tiers only; EU and US Clouds only)
