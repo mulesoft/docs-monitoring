@@ -354,13 +354,15 @@ For pending retirement details, see xref:app-dashboards.adoc#app-chart-parity[Ap
 
 *Classic and Enhanced*
 
-* xref:alerts-hf.adoc[Alerts] (Alerts for Custom Dashboards: Titanium tier only)
+* xref:alerts-hf.adoc[Alerts] (Alerts for Custom Dashboards: Advanced and Titanium tiers only)
 * xref:dashboard-custom-config.adoc#custom-dashboards[Custom Dashboards] (advanced features: Titanium tier only; US and EU Clouds only)
 * xref:functional-monitoring::index.adoc[Functional Monitoring]
 * xref:anypoint-insights.adoc[Insights] (Flow, Connector, and Custom Metrics tabs require Advanced and Titanium tiers only)
 * *Log Management*
 ** xref:log-points.adoc[Log Points] (Advanced and Titanium tiers)
-** xref:logs-search-hf.adoc[Log Search] (Usage-based and Titanium tiers)
+** xref:logs-search-hf.adoc[Log Search] (Usage-based and Titanium tiers) 
++
+For single-app log search available to all tiers, see xref:index.adoc#single-app[Log Search for Individual Apps in Runtime Manager].
 ** xref:raw-data.adoc[Raw Data] (Advanced and Titanium tiers)
 * xref:custom-metrics.adoc[Custom Metrics] (Advanced and Titanium tiers only; US and EU Clouds only) +
   In the Enhanced view, custom metrics connectors are consolidated into xref:tools.adoc[Tools].
