@@ -340,57 +340,34 @@ Support engineer Carole searches through Anypoint Monitoring logs and notices so
 Business owner Devon has apps across different runtime planes. He has aggregated dashboards of the regional or project-specific apps, and he can easily determine what is consuming the most resources and evangelize accordingly.
 
 
-////
-NOT NEEDED WHEN BUILT_IN DASHBOARDS GO AWAY
+//NOT NEEDED WHEN BUILT_IN DASHBOARDS GO AWAY
 [[classic]]
 == Classic and Enhanced Monitoring Views
 
-On EU and US Clouds, Anypoint Monitoring provides access to features from Classic Monitoring and enhanced views. Clicking a feature, such as *Insights* from the Classic Monitoring view opens to features that are now available from the enhanced view, and includes a link back to Classic Monitoring view, *Open Classic Monitoring*. 
+On EU and US Clouds, Anypoint Monitoring provides access to features from Classic Monitoring and enhanced views. Selecting a feature, such as *Insights*, from the Classic Monitoring view opens the enhanced view. To return to Classic Monitoring, select *Open Classic Monitoring*.
 
-[%header,cols="a,a"]
-|===
-| Classic Monitoring View Feature List (US and EU Clouds) | Enhanced View Feature List (US and EU Clouds)
+*Classic only*
 
-|{empty}
+* Built-in Dashboards (xref:app-dashboards.adoc[app], xref:api-dashboard.adoc[API]) 
++
+For pending retirement details, see xref:app-dashboards.adoc#app-chart-parity[App Chart Mapping] and xref:api-dashboard.adoc#api-chart-parity[API Chart Mapping].
 
-* *Custom dashboards* 
-* *Traces (Beta)*
-* *Telemetry Exporter*
-* *Reports*
-* *Alerts*
-* *Custom Metrics*
-* *Functional Monitoring*
+*Classic and Enhanced*
+
+* xref:alerts-hf.adoc[Alerts] (Alerts for Custom Dashboards: Advanced and Titanium tiers only)
+* xref:dashboard-custom-config.adoc[Custom Dashboards] (advanced features: Titanium tier only; US and EU Clouds only)
+* xref:api-functional-monitoring::index.adoc[Functional Monitoring]
+* xref:anypoint-insights.adoc[Insights] (Flow, Connector, and Custom Metrics tabs in Anypoint Insights require Advanced and Titanium tiers only)
 * *Log Management*
-** *Log Search*
-** *Log Points*
-** *Raw Data*
-* *Others*
-** *Tools*
-** *Settings*
-
-|{empty}
-
-* *Insights*
-* *Custom Dashboards*
-* *Traces (Beta)*
-* *Telemetry Exporter*
-* *Reports*
-* *Log Management*
-** *Log Search*
-** *Log Points*
-//TODO: NOT YET
-//** *Raw Data*
-* *Others*
-** *Tools*
-** *Settings*
-* *Quick Links*
-** *Functional Monitoring*
-** *Log Points*
-
-|===
-////
-
-[[see-also]]
-== See Also
-
-* xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]
+** xref:log-points.adoc[Log Points] (Advanced and Titanium tiers)
+** xref:logs-search-hf.adoc[Log Search] (Usage-based and Titanium tiers) 
++
+For single-app log search available to all tiers, see xref:index.adoc#single-app[Log Search for Individual Apps in Runtime Manager].
+** xref:raw-data.adoc[Raw Data] (Advanced and Titanium tiers)
+* xref:custom-metrics.adoc[Custom Metrics] (Advanced and Titanium tiers only; US and EU Clouds only) +
+  In the Enhanced view, custom metrics connectors are consolidated into xref:tools.adoc[Tools].
+* xref:reports.adoc[Reports] (Advanced and Titanium tiers only)
+* xref:quick-start.adoc#access-key-metrics[Settings]
+* xref:telemetry-exporter.adoc[Telemetry Exporter] (Advanced and Titanium tiers only)
+* xref:tools.adoc[Tools] (Advanced and Titanium tiers)
+* xref:traces.adoc[Traces (beta)] (Advanced and Titanium tiers only; EU and US Clouds only)
