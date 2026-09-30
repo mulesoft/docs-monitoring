@@ -348,16 +348,16 @@ On EU and US Clouds, Anypoint Monitoring provides access to features from Classi
 
 *Classic only*
 
-* xref:dashboard-custom-config.adoc#builtin_dashboards[Built-in Dashboards] 
+* Built-in Dashboards (xref:app-dashboards.adoc[app], xref:api-dashboard.adoc[API]) 
 +
-For pending retirement details, see xref:app-dashboards.adoc#app-chart-parity[App Chart Mapping] and xref:api-dashboards.adoc#app-chart-parity[API Chart Mapping].
+For pending retirement details, see xref:app-dashboards.adoc#app-chart-parity[App Chart Mapping] and xref:api-dashboard.adoc#api-chart-parity[API Chart Mapping].
 
 *Classic and Enhanced*
 
 * xref:alerts-hf.adoc[Alerts] (Alerts for Custom Dashboards: Advanced and Titanium tiers only)
-* xref:dashboard-custom-config.adoc#custom-dashboards[Custom Dashboards] (advanced features: Titanium tier only; US and EU Clouds only)
-* xref:functional-monitoring::index.adoc[Functional Monitoring]
-* xref:anypoint-insights.adoc[Insights] (Flow, Connector, and Custom Metrics tabs require Advanced and Titanium tiers only)
+* xref:dashboard-custom-config.adoc[Custom Dashboards] (advanced features: Titanium tier only; US and EU Clouds only)
+* xref:api-functional-monitoring::index.adoc[Functional Monitoring]
+* xref:anypoint-insights.adoc[Insights] (Flow, Connector, and Custom Metrics tabs in Anypoint Insights require Advanced and Titanium tiers only)
 * *Log Management*
 ** xref:log-points.adoc[Log Points] (Advanced and Titanium tiers)
 ** xref:logs-search-hf.adoc[Log Search] (Usage-based and Titanium tiers) 
@@ -371,8 +371,3 @@ For single-app log search available to all tiers, see xref:index.adoc#single-app
 * xref:telemetry-exporter.adoc[Telemetry Exporter] (Advanced and Titanium tiers only)
 * xref:tools.adoc[Tools] (Advanced and Titanium tiers)
 * xref:traces.adoc[Traces (beta)] (Advanced and Titanium tiers only; EU and US Clouds only)
-
-[[see-also]]
-== See Also
-
-* xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]
