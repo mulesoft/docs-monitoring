@@ -30,7 +30,7 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 | https://gb1.platform.mulesoft.com[UK] Cloud (Great Britain)
 //| Government Cloud | Private Cloud (3.x) 
 
-| xref:alerts.adoc[Alerts]
+| xref:alerts-hf.adoc[Alerts]
 | Yes
 | Yes
 | Yes
@@ -170,7 +170,9 @@ include::reuse::partial$billing/pricing.adoc[tag=featureAdvLimits]
 
 include::reuse::partial$billing/pricing.adoc[tag=dataRetentionMonitoring]
 
-See <<billing>>. For complete details about pricing, contact your customer support representative. 
+For more information, see xref:am-faq.adoc#storage-and-retention[Storage and Retention].
+
+See also, <<billing>>. For complete details about pricing, contact your customer support representative. 
 
 [[billing]]
 == Anypoint Platform Packages and Plans
@@ -338,36 +340,3 @@ Support engineer Carole searches through Anypoint Monitoring logs and notices so
 
 * Visualize regional or project-based consumption +
 Business owner Devon has apps across different runtime planes. He has aggregated dashboards of the regional or project-specific apps, and he can easily determine what is consuming the most resources and evangelize accordingly.
-
-
-//TODO: ?? RM Classic and Enhanced Monitoring Views WHEN BUILT-IN DASHBOARDS ??
-[[classic]]
-== Classic and Enhanced Monitoring Views
-
-On EU and US Clouds, Anypoint Monitoring provides access to features from Classic Monitoring and enhanced views. Selecting a feature, such as *Insights*, from the Classic Monitoring view opens the enhanced view. To return to Classic Monitoring, select *Open Classic Monitoring*.
-
-*Classic only*
-
-* Built-in Dashboards (xref:app-dashboards.adoc[app], xref:api-dashboard.adoc[API]) 
-+
-For pending retirement details, see xref:app-dashboards.adoc#app-chart-parity[App Chart Mapping] and xref:api-dashboard.adoc#api-chart-parity[API Chart Mapping].
-
-*Classic and Enhanced*
-
-* xref:alerts-hf.adoc[Alerts] (Alerts for Custom Dashboards: Advanced and Titanium tiers only)
-* xref:dashboard-custom-config.adoc[Custom Dashboards] (advanced features: Titanium tier only; US and EU Clouds only)
-* xref:api-functional-monitoring::index.adoc[Functional Monitoring]
-* xref:anypoint-insights.adoc[Insights] (Flow, Connector, and Custom Metrics tabs in Anypoint Insights require Advanced and Titanium tiers only)
-* *Log Management*
-** xref:log-points.adoc[Log Points] (Advanced and Titanium tiers)
-** xref:logs-search-hf.adoc[Log Search] (Usage-based and Titanium tiers) 
-+
-For single-app log search available to all tiers, see xref:index.adoc#single-app[Log Search for Individual Apps in Runtime Manager].
-** xref:raw-data.adoc[Raw Data] (Advanced and Titanium tiers)
-* xref:anypoint-custom-metrics-connector.adoc[Custom Metrics] (Advanced and Titanium tiers only; US and EU Clouds only) +
-  In the Enhanced view, custom metrics connectors are consolidated into xref:tools.adoc[Tools].
-* xref:reports.adoc[Reports] (Advanced and Titanium tiers only)
-* *Settings* for connecting apps deployed to xref:monitoring::configure-monitoring-cloudhub.adoc[*CloudHub*] and xref:monitoring::am-installing.adoc[*Hybrid*], on-premise deployments to Anypoint Monitoring. Settings for CloudHub 2.0 and Runtime Fabric preconfigured.
-* xref:telemetry-exporter.adoc[Telemetry Exporter] (Advanced and Titanium tiers only)
-* xref:tools.adoc[Tools] (Advanced and Titanium tiers)
-* xref:traces.adoc[Traces (beta)] (Advanced and Titanium tiers only; EU and US Clouds only)
