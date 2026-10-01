@@ -20,9 +20,7 @@ In US and EU clouds only, the classic version of Anypoint Monitoring provides th
 * Review the app target, request volume, and number of successful requests in the selected time range.
 +
 You can also sort columns by clicking a column heading.
-* Clicking an app opens the details page in *Insights*. 
-+
-NOTE: In US and EU clouds only, clicking an app in *Reports* from the classic version of Anypoint Monitoring opens to the app details page in *Built-in Dashboards*.
+* Clicking an app opens the details page in *Insights*.
 . Sets a lookback period for the reports (24 hours and 7, 15, 30, and 90 days)
 . Manually refreshes report data 
 . Downloads report data from the selected tab to CSV format

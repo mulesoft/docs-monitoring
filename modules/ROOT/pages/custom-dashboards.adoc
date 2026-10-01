@@ -1,0 +1,45 @@
+= Using Custom Dashboards to Monitor Metrics
+:page-aliases: dashboards.adoc
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+//TODO: Follow up with engineering to determine whether it is possible to provide JSON templates that customers can import to recreate their built-in dashboards as custom dashboards. If yes, add guidance and link to templates here.
+Use custom dashboards in Anypoint Monitoring to monitor the resources and metrics you choose across your Mule apps and APIs. For standard, predefined dashboards, see xref:anypoint-insights.adoc[Anypoint Insights].
+
+== Custom Dashboards
+//feature tier (for h2-h4 headings):
+include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
+
+
+Custom dashboards in Anypoint Monitoring combine important metrics and data points on one screen. Specify the resources and metrics to monitor so you can:
+
+* Correlate diverse metrics
+* Perform comparative analysis
+* Differentiate between regular trends and anomalies
+* Isolate issues quickly
+
+For example, you can compare live data with historic data to detect anomalies and expedite troubleshooting.
+
+//TBD: Verify that these no-data scenarios apply specifically to custom dashboards (not Anypoint Insights).
+[[no-data-scenarios]]
+== Causes of No Data Points Messages for Dashboards
+
+A dashboard in Anypoint Monitoring returns *No data points* when no data is available. These scenarios commonly cause the *No data points* message to appear:
+
+* You selected an incorrect time range.
++
+For example, the app started yesterday, and you selected a day from the past week as your time range.
+* You removed the Monitoring property from the runtime.
+* The application has stopped.
+* You selected a time range that is outside the retention policy for a metric.
++
+For example, API path or client IP metrics show only the last hour, and you selected yesterday as the time range.
+* You used an incorrect query.
++
+For example, when using custom dashboards, you selected two app IDs at the same time using the query `WHERE app_id = app_1 AND app_id = app_2`.
+
+== See Also
+
+* xref:dashboard-custom-config.adoc[Configuring Custom Dashboards]
+* xref:anypoint-insights.adoc[Anypoint Insights]

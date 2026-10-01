@@ -1,4 +1,4 @@
-Anypoint Monitoring collects top occurring endpoints or operations for each data collection interval. Endpoints or operations that are not top occurring are sorted into a group called *Other*. This grouping applies to built-in and custom metrics.
+Every minute, Anypoint Monitoring collects metrics for up to 20 of the most frequently called endpoints or operations. Endpoints or operations outside the top 20 are sorted into a group called *Other*. For additional limits that apply to custom metrics, see xref:anypoint-custom-metrics-connector.adoc#endpoint-operation-metrics[Endpoint and Operation Metrics Collection (Other Group)].
 
 In each data collection interval, top occurring endpoints or operations vary. An endpoint or operation that is top occurring in one interval might not be top occurring in the next.
 

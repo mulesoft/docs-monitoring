@@ -338,10 +338,10 @@ Don't override the default JVM time zone for applications deployed to CloudHub a
 == Data Retention and Management for Logs
 
 //VERIFY STILL TRUE
-Log storage limits for your subscription tier determine your retention and aren't based on a set amount of time. For details, see xref:performance-and-impact.adoc#data-retention-limits[Data Retention Limits].
+Log storage limits for your subscription tier determine your retention and aren't based on a set amount of time. For details, see xref:am-faq.adoc#storage-and-retention[Storage and Retention].
 
 //VERIFY STILL TRUE
-For other limitations on logs, see xref:performance-and-impact.adoc#logging-data-management[Logging Data Management].
+For other limitations on logs, see xref:am-faq.adoc#logging-data-management[Log Management].
 
 == Reference
 

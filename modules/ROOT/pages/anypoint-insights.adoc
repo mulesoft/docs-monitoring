@@ -1,15 +1,20 @@
 = Monitoring Metrics from Anypoint Insights
 :selector-all-dashboards: This selector is available to all Insights dashboards.
 :download-chart-data: You can download most chart data to CSV or XSL.
+:page-aliases: app-dashboards.adoc, api-dashboard.adoc, save-builtin-dashboard-as-custom.adoc
 
 Monitor performance data and issues across your deployed Mule apps and API implementations (_entities_) with Anypoint Insights, in Anypoint Monitoring: 
 
 * Check metrics across multiple Mule apps and API implementations.
 +
-Get up to the last 7 days (Advanced package) or 24 hours (Starter package) of high-level metrics on requests, errors, and responses. Use filters to narrow your results. {download-chart-data}
+Get up to the last 7 days of aggregate metrics on requests, errors, and responses across all your apps and APIs from the Anypoint Insights UI. This lookback limit applies to all subscription tiers. Use filters to narrow your results. {download-chart-data}
++
+For the Starter tier, the period is 24 hours.
 * Check metrics on individual Mule apps and API implementations.
 +
-Get up to the last 30 days of metrics on latency, requests, responses, errors, Mule messages and the JVM for Mule apps, and for API implementations, data on policy violations, performance, and client apps. {download-chart-data}
+Get up to the last 90 days (Advanced and Titanium) or 30 days (other tiers) of metrics on latency, requests, responses, errors, Mule messages and the JVM for Mule apps, and for API implementations, data on policy violations, performance, and client apps from the Anyoint Insights UI. {download-chart-data}
+
+For Advanced and Titanium tiers, the data retention period is a longer than the UI lookback window periods (see xref:am-faq.adoc#storage-and-retention[Storage and Retention].
 
 [[entities]]
 include::partial$include-entities.adoc[tags="entity-definition"]
@@ -40,7 +45,7 @@ For Advanced and Titanium subscription tiers, Integration Intelligence is access
 
 Required prerequisites:
 
-* An Anypoint Platform account in a control plane that supports Anypoint Insights:
+* An Anypoint Platform account in a control plane that supports Anypoint Insights (see xref:index.adoc#features[Monitoring Features by Control Plane]):
 
 ** {empty}
 include::partial$include-entities.adoc[tags="anypoint-regions-hyperforce"] 
@@ -51,6 +56,7 @@ include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 ** https://in1.platform.mulesoft.com/login/[India Cloud]
 
 
+//TODO: Determine which specific Mule runtime versions support the metrics available in Anypoint Insights — the current link to release notes does not specify this.
 * A Mule app or API (xref:gateway-home::index.adoc[Mule Gateway or Omni Gateway API]) running on a supported version of Mule runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
 
 ** CloudHub 2.0
@@ -352,8 +358,6 @@ image::insights-details-app.png["Anypoint Insights App Details UI"]
 . *Application Details* page for an app in Anypoint Insights
 . App associated with this details page and a dropdown for opening the detail page for another app or API in one of your environments
 . Tabs containing charts and visualizations for different types of metrics on the app
-. Navigation for switching to the traditional built-in dashboard for this app, and for managing the app in Runtime Manager
-
 Get information on the charts and visualizations available for the app:
 
 * <<entity-metrics-app-header>>
@@ -370,8 +374,6 @@ include::partial$include-entities.adoc[tags="entity-definition"]
 By default, the date period in dashboards with detailed metrics on specific entities matches the time period selected for cross-entity charts in the *Anypoint Insights* overview. 
 
 By default, the auto-refresh interval in dashboards with detailed metrics on specific entities matches the time period interval for cross-entity charts in the *Anypoint Insights* overview. 
-
-To compare *Application Details* charts and visualizations with those in the traditional  built-in dashboards for the same app, see xref:monitoring::app-dashboards.adoc#app-chart-parity[App Chart Mapping].
 
 [[entity-metrics-app-header]]
 ==== Mule Application Metrics
@@ -446,6 +448,15 @@ include::partial$include-insights-charts.adoc[tags="data-scope"]
 
 include::partial$include-insights-charts.adoc[tag="app-detail-jvm"]
 
+[[entity-metrics-app-infrastructure]]
+==== Infrastructure Metrics for a Mule Application
+
+Charts with infrastructure metrics are available in the *Infrastructure* tab for a Mule app in Anypoint Insights.
+
+include::partial$include-insights-charts.adoc[tags="data-scope"]
+
+include::partial$include-insights-charts.adoc[tag="app-detail-infrastructure"]
+
 [[entity-metrics-app-custom-metrics]]
 ==== Custom Metrics for a Mule Application
 
@@ -453,8 +464,6 @@ include::partial$include-insights-charts.adoc[tag="app-detail-jvm"]
 include::partial$subsection-pills.adoc[tag="anypoint-pricing-titanium"]
 
 Monitor apps that use your organization’s custom metrics for a Mule app. Adjust settings of the charts that use your custom metrics.
-
-Custom dashboards in Anypoint Insights aren't available at this time. 
 
 ===== Before You Begin
 
@@ -474,7 +483,7 @@ To create custom metrics, use the Anypoint Custom Metrics Connector in your app 
 To adjust the custom metrics settings of a Mule app chart in Anypoint Insights:
 
 . From a Mule app listed in Anypoint Insights, click the *Custom Metrics* tab.
-. Select a value these fields, and then click *Apply* to update the chart:
+. Select a value for these fields, and then click *Apply* to update the chart:
 
 * *Aggregations* values include:
 
@@ -491,7 +500,6 @@ To adjust the custom metrics settings of a Mule app chart in Anypoint Insights:
 
 * *Dimensions*: The choices in this list are determined by the values you define in the Custom Metrics connector. 
 
-Chart settings correspond to and reflect values available to Mule apps from built-in dashboards (in *Built-in Dashboards*) that have custom metrics. The *Dimensions* setting is named *Group By* in built-in dashboards. See xref:anypoint-custom-metrics-connector.adoc#custom-metrics-chart-settings[Configure Charts with Custom Metrics in a Built-In Dashboard]).
 
 //
 //H3: ENTITY METRICS for APIs (ONLY)
@@ -508,8 +516,6 @@ image::insights-details-api.png["Anypoint Insights API Details UI"]
 . *API Details* page for an API in Anypoint Insights
 . API associated with this details page and a dropdown for opening the detail page for another API or app in one of your environments
 . Tabs containing charts and visualizations for different types of metrics on the API
-. Navigation for switching to the traditional built-in dashboard for this API from Anypoint Insights, and for managing the API in API Manager
-
 Get information on the charts and visualizations available for the API:
 
 * <<entity-metrics-api-header>>
@@ -525,7 +531,6 @@ By default, the date period in dashboards with detailed metrics on specific enti
 
 By default, the auto-refresh interval in dashboards with detailed metrics on specific entities matches the time period interval for cross-entity charts in the *Anypoint Insights* overview. 
 
-To compare *API Details* charts and visualizations with those in the traditional built-in dashboards for the same API, see  xref:monitoring::anypoint-insights.adoc#entity-metrics-apis[*API Details*] in Anypoint Insights.
 
 [[entity-metrics-api-header]]
 ==== API Implementation Metrics
@@ -605,6 +610,8 @@ Anypoint Monitoring charts display data in configurable date-time ranges, which 
 
 Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. If the time units for data in your charts are larger or smaller than you require, try narrowing or expanding the time range that your charts capture. Alternatively, you can use the <<metrics-api, Metrics API>> to aggregate data within the API's limits.
 
+To make sure charts are plotted continuously, average response time charts use a straight line to connect the last data point before an app or API goes inactive with the next data point. To understand activity in average response time charts, review related charts, such as request counts, for a complete picture of your app or API's activity.
+
 //include for How Anypoint Monitoring Collects Metrics
 [[data-collection-intervals]]
 include::partial$include-monitoring-metrics-collection.adoc[leveloffset=+2]
@@ -627,3 +634,16 @@ To use the API and get information about data retention, see the API documentati
 NOTE: Queries can return empty data (`200 OK` with no results) if the Connected App lacks the required environment-level permissions.
 Also, the `endpoint.type` and `endpoint.operation` attributes are no longer valid on the `mulesoft.api.summary` metric.
 For details and workarounds, see xref:am-faq.adoc#metrics-api-empty-data[Why does my Metrics API query return empty data?] and xref:am-faq.adoc#metrics-api-traffic-attributes[What attributes should I use to query application traffic data?]
+
+[[dashboard-chart-mapping]]
+== Chart Mapping from Built-in Dashboards
+
+If you previously used built-in dashboards in Anypoint Monitoring, use these tables to find the equivalent charts in Anypoint Insights.
+
+=== Mule App Charts
+
+include::partial$include-insights-parity-charts.adoc[tags=app-chart-parity]
+
+=== API Charts
+
+include::partial$include-insights-parity-charts.adoc[tags=api-chart-parity]

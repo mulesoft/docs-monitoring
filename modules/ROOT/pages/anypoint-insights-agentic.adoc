@@ -32,7 +32,7 @@ Agent Visualizer links to metrics for agentic assets (agent, broker, and MCP ser
 
 .. Optionally, set the lookback period (<<dashboard-overview, see 4>>) to different range.
 +
-Defaults to the last 24 hours. Select a period from the last 30 minutes to the last 30 days.
+Defaults to the last 24 hours. Select a period from the last 30 minutes to the last 90 days (Advanced and Titanium) or 30 days (other tiers).
 .. Review <<properties, properties>> and metrics for the <<agent, agent>>, <<broker, broker>>, or <<mcp-server, MCP server>> instance. 
 
 For more information about nodes in Agent Visualizer, see xref:agent-visualizer::index.adoc[].
