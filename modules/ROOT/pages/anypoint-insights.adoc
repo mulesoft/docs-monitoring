@@ -1,6 +1,7 @@
 = Monitoring Metrics from Anypoint Insights
 :selector-all-dashboards: This selector is available to all Insights dashboards.
 :download-chart-data: You can download most chart data to CSV or XSL.
+:page-aliases: app-dashboards.adoc, api-dashboard.adoc, api-analytics-dashboard.adoc, api-analytics-dashboards.adoc, save-builtin-dashboard-as-custom.adoc
 
 Monitor performance data and issues across your deployed Mule apps and API implementations (_entities_) with Anypoint Insights, in Anypoint Monitoring: 
 
