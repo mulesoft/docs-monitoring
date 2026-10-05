@@ -176,7 +176,7 @@ This example shows a query that uses a wildcard (`*`) for the *worker* field (`w
   "query": {
     "wildcard": {
       "workerId": {
-        "value": "xy-*-abcd1",
+        "value": "xy-*-abc?1",
         "case_insensitive": true
       }
     }
