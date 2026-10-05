@@ -1,5 +1,7 @@
 = Creating Custom Metrics
 :page-info-pills: anypoint-pricing-titanium
+:description: Use the Anypoint Custom Metrics connector to send custom operational and business metric values from Mule apps to MuleSoft Anypoint Monitoring for visualization in Anypoint Insights and custom dashboards.
+:keywords: MuleSoft, Anypoint Monitoring, custom metrics, Anypoint Custom Metrics connector, business metrics, operational metrics, Mule app metrics, custom dimensions
 
 The Anypoint Custom Metrics connector enables you to send operational and business metric values that you define from an app to Anypoint Monitoring. You can then use *Anypoint Insights* or a custom dashboard in *Advanced* mode to visualize the custom metrics in real time. 
 

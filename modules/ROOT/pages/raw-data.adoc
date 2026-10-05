@@ -1,7 +1,9 @@
 = Downloading Archived Log Data
 :page-info-pills: anypoint-pricing-titanium
+:description: Download archived log data collected by MuleSoft Anypoint Monitoring for Mule apps running in hybrid, CloudHub, or Runtime Fabric deployments.
+:keywords: MuleSoft, Anypoint Monitoring, raw data, archived logs, log download, log export, compliance logs, Mule app data
 
-Download archived log data (raw data) collected on Mule apps that are running in hybrid, CloudHub, or Runtime Fabric deployments. This data is helpful for security, compliance, or other purposes when you need to examine or collect your warehoused data.
+Download archived log data (raw data) collected by Anypoint Monitoring on Mule apps that are running in hybrid, CloudHub, or Runtime Fabric deployments. This data is helpful for security, compliance, or other purposes when you need to examine or collect your warehoused data.
 
 image::raw-data.png["Raw Data downloads in Anypoint Monitoring"]
 
