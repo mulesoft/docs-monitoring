@@ -36,6 +36,8 @@ Use *Log Search* to capture the logs you want to review. You can use the search 
 * <<search-bar>>
 * <<search-filters>>
 
+NOTE: Each query is limited to 50 search terms or phrases. 
+
 [[search-bar]]
 === Query Logs from the Search Bar
 
@@ -51,12 +53,12 @@ For date-time range selection, see <<time-range>>.
 
 ** Use words or quotes around multiple words and strings containing special characters, such as `"HTTP GET"`, `"ab12c345-abc6-789d-e1fa-b124c5de6789"`, or `"https://api.mycompany.com:443"`.
 +
-Without quotes, multiword searches return matches to each word, and unescaped special characters can affect the search negatively. For partial word searches, you can use pattern matching characters in your search, such as `mya*`, or `appId: mya?p`.
+Without quotes, multiword searches return matches to each word, and unescaped special characters can affect the search negatively. For partial word searches in the *worker* and *log level* fields, you can use pattern-matching characters in your query, such as `worker:yz-*-abcd1` or `log level:*O?` to return INFO and ERROR logs.
 ** Escape special characters with the `\` character. 
 +
 For more information, see xref:log-search-query-syntax.adoc#special-characters[Special Characters]. 
 ** Use a <<field-names, field identifier>> to search within a specific log field, such as `appId: myapp` for an application named `myapp`.
-** Use logical operators, such as the `AND` in `appId: myap* AND "forbidden (403)"`.
+** Use logical operators, such as the `AND` in `appId: myapp AND "forbidden (403)"`.
 +
 For a list of supported operators, see xref:log-search-query-syntax.adoc#boolean-operators[Boolean Operators].
 * Add filters as needed to change the scope of log results.
@@ -92,7 +94,7 @@ To save a filter for future use, see <<save-search>>.
 Create a filter for your log search:
 
 . Click *Add filter*.
-. Select a log field name, or use the field's identifier (such as `appId`) for Query DSL filters.  
+. Select a log field name or use the field's identifier (such as `appId`) for Query DSL filters.  
 +
 See <<field-names>> for log fields and identifiers.
 . Select an operator, and provide any required operands:
@@ -139,7 +141,7 @@ You can use OpenSearch Query Domain-Specific Language (Query DSL) to create a fi
 . Click *Edit Query DSL*.
 . Provide your query, and click *Save*. 
 +
-This example shows a query for `log-level` INFO:
+This example shows a query for `log-level` INFO (for the *log level* field):
 +
 [source,text,linenums]
 ----
@@ -156,6 +158,7 @@ This example shows a query for `log-level` INFO:
 ----
 +
 This example shows a complex query that retrieves worker ID values from 0 to 20.
++
 [source,text,linenums]
 ----
 {
@@ -169,13 +172,24 @@ This example shows a complex query that retrieves worker ID values from 0 to 20.
   }
 }
 ----
++
+This example shows a query that uses a wildcard (`\*`) and a quantifier (`?`) as the `worker` field value (`workerId` in the query) `xy-*-abc?1`.
++
+[source,text,linenums]
+----
+{
+  "query": {
+    "wildcard": {
+      "workerId": {
+        "value": "xy-*-abc?1",
+        "case_insensitive": true
+      }
+    }
+  }
+}
+----
 
 To learn more, see https://docs.opensearch.org/3.3/query-dsl/[Query DSL] in the v3.3 OpenSearch documentation. 
-
-////
-[NOTE]
-Some complex search queries don't have an equivalent in the search filter values UI, so you can only create and view such queries in the query UI.
-////
 
 [[time-range]]
 === Select a Log Date and Time Range
