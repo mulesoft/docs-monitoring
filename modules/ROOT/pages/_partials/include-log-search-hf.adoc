@@ -139,7 +139,7 @@ You can use OpenSearch Query Domain-Specific Language (Query DSL) to create a fi
 . Click *Edit Query DSL*.
 . Provide your query, and click *Save*. 
 +
-This example shows a query for `log-level` INFO:
+This example shows a query for `log-level` INFO (for the *log level* field):
 +
 [source,text,linenums]
 ----
