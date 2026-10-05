@@ -9,10 +9,14 @@ Monitor performance data and issues across your deployed Mule apps and API imple
 
 * Check metrics across multiple Mule apps and API implementations.
 +
-Get up to the last 7 days of aggregate metrics on requests, errors, and responses across all your apps and APIs. This lookback limit applies to all subscription tiers. Use filters to narrow your results. {download-chart-data}
+Get up to the last 7 days of aggregate metrics on requests, errors, and responses across all your apps and APIs from the Anypoint Insights UI. This lookback limit applies to all subscription tiers. Use filters to narrow your results. {download-chart-data}
++
+For the Starter tier, the period is 24 hours.
 * Check metrics on individual Mule apps and API implementations.
 +
-Get up to the last 90 days (Advanced and Titanium) or 30 days (other tiers) of metrics on latency, requests, responses, errors, Mule messages and the JVM for Mule apps, and for API implementations, data on policy violations, performance, and client apps. {download-chart-data}
+Get up to the last 90 days (Advanced and Titanium) or 30 days (other tiers) of metrics on latency, requests, responses, errors, Mule messages and the JVM for Mule apps, and for API implementations, data on policy violations, performance, and client apps from the Anyoint Insights UI. {download-chart-data}
+
+For Advanced and Titanium tiers, the data retention period is a longer than the UI lookback window periods (see xref:am-faq.adoc#storage-and-retention[Storage and Retention].
 
 [[entities]]
 include::partial$include-entities.adoc[tags="entity-definition"]
@@ -608,7 +612,7 @@ Anypoint Monitoring charts display data in configurable date-time ranges, which 
 
 Anypoint Monitoring charts aggregate data into data points along a horizontal *Time* axis. If the time units for data in your charts are larger or smaller than you require, try narrowing or expanding the time range that your charts capture. Alternatively, you can use the <<metrics-api, Metrics API>> to aggregate data within the API's limits.
 
-To ensure charts are plotted continuously without interruptions, all average response time charts use a straight line to connect the last available value that precedes a period of app or API inactivity with the next available value. To understand activity in average response time charts, consider behavior in related charts, such as request counts, to get a holistic idea of your API or app's activity.
+To make sure charts are plotted continuously, average response time charts use a straight line to connect the last data point before an app or API goes inactive with the next data point. To understand activity in average response time charts, review related charts, such as request counts, for a complete picture of your app or API's activity.
 
 //include for How Anypoint Monitoring Collects Metrics
 [[data-collection-intervals]]

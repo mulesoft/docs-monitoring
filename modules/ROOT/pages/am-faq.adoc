@@ -115,10 +115,13 @@ Retention (how long data is stored) and the lookback window (how far back you ca
 
 |Gold/Platinum
 |30 days
-|30 days
+|Up to 30 days
 |===
 
-NOTE: The cross-entity overview page in Anypoint Insights — which shows aggregate totals across all apps and APIs, such as total requests and error rate — has a maximum lookback window of 7 days for all subscription tiers.
+NOTE: The cross-entity overview page in Anypoint Insights shows aggregate totals across all apps and APIs, such as total requests and error rate. The page has a maximum lookback window:
+
+* 7 days: Advanced, Titanium, Platinum, and Gold tiers 
+* 24 hours: Starter tier
 
 [[enhanced-api-metrics-retention]]
 === How long does Anypoint Monitoring retain enhanced API metrics?
@@ -367,6 +370,7 @@ The delay between the UI and Archive API occurs because the Archive API's batch 
 
 The app doesn't appear in the filter when recent log lines are unavailable or when a large number of apps are reporting recent logs.
 For more information, see xref:apps-not-showing-sidebar.adoc[Not All Apps Are Showing in the Left Sidebar in Anypoint Monitoring].
+// TODO: Fix broken xref - apps-not-showing-sidebar.adoc does not exist
 
 == Log Forwarding and Connectivity
 
@@ -400,6 +404,7 @@ Logs are still forwarded to Anypoint Platform and remain visible in the Anypoint
 
 Yes. The steps vary by deployment target:
 
+// TODO: Fix broken xrefs - cloudhub-disable-log-forwarding.adoc, ch2-disable-log-forwarding.adoc, and hybrid-disable-log-forwarding.adoc do not exist
 * *CloudHub 1.0*: See xref:cloudhub-disable-log-forwarding.adoc[How to Disable Log Forwarding to the Anypoint Monitoring Titanium Backend].
 * *CloudHub 2.0*: Private space and shared space have separate procedures. See xref:ch2-disable-log-forwarding.adoc[Disable Log Forwarding in CloudHub 2.0].
 * *Hybrid/on-premises*: See xref:hybrid-disable-log-forwarding.adoc[Disable Log Forwarding for Hybrid Deployments].

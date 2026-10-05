@@ -28,11 +28,11 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 |Anypoint Monitoring Feature 
 |https://anypoint.mulesoft.com/monitoring[US], https://eu1.anypoint.mulesoft.com/monitoring[EU] Clouds
 | https://ca1.platform.mulesoft.com/monitoring[Canada], https://jp1.platform.mulesoft.com/monitoring[Japan] Clouds
-| https://in1.platform.mulesoft.com/monitoring[India] Cloud 
-| https://au1.platform.mulesoft.com/monitoring[Australia] Cloud
+| https://in1.platform.mulesoft.com/monitoring[India] Cloud, https://au1.platform.mulesoft.com/monitoring[Australia] Cloud
+| https://gb1.platform.mulesoft.com[UK] Cloud (Great Britain)
 //| Government Cloud | Private Cloud (3.x) 
 
-| xref:alerts.adoc[Alerts]
+| xref:alerts-hf.adoc[Alerts]
 | Yes
 | Yes
 | Yes
@@ -45,12 +45,6 @@ include::partial$include-entities.adoc[tags="region-data-not-shared"]
 | Yes
 
 | xref:custom-dashboards.adoc[Custom Dashboards]
-| Yes
-| No
-| No
-| No
-
-| xref:dashboard-custom-config.adoc[Custom dashboards]
 | Yes
 | No
 | No
@@ -178,7 +172,9 @@ include::reuse::partial$billing/pricing.adoc[tag=featureAdvLimits]
 
 include::reuse::partial$billing/pricing.adoc[tag=dataRetentionMonitoring]
 
-See <<billing>>. For complete details about pricing, contact your customer support representative. 
+For more information, see xref:am-faq.adoc#storage-and-retention[Storage and Retention].
+
+See also, <<billing>>. For complete details about pricing, contact your customer support representative. 
 
 [[billing]]
 == Anypoint Platform Packages and Plans
@@ -311,12 +307,12 @@ If your organization changes its subscription model from a Titanium to a Gold or
 
 include::reuse::partial$billing/pricing.adoc[tag=featureAdvReqMonitoring]
 
-You can access API analytics metrics data directly via the Anypoint Monitoring Archive API. Using this API, you can navigate and discover your API metrics data using a directory hierarchy.
+You can access API analytics metrics data directly via the Anypoint Monitoring Archive API. Use this API to navigate and discover your API metrics data using a directory hierarchy.
 
 The Anypoint Monitoring Archive API enables you to download files that contain https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/Metric%20Data/[JSON objects] that represent one or more metric events. You can write an application to navigate the data collected by the API and integrate it into your own system.
 
 You can also enable non-aggregated API events by setting this property: `anypoint.platform.config.analytics.agent.api_raw_metrics.enabled=true`.
-These events contain more detailed information about each API invocation and can be accessed using the Anypoint Monitoring Archive API under the `raw` file type.
+These events contain more detailed information about each API invocation, and you can access them with the Anypoint Monitoring Archive API under the `raw` file type.
 
 For more information about this API, see https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/anypoint-monitoring-archive-api/minor/1.0/pages/home/[Anypoint Monitoring Archive API] in Anypoint Exchange.
 
@@ -346,59 +342,3 @@ Support engineer Carole searches through Anypoint Monitoring logs and notices so
 
 * Visualize regional or project-based consumption +
 Business owner Devon has apps across different runtime planes. He has aggregated dashboards of the regional or project-specific apps, and he can easily determine what is consuming the most resources and evangelize accordingly.
-
-
-////
-NOT NEEDED WHEN BUILT_IN DASHBOARDS GO AWAY
-[[classic]]
-== Classic and Enhanced Monitoring Views
-
-On EU and US Clouds, Anypoint Monitoring provides access to features from Classic Monitoring and enhanced views. Clicking a feature, such as *Insights* from the Classic Monitoring view opens to features that are now available from the enhanced view, and includes a link back to Classic Monitoring view, *Open Classic Monitoring*. 
-
-[%header,cols="a,a"]
-|===
-| Classic Monitoring View Feature List (US and EU Clouds) | Enhanced View Feature List (US and EU Clouds)
-
-|{empty}
-
-* *Custom dashboards* 
-* *Traces (Beta)*
-* *Telemetry Exporter*
-* *Reports*
-* *Alerts*
-* *Custom Metrics*
-* *Functional Monitoring*
-* *Log Management*
-** *Log Search*
-** *Log Points*
-** *Raw Data*
-* *Others*
-** *Tools*
-** *Settings*
-
-|{empty}
-
-* *Insights*
-* *Custom Dashboards*
-* *Traces (Beta)*
-* *Telemetry Exporter*
-* *Reports*
-* *Log Management*
-** *Log Search*
-** *Log Points*
-//TODO: NOT YET
-//** *Raw Data*
-* *Others*
-** *Tools*
-** *Settings*
-* *Quick Links*
-** *Functional Monitoring*
-** *Log Points*
-
-|===
-////
-
-[[see-also]]
-== See Also
-
-* xref:api-functional-monitoring::afm-create-monitor.adoc[Create a Monitor]

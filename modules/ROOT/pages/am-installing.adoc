@@ -282,12 +282,12 @@ For a user or password of the proxy configuration that contains URI-reserved cha
 
 include::partial$include-nav-steps-no-permissions.adoc[]
 
-. In xref:anypoint-insights.adoc[Anypoint Insights], select an app deployed on the server where you installed the Anypoint Monitoring agent, then open the *JVM* tab.
+. In xref:anypoint-insights.adoc[Anypoint Insights], select an app deployed on the server where you installed the Anypoint Monitoring agent, and then open the *JVM* tab.
 . Check whether the CPU Utilization and Memory Utilization charts are displaying data. 
 +
 If you see data in the charts, the Anypoint Monitoring agent is installed and running. 
 +
-If you do not see data in the charts, verify that Anypoint Monitoring is able to connect to the endpoint.
+If you don't see data in the charts, verify that Anypoint Monitoring can connect to the endpoint.
 +
 [NOTE]
 If necessary, you can add the endpoint to an allowlist for outbound firewall rules so your server allows connections. The endpoints to add to the allowlist are listed in <<prereqs>>.
@@ -298,7 +298,7 @@ If necessary, you can add the endpoint to an allowlist for outbound firewall rul
 * 3.x log file path: `./am/logs`
 +
 If this agent is running as a service on Linux, the log file path is `/var/log/otel-collector`.
-* 2.x log file path: `/var/log/filebeat`
+* 2.x log file path: `./am/filebeat/logs`
 +
 If this agent is running as a service on Linux, the log file path is /var/log/filebeat`.
 . Look for entries that mention connection failures or connection retries.
