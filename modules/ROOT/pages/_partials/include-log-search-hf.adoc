@@ -170,7 +170,7 @@ This example shows a complex query that retrieves worker ID values from 0 to 20.
 }
 ----
 +
-This example shows a query that uses a wildcard (`*`) and a quantifier (`?`) as the *worker* field (`workerId` in the query) value `xy-*-abc?1` value:
+This example shows a query that uses a wildcard (`*`) and a quantifier (`?`) as the *worker* field value (`workerId` in the query) `xy-*-abc?1`:
 ----
 {
   "query": {
