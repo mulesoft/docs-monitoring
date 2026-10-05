@@ -1,4 +1,4 @@
-= Send Data to and from External Systems
+= Using Connectors for External Notifications and Custom Metrics
 :page-info-pills: anypoint-pricing-titanium
 :description: Use MuleSoft Anypoint Monitoring to configure alert notification connectors — including ServiceNow, Slack, Salesforce, Jira, and Zendesk — and send custom operational and business metrics to Anypoint Monitoring.
 :keywords: MuleSoft, Anypoint Monitoring, external notifications, ServiceNow, Slack, Salesforce Connector, Jira, Zendesk, alert connectors, Anypoint Exchange, custom metrics
