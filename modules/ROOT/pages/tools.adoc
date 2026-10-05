@@ -1,9 +1,9 @@
-= Sending Alert Notifications to External Systems
+= Send Data to and from External Systems
 :page-info-pills: anypoint-pricing-titanium
 :description: Use MuleSoft Anypoint Monitoring to configure alert notification connectors — including ServiceNow, Slack, Salesforce, Jira, and Zendesk — and send custom operational and business metrics to Anypoint Monitoring.
 :keywords: MuleSoft, Anypoint Monitoring, external notifications, ServiceNow, Slack, Salesforce Connector, Jira, Zendesk, alert connectors, Anypoint Exchange, custom metrics
 
-Anypoint Monitoring provides links to connectors on Anypoint Exchange that you can incorporate into a Mule app to deliver alert notifications to external systems.
+Anypoint Monitoring provides links to connectors on Anypoint Exchange that you can incorporate into a Mule app to deliver alert notifications to external systems and to receive custom metric values in Anypoint Monitoring dashboards.
 
 //image::tools.png["Tools in Anypoint Monitoring"]
 
@@ -14,15 +14,21 @@ include::partial$include-nav-steps-no-permissions.adoc[]
 +
 You can hover over a connector link to learn more before navigating to Anypoint Exchange.
 
-== Supported Connectors
+== Connectors
 
-The *Tools* page links to these connectors on Anypoint Exchange:
+The *Tools* page links to several connectors on Anypoint Exchange.
+
+For alerts on external systems:
 
 * https://anypoint.mulesoft.com/exchange/com.mulesoft.connectors/mule-servicenow-connector/[ServiceNow]
 * https://anypoint.mulesoft.com/exchange/com.mulesoft.connectors/mule-salesforce-connector/[Anypoint Connector for Salesforce (Salesforce Connector)]
 * https://anypoint.mulesoft.com/exchange/com.mulesoft.connectors/mule4-jira-connector/[Jira]
 * https://anypoint.mulesoft.com/exchange/com.mulesoft.connectors/mule4-zendesk-connector/[Zendesk]
 * https://anypoint.mulesoft.com/exchange/com.mulesoft.connectors/mule4-slack-connector/[Slack]
+
+
+For custom metrics in Anypoint Monitoring:
+
 * https://anypoint.mulesoft.com/exchange/com.mule.modules/mule-custom-metrics-extension/[Anypoint Monitoring Custom Metrics Connector]
 +
 Subscription requirements apply. For information about custom metrics, see xref:anypoint-custom-metrics-connector.adoc[].
