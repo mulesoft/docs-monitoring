@@ -36,6 +36,8 @@ Use *Log Search* to capture the logs you want to review. You can use the search 
 * <<search-bar>>
 * <<search-filters>>
 
+NOTE: Each query is limited to 50 search terms or phrases. 
+
 [[search-bar]]
 === Query Logs from the Search Bar
 
