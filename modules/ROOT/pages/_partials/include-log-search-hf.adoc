@@ -169,6 +169,20 @@ This example shows a complex query that retrieves worker ID values from 0 to 20.
   }
 }
 ----
++
+This example shows a query that uses a wildcard for the `workerId` value:
+----
+{
+  "query": {
+    "wildcard": {
+      "workerId": {
+        "value": "xy-*-abcd1",
+        "case_insensitive": true
+      }
+    }
+  }
+}
+----
 
 To learn more, see https://docs.opensearch.org/3.3/query-dsl/[Query DSL] in the v3.3 OpenSearch documentation. 
 
