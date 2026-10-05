@@ -51,7 +51,7 @@ For date-time range selection, see <<time-range>>.
 
 ** Use words or quotes around multiple words and strings containing special characters, such as `"HTTP GET"`, `"ab12c345-abc6-789d-e1fa-b124c5de6789"`, or `"https://api.mycompany.com:443"`.
 +
-Without quotes, multiword searches return matches to each word, and unescaped special characters can affect the search negatively. For partial word searches, you can use pattern matching characters in your search, such as `mya*`, or `appId: mya?p`.
+Without quotes, multiword searches return matches to each word, and unescaped special characters can affect the search negatively. For partial word searches in the  `environment`, `worker`, and `log level` fields, you can use pattern-matching characters in your search, such as `mya*`, or `appId: mya?p`.
 ** Escape special characters with the `\` character. 
 +
 For more information, see xref:log-search-query-syntax.adoc#special-characters[Special Characters]. 
