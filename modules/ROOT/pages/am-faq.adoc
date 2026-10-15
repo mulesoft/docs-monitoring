@@ -52,12 +52,6 @@ Anypoint Monitoring creates indexes on raw logs to enable fast log search querie
 The searchable storage allocation equals 10% of your total purchased storage, and Anypoint Monitoring indexes only the most recent logs up to that limit.
 Total searchable storage across your organization is capped at 6 TB regardless of the number of vCores or flows you purchased.
 
-For Titanium subscriptions, calculate your total searchable storage allocation using this formula:
-
-----
-10% × (num_vCore_prod × 200 + num_vCore_preprod × 50)
-----
-
 Storage per unit purchased varies by subscription tier:
 
 [%header,cols="2,1,1,1"]
