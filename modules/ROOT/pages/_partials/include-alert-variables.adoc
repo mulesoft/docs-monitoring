@@ -24,7 +24,7 @@
 //
 //tag::alerts-app-rtf[]
 .6+| Anypoint Runtime Fabric App Alerts
-|*CPU Utilization* .6+|* `${severity}`
+|*CPU Utilization* .6+|* `${severity}` See <<severity>> for more information.
 * `${operator}`
 * `${threshold}`
 * `${period}`
