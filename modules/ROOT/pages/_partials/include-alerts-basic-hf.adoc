@@ -189,6 +189,9 @@ Use your organization's alerting criteria when setting an alert's severity. Avai
 * *High*
 * *Critical*
 
+//TODO: REMOVE NOTE if/when UI UPDATED
+NOTE: For alert <<variables, notifications>>, `${severity}` currently returns `info` for *Low*, `warning` for *Medium*, and `critical` for *High* and *Critical* alerts. 
+
 [[threshold]]
 == Alert Thresholds
 
