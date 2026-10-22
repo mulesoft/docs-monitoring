@@ -93,7 +93,7 @@ To save a filter for future use, see <<save-search>>.
 
 Create a filter for your log search.
 
-NOTE: Options available to basic search filters, such as application or worker names, aren't narrowed or limited by other filters. For example, if you create filter for application A and then select a filter for a worker, all workers are available for selection, not just workers that are available for application A.
+NOTE: When using more than one basic search filter, values available to your filters, such as application or worker names, aren't narrowed or limited by values you select for other filters in your search. For example, if you create filter for application A and then add a filter for a worker, all workers are available for selection, not just workers available for application A.
 
 . Click *Add filter*.
 . Select a log field name or use the field's identifier (such as `appId`) for Query DSL filters.  
