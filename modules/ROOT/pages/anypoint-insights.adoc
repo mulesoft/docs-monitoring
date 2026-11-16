@@ -66,7 +66,7 @@ include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 ** Hybrid
 ** Runtime Fabric
 
-* For Canada Cloud and Japan Cloud: 
+* For Cloud other than EU and US:
 
 ** Enable Mule runtime access to Anypoint Platform so that you can display entity metrics in Anypoint Monitoring.
 +
