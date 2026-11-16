@@ -68,6 +68,12 @@ Outbound connections are made to the following endpoints:
 ** data-authenticator.anypoint.mulesoft.com:443
 ** s3.au1-central-1.amazonaws.com:443
 
+* Brazil Control Plane (3.x installers, version 3.2.18.11 or later)
+** ingest.br1.platform.mulesoft.com:8443
+** data-authenticator.anypoint.mulesoft.com:443
+** s3.br1-central-1.amazonaws.com:443
+
+
 === Ports 
 
 [%header,cols="10a,50a,10a"]
@@ -106,6 +112,10 @@ Outbound connections are made to the following endpoints:
 |*Australia*|au1.anypoint.mulesoft.com | 443
 |*Australia*|runtime-manager.au1.platform.mulesoft.com | 443
 |*Australia*|exchange2-asset-manager-kprod-au1 |  443
+|*Brazil*|ingest.br1.platform.mulesoft.com | 8443
+|*Brazil*|br1.anypoint.mulesoft.com | 443
+|*Brazil*|runtime-manager.br1.platform.mulesoft.com | 443
+|*Brazil*|exchange2-asset-manager-kprod-br1 |  443
 |===
 
 [[os-support]]
