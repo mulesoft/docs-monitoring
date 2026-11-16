@@ -50,29 +50,23 @@ Outbound connections are made to the following endpoints:
 
 * Japan Control Plane (3.x installers, version 3.2.18.11 or later)
 ** jp1.ingest.mulesoft.com:8443
-** data-authenticator.anypoint.mulesoft.com:443
-** s3.jp1-central-1.amazonaws.com:443
+** runtime-manager.jp1.platform.mulesoft.com:8443
 
 * Canada Control Plane (3.x installers, version 3.2.18.11 or later)
 ** ingest.ca1.mulesoft.com:8443
-** data-authenticator.anypoint.mulesoft.com:443
-** s3.ca1-central-1.amazonaws.com:443
+** runtime-manager.ca1.platform.mulesoft.com:8443
 
 * India Control Plane (3.x installers, version 3.2.18.11 or later)
 ** ingest.in1.mulesoft.com:8443
-** data-authenticator.anypoint.mulesoft.com:443
-** s3.in1-central-1.amazonaws.com:443
+** runtime-manager.in1.platform.mulesoft.com:8443
 
 * Australia Control Plane (3.x installers, version 3.2.18.11 or later)
 ** ingest.au1.platform.mulesoft.com:8443
-** data-authenticator.anypoint.mulesoft.com:443
-** s3.au1-central-1.amazonaws.com:443
+** runtime-manager.au1.platform.mulesoft.com:8443
 
 * Brazil Control Plane (3.x installers, version 3.2.18.11 or later)
 ** ingest.br1.platform.mulesoft.com:8443
-** data-authenticator.anypoint.mulesoft.com:443
-** s3.br1-central-1.amazonaws.com:443
-
+** runtime-manager.br1.platform.mulesoft.com:8443
 
 === Ports 
 
