@@ -68,40 +68,6 @@ Outbound connections are made to the following endpoints:
 ** ingest.br1.platform.mulesoft.com:8443
 ** runtime-manager.br1.platform.mulesoft.com:8443
 
-=== Ports 
-
-[%header,cols="10a,50a,10a"]
-|===
-|Region |Name |Port
-|*US*|us1.ingest.mulesoft.com | 8443
-|*US*|anypoint.mulesoft.com | 443
-|*US*|runtime-manager.anypoint.mulesoft.com | 443
-|*US*|analytics-ingest.anypoint.mulesoft.com |  443
-|*US*|data-authenticator.anypoint.mulesoft.com |  443
-|*US-GOV*|runtime-manager.gov.anypoint.mulesoft.com | 443
-|*US-GOV*|gov.anypoint.mulesoft.com | 443
-|*EU*|eu1.ingest.mulesoft.com | 8443
-|*EU*|eu1.anypoint.mulesoft.com | 443
-|*EU*|runtime-manager.eu1.anypoint.mulesoft.com | 443
-|*EU*|analytics-ingest.eu1.anypoint.mulesoft.com |  443
-|*EU*|data-authenticator.eu1.anypoint.mulesoft.com |  443
-|*Canada*|ingest.ca1.platform.mulesoft.com | 8443
-|*Canada*|ca1.anypoint.mulesoft.com | 443
-|*Canada*|runtime-manager.ca1.platform.mulesoft.com | 8443
-|*Japan*|ingest.jp1.platform.mulesoft.com | 8443
-|*Japan*|jp1.anypoint.mulesoft.com | 443
-|*Japan*|runtime-manager.jp1.platform.mulesoft.com | 8443
-|*India*|ingest.in1.platform.mulesoft.com | 8443
-|*India*|in1.anypoint.mulesoft.com | 443
-|*India*|runtime-manager.in1.platform.mulesoft.com | 8443
-|*Australia*|ingest.au1.platform.mulesoft.com | 8443
-|*Australia*|au1.anypoint.mulesoft.com | 443
-|*Australia*|runtime-manager.au1.platform.mulesoft.com | 443
-|*Brazil*|ingest.br1.platform.mulesoft.com | 8443
-|*Brazil*|br1.anypoint.mulesoft.com | 443
-|*Brazil*|runtime-manager.br1.platform.mulesoft.com | 443
-|===
-
 [[os-support]]
 == Supported Operating Systems
 
