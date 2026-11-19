@@ -33,10 +33,16 @@ To set an autorefresh rate in seconds, minutes, or hours, open image:logs-caland
 
 Use *Log Search* to capture the logs you want to review. You can use the search bar, a filter (including filters created with Query DSL), or combination of the search bar and a filter.
 
+* <<limits>>
 * <<search-bar>>
 * <<search-filters>>
 
-NOTE: Each query is limited to 50 search terms or phrases. 
+[[limits]]
+=== Log Search Limits
+
+* Log search returns up to 500 log entries.
+* Each query is limited to 50 search terms or phrases. 
+
 
 [[search-bar]]
 === Query Logs from the Search Bar
