@@ -61,10 +61,13 @@ include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 //TODO: Determine which specific Mule runtime versions support the metrics available in Anypoint Insights — the current link to release notes does not specify this.
 * A Mule app or API (xref:gateway-home::index.adoc[Mule Gateway or Omni Gateway API]) running on a supported version of Mule runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
 
-** CloudHub 2.0
-** CloudHub
-** Hybrid
-** Runtime Fabric
+** CloudHub 2.0 (*CLOUDHUB2*)
+** CloudHub (*CLOUDHUB*)
+** Hybrid (*HYBRID*)
+** Runtime Fabric (*RTF*)
+** Omni Gateway, formerly Flex Gateway (*FLEX*)
++
+For searches by deployment type (`deployment_type`), the names in the UI are abbreviated.
 
 * For Canada Cloud and Japan Cloud: 
 
