@@ -57,6 +57,8 @@ include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 
 ** https://in1.platform.mulesoft.com/login/[India Cloud]
 
+** https://br1.platform.mulesoft.com/login[Brazil Cloud]
+
 
 //TODO: Determine which specific Mule runtime versions support the metrics available in Anypoint Insights — the current link to release notes does not specify this.
 * A Mule app or API (xref:gateway-home::index.adoc[Mule Gateway or Omni Gateway API]) running on a supported version of Mule runtime engine (see xref:release-notes::mule-runtime/mule-esb.adoc[]) and deployed to a supported target:
@@ -69,7 +71,7 @@ include::partial$include-entities.adoc[tags="anypoint-regions-useu"]
 +
 For searches by deployment type (`deployment_type`), the names in the UI are abbreviated.
 
-* For Canada Cloud and Japan Cloud: 
+* For cloud regions other than EU and US:
 
 ** Enable Mule runtime access to Anypoint Platform so that you can display entity metrics in Anypoint Monitoring.
 +
@@ -442,10 +444,6 @@ include::partial$include-insights-charts.adoc[tag="app-detail-connectors"]
 
 [[entity-metrics-app-jvm]]
 ==== JVM Metrics for a Mule Application
-
-//TODO: REMOVE IF/WHEN THIS NO LONGER APPLIES
-//feature tier (for h2-h4 headings):
-//include::partial$subsection-pills.adoc[tag="anypoint-cloud-support-jvm"]
 
 Charts with JVM metrics are available in the *JVM* tab for a Mule app in Anypoint Insights.
 

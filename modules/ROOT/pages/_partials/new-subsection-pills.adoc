@@ -22,14 +22,6 @@ image:info.png[title="This feature requires a Usage-based or Titanium subscripti
 |===
 //end::anypoint-pricing-usage-titanium[]
 
-//tag::anypoint-cloud-support-jvm[]
-[grid=all]
-|===
-|
-image:info.png[title="This feature is available on Japan and Canada cloud instances of Anypoint Platform only.",15,15] Availability: Japan and Canada cloud instances of Anypoint Platform only at this time
-|===
-//end::anypoint-cloud-support-jvm[]
-
 //tag::anypoint-pricing-all-tiers[]
 [grid=all]
 |===
