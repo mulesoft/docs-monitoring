@@ -102,7 +102,7 @@ Agent Visualizer links to traces for agentic assets (agent, broker, and MCP serv
 . Click *View Traces* to navigate to the traces for the node in *Trace Details* (in Anypoint Monitoring).
 . <<get-trace-details, Get trace details>>.
 
-For more information about nodes in Agent Visualizer, see xref:agent-visualizer::index.adoc[].
+For more information about nodes in Agent Visualizer, see xref:agent-fabric::agent-viz-overview.adoc[].
 
 [[get-trace-details]]
 == Get Trace Details
