@@ -231,7 +231,7 @@ _(Charts in this tab also appear in Overview, Inbound, and Outbound tabs)_
     | *Operating System Swap Space* | *Total Swap Space* and *Free Swap Space*
 
 | *Application Network*
-    | *App network visualization* 2+| No equivalent in Anypoint Insights. Use xref:docs-visualizer::index.adoc[API Visualizer (formerly Anypoint Visualizer)] to visualize app network data.
+    | *App network visualization* 2+| No equivalent in Anypoint Insights. Use xref:visualizer::index.adoc[API Visualizer (formerly Anypoint Visualizer)] to visualize app network data.
 
 | *Custom Metrics*
     | *Charts* | xref:anypoint-insights.adoc#entity-metrics-app-custom-metrics[*Custom Metrics*] | Charts that use your organization's custom metrics.
