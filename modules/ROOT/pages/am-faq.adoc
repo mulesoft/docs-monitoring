@@ -402,7 +402,38 @@ To retrieve application and API metrics via the Archive API, see <<access-api-an
 [[alerts]]
 == Alerts
 
+* <<alert-management,What alert management options are available?>>
+
 * <<alert-limits,What are the alert limits in Anypoint Monitoring?>>
+
+[[alert-managment]]
+== What alert management options are available?
+
+Anypoint Monitoring is the primary solution for alert management. 
+
+//TODO: WHERE IS THIS API DOCUMENTED?
+Anypoint Monitoring Alerts API: This API supports management. 
+
+When updating existing alerts, use the `PUT` method, and include the complete alert object in the request body. Don't use `PATCH` because partial updates aren't supported.
+
+//TODO: ANY OF THESE APIS?
+* https://docs.mulesoft.com/cloudhub/cloudhub-api-reference#notifications-and-alerts
+* https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/api-platform-api/minor/2.0/console/method/%23255/
+* https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/f1e97bc6-315a-4490-82a7-23abe036327a.anypoint-platform/arm-rest-services/minor/1.0/pages/Alerts_Examples/ for Runtime Manager REST Services / ARM API (For Hybrid & On-Premises)
+* NOT THIS, which has PATCH? https://dev-portal.mulesoft.com/apis/api-manager.html#op-updateApiInstanceAlert
+
+what to make of this?
+Omni Gateway: https://docs.mulesoft.com/gateway/latest/use-api-alerts#add-api-alerts
+
+//TODO: NEED TO CHECK ABOVE
+
+
+Don't use API Manager or Anypoint MQ for alerting:
+
+* As announced in September of 2025, MuleSoft recommends migrating from xref:api-manager::using-api-alerts.adoc[API Manager alerts] to Anypoint Monitoring. For details, see https://help.salesforce.com/s/articleView?id=004634029&type=1[Changes to the API Alerts | API Key Metrics Charts | API Analytics in Anypoint API Manager].
+
+* Anypoint MQ doesn't work with Anypoint Monitoring or offer built-in alerting for queue depth. Configure alerts through Anypoint Monitoring, or build a custom Mule application. 
+
 
 [[alert-limits]]
 === What are the alert limits in Anypoint Monitoring?
